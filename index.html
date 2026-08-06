@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narrative Radar</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7;
+    --surface: #fcfcfb;
+    --ink: #0b0b0b;
+    --ink-2: #52514e;
+    --muted: #898781;
+    --hairline: #e1e0d9;
+    --border: rgba(11,11,11,0.10);
+    --accent: #2a78d6;
+    --good: #0ca30c;
+    --warning: #fab219;
+    --serious: #ec835a;
+    --critical: #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page: #0d0d0d;
+      --surface: #1a1a19;
+      --ink: #ffffff;
+      --ink-2: #c3c2b7;
+      --muted: #898781;
+      --hairline: #2c2c2a;
+      --border: rgba(255,255,255,0.10);
+      --accent: #3987e5;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--page);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 20px 16px 80px; }
+
+  header h1 { font-size: 22px; letter-spacing: -0.01em; }
+  header .sub { color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+
+  .topicbar { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0 4px; }
+  .topic {
+    border: 1px solid var(--border); background: var(--surface);
+    border-radius: 999px; padding: 6px 14px; font-size: 13px; cursor: pointer;
+    color: var(--ink-2);
+  }
+  .topic.active { border-color: var(--accent); color: var(--ink); font-weight: 600; }
+  .topic .q { font-size: 11px; color: var(--muted); margin-left: 6px; }
+
+  .tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--hairline); margin: 18px 0 16px; }
+  .tab {
+    background: none; border: none; font: inherit; color: var(--ink-2);
+    padding: 8px 14px; cursor: pointer; border-bottom: 2px solid transparent;
+    font-size: 14px;
+  }
+  .tab.active { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent); }
+  .tab .count { color: var(--muted); font-size: 12px; margin-left: 4px; }
+
+  .stats { display: flex; gap: 24px; flex-wrap: wrap; margin: 4px 0 18px; }
+  .stat .v { font-size: 20px; font-weight: 650; }
+  .stat .l { font-size: 12px; color: var(--muted); }
+
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+  .controls input[type=search] {
+    flex: 1; min-width: 180px; padding: 7px 12px; font: inherit; font-size: 14px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface); color: var(--ink);
+  }
+  .controls select {
+    padding: 7px 10px; font: inherit; font-size: 13px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface); color: var(--ink);
+  }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
+  }
+  .vid-title { font-weight: 600; font-size: 14.5px; }
+  .vid-title a { color: inherit; text-decoration: none; }
+  .vid-title a:hover { color: var(--accent); }
+  .vid-meta { color: var(--ink-2); font-size: 12.5px; margin-top: 3px; display: flex; gap: 10px; flex-wrap: wrap; }
+  .vid-meta .dot::before { content: "·"; margin-right: 10px; color: var(--muted); }
+  .vid-row2 { display: flex; gap: 8px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+  .pill {
+    font-size: 11.5px; padding: 2px 9px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--ink-2);
+  }
+  .pill.query { color: var(--muted); }
+  button.tbtn {
+    font: inherit; font-size: 12px; padding: 3px 12px; cursor: pointer;
+    border-radius: 999px; border: 1px solid var(--accent);
+    background: none; color: var(--accent);
+  }
+  button.tbtn:hover { background: var(--accent); color: #fff; }
+  .no-t { font-size: 12px; color: var(--muted); }
+
+  .chip { display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px;
+    padding: 2px 10px 2px 8px; border-radius: 999px; border: 1px solid var(--border);
+    color: var(--ink); white-space: nowrap; }
+  .chip .sw { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+
+  /* Ledger */
+  .ledger-note { color: var(--ink-2); font-size: 13px; margin-bottom: 14px;
+    border-left: 3px solid var(--hairline); padding-left: 12px; }
+  .entry { position: relative; padding-left: 24px; }
+  .entry::before {
+    content: ""; position: absolute; left: 6px; top: 20px; bottom: -8px;
+    width: 1px; background: var(--hairline);
+  }
+  .entry:last-child::before { display: none; }
+  .entry .node {
+    position: absolute; left: 1.5px; top: 15px; width: 10px; height: 10px;
+    border-radius: 50%; border: 2px solid var(--page);
+  }
+  .entry .card { margin-bottom: 12px; }
+  .e-head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .e-date { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .e-claim { font-weight: 600; font-size: 14px; margin-top: 2px; }
+  .e-horizon { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
+  .e-note { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
+  .e-src { font-size: 12px; margin-top: 6px; }
+  .e-src a { color: var(--accent); text-decoration: none; }
+  .e-src span { color: var(--muted); }
+
+  /* Briefs */
+  .brief { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; }
+  .brief h1 { font-size: 18px; margin-bottom: 6px; }
+  .brief h2 { font-size: 15px; margin: 16px 0 6px; }
+  .brief p { margin: 8px 0; font-size: 14px; color: var(--ink-2); }
+  .brief p strong { color: var(--ink); }
+  .brief ul { margin: 8px 0 8px 20px; font-size: 14px; color: var(--ink-2); }
+  .brief li { margin: 4px 0; }
+
+  /* Transcript overlay */
+  .overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.55);
+    display: none; align-items: center; justify-content: center; padding: 20px;
+    z-index: 10;
+  }
+  .overlay.open { display: flex; }
+  .sheet {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    width: 100%; max-width: 720px; max-height: 85vh; display: flex; flex-direction: column;
+  }
+  .sheet-head { display: flex; justify-content: space-between; gap: 12px;
+    padding: 14px 18px; border-bottom: 1px solid var(--hairline); align-items: start; }
+  .sheet-head .t { font-weight: 600; font-size: 14px; }
+  .sheet-head button { font: inherit; background: none; border: none; cursor: pointer;
+    color: var(--muted); font-size: 20px; line-height: 1; }
+  .sheet-body { overflow-y: auto; padding: 14px 18px; white-space: pre-wrap;
+    font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+  .empty { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
+  .err { color: var(--critical); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Narrative Radar</h1>
+    <div class="sub">Tracking how ideas spread — and holding predictions to their own clock.</div>
+  </header>
+
+  <div class="topicbar" id="topicbar"></div>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-view="corpus">Corpus<span class="count" id="c-corpus"></span></button>
+    <button class="tab" data-view="ledger">Prediction ledger<span class="count" id="c-ledger"></span></button>
+    <button class="tab" data-view="briefs">Briefs<span class="count" id="c-briefs"></span></button>
+  </div>
+
+  <section id="view-corpus">
+    <div class="stats" id="stats"></div>
+    <div class="controls">
+      <input type="search" id="search" placeholder="Search title or channel…">
+      <select id="sort">
+        <option value="new">Newest first</option>
+        <option value="views">Most viewed</option>
+      </select>
+      <select id="tfilter">
+        <option value="all">All videos</option>
+        <option value="yes">Has transcript</option>
+        <option value="no">No transcript</option>
+      </select>
+    </div>
+    <div id="videos"></div>
+  </section>
+
+  <section id="view-ledger" hidden>
+    <div class="stats" id="ledger-stats"></div>
+    <div class="ledger-note" id="ledger-note"></div>
+    <div id="entries"></div>
+  </section>
+
+  <section id="view-briefs" hidden>
+    <div id="briefs"></div>
+  </section>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="sheet">
+    <div class="sheet-head">
+      <div class="t" id="sheet-title"></div>
+      <button id="sheet-close" aria-label="Close">×</button>
+    </div>
+    <div class="sheet-body" id="sheet-body"></div>
+  </div>
+</div>
+
+<script>
+const STATUS = {
+  PENDING:   { color: "var(--muted)",    label: "Pending" },
+  SUPPORTED: { color: "var(--good)",     label: "Supported" },
+  REFUTED:   { color: "var(--critical)", label: "Refuted" },
+  UPDATED:   { color: "var(--warning)",  label: "Updated (goalpost moved)" },
+  AMBIGUOUS: { color: "var(--serious)",  label: "Ambiguous" },
+};
+
+let watchlist = null, topicId = null;
+const cache = {};   // topicId -> {videos, predictions}
+let briefsIndex = null;
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => (s ?? "").toString()
+  .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
+
+async function getJSON(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(url + " → " + r.status);
+  return r.json();
+}
+async function getText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(url + " → " + r.status);
+  return r.text();
+}
+
+function chip(status) {
+  const s = STATUS[status] || { color: "var(--muted)", label: status };
+  return `<span class="chip"><span class="sw" style="background:${s.color}"></span>${esc(s.label)}</span>`;
+}
+
+function viewsNum(v) {
+  const m = (v || "").replace(/,/g, "").match(/\d+/);
+  return m ? parseInt(m[0], 10) : 0;
+}
+
+/* ---------- corpus view ---------- */
+function renderCorpus() {
+  const data = cache[topicId];
+  const vids = data?.videos?.videos || [];
+  const withT = vids.filter(v => v.transcript).length;
+  $("c-corpus").textContent = vids.length ? `(${vids.length})` : "";
+  $("stats").innerHTML = `
+    <div class="stat"><div class="v">${vids.length}</div><div class="l">videos collected</div></div>
+    <div class="stat"><div class="v">${withT}</div><div class="l">transcripts on file</div></div>
+    <div class="stat"><div class="v">${vids.filter(v => v.verdict === "UNREVIEWED").length}</div><div class="l">awaiting review</div></div>`;
+
+  const q = $("search").value.trim().toLowerCase();
+  const tf = $("tfilter").value;
+  let list = vids.filter(v =>
+    (!q || (v.title + " " + v.channel).toLowerCase().includes(q)) &&
+    (tf === "all" || (tf === "yes") === !!v.transcript));
+  if ($("sort").value === "views") list = [...list].sort((a,b) => viewsNum(b.views) - viewsNum(a.views));
+  else list = [...list].sort((a,b) => (a.age_days ?? 9e9) - (b.age_days ?? 9e9));
+
+  $("videos").innerHTML = list.length ? list.map(v => `
+    <div class="card">
+      <div class="vid-title"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a></div>
+      <div class="vid-meta">
+        <span>${esc(v.channel)}</span>
+        <span class="dot">${esc(v.published || "?")}</span>
+        <span class="dot">${esc(v.views || "? views")}</span>
+        <span class="dot">${esc(v.length || "")}</span>
+      </div>
+      <div class="vid-row2">
+        ${v.transcript
+          ? `<button class="tbtn" data-t="${esc(v.transcript)}" data-title="${esc(v.title)}">Read transcript</button>`
+          : `<span class="no-t">no transcript yet</span>`}
+        <span class="pill query">found via “${esc(v.query)}”</span>
+      </div>
+    </div>`).join("") : `<div class="empty">No videos collected for this topic yet.</div>`;
+}
+
+/* ---------- ledger view ---------- */
+function renderLedger() {
+  const p = cache[topicId]?.predictions;
+  const entries = p?.entries || [];
+  $("c-ledger").textContent = entries.length ? `(${entries.length})` : "";
+  if (!entries.length) {
+    $("ledger-stats").innerHTML = ""; $("ledger-note").textContent = "";
+    $("entries").innerHTML = `<div class="empty">No prediction ledger for this topic yet.</div>`;
+    return;
+  }
+  const counts = {};
+  entries.forEach(e => counts[e.status] = (counts[e.status] || 0) + 1);
+  $("ledger-stats").innerHTML = Object.entries(STATUS)
+    .filter(([k]) => counts[k])
+    .map(([k, s]) => `<div class="stat"><div class="v">${counts[k]}</div>
+      <div class="l"><span class="sw" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${s.color};margin-right:4px"></span>${esc(s.label)}</div></div>`)
+    .join("");
+  $("ledger-note").textContent =
+    `Predictor on file: ${p.predictor}. ` + (p.schema?.note || "");
+
+  const sorted = [...entries].sort((a,b) => (a.date_made || "").localeCompare(b.date_made || ""));
+  $("entries").innerHTML = sorted.map(e => {
+    const s = STATUS[e.status] || { color: "var(--muted)" };
+    const src = e.source && e.source.startsWith("http")
+      ? `<a href="${esc(e.source)}" target="_blank" rel="noopener">source ↗</a>`
+      : `<span>source: ${esc(e.source || "—")}</span>`;
+    return `
+    <div class="entry">
+      <div class="node" style="background:${s.color}"></div>
+      <div class="card">
+        <div class="e-head"><span class="e-date">${esc(e.date_made)}</span>${chip(e.status)}</div>
+        <div class="e-claim">${esc(e.claim)}</div>
+        <div class="e-horizon">Horizon: ${esc(e.horizon || "unstated")}</div>
+        ${e.outcome_note ? `<div class="e-note">${esc(e.outcome_note)}</div>` : ""}
+        <div class="e-src">${src}</div>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* ---------- briefs view ---------- */
+function mdToHtml(md) {
+  const lines = md.split("\n");
+  let html = "", inList = false;
+  const inline = (s) => esc(s)
+    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g, "<em>$1</em>");
+  for (const line of lines) {
+    if (/^\s*[-*] /.test(line)) {
+      if (!inList) { html += "<ul>"; inList = true; }
+      html += "<li>" + inline(line.replace(/^\s*[-*] /, "")) + "</li>";
+      continue;
+    }
+    if (inList) { html += "</ul>"; inList = false; }
+    if (/^## /.test(line)) html += "<h2>" + inline(line.slice(3)) + "</h2>";
+    else if (/^# /.test(line)) html += "<h1>" + inline(line.slice(2)) + "</h1>";
+    else if (line.trim()) html += "<p>" + inline(line) + "</p>";
+  }
+  if (inList) html += "</ul>";
+  return html;
+}
+
+async function renderBriefs() {
+  const items = (briefsIndex || []).filter(b => !b.topic || b.topic === topicId);
+  $("c-briefs").textContent = items.length ? `(${items.length})` : "";
+  if (!items.length) {
+    $("briefs").innerHTML = `<div class="empty">No briefs for this topic yet.</div>`;
+    return;
+  }
+  const parts = await Promise.all(items.map(async b => {
+    try { return `<div class="brief">${mdToHtml(await getText("briefs/" + b.file))}</div>`; }
+    catch (e) { return `<div class="brief err">Couldn't load ${esc(b.file)}</div>`; }
+  }));
+  $("briefs").innerHTML = parts.join("");
+}
+
+/* ---------- shell ---------- */
+function renderTopics() {
+  $("topicbar").innerHTML = watchlist.topics.map(t => `
+    <button class="topic ${t.id === topicId ? "active" : ""}" data-id="${esc(t.id)}">
+      ${esc(t.name.split("—")[0].trim())}<span class="q">${t.status === "active" ? "" : esc(t.status)}</span>
+    </button>`).join("");
+}
+
+async function loadTopic(id) {
+  topicId = id;
+  renderTopics();
+  if (!cache[id]) {
+    const entry = { videos: null, predictions: null };
+    try { entry.videos = await getJSON(`corpus/${id}/videos.json`); } catch (e) {}
+    try { entry.predictions = await getJSON(`corpus/${id}/predictions.json`); } catch (e) {}
+    cache[id] = entry;
+  }
+  renderCorpus(); renderLedger(); renderBriefs();
+}
+
+document.addEventListener("click", async (ev) => {
+  const t = ev.target.closest(".topic");
+  if (t) return loadTopic(t.dataset.id);
+  const tab = ev.target.closest(".tab");
+  if (tab) {
+    document.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === tab));
+    for (const v of ["corpus", "ledger", "briefs"])
+      $("view-" + v).hidden = tab.dataset.view !== v;
+    return;
+  }
+  const tb = ev.target.closest(".tbtn");
+  if (tb) {
+    $("sheet-title").textContent = tb.dataset.title;
+    $("sheet-body").textContent = "Loading…";
+    $("overlay").classList.add("open");
+    try { $("sheet-body").textContent = await getText(tb.dataset.t); }
+    catch (e) {
+      $("sheet-body").textContent =
+        "This transcript is in the private local corpus — it isn't published on the public site.";
+    }
+  }
+});
+$("sheet-close").addEventListener("click", () => $("overlay").classList.remove("open"));
+$("overlay").addEventListener("click", (e) => { if (e.target === $("overlay")) $("overlay").classList.remove("open"); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay").classList.remove("open"); });
+["search", "sort", "tfilter"].forEach(id => $(id).addEventListener("input", renderCorpus));
+
+(async function init() {
+  try {
+    watchlist = await getJSON("watchlist.json");
+    try { briefsIndex = await getJSON("briefs/index.json"); } catch (e) { briefsIndex = []; }
+    const first = watchlist.topics.find(t => t.status === "active") || watchlist.topics[0];
+    await loadTopic(first.id);
+  } catch (e) {
+    document.querySelector(".wrap").insertAdjacentHTML("beforeend",
+      `<div class="err">Failed to load data: ${esc(e.message)}</div>`);
+  }
+})();
+</script>
+</body>
+</html>

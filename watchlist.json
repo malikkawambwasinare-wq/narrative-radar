@@ -1,0 +1,38 @@
+{
+  "topics": [
+    {
+      "id": "collapse-audit",
+      "name": "Collapse Audit — economic & AI doom predictions",
+      "status": "active",
+      "started": "2026-07-30",
+      "trigger": "Diary Of A CEO — Ray Dalio 'The 80 Year Collapse Is Here' (135K views in first 3 hours)",
+      "queries": [
+        "ray dalio collapse",
+        "80 year cycle economy",
+        "billionaire warning AI economy",
+        "debt crisis prediction",
+        "dollar collapse prediction",
+        "AI bubble crash warning"
+      ],
+      "watched_predictors": [
+        "Ray Dalio",
+        "Diary Of A CEO guests making macro predictions"
+      ],
+      "notes": "Goal: audit trail of predictions. Every forecast logged with predictor, date made, horizon, and living status: PENDING / SUPPORTED / REFUTED / UPDATED. Track goalpost-moves explicitly."
+    },
+    {
+      "id": "loop-engineering",
+      "name": "Loops / agentic engineering / agent workflows",
+      "status": "queued",
+      "started": null,
+      "queries": [
+        "loop engineering claude code",
+        "coding loops AI agents",
+        "agentic engineering workflow",
+        "agent workflows"
+      ],
+      "watched_predictors": [],
+      "notes": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave."
+    }
+  ]
+}

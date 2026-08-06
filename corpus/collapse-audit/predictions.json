@@ -1,0 +1,123 @@
+{
+  "schema": {
+    "statuses": {
+      "PENDING": "horizon not yet reached — cannot be judged",
+      "SUPPORTED": "events inside the stated horizon match the prediction's mechanism",
+      "REFUTED": "horizon passed without the predicted event",
+      "UPDATED": "predictor restated the claim with a moved horizon or changed mechanism (goalpost-move, tracked explicitly)",
+      "AMBIGUOUS": "something resembling the outcome occurred, but not via the predicted mechanism"
+    },
+    "note": "An audit trail is not mockery. Directional risk warnings have value; the ledger's job is to record what was claimed, when, with what horizon, and what actually happened — the accountability the algorithm never provides."
+  },
+  "predictor": "Ray Dalio",
+  "entries": [
+    {
+      "id": "dalio-2015-1937",
+      "date_made": "2015-03",
+      "claim": "The Fed risks repeating 1937 — tightening into a downturn; economy looks like 1937.",
+      "horizon": "~1-2 years",
+      "status": "REFUTED",
+      "outcome_note": "No recession followed; markets went on to record highs.",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "id": "dalio-2016-supercycle",
+      "date_made": "2016-01",
+      "claim": "The 75-year debt supercycle is coming to an end.",
+      "horizon": "unstated (vague)",
+      "status": "UPDATED",
+      "outcome_note": "No end arrived on any near horizon; framework later restated as the 'Big Debt Cycle' with numbered phases. Vague horizon makes strict refutation impossible — that vagueness is itself an audit finding.",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "id": "dalio-2018-downturn",
+      "date_made": "2018-09",
+      "claim": "Economy looks like 1937; downturn coming in about two years.",
+      "horizon": "~2020",
+      "status": "AMBIGUOUS",
+      "outcome_note": "A recession did occur in 2020 — but caused by the COVID pandemic, not the predicted debt mechanism. Timing credit without mechanism credit.",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "id": "dalio-2019-recession-risk",
+      "date_made": "2019-01",
+      "claim": "Significant recession risk ahead.",
+      "horizon": "~1-2 years",
+      "status": "AMBIGUOUS",
+      "outcome_note": "Same COVID caveat as the 2018 entry.",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "id": "dalio-2020-cash-is-trash",
+      "date_made": "2020-01",
+      "claim": "'Cash is trash' — get out of cash (Davos).",
+      "horizon": "near-term",
+      "status": "AMBIGUOUS",
+      "outcome_note": "Widely reported at the time; two months later markets crashed and cash briefly reigned, then stimulus-era inflation did erode cash. NEEDS_VERIFICATION: primary source not yet captured in corpus.",
+      "source": "unverified - to capture"
+    },
+    {
+      "id": "dalio-2022-perfect-storm",
+      "date_made": "2022-10",
+      "claim": "A 'perfect storm' is forming for the economy.",
+      "horizon": "~1-2 years",
+      "status": "REFUTED",
+      "outcome_note": "2023-2024 delivered falling inflation, no crisis, and a major equity rally.",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "id": "dalio-2023-debt-crisis",
+      "date_made": "2023-09",
+      "claim": "US debt crisis coming.",
+      "horizon": "unstated (vague)",
+      "status": "UPDATED",
+      "outcome_note": "Restated in 2025 with a new ~3-year horizon (see dalio-2025-heart-attack). Classic rolling horizon.",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "id": "dalio-2025-heart-attack",
+      "date_made": "2025-07",
+      "claim": "US debt crisis like an 'economic heart attack' — convergence could trigger it; US in 'Phase 5' of the Big Debt Cycle.",
+      "horizon": "by ~2026-2028",
+      "status": "PENDING",
+      "outcome_note": "Watch: AI build-out needs ~$3T of largely debt-financed capex by 2030 — his mechanism now runs THROUGH the AI boom.",
+      "source": "https://www.fool.com/investing/2026/02/15/stock-market-crash-in-2026-billionaire-ray-dalio/"
+    },
+    {
+      "id": "dalio-2025-doac-dark-times",
+      "date_made": "2025-09",
+      "claim": "US and UK entering the dangerous phase of the 80-year big cycle; 'very, very dark times' ahead. Five forces: debt, internal conflict, geopolitical conflict, natural disasters, technology.",
+      "horizon": "unstated (vague)",
+      "status": "PENDING",
+      "outcome_note": "DOAC interview, Sept 2025. Vague horizon flagged. This is the episode today's video appears to repackage.",
+      "source": "https://singjupost.com/ray-dalio-were-heading-into-very-very-dark-times-doac-podcast-transcript/"
+    },
+    {
+      "id": "dalio-2025-debt-3yr",
+      "date_made": "2025-09",
+      "claim": "US debt crisis within ~3 years.",
+      "horizon": "by ~2028",
+      "status": "PENDING",
+      "outcome_note": "First Dalio debt-crisis claim in the ledger with a countable clock. Judgment date: 2028-09.",
+      "source": "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/"
+    },
+    {
+      "id": "dalio-2026-capital-war",
+      "date_made": "2026-02",
+      "claim": "World is 'on the brink' of a capital war — money weaponized via embargoes, market access, debt leverage; gold as hedge.",
+      "horizon": "near-term",
+      "status": "PENDING",
+      "outcome_note": "New mechanism added to the stack (capital war), alongside debt and AI-capex.",
+      "source": "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html"
+    },
+    {
+      "id": "dalio-2026-doac-80yr",
+      "date_made": "2026-07-30",
+      "claim": "'The 80 Year Collapse Is Here' / 'AI Will Lose You Money... You Should Be Happy' — new DOAC video, claims to be extracted from transcript.",
+      "horizon": "to determine from transcript",
+      "status": "PENDING",
+      "outcome_note": "The trigger video (135K views in 3h). AUDIT FLAG: appears to repackage the Sept 2025 DOAC interview themes with an AI-angle title; DOAC has run at least two prior billionaire-doom episodes ('I'm Selling, The Crash Is Already Here'). Transcript pull needed to determine: new claims, or new thumbnail on old claims?",
+      "source": "screenshot 2026-07-30; transcript to capture"
+    }
+  ]
+}
