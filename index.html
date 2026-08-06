@@ -108,6 +108,31 @@
     color: var(--ink); white-space: nowrap; }
   .chip .sw { width: 8px; height: 8px; border-radius: 50%; flex: none; }
 
+  /* Narrative card */
+  .ncard {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 12px; padding: 16px 18px; margin-bottom: 18px;
+  }
+  .ncard .kicker { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); }
+  .ncard h2 { font-size: 18px; margin: 2px 0 6px; }
+  .ncard .claim { font-size: 14px; color: var(--ink-2); }
+  .nfacts { display: flex; gap: 24px; flex-wrap: wrap; margin: 14px 0 4px; }
+  .nfact .v { font-size: 17px; font-weight: 650; }
+  .nfact .l { font-size: 12px; color: var(--muted); }
+  .mutations { margin-top: 12px; font-size: 13px; color: var(--ink-2); }
+  .mutations .m { margin: 3px 0; }
+  .mutations .d { color: var(--muted); font-variant-numeric: tabular-nums;
+    display: inline-block; min-width: 64px; }
+  .trigger { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--hairline);
+    font-size: 13px; color: var(--ink-2); }
+  .trigger a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .vbreak { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .v-note { font-size: 12.5px; color: var(--muted); margin-top: 6px; }
+  details.nmore summary { cursor: pointer; font-size: 13px; color: var(--accent);
+    margin-top: 10px; list-style: none; }
+  details.nmore summary::-webkit-details-marker { display: none; }
+
   /* Ledger */
   .ledger-note { color: var(--ink-2); font-size: 13px; margin-bottom: 14px;
     border-left: 3px solid var(--hairline); padding-left: 12px; }
@@ -180,12 +205,20 @@
   </div>
 
   <section id="view-corpus">
+    <div id="ncard"></div>
     <div class="stats" id="stats"></div>
     <div class="controls">
       <input type="search" id="search" placeholder="Search title or channel…">
       <select id="sort">
         <option value="new">Newest first</option>
         <option value="views">Most viewed</option>
+      </select>
+      <select id="vfilter">
+        <option value="all">All verdicts</option>
+        <option value="ORIGINAL">Original</option>
+        <option value="DERIVATIVE">Derivative</option>
+        <option value="RECYCLED">Recycled</option>
+        <option value="CLICKBAIT">Clickbait</option>
       </select>
       <select id="tfilter">
         <option value="all">All videos</option>
@@ -225,6 +258,24 @@ const STATUS = {
   UPDATED:   { color: "var(--warning)",  label: "Updated (goalpost moved)" },
   AMBIGUOUS: { color: "var(--serious)",  label: "Ambiguous" },
 };
+const VERDICTS = {
+  ORIGINAL:   { color: "var(--good)",     label: "Original" },
+  DERIVATIVE: { color: "var(--accent)",   label: "Derivative" },
+  RECYCLED:   { color: "var(--warning)",  label: "Recycled" },
+  CLICKBAIT:  { color: "var(--critical)", label: "Clickbait" },
+  UNREVIEWED: { color: "var(--muted)",    label: "Unreviewed" },
+};
+function vchip(verdict) {
+  const v = VERDICTS[verdict] || VERDICTS.UNREVIEWED;
+  return `<span class="chip"><span class="sw" style="background:${v.color}"></span>${esc(v.label)}</span>`;
+}
+function narrativeAge(born) {
+  const [y, m] = born.split("-").map(Number);
+  const now = new Date();
+  const months = (now.getFullYear() - y) * 12 + (now.getMonth() + 1 - (m || 1));
+  return months >= 24 ? `${Math.floor(months / 12)} years old`
+       : months >= 2 ? `${months} months old` : "brand new";
+}
 
 let watchlist = null, topicId = null;
 const cache = {};   // topicId -> {videos, predictions}
@@ -256,11 +307,53 @@ function viewsNum(v) {
 }
 
 /* ---------- corpus view ---------- */
+function renderNarrativeCard() {
+  const n = cache[topicId]?.narrative;
+  const vids = cache[topicId]?.videos?.videos || [];
+  const preds = cache[topicId]?.predictions?.entries || [];
+  if (!n) { $("ncard").innerHTML = ""; return; }
+
+  const score = {};
+  preds.forEach(e => score[e.status] = (score[e.status] || 0) + 1);
+  const scoreline = Object.entries(STATUS).filter(([k]) => score[k])
+    .map(([k, s]) => `<span class="chip"><span class="sw" style="background:${s.color}"></span>${score[k]} ${esc(s.label.split(" ")[0].toLowerCase())}</span>`)
+    .join("");
+  const vcount = {};
+  vids.forEach(v => vcount[v.verdict] = (vcount[v.verdict] || 0) + 1);
+  const vbreak = Object.entries(VERDICTS).filter(([k]) => vcount[k])
+    .map(([k, s]) => `<span class="chip"><span class="sw" style="background:${s.color}"></span>${vcount[k]} ${esc(s.label.toLowerCase())}</span>`)
+    .join("");
+  const trig = n.trigger;
+
+  $("ncard").innerHTML = `
+  <div class="ncard">
+    <div class="kicker">The narrative</div>
+    <h2>${esc(n.name)}</h2>
+    <div class="claim">${esc(n.claim)}</div>
+    <div class="nfacts">
+      <div class="nfact"><div class="v">${esc(narrativeAge(n.born))}</div><div class="l">born ${esc(n.born)} — ${esc(n.born_note || "")}</div></div>
+      <div class="nfact"><div class="v">${n.mutations?.length || 0} mutations</div><div class="l">mechanism changes since birth</div></div>
+      <div class="nfact"><div class="v">${esc(n.predictor)}</div><div class="l">predictor on file</div></div>
+    </div>
+    <div class="vbreak">${scoreline}</div>
+    ${vbreak ? `<div class="vbreak">${vbreak}</div>` : ""}
+    <details class="nmore">
+      <summary>How the mechanism has mutated ▾</summary>
+      <div class="mutations">${(n.mutations || []).map(m =>
+        `<div class="m"><span class="d">${esc(m.date)}</span> ${esc(m.mechanism)}</div>`).join("")}</div>
+    </details>
+    ${trig ? `<div class="trigger">Trigger for this collection:
+      <a href="https://www.youtube.com/watch?v=${esc(trig.videoId)}" target="_blank" rel="noopener">${esc(trig.title)}</a>
+      — ${esc(trig.channel)}<div class="v-note">${esc(trig.note)}</div></div>` : ""}
+  </div>`;
+}
+
 function renderCorpus() {
   const data = cache[topicId];
   const vids = data?.videos?.videos || [];
   const withT = vids.filter(v => v.transcript).length;
   $("c-corpus").textContent = vids.length ? `(${vids.length})` : "";
+  renderNarrativeCard();
   $("stats").innerHTML = `
     <div class="stat"><div class="v">${vids.length}</div><div class="l">videos collected</div></div>
     <div class="stat"><div class="v">${withT}</div><div class="l">transcripts on file</div></div>
@@ -268,9 +361,11 @@ function renderCorpus() {
 
   const q = $("search").value.trim().toLowerCase();
   const tf = $("tfilter").value;
+  const vf = $("vfilter").value;
   let list = vids.filter(v =>
     (!q || (v.title + " " + v.channel).toLowerCase().includes(q)) &&
-    (tf === "all" || (tf === "yes") === !!v.transcript));
+    (tf === "all" || (tf === "yes") === !!v.transcript) &&
+    (vf === "all" || v.verdict === vf));
   if ($("sort").value === "views") list = [...list].sort((a,b) => viewsNum(b.views) - viewsNum(a.views));
   else list = [...list].sort((a,b) => (a.age_days ?? 9e9) - (b.age_days ?? 9e9));
 
@@ -284,11 +379,13 @@ function renderCorpus() {
         <span class="dot">${esc(v.length || "")}</span>
       </div>
       <div class="vid-row2">
+        ${vchip(v.verdict)}
         ${v.transcript
           ? `<button class="tbtn" data-t="${esc(v.transcript)}" data-title="${esc(v.title)}">Read transcript</button>`
           : `<span class="no-t">no transcript yet</span>`}
         <span class="pill query">found via “${esc(v.query)}”</span>
       </div>
+      ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
     </div>`).join("") : `<div class="empty">No videos collected for this topic yet.</div>`;
 }
 
@@ -380,9 +477,10 @@ async function loadTopic(id) {
   topicId = id;
   renderTopics();
   if (!cache[id]) {
-    const entry = { videos: null, predictions: null };
+    const entry = { videos: null, predictions: null, narrative: null };
     try { entry.videos = await getJSON(`corpus/${id}/videos.json`); } catch (e) {}
     try { entry.predictions = await getJSON(`corpus/${id}/predictions.json`); } catch (e) {}
+    try { entry.narrative = await getJSON(`corpus/${id}/narrative.json`); } catch (e) {}
     cache[id] = entry;
   }
   renderCorpus(); renderLedger(); renderBriefs();
@@ -413,7 +511,7 @@ document.addEventListener("click", async (ev) => {
 $("sheet-close").addEventListener("click", () => $("overlay").classList.remove("open"));
 $("overlay").addEventListener("click", (e) => { if (e.target === $("overlay")) $("overlay").classList.remove("open"); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay").classList.remove("open"); });
-["search", "sort", "tfilter"].forEach(id => $(id).addEventListener("input", renderCorpus));
+["search", "sort", "tfilter", "vfilter"].forEach(id => $(id).addEventListener("input", renderCorpus));
 
 (async function init() {
   try {

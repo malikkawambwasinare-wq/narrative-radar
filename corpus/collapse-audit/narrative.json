@@ -1,0 +1,21 @@
+{
+  "name": "The 80-Year Collapse",
+  "claim": "A debt-driven collapse of the US economy is imminent — the '80-year big cycle' is ending. The predicted mechanism rotates with the news cycle; since mid-2026 it runs through the AI boom (debt-financed AI capex as the trigger).",
+  "predictor": "Ray Dalio",
+  "born": "2015-03",
+  "born_note": "Earliest ledger entry: Dalio's 'Fed risks repeating 1937' warning.",
+  "trigger": {
+    "videoId": "Bu0xNDLNORU",
+    "title": "Ray Dalio: I Predicted The 2008 CRASH, I Know What Comes Next!",
+    "channel": "The Diary Of A CEO",
+    "note": "135K views in its first 3 hours on 30 Jul 2026; 3.9M within a week. Published under a rotating title — first seen as 'Billionaires Warning: AI Will Lose You Money… You Should Be Happy' with 'The 80 Year Collapse Is Here' thumbnail. Audit verdict: a genuinely new interview, NOT a re-cut of the Sept 2025 DOAC episode — but its clips ecosystem invents figures around it (a '60% crash' title whose number never appears in the interview)."
+  },
+  "mutations": [
+    { "date": "2015", "mechanism": "Fed repeating 1937 — tightening into a downturn" },
+    { "date": "2016", "mechanism": "the 75-year debt supercycle is ending" },
+    { "date": "2021–22", "mechanism": "internal conflict + empire decline" },
+    { "date": "2025", "mechanism": "'Phase 5' of the Big Debt Cycle — an 'economic heart attack' within ~3 years" },
+    { "date": "Feb 2026", "mechanism": "capital war — money weaponized; gold as the hedge" },
+    { "date": "Jul 2026", "mechanism": "AI capex as the crisis vector" }
+  ]
+}

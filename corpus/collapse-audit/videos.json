@@ -12,7 +12,8 @@
       "age_days": 0.04,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/UNYpubnQDC8.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "ORIGINAL",
+      "verdict_note": "Fresh Dalio interview clip with new 2026 material (ongoing US-Iran war, midterms, US 'won't show up in Asia'), not a re-cut of the Sept 2025 episode."
     },
     {
       "videoId": "cXI2knjwQNc",
@@ -26,7 +27,8 @@
       "age_days": 0.17,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/cXI2knjwQNc.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "Third-party re-cut of the DOAC Dalio-Bartlett interview (Bartlett's questions audible); standard 80-year-cycle and AI-jobs talking points, no new claims."
     },
     {
       "videoId": "s8omwT8FkSE",
@@ -40,7 +42,8 @@
       "age_days": 0.17,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/s8omwT8FkSE.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Meet Kevin's own analysis of fresh Fed rate-hike news, mapping 1999-2000 Greenspan hike cycle onto AI capex funding costs (CoreWeave, Google bonds)."
     },
     {
       "videoId": "qbnuJFRcvQE",
@@ -54,7 +57,8 @@
       "age_days": 0.25,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/qbnuJFRcvQE.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "ORIGINAL",
+      "verdict_note": "New 2h15m Bilyeu interview; Steve Keen presents his own Minsky/private-debt-chart analysis and fresh AI-bust claims, not Dalio narrative beats."
     },
     {
       "videoId": "6yir9VA3bKQ",
@@ -68,7 +72,8 @@
       "age_days": 0.79,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/6yir9VA3bKQ.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "CLICKBAIT",
+      "verdict_note": "Title promises 'AI Stocks Crash Warning' but content is bullish stock-news roundup and portfolio talk; creator says 'I'm not bearish on AI', Burry warning is a brief hook."
     },
     {
       "videoId": "gt3aH2gH6T0",
@@ -82,7 +87,8 @@
       "age_days": 1,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/gt3aH2gH6T0.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "Same channel, same 29:39 runtime, different re-edit of the same DOAC Dalio interview (includes Bartlett's subscribe pitch), retitled with AI-bubble hook."
     },
     {
       "videoId": "pYFBf15XunU",
@@ -96,7 +102,8 @@
       "age_days": 1,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/pYFBf15XunU.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "AI-narrated rehash of Dalio's known debt-cycle talking points pitched at silver holders; no Dalio footage, no new claims; title implies Dalio-endorsed silver call he never made."
     },
     {
       "videoId": "jmmaBcRduwQ",
@@ -110,7 +117,8 @@
       "age_days": 1,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/jmmaBcRduwQ.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "TYT news segment plays recent Dalio interview clips but hosts add their own analysis (loosened collateral rules, Fed out of bullets, political-rage consequences)."
     },
     {
       "videoId": "1BOCO-FcRYY",
@@ -124,7 +132,8 @@
       "age_days": 1,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/1BOCO-FcRYY.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "ORIGINAL",
+      "verdict_note": "Full new Mark Thornton interview applying the Austrian skyscraper-curse framework to the AI boom; novel angle, and he explicitly refuses to give exact timing."
     },
     {
       "videoId": "oc9pM5MK4fY",
@@ -138,7 +147,8 @@
       "age_days": 1,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/oc9pM5MK4fY.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "CLICKBAIT",
+      "verdict_note": "Title implies dollar collapse underway; AI-narrated generic explainer that itself concludes there is no evidence of a sudden collapse."
     },
     {
       "videoId": "J6vOuZ4HvEQ",
@@ -152,7 +162,8 @@
       "age_days": 1,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/J6vOuZ4HvEQ.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "CLICKBAIT",
+      "verdict_note": "Mostly trading-course promo and gold/Nike trade recaps; Dalio's 80% quote and Bezos's $4B sale are brief hooks, and host admits the title made viewers click."
     },
     {
       "videoId": "AgTk42rH4n8",
@@ -166,7 +177,8 @@
       "age_days": 2,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/AgTk42rH4n8.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "ORIGINAL",
+      "verdict_note": "New long-form Palisades interview; Armstrong states his own computer-model forecasts (2032 collapse, gold targets, Taiwan) — primary source, new material."
     },
     {
       "videoId": "e5jgTNJdRcE",
@@ -180,7 +192,8 @@
       "age_days": 2,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/e5jgTNJdRcE.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Reaction video: JJ plays a ProfG Markets clip on the KOSPI leveraged-ETF crash and adds his own commentary on US contagion risk."
     },
     {
       "videoId": "HvgjGiNm5Rk",
@@ -194,7 +207,8 @@
       "age_days": 3,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/HvgjGiNm5Rk.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Own data analysis (BEA capex ~50% of GDP growth, PE history, 1999/1929 comparisons) layered on Meta excess-compute and Google cash-flow news."
     },
     {
       "videoId": "0WMfXrEf03c",
@@ -208,7 +222,8 @@
       "age_days": 5,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/0WMfXrEf03c.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "DOAC Clips re-cut of the full Dalio interview (segments match Bu0xNDLNORU verbatim); the title's 60% crash figure never appears in the content — clickbait number."
     },
     {
       "videoId": "faiJCn20gv0",
@@ -222,7 +237,8 @@
       "age_days": 5,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/faiJCn20gv0.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Scripted explainer of current SoftBank/Nikkei/JGB news with its own yen-carry-trade repatriation thesis as the AI-bubble pin; commentary, no dated forecasts."
     },
     {
       "videoId": "HXlcMbxzz0U",
@@ -236,7 +252,8 @@
       "age_days": 5,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/HXlcMbxzz0U.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Substantive explainer on off-balance-sheet AI data-center debt (SPVs, Beignet/Sopapilla bonds) synthesized from Moody's, Morgan Stanley, and Quinn Emanuel reporting; own analysis, third-party data."
     },
     {
       "videoId": "ufdYd1m6txw",
@@ -250,7 +267,8 @@
       "age_days": 6,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/ufdYd1m6txw.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "Official DOAC clip re-cut of the full Dalio episode (career advice, UK debt-cycle riff); the title quote 'no way to fix this' never appears — clickbait framing."
     },
     {
       "videoId": "Bu0xNDLNORU",
@@ -264,7 +282,8 @@
       "age_days": 7,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/Bu0xNDLNORU.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "ORIGINAL",
+      "verdict_note": "New full DOAC interview with Dalio speaking fresh material: 'classic signs' of an AI bubble, stock-supply mechanics, gold allocation, UK as cautionary tale."
     },
     {
       "videoId": "JrASb2EeBiY",
@@ -278,7 +297,8 @@
       "age_days": 7,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/JrASb2EeBiY.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "ORIGINAL",
+      "verdict_note": "Unedited Senate floor footage of Sanders' new AI speech relayed by a news channel; primary source making new claims, no re-cutting or added spin."
     },
     {
       "videoId": "EOLItZfWFOA",
@@ -292,7 +312,8 @@
       "age_days": 7,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/EOLItZfWFOA.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "CLICKBAIT",
+      "verdict_note": "No Buffett 'final warning' exists: AI-narrated generic Buffett-indicator/CAPE explainer that itself admits Buffett isn't panicking and the indicator can't time crashes."
     },
     {
       "videoId": "2DPA-AtFQQE",
@@ -306,7 +327,8 @@
       "age_days": 7,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/2DPA-AtFQQE.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Long-form commentary aggregating Kospi surge, Norway fund reallocation, Google negative cash flow, and layoffs, reacting to others' clips with its own framing."
     },
     {
       "videoId": "8N3kDktWJag",
@@ -320,7 +342,8 @@
       "age_days": 9,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/8N3kDktWJag.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "ITM Trading presenter applies the four-stage bubble framework to AI with own data points (margin debt up ~150% since Q4 2023), ending in a gold/silver sales pitch."
     },
     {
       "videoId": "vivFgXv2sCg",
@@ -334,7 +357,8 @@
       "age_days": 10,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/vivFgXv2sCg.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "Repackaged Dalio interview clips (Iran-war references date footage to mid-2025) rehashing known Big Cycle beats under a fresh doom title on an aggregator channel."
     },
     {
       "videoId": "OxE2WncCBd4",
@@ -348,7 +372,8 @@
       "age_days": 10,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/OxE2WncCBd4.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Graham Stephan's own analysis of the Korean KOSPI crash and US parallels, concluding the US 'probably not' next; title overstates ('AI Bubble Just Collapsed')."
     },
     {
       "videoId": "NEc8O_dK-NU",
@@ -362,7 +387,8 @@
       "age_days": 10,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/NEc8O_dK-NU.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Genuine own analysis — hyperscaler bond spreads at junk-like levels, Chinese open-source pressure, balanced bull/bear checklist; no dated predictions."
     },
     {
       "videoId": "2QbG7uwtZb0",
@@ -376,7 +402,8 @@
       "age_days": 11,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/2QbG7uwtZb0.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "AI-narrated explainer summarizing Musk's known AI warnings but adding its own critique of his conflict of interest and self-policing proposal; not about the economy/collapse narrative."
     },
     {
       "videoId": "1a1hbOX6N2w",
@@ -390,7 +417,8 @@
       "age_days": 11,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/1a1hbOX6N2w.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "RECYCLED",
+      "verdict_note": "AI-narrated third-person rehash of Middelkoop's known Big Reset talking points framed as an interview ('we're joined by') with no actual guest audio; 20 views."
     },
     {
       "videoId": "EWDY1eAxQUo",
@@ -404,7 +432,8 @@
       "age_days": 12,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/EWDY1eAxQUo.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "DERIVATIVE",
+      "verdict_note": "Tom Bilyeu reaction video pausing through a Steve Keen private-vs-government-debt video, adding extensive commentary; no new primary claims or dated predictions."
     },
     {
       "videoId": "hVlXXIK206A",
@@ -418,7 +447,8 @@
       "age_days": 13,
       "first_seen": "2026-08-06",
       "transcript": "corpus/collapse-audit/transcripts/hVlXXIK206A.txt",
-      "verdict": "UNREVIEWED"
+      "verdict": "CLICKBAIT",
+      "verdict_note": "'Billionaire Moves' never delivered; hedged AI-narrated valuation-metrics essay (PE, Buffett indicator) naming no billionaires and making no claims."
     },
     {
       "videoId": "DCtZrR6vfxk",
