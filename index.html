@@ -187,12 +187,66 @@
 
   .empty { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
   .err { color: var(--critical); font-size: 13px; }
+
+  /* Landing */
+  #app-landing .hero { padding: 9vh 0 26px; text-align: center; }
+  #app-landing h1 { font-size: 30px; letter-spacing: -0.02em; }
+  #app-landing .pitch { color: var(--ink-2); font-size: 15.5px; max-width: 560px;
+    margin: 10px auto 0; }
+  .lookup { display: flex; gap: 8px; max-width: 640px; margin: 26px auto 0; }
+  .lookup input {
+    flex: 1; padding: 13px 16px; font: inherit; font-size: 15px;
+    border: 1px solid var(--border); border-radius: 12px;
+    background: var(--surface); color: var(--ink); min-width: 0;
+  }
+  .lookup input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .lookup button {
+    padding: 13px 22px; font: inherit; font-size: 15px; font-weight: 600;
+    border: none; border-radius: 12px; background: var(--accent); color: #fff;
+    cursor: pointer; white-space: nowrap;
+  }
+  .browse { text-align: center; margin-top: 14px; }
+  .browse a { color: var(--accent); font-size: 13.5px; text-decoration: none; cursor: pointer; }
+  .result { max-width: 640px; margin: 22px auto 0; }
+  .result .card { padding: 16px 18px; }
+  .result .r-kicker { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 4px; }
+  .result .r-title { font-weight: 650; font-size: 15px; }
+  .result .r-meta { color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+  .result .r-narr { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--hairline);
+    font-size: 13.5px; color: var(--ink-2); }
+  .result .r-narr b { color: var(--ink); }
+  .result .vid-row2 { margin-top: 10px; }
+  .result .open-btn {
+    margin-top: 14px; padding: 10px 18px; font: inherit; font-size: 14px; font-weight: 600;
+    border: none; border-radius: 10px; background: var(--accent); color: #fff; cursor: pointer;
+  }
+  .lhome { cursor: pointer; }
+  .card.hl { outline: 2px solid var(--accent); outline-offset: -1px; }
 </style>
 </head>
 <body>
 <div class="wrap">
+  <div id="app-landing">
+    <div class="hero">
+      <h1>Narrative Radar</h1>
+      <div class="pitch">The algorithm is built to pull you deeper into the rabbit hole.
+        This is the exit. Paste a YouTube link — see the narrative behind the video,
+        how old it really is, how its story has mutated, and which videos are just
+        recycled bait.</div>
+      <form class="lookup" id="lookup-form">
+        <input id="lookup-input" type="text" inputmode="url" autocomplete="off"
+          placeholder="Paste a YouTube link…">
+        <button type="submit">Analyze</button>
+      </form>
+      <div class="browse"><a id="browse-link">or browse the radar →</a></div>
+    </div>
+    <div class="result" id="lookup-result"></div>
+  </div>
+
+  <div id="app-radar" hidden>
   <header>
-    <h1>Narrative Radar</h1>
+    <h1 class="lhome" id="home-link" title="Back to start">Narrative Radar</h1>
     <div class="sub">Tracking how ideas spread — and holding predictions to their own clock.</div>
   </header>
 
@@ -238,6 +292,7 @@
   <section id="view-briefs" hidden>
     <div id="briefs"></div>
   </section>
+  </div><!-- /app-radar -->
 </div>
 
 <div class="overlay" id="overlay">
@@ -359,18 +414,19 @@ function renderCorpus() {
     <div class="stat"><div class="v">${withT}</div><div class="l">transcripts on file</div></div>
     <div class="stat"><div class="v">${vids.filter(v => v.verdict === "UNREVIEWED").length}</div><div class="l">awaiting review</div></div>`;
 
-  const q = $("search").value.trim().toLowerCase();
+  const rawQ = $("search").value.trim();
+  const q = (parseVideoId(rawQ) || rawQ).toLowerCase();
   const tf = $("tfilter").value;
   const vf = $("vfilter").value;
   let list = vids.filter(v =>
-    (!q || (v.title + " " + v.channel).toLowerCase().includes(q)) &&
+    (!q || (v.title + " " + v.channel + " " + v.videoId).toLowerCase().includes(q)) &&
     (tf === "all" || (tf === "yes") === !!v.transcript) &&
     (vf === "all" || v.verdict === vf));
   if ($("sort").value === "views") list = [...list].sort((a,b) => viewsNum(b.views) - viewsNum(a.views));
   else list = [...list].sort((a,b) => (a.age_days ?? 9e9) - (b.age_days ?? 9e9));
 
   $("videos").innerHTML = list.length ? list.map(v => `
-    <div class="card">
+    <div class="card" id="vid-${esc(v.videoId)}">
       <div class="vid-title"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a></div>
       <div class="vid-meta">
         <span>${esc(v.channel)}</span>
@@ -473,9 +529,7 @@ function renderTopics() {
     </button>`).join("");
 }
 
-async function loadTopic(id) {
-  topicId = id;
-  renderTopics();
+async function loadTopicData(id) {
   if (!cache[id]) {
     const entry = { videos: null, predictions: null, narrative: null };
     try { entry.videos = await getJSON(`corpus/${id}/videos.json`); } catch (e) {}
@@ -483,10 +537,97 @@ async function loadTopic(id) {
     try { entry.narrative = await getJSON(`corpus/${id}/narrative.json`); } catch (e) {}
     cache[id] = entry;
   }
+  return cache[id];
+}
+
+async function loadTopic(id) {
+  topicId = id;
+  renderTopics();
+  await loadTopicData(id);
   renderCorpus(); renderLedger(); renderBriefs();
 }
 
+/* ---------- landing & lookup ---------- */
+function parseVideoId(s) {
+  s = (s || "").trim();
+  let m = s.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([\w-]{11})/);
+  if (m) return m[1];
+  if (/^[\w-]{11}$/.test(s) && /\d|-|_/.test(s)) return s;
+  return null;
+}
+
+function showLanding() {
+  $("app-landing").hidden = false;
+  $("app-radar").hidden = true;
+  $("lookup-input").focus();
+}
+
+async function showRadar(topic) {
+  $("app-landing").hidden = true;
+  $("app-radar").hidden = false;
+  await loadTopic(topic || topicId || (watchlist.topics.find(t => t.status === "active") || watchlist.topics[0]).id);
+}
+
+async function runLookup(raw) {
+  const box = $("lookup-result");
+  const vid = parseVideoId(raw);
+  if (!vid) {
+    box.innerHTML = `<div class="card"><div class="r-kicker">Hmm</div>
+      <div class="r-meta">That doesn't look like a YouTube link. Paste a full video URL
+      (youtube.com/watch?v=… or youtu.be/…).</div></div>`;
+    return;
+  }
+  for (const t of watchlist.topics) {
+    const data = await loadTopicData(t.id);
+    const v = (data.videos?.videos || []).find(x => x.videoId === vid);
+    if (v) {
+      const n = data.narrative;
+      box.innerHTML = `<div class="card">
+        <div class="r-kicker">Tracked video</div>
+        <div class="r-title">${esc(v.title)}</div>
+        <div class="r-meta">${esc(v.channel)} · ${esc(v.published || "")} · ${esc(v.views || "")}</div>
+        <div class="vid-row2">${vchip(v.verdict)}</div>
+        ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
+        ${n ? `<div class="r-narr">Part of the narrative <b>${esc(n.name)}</b> —
+          ${esc(narrativeAge(n.born))} (born ${esc(n.born)}), ${n.mutations?.length || 0}
+          mechanism mutations, tracked in <b>${esc(t.name.split("—")[0].trim())}</b>.</div>` : ""}
+        <button class="open-btn" data-topic="${esc(t.id)}" data-vid="${esc(vid)}">
+          Open narrative tracking →</button>
+      </div>`;
+      return;
+    }
+  }
+  const active = watchlist.topics.filter(t => t.status === "active").map(t => esc(t.name)).join("; ");
+  box.innerHTML = `<div class="card">
+    <div class="r-kicker">Not tracked yet</div>
+    <div class="r-meta">This video isn't in a tracked narrative yet. The radar currently
+    tracks: <b>${active}</b>. On-demand analysis of any link is coming — for now, browse
+    what's on the radar.</div>
+    <button class="open-btn" data-topic="" data-vid="">Browse the radar →</button>
+  </div>`;
+}
+
 document.addEventListener("click", async (ev) => {
+  const ob = ev.target.closest(".open-btn");
+  if (ob) {
+    await showRadar(ob.dataset.topic || undefined);
+    document.querySelector('.tab[data-view="corpus"]').click();
+    if (ob.dataset.vid) {
+      $("search").value = ""; $("vfilter").value = "all"; $("tfilter").value = "all";
+      renderCorpus();
+      setTimeout(() => {
+        const card = $("vid-" + ob.dataset.vid);
+        if (card) {
+          card.classList.add("hl");
+          card.scrollIntoView({ block: "center" });
+          setTimeout(() => card.classList.remove("hl"), 4000);
+        }
+      }, 200);
+    }
+    return;
+  }
+  if (ev.target.closest("#home-link")) return showLanding();
+  if (ev.target.closest("#browse-link")) return showRadar();
   const t = ev.target.closest(".topic");
   if (t) return loadTopic(t.dataset.id);
   const tab = ev.target.closest(".tab");
@@ -513,12 +654,18 @@ $("overlay").addEventListener("click", (e) => { if (e.target === $("overlay")) $
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay").classList.remove("open"); });
 ["search", "sort", "tfilter", "vfilter"].forEach(id => $(id).addEventListener("input", renderCorpus));
 
+$("lookup-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  runLookup($("lookup-input").value);
+});
+
 (async function init() {
   try {
     watchlist = await getJSON("watchlist.json");
     try { briefsIndex = await getJSON("briefs/index.json"); } catch (e) { briefsIndex = []; }
     const first = watchlist.topics.find(t => t.status === "active") || watchlist.topics[0];
-    await loadTopic(first.id);
+    await loadTopic(first.id);   // prerender the radar behind the landing
+    showLanding();
   } catch (e) {
     document.querySelector(".wrap").insertAdjacentHTML("beforeend",
       `<div class="err">Failed to load data: ${esc(e.message)}</div>`);
