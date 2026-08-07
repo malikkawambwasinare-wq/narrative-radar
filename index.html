@@ -508,7 +508,7 @@ function renderLedger() {
       <div class="node" style="background:${s.color}"></div>
       <div class="card">
         <div class="e-head"><span class="e-date">${esc(e.date_made)}</span>${chip(e.status)}</div>
-        <div class="e-claim">${esc(e.claim)}</div>
+        <div class="e-claim">${e.predictor ? `${esc(e.predictor)}: ` : ""}${esc(e.claim)}</div>
         <div class="e-horizon">Horizon: ${esc(e.horizon || "unstated")}</div>
         ${e.outcome_note ? `<div class="e-note">${esc(e.outcome_note)}</div>` : ""}
         <div class="e-src">${src}</div>

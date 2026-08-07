@@ -1,13 +1,39 @@
 {
   "name": "Crypto Winter Watch",
   "claim": "Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat.",
-  "predictor": "to be determined",
+  "predictor": "Multiple cycle-callers",
   "born": "2018",
   "born_note": "Term 'crypto winter' entered wide use during the 2018 post-2017 bear market; estimate from discourse history. (model estimate, pending audit)",
-  "mutations": [],
+  "mutations": [
+    {
+      "date": "2018",
+      "mechanism": "ICO bust — the first 'crypto winter' (BTC -84%)"
+    },
+    {
+      "date": "2020-21",
+      "mechanism": "halving supercycle — the 4-year cycle becomes orthodoxy"
+    },
+    {
+      "date": "2022",
+      "mechanism": "Luna/FTX contagion — winter returns via leverage-fraud collapse"
+    },
+    {
+      "date": "2024",
+      "mechanism": "ETF era — 'institutions change everything'"
+    },
+    {
+      "date": "2025",
+      "mechanism": "corporate treasuries (Strategy et al.) as the permanent bid"
+    },
+    {
+      "date": "2026",
+      "mechanism": "'the 4-year cycle is dead' vs 'new winter' — the sell-off referendum"
+    }
+  ],
   "origin": {
     "type": "engine",
     "first_video": "HeFwIsrtgVQ",
     "created": "2026-08-07"
-  }
+  },
+  "mutations_note": "Mechanism history model-drafted from discourse knowledge, corroborated by the Aug 2026 corpus; pending full audit."
 }

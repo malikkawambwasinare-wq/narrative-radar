@@ -1,0 +1,155 @@
+{
+  "schema": {
+    "statuses": {
+      "PENDING": "horizon not yet reached — cannot be judged",
+      "SUPPORTED": "events inside the stated horizon match the prediction's mechanism",
+      "REFUTED": "horizon passed without the predicted event",
+      "UPDATED": "predictor restated the claim with a moved horizon or changed mechanism (goalpost-move, tracked explicitly)",
+      "AMBIGUOUS": "something resembling the outcome occurred, but not via the predicted mechanism"
+    },
+    "note": "This narrative's ledger is multi-predictor: the 2026 sell-off is a live referendum on whether the 4-year cycle is dead. Opposing calls share the same clock — most resolve between Sept 2026 and end of 2027."
+  },
+  "predictor": "Multiple cycle-callers",
+  "entries": [
+    {
+      "id": "armstrong-2026-clarity",
+      "predictor": "Brian Armstrong (Coinbase CEO)",
+      "date_made": "2026-08",
+      "claim": "The Clarity Act reaches a full Senate floor vote, with the recess as forcing function.",
+      "horizon": "before the August 2026 Senate recess",
+      "status": "PENDING",
+      "outcome_note": "Shortest clock in the ledger — judgment this month. From Coinbase's Q2 2026 earnings AMA.",
+      "source": "https://www.youtube.com/watch?v=zv4icJOfB-w"
+    },
+    {
+      "id": "gambardello-2026-pmi",
+      "predictor": "Dan Gambardello",
+      "date_made": "2026-08",
+      "claim": "PMI closing above 55 with momentum starts altcoin bull markets (as 2017, 2020); signal invalidates if the print falls back under 55.",
+      "horizon": "September 1, 2026 PMI print",
+      "status": "PENDING",
+      "outcome_note": "Rare self-falsifying call with an exact date — model audit case.",
+      "source": "https://www.youtube.com/watch?v=Hgikc09SCgM"
+    },
+    {
+      "id": "gerhard-2026-selloff",
+      "predictor": "Gerhard (Bitcoin Strategy)",
+      "date_made": "2026-08",
+      "claim": "Bear market not over; another ~30% sell-off before the bottom; CBBI (now 32) falls toward 20 or lower.",
+      "horizon": "coming weeks to months",
+      "status": "PENDING",
+      "outcome_note": "Bear camp's most concrete near-term call.",
+      "source": "https://www.youtube.com/watch?v=y9PN4mfk1hs"
+    },
+    {
+      "id": "soloway-2026-35k",
+      "predictor": "Gareth Soloway",
+      "date_made": "2026-08",
+      "claim": "Short-term bullish to $71-72K, then a flush toward ~$35,000 bottom right before the midterm elections.",
+      "horizon": "by October-November 2026",
+      "status": "PENDING",
+      "outcome_note": "Deepest bear target in the corpus; head-and-shoulders measured move + bear-market week counts.",
+      "source": "https://www.youtube.com/watch?v=xJyNgxAozQw"
+    },
+    {
+      "id": "klippsten-2026-bottom",
+      "predictor": "Cory Klippsten (Swan)",
+      "date_made": "2026-08",
+      "claim": "Bear markets bottom exactly 12 months after the peak → bottom ~late October 2026, floor ~$57.5K, no deep flush; then $200K after a $73K break.",
+      "horizon": "late October 2026",
+      "status": "PENDING",
+      "outcome_note": "Directly contradicts Soloway's $35K on the same clock — one of them will be wrong on schedule.",
+      "source": "https://www.youtube.com/watch?v=wJBYU7xND00"
+    },
+    {
+      "id": "ivan-2026-bottom",
+      "predictor": "Ivan on Tech",
+      "date_made": "2026-08",
+      "claim": "Bottom lands October-November 2026 near the 200-week MA; 'Valhalla' blow-off (esp. altcoins) Jan-Feb 2027; weekly close above ~$82K confirms bull to $200K.",
+      "horizon": "Oct-Nov 2026 bottom; Jan-Feb 2027 blow-off",
+      "status": "PENDING",
+      "outcome_note": "Announced as a live pivot from bearish to bullish.",
+      "source": "https://www.youtube.com/watch?v=SpxCqrzGDiA"
+    },
+    {
+      "id": "fibswanny-2026-low-now",
+      "predictor": "FibSwanny",
+      "date_made": "2026-08",
+      "claim": "The 4-year cycle may be dead — the low is forming NOW (not October); $53-60K is the buy zone; if it holds, back above $100K quickly.",
+      "horizon": "August-October 2026",
+      "status": "PENDING",
+      "outcome_note": "Cycle-is-dead camp; contradicts the October-bottom cluster.",
+      "source": "https://www.youtube.com/watch?v=XNuL97I8bvc"
+    },
+    {
+      "id": "hougan-2026-higher",
+      "predictor": "Matt Hougan (Bitwise CIO)",
+      "date_made": "2026-08",
+      "claim": "The 4-year cycle contributed to the pullback but is essentially over; crypto ends 2026 higher.",
+      "horizon": "December 31, 2026",
+      "status": "PENDING",
+      "outcome_note": "The institutional 'cycle is over' thesis with a hard year-end clock.",
+      "source": "https://www.youtube.com/watch?v=Lu-sOTkVWDM"
+    },
+    {
+      "id": "hougan-2027-bull",
+      "predictor": "Matt Hougan (Bitwise CIO)",
+      "date_made": "2026-08",
+      "claim": "2027 is a great bull market year; institutional capital (advisors, sovereign wealth, Vanguard-type firms) becomes the largest marginal buyer starting end of 2026.",
+      "horizon": "2027",
+      "status": "PENDING",
+      "outcome_note": "Judgment date: end of 2027.",
+      "source": "https://www.youtube.com/watch?v=qTPGkVaukjo"
+    },
+    {
+      "id": "phongle-2027-bull",
+      "predictor": "Phong Le (Strategy CEO)",
+      "date_made": "2026-08",
+      "claim": "Bitcoin is in a bear cycle now; a bull cycle begins within the next year and Strategy outperforms Bitcoin in it.",
+      "horizon": "by August 2027",
+      "status": "PENDING",
+      "outcome_note": "Corporate-treasury camp; two-part claim (timing + relative performance).",
+      "source": "https://www.youtube.com/watch?v=bs6yz79MneQ"
+    },
+    {
+      "id": "sophie-2028-cycle-intact",
+      "predictor": "Sophie Satoshi",
+      "date_made": "2026-08",
+      "claim": "The 4-year cycle is still intact; upside maybe 2027, with the thick of the bull run in 2028.",
+      "horizon": "2027-2028",
+      "status": "PENDING",
+      "outcome_note": "Cycle-is-alive camp's retail voice — directly opposes Hougan on the same question.",
+      "source": "https://www.youtube.com/watch?v=CqX7sirvtO8"
+    },
+    {
+      "id": "saylor-1m-no-winters",
+      "predictor": "Michael Saylor",
+      "date_made": "2026-08",
+      "claim": "If Bitcoin isn't going to zero it's going to $1M; past winters were man-made leverage collapses and won't repeat now that leverage is gone.",
+      "horizon": "unstated (vague)",
+      "status": "PENDING",
+      "outcome_note": "Vague horizon flagged — the 'no more winters' half is the auditable part; a 2026-27 winter would refute it.",
+      "source": "https://www.youtube.com/watch?v=eT9X6C7cCH4"
+    },
+    {
+      "id": "ark-2030-710k",
+      "predictor": "ARK Invest (Cathie Wood)",
+      "date_made": "2026-08",
+      "claim": "Bitcoin scenarios: $300K bear, $710K base, $1.5M bull.",
+      "horizon": "2030",
+      "status": "PENDING",
+      "outcome_note": "Long-horizon anchor for the institutional camp. (Bernstein: $1M by ~2033; VanEck: $2.9M by 2050.)",
+      "source": "https://www.youtube.com/watch?v=tjLPE9h6BKg"
+    },
+    {
+      "id": "pal-2030-singularity",
+      "predictor": "Raoul Pal",
+      "date_made": "2026-08",
+      "claim": "Stands by 2030: the 'economic singularity' arrives and things change dramatically; exponential-age thesis ~4 years out.",
+      "horizon": "by 2030",
+      "status": "PENDING",
+      "outcome_note": "Vague mechanism flagged; note the video carrying it used a fabricated title quote (CLICKBAIT verdict).",
+      "source": "https://www.youtube.com/watch?v=SkR1NO6N-8g"
+    }
+  ]
+}
