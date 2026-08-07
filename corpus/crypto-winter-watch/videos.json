@@ -359,6 +359,21 @@
       "transcript": null,
       "verdict": "CLICKBAIT",
       "verdict_note": "[live analysis, metadata-only] Aggregator channel repackaging Tom Lee interview clips as a 'NEW prediction'; same channel previously produced similar Saylor compilation flagged clickbait."
+    },
+    {
+      "videoId": "kop3tiai4L4",
+      "url": "https://www.youtube.com/watch?v=kop3tiai4L4",
+      "title": "Hoskinson: Bitcoin will be up to $250,000 by end of 2026",
+      "channel": "CNBC International Live",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "user-submitted",
+      "age_days": null,
+      "first_seen": "2026-08-07",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Standard CNBC interview clip with a founder repeating a bullish six-figure Bitcoin price target; familiar cycle-vs-institutions framing."
     }
   ]
 }
