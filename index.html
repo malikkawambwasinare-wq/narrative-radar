@@ -749,12 +749,10 @@ function handleEngineResult(box, d, vid) {
     const data = cache[a.topic_id];
     if (data?.videos && !data.videos.videos.some(x => x.videoId === vid)) {
       data.videos.videos.unshift({
-        videoId: vid, url: `https://www.youtube.com/watch?v=${vid}`,
-        title: d.video.title, channel: d.video.channel,
-        published: "just added", views: "", length: "",
-        query: "user-submitted", age_days: 0,
-        first_seen: new Date().toISOString().slice(0, 10),
-        transcript: null, verdict: chipVerdict, verdict_note: a.verdict_note,
+        ...(d.video_entry || {}),
+        videoId: vid, title: d.video.title, channel: d.video.channel,
+        published: "just added", age_days: 0,
+        verdict: chipVerdict, verdict_note: a.verdict_note,
       });
     }
     showNotice(`Added to <b>${esc(n?.name || a.topic_id)}</b>
@@ -765,13 +763,26 @@ function handleEngineResult(box, d, vid) {
     openRadarAt(a.topic_id, vid);
     return;
   }
-  if (a.decision === "new_narrative") {
-    showNotice(`<b>${esc(d.video.title)}</b> isn't part of any tracked narrative.
-      Proposed new narrative: <b>${esc(a.new_narrative_name || "")}</b> —
-      ${esc(a.new_narrative_claim || "")} ${conf}
-      ${d.persisted ? `<br><span class="no-t">Queued for review — it becomes tracked once approved.</span>` : ""}
+  if (a.decision === "new_narrative" && d.created_topic) {
+    // The engine created the narrative — add its tile to the ribbon right now
+    if (!watchlist.topics.some(t => t.id === d.created_topic.id)) {
+      watchlist.topics.push(d.created_topic);
+    }
+    cache[d.created_topic.id] = {
+      videos: { videos: [{
+        ...(d.video_entry || {}),
+        published: "just added", age_days: 0, verdict: chipVerdict,
+        verdict_note: a.verdict_note,
+      }] },
+      predictions: null,
+      narrative: d.narrative,
+    };
+    showNotice(`<b>New narrative on the radar:</b> <b>${esc(d.narrative?.name || "")}</b> —
+      ${esc(d.narrative?.claim || "")}
+      ${d.narrative?.born ? `Born ~${esc(d.narrative.born)} (model estimate).` : ""} ${conf}
+      — ${vchip(chipVerdict)}
       <span class="n-advice">${esc(a.advice)}</span>`);
-    openRadarAt(null, null);
+    openRadarAt(d.created_topic.id, vid);
     return;
   }
   // unrelated
