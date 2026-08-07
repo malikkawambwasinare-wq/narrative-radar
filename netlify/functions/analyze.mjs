@@ -259,14 +259,17 @@ export default async (req) => {
       const wl = await ghRead("watchlist.json");
       if (wl && !wl.data.topics.some((t) => t.id === id)) {
         wl.data.topics.push(topicRecord);
+        // Sequential: parallel contents-API writes race on the branch ref (409)
         const ok1 = await ghWrite("watchlist.json", wl.data,
           `Engine: new narrative "${analysis.new_narrative_name}" (${id})`, wl.sha);
-        const [ok2, ok3] = await Promise.all([
-          ghWrite(`corpus/${id}/narrative.json`, narrative,
-            `Engine: narrative.json for ${id}`),
-          ghWrite(`corpus/${id}/videos.json`, { videos: [entry] },
-            `Engine: first video for ${id} (${entry.verdict})`),
-        ]);
+        const ok2 = await ghWrite(`corpus/${id}/narrative.json`, narrative,
+          `Engine: narrative.json for ${id}`);
+        let ok3 = await ghWrite(`corpus/${id}/videos.json`, { videos: [entry] },
+          `Engine: first video for ${id} (${entry.verdict})`);
+        if (!ok3) {
+          ok3 = await ghWrite(`corpus/${id}/videos.json`, { videos: [entry] },
+            `Engine: first video for ${id} (${entry.verdict}, retry)`);
+        }
         persisted = ok1 && ok2 && ok3;
       }
       return json(200, {
