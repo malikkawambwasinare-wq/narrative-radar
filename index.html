@@ -223,6 +223,16 @@
   }
   .lhome { cursor: pointer; }
   .card.hl { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .notice {
+    position: relative; background: var(--surface); border: 1px solid var(--accent);
+    border-radius: 10px; padding: 12px 40px 12px 14px; margin: 14px 0 4px;
+    font-size: 13.5px; color: var(--ink-2);
+  }
+  .notice b { color: var(--ink); }
+  .notice .chip { margin: 0 2px; }
+  .notice .n-advice { display: block; margin-top: 6px; color: var(--ink); }
+  .n-close { position: absolute; top: 8px; right: 10px; font: inherit; font-size: 18px;
+    line-height: 1; background: none; border: none; cursor: pointer; color: var(--muted); }
   .r-advice { margin-top: 10px; font-size: 13.5px; color: var(--ink);
     border-left: 3px solid var(--hairline); padding: 2px 0 2px 12px; }
   .followbtn {
@@ -267,6 +277,7 @@
     <div class="sub">Tracking how ideas spread — and holding predictions to their own clock.</div>
   </header>
 
+  <div id="radar-notice"></div>
   <div class="topicbar" id="topicbar"></div>
 
   <div class="tabs" id="tabs">
@@ -602,10 +613,11 @@ async function renderYours() {
 }
 
 /* ---------- landing & lookup ---------- */
-// The analysis engine lives on Netlify; the GitHub Pages copy calls it cross-origin.
-const API_BASE = location.hostname.endsWith("github.io")
-  ? "https://lambent-salmiakki-6ea854.netlify.app"
-  : "";
+// The analysis engine lives on Netlify; other origins (GitHub Pages, localhost)
+// call it cross-origin.
+const API_BASE = location.hostname.endsWith("netlify.app")
+  ? ""
+  : "https://lambent-salmiakki-6ea854.netlify.app";
 
 const ADVICE = {
   ORIGINAL: "Worth your time if this topic matters to you — primary content with new material.",
@@ -630,6 +642,29 @@ function showLanding() {
   $("lookup-input").focus();
 }
 
+function showNotice(html) {
+  $("radar-notice").innerHTML = html
+    ? `<div class="notice">${html}<button class="n-close" aria-label="Dismiss">×</button></div>`
+    : "";
+}
+
+async function openRadarAt(topicId, videoId) {
+  await showRadar(topicId || undefined);
+  document.querySelector('.tab[data-view="corpus"]').click();
+  $("search").value = ""; $("vfilter").value = "all"; $("tfilter").value = "all";
+  renderCorpus();
+  if (videoId) {
+    setTimeout(() => {
+      const card = $("vid-" + videoId);
+      if (card) {
+        card.classList.add("hl");
+        card.scrollIntoView({ block: "center" });
+        setTimeout(() => card.classList.remove("hl"), 4000);
+      }
+    }, 200);
+  }
+}
+
 async function showRadar(topic) {
   $("app-landing").hidden = true;
   $("app-radar").hidden = false;
@@ -650,19 +685,12 @@ async function runLookup(raw) {
     const v = (data.videos?.videos || []).find(x => x.videoId === vid);
     if (v) {
       const n = data.narrative;
-      box.innerHTML = `<div class="card">
-        <div class="r-kicker">Tracked video</div>
-        <div class="r-title">${esc(v.title)}</div>
-        <div class="r-meta">${esc(v.channel)} · ${esc(v.published || "")} · ${esc(v.views || "")}</div>
-        <div class="vid-row2">${vchip(v.verdict)}</div>
-        ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
-        <div class="r-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</div>
-        ${n ? `<div class="r-narr">Part of the narrative <b>${esc(n.name)}</b> —
-          ${esc(narrativeAge(n.born))} (born ${esc(n.born)}), ${n.mutations?.length || 0}
-          mechanism mutations, tracked in <b>${esc(t.name.split("—")[0].trim())}</b>.</div>` : ""}
-        <button class="open-btn" data-topic="${esc(t.id)}" data-vid="${esc(vid)}">
-          Open narrative tracking →</button>
-      </div>`;
+      box.innerHTML = "";
+      showNotice(`This video is already tracked in <b>${esc(n?.name || t.name.split("—")[0].trim())}</b>
+        ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations?.length || 0} mutations)` : ""}
+        — ${vchip(v.verdict)}
+        <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`);
+      openRadarAt(t.id, vid);
       return;
     }
   }
@@ -679,7 +707,7 @@ async function runLookup(raw) {
       body: JSON.stringify({ url: raw }),
     });
     const d = await r.json();
-    renderAnalysis(box, d);
+    handleEngineResult(box, d, vid);
   } catch (e) {
     box.innerHTML = `<div class="card">
       <div class="r-kicker">Engine unavailable</div>
@@ -690,21 +718,16 @@ async function runLookup(raw) {
   }
 }
 
-function renderAnalysis(box, d) {
+function handleEngineResult(box, d, vid) {
+  // Per the product flow: results are shown ON the radar page, not the landing.
   if (d.status === "tracked") {
     const v = d.video, n = d.narrative;
-    box.innerHTML = `<div class="card">
-      <div class="r-kicker">Tracked video</div>
-      <div class="r-title">${esc(v.title)}</div>
-      <div class="r-meta">${esc(v.channel)} · ${esc(v.published || "")}</div>
-      <div class="vid-row2">${vchip(v.verdict)}</div>
-      ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
-      <div class="r-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</div>
-      ${n ? `<div class="r-narr">Part of the narrative <b>${esc(n.name)}</b> —
-        ${esc(narrativeAge(n.born))} (born ${esc(n.born)}), ${n.mutations} mechanism mutations.</div>` : ""}
-      <button class="open-btn" data-topic="${esc(d.topic_id)}" data-vid="${esc(v.videoId)}">
-        Open narrative tracking →</button>
-    </div>`;
+    box.innerHTML = "";
+    showNotice(`This video is already tracked in <b>${esc(n?.name || d.topic_id)}</b>
+      ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations} mutations)` : ""}
+      — ${vchip(v.verdict)}
+      <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`);
+    openRadarAt(d.topic_id, vid);
     return;
   }
   if (d.status !== "analyzed") {
@@ -717,54 +740,53 @@ function renderAnalysis(box, d) {
     return;
   }
   const a = d.analysis, n = d.narrative;
-  const kicker = a.decision === "existing_narrative" ? "Live analysis — tracked narrative"
-    : a.decision === "new_narrative" ? "Live analysis — new narrative detected"
-    : "Live analysis — not a narrative video";
   const chipVerdict = a.verdict === "UNKNOWN" ? "UNREVIEWED" : a.verdict;
-  box.innerHTML = `<div class="card">
-    <div class="r-kicker">${esc(kicker)}</div>
-    <div class="r-title">${esc(d.video.title)}</div>
-    <div class="r-meta">${esc(d.video.channel)}</div>
-    <div class="vid-row2">${vchip(chipVerdict)}
-      <span class="pill query">metadata-only · confidence: ${esc(a.confidence)}</span></div>
-    <div class="v-note">${esc(a.verdict_note)}</div>
-    <div class="r-advice">${esc(a.advice)}</div>
-    ${a.decision === "existing_narrative" && n ? `<div class="r-narr">
-      Part of the narrative <b>${esc(n.name)}</b> — ${esc(narrativeAge(n.born))}
-      (born ${esc(n.born)}), ${n.mutations} mechanism mutations.
+  const conf = `<span class="pill query">metadata-only · confidence: ${esc(a.confidence)}</span>`;
+  box.innerHTML = "";
+
+  if (a.decision === "existing_narrative" && a.topic_id) {
+    // Surface the new video in the narrative's corpus immediately
+    const data = cache[a.topic_id];
+    if (data?.videos && !data.videos.videos.some(x => x.videoId === vid)) {
+      data.videos.videos.unshift({
+        videoId: vid, url: `https://www.youtube.com/watch?v=${vid}`,
+        title: d.video.title, channel: d.video.channel,
+        published: "just added", views: "", length: "",
+        query: "user-submitted", age_days: 0,
+        first_seen: new Date().toISOString().slice(0, 10),
+        transcript: null, verdict: chipVerdict, verdict_note: a.verdict_note,
+      });
+    }
+    showNotice(`Added to <b>${esc(n?.name || a.topic_id)}</b>
+      ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations} mutations)` : ""}
+      — ${vchip(chipVerdict)} ${conf}
       ${a.is_update && a.update_note ? `<br><b>Narrative update:</b> ${esc(a.update_note)}` : ""}
-      ${d.persisted ? `<br><span class="no-t">Saved to the radar — appears in the corpus after the next refresh (~1 min).</span>` : ""}
-    </div>
-    <button class="open-btn" data-topic="${esc(a.topic_id)}" data-vid="">Open narrative tracking →</button>` : ""}
-    ${a.decision === "new_narrative" ? `<div class="r-narr">
+      <span class="n-advice">${esc(a.advice)}</span>`);
+    openRadarAt(a.topic_id, vid);
+    return;
+  }
+  if (a.decision === "new_narrative") {
+    showNotice(`<b>${esc(d.video.title)}</b> isn't part of any tracked narrative.
       Proposed new narrative: <b>${esc(a.new_narrative_name || "")}</b> —
-      ${esc(a.new_narrative_claim || "")}
-      ${d.persisted ? `<br><span class="no-t">Queued for review — it becomes a tracked narrative once approved.</span>` : ""}
-    </div>` : ""}
-  </div>`;
+      ${esc(a.new_narrative_claim || "")} ${conf}
+      ${d.persisted ? `<br><span class="no-t">Queued for review — it becomes tracked once approved.</span>` : ""}
+      <span class="n-advice">${esc(a.advice)}</span>`);
+    openRadarAt(null, null);
+    return;
+  }
+  // unrelated
+  showNotice(`<b>${esc(d.video.title)}</b> (${esc(d.video.channel)}) isn't a narrative
+    video — nothing here for the radar to track. ${conf}
+    <span class="n-advice">${esc(a.advice)}</span>`);
+  openRadarAt(null, null);
 }
 
 document.addEventListener("click", async (ev) => {
   const ob = ev.target.closest(".open-btn");
-  if (ob) {
-    await showRadar(ob.dataset.topic || undefined);
-    document.querySelector('.tab[data-view="corpus"]').click();
-    if (ob.dataset.vid) {
-      $("search").value = ""; $("vfilter").value = "all"; $("tfilter").value = "all";
-      renderCorpus();
-      setTimeout(() => {
-        const card = $("vid-" + ob.dataset.vid);
-        if (card) {
-          card.classList.add("hl");
-          card.scrollIntoView({ block: "center" });
-          setTimeout(() => card.classList.remove("hl"), 4000);
-        }
-      }, 200);
-    }
-    return;
-  }
-  if (ev.target.closest("#home-link")) return showLanding();
-  if (ev.target.closest("#browse-link")) return showRadar();
+  if (ob) return openRadarAt(ob.dataset.topic || null, ob.dataset.vid || null);
+  if (ev.target.closest(".n-close")) return showNotice("");
+  if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
+  if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
   const fb = ev.target.closest(".followbtn");
   if (fb) {
     toggleFollow(fb.dataset.follow);

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Dev server for the radar dashboard: node serve.js [port]
+// Dev server for the radar dashboard: node serve.cjs [port]
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
