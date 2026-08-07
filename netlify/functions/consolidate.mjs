@@ -92,12 +92,19 @@ export default async (req) => {
   if (!topicId) return json(400, { error: "topic required" });
 
   try {
-    const [videos, current] = await Promise.all([
+    const [rawVideos, current] = await Promise.all([
       fetch(`${RAW}/corpus/${topicId}/videos.json`).then((r) => r.json())
-        .then((d) => d.videos),
+        .then((d) => d.videos).catch(() => []),
       fetch(`${RAW}/corpus/${topicId}/claims.json`).then((r) => r.json())
         .catch(() => ({ claims: [] })),
     ]);
+    // Client may supply its live corpus (raw CDN lags fresh engine commits)
+    const byId = new Map();
+    for (const v of [...rawVideos, ...(body.videos || [])]) {
+      if (v?.videoId && !byId.has(v.videoId)) byId.set(v.videoId, v);
+    }
+    const videos = [...byId.values()];
+    if (!videos.length) return json(404, { error: "empty corpus" });
 
     // Which videos are already cited by some claim?
     const cited = new Set();

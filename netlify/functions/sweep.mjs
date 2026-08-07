@@ -40,17 +40,21 @@ export default async (req) => {
   if (!topicId) return json(400, { error: "topic required" });
 
   try {
+    // Queries/known can come from the client (covers just-created narratives,
+    // where the raw CDN hasn't caught up with the engine's commits yet)
     const watchlist = await (await fetch(`${RAW}/watchlist.json`)).json();
     const topic = watchlist.topics.find((t) => t.id === topicId);
-    if (!topic) return json(404, { error: "unknown topic" });
-    const known = new Set(
-      await fetch(`${RAW}/corpus/${topicId}/videos.json`)
+    const queries = body.queries?.length ? body.queries : topic?.queries;
+    if (!queries?.length) return json(404, { error: "unknown topic" });
+    const known = new Set([
+      ...(body.known || []),
+      ...(await fetch(`${RAW}/corpus/${topicId}/videos.json`)
         .then((r) => r.json()).then((d) => d.videos.map((v) => v.videoId))
-        .catch(() => []),
-    );
+        .catch(() => [])),
+    ]);
     // Fan out across the topic's queries; newest-first per query
     const results = await Promise.all(
-      (topic.queries || []).slice(0, 6).map((q) => searchNewest(q).catch(() => [])),
+      queries.slice(0, 6).map((q) => searchNewest(q).catch(() => [])),
     );
     const fresh = [];
     for (const ids of results) {

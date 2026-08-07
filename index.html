@@ -681,24 +681,29 @@ function showNotice(html) {
 }
 
 let refreshing = false;
-async function refreshNarrative(topicId) {
+async function refreshNarrative(topicId, prefix = "") {
   if (refreshing) return;
   refreshing = true;
   const name = cache[topicId]?.narrative?.name || topicId;
+  const t = watchlist.topics.find(x => x.id === topicId);
   try {
-    showNotice(`Refreshing <b>${esc(name)}</b> — sweeping for new videos…`);
+    showNotice(`${prefix}Building out <b>${esc(name)}</b> — sweeping for more videos in the narrative…`);
     const sw = await fetch(API_BASE + "/api/sweep", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ topic: topicId }),
+      body: JSON.stringify({
+        topic: topicId,
+        queries: t?.queries || [],
+        known: (cache[topicId]?.videos?.videos || []).map(v => v.videoId),
+      }),
     }).then(r => r.json());
     const list = sw.new_videos || [];
     if (!list.length) {
-      showNotice(`<b>${esc(name)}</b> is up to date — no new videos found.`);
+      showNotice(`${prefix}<b>${esc(name)}</b> is up to date — no new videos found.`);
       return;
     }
     let here = 0, elsewhere = 0;
     for (let i = 0; i < list.length; i++) {
-      showNotice(`Refreshing <b>${esc(name)}</b> — analyzing new video ${i + 1} of ${list.length}…`);
+      showNotice(`${prefix}Building out <b>${esc(name)}</b> — analyzing video ${i + 1} of ${list.length}…`);
       const d = await fetch(API_BASE + "/api/analyze", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url: list[i] }),
@@ -715,15 +720,21 @@ async function refreshNarrative(topicId) {
         elsewhere++;
       }
     }
-    showNotice(`Refreshing <b>${esc(name)}</b> — re-consolidating the claims…`);
+    showNotice(`${prefix}Building out <b>${esc(name)}</b> — consolidating the corpus's claims…`);
     const c = await fetch(API_BASE + "/api/consolidate", {
       method: "POST", headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ topic: topicId }),
+      body: JSON.stringify({
+        topic: topicId,
+        videos: (cache[topicId]?.videos?.videos || []).map(v => ({
+          videoId: v.videoId, title: v.title, channel: v.channel,
+          verdict: v.verdict, note: v.verdict_note,
+        })),
+      }),
     }).then(r => r.json()).catch(() => null);
     if (c?.claims) { cache[topicId].claims = c.claims; renderCorpus(); }
-    showNotice(`<b>${esc(name)}</b> refreshed — ${here} new video${here === 1 ? "" : "s"} added${elsewhere ? `, ${elsewhere} filed elsewhere` : ""}${c?.claims ? ", claims updated" : ""}.`);
+    showNotice(`${prefix}<b>${esc(name)}</b> is built out — ${here} new video${here === 1 ? "" : "s"} analyzed${elsewhere ? `, ${elsewhere} filed elsewhere` : ""}${c?.claims && !c.unchanged ? ", claims updated" : ""}. The claims below are supported by the full corpus.`);
   } catch (e) {
-    showNotice(`Refresh hit a snag (${esc(String(e.message || e))}) — try again in a minute.`);
+    showNotice(`${prefix}Buildout hit a snag (${esc(String(e.message || e))}) — press ↻ Refresh to retry.`);
   } finally {
     refreshing = false;
   }
@@ -767,11 +778,13 @@ async function runLookup(raw) {
     if (v) {
       const n = data.narrative;
       box.innerHTML = "";
-      showNotice(`This video is already tracked in <b>${esc(n?.name || t.name.split("—")[0].trim())}</b>
+      const summary = `This video is already tracked in <b>${esc(n?.name || t.name.split("—")[0].trim())}</b>
         ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations?.length || 0} mutations)` : ""}
         — ${vchip(v.verdict)}
-        <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`);
+        <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`;
+      showNotice(summary);
       openRadarAt(t.id, vid);
+      setTimeout(() => refreshNarrative(t.id, summary + "<br>"), 800);
       return;
     }
   }
@@ -804,11 +817,13 @@ function handleEngineResult(box, d, vid) {
   if (d.status === "tracked") {
     const v = d.video, n = d.narrative;
     box.innerHTML = "";
-    showNotice(`This video is already tracked in <b>${esc(n?.name || d.topic_id)}</b>
+    const summary = `This video is already tracked in <b>${esc(n?.name || d.topic_id)}</b>
       ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations} mutations)` : ""}
       — ${vchip(v.verdict)}
-      <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`);
+      <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`;
+    showNotice(summary);
     openRadarAt(d.topic_id, vid);
+    setTimeout(() => refreshNarrative(d.topic_id, summary + "<br>"), 800);
     return;
   }
   if (d.status !== "analyzed") {
@@ -836,12 +851,14 @@ function handleEngineResult(box, d, vid) {
         verdict: chipVerdict, verdict_note: a.verdict_note,
       });
     }
-    showNotice(`Added to <b>${esc(n?.name || a.topic_id)}</b>
+    const summary = `Added to <b>${esc(n?.name || a.topic_id)}</b>
       ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations} mutations)` : ""}
       — ${vchip(chipVerdict)} ${conf}
       ${a.is_update && a.update_note ? `<br><b>Narrative update:</b> ${esc(a.update_note)}` : ""}
-      <span class="n-advice">${esc(a.advice)}</span>`);
+      <span class="n-advice">${esc(a.advice)}</span>`;
+    showNotice(summary);
     openRadarAt(a.topic_id, vid);
+    setTimeout(() => refreshNarrative(a.topic_id, summary + "<br>"), 800);
     return;
   }
   if (a.decision === "new_narrative" && d.created_topic) {
@@ -858,12 +875,14 @@ function handleEngineResult(box, d, vid) {
       predictions: null,
       narrative: d.narrative,
     };
-    showNotice(`<b>New narrative on the radar:</b> <b>${esc(d.narrative?.name || "")}</b> —
+    const summary = `<b>New narrative on the radar:</b> <b>${esc(d.narrative?.name || "")}</b> —
       ${esc(d.narrative?.claim || "")}
       ${d.narrative?.born ? `Born ~${esc(d.narrative.born)} (model estimate).` : ""} ${conf}
       — ${vchip(chipVerdict)}
-      <span class="n-advice">${esc(a.advice)}</span>`);
+      <span class="n-advice">${esc(a.advice)}</span>`;
+    showNotice(summary);
     openRadarAt(d.created_topic.id, vid);
+    setTimeout(() => refreshNarrative(d.created_topic.id, summary + "<br>"), 800);
     return;
   }
   // unrelated
