@@ -6,6 +6,8 @@
       "id": "bottom-late-2026",
       "type": "consensus",
       "statement": "A market bottom forms in late 2026 (Aug–Nov), then a new bull leg begins by 2027.",
+      "note": "The corpus's strongest consistency — many independent voices put the turn within the same ~6-month window. Most trackable claim.",
+      "camps": null,
       "sources": [
         {
           "videoId": "SpxCqrzGDiA",
@@ -34,14 +36,22 @@
         {
           "videoId": "Lu-sOTkVWDM",
           "predictor": "Matt Hougan"
+        },
+        {
+          "videoId": "NKIcBUmI2e4",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "videoId": "Hgikc09SCgM",
+          "predictor": "Dan Gambardello"
         }
-      ],
-      "note": "The corpus's strongest consistency — seven independent voices put the turn within the same ~6-month window. The narrative's most trackable claim."
+      ]
     },
     {
       "id": "four-year-cycle",
       "type": "contested",
       "statement": "Is the 4-year halving cycle dead?",
+      "note": "The 2026 referendum. Both camps' calls resolve on the same late-2026 clock — the ledger will settle this.",
       "camps": [
         {
           "position": "Dead/changed — institutions broke the cycle",
@@ -74,16 +84,21 @@
             {
               "videoId": "SpxCqrzGDiA",
               "predictor": "Ivan on Tech"
+            },
+            {
+              "videoId": "bs6yz79MneQ",
+              "predictor": "Phong Le"
             }
           ]
         }
       ],
-      "note": "The 2026 referendum. Both camps' calls resolve on the same late-2026 clock — the ledger will settle this."
+      "sources": null
     },
     {
       "id": "bottom-depth",
       "type": "contested",
       "statement": "How deep does the bottom go?",
+      "note": "Directly opposed price zones on the same clock — cleanly falsifiable by October–November 2026.",
       "camps": [
         {
           "position": "Deep flush toward ~$35–40K",
@@ -112,12 +127,14 @@
           ]
         }
       ],
-      "note": "Directly opposed price zones on the same clock — cleanly falsifiable by October–November 2026."
+      "sources": null
     },
     {
       "id": "institutional-buyer",
       "type": "consensus",
       "statement": "Institutional capital (ETFs, advisors, corporate treasuries, sovereign wealth) is the next marginal buyer and structurally changes the market.",
+      "note": "The 'this time is different' engine. Counter-voice on file: Klippsten calls ETF/treasury holders 'paper hands' who deepened the sell-off (wJBYU7xND00).",
+      "camps": null,
       "sources": [
         {
           "videoId": "Lu-sOTkVWDM",
@@ -142,14 +159,19 @@
         {
           "videoId": "NKIcBUmI2e4",
           "predictor": "Matt Hougan (1–2% default allocation)"
+        },
+        {
+          "videoId": "ks2i176-se8",
+          "predictor": "Phong Le"
         }
-      ],
-      "note": "The 'this time is different' engine. Counter-voice on file: Klippsten calls ETF/treasury holders 'paper hands' who deepened the sell-off (wJBYU7xND00)."
+      ]
     },
     {
       "id": "regulatory-catalyst",
       "type": "consensus",
       "statement": "US regulatory clarity (Clarity Act, stablecoin/tokenization rules) is the major near-term catalyst.",
+      "note": "Shortest clock in the narrative: Armstrong expects a Senate floor vote before the August 2026 recess.",
+      "camps": null,
       "sources": [
         {
           "videoId": "zv4icJOfB-w",
@@ -162,14 +184,19 @@
         {
           "videoId": "ks2i176-se8",
           "predictor": "Phong Le (Basel risk-weighting)"
+        },
+        {
+          "videoId": "l0Ia0GNzciI",
+          "predictor": "Vandell Aljarrah"
         }
-      ],
-      "note": "Shortest clock in the narrative: Armstrong expects a Senate floor vote before the August 2026 recess."
+      ]
     },
     {
       "id": "million-dollar-btc",
       "type": "consensus",
       "statement": "Long-horizon: Bitcoin reaches $700K–$1M+ (2030s) on institutional/store-of-value math.",
+      "note": "The faith layer — mostly unfalsifiable on useful horizons; tracked for goalpost-moves.",
+      "camps": null,
       "sources": [
         {
           "videoId": "tjLPE9h6BKg",
@@ -186,9 +213,62 @@
         {
           "videoId": "tjLPE9h6BKg",
           "predictor": "Tom Lee ($2M, no date)"
+        },
+        {
+          "videoId": "SkR1NO6N-8g",
+          "predictor": "Raoul Pal (2030 singularity)"
         }
-      ],
-      "note": "The faith layer — mostly unfalsifiable on useful horizons; tracked for goalpost-moves."
+      ]
+    },
+    {
+      "id": "altseason-ahead",
+      "type": "consensus",
+      "statement": "A major altcoin leg follows the bottom, driven by liquidity/macro turn or utility maturation.",
+      "note": "Trackable via Gambardello's stated falsifier (PMI back under 55) and ETH $1,500 downside level; timing left vague by most.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "Hgikc09SCgM",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "videoId": "NRRCwlgEGU8",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "videoId": "SpxCqrzGDiA",
+          "predictor": "Ivan on Tech ('Valhalla' Jan–Feb 2027)"
+        },
+        {
+          "videoId": "Lu-sOTkVWDM",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "videoId": "l0Ia0GNzciI",
+          "predictor": "Vandell Aljarrah (utility bull run)"
+        }
+      ]
+    },
+    {
+      "id": "next-cycle-top",
+      "type": "consensus",
+      "statement": "Next bull leg targets roughly $200K–$300K+ for Bitcoin, a smaller multiple than past cycles.",
+      "note": "Falsifiable magnitude claim; watch for goalpost-moves if the late-2026 bottom call slips.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "SpxCqrzGDiA",
+          "predictor": "Ivan on Tech ($200K)"
+        },
+        {
+          "videoId": "wJBYU7xND00",
+          "predictor": "Cory Klippsten ($200K, then 5–8x)"
+        },
+        {
+          "videoId": "XNuL97I8bvc",
+          "predictor": "FibSwanny ($194K–$305K)"
+        }
+      ]
     }
   ]
 }
