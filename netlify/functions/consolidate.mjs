@@ -1,6 +1,9 @@
-// Narrative Radar — refresh step 3: re-consolidate a narrative's core claims
-// from its (newly grown) corpus, and commit claims.json back to the repo.
-// POST /api/consolidate {topic} → {claims: {...}, persisted}
+// Narrative Radar — refresh step 3: re-consolidate a narrative's core claims.
+// Delta design: Claude sees only the not-yet-cited videos and returns additions
+// (sources joining existing claims) + genuinely new claims. The server merges,
+// commits claims.json, and returns the full result. Keeps output small enough
+// for the function's time budget.
+// POST /api/consolidate {topic} → {claims, persisted}
 import Anthropic from "@anthropic-ai/sdk";
 
 const REPO = "malikkawambwasinare-wq/narrative-radar";
@@ -15,16 +18,33 @@ const json = (status, body) =>
     status, headers: { "Content-Type": "application/json", ...CORS },
   });
 
+const SOURCE = {
+  type: "object", additionalProperties: false,
+  required: ["videoId", "predictor"],
+  properties: { videoId: { type: "string" }, predictor: { type: "string" } },
+};
+
 const SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["claims"],
+  required: ["additions", "new_claims"],
   properties: {
-    claims: {
+    additions: {
       type: "array",
       items: {
-        type: "object",
-        additionalProperties: false,
+        type: "object", additionalProperties: false,
+        required: ["claim_id", "camp_index", "sources"],
+        properties: {
+          claim_id: { type: "string" },
+          camp_index: { type: ["integer", "null"] },
+          sources: { type: "array", items: SOURCE },
+        },
+      },
+    },
+    new_claims: {
+      type: "array",
+      items: {
+        type: "object", additionalProperties: false,
         required: ["id", "type", "statement", "note", "camps", "sources"],
         properties: {
           id: { type: "string" },
@@ -34,42 +54,28 @@ const SCHEMA = {
           camps: {
             type: ["array", "null"],
             items: {
-              type: "object",
-              additionalProperties: false,
+              type: "object", additionalProperties: false,
               required: ["position", "sources"],
               properties: {
                 position: { type: "string" },
-                sources: { type: "array", items: {
-                  type: "object", additionalProperties: false,
-                  required: ["videoId", "predictor"],
-                  properties: { videoId: { type: "string" }, predictor: { type: "string" } },
-                } },
+                sources: { type: "array", items: SOURCE },
               },
             },
           },
-          sources: {
-            type: ["array", "null"],
-            items: {
-              type: "object", additionalProperties: false,
-              required: ["videoId", "predictor"],
-              properties: { videoId: { type: "string" }, predictor: { type: "string" } },
-            },
-          },
+          sources: { type: ["array", "null"], items: SOURCE },
         },
       },
     },
   },
 };
 
-const SYSTEM = `You maintain the consolidated claims of a tracked narrative for Narrative Radar. Input: the current consolidated claims, the full video corpus (titles, channels, verdicts, analyst notes), and raw extracted claims where available.
+const SYSTEM = `You maintain the consolidated claims of a tracked narrative for Narrative Radar. Input: the current consolidated claims (contested claims have camps listed with camp_index), and the corpus videos NOT yet cited by any claim.
 
-Update the consolidated claims to reflect the corpus:
-- A claim belongs here only if it is CONSISTENTLY present across multiple videos (or is a clearly contested question with identifiable camps).
-- Preserve existing claim ids and statements unless the corpus genuinely changed them; ADD new sources to existing claims when new videos carry them; add a NEW claim only when several videos support it.
-- "consensus" claims use the sources array (camps: null). "contested" claims use camps (sources: null), each camp with its position and sources.
-- Every source must be a real videoId from the corpus with the predictor who carries the claim in that video.
-- Keep statements ≤ 30 words, notes ≤ 35 words. Notes should say what makes the claim trackable (clocks, falsifiers, incentives).
-- Never invent sources or claims not grounded in the given corpus data.`;
+Return a small delta:
+- additions: uncited videos that carry an EXISTING claim → attach as sources ({claim_id, camp_index (null for consensus claims), sources:[{videoId, predictor}]}). Judge from title/channel/verdict/analyst-note. Only attach when the video genuinely carries that claim.
+- new_claims: only if several uncited videos together support a claim not yet consolidated (or a clearly contested question). Statements ≤ 30 words, notes ≤ 35 words stating what makes it trackable.
+- Videos that fit nothing (clickbait shells, off-claim content) are simply omitted.
+Never invent sources. Return empty arrays if nothing changes.`;
 
 const ghHeaders = () => ({
   Authorization: `Bearer ${process.env.GH_TOKEN}`,
@@ -86,62 +92,94 @@ export default async (req) => {
   if (!topicId) return json(400, { error: "topic required" });
 
   try {
-    const [videos, current, extracted] = await Promise.all([
+    const [videos, current] = await Promise.all([
       fetch(`${RAW}/corpus/${topicId}/videos.json`).then((r) => r.json())
         .then((d) => d.videos),
       fetch(`${RAW}/corpus/${topicId}/claims.json`).then((r) => r.json())
         .catch(() => ({ claims: [] })),
-      fetch(`${RAW}/corpus/${topicId}/claims-extracted.json`).then((r) => r.json())
-        .catch(() => []),
     ]);
+
+    // Which videos are already cited by some claim?
+    const cited = new Set();
+    for (const c of current.claims) {
+      for (const s of c.sources || []) cited.add(s.videoId);
+      for (const camp of c.camps || []) for (const s of camp.sources || []) cited.add(s.videoId);
+    }
+    const uncited = videos.filter((v) => !cited.has(v.videoId));
+    if (!uncited.length) {
+      return json(200, { status: "consolidated", topic: topicId, claims: current, persisted: false, unchanged: true });
+    }
+
+    const compactClaims = current.claims.map((c) => ({
+      id: c.id, type: c.type, statement: c.statement,
+      camps: (c.camps || []).map((cp, i) => ({ camp_index: i, position: cp.position })),
+    }));
 
     const client = new Anthropic();
     const response = await client.messages.create({
       model: "claude-opus-5",
-      max_tokens: 4000,
+      max_tokens: 1500,
       output_config: { effort: "low", format: { type: "json_schema", schema: SCHEMA } },
       system: SYSTEM,
       messages: [{
         role: "user",
         content: JSON.stringify({
-          current_consolidated_claims: current.claims,
-          corpus: videos.map((v) => ({
+          current_claims: compactClaims,
+          uncited_videos: uncited.map((v) => ({
             videoId: v.videoId, title: v.title, channel: v.channel,
             verdict: v.verdict, note: v.verdict_note,
           })),
-          raw_extracted_claims: extracted,
         }),
       }],
     });
     if (response.stop_reason === "refusal") {
       return json(200, { status: "error", error: "consolidation_declined" });
     }
-    const out = JSON.parse(response.content.find((b) => b.type === "text")?.text);
+    const delta = JSON.parse(response.content.find((b) => b.type === "text")?.text);
+
+    // Merge the delta
+    let changed = false;
+    for (const add of delta.additions || []) {
+      const c = current.claims.find((x) => x.id === add.claim_id);
+      if (!c) continue;
+      const target = c.type === "contested"
+        ? c.camps?.[add.camp_index ?? -1]?.sources
+        : (c.sources = c.sources || []);
+      if (!target) continue;
+      for (const s of add.sources || []) {
+        if (!target.some((t) => t.videoId === s.videoId)) { target.push(s); changed = true; }
+      }
+    }
+    for (const nc of delta.new_claims || []) {
+      if (!current.claims.some((x) => x.id === nc.id)) { current.claims.push(nc); changed = true; }
+    }
+
     const claims = {
       note: "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
       updated: new Date().toISOString().slice(0, 10),
-      claims: out.claims,
+      claims: current.claims,
     };
 
-    // Commit back (read for sha, then write)
     let persisted = false;
-    const path = `corpus/${topicId}/claims.json`;
-    const cur = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-      headers: ghHeaders(),
-    });
-    const sha = cur.ok ? (await cur.json()).sha : undefined;
-    const put = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
-      method: "PUT",
-      headers: ghHeaders(),
-      body: JSON.stringify({
-        message: `Engine: re-consolidate claims for ${topicId} (${out.claims.length} claims)`,
-        content: Buffer.from(JSON.stringify(claims, null, 2)).toString("base64"),
-        ...(sha ? { sha } : {}),
-      }),
-    });
-    persisted = put.ok;
+    if (changed) {
+      const path = `corpus/${topicId}/claims.json`;
+      const cur = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+        headers: ghHeaders(),
+      });
+      const sha = cur.ok ? (await cur.json()).sha : undefined;
+      const put = await fetch(`https://api.github.com/repos/${REPO}/contents/${path}`, {
+        method: "PUT",
+        headers: ghHeaders(),
+        body: JSON.stringify({
+          message: `Engine: consolidate claims for ${topicId} (+${(delta.additions || []).length} additions, +${(delta.new_claims || []).length} new)`,
+          content: Buffer.from(JSON.stringify(claims, null, 2)).toString("base64"),
+          ...(sha ? { sha } : {}),
+        }),
+      });
+      persisted = put.ok;
+    }
 
-    return json(200, { status: "consolidated", topic: topicId, claims, persisted });
+    return json(200, { status: "consolidated", topic: topicId, claims, persisted, unchanged: !changed });
   } catch (e) {
     return json(500, { status: "error", error: String(e.message || e).slice(0, 300) });
   }
