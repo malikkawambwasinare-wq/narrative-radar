@@ -213,6 +213,14 @@ export default async (req) => {
       analysis.decision = "existing_narrative";
       analysis.topic_id = analysis.new_narrative_id;
     }
+    // A clickbait/recycled shell can't FOUND a narrative unless confidence is high —
+    // bait evidences narratives but low-confidence shells create noise tiles
+    if (analysis.decision === "new_narrative" &&
+        ["CLICKBAIT", "RECYCLED"].includes(analysis.verdict) &&
+        analysis.confidence !== "high") {
+      analysis.decision = "unrelated";
+      analysis.verdict_note += " (New-narrative proposal suppressed: low-confidence clickbait/recycled shell.)";
+    }
 
     if (analysis.decision === "existing_narrative" && analysis.topic_id) {
       const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today);
