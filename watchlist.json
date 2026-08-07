@@ -33,6 +33,23 @@
       ],
       "watched_predictors": [],
       "notes": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave."
+    },
+    {
+      "id": "crypto-winter-watch",
+      "name": "Crypto Winter Watch",
+      "status": "active",
+      "started": "2026-08-07",
+      "trigger": "User-submitted video: Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter (New York Times Events)",
+      "queries": [
+        "crypto winter 2026",
+        "is the crypto bull cycle over",
+        "Brian Armstrong crypto outlook",
+        "Larry Fink bitcoin BlackRock",
+        "bitcoin bear market institutional adoption",
+        "crypto four year cycle dead"
+      ],
+      "watched_predictors": [],
+      "notes": "Created by the analysis engine. Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat."
     }
   ]
 }
