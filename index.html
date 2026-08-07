@@ -602,6 +602,11 @@ async function renderYours() {
 }
 
 /* ---------- landing & lookup ---------- */
+// The analysis engine lives on Netlify; the GitHub Pages copy calls it cross-origin.
+const API_BASE = location.hostname.endsWith("github.io")
+  ? "https://lambent-salmiakki-6ea854.netlify.app"
+  : "";
+
 const ADVICE = {
   ORIGINAL: "Worth your time if this topic matters to you — primary content with new material.",
   DERIVATIVE: "Commentary on claims already tracked here — the summary above may be all you need.",
@@ -661,13 +666,81 @@ async function runLookup(raw) {
       return;
     }
   }
-  const active = watchlist.topics.filter(t => t.status === "active").map(t => esc(t.name)).join("; ");
+  // Unknown video → live analysis via the engine
   box.innerHTML = `<div class="card">
-    <div class="r-kicker">Not tracked yet</div>
-    <div class="r-meta">This video isn't in a tracked narrative yet. The radar currently
-    tracks: <b>${active}</b>. On-demand analysis of any link is coming — for now, browse
-    what's on the radar.</div>
-    <button class="open-btn" data-topic="" data-vid="">Browse the radar →</button>
+    <div class="r-kicker">Analyzing…</div>
+    <div class="r-meta">This video isn't tracked yet — running a live analysis against the
+    radar's narratives. Takes about 10–20 seconds.</div>
+  </div>`;
+  try {
+    const r = await fetch(API_BASE + "/api/analyze", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url: raw }),
+    });
+    const d = await r.json();
+    renderAnalysis(box, d);
+  } catch (e) {
+    box.innerHTML = `<div class="card">
+      <div class="r-kicker">Engine unavailable</div>
+      <div class="r-meta">The analysis engine didn't respond. Try again in a minute, or
+      browse what's already on the radar.</div>
+      <button class="open-btn" data-topic="" data-vid="">Browse the radar →</button>
+    </div>`;
+  }
+}
+
+function renderAnalysis(box, d) {
+  if (d.status === "tracked") {
+    const v = d.video, n = d.narrative;
+    box.innerHTML = `<div class="card">
+      <div class="r-kicker">Tracked video</div>
+      <div class="r-title">${esc(v.title)}</div>
+      <div class="r-meta">${esc(v.channel)} · ${esc(v.published || "")}</div>
+      <div class="vid-row2">${vchip(v.verdict)}</div>
+      ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
+      <div class="r-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</div>
+      ${n ? `<div class="r-narr">Part of the narrative <b>${esc(n.name)}</b> —
+        ${esc(narrativeAge(n.born))} (born ${esc(n.born)}), ${n.mutations} mechanism mutations.</div>` : ""}
+      <button class="open-btn" data-topic="${esc(d.topic_id)}" data-vid="${esc(v.videoId)}">
+        Open narrative tracking →</button>
+    </div>`;
+    return;
+  }
+  if (d.status !== "analyzed") {
+    box.innerHTML = `<div class="card">
+      <div class="r-kicker">Couldn't analyze</div>
+      <div class="r-meta">${esc(d.error === "video_not_found"
+        ? "That video doesn't seem to exist on YouTube."
+        : "Something went wrong: " + (d.error || "unknown"))}</div>
+    </div>`;
+    return;
+  }
+  const a = d.analysis, n = d.narrative;
+  const kicker = a.decision === "existing_narrative" ? "Live analysis — tracked narrative"
+    : a.decision === "new_narrative" ? "Live analysis — new narrative detected"
+    : "Live analysis — not a narrative video";
+  const chipVerdict = a.verdict === "UNKNOWN" ? "UNREVIEWED" : a.verdict;
+  box.innerHTML = `<div class="card">
+    <div class="r-kicker">${esc(kicker)}</div>
+    <div class="r-title">${esc(d.video.title)}</div>
+    <div class="r-meta">${esc(d.video.channel)}</div>
+    <div class="vid-row2">${vchip(chipVerdict)}
+      <span class="pill query">metadata-only · confidence: ${esc(a.confidence)}</span></div>
+    <div class="v-note">${esc(a.verdict_note)}</div>
+    <div class="r-advice">${esc(a.advice)}</div>
+    ${a.decision === "existing_narrative" && n ? `<div class="r-narr">
+      Part of the narrative <b>${esc(n.name)}</b> — ${esc(narrativeAge(n.born))}
+      (born ${esc(n.born)}), ${n.mutations} mechanism mutations.
+      ${a.is_update && a.update_note ? `<br><b>Narrative update:</b> ${esc(a.update_note)}` : ""}
+      ${d.persisted ? `<br><span class="no-t">Saved to the radar — appears in the corpus after the next refresh (~1 min).</span>` : ""}
+    </div>
+    <button class="open-btn" data-topic="${esc(a.topic_id)}" data-vid="">Open narrative tracking →</button>` : ""}
+    ${a.decision === "new_narrative" ? `<div class="r-narr">
+      Proposed new narrative: <b>${esc(a.new_narrative_name || "")}</b> —
+      ${esc(a.new_narrative_claim || "")}
+      ${d.persisted ? `<br><span class="no-t">Queued for review — it becomes a tracked narrative once approved.</span>` : ""}
+    </div>` : ""}
   </div>`;
 }
 
