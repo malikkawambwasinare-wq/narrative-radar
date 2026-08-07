@@ -1,0 +1,129 @@
+{
+  "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
+  "updated": "2026-08-07",
+  "claims": [
+    {
+      "id": "imminent-debt-crisis",
+      "type": "consensus",
+      "statement": "A debt-driven US crisis is imminent — the defining claim, on a rolling ~2-year clock since 2015.",
+      "sources": [
+        {
+          "videoId": "Bu0xNDLNORU",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "videoId": "vivFgXv2sCg",
+          "predictor": "Ray Dalio (re-cut)"
+        },
+        {
+          "videoId": "AgTk42rH4n8",
+          "predictor": "Martin Armstrong (2032)"
+        },
+        {
+          "videoId": "qbnuJFRcvQE",
+          "predictor": "Steve Keen"
+        },
+        {
+          "videoId": "JrASb2EeBiY",
+          "predictor": "Bernie Sanders (jobs framing)"
+        }
+      ],
+      "note": "The ledger shows the horizon rolls: 2 refuted, 2 goalpost-moves since 2015. First countable clock: Sept 2028."
+    },
+    {
+      "id": "crisis-trigger",
+      "type": "contested",
+      "statement": "What triggers the crisis?",
+      "camps": [
+        {
+          "position": "AI capex debt (the 2026 mutation)",
+          "sources": [
+            {
+              "videoId": "Bu0xNDLNORU",
+              "predictor": "Ray Dalio"
+            },
+            {
+              "videoId": "HXlcMbxzz0U",
+              "predictor": "SPV/hidden-debt analysis"
+            },
+            {
+              "videoId": "s8omwT8FkSE",
+              "predictor": "Meet Kevin (Fed/rates)"
+            }
+          ]
+        },
+        {
+          "position": "Credit-market seizure",
+          "sources": [
+            {
+              "videoId": "1_GGrQyesfc",
+              "predictor": "Rick Rule"
+            }
+          ]
+        },
+        {
+          "position": "Japan repatriation / yen-carry unwind",
+          "sources": [
+            {
+              "videoId": "YBhwK-VWsxY",
+              "predictor": "Andrei Jikh"
+            },
+            {
+              "videoId": "faiJCn20gv0",
+              "predictor": "yen-carry thesis"
+            }
+          ]
+        }
+      ],
+      "note": "The mechanism rotates with the news cycle — the narrative's audit signature. Same conclusion, competing engines."
+    },
+    {
+      "id": "hard-assets-hedge",
+      "type": "consensus",
+      "statement": "Gold/silver/hard assets are the hedge; targets up to $7–14K gold.",
+      "sources": [
+        {
+          "videoId": "AgTk42rH4n8",
+          "predictor": "Martin Armstrong"
+        },
+        {
+          "videoId": "2DPA-AtFQQE",
+          "predictor": "gold/debt thesis"
+        },
+        {
+          "videoId": "1a1hbOX6N2w",
+          "predictor": "Willem Middelkoop (rehash)"
+        },
+        {
+          "videoId": "pYFBf15XunU",
+          "predictor": "silver pitch (recycled)"
+        }
+      ],
+      "note": "Where the narrative monetizes — several sources are dealers or affiliates. Follow the incentive."
+    },
+    {
+      "id": "ai-bubble-pop",
+      "type": "consensus",
+      "statement": "The AI investment boom is a bubble that pops within ~1–2 years, triggering recession.",
+      "sources": [
+        {
+          "videoId": "qbnuJFRcvQE",
+          "predictor": "Steve Keen (~2027-28)"
+        },
+        {
+          "videoId": "1BOCO-FcRYY",
+          "predictor": "Mark Thornton (skyscraper curse)"
+        },
+        {
+          "videoId": "e5jgTNJdRcE",
+          "predictor": "Scott Galloway (forced selling)"
+        },
+        {
+          "videoId": "HvgjGiNm5Rk",
+          "predictor": "Reventure (10-30% correction)"
+        }
+      ],
+      "note": "The freshest strand — where this narrative overlaps the AI discourse. Watch for cross-narrative migration."
+    }
+  ]
+}

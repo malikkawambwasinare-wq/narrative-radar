@@ -1,0 +1,194 @@
+{
+  "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
+  "updated": "2026-08-07",
+  "claims": [
+    {
+      "id": "bottom-late-2026",
+      "type": "consensus",
+      "statement": "A market bottom forms in late 2026 (Aug–Nov), then a new bull leg begins by 2027.",
+      "sources": [
+        {
+          "videoId": "SpxCqrzGDiA",
+          "predictor": "Ivan on Tech"
+        },
+        {
+          "videoId": "wJBYU7xND00",
+          "predictor": "Cory Klippsten"
+        },
+        {
+          "videoId": "XNuL97I8bvc",
+          "predictor": "FibSwanny"
+        },
+        {
+          "videoId": "xJyNgxAozQw",
+          "predictor": "Gareth Soloway"
+        },
+        {
+          "videoId": "y9PN4mfk1hs",
+          "predictor": "Gerhard"
+        },
+        {
+          "videoId": "bs6yz79MneQ",
+          "predictor": "Phong Le"
+        },
+        {
+          "videoId": "Lu-sOTkVWDM",
+          "predictor": "Matt Hougan"
+        }
+      ],
+      "note": "The corpus's strongest consistency — seven independent voices put the turn within the same ~6-month window. The narrative's most trackable claim."
+    },
+    {
+      "id": "four-year-cycle",
+      "type": "contested",
+      "statement": "Is the 4-year halving cycle dead?",
+      "camps": [
+        {
+          "position": "Dead/changed — institutions broke the cycle",
+          "sources": [
+            {
+              "videoId": "Lu-sOTkVWDM",
+              "predictor": "Matt Hougan"
+            },
+            {
+              "videoId": "XNuL97I8bvc",
+              "predictor": "FibSwanny"
+            },
+            {
+              "videoId": "eT9X6C7cCH4",
+              "predictor": "Michael Saylor"
+            }
+          ]
+        },
+        {
+          "position": "Intact — this is a normal cycle bear",
+          "sources": [
+            {
+              "videoId": "CqX7sirvtO8",
+              "predictor": "Sophie Satoshi"
+            },
+            {
+              "videoId": "wJBYU7xND00",
+              "predictor": "Cory Klippsten"
+            },
+            {
+              "videoId": "SpxCqrzGDiA",
+              "predictor": "Ivan on Tech"
+            }
+          ]
+        }
+      ],
+      "note": "The 2026 referendum. Both camps' calls resolve on the same late-2026 clock — the ledger will settle this."
+    },
+    {
+      "id": "bottom-depth",
+      "type": "contested",
+      "statement": "How deep does the bottom go?",
+      "camps": [
+        {
+          "position": "Deep flush toward ~$35–40K",
+          "sources": [
+            {
+              "videoId": "xJyNgxAozQw",
+              "predictor": "Gareth Soloway"
+            },
+            {
+              "videoId": "y9PN4mfk1hs",
+              "predictor": "Gerhard (−30% more)"
+            }
+          ]
+        },
+        {
+          "position": "Floor holds at ~$53–60K, no deep flush",
+          "sources": [
+            {
+              "videoId": "wJBYU7xND00",
+              "predictor": "Cory Klippsten (~$57.5K)"
+            },
+            {
+              "videoId": "XNuL97I8bvc",
+              "predictor": "FibSwanny ($53–60K)"
+            }
+          ]
+        }
+      ],
+      "note": "Directly opposed price zones on the same clock — cleanly falsifiable by October–November 2026."
+    },
+    {
+      "id": "institutional-buyer",
+      "type": "consensus",
+      "statement": "Institutional capital (ETFs, advisors, corporate treasuries, sovereign wealth) is the next marginal buyer and structurally changes the market.",
+      "sources": [
+        {
+          "videoId": "Lu-sOTkVWDM",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "videoId": "qTPGkVaukjo",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "videoId": "bs6yz79MneQ",
+          "predictor": "Phong Le"
+        },
+        {
+          "videoId": "eT9X6C7cCH4",
+          "predictor": "Michael Saylor"
+        },
+        {
+          "videoId": "HeFwIsrtgVQ",
+          "predictor": "Armstrong & Fink"
+        },
+        {
+          "videoId": "NKIcBUmI2e4",
+          "predictor": "Matt Hougan (1–2% default allocation)"
+        }
+      ],
+      "note": "The 'this time is different' engine. Counter-voice on file: Klippsten calls ETF/treasury holders 'paper hands' who deepened the sell-off (wJBYU7xND00)."
+    },
+    {
+      "id": "regulatory-catalyst",
+      "type": "consensus",
+      "statement": "US regulatory clarity (Clarity Act, stablecoin/tokenization rules) is the major near-term catalyst.",
+      "sources": [
+        {
+          "videoId": "zv4icJOfB-w",
+          "predictor": "Brian Armstrong"
+        },
+        {
+          "videoId": "bs6yz79MneQ",
+          "predictor": "Phong Le"
+        },
+        {
+          "videoId": "ks2i176-se8",
+          "predictor": "Phong Le (Basel risk-weighting)"
+        }
+      ],
+      "note": "Shortest clock in the narrative: Armstrong expects a Senate floor vote before the August 2026 recess."
+    },
+    {
+      "id": "million-dollar-btc",
+      "type": "consensus",
+      "statement": "Long-horizon: Bitcoin reaches $700K–$1M+ (2030s) on institutional/store-of-value math.",
+      "sources": [
+        {
+          "videoId": "tjLPE9h6BKg",
+          "predictor": "ARK ($710K base 2030)"
+        },
+        {
+          "videoId": "tjLPE9h6BKg",
+          "predictor": "Bernstein ($1M ~2033)"
+        },
+        {
+          "videoId": "eT9X6C7cCH4",
+          "predictor": "Michael Saylor ($1M)"
+        },
+        {
+          "videoId": "tjLPE9h6BKg",
+          "predictor": "Tom Lee ($2M, no date)"
+        }
+      ],
+      "note": "The faith layer — mostly unfalsifiable on useful horizons; tracked for goalpost-moves."
+    }
+  ]
+}
