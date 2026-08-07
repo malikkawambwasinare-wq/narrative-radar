@@ -1,0 +1,34 @@
+{
+  "videos": [
+    {
+      "videoId": "HeFwIsrtgVQ",
+      "url": "https://www.youtube.com/watch?v=HeFwIsrtgVQ",
+      "title": "Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter",
+      "channel": "New York Times Events",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "user-submitted",
+      "age_days": null,
+      "first_seen": "2026-08-07",
+      "transcript": null,
+      "verdict": "ORIGINAL",
+      "verdict_note": "[live analysis, metadata-only] Live conference interview with Coinbase's Armstrong and BlackRock's Fink; primary-source remarks rather than repackaged commentary."
+    },
+    {
+      "videoId": "0QyKqoWaF_U",
+      "url": "https://www.youtube.com/watch?v=0QyKqoWaF_U",
+      "title": "The Hard TRUTH about Crypto in 2026. (You May Not Want to Hear This)",
+      "channel": "No Bs Crypto",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "user-submitted",
+      "age_days": null,
+      "first_seen": "2026-08-07",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Generic 'hard truth about crypto in 2026' framing repackages the familiar bear-cycle vs. institutional-adoption debate; no distinct new claim visible in metadata."
+    }
+  ]
+}
