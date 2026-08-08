@@ -67,6 +67,23 @@
       ],
       "watched_predictors": [],
       "notes": "Created by the analysis engine. After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors — position now before the next leg up."
+    },
+    {
+      "id": "housing-crash-watch",
+      "name": "Housing Crash Watch",
+      "status": "active",
+      "started": "2026-08-08",
+      "trigger": "User-submitted video: Is The Housing Market Still Going to Crash in 2026? (Michael Bordenaro)",
+      "queries": [
+        "housing market crash 2026",
+        "home prices falling inventory surge",
+        "housing market predictions 2026",
+        "is the housing bubble about to pop",
+        "mortgage rates housing crash",
+        "real estate market collapse coming"
+      ],
+      "watched_predictors": [],
+      "notes": "Created by the analysis engine. US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward."
     }
   ]
 }
