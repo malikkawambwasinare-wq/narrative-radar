@@ -706,7 +706,18 @@ async function refreshNarrative(topicId, prefix = "") {
       showNotice(`${prefix}Building out <b>${esc(name)}</b> — analyzing video ${i + 1} of ${list.length}…`);
       const d = await fetch(API_BASE + "/api/analyze", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ url: list[i] }),
+        body: JSON.stringify({
+          url: list[i],
+          // Context: this narrative may be newer than the raw CDN's copy
+          context_topics: [{
+            id: topicId, name,
+            narrative: cache[topicId]?.narrative || null,
+            videos: (cache[topicId]?.videos?.videos || []).map(v => ({
+              videoId: v.videoId, title: v.title, channel: v.channel,
+              verdict: v.verdict, length: v.length,
+            })),
+          }],
+        }),
       }).then(r => r.json()).catch(() => null);
       if (d?.status === "analyzed" && d.analysis?.decision === "existing_narrative"
           && d.analysis.topic_id === topicId && d.video_entry) {

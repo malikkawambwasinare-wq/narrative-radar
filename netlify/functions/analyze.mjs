@@ -169,6 +169,15 @@ export default async (req) => {
           .then((d) => d.videos).catch(() => []),
       })),
     );
+    // Client-supplied context: just-created narratives the raw CDN doesn't know yet
+    for (const ct of body.context_topics || []) {
+      if (ct?.id && !topics.some((t) => t.id === ct.id)) {
+        topics.push({
+          id: ct.id, status: "active", name: ct.name || ct.id,
+          narrative: ct.narrative || null, videos: ct.videos || [],
+        });
+      }
+    }
 
     // Already tracked → instant answer
     for (const t of topics) {
@@ -209,7 +218,7 @@ export default async (req) => {
 
     // Slug collision safety: a "new" narrative matching an existing id is existing
     if (analysis.decision === "new_narrative" &&
-        watchlist.topics.some((t) => t.id === analysis.new_narrative_id)) {
+        topics.some((t) => t.id === analysis.new_narrative_id)) {
       analysis.decision = "existing_narrative";
       analysis.topic_id = analysis.new_narrative_id;
     }
