@@ -1,6 +1,6 @@
 {
   "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
-  "updated": "2026-08-07",
+  "updated": "2026-08-08",
   "claims": [
     {
       "id": "bottom-late-2026",
@@ -44,6 +44,14 @@
         {
           "videoId": "Hgikc09SCgM",
           "predictor": "Dan Gambardello"
+        },
+        {
+          "videoId": "1Y1R8mxl_aE",
+          "predictor": "Gerhard - Bitcoin Strategy"
+        },
+        {
+          "videoId": "U302AbHoPhc",
+          "predictor": "The Wealth Transfer with TC"
         }
       ]
     },
@@ -126,6 +134,14 @@
             {
               "videoId": "y9PN4mfk1hs",
               "predictor": "Gerhard (−30% more)"
+            },
+            {
+              "videoId": "1Y1R8mxl_aE",
+              "predictor": "Gerhard - Bitcoin Strategy"
+            },
+            {
+              "videoId": "U302AbHoPhc",
+              "predictor": "The Wealth Transfer with TC"
             }
           ]
         },
