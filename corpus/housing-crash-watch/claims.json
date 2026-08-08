@@ -1,0 +1,32 @@
+{
+  "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
+  "updated": "2026-08-08",
+  "claims": [
+    {
+      "id": "housing-crash-2026",
+      "type": "contested",
+      "statement": "The US housing market is heading for a crash in 2026.",
+      "note": "Trackable via 2026 national home price indices, inventory levels, and regional price declines; recurring YouTube framing worth monitoring for verdict shifts.",
+      "camps": [
+        {
+          "position": "A crash is coming or already underway in vulnerable markets",
+          "sources": [
+            {
+              "videoId": "1zjEXg5B174",
+              "predictor": "Michael Bordenaro"
+            },
+            {
+              "videoId": "9jSH04dSpXQ",
+              "predictor": "Econofin"
+            },
+            {
+              "videoId": "U6JczR2H5CU",
+              "predictor": "The Iced Coffee Hour Clips"
+            }
+          ]
+        }
+      ],
+      "sources": null
+    }
+  ]
+}
