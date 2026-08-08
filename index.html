@@ -148,6 +148,8 @@
   .vbar .vtrack { height: 14px; border-radius: 4px; background: none; position: relative; }
   .vbar .vfill { position: absolute; inset: 0 auto 0 0; border-radius: 4px; min-width: 3px; }
   .vbar .vn { font-size: 12.5px; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .pchart .vbar { grid-template-columns: 150px 1fr 34px; }
+  .pchart .vl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .claims { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--hairline); }
   .claims .ck { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 8px; }
@@ -459,6 +461,38 @@ function renderNarrativeCard() {
       <div class="explain-text">${esc(n.explanations[level] || n.explanations.layman || "")}</div>
     </div>` : "";
 
+  // Predictor breakdown: who drives this narrative, and in which videos
+  const pstats = new Map();
+  const addP = (name, vid) => {
+    const key = (name || "").split("(")[0].trim();
+    if (!key || /^multiple|^to be determined/i.test(key)) return;
+    if (!pstats.has(key)) pstats.set(key, new Set());
+    if (vid) pstats.get(key).add(vid);
+  };
+  for (const c of cache[topicId]?.claims?.claims || []) {
+    for (const s of c.sources || []) addP(s.predictor, s.videoId);
+    for (const cp of c.camps || []) for (const s of cp.sources || []) addP(s.predictor, s.videoId);
+  }
+  for (const e of preds) addP(e.predictor || n.predictor, parseVideoId(e.source || ""));
+  const ptop = [...pstats.entries()]
+    .map(([name, set]) => ({ name, vids: [...set] }))
+    .sort((a, b) => b.vids.length - a.vids.length)
+    .slice(0, 8);
+  const pmax = Math.max(1, ...ptop.map(p => p.vids.length));
+  const pchart = ptop.length ? `
+    <div class="vchart pchart">
+      <div class="vck">Predictors on file — click a name to see their videos</div>
+      ${ptop.map(p => `
+        <div class="vbar ${predictorFilter?.name === p.name ? "active" : ""}"
+             data-bar-predictor="${esc(p.name)}" data-bar-vids="${esc(p.vids.join(","))}"
+             title="Show videos carrying ${esc(p.name)}'s claims">
+          <span class="vl">${esc(p.name)}</span>
+          <span class="vtrack"><span class="vfill"
+            style="width:${Math.round(p.vids.length / pmax * 100)}%;background:var(--accent)"></span></span>
+          <span class="vn">${p.vids.length}</span>
+        </div>`).join("")}
+    </div>` : "";
+
   const cl = cache[topicId]?.claims;
   const srcNames = (arr) => (arr || []).slice(0, 3).map(s => s.predictor.split("(")[0].trim()).join(", ");
   const claimsHtml = cl?.claims?.length ? `
@@ -497,6 +531,7 @@ function renderNarrativeCard() {
     </div>
     <div class="vbreak">${scoreline}</div>
     ${vbreak ? `<div class="vchart"><div class="vck">Corpus composition — click a bar to see those videos</div>${vbreak}</div>` : ""}
+    ${pchart}
     <details class="nmore">
       <summary>How the mechanism has mutated ▾</summary>
       <div class="mutations">${(n.mutations || []).map(m =>
@@ -527,7 +562,8 @@ function renderCorpus() {
   let list = vids.filter(v =>
     (!q || (v.title + " " + v.channel + " " + v.videoId).toLowerCase().includes(q)) &&
     (tf === "all" || (tf === "yes") === !!v.transcript) &&
-    (vf === "all" || v.verdict === vf));
+    (vf === "all" || v.verdict === vf) &&
+    (!predictorFilter || predictorFilter.vids.includes(v.videoId)));
   if ($("sort").value === "views") list = [...list].sort((a,b) => viewsNum(b.views) - viewsNum(a.views));
   else list = [...list].sort((a,b) => (a.age_days ?? 9e9) - (b.age_days ?? 9e9));
 
@@ -648,6 +684,7 @@ async function loadTopicData(id) {
 }
 
 async function loadTopic(id) {
+  if (id !== topicId) predictorFilter = null;
   topicId = id;
   renderTopics();
   await loadTopicData(id);
@@ -723,6 +760,7 @@ function showNotice(html) {
     : "";
 }
 
+let predictorFilter = null;
 let refreshing = false;
 async function refreshNarrative(topicId, prefix = "") {
   if (refreshing) return;
@@ -953,6 +991,14 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
   const vb = ev.target.closest(".vbar");
+  if (vb && vb.dataset.barPredictor) {
+    predictorFilter = predictorFilter?.name === vb.dataset.barPredictor
+      ? null
+      : { name: vb.dataset.barPredictor, vids: vb.dataset.barVids.split(",") };
+    renderCorpus();
+    if (predictorFilter) document.querySelector(".controls")?.scrollIntoView({ block: "start" });
+    return;
+  }
   if (vb) {
     const v = vb.dataset.barVerdict;
     $("vfilter").value = $("vfilter").value === v ? "all" : v;
