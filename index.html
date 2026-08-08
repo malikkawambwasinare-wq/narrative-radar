@@ -124,6 +124,17 @@
   .mutations .m { margin: 3px 0; }
   .mutations .d { color: var(--muted); font-variant-numeric: tabular-nums;
     display: inline-block; min-width: 64px; }
+  .explain { margin-top: 12px; }
+  .explain .ek { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-right: 8px; }
+  .lvl {
+    font: inherit; font-size: 12px; padding: 3px 12px; cursor: pointer;
+    border-radius: 999px; border: 1px solid var(--border);
+    background: none; color: var(--ink-2); margin-right: 4px;
+  }
+  .lvl.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+  .explain-text { margin-top: 8px; font-size: 13.5px; color: var(--ink-2);
+    border-left: 3px solid var(--accent); padding-left: 12px; }
   .claims { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--hairline); }
   .claims .ck { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 8px; }
@@ -417,6 +428,15 @@ function renderNarrativeCard() {
     .join("");
   const trig = n.trigger;
 
+  const level = localStorage.getItem("nr-explain-level") || "layman";
+  const explHtml = n.explanations ? `
+    <div class="explain">
+      <span class="ek">Explain this narrative</span>
+      ${["layman", "intermediate", "expert"].map(l =>
+        `<button class="lvl ${l === level ? "on" : ""}" data-explain-level="${l}">${l[0].toUpperCase() + l.slice(1)}</button>`).join("")}
+      <div class="explain-text">${esc(n.explanations[level] || n.explanations.layman || "")}</div>
+    </div>` : "";
+
   const cl = cache[topicId]?.claims;
   const srcNames = (arr) => (arr || []).slice(0, 3).map(s => s.predictor.split("(")[0].trim()).join(", ");
   const claimsHtml = cl?.claims?.length ? `
@@ -447,6 +467,7 @@ function renderNarrativeCard() {
         ${isFollowed(topicId) ? "★ Following" : "☆ Follow"}</button>
     </div>
     <div class="claim">${esc(n.claim)}</div>
+    ${explHtml}
     <div class="nfacts">
       <div class="nfact"><div class="v">${esc(narrativeAge(n.born))}</div><div class="l">born ${esc(n.born)} — ${esc(n.born_note || "")}</div></div>
       <div class="nfact"><div class="v">${n.mutations?.length || 0} mutations</div><div class="l">mechanism changes since birth</div></div>
@@ -909,6 +930,12 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest(".n-close")) return showNotice("");
   if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
+  const lv = ev.target.closest(".lvl");
+  if (lv) {
+    localStorage.setItem("nr-explain-level", lv.dataset.explainLevel);
+    renderNarrativeCard();
+    return;
+  }
   const rb = ev.target.closest(".refreshbtn");
   if (rb) return refreshNarrative(rb.dataset.refresh);
   const fb = ev.target.closest(".followbtn");

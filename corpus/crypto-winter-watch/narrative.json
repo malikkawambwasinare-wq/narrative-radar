@@ -35,5 +35,10 @@
     "first_video": "HeFwIsrtgVQ",
     "created": "2026-08-07"
   },
-  "mutations_note": "Mechanism history model-drafted from discourse knowledge, corroborated by the Aug 2026 corpus; pending full audit."
+  "mutations_note": "Mechanism history model-drafted from discourse knowledge, corroborated by the Aug 2026 corpus; pending full audit.",
+  "explanations": {
+    "layman": "Bitcoin's price has fallen hard, and people argue about what it means. One side says this is another 'crypto winter' — a long stretch of falling prices, like 2018 and 2022. The other side says big institutions (banks, ETFs) now buy crypto, so deep crashes won't happen anymore. Most YouTubers actually agree on one thing: prices bottom out late 2026 and then rise. We wrote down exactly who predicted what, so in a few months you can see who was right.",
+    "intermediate": "The narrative is a live referendum on crypto's 4-year boom-bust cycle: is it intact (this is a normal cycle bear, bottom ~Oct 2026, real bull in 2027-28) or dead (institutional adoption — ETFs, corporate treasuries, regulatory clarity — broke the pattern)? Seven independent voices converge on a late-2026 bottom but split on depth: ~$35K flush vs a $53-60K floor. Nearest clocks: the Clarity Act Senate vote (Aug 2026) and a self-falsifying PMI signal (Sept 1). The corpus is unusually original-heavy — this narrative is being made right now, not yet recycled.",
+    "expert": "Genesis-adjacent narrative (12/18 original verdicts — consolidation stage, pre-fragmentation) with cleanly opposed, same-clock predictions: Soloway's ~$35K October flush vs Klippsten's $57.5K floor via the 12-months-post-peak rule; Hougan's cycle-is-over/2026-ends-higher vs cycle-intact voices targeting 2028. Saylor's 'winters were man-made leverage events, non-repeatable' is the strongest falsifiable form of the institutional thesis. Counter-thesis on file: ETF/treasury holders as weak hands amplifying drawdowns (Klippsten). Watch the verdict ratio decay as clip channels arrive — the age-clock signature — and the term's 2018 birth (sourced) for goalpost archaeology."
+  }
 }

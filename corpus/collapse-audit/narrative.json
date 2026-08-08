@@ -11,11 +11,34 @@
     "note": "135K views in its first 3 hours on 30 Jul 2026; 3.9M within a week. Published under a rotating title — first seen as 'Billionaires Warning: AI Will Lose You Money… You Should Be Happy' with 'The 80 Year Collapse Is Here' thumbnail. Audit verdict: a genuinely new interview, NOT a re-cut of the Sept 2025 DOAC episode — but its clips ecosystem invents figures around it (a '60% crash' title whose number never appears in the interview)."
   },
   "mutations": [
-    { "date": "2015", "mechanism": "Fed repeating 1937 — tightening into a downturn" },
-    { "date": "2016", "mechanism": "the 75-year debt supercycle is ending" },
-    { "date": "2021–22", "mechanism": "internal conflict + empire decline" },
-    { "date": "2025", "mechanism": "'Phase 5' of the Big Debt Cycle — an 'economic heart attack' within ~3 years" },
-    { "date": "Feb 2026", "mechanism": "capital war — money weaponized; gold as the hedge" },
-    { "date": "Jul 2026", "mechanism": "AI capex as the crisis vector" }
-  ]
+    {
+      "date": "2015",
+      "mechanism": "Fed repeating 1937 — tightening into a downturn"
+    },
+    {
+      "date": "2016",
+      "mechanism": "the 75-year debt supercycle is ending"
+    },
+    {
+      "date": "2021–22",
+      "mechanism": "internal conflict + empire decline"
+    },
+    {
+      "date": "2025",
+      "mechanism": "'Phase 5' of the Big Debt Cycle — an 'economic heart attack' within ~3 years"
+    },
+    {
+      "date": "Feb 2026",
+      "mechanism": "capital war — money weaponized; gold as the hedge"
+    },
+    {
+      "date": "Jul 2026",
+      "mechanism": "AI capex as the crisis vector"
+    }
+  ],
+  "explanations": {
+    "layman": "Some famous investors say America has borrowed so much money that a huge crash is coming. This warning has been around for 11 years — the crash keeps being predicted, and keeps not arriving on schedule. The reason given changes with the news: lately it's AI spending. Fear like this gets clicks, so YouTube is full of videos recycling it. We keep score: who predicted what, when, and whether they were right. So far the scoreboard shows repeated reschedules.",
+    "intermediate": "The thesis: the US is at the end of a long debt cycle (~80 years), so a major crisis is imminent. Ray Dalio has carried this since 2015, but the predicted mechanism has mutated six times — 1937 analogy, debt supercycle, internal conflict, 'Phase 5', capital war, and now debt-financed AI capex. The ledger shows 2 refuted calls and 2 goalpost-moves; the first cleanly countable clock expires Sept 2028. The corpus is mostly derivative and recycled content — a mature narrative feeding a content economy rather than new analysis.",
+    "expert": "An 11-year rolling-horizon narrative exhibiting the classic audit signatures: horizon-rolling (~2yr clocks re-issued since 2015), mechanism rotation tracking the news cycle (6 mutations), and monetization through hard-asset affiliates in the derivative layer. Verdict ratio (7 original / 38) marks late lifecycle — fragmentation-stage content dominates, with invented figures appearing in clip titles. Near-term tests: Dalio's midterm-conflict claim (Nov 2026) and the AI-capex strand, which is migrating toward the separate AI-bubble discourse. Directional debt risk is real; the ledger's job is precision about claims, clocks, and outcomes — not dismissal."
+  }
 }

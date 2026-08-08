@@ -9,5 +9,10 @@
     "type": "engine",
     "first_video": "1zjEXg5B174",
     "created": "2026-08-08"
+  },
+  "explanations": {
+    "layman": "Videos keep saying US home prices are about to crash because houses feel impossibly expensive. This prediction has been made year after year — and the crash date keeps moving. We track each version of the claim so you can see whether the people making it have ever been right, without watching hours of videos.",
+    "intermediate": "The claim: unaffordability, rising inventory, and mortgage-rate shock make a major price correction imminent. It's a perennial narrative — the predicted date slides forward annually, which the founding claim itself now acknowledges. The corpus is young (3 videos); the consolidated claim is already marked contested. Watch for whether 2026-dated calls get refuted or rescheduled.",
+    "expert": "Early-stage corpus for a chronic rolling-horizon narrative; the engine's founding claim encodes the goalpost-move signature ('the predicted crash date keeps sliding forward'). Distinct from collapse-audit's macro strand, though crossover content exists (2007-top-caller archetypes). Sales-funnel bait is prevalent in this vertical — one founding attempt was rejected as a funnel shell. Ledger seeding pending a deeper sweep."
   }
 }

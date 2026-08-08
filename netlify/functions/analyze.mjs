@@ -77,6 +77,7 @@ const ANALYSIS_SCHEMA = {
     "is_update", "update_note", "confidence",
     "new_narrative_id", "new_narrative_name", "new_narrative_claim",
     "new_narrative_born", "new_narrative_born_note", "new_narrative_queries",
+    "explanation_layman", "explanation_intermediate", "explanation_expert",
   ],
   properties: {
     decision: { type: "string", enum: ["existing_narrative", "new_narrative", "unrelated"] },
@@ -93,6 +94,9 @@ const ANALYSIS_SCHEMA = {
     new_narrative_born: { type: ["string", "null"] },
     new_narrative_born_note: { type: ["string", "null"] },
     new_narrative_queries: { type: "array", items: { type: "string" } },
+    explanation_layman: { type: ["string", "null"] },
+    explanation_intermediate: { type: ["string", "null"] },
+    explanation_expert: { type: ["string", "null"] },
   },
 };
 
@@ -107,6 +111,7 @@ const SYSTEM = `You are the analysis engine for Narrative Radar, a tool that ext
      * new_narrative_born: your best estimate of when this narrative FIRST appeared in public discourse (YYYY or YYYY-MM; e.g. "crypto winter" dates to ~2018) — null if you genuinely can't estimate
      * new_narrative_born_note: one line stating the basis of the estimate; this is a model estimate pending audit
      * new_narrative_queries: 4-6 YouTube search queries for collecting this narrative's video corpus
+     * explanation_layman / explanation_intermediate / explanation_expert: three explanations of the narrative (each ≤ 75 words). Layman: plain everyday words, no jargon, why they should care. Intermediate: the mechanism and the main camps. Expert: audit framing — clocks, falsifiers, incentives, lifecycle stage. Null for other decisions.
    - "unrelated" — reserved for content with no narrative to track: music, entertainment, gaming, tutorials. Claims-driven commentary about markets/politics/tech/society almost always carries a narrative.
 2. verdict — from metadata alone: ORIGINAL / DERIVATIVE / RECYCLED / CLICKBAIT / UNKNOWN. Be honest about uncertainty; this is metadata-only, no transcript.
 3. advice — one sentence on what to do with their time, grounded in the verdict.
@@ -262,6 +267,11 @@ export default async (req) => {
         born: analysis.new_narrative_born || today.slice(0, 7),
         born_note: `${analysis.new_narrative_born_note || "Engine estimate"} (model estimate, pending audit)`,
         mutations: [],
+        explanations: {
+          layman: analysis.explanation_layman || "",
+          intermediate: analysis.explanation_intermediate || "",
+          expert: analysis.explanation_expert || "",
+        },
         origin: { type: "engine", first_video: videoId, created: today },
       };
       const topicRecord = {
