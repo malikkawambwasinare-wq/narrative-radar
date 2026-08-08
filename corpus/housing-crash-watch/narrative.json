@@ -1,0 +1,13 @@
+{
+  "name": "Housing Crash Watch",
+  "claim": "US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward.",
+  "predictor": "to be determined",
+  "born": "2020-06",
+  "born_note": "Estimate: YouTube housing-crash channels proliferated after the 2020 pandemic price surge, echoing 2008-crash framing. (model estimate, pending audit)",
+  "mutations": [],
+  "origin": {
+    "type": "engine",
+    "first_video": "1zjEXg5B174",
+    "created": "2026-08-08"
+  }
+}
