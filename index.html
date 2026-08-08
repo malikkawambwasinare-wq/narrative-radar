@@ -135,6 +135,19 @@
   .lvl.on { border-color: var(--accent); color: var(--accent); font-weight: 600; }
   .explain-text { margin-top: 8px; font-size: 13.5px; color: var(--ink-2);
     border-left: 3px solid var(--accent); padding-left: 12px; }
+  /* Verdict composition bar chart */
+  .vchart { margin-top: 12px; max-width: 520px; }
+  .vchart .vck { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 6px; }
+  .vbar { display: grid; grid-template-columns: 92px 1fr 34px; align-items: center;
+    gap: 10px; padding: 3px 4px; margin: 0 -4px; border-radius: 6px; cursor: pointer; }
+  .vbar:hover { background: var(--hairline); }
+  .vbar.active { background: var(--hairline); }
+  .vbar .vl { font-size: 12.5px; color: var(--ink-2); text-align: right; }
+  .vbar.active .vl { color: var(--ink); font-weight: 600; }
+  .vbar .vtrack { height: 14px; border-radius: 4px; background: none; position: relative; }
+  .vbar .vfill { position: absolute; inset: 0 auto 0 0; border-radius: 4px; min-width: 3px; }
+  .vbar .vn { font-size: 12.5px; color: var(--ink); font-variant-numeric: tabular-nums; }
   .claims { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--hairline); }
   .claims .ck { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 8px; }
@@ -423,8 +436,17 @@ function renderNarrativeCard() {
     .join("");
   const vcount = {};
   vids.forEach(v => vcount[v.verdict] = (vcount[v.verdict] || 0) + 1);
+  const vmax = Math.max(1, ...Object.values(vcount));
+  const activeV = $("vfilter") ? $("vfilter").value : "all";
   const vbreak = Object.entries(VERDICTS).filter(([k]) => vcount[k])
-    .map(([k, s]) => `<span class="chip"><span class="sw" style="background:${s.color}"></span>${vcount[k]} ${esc(s.label.toLowerCase())}</span>`)
+    .map(([k, s]) => `
+      <div class="vbar ${activeV === k ? "active" : ""}" data-bar-verdict="${k}"
+           title="Show the ${esc(s.label.toLowerCase())} videos">
+        <span class="vl">${esc(s.label)}</span>
+        <span class="vtrack"><span class="vfill"
+          style="width:${Math.round(vcount[k] / vmax * 100)}%;background:${s.color}"></span></span>
+        <span class="vn">${vcount[k]}</span>
+      </div>`)
     .join("");
   const trig = n.trigger;
 
@@ -474,7 +496,7 @@ function renderNarrativeCard() {
       <div class="nfact"><div class="v">${esc(n.predictor)}</div><div class="l">predictor on file</div></div>
     </div>
     <div class="vbreak">${scoreline}</div>
-    ${vbreak ? `<div class="vbreak">${vbreak}</div>` : ""}
+    ${vbreak ? `<div class="vchart"><div class="vck">Corpus composition — click a bar to see those videos</div>${vbreak}</div>` : ""}
     <details class="nmore">
       <summary>How the mechanism has mutated ▾</summary>
       <div class="mutations">${(n.mutations || []).map(m =>
@@ -930,6 +952,14 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest(".n-close")) return showNotice("");
   if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
+  const vb = ev.target.closest(".vbar");
+  if (vb) {
+    const v = vb.dataset.barVerdict;
+    $("vfilter").value = $("vfilter").value === v ? "all" : v;
+    renderCorpus();
+    document.querySelector(".controls")?.scrollIntoView({ block: "start" });
+    return;
+  }
   const lv = ev.target.closest(".lvl");
   if (lv) {
     localStorage.setItem("nr-explain-level", lv.dataset.explainLevel);
