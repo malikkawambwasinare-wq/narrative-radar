@@ -374,6 +374,21 @@
       "transcript": null,
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard CNBC interview clip with a founder repeating a bullish six-figure Bitcoin price target; familiar cycle-vs-institutions framing."
+    },
+    {
+      "videoId": "tC_zAiK7mic",
+      "url": "https://www.youtube.com/watch?v=tC_zAiK7mic",
+      "title": "Crypto winter or correction? This analyst explains the difference",
+      "channel": "Yahoo Finance",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "user-submitted",
+      "age_days": null,
+      "first_seen": "2026-08-08",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Mainstream outlet framing the standard winter-vs-correction debate with an analyst guest; format is routine market-desk commentary, not new analysis."
     }
   ]
 }
