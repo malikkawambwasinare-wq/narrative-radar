@@ -143,11 +143,12 @@ const summarizeCorpus = (topics) =>
     })),
   }));
 
-const videoEntry = (videoId, meta, verdict, note, today) => ({
+const videoEntry = (videoId, meta, verdict, note, today, source) => ({
   videoId, url: `https://www.youtube.com/watch?v=${videoId}`,
   title: meta.title, channel: meta.channel,
   published: "", views: "", length: "",
-  query: "user-submitted", age_days: null, first_seen: today,
+  query: source === "buildout" ? "auto-buildout" : "user-submitted",
+  age_days: null, first_seen: today,
   transcript: null,
   verdict: verdict === "UNKNOWN" ? "UNREVIEWED" : verdict,
   verdict_note: `[live analysis, metadata-only] ${note}`,
@@ -237,7 +238,7 @@ export default async (req) => {
     }
 
     if (analysis.decision === "existing_narrative" && analysis.topic_id) {
-      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today);
+      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today, body.source);
       let persisted = false;
       const cur = await ghRead(`corpus/${analysis.topic_id}/videos.json`);
       if (cur && !cur.data.videos.some((v) => v.videoId === videoId)) {
@@ -259,7 +260,7 @@ export default async (req) => {
 
     if (analysis.decision === "new_narrative" && analysis.new_narrative_id) {
       const id = analysis.new_narrative_id;
-      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today);
+      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today, body.source);
       const narrative = {
         name: analysis.new_narrative_name,
         claim: analysis.new_narrative_claim,

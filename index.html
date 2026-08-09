@@ -897,6 +897,7 @@ async function refreshNarrative(topicId, prefix = "") {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           url: list[i],
+          source: "buildout",
           // Context: this narrative may be newer than the raw CDN's copy
           context_topics: [{
             id: topicId, name,
