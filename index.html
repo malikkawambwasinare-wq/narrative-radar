@@ -148,6 +148,10 @@
   .vbar .vtrack { height: 14px; border-radius: 4px; background: none; position: relative; }
   .vbar .vfill { position: absolute; inset: 0 auto 0 0; border-radius: 4px; min-width: 3px; }
   .vbar .vn { font-size: 12.5px; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .genesis { margin-top: 10px; font-size: 13px; color: var(--ink-2);
+    border-left: 3px solid var(--good); padding: 2px 0 2px 12px; }
+  .genesis b { color: var(--ink); }
+  .genesis a { color: var(--accent); text-decoration: none; }
   .pchart .vbar { grid-template-columns: 150px 1fr 34px; }
   .pchart .vl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
@@ -630,6 +634,7 @@ function renderNarrativeCard() {
     <div class="headrow">
       <h2>${esc(n.name)}</h2>
       <button class="followbtn refreshbtn" data-refresh="${esc(topicId)}" title="Sweep for new videos and update the claims">↻ Refresh</button>
+      <button class="followbtn tracebtn" data-trace="${esc(topicId)}" title="Trace the narrative's earliest utterance on X (paid X API — roughly $1-2 per trace)">⌖ Trace origin</button>
       <button class="followbtn ${isFollowed(topicId) ? "on" : ""}" data-follow="${esc(topicId)}">
         ${isFollowed(topicId) ? "★ Following" : "☆ Follow"}</button>
     </div>
@@ -640,6 +645,10 @@ function renderNarrativeCard() {
       <div class="nfact"><div class="v">${n.mutations?.length || 0} mutations</div><div class="l">mechanism changes since birth</div></div>
       <div class="nfact"><div class="v">${esc(n.predictor)}</div><div class="l">predictor on file</div></div>
     </div>
+    ${n.genesis?.first_found ? `<div class="genesis">⌖ <b>Origin traced on X:</b> earliest surviving post
+      <a href="${esc(n.genesis.first_found.url)}" target="_blank" rel="noopener">@${esc(n.genesis.first_found.username)} · ${esc((n.genesis.first_found.date || "").slice(0, 10))}</a>
+      — “${esc((n.genesis.first_found.text || "").slice(0, 140))}”
+      <span class="no-t">(phrase “${esc(n.genesis.phrase)}” · ${n.genesis.reads_used} reads ≈ $${n.genesis.est_cost_usd})</span></div>` : ""}
     ${lstack}
     <div class="vbreak">${scoreline}</div>
     ${vbreak ? `<div class="vchart"><div class="vck">Corpus composition — click a bar to see those videos</div>${vbreak}</div>` : ""}
@@ -870,6 +879,45 @@ function showNotice(html) {
 
 let predictorFilter = null;
 let refreshing = false;
+
+async function traceOrigin(topicId) {
+  const n = cache[topicId]?.narrative;
+  const suggested = n?.genesis?.phrase
+    || (n?.name || topicId).replace(/\b(watch|the)\b/gi, "").replace(/\s+/g, " ").trim();
+  const phrase = prompt(
+    "Trace the earliest X post carrying this phrase (edit if needed).\n" +
+    "One-time paid X API call — roughly $1–2:", suggested);
+  if (!phrase) return;
+  showNotice(`Tracing the origin of <b>${esc(n?.name || topicId)}</b> on X —
+    bisecting the full archive (back to 2006) for “${esc(phrase)}”… takes ~30 seconds.`);
+  try {
+    const r = await fetch(API_BASE + "/api/trace-origin", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic: topicId, phrase }),
+    });
+    const d = await r.json();
+    if (d.status === "traced" && d.genesis?.first_found) {
+      if (cache[topicId]?.narrative) cache[topicId].narrative.genesis = d.genesis;
+      renderCorpus();
+      const f = d.genesis.first_found;
+      showNotice(`<b>Origin traced.</b> The earliest surviving X post for “${esc(phrase)}” is by
+        <b>@${esc(f.username)}</b> on <b>${esc((f.date || "").slice(0, 10))}</b> —
+        “${esc((f.text || "").slice(0, 140))}”
+        · ${d.genesis.reads_used} reads ≈ $${d.genesis.est_cost_usd}
+        <span class="n-advice"><a href="${esc(f.url)}" target="_blank" rel="noopener">Open the post ↗</a></span>`);
+    } else if (d.status === "not_found") {
+      showNotice(`No X posts found for “${esc(phrase)}” — try a different phrasing.
+        (${d.reads} reads ≈ $${d.est_cost_usd})`);
+    } else if (d.error === "x_not_connected") {
+      showNotice(`X isn't connected yet — add <b>X_BEARER_TOKEN</b> to the engine's
+        environment variables on Netlify, then try again.`);
+    } else {
+      showNotice(`Trace failed: ${esc(d.error || "unknown")}${d.reads ? ` (${d.reads} reads ≈ $${d.est_cost_usd})` : ""}`);
+    }
+  } catch (e) {
+    showNotice(`Trace failed: ${esc(String(e.message || e))} — try again in a minute.`);
+  }
+}
 async function refreshNarrative(topicId, prefix = "") {
   if (refreshing) return;
   refreshing = true;
@@ -1127,6 +1175,8 @@ document.addEventListener("click", async (ev) => {
     renderNarrativeCard();
     return;
   }
+  const tb = ev.target.closest(".tracebtn");
+  if (tb) return traceOrigin(tb.dataset.trace);
   const rb = ev.target.closest(".refreshbtn");
   if (rb) return refreshNarrative(rb.dataset.refresh);
   const fb = ev.target.closest(".followbtn");
