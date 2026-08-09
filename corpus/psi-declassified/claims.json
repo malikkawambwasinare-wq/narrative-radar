@@ -1,0 +1,39 @@
+{
+  "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
+  "updated": "2026-08-09",
+  "claims": [
+    {
+      "id": "cia-stargate-remote-viewing",
+      "type": "consensus",
+      "statement": "The CIA ran a secret remote viewing program (Project Stargate) using psychic spies for intelligence gathering.",
+      "note": "Trackable: multiple channels recycle Stargate claims; watch for whether program efficacy is asserted as validated versus historically documented but inconclusive.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "RJrTddUkplY",
+          "predictor": "Dr. Mayim Bialik"
+        },
+        {
+          "videoId": "oasTnsLw_n8",
+          "predictor": "Jillian Michaels"
+        },
+        {
+          "videoId": "7cwzQmYevu8",
+          "predictor": "The Kingdom Files"
+        },
+        {
+          "videoId": "cNJwV3Ksxa8",
+          "predictor": "Johnathan Bi"
+        },
+        {
+          "videoId": "LptdaCS9V6c",
+          "predictor": "Timelines Unveiled"
+        },
+        {
+          "videoId": "XRTon6qgVws",
+          "predictor": "Shawn Ryan Show"
+        }
+      ]
+    }
+  ]
+}
