@@ -178,7 +178,7 @@ export default async (req) => {
         method: "PUT",
         headers: ghHeaders(),
         body: JSON.stringify({
-          message: `Engine: consolidate claims for ${topicId} (+${(delta.additions || []).length} additions, +${(delta.new_claims || []).length} new)`,
+          message: `Engine: consolidate claims for ${topicId} (+${(delta.additions || []).length} additions, +${(delta.new_claims || []).length} new) [skip netlify]`,
           content: Buffer.from(JSON.stringify(claims, null, 2)).toString("base64"),
           ...(sha ? { sha } : {}),
         }),

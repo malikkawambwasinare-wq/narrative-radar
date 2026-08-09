@@ -450,16 +450,22 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => (s ?? "").toString()
   .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 
-async function getJSON(url) {
+// Data files are read from GitHub's raw CDN so engine commits show up
+// without a site rebuild; the deployed copy is only a fallback.
+const RAW_BASE = "https://raw.githubusercontent.com/malikkawambwasinare-wq/narrative-radar/main/";
+async function getData(url, parse) {
+  if (!/^https?:/i.test(url)) {
+    try {
+      const r = await fetch(RAW_BASE + url + "?v=" + Date.now());
+      if (r.ok) return parse(r);
+    } catch (e) {}
+  }
   const r = await fetch(url);
   if (!r.ok) throw new Error(url + " → " + r.status);
-  return r.json();
+  return parse(r);
 }
-async function getText(url) {
-  const r = await fetch(url);
-  if (!r.ok) throw new Error(url + " → " + r.status);
-  return r.text();
-}
+const getJSON = (url) => getData(url, (r) => r.json());
+const getText = (url) => getData(url, (r) => r.text());
 
 function chip(status) {
   const s = STATUS[status] || { color: "var(--muted)", label: status };

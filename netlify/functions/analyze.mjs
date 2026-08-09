@@ -60,7 +60,7 @@ async function ghWrite(path, data, message, sha) {
     method: "PUT",
     headers: ghHeaders(),
     body: JSON.stringify({
-      message,
+      message: `${message} [skip netlify]`,
       content: Buffer.from(JSON.stringify(data, null, 2)).toString("base64"),
       ...(sha ? { sha } : {}),
     }),

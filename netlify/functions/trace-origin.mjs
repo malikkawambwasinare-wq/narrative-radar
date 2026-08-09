@@ -151,7 +151,7 @@ export default async (req) => {
         method: "PUT",
         headers: ghHeaders(),
         body: JSON.stringify({
-          message: `Engine: genesis trace for ${topic} (${earliest?.created_at?.slice(0, 10)}, ${READS} reads)`,
+          message: `Engine: genesis trace for ${topic} (${earliest?.created_at?.slice(0, 10)}, ${READS} reads) [skip netlify]`,
           content: Buffer.from(JSON.stringify(n, null, 2)).toString("base64"),
           sha: f.sha,
         }),
