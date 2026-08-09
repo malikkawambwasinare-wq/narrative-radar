@@ -150,6 +150,49 @@
   .vbar .vn { font-size: 12.5px; color: var(--ink); font-variant-numeric: tabular-nums; }
   .pchart .vbar { grid-template-columns: 150px 1fr 34px; }
   .pchart .vl { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Narrative timeline: birth → mutations → now */
+  :root { --cat2: #eb6834; }
+  @media (prefers-color-scheme: dark) { :root { --cat2: #d95926; } }
+  .tl-wrap { margin-top: 16px; }
+  .tl { position: relative; height: 46px; margin: 4px 8px 0; }
+  .tl-line { position: absolute; left: 0; right: 0; top: 14px; height: 2px;
+    background: var(--hairline); border-radius: 1px; }
+  .tl-dot { position: absolute; top: 9px; width: 12px; height: 12px; border-radius: 50%;
+    background: var(--accent); border: 2px solid var(--surface); transform: translateX(-50%);
+    cursor: pointer; }
+  .tl-dot.born { background: var(--good); }
+  .tl-dot.now { background: var(--muted); width: 8px; height: 8px; top: 11px; cursor: default; }
+  .tl-dot:hover, .tl-dot.sel { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); }
+  .tl-year { position: absolute; top: 28px; transform: translateX(-50%);
+    font-size: 10.5px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tl-cap { font-size: 13px; color: var(--ink-2); margin: 2px 8px 0; min-height: 20px; }
+  .tl-cap b { color: var(--ink); }
+
+  /* Ledger stacked bar */
+  .lstack { display: flex; height: 16px; border-radius: 5px; overflow: hidden;
+    max-width: 520px; cursor: pointer; margin-bottom: 8px; }
+  .lstack span { display: flex; align-items: center; justify-content: center;
+    font-size: 10.5px; color: #fff; font-weight: 600; min-width: 4px; }
+
+  /* Contested claims: tug-of-war */
+  .tug { margin: 6px 0 2px; }
+  .tugrow { display: grid; grid-template-columns: 26px 1fr 1fr 26px; align-items: center;
+    gap: 6px; max-width: 520px; }
+  .tug-n { font-size: 12.5px; color: var(--ink); font-variant-numeric: tabular-nums;
+    text-align: center; }
+  .tug-track { height: 12px; position: relative; }
+  .tug-track span { position: absolute; top: 0; bottom: 0; border-radius: 4px; min-width: 4px; }
+  .tug-track.left span { right: 0; background: var(--accent); }
+  .tug-track.right span { left: 0; background: var(--cat2); }
+  .tug-labels { display: grid; grid-template-columns: 1fr 1fr; gap: 18px;
+    max-width: 520px; margin-top: 3px; padding: 0 28px; }
+  .tug-labels span { font-size: 12px; color: var(--ink-2); }
+  .tug-labels span:first-child { text-align: right; }
+  .cl-track { height: 5px; border-radius: 3px; background: var(--hairline);
+    max-width: 520px; margin-top: 5px; position: relative; overflow: hidden; }
+  .cl-track span { position: absolute; inset: 0 auto 0 0; background: var(--good);
+    border-radius: 3px; }
   .claims { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--hairline); }
   .claims .ck { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 8px; }
@@ -436,6 +479,11 @@ function renderNarrativeCard() {
   const scoreline = Object.entries(STATUS).filter(([k]) => score[k])
     .map(([k, s]) => `<span class="chip"><span class="sw" style="background:${s.color}"></span>${score[k]} ${esc(s.label.split(" ")[0].toLowerCase())}</span>`)
     .join("");
+  const lstack = preds.length ? `
+    <div class="lstack" title="Open the prediction ledger">${
+      Object.entries(STATUS).filter(([k]) => score[k]).map(([k, s]) =>
+        `<span style="width:${score[k] / preds.length * 100}%;background:${s.color}">${score[k]}</span>`).join("")
+    }</div>` : "";
   const vcount = {};
   vids.forEach(v => vcount[v.verdict] = (vcount[v.verdict] || 0) + 1);
   const vmax = Math.max(1, ...Object.values(vcount));
@@ -451,6 +499,47 @@ function renderNarrativeCard() {
       </div>`)
     .join("");
   const trig = n.trigger;
+
+  // Visual timeline: birth → mutations → today
+  const MONTHS = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  const parseWhen = (s) => {
+    const y = ((s || "").match(/\d{4}/) || [])[0];
+    if (!y) return null;
+    const mm = ((s || "").toLowerCase().match(/jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec/) || [])[0];
+    return parseInt(y) + (mm ? MONTHS[mm] / 12 : 0.5);
+  };
+  const nowD = new Date();
+  const nowVal = nowD.getFullYear() + nowD.getMonth() / 12;
+  const bornVal = parseWhen(n.born) ?? nowVal - 1;
+  const events = (n.mutations || []).map((m, i) => ({ ...m, i, val: parseWhen(m.date) }));
+  events.forEach((e, idx) => {
+    if (e.val == null) e.val = bornVal + (idx + 1) * (nowVal - bornVal) / (events.length + 1);
+  });
+  const span = Math.max(0.5, nowVal - bornVal);
+  const posOf = (v) => Math.min(100, Math.max(0, (v - bornVal) / span * 100));
+  const labels = [{ p: 0, t: String(Math.floor(bornVal)) }];
+  for (const e of events) {
+    const yr = ((e.date || "").match(/\d{4}/) || [])[0];
+    const p = posOf(e.val);
+    if (yr && p > 7 && p < 91 && !labels.some(l => Math.abs(l.p - p) < 8 || l.t === yr)) {
+      labels.push({ p, t: yr });
+    }
+  }
+  labels.push({ p: 100, t: "now" });
+  const lastM = events[events.length - 1];
+  const tlHtml = events.length ? `
+    <div class="tl-wrap">
+      <div class="vck">Narrative timeline — how the story has mutated</div>
+      <div class="tl">
+        <div class="tl-line"></div>
+        <span class="tl-dot born" style="left:0%" title="Born ${esc(n.born || "")}"></span>
+        ${events.map(e => `<span class="tl-dot" style="left:${posOf(e.val)}%" data-tl="${e.i}"
+          title="${esc(e.date)}: ${esc(e.mechanism)}"></span>`).join("")}
+        <span class="tl-dot now" style="left:100%" title="Today"></span>
+        ${labels.map(l => `<span class="tl-year" style="left:${l.p}%">${esc(l.t)}</span>`).join("")}
+      </div>
+      <div class="tl-cap" id="tl-cap">${lastM ? `<b>${esc(lastM.date)}</b> — ${esc(lastM.mechanism)} <span class="no-t">(hover the dots)</span>` : ""}</div>
+    </div>` : "";
 
   const level = localStorage.getItem("nr-explain-level") || "layman";
   const explHtml = n.explanations ? `
@@ -498,19 +587,41 @@ function renderNarrativeCard() {
   const claimsHtml = cl?.claims?.length ? `
     <div class="claims">
       <div class="ck">What the corpus consistently claims</div>
-      ${cl.claims.map(c => c.type === "contested" ? `
-        <div class="clm">
+      ${cl.claims.map(c => {
+        if (c.type === "contested") {
+          const camps = c.camps || [];
+          let body;
+          if (camps.length === 2) {
+            const na = (camps[0].sources || []).length, nb = (camps[1].sources || []).length;
+            const mx = Math.max(1, na, nb);
+            body = `
+              <div class="tug">
+                <div class="tugrow">
+                  <span class="tug-n">${na}</span>
+                  <div class="tug-track left" title="${esc(srcNames(camps[0].sources))}"><span style="width:${na / mx * 100}%"></span></div>
+                  <div class="tug-track right" title="${esc(srcNames(camps[1].sources))}"><span style="width:${nb / mx * 100}%"></span></div>
+                  <span class="tug-n">${nb}</span>
+                </div>
+                <div class="tug-labels"><span>${esc(camps[0].position)}</span><span>${esc(camps[1].position)}</span></div>
+              </div>`;
+          } else {
+            body = camps.map(cp => `<div class="camp"><b>${esc(cp.position)}</b>
+              — ${esc(srcNames(cp.sources))} <span class="pill query">${(cp.sources || []).length} videos</span></div>`).join("");
+          }
+          return `<div class="clm">
+            <div class="clm-h">${esc(c.statement)} <span class="pill query">contested</span></div>
+            ${body}
+            ${c.note ? `<div class="v-note">${esc(c.note)}</div>` : ""}
+          </div>`;
+        }
+        const nsrc = (c.sources || []).length;
+        return `<div class="clm">
           <div class="clm-h">${esc(c.statement)}
-            <span class="pill query">contested</span></div>
-          ${(c.camps || []).map(cp => `<div class="camp"><b>${esc(cp.position)}</b>
-            — ${esc(srcNames(cp.sources))} <span class="pill query">${(cp.sources || []).length} videos</span></div>`).join("")}
-          ${c.note ? `<div class="v-note">${esc(c.note)}</div>` : ""}
-        </div>` : `
-        <div class="clm">
-          <div class="clm-h">${esc(c.statement)}
-            <span class="pill query">${(c.sources || []).length} videos</span></div>
-          <div class="v-note">${esc(srcNames(c.sources))}${(c.sources || []).length > 3 ? " +" + ((c.sources || []).length - 3) : ""}${c.note ? " · " + esc(c.note) : ""}</div>
-        </div>`).join("")}
+            <span class="pill query">${nsrc} of ${vids.length} videos</span></div>
+          <div class="cl-track" title="${nsrc} of ${vids.length} corpus videos carry this claim"><span style="width:${Math.min(100, nsrc / Math.max(1, vids.length) * 100)}%"></span></div>
+          <div class="v-note">${esc(srcNames(c.sources))}${nsrc > 3 ? " +" + (nsrc - 3) : ""}${c.note ? " · " + esc(c.note) : ""}</div>
+        </div>`;
+      }).join("")}
     </div>` : "";
 
   $("ncard").innerHTML = `
@@ -529,14 +640,11 @@ function renderNarrativeCard() {
       <div class="nfact"><div class="v">${n.mutations?.length || 0} mutations</div><div class="l">mechanism changes since birth</div></div>
       <div class="nfact"><div class="v">${esc(n.predictor)}</div><div class="l">predictor on file</div></div>
     </div>
+    ${lstack}
     <div class="vbreak">${scoreline}</div>
     ${vbreak ? `<div class="vchart"><div class="vck">Corpus composition — click a bar to see those videos</div>${vbreak}</div>` : ""}
     ${pchart}
-    <details class="nmore">
-      <summary>How the mechanism has mutated ▾</summary>
-      <div class="mutations">${(n.mutations || []).map(m =>
-        `<div class="m"><span class="d">${esc(m.date)}</span> ${esc(m.mechanism)}</div>`).join("")}</div>
-    </details>
+    ${tlHtml}
     ${claimsHtml}
     ${trig ? `<div class="trigger">Trigger for this collection:
       <a href="https://www.youtube.com/watch?v=${esc(trig.videoId)}" target="_blank" rel="noopener">${esc(trig.title)}</a>
@@ -990,6 +1098,12 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest(".n-close")) return showNotice("");
   if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
+  if (ev.target.closest(".lstack")) {
+    document.querySelector('.tab[data-view="ledger"]')?.click();
+    return;
+  }
+  const td = ev.target.closest(".tl-dot[data-tl]");
+  if (td) { setTlCap(parseInt(td.dataset.tl), td); return; }
   const vb = ev.target.closest(".vbar");
   if (vb && vb.dataset.barPredictor) {
     predictorFilter = predictorFilter?.name === vb.dataset.barPredictor
@@ -1043,6 +1157,18 @@ document.addEventListener("click", async (ev) => {
     }
   }
 });
+function setTlCap(i, dot) {
+  const m = (cache[topicId]?.narrative?.mutations || [])[i];
+  const cap = $("tl-cap");
+  if (m && cap) cap.innerHTML = `<b>${esc(m.date)}</b> — ${esc(m.mechanism)}`;
+  document.querySelectorAll(".tl-dot.sel").forEach(d => d.classList.remove("sel"));
+  if (dot) dot.classList.add("sel");
+}
+document.addEventListener("mouseover", (ev) => {
+  const td = ev.target.closest?.(".tl-dot[data-tl]");
+  if (td) setTlCap(parseInt(td.dataset.tl), td);
+});
+
 $("sheet-close").addEventListener("click", () => $("overlay").classList.remove("open"));
 $("overlay").addEventListener("click", (e) => { if (e.target === $("overlay")) $("overlay").classList.remove("open"); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay").classList.remove("open"); });
