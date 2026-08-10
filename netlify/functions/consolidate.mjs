@@ -27,8 +27,9 @@ const SOURCE = {
 const SCHEMA = {
   type: "object",
   additionalProperties: false,
-  required: ["additions", "new_claims"],
+  required: ["additions", "new_claims", "fingerprints"],
   properties: {
+    fingerprints: { type: "array", items: { type: "string" } },
     additions: {
       type: "array",
       items: {
@@ -75,7 +76,8 @@ Return a small delta:
 - additions: uncited videos that carry an EXISTING claim → attach as sources ({claim_id, camp_index (null for consensus claims), sources:[{videoId, predictor}]}). Judge from title/channel/verdict/analyst-note. Only attach when the video genuinely carries that claim.
 - new_claims: only if several uncited videos together support a claim not yet consolidated (or a clearly contested question). Statements ≤ 30 words, notes ≤ 35 words stating what makes it trackable.
 - Videos that fit nothing (clickbait shells, off-claim content) are simply omitted.
-Never invent sources. Return empty arrays if nothing changes.`;
+- fingerprints: 2-3 short literal phrases (2-5 words) that people repeating THIS narrative actually type — used for exact-phrase archive search on X. Most distinctive first. Draw them from the corpus vocabulary (titles, claim statements), never invent wording; distinctive enough to exclude unrelated topics, natural enough that early adopters wrote them verbatim.
+Never invent sources. Return empty arrays if nothing changes (fingerprints may still be returned).`;
 
 const ghHeaders = () => ({
   Authorization: `Bearer ${process.env.GH_TOKEN}`,
@@ -160,10 +162,16 @@ export default async (req) => {
     for (const nc of delta.new_claims || []) {
       if (!current.claims.some((x) => x.id === nc.id)) { current.claims.push(nc); changed = true; }
     }
+    const fp = (delta.fingerprints || []).slice(0, 3);
+    if (fp.length && JSON.stringify(fp) !== JSON.stringify(current.fingerprints || [])) {
+      current.fingerprints = fp;
+      changed = true;
+    }
 
     const claims = {
       note: "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
       updated: new Date().toISOString().slice(0, 10),
+      ...(current.fingerprints ? { fingerprints: current.fingerprints } : {}),
       claims: current.claims,
     };
 

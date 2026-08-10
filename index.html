@@ -888,10 +888,13 @@ let refreshing = false;
 
 async function traceOrigin(topicId) {
   const n = cache[topicId]?.narrative;
+  const fps = cache[topicId]?.claims?.fingerprints || [];
   const suggested = n?.genesis?.phrase
+    || fps[0]
     || (n?.name || topicId).replace(/\b(watch|the)\b/gi, "").replace(/\s+/g, " ").trim();
   const phrase = prompt(
     "Trace the earliest X post carrying this phrase (edit if needed).\n" +
+    (fps.length > 1 ? `Fingerprints from this narrative's corpus: ${fps.join("  ·  ")}\n` : "") +
     "One-time paid X API call — roughly $1–2:", suggested);
   if (!phrase) return;
   showNotice(`Tracing the origin of <b>${esc(n?.name || topicId)}</b> on X —
