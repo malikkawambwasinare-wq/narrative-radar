@@ -1,0 +1,9 @@
+name = "narrative-radar-engine"
+main = "worker.mjs"
+compatibility_date = "2026-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Secrets (set once with `npx wrangler secret put <NAME>`):
+#   ANTHROPIC_API_KEY  — Claude API key
+#   GH_TOKEN           — GitHub fine-grained token (Contents r/w on narrative-radar)
+#   X_BEARER_TOKEN     — X API bearer token (only needed for /api/trace-origin)
