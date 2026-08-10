@@ -902,11 +902,13 @@ async function traceOrigin(topicId) {
       body: JSON.stringify({ topic: topicId, phrase }),
     });
     const d = await r.json();
-    if (d.status === "traced" && d.genesis?.first_found) {
+    if ((d.status === "traced" || d.status === "already_traced") && d.genesis?.first_found) {
       if (cache[topicId]?.narrative) cache[topicId].narrative.genesis = d.genesis;
       renderCorpus();
       const f = d.genesis.first_found;
-      showNotice(`<b>Origin traced.</b> The earliest surviving X post for “${esc(phrase)}” is by
+      showNotice(`${d.status === "already_traced"
+          ? "<b>Already traced with this phrase</b> — showing the stored result, no new charge."
+          : "<b>Origin traced.</b>"} The earliest surviving X post for “${esc(phrase)}” is by
         <b>@${esc(f.username)}</b> on <b>${esc((f.date || "").slice(0, 10))}</b> —
         “${esc((f.text || "").slice(0, 140))}”
         · ${d.genesis.reads_used} reads ≈ $${d.genesis.est_cost_usd}
@@ -921,8 +923,40 @@ async function traceOrigin(topicId) {
       showNotice(`Trace failed: ${esc(d.error || "unknown")}${d.reads ? ` (${d.reads} reads ≈ $${d.est_cost_usd})` : ""}`);
     }
   } catch (e) {
-    showNotice(`Trace failed: ${esc(String(e.message || e))} — try again in a minute.`);
+    // The engine host may cut the connection while the trace finishes
+    // server-side — poll the repo for the committed result before giving up,
+    // so a dropped connection never causes a paid re-run.
+    showNotice(`Connection dropped, but the trace may still be finishing on the server —
+      checking for the result for up to a minute…`);
+    const g = await pollGenesis(topicId, phrase);
+    if (g?.first_found) {
+      if (cache[topicId]?.narrative) cache[topicId].narrative.genesis = g;
+      renderCorpus();
+      const f = g.first_found;
+      showNotice(`<b>Origin traced</b> (recovered after the connection dropped).
+        The earliest surviving X post for “${esc(phrase)}” is by
+        <b>@${esc(f.username)}</b> on <b>${esc((f.date || "").slice(0, 10))}</b> —
+        “${esc((f.text || "").slice(0, 140))}”
+        · ${g.reads_used} reads ≈ $${g.est_cost_usd}
+        <span class="n-advice"><a href="${esc(f.url)}" target="_blank" rel="noopener">Open the post ↗</a></span>`);
+    } else {
+      showNotice(`Trace failed: ${esc(String(e.message || e))} — no committed result found.
+        Try again in a minute (the engine won't re-charge for a phrase it already traced).`);
+    }
   }
+}
+async function pollGenesis(topicId, phrase, tries = 8) {
+  for (let i = 0; i < tries; i++) {
+    await new Promise((res) => setTimeout(res, 8000));
+    try {
+      const r = await fetch(`${RAW_BASE}corpus/${topicId}/narrative.json?v=${Date.now()}`);
+      if (r.ok) {
+        const n = await r.json();
+        if (n.genesis?.phrase === phrase && n.genesis.first_found) return n.genesis;
+      }
+    } catch (e) {}
+  }
+  return null;
 }
 async function refreshNarrative(topicId, prefix = "") {
   if (refreshing) return;
