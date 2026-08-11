@@ -570,7 +570,9 @@ function receiptHtml(data) {
     ? tile("Next test", days <= 0 ? "due now" : `${days} days`,
       `${esc((r.next.predictor || "").split("(")[0].trim())}: ${esc((r.next.horizon || "").slice(0, 42))}`)
     : tile("Next test", "none dated", r.hasLedger ? "no future date on the ledger" : "nothing to wait for yet"));
-  if (r.next) sent.push(`Next test: ${mY(r.next.t)}.`);
+  if (r.next) sent.push(days <= 0
+    ? "One of its prediction windows is due right now."
+    : `Next test: ${mY(r.next.t)}.`);
   else if (r.hasLedger) sent.push("It currently names no future date to test.");
   if (r.win.length) tiles.push(tile("Recycled share", `${r.reheats} of ${r.win.length}`,
     "recent videos we indexed: reheats"));
