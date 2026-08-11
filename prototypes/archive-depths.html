@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#14161a">
+<title>Narrative Radar — The Archive Depths</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --ink: #eae4d4;
+    --ink-2: #c0b7a2;
+    --muted: #8f8672;
+    --faint: #6e6656;
+    --hair: rgba(234, 228, 212, 0.13);
+    --hair-soft: rgba(234, 228, 212, 0.07);
+    --amber: #d8a24a;
+    --oxide: #bf4f3a;
+    --v-orig: #87a96b;
+    --v-deriv: #c9a85c;
+    --v-recy: #b07845;
+    --v-click: #bf4f3a;
+    --card: rgba(19, 15, 11, 0.74);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --mono: ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: #14161a; scroll-behavior: smooth; }
+  body {
+    position: relative;
+    background: transparent;
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  ::selection { background: rgba(216, 162, 74, 0.35); color: var(--ink); }
+  :focus-visible { outline: 2px solid rgba(216, 162, 74, 0.85); outline-offset: 2px; border-radius: 2px; }
+
+  /* ————— The ground: one gradient spanning the whole document depth ————— */
+  #deepground {
+    position: absolute; top: 0; left: 0; right: 0; height: 100%;
+    z-index: -3; pointer-events: none;
+    background: linear-gradient(to bottom,
+      #14161a 0%, #16161a 7%,
+      #181613 22%, #1b1713 38%,
+      #201812 54%, #251a10 70%,
+      #271a0e 82%, #20150b 92%,
+      #170e06 100%);
+  }
+
+  /* ————— Parallax sediment layers (fixed, moved by JS at different rates) ————— */
+  .plx {
+    position: fixed; top: 0; left: 0; right: 0;
+    pointer-events: none; will-change: transform; z-index: -2;
+  }
+  #plx-far {
+    height: calc(100vh + 96px);
+    background: repeating-linear-gradient(to bottom,
+      transparent 0 95px, rgba(234, 228, 212, 0.05) 95px 96px);
+    filter: blur(2.5px);
+    opacity: 0.85;
+  }
+  #plx-lens {
+    height: calc(100vh + 1400px);
+    background-image:
+      radial-gradient(ellipse 360px 90px at 18% 140px, rgba(196, 150, 92, 0.06), transparent 70%),
+      radial-gradient(ellipse 480px 130px at 78% 560px, rgba(234, 228, 212, 0.045), transparent 70%),
+      radial-gradient(ellipse 320px 84px at 42% 1010px, rgba(190, 120, 70, 0.055), transparent 70%);
+    background-size: 100% 1400px;
+    background-repeat: repeat-y;
+    filter: blur(9px);
+  }
+  #plx-mid {
+    height: calc(100vh + 180px);
+    background:
+      repeating-linear-gradient(to bottom,
+        rgba(196, 150, 92, 0.028) 0 42px, transparent 42px 180px),
+      repeating-linear-gradient(to bottom,
+        transparent 0 178px, rgba(234, 228, 212, 0.075) 178px 180px);
+    filter: blur(1px);
+  }
+  #plx-near {
+    height: calc(100vh + 320px);
+    background: repeating-linear-gradient(to bottom,
+      transparent 0 318px, rgba(234, 228, 212, 0.1) 318px 320px);
+  }
+
+  /* Suspended sediment dust */
+  #dust { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+  #dust span {
+    position: absolute; border-radius: 50%; background: #eae4d4;
+    animation: drift 60s ease-in-out infinite alternate;
+  }
+  @keyframes drift { to { transform: translate3d(10px, -38vh, 0); } }
+
+  /* Film grain */
+  #noise {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0.05;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="140" height="140"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="140" height="140" filter="url(%23n)" opacity="0.55"/></svg>');
+  }
+
+  /* ————— Layout shell ————— */
+  .shell { max-width: 680px; margin: 0 auto; padding-left: 20px; padding-right: 22px; }
+  @media (max-width: 720px) { .shell { padding-right: 48px; } }
+  header, main, footer { position: relative; z-index: 2; }
+
+  .kick {
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--muted);
+  }
+
+  /* ————— Hero ————— */
+  .hero {
+    min-height: 100vh; min-height: 100svh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding-top: 64px; padding-bottom: 96px; position: relative;
+  }
+  .brand {
+    font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.34em;
+    text-transform: uppercase; color: var(--ink-2);
+  }
+  .survey { margin-top: 6px; }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(29px, 7.2vw, 52px); line-height: 1.16;
+    letter-spacing: 0.002em; color: var(--ink-2);
+    margin: 22px 0 14px; max-width: 20ch;
+  }
+  .hero h1 .exit { display: block; color: var(--ink); margin-top: 2px; }
+  .hero h1 .exit em {
+    font-style: normal;
+    border-bottom: 1px solid rgba(216, 162, 74, 0.55);
+    padding-bottom: 2px;
+  }
+  .lede { font-size: 14.5px; color: var(--muted); max-width: 54ch; line-height: 1.65; }
+  .pasteform { display: flex; gap: 8px; margin-top: 28px; max-width: 540px; }
+  .pasteform input {
+    flex: 1; min-width: 0;
+    background: rgba(234, 228, 212, 0.055);
+    border: 1px solid var(--hair); border-radius: 8px;
+    color: var(--ink); padding: 12px 14px; font: inherit; font-size: 14px;
+  }
+  .pasteform input::placeholder { color: var(--faint); }
+  .pasteform input:focus-visible {
+    outline: none; border-color: rgba(216, 162, 74, 0.6);
+    box-shadow: 0 0 0 1px rgba(216, 162, 74, 0.45);
+  }
+  .btn {
+    background: var(--amber); color: #181209; border: none; border-radius: 8px;
+    padding: 12px 16px; font-family: var(--sans); font-size: 13px; font-weight: 650;
+    letter-spacing: 0.04em; cursor: pointer; white-space: nowrap;
+  }
+  .btn:active { transform: translateY(1px); }
+  .herostats { display: flex; gap: 26px; flex-wrap: wrap; margin-top: 30px; }
+  .herostats .v { font-family: var(--serif); font-size: 19px; color: var(--ink); }
+  .herostats .l {
+    font-family: var(--mono); font-size: 9px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--muted); margin-top: 2px;
+  }
+  .deepjump {
+    background: none; border: none; cursor: pointer;
+    color: var(--ink-2); font-family: var(--sans); font-size: 12.5px;
+    text-decoration: underline; text-underline-offset: 3px;
+    text-decoration-color: rgba(216, 162, 74, 0.5);
+    padding: 10px 0; margin-top: 16px; width: fit-content; text-align: left;
+  }
+  .cue {
+    position: absolute; left: 20px; bottom: 22px;
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.2em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .cue .chev { display: inline-block; animation: bob 2.2s ease-in-out infinite; color: var(--amber); }
+  @keyframes bob { 50% { transform: translateY(6px); } }
+
+  /* ————— Strata / year markers ————— */
+  #descent { padding-bottom: 20px; }
+  .descent-kick { margin-top: 8px; margin-bottom: 40px; line-height: 1.9; }
+  .ymark {
+    display: flex; align-items: baseline; gap: 14px;
+    margin: 108px 0 30px; scroll-margin-top: 13vh;
+  }
+  .ymark.first { margin-top: 0; }
+  .ylab {
+    font-family: var(--mono); font-size: 13px; font-weight: 600;
+    letter-spacing: 0.14em; color: var(--ink-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .ymark.has .ylab { color: var(--ink); }
+  .yline {
+    flex: 1; height: 1px; align-self: center;
+    background: linear-gradient(to right, var(--hair), transparent 92%);
+  }
+  .ydepth {
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--muted); white-space: nowrap;
+  }
+
+  /* ————— Specimen cards ————— */
+  .spec {
+    position: relative;
+    background: var(--card);
+    border: 1px solid var(--hair);
+    border-radius: 10px;
+    padding: 20px 20px 18px;
+    margin: 0 0 16px;
+    box-shadow: 0 26px 50px -20px rgba(0, 0, 0, 0.55);
+    scroll-margin-top: 11vh;
+  }
+  .js .spec { opacity: 0; transform: translateY(26px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .js .spec.vis { opacity: 1; transform: none; }
+  .spec-no {
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .spec-name {
+    font-family: var(--serif); font-weight: 500; font-size: 26px;
+    line-height: 1.15; color: var(--ink); margin: 9px 0 6px;
+  }
+  .spec-claim {
+    font-family: var(--serif); font-style: italic;
+    font-size: 14px; line-height: 1.5; color: var(--ink-2);
+  }
+  .vtrack {
+    display: flex; height: 8px; border-radius: 4px; overflow: hidden;
+    background: var(--hair-soft); margin: 15px 0 9px;
+  }
+  .vtrack i { display: block; height: 100%; }
+  .vkey {
+    display: flex; flex-wrap: wrap; gap: 4px 16px;
+    font-family: var(--mono); font-size: 10.5px; color: var(--muted);
+  }
+  .vkey b { color: var(--ink-2); font-weight: 600; }
+  .vkey .k::before {
+    content: ""; display: inline-block; width: 7px; height: 7px;
+    border-radius: 2px; margin-right: 6px; background: var(--c);
+  }
+  .vkey .total { margin-left: auto; color: var(--faint); }
+  .state {
+    margin-top: 13px; font-size: 12.5px; line-height: 1.5;
+    border-left: 2px solid; padding: 5px 0 5px 12px;
+  }
+  .state b { color: var(--ink); font-weight: 600; }
+  .state.flag { color: #d98f7c; border-color: rgba(191, 79, 58, 0.7); }
+  .state.wait { color: var(--ink-2); border-color: rgba(234, 228, 212, 0.28); }
+  .state.watch { color: #d5b578; border-color: rgba(216, 162, 74, 0.55); }
+  .next {
+    display: inline-block; margin-top: 12px;
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--amber);
+    border: 1px solid rgba(216, 162, 74, 0.38);
+    padding: 5px 10px; border-radius: 4px;
+  }
+
+  /* Contested-camp ledger (Crypto Winter) */
+  .ledger { margin-top: 14px; border-top: 1px dashed var(--hair); padding-top: 13px; }
+  .vs {
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    gap: 12px; align-items: center; margin-top: 11px;
+  }
+  .vs .side b { display: block; font-size: 13px; color: var(--ink); font-weight: 600; }
+  .vs .side span { display: block; font-size: 11.5px; color: var(--muted); line-height: 1.45; }
+  .vs .side.l { text-align: right; }
+  .vs .mid {
+    font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+    color: var(--faint); border: 1px solid var(--hair-soft);
+    border-radius: 999px; padding: 3px 7px;
+  }
+  .vs-cap {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--faint);
+    text-align: center; margin-top: 6px;
+  }
+
+  /* Unfalsifiability dots (Psi) */
+  .dots { display: flex; gap: 6px; margin: 14px 0 7px; }
+  .dots i {
+    width: 10px; height: 10px; border-radius: 2px;
+    border: 1px solid var(--muted); background: transparent;
+  }
+  .dots i.fill { background: var(--amber); border-color: var(--amber); }
+  .dots-cap { font-size: 12.5px; color: var(--ink-2); }
+  .dots-cap b { color: var(--ink); }
+
+  /* ————— Open specimen (museum label) ————— */
+  .spec.open {
+    padding: 25px 22px 22px;
+    background: rgba(26, 18, 11, 0.82);
+    border-color: rgba(216, 162, 74, 0.24);
+  }
+  .fossiltag {
+    display: inline-block; font-family: var(--mono); font-size: 9px;
+    letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber);
+    border: 1px solid rgba(216, 162, 74, 0.42);
+    padding: 4px 9px; border-radius: 3px; margin-bottom: 12px;
+  }
+  .spec.open .spec-name { font-size: clamp(30px, 8vw, 38px); }
+  .spec.open .spec-claim { font-size: 15px; }
+  .openmeta {
+    font-family: var(--mono); font-size: 10.5px; color: var(--muted);
+    letter-spacing: 0.04em; margin-top: 10px;
+  }
+  .punch {
+    font-family: var(--serif); font-style: italic;
+    font-size: 16.5px; line-height: 1.55; color: var(--ink);
+    border-left: 2px solid rgba(216, 162, 74, 0.55);
+    padding-left: 14px; margin: 18px 0 6px;
+  }
+  .receipt-kick { margin: 16px 0 8px; }
+  .receipt {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1px; background: var(--hair);
+    border: 1px solid var(--hair); border-radius: 8px;
+    overflow: hidden;
+  }
+  @media (max-width: 480px) { .receipt { grid-template-columns: repeat(2, 1fr); } }
+  .rt { background: #1a1410; padding: 12px 12px 11px; }
+  .rt .l {
+    font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--muted);
+  }
+  .rt .v {
+    font-family: var(--serif); font-size: 21px; line-height: 1.1;
+    color: var(--ink); margin: 5px 0 3px;
+  }
+  .rt .s { font-size: 10.5px; line-height: 1.4; color: var(--muted); }
+  .mig { margin-top: 16px; border-top: 1px dashed var(--hair); padding-top: 13px; }
+  .migrow {
+    display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center;
+    font-family: var(--mono); font-size: 11.5px; color: var(--muted); margin-top: 9px;
+  }
+  .migrow .dead { text-decoration: line-through; text-decoration-color: rgba(191, 79, 58, 0.75); }
+  .migrow .arr { color: var(--faint); }
+  .migrow .nxt {
+    color: var(--amber); border: 1px solid rgba(216, 162, 74, 0.38);
+    padding: 2px 8px; border-radius: 4px;
+  }
+  .etch {
+    margin: 20px 4px 6px; max-width: 46ch;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.24em;
+    text-transform: uppercase; color: var(--muted); line-height: 2;
+  }
+  .etch::before { content: "— "; color: rgba(216, 162, 74, 0.6); }
+
+  /* ————— Bedrock ————— */
+  .bedrock { text-align: center; padding-top: 96px; padding-bottom: 150px; }
+  .bedrock .rule {
+    border: none; border-top: 3px double rgba(234, 228, 212, 0.28);
+    margin-bottom: 26px;
+  }
+  .bedrock p {
+    font-family: var(--serif); font-size: 15.5px; color: var(--ink-2);
+    max-width: 44ch; margin: 12px auto 0; line-height: 1.65;
+  }
+  .ghost {
+    margin-top: 28px; background: none; cursor: pointer;
+    border: 1px solid var(--hair); border-radius: 999px;
+    color: var(--ink-2); font-family: var(--mono); font-size: 10.5px;
+    letter-spacing: 0.18em; text-transform: uppercase; padding: 11px 20px;
+  }
+  .ghost:active { transform: translateY(1px); }
+
+  /* ————— Depth gauge ————— */
+  #gauge {
+    position: fixed; z-index: 40;
+    right: max(8px, env(safe-area-inset-right));
+    top: 50%; transform: translateY(-50%);
+    height: min(56vh, 460px); width: 44px;
+    opacity: 0; pointer-events: none; transition: opacity 0.45s ease;
+  }
+  #gauge.on { opacity: 1; pointer-events: auto; }
+  #gauge .rail {
+    position: absolute; right: 19px; top: 0; bottom: 0; width: 1px;
+    background: var(--hair);
+  }
+  #gauge .tick {
+    position: absolute; right: 0; top: calc(var(--p) * 100%);
+    transform: translateY(-50%);
+    width: 44px; height: 30px;
+    background: none; border: none; cursor: pointer; padding: 0;
+  }
+  #gauge .tick::after {
+    content: ""; position: absolute; right: 16px; top: 50%;
+    width: 7px; height: 1px; background: var(--faint);
+  }
+  #gauge .tick.spec-t::after { width: 11px; background: var(--ink-2); }
+  #gauge .tick.on::after { background: var(--amber); }
+  #gauge .tick .tl {
+    position: absolute; right: 30px; top: 50%; transform: translateY(-50%);
+    font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em;
+    color: var(--muted); font-variant-numeric: tabular-nums;
+  }
+  #gauge .tick.on .tl { color: var(--amber); }
+  #gmark {
+    position: absolute; right: 16px; top: 0;
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--amber); transform: translate(50%, -50%);
+    box-shadow: 0 0 10px rgba(216, 162, 74, 0.65);
+  }
+  #greadout {
+    position: absolute; top: 100%; right: 0; margin-top: 12px;
+    font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+    color: var(--ink-2); white-space: nowrap; text-align: right;
+  }
+
+  /* ————— Toast ————— */
+  #toast {
+    position: fixed; z-index: 50; left: 50%; bottom: 26px;
+    transform: translate(-50%, 16px);
+    max-width: min(88vw, 420px);
+    background: #241a10; border: 1px solid rgba(216, 162, 74, 0.35);
+    color: var(--ink); border-radius: 8px;
+    font-size: 12.5px; line-height: 1.5; padding: 11px 16px;
+    opacity: 0; pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+  }
+  #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  /* ————— Reduced motion: static but intact ————— */
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .plx { transform: none !important; }
+    #dust span { animation: none !important; }
+    .cue .chev { animation: none; }
+    .js .spec { opacity: 1; transform: none; transition: none; }
+    #gauge { transition: none; }
+    #toast { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="deepground" aria-hidden="true"></div>
+<div class="plx" id="plx-far"  data-rate="0.14" data-period="96"   aria-hidden="true"></div>
+<div class="plx" id="plx-lens" data-rate="0.26" data-period="1400" aria-hidden="true"></div>
+<div class="plx" id="plx-mid"  data-rate="0.42" data-period="180"  aria-hidden="true"></div>
+<div class="plx" id="plx-near" data-rate="0.66" data-period="320"  aria-hidden="true"></div>
+<div id="dust" aria-hidden="true"></div>
+<div id="noise" aria-hidden="true"></div>
+
+<!-- ————————————— ZONE 1 · SURFACE ————————————— -->
+<header class="hero shell" id="hero">
+  <div class="brand">Narrative Radar</div>
+  <div class="kick survey">Survey N° 4 — The Archive Depths</div>
+  <h1>
+    The algorithm is built to pull you deeper into the rabbit hole.
+    <span class="exit"><em>This is the exit.</em></span>
+  </h1>
+  <p class="lede">
+    Every recurring prediction on YouTube and X gets dated, graded, and buried at the
+    depth of its birth. Paste a link — the radar traces the claim to its origin stratum
+    and files the receipt.
+  </p>
+  <form class="pasteform" id="pasteform" novalidate>
+    <input id="pasteinput" type="url" inputmode="url" autocomplete="off"
+           aria-label="Paste a YouTube or X link"
+           placeholder="Paste a YouTube or X link…">
+    <button class="btn" type="submit">Date this claim</button>
+  </form>
+  <div class="herostats" aria-label="Archive totals">
+    <div><div class="v">5</div><div class="l">Narratives tracked</div></div>
+    <div><div class="v">103</div><div class="l">Videos filed</div></div>
+    <div><div class="v">2015</div><div class="l">Deepest stratum</div></div>
+  </div>
+  <button class="deepjump" id="deepjump" type="button">
+    Or descend straight to the deepest specimen — 2015 ↓
+  </button>
+  <div class="cue" aria-hidden="true"><span class="chev">▼</span> Scroll to descend</div>
+</header>
+
+<!-- ————————————— ZONE 2 · THE DESCENT ————————————— -->
+<main id="descent" class="shell">
+  <div class="kick descent-kick">
+    The record — every claim filed at the depth of its birth · 2026 at the surface, 2015 at bedrock
+  </div>
+
+  <div class="ymark first" id="y2026" data-year="2026">
+    <span class="ylab">2026</span><span class="yline"></span>
+    <span class="ydepth">Surface · today, Aug 2026</span>
+  </div>
+
+  <div class="ymark has" id="y2025" data-year="2025">
+    <span class="ylab">2025</span><span class="yline"></span>
+    <span class="ydepth">1 yr deep</span>
+  </div>
+
+  <article class="spec" id="spec-setup" aria-labelledby="n-setup">
+    <div class="spec-no">Specimen N° 005 · collected 2025 · surface stratum</div>
+    <h3 class="spec-name" id="n-setup">The 2026 Setup</h3>
+    <p class="spec-claim">“Everything converges in 2026 — the crash, the election, the reset.”</p>
+    <div class="vtrack" aria-hidden="true">
+      <i style="flex:1; background:var(--v-orig)"></i>
+      <i style="flex:3; background:var(--v-deriv)"></i>
+      <i style="flex:2; background:var(--v-recy)"></i>
+      <i style="flex:3; background:var(--v-click)"></i>
+    </div>
+    <p class="vkey">
+      <span class="k" style="--c:var(--v-orig)"><b>1</b> original</span>
+      <span class="k" style="--c:var(--v-deriv)"><b>3</b> derivative</span>
+      <span class="k" style="--c:var(--v-recy)"><b>2</b> recycled</span>
+      <span class="k" style="--c:var(--v-click)"><b>3</b> clickbait</span>
+      <span class="total">9 videos</span>
+    </p>
+    <p class="state flag">⚑ Founded from a clickbait video — <b>pending review</b>. The radar is
+      tracing whether any primary source exists beneath it.</p>
+  </article>
+
+  <div class="ymark" id="y2024" data-year="2024">
+    <span class="ylab">2024</span><span class="yline"></span>
+    <span class="ydepth">2 yrs deep</span>
+  </div>
+
+  <div class="ymark" id="y2023" data-year="2023">
+    <span class="ylab">2023</span><span class="yline"></span>
+    <span class="ydepth">3 yrs deep</span>
+  </div>
+
+  <div class="ymark has" id="y2022" data-year="2022">
+    <span class="ylab">2022</span><span class="yline"></span>
+    <span class="ydepth">4 yrs deep</span>
+  </div>
+
+  <article class="spec" id="spec-housing" aria-labelledby="n-housing">
+    <div class="spec-no">Specimen N° 004 · collected 2022</div>
+    <h3 class="spec-name" id="n-housing">Housing Crash Watch</h3>
+    <p class="spec-claim">“Prices can’t hold — the 2008 sequel is loading.”</p>
+    <div class="vtrack" aria-hidden="true">
+      <i style="flex:2; background:var(--v-orig)"></i>
+      <i style="flex:1; background:var(--v-deriv)"></i>
+    </div>
+    <p class="vkey">
+      <span class="k" style="--c:var(--v-orig)"><b>2</b> original</span>
+      <span class="k" style="--c:var(--v-deriv)"><b>1</b> derivative</span>
+      <span class="total">3 videos · young corpus</span>
+    </p>
+    <p class="state wait">Too early to score — first real test: <b>Dec 2026</b>.
+      A three-video stratum is still settling.</p>
+  </article>
+
+  <div class="ymark" id="y2021" data-year="2021">
+    <span class="ylab">2021</span><span class="yline"></span>
+    <span class="ydepth">5 yrs deep</span>
+  </div>
+
+  <div class="ymark" id="y2020" data-year="2020">
+    <span class="ylab">2020</span><span class="yline"></span>
+    <span class="ydepth">6 yrs deep</span>
+  </div>
+
+  <div class="ymark" id="y2019" data-year="2019">
+    <span class="ylab">2019</span><span class="yline"></span>
+    <span class="ydepth">7 yrs deep</span>
+  </div>
+
+  <div class="ymark has" id="y2018" data-year="2018">
+    <span class="ylab">2018</span><span class="yline"></span>
+    <span class="ydepth">8 yrs deep</span>
+  </div>
+
+  <article class="spec" id="spec-crypto" aria-labelledby="n-crypto">
+    <div class="spec-no">Specimen N° 003 · collected 2018</div>
+    <h3 class="spec-name" id="n-crypto">Crypto Winter Watch</h3>
+    <p class="spec-claim">“Where is the bottom of this winter — and is the four-year cycle dead?”</p>
+    <div class="vtrack" aria-hidden="true">
+      <i style="flex:13; background:var(--v-orig)"></i>
+      <i style="flex:9; background:var(--v-deriv)"></i>
+      <i style="flex:6; background:var(--v-recy)"></i>
+      <i style="flex:4; background:var(--v-click)"></i>
+    </div>
+    <p class="vkey">
+      <span class="k" style="--c:var(--v-orig)"><b>13</b> original</span>
+      <span class="k" style="--c:var(--v-deriv)"><b>9</b> derivative</span>
+      <span class="k" style="--c:var(--v-recy)"><b>6</b> recycled</span>
+      <span class="k" style="--c:var(--v-click)"><b>4</b> clickbait</span>
+      <span class="total">32 videos</span>
+    </p>
+    <p class="state watch">Unusually primary-source-rich — <b>13 of 32</b> videos are original claims,
+      so this ledger holds named predictors, not echoes.</p>
+    <div class="ledger">
+      <div class="kick">Ledger — live positions</div>
+      <div class="vs">
+        <div class="side l"><b>Gareth Soloway</b><span>$35K bottom</span></div>
+        <div class="mid">VS</div>
+        <div class="side r"><b>Cory Klippsten</b><span>$57.5K floor</span></div>
+      </div>
+      <div class="vs-cap">Both dated · resolves late Oct 2026</div>
+      <div class="vs">
+        <div class="side l"><b>Matt Hougan</b><span>“the cycle is over”</span></div>
+        <div class="mid">VS</div>
+        <div class="side r"><b>Sophie Satoshi</b><span>“cycle intact to 2028”</span></div>
+      </div>
+      <span class="next">Next test · 10 weeks</span>
+    </div>
+  </article>
+
+  <div class="ymark has" id="y2017" data-year="2017">
+    <span class="ylab">2017</span><span class="yline"></span>
+    <span class="ydepth">9 yrs deep</span>
+  </div>
+
+  <article class="spec" id="spec-psi" aria-labelledby="n-psi">
+    <div class="spec-no">Specimen N° 002 · collected 2017 · contested camps</div>
+    <h3 class="spec-name" id="n-psi">Psi, Declassified</h3>
+    <p class="spec-claim">“The government knew psi was real — the files prove it.”</p>
+    <div class="vtrack" aria-hidden="true">
+      <i style="flex:5; background:var(--v-orig)"></i>
+      <i style="flex:9; background:var(--v-deriv)"></i>
+      <i style="flex:4; background:var(--v-recy)"></i>
+      <i style="flex:3; background:var(--v-click)"></i>
+    </div>
+    <p class="vkey">
+      <span class="k" style="--c:var(--v-orig)"><b>5</b> original</span>
+      <span class="k" style="--c:var(--v-deriv)"><b>9</b> derivative</span>
+      <span class="k" style="--c:var(--v-recy)"><b>4</b> recycled</span>
+      <span class="k" style="--c:var(--v-click)"><b>3</b> clickbait</span>
+      <span class="total">21 videos</span>
+    </p>
+    <div class="kick" style="margin-top:14px">Unfalsifiability watch</div>
+    <div class="dots" aria-hidden="true">
+      <i class="fill"></i><i class="fill"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <p class="dots-cap">Only <b>2 of its 9</b> predictive claims name a date.
+      A story that never names a date can never be wrong — or right.</p>
+  </article>
+
+  <div class="ymark" id="y2016" data-year="2016">
+    <span class="ylab">2016</span><span class="yline"></span>
+    <span class="ydepth">10 yrs deep</span>
+  </div>
+
+  <div class="ymark has" id="y2015" data-year="2015">
+    <span class="ylab">2015</span><span class="yline"></span>
+    <span class="ydepth">11 yrs deep · bedrock stratum</span>
+  </div>
+
+  <!-- ————————————— ZONE 3 · THE OPEN SPECIMEN ————————————— -->
+  <article class="spec open" id="open-specimen" aria-labelledby="n-collapse">
+    <span class="fossiltag">Fossil record · open specimen</span>
+    <div class="spec-no">Specimen N° 001 · collected 2015 · genus: debt-cycle doom</div>
+    <h3 class="spec-name" id="n-collapse">The 80-Year Collapse</h3>
+    <p class="spec-claim">“The long debt cycle is ending — crisis by the Nov 2026 midterms.”
+      — Ray Dalio, rolling.</p>
+    <p class="openmeta">38 videos filed · born 2015 · primary claimant: Ray Dalio</p>
+
+    <p class="punch">This story is 11 years old, has moved its deadline 5 times, and none
+      of its 6 dated predictions have arrived. Next test: November&nbsp;2026.</p>
+
+    <div class="kick receipt-kick">Receipt — auto-written from the ledger</div>
+    <div class="receipt">
+      <div class="rt"><div class="l">Age</div><div class="v">11 yrs</div><div class="s">born 2015</div></div>
+      <div class="rt"><div class="l">Score</div><div class="v">0 / 6</div><div class="s">arrived · +2 ungradeable · 3 pending</div></div>
+      <div class="rt"><div class="l">Slippage</div><div class="v">5×</div><div class="s">deadline rolled</div></div>
+      <div class="rt"><div class="l">Next test</div><div class="v">12 wks</div><div class="s">Nov 2026 midterms</div></div>
+      <div class="rt"><div class="l">Recycled</div><div class="v">14 / 20</div><div class="s">of the last 20 videos</div></div>
+      <div class="rt"><div class="l">Spread</div><div class="v">61%</div><div class="s">carried by just 3 channels</div></div>
+    </div>
+
+    <div class="vtrack" aria-hidden="true" style="margin-top:16px">
+      <i style="flex:7; background:var(--v-orig)"></i>
+      <i style="flex:15; background:var(--v-deriv)"></i>
+      <i style="flex:7; background:var(--v-recy)"></i>
+      <i style="flex:6; background:var(--v-click)"></i>
+    </div>
+    <p class="vkey">
+      <span class="k" style="--c:var(--v-orig)"><b>7</b> original</span>
+      <span class="k" style="--c:var(--v-deriv)"><b>15</b> derivative</span>
+      <span class="k" style="--c:var(--v-recy)"><b>7</b> recycled</span>
+      <span class="k" style="--c:var(--v-click)"><b>6</b> clickbait</span>
+      <span class="total">38 videos</span>
+    </p>
+
+    <div class="mig">
+      <div class="kick">Deadline migration — the crisis keeps moving house</div>
+      <div class="migrow">
+        <span class="dead">2017</span><span class="arr">→</span>
+        <span class="dead">2019</span><span class="arr">→</span>
+        <span class="dead">2021</span><span class="arr">→</span>
+        <span class="dead">2024</span><span class="arr">→</span>
+        <span class="dead">2025</span><span class="arr">→</span>
+        <span class="nxt">Nov 2026</span>
+      </div>
+    </div>
+  </article>
+
+  <p class="etch">Etched beside the specimen — still spreading ten years past its first missed deadline</p>
+</main>
+
+<!-- ————————————— BEDROCK ————————————— -->
+<footer class="bedrock shell">
+  <hr class="rule">
+  <div class="kick">Bedrock · 2015</div>
+  <p>Below this stratum the record is silent. The oldest tracked claim was born in 2015 —
+     everything above it is still settling. When a new prediction is made at the surface,
+     it starts its descent here, dated and graded.</p>
+  <button class="ghost" id="surface" type="button">↑ Return to surface</button>
+</footer>
+
+<!-- ————————————— DEPTH GAUGE ————————————— -->
+<nav id="gauge" aria-label="Depth gauge — jump to a year">
+  <div class="rail" aria-hidden="true"></div>
+  <div id="gmark" aria-hidden="true"></div>
+  <button class="tick spec-t" data-year="2026" style="--p:0"      aria-label="Jump to 2026, the surface"><span class="tl">2026</span></button>
+  <button class="tick spec-t" data-year="2025" style="--p:0.0909" aria-label="Jump to 2025 — The 2026 Setup"><span class="tl">2025</span></button>
+  <button class="tick"        data-year="2024" style="--p:0.1818" aria-label="Jump to 2024"></button>
+  <button class="tick"        data-year="2023" style="--p:0.2727" aria-label="Jump to 2023"></button>
+  <button class="tick spec-t" data-year="2022" style="--p:0.3636" aria-label="Jump to 2022 — Housing Crash Watch"><span class="tl">2022</span></button>
+  <button class="tick"        data-year="2021" style="--p:0.4545" aria-label="Jump to 2021"></button>
+  <button class="tick"        data-year="2020" style="--p:0.5455" aria-label="Jump to 2020"></button>
+  <button class="tick"        data-year="2019" style="--p:0.6364" aria-label="Jump to 2019"></button>
+  <button class="tick spec-t" data-year="2018" style="--p:0.7273" aria-label="Jump to 2018 — Crypto Winter Watch"><span class="tl">2018</span></button>
+  <button class="tick spec-t" data-year="2017" style="--p:0.8182" aria-label="Jump to 2017 — Psi, Declassified"><span class="tl">2017</span></button>
+  <button class="tick"        data-year="2016" style="--p:0.9091" aria-label="Jump to 2016"></button>
+  <button class="tick spec-t" data-year="2015" style="--p:1"      aria-label="Jump to 2015 — The 80-Year Collapse"><span class="tl">2015</span></button>
+  <div id="greadout">2026 · SURFACE</div>
+</nav>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var doc = document.documentElement;
+  doc.classList.add('js');
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  var hero = document.getElementById('hero');
+  var gauge = document.getElementById('gauge');
+  var gmark = document.getElementById('gmark');
+  var greadout = document.getElementById('greadout');
+  var toastEl = document.getElementById('toast');
+  var dustEl = document.getElementById('dust');
+
+  var layers = Array.prototype.map.call(document.querySelectorAll('.plx'), function (el) {
+    return {
+      el: el,
+      rate: parseFloat(el.getAttribute('data-rate')),
+      period: parseFloat(el.getAttribute('data-period'))
+    };
+  });
+
+  var marks = Array.prototype.slice.call(document.querySelectorAll('.ymark'));
+  var ticks = Array.prototype.slice.call(document.querySelectorAll('#gauge .tick'));
+  var markPos = [];
+  var heroH = 1;
+
+  function measure() {
+    heroH = hero.offsetHeight || 1;
+    var sy = window.pageYOffset;
+    markPos = marks.map(function (m) {
+      return {
+        year: parseInt(m.getAttribute('data-year'), 10),
+        top: m.getBoundingClientRect().top + sy
+      };
+    });
+  }
+
+  var ticking = false;
+  function onScroll() {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(update); }
+  }
+
+  function update() {
+    ticking = false;
+    var y = window.pageYOffset;
+    if (!reduced.matches) {
+      for (var i = 0; i < layers.length; i++) {
+        var L = layers[i];
+        var off = -((y * L.rate) % L.period);
+        L.el.style.transform = 'translate3d(0,' + off.toFixed(2) + 'px,0)';
+      }
+    }
+    updateGauge(y);
+  }
+
+  function updateGauge(y) {
+    if (!markPos.length) { return; }
+    var center = y + window.innerHeight * 0.35;
+    var last = markPos.length - 1;
+    var p;
+    if (center <= markPos[0].top) {
+      p = 0;
+    } else if (center >= markPos[last].top) {
+      p = 1;
+    } else {
+      for (var i = 0; i < last; i++) {
+        if (center >= markPos[i].top && center < markPos[i + 1].top) {
+          var f = (center - markPos[i].top) / (markPos[i + 1].top - markPos[i].top);
+          p = (i + f) / last;
+          break;
+        }
+      }
+      if (p === undefined) { p = 1; }
+    }
+    gmark.style.top = (p * 100).toFixed(3) + '%';
+    var yr = 2026 - Math.round(p * 11);
+    var d = 2026 - yr;
+    greadout.textContent = d === 0
+      ? '2026 · SURFACE'
+      : yr + ' · ' + d + (d === 1 ? ' YR' : ' YRS') + ' DEEP';
+    for (var t = 0; t < ticks.length; t++) {
+      ticks[t].classList.toggle('on', parseInt(ticks[t].getAttribute('data-year'), 10) === yr);
+    }
+    gauge.classList.toggle('on', y > heroH * 0.45);
+  }
+
+  function jumpTo(id) {
+    var el = document.getElementById(id);
+    if (!el) { return; }
+    el.scrollIntoView({ behavior: reduced.matches ? 'auto' : 'smooth', block: 'start' });
+  }
+
+  ticks.forEach(function (t) {
+    t.addEventListener('click', function () {
+      jumpTo('y' + t.getAttribute('data-year'));
+    });
+  });
+
+  /* Specimen reveal */
+  var specs = Array.prototype.slice.call(document.querySelectorAll('.spec'));
+  if (reduced.matches || !('IntersectionObserver' in window)) {
+    specs.forEach(function (s) { s.classList.add('vis'); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          en.target.classList.add('vis');
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+    specs.forEach(function (s) { io.observe(s); });
+  }
+
+  /* Suspended sediment dust (capped at 14 motes) */
+  function makeDust() {
+    for (var i = 0; i < 14; i++) {
+      var s = document.createElement('span');
+      s.style.left = (Math.random() * 100).toFixed(1) + '%';
+      s.style.top = (Math.random() * 100).toFixed(1) + '%';
+      var sz = (1 + Math.random() * 1.6).toFixed(1);
+      s.style.width = sz + 'px';
+      s.style.height = sz + 'px';
+      s.style.opacity = (0.06 + Math.random() * 0.14).toFixed(2);
+      s.style.animationDuration = (34 + Math.random() * 46).toFixed(0) + 's';
+      s.style.animationDelay = '-' + (Math.random() * 60).toFixed(0) + 's';
+      dustEl.appendChild(s);
+    }
+  }
+  if (!reduced.matches) { makeDust(); }
+
+  if (reduced.addEventListener) {
+    reduced.addEventListener('change', function () {
+      if (reduced.matches) {
+        layers.forEach(function (L) { L.el.style.transform = ''; });
+        dustEl.style.display = 'none';
+        specs.forEach(function (s) { s.classList.add('vis'); });
+      } else {
+        dustEl.style.display = '';
+        if (!dustEl.children.length) { makeDust(); }
+        onScroll();
+      }
+    });
+  }
+
+  /* Toast + paste form */
+  var toastT;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastT);
+    toastT = setTimeout(function () { toastEl.classList.remove('show'); }, 3400);
+  }
+
+  var form = document.getElementById('pasteform');
+  var input = document.getElementById('pasteinput');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = input.value.trim();
+    if (v) {
+      input.value = '';
+      toast('Filed for dating. This survey is a prototype — descend to see how a dated claim reads.');
+      jumpTo('y2026');
+    } else {
+      toast('Paste a YouTube or X link and the radar dates its claim.');
+    }
+  });
+
+  document.getElementById('deepjump').addEventListener('click', function () {
+    jumpTo('open-specimen');
+  });
+  document.getElementById('surface').addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: reduced.matches ? 'auto' : 'smooth' });
+  });
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function () { measure(); onScroll(); });
+  window.addEventListener('load', function () { measure(); update(); });
+
+  measure();
+  update();
+})();
+</script>
+</body>
+</html>
