@@ -120,6 +120,14 @@
   .nfacts { display: flex; gap: 24px; flex-wrap: wrap; margin: 14px 0 4px; }
   .nfact .v { font-size: 17px; font-weight: 650; }
   .nfact .l { font-size: 12px; color: var(--muted); }
+  .rsentence { font-size: 15px; line-height: 1.55; color: var(--ink); margin: 12px 0 10px; }
+  .receipt { display: grid; grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+    gap: 8px; margin: 0 0 14px; }
+  .rtile { background: var(--page); border: 1px solid var(--hairline); border-radius: 10px;
+    padding: 9px 11px; }
+  .rtile .rl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+  .rtile .rv { font-size: 17px; font-weight: 650; color: var(--ink); margin-top: 2px; }
+  .rtile .rs { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
   .mutations { margin-top: 12px; font-size: 13px; color: var(--ink-2); }
   .mutations .m { margin: 3px 0; }
   .mutations .d { color: var(--muted); font-variant-numeric: tabular-nums;
@@ -478,6 +486,99 @@ function viewsNum(v) {
 }
 
 /* ---------- corpus view ---------- */
+/* ---------- Receipt strip: headline metrics with honesty gates ----------
+   Scores only render as verdicts past SCORE_GATE resolved entries; below it
+   the strip says so instead of letting a tiny sample read as a verdict. */
+const SCORE_GATE = 5;
+function publishedEst(v) {
+  const t = Date.parse(v.first_seen || "");
+  if (isNaN(t)) return null;
+  return v.age_days == null ? t : t - v.age_days * 86400000;
+}
+function parseHorizonDate(s) {
+  const y = ((s || "").match(/20\d{2}/) || [])[0];
+  if (!y) return null;
+  const MO = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  const m = ((s || "").toLowerCase().match(/jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec/) || [])[0];
+  return Date.UTC(+y, m ? MO[m] : 6, m ? 28 : 1);
+}
+function computeReceipt(data) {
+  const n = data?.narrative || {};
+  const preds = data?.predictions?.entries || [];
+  const vids = data?.videos?.videos || [];
+  const claims = data?.claims?.claims || [];
+  const now = Date.now();
+  const bornYear = +(((n.born || "").match(/\d{4}/) || [])[0]) || null;
+  const c = {};
+  preds.forEach(e => c[e.status] = (c[e.status] || 0) + 1);
+  const sup = c.SUPPORTED || 0, ref = c.REFUTED || 0, amb = c.AMBIGUOUS || 0,
+    upd = c.UPDATED || 0, pen = c.PENDING || 0;
+  let next = null;
+  preds.filter(e => e.status === "PENDING").forEach(e => {
+    const t = parseHorizonDate(e.horizon);
+    if (t && t > now - 45 * 86400000 && (!next || t < next.t))
+      next = { t, predictor: e.predictor || n.predictor || "", horizon: e.horizon };
+  });
+  const dated = vids.map(v => ({ v, t: publishedEst(v) })).filter(x => x.t != null)
+    .sort((a, b) => b.t - a.t);
+  const win = (dated.length >= 10 ? dated.slice(0, 20) : []).map(x => x.v);
+  const by = {};
+  vids.forEach(v => { const k = (v.channel || "").trim().toLowerCase(); if (k) by[k] = (by[k] || 0) + 1; });
+  const counts = Object.values(by).sort((a, b) => b - a);
+  const top3 = counts.slice(0, 3).reduce((a, b) => a + b, 0);
+  return {
+    n, bornYear, verified: !!n.genesis?.first_found,
+    years: bornYear ? new Date().getFullYear() - bornYear : null,
+    sup, ref, amb, upd, pen, resolved: sup + ref, hasLedger: preds.length > 0,
+    next, win, reheats: win.filter(x => x.verdict === "RECYCLED" || x.verdict === "CLICKBAIT").length,
+    spread: vids.length >= 10 && counts.length
+      ? { channels: counts.length, pct: Math.round(top3 / vids.length * 100), total: vids.length } : null,
+    claimsCount: claims.length,
+  };
+}
+function receiptHtml(data) {
+  const r = computeReceipt(data);
+  const tile = (l, v, s) => `<div class="rtile"><div class="rl">${l}</div><div class="rv">${v}</div><div class="rs">${s}</div></div>`;
+  const mY = (t) => new Date(t).toLocaleDateString(undefined, { month: "long", year: "numeric" });
+  const tiles = [], sent = [];
+  if (r.years != null) {
+    tiles.push(tile("Age", `${r.years} yrs`,
+      `born ${esc(r.n.born)} · ${r.verified ? "origin verified" : "unverified"}`));
+    sent.push(`This story is ${r.verified ? "" : "roughly "}${r.years} years old${r.verified ? "" : " (origin unverified)"}.`);
+  }
+  if (!r.hasLedger) {
+    tiles.push(tile("Score", "No ledger yet", r.claimsCount ? "claims on file, none dated" : "deep audit pending"));
+    if (r.claimsCount) sent.push("Nothing on its record is dated enough to be provable yet.");
+  } else if (r.resolved >= SCORE_GATE) {
+    tiles.push(tile("Score", `${r.sup} of ${r.resolved} arrived`,
+      `${r.amb ? r.amb + " ungradeable · " : ""}${r.pen} pending`));
+    sent.push(r.sup / r.resolved >= 0.5
+      ? `It has largely called its shots: ${r.sup} of ${r.resolved} dated predictions arrived.`
+      : `${r.sup} of its ${r.resolved} resolved dated predictions arrived${r.amb ? `, ${r.amb} were too vague to grade` : ""}.`);
+  } else {
+    tiles.push(tile("Score", "Too early to score",
+      `${r.sup} of ${r.resolved} so far · ${r.amb} ungradeable · ${r.pen} pending`));
+    if (r.resolved) sent.push(`Its first ${r.resolved} resolved predictions ${r.sup ? `split ${r.sup}–${r.ref}` : "missed"} — too few to score fairly yet.`);
+  }
+  if (r.hasLedger) {
+    tiles.push(tile("Slippage", r.upd ? `rolled ${r.upd}×` : "no rolls",
+      r.upd ? "deadline moved; receipts on ledger" : "deadlines stand as made"));
+    if (r.upd) sent.push(`The deadline has rolled ${r.upd}× on record.`);
+  }
+  const days = r.next ? Math.ceil((r.next.t - Date.now()) / 86400000) : null;
+  tiles.push(r.next
+    ? tile("Next test", days <= 0 ? "due now" : `${days} days`,
+      `${esc((r.next.predictor || "").split("(")[0].trim())}: ${esc((r.next.horizon || "").slice(0, 42))}`)
+    : tile("Next test", "none dated", r.hasLedger ? "no future date on the ledger" : "nothing to wait for yet"));
+  if (r.next) sent.push(`Next test: ${mY(r.next.t)}.`);
+  else if (r.hasLedger) sent.push("It currently names no future date to test.");
+  if (r.win.length) tiles.push(tile("Recycled share", `${r.reheats} of ${r.win.length}`,
+    "recent videos we indexed: reheats"));
+  if (r.spread) tiles.push(tile("Source spread", `${r.spread.channels} channels`,
+    `top 3 carry ${r.spread.pct}% of ${r.spread.total} videos`));
+  return `<div class="rsentence">${sent.join(" ")}</div><div class="receipt">${tiles.join("")}</div>`;
+}
+
 function renderNarrativeCard() {
   const n = cache[topicId]?.narrative;
   const vids = cache[topicId]?.videos?.videos || [];
@@ -646,11 +747,7 @@ function renderNarrativeCard() {
     </div>
     <div class="claim">${esc(n.claim)}</div>
     ${explHtml}
-    <div class="nfacts">
-      <div class="nfact"><div class="v">${esc(narrativeAge(n.born))}</div><div class="l">born ${esc(n.born)} — ${esc(n.born_note || "")}</div></div>
-      <div class="nfact"><div class="v">${n.mutations?.length || 0} mutations</div><div class="l">mechanism changes since birth</div></div>
-      <div class="nfact"><div class="v">${esc(n.predictor)}</div><div class="l">predictor on file</div></div>
-    </div>
+    ${receiptHtml(cache[topicId])}
     ${n.genesis?.first_found ? `<div class="genesis">⌖ <b>Origin traced on X:</b> earliest surviving post
       <a href="${esc(n.genesis.first_found.url)}" target="_blank" rel="noopener">@${esc(n.genesis.first_found.username)} · ${esc((n.genesis.first_found.date || "").slice(0, 10))}</a>
       — “${esc((n.genesis.first_found.text || "").slice(0, 140))}”
