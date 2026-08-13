@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narrative Radar — deep space hero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: #000; color: #f2efe9; font-family: "Inter", system-ui, sans-serif;
+    overflow-x: hidden; }
+  #space { position: fixed; inset: 0; z-index: 0; opacity: 0;
+    transition: opacity 1s ease; }
+  #space.ready { opacity: 1; }
+  .vignette { position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    background: radial-gradient(ellipse at center,
+      rgba(0,0,0,0) 55%, rgba(0,0,0,0.15) 100%); }
+  /* CSS starfield fallback when WebGL is unavailable */
+  body.no-webgl #space { display: none; }
+  body.no-webgl::before { content: ""; position: fixed; inset: 0; z-index: 0;
+    background:
+      radial-gradient(1px 1px at 12% 24%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 33% 68%, #dfe6ff 50%, transparent 51%),
+      radial-gradient(2px 2px at 51% 15%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 64% 45%, #cfd8ff 50%, transparent 51%),
+      radial-gradient(1px 1px at 78% 76%, #fff 50%, transparent 51%),
+      radial-gradient(2px 2px at 89% 32%, #e8ecff 50%, transparent 51%),
+      radial-gradient(1px 1px at 22% 87%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 45% 92%, #dfe6ff 50%, transparent 51%),
+      linear-gradient(180deg, #000000 0%, #0a0a12 100%); }
+
+  header { position: fixed; top: 18px; left: 50%; transform: translateX(-50%);
+    z-index: 20; width: min(920px, calc(100% - 32px)); }
+  .nav { display: flex; align-items: center; gap: 22px; padding: 10px 12px 10px 20px;
+    border-radius: 999px; background: rgba(10,10,18,0.55);
+    border: 1px solid rgba(255,255,255,0.10);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .logo { font-weight: 600; font-size: 14px; letter-spacing: 0.02em; color: #f2efe9;
+    text-decoration: none; display: flex; align-items: center; gap: 8px; }
+  .logo .dot { color: #7adfc4; font-size: 10px; }
+  .nav .links { display: flex; gap: 20px; margin-left: auto; }
+  .nav .links a { color: rgba(242,239,233,0.7); font-size: 13.5px; text-decoration: none; }
+  .nav .links a:hover { color: #f2efe9; }
+  .nav .cta { padding: 9px 18px; border-radius: 999px; background: #f2efe9; color: #0a0a12;
+    font-size: 13.5px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+  .nav .cta:hover { background: #fff; }
+
+  main { position: relative; z-index: 10; }
+  .hero { min-height: 100svh; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; text-align: center; padding: 96px 20px 48px; }
+  .hero h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 500;
+    font-size: clamp(3rem, 9vw, 8rem); line-height: 1.02; letter-spacing: -0.01em;
+    color: #fff; position: relative; }
+  .hero h1 .l2 { font-style: italic; display: block; }
+  .hero h1::before { content: ""; position: absolute; inset: -12% -18%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.22) 0%, transparent 70%);
+    z-index: -1; }
+  .sub { margin-top: 26px; max-width: 430px; color: rgba(200,200,210,0.85);
+    font-size: 15px; line-height: 1.65;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.7); }
+  .pill-form { margin-top: 34px; display: flex; align-items: center; width: min(440px, 100%);
+    border-radius: 999px; background: rgba(15,15,24,0.6);
+    border: 1px solid rgba(255,255,255,0.14);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    padding: 6px 6px 6px 22px; }
+  .pill-form input { flex: 1; background: none; border: none; outline: none;
+    color: #f2efe9; font: inherit; font-size: 14.5px; min-width: 0; }
+  .pill-form input::placeholder { color: rgba(242,239,233,0.45); }
+  .pill-form button { width: 42px; height: 42px; border-radius: 50%; border: none;
+    background: #f2efe9; color: #0a0a12; font-size: 18px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; flex: none; }
+  .pill-form button:hover { background: #fff; }
+  .pill-form.done { border-color: rgba(122,223,196,0.6); }
+  .pill-msg { margin-top: 12px; font-size: 13px; color: #7adfc4; min-height: 18px; }
+  .hero .bottom-cta { margin-top: auto; padding-top: 40px; }
+  .bottom-cta a { display: inline-block; padding: 13px 26px; border-radius: 999px;
+    background: rgba(15,15,24,0.65); border: 1px solid rgba(255,255,255,0.14);
+    color: rgba(242,239,233,0.85); font-size: 12.5px; letter-spacing: 0.14em;
+    text-transform: uppercase; text-decoration: none;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  .bottom-cta a:hover { color: #fff; border-color: rgba(255,255,255,0.3); }
+
+  .below { position: relative; z-index: 10; min-height: 60svh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 18px; text-align: center; padding: 60px 20px;
+    background: linear-gradient(180deg, transparent 0%, rgba(5,5,10,0.9) 30%, #05050a 100%); }
+  .below .stats { font-size: 14px; letter-spacing: 0.04em; color: rgba(235,232,225,0.6);
+    font-variant-numeric: tabular-nums; }
+  .below .stats b { color: #7adfc4; font-weight: 600; }
+  .below h2 { font-family: "Playfair Display", Georgia, serif; font-weight: 500;
+    font-size: clamp(1.6rem, 4vw, 2.6rem); color: #f2efe9; }
+  .below a.enter { padding: 14px 30px; border-radius: 999px; background: #ecb36b;
+    color: #241505; font-weight: 600; font-size: 15px; text-decoration: none; }
+  .below a.enter:hover { background: #f3c084; }
+
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid #7adfc4; outline-offset: 2px; }
+  @media (max-width: 640px) {
+    .nav .links { display: none; }
+    .hero { padding-top: 84px; }
+  }
+</style>
+</head>
+<body>
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="../"><span class="dot">●</span> Narrative Radar</a>
+    <div class="links">
+      <a href="../">Corpus</a>
+      <a href="../">Ledger</a>
+      <a href="../">Briefs</a>
+    </div>
+    <a class="cta" href="../">Enter the radar</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>The algorithm pulls you deeper.<span class="l2">This is the exit.</span></h1>
+    <p class="sub">Every recurring prediction on YouTube and X — dated at origin,
+      labeled at source, and graded in public when its own deadline arrives.</p>
+    <form class="pill-form" id="paste-form">
+      <input id="paste-input" type="text" inputmode="url" autocomplete="off"
+        placeholder="Paste a YouTube link…" aria-label="Paste a YouTube link">
+      <button type="submit" aria-label="Run the receipt">→</button>
+    </form>
+    <div class="pill-msg" id="pill-msg" role="status"></div>
+    <div class="bottom-cta"><a href="#field">The narrative field ↓</a></div>
+  </section>
+
+  <section class="below" id="field">
+    <h2>Five narratives on the clock.</h2>
+    <div class="stats" id="stats"><b>5</b> narratives tracked · <b>80</b> videos dated · <b>26</b> predictions waiting on their own deadlines</div>
+    <a class="enter" href="../">Enter the radar</a>
+  </section>
+</main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+
+const canvas = document.getElementById("space");
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const coarse = matchMedia("(pointer: coarse)").matches;
+const small = innerWidth < 700;
+const mobile = coarse || small;
+
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+} catch (e) {
+  document.body.classList.add("no-webgl");
+  canvas.remove();
+}
+
+if (renderer) {
+  renderer.setPixelRatio(Math.min(2, devicePixelRatio));
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.1;
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x000000, 0.02);
+  // Near-black gradient background via large plane behind everything
+  {
+    const bgGeo = new THREE.PlaneGeometry(2, 2);
+    const bgMat = new THREE.ShaderMaterial({
+      depthWrite: false, depthTest: false,
+      vertexShader: `void main(){ gl_Position = vec4(position.xy, 1.0, 1.0); }`,
+      fragmentShader: `
+        void main(){
+          float t = gl_FragCoord.y / max(1.0, float(${innerHeight}));
+          vec3 c = mix(vec3(0.039, 0.039, 0.071), vec3(0.0), t);
+          gl_FragColor = vec4(c, 1.0);
+        }`,
+    });
+    const bg = new THREE.Mesh(bgGeo, bgMat);
+    bg.frustumCulled = false;
+    bg.renderOrder = -10;
+    scene.add(bg);
+  }
+
+  const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 200);
+  camera.position.set(0, 0, 8);
+
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+
+  /* ---------- lights ---------- */
+  const key = new THREE.DirectionalLight(0xfff2e0, 2.4);
+  key.position.set(-5, 6, 4);
+  scene.add(key);
+  const fill = new THREE.PointLight(0xb96bc6, 6, 30, 2);
+  fill.position.set(5, -3, 2);
+  scene.add(fill);
+  scene.add(new THREE.AmbientLight(0xffffff, 0.1));
+
+  /* ---------- starfield: 3 depth layers, ~10% twinkle ---------- */
+  const starLayers = [];
+  const starCount = mobile ? 750 : 1500;
+  const mkStars = (z, spread, sizeMin, sizeMax) => {
+    const g = new THREE.BufferGeometry();
+    const pos = new Float32Array(starCount * 3);
+    const size = new Float32Array(starCount);
+    const phase = new Float32Array(starCount);
+    const tw = new Float32Array(starCount);
+    for (let i = 0; i < starCount; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * spread * 2.4;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * spread * 1.5;
+      pos[i * 3 + 2] = z - Math.random() * 6;
+      size[i] = sizeMin + Math.random() * (sizeMax - sizeMin);
+      phase[i] = Math.random() * Math.PI * 2;
+      tw[i] = Math.random() < 0.1 ? 1 : 0;
+    }
+    g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    g.setAttribute("aSize", new THREE.BufferAttribute(size, 1));
+    g.setAttribute("aPhase", new THREE.BufferAttribute(phase, 1));
+    g.setAttribute("aTw", new THREE.BufferAttribute(tw, 1));
+    const m = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false,
+      uniforms: { uTime: { value: 0 }, uDpr: { value: Math.min(2, devicePixelRatio) } },
+      vertexShader: `
+        attribute float aSize; attribute float aPhase; attribute float aTw;
+        varying float vA;
+        uniform float uTime; uniform float uDpr;
+        void main(){
+          vec4 mv = modelViewMatrix * vec4(position, 1.0);
+          gl_Position = projectionMatrix * mv;
+          gl_PointSize = aSize * uDpr;
+          vA = aTw > 0.5 ? 0.55 + 0.45 * sin(uTime * 3.0 + aPhase) : 1.0;
+        }`,
+      fragmentShader: `
+        varying float vA;
+        void main(){
+          vec2 d = gl_PointCoord - 0.5;
+          float a = smoothstep(0.5, 0.12, length(d)) * vA;
+          gl_FragColor = vec4(vec3(0.92, 0.95, 1.0), a * 0.9);
+        }`,
+    });
+    const p = new THREE.Points(g, m);
+    scene.add(p);
+    starLayers.push({ p, m, depthFactor: (10 + z) / 10 });
+  };
+  mkStars(-12, 26, 0.5, 1.2);
+  mkStars(-24, 42, 0.6, 1.6);
+  mkStars(-38, 62, 0.8, 2.0);
+
+  /* ---------- spiral galaxy, upper-left ---------- */
+  const galaxy = new THREE.Group();
+  {
+    const N = mobile ? 4000 : 8000;
+    const g = new THREE.BufferGeometry();
+    const pos = new Float32Array(N * 3);
+    const col = new Float32Array(N * 3);
+    const cCore = new THREE.Color(0xfff3dc), cTip = new THREE.Color(0x8a6bd6);
+    for (let i = 0; i < N; i++) {
+      const arm = i % 2;
+      const r = Math.pow(Math.random(), 1.6) * 3.2;
+      const ang = arm * Math.PI + r * 2.6 + (Math.random() - 0.5) * 0.55 * (1 - r / 4);
+      const y = (Math.random() - 0.5) * 0.16 * (1 - r / 3.4);
+      pos[i * 3] = Math.cos(ang) * r;
+      pos[i * 3 + 1] = y;
+      pos[i * 3 + 2] = Math.sin(ang) * r;
+      const c = cCore.clone().lerp(cTip, Math.min(1, r / 3.2));
+      col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b;
+    }
+    g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    g.setAttribute("color", new THREE.BufferAttribute(col, 3));
+    const m = new THREE.PointsMaterial({ size: 0.02, vertexColors: true,
+      transparent: true, opacity: 0.85, depthWrite: false,
+      blending: THREE.AdditiveBlending });
+    galaxy.add(new THREE.Points(g, m));
+    galaxy.position.set(-7.5, 4.2, -14);
+    galaxy.rotation.set(THREE.MathUtils.degToRad(62), 0, THREE.MathUtils.degToRad(-18));
+    scene.add(galaxy);
+  }
+
+  /* ---------- nebula wisps, lower-right (procedural fbm alpha) ---------- */
+  const nebulae = [];
+  {
+    const frag = `
+      uniform float uTime; uniform vec3 uColA; uniform vec3 uColB;
+      uniform float uOpacity; uniform vec2 uDrift;
+      varying vec2 vUv;
+      float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+      float noise(vec2 p){
+        vec2 i = floor(p), f = fract(p);
+        vec2 u = f * f * (3.0 - 2.0 * f);
+        return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), u.x),
+                   mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), u.x), u.y);
+      }
+      float fbm(vec2 p){
+        float v = 0.0, a = 0.5;
+        for (int i = 0; i < 5; i++){ v += a * noise(p); p *= 2.03; a *= 0.5; }
+        return v;
+      }
+      void main(){
+        vec2 uv = vUv + uDrift * sin(uTime * 0.05 + uDrift.x * 7.0);
+        float n = fbm(uv * 3.0 + uDrift * 20.0);
+        float rad = 1.0 - smoothstep(0.15, 0.62, distance(vUv, vec2(0.5)));
+        float a = smoothstep(0.35, 0.75, n) * rad * uOpacity;
+        vec3 c = mix(uColA, uColB, fbm(uv * 5.0));
+        gl_FragColor = vec4(c, a);
+      }`;
+    const vert = `varying vec2 vUv;
+      void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`;
+    const specs = [
+      { s: 14, p: [6.5, -4.5, -12], op: 0.20, drift: [0.010, 0.006] },
+      { s: 18, p: [8.5, -2.5, -16], op: 0.14, drift: [0.006, 0.011] },
+      { s: 11, p: [5.0, -6.0, -10], op: 0.11, drift: [0.013, 0.004] },
+    ];
+    for (const sp of specs) {
+      const m = new THREE.ShaderMaterial({
+        transparent: true, depthWrite: false,
+        uniforms: {
+          uTime: { value: 0 },
+          uColA: { value: new THREE.Color(0x6b2d7a) },
+          uColB: { value: new THREE.Color(0xb96bc6) },
+          uOpacity: { value: sp.op },
+          uDrift: { value: new THREE.Vector2(...sp.drift) },
+        },
+        vertexShader: vert, fragmentShader: frag,
+      });
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(sp.s, sp.s), m);
+      mesh.position.set(...sp.p);
+      scene.add(mesh);
+      nebulae.push(m);
+    }
+  }
+
+  /* ---------- hero stars with cross flares ---------- */
+  const flareTex = (() => {
+    const c = document.createElement("canvas");
+    c.width = c.height = 128;
+    const x = c.getContext("2d");
+    const rg = x.createRadialGradient(64, 64, 0, 64, 64, 64);
+    rg.addColorStop(0, "rgba(255,255,255,1)");
+    rg.addColorStop(0.12, "rgba(255,255,255,0.6)");
+    rg.addColorStop(0.4, "rgba(200,215,255,0.12)");
+    rg.addColorStop(1, "rgba(0,0,0,0)");
+    x.fillStyle = rg; x.fillRect(0, 0, 128, 128);
+    const arm = (w, h) => {
+      const lg = x.createLinearGradient(64 - w, 64, 64 + w, 64);
+      lg.addColorStop(0, "rgba(255,255,255,0)");
+      lg.addColorStop(0.5, "rgba(255,255,255,0.85)");
+      lg.addColorStop(1, "rgba(255,255,255,0)");
+      x.fillStyle = lg; x.fillRect(64 - w, 64 - h / 2, w * 2, h);
+    };
+    arm(62, 2.6);
+    x.save(); x.translate(64, 64); x.rotate(Math.PI / 2); x.translate(-64, -64);
+    arm(62, 2.6); x.restore();
+    return new THREE.CanvasTexture(c);
+  })();
+  const heroStars = [[-4.2, 2.8, -9, 1.15], [3.6, 3.4, -11, 0.9],
+    [-6.2, -2.4, -13, 0.8], [2.4, -4.6, -8, 0.7]];
+  for (const [x, y, z, s] of heroStars) {
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: flareTex,
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      opacity: 0.9 }));
+    sp.position.set(x, y, z);
+    sp.scale.setScalar(s);
+    scene.add(sp);
+  }
+
+  /* ---------- shooting star ---------- */
+  const shoot = new THREE.Sprite(new THREE.SpriteMaterial({ map: flareTex,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }));
+  shoot.scale.set(0.5, 0.14, 1);
+  scene.add(shoot);
+  let shootT = -1, shootNext = 6, shootFrom = new THREE.Vector3(), shootTo = new THREE.Vector3();
+
+  /* ---------- the astronaut ---------- */
+  // Falling pose: head-down toward camera, tilted back, limbs spread.
+  const FALL_ROT = new THREE.Euler(-1.05, 0.25, 0.4);
+  const astro = new THREE.Group();
+  astro.rotation.copy(FALL_ROT);
+  const targetH = mobile ? 1.7 : 2.1;   // ~35% / ~42% of viewport height at z=2
+  astro.position.set(0, -1.0, 2);
+  scene.add(astro);
+
+  // Procedural stand-in (also the permanent fallback): rust suit, white helmet, gold visor.
+  const standin = new THREE.Group();
+  {
+    const suit = new THREE.MeshPhysicalMaterial({ color: 0xb65a2e, roughness: 0.55,
+      metalness: 0.05, clearcoat: 0.3, clearcoatRoughness: 0.6 });
+    const white = new THREE.MeshPhysicalMaterial({ color: 0xe9e6df, roughness: 0.4,
+      metalness: 0.05, clearcoat: 0.5 });
+    const gold = new THREE.MeshPhysicalMaterial({ color: 0xd8a032, roughness: 0.12,
+      metalness: 1.0, clearcoat: 1.0, envMapIntensity: 2.0 });
+    const dark = new THREE.MeshStandardMaterial({ color: 0x3a3a40, roughness: 0.7 });
+    const torso = new THREE.Mesh(new THREE.CapsuleGeometry(0.34, 0.55, 6, 16), suit);
+    standin.add(torso);
+    const pack = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.62, 0.24), white);
+    pack.position.set(0, 0.05, -0.34); standin.add(pack);
+    const chest = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.2, 0.1), dark);
+    chest.position.set(0, 0.18, 0.33); standin.add(chest);
+    const helmet = new THREE.Mesh(new THREE.SphereGeometry(0.3, 24, 18), white);
+    helmet.position.set(0, 0.72, 0); standin.add(helmet);
+    const visor = new THREE.Mesh(
+      new THREE.SphereGeometry(0.26, 24, 18, -Math.PI / 3, Math.PI * 2 / 3, Math.PI / 4, Math.PI / 2.4), gold);
+    visor.position.set(0, 0.72, 0.06);
+    visor.rotation.y = -Math.PI / 2 + Math.PI / 2; standin.add(visor);
+    const limb = (r, len, mat) => new THREE.Mesh(new THREE.CapsuleGeometry(r, len, 4, 10), mat);
+    const armL = limb(0.11, 0.5, suit);
+    armL.position.set(-0.52, 0.28, 0.06); armL.rotation.z = 1.15; armL.rotation.x = -0.25;
+    standin.add(armL);
+    const armR = limb(0.11, 0.5, suit);
+    armR.position.set(0.55, 0.22, -0.04); armR.rotation.z = -1.3; armR.rotation.x = 0.2;
+    standin.add(armR);
+    const gloveL = new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 10), white);
+    gloveL.position.set(-0.86, 0.44, 0.1); standin.add(gloveL);
+    const gloveR = new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 10), white);
+    gloveR.position.set(0.9, 0.34, -0.08); standin.add(gloveR);
+    const legL = limb(0.13, 0.55, suit);
+    legL.position.set(-0.18, -0.62, 0.16); legL.rotation.x = -0.55; legL.rotation.z = 0.18;
+    standin.add(legL);
+    const legR = limb(0.13, 0.6, suit);
+    legR.position.set(0.2, -0.68, -0.06); legR.rotation.x = 0.25; legR.rotation.z = -0.12;
+    standin.add(legR);
+    const bootL = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.16, 0.3), dark);
+    bootL.position.set(-0.3, -0.9, 0.42); bootL.rotation.x = -0.5; standin.add(bootL);
+    const bootR = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.16, 0.3), dark);
+    bootR.position.set(0.28, -1.02, -0.14); standin.add(bootR);
+    const box = new THREE.Box3().setFromObject(standin);
+    const h = box.max.y - box.min.y;
+    standin.scale.setScalar(targetH / h);
+  }
+  astro.add(standin);
+
+  // Try to upgrade to a GLTF astronaut. Model: "Astronaut" — Poly by Google,
+  // CC-BY 4.0, served from Google's model-viewer shared assets. Suit re-tinted
+  // rust-orange in code. If it fails, the stand-in above simply remains.
+  new GLTFLoader().load(
+    "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
+    (gltf) => {
+      const model = gltf.scene;
+      model.traverse((o) => {
+        if (o.isMesh && o.material) {
+          o.material = o.material.clone();
+          o.material.color = new THREE.Color(0xb65a2e);
+          o.material.roughness = 0.55;
+          o.material.envMapIntensity = 1.2;
+        }
+      });
+      const box = new THREE.Box3().setFromObject(model);
+      const h = box.max.y - box.min.y;
+      model.scale.setScalar(targetH / h);
+      const c = new THREE.Box3().setFromObject(model).getCenter(new THREE.Vector3());
+      model.position.sub(c);
+      astro.remove(standin);
+      astro.add(model);
+    },
+    undefined,
+    () => {} // stand-in remains on error
+  );
+
+  /* ---------- interaction state ---------- */
+  let mx = 0, my = 0, tx = 0, ty = 0;
+  if (!coarse && !reduced) {
+    addEventListener("pointermove", (e) => {
+      tx = (e.clientX / innerWidth - 0.5) * 2;
+      ty = (e.clientY / innerHeight - 0.5) * 2;
+    }, { passive: true });
+  }
+  let scrollP = 0;
+  addEventListener("scroll", () => {
+    scrollP = Math.min(1, Math.max(0, scrollY / innerHeight));
+  }, { passive: true });
+
+  addEventListener("resize", (() => {
+    let t;
+    return () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        camera.aspect = innerWidth / innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(innerWidth, innerHeight);
+        if (reduced) renderer.render(scene, camera);
+      }, 120);
+    };
+  })());
+
+  let hidden = false;
+  document.addEventListener("visibilitychange", () => {
+    hidden = document.hidden;
+    if (!hidden && !reduced) requestAnimationFrame(tick);
+  });
+
+  /* ---------- main loop (delta-time) ---------- */
+  const clock = new THREE.Clock();
+  let elapsed = 0;
+  function tick() {
+    if (hidden) return;
+    const dt = Math.min(0.05, clock.getDelta());
+    elapsed += dt;
+
+    // eased parallax
+    mx += (tx - mx) * 0.05;
+    my += (ty - my) * 0.05;
+
+    // astronaut: incommensurate tumble + bob + scroll fall
+    astro.rotation.x = FALL_ROT.x + Math.sin(elapsed * 0.021 * 2 * Math.PI) * 0.001 + elapsed * 0.023;
+    astro.rotation.y = FALL_ROT.y + elapsed * 0.017;
+    astro.rotation.z = FALL_ROT.z + elapsed * 0.013;
+    const bob = Math.sin(elapsed * 2 * Math.PI / 8) * 0.1;
+    astro.position.y = -1.0 + bob - scrollP * 1.6 - my * 0.12;
+    astro.position.x = 0 - mx * 0.18;
+    const s = 1 - scrollP * 0.1;
+    astro.scale.setScalar(s);
+
+    // star layer parallax + twinkle
+    for (const L of starLayers) {
+      L.m.uniforms.uTime.value = elapsed;
+      L.p.position.x = -mx * 0.5 * L.depthFactor;
+      L.p.position.y = my * 0.35 * L.depthFactor;
+    }
+
+    galaxy.rotation.y += dt * (2 * Math.PI / 600);
+    for (const nm of nebulae) nm.uniforms.uTime.value = elapsed;
+
+    // shooting star scheduler
+    if (shootT < 0) {
+      shootNext -= dt;
+      if (shootNext <= 0) {
+        shootT = 0;
+        const y0 = 2 + Math.random() * 3;
+        shootFrom.set(-14 - Math.random() * 4, y0, -30);
+        shootTo.set(14 + Math.random() * 4, y0 - 3 - Math.random() * 3, -30);
+        shootNext = 20 + Math.random() * 10;
+      }
+    } else {
+      shootT += dt / 1.3;
+      if (shootT >= 1) { shootT = -1; shoot.material.opacity = 0; }
+      else {
+        shoot.position.lerpVectors(shootFrom, shootTo, shootT);
+        shoot.material.opacity = Math.sin(shootT * Math.PI) * 0.8;
+      }
+    }
+
+    // ambient camera lissajous drift
+    camera.position.x = Math.sin(elapsed * 0.11) * 0.14;
+    camera.position.y = Math.sin(elapsed * 0.07 + 1.3) * 0.1;
+    camera.lookAt(0, 0, 0);
+
+    renderer.render(scene, camera);
+    if (!reduced) requestAnimationFrame(tick);
+  }
+
+  // fade in once first frame is composed
+  renderer.render(scene, camera);
+  canvas.classList.add("ready");
+  if (reduced) {
+    // static composed frame: advance to a pleasing moment, render once
+    elapsed = 3;
+    renderer.render(scene, camera);
+  } else {
+    requestAnimationFrame(tick);
+  }
+} else {
+  document.body.classList.add("no-webgl");
+}
+
+/* ---------- paste pill: inline state, then hand off to the real radar ---------- */
+document.getElementById("paste-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const v = document.getElementById("paste-input").value.trim();
+  const msg = document.getElementById("pill-msg");
+  e.target.classList.add("done");
+  msg.textContent = v ? "On it — opening the radar…" : "Paste a link first — or just enter the radar.";
+  if (v) setTimeout(() => { location.href = "../"; }, 900);
+});
+</script>
+</body>
+</html>
