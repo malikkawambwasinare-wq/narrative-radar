@@ -1,0 +1,925 @@
+{
+  "note": "Indicators on watch: the measurable dials this narrative argues through. Extracted from the corpus transcripts (every threshold is attributed to the speaker who named it in a video; nothing here is a Narrative Radar forecast).",
+  "updated": "2026-08-13",
+  "method": "transcript extraction (31 transcripts, 312 indicator mentions) + editorial synthesis + adversarial fabrication/misattribution check (2 corrections applied)",
+  "transcripts_read": 31,
+  "indicators": [
+    {
+      "id": "ai-capex-vs-ai-revenue",
+      "name": "AI capex vs AI revenue",
+      "category": "valuation",
+      "punchline": "The whole 2026 thesis in two numbers: roughly $700 billion a year pouring into AI against about $110 billion coming back out.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "$700B+ of AI buildout spending this year vs ~$110B of AI revenue \u2014 about 2.5 cents of every dollar of US GDP",
+          "meaning": "Leg one of the four-leg parlay: revenue has to multiply, not just grow, for the bet to pay",
+          "predictor": null
+        },
+        {
+          "level": "$725 billion of hyperscaler capex in 2026, up 77% year over year",
+          "meaning": "The buildout as a cheap-credit malinvestment cluster \u2014 the modern skyscraper curse",
+          "predictor": "David Lin (headline), analyzed by Mark Thornton"
+        },
+        {
+          "level": "$2.4 trillion spent vs $50 billion of profit \u2014 a $2.35 trillion collective loss",
+          "meaning": "By basic math the bubble has already burst",
+          "predictor": "Casey Simpson"
+        },
+        {
+          "level": "AI firms' revenue about one-tenth of costs",
+          "meaning": "AI is overinvested ~10x sustainable scale; the bust alone causes a US recession within one or two years",
+          "predictor": "Steve Keen"
+        },
+        {
+          "level": "$1.57 of capex per $1 of cash flow back ($534B capex through 2027 vs $340B cash-flow growth)",
+          "meaning": "Only works if AI growth keeps scaling into these valuations",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "Capex now 94 cents of every dollar of operating cash flow, up from 40-50 cents (PIMCO)",
+          "meaning": "The buildout is draining the vault instead of the vault funding the buildout",
+          "predictor": null
+        },
+        {
+          "level": "Return on each incremental cloud dollar sliding from ~40% toward 20%, projections pointing to 10%",
+          "meaning": "Leg two: the shrinkage has to stop for the parlay to hit",
+          "predictor": null
+        },
+        {
+          "level": "AI capex = 49.5% of Q1 2026 GDP growth; Alphabet's first negative free cash flow since its 2004 listing after $45B of quarterly capex",
+          "meaning": "Any slowdown risks negative GDP, layoffs and a big market correction",
+          "predictor": "Nick (Reventure Consulting)"
+        },
+        {
+          "level": "$2.9 trillion buildout through 2028 against $1.4 trillion of cash flow \u2014 a $1.5 trillion hole (Morgan Stanley)",
+          "meaning": "Leg three: the borrowing window has to stay open",
+          "predictor": null
+        },
+        {
+          "level": "OpenAI at a $1 trillion valuation on $13 billion of revenue against $26 billion of expenses; 95% of generative-AI pilots fail; only ~2% of US households pay for AI",
+          "meaning": "Valuations detached from any paying demand",
+          "predictor": "Casey Simpson (OpenAI figures, 95% pilot failure); household figure unattributed"
+        }
+      ],
+      "watched_by": [
+        "Casey Simpson",
+        "Steve Keen",
+        "Graham Stephan",
+        "Nick (Reventure Consulting)",
+        "Taylor Kenney",
+        "Mark Thornton",
+        "David Lin",
+        "Kevin Paffrath (Meet Kevin)"
+      ],
+      "videoIds": [
+        "qbnuJFRcvQE",
+        "1BOCO-FcRYY",
+        "2DPA-AtFQQE",
+        "8N3kDktWJag",
+        "OxE2WncCBd4",
+        "HXlcMbxzz0U",
+        "HvgjGiNm5Rk",
+        "NEc8O_dK-NU"
+      ],
+      "contested_note": "Identical spending, opposite verdicts: Simpson and Keen read the revenue gap as proof the bubble has already burst, while Google Cloud's 82% growth and $514 billion backlog \u2014 plus Anthropic at ~$70B and OpenAI at ~$37B annualized revenue \u2014 are cited as evidence the demand is real."
+    },
+    {
+      "id": "off-balance-sheet-ai-debt",
+      "name": "Off-balance-sheet AI debt and circular financing",
+      "category": "debt",
+      "punchline": "Five tech companies owe $1.65 trillion that never appears on a balance sheet \u2014 more than all the debt they actually admit to.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "$1.65 trillion off-balance-sheet vs about $1.35 trillion on the books across the big five (Nikkei Research puts it near $1.7 trillion)",
+          "meaning": "Leverage is far higher than balance sheets suggest \u2014 why some compare this to 2008 and Enron rather than 2000",
+          "predictor": null
+        },
+        {
+          "level": "Nearly $1 trillion of pledged data-center leases with over $660 billion invisible; roughly $1.8 trillion industry-wide (Moody's / Morgan Stanley)",
+          "meaning": "The same bet written five times, funded by the same small club of lenders",
+          "predictor": null
+        },
+        {
+          "level": "Hyperscaler bond issuance: $28B/year average 2020-24, over $100B in 2025, $159B in the first five months of 2026",
+          "meaning": "More borrowed in five months than in the previous five years combined",
+          "predictor": null
+        },
+        {
+          "level": "Tech now nearly 18% of all US investment-grade debt outstanding",
+          "meaning": "Concentration the IMF is flagging as a financial-stability worry",
+          "predictor": null
+        },
+        {
+          "level": "Meta's Hyperion SPV: $27.3 billion of bonds running to 2049 against a lease starting 2029 in four-year chunks; Meta owns 20% but guarantees up to ~$28 billion",
+          "meaning": "24-year debt resting on a four-year commitment \u2014 the structure tells two different stories",
+          "predictor": null
+        },
+        {
+          "level": "Alphabet raised $32 billion across four currencies in under 24 hours; the 100-year bond roughly 10x oversubscribed",
+          "meaning": "The deepest capital market on earth is being tested by what these firms need to borrow",
+          "predictor": null
+        },
+        {
+          "level": "CoreWeave forced above 10% on bonds; Google raising $25B of bonds plus a planned $40B share sale",
+          "meaning": "Rising funding costs are the specific mechanism that pops the AI capex cycle",
+          "predictor": "Kevin Paffrath (Meet Kevin)"
+        },
+        {
+          "level": "Nvidia committing up to $100 billion to OpenAI, which borrows against that guarantee to buy Nvidia chips",
+          "meaning": "Record chip demand partly manufactured by the seller; compute contracts booked as backlog are economically loans",
+          "predictor": null
+        },
+        {
+          "level": "Off-book obligations up roughly eightfold since 2022, $120B+ moved in under two years; long-dated hyperscaler bonds trading at junk-like spreads despite top ratings",
+          "meaning": "Standardizing as fast as telecom vendor financing (1998-2000) and mortgage securitization (2004-07); lenders getting cold feet",
+          "predictor": null
+        },
+        {
+          "level": "SoftBank's record domestic bond coupons \u2014 'the week those coupons stop rising, breathe'",
+          "meaning": "The thermometer of the era: when the money behind the bubble gets expensive, a clock starts",
+          "predictor": "Meerkat (channel narrator)"
+        }
+      ],
+      "watched_by": [
+        "Kevin Paffrath (Meet Kevin)",
+        "Casey Simpson",
+        "Ed Elson (ProfG Markets)",
+        "Tom Bilyeu",
+        "Meerkat",
+        "JJ (John Johnston)"
+      ],
+      "videoIds": [
+        "HXlcMbxzz0U",
+        "NEc8O_dK-NU",
+        "2DPA-AtFQQE",
+        "e5jgTNJdRcE",
+        "s8omwT8FkSE",
+        "qbnuJFRcvQE",
+        "faiJCn20gv0"
+      ],
+      "contested_note": "On the surface these are the least indebted companies in America \u2014 net debt of 0.04 times earnings, the lowest of any US sector \u2014 which is exactly the fact the bears use to argue the leverage simply moved off the books."
+    },
+    {
+      "id": "us-federal-debt-deficit-interest",
+      "name": "US federal debt, deficits and interest expense",
+      "category": "debt",
+      "punchline": "$40 trillion owed, $2 trillion more borrowed every year, and interest is now the second-biggest line in the federal budget.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "$40 trillion national debt with $2 trillion annual deficits",
+          "meaning": "Debt plus accruing interest has backed the government into wartime-style desperation that ends in financial repression",
+          "predictor": "Mark Thornton; cited as 'approaching $40 trillion' by Willem Middelkoop and Tom Bilyeu"
+        },
+        {
+          "level": "Spends about $7 trillion against about $5 trillion of revenue \u2014 40% more than it takes in; debt about six times income",
+          "meaning": "The level that throughout history produces problems and money-printing devaluation",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "Over 130% debt-to-GDP sustained for roughly 18 months",
+          "meaning": "Historically ends in internal strife and an economic reset",
+          "predictor": "Tom Bilyeu citing Ray Dalio \u2014 flatly rejected by Steve Keen"
+        },
+        {
+          "level": "GAO projections: 106% of GDP by 2029, 250% in 30 years, debt growing twice as fast as the economy",
+          "meaning": "The official alarm \u2014 which Keen quotes only to call it 'completely wrong'",
+          "predictor": "Steve Keen (citing GAO)"
+        },
+        {
+          "level": "Federal interest payments at 3.2% of GDP, back to the early-1990s record, projected to triple over 30 years",
+          "meaning": "Debt service starts squeezing out everything else the government does",
+          "predictor": "Steve Keen (citing GAO); Tom Bilyeu calls interest the second-biggest budget line item"
+        },
+        {
+          "level": "Budget deficit 5.8% of GDP against the administration's 3% target",
+          "meaning": "The 3-3-3 agenda missed on every leg \u2014 growth 1.9% vs 3%, oil +0.57M barrels/day vs 3M",
+          "predictor": "Kevin Paffrath (Meet Kevin)"
+        },
+        {
+          "level": "The point at which new debt can no longer be sold to pay off the old",
+          "meaning": "The Ponzi threshold \u2014 governments default when the queue for the next tranche ends",
+          "predictor": "Martin Armstrong"
+        },
+        {
+          "level": "Six new UK prime ministers in seven years",
+          "meaning": "The political symptom of a government that has run out of money \u2014 the late-cycle cautionary tale",
+          "predictor": "Ray Dalio"
+        }
+      ],
+      "watched_by": [
+        "Ray Dalio",
+        "Mark Thornton",
+        "Tom Bilyeu",
+        "Martin Armstrong",
+        "Kevin Paffrath (Meet Kevin)",
+        "Willem Middelkoop",
+        "Cenk Uygur (TYT)",
+        "Steve Keen (as critic)"
+      ],
+      "videoIds": [
+        "jmmaBcRduwQ",
+        "qbnuJFRcvQE",
+        "vivFgXv2sCg",
+        "ufdYd1m6txw",
+        "1BOCO-FcRYY",
+        "1a1hbOX6N2w",
+        "cXI2knjwQNc",
+        "Bu0xNDLNORU",
+        "gt3aH2gH6T0",
+        "EWDY1eAxQUo",
+        "AgTk42rH4n8",
+        "s8omwT8FkSE"
+      ],
+      "contested_note": "Steve Keen calls this the wrong debt entirely \u2014 a currency-issuing government creates the money, and deficits are the band-aid (20% of GDP in COVID versus the New Deal's 5% peak) that stops private-debt busts from becoming depressions."
+    },
+    {
+      "id": "long-rates-and-fed-path",
+      "name": "Long-term Treasury yields and the Fed's next move",
+      "category": "rates",
+      "punchline": "The narrative's favorite tripwire: the 30-year Treasury above 5% for 27 straight sessions, with a possible rate hike landing September 16.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "30-year Treasury above 5% \u2014 27 straight sessions, currently 5.2%",
+          "meaning": "Danger level for the economy, and the Fed is trapped: cutting short rates would push long rates higher still",
+          "predictor": "David Lin, citing Mark Thornton"
+        },
+        {
+          "level": "30-year closing at 5.27 after the July meeting \u2014 a 20-to-22-year high",
+          "meaning": "Echoes the multi-year Treasury highs seen at the dot-com top; raises funding costs economy-wide",
+          "predictor": "Kevin Paffrath (Meet Kevin)"
+        },
+        {
+          "level": "US 10-year around 4.7%, close to all-time highs",
+          "meaning": "Rising partly because Japan, the most reliable foreign buyer, is stepping back \u2014 it sets mortgages and corporate borrowing",
+          "predictor": "Andrei Jikh; Meerkat"
+        },
+        {
+          "level": "A hike at the September 16 meeting; three hikes (September, October, December) per Bank of America; 80,000 jobs the swing print",
+          "meaning": "The same move that popped the dot-com bubble, arriving exactly 38 months after the last hike \u2014 the same gap as the May 2000 'nail in the coffin' hike",
+          "predictor": "Kevin Paffrath (Meet Kevin)"
+        },
+        {
+          "level": "Dot-com analog: six hikes from 4.75% to 6.5%, market topped about 9 months after the first hike, Nasdaq 100 fell 78%",
+          "meaning": "The template now laid over the AI bubble",
+          "predictor": "Kevin Paffrath (Meet Kevin)"
+        },
+        {
+          "level": "A 25 basis point hike now",
+          "meaning": "Delay could force more aggressive tightening if inflation becomes entrenched",
+          "predictor": "Neel Kashkari"
+        },
+        {
+          "level": "Real (inflation-adjusted) rates near zero",
+          "meaning": "What fuelled the end-stage blow-off top of the long stock bubble",
+          "predictor": "Mark Thornton"
+        },
+        {
+          "level": "QE restarted at $40 billion a month; $2.5 trillion drained out of Fed repo holdings back into the economy",
+          "meaning": "Liquidity aimed at private equity and private credit, with yield-curve control the next escalation",
+          "predictor": "Mark Thornton"
+        },
+        {
+          "level": "More than $8 billion of fresh Fed liquidity in a single week",
+          "meaning": "Named as the direct reason the S&P 500 just made a new all-time high",
+          "predictor": "Bera Finance host"
+        }
+      ],
+      "watched_by": [
+        "Kevin Paffrath (Meet Kevin)",
+        "Mark Thornton",
+        "David Lin",
+        "Andrei Jikh",
+        "Meerkat",
+        "Neel Kashkari",
+        "Bera Finance",
+        "J Bravo",
+        "Ray Dalio",
+        "Willem Middelkoop"
+      ],
+      "videoIds": [
+        "s8omwT8FkSE",
+        "1BOCO-FcRYY",
+        "YBhwK-VWsxY",
+        "faiJCn20gv0",
+        "1a1hbOX6N2w",
+        "6yir9VA3bKQ",
+        "gt3aH2gH6T0",
+        "Bu0xNDLNORU",
+        "J6vOuZ4HvEQ",
+        "jmmaBcRduwQ"
+      ],
+      "contested_note": "The same rate desk cuts both ways: Paffrath and Kashkari watch for the hike that pops the bubble, while Bera Finance and J Bravo argue the Fed's liquidity injections and heavy T-bill issuance are exactly what keeps producing new highs."
+    },
+    {
+      "id": "margin-debt-and-leverage",
+      "name": "Margin debt and retail leverage",
+      "category": "credit",
+      "punchline": "A record $1.5 trillion is borrowed against stocks \u2014 up almost 150% since Q4 2023, a level seen only in 2000, 2007 and 2021.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "FINRA margin debt approximately $1.5 trillion in June \u2014 a record",
+          "meaning": "Extra buying power on the way up, brutal forced selling when prices fall",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "Margin debt up almost 150% since Q4 2023, to levels only seen at the 2000, 2007 and 2021 tops",
+          "meaning": "Proof the rally is speculation and hype rather than fundamentals",
+          "predictor": "Taylor Kenney"
+        },
+        {
+          "level": "Margin debt about 4% of GDP now versus 9% of GDP at the 1929 peak; 0.8 correlation with the CAPE over 100 years of data",
+          "meaning": "Change in margin debt is what drives the valuation itself",
+          "predictor": "Steve Keen"
+        },
+        {
+          "level": "US margin investing at 4.7% of the market versus Korea's 1.3% peak and the 2% before the dot-com bust",
+          "meaning": "An AI crash here would hit far harder than Korea's did",
+          "predictor": "Casey Simpson"
+        },
+        {
+          "level": "13.8 trillion won in 2x single-stock leveraged ETFs behind a KOSPI that ran up 265-272% then fell 38-44% (~$2 trillion wiped out, 1.2 million leveraged households)",
+          "meaning": "The margin-call doom loop demonstrated live \u2014 and the same products are growing popular in the US",
+          "predictor": "JJ (John Johnston) (265% run-up, 38% fall); Casey Simpson (272%, ~40% fall, 1.2M leveraged households); Ed Elson (ProfG Markets) (44%, $2T wiped out); Graham Stephan (13.8T won of 2x single-stock leveraged ETFs)"
+        },
+        {
+          "level": "A roughly 4x-levered AI fund peaking at $20-40 billion, unwound within July",
+          "meaning": "The first domino of forced deleveraging tied to the Korea crash",
+          "predictor": "JJ (John Johnston)"
+        },
+        {
+          "level": "Half a dozen significant forced-selling events in the month of August",
+          "meaning": "A dated countdown for leveraged AI holders to watch unfold",
+          "predictor": "Scott Galloway"
+        },
+        {
+          "level": "Call option volume at the highest level ever; collateral requirements recently loosened",
+          "meaning": "Retail all-in with borrowed money \u2014 the classic 'weak hands' sign",
+          "predictor": "J Bravo (options); Cenk Uygur (collateral rules); Ray Dalio (weak hands / leveraged ETFs)"
+        }
+      ],
+      "watched_by": [
+        "Graham Stephan",
+        "Taylor Kenney",
+        "Casey Simpson",
+        "Steve Keen",
+        "Ray Dalio",
+        "Ed Elson (ProfG Markets)",
+        "JJ (John Johnston)",
+        "Scott Galloway",
+        "J Bravo",
+        "Cenk Uygur (TYT)"
+      ],
+      "videoIds": [
+        "8N3kDktWJag",
+        "OxE2WncCBd4",
+        "qbnuJFRcvQE",
+        "2DPA-AtFQQE",
+        "e5jgTNJdRcE",
+        "gt3aH2gH6T0",
+        "Bu0xNDLNORU",
+        "jmmaBcRduwQ",
+        "J6vOuZ4HvEQ"
+      ],
+      "contested_note": "Bulls read the same leverage as depth of demand \u2014 over $400 billion of announced buybacks, up 20% year over year, plus automatic 401(k) inflows \u2014 while bears see only fuel for the Korean margin-call spiral."
+    },
+    {
+      "id": "gold-and-dollar-reserve-share",
+      "name": "Gold, silver and the dollar's reserve share",
+      "category": "commodities",
+      "punchline": "Central banks have bought roughly 1,000 tonnes of gold a year for five years running \u2014 about a third of everything mined.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "5% to 15% of any portfolio in gold / hard money",
+          "meaning": "Gold does best precisely when stocks, bonds and cash do worst; it is still the second-largest central-bank reserve currency",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "Roughly 1,000 tonnes of central-bank buying annually for five consecutive years \u2014 about one-third of global mine production",
+          "meaning": "Governments preparing for a less dollar-dominant monetary system",
+          "predictor": "Willem Middelkoop"
+        },
+        {
+          "level": "Gold's share of reserves toward 30% now versus 40%+ historically; a return to that share implies $12,000-$14,000 an ounce",
+          "meaning": "The sovereign-debt-crisis price target, now discussed by major banks rather than only gold advocates",
+          "predictor": "Willem Middelkoop / narrator citing a major bank"
+        },
+        {
+          "level": "$7,000-$8,000 gold with a shot at $11,000 by 2032",
+          "meaning": "Priced off the sovereign-debt and political-crisis timeline",
+          "predictor": "Martin Armstrong"
+        },
+        {
+          "level": "Metals declining at least into August, possibly into early 2027, then a bull market running from 2027 into 2032",
+          "meaning": "A dated cycle call that contradicts the buy-now urgency elsewhere in the corpus",
+          "predictor": "Martin Armstrong"
+        },
+        {
+          "level": "Silver $100 in coming months, with the bull market ending near $500 on a gold-to-silver ratio moving toward 10-to-1",
+          "meaning": "The leveraged version of the same trade in a small physical market",
+          "predictor": "Willem Middelkoop"
+        },
+        {
+          "level": "Gold pulled back from nearly $5,500 and may briefly dip below $4,000",
+          "meaning": "Framed as profit-taking, not a new bear market, while central banks keep buying",
+          "predictor": "AI narrator (Middelkoop interview)"
+        },
+        {
+          "level": "Dollar still about 56.8% of global official FX reserves (Q4 2025), roughly 55% of international banking claims and 60% of liabilities",
+          "meaning": "Gradual decline, not collapse \u2014 the one video that checks the IMF data concludes no sudden dollar collapse is happening",
+          "predictor": null
+        },
+        {
+          "level": "About 1% of my portfolio in Bitcoin",
+          "meaning": "Unprintable money, but quantum, surveillance and tax risks make gold the preferred hard money",
+          "predictor": "Ray Dalio"
+        }
+      ],
+      "watched_by": [
+        "Ray Dalio",
+        "Willem Middelkoop",
+        "Martin Armstrong",
+        "Mark Thornton",
+        "J Bravo",
+        "Tom Bilyeu"
+      ],
+      "videoIds": [
+        "vivFgXv2sCg",
+        "0WMfXrEf03c",
+        "gt3aH2gH6T0",
+        "Bu0xNDLNORU",
+        "1a1hbOX6N2w",
+        "AgTk42rH4n8",
+        "J6vOuZ4HvEQ",
+        "1BOCO-FcRYY",
+        "pYFBf15XunU",
+        "qbnuJFRcvQE",
+        "oc9pM5MK4fY"
+      ],
+      "contested_note": "Same reserve data, opposite stories: Dalio and Middelkoop read central-bank gold buying as the dollar order ending, while the corpus's one data-checking video finds the dollar still at 56.8% of reserves and concludes no collapse is under way \u2014 and Armstrong argues capital fleeing war flows into the US, which is why the dollar falls last."
+    },
+    {
+      "id": "valuation-gauges-cape-buffett",
+      "name": "Valuation gauges (Shiller CAPE, Buffett indicator, forward P/E)",
+      "category": "valuation",
+      "punchline": "CAPE is sitting at 41 \u2014 the dot-com peak was 44 \u2014 on a market worth about 2.3 times the entire US economy.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "Shiller CAPE at 41, almost matching the dot-com peak of 44",
+          "meaning": "One of the most expensive stock markets in history",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "CAPE crossing the 40 threshold; today right around 41",
+          "meaning": "Corroborates that the market is overwhelmingly expensive",
+          "predictor": null
+        },
+        {
+          "level": "CAPE almost 40 versus a 17.9 long-term average \u2014 matched only by December 1999 (then -50%) and approached in 1929 (P/E 33, then a 70-80% drop)",
+          "meaning": "Either prices fall or earnings rise; there is no third option",
+          "predictor": "Nick (Reventure Consulting)"
+        },
+        {
+          "level": "CAPE about 40 versus a historical average of 14 to 16",
+          "meaning": "A ridiculous bubble, driven by margin debt",
+          "predictor": "Steve Keen"
+        },
+        {
+          "level": "Buffett indicator at 219 \u2014 more than two standard deviations above trend",
+          "meaning": "Near-record expensiveness confirmed by a second, independent gauge",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "Buffett indicator around 230%, past the 200% 'playing with fire' line",
+          "meaning": "Above both the 2021 and dot-com peaks \u2014 though it forecasts low 10-year returns, not crash timing",
+          "predictor": "Warren Buffett's 2001 essay, quoted by the narrator"
+        },
+        {
+          "level": "Forward P/E 20.7 versus a 10-year average of 19; a 5% earnings miss plus compression to 16 equals a 25% S&P drop",
+          "meaning": "A big fall that requires no recession at all",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "Expected 10-year stock return of zero or negative on a 10-year moving average",
+          "meaning": "Bonds and real estate offer the same zero-to-negative real returns",
+          "predictor": "Mark Thornton"
+        },
+        {
+          "level": "The AI bubble sized at 17 times the dot-com bubble and 4 times the 2008 mortgage crisis",
+          "meaning": "Bursting would destroy the world economy",
+          "predictor": "Casey Simpson"
+        }
+      ],
+      "watched_by": [
+        "Graham Stephan",
+        "Nick (Reventure Consulting)",
+        "Steve Keen",
+        "Mark Thornton",
+        "Jeremy Grantham",
+        "Ray Dalio",
+        "Casey Simpson"
+      ],
+      "videoIds": [
+        "OxE2WncCBd4",
+        "EOLItZfWFOA",
+        "HvgjGiNm5Rk",
+        "qbnuJFRcvQE",
+        "hVlXXIK206A",
+        "1BOCO-FcRYY",
+        "2DPA-AtFQQE"
+      ],
+      "contested_note": "Two caveats travel with every one of these numbers \u2014 corporate margins are structurally higher (about 12% of GDP versus 7-8% historically) and Stephan calls a 20.7 forward P/E 'not crazy' \u2014 so even the bears' own gauges say expensive, not timed."
+    },
+    {
+      "id": "index-concentration",
+      "name": "Index concentration in the AI megacaps",
+      "category": "market_structure",
+      "punchline": "Seven companies are almost 40% of the S&P 500 \u2014 the index fund in your 401(k) is one trade wearing a diversification costume.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "Magnificent Seven at more than a third, almost 40% of the S&P 500",
+          "meaning": "If they fall, the entire market and everyone's index funds fall with them",
+          "predictor": "Casey Simpson"
+        },
+        {
+          "level": "Largest 10 stocks roughly 37% of the index \u2014 a 25% fall in those names alone is a 9% index drop before any panic selling",
+          "meaning": "Historically dangerous, though less extreme than Korea",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "Mega-caps at around 41% of the entire S&P 500",
+          "meaning": "A handful of names drag the whole index's valuation to record levels",
+          "predictor": null
+        },
+        {
+          "level": "Samsung and SK Hynix were more than half of Korea's entire index",
+          "meaning": "A diversified index turned into a single bet on memory chips \u2014 then it crashed",
+          "predictor": "Graham Stephan; Ed Elson (ProfG Markets)"
+        },
+        {
+          "level": "Seven US companies account for 90% of AI capex; the top five over 80%",
+          "meaning": "The boom rests on a handful of spending decisions by a handful of executives",
+          "predictor": "Nick (Reventure Consulting)"
+        },
+        {
+          "level": "Index-versus-breadth divergence not seen since the year 2000",
+          "meaning": "The S&P moving opposite most of its own stocks is usually a sign something is wrong",
+          "predictor": "Graham Stephan"
+        }
+      ],
+      "watched_by": [
+        "Casey Simpson",
+        "Graham Stephan",
+        "Nick (Reventure Consulting)",
+        "Taylor Kenney",
+        "Ed Elson (ProfG Markets)",
+        "JJ (John Johnston)"
+      ],
+      "videoIds": [
+        "2DPA-AtFQQE",
+        "OxE2WncCBd4",
+        "EOLItZfWFOA",
+        "hVlXXIK206A",
+        "e5jgTNJdRcE",
+        "HvgjGiNm5Rk",
+        "8N3kDktWJag"
+      ],
+      "contested_note": "Bulls point at breadth as the rebuttal \u2014 small caps up 16% and the equal-weight S&P at record highs suggest the rally is broadening beyond the seven names rather than narrowing into them."
+    },
+    {
+      "id": "inflation-rate-and-price-level",
+      "name": "Inflation rate and the cumulative price level",
+      "category": "inflation",
+      "punchline": "Prices are about 30% higher than before COVID and never came back down; at 3.5-4% a year, holding cash is a slow guaranteed loss.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "Inflation at about 3.5% or 4% a year, roughly where it is now",
+          "meaning": "Makes cash nearly guaranteed to be the worst long-term investment despite feeling safest",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "About 30% cumulative inflation over the last six years",
+          "meaning": "COVID money printing into a supply-constrained economy, never reversed \u2014 it impoverished the bottom of the K-shaped economy",
+          "predictor": "Tom Bilyeu"
+        },
+        {
+          "level": "Consumer prices running 4 to 4.5% against the Fed's 2% target",
+          "meaning": "The Fed reaches 2% only by redefining the statistics; food and energy lead prices higher",
+          "predictor": "Mark Thornton"
+        },
+        {
+          "level": "'The only thing with a three in front of it is inflation'",
+          "meaning": "The administration's 3-3-3 growth/deficit/oil agenda missed on every leg except the unwanted one",
+          "predictor": "Kevin Paffrath (Meet Kevin)"
+        }
+      ],
+      "watched_by": [
+        "Ray Dalio",
+        "Tom Bilyeu",
+        "Mark Thornton",
+        "Kevin Paffrath (Meet Kevin)",
+        "Steve Keen (as critic)"
+      ],
+      "videoIds": [
+        "0WMfXrEf03c",
+        "gt3aH2gH6T0",
+        "Bu0xNDLNORU",
+        "qbnuJFRcvQE",
+        "EWDY1eAxQUo",
+        "1BOCO-FcRYY",
+        "s8omwT8FkSE"
+      ],
+      "contested_note": "Keen puts the price spike on private lending and constrained supply \u2014 92% of US money creation from 2000-2024 was private, only 8% government \u2014 so for him inflation indicts the banks, not the deficit Bilyeu and Dalio blame."
+    },
+    {
+      "id": "eighty-year-big-cycle-clock",
+      "name": "The 80-year big cycle and its dated deadlines",
+      "category": "other",
+      "punchline": "The genre's master clock: an 80-year order that last reset in 1945, and a computer model that puts the end of this one at 2032.",
+      "role": "countdown",
+      "thresholds": [
+        {
+          "level": "Roughly 80 years per big cycle, last reset in 1945; the US and UK are 'later in that cycle'",
+          "meaning": "The monetary, domestic-political and geopolitical orders break down together at the end",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "About six years, give or take three, from one recession to the next",
+          "meaning": "The short business cycle nested inside the big one, driven by loosening and tightening",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "2032 \u2014 the collapse of republican forms of government",
+          "meaning": "The terminal date from Armstrong's computer model, after which a new political system emerges",
+          "predictor": "Martin Armstrong"
+        },
+        {
+          "level": "Global recession intensifying after 2026 and probably bottoming around 2028; China taking Taiwan at least by 2027",
+          "meaning": "1970s-style stagflation with cost-push inflation that rate hikes cannot cure",
+          "predictor": "Martin Armstrong"
+        },
+        {
+          "level": "Between the midterm elections and the 2028 presidential election",
+          "meaning": "The window in which political and social conflict intensifies toward possibly irreconcilable differences",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "Late-cycle policy markers: wealth taxes (a 2% levy on net worth over 10 million discussed in the UK), capital controls, exit taxes, debt restructuring",
+          "meaning": "The historical playbook when governments run out of money \u2014 and the forced selling that pricks the bubble",
+          "predictor": "Ray Dalio"
+        }
+      ],
+      "watched_by": [
+        "Ray Dalio",
+        "Martin Armstrong",
+        "Steven Bartlett",
+        "Cenk Uygur (TYT)"
+      ],
+      "videoIds": [
+        "ufdYd1m6txw",
+        "UNYpubnQDC8",
+        "cXI2knjwQNc",
+        "Bu0xNDLNORU",
+        "pYFBf15XunU",
+        "AgTk42rH4n8",
+        "vivFgXv2sCg"
+      ],
+      "contested_note": "Dalio undercuts his own clock \u2014 judge a country by measurable condition, like a physical exam, not by elapsed years \u2014 while Armstrong's 2032 is a fixed date from a model, which is how the same 'cycle' supports both 'any moment now' and 'seven years away'."
+    },
+    {
+      "id": "japan-yen-jgb-carry-trade",
+      "name": "The yen, JGB yields and the carry trade",
+      "category": "rates",
+      "punchline": "One line the whole world is watching: 164 yen to the dollar, the level banks treat as Japan's breaking point.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "USD/JPY 164 \u2014 JP Morgan's 'magic line in the sand', with the yen near 160, its weakest in about 40 years",
+          "meaning": "Watch-item one: the level Japan supposedly will not let it cross",
+          "predictor": "Andrei Jikh; Meerkat"
+        },
+        {
+          "level": "Japanese government debt over 200% of GDP \u2014 more than Greece at collapse",
+          "meaning": "Every percentage point of higher rates becomes a huge interest bill once the bond market wakes up",
+          "predictor": "Andrei Jikh; Meerkat; Martin Armstrong calls it the highest of any major country"
+        },
+        {
+          "level": "Bank of Japan holds about 48% of all JGBs; foreigners under 8%",
+          "meaning": "The arrangement that let Japan survive its debt \u2014 now being dismantled in real time",
+          "predictor": "Andrei Jikh; Meerkat"
+        },
+        {
+          "level": "10-year JGB about 2.7%, ten times higher than 2022's 0.25%; 30-year around 4%",
+          "meaning": "The sleeping bond market has woken up after 30 years",
+          "predictor": "Andrei Jikh; Meerkat"
+        },
+        {
+          "level": "Japan CPI at 1.6%, below the BOJ's 2% goal for a fifth straight month, while yields still rise",
+          "meaning": "JGBs now trade on who will buy the debt, not on inflation \u2014 proof the machine is broken",
+          "predictor": "Andrei Jikh"
+        },
+        {
+          "level": "$73 billion of yen buying bought only three weeks; reserves for about 15 more interventions of that size; a hike to 1% failed too",
+          "meaning": "Japan cannot defend its currency by buying it, which forces the repatriation plan",
+          "predictor": "Andrei Jikh"
+        },
+        {
+          "level": "Hedge funds net short around 150,000 yen contracts (~$11-12 billion)",
+          "meaning": "Billions betting Japan is helpless \u2014 described as the tip of the iceberg",
+          "predictor": "Andrei Jikh"
+        },
+        {
+          "level": "Crypto tax cut from 55% to 20% for repatriated wealth with JGB-backed stablecoins; insurers' biggest JGB buying in three years, funded by selling US Treasuries",
+          "meaning": "Japan manufacturing a new buyer for its own debt \u2014 and making repatriation an American problem",
+          "predictor": "Andrei Jikh; Meerkat"
+        }
+      ],
+      "watched_by": [
+        "Andrei Jikh",
+        "Meerkat",
+        "Tom Bilyeu",
+        "Martin Armstrong",
+        "Steve Keen (as skeptic)"
+      ],
+      "videoIds": [
+        "YBhwK-VWsxY",
+        "faiJCn20gv0",
+        "qbnuJFRcvQE",
+        "AgTk42rH4n8"
+      ],
+      "contested_note": "Bilyeu raises the yen carry unwind as a live global danger while Keen dismisses it outright as long as Japan runs a trade surplus \u2014 and Jikh's own twist is that a stronger yen this time is Tokyo's deliberate plan, not the crisis signal it was in 1998, 2008 and August 2024."
+    },
+    {
+      "id": "insider-selling-and-cash-piles",
+      "name": "Insider selling and smart-money cash piles",
+      "category": "market_structure",
+      "punchline": "Insiders are selling at the fastest pace in recorded history while Berkshire sits on nearly $400 billion of cash.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "Berkshire's record cash nearing $400 billion, a net seller for 12+ quarters totalling over $150 billion",
+          "meaning": "Nothing is worth buying at these prices \u2014 sitting out, not calling a crash",
+          "predictor": null
+        },
+        {
+          "level": "US insiders selling at the fastest rate in recorded history, buying at half the normal rate",
+          "meaning": "Not a smoking gun, but not a vote of confidence at record valuations",
+          "predictor": "Graham Stephan; Casey Simpson"
+        },
+        {
+          "level": "Bezos's $4 billion Amazon sale \u2014 his last comparable sale was May 2021, after which Amazon fell about 50%",
+          "meaning": "Insider selling as a cycle-top signal",
+          "predictor": "J Bravo"
+        },
+        {
+          "level": "Micron's CEO selling $37 million of stock; Norway's $2.2 trillion sovereign fund pulling back from Nvidia, Microsoft, Apple and Google",
+          "meaning": "The first blips of institutional flight from the AI trade",
+          "predictor": "Casey Simpson (Micron); unidentified clipped commentator (Norway)"
+        },
+        {
+          "level": "Fund managers holding only about 3.6% cash \u2014 96% invested",
+          "meaning": "Positioning is maxed out, nobody is hedged, and there is little left to buy the dip with",
+          "predictor": "Graham Stephan"
+        },
+        {
+          "level": "Insider sales and surging stock issuance increase the supply of stock",
+          "meaning": "Rising supply plus a need for cash is part of the mechanism that pops a bubble",
+          "predictor": "Ray Dalio"
+        }
+      ],
+      "watched_by": [
+        "Graham Stephan",
+        "Casey Simpson",
+        "Taylor Kenney",
+        "J Bravo",
+        "Ray Dalio",
+        "Michael Burry"
+      ],
+      "videoIds": [
+        "EOLItZfWFOA",
+        "OxE2WncCBd4",
+        "2DPA-AtFQQE",
+        "8N3kDktWJag",
+        "J6vOuZ4HvEQ",
+        "0WMfXrEf03c"
+      ],
+      "contested_note": "Stephan is explicit that this is 'not a smoking gun' and J Bravo relays Burry's 1987-style warning with open sarcasm \u2014 the same selling reads as smart money exiting or as rich people simply rebalancing."
+    },
+    {
+      "id": "ai-job-displacement",
+      "name": "AI job displacement and the labour share",
+      "category": "labor",
+      "punchline": "A Senate committee report puts nearly 100 million American jobs at risk within a decade \u2014 and 70% of Americans already expect fewer jobs.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "Nearly 100 million US jobs replaceable over the next decade \u2014 47% of truck drivers, 64% of accountants, 89% of fast-food workers",
+          "meaning": "The core evidence for reining in the AI race",
+          "predictor": "Bernie Sanders (Senate HELP Committee report)"
+        },
+        {
+          "level": "Most white-collar work fully automated within the next 12 to 18 months",
+          "meaning": "Industry leaders forecasting imminent automation in their own words",
+          "predictor": "Mustafa Suleyman, quoted by Bernie Sanders"
+        },
+        {
+          "level": "30,000 layoffs each at Amazon and Oracle, 20,000 at Microsoft, 18,000 at Meta; AI-native firms running with about 25% fewer employees",
+          "meaning": "The jobs impact is already underway, not theoretical",
+          "predictor": "Bernie Sanders"
+        },
+        {
+          "level": "Big Tech fired around 1 million people expecting AI to replace them and has hired about 90% of those jobs back",
+          "meaning": "The labour-replacement thesis failed in practice",
+          "predictor": "Casey Simpson"
+        },
+        {
+          "level": "The top 10% of households hold almost 90% of the stock",
+          "meaning": "AI-driven equity gains widen the wealth gap before a single job is lost",
+          "predictor": "Steven Bartlett (in the Dalio interview); echoed by TYT's Jen"
+        },
+        {
+          "level": "The labour share of business revenue falling while the owners' share rises",
+          "meaning": "AI widens the wealth gap that fuels the internal-conflict leg of the big cycle; college graduates already struggle to get hired",
+          "predictor": "Ray Dalio"
+        },
+        {
+          "level": "Unemployment spikes come mainly from the bubble bursting and the ensuing debt crisis",
+          "meaning": "Dalio's own correction: the crash, not gradual AI displacement, is what creates the jobless shock",
+          "predictor": "Ray Dalio"
+        }
+      ],
+      "watched_by": [
+        "Bernie Sanders",
+        "Ray Dalio",
+        "Casey Simpson",
+        "Steven Bartlett",
+        "Mustafa Suleyman (quoted)",
+        "Tom Bilyeu"
+      ],
+      "videoIds": [
+        "JrASb2EeBiY",
+        "2DPA-AtFQQE",
+        "0WMfXrEf03c",
+        "cXI2knjwQNc",
+        "Bu0xNDLNORU"
+      ],
+      "contested_note": "Sanders' 100 million jobs and Suleyman's 12-to-18-month timeline sit directly against Simpson's 90% rehire rate and reports that around 90% of firms see no employment or productivity impact at all \u2014 the same technology read as a jobs apocalypse and as a failed promise."
+    },
+    {
+      "id": "private-debt-to-gdp",
+      "name": "Private debt and the change in credit",
+      "category": "credit",
+      "punchline": "The one chart the doom videos skip: private credit swinging from +15% of GDP in 2006 to -5% in 2009 is what actually broke 2008.",
+      "role": "counter-evidence",
+      "thresholds": [
+        {
+          "level": "Credit (annual change in private debt) swinging from plus 15% of GDP in 2006 to minus 5% in 2009",
+          "meaning": "The swing in credit, not the level of government debt, caused the collapse \u2014 and is what let Keen call the GFC in advance",
+          "predictor": "Steve Keen"
+        },
+        {
+          "level": "Correlation of minus 0.93 between credit and unemployment (1990-2015)",
+          "meaning": "Credit and jobs are near-perfect mirror images; falling private debt shows up directly as job losses",
+          "predictor": "Steve Keen (corroborated by Tom Bilyeu)"
+        },
+        {
+          "level": "92% of US money creation was private versus 8% government (2000-2024); 140% private in 1980-2000",
+          "meaning": "Money creation is a private-lending phenomenon, so public deficits are not the danger",
+          "predictor": "Steve Keen citing Richard Vague"
+        },
+        {
+          "level": "When bank lending goes negative, GDP falls (velocity of money stable around 1.8, usually 1.8-2.2)",
+          "meaning": "The mechanical link from credit creation and destruction straight to output",
+          "predictor": "Steve Keen (lending); Tom Bilyeu (velocity)"
+        },
+        {
+          "level": "COVID deficit of 20% of GDP versus the New Deal's 5% peak",
+          "meaning": "Government deficits are the band-aid that stops private-debt collapses from becoming depressions",
+          "predictor": "Steve Keen"
+        },
+        {
+          "level": "A large trade deficit forcing borrowing in foreign currency",
+          "meaning": "Keen's actual danger sign for a country \u2014 which is why he sees no crisis in surplus-running Japan",
+          "predictor": "Steve Keen"
+        }
+      ],
+      "watched_by": [
+        "Steve Keen",
+        "Tom Bilyeu"
+      ],
+      "videoIds": [
+        "qbnuJFRcvQE",
+        "EWDY1eAxQUo"
+      ],
+      "contested_note": "Keen and Bilyeu agree a private-credit bust is coming and disagree completely about the culprit: Bilyeu's $2 trillion deficits and 130% debt-to-GDP against Keen's verdict that government debt is the band-aid, not the wound \u2014 the sharpest single split in the corpus."
+    }
+  ]
+}
