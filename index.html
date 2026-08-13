@@ -131,6 +131,22 @@
   .rtile .rl { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
   .rtile .rv { font-size: 17px; font-weight: 650; color: var(--ink); margin-top: 2px; }
   .rtile .rs { font-size: 12px; color: var(--ink-2); margin-top: 2px; }
+  .m360 { margin: 18px 0 6px; border-top: 1px solid var(--hairline); padding-top: 14px; }
+  .m360-h { display: flex; align-items: center; gap: 10px; font-weight: 650;
+    font-size: 14px; flex-wrap: wrap; }
+  .m360-h .followbtn { margin-left: auto; }
+  .m360-q { font-size: 13.5px; color: var(--ink-2); margin-top: 6px; }
+  .m360-wrap { overflow-x: auto; margin-top: 10px; }
+  .m360-wrap svg { min-width: 560px; display: block; }
+  .m360-q-el { fill: var(--page); stroke: var(--hairline); }
+  .m360-node rect { fill: var(--surface); stroke: var(--accent); stroke-width: 1; }
+  .m360-node.sh rect { stroke: var(--muted); stroke-dasharray: 5 4; fill: var(--page); }
+  .m360-node { cursor: pointer; }
+  .m360-t { font-size: 12.5px; font-weight: 650; fill: var(--ink); }
+  .m360-s { font-size: 11px; fill: var(--muted); }
+  .m360-list { margin-top: 10px; font-size: 13px; color: var(--ink-2);
+    display: flex; flex-direction: column; gap: 6px; }
+  .m360-list b { color: var(--ink); }
   .mutations { margin-top: 12px; font-size: 13px; color: var(--ink-2); }
   .mutations .m { margin: 3px 0; }
   .mutations .d { color: var(--muted); font-variant-numeric: tabular-nums;
@@ -656,6 +672,153 @@ function receiptHtml(data) {
   return `<div class="rsentence">${sent.join(" ")}</div><div class="receipt">${tiles.join("")}</div>`;
 }
 
+/* ---------- The 360 map: the question this narrative competes to answer ---------- */
+const REL_STYLE = {
+  competes: { dash: "", label: "competing answer" },
+  competes_mechanism: { dash: "6 3", label: "co-traveling variant" },
+  supplements: { dash: "2 3", label: "product layer" },
+  feeds: { dash: "8 4", label: "upstream frame" },
+  counters: { dash: "1 4", label: "anti-narrative" },
+  mutates_into: { dash: "8 4", label: "lineage" },
+  shares_clock: { dash: "4 4", label: "shared clock" },
+};
+const map360Open = {};
+function m360Tracked(t) {
+  return t.kind === "tracked" || watchlist.topics.some(x => x.id === t.shadow_id);
+}
+function m360Id(t) { return t.kind === "tracked" ? t.topic_id : t.shadow_id; }
+function m360Name(t) {
+  const id = m360Id(t);
+  return watchlist.topics.find(x => x.id === id)?.name || t.name || id;
+}
+function map360Html(tid) {
+  const rel = cache[tid]?.relations;
+  if (!rel?.relations?.length) return "";
+  const rs = rel.relations;
+  const tracked = rs.filter(r => m360Tracked(r.target)).length;
+  const clocks = rs.filter(r => r.clock).length;
+  const open = !!map360Open[tid];
+  const sum = `${rs.length} related answers · ${tracked} tracked · ${rs.length - tracked} not yet tracked${clocks ? ` · ${clocks} shared clock${clocks > 1 ? "s" : ""}` : ""}`;
+  return `<div class="m360">
+    <div class="m360-h">The 360 view <span class="pill query">${esc(sum)}</span>
+      <button class="followbtn" data-m360-toggle="${esc(tid)}">${open ? "Hide the map" : "See the full map"}</button></div>
+    <div class="m360-q">${esc(rel.question?.text || "")} <span class="no-t">— the answers competing for this question in the tracked discourse. The map is the receipt, not the ride.</span></div>
+    ${open ? render360Svg(rel) + render360List(rel) : ""}
+  </div>`;
+}
+function render360Svg(rel) {
+  const order = ["feeds", "mutates_into", "counters", "competes", "competes_mechanism", "shares_clock", "supplements"];
+  const rs = [...rel.relations].sort((a, b) => order.indexOf(a.type) - order.indexOf(b.type));
+  const n = rs.length, CX = 330, CY = 220, RX = 235, RY = 155;
+  let lines = "", boxes = "";
+  rs.forEach((r, i) => {
+    const ang = (-90 + i * 360 / n) * Math.PI / 180;
+    const cx = CX + RX * Math.cos(ang), cy = CY + RY * Math.sin(ang);
+    const isT = m360Tracked(r.target);
+    const id = m360Id(r.target);
+    const name = m360Name(r.target);
+    const st = REL_STYLE[r.type] || { dash: "", label: r.type };
+    lines += `<line x1="${CX}" y1="${CY}" x2="${cx.toFixed(0)}" y2="${cy.toFixed(0)}"
+      stroke="var(--hairline)" stroke-width="1.5"${st.dash ? ` stroke-dasharray="${st.dash}"` : ""}/>`;
+    const sub = isT ? `<tspan data-m360-receipt="${esc(id)}">tracked · open →</tspan>`
+      : esc((r.clock ? `⏱ ${r.clock.trigger}` : `${st.label} · found it →`).slice(0, 30));
+    boxes += `<g class="m360-node ${isT ? "tk" : "sh"}" ${isT
+      ? `data-m360-open="${esc(id)}"` : `data-m360-found="${esc(id)}"`}>
+      <rect x="${(cx - 84).toFixed(0)}" y="${(cy - 24).toFixed(0)}" width="168" height="48" rx="9"/>
+      <text class="m360-t" x="${cx.toFixed(0)}" y="${(cy - 4).toFixed(0)}" text-anchor="middle">${esc(name.length > 23 ? name.slice(0, 22) + "…" : name)}</text>
+      <text class="m360-s" x="${cx.toFixed(0)}" y="${(cy + 14).toFixed(0)}" text-anchor="middle">${sub}</text>
+    </g>`;
+  });
+  const q = rel.question?.text || "";
+  const q1 = q.length > 26 ? q.slice(0, q.lastIndexOf(" ", 26)) : q;
+  const q2 = q.length > 26 ? q.slice(q1.length + 1, q1.length + 27) : "";
+  return `<div class="m360-wrap"><svg viewBox="0 0 660 445" width="100%">
+    ${lines}
+    <ellipse cx="${CX}" cy="${CY}" rx="110" ry="52" class="m360-q-el"/>
+    <text class="m360-t" x="${CX}" y="${CY - (q2 ? 10 : 2)}" text-anchor="middle">${esc(q1)}</text>
+    ${q2 ? `<text class="m360-t" x="${CX}" y="${CY + 6}" text-anchor="middle">${esc(q2)}</text>` : ""}
+    <text class="m360-s" x="${CX}" y="${CY + (q2 ? 24 : 16)}" text-anchor="middle">the question being answered</text>
+    ${boxes}
+  </svg></div>`;
+}
+function render360List(rel) {
+  return `<div class="m360-list">${rel.relations.map(r => {
+    const ev = r.evidence?.videoIds?.length
+      ? `${r.evidence.videoIds.length} corpus video${r.evidence.videoIds.length > 1 ? "s" : ""}`
+      : "model estimate, pending audit";
+    return `<div><b>${esc((REL_STYLE[r.type] || {}).label || r.type)}</b> — ${esc(m360Name(r.target))}: ${esc(r.label)}
+      <span class="no-t">(${esc(ev)}${r.evidence?.note ? ` · ${esc(r.evidence.note)}` : ""})</span></div>`;
+  }).join("")}</div>`;
+}
+async function patchMiniReceipts(rel) {
+  for (const r of rel.relations) {
+    if (!m360Tracked(r.target)) continue;
+    const id = m360Id(r.target);
+    const el = document.querySelector(`[data-m360-receipt="${id}"]`);
+    if (!el) continue;
+    try {
+      const data = cache[id]?.narrative ? cache[id] : {
+        narrative: await getJSON(`corpus/${id}/narrative.json`).catch(() => null),
+        predictions: await getJSON(`corpus/${id}/predictions.json`).catch(() => null),
+      };
+      const rc = computeReceipt(data);
+      const bits = [];
+      if (rc.years != null) bits.push(`${rc.years} yrs`);
+      if (rc.hasLedger) bits.push(rc.resolved >= SCORE_GATE
+        ? `${rc.sup} of ${rc.resolved} arrived` : `${rc.pen} pending`);
+      el.textContent = (bits.join(" · ") || "tracked") + " · open →";
+    } catch (e) {}
+  }
+}
+async function runMap360(tid, force) {
+  const name = cache[tid]?.narrative?.name || tid;
+  showNotice(`Mapping the territory around <b>${esc(name)}</b> — one AI call, cached forever…`);
+  try {
+    const r = await fetch(API_BASE + "/api/map360", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic: tid, force: !!force }),
+    });
+    const d = await r.json();
+    if ((d.status === "mapped" || d.status === "already_mapped") && d.map) {
+      cache[tid].relations = d.map;
+      map360Open[tid] = true;
+      renderNarrativeCard();
+      showNotice(`<b>Territory mapped.</b> ${d.map.relations.length} related answers around
+        “${esc(d.map.question?.text || "")}”.`);
+    } else {
+      showNotice(`Map failed: ${esc(d.error || "unknown")}`);
+    }
+  } catch (e) {
+    showNotice(`Map failed: ${esc(String(e.message || e))} — the engine deploy may still be pending.`);
+  }
+}
+async function foundShadow(sourceTopic, shadowId) {
+  const rel = cache[sourceTopic]?.relations?.relations
+    ?.find(r => r.target.kind === "shadow" && r.target.shadow_id === shadowId);
+  if (!rel) return;
+  showNotice(`Founding <b>${esc(rel.target.name)}</b> as a tracked narrative…`);
+  try {
+    const r = await fetch(API_BASE + "/api/map360", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ found_shadow: rel.target, source_topic: sourceTopic }),
+    });
+    const d = await r.json();
+    if (d.status === "founded" && d.topic) {
+      watchlist.topics.push(d.topic);
+      renderTopics();
+      await loadTopic(d.topic.id);
+      showNotice(`<b>${esc(d.topic.name)}</b> founded from the 360 map.
+        Press ↻ Refresh to build its corpus.`);
+    } else if (d.status === "exists") {
+      await loadTopic(shadowId);
+    } else {
+      showNotice(`Founding failed: ${esc(d.error || "unknown")}`);
+    }
+  } catch (e) {
+    showNotice(`Founding failed: ${esc(String(e.message || e))} — the engine deploy may still be pending.`);
+  }
+}
+
 function renderNarrativeCard() {
   const n = cache[topicId]?.narrative;
   const vids = cache[topicId]?.videos?.videos || [];
@@ -819,6 +982,7 @@ function renderNarrativeCard() {
       <h2>${esc(n.name)}</h2>
       <button class="followbtn refreshbtn" data-refresh="${esc(topicId)}" title="Sweep for new videos and update the claims">↻ Refresh</button>
       <button class="followbtn tracebtn" data-trace="${esc(topicId)}" title="Trace the narrative's earliest utterance on X (paid X API — roughly $1-2 per trace)">⌖ Trace origin</button>
+      ${cache[topicId]?.relations ? "" : `<button class="followbtn" data-map360="${esc(topicId)}" title="Map the question this narrative competes to answer (one-time AI call, ~$0.10)">⊕ Map territory</button>`}
       <button class="followbtn ${isFollowed(topicId) ? "on" : ""}" data-follow="${esc(topicId)}">
         ${isFollowed(topicId) ? "★ Following" : "☆ Follow"}</button>
     </div>
@@ -835,10 +999,12 @@ function renderNarrativeCard() {
     ${pchart}
     ${tlHtml}
     ${claimsHtml}
+    ${map360Html(topicId)}
     ${trig ? `<div class="trigger">Trigger for this collection:
       <a href="https://www.youtube.com/watch?v=${esc(trig.videoId)}" target="_blank" rel="noopener">${esc(trig.title)}</a>
       — ${esc(trig.channel)}<div class="v-note">${esc(trig.note)}</div></div>` : ""}
   </div>`;
+  if (map360Open[topicId] && cache[topicId]?.relations) patchMiniReceipts(cache[topicId].relations);
 }
 
 function renderCorpus() {
@@ -975,6 +1141,7 @@ async function loadTopicData(id) {
     try { entry.predictions = await getJSON(`corpus/${id}/predictions.json`); } catch (e) {}
     try { entry.narrative = await getJSON(`corpus/${id}/narrative.json`); } catch (e) {}
     try { entry.claims = await getJSON(`corpus/${id}/claims.json`); } catch (e) {}
+    try { entry.relations = await getJSON(`corpus/${id}/relations.json`); } catch (e) {}
     cache[id] = entry;
   }
   return cache[id];
@@ -1421,6 +1588,19 @@ document.addEventListener("click", async (ev) => {
   }
   const trb = ev.target.closest(".tracebtn");
   if (trb) return traceOrigin(trb.dataset.trace);
+  const mb = ev.target.closest("[data-map360]");
+  if (mb) return runMap360(mb.dataset.map360);
+  const m3t = ev.target.closest("[data-m360-toggle]");
+  if (m3t) {
+    const id = m3t.dataset.m360Toggle;
+    map360Open[id] = !map360Open[id];
+    renderNarrativeCard();
+    return;
+  }
+  const m3o = ev.target.closest("[data-m360-open]");
+  if (m3o) return loadTopic(m3o.dataset.m360Open);
+  const m3f = ev.target.closest("[data-m360-found]");
+  if (m3f) return foundShadow(topicId, m3f.dataset.m360Found);
   const rb = ev.target.closest(".refreshbtn");
   if (rb) return refreshNarrative(rb.dataset.refresh);
   const fb = ev.target.closest(".followbtn");

@@ -1,0 +1,63 @@
+{
+  "note": "The 360 map: the question this narrative competes to answer, and the rival/adjacent answers. Shadows are untracked candidate tiles. This first map was human-authored from briefs/360-research/360-finance.md; evidence videoIds cite this corpus's own claims.json sources.",
+  "updated": "2026-08-13",
+  "minted_by": "hand-seeded (research: briefs/360-research/360-finance.md)",
+  "question": {
+    "text": "Is a US market crash imminent?",
+    "demand": "fear of losing savings; wanting to front-run a crash",
+    "asked_since": "2008"
+  },
+  "relations": [
+    {
+      "type": "competes",
+      "target": { "kind": "tracked", "topic_id": "the-2026-setup" },
+      "label": "Same macro moment read as opportunity, not collapse",
+      "evidence": { "videoIds": [], "note": "the-2026-setup/narrative.json calls itself 'structurally the bull-side mirror of rolling-doom'" },
+      "confidence": "high"
+    },
+    {
+      "type": "competes",
+      "target": { "kind": "tracked", "topic_id": "crypto-winter-watch" },
+      "label": "Anti-crash answer for its asset class: bottom late 2026, bull leg 2027",
+      "evidence": { "videoIds": [], "note": "crypto claims consensus contradicts the crash-imminent conclusion on the same clock" },
+      "confidence": "medium"
+    },
+    {
+      "type": "competes_mechanism",
+      "target": { "kind": "shadow", "shadow_id": "the-ai-bubble-watch", "name": "The AI Bubble Watch", "claim_hint": "AI valuations and capex are a debt-fueled, circular-financing bubble that pops and takes the market with it.", "queries": ["AI bubble burst", "circular financing AI", "AI capex bubble"] },
+      "label": "Rival engine, same conclusion — absorbed as this narrative's Jul 2026 mutation",
+      "evidence": { "videoIds": ["qbnuJFRcvQE", "1BOCO-FcRYY", "e5jgTNJdRcE"], "note": "ai-bubble-pop is already a consensus claim in this corpus" },
+      "confidence": "high"
+    },
+    {
+      "type": "competes_mechanism",
+      "target": { "kind": "shadow", "shadow_id": "everything-bubble", "name": "The Everything Bubble Pops", "claim_hint": "Cheap money inflated all assets simultaneously; the synchronized pop will be worse than 1929 and 2008 combined.", "queries": ["everything bubble", "worst crash in history", "Shiller PE above 40"] },
+      "label": "Same doom, different messengers (Kiyosaki/Howell vs Dalio)",
+      "evidence": { "videoIds": [], "note": "model-estimate-grade lineage from shelf research; shared preachers documented (Burry in both voice lists)" },
+      "confidence": "medium"
+    },
+    {
+      "type": "shares_clock",
+      "target": { "kind": "shadow", "shadow_id": "japan-carry-trade-doom", "name": "Japan Carry-Trade Doom", "claim_hint": "Surging JGB yields force the yen carry trade to unwind, draining the liquidity that secretly funded US markets.", "queries": ["yen carry trade unwind", "JGB meltdown", "widowmaker trade"] },
+      "clock": { "trigger": "10yr Treasury yield sustained above 5%", "next_check": "2026-12" },
+      "label": "Both narratives fire on the same rate trigger",
+      "evidence": { "videoIds": ["YBhwK-VWsxY", "faiJCn20gv0"], "note": "the yen-carry camp is a source-cited camp inside this corpus's crisis-trigger claim" },
+      "confidence": "high"
+    },
+    {
+      "type": "feeds",
+      "direction": "in",
+      "target": { "kind": "shadow", "shadow_id": "de-dollarization-doom-clock", "name": "De-Dollarization Doom Clock", "claim_hint": "BRICS rails and record central-bank gold buying end dollar dominance — a run on the dollar begins in 2026.", "queries": ["de-dollarization", "BRICS currency", "petrodollar is dead"] },
+      "label": "Broader dollar-decline frame raises this narrative's prior",
+      "evidence": { "videoIds": [], "note": "model estimate, pending audit — shared messengers (Schiff) documented in shelf research" },
+      "confidence": "medium"
+    },
+    {
+      "type": "supplements",
+      "target": { "kind": "shadow", "shadow_id": "hard-asset-hedge-products", "name": "Hard-asset hedge products", "claim_hint": "Gold/silver content with $7-14K gold targets marketed with this narrative's language.", "queries": ["gold price prediction crash", "buy gold before the crash"] },
+      "label": "Products marketed with this narrative's language",
+      "evidence": { "videoIds": ["AgTk42rH4n8", "2DPA-AtFQQE", "1a1hbOX6N2w"], "note": "corpus note verbatim: 'several sources are dealers or affiliates. Follow the incentive.' Category-level by design — no sellers named." },
+      "confidence": "high"
+    }
+  ]
+}
