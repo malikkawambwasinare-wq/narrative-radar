@@ -1,0 +1,18 @@
+{
+  "name": "Open Weights vs Closed Frontier",
+  "claim": "Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
+  "predictor": "to be determined",
+  "born": "2023-07",
+  "born_note": "Estimate anchored to Llama 2 open-weights release and the 'we have no moat' leak discourse, intensifying with DeepSeek in early 2025. (model estimate, pending audit)",
+  "mutations": [],
+  "explanations": {
+    "layman": "Free, downloadable AI models keep getting compared to the expensive ones from big companies. Videos like this run a task — here, making 3D designs — and declare a winner. The point being pushed is that you may not need to pay for the premium AI anymore. It matters for your wallet, but single tests prove much less than the titles suggest.",
+    "intermediate": "The mechanism: open-weight labs train on distilled data and publish freely, so capability gaps shrink months after each frontier release. One camp says the moat is gone and cost collapse is inevitable; the other says frontier labs still lead on reasoning, reliability and long-horizon tasks. Creator videos settle this with small, unblinded, cherry-picked task demos rather than systematic benchmarks.",
+    "expert": "Clock: each major release cycle resets the claim, giving it near-infinite renewal. Falsifiers: standardized, contamination-controlled evals with variance reporting; cost-per-solved-task; failure modes at long context. Incentives: creators monetize novelty and benchmark theater; open-weight vendors gain distribution from 'parity' framing; closed labs gain from moat framing. Lifecycle: mature and self-recycling, with speculative-version titles (unreleased model names) marking clickbait drift at the edges."
+  },
+  "origin": {
+    "type": "engine",
+    "first_video": "Db7N5KeB450",
+    "created": "2026-08-13"
+  }
+}
