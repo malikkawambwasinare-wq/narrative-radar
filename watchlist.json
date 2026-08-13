@@ -101,6 +101,23 @@
       ],
       "watched_predictors": [],
       "notes": "Created by the analysis engine. Declassified government programs (CIA/DIA 'Stargate') supposedly proved remote viewing and psychic perception are real, trainable skills that mainstream science suppresses or ignores."
+    },
+    {
+      "id": "open-vs-closed-ai-race",
+      "name": "Open Weights vs Closed Frontier",
+      "status": "active",
+      "started": "2026-08-13",
+      "trigger": "User-submitted video: Can Opus 5 Beat Open-Source Kimi K3 in 3D Design? (Stefan 3D AI)",
+      "queries": [
+        "open source model beats GPT benchmark test",
+        "Kimi vs Claude Opus comparison",
+        "DeepSeek vs OpenAI frontier gap",
+        "best open weights model for coding test",
+        "Chinese AI models catching up frontier labs",
+        "AI model head to head 3D design test"
+      ],
+      "watched_predictors": [],
+      "notes": "Created by the analysis engine. Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate."
     }
   ]
 }
