@@ -375,6 +375,8 @@
     border: none; border-radius: 10px; background: var(--accent); color: #fff; cursor: pointer;
   }
   .lhome { cursor: pointer; }
+  #app-radar header { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; }
+  #app-radar header .sub { width: 100%; }
   .card.hl { outline: 2px solid var(--accent); outline-offset: -1px; }
   .notice {
     position: relative; background: var(--surface); border: 1px solid var(--accent);
@@ -436,6 +438,7 @@
   <div id="app-radar" hidden>
   <header>
     <h1 class="lhome" id="home-link" title="Back to start">Narrative Radar</h1>
+    <button class="followbtn" id="back-start" title="Back to the landing page">← Back to start</button>
     <div class="sub">Tracking how ideas spread — and holding predictions to their own clock.</div>
   </header>
 
@@ -1378,7 +1381,7 @@ document.addEventListener("click", async (ev) => {
   const ob = ev.target.closest(".open-btn");
   if (ob) return openRadarAt(ob.dataset.topic || null, ob.dataset.vid || null);
   if (ev.target.closest(".n-close")) return showNotice("");
-  if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
+  if (ev.target.closest("#home-link, #back-start")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
   const lnv = ev.target.closest("[data-land-view]");
   if (lnv) {
