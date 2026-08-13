@@ -1,0 +1,591 @@
+{
+  "note": "Indicators on watch: the measurable dials this narrative argues through. Extracted from the corpus transcripts (every threshold is attributed to the speaker who named it in a video; nothing here is a Narrative Radar forecast).",
+  "updated": "2026-08-13",
+  "method": "transcript extraction (18 transcripts) + editorial synthesis; thresholds quote what predictors said, not what is true",
+  "transcripts_read": 18,
+  "indicators": [
+    {
+      "id": "btc-four-year-cycle",
+      "name": "Bitcoin four-year cycle clock",
+      "category": "crypto",
+      "punchline": "The whole fight runs on one clock: every prior bear bottomed 12 months after the peak, which lands this one in October 2026 \u2014 unless the cycle is dead.",
+      "role": "countdown",
+      "thresholds": [
+        {
+          "level": "Bottom exactly 12 months after the bull peak (~late October 2026)",
+          "meaning": "History says the low is roughly three months away",
+          "predictor": "Cory Klippsten"
+        },
+        {
+          "level": "53 weekly bars from the cycle high; currently week 42",
+          "meaning": "10-12 more weeks of downside risk into October",
+          "predictor": "Gareth Soloway"
+        },
+        {
+          "level": "Bottom October-November 2026, 'Valhalla' January-February 2027",
+          "meaning": "Bear markets take about one year to flush psychology",
+          "predictor": "Ivan on Tech"
+        },
+        {
+          "level": "Projected October 2026 low may not happen",
+          "meaning": "Two anomalies (pre-halving ATH, minimum-extension top) suggest the cycle is dead and the low is forming now",
+          "predictor": "FibSwanny"
+        },
+        {
+          "level": "Mid-bull-run in 2028",
+          "meaning": "Cycle intact; do not capitulate, upside arrives next year",
+          "predictor": "Sophie Satoshi"
+        }
+      ],
+      "watched_by": [
+        "Cory Klippsten",
+        "Gareth Soloway",
+        "Ivan on Tech",
+        "FibSwanny",
+        "Sophie Satoshi",
+        "Matt Hougan",
+        "Phong Le"
+      ],
+      "videoIds": [
+        "CqX7sirvtO8",
+        "Lu-sOTkVWDM",
+        "SpxCqrzGDiA",
+        "XNuL97I8bvc",
+        "wJBYU7xND00",
+        "xJyNgxAozQw",
+        "NKIcBUmI2e4",
+        "ks2i176-se8",
+        "tjLPE9h6BKg"
+      ],
+      "contested_note": "Bulls treat the 12-month rhythm as a literal schedule for an October bottom; FibSwanny reads this cycle's two anomalies as proof the four-year clock itself has stopped ticking, and Hougan/Le argue institutional money is dampening it into irrelevance."
+    },
+    {
+      "id": "btc-bear-floor",
+      "name": "Bitcoin bear floor ($57.5K and the zones below)",
+      "category": "crypto",
+      "punchline": "Nearly every chart in the corpus ends at the same tripwire: the whole watch comes down to whether Bitcoin holds $57.5K.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "$57,778 \u2014 61.8% retracement of the full low-to-high",
+          "meaning": "Heavy buying interest; the main reason the 57-58K low is called 'in'",
+          "predictor": "FibSwanny"
+        },
+        {
+          "level": "$63,000 ascending trendline",
+          "meaning": "A break re-attacks the $57.8K lows; below $57K the bullish setup is cancelled entirely",
+          "predictor": "Gareth Soloway"
+        },
+        {
+          "level": "Third monthly close under $64,618",
+          "meaning": "Confirms macro breakdown",
+          "predictor": "FibSwanny"
+        },
+        {
+          "level": "$53K-$60K zone (127-141% fib, 89-month EMA ~$53K)",
+          "meaning": "'Back the truck up' accumulation zone matching the last two cycle bottoms",
+          "predictor": "FibSwanny"
+        },
+        {
+          "level": "$49K-$53K",
+          "meaning": "Would not surprise; still a reasonable bear-market floor, no deep flush expected",
+          "predictor": "Cory Klippsten"
+        },
+        {
+          "level": "At or below the 200-week moving average",
+          "meaning": "Historically extremely cheap; buy zone runs down into the 40s",
+          "predictor": "Ivan on Tech"
+        },
+        {
+          "level": "$40K on a break of $49K",
+          "meaning": "Threshold-theory downside target through an air pocket of no support",
+          "predictor": "FibSwanny"
+        },
+        {
+          "level": "$35K by ~October",
+          "meaning": "Head-and-shoulders measured move; he only starts nibbling below $50K",
+          "predictor": "Gareth Soloway"
+        }
+      ],
+      "watched_by": [
+        "FibSwanny",
+        "Gareth Soloway",
+        "Cory Klippsten",
+        "Ivan on Tech",
+        "Dan Gambardello"
+      ],
+      "videoIds": [
+        "XNuL97I8bvc",
+        "xJyNgxAozQw",
+        "wJBYU7xND00",
+        "SpxCqrzGDiA",
+        "Hgikc09SCgM"
+      ],
+      "contested_note": "The same $50-60K band is FibSwanny's and Ivan's back-the-truck-up buy zone and Soloway's trapdoor to $35K \u2014 identical levels, opposite trades."
+    },
+    {
+      "id": "clarity-act",
+      "name": "Clarity Act passage (US crypto legislation)",
+      "category": "policy",
+      "punchline": "A 30-40% coin flip in Congress that Hougan calls the shotgun start of the next bull market \u2014 decided by August recess.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "Polymarket ~40% odds, Aug 7 deadline",
+          "meaning": "A toss-up; passage is the immediate shotgun start of a new bull market, failure brings volatility but not the end",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "level": "~30% odds before August recess",
+          "meaning": "The trigger to watch; regulators would issue rules anyway",
+          "predictor": "Eric Pan citing Galaxy Research"
+        },
+        {
+          "level": "Bank-adoption index 32 to 50 in 6-12 months if it passes; 32 to 40 if it fails",
+          "meaning": "Banks dive in with law behind them, tiptoe without it",
+          "predictor": "Phong Le"
+        }
+      ],
+      "watched_by": [
+        "Matt Hougan",
+        "Phong Le",
+        "Eric Pan",
+        "Michael Saylor",
+        "Brian Armstrong",
+        "Crypto Radar"
+      ],
+      "videoIds": [
+        "Lu-sOTkVWDM",
+        "ks2i176-se8",
+        "tjLPE9h6BKg",
+        "zv4icJOfB-w",
+        "bs6yz79MneQ",
+        "eT9X6C7cCH4"
+      ],
+      "contested_note": "Hougan calls passage the bull-market starting gun; Le, Saylor and Armstrong shrug that the same rules arrive via SEC and executive action anyway, so long term the vote doesn't matter."
+    },
+    {
+      "id": "institutional-adoption-flows",
+      "name": "Institutional adoption flows (ETFs, wirehouses, pensions)",
+      "category": "market_structure",
+      "punchline": "The bull case in one stat: institutions now hold 38% of spot Bitcoin ETF assets, up from 24%, and BlackRock says every portfolio needs 1-2%.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "38% institutional share of spot ETF assets, up from 24% a year earlier; $100B+ combined AUM",
+          "meaning": "Institutions accelerating allocation mid-downturn, treating the dip as entry",
+          "predictor": "The Bitcoin Mindset narrator"
+        },
+        {
+          "level": "BlackRock: 1-2% Bitcoin allocation for multi-asset portfolios (June 2026)",
+          "meaning": "Zero exposure becomes the risky outlier position",
+          "predictor": "The Bitcoin Mindset narrator"
+        },
+        {
+          "level": "~1.27M BTC (over 6% of max supply) held by spot ETFs",
+          "meaning": "Institutional demand is no longer an expectation but already happening",
+          "predictor": "Crypto Radar narrator"
+        },
+        {
+          "level": "A couple percent of $30 trillion of institutional wealth",
+          "meaning": "Forced inflows over the next couple of years once crypto is the default capital stack",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "level": "Morgan Stanley: 16,000 advisers, ~$7T AUM, 0.14%-fee crypto ETPs",
+          "meaning": "Wirehouse distribution floodgates open",
+          "predictor": "Eric Balchunas via narrator"
+        },
+        {
+          "level": "80% of Strategy's buyers were retail",
+          "meaning": "The institutional wave everyone priced in never actually arrived last cycle",
+          "predictor": "What Bitcoin Did host"
+        }
+      ],
+      "watched_by": [
+        "Matt Hougan",
+        "Ryan Rasmussen",
+        "The Bitcoin Mindset",
+        "Crypto Radar",
+        "Cory Klippsten",
+        "Sophie Satoshi"
+      ],
+      "videoIds": [
+        "NKIcBUmI2e4",
+        "tjLPE9h6BKg",
+        "qTPGkVaukjo",
+        "CqX7sirvtO8",
+        "wJBYU7xND00"
+      ],
+      "contested_note": "Bulls read institutional ownership as the permanent floor and next marginal buyer; Klippsten calls ETF holders 'paper hands' who are easy to shake out, so the same flows are fragile fuel, not bedrock."
+    },
+    {
+      "id": "mstr-balance-sheet-stress",
+      "name": "Strategy (MSTR) balance-sheet stress",
+      "category": "credit",
+      "punchline": "The bears' doomsday machine: Strategy sits $12K underwater on 840,000 Bitcoin, and everyone watches whether STRC at $94.50 forces it to sell.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "Average cost $75,000 per BTC vs ~$63,000 spot",
+          "meaning": "CNBC's forced-seller case; Le rejects it \u2014 average cost is not important and they are not forced sellers",
+          "predictor": "CNBC anchor vs Phong Le"
+        },
+        {
+          "level": "STRC back to $100 par (currently ~$94.50, IPO'd at 90)",
+          "meaning": "Par restarts the issuance flywheel that funds Bitcoin accumulation",
+          "predictor": "Phong Le"
+        },
+        {
+          "level": "2-3 years of STRC dividend coverage (now 2.3 years, ~$4B reserve)",
+          "meaning": "The level needed for Stretch investors to trust the dividend and restart inflows",
+          "predictor": "Phong Le"
+        },
+        {
+          "level": "1x mNAV",
+          "meaning": "Capital-allocation trigger: below 1x, selling BTC to buy back MSTR is accretive per share",
+          "predictor": "Phong Le"
+        },
+        {
+          "level": "5% net leverage; 2028 convert wall cut from $5B to $3.5B",
+          "meaning": "The over-leverage criticism is dead; sales were 1/35th of purchases",
+          "predictor": "Phong Le"
+        }
+      ],
+      "watched_by": [
+        "Phong Le",
+        "CNBC anchor",
+        "Michael Saylor",
+        "Matt Hougan",
+        "Ivan on Tech"
+      ],
+      "videoIds": [
+        "bs6yz79MneQ",
+        "ks2i176-se8",
+        "NKIcBUmI2e4",
+        "SpxCqrzGDiA",
+        "eT9X6C7cCH4"
+      ],
+      "contested_note": "Bears see a leveraged whale one spiral away from a forced-selling cascade; Strategy answers with 5% net leverage, 35x more Bitcoin bought than sold, and bulls note the market shrugged when Saylor actually did sell."
+    },
+    {
+      "id": "btc-drawdown-depth",
+      "name": "Drawdown depth vs prior winters",
+      "category": "crypto",
+      "punchline": "This bear stopped at -50% where the last ones went -75% and -85% \u2014 Wall Street's proof Bitcoin is maturing and the worst is already behind us.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "-50% this cycle vs -75% last drawdown",
+          "meaning": "'Exactly on trend' maturation; Wall Street reads the dip as an entry point",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "level": "Prior bears -85% and -77%; anything under -70% acceptable",
+          "meaning": "A shallower bear consistent with the muted bull that preceded it",
+          "predictor": "Cory Klippsten"
+        },
+        {
+          "level": "Past winters' -75% cascades were 100-to-1 leverage backed by air",
+          "meaning": "The man-made structure that caused deep winters has been wiped out and can't be rebuilt",
+          "predictor": "Michael Saylor"
+        }
+      ],
+      "watched_by": [
+        "Matt Hougan",
+        "Cory Klippsten",
+        "Ivan on Tech",
+        "Michael Saylor",
+        "Phong Le"
+      ],
+      "videoIds": [
+        "NKIcBUmI2e4",
+        "SpxCqrzGDiA",
+        "wJBYU7xND00",
+        "eT9X6C7cCH4",
+        "bs6yz79MneQ"
+      ],
+      "contested_note": "Bulls read the shallow -50% as structural maturity; the on-chain bear camp reads the same number as a flush that simply hasn't finished."
+    },
+    {
+      "id": "btc-bull-reclaim-levels",
+      "name": "Bull-market reclaim levels ($67K-$95K)",
+      "category": "crypto",
+      "punchline": "Nobody declares the bull back until Bitcoin reclaims a number \u2014 $67K, $73K, $81K, or $95K, depending on whose chart you trust.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "Break above $67,000",
+          "meaning": "Odds jump to 75-80% of a quick run to $71-72K",
+          "predictor": "Gareth Soloway"
+        },
+        {
+          "level": "Punch through $73,000",
+          "meaning": "Not back in a bull until then; above it, little resistance toward $200K",
+          "predictor": "Cory Klippsten"
+        },
+        {
+          "level": "Bull flip at $81K; weekly closes above ~$82K",
+          "meaning": "High likelihood the bull market is back with a run toward $200K",
+          "predictor": "Ivan on Tech"
+        },
+        {
+          "level": "Reclaim ~$95K",
+          "meaning": "Monthly chart re-enters the bull zone and turns genuinely bullish",
+          "predictor": "FibSwanny"
+        }
+      ],
+      "watched_by": [
+        "Gareth Soloway",
+        "Cory Klippsten",
+        "Ivan on Tech",
+        "FibSwanny"
+      ],
+      "videoIds": [
+        "xJyNgxAozQw",
+        "wJBYU7xND00",
+        "SpxCqrzGDiA",
+        "XNuL97I8bvc"
+      ],
+      "contested_note": null
+    },
+    {
+      "id": "global-liquidity-qt",
+      "name": "Global liquidity / end of QT",
+      "category": "liquidity",
+      "punchline": "The macro camp's thesis in a date: QT ended December 1, 2025, and every crypto bull market in history started when the liquidity spigot reopened.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "QT ended December 1, 2025",
+          "meaning": "Post-QT normalization mirrors the exact setup that preceded the 2020 ETH/BTC bottom and bull run",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "level": "Fed pivot on weakening data",
+          "meaning": "Rotates liquidity from the cooling AI trade back into Bitcoin",
+          "predictor": "Savvy Finance narrator"
+        }
+      ],
+      "watched_by": [
+        "Dan Gambardello",
+        "Raoul Pal",
+        "Vandell Aljarrah",
+        "Gareth Soloway"
+      ],
+      "videoIds": [
+        "NRRCwlgEGU8",
+        "SkR1NO6N-8g",
+        "l0Ia0GNzciI",
+        "xJyNgxAozQw"
+      ],
+      "contested_note": "The liquidity camp says this replaces the four-year clock entirely \u2014 crypto moves with money printing and debasement, not halvings, which is why they ignore the October-bottom countdown."
+    },
+    {
+      "id": "seller-exhaustion",
+      "name": "Seller exhaustion (bad news no longer dumps price)",
+      "category": "market_structure",
+      "punchline": "Hacks, Saylor selling, BitMEX closing \u2014 Bitcoin holds $64K through all of it, while long-term holder supply sits at all-time highs. Nobody left to sell.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "All-time highs in coins unmoved 6 and 12+ months",
+          "meaning": "Strong hands own the float; a floor is being put in at current levels",
+          "predictor": "Cory Klippsten"
+        },
+        {
+          "level": "BitMEX closure, treasury-company capitulation",
+          "meaning": "The kind of events that historically mark the bottom",
+          "predictor": "What Bitcoin Did host"
+        },
+        {
+          "level": "$64K holds through hacks, Saylor sales, STRC at 75",
+          "meaning": "Sellers are exhausted; the bear cycle is ending",
+          "predictor": "Matt Hougan / Ivan on Tech"
+        }
+      ],
+      "watched_by": [
+        "Matt Hougan",
+        "Ivan on Tech",
+        "Cory Klippsten",
+        "What Bitcoin Did host"
+      ],
+      "videoIds": [
+        "NKIcBUmI2e4",
+        "SpxCqrzGDiA",
+        "wJBYU7xND00"
+      ],
+      "contested_note": null
+    },
+    {
+      "id": "stablecoin-flows",
+      "name": "Stablecoin AUM and flows",
+      "category": "crypto",
+      "punchline": "One number, two religions: stablecoin assets are growing through the bear \u2014 but no new money has actually flowed in since October.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "No inflows since October; recent outflows",
+          "meaning": "No new capital in crypto \u2014 expect another sell-off of maybe 30% before any recovery",
+          "predictor": "Gerhard"
+        },
+        {
+          "level": "Stablecoin AUM up significantly despite the bear market",
+          "meaning": "Proof the onchain-TradFi convergence that ends the winter is already happening",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "level": "Base: ~$32T stablecoin transfer volume in 12 months; over 90% of agentic volume",
+          "meaning": "Rails adoption compounding regardless of price",
+          "predictor": "Brian Armstrong"
+        }
+      ],
+      "watched_by": [
+        "Matt Hougan",
+        "Gerhard",
+        "Brian Armstrong"
+      ],
+      "videoIds": [
+        "Lu-sOTkVWDM",
+        "y9PN4mfk1hs",
+        "zv4icJOfB-w"
+      ],
+      "contested_note": "Hougan reads rising stablecoin AUM as bull-thesis proof; Gerhard reads the flat-to-outflowing market cap as zero fresh capital and calls for another 30% down \u2014 the same gauge powering both camps' strongest slide."
+    },
+    {
+      "id": "ism-pmi-55",
+      "name": "ISM PMI 55 line",
+      "category": "other",
+      "punchline": "Every altcoin supercycle started when PMI crossed 55 \u2014 August printed 55.6, the first cross in four years, and the September 1 print is the falsifier.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "Cross above 55 with momentum (55.6 on Aug 3, up 2.3 in a month)",
+          "meaning": "Every prior cross (Feb 2017, Sep 2020) started the most powerful altcoin moves in crypto history",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "level": "September 1 print back under 55",
+          "meaning": "The zone closes; the test failed",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "level": "PMI expands and altcoins still fail to rally",
+          "meaning": "Altcoins are done \u2014 this is their last chance",
+          "predictor": "Dan Gambardello"
+        }
+      ],
+      "watched_by": [
+        "Dan Gambardello"
+      ],
+      "videoIds": [
+        "Hgikc09SCgM",
+        "NRRCwlgEGU8"
+      ],
+      "contested_note": null
+    },
+    {
+      "id": "altcoin-reversal-setups",
+      "name": "Altcoin reversal setups (ETH/BTC and market-cap MAs)",
+      "category": "crypto",
+      "punchline": "ETH/BTC is testing the same 20-month moving average that launched the 2020 run, and the altcoin market cap's 20-week just touched the 200-week \u2014 the exact signature of the last two bottoms.",
+      "role": "trigger",
+      "thresholds": [
+        {
+          "level": "ETH/BTC monthly close above the 20-month MA",
+          "meaning": "Macro Ethereum reversal \u2014 prior wick attempts failed in October, January and April",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "level": "ETH: $1,500 downside trendline vs 200-day MA near $2,000",
+          "meaning": "$300 capitulation risk on one side, bullish cycle confirmation on the other",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "level": "Altcoin market cap 20-week MA touching the 200-week MA",
+          "meaning": "Marked the January 2023 and March 2019 bottoms",
+          "predictor": "Dan Gambardello"
+        },
+        {
+          "level": "2-week MACD crossing above its signal line",
+          "meaning": "Marked prior macro altcoin bottoms",
+          "predictor": "Dan Gambardello"
+        }
+      ],
+      "watched_by": [
+        "Dan Gambardello"
+      ],
+      "videoIds": [
+        "Hgikc09SCgM",
+        "NRRCwlgEGU8"
+      ],
+      "contested_note": null
+    },
+    {
+      "id": "onchain-bottom-gauges",
+      "name": "On-chain bottom gauges (CBBI, Puell, NUPL)",
+      "category": "crypto",
+      "punchline": "The bear's dashboard says not yet: CBBI at 32 versus a buy zone of 20 or lower, Puell at 0.65 versus 0.5, and NUPL still hasn't gone negative.",
+      "role": "counter-evidence",
+      "thresholds": [
+        {
+          "level": "CBBI at 32 (was 94 at the ~$120K peak); aggressive DCA only at 20, 10, or single digits",
+          "meaning": "The aggregate bottom signal has not fired",
+          "predictor": "Gerhard"
+        },
+        {
+          "level": "Puell Multiple 0.65 vs green buy level at 0.5",
+          "meaning": "Miner-profitability flush incomplete; more downside likely",
+          "predictor": "Gerhard"
+        },
+        {
+          "level": "NUPL must move into negative territory",
+          "meaning": "Bear markets only end when aggregate holders sit on unrealized losses \u2014 not there yet",
+          "predictor": "Gerhard"
+        }
+      ],
+      "watched_by": [
+        "Gerhard"
+      ],
+      "videoIds": [
+        "y9PN4mfk1hs"
+      ],
+      "contested_note": "While the price-chart camp calls the $57.5K low in, this entire on-chain dashboard says the capitulation that ends bear markets hasn't happened yet."
+    },
+    {
+      "id": "tokenization-convergence",
+      "name": "Tokenization / TradFi convergence",
+      "category": "valuation",
+      "punchline": "Tokenized stocks growing 600% a year through a bear market \u2014 Hougan's proof the next bull doesn't need the four-year cycle, with $30B tokenized against $600T of world assets.",
+      "role": "evidence",
+      "thresholds": [
+        {
+          "level": "Tokenized stocks growing ~600% a year during the bear",
+          "meaning": "The next bull market will be led by onchain-TradFi convergence projects",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "level": "$30B tokenized vs $600T of global assets \u2014 'the market could 2000x'",
+          "meaning": "Roughly 1% penetration; size by market size, not market share",
+          "predictor": "Matt Hougan"
+        },
+        {
+          "level": "$400-450T global finance addressable market",
+          "meaning": "DeFi and the on-chain rails are dramatically undersized against the real prize",
+          "predictor": "Matt Hougan / Eric Pan"
+        }
+      ],
+      "watched_by": [
+        "Matt Hougan",
+        "Brian Armstrong",
+        "Eric Pan"
+      ],
+      "videoIds": [
+        "Lu-sOTkVWDM",
+        "zv4icJOfB-w",
+        "qTPGkVaukjo"
+      ],
+      "contested_note": null
+    }
+  ]
+}

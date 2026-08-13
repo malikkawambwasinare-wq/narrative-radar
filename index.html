@@ -147,6 +147,18 @@
   .m360-list { margin-top: 10px; font-size: 13px; color: var(--ink-2);
     display: flex; flex-direction: column; gap: 6px; }
   .m360-list b { color: var(--ink); }
+  .indwatch { margin: 18px 0 6px; border-top: 1px solid var(--hairline); padding-top: 14px; }
+  .ind { padding: 10px 0; border-bottom: 1px dashed var(--hairline); }
+  .ind:last-child { border-bottom: none; }
+  .ind-p { font-size: 14px; color: var(--ink); line-height: 1.5; }
+  .ind-meta { margin-top: 5px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center;
+    font-size: 12px; color: var(--muted); }
+  .ind-name { font-weight: 650; color: var(--ink-2); }
+  .ind-role { text-transform: uppercase; letter-spacing: 0.05em; font-size: 10.5px;
+    padding: 2px 8px; border-radius: 4px; border: 1px solid currentColor; font-weight: 650; }
+  .ind-th { background: var(--page); border: 1px solid var(--hairline); border-radius: 999px;
+    padding: 2px 10px; font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .ind-con { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
   .mutations { margin-top: 12px; font-size: 13px; color: var(--ink-2); }
   .mutations .m { margin: 3px 0; }
   .mutations .d { color: var(--muted); font-variant-numeric: tabular-nums;
@@ -672,6 +684,45 @@ function receiptHtml(data) {
   return `<div class="rsentence">${sent.join(" ")}</div><div class="receipt">${tiles.join("")}</div>`;
 }
 
+/* ---------- Indicators on watch: the dials the narrative argues through ---------- */
+const indOpen = {};
+const IND_ROLE = {
+  trigger: "var(--serious)", countdown: "var(--warning)",
+  evidence: "var(--muted)", counter: "var(--good)", "counter-evidence": "var(--good)",
+};
+function indicatorsHtml(tid) {
+  const ind = cache[tid]?.indicators;
+  if (!ind?.indicators?.length) return "";
+  const list = ind.indicators;
+  const vidsCovered = new Set(list.flatMap(i => i.videoIds || [])).size;
+  const open = !!indOpen[tid];
+  const shown = open ? list : list.slice(0, 6);
+  const rows = shown.map(i => {
+    const roleWord = ((i.role || "").toLowerCase().match(/trigger|countdown|counter|evidence/) || ["evidence"])[0];
+    const color = IND_ROLE[roleWord] || "var(--muted)";
+    const ths = (i.thresholds || []).slice(0, 3).map(t =>
+      `<span class="ind-th" title="${esc(t.meaning || "")}">${esc(t.level)}${t.predictor ? ` — ${esc(t.predictor.split("(")[0].trim())}` : ""}</span>`).join("");
+    const who = (i.watched_by || []).slice(0, 3).map(w => esc(w.split("(")[0].trim())).join(", ");
+    return `<div class="ind">
+      <div class="ind-p">${esc(i.punchline)}</div>
+      <div class="ind-meta">
+        <span class="ind-name">${esc(i.name)}</span>
+        <span class="ind-role" style="color:${color}">${esc(roleWord)}</span>
+        ${ths}
+        ${who ? `<span>${who}</span>` : ""}
+        <span>${(i.videoIds || []).length} video${(i.videoIds || []).length === 1 ? "" : "s"}</span>
+      </div>
+      ${i.contested_note ? `<div class="ind-con">⚖ ${esc(i.contested_note)}</div>` : ""}
+    </div>`;
+  }).join("");
+  return `<div class="indwatch">
+    <div class="m360-h">Indicators on watch
+      <span class="pill query">${list.length} dials · read from ${vidsCovered} transcripts</span>
+      ${list.length > 6 ? `<button class="followbtn" data-ind-toggle="${esc(tid)}">${open ? "Show fewer" : `All ${list.length}`}</button>` : ""}</div>
+    ${rows}
+  </div>`;
+}
+
 /* ---------- The 360 map: the question this narrative competes to answer ---------- */
 const REL_STYLE = {
   competes: { dash: "", label: "competing answer" },
@@ -999,6 +1050,7 @@ function renderNarrativeCard() {
     ${pchart}
     ${tlHtml}
     ${claimsHtml}
+    ${indicatorsHtml(topicId)}
     ${map360Html(topicId)}
     ${trig ? `<div class="trigger">Trigger for this collection:
       <a href="https://www.youtube.com/watch?v=${esc(trig.videoId)}" target="_blank" rel="noopener">${esc(trig.title)}</a>
@@ -1142,6 +1194,7 @@ async function loadTopicData(id) {
     try { entry.narrative = await getJSON(`corpus/${id}/narrative.json`); } catch (e) {}
     try { entry.claims = await getJSON(`corpus/${id}/claims.json`); } catch (e) {}
     try { entry.relations = await getJSON(`corpus/${id}/relations.json`); } catch (e) {}
+    try { entry.indicators = await getJSON(`corpus/${id}/indicators.json`); } catch (e) {}
     cache[id] = entry;
   }
   return cache[id];
@@ -1590,6 +1643,12 @@ document.addEventListener("click", async (ev) => {
   if (trb) return traceOrigin(trb.dataset.trace);
   const mb = ev.target.closest("[data-map360]");
   if (mb) return runMap360(mb.dataset.map360);
+  const it = ev.target.closest("[data-ind-toggle]");
+  if (it) {
+    indOpen[it.dataset.indToggle] = !indOpen[it.dataset.indToggle];
+    renderNarrativeCard();
+    return;
+  }
   const m3t = ev.target.closest("[data-m360-toggle]");
   if (m3t) {
     const id = m3t.dataset.m360Toggle;
