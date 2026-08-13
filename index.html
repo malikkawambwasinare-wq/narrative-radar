@@ -313,6 +313,10 @@
     cursor: pointer; white-space: nowrap;
   }
   .lookup button:hover { background: #f3c084; }
+  @media (max-width: 600px) {
+    .lookup { flex-direction: column; gap: 10px; }
+    .lookup input, .lookup button { width: 100%; }
+  }
   .landing-stats { margin-top: 26px; font-size: 13px; letter-spacing: 0.05em;
     color: rgba(235,232,225,0.55); font-variant-numeric: tabular-nums; min-height: 18px; }
   .landing-stats b { color: #7adfc4; font-weight: 600; }
