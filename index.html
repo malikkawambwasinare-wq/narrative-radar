@@ -6,7 +6,7 @@
 <title>Narrative Radar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light;
@@ -281,56 +281,85 @@
   .empty { color: var(--muted); font-size: 14px; padding: 30px 0; text-align: center; }
   .err { color: var(--critical); font-size: 13px; }
 
-  /* Landing — dark strata hero */
-  body:has(#app-landing:not([hidden])) { background: #080a0d; }
+  /* Landing — deep space hero */
+  body:has(#app-landing:not([hidden])) { background: #000; }
   #app-landing { position: relative; margin-left: calc(50% - 50vw); width: 100vw;
-    background: #080a0d; overflow: hidden; }
-  #strata { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-  #app-landing .hero { position: relative; z-index: 1; min-height: 88vh; padding: 8vh 22px 9vh;
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
-    text-align: center; }
-  .hero-kicker { font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
-    color: #e8a35c; font-weight: 600; margin-bottom: 30px; }
-  .hero-kicker .dot { color: #7adfc4; }
-  #app-landing h1 { font-family: "Fraunces", Georgia, serif; font-weight: 450;
-    font-size: clamp(38px, 6.6vw, 62px); line-height: 1.08; letter-spacing: -0.01em;
-    color: #f2efe9; max-width: 720px; }
-  #app-landing h1 em { font-style: italic; color: #ecb36b; }
-  #app-landing .pitch { color: rgba(235,232,225,0.72); font-size: 16px; max-width: 540px;
-    margin: 22px auto 0; line-height: 1.65; }
-  .lookup { display: flex; gap: 8px; max-width: 560px; width: 100%; margin: 32px auto 0; }
-  .lookup input {
-    flex: 1; padding: 15px 22px; font: inherit; font-size: 15px;
-    border: 1px solid rgba(255,255,255,0.16); border-radius: 999px;
-    background: rgba(255,255,255,0.06); color: #f2efe9; min-width: 0;
-    backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-  }
-  .lookup input::placeholder { color: rgba(235,232,225,0.45); }
-  .lookup input:focus { outline: 2px solid #ecb36b; outline-offset: -1px; }
-  .lookup button {
-    padding: 15px 26px; font: inherit; font-size: 15px; font-weight: 700;
-    border: none; border-radius: 999px; background: #ecb36b; color: #241505;
-    cursor: pointer; white-space: nowrap;
-  }
-  .lookup button:hover { background: #f3c084; }
-  @media (max-width: 600px) {
-    .lookup { flex-direction: column; gap: 10px; }
-    .lookup input, .lookup button { width: 100%; }
-  }
-  .landing-stats { margin-top: 26px; font-size: 13px; letter-spacing: 0.05em;
+    background: #000; overflow: hidden; }
+  #space { position: absolute; top: 0; left: 0; width: 100%; height: 100svh;
+    display: block; opacity: 0; transition: opacity 1s ease; }
+  #space.ready { opacity: 1; }
+  body.no-webgl #space { display: none; }
+  body.no-webgl #app-landing {
+    background:
+      radial-gradient(1px 1px at 12% 24%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 33% 68%, #dfe6ff 50%, transparent 51%),
+      radial-gradient(2px 2px at 51% 15%, #fff 50%, transparent 51%),
+      radial-gradient(1px 1px at 64% 45%, #cfd8ff 50%, transparent 51%),
+      radial-gradient(1px 1px at 78% 76%, #fff 50%, transparent 51%),
+      radial-gradient(2px 2px at 89% 32%, #e8ecff 50%, transparent 51%),
+      linear-gradient(180deg, #000000 0%, #0a0a12 100%); }
+  .lnav { position: absolute; top: 18px; left: 50%; transform: translateX(-50%);
+    z-index: 3; width: min(920px, calc(100% - 32px));
+    display: flex; align-items: center; gap: 22px; padding: 10px 12px 10px 20px;
+    border-radius: 999px; background: rgba(10,10,18,0.55);
+    border: 1px solid rgba(255,255,255,0.10);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .lnav .logo { font-weight: 650; font-size: 14px; color: #f2efe9; display: flex;
+    align-items: center; gap: 8px; }
+  .lnav .logo .dot { color: #7adfc4; font-size: 10px; }
+  .lnav .lnav-links { display: flex; gap: 20px; margin-left: auto; }
+  .lnav .lnav-links a { color: rgba(242,239,233,0.7); font-size: 13.5px;
+    text-decoration: none; cursor: pointer; }
+  .lnav .lnav-links a:hover { color: #f2efe9; }
+  .lnav .lcta { padding: 9px 18px; border-radius: 999px; background: #f2efe9;
+    color: #0a0a12; font-size: 13.5px; font-weight: 600; text-decoration: none;
+    cursor: pointer; white-space: nowrap; }
+  .lnav .lcta:hover { background: #fff; }
+  #app-landing .hero { position: relative; z-index: 2; min-height: 100svh;
+    padding: 96px 22px 44px; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center; }
+  #app-landing h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 500;
+    font-size: clamp(2.4rem, 6vw, 5rem); line-height: 1.04; letter-spacing: -0.01em;
+    color: #fff; position: relative; max-width: 900px; }
+  #app-landing h1 em { font-style: italic; display: block; }
+  #app-landing h1::before { content: ""; position: absolute; inset: -12% -18%;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0.22) 0%, transparent 70%);
+    z-index: -1; }
+  #app-landing .pitch { color: rgba(200,200,210,0.85); font-size: 15px; max-width: 460px;
+    margin: 24px auto 0; line-height: 1.65;
+    text-shadow: 0 1px 14px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.7); }
+  .lookup { display: flex; align-items: center; width: min(460px, 100%);
+    margin: 32px auto 0; border-radius: 999px; background: rgba(15,15,24,0.6);
+    border: 1px solid rgba(255,255,255,0.14); padding: 6px 6px 6px 22px;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  .lookup input { flex: 1; background: none; border: none; outline: none;
+    color: #f2efe9; font: inherit; font-size: 14.5px; min-width: 0; }
+  .lookup input::placeholder { color: rgba(242,239,233,0.45); }
+  .lookup input:focus { outline: none; }
+  .lookup:focus-within { border-color: rgba(236,179,107,0.7); }
+  .lookup button { width: 42px; height: 42px; border-radius: 50%; border: none;
+    background: #f2efe9; color: #0a0a12; font-size: 18px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; flex: none; }
+  .lookup button:hover { background: #fff; }
+  .landing-stats { margin-top: 24px; font-size: 13px; letter-spacing: 0.05em;
     color: rgba(235,232,225,0.55); font-variant-numeric: tabular-nums; min-height: 18px; }
   .landing-stats b { color: #7adfc4; font-weight: 600; }
-  .browse { text-align: center; margin-top: 44px; }
-  .browse a { color: rgba(235,232,225,0.6); font-size: 12px; letter-spacing: 0.16em;
-    text-transform: uppercase; text-decoration: none; cursor: pointer; }
-  .browse a:hover { color: #ecb36b; }
-  #app-landing .result, #app-landing .yours { position: relative; z-index: 1;
+  .browse { text-align: center; margin-top: auto; padding-top: 36px; }
+  .browse a { display: inline-block; padding: 13px 26px; border-radius: 999px;
+    background: rgba(15,15,24,0.65); border: 1px solid rgba(255,255,255,0.14);
+    color: rgba(242,239,233,0.85); font-size: 12px; letter-spacing: 0.15em;
+    text-transform: uppercase; text-decoration: none; cursor: pointer;
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  .browse a:hover { color: #fff; border-color: rgba(255,255,255,0.3); }
+  #app-landing .result, #app-landing .yours { position: relative; z-index: 2;
     padding-bottom: 40px; }
   #app-landing .yours .yk { color: rgba(235,232,225,0.5); }
   #app-landing .card { background: rgba(255,255,255,0.05);
     border-color: rgba(255,255,255,0.13); color: #f2efe9; }
   #app-landing .yours .yn { color: #f2efe9; }
   #app-landing .yours .ym { color: rgba(235,232,225,0.6); }
+  @media (max-width: 640px) { .lnav .lnav-links { display: none; } }
+  @media (min-width: 900px) { #app-landing h1 { margin-top: 15vh; } }
   .result { max-width: 640px; margin: 22px auto 0; }
   .result .card { padding: 16px 18px; }
   .result .r-kicker { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
@@ -378,19 +407,27 @@
 <body>
 <div class="wrap">
   <div id="app-landing">
-    <canvas id="strata" aria-hidden="true"></canvas>
+    <canvas id="space" aria-hidden="true"></canvas>
+    <nav class="lnav" aria-label="Main">
+      <span class="logo"><span class="dot">●</span> Narrative Radar</span>
+      <div class="lnav-links">
+        <a data-land-view="corpus">Corpus</a>
+        <a data-land-view="ledger">Ledger</a>
+        <a data-land-view="briefs">Briefs</a>
+      </div>
+      <a class="lcta" data-land-view="corpus">Enter the radar</a>
+    </nav>
     <div class="hero">
-      <div class="hero-kicker"><span class="dot">●</span> Narrative Radar · live</div>
       <h1>The algorithm pulls you deeper. <em>This is the exit.</em></h1>
       <div class="pitch">Every recurring prediction on YouTube and X — dated at origin,
         labeled at source, and graded in public when its own deadline arrives.</div>
       <form class="lookup" id="lookup-form">
         <input id="lookup-input" type="text" inputmode="url" autocomplete="off"
-          placeholder="Paste a YouTube link…">
-        <button type="submit">Run the receipt</button>
+          placeholder="Paste a YouTube link…" aria-label="Paste a YouTube link">
+        <button type="submit" aria-label="Run the receipt">→</button>
       </form>
       <div class="landing-stats" id="landing-stats"></div>
-      <div class="browse"><a id="browse-link">Enter the radar ↓</a></div>
+      <div class="browse"><a id="browse-link">The narrative field ↓</a></div>
     </div>
     <div class="result" id="lookup-result"></div>
     <div class="yours" id="yours"></div>
@@ -1009,67 +1046,8 @@ function showLanding() {
   $("app-radar").hidden = true;
   renderYours();
   $("lookup-input").focus();
-  if (typeof resumeStrata === "function") resumeStrata();
+  if (window.resumeSpace) window.resumeSpace();
 }
-
-/* ---------- Landing: glowing strata terrain (each ridge a layer of time) ---------- */
-let resumeStrata = null;
-function initStrata() {
-  const cv = $("strata");
-  if (!cv || !cv.getContext) return;
-  const ctx = cv.getContext("2d");
-  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const LAYERS = 7;
-  let W = 0, H = 0, t = 0, px = 0, py = 0, raf = null;
-  const dpr = Math.min(2, window.devicePixelRatio || 1);
-  function resize() {
-    W = cv.width = Math.round(cv.offsetWidth * dpr);
-    H = cv.height = Math.round(cv.offsetHeight * dpr);
-  }
-  const ridge = (x, s) => Math.sin(x * 1.7 + s * 9.1) * 0.55
-    + Math.sin(x * 3.3 + s * 3.7) * 0.3 + Math.sin(x * 6.1 + s * 17.3) * 0.15;
-  function draw() {
-    ctx.clearRect(0, 0, W, H);
-    for (let i = 0; i < LAYERS; i++) {
-      const d = i / (LAYERS - 1);                       // 0 = far horizon, 1 = near
-      const baseY = H * (0.46 + d * 0.5);
-      const amp = H * (0.035 + d * 0.08);
-      const drift = t * (0.0025 + d * 0.006) + px * d * 1.6;
-      const warm = i % 2 === 0;
-      ctx.beginPath();
-      const step = Math.max(4, 6 * dpr);
-      for (let sx = 0; sx <= W + step; sx += step) {
-        const y = baseY + ridge(sx / W * 2.4 + drift, i) * amp + py * d * 26 * dpr;
-        sx === 0 ? ctx.moveTo(sx, y) : ctx.lineTo(sx, y);
-      }
-      ctx.strokeStyle = warm
-        ? `rgba(236,166,92,${0.12 + d * 0.42})`
-        : `rgba(96,216,186,${0.09 + d * 0.28})`;
-      ctx.lineWidth = (0.7 + d * 1.5) * dpr;
-      ctx.shadowColor = warm ? "rgba(230,130,55,0.75)" : "rgba(70,205,175,0.6)";
-      ctx.shadowBlur = 16 * d * dpr;
-      ctx.stroke();
-      ctx.lineTo(W + step, H); ctx.lineTo(0, H); ctx.closePath();
-      ctx.shadowBlur = 0;
-      ctx.fillStyle = `rgba(8,10,13,${0.6 + d * 0.36})`;
-      ctx.fill();
-    }
-    t += 1;
-  }
-  function loop() {
-    if ($("app-landing").hidden) { raf = null; return; }
-    draw();
-    if (!reduced) raf = requestAnimationFrame(loop);
-  }
-  resumeStrata = () => { if (!raf) { resize(); raf = requestAnimationFrame(loop); } };
-  addEventListener("resize", () => { resize(); if (reduced || !raf) draw(); });
-  addEventListener("pointermove", (e) => {
-    px = e.clientX / innerWidth - 0.5; py = e.clientY / innerHeight - 0.5;
-  }, { passive: true });
-  resize();
-  if (reduced) draw(); else raf = requestAnimationFrame(loop);
-}
-initStrata();
 
 async function loadLandingStats() {
   try {
@@ -1402,6 +1380,14 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest(".n-close")) return showNotice("");
   if (ev.target.closest("#home-link")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
+  const lnv = ev.target.closest("[data-land-view]");
+  if (lnv) {
+    showNotice("");
+    showRadar();
+    setTimeout(() =>
+      document.querySelector(`.tab[data-view="${lnv.dataset.landView}"]`)?.click(), 60);
+    return;
+  }
   if (ev.target.closest(".lstack")) {
     document.querySelector('.tab[data-view="ledger"]')?.click();
     return;
@@ -1498,6 +1484,434 @@ $("lookup-form").addEventListener("submit", (e) => {
       `<div class="err">Failed to load data: ${esc(e.message)}</div>`);
   }
 })();
+</script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+/* Landing scene: deep-space falling astronaut (astronaut.png, AI-generated for
+   this project; black background keyed out in-shader). Pauses when the landing
+   is hidden; window.resumeSpace() restarts it. */
+import * as THREE from "three";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+
+const canvas = document.getElementById("space");
+const landing = document.getElementById("app-landing");
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const coarse = matchMedia("(pointer: coarse)").matches;
+const mobile = coarse || innerWidth < 700;
+
+let renderer;
+try {
+  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false });
+} catch (e) {
+  document.body.classList.add("no-webgl");
+}
+
+if (renderer) {
+  const cw = () => Math.max(1, canvas.offsetWidth);
+  const ch = () => Math.max(1, canvas.offsetHeight);
+  renderer.setPixelRatio(Math.min(2, devicePixelRatio));
+  renderer.setSize(cw(), ch());
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.15;
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+
+  const scene = new THREE.Scene();
+  scene.fog = new THREE.FogExp2(0x000000, 0.02);
+  {
+    const bgMat = new THREE.ShaderMaterial({
+      depthWrite: false, depthTest: false,
+      uniforms: { uH: { value: ch() * Math.min(2, devicePixelRatio) } },
+      vertexShader: `void main(){ gl_Position = vec4(position.xy, 1.0, 1.0); }`,
+      fragmentShader: `
+        uniform float uH;
+        void main(){
+          float t = gl_FragCoord.y / max(1.0, uH);
+          vec3 c = mix(vec3(0.039, 0.039, 0.071), vec3(0.0), t);
+          gl_FragColor = vec4(c, 1.0);
+        }`,
+    });
+    const bg = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), bgMat);
+    bg.frustumCulled = false;
+    bg.renderOrder = -10;
+    scene.add(bg);
+  }
+
+  const camera = new THREE.PerspectiveCamera(45, cw() / ch(), 0.1, 200);
+  camera.position.set(0, 0, 8);
+
+  const composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(cw(), ch()), 0.35, 0.4, 0.85));
+  composer.addPass(new OutputPass());
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.1));
+
+  const starLayers = [];
+  const mkStars = (count, z, spread, sizeMin, sizeMax, par) => {
+    const g = new THREE.BufferGeometry();
+    const pos = new Float32Array(count * 3);
+    const size = new Float32Array(count);
+    const phase = new Float32Array(count);
+    const tw = new Float32Array(count);
+    for (let i = 0; i < count; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * spread * 2.4;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * spread * 1.5;
+      pos[i * 3 + 2] = z - Math.random() * 6;
+      size[i] = sizeMin + Math.random() * (sizeMax - sizeMin);
+      phase[i] = Math.random() * Math.PI * 2;
+      tw[i] = Math.random() < 0.1 ? 1 : 0;
+    }
+    g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    g.setAttribute("aSize", new THREE.BufferAttribute(size, 1));
+    g.setAttribute("aPhase", new THREE.BufferAttribute(phase, 1));
+    g.setAttribute("aTw", new THREE.BufferAttribute(tw, 1));
+    const m = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false,
+      uniforms: { uTime: { value: 0 }, uDpr: { value: Math.min(2, devicePixelRatio) } },
+      vertexShader: `
+        attribute float aSize; attribute float aPhase; attribute float aTw;
+        varying float vA;
+        uniform float uTime; uniform float uDpr;
+        void main(){
+          vec4 mv = modelViewMatrix * vec4(position, 1.0);
+          gl_Position = projectionMatrix * mv;
+          gl_PointSize = aSize * uDpr;
+          vA = aTw > 0.5 ? 0.55 + 0.45 * sin(uTime * 3.0 + aPhase) : 1.0;
+        }`,
+      fragmentShader: `
+        varying float vA;
+        void main(){
+          vec2 d = gl_PointCoord - 0.5;
+          float a = smoothstep(0.5, 0.12, length(d)) * vA;
+          gl_FragColor = vec4(vec3(0.92, 0.95, 1.0), a * 0.9);
+        }`,
+    });
+    const p = new THREE.Points(g, m);
+    scene.add(p);
+    starLayers.push({ p, m, par });
+  };
+  const backN = mobile ? 1000 : 2000;
+  mkStars(backN, -12, 26, 0.5, 1.2, 0.3);
+  mkStars(backN, -24, 42, 0.6, 1.6, 0.3);
+  mkStars(backN, -38, 62, 0.8, 2.0, 0.3);
+  mkStars(mobile ? 150 : 320, 4.2, 7, 0.5, 1.1, 1.4);
+
+  const galaxyGroup = new THREE.Group();
+  const galaxySpin = new THREE.Group();
+  {
+    const N = mobile ? 16000 : 40000;
+    const pos = new Float32Array(N * 3);
+    const col = new Float32Array(N * 3);
+    const cCore = new THREE.Color(0xfff5e0);
+    const cMid = new THREE.Color(0xbcd4ff);
+    const cTip = new THREE.Color(0x8a6bd6);
+    const gauss = () => (Math.random() + Math.random() + Math.random() + Math.random() - 2) / 2;
+    const R = 3.4;
+    for (let i = 0; i < N; i++) {
+      let x, y, z, t;
+      if (i < N * 0.18) {
+        t = 0;
+        x = gauss() * 0.34; z = gauss() * 0.34; y = gauss() * 0.16;
+      } else {
+        t = Math.random();
+        const arm = i % 2;
+        const theta = t * 3.6 * Math.PI + arm * Math.PI;
+        const r = 0.22 + Math.pow(t, 1.3) * R;
+        const across = gauss() * (0.09 + 0.26 * t);
+        x = Math.cos(theta) * r - Math.sin(theta) * across;
+        z = Math.sin(theta) * r + Math.cos(theta) * across;
+        y = gauss() * 0.09 * (1 - t * 0.55);
+      }
+      pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z;
+      const c = t < 0.3
+        ? cCore.clone().lerp(cMid, t / 0.3)
+        : cMid.clone().lerp(cTip, (t - 0.3) / 0.7);
+      col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b;
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    g.setAttribute("color", new THREE.BufferAttribute(col, 3));
+    const m = new THREE.PointsMaterial({ size: 0.028, vertexColors: true,
+      transparent: true, opacity: 0.8, depthWrite: false,
+      blending: THREE.AdditiveBlending });
+    galaxySpin.add(new THREE.Points(g, m));
+    galaxyGroup.add(galaxySpin);
+    galaxyGroup.position.set(-7.2, 4.0, -16);
+    galaxyGroup.rotation.set(THREE.MathUtils.degToRad(-60), 0, THREE.MathUtils.degToRad(-18));
+    scene.add(galaxyGroup);
+  }
+  const galaxyBase = galaxyGroup.position.clone();
+
+  const nebulae = [];
+  {
+    const frag = `
+      uniform float uTime; uniform vec3 uColA; uniform vec3 uColB;
+      uniform float uOpacity; uniform vec2 uDrift;
+      varying vec2 vUv;
+      float hash(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+      float noise(vec2 p){
+        vec2 i = floor(p), f = fract(p);
+        vec2 u = f * f * (3.0 - 2.0 * f);
+        return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), u.x),
+                   mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), u.x), u.y);
+      }
+      float fbm(vec2 p){
+        float v = 0.0, a = 0.5;
+        for (int i = 0; i < 5; i++){ v += a * noise(p); p *= 2.03; a *= 0.5; }
+        return v;
+      }
+      void main(){
+        vec2 uv = vUv + uDrift * sin(uTime * 0.05 + uDrift.x * 7.0);
+        float n = fbm(uv * 3.0 + uDrift * 20.0);
+        float rad = 1.0 - smoothstep(0.15, 0.62, distance(vUv, vec2(0.5)));
+        float a = smoothstep(0.35, 0.75, n) * rad * uOpacity;
+        vec3 c = mix(uColA, uColB, fbm(uv * 5.0));
+        gl_FragColor = vec4(c, a);
+      }`;
+    const vert = `varying vec2 vUv;
+      void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`;
+    for (const sp of [
+      { s: 15, p: [6.8, -4.2, -12], op: 0.18, drift: [0.010, 0.006] },
+      { s: 19, p: [8.5, -2.0, -17], op: 0.12, drift: [0.006, 0.011] },
+      { s: 13, p: [-10.5, 1.5, -15], op: 0.13, drift: [0.013, 0.004] },
+    ]) {
+      const m = new THREE.ShaderMaterial({
+        transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+        uniforms: {
+          uTime: { value: 0 },
+          uColA: { value: new THREE.Color(0x6b2d7a) },
+          uColB: { value: new THREE.Color(0xb96bc6) },
+          uOpacity: { value: sp.op },
+          uDrift: { value: new THREE.Vector2(...sp.drift) },
+        },
+        vertexShader: vert, fragmentShader: frag,
+      });
+      const mesh = new THREE.Mesh(new THREE.PlaneGeometry(sp.s, sp.s), m);
+      mesh.position.set(...sp.p);
+      mesh.userData.base = mesh.position.clone();
+      scene.add(mesh);
+      nebulae.push(mesh);
+    }
+  }
+
+  const flareTex = (() => {
+    const c = document.createElement("canvas");
+    c.width = c.height = 128;
+    const x = c.getContext("2d");
+    const rg = x.createRadialGradient(64, 64, 0, 64, 64, 64);
+    rg.addColorStop(0, "rgba(255,255,255,1)");
+    rg.addColorStop(0.12, "rgba(255,255,255,0.6)");
+    rg.addColorStop(0.4, "rgba(200,215,255,0.12)");
+    rg.addColorStop(1, "rgba(0,0,0,0)");
+    x.fillStyle = rg; x.fillRect(0, 0, 128, 128);
+    const arm = () => {
+      const lg = x.createLinearGradient(2, 64, 126, 64);
+      lg.addColorStop(0, "rgba(255,255,255,0)");
+      lg.addColorStop(0.5, "rgba(255,255,255,0.85)");
+      lg.addColorStop(1, "rgba(255,255,255,0)");
+      x.fillStyle = lg; x.fillRect(2, 62.7, 124, 2.6);
+    };
+    arm();
+    x.save(); x.translate(64, 64); x.rotate(Math.PI / 2); x.translate(-64, -64);
+    arm(); x.restore();
+    return new THREE.CanvasTexture(c);
+  })();
+  const softTex = (() => {
+    const c = document.createElement("canvas");
+    c.width = c.height = 128;
+    const x = c.getContext("2d");
+    const rg = x.createRadialGradient(64, 64, 0, 64, 64, 64);
+    rg.addColorStop(0, "rgba(255,255,255,0.9)");
+    rg.addColorStop(0.5, "rgba(255,255,255,0.25)");
+    rg.addColorStop(1, "rgba(255,255,255,0)");
+    x.fillStyle = rg; x.fillRect(0, 0, 128, 128);
+    return new THREE.CanvasTexture(c);
+  })();
+
+  for (const [x, y, z, s] of [[-4.4, 2.9, -9, 1.2], [3.8, 3.5, -11, 0.95],
+    [-6.4, -2.2, -13, 0.85], [2.6, -4.4, -8, 0.7], [6.2, 1.8, -14, 1.0]]) {
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: flareTex,
+      transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+      opacity: 0.95 }));
+    sp.position.set(x, y, z);
+    sp.scale.setScalar(s);
+    scene.add(sp);
+  }
+
+  const shoot = new THREE.Sprite(new THREE.SpriteMaterial({ map: flareTex,
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }));
+  shoot.scale.set(0.5, 0.14, 1);
+  scene.add(shoot);
+  let shootT = -1, shootNext = 8;
+  const shootFrom = new THREE.Vector3(), shootTo = new THREE.Vector3();
+
+  const ASTRO_Z = 2;
+  const HV = Math.tan(THREE.MathUtils.degToRad(22.5)) * (8 - ASTRO_Z);
+  const astroGroup = new THREE.Group();
+  astroGroup.position.set(0, 0.4, ASTRO_Z);
+  scene.add(astroGroup);
+  let astroBaseY = 0.4, astroPlane = null, aspect = 2 / 3;
+
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: softTex,
+    color: 0xffb36b, transparent: true, depthWrite: false,
+    blending: THREE.AdditiveBlending, opacity: 0.3 }));
+  glow.position.set(-0.85, 1.05, -0.45);
+  glow.scale.setScalar(2.6);
+  astroGroup.add(glow);
+
+  function layoutAstronaut() {
+    if (!astroPlane) return;
+    const full = HV * 2;
+    const sub = landing.querySelector(".pitch");
+    const rect = sub.getBoundingClientRect();
+    const worldY = (px) => (0.5 - px / ch()) * full;
+    let h = 0.6 * full;
+    const bottomLimit = worldY(Math.min(rect.top, ch())) + 0.1;
+    let centerY = bottomLimit + h / 2;
+    const topLimit = HV * 0.99;
+    if (centerY + h / 2 > topLimit) {
+      h = Math.max(0.55 * full, topLimit - bottomLimit);
+      if (h > topLimit - bottomLimit) h = topLimit - bottomLimit;
+      centerY = bottomLimit + h / 2;
+    }
+    astroPlane.scale.set(h * aspect, h, 1);
+    astroBaseY = centerY;
+    glow.position.set(-h * aspect * 0.42, h * 0.34, -0.45);
+    glow.scale.setScalar(h * 0.95);
+  }
+
+  let sceneReady = false;
+  const markReady = () => {
+    if (sceneReady) return;
+    sceneReady = true;
+    canvas.classList.add("ready");
+    if (reduced) { elapsed = 3; composer.render(); }
+  };
+  new THREE.TextureLoader().load("prototypes/astronaut.png", (tex) => {
+    tex.colorSpace = THREE.SRGBColorSpace;
+    aspect = tex.image.width / tex.image.height;
+    const m = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, toneMapped: false,
+      uniforms: { uMap: { value: tex } },
+      vertexShader: `varying vec2 vUv;
+        void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+      fragmentShader: `
+        uniform sampler2D uMap; varying vec2 vUv;
+        void main(){
+          vec4 c = texture2D(uMap, vUv);
+          float lum = dot(c.rgb, vec3(0.2126, 0.7152, 0.0722));
+          float a = smoothstep(0.02, 0.07, lum);
+          gl_FragColor = vec4(c.rgb, a);
+        }`,
+    });
+    astroPlane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), m);
+    astroGroup.add(astroPlane);
+    layoutAstronaut();
+    markReady();
+  }, undefined, markReady);
+  setTimeout(markReady, 4000);
+  addEventListener("load", () => setTimeout(layoutAstronaut, 300));
+
+  let mx = 0, my = 0, tx = 0, ty = 0;
+  if (!coarse && !reduced) {
+    addEventListener("pointermove", (e) => {
+      tx = (e.clientX / innerWidth - 0.5) * 2;
+      ty = (e.clientY / innerHeight - 0.5) * 2;
+    }, { passive: true });
+  }
+
+  addEventListener("resize", (() => {
+    let t;
+    return () => {
+      clearTimeout(t);
+      t = setTimeout(() => {
+        camera.aspect = cw() / ch();
+        camera.updateProjectionMatrix();
+        renderer.setSize(cw(), ch());
+        composer.setSize(cw(), ch());
+        layoutAstronaut();
+        if (reduced) composer.render();
+      }, 120);
+    };
+  })());
+
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && !reduced && !raf) raf = requestAnimationFrame(tick);
+  });
+
+  const clock = new THREE.Clock();
+  let elapsed = 0, raf = null;
+  function tick() {
+    if (document.hidden || landing.hidden) { raf = null; return; }
+    const dt = Math.min(0.05, clock.getDelta());
+    elapsed += dt;
+
+    mx += (tx - mx) * 0.05;
+    my += (ty - my) * 0.05;
+
+    const bob = Math.sin(elapsed * 2 * Math.PI / 9) * (0.015 * HV * 2);
+    astroGroup.position.y = astroBaseY + bob - my * 0.1;
+    astroGroup.position.x = -mx * 0.6;
+    astroGroup.rotation.z = Math.sin(elapsed * 2 * Math.PI / 14) * THREE.MathUtils.degToRad(3);
+
+    for (const L of starLayers) {
+      L.m.uniforms.uTime.value = elapsed;
+      L.p.position.x = -mx * 0.6 * L.par;
+      L.p.position.y = my * 0.42 * L.par;
+    }
+
+    galaxySpin.rotation.y += dt * (2 * Math.PI / 600);
+    galaxyGroup.position.x = galaxyBase.x - mx * 0.6 * 0.5;
+    galaxyGroup.position.y = galaxyBase.y + my * 0.42 * 0.5;
+    for (const nb of nebulae) {
+      nb.material.uniforms.uTime.value = elapsed;
+      nb.position.x = nb.userData.base.x - mx * 0.6 * 0.5;
+      nb.position.y = nb.userData.base.y + my * 0.42 * 0.5;
+    }
+
+    if (shootT < 0) {
+      shootNext -= dt;
+      if (shootNext <= 0) {
+        shootT = 0;
+        const y0 = 2 + Math.random() * 3;
+        shootFrom.set(-14 - Math.random() * 4, y0, -30);
+        shootTo.set(14 + Math.random() * 4, y0 - 3 - Math.random() * 3, -30);
+        shootNext = 22 + Math.random() * 6;
+      }
+    } else {
+      shootT += dt / 1.3;
+      if (shootT >= 1) { shootT = -1; shoot.material.opacity = 0; }
+      else {
+        shoot.position.lerpVectors(shootFrom, shootTo, shootT);
+        shoot.material.opacity = Math.sin(shootT * Math.PI) * 0.8;
+      }
+    }
+
+    camera.position.x = Math.sin(elapsed * 0.11) * 0.14;
+    camera.position.y = Math.sin(elapsed * 0.07 + 1.3) * 0.1;
+    camera.lookAt(0, 0, 0);
+
+    composer.render();
+    if (!reduced) raf = requestAnimationFrame(tick);
+  }
+  window.resumeSpace = () => {
+    if (!raf && !reduced) { clock.getDelta(); raf = requestAnimationFrame(tick); }
+    else if (reduced) composer.render();
+  };
+  if (!reduced) raf = requestAnimationFrame(tick);
+} else {
+  document.body.classList.add("no-webgl");
+}
 </script>
 </body>
 </html>
