@@ -49,11 +49,15 @@
   .nav .cta:hover { background: #fff; }
 
   main { position: relative; z-index: 10; }
-  .hero { min-height: 100svh; display: flex; flex-direction: column; align-items: center;
-    justify-content: center; text-align: center; padding: 96px 20px 48px; }
+  .hero { position: relative; min-height: 100svh; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    padding: 96px 20px 48px; }
+  .hero::after { content: ""; position: absolute; left: 50%; top: 56%;
+    transform: translateX(-50%); width: min(680px, 92vw); height: 380px; z-index: -1;
+    background: radial-gradient(closest-side, rgba(0,0,0,0.25), transparent); }
   .hero h1 { font-family: "Playfair Display", Georgia, serif; font-weight: 500;
-    font-size: clamp(3rem, 9vw, 8rem); line-height: 1.02; letter-spacing: -0.01em;
-    color: #fff; position: relative; }
+    font-size: clamp(2.6rem, 6.5vw, 5.5rem); line-height: 1.04; letter-spacing: -0.01em;
+    color: #fff; position: relative; margin-top: 9vh; }
   .hero h1 .l2 { font-style: italic; display: block; }
   .hero h1::before { content: ""; position: absolute; inset: -12% -18%;
     background: radial-gradient(ellipse at center, rgba(0,0,0,0.22) 0%, transparent 70%);
@@ -151,14 +155,15 @@
 </script>
 <script type="module">
 import * as THREE from "three";
-import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
 const canvas = document.getElementById("space");
 const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const coarse = matchMedia("(pointer: coarse)").matches;
-const small = innerWidth < 700;
-const mobile = coarse || small;
+const mobile = coarse || innerWidth < 700;
 
 let renderer;
 try {
@@ -172,25 +177,25 @@ if (renderer) {
   renderer.setPixelRatio(Math.min(2, devicePixelRatio));
   renderer.setSize(innerWidth, innerHeight);
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 1.1;
+  renderer.toneMappingExposure = 1.15;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
 
   const scene = new THREE.Scene();
   scene.fog = new THREE.FogExp2(0x000000, 0.02);
-  // Near-black gradient background via large plane behind everything
   {
-    const bgGeo = new THREE.PlaneGeometry(2, 2);
     const bgMat = new THREE.ShaderMaterial({
       depthWrite: false, depthTest: false,
+      uniforms: { uH: { value: innerHeight } },
       vertexShader: `void main(){ gl_Position = vec4(position.xy, 1.0, 1.0); }`,
       fragmentShader: `
+        uniform float uH;
         void main(){
-          float t = gl_FragCoord.y / max(1.0, float(${innerHeight}));
+          float t = gl_FragCoord.y / max(1.0, uH);
           vec3 c = mix(vec3(0.039, 0.039, 0.071), vec3(0.0), t);
           gl_FragColor = vec4(c, 1.0);
         }`,
     });
-    const bg = new THREE.Mesh(bgGeo, bgMat);
+    const bg = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), bgMat);
     bg.frustumCulled = false;
     bg.renderOrder = -10;
     scene.add(bg);
@@ -199,28 +204,25 @@ if (renderer) {
   const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 200);
   camera.position.set(0, 0, 8);
 
-  const pmrem = new THREE.PMREMGenerator(renderer);
-  scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+  /* ---------- post: bloom ---------- */
+  const composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  composer.addPass(new UnrealBloomPass(
+    new THREE.Vector2(innerWidth, innerHeight), 0.35, 0.4, 0.85));
+  composer.addPass(new OutputPass());
 
-  /* ---------- lights ---------- */
-  const key = new THREE.DirectionalLight(0xfff2e0, 2.4);
-  key.position.set(-5, 6, 4);
-  scene.add(key);
-  const fill = new THREE.PointLight(0xb96bc6, 6, 30, 2);
-  fill.position.set(5, -3, 2);
-  scene.add(fill);
+  /* ---------- lights (for glow sprites only; astronaut is unlit) ---------- */
   scene.add(new THREE.AmbientLight(0xffffff, 0.1));
 
-  /* ---------- starfield: 3 depth layers, ~10% twinkle ---------- */
+  /* ---------- starfield: 3 back layers + 1 sparse front layer ---------- */
   const starLayers = [];
-  const starCount = mobile ? 750 : 1500;
-  const mkStars = (z, spread, sizeMin, sizeMax) => {
+  const mkStars = (count, z, spread, sizeMin, sizeMax, par) => {
     const g = new THREE.BufferGeometry();
-    const pos = new Float32Array(starCount * 3);
-    const size = new Float32Array(starCount);
-    const phase = new Float32Array(starCount);
-    const tw = new Float32Array(starCount);
-    for (let i = 0; i < starCount; i++) {
+    const pos = new Float32Array(count * 3);
+    const size = new Float32Array(count);
+    const phase = new Float32Array(count);
+    const tw = new Float32Array(count);
+    for (let i = 0; i < count; i++) {
       pos[i * 3] = (Math.random() - 0.5) * spread * 2.4;
       pos[i * 3 + 1] = (Math.random() - 0.5) * spread * 1.5;
       pos[i * 3 + 2] = z - Math.random() * 6;
@@ -255,43 +257,62 @@ if (renderer) {
     });
     const p = new THREE.Points(g, m);
     scene.add(p);
-    starLayers.push({ p, m, depthFactor: (10 + z) / 10 });
+    starLayers.push({ p, m, par });
   };
-  mkStars(-12, 26, 0.5, 1.2);
-  mkStars(-24, 42, 0.6, 1.6);
-  mkStars(-38, 62, 0.8, 2.0);
+  const backN = mobile ? 1000 : 2000;
+  mkStars(backN, -12, 26, 0.5, 1.2, 0.3);
+  mkStars(backN, -24, 42, 0.6, 1.6, 0.3);
+  mkStars(backN, -38, 62, 0.8, 2.0, 0.3);
+  mkStars(mobile ? 150 : 320, 4.2, 7, 0.5, 1.1, 1.4);   // sparse stars IN FRONT of the astronaut
 
-  /* ---------- spiral galaxy, upper-left ---------- */
-  const galaxy = new THREE.Group();
+  /* ---------- spiral galaxy, upper-left: two log arms, gaussian scatter ---------- */
+  const galaxyGroup = new THREE.Group();
+  const galaxySpin = new THREE.Group();
   {
-    const N = mobile ? 4000 : 8000;
-    const g = new THREE.BufferGeometry();
+    const N = mobile ? 16000 : 40000;
     const pos = new Float32Array(N * 3);
     const col = new Float32Array(N * 3);
-    const cCore = new THREE.Color(0xfff3dc), cTip = new THREE.Color(0x8a6bd6);
+    const cCore = new THREE.Color(0xfff5e0);
+    const cMid = new THREE.Color(0xbcd4ff);
+    const cTip = new THREE.Color(0x8a6bd6);
+    const gauss = () => (Math.random() + Math.random() + Math.random() + Math.random() - 2) / 2;
+    const R = 3.4;
     for (let i = 0; i < N; i++) {
-      const arm = i % 2;
-      const r = Math.pow(Math.random(), 1.6) * 3.2;
-      const ang = arm * Math.PI + r * 2.6 + (Math.random() - 0.5) * 0.55 * (1 - r / 4);
-      const y = (Math.random() - 0.5) * 0.16 * (1 - r / 3.4);
-      pos[i * 3] = Math.cos(ang) * r;
-      pos[i * 3 + 1] = y;
-      pos[i * 3 + 2] = Math.sin(ang) * r;
-      const c = cCore.clone().lerp(cTip, Math.min(1, r / 3.2));
+      let x, y, z, t;
+      if (i < N * 0.18) {                     // dense core bulge
+        t = 0;
+        x = gauss() * 0.34; z = gauss() * 0.34; y = gauss() * 0.16;
+      } else {
+        t = Math.random();
+        const arm = i % 2;
+        const theta = t * 3.6 * Math.PI + arm * Math.PI;
+        const r = 0.22 + Math.pow(t, 1.3) * R;
+        const across = gauss() * (0.09 + 0.26 * t);
+        x = Math.cos(theta) * r - Math.sin(theta) * across;
+        z = Math.sin(theta) * r + Math.cos(theta) * across;
+        y = gauss() * 0.09 * (1 - t * 0.55);
+      }
+      pos[i * 3] = x; pos[i * 3 + 1] = y; pos[i * 3 + 2] = z;
+      const c = t < 0.3
+        ? cCore.clone().lerp(cMid, t / 0.3)
+        : cMid.clone().lerp(cTip, (t - 0.3) / 0.7);
       col[i * 3] = c.r; col[i * 3 + 1] = c.g; col[i * 3 + 2] = c.b;
     }
+    const g = new THREE.BufferGeometry();
     g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
     g.setAttribute("color", new THREE.BufferAttribute(col, 3));
-    const m = new THREE.PointsMaterial({ size: 0.02, vertexColors: true,
-      transparent: true, opacity: 0.85, depthWrite: false,
+    const m = new THREE.PointsMaterial({ size: 0.028, vertexColors: true,
+      transparent: true, opacity: 0.8, depthWrite: false,
       blending: THREE.AdditiveBlending });
-    galaxy.add(new THREE.Points(g, m));
-    galaxy.position.set(-7.5, 4.2, -14);
-    galaxy.rotation.set(THREE.MathUtils.degToRad(62), 0, THREE.MathUtils.degToRad(-18));
-    scene.add(galaxy);
+    galaxySpin.add(new THREE.Points(g, m));
+    galaxyGroup.add(galaxySpin);
+    galaxyGroup.position.set(-7.2, 4.0, -16);
+    galaxyGroup.rotation.set(THREE.MathUtils.degToRad(-60), 0, THREE.MathUtils.degToRad(-18));
+    scene.add(galaxyGroup);
   }
+  const galaxyBase = galaxyGroup.position.clone();
 
-  /* ---------- nebula wisps, lower-right (procedural fbm alpha) ---------- */
+  /* ---------- nebula wisps: fbm shader planes, additive ---------- */
   const nebulae = [];
   {
     const frag = `
@@ -321,13 +342,13 @@ if (renderer) {
     const vert = `varying vec2 vUv;
       void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`;
     const specs = [
-      { s: 14, p: [6.5, -4.5, -12], op: 0.20, drift: [0.010, 0.006] },
-      { s: 18, p: [8.5, -2.5, -16], op: 0.14, drift: [0.006, 0.011] },
-      { s: 11, p: [5.0, -6.0, -10], op: 0.11, drift: [0.013, 0.004] },
+      { s: 15, p: [6.8, -4.2, -12], op: 0.18, drift: [0.010, 0.006] },
+      { s: 19, p: [8.5, -2.0, -17], op: 0.12, drift: [0.006, 0.011] },
+      { s: 13, p: [-10.5, 1.5, -15], op: 0.13, drift: [0.013, 0.004] },
     ];
     for (const sp of specs) {
       const m = new THREE.ShaderMaterial({
-        transparent: true, depthWrite: false,
+        transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
         uniforms: {
           uTime: { value: 0 },
           uColA: { value: new THREE.Color(0x6b2d7a) },
@@ -339,12 +360,13 @@ if (renderer) {
       });
       const mesh = new THREE.Mesh(new THREE.PlaneGeometry(sp.s, sp.s), m);
       mesh.position.set(...sp.p);
+      mesh.userData.base = mesh.position.clone();
       scene.add(mesh);
-      nebulae.push(m);
+      nebulae.push(mesh);
     }
   }
 
-  /* ---------- hero stars with cross flares ---------- */
+  /* ---------- textures for flares/glow ---------- */
   const flareTex = (() => {
     const c = document.createElement("canvas");
     c.width = c.height = 128;
@@ -355,24 +377,36 @@ if (renderer) {
     rg.addColorStop(0.4, "rgba(200,215,255,0.12)");
     rg.addColorStop(1, "rgba(0,0,0,0)");
     x.fillStyle = rg; x.fillRect(0, 0, 128, 128);
-    const arm = (w, h) => {
-      const lg = x.createLinearGradient(64 - w, 64, 64 + w, 64);
+    const arm = () => {
+      const lg = x.createLinearGradient(2, 64, 126, 64);
       lg.addColorStop(0, "rgba(255,255,255,0)");
       lg.addColorStop(0.5, "rgba(255,255,255,0.85)");
       lg.addColorStop(1, "rgba(255,255,255,0)");
-      x.fillStyle = lg; x.fillRect(64 - w, 64 - h / 2, w * 2, h);
+      x.fillStyle = lg; x.fillRect(2, 62.7, 124, 2.6);
     };
-    arm(62, 2.6);
+    arm();
     x.save(); x.translate(64, 64); x.rotate(Math.PI / 2); x.translate(-64, -64);
-    arm(62, 2.6); x.restore();
+    arm(); x.restore();
     return new THREE.CanvasTexture(c);
   })();
-  const heroStars = [[-4.2, 2.8, -9, 1.15], [3.6, 3.4, -11, 0.9],
-    [-6.2, -2.4, -13, 0.8], [2.4, -4.6, -8, 0.7]];
-  for (const [x, y, z, s] of heroStars) {
+  const softTex = (() => {
+    const c = document.createElement("canvas");
+    c.width = c.height = 128;
+    const x = c.getContext("2d");
+    const rg = x.createRadialGradient(64, 64, 0, 64, 64, 64);
+    rg.addColorStop(0, "rgba(255,255,255,0.9)");
+    rg.addColorStop(0.5, "rgba(255,255,255,0.25)");
+    rg.addColorStop(1, "rgba(255,255,255,0)");
+    x.fillStyle = rg; x.fillRect(0, 0, 128, 128);
+    return new THREE.CanvasTexture(c);
+  })();
+
+  /* ---------- 5 bright hero stars with cross flares ---------- */
+  for (const [x, y, z, s] of [[-4.4, 2.9, -9, 1.2], [3.8, 3.5, -11, 0.95],
+    [-6.4, -2.2, -13, 0.85], [2.6, -4.4, -8, 0.7], [6.2, 1.8, -14, 1.0]]) {
     const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: flareTex,
       transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
-      opacity: 0.9 }));
+      opacity: 0.95 }));
     sp.position.set(x, y, z);
     sp.scale.setScalar(s);
     scene.add(sp);
@@ -383,92 +417,78 @@ if (renderer) {
     transparent: true, depthWrite: false, blending: THREE.AdditiveBlending, opacity: 0 }));
   shoot.scale.set(0.5, 0.14, 1);
   scene.add(shoot);
-  let shootT = -1, shootNext = 6, shootFrom = new THREE.Vector3(), shootTo = new THREE.Vector3();
+  let shootT = -1, shootNext = 8;
+  const shootFrom = new THREE.Vector3(), shootTo = new THREE.Vector3();
 
-  /* ---------- the astronaut ---------- */
-  // Falling pose: head-down toward camera, tilted back, limbs spread.
-  const FALL_ROT = new THREE.Euler(-1.05, 0.25, 0.4);
-  const astro = new THREE.Group();
-  astro.rotation.copy(FALL_ROT);
-  const targetH = mobile ? 1.7 : 2.1;   // ~35% / ~42% of viewport height at z=2
-  astro.position.set(0, -1.0, 2);
-  scene.add(astro);
+  /* ---------- THE ASTRONAUT: photoreal PNG on a keyed plane ----------
+     astronaut.png — AI-generated for this project (black background keyed
+     out in-shader; near-black luminance -> transparent, soft falloff). */
+  const ASTRO_Z = 2;
+  const HV = Math.tan(THREE.MathUtils.degToRad(22.5)) * (8 - ASTRO_Z); // half-height of viewport at astronaut depth
+  const astroGroup = new THREE.Group();
+  astroGroup.position.set(0, 0.4, ASTRO_Z);
+  scene.add(astroGroup);
+  let astroBaseY = 0.4, astroPlane = null, aspect = 2 / 3;
 
-  // Procedural stand-in (also the permanent fallback): rust suit, white helmet, gold visor.
-  const standin = new THREE.Group();
-  {
-    const suit = new THREE.MeshPhysicalMaterial({ color: 0xb65a2e, roughness: 0.55,
-      metalness: 0.05, clearcoat: 0.3, clearcoatRoughness: 0.6 });
-    const white = new THREE.MeshPhysicalMaterial({ color: 0xe9e6df, roughness: 0.4,
-      metalness: 0.05, clearcoat: 0.5 });
-    const gold = new THREE.MeshPhysicalMaterial({ color: 0xd8a032, roughness: 0.12,
-      metalness: 1.0, clearcoat: 1.0, envMapIntensity: 2.0 });
-    const dark = new THREE.MeshStandardMaterial({ color: 0x3a3a40, roughness: 0.7 });
-    const torso = new THREE.Mesh(new THREE.CapsuleGeometry(0.34, 0.55, 6, 16), suit);
-    standin.add(torso);
-    const pack = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.62, 0.24), white);
-    pack.position.set(0, 0.05, -0.34); standin.add(pack);
-    const chest = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.2, 0.1), dark);
-    chest.position.set(0, 0.18, 0.33); standin.add(chest);
-    const helmet = new THREE.Mesh(new THREE.SphereGeometry(0.3, 24, 18), white);
-    helmet.position.set(0, 0.72, 0); standin.add(helmet);
-    const visor = new THREE.Mesh(
-      new THREE.SphereGeometry(0.26, 24, 18, -Math.PI / 3, Math.PI * 2 / 3, Math.PI / 4, Math.PI / 2.4), gold);
-    visor.position.set(0, 0.72, 0.06);
-    visor.rotation.y = -Math.PI / 2 + Math.PI / 2; standin.add(visor);
-    const limb = (r, len, mat) => new THREE.Mesh(new THREE.CapsuleGeometry(r, len, 4, 10), mat);
-    const armL = limb(0.11, 0.5, suit);
-    armL.position.set(-0.52, 0.28, 0.06); armL.rotation.z = 1.15; armL.rotation.x = -0.25;
-    standin.add(armL);
-    const armR = limb(0.11, 0.5, suit);
-    armR.position.set(0.55, 0.22, -0.04); armR.rotation.z = -1.3; armR.rotation.x = 0.2;
-    standin.add(armR);
-    const gloveL = new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 10), white);
-    gloveL.position.set(-0.86, 0.44, 0.1); standin.add(gloveL);
-    const gloveR = new THREE.Mesh(new THREE.SphereGeometry(0.12, 12, 10), white);
-    gloveR.position.set(0.9, 0.34, -0.08); standin.add(gloveR);
-    const legL = limb(0.13, 0.55, suit);
-    legL.position.set(-0.18, -0.62, 0.16); legL.rotation.x = -0.55; legL.rotation.z = 0.18;
-    standin.add(legL);
-    const legR = limb(0.13, 0.6, suit);
-    legR.position.set(0.2, -0.68, -0.06); legR.rotation.x = 0.25; legR.rotation.z = -0.12;
-    standin.add(legR);
-    const bootL = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.16, 0.3), dark);
-    bootL.position.set(-0.3, -0.9, 0.42); bootL.rotation.x = -0.5; standin.add(bootL);
-    const bootR = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.16, 0.3), dark);
-    bootR.position.set(0.28, -1.02, -0.14); standin.add(bootR);
-    const box = new THREE.Box3().setFromObject(standin);
-    const h = box.max.y - box.min.y;
-    standin.scale.setScalar(targetH / h);
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({ map: softTex,
+    color: 0xffb36b, transparent: true, depthWrite: false,
+    blending: THREE.AdditiveBlending, opacity: 0.3 }));
+  glow.position.set(-0.85, 1.05, -0.45);
+  glow.scale.setScalar(2.6);
+  astroGroup.add(glow);
+
+  function layoutAstronaut() {
+    if (!astroPlane) return;
+    const full = HV * 2;
+    const sub = document.querySelector(".sub");
+    const rect = sub.getBoundingClientRect();
+    const worldY = (px) => (0.5 - px / innerHeight) * full;
+    let h = 0.6 * full;                                    // 60% of viewport height
+    const bottomLimit = worldY(Math.min(rect.top, innerHeight)) + 0.1; // boots stay above the subtext
+    let centerY = bottomLimit + h / 2;
+    const topLimit = HV * 0.99;
+    if (centerY + h / 2 > topLimit) {
+      h = Math.max(0.55 * full, topLimit - bottomLimit);
+      if (h > topLimit - bottomLimit) h = topLimit - bottomLimit; // hard rule wins
+      centerY = bottomLimit + h / 2;
+    }
+    astroPlane.scale.set(h * aspect, h, 1);
+    astroBaseY = centerY;
+    glow.position.set(-h * aspect * 0.42, h * 0.34, -0.45);
+    glow.scale.setScalar(h * 0.95);
   }
-  astro.add(standin);
 
-  // Try to upgrade to a GLTF astronaut. Model: "Astronaut" — Poly by Google,
-  // CC-BY 4.0, served from Google's model-viewer shared assets. Suit re-tinted
-  // rust-orange in code. If it fails, the stand-in above simply remains.
-  new GLTFLoader().load(
-    "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
-    (gltf) => {
-      const model = gltf.scene;
-      model.traverse((o) => {
-        if (o.isMesh && o.material) {
-          o.material = o.material.clone();
-          o.material.color = new THREE.Color(0xb65a2e);
-          o.material.roughness = 0.55;
-          o.material.envMapIntensity = 1.2;
-        }
-      });
-      const box = new THREE.Box3().setFromObject(model);
-      const h = box.max.y - box.min.y;
-      model.scale.setScalar(targetH / h);
-      const c = new THREE.Box3().setFromObject(model).getCenter(new THREE.Vector3());
-      model.position.sub(c);
-      astro.remove(standin);
-      astro.add(model);
-    },
-    undefined,
-    () => {} // stand-in remains on error
-  );
+  let sceneReady = false;
+  const markReady = () => {
+    if (sceneReady) return;
+    sceneReady = true;
+    canvas.classList.add("ready");
+    if (reduced) { elapsed = 3; composer.render(); }
+  };
+  new THREE.TextureLoader().load("astronaut.png", (tex) => {
+    tex.colorSpace = THREE.SRGBColorSpace;
+    aspect = tex.image.width / tex.image.height;
+    const m = new THREE.ShaderMaterial({
+      transparent: true, depthWrite: false, toneMapped: false,
+      uniforms: { uMap: { value: tex } },
+      vertexShader: `varying vec2 vUv;
+        void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }`,
+      fragmentShader: `
+        uniform sampler2D uMap; varying vec2 vUv;
+        void main(){
+          vec4 c = texture2D(uMap, vUv);
+          float lum = dot(c.rgb, vec3(0.2126, 0.7152, 0.0722));
+          float a = smoothstep(0.02, 0.07, lum);
+          gl_FragColor = vec4(c.rgb, a);
+        }`,
+    });
+    astroPlane = new THREE.Mesh(new THREE.PlaneGeometry(1, 1), m);
+    astroGroup.add(astroPlane);
+    layoutAstronaut();
+    markReady();
+  }, undefined, markReady); // scene still fades in without him if the texture fails
+  setTimeout(markReady, 4000);
+  addEventListener("load", () => setTimeout(layoutAstronaut, 300)); // after fonts settle
 
   /* ---------- interaction state ---------- */
   let mx = 0, my = 0, tx = 0, ty = 0;
@@ -491,7 +511,9 @@ if (renderer) {
         camera.aspect = innerWidth / innerHeight;
         camera.updateProjectionMatrix();
         renderer.setSize(innerWidth, innerHeight);
-        if (reduced) renderer.render(scene, camera);
+        composer.setSize(innerWidth, innerHeight);
+        layoutAstronaut();
+        if (reduced) composer.render();
       }, 120);
     };
   })());
@@ -510,31 +532,32 @@ if (renderer) {
     const dt = Math.min(0.05, clock.getDelta());
     elapsed += dt;
 
-    // eased parallax
     mx += (tx - mx) * 0.05;
     my += (ty - my) * 0.05;
 
-    // astronaut: incommensurate tumble + bob + scroll fall
-    astro.rotation.x = FALL_ROT.x + Math.sin(elapsed * 0.021 * 2 * Math.PI) * 0.001 + elapsed * 0.023;
-    astro.rotation.y = FALL_ROT.y + elapsed * 0.017;
-    astro.rotation.z = FALL_ROT.z + elapsed * 0.013;
-    const bob = Math.sin(elapsed * 2 * Math.PI / 8) * 0.1;
-    astro.position.y = -1.0 + bob - scrollP * 1.6 - my * 0.12;
-    astro.position.x = 0 - mx * 0.18;
+    // astronaut: bob ±1.5% viewport / 9s, z-rot ±3° / 14s, parallax x1.0, scroll fall
+    const bob = Math.sin(elapsed * 2 * Math.PI / 9) * (0.015 * HV * 2);
+    astroGroup.position.y = astroBaseY + bob - scrollP * 1.4 - my * 0.1;
+    astroGroup.position.x = -mx * 0.6;
+    astroGroup.rotation.z = Math.sin(elapsed * 2 * Math.PI / 14) * THREE.MathUtils.degToRad(3);
     const s = 1 - scrollP * 0.1;
-    astro.scale.setScalar(s);
+    astroGroup.scale.setScalar(s);
 
-    // star layer parallax + twinkle
     for (const L of starLayers) {
       L.m.uniforms.uTime.value = elapsed;
-      L.p.position.x = -mx * 0.5 * L.depthFactor;
-      L.p.position.y = my * 0.35 * L.depthFactor;
+      L.p.position.x = -mx * 0.6 * L.par;
+      L.p.position.y = my * 0.42 * L.par;
     }
 
-    galaxy.rotation.y += dt * (2 * Math.PI / 600);
-    for (const nm of nebulae) nm.uniforms.uTime.value = elapsed;
+    galaxySpin.rotation.y += dt * (2 * Math.PI / 600);
+    galaxyGroup.position.x = galaxyBase.x - mx * 0.6 * 0.5;
+    galaxyGroup.position.y = galaxyBase.y + my * 0.42 * 0.5;
+    for (const nb of nebulae) {
+      nb.material.uniforms.uTime.value = elapsed;
+      nb.position.x = nb.userData.base.x - mx * 0.6 * 0.5;
+      nb.position.y = nb.userData.base.y + my * 0.42 * 0.5;
+    }
 
-    // shooting star scheduler
     if (shootT < 0) {
       shootNext -= dt;
       if (shootNext <= 0) {
@@ -542,7 +565,7 @@ if (renderer) {
         const y0 = 2 + Math.random() * 3;
         shootFrom.set(-14 - Math.random() * 4, y0, -30);
         shootTo.set(14 + Math.random() * 4, y0 - 3 - Math.random() * 3, -30);
-        shootNext = 20 + Math.random() * 10;
+        shootNext = 22 + Math.random() * 6;
       }
     } else {
       shootT += dt / 1.3;
@@ -553,25 +576,14 @@ if (renderer) {
       }
     }
 
-    // ambient camera lissajous drift
     camera.position.x = Math.sin(elapsed * 0.11) * 0.14;
     camera.position.y = Math.sin(elapsed * 0.07 + 1.3) * 0.1;
     camera.lookAt(0, 0, 0);
 
-    renderer.render(scene, camera);
+    composer.render();
     if (!reduced) requestAnimationFrame(tick);
   }
-
-  // fade in once first frame is composed
-  renderer.render(scene, camera);
-  canvas.classList.add("ready");
-  if (reduced) {
-    // static composed frame: advance to a pleasing moment, render once
-    elapsed = 3;
-    renderer.render(scene, camera);
-  } else {
-    requestAnimationFrame(tick);
-  }
+  if (!reduced) requestAnimationFrame(tick);
 } else {
   document.body.classList.add("no-webgl");
 }
