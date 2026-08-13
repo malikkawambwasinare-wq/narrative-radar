@@ -1,0 +1,49 @@
+{
+  "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
+  "updated": "2026-08-13",
+  "claims": [
+    {
+      "id": "open-source-models-beat-frontier-closed-models",
+      "type": "contested",
+      "statement": "New open-source models (MiniMax M2.5/M2.7/M3, Qwen 3.6, Nex-N2 Pro) match or beat frontier closed models like Claude Opus at far lower cost.",
+      "note": "Trackable via repeated 'beats Opus, 50x cheaper' claims; verdicts flag these as derivative hype, so independent benchmark confirmation is the test.",
+      "camps": [
+        {
+          "position": "Open-source models now beat top closed models at a fraction of the cost",
+          "sources": [
+            {
+              "videoId": "qb2-wq9MKss",
+              "predictor": "WorldofAI"
+            },
+            {
+              "videoId": "p6Npi-HBoRU",
+              "predictor": "WorldofAI"
+            },
+            {
+              "videoId": "n4XMisTcL0k",
+              "predictor": "WorldofAI"
+            },
+            {
+              "videoId": "dRN9hJyg5Rc",
+              "predictor": "WorldofAI"
+            },
+            {
+              "videoId": "FuUISGqIC3k",
+              "predictor": "WorldofAI"
+            }
+          ]
+        },
+        {
+          "position": "Comparison is open question pending real hands-on testing",
+          "sources": [
+            {
+              "videoId": "Db7N5KeB450",
+              "predictor": "Stefan 3D AI"
+            }
+          ]
+        }
+      ],
+      "sources": null
+    }
+  ]
+}
