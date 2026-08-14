@@ -147,6 +147,72 @@
   .m360-list { margin-top: 10px; font-size: 13px; color: var(--ink-2);
     display: flex; flex-direction: column; gap: 6px; }
   .m360-list b { color: var(--ink); }
+  /* Narrative detail — orientation first, receipts on demand */
+  .util { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end;
+    margin-bottom: 2px; }
+  .util button { font: inherit; font-size: 12px; padding: 3px 11px; cursor: pointer;
+    border-radius: 999px; border: 1px solid var(--hairline); background: none;
+    color: var(--muted); white-space: nowrap; }
+  .util button:hover { color: var(--ink); border-color: var(--border); }
+  .util button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .orient { padding: 2px 0 4px; }
+  .orient .qk, .grp-k, .sec-k { font-size: 11px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  .orient .qtext { font-size: clamp(20px, 3.4vw, 27px); line-height: 1.25;
+    letter-spacing: -0.01em; margin: 4px 0 2px; }
+  .orient .qnone { font-size: 13px; color: var(--muted); margin: 4px 0 2px; }
+  .orient .ansrow { margin-top: 16px; }
+  .orient h2 { font-size: 19px; margin: 3px 0 5px; }
+  .orient .claim { font-size: 14.5px; color: var(--ink-2); line-height: 1.55; max-width: 62ch; }
+  .rread { margin: 16px 0 4px; border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; }
+  .rread .rlead { font-size: 15px; font-weight: 650; }
+  .rread .rdet { font-size: 14px; color: var(--ink-2); line-height: 1.55; margin-top: 3px;
+    max-width: 62ch; }
+  .hnums { display: flex; flex-wrap: wrap; gap: 26px; margin: 18px 0 4px;
+    padding: 14px 0; border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline); }
+  .hnum .hv { font-size: 21px; font-weight: 650; letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums; }
+  .hnum .hv.warn { color: var(--serious); }
+  .hnum .hv.due { color: var(--warning); }
+  .hnum .hl { font-size: 10.5px; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--muted); margin-top: 3px; }
+  .acts { display: flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 6px; }
+  .acts button { font: inherit; font-size: 14px; font-weight: 600; padding: 10px 20px;
+    border-radius: 10px; cursor: pointer; border: 1px solid var(--accent);
+    background: var(--accent); color: #fff; }
+  .acts button.ghost { background: none; color: var(--accent); }
+  .grps { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px 30px; margin: 26px 0 6px; padding-top: 18px;
+    border-top: 1px solid var(--hairline); }
+  .grp-k { margin-bottom: 8px; }
+  .grp .gline { font-size: 14px; line-height: 1.6; }
+  .grp .gsub { font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+  .grp .gbar { height: 4px; border-radius: 2px; background: var(--hairline);
+    margin: 7px 0 6px; overflow: hidden; }
+  .grp .gbar span { display: block; height: 100%; background: var(--accent); }
+  .sec { margin: 30px 0 0; padding-top: 18px; border-top: 1px solid var(--hairline); }
+  .sec-h { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .sec-h .sec-k { flex: none; }
+  .sec-note { font-size: 13.5px; color: var(--ink-2); margin: 8px 0 4px; max-width: 64ch; }
+  .disc { font: inherit; font-size: 13px; background: none; border: none; padding: 0;
+    cursor: pointer; color: var(--accent); }
+  .sec .lead { font-size: 15px; line-height: 1.6; margin: 8px 0 2px; }
+  .abuck { margin: 12px 0 2px; }
+  .abuck .ab-k { font-size: 12px; font-weight: 650; color: var(--ink-2); }
+  .abuck .ab-l { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .abuck .ab-i { font-size: 13px; padding: 4px 12px; border-radius: 999px;
+    border: 1px solid var(--hairline); background: var(--page); cursor: pointer; }
+  .abuck .ab-i.sh { border-style: dashed; color: var(--muted); }
+  .abuck .ab-i:hover { border-color: var(--accent); color: var(--accent); }
+  .chg { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 16px 26px; margin: 12px 0 4px; }
+  .chg .ck2 { font-size: 11px; letter-spacing: 0.07em; text-transform: uppercase;
+    color: var(--muted); }
+  .chg .cv { font-size: 14.5px; line-height: 1.5; margin-top: 3px; }
+  .testrow { margin: 10px 0 2px; font-size: 14px; line-height: 1.6; }
+  .testrow b { font-variant-numeric: tabular-nums; }
+  .testrow .tsub { font-size: 12.5px; color: var(--muted); }
   /* Narrative gallery — the radar's front page */
   .galbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
   .galbar input[type="search"] { flex: 1; min-width: 220px; padding: 11px 16px;
@@ -694,49 +760,85 @@ function computeReceipt(data) {
     claimsCount: claims.length,
   };
 }
-function receiptHtml(data) {
+
+/* ---------- Narrative stats: one place that derives everything the page shows.
+   Wraps computeReceipt and adds mutation, corpus-quality and relation signals. */
+function narrativeStats(data) {
   const r = computeReceipt(data);
-  const tile = (l, v, s) => `<div class="rtile"><div class="rl">${l}</div><div class="rv">${v}</div><div class="rs">${s}</div></div>`;
-  const mY = (t) => new Date(t).toLocaleDateString(undefined, { month: "long", year: "numeric" });
-  const tiles = [], sent = [];
-  if (r.years != null) {
-    tiles.push(tile("Age", `${r.years} yrs`,
-      `born ${esc(r.n.born)} · ${r.verified ? "origin verified" : "unverified"}`));
-    sent.push(`This story is ${r.verified ? "" : "roughly "}${r.years} years old${r.verified ? "" : " (origin unverified)"}.`);
+  const n = data?.narrative || {};
+  const vids = data?.videos?.videos || [];
+  const preds = data?.predictions?.entries || [];
+  const rel = data?.relations?.relations || [];
+  const vcount = {};
+  vids.forEach(v => vcount[v.verdict] = (vcount[v.verdict] || 0) + 1);
+  const reviewed = vids.length - (vcount.UNREVIEWED || 0);
+  const buckets = {};
+  rel.forEach(x => (buckets[x.type] = buckets[x.type] || []).push(x));
+  const dated = preds.filter(e => parseHorizonDate(e.horizon)).length;
+  return {
+    ...r,
+    mutations: n.mutations || [],
+    latestMutation: (n.mutations || [])[(n.mutations || []).length - 1] || null,
+    coreThesis: n.claim || "",
+    vcount, reviewed,
+    originalShare: reviewed ? (vcount.ORIGINAL || 0) / reviewed : null,
+    reheatShare: r.win.length ? r.reheats / r.win.length : null,
+    datedClaims: dated,
+    claimsCount: (data?.claims?.claims || []).length,
+    contestedCount: (data?.claims?.claims || []).filter(c => c.type === "contested").length,
+    buckets,
+    relCount: rel.length,
+    question: data?.relations?.question || null,
+    indicators: data?.indicators?.indicators || [],
+  };
+}
+
+/* Deterministic structural read — describes HOW the narrative behaves, never
+   whether it is true. No model call; every clause is derived from stored data. */
+function buildRadarRead(s) {
+  const old = s.years != null && s.years >= 5;
+  const many = s.mutations.length >= 2;
+  let lead;
+  if (old && many) lead = "Old thesis, evolving mechanism.";
+  else if (old && !many) lead = "Old thesis, stable mechanism.";
+  else if (!old && s.years != null && s.years <= 2) lead = "Young narrative, still forming.";
+  else lead = "Established narrative.";
+  if (s.upd >= 2) lead = old ? "Old thesis, moving clock." : "The clock keeps moving.";
+
+  const bits = [];
+  if (s.years != null) {
+    bits.push(`The core warning has been in circulation for ${s.years === 1 ? "a year" : `${s.years} years`}${s.verified ? "" : " (origin unverified)"}`);
   }
-  if (!r.hasLedger) {
-    tiles.push(tile("Score", "No ledger yet", r.claimsCount ? "claims on file, none dated" : "deep audit pending"));
-    if (r.claimsCount) sent.push("Nothing on its record is dated enough to be provable yet.");
-  } else if (r.resolved >= SCORE_GATE) {
-    tiles.push(tile("Score", `${r.sup} of ${r.resolved} arrived`,
-      `${r.amb ? r.amb + " ungradeable · " : ""}${r.pen} pending`));
-    sent.push(r.sup / r.resolved >= 0.5
-      ? `It has largely called its shots: ${r.sup} of ${r.resolved} dated predictions arrived.`
-      : `${r.sup} of its ${r.resolved} resolved dated predictions arrived${r.amb ? `, ${r.amb} were too vague to grade` : ""}.`);
+  if (s.latestMutation?.mechanism) {
+    bits.push(`its current mechanism — ${String(s.latestMutation.mechanism).replace(/\.$/, "")} — is the newest of ${s.mutations.length} on record`);
+  }
+  if (s.upd >= 1) bits.push(`the deadline has moved ${s.upd}× on the ledger`);
+  const s1 = bits.length ? bits.slice(0, 2).join(", ").replace(/^./, c => c.toUpperCase()) + "." : "";
+
+  const bits2 = [];
+  if (!s.hasLedger || s.datedClaims === 0) {
+    bits2.push("Few claims here are precise enough to test on a clock");
+  } else if (s.resolved >= SCORE_GATE) {
+    bits2.push(`${s.sup} of ${s.resolved} resolved calls landed`);
+  } else if (s.resolved > 0) {
+    bits2.push(`too few dated calls have resolved (${s.resolved}) to score fairly`);
   } else {
-    tiles.push(tile("Score", "Too early to score",
-      `${r.sup} of ${r.resolved} so far · ${r.amb} ungradeable · ${r.pen} pending`));
-    if (r.resolved) sent.push(`Its first ${r.resolved} resolved predictions ${r.sup ? `split ${r.sup}–${r.ref}` : "missed"} — too few to score fairly yet.`);
+    bits2.push(`${s.pen} dated call${s.pen === 1 ? "" : "s"} are still pending`);
   }
-  if (r.hasLedger) {
-    tiles.push(tile("Slippage", r.upd ? `rolled ${r.upd}×` : "no rolls",
-      r.upd ? "deadline moved; receipts on ledger" : "deadlines stand as made"));
-    if (r.upd) sent.push(`The deadline has rolled ${r.upd}× on record.`);
+  if (s.reheatShare != null && s.reheatShare >= 0.5) {
+    bits2.push("recent coverage is heavily recycled");
+  } else if (s.originalShare != null && s.originalShare >= 0.5 && s.reviewed >= 5) {
+    bits2.push("most of the corpus is still primary material");
   }
-  const days = r.next ? Math.ceil((r.next.t - Date.now()) / 86400000) : null;
-  tiles.push(r.next
-    ? tile("Next test", days <= 0 ? "due now" : `${days} days`,
-      `${esc((r.next.predictor || "").split("(")[0].trim())}: ${esc((r.next.horizon || "").slice(0, 42))}`)
-    : tile("Next test", "none dated", r.hasLedger ? "no future date on the ledger" : "nothing to wait for yet"));
-  if (r.next) sent.push(days <= 0
-    ? "One of its prediction windows is due right now."
-    : `Next test: ${mY(r.next.t)}.`);
-  else if (r.hasLedger) sent.push("It currently names no future date to test.");
-  if (r.win.length) tiles.push(tile("Recycled share", `${r.reheats} of ${r.win.length}`,
-    "recent videos we indexed: reheats"));
-  if (r.spread) tiles.push(tile("Source spread", `${r.spread.channels} channels`,
-    `top 3 carry ${r.spread.pct}% of ${r.spread.total} videos`));
-  return `<div class="rsentence">${sent.join(" ")}</div><div class="receipt">${tiles.join("")}</div>`;
+  if (s.spread && s.spread.pct >= 55) bits2.push(`${s.spread.pct}% of the coverage comes from three channels`);
+  const answers = (s.buckets.competes || []).length;
+  const mechs = (s.buckets.competes_mechanism || []).length;
+  if (answers && mechs) bits2.push(`the shelf holds ${answers} rival answer${answers === 1 ? "" : "s"} and ${mechs} same-conclusion variant${mechs === 1 ? "" : "s"}`);
+  else if (mechs && !answers) bits2.push(`the other tracked explanations reach the same conclusion by different routes`);
+  else if (answers) bits2.push(`${answers} genuinely different answer${answers === 1 ? "" : "s"} to the same question are tracked`);
+  const s2 = bits2.length ? bits2.slice(0, 2).join(", ").replace(/^./, c => c.toUpperCase()) + "." : "";
+
+  return { lead, detail: [s1, s2].filter(Boolean).join(" ") };
 }
 
 /* ---------- Indicators on watch: the dials the narrative argues through ---------- */
@@ -788,7 +890,6 @@ const REL_STYLE = {
   mutates_into: { dash: "8 4", label: "lineage" },
   shares_clock: { dash: "4 4", label: "shared clock" },
 };
-const map360Open = {};
 function m360Tracked(t) {
   return t.kind === "tracked" || watchlist.topics.some(x => x.id === t.shadow_id);
 }
@@ -796,21 +897,6 @@ function m360Id(t) { return t.kind === "tracked" ? t.topic_id : t.shadow_id; }
 function m360Name(t) {
   const id = m360Id(t);
   return watchlist.topics.find(x => x.id === id)?.name || t.name || id;
-}
-function map360Html(tid) {
-  const rel = cache[tid]?.relations;
-  if (!rel?.relations?.length) return "";
-  const rs = rel.relations;
-  const tracked = rs.filter(r => m360Tracked(r.target)).length;
-  const clocks = rs.filter(r => r.clock).length;
-  const open = !!map360Open[tid];
-  const sum = `${rs.length} related answers · ${tracked} tracked · ${rs.length - tracked} not yet tracked${clocks ? ` · ${clocks} shared clock${clocks > 1 ? "s" : ""}` : ""}`;
-  return `<div class="m360">
-    <div class="m360-h">The 360 view <span class="pill query">${esc(sum)}</span>
-      <button class="followbtn" data-m360-toggle="${esc(tid)}">${open ? "Hide the map" : "See the full map"}</button></div>
-    <div class="m360-q">${esc(rel.question?.text || "")} <span class="no-t">— the answers competing for this question in the tracked discourse. The map is the receipt, not the ride.</span></div>
-    ${open ? render360Svg(rel) + render360List(rel) : ""}
-  </div>`;
 }
 function render360Svg(rel) {
   const order = ["feeds", "mutates_into", "counters", "competes", "competes_mechanism", "shares_clock", "supplements"];
@@ -887,7 +973,7 @@ async function runMap360(tid, force) {
     const d = await r.json();
     if ((d.status === "mapped" || d.status === "already_mapped") && d.map) {
       cache[tid].relations = d.map;
-      map360Open[tid] = true;
+      disclosed[`${tid}:map360`] = true;
       renderNarrativeCard();
       showNotice(`<b>Territory mapped.</b> ${d.map.relations.length} related answers around
         “${esc(d.map.question?.text || "")}”.`);
@@ -925,11 +1011,233 @@ async function foundShadow(sourceTopic, shadowId) {
   }
 }
 
+/* ---------- Progressive disclosure: sections remember their state per topic ---------- */
+const disclosed = {};
+const isOpen = (k) => !!disclosed[`${topicId}:${k}`];
+const discBtn = (k, closed, open) =>
+  `<button class="disc" data-disc="${esc(k)}">${isOpen(k) ? open : closed}</button>`;
+
+/* LAYER 1 — the 10-second orientation */
+function orientationHtml(data, s) {
+  const n = data.narrative;
+  const q = s.question?.text;
+  const days = s.next ? Math.ceil((s.next.t - Date.now()) / 86400000) : null;
+  const read = buildRadarRead(s);
+  const num = (v, l, cls) => `<div class="hnum"><div class="hv ${cls || ""}">${v}</div><div class="hl">${l}</div></div>`;
+  const nums = [];
+  if (s.years != null) nums.push(num(`${s.years} yr${s.years === 1 ? "" : "s"}`, "age"));
+  if (s.hasLedger) {
+    nums.push(s.resolved >= SCORE_GATE
+      ? num(`${s.sup} / ${s.resolved}`, "resolved calls landed", s.sup === 0 ? "warn" : "")
+      : num(`${s.resolved || 0} / ${s.resolved + s.pen}`, "dated calls resolved"));
+    if (s.upd) nums.push(num(`${s.upd}×`, "deadline moves", "warn"));
+  }
+  if (s.reheatShare != null) nums.push(num(`${Math.round(s.reheatShare * 100)}%`, "recent reheats"));
+  nums.push(days == null
+    ? num("none dated", "next test")
+    : num(days <= 0 ? "due now" : `${days}d`, "next test", days <= 30 ? "due" : ""));
+  return `<div class="orient">
+    ${q ? `<div class="qk">The question</div><div class="qtext">${esc(q)}</div>`
+        : `<div class="qk">The question</div>
+           <div class="qnone">Not mapped yet —
+             <button class="disc" data-map360="${esc(topicId)}">map the territory</button>
+             to place this narrative against the rival answers.</div>`}
+    <div class="ansrow">
+      <div class="qk">Answer under review</div>
+      <h2>${esc(n.name)}</h2>
+      <div class="claim">${esc(n.claim)}</div>
+    </div>
+    <div class="rread">
+      <div class="qk">Radar read — how this story behaves</div>
+      <div class="rlead">${esc(read.lead)}</div>
+      ${read.detail ? `<div class="rdet">${esc(read.detail)}</div>` : ""}
+    </div>
+    <div class="hnums">${nums.join("")}</div>
+    <div class="acts">
+      <button data-scroll="sec-answers">Compare the answers</button>
+      <button class="ghost" data-scroll="sec-receipts">See the receipts</button>
+    </div>
+  </div>`;
+}
+
+/* LAYER 2 — metrics grouped by what they mean */
+function dashboardHtml(data, s) {
+  const days = s.next ? Math.ceil((s.next.t - Date.now()) / 86400000) : null;
+  const track = [];
+  if (!s.hasLedger) track.push(`<div class="gline">No dated predictions on file yet.</div>
+    <div class="gsub">Nothing here can be scored on a clock.</div>`);
+  else {
+    track.push(`<div class="gline">${s.resolved >= SCORE_GATE
+      ? `${s.sup} of ${s.resolved} resolved calls landed`
+      : `${s.resolved} resolved — too few to score fairly`}</div>`);
+    track.push(`<div class="gsub">${s.pen} pending${s.amb ? ` · ${s.amb} too vague to grade` : ""}</div>`);
+    track.push(`<div class="gsub">${days == null ? "No future date on the ledger"
+      : days <= 0 ? "A prediction window is open now" : `Next test in ${days} days`}</div>`);
+  }
+  const beh = [];
+  beh.push(`<div class="gline">${s.upd ? `Deadline moved ${s.upd}×` : "Deadlines have held so far"}</div>`);
+  if (s.years != null) beh.push(`<div class="gsub">${s.years} years old${s.verified ? " · origin verified on X" : " · origin unverified"}</div>`);
+  if (s.mutations.length) {
+    beh.push(`<div class="gsub">${s.mutations.length} change${s.mutations.length === 1 ? "" : "s"} of explanation since birth</div>`);
+    if (s.latestMutation) beh.push(`<div class="gsub">Now: ${esc(s.latestMutation.mechanism)}</div>`);
+  } else beh.push(`<div class="gsub">Explanation unchanged on record</div>`);
+  const q = [];
+  if (s.win.length) {
+    q.push(`<div class="gline">${s.reheats} of the last ${s.win.length} videos are reheats</div>`);
+    q.push(`<div class="gbar"><span style="width:${Math.round(s.reheats / s.win.length * 100)}%"></span></div>`);
+  }
+  if (s.originalShare != null) q.push(`<div class="gsub">${Math.round(s.originalShare * 100)}% of reviewed videos are primary material</div>`);
+  if (s.spread) q.push(`<div class="gsub">${s.spread.channels} channels · top 3 carry ${s.spread.pct}%</div>`);
+  if (!q.length) q.push(`<div class="gsub">Corpus still too small to judge.</div>`);
+  return `<div class="grps">
+    <div class="grp"><div class="grp-k">What did they predict?</div>${track.join("")}</div>
+    <div class="grp"><div class="grp-k">How has the story behaved?</div>${beh.join("")}</div>
+    <div class="grp"><div class="grp-k">Is this coming from many sources?</div>${q.join("")}</div>
+  </div>`;
+}
+
+/* LAYER 3 §1 — other answers to the same question (words before the graph) */
+const REL_BUCKETS = [
+  { keys: ["competes"], k: "Genuinely different answers" },
+  { keys: ["competes_mechanism"], k: "Same conclusion, different reason" },
+  { keys: ["counters"], k: "Argues the opposite" },
+  { keys: ["feeds"], k: "Bigger story it sits inside" },
+  { keys: ["shares_clock"], k: "Waiting on the same event" },
+  { keys: ["mutates_into"], k: "Earlier version of this story" },
+  { keys: ["supplements"], k: "Sold on the back of it" },
+];
+function answersHtml(data, s) {
+  const tid = topicId;
+  if (!s.relCount) {
+    return `<div class="sec" id="sec-answers"><div class="sec-h"><div class="sec-k">Other answers to the same question</div></div>
+      <div class="sec-note">The rival explanations haven't been mapped yet.
+      <button class="disc" data-map360="${esc(tid)}">Map the territory →</button></div></div>`;
+  }
+  const groups = REL_BUCKETS.map(b => {
+    const items = b.keys.flatMap(k => s.buckets[k] || []);
+    if (!items.length) return "";
+    return `<div class="abuck"><div class="ab-k">${b.k}</div><div class="ab-l">${
+      items.map(r => {
+        const tracked = m360Tracked(r.target);
+        return `<span class="ab-i ${tracked ? "" : "sh"}"
+          ${tracked ? `data-m360-open="${esc(m360Id(r.target))}"` : `data-m360-found="${esc(m360Id(r.target))}"`}
+          title="${esc(r.label || "")}">${esc(m360Name(r.target))}${tracked ? "" : " ·  not tracked"}</span>`;
+      }).join("")}</div></div>`;
+  }).join("");
+  const rivals = (s.buckets.competes || []).length, mech = (s.buckets.competes_mechanism || []).length;
+  const lead = rivals && mech
+    ? `You're looking at one of several explanations. ${rivals} tracked narrative${rivals === 1 ? " reaches a different conclusion" : "s reach different conclusions"}; ${mech} reach${mech === 1 ? "es" : ""} the same conclusion by another route.`
+    : mech ? `You're looking at one of several explanations — the others tracked here reach the same conclusion by different mechanisms, which is not the same as independent agreement.`
+    : rivals ? `You're looking at one of several explanations, and ${rivals} tracked narrative${rivals === 1 ? "" : "s"} answer${rivals === 1 ? "s" : ""} the same question differently.`
+    : `Related narratives are tracked around this one.`;
+  return `<div class="sec" id="sec-answers">
+    <div class="sec-h"><div class="sec-k">Other answers to the same question</div>
+      ${discBtn("map360", "See the full 360° map →", "Hide the map")}</div>
+    <div class="lead">${esc(lead)}</div>
+    ${groups}
+    ${isOpen("map360") ? render360Svg(data.relations) + render360List(data.relations) : ""}
+  </div>`;
+}
+
+/* LAYER 3 §2 — what changed */
+function whatChangedHtml(data, s) {
+  if (!s.mutations.length && !s.coreThesis) return "";
+  const last = s.latestMutation;
+  return `<div class="sec">
+    <div class="sec-h"><div class="sec-k">How the story has changed</div>
+      ${s.mutations.length ? discBtn("timeline", "See the full timeline →", "Hide the timeline") : ""}</div>
+    <div class="chg">
+      <div><div class="ck2">Core thesis</div><div class="cv">${esc(s.coreThesis.split(/[—.]/)[0].trim())}</div></div>
+      ${last ? `<div><div class="ck2">Current version</div><div class="cv">${esc(last.mechanism)}</div></div>
+        <div><div class="ck2">Latest change</div><div class="cv">${esc(last.date)} — ${esc(last.mechanism)}</div></div>`
+      : `<div><div class="ck2">Current version</div><div class="cv">Unchanged on record</div></div>`}
+    </div>
+    ${s.years != null && s.years >= 5 && s.mutations.length >= 2
+      ? `<div class="sec-note">Old thesis, new mechanism — the conclusion predates the reason currently given for it.</div>` : ""}
+    ${isOpen("timeline") ? timelineHtml(data.narrative) : ""}
+  </div>`;
+}
+
+/* LAYER 3 §4 — what would test it */
+function whatTestsItHtml(data, s) {
+  const days = s.next ? Math.ceil((s.next.t - Date.now()) / 86400000) : null;
+  const clocks = (s.buckets.shares_clock || []).filter(r => r.clock?.trigger);
+  const trig = s.indicators.filter(i => /trigger|countdown/.test(i.role || "")).slice(0, 2);
+  const rows = [];
+  if (s.next) {
+    rows.push(`<div class="testrow"><b>${days <= 0 ? "Due now" : `In ${days} days`}</b> —
+      ${esc((s.next.predictor || "").split("(")[0].trim() || "on the ledger")}: “${esc(s.next.horizon)}”
+      <div class="tsub">Nearest pending prediction with a date.</div></div>`);
+  } else {
+    rows.push(`<div class="testrow">No clean dated test is currently on the ledger.
+      <div class="tsub">That is itself informative: nothing here resolves on a fixed clock right now.</div></div>`);
+  }
+  clocks.forEach(c => rows.push(`<div class="testrow"><b>Shared trigger</b> — ${esc(c.clock.trigger)}
+    <div class="tsub">Also watched by ${esc(m360Name(c.target))}.</div></div>`));
+  trig.forEach(i => rows.push(`<div class="testrow"><b>${esc(i.name)}</b> — ${esc(i.punchline)}
+    ${i.thresholds?.[0] ? `<div class="tsub">Level watched: ${esc(i.thresholds[0].level)}${i.thresholds[0].predictor ? ` (${esc(i.thresholds[0].predictor.split("(")[0].trim())})` : ""}</div>` : ""}</div>`));
+  if (s.contestedCount) rows.push(`<div class="testrow"><b>${s.contestedCount} open disagreement${s.contestedCount === 1 ? "" : "s"}</b> in the corpus
+    <div class="tsub">Camps split on the same question — resolving these would move the picture.</div></div>`);
+  return `<div class="sec"><div class="sec-h"><div class="sec-k">What would test it</div></div>${rows.join("")}</div>`;
+}
+
+/* LAYER 3 §5 — deep analytics, collapsed by default */
+function deepAnalyticsHtml(inner) {
+  if (!inner.trim()) return "";
+  return `<div class="sec" id="sec-receipts">
+    <div class="sec-h"><div class="sec-k">Deep analytics</div>
+      ${discBtn("deep", "Open the charts →", "Hide the charts")}</div>
+    ${isOpen("deep") ? inner : `<div class="sec-note">Prediction ledger breakdown, corpus composition,
+      predictors on file, source spread and the indicator detail.</div>`}
+  </div>`;
+}
+
+function timelineHtml(n) {
+  const MONTHS = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
+  const parseWhen = (s) => {
+    const y = ((s || "").match(/\d{4}/) || [])[0];
+    if (!y) return null;
+    const mm = ((s || "").toLowerCase().match(/jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec/) || [])[0];
+    return parseInt(y) + (mm ? MONTHS[mm] / 12 : 0.5);
+  };
+  const nowD = new Date();
+  const nowVal = nowD.getFullYear() + nowD.getMonth() / 12;
+  const bornVal = parseWhen(n.born) ?? nowVal - 1;
+  const events = (n.mutations || []).map((m, i) => ({ ...m, i, val: parseWhen(m.date) }));
+  events.forEach((e, idx) => {
+    if (e.val == null) e.val = bornVal + (idx + 1) * (nowVal - bornVal) / (events.length + 1);
+  });
+  if (!events.length) return "";
+  const span = Math.max(0.5, nowVal - bornVal);
+  const posOf = (v) => Math.min(100, Math.max(0, (v - bornVal) / span * 100));
+  const labels = [{ p: 0, t: String(Math.floor(bornVal)) }];
+  for (const e of events) {
+    const yr = ((e.date || "").match(/\d{4}/) || [])[0];
+    const p = posOf(e.val);
+    if (yr && p > 7 && p < 91 && !labels.some(l => Math.abs(l.p - p) < 8 || l.t === yr)) labels.push({ p, t: yr });
+  }
+  labels.push({ p: 100, t: "now" });
+  const lastM = events[events.length - 1];
+  return `
+    <div class="tl-wrap">
+      <div class="tl">
+        <div class="tl-line"></div>
+        <span class="tl-dot born" style="left:0%" title="Born ${esc(n.born || "")}"></span>
+        ${events.map(e => `<span class="tl-dot" style="left:${posOf(e.val)}%" data-tl="${e.i}"
+          title="${esc(e.date)}: ${esc(e.mechanism)}"></span>`).join("")}
+        <span class="tl-dot now" style="left:100%" title="Today"></span>
+        ${labels.map(l => `<span class="tl-year" style="left:${l.p}%">${esc(l.t)}</span>`).join("")}
+      </div>
+      <div class="tl-cap" id="tl-cap">${lastM ? `<b>${esc(lastM.date)}</b> — ${esc(lastM.mechanism)} <span class="no-t">(hover the dots)</span>` : ""}</div>
+    </div>`;
+}
+
 function renderNarrativeCard() {
   const n = cache[topicId]?.narrative;
   const vids = cache[topicId]?.videos?.videos || [];
   const preds = cache[topicId]?.predictions?.entries || [];
   if (!n) { $("ncard").innerHTML = ""; return; }
+  const stats = narrativeStats(cache[topicId]);
 
   const score = {};
   preds.forEach(e => score[e.status] = (score[e.status] || 0) + 1);
@@ -957,49 +1265,8 @@ function renderNarrativeCard() {
     .join("");
   const trig = n.trigger;
 
-  // Visual timeline: birth → mutations → today
-  const MONTHS = { jan: 0, feb: 1, mar: 2, apr: 3, may: 4, jun: 5, jul: 6, aug: 7, sep: 8, oct: 9, nov: 10, dec: 11 };
-  const parseWhen = (s) => {
-    const y = ((s || "").match(/\d{4}/) || [])[0];
-    if (!y) return null;
-    const mm = ((s || "").toLowerCase().match(/jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec/) || [])[0];
-    return parseInt(y) + (mm ? MONTHS[mm] / 12 : 0.5);
-  };
-  const nowD = new Date();
-  const nowVal = nowD.getFullYear() + nowD.getMonth() / 12;
-  const bornVal = parseWhen(n.born) ?? nowVal - 1;
-  const events = (n.mutations || []).map((m, i) => ({ ...m, i, val: parseWhen(m.date) }));
-  events.forEach((e, idx) => {
-    if (e.val == null) e.val = bornVal + (idx + 1) * (nowVal - bornVal) / (events.length + 1);
-  });
-  const span = Math.max(0.5, nowVal - bornVal);
-  const posOf = (v) => Math.min(100, Math.max(0, (v - bornVal) / span * 100));
-  const labels = [{ p: 0, t: String(Math.floor(bornVal)) }];
-  for (const e of events) {
-    const yr = ((e.date || "").match(/\d{4}/) || [])[0];
-    const p = posOf(e.val);
-    if (yr && p > 7 && p < 91 && !labels.some(l => Math.abs(l.p - p) < 8 || l.t === yr)) {
-      labels.push({ p, t: yr });
-    }
-  }
-  labels.push({ p: 100, t: "now" });
-  const lastM = events[events.length - 1];
-  const tlHtml = events.length ? `
-    <div class="tl-wrap">
-      <div class="vck">Narrative timeline — how the story has mutated</div>
-      <div class="tl">
-        <div class="tl-line"></div>
-        <span class="tl-dot born" style="left:0%" title="Born ${esc(n.born || "")}"></span>
-        ${events.map(e => `<span class="tl-dot" style="left:${posOf(e.val)}%" data-tl="${e.i}"
-          title="${esc(e.date)}: ${esc(e.mechanism)}"></span>`).join("")}
-        <span class="tl-dot now" style="left:100%" title="Today"></span>
-        ${labels.map(l => `<span class="tl-year" style="left:${l.p}%">${esc(l.t)}</span>`).join("")}
-      </div>
-      <div class="tl-cap" id="tl-cap">${lastM ? `<b>${esc(lastM.date)}</b> — ${esc(lastM.mechanism)} <span class="no-t">(hover the dots)</span>` : ""}</div>
-    </div>` : "";
-
   const level = lsGet("nr-explain-level") || "layman";
-  const explHtml = n.explanations ? `
+  const explHtml = n.explanations && isOpen("explain") ? `
     <div class="explain">
       <span class="ek">Explain this narrative</span>
       ${["layman", "intermediate", "expert"].map(l =>
@@ -1041,10 +1308,15 @@ function renderNarrativeCard() {
 
   const cl = cache[topicId]?.claims;
   const srcNames = (arr) => (arr || []).slice(0, 3).map(s => s.predictor.split("(")[0].trim()).join(", ");
-  const claimsHtml = cl?.claims?.length ? `
-    <div class="claims">
-      <div class="ck">What the corpus consistently claims</div>
-      ${cl.claims.map(c => {
+  const nSrc = (c) => (c.sources || []).length +
+    (c.camps || []).reduce((a, cp) => a + (cp.sources || []).length, 0);
+  const allClaims = [...(cl?.claims || [])].sort((a, b) => nSrc(b) - nSrc(a));
+  const shownClaims = isOpen("claims") ? allClaims : allClaims.slice(0, 3);
+  const claimsHtml = allClaims.length ? `
+    <div class="sec claims">
+      <div class="sec-h"><div class="sec-k">What this story consistently claims</div>
+        ${allClaims.length > 3 ? discBtn("claims", `See all ${allClaims.length} claims →`, "Show fewer") : ""}</div>
+      ${shownClaims.map(c => {
         if (c.type === "contested") {
           const camps = c.camps || [];
           let body;
@@ -1081,37 +1353,40 @@ function renderNarrativeCard() {
       }).join("")}
     </div>` : "";
 
-  $("ncard").innerHTML = `
-  <div class="ncard">
-    <div class="kicker">The narrative</div>
-    <div class="headrow">
-      <h2>${esc(n.name)}</h2>
-      <button class="followbtn refreshbtn" data-refresh="${esc(topicId)}" title="Sweep for new videos and update the claims">↻ Refresh</button>
-      <button class="followbtn tracebtn" data-trace="${esc(topicId)}" title="Trace the narrative's earliest utterance on X (paid X API — roughly $1-2 per trace)">⌖ Trace origin</button>
-      ${cache[topicId]?.relations ? "" : `<button class="followbtn" data-map360="${esc(topicId)}" title="Map the question this narrative competes to answer (one-time AI call, ~$0.10)">⊕ Map territory</button>`}
-      <button class="followbtn ${isFollowed(topicId) ? "on" : ""}" data-follow="${esc(topicId)}">
-        ${isFollowed(topicId) ? "★ Following" : "☆ Follow"}</button>
-    </div>
-    <div class="claim">${esc(n.claim)}</div>
-    ${explHtml}
-    ${receiptHtml(cache[topicId])}
-    ${n.genesis?.first_found ? `<div class="genesis">⌖ <b>Origin traced on X:</b> earliest surviving post
-      <a href="${esc(n.genesis.first_found.url)}" target="_blank" rel="noopener">@${esc(n.genesis.first_found.username)} · ${esc((n.genesis.first_found.date || "").slice(0, 10))}</a>
-      — “${esc((n.genesis.first_found.text || "").slice(0, 140))}”
-      <span class="no-t">(phrase “${esc(n.genesis.phrase)}” · ${n.genesis.reads_used} reads ≈ $${n.genesis.est_cost_usd})</span></div>` : ""}
+  const deepInner = `
     ${lstack}
     <div class="vbreak">${scoreline}</div>
     ${vbreak ? `<div class="vchart"><div class="vck">Corpus composition — click a bar to see those videos</div>${vbreak}</div>` : ""}
     ${pchart}
-    ${tlHtml}
-    ${claimsHtml}
     ${indicatorsHtml(topicId)}
-    ${map360Html(topicId)}
+    ${n.genesis?.first_found ? `<div class="genesis">⌖ <b>Origin traced on X:</b> earliest surviving post
+      <a href="${esc(n.genesis.first_found.url)}" target="_blank" rel="noopener">@${esc(n.genesis.first_found.username)} · ${esc((n.genesis.first_found.date || "").slice(0, 10))}</a>
+      — “${esc((n.genesis.first_found.text || "").slice(0, 140))}”
+      <span class="no-t">(phrase “${esc(n.genesis.phrase)}” · ${n.genesis.reads_used} reads ≈ $${n.genesis.est_cost_usd})</span></div>` : ""}
     ${trig ? `<div class="trigger">Trigger for this collection:
       <a href="https://www.youtube.com/watch?v=${esc(trig.videoId)}" target="_blank" rel="noopener">${esc(trig.title)}</a>
-      — ${esc(trig.channel)}<div class="v-note">${esc(trig.note)}</div></div>` : ""}
+      — ${esc(trig.channel)}<div class="v-note">${esc(trig.note)}</div></div>` : ""}`;
+
+  $("ncard").innerHTML = `
+  <div class="ncard">
+    <div class="util">
+      ${n.explanations ? discBtn("explain", "Explain this narrative ↓", "Hide explanation ↑") : ""}
+      <button data-refresh="${esc(topicId)}" title="Sweep for new videos and update the claims">↻ Refresh</button>
+      <button data-trace="${esc(topicId)}" title="Trace the narrative's earliest utterance on X (paid X API — roughly $1-2 per trace)">⌖ Trace origin</button>
+      ${cache[topicId]?.relations ? "" : `<button data-map360="${esc(topicId)}" title="Map the question this narrative competes to answer (one-time AI call, ~$0.10)">⊕ Map territory</button>`}
+      <button class="${isFollowed(topicId) ? "on" : ""}" data-follow="${esc(topicId)}">
+        ${isFollowed(topicId) ? "★ Following" : "☆ Follow"}</button>
+    </div>
+    ${orientationHtml(cache[topicId], stats)}
+    ${explHtml}
+    ${dashboardHtml(cache[topicId], stats)}
+    ${answersHtml(cache[topicId], stats)}
+    ${whatChangedHtml(cache[topicId], stats)}
+    ${claimsHtml}
+    ${whatTestsItHtml(cache[topicId], stats)}
+    ${deepAnalyticsHtml(deepInner)}
   </div>`;
-  if (map360Open[topicId] && cache[topicId]?.relations) patchMiniReceipts(cache[topicId].relations);
+  if (isOpen("map360") && cache[topicId]?.relations) patchMiniReceipts(cache[topicId].relations);
 }
 
 function renderCorpus() {
@@ -1792,11 +2067,21 @@ document.addEventListener("click", async (ev) => {
     renderNarrativeCard();
     return;
   }
-  const m3t = ev.target.closest("[data-m360-toggle]");
-  if (m3t) {
-    const id = m3t.dataset.m360Toggle;
-    map360Open[id] = !map360Open[id];
+  const dsc = ev.target.closest("[data-disc]");
+  if (dsc) {
+    const k = `${topicId}:${dsc.dataset.disc}`;
+    disclosed[k] = !disclosed[k];
     renderNarrativeCard();
+    return;
+  }
+  const scr = ev.target.closest("[data-scroll]");
+  if (scr) {
+    const target = $(scr.dataset.scroll);
+    if (scr.dataset.scroll === "sec-receipts" && !isOpen("deep")) {
+      disclosed[`${topicId}:deep`] = true;
+      renderNarrativeCard();
+    }
+    setTimeout(() => $(scr.dataset.scroll)?.scrollIntoView({ behavior: "smooth", block: "start" }), 30);
     return;
   }
   const m3o = ev.target.closest("[data-m360-open]");
