@@ -514,7 +514,6 @@
 
   <div id="detail" hidden>
   <button class="backgal" id="back-gallery">← All narratives</button>
-  <div class="topicbar" id="topicbar"></div>
 
   <div class="tabs" id="tabs">
     <button class="tab active" data-view="corpus">Corpus<span class="count" id="c-corpus"></span></button>
@@ -1224,6 +1223,9 @@ async function renderBriefs() {
 
 /* ---------- shell ---------- */
 function renderTopics() {
+  // The gallery is the narrative switcher now; the ribbon only exists if a
+  // future layout re-adds it.
+  if (!$("topicbar")) return;
   $("topicbar").innerHTML = watchlist.topics.map(t => `
     <button class="topic ${t.id === topicId ? "active" : ""}" data-id="${esc(t.id)}">
       ${esc(t.name.split("—")[0].trim())}<span class="q">${t.status === "active" ? "" : esc(t.status)}</span>
