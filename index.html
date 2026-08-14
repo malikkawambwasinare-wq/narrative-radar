@@ -618,6 +618,18 @@ async function getData(url, parse) {
   if (!r.ok) throw new Error(url + " → " + r.status);
   return parse(r);
 }
+/* Storage is a nice-to-have, never a load-blocker: private mode, disabled
+   cookies and data: URLs all throw on access. Preferences degrade, page lives. */
+function lsGet(key) {
+  try { return localStorage.getItem(key); } catch (e) { return null; }
+}
+function lsSet(key, value) {
+  try { localStorage.setItem(key, value); return true; } catch (e) { return false; }
+}
+function follows() {
+  try { return JSON.parse(lsGet(FOLLOW_KEY)) || []; } catch (e) { return []; }
+}
+
 const getJSON = (url) => getData(url, (r) => r.json());
 const getText = (url) => getData(url, (r) => r.text());
 
@@ -986,7 +998,7 @@ function renderNarrativeCard() {
       <div class="tl-cap" id="tl-cap">${lastM ? `<b>${esc(lastM.date)}</b> — ${esc(lastM.mechanism)} <span class="no-t">(hover the dots)</span>` : ""}</div>
     </div>` : "";
 
-  const level = localStorage.getItem("nr-explain-level") || "layman";
+  const level = lsGet("nr-explain-level") || "layman";
   const explHtml = n.explanations ? `
     <div class="explain">
       <span class="ek">Explain this narrative</span>
@@ -1258,16 +1270,12 @@ async function loadTopic(id) {
 
 /* ---------- follows (device-local profile) ---------- */
 const FOLLOW_KEY = "nr-follows";
-function follows() {
-  try { return JSON.parse(localStorage.getItem(FOLLOW_KEY)) || []; }
-  catch (e) { return []; }
-}
 function isFollowed(id) { return follows().includes(id); }
 function toggleFollow(id) {
   const f = follows();
   const i = f.indexOf(id);
   if (i >= 0) f.splice(i, 1); else f.push(id);
-  localStorage.setItem(FOLLOW_KEY, JSON.stringify(f));
+  lsSet(FOLLOW_KEY, JSON.stringify(f));
 }
 async function renderYours() {
   const box = $("yours");
@@ -1770,7 +1778,7 @@ document.addEventListener("click", async (ev) => {
   }
   const lv = ev.target.closest(".lvl");
   if (lv) {
-    localStorage.setItem("nr-explain-level", lv.dataset.explainLevel);
+    lsSet("nr-explain-level", lv.dataset.explainLevel);
     renderNarrativeCard();
     return;
   }
