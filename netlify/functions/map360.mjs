@@ -140,7 +140,8 @@ export default async (req) => {
         return json(200, { status: "exists", topic: s.shadow_id });
       }
       const topicRecord = {
-        id: s.shadow_id, name, status: "active", started: today,
+        id: s.shadow_id, name, industry: cand?.beat || "Unsorted",
+        status: "active", started: today,
         trigger: `Founded from the 360 map of ${body.source_topic || "a narrative"}`,
         queries, watched_predictors: [], notes: claim,
       };

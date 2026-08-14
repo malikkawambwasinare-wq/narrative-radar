@@ -77,6 +77,7 @@ const ANALYSIS_SCHEMA = {
     "is_update", "update_note", "confidence",
     "new_narrative_id", "new_narrative_name", "new_narrative_claim",
     "new_narrative_born", "new_narrative_born_note", "new_narrative_queries",
+    "new_narrative_industry",
     "explanation_layman", "explanation_intermediate", "explanation_expert",
   ],
   properties: {
@@ -94,6 +95,7 @@ const ANALYSIS_SCHEMA = {
     new_narrative_born: { type: ["string", "null"] },
     new_narrative_born_note: { type: ["string", "null"] },
     new_narrative_queries: { type: "array", items: { type: "string" } },
+    new_narrative_industry: { type: ["string", "null"], enum: ["AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", "Unsorted", null] },
     explanation_layman: { type: ["string", "null"] },
     explanation_intermediate: { type: ["string", "null"] },
     explanation_expert: { type: ["string", "null"] },
@@ -111,6 +113,7 @@ const SYSTEM = `You are the analysis engine for Narrative Radar, a tool that ext
      * new_narrative_born: your best estimate of when this narrative FIRST appeared in public discourse (YYYY or YYYY-MM; e.g. "crypto winter" dates to ~2018) — null if you genuinely can't estimate
      * new_narrative_born_note: one line stating the basis of the estimate; this is a model estimate pending audit
      * new_narrative_queries: 4-6 YouTube search queries for collecting this narrative's video corpus
+     * new_narrative_industry: the shelf this narrative belongs on — one of "AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", or "Unsorted" if none fit
      * explanation_layman / explanation_intermediate / explanation_expert: three explanations of the narrative (each ≤ 75 words). Layman: plain everyday words, no jargon, why they should care. Intermediate: the mechanism and the main camps. Expert: audit framing — clocks, falsifiers, incentives, lifecycle stage. Null for other decisions.
    - "unrelated" — reserved for content with no narrative to track: music, entertainment, gaming, tutorials. Claims-driven commentary about markets/politics/tech/society almost always carries a narrative.
 2. verdict — from metadata alone: ORIGINAL / DERIVATIVE / RECYCLED / CLICKBAIT / UNKNOWN. Be honest about uncertainty; this is metadata-only, no transcript.
@@ -276,7 +279,9 @@ export default async (req) => {
         origin: { type: "engine", first_video: videoId, created: today },
       };
       const topicRecord = {
-        id, name: analysis.new_narrative_name, status: "active", started: today,
+        id, name: analysis.new_narrative_name,
+        industry: analysis.new_narrative_industry || "Unsorted",
+        status: "active", started: today,
         trigger: `User-submitted video: ${meta.title} (${meta.channel})`,
         queries: analysis.new_narrative_queries || [],
         watched_predictors: [],

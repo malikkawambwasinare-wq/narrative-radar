@@ -2,10 +2,11 @@
   "topics": [
     {
       "id": "collapse-audit",
-      "name": "Collapse Audit — economic & AI doom predictions",
+      "name": "Collapse Audit \u2014 economic & AI doom predictions",
+      "industry": "Economy & markets",
       "status": "active",
       "started": "2026-07-30",
-      "trigger": "Diary Of A CEO — Ray Dalio 'The 80 Year Collapse Is Here' (135K views in first 3 hours)",
+      "trigger": "Diary Of A CEO \u2014 Ray Dalio 'The 80 Year Collapse Is Here' (135K views in first 3 hours)",
       "queries": [
         "ray dalio collapse",
         "80 year cycle economy",
@@ -23,6 +24,7 @@
     {
       "id": "loop-engineering",
       "name": "Loops / agentic engineering / agent workflows",
+      "industry": "AI & technology",
       "status": "queued",
       "started": null,
       "queries": [
@@ -32,11 +34,12 @@
         "agent workflows"
       ],
       "watched_predictors": [],
-      "notes": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave."
+      "notes": "Calibration topic \u2014 ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave."
     },
     {
       "id": "crypto-winter-watch",
       "name": "Crypto Winter Watch",
+      "industry": "Economy & markets",
       "status": "active",
       "started": "2026-08-07",
       "trigger": "User-submitted video: Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter (New York Times Events)",
@@ -54,6 +57,7 @@
     {
       "id": "the-2026-setup",
       "name": "The 2026 Setup",
+      "industry": "Economy & markets",
       "status": "active",
       "started": "2026-08-07",
       "trigger": "User-submitted video: The BIGGEST Opportunity Will Come in 2026! (Investing Made Simple)",
@@ -66,11 +70,12 @@
         "2026 market outlook retail investors"
       ],
       "watched_predictors": [],
-      "notes": "Created by the analysis engine. After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors — position now before the next leg up."
+      "notes": "Created by the analysis engine. After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors \u2014 position now before the next leg up."
     },
     {
       "id": "housing-crash-watch",
       "name": "Housing Crash Watch",
+      "industry": "Economy & markets",
       "status": "active",
       "started": "2026-08-08",
       "trigger": "User-submitted video: Is The Housing Market Still Going to Crash in 2026? (Michael Bordenaro)",
@@ -88,6 +93,7 @@
     {
       "id": "psi-declassified",
       "name": "Psi, Declassified",
+      "industry": "Fringe & unexplained",
       "status": "active",
       "started": "2026-08-09",
       "trigger": "User-submitted video: The CIA Protocol: How to Train Your Brain for Remote Viewing (Dr. Mayim Bialik)",
@@ -105,6 +111,7 @@
     {
       "id": "open-vs-closed-ai-race",
       "name": "Open Weights vs Closed Frontier",
+      "industry": "AI & technology",
       "status": "active",
       "started": "2026-08-13",
       "trigger": "User-submitted video: Can Opus 5 Beat Open-Source Kimi K3 in 3D Design? (Stefan 3D AI)",

@@ -147,6 +147,36 @@
   .m360-list { margin-top: 10px; font-size: 13px; color: var(--ink-2);
     display: flex; flex-direction: column; gap: 6px; }
   .m360-list b { color: var(--ink); }
+  /* Narrative gallery — the radar's front page */
+  .galbar { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0 6px; }
+  .galbar input[type="search"] { flex: 1; min-width: 220px; padding: 11px 16px;
+    font: inherit; font-size: 15px; border: 1px solid var(--border);
+    border-radius: 10px; background: var(--surface); color: var(--ink); }
+  .galbar select { padding: 11px 14px; font: inherit; font-size: 14px;
+    border: 1px solid var(--border); border-radius: 10px;
+    background: var(--surface); color: var(--ink); cursor: pointer; }
+  .galbar input:focus, .galbar select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .galcount { font-size: 13px; color: var(--muted); margin: 10px 0 2px; }
+  .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+    gap: 12px; margin: 8px 0 20px; }
+  .gtile { border: 1px solid var(--hairline); border-radius: 14px; padding: 14px 16px;
+    background: var(--surface); cursor: pointer; display: flex; flex-direction: column;
+    gap: 7px; text-align: left; font: inherit; color: var(--ink); }
+  .gtile:hover { border-color: var(--accent); }
+  .gtile .gind { font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--muted); font-weight: 650; }
+  .gtile .gname { font-size: 16.5px; font-weight: 650; line-height: 1.25; }
+  .gtile .gclaim { font-size: 13px; color: var(--ink-2); line-height: 1.5;
+    display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .gtile .gstats { display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; }
+  .gtile .gs { font-size: 11.5px; padding: 3px 9px; border-radius: 999px;
+    background: var(--page); border: 1px solid var(--hairline); color: var(--ink-2);
+    font-variant-numeric: tabular-nums; }
+  .gtile .gs.warn { color: var(--serious); border-color: var(--serious); }
+  .gtile .gs.due { color: var(--warning); border-color: var(--warning); }
+  .galempty { color: var(--muted); font-size: 14px; padding: 26px 0; text-align: center; }
+  .backgal { font: inherit; font-size: 13px; background: none; border: none; cursor: pointer;
+    color: var(--accent); padding: 0; margin-bottom: 10px; }
   .indwatch { margin: 18px 0 6px; border-top: 1px solid var(--hairline); padding-top: 14px; }
   .ind { padding: 10px 0; border-bottom: 1px dashed var(--hairline); }
   .ind:last-child { border-bottom: none; }
@@ -471,6 +501,19 @@
   </header>
 
   <div id="radar-notice"></div>
+
+  <div id="gallery">
+    <div class="galbar">
+      <input id="gal-search" type="search" placeholder="Search narratives — claim, predictor, keyword…"
+        autocomplete="off" aria-label="Search narratives">
+      <select id="gal-industry" aria-label="Filter by industry"></select>
+    </div>
+    <div class="galcount" id="gal-count"></div>
+    <div class="gal" id="gal-grid"></div>
+  </div>
+
+  <div id="detail" hidden>
+  <button class="backgal" id="back-gallery">← All narratives</button>
   <div class="topicbar" id="topicbar"></div>
 
   <div class="tabs" id="tabs">
@@ -513,6 +556,7 @@
   <section id="view-briefs" hidden>
     <div id="briefs"></div>
   </section>
+  </div><!-- /detail -->
   </div><!-- /app-radar -->
 </div>
 
@@ -1203,6 +1247,8 @@ async function loadTopicData(id) {
 async function loadTopic(id) {
   if (id !== topicId) predictorFilter = null;
   topicId = id;
+  // Opening any narrative always lands on the detail pane, never the gallery
+  if (!$("app-radar").hidden) { $("gallery").hidden = true; $("detail").hidden = false; }
   renderTopics();
   await loadTopicData(id);
   renderCorpus(); renderLedger(); renderBriefs();
@@ -1465,7 +1511,92 @@ async function openRadarAt(topicId, videoId) {
 async function showRadar(topic) {
   $("app-landing").hidden = true;
   $("app-radar").hidden = false;
-  await loadTopic(topic || topicId || (watchlist.topics.find(t => t.status === "active") || watchlist.topics[0]).id);
+  if (topic) return openDetail(topic);
+  showGallery();
+}
+
+/* ---------- The narrative gallery: search + industry filter + tiles ---------- */
+const galStats = {};   // topicId -> {age, videos, score, next} filled lazily
+function showGallery() {
+  $("gallery").hidden = false;
+  $("detail").hidden = true;
+  renderGalleryFilters();
+  renderGallery();
+  fillGalleryStats();
+}
+function openDetail(id) {
+  $("gallery").hidden = true;
+  $("detail").hidden = false;
+  return loadTopic(id);
+}
+function renderGalleryFilters() {
+  const sel = $("gal-industry");
+  if (sel.dataset.built) return;
+  const inds = [...new Set(watchlist.topics.map(t => t.industry || "Unsorted"))].sort();
+  sel.innerHTML = `<option value="all">All industries</option>` +
+    inds.map(i => `<option value="${esc(i)}">${esc(i)}</option>`).join("");
+  sel.dataset.built = "1";
+}
+function galSearchText(t) {
+  const d = cache[t.id] || {};
+  return [t.name, t.industry, t.notes, t.trigger, (t.queries || []).join(" "),
+    (t.watched_predictors || []).join(" "),
+    d.narrative?.claim, d.narrative?.predictor,
+    (d.claims?.fingerprints || []).join(" "),
+    (d.claims?.claims || []).map(c => c.statement).join(" "),
+    (d.predictions?.entries || []).map(e => `${e.predictor || ""} ${e.claim}`).join(" "),
+  ].filter(Boolean).join(" ").toLowerCase();
+}
+function renderGallery() {
+  const q = ($("gal-search").value || "").trim().toLowerCase();
+  const ind = $("gal-industry").value || "all";
+  const hits = watchlist.topics.filter(t =>
+    (ind === "all" || (t.industry || "Unsorted") === ind) &&
+    (!q || galSearchText(t).includes(q)));
+  $("gal-count").textContent = q || ind !== "all"
+    ? `${hits.length} of ${watchlist.topics.length} narratives`
+    : `${watchlist.topics.length} narratives tracked`;
+  $("gal-grid").innerHTML = hits.length ? hits.map(t => {
+    const d = cache[t.id] || {};
+    const claim = d.narrative?.claim || t.notes || "Corpus building — open to follow along.";
+    const s = galStats[t.id];
+    const chips = [];
+    if (t.status !== "active") chips.push(`<span class="gs">${esc(t.status)}</span>`);
+    if (s) {
+      if (s.age) chips.push(`<span class="gs">${esc(s.age)}</span>`);
+      if (s.videos) chips.push(`<span class="gs">${s.videos} videos</span>`);
+      if (s.score) chips.push(`<span class="gs${s.warn ? " warn" : ""}">${esc(s.score)}</span>`);
+      if (s.next) chips.push(`<span class="gs${s.due ? " due" : ""}">${esc(s.next)}</span>`);
+    }
+    return `<button class="gtile" data-gopen="${esc(t.id)}">
+      <div class="gind">${esc(t.industry || "Unsorted")}</div>
+      <div class="gname">${esc(t.name.split("—")[0].trim())}</div>
+      <div class="gclaim">${esc(claim)}</div>
+      <div class="gstats">${chips.join("")}</div>
+    </button>`;
+  }).join("") : `<div class="galempty">No narrative matches that${q ? ` — “${esc(q)}”` : ""}.
+    Try another keyword, or paste a video link on the start page to found a new one.</div>`;
+}
+async function fillGalleryStats() {
+  for (const t of watchlist.topics) {
+    if (galStats[t.id]) continue;
+    try {
+      const d = await loadTopicData(t.id);
+      const r = computeReceipt(d);
+      const days = r.next ? Math.ceil((r.next.t - Date.now()) / 86400000) : null;
+      galStats[t.id] = {
+        age: r.years != null ? `${r.years} yrs old` : "",
+        videos: d.videos?.videos?.length || 0,
+        score: r.hasLedger
+          ? (r.resolved >= SCORE_GATE ? `${r.sup} of ${r.resolved} arrived` : `${r.pen} pending`)
+          : "",
+        warn: r.hasLedger && r.resolved >= SCORE_GATE && r.sup === 0,
+        next: days != null ? (days <= 0 ? "test due now" : `next test ${days}d`) : "",
+        due: days != null && days <= 30,
+      };
+      if (!$("gallery").hidden) renderGallery();
+    } catch (e) { galStats[t.id] = {}; }
+  }
 }
 
 async function runLookup(raw) {
@@ -1603,6 +1734,8 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest(".n-close")) return showNotice("");
   if (ev.target.closest("#home-link, #back-start")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
+  const gt = ev.target.closest("[data-gopen]");
+  if (gt) return openDetail(gt.dataset.gopen);
   const lnv = ev.target.closest("[data-land-view]");
   if (lnv) {
     showNotice("");
@@ -1707,6 +1840,9 @@ $("sheet-close").addEventListener("click", () => $("overlay").classList.remove("
 $("overlay").addEventListener("click", (e) => { if (e.target === $("overlay")) $("overlay").classList.remove("open"); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay").classList.remove("open"); });
 ["search", "sort", "tfilter", "vfilter"].forEach(id => $(id).addEventListener("input", renderCorpus));
+$("gal-search").addEventListener("input", renderGallery);
+$("gal-industry").addEventListener("change", renderGallery);
+$("back-gallery").addEventListener("click", () => { showNotice(""); showGallery(); });
 
 $("lookup-form").addEventListener("submit", (e) => {
   e.preventDefault();
