@@ -1,26 +1,488 @@
 {
-  "note": "Researched narrative candidates (briefs/2026-08-10-flagship-shelf-research.md) serving as the 360 map's shadow inventory. shadow_id here = the topic_id the tile gets if founded.",
+  "note": "Researched narrative candidates (briefs/2026-08-10-flagship-shelf-research.md) serving as the 360 map's shadow inventory. shadow_id here = the topic_id the tile gets if founded. Culture beats added 14 Aug 2026 (entertainment, gaming, sports, creator economy) \u2014 each carries its most scoreable dated claim in ledger_hook.",
   "candidates": [
-    { "id": "the-ai-bubble-watch", "name": "The AI Bubble Watch", "claim_hint": "AI valuations and capex are a debt-fueled, circular-financing bubble that pops and takes the market with it.", "queries": ["AI bubble burst", "circular financing AI", "AI capex bubble", "AI bubble 2026"], "beat": "AI & technology" },
-    { "id": "the-grid-reckoning", "name": "The Grid Reckoning", "claim_hint": "AI datacenters are breaking the grid and inflating ordinary electric bills — the buildout or the grid gives way first.", "queries": ["data center moratorium", "AI electricity bills", "grid can't handle AI", "data center backlash"], "beat": "AI & technology" },
-    { "id": "white-collar-bloodbath", "name": "The White-Collar Bloodbath Ledger", "claim_hint": "AI wipes out a huge share of white-collar work — starting with entry-level — within a countable number of years.", "queries": ["white collar bloodbath", "AI entry level jobs", "broken first rung", "AI layoffs 2026"], "beat": "AI & technology" },
-    { "id": "agi-deadline-slip", "name": "The AGI Deadline Slip", "claim_hint": "AGI arrives on a nameable date ('AGI by 2027') — counter: every stated timeline keeps slipping.", "queries": ["AGI by 2027", "AGI timeline slipping", "country of geniuses", "AGI predictions 2026"], "beat": "AI & technology" },
-    { "id": "robot-butler-countdown", "name": "The Robot Butler Countdown", "claim_hint": "Humanoid robots in ordinary homes within a year or two — counter: teleoperated vaporware, 'selling the dream'.", "queries": ["humanoid robot home 2026", "teleoperated not autonomous", "1X NEO delivery", "Optimus production"], "beat": "AI & technology" },
-    { "id": "silver-squeeze-watch", "name": "Silver Squeeze Watch", "claim_hint": "Paper suppression plus supply deficits force violent repricing — COMEX runs out, $100+ silver is the start.", "queries": ["silver squeeze", "paper silver", "COMEX default", "silver shortage 2026"], "beat": "Economy & markets" },
-    { "id": "japan-carry-trade-doom", "name": "Japan Carry-Trade Doom", "claim_hint": "Surging JGB yields force the yen carry trade to unwind, draining the liquidity that secretly funded US markets.", "queries": ["yen carry trade unwind", "JGB meltdown", "widowmaker trade", "japan bond crisis 2026"], "beat": "Economy & markets" },
-    { "id": "everything-bubble", "name": "The Everything Bubble Pops", "claim_hint": "Cheap money inflated all assets simultaneously; the synchronized pop will be worse than 1929 and 2008 combined.", "queries": ["everything bubble", "worst crash in history", "Shiller PE above 40", "Kiyosaki crash 2026"], "beat": "Economy & markets" },
-    { "id": "de-dollarization-doom-clock", "name": "De-Dollarization Doom Clock", "claim_hint": "BRICS rails and record central-bank gold buying end dollar dominance — a run on the dollar begins in 2026.", "queries": ["de-dollarization", "BRICS currency", "petrodollar is dead", "dollar collapse 2026"], "beat": "Economy & markets" },
-    { "id": "glp1-society", "name": "The GLP-1 Society", "claim_hint": "GLP-1 drugs will be taken by a huge share of the population and reshape food, addiction and aging — counter: mass-medicating with unknown long-term costs.", "queries": ["food noise", "GLP-1 microdosing", "Ozempic face", "GLP-1 society"], "beat": "Health & biotech" },
-    { "id": "seed-oil-wars", "name": "Seed Oil Wars", "claim_hint": "Industrial seed oils are a root cause of chronic disease; replace with tallow — counter: evidence indicts ultraprocessed food, not linoleic acid.", "queries": ["the hateful eight", "seed oils are poison", "cooked in beef tallow", "seed oil debate"], "beat": "Health & biotech" },
-    { "id": "longevity-escape-velocity", "name": "Longevity Escape Velocity", "claim_hint": "Aging is an engineering problem about to be solved; the first person to live to 150 is already alive — counter: biological fantasy.", "queries": ["longevity escape velocity", "don't die", "first person to live to 150", "live forever science"], "beat": "Health & biotech" },
-    { "id": "plastic-in-your-brain", "name": "Plastic In Your Brain", "claim_hint": "Microplastics have invaded blood and brains ('a spoon's worth'), linked to dementia — counter: contamination artifacts, a manufactured panic.", "queries": ["spoon's worth of plastic", "microplastics in your brain", "credit card of plastic a week", "microplastics brain study"], "beat": "Health & biotech" },
-    { "id": "ai-will-end-disease", "name": "AI Will End Disease", "claim_hint": "AI compresses decades of drug discovery into years — 'cure all disease' within a decade; counter: the bottleneck is trials, not compute.", "queries": ["cure all disease", "the end of disease", "compressed 21st century", "AI drug discovery cure"], "beat": "Health & biotech" },
-    { "id": "midterm-wave-watch", "name": "Midterm Wave Watch 2026", "claim_hint": "The November 2026 midterms will be a wave — blue-wave flip vs 'increase our margins'.", "queries": ["blue wave 2026", "red wave coming", "midterm wipeout", "2026 midterm predictions"], "beat": "Politics & geopolitics" },
-    { "id": "taiwan-2027-countdown", "name": "Taiwan 2027 Countdown", "claim_hint": "China ready to — and may — invade or blockade Taiwan by 2027 (the Davidson Window); counter: readiness benchmark, not invasion date.", "queries": ["Davidson window", "invade Taiwan by 2027", "Taiwan 2027 timeline", "China Taiwan invasion"], "beat": "Politics & geopolitics" },
-    { "id": "nato-attack-window", "name": "NATO Attack Window 2027-2030", "claim_hint": "Russia capable of attacking or 'testing' NATO by ~2029; Europe must rearm now — counter: threat inflation.", "queries": ["war by 2029", "Russia will attack NATO", "test NATO", "Europe rearmament"], "beat": "Politics & geopolitics" },
-    { "id": "ev-cliff", "name": "The EV Cliff", "claim_hint": "With the tax credit gone, EV adoption collapsed — the transition was subsidy hype; counter: a temporary cliff before takeover.", "queries": ["the EV cliff", "nobody wants EVs", "hybrids are winning", "EV sales collapse"], "beat": "Energy & climate" },
-    { "id": "nuclear-renaissance-watch", "name": "Nuclear Renaissance Watch", "claim_hint": "Nuclear is finally back — SMRs scale fast enough to power AI; counter: same too-late-too-expensive hype as every previous renaissance.", "queries": ["nuclear renaissance", "SMR microreactor", "nuclear is back", "nuclear power AI datacenters"], "beat": "Energy & climate" },
-    { "id": "amoc-collapse-watch", "name": "AMOC Collapse Watch", "claim_hint": "The Atlantic circulation is heading for a tipping-point shutdown this century, possibly already committed — counter: likely withstands warming.", "queries": ["AMOC collapse", "Gulf Stream shutdown", "point of no return", "AMOC tipping point"], "beat": "Energy & climate" },
-    { "id": "depopulation-bomb", "name": "The Depopulation Bomb", "claim_hint": "Fertility is crashing below replacement everywhere; population collapse is a bigger risk than warming — counter: overblown panic.", "queries": ["population collapse", "birth rate collapse", "South Korea is over", "fertility crisis"], "beat": "Energy & climate" }
+    {
+      "id": "the-ai-bubble-watch",
+      "name": "The AI Bubble Watch",
+      "claim_hint": "AI valuations and capex are a debt-fueled, circular-financing bubble that pops and takes the market with it.",
+      "queries": [
+        "AI bubble burst",
+        "circular financing AI",
+        "AI capex bubble",
+        "AI bubble 2026"
+      ],
+      "beat": "AI & technology"
+    },
+    {
+      "id": "the-grid-reckoning",
+      "name": "The Grid Reckoning",
+      "claim_hint": "AI datacenters are breaking the grid and inflating ordinary electric bills \u2014 the buildout or the grid gives way first.",
+      "queries": [
+        "data center moratorium",
+        "AI electricity bills",
+        "grid can't handle AI",
+        "data center backlash"
+      ],
+      "beat": "AI & technology"
+    },
+    {
+      "id": "white-collar-bloodbath",
+      "name": "The White-Collar Bloodbath Ledger",
+      "claim_hint": "AI wipes out a huge share of white-collar work \u2014 starting with entry-level \u2014 within a countable number of years.",
+      "queries": [
+        "white collar bloodbath",
+        "AI entry level jobs",
+        "broken first rung",
+        "AI layoffs 2026"
+      ],
+      "beat": "AI & technology"
+    },
+    {
+      "id": "agi-deadline-slip",
+      "name": "The AGI Deadline Slip",
+      "claim_hint": "AGI arrives on a nameable date ('AGI by 2027') \u2014 counter: every stated timeline keeps slipping.",
+      "queries": [
+        "AGI by 2027",
+        "AGI timeline slipping",
+        "country of geniuses",
+        "AGI predictions 2026"
+      ],
+      "beat": "AI & technology"
+    },
+    {
+      "id": "robot-butler-countdown",
+      "name": "The Robot Butler Countdown",
+      "claim_hint": "Humanoid robots in ordinary homes within a year or two \u2014 counter: teleoperated vaporware, 'selling the dream'.",
+      "queries": [
+        "humanoid robot home 2026",
+        "teleoperated not autonomous",
+        "1X NEO delivery",
+        "Optimus production"
+      ],
+      "beat": "AI & technology"
+    },
+    {
+      "id": "silver-squeeze-watch",
+      "name": "Silver Squeeze Watch",
+      "claim_hint": "Paper suppression plus supply deficits force violent repricing \u2014 COMEX runs out, $100+ silver is the start.",
+      "queries": [
+        "silver squeeze",
+        "paper silver",
+        "COMEX default",
+        "silver shortage 2026"
+      ],
+      "beat": "Economy & markets"
+    },
+    {
+      "id": "japan-carry-trade-doom",
+      "name": "Japan Carry-Trade Doom",
+      "claim_hint": "Surging JGB yields force the yen carry trade to unwind, draining the liquidity that secretly funded US markets.",
+      "queries": [
+        "yen carry trade unwind",
+        "JGB meltdown",
+        "widowmaker trade",
+        "japan bond crisis 2026"
+      ],
+      "beat": "Economy & markets"
+    },
+    {
+      "id": "everything-bubble",
+      "name": "The Everything Bubble Pops",
+      "claim_hint": "Cheap money inflated all assets simultaneously; the synchronized pop will be worse than 1929 and 2008 combined.",
+      "queries": [
+        "everything bubble",
+        "worst crash in history",
+        "Shiller PE above 40",
+        "Kiyosaki crash 2026"
+      ],
+      "beat": "Economy & markets"
+    },
+    {
+      "id": "de-dollarization-doom-clock",
+      "name": "De-Dollarization Doom Clock",
+      "claim_hint": "BRICS rails and record central-bank gold buying end dollar dominance \u2014 a run on the dollar begins in 2026.",
+      "queries": [
+        "de-dollarization",
+        "BRICS currency",
+        "petrodollar is dead",
+        "dollar collapse 2026"
+      ],
+      "beat": "Economy & markets"
+    },
+    {
+      "id": "glp1-society",
+      "name": "The GLP-1 Society",
+      "claim_hint": "GLP-1 drugs will be taken by a huge share of the population and reshape food, addiction and aging \u2014 counter: mass-medicating with unknown long-term costs.",
+      "queries": [
+        "food noise",
+        "GLP-1 microdosing",
+        "Ozempic face",
+        "GLP-1 society"
+      ],
+      "beat": "Health & biotech"
+    },
+    {
+      "id": "seed-oil-wars",
+      "name": "Seed Oil Wars",
+      "claim_hint": "Industrial seed oils are a root cause of chronic disease; replace with tallow \u2014 counter: evidence indicts ultraprocessed food, not linoleic acid.",
+      "queries": [
+        "the hateful eight",
+        "seed oils are poison",
+        "cooked in beef tallow",
+        "seed oil debate"
+      ],
+      "beat": "Health & biotech"
+    },
+    {
+      "id": "longevity-escape-velocity",
+      "name": "Longevity Escape Velocity",
+      "claim_hint": "Aging is an engineering problem about to be solved; the first person to live to 150 is already alive \u2014 counter: biological fantasy.",
+      "queries": [
+        "longevity escape velocity",
+        "don't die",
+        "first person to live to 150",
+        "live forever science"
+      ],
+      "beat": "Health & biotech"
+    },
+    {
+      "id": "plastic-in-your-brain",
+      "name": "Plastic In Your Brain",
+      "claim_hint": "Microplastics have invaded blood and brains ('a spoon's worth'), linked to dementia \u2014 counter: contamination artifacts, a manufactured panic.",
+      "queries": [
+        "spoon's worth of plastic",
+        "microplastics in your brain",
+        "credit card of plastic a week",
+        "microplastics brain study"
+      ],
+      "beat": "Health & biotech"
+    },
+    {
+      "id": "ai-will-end-disease",
+      "name": "AI Will End Disease",
+      "claim_hint": "AI compresses decades of drug discovery into years \u2014 'cure all disease' within a decade; counter: the bottleneck is trials, not compute.",
+      "queries": [
+        "cure all disease",
+        "the end of disease",
+        "compressed 21st century",
+        "AI drug discovery cure"
+      ],
+      "beat": "Health & biotech"
+    },
+    {
+      "id": "midterm-wave-watch",
+      "name": "Midterm Wave Watch 2026",
+      "claim_hint": "The November 2026 midterms will be a wave \u2014 blue-wave flip vs 'increase our margins'.",
+      "queries": [
+        "blue wave 2026",
+        "red wave coming",
+        "midterm wipeout",
+        "2026 midterm predictions"
+      ],
+      "beat": "Politics & geopolitics"
+    },
+    {
+      "id": "taiwan-2027-countdown",
+      "name": "Taiwan 2027 Countdown",
+      "claim_hint": "China ready to \u2014 and may \u2014 invade or blockade Taiwan by 2027 (the Davidson Window); counter: readiness benchmark, not invasion date.",
+      "queries": [
+        "Davidson window",
+        "invade Taiwan by 2027",
+        "Taiwan 2027 timeline",
+        "China Taiwan invasion"
+      ],
+      "beat": "Politics & geopolitics"
+    },
+    {
+      "id": "nato-attack-window",
+      "name": "NATO Attack Window 2027-2030",
+      "claim_hint": "Russia capable of attacking or 'testing' NATO by ~2029; Europe must rearm now \u2014 counter: threat inflation.",
+      "queries": [
+        "war by 2029",
+        "Russia will attack NATO",
+        "test NATO",
+        "Europe rearmament"
+      ],
+      "beat": "Politics & geopolitics"
+    },
+    {
+      "id": "ev-cliff",
+      "name": "The EV Cliff",
+      "claim_hint": "With the tax credit gone, EV adoption collapsed \u2014 the transition was subsidy hype; counter: a temporary cliff before takeover.",
+      "queries": [
+        "the EV cliff",
+        "nobody wants EVs",
+        "hybrids are winning",
+        "EV sales collapse"
+      ],
+      "beat": "Energy & climate"
+    },
+    {
+      "id": "nuclear-renaissance-watch",
+      "name": "Nuclear Renaissance Watch",
+      "claim_hint": "Nuclear is finally back \u2014 SMRs scale fast enough to power AI; counter: same too-late-too-expensive hype as every previous renaissance.",
+      "queries": [
+        "nuclear renaissance",
+        "SMR microreactor",
+        "nuclear is back",
+        "nuclear power AI datacenters"
+      ],
+      "beat": "Energy & climate"
+    },
+    {
+      "id": "amoc-collapse-watch",
+      "name": "AMOC Collapse Watch",
+      "claim_hint": "The Atlantic circulation is heading for a tipping-point shutdown this century, possibly already committed \u2014 counter: likely withstands warming.",
+      "queries": [
+        "AMOC collapse",
+        "Gulf Stream shutdown",
+        "point of no return",
+        "AMOC tipping point"
+      ],
+      "beat": "Energy & climate"
+    },
+    {
+      "id": "depopulation-bomb",
+      "name": "The Depopulation Bomb",
+      "claim_hint": "Fertility is crashing below replacement everywhere; population collapse is a bigger risk than warming \u2014 counter: overblown panic.",
+      "queries": [
+        "population collapse",
+        "birth rate collapse",
+        "South Korea is over",
+        "fertility crisis"
+      ],
+      "beat": "Energy & climate"
+    },
+    {
+      "id": "the-gta-6-delay-ledger",
+      "name": "The GTA 6 Delay Ledger",
+      "claim_hint": "Rockstar cannot hold its own release date, and a named cast of leakers keeps staking their reputations on the real one.",
+      "queries": [
+        "GTA 6 delayed again",
+        "GTA 6 will not release in 2026",
+        "November 19 is not happening",
+        "The GTA 6 Delay Ledger"
+      ],
+      "beat": "Gaming",
+      "ledger_hook": "Rockstar (May 2026): GTA 6 ships November 19, 2026 \u2014 the same date carries Nate the Hate's public 'November holds, no reason for concern' call, the 'nine independent sources confirm no delay' consensus piece, and Polymarket's ~91.5% implied no-further-postponement.",
+      "fingerprints": [
+        "GTA 6 delayed again",
+        "GTA 6 will not release in 2026",
+        "November 19 is not happening"
+      ]
+    },
+    {
+      "id": "hollywood-s-ai-deadline",
+      "name": "Hollywood's AI Deadline",
+      "claim_hint": "Generative AI takes a named share of Hollywood's craft workforce by a named year \u2014 and the canonical version of that claim expires this November.",
+      "queries": [
+        "AI will replace actors",
+        "synthetic performer",
+        "90% of animation jobs",
+        "Hollywood's AI Deadline"
+      ],
+      "beat": "Entertainment & media",
+      "ledger_hook": "Jeffrey Katzenberg, Bloomberg New Economy Forum, 9 Nov 2023: AI takes 90% of artist jobs on animated films 'within three years' \u2014 deadline November 2026, scoreable in weeks.",
+      "fingerprints": [
+        "AI will replace actors",
+        "synthetic performer",
+        "90% of animation jobs"
+      ]
+    },
+    {
+      "id": "the-box-office-resurrection",
+      "name": "The Box Office Resurrection",
+      "claim_hint": "Cinema either structurally recovered in 2026 or the record grosses are ticket-price inflation over a shrunken audience \u2014 both camps are citing the same year as proof.",
+      "queries": [
+        "box office is back",
+        "biggest year since 2019",
+        "nobody goes to the movies anymore",
+        "The Box Office Resurrection"
+      ],
+      "beat": "Entertainment & media",
+      "ledger_hook": "PwC (2024 outlook): global box office does not top pre-pandemic levels until 2026 \u2014 resolves 31 Dec 2026, against both the $10B domestic gross and the ~470.9M tickets sold through week 30 versus 747.3M in 2019.",
+      "fingerprints": [
+        "box office is back",
+        "biggest year since 2019",
+        "nobody goes to the movies anymore"
+      ]
+    },
+    {
+      "id": "the-slop-tide",
+      "name": "The Slop Tide",
+      "claim_hint": "AI slop is crowding the human internet out of the feed \u2014 with a counter-camp arguing the slop bubble already popped.",
+      "queries": [
+        "AI slop",
+        "dead internet theory",
+        "brainrot",
+        "zombie internet",
+        "the feed is dead"
+      ],
+      "beat": "Internet & creator economy",
+      "ledger_hook": "Europol Innovation Lab (Oct 2022): 'as much as 90% of online content may be synthetically generated by 2026' \u2014 the deadline is this calendar year.",
+      "fingerprints": [
+        "AI slop",
+        "dead internet theory",
+        "brainrot",
+        "zombie internet",
+        "the feed is dead"
+      ]
+    },
+    {
+      "id": "superhero-fatigue-watch",
+      "name": "Superhero Fatigue Watch",
+      "claim_hint": "Audiences are permanently exhausted by superhero movies \u2014 or 2026 just killed the fatigue thesis outright.",
+      "queries": [
+        "superhero fatigue is real",
+        "superhero fatigue is a myth",
+        "the MCU is dead",
+        "Superhero Fatigue Watch"
+      ],
+      "beat": "Entertainment & media",
+      "ledger_hook": "'Avengers: Doomsday will be the highest-grossing film of 2026' \u2014 the film moved from 1 May 2026 to 18 Dec 2026, giving the argument a scheduled resolution date four months out.",
+      "fingerprints": [
+        "superhero fatigue is real",
+        "superhero fatigue is a myth",
+        "the MCU is dead"
+      ]
+    },
+    {
+      "id": "ai-on-the-charts",
+      "name": "AI on the Charts",
+      "claim_hint": "AI acts are about to take over the charts and displace human artists \u2014 versus supply flooding while real AI listening stays a rounding error.",
+      "queries": [
+        "AI slop is taking over the charts",
+        "an AI just charted on Billboard",
+        "Suno killed music",
+        "AI on the Charts"
+      ],
+      "beat": "Entertainment & media",
+      "ledger_hook": "Open prediction markets: 'Will an AI-generated song reach #1 on the Billboard Hot 100 in 2026?' \u2014 hard 31 Dec 2026 resolution, with Deezer's measured 1-3% AI stream share against >50% of daily uploads as the counter-evidence.",
+      "fingerprints": [
+        "AI slop is taking over the charts",
+        "an AI just charted on Billboard",
+        "Suno killed music"
+      ]
+    },
+    {
+      "id": "tiktok-after-the-sale",
+      "name": "TikTok After the Sale",
+      "claim_hint": "Six years of 'TikTok will be banned by [date]' just resolved at once \u2014 and the successor claim is that the American-owned app throttles political content.",
+      "queries": [
+        "TikTok is getting banned",
+        "shadowbanned since the sale",
+        "the American algorithm",
+        "my views went to zero",
+        "they bought the algorithm"
+      ],
+      "beat": "Internet & creator economy",
+      "ledger_hook": "The full extension chain, scoreable link by link: 19 Jan 2025 statutory deadline \u2192 20 Jan \u2192 5 Apr \u2192 mid-June \u2192 17 Sept (third extension) \u2192 16 Dec 2025 \u2192 deal closed 22 Jan 2026, retiring Forrester's on-record 'neither banned nor divested in 2025' and Kevin O'Leary's 'no third extension' in the same stroke.",
+      "fingerprints": [
+        "TikTok is getting banned",
+        "shadowbanned since the sale",
+        "the American algorithm",
+        "my views went to zero",
+        "they bought the algorithm"
+      ]
+    },
+    {
+      "id": "soccer-s-american-moment",
+      "name": "Soccer's American Moment",
+      "claim_hint": "This World Cup finally converts America into a soccer country \u2014 a promise first made in 1994 and re-made every cycle since.",
+      "queries": [
+        "they said this in 1994 too",
+        "soccer will never take off in America",
+        "the Messi bump is temporary",
+        "World Cup fans aren't MLS fans",
+        "this time it's different"
+      ],
+      "beat": "Sports",
+      "ledger_hook": "The recurring 'soccer becomes a top-three US sport by [year]' claim, re-dated each cycle since 1994, with the nearest live test being whether MLS's reported 62% YoY viewership rise holds through 2027 rather than reverting post-tournament.",
+      "fingerprints": [
+        "they said this in 1994 too",
+        "soccer will never take off in America",
+        "the Messi bump is temporary",
+        "World Cup fans aren't MLS fans",
+        "this time it's different"
+      ]
+    },
+    {
+      "id": "the-games-industry-collapse-thesis",
+      "name": "The Games Industry Collapse Thesis",
+      "claim_hint": "The contraction is structural rather than cyclical and layoffs keep accelerating \u2014 against a camp arguing the market is resizing, not dying.",
+      "queries": [
+        "the games industry is collapsing",
+        "another day another studio closure",
+        "worst year in gaming history",
+        "The Games Industry Collapse Thesis"
+      ],
+      "beat": "Gaming",
+      "ledger_hook": "ASGC / Amir Satvat: 8,025 games-industry layoffs forecast for 2026 in January, revised to 14,259 in July 2026 \u2014 both resolve January 2027, and the January figure has already been exceeded.",
+      "fingerprints": [
+        "the games industry is collapsing",
+        "another day another studio closure",
+        "worst year in gaming history"
+      ]
+    },
+    {
+      "id": "the-sportsbook-kill-shot",
+      "name": "The Sportsbook Kill Shot",
+      "claim_hint": "Prediction markets replace state-licensed sportsbooks as the way America bets \u2014 unless Congress or the states ban sports event contracts first.",
+      "queries": [
+        "prediction markets are just sportsbooks with extra steps",
+        "Kalshi is going to kill DraftKings",
+        "the CFTC loophole",
+        "no vig, no limits, no bans",
+        "states are only mad about the tax revenue"
+      ],
+      "beat": "Sports",
+      "ledger_hook": "Polymarket runs the market on its own fate: 'Law banning sports prediction markets enacted in 2026?' \u2014 self-scoring at 31 Dec 2026, with the Schiff/Curtis and Horsford/Amodei bills resolving when the 119th Congress ends in January 2027.",
+      "fingerprints": [
+        "prediction markets are just sportsbooks with extra steps",
+        "Kalshi is going to kill DraftKings",
+        "the CFTC loophole",
+        "no vig, no limits, no bans",
+        "states are only mad about the tax revenue"
+      ]
+    },
+    {
+      "id": "ticketmaster-breakup-watch",
+      "name": "Ticketmaster Breakup Watch",
+      "claim_hint": "Live Nation's monopoly is why tickets cost so much, so breaking it up lowers prices \u2014 versus the claim that face values and fees are set by artists and demand and a breakup changes nothing for fans.",
+      "queries": [
+        "break up Ticketmaster",
+        "junk fees",
+        "dynamic pricing is a scam",
+        "Ticketmaster Breakup Watch"
+      ],
+      "beat": "Entertainment & media",
+      "ledger_hook": "The state AG remedies track: earliest remedies trial February 2027, scoreable on whether it starts on time \u2014 and the central contested prediction, that a breakup or the FTC all-in pricing rule lowers what fans actually pay, testable against Pollstar's average ticket price (2026 mid-year $122.15, down 2.4%) and NITO's 28.65% average fee figure year over year.",
+      "fingerprints": [
+        "break up Ticketmaster",
+        "junk fees",
+        "dynamic pricing is a scam"
+      ]
+    },
+    {
+      "id": "enhanced-games-reckoning",
+      "name": "Enhanced Games Reckoning",
+      "claim_hint": "An openly doped competition shatters world records and exposes clean sport as a fiction \u2014 versus the result that it produced one record across roughly twenty-two events.",
+      "queries": [
+        "the Olympics are already enhanced",
+        "they only broke one record",
+        "the greatest anticlimax in sports",
+        "clean sport is a marketing term",
+        "$10 million for Bolt's record"
+      ],
+      "beat": "Sports",
+      "ledger_hook": "CEO Maximilian Martin's standing $10,000,000 bounty for any man breaking Usain Bolt's 100m world record \u2014 open and unclaimed \u2014 sitting directly on top of the pre-event promise of multiple world records, already scored at 1 of ~22 on 24 May 2026.",
+      "fingerprints": [
+        "the Olympics are already enhanced",
+        "they only broke one record",
+        "the greatest anticlimax in sports",
+        "clean sport is a marketing term",
+        "$10 million for Bolt's record"
+      ]
+    }
   ]
 }

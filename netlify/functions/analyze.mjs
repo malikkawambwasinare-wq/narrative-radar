@@ -95,7 +95,7 @@ const ANALYSIS_SCHEMA = {
     new_narrative_born: { type: ["string", "null"] },
     new_narrative_born_note: { type: ["string", "null"] },
     new_narrative_queries: { type: "array", items: { type: "string" } },
-    new_narrative_industry: { type: ["string", "null"], enum: ["AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", "Unsorted", null] },
+    new_narrative_industry: { type: ["string", "null"], enum: ["AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", "Entertainment & media", "Gaming", "Sports", "Internet & creator economy", "Unsorted", null] },
     explanation_layman: { type: ["string", "null"] },
     explanation_intermediate: { type: ["string", "null"] },
     explanation_expert: { type: ["string", "null"] },
@@ -113,9 +113,9 @@ const SYSTEM = `You are the analysis engine for Narrative Radar, a tool that ext
      * new_narrative_born: your best estimate of when this narrative FIRST appeared in public discourse (YYYY or YYYY-MM; e.g. "crypto winter" dates to ~2018) — null if you genuinely can't estimate
      * new_narrative_born_note: one line stating the basis of the estimate; this is a model estimate pending audit
      * new_narrative_queries: 4-6 YouTube search queries for collecting this narrative's video corpus
-     * new_narrative_industry: the shelf this narrative belongs on — one of "AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", or "Unsorted" if none fit
+     * new_narrative_industry: the shelf this narrative belongs on — one of "AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Entertainment & media", "Gaming", "Sports", "Internet & creator economy", "Fringe & unexplained", "Culture & society", or "Unsorted" if none fit
      * explanation_layman / explanation_intermediate / explanation_expert: three explanations of the narrative (each ≤ 75 words). Layman: plain everyday words, no jargon, why they should care. Intermediate: the mechanism and the main camps. Expert: audit framing — clocks, falsifiers, incentives, lifecycle stage. Null for other decisions.
-   - "unrelated" — reserved for content with no narrative to track: music, entertainment, gaming, tutorials. Claims-driven commentary about markets/politics/tech/society almost always carries a narrative.
+   - "unrelated" — reserved ONLY for content carrying no recurring claim at all: music tracks themselves, let's-plays, vlogs, pure tutorials, highlight reels. Note that commentary ABOUT entertainment, gaming, sport or the creator economy usually DOES carry a narrative ("streaming is dying", "GTA 6 will slip again", "the games industry is collapsing", "AI is taking the charts") — those are tracked narratives, not unrelated content. Claims-driven commentary about markets/politics/tech/society/culture almost always carries a narrative.
 2. verdict — from metadata alone: ORIGINAL / DERIVATIVE / RECYCLED / CLICKBAIT / UNKNOWN. Be honest about uncertainty; this is metadata-only, no transcript.
 3. advice — one sentence on what to do with their time, grounded in the verdict.
 4. is_update — for existing narratives: does the metadata suggest NEW claims or a NEW mechanism (an update to the narrative)? Set update_note.
