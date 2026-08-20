@@ -6,12 +6,12 @@
 <title>Walk the Record — The 80-Year Collapse · Narrative Radar</title>
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
   :root {
     --bg: #050810; --ink: #E8EDF5; --dim: #93A1B5; --line: #1C2637;
     --spine: #6EE7C8; --refuted: #FF6B5A; --updated: #F5C04E;
-    --ambiguous: #8A9BB0; --pending: #7EB8FF; --card: rgba(8, 13, 24, 0.78);
+    --ambiguous: #8A9BB0; --pending: #7EB8FF; --card: rgba(8, 13, 24, 0.82);
   }
   * { box-sizing: border-box; margin: 0; }
   html { scroll-behavior: smooth; }
@@ -25,109 +25,98 @@
   #stage { position: fixed; inset: 0; z-index: 0; }
   #stage canvas { display: block; }
 
-  /* top bar */
-  .bar {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 30;
+  /* film pass: vignette + grain */
+  #fx { position: fixed; inset: 0; z-index: 5; pointer-events: none;
+    background: radial-gradient(ellipse at 50% 42%, transparent 52%, rgba(2,4,10,.58) 100%); }
+  #grain { position: fixed; inset: -20px; z-index: 6; pointer-events: none; opacity: .045; }
+  @media (prefers-reduced-motion: no-preference) {
+    #grain { animation: grain .42s steps(2) infinite; }
+  }
+  @keyframes grain { 0% { transform: translate(0,0);} 50% { transform: translate(-8px,6px);} 100% { transform: translate(6px,-8px);} }
+
+  /* boot veil */
+  #boot { position: fixed; inset: 0; z-index: 60; background: var(--bg);
+    display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 14px;
+    transition: opacity .9s ease; }
+  #boot.gone { opacity: 0; pointer-events: none; }
+  #boot .b1 { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .3em; color: var(--spine); }
+  #boot .b2 { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: .18em; color: var(--dim); }
+
+  .bar { position: fixed; top: 0; left: 0; right: 0; z-index: 30;
     display: flex; justify-content: space-between; align-items: center;
-    padding: 16px 22px; pointer-events: none;
-  }
-  .bar a, .bar .brand {
-    pointer-events: auto; font-family: "IBM Plex Mono", monospace;
+    padding: 16px 22px; pointer-events: none; }
+  .bar a, .bar .brand { pointer-events: auto; font-family: "IBM Plex Mono", monospace;
     font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
-    color: var(--dim); text-decoration: none;
-  }
+    color: var(--dim); text-decoration: none; }
   .bar a:hover { color: var(--spine); }
   .bar a:focus-visible, .rail button:focus-visible, .cta a:focus-visible {
-    outline: 2px solid var(--spine); outline-offset: 3px;
-  }
+    outline: 2px solid var(--spine); outline-offset: 3px; }
 
-  /* progress rail */
-  .rail {
-    position: fixed; right: 18px; top: 50%; transform: translateY(-50%);
-    z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px;
-  }
-  .rail .years {
-    font-family: "IBM Plex Mono", monospace; font-size: 9px; color: var(--dim);
-    display: flex; flex-direction: column; align-items: center; gap: 4px;
-  }
+  .rail { position: fixed; right: 18px; top: 50%; transform: translateY(-50%);
+    z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .rail .years { font-family: "IBM Plex Mono", monospace; font-size: 9px; color: var(--dim);
+    display: flex; flex-direction: column; align-items: center; gap: 4px; }
   .rail .track { width: 2px; height: 130px; background: var(--line); position: relative; border-radius: 2px; }
   .rail .track i { position: absolute; left: -1px; width: 4px; height: 14px; background: var(--spine); border-radius: 2px; top: 0; }
-  .rail button {
-    width: 8px; height: 8px; border-radius: 50%; border: 1px solid var(--dim);
-    background: transparent; cursor: pointer; padding: 0;
-  }
+  .rail button { width: 8px; height: 8px; border-radius: 50%; border: 1px solid var(--dim);
+    background: transparent; cursor: pointer; padding: 0; }
   .rail button[aria-current="true"] { background: var(--spine); border-color: var(--spine); }
 
-  /* chapters */
   main { position: relative; z-index: 10; }
-  section.ch { min-height: 175vh; display: flex; align-items: center; padding: 0 6vw; }
-  section.ch:first-of-type, section.ch:last-of-type { min-height: 150vh; }
-  .card {
-    max-width: 470px; background: var(--card);
+  section.ch { min-height: 185vh; display: flex; align-items: center; padding: 0 6vw; }
+  section.ch:first-of-type, section.ch:last-of-type { min-height: 160vh; }
+  .card { max-width: 470px; background: var(--card);
     border: 1px solid var(--line); border-radius: 8px;
-    padding: 26px 28px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  }
+    padding: 26px 28px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
   .ch:nth-of-type(odd) { justify-content: flex-start; }
   .ch:nth-of-type(even) { justify-content: flex-end; }
   .ch.center { justify-content: center; text-align: center; }
-  .ch.center .card { background: transparent; border: none; backdrop-filter: none; -webkit-backdrop-filter: none; max-width: 640px; }
+  .ch.center .card { background: transparent; border: none; backdrop-filter: none; -webkit-backdrop-filter: none; max-width: 660px; }
+  .ch.center.scrim .card { background: var(--card); border: 1px solid var(--line);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
 
-  .eyebrow {
-    font-family: "IBM Plex Mono", monospace; font-size: 10.5px;
-    letter-spacing: .2em; text-transform: uppercase; color: var(--spine);
-    margin-bottom: 12px;
-  }
-  h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.05; text-wrap: balance; }
-  h2 { font-size: clamp(1.35rem, 2.6vw, 1.9rem); font-weight: 600; letter-spacing: -.01em; line-height: 1.2; margin-bottom: 12px; text-wrap: balance; }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 10.5px;
+    letter-spacing: .2em; text-transform: uppercase; color: var(--spine); margin-bottom: 12px; }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); font-weight: 800; letter-spacing: -.02em; line-height: 1.05; text-wrap: balance; }
+  h2 { font-size: clamp(1.35rem, 2.6vw, 1.9rem); font-weight: 700; letter-spacing: -.01em; line-height: 1.2; margin-bottom: 12px; text-wrap: balance; }
   .sub { color: var(--dim); font-size: 1.02rem; max-width: 54ch; margin: 14px auto 0; }
   .card p { color: var(--dim); font-size: .93rem; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-  .chip {
-    font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: .1em;
+  .chip { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: .1em;
     color: var(--ink); border: 1px solid var(--line); border-radius: 4px;
-    padding: 4px 8px; background: rgba(110, 231, 200, 0.06);
-  }
+    padding: 4px 8px; background: rgba(110, 231, 200, 0.06); }
   .hint { margin-top: 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: var(--dim); letter-spacing: .08em; }
   .scrollhint { margin-top: 40px; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .2em; color: var(--dim); animation: bob 2.4s ease-in-out infinite; }
   @keyframes bob { 0%,100% { transform: translateY(0); opacity: .55; } 50% { transform: translateY(7px); opacity: 1; } }
 
-  /* ledger stats */
   .stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 6px; justify-content: center; }
-  .stat { border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; min-width: 86px; background: var(--card); }
+  .stat { border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; min-width: 86px; background: rgba(5,8,16,.6); }
   .stat b { font-family: "IBM Plex Mono", monospace; font-size: 1.5rem; display: block; font-variant-numeric: tabular-nums; }
   .stat small { font-family: "IBM Plex Mono", monospace; font-size: 8.5px; letter-spacing: .12em; color: var(--dim); }
-  .stat.s-sup b { color: #5ECf8E; } .stat.s-ref b { color: var(--refuted); }
+  .stat.s-sup b { color: #5ECF8E; } .stat.s-ref b { color: var(--refuted); }
   .stat.s-upd b { color: var(--updated); } .stat.s-amb b { color: var(--ambiguous); }
   .stat.s-pen b { color: var(--pending); }
-  .badge {
-    display: inline-block; margin-top: 16px; font-family: "IBM Plex Mono", monospace;
+  .badge { display: inline-block; margin-top: 16px; font-family: "IBM Plex Mono", monospace;
     font-size: 9.5px; letter-spacing: .08em; color: var(--updated);
-    border: 1px dashed var(--updated); border-radius: 4px; padding: 5px 10px; max-width: 46ch;
-  }
+    border: 1px dashed var(--updated); border-radius: 4px; padding: 5px 10px; max-width: 46ch; }
   .cta { margin-top: 26px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; align-items: center; }
-  .cta a.primary {
-    font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em;
+  .cta a.primary { font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em;
     text-transform: uppercase; text-decoration: none; color: #04110C;
-    background: var(--spine); border-radius: 6px; padding: 12px 22px; font-weight: 600;
-  }
+    background: var(--spine); border-radius: 6px; padding: 12px 22px; font-weight: 600; }
   .cta a.primary:hover { filter: brightness(1.12); }
   .exitline { margin-top: 22px; font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .14em; color: var(--dim); text-transform: uppercase; }
 
-  /* tooltip */
-  #tip {
-    position: fixed; z-index: 40; pointer-events: none; display: none;
+  #tip { position: fixed; z-index: 40; pointer-events: none; display: none;
     max-width: 300px; background: #0B1322; border: 1px solid var(--line);
     border-radius: 6px; padding: 12px 14px; font-size: .8rem; color: var(--dim);
-    box-shadow: 0 10px 30px rgba(0,0,0,.5);
-  }
+    box-shadow: 0 10px 30px rgba(0,0,0,.5); }
   #tip .t-date { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: .12em; color: var(--spine); }
   #tip .t-claim { color: var(--ink); margin: 5px 0; font-size: .84rem; line-height: 1.45; }
   #tip .t-status { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: .12em; }
   #tip .t-note { font-size: .74rem; margin-top: 5px; }
   #tip .t-src { font-family: "IBM Plex Mono", monospace; font-size: 8.5px; color: var(--dim); margin-top: 6px; letter-spacing: .06em; }
 
-  /* fallback when WebGL is unavailable */
-  body.no3d #stage { display: none; }
+  body.no3d #stage, body.no3d #fx, body.no3d #grain { display: none; }
   body.no3d { background: radial-gradient(ellipse at 50% 0%, #0B1322 0%, var(--bg) 60%); }
   body.no3d section.ch { min-height: auto; padding: 8vh 6vw; }
   body.no3d .card { background: #0B1322; }
@@ -146,6 +135,9 @@
 <body>
 
 <div id="stage" aria-hidden="true"></div>
+<div id="fx" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+<div id="boot"><div class="b1">ENTERING THE RECORD</div><div class="b2">2015 → 2028</div></div>
 
 <div class="bar">
   <span class="brand">Narrative Radar · Flagship Record</span>
@@ -187,9 +179,9 @@
     <div class="card">
       <div class="eyebrow">Chapter 02 · The Preachers</div>
       <h2>One conclusion, competing engines.</h2>
-      <p>Dalio carries the thesis. Around him, camps agree a crisis is coming but disagree on the trigger — AI-capex debt, a credit-market seizure, a yen-carry unwind. Around them, the content economy: 38 videos in this corpus, only 7 of them original. The dim points are copies of copies — repetition is not evidence. One clip ecosystem invented a "60% crash" figure that appears in no transcript.</p>
+      <p>Dalio carries the thesis. Around him, camps agree a crisis is coming but disagree on the trigger — AI-capex debt, a credit-market seizure, a yen-carry unwind. Around them, the content economy: 38 videos in this corpus, only 7 of them original. The stacked, faded cards are copies of copies — repetition is not evidence. One clip ecosystem invented a "60% crash" figure that appears in no transcript.</p>
       <div class="chips"><span class="chip">38 VIDEOS</span><span class="chip">7 ORIGINAL</span><span class="chip">3 TRIGGER CAMPS</span></div>
-      <div class="hint">Hover a point to identify it.</div>
+      <div class="hint">Hover a card to identify it · click to open the receipt.</div>
     </div>
   </section>
 
@@ -212,7 +204,7 @@
     </div>
   </section>
 
-  <section class="ch center" id="ch5">
+  <section class="ch center scrim" id="ch5">
     <div class="card">
       <div class="eyebrow">Chapter 05 · The Ledger</div>
       <h2>The scoreboard, as it stands.</h2>
@@ -249,16 +241,18 @@ import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js"
 import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
 
 /* ============================================================
-   WALK THE RECORD — one persistent world, scroll as conductor.
-   Design rule: atmosphere dramatizes the RECORD (time, clocks,
-   stamps, goalpost-moves), never the CLAIM. No doom mood.
+   WALK THE RECORD v2 — one persistent world, scroll conducts.
+   Rule: atmosphere dramatizes the RECORD (time, clocks, stamps,
+   goalpost-moves, receipts) — never the CLAIM. No doom mood.
+   Chronology is space: 60 world units = 1 year, 2015 → 2028.
    ============================================================ */
 
 const COL = {
   bg: 0x050810, spine: 0x6ee7c8, star: 0xbdd2ff,
   refuted: 0xff6b5a, updated: 0xf5c04e, ambiguous: 0x8a9bb0,
-  pending: 0x7eb8ff, dimmote: 0x33415a, brightmote: 0x6ee7c8,
+  pending: 0x7eb8ff, dimmote: 0x33415a,
 };
+const VERDICT_HUE = { ORIGINAL: "#6EE7C8", DERIVATIVE: "#8FB2D8", RECYCLED: "#8A93A5", CLICKBAIT: "#F08C5A" };
 
 /* ---- the record (from corpus/collapse-audit, Aug 2026) ---- */
 const LEDGER = [
@@ -273,7 +267,7 @@ const LEDGER = [
   { date: "2025-09", y: 2025.7, claim: "US debt crisis within ~3 years.", horizon: "by ~2028", status: "PENDING", note: "First claim in the ledger with a countable clock. Judgment date: 2028-09.", src: "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/" },
   { date: "2025-09", y: 2025.75, claim: "US and UK entering the dangerous phase of the 80-year cycle; 'very, very dark times' ahead.", horizon: "unstated (vague)", status: "PENDING", note: "Vague horizon flagged.", src: "https://singjupost.com/ray-dalio-were-heading-into-very-very-dark-times-doac-podcast-transcript/", vague: true },
   { date: "2026-02", y: 2026.1, claim: "World is 'on the brink' of a capital war — money weaponized; gold as hedge.", horizon: "near-term", status: "PENDING", note: "New mechanism added to the stack.", src: "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html" },
-  { date: "2026-07", y: 2026.6, claim: "'The 80 Year Collapse Is Here' — AI bubble showing 'classic signs'; Republicans likely lose House at midterms, then intensifying internal conflict.", horizon: "unstated (vague)", status: "PENDING", note: "The trigger video: 135K views in 3 hours, 3.9M in a week. Its clip ecosystem invented a '60% crash' that appears in no transcript.", src: "https://www.youtube.com/watch?v=Bu0xNDLNORU", vague: true },
+  { date: "2026-07", y: 2026.6, claim: "'The 80 Year Collapse Is Here' — AI bubble showing 'classic signs'; midterm conflict ahead.", horizon: "unstated (vague)", status: "PENDING", note: "The trigger video: 135K views in 3 hours, 3.9M in a week. Its clip ecosystem invented a '60% crash' that appears in no transcript.", src: "https://www.youtube.com/watch?v=Bu0xNDLNORU", vague: true },
 ];
 const CAMPS = [
   { name: "AI-CAPEX DEBT", n: 3, angle: -0.7 },
@@ -285,27 +279,186 @@ const MUTATIONS = [
   { d: "2021", m: "internal conflict + empire decline" }, { d: "2025", m: "'Phase 5' — economic heart attack" },
   { d: "2026", m: "capital war — money weaponized" }, { d: "2026", m: "AI capex as the crisis vector" },
 ];
+/* real videos from corpus/collapse-audit/videos.json — every card is a receipt */
+const VIDEOS = [
+  { id: "Bu0xNDLNORU", t: "Ray Dalio: I Predicted The 2008 CRASH, I Know What Comes Next!", c: "The Diary Of A CEO", vw: "3,949,652 views", vd: "ORIGINAL", trigger: true },
+  { id: "qbnuJFRcvQE", t: "Why Economists Ignore the One Chart That Predicts Every Crash", c: "Tom Bilyeu · Steve Keen", vw: "11,301 views", vd: "ORIGINAL" },
+  { id: "AgTk42rH4n8", t: "Martin Armstrong: Why The World Order Will Collapse in 2032", c: "Palisades Gold Radio", vw: "34,586 views", vd: "ORIGINAL" },
+  { id: "1BOCO-FcRYY", t: "Shocking Bubble Top Sign You've Never Thought Of | Mark Thornton", c: "David Lin · misesmedia", vw: "29,891 views", vd: "ORIGINAL" },
+  { id: "UNYpubnQDC8", t: "The REAL Reason America Already Lost The War", c: "The Diary Of A CEO Clips", vw: "2,768 views", vd: "ORIGINAL" },
+  { id: "jmmaBcRduwQ", t: "Famous Investor EXPOSES The AI Bubble", c: "The Young Turks", vw: "50,157 views", vd: "DERIVATIVE" },
+  { id: "HvgjGiNm5Rk", t: "Meta CEO just popped the AI Bubble. like 1999, but worse.", c: "Reventure Consulting", vw: "119,839 views", vd: "DERIVATIVE" },
+  { id: "s8omwT8FkSE", t: "The Fed *JUST* Warned: We're about to Pop the AI Bubble.", c: "Meet Kevin", vw: "16,760 views", vd: "DERIVATIVE" },
+  { id: "cXI2knjwQNc", t: "The 80-Year Cycle Is Ending: Prepare For Economic Collapse", c: "The Vision Journal", vw: "No views", vd: "RECYCLED" },
+  { id: "pYFBf15XunU", t: "Ray Dalio Already Knew: Debt Collapse Is Unfolding — Silver Is About to Explode", c: "Macro investing Secrets", vw: "4,349 views", vd: "RECYCLED" },
+  { id: "gt3aH2gH6T0", t: "The AI Bubble Is About To Burst: How To Protect Your Wealth", c: "The Vision Journal", vw: "28 views", vd: "RECYCLED" },
+  { id: "J6vOuZ4HvEQ", t: "A MASSIVE INSIDER WARNING ABOUT THIS MARKET", c: "Bravo Trades · J Bravo", vw: "12,642 views", vd: "CLICKBAIT" },
+  { id: "oc9pM5MK4fY", t: "The Dollar Collapse: What Happens Next", c: "Sheri Yazdan", vw: "1 view", vd: "CLICKBAIT" },
+  { id: "6yir9VA3bKQ", t: "AI Stocks Crash Warning (Sandisk Micron AMD Nvidia…)", c: "Bera Finance", vw: "4,429 views", vd: "CLICKBAIT" },
+];
+const HEADLINES = [
+  { y: 2015.2, d: "MAR 2015", h: "“The Fed risks repeating 1937”" },
+  { y: 2016.1, d: "JAN 2016", h: "“The 75-year debt supercycle is ending”" },
+  { y: 2020.0, d: "JAN 2020 · DAVOS", h: "“Cash is trash — get out of cash”" },
+  { y: 2022.8, d: "OCT 2022", h: "“A perfect storm is forming”" },
+  { y: 2023.7, d: "SEP 2023", h: "“US debt crisis coming”" },
+  { y: 2025.5, d: "JUL 2025", h: "“An economic heart attack — Phase 5”" },
+  { y: 2026.6, d: "JUL 2026", h: "“The 80 Year Collapse Is Here”" },
+];
 const STATUS_COL = { REFUTED: COL.refuted, UPDATED: COL.updated, AMBIGUOUS: COL.ambiguous, PENDING: COL.pending };
 
-/* ---- scene ledger: one camera endpoint per chapter ---- */
+/* ---- chronology is space ---- */
 const ROOM = 150;
+const zOfYear = (y) => 40 - (y - 2015) * 60;        /* 2015 → z 40 · 2028 → z -740 */
+const yearX = (y) => (y - 2021.5) * 3.3;             /* local x on the clocks bridge */
+
 const CHAPTERS = [
-  { cam: [0, 3.2, 40], tgt: [0, 1.6, 0], fov: 50, fog: 0.010, spineGlow: 0.6 },
-  { cam: [0, 1.7, 15], tgt: [0, 1.7, -2], fov: 42, fog: 0.011, spineGlow: 1.0 },
-  { cam: [-5.5, 2.4, -ROOM + 16], tgt: [1.4, 1.6, -ROOM - 4], fov: 46, fog: 0.012, spineGlow: 0.8 },
-  { cam: [9.0, 3.6, -2 * ROOM + 21], tgt: [-2.5, 1.2, -2 * ROOM - 6], fov: 46, fog: 0.010, spineGlow: 1.0 },
-  { cam: [-6.0, 2.8, -3 * ROOM + 16], tgt: [0.8, 1.7, -3 * ROOM - 4], fov: 45, fog: 0.011, spineGlow: 0.8 },
-  { cam: [0, 2.6, -4 * ROOM + 10], tgt: [0, 2.2, -4 * ROOM - 40], fov: 42, fov_m: 52, fog: 0.008, spineGlow: 1.2 },
+  { cam: [0, 3.4, 42], tgt: [0, 1.6, 0], fov: 50, fog: 0.009, spineGlow: 0.6 },
+  { cam: [0, 1.7, 15], tgt: [0, 1.7, -2], fov: 42, fog: 0.010, spineGlow: 1.0 },
+  { cam: [-5.5, 2.4, -ROOM + 18], tgt: [1.2, 1.7, -ROOM - 5], fov: 46, fog: 0.011, spineGlow: 0.8 },
+  { cam: [9.0, 3.6, -2 * ROOM + 21], tgt: [-2.5, 1.2, -2 * ROOM - 6], fov: 46, fog: 0.0095, spineGlow: 1.0 },
+  { cam: [-6.0, 2.8, -3 * ROOM + 16], tgt: [0.8, 1.7, -3 * ROOM - 4], fov: 45, fog: 0.010, spineGlow: 0.8 },
+  { cam: [0, 3.0, -4 * ROOM + 12], tgt: [0, 0.8, -4 * ROOM - 18], fov: 44, fov_m: 52, fog: 0.005, spineGlow: 1.2 },
 ];
 
 const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const isMobile = matchMedia("(max-width: 760px)").matches;
 
 let renderer, scene, camera, composer, raycaster, pointer;
-const pickables = [], pulses = [], driftGroups = [];
-let spineMat;
+const pickables = [], pulses = [], driftGroups = [], bobbers = [], hands = [], gates = [], plates = [];
+let spineMat, dashes, dashData;
 
-function labelSprite(text, color = "#93A1B5", px = 22, weight = 500) {
+/* ================= canvas-texture factories ================= */
+function makeTex(w, h, draw) {
+  const c = document.createElement("canvas");
+  c.width = w; c.height = h;
+  draw(c.getContext("2d"), w, h);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  t.anisotropy = 4;
+  return t;
+}
+const starTex = () => makeTex(64, 64, (g) => {
+  const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.35, "rgba(255,255,255,0.6)"); gr.addColorStop(1, "rgba(255,255,255,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+});
+const flareTex = () => makeTex(128, 128, (g) => {
+  const gr = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+  gr.addColorStop(0, "rgba(255,255,255,1)"); gr.addColorStop(0.18, "rgba(220,235,255,0.5)"); gr.addColorStop(1, "rgba(255,255,255,0)");
+  g.fillStyle = gr; g.fillRect(0, 0, 128, 128);
+  g.globalCompositeOperation = "lighter";
+  g.fillStyle = "rgba(255,255,255,0.75)";
+  g.fillRect(62, 6, 4, 116); g.fillRect(6, 62, 116, 4);
+});
+function nebulaTex(colA, colB, seed) {
+  return makeTex(256, 256, (g) => {
+    let s = seed;
+    const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+    g.globalCompositeOperation = "lighter";
+    for (let i = 0; i < 46; i++) {
+      const x = 40 + rnd() * 176, y = 40 + rnd() * 176, r = 14 + rnd() * 58;
+      const gr = g.createRadialGradient(x, y, 0, x, y, r);
+      const col = rnd() > 0.75 ? colB : colA;
+      gr.addColorStop(0, col + "26"); gr.addColorStop(1, col + "00");
+      g.fillStyle = gr; g.beginPath(); g.arc(x, y, r, 0, 7); g.fill();
+    }
+    /* elliptical falloff mask */
+    g.globalCompositeOperation = "destination-in";
+    const m = g.createRadialGradient(128, 128, 20, 128, 128, 128);
+    m.addColorStop(0, "rgba(0,0,0,1)"); m.addColorStop(0.7, "rgba(0,0,0,0.7)"); m.addColorStop(1, "rgba(0,0,0,0)");
+    g.fillStyle = m; g.fillRect(0, 0, 256, 256);
+  });
+}
+const galaxyTex = () => makeTex(512, 160, (g) => {
+  g.globalCompositeOperation = "lighter";
+  for (let i = 0; i < 320; i++) {
+    const x = Math.random() * 512, y = 80 + (Math.random() - 0.5) * (20 + 90 * Math.abs(Math.sin(x / 80)));
+    const r = Math.random() * 2.2;
+    g.fillStyle = `rgba(${180 + Math.random() * 60 | 0},${190 + Math.random() * 50 | 0},255,${0.06 + Math.random() * 0.2})`;
+    g.beginPath(); g.arc(x, y, r + 1.5, 0, 7); g.fill();
+  }
+  const band = g.createLinearGradient(0, 40, 0, 120);
+  band.addColorStop(0, "rgba(90,110,200,0)"); band.addColorStop(0.5, "rgba(120,150,230,0.14)"); band.addColorStop(1, "rgba(90,110,200,0)");
+  g.fillStyle = band; g.fillRect(0, 0, 512, 160);
+  const m = g.createLinearGradient(0, 0, 512, 0);
+  m.addColorStop(0, "rgba(0,0,0,0)"); m.addColorStop(0.15, "rgba(0,0,0,1)"); m.addColorStop(0.85, "rgba(0,0,0,1)"); m.addColorStop(1, "rgba(0,0,0,0)");
+  g.globalCompositeOperation = "destination-in"; g.fillStyle = m; g.fillRect(0, 0, 512, 160);
+});
+function roundRect(g, x, y, w, h, r) {
+  g.beginPath();
+  g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r);
+  g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath();
+}
+function wrapText(g, text, x, y, maxW, lineH, maxLines) {
+  const words = text.split(" ");
+  let line = "", lines = 0;
+  for (const w of words) {
+    const test = line ? line + " " + w : w;
+    if (g.measureText(test).width > maxW && line) {
+      if (++lines === maxLines) { g.fillText(line.replace(/.{3}$/, "…"), x, y); return; }
+      g.fillText(line, x, y); y += lineH; line = w;
+    } else line = test;
+  }
+  if (line) g.fillText(line, x, y);
+}
+function videoCardTex(v) {
+  const hue = VERDICT_HUE[v.vd];
+  return makeTex(512, 340, (g) => {
+    roundRect(g, 2, 2, 508, 336, 18);
+    g.fillStyle = "#0C121D"; g.fill();
+    g.lineWidth = 3; g.strokeStyle = v.vd === "ORIGINAL" ? hue + "AA" : "#212B3D"; g.stroke();
+    /* thumbnail zone — stylized, never a fake photo */
+    g.save(); roundRect(g, 14, 14, 484, 218, 10); g.clip();
+    const th = g.createLinearGradient(0, 14, 512, 232);
+    th.addColorStop(0, "#131C2C"); th.addColorStop(0.55, "#0E1626"); th.addColorStop(1, hue + "22");
+    g.fillStyle = th; g.fillRect(14, 14, 484, 218);
+    g.strokeStyle = hue + "18"; g.lineWidth = 2;
+    for (let i = -3; i < 9; i++) { g.beginPath(); g.moveTo(i * 80, 232); g.lineTo(i * 80 + 130, 14); g.stroke(); }
+    /* play button */
+    g.fillStyle = "rgba(6,10,18,0.72)"; g.beginPath(); g.arc(256, 122, 40, 0, 7); g.fill();
+    g.strokeStyle = hue; g.lineWidth = 2.5; g.beginPath(); g.arc(256, 122, 40, 0, 7); g.stroke();
+    g.fillStyle = hue; g.beginPath(); g.moveTo(243, 100); g.lineTo(243, 144); g.lineTo(280, 122); g.closePath(); g.fill();
+    g.restore();
+    /* verdict chip */
+    g.font = "600 17px 'IBM Plex Mono', monospace";
+    const cw = g.measureText(v.vd).width + 22;
+    roundRect(g, 24, 24, cw, 30, 6); g.fillStyle = "rgba(5,8,16,0.85)"; g.fill();
+    g.strokeStyle = hue; g.lineWidth = 1.5; g.stroke();
+    g.fillStyle = hue; g.fillText(v.vd, 35, 45);
+    /* title */
+    g.font = "700 25px 'Archivo', sans-serif"; g.fillStyle = "#E8EDF5"; g.textBaseline = "alphabetic";
+    wrapText(g, v.t, 20, 272, 472, 30, 2);
+    /* channel · views */
+    g.font = "500 17px 'IBM Plex Mono', monospace"; g.fillStyle = "#7C8AA0";
+    g.fillText(v.c, 20, 322);
+    const vwW = g.measureText(v.vw).width;
+    g.fillStyle = v.vw === "1 view" || v.vw === "No views" ? "#F08C5A" : "#7C8AA0";
+    g.fillText(v.vw, 492 - vwW, 322);
+  });
+}
+function headlineTex(d, h) {
+  return makeTex(1024, 232, (g) => {
+    g.font = "600 26px 'IBM Plex Mono', monospace"; g.fillStyle = "#6EE7C8";
+    g.fillText(d + "  ·  ON THE RECORD", 18, 52);
+    g.font = "800 62px 'Archivo', sans-serif"; g.fillStyle = "#E8EDF5";
+    wrapText(g, h, 18, 130, 988, 68, 2);
+    g.fillStyle = "#2A3650"; g.fillRect(18, 208, 988, 3);
+  });
+}
+function stampTex(word, color) {
+  return makeTex(512, 170, (g) => {
+    roundRect(g, 8, 8, 496, 154, 14);
+    g.lineWidth = 7; g.strokeStyle = color; g.stroke();
+    g.font = "800 86px 'Archivo', sans-serif"; g.fillStyle = color;
+    const w = g.measureText(word).width;
+    g.fillText(word, (512 - w) / 2, 122);
+    /* worn speckle */
+    g.globalCompositeOperation = "destination-out";
+    for (let i = 0; i < 260; i++) g.fillRect(Math.random() * 512, Math.random() * 170, Math.random() * 3, Math.random() * 3);
+  });
+}
+function labelSprite(text, color = "#93A1B5", px = 22, weight = 500, noFog = false) {
   const pad = 14, c = document.createElement("canvas"), g = c.getContext("2d");
   const font = `${weight} ${px * 2}px "IBM Plex Mono", monospace`;
   g.font = font;
@@ -316,12 +469,11 @@ function labelSprite(text, color = "#93A1B5", px = 22, weight = 500) {
   g.fillText(text, pad, c.height / 2);
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
-  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false }));
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, fog: !noFog }));
   const scale = 0.011;
   sp.scale.set(c.width * scale, c.height * scale, 1);
   return sp;
 }
-
 function ring(radius, color, { tube = 0.05, opacity = 1, wire = false, emissiveScale = 1 } = {}) {
   const geo = new THREE.TorusGeometry(radius, tube, 12, 56);
   const mat = wire
@@ -333,95 +485,251 @@ function ring(radius, color, { tube = 0.05, opacity = 1, wire = false, emissiveS
   return new THREE.Mesh(geo, mat);
 }
 
-/* year (2015..2028.8) → x offset on the clocks bridge */
-const yearX = (y) => (y - 2021.5) * 3.3;
-
-function starTexture() {
-  const c = document.createElement("canvas");
-  c.width = c.height = 64;
-  const g = c.getContext("2d");
-  const grad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
-  grad.addColorStop(0, "rgba(255,255,255,1)");
-  grad.addColorStop(0.35, "rgba(255,255,255,0.6)");
-  grad.addColorStop(1, "rgba(255,255,255,0)");
-  g.fillStyle = grad;
-  g.fillRect(0, 0, 64, 64);
-  const t = new THREE.CanvasTexture(c);
-  t.colorSpace = THREE.SRGBColorSpace;
-  return t;
-}
-
-function buildWorld() {
-  /* stars — two depth layers over the whole corridor */
-  const starMap = starTexture();
-  for (const [count, size, spread] of [[5200, 0.7, 1], [900, 1.1, 0.55]]) {
-    const pos = new Float32Array(count * 3);
-    for (let i = 0; i < count; i++) {
-      pos[i * 3] = (Math.random() - 0.5) * 460 * spread;
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 300 * spread;
-      pos[i * 3 + 2] = 90 - Math.random() * 920;
+/* ================= environment ================= */
+function buildEnvironment() {
+  const sMap = starTex();
+  for (const [count, size, spread] of [[5200, 0.7, 1], [1600, 0.45, 1.4], [900, 1.1, 0.55]]) {
+    const n = isMobile ? count * 0.6 | 0 : count;
+    const pos = new Float32Array(n * 3);
+    for (let i = 0; i < n; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 480 * spread;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 320 * spread;
+      pos[i * 3 + 2] = 100 - Math.random() * 980;
     }
     const g = new THREE.BufferGeometry();
     g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
-    const m = new THREE.PointsMaterial({
-      color: COL.star, size, sizeAttenuation: true, transparent: true, map: starMap,
-      opacity: 0.75, blending: THREE.AdditiveBlending, depthWrite: false,
-    });
-    scene.add(new THREE.Points(g, m));
+    scene.add(new THREE.Points(g, new THREE.PointsMaterial({
+      color: COL.star, size, sizeAttenuation: true, transparent: true, map: sMap,
+      opacity: 0.8, blending: THREE.AdditiveBlending, depthWrite: false, fog: false,
+    })));
   }
+  /* bright flare stars */
+  const fN = 16, fPos = new Float32Array(fN * 3);
+  for (let i = 0; i < fN; i++) {
+    fPos[i * 3] = (Math.random() - 0.5) * 420;
+    fPos[i * 3 + 1] = (Math.random() - 0.5) * 260;
+    fPos[i * 3 + 2] = 60 - Math.random() * 880;
+  }
+  const fg = new THREE.BufferGeometry();
+  fg.setAttribute("position", new THREE.BufferAttribute(fPos, 3));
+  scene.add(new THREE.Points(fg, new THREE.PointsMaterial({
+    color: 0xdfe9ff, size: 7, sizeAttenuation: true, transparent: true, map: flareTex(),
+    opacity: 0.9, blending: THREE.AdditiveBlending, depthWrite: false, fog: false,
+  })));
 
-  /* the spine — the timeline itself, running the length of the walk */
-  const spineLen = 4 * ROOM + 260;
-  spineMat = new THREE.MeshStandardMaterial({
-    color: COL.spine, emissive: COL.spine, emissiveIntensity: 1.0, roughness: 0.4,
-  });
-  const spine = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.045, spineLen, 8), spineMat);
+  /* nebulae — layered billboards, teal/indigo with one ember pocket */
+  const nebs = [
+    ["#0F3E46", "#1E5E62", 11, 380, -140, 60, -120, 0.5],
+    ["#232B66", "#31408F", 23, 320, 190, -30, -230, 0.42],
+    ["#0F3E46", "#2A6E6E", 37, 420, -220, 90, -380, 0.48],
+    ["#232B66", "#3A2F7E", 51, 300, 170, 30, -500, 0.4],
+    ["#48301C", "#7E4A22", 67, 260, -160, -60, -560, 0.34],
+    ["#0F3E46", "#1E5E62", 83, 440, 230, 70, -680, 0.5],
+    ["#232B66", "#31408F", 97, 360, -190, 20, -780, 0.44],
+    ["#0F3E46", "#2A6E6E", 113, 300, 150, 110, -300, 0.36],
+  ].slice(0, isMobile ? 5 : 8);
+  for (const [a, b, seed, size, x, y, z, op] of nebs) {
+    const m = new THREE.Mesh(
+      new THREE.PlaneGeometry(size, size),
+      new THREE.MeshBasicMaterial({
+        map: nebulaTex(a, b, seed), transparent: true, opacity: op,
+        blending: THREE.AdditiveBlending, depthWrite: false, fog: false,
+      })
+    );
+    m.position.set(x, y, z);
+    m.userData.rot = (seed % 2 ? 1 : -1) * 0.004;
+    driftGroups.push(Object.assign(m, { userData: { spin: m.userData.rot, axis: "z" } }));
+    m.renderOrder = -2;
+    scene.add(m);
+  }
+  /* galaxy band backdrop */
+  const gal = new THREE.Mesh(
+    new THREE.PlaneGeometry(1150, 320),
+    new THREE.MeshBasicMaterial({ map: galaxyTex(), transparent: true, opacity: 0.5, blending: THREE.AdditiveBlending, depthWrite: false, fog: false })
+  );
+  gal.position.set(60, 90, -900); gal.rotation.z = -0.16; gal.renderOrder = -3;
+  scene.add(gal);
+
+  /* debris field — instanced rock silhouettes with rim light */
+  const dN = isMobile ? 70 : 130;
+  const rock = new THREE.InstancedMesh(
+    new THREE.IcosahedronGeometry(1, 0),
+    new THREE.MeshStandardMaterial({ color: 0x131a26, roughness: 0.95, metalness: 0.05, flatShading: true }),
+    dN
+  );
+  const m4 = new THREE.Matrix4(), q = new THREE.Quaternion(), e = new THREE.Euler(), v3 = new THREE.Vector3();
+  for (let i = 0; i < dN; i++) {
+    const side = Math.random() > 0.5 ? 1 : -1;
+    v3.set(side * (26 + Math.random() * 210), (Math.random() - 0.5) * 170, 70 - Math.random() * 900);
+    e.set(Math.random() * 6.3, Math.random() * 6.3, Math.random() * 6.3);
+    q.setFromEuler(e);
+    const s = 0.3 + Math.random() * 2.1;
+    m4.compose(v3, q, new THREE.Vector3(s, s * (0.7 + Math.random() * 0.6), s));
+    rock.setMatrixAt(i, m4);
+  }
+  scene.add(rock);
+
+  /* near dust */
+  const dustN = isMobile ? 400 : 800;
+  const dPos = new Float32Array(dustN * 3);
+  for (let i = 0; i < dustN; i++) {
+    dPos[i * 3] = (Math.random() - 0.5) * 60;
+    dPos[i * 3 + 1] = (Math.random() - 0.5) * 40;
+    dPos[i * 3 + 2] = 60 - Math.random() * 880;
+  }
+  const dg = new THREE.BufferGeometry();
+  dg.setAttribute("position", new THREE.BufferAttribute(dPos, 3));
+  scene.add(new THREE.Points(dg, new THREE.PointsMaterial({
+    color: COL.spine, size: 0.16, sizeAttenuation: true, transparent: true, map: sMap,
+    opacity: 0.5, blending: THREE.AdditiveBlending, depthWrite: false,
+  })));
+}
+
+/* ================= spine, gates, data pulses ================= */
+function buildSpine() {
+  const spineLen = 4 * ROOM + 320;
+  const zMid = -(spineLen / 2) + 55;
+  spineMat = new THREE.MeshStandardMaterial({ color: COL.spine, emissive: COL.spine, emissiveIntensity: 1.0, roughness: 0.4 });
+  const spine = new THREE.Mesh(new THREE.CylinderGeometry(0.05, 0.05, spineLen, 8), spineMat);
   spine.rotation.x = Math.PI / 2;
-  spine.position.set(0, 0.55, -(spineLen / 2) + 55);
+  spine.position.set(0, 0.55, zMid);
   scene.add(spine);
-  for (let yr = 2015; yr <= 2028; yr++) {
-    const t = (yr - 2015) / 13;
-    const tick = ring(0.22, COL.spine, { tube: 0.02, opacity: 0.5 });
-    tick.position.set(0, 0.55, 40 - t * (spineLen - 90));
-    tick.rotation.x = Math.PI / 2;
-    scene.add(tick);
+  /* soft beam glow: two crossed additive planes along the spine */
+  const glowTex = makeTex(64, 256, (g) => {
+    const gr = g.createLinearGradient(0, 0, 64, 0);
+    gr.addColorStop(0, "rgba(110,231,200,0)"); gr.addColorStop(0.5, "rgba(110,231,200,0.5)"); gr.addColorStop(1, "rgba(110,231,200,0)");
+    g.fillStyle = gr; g.fillRect(0, 0, 64, 256);
+  });
+  for (const rot of [0, Math.PI / 2]) {
+    const gp = new THREE.Mesh(
+      new THREE.PlaneGeometry(1.6, spineLen),
+      new THREE.MeshBasicMaterial({ map: glowTex, transparent: true, opacity: 0.5, blending: THREE.AdditiveBlending, depthWrite: false, side: THREE.DoubleSide })
+    );
+    gp.rotation.x = Math.PI / 2; gp.rotation.y = rot;
+    gp.position.set(0, 0.55, zMid);
+    scene.add(gp);
   }
+  /* data pulses travelling into the future */
+  const dashN = reduceMotion ? 0 : 26;
+  if (dashN) {
+    dashes = new THREE.InstancedMesh(
+      new THREE.BoxGeometry(0.055, 0.055, 1.7),
+      new THREE.MeshBasicMaterial({ color: 0xbdfff0, transparent: true, opacity: 0.9, blending: THREE.AdditiveBlending }),
+      dashN
+    );
+    dashData = [];
+    const dm = new THREE.Matrix4();
+    for (let i = 0; i < dashN; i++) {
+      dashData.push({ z: 45 - Math.random() * 850, sp: 14 + Math.random() * 18 });
+      dm.setPosition(0, 0.55, dashData[i].z);
+      dashes.setMatrixAt(i, dm);
+    }
+    scene.add(dashes);
+  }
+  /* year gates — the camera passes through time */
+  for (let yr = 2015; yr <= 2028; yr++) {
+    const z = zOfYear(yr);
+    const gate = new THREE.Mesh(
+      new THREE.TorusGeometry(7.2, 0.045, 10, 72),
+      new THREE.MeshBasicMaterial({ color: COL.spine, transparent: true, opacity: 0.12 })
+    );
+    gate.position.set(0, 1.4, z);
+    gates.push(gate);
+    scene.add(gate);
+    if (!isMobile || yr % 2 === 1) {
+      const yl = labelSprite(String(yr), "#6EE7C8", 26, 600);
+      yl.position.set(8.8, 4.6, z);
+      yl.material.opacity = 0.85;
+      scene.add(yl);
+    }
+  }
+  /* headline plates near their year gates */
+  HEADLINES.forEach((hl, i) => {
+    const t = headlineTex(hl.d, hl.h);
+    const m = new THREE.Mesh(
+      new THREE.PlaneGeometry(13, 2.95),
+      new THREE.MeshBasicMaterial({ map: t, transparent: true, opacity: 0, depthWrite: false })
+    );
+    const side = i % 2 ? 1 : -1;
+    m.position.set(side * 7.6, 4.6, zOfYear(hl.y) + 4);
+    m.rotation.y = side * -0.28;
+    m.userData.baseY = 4.6;
+    plates.push(m);
+    scene.add(m);
+  });
+}
 
-  /* ROOM 1 (z≈0) — the question */
+/* ================= rooms ================= */
+function buildRooms() {
+  /* ROOM 1 — the question */
   const q = new THREE.Group();
   const qr = ring(3.1, COL.spine, { tube: 0.055 });
-  qr.userData.spin = 0.16; qr.userData.axis = "y";
+  qr.userData = { spin: 0.16, axis: "y" };
   const qr2 = ring(3.55, COL.spine, { tube: 0.018, opacity: 0.35 });
-  qr2.userData.spin = -0.11; qr2.userData.axis = "x";
+  qr2.userData = { spin: -0.11, axis: "x" };
   const born = labelSprite("BORN 2015-03", "#6EE7C8", 19);
   born.position.set(0, -4.1, 0);
   q.add(qr, qr2, born);
   q.position.set(0, 1.7, -2);
-  scene.add(q);
   driftGroups.push(qr, qr2);
+  scene.add(q);
 
-  /* ROOM 2 (z≈-150) — the preachers */
+  /* ROOM 2 — the preachers: a feed wall of real receipts */
   const p = new THREE.Group();
-  const dalio = new THREE.Mesh(
-    new THREE.SphereGeometry(0.55, 24, 24),
-    new THREE.MeshStandardMaterial({ color: COL.spine, emissive: COL.spine, emissiveIntensity: 1.3, roughness: 0.35 })
-  );
-  dalio.userData.tip = { date: "SINCE 2015-03", claim: "Ray Dalio — carrier of the thesis. 12 dated claims in this ledger.", status: "PREDICTOR", note: "The camps around him share the conclusion and dispute the trigger.", src: null };
-  pickables.push(dalio);
-  const dl = labelSprite("RAY DALIO", "#E8EDF5", 21, 600);
-  dl.position.set(0, 1.15, 0);
-  p.add(dalio, dl);
+  const camPoint = new THREE.Vector3(-5.5, 2.4, -ROOM + 18);
+  const cardGeo = new THREE.PlaneGeometry(4.4, 2.92);
 
+  const others = VIDEOS.filter((v) => !v.trigger);
+  const shown = isMobile ? others.slice(0, 9) : others;
+  const slots = shown.map((v, i) => {
+    const arc = i / (shown.length - 1);
+    const ang = (-0.95 + arc * 1.9) + (i % 2 ? 0.07 : -0.07);
+    const rad = 7.2 + (i % 3) * 2.6;
+    return { v, x: Math.sin(ang) * rad, y: -0.8 + (i % 4) * 1.7, z: -Math.cos(ang) * rad * 0.55 };
+  });
+  /* the trigger video — front and center */
+  const trig = VIDEOS.find((v) => v.trigger);
+  slots.push({ v: trig, x: 0, y: 1.0, z: 2.6, scale: 1.5 });
+
+  for (const s of slots) {
+    const tex = videoCardTex(s.v);
+    const mat = new THREE.MeshBasicMaterial({ map: tex, transparent: true });
+    const card = new THREE.Mesh(cardGeo, mat);
+    card.position.set(s.x, s.y, s.z);
+    card.scale.setScalar(s.scale || 1);
+    card.lookAt(camPoint.x, s.y, camPoint.z + 30);
+    card.userData.tip = {
+      date: s.v.vd + (s.v.trigger ? " · THE TRIGGER" : ""),
+      claim: s.v.t, status: s.v.c + " · " + s.v.vw,
+      note: s.v.trigger ? "135K views in 3 hours · 3.9M in a week. The video that founded this narrative's audit." :
+        s.v.vd === "RECYCLED" ? "A copy of a copy — same claims, re-cut. Repetition is not evidence." :
+        s.v.vd === "CLICKBAIT" ? "Packaging over substance — titles invent what transcripts never said." :
+        s.v.vd === "DERIVATIVE" ? "Commentary riding the original claim." : "One of 7 original videos in this corpus.",
+      src: "https://www.youtube.com/watch?v=" + s.v.id,
+    };
+    pickables.push(card);
+    if (!reduceMotion) bobbers.push({ m: card, y0: card.position.y, ph: Math.random() * 6.3, amp: 0.1 + Math.random() * 0.12 });
+    p.add(card);
+    /* recycled: ghost duplicates stacked behind — recycling made visible */
+    if (s.v.vd === "RECYCLED" && !isMobile) {
+      for (const [dz, op, dr] of [[-0.45, 0.32, 0.045], [-0.9, 0.15, -0.06]]) {
+        const ghost = new THREE.Mesh(cardGeo, new THREE.MeshBasicMaterial({ map: tex, transparent: true, opacity: op, depthWrite: false }));
+        ghost.position.set(s.x + 0.3, s.y + 0.12, s.z + dz);
+        ghost.rotation.copy(card.rotation); ghost.rotation.z += dr;
+        p.add(ghost);
+      }
+    }
+  }
+  /* camp constellations above the wall */
   CAMPS.forEach((c) => {
     const grp = new THREE.Group();
-    const r = 4.6;
-    grp.position.set(Math.cos(c.angle) * r, Math.sin(c.angle) * 1.6, Math.sin(c.angle) * -2.4);
+    grp.position.set(Math.cos(c.angle) * 5.4, 5.6 + Math.sin(c.angle) * 1.2, -3.5);
     for (let i = 0; i < c.n; i++) {
       const s = new THREE.Mesh(
-        new THREE.SphereGeometry(0.2, 16, 16),
+        new THREE.SphereGeometry(0.18, 16, 16),
         new THREE.MeshStandardMaterial({ color: COL.pending, emissive: COL.pending, emissiveIntensity: 0.9 })
       );
-      s.position.set((i - (c.n - 1) / 2) * 0.62, 0, 0);
+      s.position.set((i - (c.n - 1) / 2) * 0.6, 0, 0);
       s.userData.tip = { date: "TRIGGER CAMP", claim: c.name, status: "CONTESTED", note: "Same conclusion, competing engine — the camps stack rather than compete.", src: null };
       pickables.push(s);
       grp.add(s);
@@ -431,37 +739,10 @@ function buildWorld() {
     grp.add(cl);
     p.add(grp);
   });
-
-  /* derivative swarm: 38 motes, 7 luminous originals */
-  const swarm = new THREE.Group();
-  for (let i = 0; i < 38; i++) {
-    const original = i < 7;
-    const m = new THREE.Mesh(
-      new THREE.SphereGeometry(original ? 0.13 : 0.09, 10, 10),
-      new THREE.MeshStandardMaterial({
-        color: original ? COL.brightmote : COL.dimmote,
-        emissive: original ? COL.brightmote : COL.dimmote,
-        emissiveIntensity: original ? 1.1 : 0.35,
-      })
-    );
-    const a = (i / 38) * Math.PI * 2, rr = 6.6 + (i % 5) * 0.65;
-    m.position.set(Math.cos(a) * rr, Math.sin(a * 2.3) * 2.1, Math.sin(a) * rr * 0.5);
-    m.userData.tip = {
-      date: original ? "ORIGINAL" : "DERIVATIVE / RECYCLED",
-      claim: original ? "One of 7 original videos in this corpus." : "One of 31 derivative or recycled videos.",
-      status: original ? "SIGNAL" : "REPETITION",
-      note: "Repetition is not evidence.", src: null,
-    };
-    pickables.push(m);
-    swarm.add(m);
-  }
-  swarm.userData.spin = 0.018;
-  driftGroups.push(swarm);
-  p.add(swarm);
-  p.position.set(0.6, 1.8, -ROOM - 6);
+  p.position.set(0.6, 1.6, -ROOM - 8);
   scene.add(p);
 
-  /* ROOM 3 (z≈-300) — the clocks bridge */
+  /* ROOM 3 — the clocks bridge */
   const clocks = new THREE.Group();
   const bridgeLen = yearX(2029) - yearX(2014.6);
   const bridge = new THREE.Mesh(
@@ -484,32 +765,43 @@ function buildWorld() {
       clocks.add(yl);
     }
   }
-  LEDGER.forEach((e, i) => {
-    const col = STATUS_COL[e.status];
-    const rg = ring(0.55, col, e.vague ? { wire: true, opacity: 0.75, tube: 0.05 } : { tube: 0.06 });
+  LEDGER.forEach((e2, i) => {
+    const col = STATUS_COL[e2.status];
+    const rg = ring(0.55, col, e2.vague ? { wire: true, opacity: 0.75, tube: 0.05 } : { tube: 0.06 });
     const lift = 0.6 + (i % 3) * 1.15;
-    rg.position.set(yearX(e.y), lift, (i % 2 ? 0.5 : -0.5));
-    rg.userData.tip = { date: e.date, claim: e.claim, status: e.status + (e.vague ? " · NO CLOCK" : " · " + e.horizon), note: e.note, src: e.src };
-    if (e.status === "PENDING" && !reduceMotion) pulses.push(rg);
+    rg.position.set(yearX(e2.y), lift, (i % 2 ? 0.5 : -0.5));
+    rg.userData.tip = { date: e2.date, claim: e2.claim, status: e2.status + (e2.vague ? " · NO CLOCK" : " · " + e2.horizon), note: e2.note, src: e2.src };
+    if (e2.status === "PENDING" && !reduceMotion) pulses.push(rg);
     pickables.push(rg);
     clocks.add(rg);
+    /* clock hand: turning while PENDING, frozen once judged */
+    if (!e2.vague) {
+      const hand = new THREE.Mesh(
+        new THREE.BoxGeometry(0.035, 0.42, 0.035),
+        new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.9 })
+      );
+      hand.position.copy(rg.position);
+      hand.geometry.translate(0, 0.21, 0);
+      hand.rotation.z = -0.6 - i * 0.5;
+      if (e2.status === "PENDING" && !reduceMotion) hands.push(hand);
+      clocks.add(hand);
+    }
     const stem = new THREE.Mesh(
       new THREE.CylinderGeometry(0.008, 0.008, lift + 1.3, 4),
       new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.28 })
     );
-    stem.position.set(yearX(e.y), (lift - 1.3) / 2, rg.position.z);
+    stem.position.set(yearX(e2.y), (lift - 1.3) / 2, rg.position.z);
     clocks.add(stem);
-    /* goalpost-move arc: ghost at original date → restated position */
-    if (e.movedToY) {
-      const from = new THREE.Vector3(yearX(e.y), lift, rg.position.z);
-      const to = new THREE.Vector3(yearX(e.movedToY), lift + 0.4, rg.position.z);
+    if (e2.movedToY) {
+      const from = new THREE.Vector3(yearX(e2.y), lift, rg.position.z);
+      const to = new THREE.Vector3(yearX(e2.movedToY), lift + 0.4, rg.position.z);
       const mid = from.clone().lerp(to, 0.5); mid.y += 2.3;
       const curve = new THREE.QuadraticBezierCurve3(from, mid, to);
       const tubeMesh = new THREE.Mesh(
         new THREE.TubeGeometry(curve, 40, 0.025, 6),
         new THREE.MeshStandardMaterial({ color: COL.updated, emissive: COL.updated, emissiveIntensity: 0.8, transparent: true, opacity: 0.85 })
       );
-      tubeMesh.userData.tip = { date: e.date + " → restated", claim: "Goalpost-move: deadline restated instead of resolved.", status: "UPDATED", note: e.note, src: e.src };
+      tubeMesh.userData.tip = { date: e2.date + " → restated", claim: "Goalpost-move: deadline restated instead of resolved.", status: "UPDATED", note: e2.note, src: e2.src };
       pickables.push(tubeMesh);
       clocks.add(tubeMesh);
       const ghost = ring(0.55, COL.updated, { wire: true, opacity: 0.3, tube: 0.04 });
@@ -520,20 +812,29 @@ function buildWorld() {
   clocks.position.set(0, 1.4, -2 * ROOM - 6);
   scene.add(clocks);
 
-  /* ROOM 4 (z≈-450) — the tests */
+  /* ROOM 4 — the tests: stamped outcomes + the mutation engine */
   const tests = new THREE.Group();
-  const resolved = LEDGER.filter((e) => e.status === "REFUTED" || e.status === "AMBIGUOUS");
-  resolved.forEach((e, i) => {
-    const col = STATUS_COL[e.status];
-    const big = ring(1.05, col, { tube: 0.08, opacity: e.status === "AMBIGUOUS" ? 0.55 : 1, emissiveScale: e.status === "REFUTED" ? 0.5 : 0.8 });
-    big.position.set((i - (resolved.length - 1) / 2) * 3.1, Math.sin(i * 1.7) * 0.8, (i % 2) * -1.4);
-    big.userData.tip = { date: e.date, claim: e.claim, status: e.status, note: e.note, src: e.src };
+  const stampR = stampTex("REFUTED", "#FF6B5A");
+  const stampA = stampTex("AMBIGUOUS", "#8A9BB0");
+  const resolved = LEDGER.filter((e2) => e2.status === "REFUTED" || e2.status === "AMBIGUOUS");
+  resolved.forEach((e2, i) => {
+    const col = STATUS_COL[e2.status];
+    const big = ring(1.05, col, { tube: 0.08, opacity: e2.status === "AMBIGUOUS" ? 0.55 : 1, emissiveScale: e2.status === "REFUTED" ? 0.5 : 0.8 });
+    big.position.set((i - (resolved.length - 1) / 2) * 3.3, Math.sin(i * 1.7) * 0.8, (i % 2) * -1.4);
+    big.userData.tip = { date: e2.date, claim: e2.claim, status: e2.status, note: e2.note, src: e2.src };
     pickables.push(big);
-    const st = labelSprite(e.status, e.status === "REFUTED" ? "#FF6B5A" : "#8A9BB0", 17, 600);
-    st.position.copy(big.position); st.position.y -= 1.65;
-    tests.add(big, st);
+    tests.add(big);
+    const stamp = new THREE.Mesh(
+      new THREE.PlaneGeometry(2.3, 0.76),
+      new THREE.MeshBasicMaterial({ map: e2.status === "REFUTED" ? stampR : stampA, transparent: true, opacity: 0.92, depthWrite: false })
+    );
+    stamp.position.copy(big.position); stamp.position.z += 0.35;
+    stamp.rotation.z = -0.16 + (i % 2) * 0.3;
+    tests.add(stamp);
+    const dl = labelSprite(e2.date, "#93A1B5", 14);
+    dl.position.copy(big.position); dl.position.y -= 1.75;
+    tests.add(dl);
   });
-  /* mutation rail: six engines orbiting one conclusion */
   const mut = new THREE.Group();
   const core = new THREE.Mesh(
     new THREE.SphereGeometry(0.42, 20, 20),
@@ -555,52 +856,59 @@ function buildWorld() {
     pickables.push(s);
     mut.add(s);
   });
-  mut.userData.spin = 0.05;
+  mut.userData = { spin: 0.05, axis: "z" };
   driftGroups.push(mut);
-  mut.position.set(6.2, 2.6, -3.6);
+  mut.position.set(6.4, 2.8, -3.6);
   tests.add(mut);
   tests.position.set(-1.2, 1.9, -3 * ROOM - 6);
   scene.add(tests);
 
-  /* ROOM 5 (z≈-600) — the ledger wall + the live clocks ahead */
+  /* ROOM 5 — the ledger: an arc of rings beneath the reading line */
   const wall = new THREE.Group();
   const byStatus = { REFUTED: [], UPDATED: [], AMBIGUOUS: [], PENDING: [] };
-  LEDGER.forEach((e) => byStatus[e.status].push(e));
+  LEDGER.forEach((e2) => byStatus[e2.status].push(e2));
   const flat = [...byStatus.REFUTED, ...byStatus.UPDATED, ...byStatus.AMBIGUOUS, ...byStatus.PENDING];
-  flat.forEach((e, i) => {
-    const col = STATUS_COL[e.status];
-    const r = ring(0.5, col, e.vague ? { wire: true, opacity: 0.7, tube: 0.05 } : { tube: 0.055 });
-    r.position.set(((i % 4) - 1.5) * 1.7, 2.6 - Math.floor(i / 4) * 1.7, 0);
-    r.userData.tip = { date: e.date, claim: e.claim, status: e.status, note: e.note, src: e.src };
-    if (e.status === "PENDING" && !reduceMotion) pulses.push(r);
+  flat.forEach((e2, i) => {
+    const col = STATUS_COL[e2.status];
+    const r = ring(0.55, col, e2.vague ? { wire: true, opacity: 0.7, tube: 0.05 } : { tube: 0.06 });
+    const t = i / (flat.length - 1);
+    const x = (t - 0.5) * 19;
+    r.position.set(x, -2.3 - Math.cos((t - 0.5) * Math.PI) * 1.1, -Math.abs(x) * 0.22);
+    r.rotation.x = -0.5;
+    r.userData.tip = { date: e2.date, claim: e2.claim, status: e2.status, note: e2.note, src: e2.src };
+    if (e2.status === "PENDING" && !reduceMotion) pulses.push(r);
     pickables.push(r);
     wall.add(r);
   });
-  wall.position.set(0, 1.4, -4 * ROOM - 12);
+  wall.position.set(0, 1.6, -4 * ROOM - 14);
   scene.add(wall);
 
-  for (const [label, z, when] of [["NOV 2026 · MIDTERM CLAIM", -4 * ROOM - 95, 0], ["SEPT 2028 · FIRST COUNTABLE CLOCK", -4 * ROOM - 150, 1]]) {
+  /* the two live clocks, far in the dark — visible through the fog */
+  for (const [label, yz, x] of [["NOV 2026 · MIDTERM CLAIM", 2026.9, -3.4], ["SEPT 2028 · FIRST COUNTABLE CLOCK", 2028.7, 3.6]]) {
+    const z = zOfYear(yz);
     const b = new THREE.Mesh(
-      new THREE.SphereGeometry(1.15, 24, 24),
-      new THREE.MeshStandardMaterial({ color: COL.pending, emissive: COL.pending, emissiveIntensity: 1.5 })
+      new THREE.SphereGeometry(1.3, 24, 24),
+      new THREE.MeshStandardMaterial({ color: COL.pending, emissive: COL.pending, emissiveIntensity: 1.6, fog: false })
     );
-    b.position.set(when ? 3.4 : -3.0, 2.6, z);
+    b.position.set(x, 3.2, z);
     b.userData.tip = { date: label.split(" · ")[0], claim: label.split(" · ")[1], status: "PENDING", note: "Still running. The record will be waiting.", src: null };
     if (!reduceMotion) pulses.push(b);
     pickables.push(b);
-    const bl = labelSprite(label, "#7EB8FF", 17);
-    bl.position.copy(b.position); bl.position.y += 2.1;
+    const bl = labelSprite(label, "#7EB8FF", 17, 500, true);
+    bl.position.set(x, 5.6, z);
     scene.add(b, bl);
   }
 
   /* lights */
-  scene.add(new THREE.AmbientLight(0x8090b0, 0.5));
-  const key = new THREE.DirectionalLight(0xcfe0ff, 1.1);
+  scene.add(new THREE.AmbientLight(0x8090b0, 0.45));
+  const key = new THREE.DirectionalLight(0xcfe0ff, 1.05);
   key.position.set(6, 14, 8);
   scene.add(key);
+  const p2 = new THREE.PointLight(0x6ee7c8, 2.2, 44, 1.6); p2.position.set(0, 4, -ROOM - 4); scene.add(p2);
+  const p5 = new THREE.PointLight(0x7eb8ff, 2.0, 54, 1.6); p5.position.set(0, 3, -4 * ROOM - 10); scene.add(p5);
 }
 
-/* ---- scroll conductor: exact target, damped smooth ---- */
+/* ================= scroll conductor ================= */
 const rig = { target: 0, smooth: 0 };
 let anchors = [];
 function measureAnchors() {
@@ -615,7 +923,6 @@ function progressFromScroll() {
   return anchors.length - 1;
 }
 const smoothstep = (t) => t * t * (3 - 2 * t);
-
 function applyChapter(p) {
   const i = Math.min(Math.floor(p), CHAPTERS.length - 2);
   const t = smoothstep(Math.min(1, Math.max(0, p - i)));
@@ -630,9 +937,16 @@ function applyChapter(p) {
   spineMat.emissiveIntensity = L(a.spineGlow, b.spineGlow);
 }
 
-/* ---- interaction: hover = identify, click = source ---- */
+/* ================= interaction ================= */
 const tip = document.getElementById("tip");
 let hovered = null;
+function statusColorCSS(s) {
+  if (s.startsWith("REFUTED")) return "#FF6B5A";
+  if (s.startsWith("UPDATED")) return "#F5C04E";
+  if (s.startsWith("AMBIGUOUS")) return "#8A9BB0";
+  if (s.startsWith("PENDING")) return "#7EB8FF";
+  return "#6EE7C8";
+}
 function onPointerMove(e) {
   pointer.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
   raycaster.setFromCamera(pointer, camera);
@@ -647,26 +961,19 @@ function onPointerMove(e) {
       (d.src ? `<div class="t-src">CLICK FOR SOURCE ↗</div>` : "");
     tip.style.display = "block";
     tip.style.left = Math.min(e.clientX + 16, innerWidth - 320) + "px";
-    tip.style.top = Math.min(e.clientY + 16, innerHeight - 170) + "px";
-    document.body.style.cursor = hovered.userData.tip.src ? "pointer" : "default";
+    tip.style.top = Math.min(e.clientY + 16, innerHeight - 190) + "px";
+    document.body.style.cursor = d.src ? "pointer" : "default";
   } else {
     tip.style.display = "none";
     document.body.style.cursor = "default";
   }
 }
-function statusColorCSS(s) {
-  if (s.startsWith("REFUTED")) return "#FF6B5A";
-  if (s.startsWith("UPDATED")) return "#F5C04E";
-  if (s.startsWith("AMBIGUOUS")) return "#8A9BB0";
-  if (s.startsWith("PENDING")) return "#7EB8FF";
-  return "#6EE7C8";
-}
 function onClick() {
   if (hovered && hovered.userData.tip && hovered.userData.tip.src) window.open(hovered.userData.tip.src, "_blank", "noopener");
 }
 
-/* ---- boot ---- */
-try {
+/* ================= boot ================= */
+async function boot() {
   renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
   renderer.setPixelRatio(Math.min(devicePixelRatio, isMobile ? 1.5 : 1.75));
   renderer.setSize(innerWidth, innerHeight);
@@ -674,19 +981,22 @@ try {
 
   scene = new THREE.Scene();
   scene.background = new THREE.Color(COL.bg);
-  scene.fog = new THREE.FogExp2(COL.bg, 0.01);
-  camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 700);
+  scene.fog = new THREE.FogExp2(COL.bg, 0.009);
+  camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 1000);
   raycaster = new THREE.Raycaster();
-  raycaster.params.Line = { threshold: 0.3 };
   pointer = new THREE.Vector2(-2, -2);
 
-  buildWorld();
+  /* fonts first — canvas textures bake the real faces */
+  try { await Promise.race([document.fonts.ready, new Promise((r) => setTimeout(r, 1800))]); } catch {}
+
+  buildEnvironment();
+  buildSpine();
+  buildRooms();
   measureAnchors();
 
   composer = new EffectComposer(renderer);
   composer.addPass(new RenderPass(scene, camera));
-  const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.55, 0.7, 0.82);
-  composer.addPass(bloom);
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.5, 0.75, 0.84));
   composer.addPass(new OutputPass());
 
   addEventListener("resize", () => {
@@ -702,34 +1012,66 @@ try {
     b.addEventListener("click", () => document.getElementById("ch" + b.dataset.ch).scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" }))
   );
 
+  /* film grain */
+  const gc = document.createElement("canvas"); gc.width = gc.height = 128;
+  const gg = gc.getContext("2d"), gi = gg.createImageData(128, 128);
+  for (let i = 0; i < gi.data.length; i += 4) { const v = Math.random() * 255 | 0; gi.data[i] = gi.data[i + 1] = gi.data[i + 2] = v; gi.data[i + 3] = 34; }
+  gg.putImageData(gi, 0, 0);
+  document.getElementById("grain").style.backgroundImage = `url(${gc.toDataURL()})`;
+
   const railmark = document.getElementById("railmark");
   const dots = [...document.querySelectorAll(".rail button")];
   const clock = new THREE.Clock();
-  let raf;
+  const dm = new THREE.Matrix4();
+  let raf, frames = 0;
 
   function frame() {
     raf = requestAnimationFrame(frame);
     const dt = Math.min(clock.getDelta(), 1 / 30);
+    const t = clock.elapsedTime;
     rig.target = progressFromScroll();
     rig.smooth = reduceMotion ? rig.target : THREE.MathUtils.damp(rig.smooth, rig.target, 4.6, dt);
     applyChapter(rig.smooth);
 
+    const camZ = camera.position.z;
+    /* year gates glow as you pass through them */
+    for (const g of gates) {
+      const d = Math.abs(camZ - g.position.z);
+      g.material.opacity = 0.1 + Math.max(0, 1 - d / 26) * 0.55;
+    }
+    /* headlines materialize near their year */
+    for (const pl of plates) {
+      const d = Math.abs(camZ - pl.position.z);
+      const vis = Math.max(0, 1 - d / 62);
+      pl.material.opacity = smoothstep(vis) * 0.95;
+      if (!reduceMotion) pl.position.y = pl.userData.baseY + Math.sin(t * 0.7 + pl.position.z) * 0.12;
+    }
     if (!reduceMotion) {
-      const t = clock.elapsedTime;
       for (const g of driftGroups) g.rotation[g.userData.axis || "z"] += (g.userData.spin || 0.03) * dt;
+      for (const b of bobbers) b.m.position.y = b.y0 + Math.sin(t * 0.9 + b.ph) * b.amp;
+      for (const h of hands) h.rotation.z -= dt * 0.55;
       for (const m of pulses) {
         const k = 1 + Math.sin(t * 2.1 + m.position.z) * 0.12;
         m.scale.setScalar(k);
         if (m.material.emissiveIntensity !== undefined) m.material.emissiveIntensity = 1.0 + Math.sin(t * 2.1 + m.position.z) * 0.45;
       }
+      if (dashes) {
+        for (let i = 0; i < dashData.length; i++) {
+          dashData[i].z -= dashData[i].sp * dt;
+          if (dashData[i].z < -840) dashData[i].z = 45;
+          dm.setPosition(0, 0.55, dashData[i].z);
+          dashes.setMatrixAt(i, dm);
+        }
+        dashes.instanceMatrix.needsUpdate = true;
+      }
     }
-    /* rail */
     const frac = rig.target / (CHAPTERS.length - 1);
     railmark.style.top = `calc(${(frac * 100).toFixed(1)}% - ${(frac * 14).toFixed(1)}px)`;
     const cur = Math.round(rig.target);
     dots.forEach((d, i) => d.setAttribute("aria-current", i === cur ? "true" : "false"));
 
     composer.render();
+    if (++frames === 3) document.getElementById("boot").classList.add("gone");
   }
   frame();
 
@@ -737,10 +1079,13 @@ try {
     if (document.hidden) cancelAnimationFrame(raf);
     else { clock.getDelta(); frame(); }
   });
-} catch (err) {
+}
+
+boot().catch((err) => {
   console.warn("WebGL unavailable — falling back to readable document.", err);
   document.body.classList.add("no3d");
-}
+  document.getElementById("boot").classList.add("gone");
+});
 </script>
 </body>
 </html>
