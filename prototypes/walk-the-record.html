@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walk the Record — The 80-Year Collapse · Narrative Radar</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #050810; --ink: #E8EDF5; --dim: #93A1B5; --line: #1C2637;
+    --spine: #6EE7C8; --refuted: #FF6B5A; --updated: #F5C04E;
+    --ambiguous: #8A9BB0; --pending: #7EB8FF; --card: rgba(8, 13, 24, 0.78);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Archivo", -apple-system, sans-serif;
+    line-height: 1.6; overflow-x: hidden;
+  }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  #stage { position: fixed; inset: 0; z-index: 0; }
+  #stage canvas { display: block; }
+
+  /* top bar */
+  .bar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 30;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 22px; pointer-events: none;
+  }
+  .bar a, .bar .brand {
+    pointer-events: auto; font-family: "IBM Plex Mono", monospace;
+    font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
+    color: var(--dim); text-decoration: none;
+  }
+  .bar a:hover { color: var(--spine); }
+  .bar a:focus-visible, .rail button:focus-visible, .cta a:focus-visible {
+    outline: 2px solid var(--spine); outline-offset: 3px;
+  }
+
+  /* progress rail */
+  .rail {
+    position: fixed; right: 18px; top: 50%; transform: translateY(-50%);
+    z-index: 30; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  }
+  .rail .years {
+    font-family: "IBM Plex Mono", monospace; font-size: 9px; color: var(--dim);
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+  }
+  .rail .track { width: 2px; height: 130px; background: var(--line); position: relative; border-radius: 2px; }
+  .rail .track i { position: absolute; left: -1px; width: 4px; height: 14px; background: var(--spine); border-radius: 2px; top: 0; }
+  .rail button {
+    width: 8px; height: 8px; border-radius: 50%; border: 1px solid var(--dim);
+    background: transparent; cursor: pointer; padding: 0;
+  }
+  .rail button[aria-current="true"] { background: var(--spine); border-color: var(--spine); }
+
+  /* chapters */
+  main { position: relative; z-index: 10; }
+  section.ch { min-height: 175vh; display: flex; align-items: center; padding: 0 6vw; }
+  section.ch:first-of-type, section.ch:last-of-type { min-height: 150vh; }
+  .card {
+    max-width: 470px; background: var(--card);
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: 26px 28px; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  }
+  .ch:nth-of-type(odd) { justify-content: flex-start; }
+  .ch:nth-of-type(even) { justify-content: flex-end; }
+  .ch.center { justify-content: center; text-align: center; }
+  .ch.center .card { background: transparent; border: none; backdrop-filter: none; -webkit-backdrop-filter: none; max-width: 640px; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace; font-size: 10.5px;
+    letter-spacing: .2em; text-transform: uppercase; color: var(--spine);
+    margin-bottom: 12px;
+  }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.05; text-wrap: balance; }
+  h2 { font-size: clamp(1.35rem, 2.6vw, 1.9rem); font-weight: 600; letter-spacing: -.01em; line-height: 1.2; margin-bottom: 12px; text-wrap: balance; }
+  .sub { color: var(--dim); font-size: 1.02rem; max-width: 54ch; margin: 14px auto 0; }
+  .card p { color: var(--dim); font-size: .93rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+  .chip {
+    font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: .1em;
+    color: var(--ink); border: 1px solid var(--line); border-radius: 4px;
+    padding: 4px 8px; background: rgba(110, 231, 200, 0.06);
+  }
+  .hint { margin-top: 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; color: var(--dim); letter-spacing: .08em; }
+  .scrollhint { margin-top: 40px; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .2em; color: var(--dim); animation: bob 2.4s ease-in-out infinite; }
+  @keyframes bob { 0%,100% { transform: translateY(0); opacity: .55; } 50% { transform: translateY(7px); opacity: 1; } }
+
+  /* ledger stats */
+  .stats { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 6px; justify-content: center; }
+  .stat { border: 1px solid var(--line); border-radius: 6px; padding: 10px 14px; min-width: 86px; background: var(--card); }
+  .stat b { font-family: "IBM Plex Mono", monospace; font-size: 1.5rem; display: block; font-variant-numeric: tabular-nums; }
+  .stat small { font-family: "IBM Plex Mono", monospace; font-size: 8.5px; letter-spacing: .12em; color: var(--dim); }
+  .stat.s-sup b { color: #5ECf8E; } .stat.s-ref b { color: var(--refuted); }
+  .stat.s-upd b { color: var(--updated); } .stat.s-amb b { color: var(--ambiguous); }
+  .stat.s-pen b { color: var(--pending); }
+  .badge {
+    display: inline-block; margin-top: 16px; font-family: "IBM Plex Mono", monospace;
+    font-size: 9.5px; letter-spacing: .08em; color: var(--updated);
+    border: 1px dashed var(--updated); border-radius: 4px; padding: 5px 10px; max-width: 46ch;
+  }
+  .cta { margin-top: 26px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; align-items: center; }
+  .cta a.primary {
+    font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .1em;
+    text-transform: uppercase; text-decoration: none; color: #04110C;
+    background: var(--spine); border-radius: 6px; padding: 12px 22px; font-weight: 600;
+  }
+  .cta a.primary:hover { filter: brightness(1.12); }
+  .exitline { margin-top: 22px; font-family: "IBM Plex Mono", monospace; font-size: 10.5px; letter-spacing: .14em; color: var(--dim); text-transform: uppercase; }
+
+  /* tooltip */
+  #tip {
+    position: fixed; z-index: 40; pointer-events: none; display: none;
+    max-width: 300px; background: #0B1322; border: 1px solid var(--line);
+    border-radius: 6px; padding: 12px 14px; font-size: .8rem; color: var(--dim);
+    box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  }
+  #tip .t-date { font-family: "IBM Plex Mono", monospace; font-size: 9.5px; letter-spacing: .12em; color: var(--spine); }
+  #tip .t-claim { color: var(--ink); margin: 5px 0; font-size: .84rem; line-height: 1.45; }
+  #tip .t-status { font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: .12em; }
+  #tip .t-note { font-size: .74rem; margin-top: 5px; }
+  #tip .t-src { font-family: "IBM Plex Mono", monospace; font-size: 8.5px; color: var(--dim); margin-top: 6px; letter-spacing: .06em; }
+
+  /* fallback when WebGL is unavailable */
+  body.no3d #stage { display: none; }
+  body.no3d { background: radial-gradient(ellipse at 50% 0%, #0B1322 0%, var(--bg) 60%); }
+  body.no3d section.ch { min-height: auto; padding: 8vh 6vw; }
+  body.no3d .card { background: #0B1322; }
+
+  @media (max-width: 760px) {
+    section.ch, .ch:nth-of-type(even), .ch:nth-of-type(odd) { justify-content: center; padding: 0 18px; }
+    .card { padding: 20px; max-width: 100%; }
+    .rail { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .scrollhint { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="stage" aria-hidden="true"></div>
+
+<div class="bar">
+  <span class="brand">Narrative Radar · Flagship Record</span>
+  <a href="../index.html">Exit to the radar ↗</a>
+</div>
+
+<nav class="rail" aria-label="Chapters">
+  <div class="years"><span>2015</span></div>
+  <div class="track"><i id="railmark"></i></div>
+  <div class="years"><span>2028</span></div>
+  <button data-ch="0" aria-label="Intro" aria-current="true"></button>
+  <button data-ch="1" aria-label="Chapter 1 — The Question"></button>
+  <button data-ch="2" aria-label="Chapter 2 — The Preachers"></button>
+  <button data-ch="3" aria-label="Chapter 3 — The Clocks"></button>
+  <button data-ch="4" aria-label="Chapter 4 — The Tests"></button>
+  <button data-ch="5" aria-label="Chapter 5 — The Ledger"></button>
+</nav>
+
+<main>
+  <section class="ch center" id="ch0">
+    <div class="card">
+      <div class="eyebrow">Narrative Radar · Walk the Record</div>
+      <h1>The 80-Year Collapse</h1>
+      <p class="sub">One predictor. Eleven years. Twelve dated claims. Scroll to walk the audit trail — from the first warning in 2015 to the clocks still running.</p>
+      <div class="scrollhint">▼ SCROLL TO WALK</div>
+    </div>
+  </section>
+
+  <section class="ch" id="ch1">
+    <div class="card">
+      <div class="eyebrow">Chapter 01 · The Question</div>
+      <h2>Is a debt-driven collapse of the US economy imminent?</h2>
+      <p>Every narrative is one answer competing to own a question. This one was born in March 2015, when Ray Dalio warned the Fed risked "repeating 1937." The question is durable — the answers, deadlines and mechanisms have rotated around it for eleven years. What follows is how we keep score.</p>
+      <div class="chips"><span class="chip">BORN 2015-03</span><span class="chip">PREDICTOR: RAY DALIO</span><span class="chip">STATUS: ACTIVE</span></div>
+    </div>
+  </section>
+
+  <section class="ch" id="ch2">
+    <div class="card">
+      <div class="eyebrow">Chapter 02 · The Preachers</div>
+      <h2>One conclusion, competing engines.</h2>
+      <p>Dalio carries the thesis. Around him, camps agree a crisis is coming but disagree on the trigger — AI-capex debt, a credit-market seizure, a yen-carry unwind. Around them, the content economy: 38 videos in this corpus, only 7 of them original. The dim points are copies of copies — repetition is not evidence. One clip ecosystem invented a "60% crash" figure that appears in no transcript.</p>
+      <div class="chips"><span class="chip">38 VIDEOS</span><span class="chip">7 ORIGINAL</span><span class="chip">3 TRIGGER CAMPS</span></div>
+      <div class="hint">Hover a point to identify it.</div>
+    </div>
+  </section>
+
+  <section class="ch" id="ch3">
+    <div class="card">
+      <div class="eyebrow">Chapter 03 · The Clocks</div>
+      <h2>Deadlines were set. Then they moved.</h2>
+      <p>Twelve dated claims since 2015, placed where they were made. Amber arcs are goalpost-moves — a deadline restated instead of resolved: the "75-year supercycle ending" (2016) became "Phase 5 of the Big Debt Cycle" (2025); "US debt crisis coming" (2023) became "within ~3 years." Hollow rings made no falsifiable promise at all — that vagueness is itself an audit finding. The first cleanly countable clock in eleven years expires September 2028.</p>
+      <div class="chips"><span class="chip">12 DATED CLAIMS</span><span class="chip">2 GOALPOST-MOVES</span><span class="chip">FIRST COUNTABLE CLOCK: SEPT 2028</span></div>
+      <div class="hint">Hover any ring for the claim · click for the source.</div>
+    </div>
+  </section>
+
+  <section class="ch" id="ch4">
+    <div class="card">
+      <div class="eyebrow">Chapter 04 · The Tests</div>
+      <h2>Reality answered. Here's how.</h2>
+      <p>Two claims met their deadlines and failed — no 1937 repeat (markets went on to record highs), no 2022 "perfect storm" (inflation fell, equities rallied). Three landed in the grey: a recession did arrive in 2020, but through a pandemic, not the predicted debt mechanism — timing credit without mechanism credit. And the engine itself has mutated six times, tracking the news cycle: 1937 → debt supercycle → internal conflict → Phase 5 → capital war → AI capex.</p>
+      <div class="chips"><span class="chip">REFUTED 2</span><span class="chip">AMBIGUOUS 3</span><span class="chip">MECHANISM MUTATIONS 6</span></div>
+    </div>
+  </section>
+
+  <section class="ch center" id="ch5">
+    <div class="card">
+      <div class="eyebrow">Chapter 05 · The Ledger</div>
+      <h2>The scoreboard, as it stands.</h2>
+      <div class="stats">
+        <div class="stat s-sup"><b>0</b><small>SUPPORTED</small></div>
+        <div class="stat s-ref"><b>2</b><small>REFUTED</small></div>
+        <div class="stat s-upd"><b>2</b><small>UPDATED</small></div>
+        <div class="stat s-amb"><b>3</b><small>AMBIGUOUS</small></div>
+        <div class="stat s-pen"><b>5</b><small>PENDING</small></div>
+      </div>
+      <p class="sub">An audit trail is not mockery. Directional risk warnings have value; the ledger's job is to record what was claimed, when, with what horizon, and what actually happened — the accountability the algorithm never provides. Ahead, two clocks still run: the midterm-conflict claim (November 2026) and the first countable debt-crisis clock (September 2028). When they expire, this record will be waiting.</p>
+      <span class="badge">🕘 BACKFILLED RECORD — classifications assigned in research, Aug 2026. Live rulings under the published standard begin with the resolver.</span>
+      <div class="cta"><a class="primary" href="../index.html">Read the full audit →</a></div>
+      <div class="exitline">The algorithm pulls you deeper. This is the exit.</div>
+    </div>
+  </section>
+</main>
+
+<div id="tip" role="status"></div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.169.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.169.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { EffectComposer } from "three/addons/postprocessing/EffectComposer.js";
+import { RenderPass } from "three/addons/postprocessing/RenderPass.js";
+import { UnrealBloomPass } from "three/addons/postprocessing/UnrealBloomPass.js";
+import { OutputPass } from "three/addons/postprocessing/OutputPass.js";
+
+/* ============================================================
+   WALK THE RECORD — one persistent world, scroll as conductor.
+   Design rule: atmosphere dramatizes the RECORD (time, clocks,
+   stamps, goalpost-moves), never the CLAIM. No doom mood.
+   ============================================================ */
+
+const COL = {
+  bg: 0x050810, spine: 0x6ee7c8, star: 0xbdd2ff,
+  refuted: 0xff6b5a, updated: 0xf5c04e, ambiguous: 0x8a9bb0,
+  pending: 0x7eb8ff, dimmote: 0x33415a, brightmote: 0x6ee7c8,
+};
+
+/* ---- the record (from corpus/collapse-audit, Aug 2026) ---- */
+const LEDGER = [
+  { date: "2015-03", y: 2015.2, claim: "The Fed risks repeating 1937 — tightening into a downturn.", horizon: "~1-2 years", status: "REFUTED", note: "No recession followed; markets went on to record highs.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/" },
+  { date: "2016-01", y: 2016.0, claim: "The 75-year debt supercycle is coming to an end.", horizon: "unstated (vague)", status: "UPDATED", note: "No end arrived; framework restated as the 'Big Debt Cycle'. Vagueness is itself an audit finding.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/", vague: true, movedToY: 2025.5 },
+  { date: "2018-09", y: 2018.7, claim: "Economy looks like 1937; downturn coming in about two years.", horizon: "~2020", status: "AMBIGUOUS", note: "A 2020 recession did occur — via COVID, not the predicted debt mechanism. Timing credit without mechanism credit.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/" },
+  { date: "2019-01", y: 2019.0, claim: "Significant recession risk ahead.", horizon: "~1-2 years", status: "AMBIGUOUS", note: "Same COVID caveat.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/" },
+  { date: "2020-01", y: 2020.0, claim: "'Cash is trash' — get out of cash (Davos).", horizon: "near-term", status: "AMBIGUOUS", note: "Two months later markets crashed and cash briefly reigned; then stimulus-era inflation did erode cash.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/" },
+  { date: "2022-10", y: 2022.8, claim: "A 'perfect storm' is forming for the economy.", horizon: "~1-2 years", status: "REFUTED", note: "2023–24 delivered falling inflation, no crisis, and a major equity rally.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/" },
+  { date: "2023-09", y: 2023.7, claim: "US debt crisis coming.", horizon: "unstated (vague)", status: "UPDATED", note: "Restated in 2025 with a new ~3-year horizon. Classic rolling horizon.", src: "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/", vague: true, movedToY: 2025.7 },
+  { date: "2025-07", y: 2025.5, claim: "US debt crisis like an 'economic heart attack'; US in 'Phase 5' of the Big Debt Cycle.", horizon: "by ~2026-2028", status: "PENDING", note: "His mechanism now runs through the AI boom (~$3T of debt-financed capex by 2030).", src: "https://www.fool.com/investing/2026/02/15/stock-market-crash-in-2026-billionaire-ray-dalio/" },
+  { date: "2025-09", y: 2025.7, claim: "US debt crisis within ~3 years.", horizon: "by ~2028", status: "PENDING", note: "First claim in the ledger with a countable clock. Judgment date: 2028-09.", src: "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/" },
+  { date: "2025-09", y: 2025.75, claim: "US and UK entering the dangerous phase of the 80-year cycle; 'very, very dark times' ahead.", horizon: "unstated (vague)", status: "PENDING", note: "Vague horizon flagged.", src: "https://singjupost.com/ray-dalio-were-heading-into-very-very-dark-times-doac-podcast-transcript/", vague: true },
+  { date: "2026-02", y: 2026.1, claim: "World is 'on the brink' of a capital war — money weaponized; gold as hedge.", horizon: "near-term", status: "PENDING", note: "New mechanism added to the stack.", src: "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html" },
+  { date: "2026-07", y: 2026.6, claim: "'The 80 Year Collapse Is Here' — AI bubble showing 'classic signs'; Republicans likely lose House at midterms, then intensifying internal conflict.", horizon: "unstated (vague)", status: "PENDING", note: "The trigger video: 135K views in 3 hours, 3.9M in a week. Its clip ecosystem invented a '60% crash' that appears in no transcript.", src: "https://www.youtube.com/watch?v=Bu0xNDLNORU", vague: true },
+];
+const CAMPS = [
+  { name: "AI-CAPEX DEBT", n: 3, angle: -0.7 },
+  { name: "CREDIT SEIZURE", n: 1, angle: 0.55 },
+  { name: "YEN-CARRY UNWIND", n: 2, angle: 1.75 },
+];
+const MUTATIONS = [
+  { d: "2015", m: "Fed repeating 1937" }, { d: "2016", m: "75-year debt supercycle ending" },
+  { d: "2021", m: "internal conflict + empire decline" }, { d: "2025", m: "'Phase 5' — economic heart attack" },
+  { d: "2026", m: "capital war — money weaponized" }, { d: "2026", m: "AI capex as the crisis vector" },
+];
+const STATUS_COL = { REFUTED: COL.refuted, UPDATED: COL.updated, AMBIGUOUS: COL.ambiguous, PENDING: COL.pending };
+
+/* ---- scene ledger: one camera endpoint per chapter ---- */
+const ROOM = 150;
+const CHAPTERS = [
+  { cam: [0, 3.2, 40], tgt: [0, 1.6, 0], fov: 50, fog: 0.010, spineGlow: 0.6 },
+  { cam: [0, 1.7, 15], tgt: [0, 1.7, -2], fov: 42, fog: 0.011, spineGlow: 1.0 },
+  { cam: [-5.5, 2.4, -ROOM + 16], tgt: [1.4, 1.6, -ROOM - 4], fov: 46, fog: 0.012, spineGlow: 0.8 },
+  { cam: [9.0, 3.6, -2 * ROOM + 21], tgt: [-2.5, 1.2, -2 * ROOM - 6], fov: 46, fog: 0.010, spineGlow: 1.0 },
+  { cam: [-6.0, 2.8, -3 * ROOM + 16], tgt: [0.8, 1.7, -3 * ROOM - 4], fov: 45, fog: 0.011, spineGlow: 0.8 },
+  { cam: [0, 2.6, -4 * ROOM + 10], tgt: [0, 2.2, -4 * ROOM - 40], fov: 42, fov_m: 52, fog: 0.008, spineGlow: 1.2 },
+];
+
+const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const isMobile = matchMedia("(max-width: 760px)").matches;
+
+let renderer, scene, camera, composer, raycaster, pointer;
+const pickables = [], pulses = [], driftGroups = [];
+let spineMat;
+
+function labelSprite(text, color = "#93A1B5", px = 22, weight = 500) {
+  const pad = 14, c = document.createElement("canvas"), g = c.getContext("2d");
+  const font = `${weight} ${px * 2}px "IBM Plex Mono", monospace`;
+  g.font = font;
+  const w = Math.ceil(g.measureText(text).width) + pad * 2;
+  c.width = w; c.height = px * 2 + pad * 2;
+  g.font = font; g.fillStyle = color; g.textBaseline = "middle";
+  g.shadowColor = "rgba(0,0,0,0.9)"; g.shadowBlur = 8;
+  g.fillText(text, pad, c.height / 2);
+  const tex = new THREE.CanvasTexture(c);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false }));
+  const scale = 0.011;
+  sp.scale.set(c.width * scale, c.height * scale, 1);
+  return sp;
+}
+
+function ring(radius, color, { tube = 0.05, opacity = 1, wire = false, emissiveScale = 1 } = {}) {
+  const geo = new THREE.TorusGeometry(radius, tube, 12, 56);
+  const mat = wire
+    ? new THREE.MeshBasicMaterial({ color, wireframe: true, transparent: true, opacity })
+    : new THREE.MeshStandardMaterial({
+        color, emissive: color, emissiveIntensity: 0.9 * emissiveScale,
+        roughness: 0.5, metalness: 0.1, transparent: opacity < 1, opacity,
+      });
+  return new THREE.Mesh(geo, mat);
+}
+
+/* year (2015..2028.8) → x offset on the clocks bridge */
+const yearX = (y) => (y - 2021.5) * 3.3;
+
+function starTexture() {
+  const c = document.createElement("canvas");
+  c.width = c.height = 64;
+  const g = c.getContext("2d");
+  const grad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  grad.addColorStop(0, "rgba(255,255,255,1)");
+  grad.addColorStop(0.35, "rgba(255,255,255,0.6)");
+  grad.addColorStop(1, "rgba(255,255,255,0)");
+  g.fillStyle = grad;
+  g.fillRect(0, 0, 64, 64);
+  const t = new THREE.CanvasTexture(c);
+  t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
+function buildWorld() {
+  /* stars — two depth layers over the whole corridor */
+  const starMap = starTexture();
+  for (const [count, size, spread] of [[5200, 0.7, 1], [900, 1.1, 0.55]]) {
+    const pos = new Float32Array(count * 3);
+    for (let i = 0; i < count; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 460 * spread;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 300 * spread;
+      pos[i * 3 + 2] = 90 - Math.random() * 920;
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+    const m = new THREE.PointsMaterial({
+      color: COL.star, size, sizeAttenuation: true, transparent: true, map: starMap,
+      opacity: 0.75, blending: THREE.AdditiveBlending, depthWrite: false,
+    });
+    scene.add(new THREE.Points(g, m));
+  }
+
+  /* the spine — the timeline itself, running the length of the walk */
+  const spineLen = 4 * ROOM + 260;
+  spineMat = new THREE.MeshStandardMaterial({
+    color: COL.spine, emissive: COL.spine, emissiveIntensity: 1.0, roughness: 0.4,
+  });
+  const spine = new THREE.Mesh(new THREE.CylinderGeometry(0.045, 0.045, spineLen, 8), spineMat);
+  spine.rotation.x = Math.PI / 2;
+  spine.position.set(0, 0.55, -(spineLen / 2) + 55);
+  scene.add(spine);
+  for (let yr = 2015; yr <= 2028; yr++) {
+    const t = (yr - 2015) / 13;
+    const tick = ring(0.22, COL.spine, { tube: 0.02, opacity: 0.5 });
+    tick.position.set(0, 0.55, 40 - t * (spineLen - 90));
+    tick.rotation.x = Math.PI / 2;
+    scene.add(tick);
+  }
+
+  /* ROOM 1 (z≈0) — the question */
+  const q = new THREE.Group();
+  const qr = ring(3.1, COL.spine, { tube: 0.055 });
+  qr.userData.spin = 0.16; qr.userData.axis = "y";
+  const qr2 = ring(3.55, COL.spine, { tube: 0.018, opacity: 0.35 });
+  qr2.userData.spin = -0.11; qr2.userData.axis = "x";
+  const born = labelSprite("BORN 2015-03", "#6EE7C8", 19);
+  born.position.set(0, -4.1, 0);
+  q.add(qr, qr2, born);
+  q.position.set(0, 1.7, -2);
+  scene.add(q);
+  driftGroups.push(qr, qr2);
+
+  /* ROOM 2 (z≈-150) — the preachers */
+  const p = new THREE.Group();
+  const dalio = new THREE.Mesh(
+    new THREE.SphereGeometry(0.55, 24, 24),
+    new THREE.MeshStandardMaterial({ color: COL.spine, emissive: COL.spine, emissiveIntensity: 1.3, roughness: 0.35 })
+  );
+  dalio.userData.tip = { date: "SINCE 2015-03", claim: "Ray Dalio — carrier of the thesis. 12 dated claims in this ledger.", status: "PREDICTOR", note: "The camps around him share the conclusion and dispute the trigger.", src: null };
+  pickables.push(dalio);
+  const dl = labelSprite("RAY DALIO", "#E8EDF5", 21, 600);
+  dl.position.set(0, 1.15, 0);
+  p.add(dalio, dl);
+
+  CAMPS.forEach((c) => {
+    const grp = new THREE.Group();
+    const r = 4.6;
+    grp.position.set(Math.cos(c.angle) * r, Math.sin(c.angle) * 1.6, Math.sin(c.angle) * -2.4);
+    for (let i = 0; i < c.n; i++) {
+      const s = new THREE.Mesh(
+        new THREE.SphereGeometry(0.2, 16, 16),
+        new THREE.MeshStandardMaterial({ color: COL.pending, emissive: COL.pending, emissiveIntensity: 0.9 })
+      );
+      s.position.set((i - (c.n - 1) / 2) * 0.62, 0, 0);
+      s.userData.tip = { date: "TRIGGER CAMP", claim: c.name, status: "CONTESTED", note: "Same conclusion, competing engine — the camps stack rather than compete.", src: null };
+      pickables.push(s);
+      grp.add(s);
+    }
+    const cl = labelSprite(c.name, "#7EB8FF", 15);
+    cl.position.set(0, 0.72, 0);
+    grp.add(cl);
+    p.add(grp);
+  });
+
+  /* derivative swarm: 38 motes, 7 luminous originals */
+  const swarm = new THREE.Group();
+  for (let i = 0; i < 38; i++) {
+    const original = i < 7;
+    const m = new THREE.Mesh(
+      new THREE.SphereGeometry(original ? 0.13 : 0.09, 10, 10),
+      new THREE.MeshStandardMaterial({
+        color: original ? COL.brightmote : COL.dimmote,
+        emissive: original ? COL.brightmote : COL.dimmote,
+        emissiveIntensity: original ? 1.1 : 0.35,
+      })
+    );
+    const a = (i / 38) * Math.PI * 2, rr = 6.6 + (i % 5) * 0.65;
+    m.position.set(Math.cos(a) * rr, Math.sin(a * 2.3) * 2.1, Math.sin(a) * rr * 0.5);
+    m.userData.tip = {
+      date: original ? "ORIGINAL" : "DERIVATIVE / RECYCLED",
+      claim: original ? "One of 7 original videos in this corpus." : "One of 31 derivative or recycled videos.",
+      status: original ? "SIGNAL" : "REPETITION",
+      note: "Repetition is not evidence.", src: null,
+    };
+    pickables.push(m);
+    swarm.add(m);
+  }
+  swarm.userData.spin = 0.018;
+  driftGroups.push(swarm);
+  p.add(swarm);
+  p.position.set(0.6, 1.8, -ROOM - 6);
+  scene.add(p);
+
+  /* ROOM 3 (z≈-300) — the clocks bridge */
+  const clocks = new THREE.Group();
+  const bridgeLen = yearX(2029) - yearX(2014.6);
+  const bridge = new THREE.Mesh(
+    new THREE.CylinderGeometry(0.03, 0.03, bridgeLen, 8),
+    new THREE.MeshStandardMaterial({ color: COL.spine, emissive: COL.spine, emissiveIntensity: 0.6 })
+  );
+  bridge.rotation.z = Math.PI / 2;
+  bridge.position.y = -1.3;
+  clocks.add(bridge);
+  for (let yr = 2015; yr <= 2028; yr++) {
+    const t = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.015, 0.015, 0.34, 6),
+      new THREE.MeshBasicMaterial({ color: COL.spine, transparent: true, opacity: 0.6 })
+    );
+    t.position.set(yearX(yr), -1.3, 0);
+    clocks.add(t);
+    if (yr % 2 === 1) {
+      const yl = labelSprite(String(yr), "#93A1B5", 15);
+      yl.position.set(yearX(yr), -1.95, 0);
+      clocks.add(yl);
+    }
+  }
+  LEDGER.forEach((e, i) => {
+    const col = STATUS_COL[e.status];
+    const rg = ring(0.55, col, e.vague ? { wire: true, opacity: 0.75, tube: 0.05 } : { tube: 0.06 });
+    const lift = 0.6 + (i % 3) * 1.15;
+    rg.position.set(yearX(e.y), lift, (i % 2 ? 0.5 : -0.5));
+    rg.userData.tip = { date: e.date, claim: e.claim, status: e.status + (e.vague ? " · NO CLOCK" : " · " + e.horizon), note: e.note, src: e.src };
+    if (e.status === "PENDING" && !reduceMotion) pulses.push(rg);
+    pickables.push(rg);
+    clocks.add(rg);
+    const stem = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.008, 0.008, lift + 1.3, 4),
+      new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.28 })
+    );
+    stem.position.set(yearX(e.y), (lift - 1.3) / 2, rg.position.z);
+    clocks.add(stem);
+    /* goalpost-move arc: ghost at original date → restated position */
+    if (e.movedToY) {
+      const from = new THREE.Vector3(yearX(e.y), lift, rg.position.z);
+      const to = new THREE.Vector3(yearX(e.movedToY), lift + 0.4, rg.position.z);
+      const mid = from.clone().lerp(to, 0.5); mid.y += 2.3;
+      const curve = new THREE.QuadraticBezierCurve3(from, mid, to);
+      const tubeMesh = new THREE.Mesh(
+        new THREE.TubeGeometry(curve, 40, 0.025, 6),
+        new THREE.MeshStandardMaterial({ color: COL.updated, emissive: COL.updated, emissiveIntensity: 0.8, transparent: true, opacity: 0.85 })
+      );
+      tubeMesh.userData.tip = { date: e.date + " → restated", claim: "Goalpost-move: deadline restated instead of resolved.", status: "UPDATED", note: e.note, src: e.src };
+      pickables.push(tubeMesh);
+      clocks.add(tubeMesh);
+      const ghost = ring(0.55, COL.updated, { wire: true, opacity: 0.3, tube: 0.04 });
+      ghost.position.copy(to);
+      clocks.add(ghost);
+    }
+  });
+  clocks.position.set(0, 1.4, -2 * ROOM - 6);
+  scene.add(clocks);
+
+  /* ROOM 4 (z≈-450) — the tests */
+  const tests = new THREE.Group();
+  const resolved = LEDGER.filter((e) => e.status === "REFUTED" || e.status === "AMBIGUOUS");
+  resolved.forEach((e, i) => {
+    const col = STATUS_COL[e.status];
+    const big = ring(1.05, col, { tube: 0.08, opacity: e.status === "AMBIGUOUS" ? 0.55 : 1, emissiveScale: e.status === "REFUTED" ? 0.5 : 0.8 });
+    big.position.set((i - (resolved.length - 1) / 2) * 3.1, Math.sin(i * 1.7) * 0.8, (i % 2) * -1.4);
+    big.userData.tip = { date: e.date, claim: e.claim, status: e.status, note: e.note, src: e.src };
+    pickables.push(big);
+    const st = labelSprite(e.status, e.status === "REFUTED" ? "#FF6B5A" : "#8A9BB0", 17, 600);
+    st.position.copy(big.position); st.position.y -= 1.65;
+    tests.add(big, st);
+  });
+  /* mutation rail: six engines orbiting one conclusion */
+  const mut = new THREE.Group();
+  const core = new THREE.Mesh(
+    new THREE.SphereGeometry(0.42, 20, 20),
+    new THREE.MeshStandardMaterial({ color: 0xE8EDF5, emissive: 0xE8EDF5, emissiveIntensity: 0.55 })
+  );
+  core.userData.tip = { date: "2015 → 2026", claim: "The conclusion never changes: crisis imminent.", status: "6 MUTATIONS", note: "The engine rotates with the news cycle.", src: null };
+  pickables.push(core);
+  const coreL = labelSprite("SAME CONCLUSION", "#E8EDF5", 15, 600);
+  coreL.position.set(0, 0.95, 0);
+  mut.add(core, coreL);
+  MUTATIONS.forEach((mo, i) => {
+    const a = (i / MUTATIONS.length) * Math.PI * 2;
+    const s = new THREE.Mesh(
+      new THREE.OctahedronGeometry(0.22),
+      new THREE.MeshStandardMaterial({ color: COL.updated, emissive: COL.updated, emissiveIntensity: 0.8 })
+    );
+    s.position.set(Math.cos(a) * 2.3, Math.sin(a) * 1.5, Math.sin(a) * 0.7);
+    s.userData.tip = { date: mo.d, claim: mo.m, status: "MECHANISM " + (i + 1) + "/6", note: "Same conclusion, new engine.", src: null };
+    pickables.push(s);
+    mut.add(s);
+  });
+  mut.userData.spin = 0.05;
+  driftGroups.push(mut);
+  mut.position.set(6.2, 2.6, -3.6);
+  tests.add(mut);
+  tests.position.set(-1.2, 1.9, -3 * ROOM - 6);
+  scene.add(tests);
+
+  /* ROOM 5 (z≈-600) — the ledger wall + the live clocks ahead */
+  const wall = new THREE.Group();
+  const byStatus = { REFUTED: [], UPDATED: [], AMBIGUOUS: [], PENDING: [] };
+  LEDGER.forEach((e) => byStatus[e.status].push(e));
+  const flat = [...byStatus.REFUTED, ...byStatus.UPDATED, ...byStatus.AMBIGUOUS, ...byStatus.PENDING];
+  flat.forEach((e, i) => {
+    const col = STATUS_COL[e.status];
+    const r = ring(0.5, col, e.vague ? { wire: true, opacity: 0.7, tube: 0.05 } : { tube: 0.055 });
+    r.position.set(((i % 4) - 1.5) * 1.7, 2.6 - Math.floor(i / 4) * 1.7, 0);
+    r.userData.tip = { date: e.date, claim: e.claim, status: e.status, note: e.note, src: e.src };
+    if (e.status === "PENDING" && !reduceMotion) pulses.push(r);
+    pickables.push(r);
+    wall.add(r);
+  });
+  wall.position.set(0, 1.4, -4 * ROOM - 12);
+  scene.add(wall);
+
+  for (const [label, z, when] of [["NOV 2026 · MIDTERM CLAIM", -4 * ROOM - 95, 0], ["SEPT 2028 · FIRST COUNTABLE CLOCK", -4 * ROOM - 150, 1]]) {
+    const b = new THREE.Mesh(
+      new THREE.SphereGeometry(1.15, 24, 24),
+      new THREE.MeshStandardMaterial({ color: COL.pending, emissive: COL.pending, emissiveIntensity: 1.5 })
+    );
+    b.position.set(when ? 3.4 : -3.0, 2.6, z);
+    b.userData.tip = { date: label.split(" · ")[0], claim: label.split(" · ")[1], status: "PENDING", note: "Still running. The record will be waiting.", src: null };
+    if (!reduceMotion) pulses.push(b);
+    pickables.push(b);
+    const bl = labelSprite(label, "#7EB8FF", 17);
+    bl.position.copy(b.position); bl.position.y += 2.1;
+    scene.add(b, bl);
+  }
+
+  /* lights */
+  scene.add(new THREE.AmbientLight(0x8090b0, 0.5));
+  const key = new THREE.DirectionalLight(0xcfe0ff, 1.1);
+  key.position.set(6, 14, 8);
+  scene.add(key);
+}
+
+/* ---- scroll conductor: exact target, damped smooth ---- */
+const rig = { target: 0, smooth: 0 };
+let anchors = [];
+function measureAnchors() {
+  anchors = [...document.querySelectorAll("section.ch")].map((s) => s.offsetTop + s.offsetHeight * 0.5 - innerHeight * 0.5);
+}
+function progressFromScroll() {
+  const y = scrollY;
+  if (y <= anchors[0]) return 0;
+  for (let i = 0; i < anchors.length - 1; i++) {
+    if (y < anchors[i + 1]) return i + (y - anchors[i]) / (anchors[i + 1] - anchors[i]);
+  }
+  return anchors.length - 1;
+}
+const smoothstep = (t) => t * t * (3 - 2 * t);
+
+function applyChapter(p) {
+  const i = Math.min(Math.floor(p), CHAPTERS.length - 2);
+  const t = smoothstep(Math.min(1, Math.max(0, p - i)));
+  const a = CHAPTERS[i], b = CHAPTERS[i + 1];
+  const L = (u, v) => u + (v - u) * t;
+  const mob = isMobile ? 7 : 0;
+  camera.position.set(L(a.cam[0], b.cam[0]), L(a.cam[1], b.cam[1]), L(a.cam[2], b.cam[2]) + mob);
+  camera.lookAt(L(a.tgt[0], b.tgt[0]), L(a.tgt[1], b.tgt[1]), L(a.tgt[2], b.tgt[2]));
+  camera.fov = L(a.fov_m && isMobile ? a.fov_m : a.fov, b.fov_m && isMobile ? b.fov_m : b.fov) + (isMobile ? 5 : 0);
+  camera.updateProjectionMatrix();
+  scene.fog.density = L(a.fog, b.fog);
+  spineMat.emissiveIntensity = L(a.spineGlow, b.spineGlow);
+}
+
+/* ---- interaction: hover = identify, click = source ---- */
+const tip = document.getElementById("tip");
+let hovered = null;
+function onPointerMove(e) {
+  pointer.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  raycaster.setFromCamera(pointer, camera);
+  const hit = raycaster.intersectObjects(pickables, false)[0];
+  hovered = hit ? hit.object : null;
+  if (hovered && hovered.userData.tip) {
+    const d = hovered.userData.tip;
+    tip.innerHTML =
+      `<div class="t-date">${d.date}</div><div class="t-claim">${d.claim}</div>` +
+      `<div class="t-status" style="color:${statusColorCSS(d.status)}">${d.status}</div>` +
+      (d.note ? `<div class="t-note">${d.note}</div>` : "") +
+      (d.src ? `<div class="t-src">CLICK FOR SOURCE ↗</div>` : "");
+    tip.style.display = "block";
+    tip.style.left = Math.min(e.clientX + 16, innerWidth - 320) + "px";
+    tip.style.top = Math.min(e.clientY + 16, innerHeight - 170) + "px";
+    document.body.style.cursor = hovered.userData.tip.src ? "pointer" : "default";
+  } else {
+    tip.style.display = "none";
+    document.body.style.cursor = "default";
+  }
+}
+function statusColorCSS(s) {
+  if (s.startsWith("REFUTED")) return "#FF6B5A";
+  if (s.startsWith("UPDATED")) return "#F5C04E";
+  if (s.startsWith("AMBIGUOUS")) return "#8A9BB0";
+  if (s.startsWith("PENDING")) return "#7EB8FF";
+  return "#6EE7C8";
+}
+function onClick() {
+  if (hovered && hovered.userData.tip && hovered.userData.tip.src) window.open(hovered.userData.tip.src, "_blank", "noopener");
+}
+
+/* ---- boot ---- */
+try {
+  renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance" });
+  renderer.setPixelRatio(Math.min(devicePixelRatio, isMobile ? 1.5 : 1.75));
+  renderer.setSize(innerWidth, innerHeight);
+  document.getElementById("stage").appendChild(renderer.domElement);
+
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(COL.bg);
+  scene.fog = new THREE.FogExp2(COL.bg, 0.01);
+  camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 700);
+  raycaster = new THREE.Raycaster();
+  raycaster.params.Line = { threshold: 0.3 };
+  pointer = new THREE.Vector2(-2, -2);
+
+  buildWorld();
+  measureAnchors();
+
+  composer = new EffectComposer(renderer);
+  composer.addPass(new RenderPass(scene, camera));
+  const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth, innerHeight), 0.55, 0.7, 0.82);
+  composer.addPass(bloom);
+  composer.addPass(new OutputPass());
+
+  addEventListener("resize", () => {
+    camera.aspect = innerWidth / innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+    composer.setSize(innerWidth, innerHeight);
+    measureAnchors();
+  });
+  addEventListener("pointermove", onPointerMove, { passive: true });
+  addEventListener("click", onClick);
+  document.querySelectorAll(".rail button").forEach((b) =>
+    b.addEventListener("click", () => document.getElementById("ch" + b.dataset.ch).scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" }))
+  );
+
+  const railmark = document.getElementById("railmark");
+  const dots = [...document.querySelectorAll(".rail button")];
+  const clock = new THREE.Clock();
+  let raf;
+
+  function frame() {
+    raf = requestAnimationFrame(frame);
+    const dt = Math.min(clock.getDelta(), 1 / 30);
+    rig.target = progressFromScroll();
+    rig.smooth = reduceMotion ? rig.target : THREE.MathUtils.damp(rig.smooth, rig.target, 4.6, dt);
+    applyChapter(rig.smooth);
+
+    if (!reduceMotion) {
+      const t = clock.elapsedTime;
+      for (const g of driftGroups) g.rotation[g.userData.axis || "z"] += (g.userData.spin || 0.03) * dt;
+      for (const m of pulses) {
+        const k = 1 + Math.sin(t * 2.1 + m.position.z) * 0.12;
+        m.scale.setScalar(k);
+        if (m.material.emissiveIntensity !== undefined) m.material.emissiveIntensity = 1.0 + Math.sin(t * 2.1 + m.position.z) * 0.45;
+      }
+    }
+    /* rail */
+    const frac = rig.target / (CHAPTERS.length - 1);
+    railmark.style.top = `calc(${(frac * 100).toFixed(1)}% - ${(frac * 14).toFixed(1)}px)`;
+    const cur = Math.round(rig.target);
+    dots.forEach((d, i) => d.setAttribute("aria-current", i === cur ? "true" : "false"));
+
+    composer.render();
+  }
+  frame();
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) cancelAnimationFrame(raf);
+    else { clock.getDelta(); frame(); }
+  });
+} catch (err) {
+  console.warn("WebGL unavailable — falling back to readable document.", err);
+  document.body.classList.add("no3d");
+}
+</script>
+</body>
+</html>
