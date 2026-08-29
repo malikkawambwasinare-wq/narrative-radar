@@ -512,6 +512,13 @@
   .notice .n-advice { display: block; margin-top: 6px; color: var(--ink); }
   .n-close { position: absolute; top: 8px; right: 10px; font: inherit; font-size: 18px;
     line-height: 1; background: none; border: none; cursor: pointer; color: var(--muted); }
+  .n-offer { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 10px; }
+  .n-build { font: inherit; font-size: 12.5px; padding: 5px 15px; cursor: pointer;
+    border-radius: 999px; border: 1px solid var(--accent); background: none;
+    color: var(--accent); white-space: nowrap; }
+  .n-build:hover { background: var(--accent); color: var(--bg); }
+  .n-build[disabled] { opacity: .5; cursor: default; background: none; color: var(--accent); }
+  .n-hint { font-size: 12px; color: var(--muted); }
   .r-advice { margin-top: 10px; font-size: 13.5px; color: var(--ink);
     border-left: 3px solid var(--hairline); padding: 2px 0 2px 12px; }
   .followbtn {
@@ -1630,6 +1637,18 @@ function showNotice(html) {
 let predictorFilter = null;
 let refreshing = false;
 
+// Buildout is opt-in. It sweeps (free) and then runs up to five analyze calls
+// plus a consolidate — real money, and previously it fired 800ms after every
+// lookup whether or not anyone wanted it. Now the user asks for it.
+let buildoutCtx = null;
+function buildoutOffer(topicId, prefix) {
+  buildoutCtx = { topicId, prefix };
+  return `<div class="n-offer">
+    <button class="n-build" data-buildout="1">↻ Build out this narrative</button>
+    <span class="n-hint">Sweeps for newer videos and analyzes up to five of them.</span>
+  </div>`;
+}
+
 async function traceOrigin(topicId) {
   const n = cache[topicId]?.narrative;
   const fps = cache[topicId]?.claims?.fingerprints || [];
@@ -1744,6 +1763,10 @@ async function refreshNarrative(topicId, prefix = "") {
           }],
         }),
       }).then(r => r.json()).catch(() => null);
+      if (d?.error === "rate_limited" || d?.error === "daily_ceiling_reached") {
+        showNotice(`${prefix}Buildout stopped early — ${esc(d.detail || "the engine is rate limited")}. ${here} video${here === 1 ? "" : "s"} added so far.`);
+        return;
+      }
       if (d?.status === "analyzed" && d.analysis?.decision === "existing_narrative"
           && d.analysis.topic_id === topicId && d.video_entry) {
         const data = cache[topicId];
@@ -1903,9 +1926,8 @@ async function runLookup(raw) {
         ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations?.length || 0} mutations)` : ""}
         — ${vchip(v.verdict)}
         <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`;
-      showNotice(summary);
+      showNotice(summary + buildoutOffer(t.id, summary + "<br>"));
       openRadarAt(t.id, vid);
-      setTimeout(() => refreshNarrative(t.id, summary + "<br>"), 800);
       return;
     }
   }
@@ -1922,6 +1944,13 @@ async function runLookup(raw) {
       body: JSON.stringify({ url: raw }),
     });
     const d = await r.json();
+    if (r.status === 429 || r.status === 503) {
+      box.innerHTML = `<div class="card">
+        <div class="r-kicker">${r.status === 429 ? "Slow down a moment" : "The engine is resting"}</div>
+        <div class="r-meta">${esc(d.detail || "Try again shortly.")}</div>
+      </div>`;
+      return;
+    }
     handleEngineResult(box, d, vid);
   } catch (e) {
     box.innerHTML = `<div class="card">
@@ -1942,9 +1971,8 @@ function handleEngineResult(box, d, vid) {
       ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations} mutations)` : ""}
       — ${vchip(v.verdict)}
       <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`;
-    showNotice(summary);
+    showNotice(summary + buildoutOffer(d.topic_id, summary + "<br>"));
     openRadarAt(d.topic_id, vid);
-    setTimeout(() => refreshNarrative(d.topic_id, summary + "<br>"), 800);
     return;
   }
   if (d.status !== "analyzed") {
@@ -1977,9 +2005,8 @@ function handleEngineResult(box, d, vid) {
       — ${vchip(chipVerdict)} ${conf}
       ${a.is_update && a.update_note ? `<br><b>Narrative update:</b> ${esc(a.update_note)}` : ""}
       <span class="n-advice">${esc(a.advice)}</span>`;
-    showNotice(summary);
+    showNotice(summary + buildoutOffer(a.topic_id, summary + "<br>"));
     openRadarAt(a.topic_id, vid);
-    setTimeout(() => refreshNarrative(a.topic_id, summary + "<br>"), 800);
     return;
   }
   if (a.decision === "new_narrative" && d.created_topic) {
@@ -2001,9 +2028,8 @@ function handleEngineResult(box, d, vid) {
       ${d.narrative?.born ? `Born ~${esc(d.narrative.born)} (model estimate).` : ""} ${conf}
       — ${vchip(chipVerdict)}
       <span class="n-advice">${esc(a.advice)}</span>`;
-    showNotice(summary);
+    showNotice(summary + buildoutOffer(d.created_topic.id, summary + "<br>"));
     openRadarAt(d.created_topic.id, vid);
-    setTimeout(() => refreshNarrative(d.created_topic.id, summary + "<br>"), 800);
     return;
   }
   // unrelated
@@ -2017,6 +2043,13 @@ document.addEventListener("click", async (ev) => {
   const ob = ev.target.closest(".open-btn");
   if (ob) return openRadarAt(ob.dataset.topic || null, ob.dataset.vid || null);
   if (ev.target.closest(".n-close")) return showNotice("");
+  const bb = ev.target.closest("[data-buildout]");
+  if (bb) {
+    if (!buildoutCtx || refreshing) return;
+    bb.disabled = true;
+    const { topicId, prefix } = buildoutCtx;
+    return refreshNarrative(topicId, prefix);
+  }
   if (ev.target.closest("#home-link, #back-start")) { showNotice(""); return showLanding(); }
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
   const gt = ev.target.closest("[data-gopen]");

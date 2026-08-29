@@ -8,6 +8,7 @@
 //                                  the tile to the ribbon immediately
 //              unrelated         → nothing persisted (music/entertainment/how-to)
 import Anthropic from "@anthropic-ai/sdk";
+import { guard } from "./_guard.mjs";
 
 const REPO = "malikkawambwasinare-wq/narrative-radar";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
@@ -160,6 +161,8 @@ const videoEntry = (videoId, meta, verdict, note, today, source) => ({
 export default async (req) => {
   if (req.method === "OPTIONS") return new Response("", { headers: CORS });
   if (req.method !== "POST") return json(405, { error: "POST only" });
+  const blocked = guard(req, { cost: 1, cors: CORS });
+  if (blocked) return blocked;
 
   let body;
   try { body = await req.json(); } catch { return json(400, { error: "bad JSON" }); }

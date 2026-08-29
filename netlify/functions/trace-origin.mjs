@@ -6,6 +6,8 @@
 //   a trace reads ~150-300 posts (~$0.75-1.50). Hard abort at READ_BUDGET.
 //   Same phrase traced before → returns the stored genesis free (force:true
 //   to re-trace).
+import { guard } from "./_guard.mjs";
+
 const REPO = "malikkawambwasinare-wq/narrative-radar";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
 const READ_BUDGET = 600; // ~$3 — hard cap per trace
@@ -68,6 +70,10 @@ export default async (req) => {
   if (!process.env.X_BEARER_TOKEN) {
     return json(200, { status: "error", error: "x_not_connected" });
   }
+  // A single trace reads 150-300 posts at $0.005 (plus user objects at $0.010)
+  // — 40-130x an analyze call. Weighted accordingly against the daily ceiling.
+  const blocked = guard(req, { cost: 40, cors: CORS });
+  if (blocked) return blocked;
   let body;
   try { body = await req.json(); } catch { return json(400, { error: "bad JSON" }); }
   const { topic, phrase } = body;

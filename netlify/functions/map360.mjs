@@ -6,6 +6,7 @@
 // Integrity gates baked in: evidence videoIds must come from this corpus;
 // supplements targets are product CATEGORIES, never named sellers or people.
 import Anthropic from "@anthropic-ai/sdk";
+import { guard } from "./_guard.mjs";
 
 const REPO = "malikkawambwasinare-wq/narrative-radar";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
@@ -119,6 +120,8 @@ Rules:
 export default async (req) => {
   if (req.method === "OPTIONS") return new Response("", { headers: CORS });
   if (req.method !== "POST") return json(405, { error: "POST only" });
+  const blocked = guard(req, { cost: 2, cors: CORS });
+  if (blocked) return blocked;
   let body;
   try { body = await req.json(); } catch { return json(400, { error: "bad JSON" }); }
 

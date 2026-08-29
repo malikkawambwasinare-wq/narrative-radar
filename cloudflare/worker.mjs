@@ -6,12 +6,14 @@ import analyze from "../netlify/functions/analyze.mjs";
 import sweep from "../netlify/functions/sweep.mjs";
 import consolidate from "../netlify/functions/consolidate.mjs";
 import traceOrigin from "../netlify/functions/trace-origin.mjs";
+import map360 from "../netlify/functions/map360.mjs";
 
 const ROUTES = {
   "/api/analyze": analyze,
   "/api/sweep": sweep,
   "/api/consolidate": consolidate,
   "/api/trace-origin": traceOrigin,
+  "/api/map360": map360,
 };
 
 export default {
