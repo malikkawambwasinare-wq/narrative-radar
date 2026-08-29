@@ -19,7 +19,15 @@
       "horizon": "before the August 2026 Senate recess",
       "status": "PENDING",
       "outcome_note": "Shortest clock in the ledger — judgment this month. From Coinbase's Q2 2026 earnings AMA.",
-      "source": "https://www.youtube.com/watch?v=zv4icJOfB-w"
+      "source": "https://www.youtube.com/watch?v=zv4icJOfB-w",
+      "due": {
+        "start": "2026-08-01",
+        "end": "2026-08-07",
+        "precision": "month"
+      },
+      "resolution_class": "review",
+      "capture": "backfill",
+      "due_basis": "'before the August 2026 Senate recess' — recess began the first week of August"
     },
     {
       "id": "gambardello-2026-pmi",
@@ -29,7 +37,15 @@
       "horizon": "September 1, 2026 PMI print",
       "status": "PENDING",
       "outcome_note": "Rare self-falsifying call with an exact date — model audit case.",
-      "source": "https://www.youtube.com/watch?v=Hgikc09SCgM"
+      "source": "https://www.youtube.com/watch?v=Hgikc09SCgM",
+      "due": {
+        "start": "2026-09-01",
+        "end": "2026-09-01",
+        "precision": "day"
+      },
+      "resolution_class": "auto",
+      "capture": "live",
+      "due_basis": "'September 1, 2026 PMI print' — settles on the published ISM manufacturing PMI"
     },
     {
       "id": "gerhard-2026-selloff",
@@ -39,7 +55,11 @@
       "horizon": "coming weeks to months",
       "status": "PENDING",
       "outcome_note": "Bear camp's most concrete near-term call.",
-      "source": "https://www.youtube.com/watch?v=y9PN4mfk1hs"
+      "source": "https://www.youtube.com/watch?v=y9PN4mfk1hs",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'coming weeks to months' — unbounded"
     },
     {
       "id": "soloway-2026-35k",
@@ -49,7 +69,15 @@
       "horizon": "by October-November 2026",
       "status": "PENDING",
       "outcome_note": "Deepest bear target in the corpus; head-and-shoulders measured move + bear-market week counts.",
-      "source": "https://www.youtube.com/watch?v=xJyNgxAozQw"
+      "source": "https://www.youtube.com/watch?v=xJyNgxAozQw",
+      "due": {
+        "start": "2026-10-01",
+        "end": "2026-11-30",
+        "precision": "range"
+      },
+      "resolution_class": "auto",
+      "capture": "live",
+      "due_basis": "'by October-November 2026'; a named BTC price settles it"
     },
     {
       "id": "klippsten-2026-bottom",
@@ -59,7 +87,15 @@
       "horizon": "late October 2026",
       "status": "PENDING",
       "outcome_note": "Directly contradicts Soloway's $35K on the same clock — one of them will be wrong on schedule.",
-      "source": "https://www.youtube.com/watch?v=wJBYU7xND00"
+      "source": "https://www.youtube.com/watch?v=wJBYU7xND00",
+      "due": {
+        "start": "2026-10-20",
+        "end": "2026-10-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'late October 2026'; 'the bottom' is only knowable in hindsight — interpretation required"
     },
     {
       "id": "ivan-2026-bottom",
@@ -69,7 +105,15 @@
       "horizon": "Oct-Nov 2026 bottom; Jan-Feb 2027 blow-off",
       "status": "PENDING",
       "outcome_note": "Announced as a live pivot from bearish to bullish.",
-      "source": "https://www.youtube.com/watch?v=SpxCqrzGDiA"
+      "source": "https://www.youtube.com/watch?v=SpxCqrzGDiA",
+      "due": {
+        "start": "2026-10-01",
+        "end": "2027-02-28",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'Oct-Nov 2026 bottom; Jan-Feb 2027 blow-off' — two-legged claim, judged on the full span"
     },
     {
       "id": "fibswanny-2026-low-now",
@@ -79,7 +123,15 @@
       "horizon": "August-October 2026",
       "status": "PENDING",
       "outcome_note": "Cycle-is-dead camp; contradicts the October-bottom cluster.",
-      "source": "https://www.youtube.com/watch?v=XNuL97I8bvc"
+      "source": "https://www.youtube.com/watch?v=XNuL97I8bvc",
+      "due": {
+        "start": "2026-08-01",
+        "end": "2026-10-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'August-October 2026'"
     },
     {
       "id": "hougan-2026-higher",
@@ -89,7 +141,15 @@
       "horizon": "December 31, 2026",
       "status": "PENDING",
       "outcome_note": "The institutional 'cycle is over' thesis with a hard year-end clock.",
-      "source": "https://www.youtube.com/watch?v=Lu-sOTkVWDM"
+      "source": "https://www.youtube.com/watch?v=Lu-sOTkVWDM",
+      "due": {
+        "start": "2026-12-31",
+        "end": "2026-12-31",
+        "precision": "day"
+      },
+      "resolution_class": "auto",
+      "capture": "live",
+      "due_basis": "'December 31, 2026'; a year-end price comparison settles it"
     },
     {
       "id": "hougan-2027-bull",
@@ -99,7 +159,15 @@
       "horizon": "2027",
       "status": "PENDING",
       "outcome_note": "Judgment date: end of 2027.",
-      "source": "https://www.youtube.com/watch?v=qTPGkVaukjo"
+      "source": "https://www.youtube.com/watch?v=qTPGkVaukjo",
+      "due": {
+        "start": "2027-01-01",
+        "end": "2027-12-31",
+        "precision": "year"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'2027'; 'bull market' needs a stated threshold the claimant did not give"
     },
     {
       "id": "phongle-2027-bull",
@@ -109,7 +177,15 @@
       "horizon": "by August 2027",
       "status": "PENDING",
       "outcome_note": "Corporate-treasury camp; two-part claim (timing + relative performance).",
-      "source": "https://www.youtube.com/watch?v=bs6yz79MneQ"
+      "source": "https://www.youtube.com/watch?v=bs6yz79MneQ",
+      "due": {
+        "start": "2027-08-01",
+        "end": "2027-08-31",
+        "precision": "month"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'by August 2027'"
     },
     {
       "id": "sophie-2028-cycle-intact",
@@ -119,7 +195,15 @@
       "horizon": "2027-2028",
       "status": "PENDING",
       "outcome_note": "Cycle-is-alive camp's retail voice — directly opposes Hougan on the same question.",
-      "source": "https://www.youtube.com/watch?v=CqX7sirvtO8"
+      "source": "https://www.youtube.com/watch?v=CqX7sirvtO8",
+      "due": {
+        "start": "2027-01-01",
+        "end": "2028-12-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'2027-2028'; 'cycle intact' is interpretive"
     },
     {
       "id": "saylor-1m-no-winters",
@@ -129,7 +213,11 @@
       "horizon": "unstated (vague)",
       "status": "PENDING",
       "outcome_note": "Vague horizon flagged — the 'no more winters' half is the auditable part; a 2026-27 winter would refute it.",
-      "source": "https://www.youtube.com/watch?v=eT9X6C7cCH4"
+      "source": "https://www.youtube.com/watch?v=eT9X6C7cCH4",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'unstated (vague)' — a price target with no date cannot be missed"
     },
     {
       "id": "ark-2030-710k",
@@ -139,7 +227,15 @@
       "horizon": "2030",
       "status": "PENDING",
       "outcome_note": "Long-horizon anchor for the institutional camp. (Bernstein: $1M by ~2033; VanEck: $2.9M by 2050.)",
-      "source": "https://www.youtube.com/watch?v=tjLPE9h6BKg"
+      "source": "https://www.youtube.com/watch?v=tjLPE9h6BKg",
+      "due": {
+        "start": "2030-01-01",
+        "end": "2030-12-31",
+        "precision": "year"
+      },
+      "resolution_class": "auto",
+      "capture": "live",
+      "due_basis": "'2030'; a named BTC price target settles it"
     },
     {
       "id": "pal-2030-singularity",
@@ -149,7 +245,19 @@
       "horizon": "by 2030",
       "status": "PENDING",
       "outcome_note": "Vague mechanism flagged; note the video carrying it used a fabricated title quote (CLICKBAIT verdict).",
-      "source": "https://www.youtube.com/watch?v=SkR1NO6N-8g"
+      "source": "https://www.youtube.com/watch?v=SkR1NO6N-8g",
+      "due": {
+        "start": "2030-01-01",
+        "end": "2030-12-31",
+        "precision": "year"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'by 2030'; 'singularity' has no agreed measurable definition"
     }
-  ]
+  ],
+  "standard": {
+    "version": "1.0",
+    "url": "STANDARD.md"
+  }
 }

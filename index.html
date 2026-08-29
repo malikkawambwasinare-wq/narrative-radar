@@ -726,6 +726,10 @@ function publishedEst(v) {
   if (isNaN(t)) return null;
   return v.age_days == null ? t : t - v.age_days * 86400000;
 }
+// Legacy fallback ONLY, for entries not yet migrated by scripts/migrate-due-dates.mjs.
+// It reads the FIRST four-digit year in free text, so "by ~2026-2028" became
+// 2026-07-01 — which is why collapse-audit's next test used to flip between
+// due-now and 686 days out with no data change. Prefer entry.due.
 function parseHorizonDate(s) {
   const y = ((s || "").match(/20\d{2}/) || [])[0];
   if (!y) return null;
@@ -733,6 +737,9 @@ function parseHorizonDate(s) {
   const m = ((s || "").toLowerCase().match(/jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec/) || [])[0];
   return Date.UTC(+y, m ? MO[m] : 6, m ? 28 : 1);
 }
+// A claim becomes judgeable at the END of its stated window (STANDARD.md §4).
+const dueEnd = (e) => e?.due?.end ? Date.parse(e.due.end + "T00:00:00Z") : parseHorizonDate(e?.horizon);
+const isUnscorable = (e) => (e?.resolution_class || (e?.due ? "review" : null)) === "unscorable";
 function computeReceipt(data) {
   const n = data?.narrative || {};
   const preds = data?.predictions?.entries || [];
@@ -744,11 +751,17 @@ function computeReceipt(data) {
   preds.forEach(e => c[e.status] = (c[e.status] || 0) + 1);
   const sup = c.SUPPORTED || 0, ref = c.REFUTED || 0, amb = c.AMBIGUOUS || 0,
     upd = c.UPDATED || 0, pen = c.PENDING || 0;
+  // The next claim that becomes judgeable: window close + the 30-day grace
+  // period from STANDARD.md §4. Unscorable claims never come due — a claim with
+  // no falsifiable condition cannot arrive.
+  const GRACE = 30 * 86400000;
   let next = null;
-  preds.filter(e => e.status === "PENDING").forEach(e => {
-    const t = parseHorizonDate(e.horizon);
-    if (t && t > now - 45 * 86400000 && (!next || t < next.t))
-      next = { t, predictor: e.predictor || n.predictor || "", horizon: e.horizon };
+  preds.filter(e => e.status === "PENDING" && !isUnscorable(e)).forEach(e => {
+    const end = dueEnd(e);
+    if (!end) return;
+    const t = end + GRACE;
+    if (!next || t < next.t)
+      next = { t, predictor: e.predictor || n.predictor || "", horizon: e.horizon, overdue: t < now };
   });
   const dated = vids.map(v => ({ v, t: publishedEst(v) })).filter(x => x.t != null)
     .sort((a, b) => b.t - a.t);
@@ -760,7 +773,19 @@ function computeReceipt(data) {
   return {
     n, bornYear, verified: !!n.genesis?.first_found,
     years: bornYear ? new Date().getFullYear() - bornYear : null,
-    sup, ref, amb, upd, pen, resolved: sup + ref, hasLedger: preds.length > 0,
+    sup, ref, amb, upd, pen,
+    // Claims that MET their deadline and were ruled. The old `sup + ref` excluded
+    // AMBIGUOUS — timing-without-mechanism, one of the most informative outcomes
+    // there is — and so blocked the n>=5 score gate on every narrative shipped.
+    // UPDATED is deliberately NOT in here: a moved goalpost never met reality, it
+    // was superseded. STANDARD.md §4 reports it alongside the rate, never inside it.
+    resolved: sup + ref + amb,
+    moved: upd,
+    // Rates are only published over claims that could ever be graded, and only
+    // once there are five of them (STANDARD.md §8).
+    scoreable: preds.filter(e => !isUnscorable(e)).length,
+    unscorable: preds.filter(e => isUnscorable(e)).length,
+    hasLedger: preds.length > 0,
     next, win, reheats: win.filter(x => x.verdict === "RECYCLED" || x.verdict === "CLICKBAIT").length,
     spread: vids.length >= 10 && counts.length
       ? { channels: counts.length, pct: Math.round(top3 / vids.length * 100), total: vids.length } : null,
@@ -826,7 +851,8 @@ function buildRadarRead(s) {
   if (!s.hasLedger || s.datedClaims === 0) {
     bits2.push("Few claims here are precise enough to test on a clock");
   } else if (s.resolved >= SCORE_GATE) {
-    bits2.push(`${s.sup} of ${s.resolved} resolved calls landed`);
+    bits2.push(`${s.sup} of ${s.resolved} resolved calls landed`
+      + (s.moved ? `, ${s.moved} deadline${s.moved === 1 ? "" : "s"} moved` : ""));
   } else if (s.resolved > 0) {
     bits2.push(`too few dated calls have resolved (${s.resolved}) to score fairly`);
   } else {
@@ -1075,7 +1101,7 @@ function dashboardHtml(data, s) {
     <div class="gsub">Nothing here can be scored on a clock.</div>`);
   else {
     track.push(`<div class="gline">${s.resolved >= SCORE_GATE
-      ? `${s.sup} of ${s.resolved} resolved calls landed`
+      ? `${s.sup} of ${s.resolved} resolved calls landed${s.moved ? ` · ${s.moved} deadline${s.moved === 1 ? "" : "s"} moved` : ""}`
       : `${s.resolved} resolved — too few to score fairly`}</div>`);
     track.push(`<div class="gsub">${s.pen} pending${s.amb ? ` · ${s.amb} too vague to grade` : ""}</div>`);
     track.push(`<div class="gsub">${days == null ? "No future date on the ledger"

@@ -1,0 +1,66 @@
+name: Resolver
+
+# The clock that makes the ledger a ledger. Every morning it asks which claims
+# have matured past their grace period and refreshes docket.json.
+#
+# It never rules — STANDARD.md §6 reserves that for a named human. It only says
+# what is due, and FAILS LOUDLY when something has been due too long. A failed
+# scheduled run emails the repo owner by default, which is the whole point: the
+# failure this product documents in other people is a deadline passing unnoticed.
+
+on:
+  schedule:
+    - cron: "0 7 * * *"      # 07:00 UTC daily. Actions cron is best-effort; drift is fine here.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "corpus/*/predictions.json"
+      - "scripts/resolver.mjs"
+      - "STANDARD.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resolver
+  cancel-in-progress: false
+
+jobs:
+  docket:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh the docket
+        run: node scripts/resolver.mjs --write | tee docket.txt
+
+      - name: Commit if the docket changed
+        run: |
+          if git diff --quiet -- docket.json; then
+            echo "Docket unchanged."
+            exit 0
+          fi
+          git config user.name  "narrative-radar-resolver"
+          git config user.email "resolver@users.noreply.github.com"
+          git add docket.json
+          # [skip netlify] keeps a data commit from triggering a function redeploy.
+          git commit -m "Resolver: refresh docket $(date -u +%Y-%m-%d) [skip netlify]"
+          git push
+
+      - name: Fail if anything is overdue
+        # Runs last so the docket is always published even when this trips.
+        run: node scripts/resolver.mjs --check
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '```'
+            cat docket.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"

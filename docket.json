@@ -1,0 +1,556 @@
+{
+  "generated": "2026-08-29",
+  "standard": "1.0",
+  "grace_days": 30,
+  "totals": {
+    "entries": 26,
+    "ready_to_rule": 0,
+    "unscorable": 8,
+    "resolved": 7,
+    "live_capture": 13
+  },
+  "narratives": [
+    {
+      "topic": "collapse-audit",
+      "name": "The 80-Year Collapse",
+      "total": 12,
+      "scoreable": 6,
+      "unscorable": 6,
+      "unscorable_pct": 50,
+      "resolved": 5,
+      "moved": 2,
+      "supported": 0,
+      "rate_publishable": true,
+      "live": 2,
+      "backfill": 4,
+      "actionable": 0,
+      "next": {
+        "topic": "collapse-audit",
+        "narrative": "The 80-Year Collapse",
+        "id": "dalio-2025-debt-3yr",
+        "claimant": "Ray Dalio",
+        "claim": "US debt crisis within ~3 years.",
+        "horizon": "by ~2028",
+        "due": {
+          "start": "2028-09-01",
+          "end": "2028-09-30",
+          "precision": "month"
+        },
+        "days_to_due": 763,
+        "resolution_class": "review",
+        "capture": "live",
+        "status": "PENDING",
+        "state": "open",
+        "source": "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/",
+        "actionable_on": "2028-10-30"
+      }
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "name": "Crypto Winter Watch",
+      "total": 14,
+      "scoreable": 12,
+      "unscorable": 2,
+      "unscorable_pct": 14,
+      "resolved": 0,
+      "moved": 0,
+      "supported": 0,
+      "rate_publishable": false,
+      "live": 11,
+      "backfill": 1,
+      "actionable": 0,
+      "next": {
+        "topic": "crypto-winter-watch",
+        "narrative": "Crypto Winter Watch",
+        "id": "armstrong-2026-clarity",
+        "claimant": "Brian Armstrong (Coinbase CEO)",
+        "claim": "The Clarity Act reaches a full Senate floor vote, with the recess as forcing function.",
+        "horizon": "before the August 2026 Senate recess",
+        "due": {
+          "start": "2026-08-01",
+          "end": "2026-08-07",
+          "precision": "month"
+        },
+        "days_to_due": -22,
+        "resolution_class": "review",
+        "capture": "backfill",
+        "status": "PENDING",
+        "state": "ripening",
+        "source": "https://www.youtube.com/watch?v=zv4icJOfB-w",
+        "actionable_on": "2026-09-06"
+      }
+    }
+  ],
+  "docket": [
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "armstrong-2026-clarity",
+      "claimant": "Brian Armstrong (Coinbase CEO)",
+      "claim": "The Clarity Act reaches a full Senate floor vote, with the recess as forcing function.",
+      "horizon": "before the August 2026 Senate recess",
+      "due": {
+        "start": "2026-08-01",
+        "end": "2026-08-07",
+        "precision": "month"
+      },
+      "days_to_due": -22,
+      "resolution_class": "review",
+      "capture": "backfill",
+      "status": "PENDING",
+      "state": "ripening",
+      "source": "https://www.youtube.com/watch?v=zv4icJOfB-w"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "fibswanny-2026-low-now",
+      "claimant": "FibSwanny",
+      "claim": "The 4-year cycle may be dead — the low is forming NOW (not October); $53-60K is the buy zone; if it holds, back above $100K quickly.",
+      "horizon": "August-October 2026",
+      "due": {
+        "start": "2026-08-01",
+        "end": "2026-10-31",
+        "precision": "range"
+      },
+      "days_to_due": 63,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "in_window",
+      "source": "https://www.youtube.com/watch?v=XNuL97I8bvc"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2025-heart-attack",
+      "claimant": "Ray Dalio",
+      "claim": "US debt crisis like an 'economic heart attack' — convergence could trigger it; US in 'Phase 5' of the Big Debt Cycle.",
+      "horizon": "by ~2026-2028",
+      "due": {
+        "start": "2026-01-01",
+        "end": "2028-12-31",
+        "precision": "range"
+      },
+      "days_to_due": 855,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "in_window",
+      "source": "https://www.fool.com/investing/2026/02/15/stock-market-crash-in-2026-billionaire-ray-dalio/"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "gambardello-2026-pmi",
+      "claimant": "Dan Gambardello",
+      "claim": "PMI closing above 55 with momentum starts altcoin bull markets (as 2017, 2020); signal invalidates if the print falls back under 55.",
+      "horizon": "September 1, 2026 PMI print",
+      "due": {
+        "start": "2026-09-01",
+        "end": "2026-09-01",
+        "precision": "day"
+      },
+      "days_to_due": 3,
+      "resolution_class": "auto",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=Hgikc09SCgM"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "klippsten-2026-bottom",
+      "claimant": "Cory Klippsten (Swan)",
+      "claim": "Bear markets bottom exactly 12 months after the peak → bottom ~late October 2026, floor ~$57.5K, no deep flush; then $200K after a $73K break.",
+      "horizon": "late October 2026",
+      "due": {
+        "start": "2026-10-20",
+        "end": "2026-10-31",
+        "precision": "range"
+      },
+      "days_to_due": 63,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=wJBYU7xND00"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "soloway-2026-35k",
+      "claimant": "Gareth Soloway",
+      "claim": "Short-term bullish to $71-72K, then a flush toward ~$35,000 bottom right before the midterm elections.",
+      "horizon": "by October-November 2026",
+      "due": {
+        "start": "2026-10-01",
+        "end": "2026-11-30",
+        "precision": "range"
+      },
+      "days_to_due": 93,
+      "resolution_class": "auto",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=xJyNgxAozQw"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "hougan-2026-higher",
+      "claimant": "Matt Hougan (Bitwise CIO)",
+      "claim": "The 4-year cycle contributed to the pullback but is essentially over; crypto ends 2026 higher.",
+      "horizon": "December 31, 2026",
+      "due": {
+        "start": "2026-12-31",
+        "end": "2026-12-31",
+        "precision": "day"
+      },
+      "days_to_due": 124,
+      "resolution_class": "auto",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=Lu-sOTkVWDM"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "ivan-2026-bottom",
+      "claimant": "Ivan on Tech",
+      "claim": "Bottom lands October-November 2026 near the 200-week MA; 'Valhalla' blow-off (esp. altcoins) Jan-Feb 2027; weekly close above ~$82K confirms bull to $200K.",
+      "horizon": "Oct-Nov 2026 bottom; Jan-Feb 2027 blow-off",
+      "due": {
+        "start": "2026-10-01",
+        "end": "2027-02-28",
+        "precision": "range"
+      },
+      "days_to_due": 183,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=SpxCqrzGDiA"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "phongle-2027-bull",
+      "claimant": "Phong Le (Strategy CEO)",
+      "claim": "Bitcoin is in a bear cycle now; a bull cycle begins within the next year and Strategy outperforms Bitcoin in it.",
+      "horizon": "by August 2027",
+      "due": {
+        "start": "2027-08-01",
+        "end": "2027-08-31",
+        "precision": "month"
+      },
+      "days_to_due": 367,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=bs6yz79MneQ"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "hougan-2027-bull",
+      "claimant": "Matt Hougan (Bitwise CIO)",
+      "claim": "2027 is a great bull market year; institutional capital (advisors, sovereign wealth, Vanguard-type firms) becomes the largest marginal buyer starting end of 2026.",
+      "horizon": "2027",
+      "due": {
+        "start": "2027-01-01",
+        "end": "2027-12-31",
+        "precision": "year"
+      },
+      "days_to_due": 489,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=qTPGkVaukjo"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2025-debt-3yr",
+      "claimant": "Ray Dalio",
+      "claim": "US debt crisis within ~3 years.",
+      "horizon": "by ~2028",
+      "due": {
+        "start": "2028-09-01",
+        "end": "2028-09-30",
+        "precision": "month"
+      },
+      "days_to_due": 763,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "sophie-2028-cycle-intact",
+      "claimant": "Sophie Satoshi",
+      "claim": "The 4-year cycle is still intact; upside maybe 2027, with the thick of the bull run in 2028.",
+      "horizon": "2027-2028",
+      "due": {
+        "start": "2027-01-01",
+        "end": "2028-12-31",
+        "precision": "range"
+      },
+      "days_to_due": 855,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=CqX7sirvtO8"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "ark-2030-710k",
+      "claimant": "ARK Invest (Cathie Wood)",
+      "claim": "Bitcoin scenarios: $300K bear, $710K base, $1.5M bull.",
+      "horizon": "2030",
+      "due": {
+        "start": "2030-01-01",
+        "end": "2030-12-31",
+        "precision": "year"
+      },
+      "days_to_due": 1585,
+      "resolution_class": "auto",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=tjLPE9h6BKg"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "pal-2030-singularity",
+      "claimant": "Raoul Pal",
+      "claim": "Stands by 2030: the 'economic singularity' arrives and things change dramatically; exponential-age thesis ~4 years out.",
+      "horizon": "by 2030",
+      "due": {
+        "start": "2030-01-01",
+        "end": "2030-12-31",
+        "precision": "year"
+      },
+      "days_to_due": 1585,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "open",
+      "source": "https://www.youtube.com/watch?v=SkR1NO6N-8g"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2025-doac-dark-times",
+      "claimant": "Ray Dalio",
+      "claim": "US and UK entering the dangerous phase of the 80-year big cycle; 'very, very dark times' ahead. Five forces: debt, internal conflict, geopolitical conflict, natural disasters, technology.",
+      "horizon": "unstated (vague)",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "PENDING",
+      "state": "unscorable",
+      "source": "https://singjupost.com/ray-dalio-were-heading-into-very-very-dark-times-doac-podcast-transcript/"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2026-capital-war",
+      "claimant": "Ray Dalio",
+      "claim": "World is 'on the brink' of a capital war — money weaponized via embargoes, market access, debt leverage; gold as hedge.",
+      "horizon": "near-term",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "PENDING",
+      "state": "unscorable",
+      "source": "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2026-doac-80yr",
+      "claimant": "Ray Dalio",
+      "claim": "'The 80 Year Collapse Is Here' / 'AI Will Lose You Money... You Should Be Happy' — new DOAC video; AI bubble showing 'classic signs', 80-year cycle framing continues.",
+      "horizon": "unstated (vague)",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "PENDING",
+      "state": "unscorable",
+      "source": "https://www.youtube.com/watch?v=Bu0xNDLNORU (transcript on file)"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "gerhard-2026-selloff",
+      "claimant": "Gerhard (Bitcoin Strategy)",
+      "claim": "Bear market not over; another ~30% sell-off before the bottom; CBBI (now 32) falls toward 20 or lower.",
+      "horizon": "coming weeks to months",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "PENDING",
+      "state": "unscorable",
+      "source": "https://www.youtube.com/watch?v=y9PN4mfk1hs"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "saylor-1m-no-winters",
+      "claimant": "Michael Saylor",
+      "claim": "If Bitcoin isn't going to zero it's going to $1M; past winters were man-made leverage collapses and won't repeat now that leverage is gone.",
+      "horizon": "unstated (vague)",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "PENDING",
+      "state": "unscorable",
+      "source": "https://www.youtube.com/watch?v=eT9X6C7cCH4"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2015-1937",
+      "claimant": "Ray Dalio",
+      "claim": "The Fed risks repeating 1937 — tightening into a downturn; economy looks like 1937.",
+      "horizon": "~1-2 years",
+      "due": {
+        "start": "2016-03-01",
+        "end": "2017-03-31",
+        "precision": "range"
+      },
+      "days_to_due": -3438,
+      "resolution_class": "review",
+      "capture": "backfill",
+      "status": "REFUTED",
+      "state": "resolved",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2018-downturn",
+      "claimant": "Ray Dalio",
+      "claim": "Economy looks like 1937; downturn coming in about two years.",
+      "horizon": "~2020",
+      "due": {
+        "start": "2020-01-01",
+        "end": "2020-12-31",
+        "precision": "year"
+      },
+      "days_to_due": -2067,
+      "resolution_class": "review",
+      "capture": "backfill",
+      "status": "AMBIGUOUS",
+      "state": "resolved",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2019-recession-risk",
+      "claimant": "Ray Dalio",
+      "claim": "Significant recession risk ahead.",
+      "horizon": "~1-2 years",
+      "due": {
+        "start": "2020-01-01",
+        "end": "2021-01-31",
+        "precision": "range"
+      },
+      "days_to_due": -2036,
+      "resolution_class": "review",
+      "capture": "backfill",
+      "status": "AMBIGUOUS",
+      "state": "resolved",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2022-perfect-storm",
+      "claimant": "Ray Dalio",
+      "claim": "A 'perfect storm' is forming for the economy.",
+      "horizon": "~1-2 years",
+      "due": {
+        "start": "2023-10-01",
+        "end": "2024-10-31",
+        "precision": "range"
+      },
+      "days_to_due": -667,
+      "resolution_class": "review",
+      "capture": "backfill",
+      "status": "REFUTED",
+      "state": "resolved",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2016-supercycle",
+      "claimant": "Ray Dalio",
+      "claim": "The 75-year debt supercycle is coming to an end.",
+      "horizon": "unstated (vague)",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "UPDATED",
+      "state": "resolved",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2020-cash-is-trash",
+      "claimant": "Ray Dalio",
+      "claim": "'Cash is trash' — get out of cash (Davos).",
+      "horizon": "near-term",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "AMBIGUOUS",
+      "state": "resolved",
+      "source": "unverified - to capture"
+    },
+    {
+      "topic": "collapse-audit",
+      "narrative": "The 80-Year Collapse",
+      "id": "dalio-2023-debt-crisis",
+      "claimant": "Ray Dalio",
+      "claim": "US debt crisis coming.",
+      "horizon": "unstated (vague)",
+      "due": null,
+      "days_to_due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "status": "UPDATED",
+      "state": "resolved",
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+    }
+  ],
+  "flags": [
+    {
+      "topic": "collapse-audit",
+      "id": "dalio-2026-doac-80yr",
+      "kind": "split_candidate",
+      "note": "A datable sub-claim is recorded in outcome_note but the stated horizon is vague. Enter it as its own claim to put it on a clock."
+    }
+  ]
+}

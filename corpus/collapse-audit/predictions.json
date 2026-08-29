@@ -18,7 +18,15 @@
       "horizon": "~1-2 years",
       "status": "REFUTED",
       "outcome_note": "No recession followed; markets went on to record highs.",
-      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/",
+      "due": {
+        "start": "2016-03-01",
+        "end": "2017-03-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "backfill",
+      "due_basis": "'~1-2 years' from 2015-03"
     },
     {
       "id": "dalio-2016-supercycle",
@@ -27,7 +35,11 @@
       "horizon": "unstated (vague)",
       "status": "UPDATED",
       "outcome_note": "No end arrived on any near horizon; framework later restated as the 'Big Debt Cycle' with numbered phases. Vague horizon makes strict refutation impossible — that vagueness is itself an audit finding.",
-      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'unstated (vague)' — no horizon to judge against"
     },
     {
       "id": "dalio-2018-downturn",
@@ -36,7 +48,15 @@
       "horizon": "~2020",
       "status": "AMBIGUOUS",
       "outcome_note": "A recession did occur in 2020 — but caused by the COVID pandemic, not the predicted debt mechanism. Timing credit without mechanism credit.",
-      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/",
+      "due": {
+        "start": "2020-01-01",
+        "end": "2020-12-31",
+        "precision": "year"
+      },
+      "resolution_class": "review",
+      "capture": "backfill",
+      "due_basis": "'~2020'"
     },
     {
       "id": "dalio-2019-recession-risk",
@@ -45,7 +65,15 @@
       "horizon": "~1-2 years",
       "status": "AMBIGUOUS",
       "outcome_note": "Same COVID caveat as the 2018 entry.",
-      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/",
+      "due": {
+        "start": "2020-01-01",
+        "end": "2021-01-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "backfill",
+      "due_basis": "'~1-2 years' from 2019-01"
     },
     {
       "id": "dalio-2020-cash-is-trash",
@@ -54,7 +82,11 @@
       "horizon": "near-term",
       "status": "AMBIGUOUS",
       "outcome_note": "Widely reported at the time; two months later markets crashed and cash briefly reigned, then stimulus-era inflation did erode cash. NEEDS_VERIFICATION: primary source not yet captured in corpus.",
-      "source": "unverified - to capture"
+      "source": "unverified - to capture",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'near-term' — no bounded window; 'cash is trash' also lacks a falsifiable threshold"
     },
     {
       "id": "dalio-2022-perfect-storm",
@@ -63,7 +95,15 @@
       "horizon": "~1-2 years",
       "status": "REFUTED",
       "outcome_note": "2023-2024 delivered falling inflation, no crisis, and a major equity rally.",
-      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/",
+      "due": {
+        "start": "2023-10-01",
+        "end": "2024-10-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "backfill",
+      "due_basis": "'~1-2 years' from 2022-10"
     },
     {
       "id": "dalio-2023-debt-crisis",
@@ -72,7 +112,11 @@
       "horizon": "unstated (vague)",
       "status": "UPDATED",
       "outcome_note": "Restated in 2025 with a new ~3-year horizon (see dalio-2025-heart-attack). Classic rolling horizon.",
-      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/"
+      "source": "https://awealthofcommonsense.com/2025/03/predicting-a-financial-crisis/",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'unstated (vague)'"
     },
     {
       "id": "dalio-2025-heart-attack",
@@ -81,7 +125,15 @@
       "horizon": "by ~2026-2028",
       "status": "PENDING",
       "outcome_note": "Watch: AI build-out needs ~$3T of largely debt-financed capex by 2030 — his mechanism now runs THROUGH the AI boom.",
-      "source": "https://www.fool.com/investing/2026/02/15/stock-market-crash-in-2026-billionaire-ray-dalio/"
+      "source": "https://www.fool.com/investing/2026/02/15/stock-market-crash-in-2026-billionaire-ray-dalio/",
+      "due": {
+        "start": "2026-01-01",
+        "end": "2028-12-31",
+        "precision": "range"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'by ~2026-2028' — the FULL range; reading only the first year was the parser bug"
     },
     {
       "id": "dalio-2025-doac-dark-times",
@@ -90,7 +142,11 @@
       "horizon": "unstated (vague)",
       "status": "PENDING",
       "outcome_note": "DOAC interview, Sept 2025. Vague horizon flagged. This is the episode today's video appears to repackage.",
-      "source": "https://singjupost.com/ray-dalio-were-heading-into-very-very-dark-times-doac-podcast-transcript/"
+      "source": "https://singjupost.com/ray-dalio-were-heading-into-very-very-dark-times-doac-podcast-transcript/",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'unstated (vague)'; 'very dark times' has no falsifiable condition"
     },
     {
       "id": "dalio-2025-debt-3yr",
@@ -99,7 +155,15 @@
       "horizon": "by ~2028",
       "status": "PENDING",
       "outcome_note": "First Dalio debt-crisis claim in the ledger with a countable clock. Judgment date: 2028-09.",
-      "source": "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/"
+      "source": "https://acquirersmultiple.com/2025/09/ray-dalio-predicts-us-debt-crisis-in-3-years-warns-investors/",
+      "due": {
+        "start": "2028-09-01",
+        "end": "2028-09-30",
+        "precision": "month"
+      },
+      "resolution_class": "review",
+      "capture": "live",
+      "due_basis": "'by ~2028', made 2025-09 — the first cleanly countable clock in this ledger"
     },
     {
       "id": "dalio-2026-capital-war",
@@ -108,7 +172,11 @@
       "horizon": "near-term",
       "status": "PENDING",
       "outcome_note": "New mechanism added to the stack (capital war), alongside debt and AI-capex.",
-      "source": "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html"
+      "source": "https://www.cnbc.com/2026/02/03/ray-dalio-warns-capital-war-gold-hedge.html",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "'near-term'; 'on the brink' has no falsifiable condition"
     },
     {
       "id": "dalio-2026-doac-80yr",
@@ -117,7 +185,15 @@
       "horizon": "unstated (vague)",
       "status": "PENDING",
       "outcome_note": "The trigger video (135K views in 3h; 3.9M in a week). AUDIT RESOLVED 2026-08-06 from transcript: a genuinely NEW interview (references ongoing US-Iran war, Nov 2026 midterms), not a re-cut of Sept 2025 — hypothesis revised. New dated claim extracted: Republicans likely lose House at midterms, then intensifying internal conflict through 2028. The recycling happens downstream: same-day third-party re-cuts (two 29:39 re-edits on one channel) and clips with invented figures ('60% crash' appears in no transcript).",
-      "source": "https://www.youtube.com/watch?v=Bu0xNDLNORU (transcript on file)"
+      "source": "https://www.youtube.com/watch?v=Bu0xNDLNORU (transcript on file)",
+      "due": null,
+      "resolution_class": "unscorable",
+      "capture": "n/a",
+      "due_basis": "stated horizon vague. NOTE: outcome_note records a datable sub-claim (House lost at the Nov 2026 midterms) that should be split into its own entry — flagged by the resolver, not auto-created"
     }
-  ]
+  ],
+  "standard": {
+    "version": "1.0",
+    "url": "STANDARD.md"
+  }
 }
