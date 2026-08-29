@@ -2002,7 +2002,7 @@ function handleEngineResult(box, d, vid) {
       ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations} mutations)` : ""}
       — ${vchip(chipVerdict)} ${conf}
       ${a.is_update && a.update_note ? `<br><b>Narrative update:</b> ${esc(a.update_note)}` : ""}
-      <span class="n-advice">${esc(a.advice)}</span>`;
+      <span class="n-advice">${esc(ADVICE[chipVerdict] || ADVICE.UNREVIEWED)}</span>`;
     showNotice(summary + buildoutOffer(a.topic_id, summary + "<br>"));
     openRadarAt(a.topic_id, vid);
     return;
@@ -2025,7 +2025,7 @@ function handleEngineResult(box, d, vid) {
       ${esc(d.narrative?.claim || "")}
       ${d.narrative?.born ? `Born ~${esc(d.narrative.born)} (model estimate).` : ""} ${conf}
       — ${vchip(chipVerdict)}
-      <span class="n-advice">${esc(a.advice)}</span>`;
+      <span class="n-advice">${esc(ADVICE[chipVerdict] || ADVICE.UNREVIEWED)}</span>`;
     showNotice(summary + buildoutOffer(d.created_topic.id, summary + "<br>"));
     openRadarAt(d.created_topic.id, vid);
     return;
@@ -2033,7 +2033,7 @@ function handleEngineResult(box, d, vid) {
   // unrelated
   showNotice(`<b>${esc(d.video.title)}</b> (${esc(d.video.channel)}) isn't a narrative
     video — nothing here for the radar to track. ${conf}
-    <span class="n-advice">${esc(a.advice)}</span>`);
+    <span class="n-advice">${esc(ADVICE[chipVerdict] || ADVICE.UNREVIEWED)}</span>`);
   openRadarAt(null, null);
 }
 
