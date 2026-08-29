@@ -1366,10 +1366,10 @@ function renderNarrativeCard() {
     ${vbreak ? `<div class="vchart"><div class="vck">Corpus composition — click a bar to see those videos</div>${vbreak}</div>` : ""}
     ${pchart}
     ${indicatorsHtml(topicId)}
-    ${n.genesis?.first_found ? `<div class="genesis">⌖ <b>Origin traced on X:</b> earliest surviving post
-      <a href="${esc(n.genesis.first_found.url)}" target="_blank" rel="noopener">@${esc(n.genesis.first_found.username)} · ${esc((n.genesis.first_found.date || "").slice(0, 10))}</a>
-      — “${esc((n.genesis.first_found.text || "").slice(0, 140))}”
-      <span class="no-t">(phrase “${esc(n.genesis.phrase)}” · ${n.genesis.reads_used} reads ≈ $${n.genesis.est_cost_usd})</span></div>` : ""}
+    ${n.genesis?.first_found ? `<div class="genesis">⌖ <b>Origin traced on X:</b> the earliest surviving post carrying this phrase is dated
+      <b>${esc((n.genesis.first_found.date || "").slice(0, 10))}</b> —
+      <a href="${esc(n.genesis.first_found.url)}" target="_blank" rel="noopener">read it on X ↗</a>
+      <span class="no-t">(phrase “${esc(n.genesis.phrase)}” · ${n.genesis.reads_used} reads ≈ $${n.genesis.est_cost_usd} · we keep the pointer, not the post)</span></div>` : ""}
     ${trig ? `<div class="trigger">Trigger for this collection:
       <a href="https://www.youtube.com/watch?v=${esc(trig.videoId)}" target="_blank" rel="noopener">${esc(trig.title)}</a>
       — ${esc(trig.channel)}<div class="v-note">${esc(trig.note)}</div></div>` : ""}`;
@@ -1674,11 +1674,10 @@ async function traceOrigin(topicId) {
       const f = d.genesis.first_found;
       showNotice(`${d.status === "already_traced"
           ? "<b>Already traced with this phrase</b> — showing the stored result, no new charge."
-          : "<b>Origin traced.</b>"} The earliest surviving X post for “${esc(phrase)}” is by
-        <b>@${esc(f.username)}</b> on <b>${esc((f.date || "").slice(0, 10))}</b> —
-        “${esc((f.text || "").slice(0, 140))}”
+          : "<b>Origin traced.</b>"} The earliest surviving X post for “${esc(phrase)}” is dated
+        <b>${esc((f.date || "").slice(0, 10))}</b>
         · ${d.genesis.reads_used} reads ≈ $${d.genesis.est_cost_usd}
-        <span class="n-advice"><a href="${esc(f.url)}" target="_blank" rel="noopener">Open the post ↗</a></span>`);
+        <span class="n-advice"><a href="${esc(f.url)}" target="_blank" rel="noopener">Read it on X ↗</a> — we keep the pointer, not the post.</span>`);
     } else if (d.status === "not_found") {
       showNotice(`No X posts found for “${esc(phrase)}” — try a different phrasing.
         (${d.reads} reads ≈ $${d.est_cost_usd})`);
@@ -1700,11 +1699,10 @@ async function traceOrigin(topicId) {
       renderCorpus();
       const f = g.first_found;
       showNotice(`<b>Origin traced</b> (recovered after the connection dropped).
-        The earliest surviving X post for “${esc(phrase)}” is by
-        <b>@${esc(f.username)}</b> on <b>${esc((f.date || "").slice(0, 10))}</b> —
-        “${esc((f.text || "").slice(0, 140))}”
+        The earliest surviving X post for “${esc(phrase)}” is dated
+        <b>${esc((f.date || "").slice(0, 10))}</b>
         · ${g.reads_used} reads ≈ $${g.est_cost_usd}
-        <span class="n-advice"><a href="${esc(f.url)}" target="_blank" rel="noopener">Open the post ↗</a></span>`);
+        <span class="n-advice"><a href="${esc(f.url)}" target="_blank" rel="noopener">Read it on X ↗</a> — we keep the pointer, not the post.</span>`);
     } else {
       showNotice(`Trace failed: ${esc(String(e.message || e))} — no committed result found.
         Try again in a minute (the engine won't re-charge for a phrase it already traced).`);

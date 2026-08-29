@@ -6,6 +6,28 @@
 //   a trace reads ~150-300 posts (~$0.75-1.50). Hard abort at READ_BUDGET.
 //   Same phrase traced before → returns the stored genesis free (force:true
 //   to re-trace).
+//
+// WHAT THIS STORES, AND WHY IT STORES SO LITTLE
+// ---------------------------------------------
+// This narrative corpus is a PUBLIC, PERMANENT git repository. X's Developer
+// Policy requires deleting or modifying stored X Content within 24 hours of a
+// deletion request, and git cannot honour that — a later commit does not remove
+// data from an earlier one. It also restricts what may be redistributed to
+// third parties to "Post IDs, Direct Message IDs, and/or User IDs".
+//
+// So the genesis record keeps IDENTIFIERS AND OUR OWN OBSERVATION, never
+// content: post_id, author_id (both expressly permitted), the post's timestamp
+// (the load-bearing fact for an origin claim, and a timestamp is not content),
+// and an ID-only permalink. No post text, no display name, no @handle, no
+// engagement metrics. The post itself re-hydrates in the reader's browser when
+// they follow the link — that is display by X, not redistribution by us.
+//
+// This is also why we no longer request `expansions=author_id` + `user.fields`:
+// user objects bill at ~$0.010 (double the post rate) to fetch precisely the
+// fields we must not keep.
+//
+// The predictor being tracked is recorded editorially in watchlist.json — our
+// own judgement about whom we follow, not scraped platform data.
 import { guard } from "./_guard.mjs";
 
 const REPO = "malikkawambwasinare-wq/narrative-radar";
@@ -28,14 +50,15 @@ async function xSearch(state, query, startISO, endISO, maxResults) {
     throw new Error(`read budget exceeded (${state.reads} reads ≈ $${(state.reads * 0.005).toFixed(2)}) — aborted to protect balance`);
   }
   const token = process.env.X_BEARER_TOKEN;
+  // Deliberately no `expansions`/`user.fields`: user objects cost ~2x a post
+  // read and return exactly the personal data we must not retain. author_id
+  // arrives on the post itself and is a User ID, which X permits us to keep.
   const params = new URLSearchParams({
     query,
     start_time: startISO,
     end_time: endISO,
     max_results: String(maxResults),
-    "tweet.fields": "created_at,public_metrics,author_id",
-    expansions: "author_id",
-    "user.fields": "username,name",
+    "tweet.fields": "created_at,author_id",
   });
   for (let attempt = 0; attempt < 2; attempt++) {
     const r = await fetch(`https://api.x.com/2/tweets/search/all?${params}`, {
@@ -45,14 +68,12 @@ async function xSearch(state, query, startISO, endISO, maxResults) {
     if (!r.ok) throw new Error(`X API ${r.status}: ${(await r.text()).slice(0, 160)}`);
     const d = await r.json();
     state.reads += (d.data || []).length;
-    const users = Object.fromEntries((d.includes?.users || []).map((u) => [u.id, u]));
+    // Identifiers and timestamp only — post text is never lifted out of the
+    // response, so it cannot reach the corpus even by accident.
     return (d.data || []).map((t) => ({
       id: t.id,
-      text: t.text,
+      author_id: t.author_id || null,
       created_at: t.created_at,
-      author: users[t.author_id]?.name || "",
-      username: users[t.author_id]?.username || "",
-      metrics: t.public_metrics,
     }));
   }
   throw new Error("X API rate limited (429 twice)");
@@ -146,20 +167,22 @@ export default async (req) => {
     const earliest = sorted[0] || any.sort((a, b) => a.created_at.localeCompare(b.created_at))[0];
     const estCost = +(state.reads * 0.005).toFixed(2);
 
+    // Identifiers + our own observation. See the header note on why nothing
+    // else is retained. `https://x.com/i/status/<id>` is X's handle-free
+    // permalink, so the record needs no @username to stay linkable.
     const genesis = {
       platform: "x",
       phrase,
       first_found: earliest && {
+        post_id: earliest.id,
+        author_id: earliest.author_id,
         date: earliest.created_at,
-        author: earliest.author,
-        username: earliest.username,
-        text: earliest.text.slice(0, 240),
-        url: `https://x.com/${earliest.username}/status/${earliest.id}`,
-        metrics: earliest.metrics,
+        url: `https://x.com/i/status/${earliest.id}`,
       },
       runners_up: sorted.slice(1, 3).map((t) => ({
-        date: t.created_at, username: t.username, url: `https://x.com/${t.username}/status/${t.id}`,
+        post_id: t.id, date: t.created_at, url: `https://x.com/i/status/${t.id}`,
       })),
+      storage_note: "Identifiers and timestamps only — no post text, handles or metrics are retained. Content re-hydrates from X on click.",
       method: "X full-archive time bisection (earliest surviving post; deleted posts invisible)"
         + (dense ? "; phrase very dense — earliest within final day approximate" : ""),
       reads_used: state.reads,
