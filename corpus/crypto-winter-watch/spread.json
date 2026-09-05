@@ -1,0 +1,979 @@
+{
+  "topic": "crypto-winter-watch",
+  "phrase": "crypto winter",
+  "traced_at": "2026-09-05",
+  "confidence": "earliest_observed",
+  "earliest_observed_overall": {
+    "platform": "wikipedia",
+    "date": "2017-12-17",
+    "id": "Cryptocurrency bubble",
+    "url": "https://en.wikipedia.org/wiki/Cryptocurrency_bubble",
+    "note": "article creation date — when the idea became a named entry, not when it was first said"
+  },
+  "sources": [
+    {
+      "platform": "hackernews",
+      "coverage_from": "2006-10",
+      "unit": "matching stories and comments",
+      "method": "Algolia full-text, quoted phrase",
+      "searched": true,
+      "total_matches": 148,
+      "reported_total": 173,
+      "earliest_observed": {
+        "date": "2018-05-17",
+        "id": "17095602",
+        "url": "https://news.ycombinator.com/item?id=17095602"
+      },
+      "timeline": [
+        {
+          "month": "2018-05",
+          "count": 1
+        },
+        {
+          "month": "2018-06",
+          "count": 1
+        },
+        {
+          "month": "2018-07",
+          "count": 1
+        },
+        {
+          "month": "2018-12",
+          "count": 3
+        },
+        {
+          "month": "2019-01",
+          "count": 1
+        },
+        {
+          "month": "2019-05",
+          "count": 2
+        },
+        {
+          "month": "2019-07",
+          "count": 4
+        },
+        {
+          "month": "2020-01",
+          "count": 1
+        },
+        {
+          "month": "2020-02",
+          "count": 1
+        },
+        {
+          "month": "2020-07",
+          "count": 1
+        },
+        {
+          "month": "2021-02",
+          "count": 1
+        },
+        {
+          "month": "2021-03",
+          "count": 2
+        },
+        {
+          "month": "2021-04",
+          "count": 1
+        },
+        {
+          "month": "2021-05",
+          "count": 1
+        },
+        {
+          "month": "2021-06",
+          "count": 4
+        },
+        {
+          "month": "2021-07",
+          "count": 2
+        },
+        {
+          "month": "2021-11",
+          "count": 1
+        },
+        {
+          "month": "2021-12",
+          "count": 3
+        },
+        {
+          "month": "2022-01",
+          "count": 3
+        },
+        {
+          "month": "2022-02",
+          "count": 1
+        },
+        {
+          "month": "2022-03",
+          "count": 3
+        },
+        {
+          "month": "2022-05",
+          "count": 8
+        },
+        {
+          "month": "2022-06",
+          "count": 27
+        },
+        {
+          "month": "2022-07",
+          "count": 8
+        },
+        {
+          "month": "2022-08",
+          "count": 4
+        },
+        {
+          "month": "2022-09",
+          "count": 3
+        },
+        {
+          "month": "2022-10",
+          "count": 2
+        },
+        {
+          "month": "2022-11",
+          "count": 12
+        },
+        {
+          "month": "2022-12",
+          "count": 8
+        },
+        {
+          "month": "2023-01",
+          "count": 12
+        },
+        {
+          "month": "2023-02",
+          "count": 3
+        },
+        {
+          "month": "2023-03",
+          "count": 1
+        },
+        {
+          "month": "2023-04",
+          "count": 2
+        },
+        {
+          "month": "2023-05",
+          "count": 3
+        },
+        {
+          "month": "2023-06",
+          "count": 3
+        },
+        {
+          "month": "2023-07",
+          "count": 2
+        },
+        {
+          "month": "2023-11",
+          "count": 2
+        },
+        {
+          "month": "2024-11",
+          "count": 1
+        },
+        {
+          "month": "2025-01",
+          "count": 1
+        },
+        {
+          "month": "2025-07",
+          "count": 2
+        },
+        {
+          "month": "2025-08",
+          "count": 1
+        },
+        {
+          "month": "2025-09",
+          "count": 1
+        },
+        {
+          "month": "2026-02",
+          "count": 2
+        },
+        {
+          "month": "2026-04",
+          "count": 1
+        },
+        {
+          "month": "2026-06",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "platform": "gdelt_news",
+      "coverage_from": "2017-01",
+      "unit": "share of all monitored global coverage (normalized, not article counts)",
+      "method": "DOC 2.0 timelinevol, quoted phrase",
+      "transport_note": "fetched over plain HTTP — GDELT's HTTPS endpoint does not serve; response is unauthenticated in transit",
+      "searched": true,
+      "nonzero_days": 1282,
+      "earliest_observed": {
+        "date": "2021-10-12",
+        "id": null,
+        "url": null,
+        "note": "first day with non-zero coverage inside the 60-month window"
+      },
+      "peak": {
+        "date": "20220618T000000Z",
+        "value": 0.0683
+      },
+      "timeline": [
+        {
+          "month": "2021-10",
+          "peak_share": 0.0005
+        },
+        {
+          "month": "2021-11",
+          "peak_share": 0.0041
+        },
+        {
+          "month": "2021-12",
+          "peak_share": 0.0095
+        },
+        {
+          "month": "2022-01",
+          "peak_share": 0.0178
+        },
+        {
+          "month": "2022-02",
+          "peak_share": 0.0081
+        },
+        {
+          "month": "2022-03",
+          "peak_share": 0.0047
+        },
+        {
+          "month": "2022-04",
+          "peak_share": 0.0012
+        },
+        {
+          "month": "2022-05",
+          "peak_share": 0.0039
+        },
+        {
+          "month": "2022-06",
+          "peak_share": 0.0683
+        },
+        {
+          "month": "2022-07",
+          "peak_share": 0.0246
+        },
+        {
+          "month": "2022-08",
+          "peak_share": 0.027
+        },
+        {
+          "month": "2022-09",
+          "peak_share": 0.0174
+        },
+        {
+          "month": "2022-10",
+          "peak_share": 0.016
+        },
+        {
+          "month": "2022-11",
+          "peak_share": 0.0249
+        },
+        {
+          "month": "2022-12",
+          "peak_share": 0.0303
+        },
+        {
+          "month": "2023-01",
+          "peak_share": 0.0268
+        },
+        {
+          "month": "2023-02",
+          "peak_share": 0.0133
+        },
+        {
+          "month": "2023-03",
+          "peak_share": 0.0315
+        },
+        {
+          "month": "2023-04",
+          "peak_share": 0.013
+        },
+        {
+          "month": "2023-05",
+          "peak_share": 0.0149
+        },
+        {
+          "month": "2023-06",
+          "peak_share": 0.0269
+        },
+        {
+          "month": "2023-07",
+          "peak_share": 0.0112
+        },
+        {
+          "month": "2023-08",
+          "peak_share": 0.0057
+        },
+        {
+          "month": "2023-09",
+          "peak_share": 0.0049
+        },
+        {
+          "month": "2023-10",
+          "peak_share": 0.006
+        },
+        {
+          "month": "2023-11",
+          "peak_share": 0.0148
+        },
+        {
+          "month": "2023-12",
+          "peak_share": 0.0229
+        },
+        {
+          "month": "2024-01",
+          "peak_share": 0.0069
+        },
+        {
+          "month": "2024-02",
+          "peak_share": 0.0075
+        },
+        {
+          "month": "2024-03",
+          "peak_share": 0.0168
+        },
+        {
+          "month": "2024-04",
+          "peak_share": 0.0045
+        },
+        {
+          "month": "2024-05",
+          "peak_share": 0.0046
+        },
+        {
+          "month": "2024-06",
+          "peak_share": 0.0026
+        },
+        {
+          "month": "2024-07",
+          "peak_share": 0.0021
+        },
+        {
+          "month": "2024-08",
+          "peak_share": 0.0017
+        },
+        {
+          "month": "2024-09",
+          "peak_share": 0.0026
+        },
+        {
+          "month": "2024-10",
+          "peak_share": 0.0018
+        },
+        {
+          "month": "2024-11",
+          "peak_share": 0.0046
+        },
+        {
+          "month": "2024-12",
+          "peak_share": 0.0026
+        },
+        {
+          "month": "2025-01",
+          "peak_share": 0.0017
+        },
+        {
+          "month": "2025-02",
+          "peak_share": 0.0016
+        },
+        {
+          "month": "2025-03",
+          "peak_share": 0.0013
+        },
+        {
+          "month": "2025-04",
+          "peak_share": 0.0016
+        },
+        {
+          "month": "2025-05",
+          "peak_share": 0.002
+        },
+        {
+          "month": "2025-06",
+          "peak_share": 0.002
+        },
+        {
+          "month": "2025-07",
+          "peak_share": 0.0018
+        },
+        {
+          "month": "2025-08",
+          "peak_share": 0.0027
+        },
+        {
+          "month": "2025-09",
+          "peak_share": 0.0154
+        },
+        {
+          "month": "2025-10",
+          "peak_share": 0.0032
+        },
+        {
+          "month": "2025-11",
+          "peak_share": 0.0052
+        },
+        {
+          "month": "2025-12",
+          "peak_share": 0.0067
+        },
+        {
+          "month": "2026-01",
+          "peak_share": 0.0029
+        },
+        {
+          "month": "2026-02",
+          "peak_share": 0.0092
+        },
+        {
+          "month": "2026-03",
+          "peak_share": 0.0048
+        },
+        {
+          "month": "2026-04",
+          "peak_share": 0.0029
+        },
+        {
+          "month": "2026-05",
+          "peak_share": 0.004
+        },
+        {
+          "month": "2026-06",
+          "peak_share": 0.0034
+        },
+        {
+          "month": "2026-07",
+          "peak_share": 0.0026
+        },
+        {
+          "month": "2026-08",
+          "peak_share": 0.0029
+        },
+        {
+          "month": "2026-09",
+          "peak_share": 0.0052
+        }
+      ]
+    },
+    {
+      "platform": "crossref_research",
+      "coverage_from": "pre-1900",
+      "unit": "academic works whose title contains the phrase",
+      "method": "Crossref query.title, relevance-ranked top 200, then STRICT client-side phrase check",
+      "sampling_note": "EARLIEST WITHIN THE TOP 200 RELEVANCE-RANKED MATCHES, not necessarily the earliest in Crossref. Crossref matches title words loosely and cannot be date-sorted safely: sorting \"quantitative easing\" ascending returns 1802 German chemistry papers that share the word \"quantitative\". Relevance ranking surfaces the real matches; the price is a partial sample.",
+      "searched": true,
+      "reported_total_before_filter": 99705,
+      "total_matches": 12,
+      "earliest_observed": {
+        "date": "2022-01-01",
+        "id": "10.2139/ssrn.4142885",
+        "url": "https://doi.org/10.2139/ssrn.4142885"
+      },
+      "timeline": [
+        {
+          "month": "2022-01",
+          "count": 1
+        },
+        {
+          "month": "2022-11",
+          "count": 1
+        },
+        {
+          "month": "2022-12",
+          "count": 2
+        },
+        {
+          "month": "2023-01",
+          "count": 3
+        },
+        {
+          "month": "2023-03",
+          "count": 1
+        },
+        {
+          "month": "2024-08",
+          "count": 1
+        },
+        {
+          "month": "2025-03",
+          "count": 2
+        },
+        {
+          "month": "2025-09",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "platform": "wikipedia",
+      "coverage_from": "2001-01",
+      "unit": "monthly pageviews of the best-matching article",
+      "method": "search for the phrase, take the top article, then its first revision and pageview series",
+      "matching_note": "the top search result is not guaranteed to be the right article — the matched title is reported so it can be checked",
+      "searched": true,
+      "matched_article": "Cryptocurrency bubble",
+      "total_matches": 1,
+      "article_hits": 22,
+      "earliest_observed": {
+        "date": "2017-12-17",
+        "id": "Cryptocurrency bubble",
+        "url": "https://en.wikipedia.org/wiki/Cryptocurrency_bubble",
+        "note": "article creation date — when the idea became a named entry, not when it was first said"
+      },
+      "timeline": [
+        {
+          "month": "2017-12",
+          "count": 7934
+        },
+        {
+          "month": "2018-01",
+          "count": 13886
+        },
+        {
+          "month": "2018-02",
+          "count": 7558
+        },
+        {
+          "month": "2018-03",
+          "count": 5578
+        },
+        {
+          "month": "2018-04",
+          "count": 4154
+        },
+        {
+          "month": "2018-05",
+          "count": 4559
+        },
+        {
+          "month": "2018-06",
+          "count": 3804
+        },
+        {
+          "month": "2018-07",
+          "count": 3067
+        },
+        {
+          "month": "2018-08",
+          "count": 3306
+        },
+        {
+          "month": "2018-09",
+          "count": 2961
+        },
+        {
+          "month": "2018-10",
+          "count": 2843
+        },
+        {
+          "month": "2018-11",
+          "count": 4226
+        },
+        {
+          "month": "2018-12",
+          "count": 4410
+        },
+        {
+          "month": "2019-01",
+          "count": 4367
+        },
+        {
+          "month": "2019-02",
+          "count": 3424
+        },
+        {
+          "month": "2019-03",
+          "count": 3440
+        },
+        {
+          "month": "2019-04",
+          "count": 3816
+        },
+        {
+          "month": "2019-05",
+          "count": 5170
+        },
+        {
+          "month": "2019-06",
+          "count": 4531
+        },
+        {
+          "month": "2019-07",
+          "count": 4915
+        },
+        {
+          "month": "2019-08",
+          "count": 5854
+        },
+        {
+          "month": "2019-09",
+          "count": 4803
+        },
+        {
+          "month": "2019-10",
+          "count": 4784
+        },
+        {
+          "month": "2019-11",
+          "count": 5210
+        },
+        {
+          "month": "2019-12",
+          "count": 5989
+        },
+        {
+          "month": "2020-01",
+          "count": 4910
+        },
+        {
+          "month": "2020-02",
+          "count": 5494
+        },
+        {
+          "month": "2020-03",
+          "count": 15437
+        },
+        {
+          "month": "2020-04",
+          "count": 9088
+        },
+        {
+          "month": "2020-05",
+          "count": 7389
+        },
+        {
+          "month": "2020-06",
+          "count": 4741
+        },
+        {
+          "month": "2020-07",
+          "count": 31870
+        },
+        {
+          "month": "2020-08",
+          "count": 35445
+        },
+        {
+          "month": "2020-09",
+          "count": 11334
+        },
+        {
+          "month": "2020-10",
+          "count": 11691
+        },
+        {
+          "month": "2020-11",
+          "count": 22520
+        },
+        {
+          "month": "2020-12",
+          "count": 24574
+        },
+        {
+          "month": "2021-01",
+          "count": 64912
+        },
+        {
+          "month": "2021-02",
+          "count": 77736
+        },
+        {
+          "month": "2021-03",
+          "count": 44500
+        },
+        {
+          "month": "2021-04",
+          "count": 69419
+        },
+        {
+          "month": "2021-05",
+          "count": 96920
+        },
+        {
+          "month": "2021-06",
+          "count": 32226
+        },
+        {
+          "month": "2021-07",
+          "count": 21531
+        },
+        {
+          "month": "2021-08",
+          "count": 21392
+        },
+        {
+          "month": "2021-09",
+          "count": 26509
+        },
+        {
+          "month": "2021-10",
+          "count": 25013
+        },
+        {
+          "month": "2021-11",
+          "count": 37209
+        },
+        {
+          "month": "2021-12",
+          "count": 31595
+        },
+        {
+          "month": "2022-01",
+          "count": 32766
+        },
+        {
+          "month": "2022-02",
+          "count": 19731
+        },
+        {
+          "month": "2022-03",
+          "count": 12555
+        },
+        {
+          "month": "2022-04",
+          "count": 15327
+        },
+        {
+          "month": "2022-05",
+          "count": 37518
+        },
+        {
+          "month": "2022-06",
+          "count": 27032
+        },
+        {
+          "month": "2022-07",
+          "count": 21978
+        },
+        {
+          "month": "2022-08",
+          "count": 15514
+        },
+        {
+          "month": "2022-09",
+          "count": 16501
+        },
+        {
+          "month": "2022-10",
+          "count": 15555
+        },
+        {
+          "month": "2022-11",
+          "count": 26196
+        },
+        {
+          "month": "2022-12",
+          "count": 16181
+        },
+        {
+          "month": "2023-01",
+          "count": 15316
+        },
+        {
+          "month": "2023-02",
+          "count": 14372
+        },
+        {
+          "month": "2023-03",
+          "count": 22272
+        },
+        {
+          "month": "2023-04",
+          "count": 12635
+        },
+        {
+          "month": "2023-05",
+          "count": 18041
+        },
+        {
+          "month": "2023-06",
+          "count": 15838
+        },
+        {
+          "month": "2023-07",
+          "count": 16911
+        },
+        {
+          "month": "2023-08",
+          "count": 16856
+        },
+        {
+          "month": "2023-09",
+          "count": 15928
+        },
+        {
+          "month": "2023-10",
+          "count": 18826
+        },
+        {
+          "month": "2023-11",
+          "count": 18917
+        },
+        {
+          "month": "2023-12",
+          "count": 21173
+        },
+        {
+          "month": "2024-01",
+          "count": 29099
+        },
+        {
+          "month": "2024-02",
+          "count": 25322
+        },
+        {
+          "month": "2024-03",
+          "count": 34679
+        },
+        {
+          "month": "2024-04",
+          "count": 22309
+        },
+        {
+          "month": "2024-05",
+          "count": 13631
+        },
+        {
+          "month": "2024-06",
+          "count": 12743
+        },
+        {
+          "month": "2024-07",
+          "count": 12433
+        },
+        {
+          "month": "2024-08",
+          "count": 15296
+        },
+        {
+          "month": "2024-09",
+          "count": 16149
+        },
+        {
+          "month": "2024-10",
+          "count": 13664
+        },
+        {
+          "month": "2024-11",
+          "count": 22409
+        },
+        {
+          "month": "2024-12",
+          "count": 26305
+        },
+        {
+          "month": "2025-01",
+          "count": 22095
+        },
+        {
+          "month": "2025-02",
+          "count": 27701
+        },
+        {
+          "month": "2025-03",
+          "count": 31150
+        },
+        {
+          "month": "2025-04",
+          "count": 21132
+        },
+        {
+          "month": "2025-05",
+          "count": 12762
+        },
+        {
+          "month": "2025-06",
+          "count": 12111
+        },
+        {
+          "month": "2025-07",
+          "count": 16411
+        },
+        {
+          "month": "2025-08",
+          "count": 17405
+        },
+        {
+          "month": "2025-09",
+          "count": 14678
+        },
+        {
+          "month": "2025-10",
+          "count": 35419
+        },
+        {
+          "month": "2025-11",
+          "count": 22776
+        },
+        {
+          "month": "2025-12",
+          "count": 17595
+        },
+        {
+          "month": "2026-01",
+          "count": 15111
+        },
+        {
+          "month": "2026-02",
+          "count": 23776
+        },
+        {
+          "month": "2026-03",
+          "count": 8704
+        },
+        {
+          "month": "2026-04",
+          "count": 9855
+        },
+        {
+          "month": "2026-05",
+          "count": 9268
+        },
+        {
+          "month": "2026-06",
+          "count": 11695
+        },
+        {
+          "month": "2026-07",
+          "count": 7772
+        },
+        {
+          "month": "2026-08",
+          "count": 7602
+        },
+        {
+          "month": "2026-09",
+          "count": 934
+        }
+      ]
+    },
+    {
+      "platform": "bluesky",
+      "coverage_from": "2023-02",
+      "unit": "matching posts",
+      "method": "app.bsky.feed.searchPosts, quoted phrase",
+      "searched": false,
+      "error": "not connected — set BSKY_HANDLE and BSKY_APP_PASSWORD (a free Bluesky account and app password)"
+    }
+  ],
+  "caveats": [
+    "EARLIEST OBSERVED, NOT ORIGIN. Each source has a coverage horizon; anything said before it, off it, or since deleted is invisible here.",
+    "Absence of a match is not evidence the phrase was not used — it is evidence these sources did not index it.",
+    "Timelines are not comparable across sources: Hacker News and Crossref are item counts, GDELT is a normalized share of global coverage.",
+    "Only identifiers, dates and counts are stored. No post text, titles from social sources, or author names.",
+    "GDELT is fetched over plain HTTP because its HTTPS endpoint does not serve; that response is unauthenticated in transit."
+  ]
+}

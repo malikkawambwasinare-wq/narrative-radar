@@ -141,6 +141,52 @@ async function crossref() {
   } catch (e) { return { ...src, searched: false, error: String(e.message) }; }
 }
 
+/* ---------------- Wikipedia · when it became a named thing, and attention since ----------------
+   Two signals the other sources cannot give:
+     earliest_observed — the creation date of the article the idea lives under,
+                         i.e. when it became nameable rather than merely said;
+     timeline          — monthly pageviews, a public attention series.
+   The matched article title is always reported, because the best-matching
+   article is a judgement and the reader must be able to see what was matched. */
+async function wikipedia() {
+  const src = { platform: "wikipedia", coverage_from: "2001-01",
+    unit: "monthly pageviews of the best-matching article",
+    method: "search for the phrase, take the top article, then its first revision and pageview series",
+    matching_note: "the top search result is not guaranteed to be the right article — the matched title is reported so it can be checked" };
+  try {
+    const s = await getJSON("https://en.wikipedia.org/w/api.php?action=query&list=search&format=json"
+      + "&srlimit=1&srsearch=" + encodeURIComponent(`"${phrase}"`));
+    const hit = s.query?.search?.[0];
+    if (!hit) return { ...src, searched: true, total_matches: 0, earliest_observed: null, timeline: [] };
+    const title = hit.title;
+
+    const rev = await getJSON("https://en.wikipedia.org/w/api.php?action=query&prop=revisions&format=json"
+      + "&rvlimit=1&rvdir=newer&rvprop=timestamp&titles=" + encodeURIComponent(title));
+    const created = Object.values(rev.query?.pages || {})[0]?.revisions?.[0]?.timestamp || null;
+
+    const key = encodeURIComponent(title.replace(/ /g, "_"));
+    const end = new Date().toISOString().slice(0, 10).replace(/-/g, "") + "00";
+    let views = [];
+    try {
+      const pv = await getJSON("https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/"
+        + `en.wikipedia/all-access/all-agents/${key}/monthly/2015070100/${end}`,
+        { headers: { "User-Agent": `${UA} mailto:malikkawambwasinare@gmail.com` } });
+      views = (pv.items || []).map((i) => ({ month: `${i.timestamp.slice(0, 4)}-${i.timestamp.slice(4, 6)}`, count: i.views }));
+    } catch { /* pageview series starts 2015-07; older or missing pages return 404 */ }
+
+    return { ...src, searched: true,
+      matched_article: title,
+      total_matches: hit ? 1 : 0,
+      article_hits: s.query?.searchinfo?.totalhits ?? null,
+      earliest_observed: created
+        ? { date: created.slice(0, 10), id: title,
+            url: `https://en.wikipedia.org/wiki/${key}`,
+            note: "article creation date — when the idea became a named entry, not when it was first said" }
+        : null,
+      timeline: views };
+  } catch (e) { return { ...src, searched: false, error: String(e.message) }; }
+}
+
 /* ---------------- Bluesky · optional, needs a free app password ---------------- */
 async function bluesky() {
   const src = { platform: "bluesky", coverage_from: "2023-02",
@@ -172,7 +218,8 @@ console.log(`SPREAD TRACE · "${phrase}" · topic ${topic}\n`);
 
 const sources = [];
 for (const [name, fn] of [["hackernews", hackernews], ["gdelt", gdelt],
-                          ["crossref", crossref], ["bluesky", bluesky]]) {
+                          ["crossref", crossref], ["wikipedia", wikipedia],
+                          ["bluesky", bluesky]]) {
   process.stdout.write(`  ${name}…`);
   const r = await fn();
   sources.push(r);
