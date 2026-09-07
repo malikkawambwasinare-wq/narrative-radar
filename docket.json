@@ -1,10 +1,10 @@
 {
-  "generated": "2026-09-06",
+  "generated": "2026-09-07",
   "standard": "1.0",
   "grace_days": 30,
   "totals": {
     "entries": 26,
-    "ready_to_rule": 0,
+    "ready_to_rule": 1,
     "unscorable": 8,
     "ruled": 5,
     "moved": 2,
@@ -37,7 +37,7 @@
           "end": "2028-09-30",
           "precision": "month"
         },
-        "days_to_due": 755,
+        "days_to_due": 754,
         "resolution_class": "review",
         "capture": "live",
         "status": "PENDING",
@@ -59,26 +59,26 @@
       "rate_publishable": false,
       "live": 11,
       "backfill": 1,
-      "actionable": 0,
+      "actionable": 1,
       "next": {
         "topic": "crypto-winter-watch",
         "narrative": "Crypto Winter Watch",
-        "id": "armstrong-2026-clarity",
-        "claimant": "Brian Armstrong (Coinbase CEO)",
-        "claim": "The Clarity Act reaches a full Senate floor vote, with the recess as forcing function.",
-        "horizon": "before the August 2026 Senate recess",
+        "id": "gambardello-2026-pmi",
+        "claimant": "Dan Gambardello",
+        "claim": "PMI closing above 55 with momentum starts altcoin bull markets (as 2017, 2020); signal invalidates if the print falls back under 55.",
+        "horizon": "September 1, 2026 PMI print",
         "due": {
-          "start": "2026-08-01",
-          "end": "2026-08-07",
-          "precision": "month"
+          "start": "2026-09-01",
+          "end": "2026-09-01",
+          "precision": "day"
         },
-        "days_to_due": -30,
-        "resolution_class": "review",
-        "capture": "backfill",
+        "days_to_due": -6,
+        "resolution_class": "auto",
+        "capture": "live",
         "status": "PENDING",
         "state": "ripening",
-        "source": "https://www.youtube.com/watch?v=zv4icJOfB-w",
-        "actionable_on": "2026-09-06"
+        "source": "https://www.youtube.com/watch?v=Hgikc09SCgM",
+        "actionable_on": "2026-10-01"
       }
     }
   ],
@@ -95,11 +95,11 @@
         "end": "2026-08-07",
         "precision": "month"
       },
-      "days_to_due": -30,
+      "days_to_due": -31,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "PENDING",
-      "state": "ripening",
+      "state": "due",
       "source": "https://www.youtube.com/watch?v=zv4icJOfB-w"
     },
     {
@@ -114,7 +114,7 @@
         "end": "2026-09-01",
         "precision": "day"
       },
-      "days_to_due": -5,
+      "days_to_due": -6,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -133,7 +133,7 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": 55,
+      "days_to_due": 54,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -152,7 +152,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 847,
+      "days_to_due": 846,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -171,7 +171,7 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": 55,
+      "days_to_due": 54,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -190,7 +190,7 @@
         "end": "2026-11-30",
         "precision": "range"
       },
-      "days_to_due": 85,
+      "days_to_due": 84,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -209,7 +209,7 @@
         "end": "2026-12-31",
         "precision": "day"
       },
-      "days_to_due": 116,
+      "days_to_due": 115,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -228,7 +228,7 @@
         "end": "2027-02-28",
         "precision": "range"
       },
-      "days_to_due": 175,
+      "days_to_due": 174,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -247,7 +247,7 @@
         "end": "2027-08-31",
         "precision": "month"
       },
-      "days_to_due": 359,
+      "days_to_due": 358,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -266,7 +266,7 @@
         "end": "2027-12-31",
         "precision": "year"
       },
-      "days_to_due": 481,
+      "days_to_due": 480,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -285,7 +285,7 @@
         "end": "2028-09-30",
         "precision": "month"
       },
-      "days_to_due": 755,
+      "days_to_due": 754,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -304,7 +304,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 847,
+      "days_to_due": 846,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -323,7 +323,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1577,
+      "days_to_due": 1576,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -342,7 +342,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1577,
+      "days_to_due": 1576,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -436,7 +436,7 @@
         "end": "2017-03-31",
         "precision": "range"
       },
-      "days_to_due": -3446,
+      "days_to_due": -3447,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
@@ -455,7 +455,7 @@
         "end": "2020-12-31",
         "precision": "year"
       },
-      "days_to_due": -2075,
+      "days_to_due": -2076,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -474,7 +474,7 @@
         "end": "2021-01-31",
         "precision": "range"
       },
-      "days_to_due": -2044,
+      "days_to_due": -2045,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -493,7 +493,7 @@
         "end": "2024-10-31",
         "precision": "range"
       },
-      "days_to_due": -675,
+      "days_to_due": -676,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
