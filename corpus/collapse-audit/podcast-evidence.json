@@ -1,0 +1,81 @@
+{
+  "topic": "collapse-audit",
+  "phrase": "80 year",
+  "show": "The Diary Of A CEO with Steven Bartlett",
+  "feed": "https://rss2.flightcast.com/xmsftuzjjykcmqwolaqn6mdn",
+  "traced_at": "2026-09-07",
+  "episodes_in_feed": 881,
+  "episodes_with_transcript": 148,
+  "scanned": 25,
+  "episodes": [
+    {
+      "title": "Top White House Advisor: The US Empire Is DYING And Socialism Is Coming Next! | David Friedberg",
+      "date": "2026-08-31",
+      "episode_guid": "flightcast:01M0ECWWKZKQ93WCFTA6JV03WZ",
+      "link": null,
+      "transcript_url": "https://rss.flightcast.com/transcripts/01M0ECWWKZXFC843G5B93ZSYPH.vtt",
+      "match_count": 2,
+      "timestamps": [
+        "01:43:09",
+        "01:43:10"
+      ]
+    },
+    {
+      "title": "Top Scientist REVEALS: We Invented Heaven, God Is A Human Invention! | Prof Brian Greene",
+      "date": "2026-08-17",
+      "episode_guid": "flightcast:01M011QCMPHN8FAV0XN9GXFS1N",
+      "link": null,
+      "transcript_url": "https://rss.flightcast.com/transcripts/01M011QCMPBSF2QR5A3W08K1JF.vtt",
+      "match_count": 3,
+      "timestamps": [
+        "00:23:59",
+        "00:28:53",
+        "00:29:50"
+      ]
+    },
+    {
+      "title": "The Quitting Expert: Quit NOW Before AI Makes The Choice For You, This Is a Superpower! | Seth Godin",
+      "date": "2026-08-10",
+      "episode_guid": "flightcast:01KZEMW7JE1GT1EJ9WC74DKA3M",
+      "link": null,
+      "transcript_url": "https://rss.flightcast.com/transcripts/01KZEMW7JETYCD3GX1WXDACSYJ.vtt",
+      "match_count": 2,
+      "timestamps": [
+        "00:15:43",
+        "01:41:40"
+      ]
+    },
+    {
+      "title": "Secretary Pete Buttigieg: The American Dream Is DEAD. We&#39;re Running Out Of Time To Fix It!",
+      "date": "2026-08-03",
+      "episode_guid": "flightcast:01KYMPYHGY7WKDEBPBJQ2VRQPJ",
+      "link": null,
+      "transcript_url": "https://rss.flightcast.com/transcripts/01KYMPYHGYNJKKR9DNDTHTH7TD.vtt",
+      "match_count": 3,
+      "timestamps": [
+        "00:58:33",
+        "00:58:33",
+        "01:03:08"
+      ]
+    },
+    {
+      "title": "Ray Dalio: I Predicted The 2008 Crash, I Know What Comes Next",
+      "date": "2026-07-30",
+      "episode_guid": "flightcast:01KYMPGERGG1X4WK6BC5ZR26HG",
+      "link": null,
+      "transcript_url": "https://rss.flightcast.com/transcripts/01KYMPGERGFRM4QSQ38CEA48EH.vtt",
+      "match_count": 3,
+      "timestamps": [
+        "00:38:36",
+        "00:40:33",
+        "01:13:00"
+      ]
+    }
+  ],
+  "storage_note": "Episode identifiers, dates, transcript URLs and match timestamps only. No transcript text is stored — the timestamp plus the URL lets a reader hear the passage at source, which is stronger than a quote we typed.",
+  "caveats": [
+    "Only 148 of 881 episodes publish a transcript, so absence of a match is not absence of the claim.",
+    "Matching is literal. A paraphrase of the same claim will not be found.",
+    "Transcripts are published by the show and may contain transcription errors; a timestamp is a pointer to audio, not a certified quotation."
+  ]
+}
