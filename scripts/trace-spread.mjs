@@ -54,14 +54,26 @@ const norm = (s) => (s || "").toLowerCase().replace(/[‘’“”]/g, "'").repl
 const containsPhrase = (text) => norm(text).includes(norm(phrase));
 
 async function getJSON(url, opts = {}) {
-  // These are free public endpoints; 429 is normal and means back off, not fail.
-  for (let attempt = 0; attempt < 3; attempt++) {
+  // These are free public endpoints; being throttled is normal and means back
+  // off, not fail. GDELT is the awkward one: when you exceed its limit it
+  // answers HTTP 200 with a plain-text scolding rather than a 429, so a
+  // status-code-only check never sees the real failure mode. Detect both.
+  let last = "";
+  for (let attempt = 0; attempt < 4; attempt++) {
     const r = await fetch(url, { headers: { "User-Agent": UA, ...(opts.headers || {}) }, ...opts });
-    if (r.status === 429 || r.status === 503) { await sleep(2500 * (attempt + 1)); continue; }
+    if (r.status === 429 || r.status === 503) { await sleep(6000 * (attempt + 1)); continue; }
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return r.json();
+    const body = await r.text();
+    const head = body.slice(0, 200).trim();
+    if (!head.startsWith("{") && !head.startsWith("[")) {
+      last = head.slice(0, 120);
+      if (/limit requests|rate|too many/i.test(head)) { await sleep(6000 * (attempt + 1)); continue; }
+      throw new Error(`non-JSON response: ${last}`);
+    }
+    try { return JSON.parse(body); }
+    catch { throw new Error("malformed JSON response"); }
   }
-  throw new Error("rate limited after 3 attempts");
+  throw new Error(`throttled after 4 attempts${last ? ` — "${last}"` : ""}`);
 }
 const tally = (dates) => {
   const m = {};
@@ -88,16 +100,62 @@ async function hackernews() {
   } catch (e) { return { ...src, searched: false, error: String(e.message) }; }
 }
 
-/* ---------------- GDELT · news volume over time ---------------- */
+/* ---------------- GDELT · volume, tone, and WHERE — over time ----------------
+   Three series, not one. Volume alone says how loud a story is; the other two
+   say what kind of story it is:
+     tone           — average sentiment of the coverage, so a narrative turning
+                      darker is visible as a curve rather than an impression;
+     source country — which countries' press carry it, normalized by each
+                      country's own output, which is the "views from elsewhere"
+                      signal. On "crypto winter" this puts the Philippines,
+                      Singapore and Malaysia above the United States.
+   GDELT publishes a hard limit of one request per 5 seconds. Respected below;
+   exceeding it returns a plain-text scolding, not JSON. */
+const GDELT_GAP = 5200;
 async function gdelt() {
   const src = { platform: "gdelt_news", coverage_from: "2017-01",
     unit: "share of all monitored global coverage (normalized, not article counts)",
-    method: "DOC 2.0 timelinevol, quoted phrase",
+    method: "DOC 2.0 timelinevol + timelinetone + timelinesourcecountry, quoted phrase",
     transport_note: "fetched over plain HTTP — GDELT's HTTPS endpoint does not serve; response is unauthenticated in transit" };
   try {
     const q = encodeURIComponent(`"${phrase}"`);
-    const d = await getJSON(`http://api.gdeltproject.org/api/v2/doc/doc?query=${q}&mode=timelinevol&format=json&timespan=60m`);
+    const call = (mode, months) => getJSON(
+      `http://api.gdeltproject.org/api/v2/doc/doc?query=${q}&mode=${mode}&format=json&timespan=${months}m`);
+
+    const d = await call("timelinevol", 60);
     const pts = (d.timeline?.[0]?.data || []).filter((p) => p.value > 0);
+
+    // Tone: negative = more negative coverage. Reported as a monthly mean.
+    await sleep(GDELT_GAP);
+    let tone = [];
+    try {
+      const t = await call("timelinetone", 36);
+      const byM = {};
+      for (const p of t.timeline?.[0]?.data || []) {
+        if (p.value === 0) continue;
+        const m = `${p.date.slice(0, 4)}-${p.date.slice(4, 6)}`;
+        (byM[m] = byM[m] || []).push(p.value);
+      }
+      tone = Object.entries(byM).sort()
+        .map(([month, v]) => ({ month, mean_tone: +(v.reduce((a, b) => a + b, 0) / v.length).toFixed(3) }));
+    } catch { /* optional series */ }
+
+    // Where: total volume-intensity per country over the window.
+    await sleep(GDELT_GAP);
+    let countries = [];
+    try {
+      const c = await call("timelinesourcecountry", 12);
+      countries = (c.timeline || [])
+        .map((s) => ({ country: String(s.series).replace(/ Volume Intensity$/, ""),
+          intensity: +(s.data || []).reduce((a, p) => a + p.value, 0).toFixed(3) }))
+        .filter((x) => x.intensity > 0)
+        .sort((a, b) => b.intensity - a.intensity)
+        .slice(0, 15);
+    } catch { /* optional series */ }
+
+    src.tone_timeline = tone;
+    src.top_countries = countries;
+    src.country_note = "share of each country's OWN news output, so small media markets can outrank large ones — this measures where a story is proportionally loud, not raw article counts";
     const byMonth = {};
     for (const p of pts) {
       const m = `${p.date.slice(0, 4)}-${p.date.slice(4, 6)}`;
@@ -217,9 +275,11 @@ async function bluesky() {
 console.log(`SPREAD TRACE · "${phrase}" · topic ${topic}\n`);
 
 const sources = [];
-for (const [name, fn] of [["hackernews", hackernews], ["gdelt", gdelt],
-                          ["crossref", crossref], ["wikipedia", wikipedia],
-                          ["bluesky", bluesky]]) {
+// GDELT last: it is the strictest rate limiter (1 req / 5s) and makes three
+// calls of its own, so the other sources buy it recovery time.
+for (const [name, fn] of [["hackernews", hackernews], ["crossref", crossref],
+                          ["wikipedia", wikipedia], ["bluesky", bluesky],
+                          ["gdelt", gdelt]]) {
   process.stdout.write(`  ${name}…`);
   const r = await fn();
   sources.push(r);
@@ -252,6 +312,25 @@ const out = {
 console.log(`\nEARLIEST OBSERVED: ${out.earliest_observed_overall
   ? `${out.earliest_observed_overall.date} on ${out.earliest_observed_overall.platform}` : "nothing matched"}`);
 console.log("(earliest these sources can see — not a claim about who said it first)\n");
+
+const gd = sources.find((s) => s.platform === "gdelt_news");
+if (gd?.top_countries?.length) {
+  console.log("WHERE IT IS DISCUSSED — share of each country's own news output, last 12 months");
+  const max = gd.top_countries[0].intensity;
+  for (const c of gd.top_countries.slice(0, 10)) {
+    console.log(`  ${c.country.padEnd(22)} ${"█".repeat(Math.max(1, Math.round((c.intensity / max) * 30)))} ${c.intensity}`);
+  }
+  console.log("  (small media markets can outrank large ones — this is proportional, not raw volume)\n");
+}
+if (gd?.tone_timeline?.length) {
+  const t = gd.tone_timeline.slice(-12);
+  console.log("TONE OF COVERAGE — negative is more negative");
+  for (const p of t) {
+    const n = p.mean_tone < 0;
+    console.log(`  ${p.month}  ${n ? " ".repeat(14 - Math.min(14, Math.round(-p.mean_tone * 3))) + "▉".repeat(Math.min(14, Math.round(-p.mean_tone * 3))) + "│" : " ".repeat(14) + "│" + "▉".repeat(Math.min(14, Math.round(p.mean_tone * 3)))}  ${p.mean_tone}`);
+  }
+  console.log();
+}
 
 for (const s of sources.filter((x) => x.timeline?.length)) {
   const t = s.timeline;
