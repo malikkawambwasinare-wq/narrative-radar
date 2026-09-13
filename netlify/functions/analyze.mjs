@@ -206,6 +206,11 @@ const videoEntry = (videoId, meta, verdict, note, today, source) => ({
   transcript: null,
   verdict: verdict === "UNKNOWN" ? "UNREVIEWED" : verdict,
   verdict_note: `[live analysis, metadata-only] ${note}`,
+  // Explicit, so the site can say which verdicts were read and which were
+  // guessed. Datacenter IPs get empty caption bodies from YouTube, so the live
+  // path is always metadata; scripts/fetch_transcripts.py + review-verdicts.mjs
+  // upgrade it to "transcript" afterwards. Provisional is a state, not a fate.
+  verdict_basis: "metadata",
 });
 
 export default async (req) => {

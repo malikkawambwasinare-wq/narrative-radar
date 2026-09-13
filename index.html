@@ -370,6 +370,31 @@
   .e-horizon { font-size: 12.5px; color: var(--ink-2); margin-top: 4px; }
   .e-note { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
   .e-src { font-size: 12px; margin-top: 6px; }
+
+  /* Series — the corpus as episodes, repeats removed */
+  .series-head { margin-bottom: 18px; }
+  .series-head .big { font-size: 15px; font-weight: 600; }
+  .series-head .sub { font-size: 13px; color: var(--ink-2); margin-top: 4px; }
+  .series-head .honest { font-size: 12.5px; color: var(--ink-2); margin-top: 8px;
+    border-left: 3px solid var(--hairline); padding-left: 12px; }
+  .season { display: flex; align-items: center; gap: 10px; margin: 22px 0 10px;
+    font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  .season::after { content: ""; flex: 1; height: 1px; background: var(--hairline); }
+  .season b { color: var(--ink); letter-spacing: 0; text-transform: none; font-size: 12.5px; }
+  .ep-num { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .basis { font-size: 11px; padding: 2px 8px; border-radius: 999px; white-space: nowrap; }
+  .basis.ok { color: var(--ok, #2F6B45); background: rgba(47,107,69,.1); }
+  .basis.prov { color: var(--warn, #9A6410); background: rgba(154,100,16,.1); }
+  .angles { margin-top: 10px; padding-top: 8px; border-top: 1px dashed var(--hairline); }
+  .angles .lbl { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+  .angle { font-size: 13px; padding: 3px 0; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .angle .when { font-size: 11.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .firsts { margin: 0 0 22px; }
+  .firsts .lbl { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .first { display: grid; grid-template-columns: 96px 1fr; gap: 12px; font-size: 13px; padding: 5px 0;
+    border-bottom: 1px solid var(--hairline); }
+  .first .when { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+  .first .n { color: var(--muted); font-size: 12px; }
   .e-src a { color: var(--accent); text-decoration: none; }
   .e-src span { color: var(--muted); }
 
@@ -590,6 +615,7 @@
 
   <div class="tabs" id="tabs">
     <button class="tab active" data-view="corpus">Corpus<span class="count" id="c-corpus"></span></button>
+    <button class="tab" data-view="series">Series<span class="count" id="c-series"></span></button>
     <button class="tab" data-view="ledger">Prediction ledger<span class="count" id="c-ledger"></span></button>
     <button class="tab" data-view="briefs">Briefs<span class="count" id="c-briefs"></span></button>
   </div>
@@ -617,6 +643,12 @@
       </select>
     </div>
     <div id="videos"></div>
+  </section>
+
+  <section id="view-series" hidden>
+    <div class="series-head" id="series-head"></div>
+    <div id="series-firsts"></div>
+    <div id="series"></div>
   </section>
 
   <section id="view-ledger" hidden>
@@ -722,6 +754,9 @@ function viewsNum(v) {
    the strip says so instead of letting a tiny sample read as a verdict. */
 const SCORE_GATE = 5;
 function publishedEst(v) {
+  // A real publish date, when scripts/fetch_transcripts.py has written one,
+  // beats the age-at-capture estimate — "8 months ago" is month-coarse.
+  if (/^\d{4}-\d{2}-\d{2}$/.test(v.published || "")) return Date.parse(v.published + "T00:00:00Z");
   const t = Date.parse(v.first_seen || "");
   if (isNaN(t)) return null;
   return v.age_days == null ? t : t - v.age_days * 86400000;
@@ -1455,7 +1490,7 @@ function renderCorpus() {
         <span class="dot">${esc(v.length || "")}</span>
       </div>
       <div class="vid-row2">
-        ${vchip(v.verdict)}
+        ${vchip(v.verdict)} ${basisMark(v)}
         ${v.transcript
           ? `<button class="tbtn" data-t="${esc(v.transcript)}" data-title="${esc(v.title)}">Read transcript</button>`
           : `<span class="no-t">no transcript yet</span>`}
@@ -1463,6 +1498,118 @@ function renderCorpus() {
       </div>
       ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
     </div>`).join("") : `<div class="empty">No videos collected for this topic yet.</div>`;
+}
+
+/* ---------- series view ----------
+   The corpus as a watchable sequence: RECYCLED and CLICKBAIT removed, ORIGINAL
+   videos as episodes in date order, DERIVATIVE videos attached to the episode
+   they discuss as "other angles", and a season break wherever the narrative's
+   mechanism changed. The promise is "no repeats" — so every item says whether
+   its verdict was read from a transcript or guessed from a title. */
+const isoDate = t => t ? new Date(t).toISOString().slice(0, 10) : null;
+function verdictBasis(v) {
+  if (v.verdict_basis) return v.verdict_basis;
+  if ((v.verdict_note || "").includes("metadata-only")) return "metadata";
+  return v.transcript ? "transcript" : "metadata";
+}
+const basisMark = v => verdictBasis(v) === "transcript"
+  ? `<span class="basis ok" title="Verdict made with the transcript on hand">✓ read</span>`
+  : `<span class="basis prov" title="Verdict inferred from title and channel only — queued for transcript review">◌ provisional</span>`;
+
+function renderSeries() {
+  const data = cache[topicId];
+  const n = data?.narrative || {};
+  const vids = data?.videos?.videos || [];
+  const keep = vids.filter(v => !["RECYCLED", "CLICKBAIT"].includes(v.verdict));
+  const dropped = vids.length - keep.length;
+  $("c-series").textContent = keep.length ? `(${keep.length})` : "";
+  if (!vids.length) {
+    $("series-head").innerHTML = ""; $("series-firsts").innerHTML = "";
+    $("series").innerHTML = `<div class="empty">No videos collected for this topic yet.</div>`;
+    return;
+  }
+
+  const dated = keep.map(v => ({ v, t: publishedEst(v) }))
+    .sort((a, b) => (a.t ?? 9e15) - (b.t ?? 9e15));
+  const episodes = [], before = [];
+  let cur = null;
+  for (const x of dated) {
+    if (x.v.verdict === "ORIGINAL") { cur = { ...x, angles: [] }; episodes.push(cur); }
+    else if (cur) cur.angles.push(x); else before.push(x);
+  }
+  const angles = episodes.reduce((a, e) => a + e.angles.length, 0) + before.length;
+  const reviewed = keep.filter(v => verdictBasis(v) === "transcript").length;
+  const prov = keep.length - reviewed;
+
+  // Seasons: the narrative's mechanism mutations, by year.
+  const muts = (n.mutations || [])
+    .map(m => ({ year: +((m.date || "").match(/\d{4}/) || [])[0] || null, mechanism: m.mechanism }))
+    .filter(m => m.year);
+  const seasonOf = t => {
+    if (!t) return null;
+    const y = new Date(t).getUTCFullYear();
+    let s = null; muts.forEach((m, i) => { if (m.year <= y) s = { i, ...m }; });
+    return s;
+  };
+
+  $("series-head").innerHTML = `
+    <div class="big">${episodes.length} episode${episodes.length === 1 ? "" : "s"} · ${angles} other angle${angles === 1 ? "" : "s"} · ${dropped} repeat${dropped === 1 ? "" : "s"} removed</div>
+    <div class="sub">Every ORIGINAL video is an episode, in the order it appeared. Commentary on it is filed underneath as another angle. Re-cuts, compilations and clickbait are left out — that's the ${dropped} you don't have to watch.</div>
+    <div class="honest">${prov === 0
+      ? `All ${keep.length} verdicts here were made with the transcript on hand.`
+      : `${reviewed} of ${keep.length} verdicts were made with the transcript on hand; <b>${prov}</b> ${prov === 1 ? "is" : "are"} provisional — inferred from title and channel, marked ◌, and queued for transcript review. A provisional "original" may yet turn out to be a repeat.`}</div>`;
+
+  // When each consolidated claim first appeared on YouTube, from its cited videos.
+  const byId = Object.fromEntries(vids.map(v => [v.videoId, v]));
+  const claims = data?.claims?.claims || [];
+  const firsts = claims.map(c => {
+    const srcs = c.sources || (c.camps || []).flatMap(k => k.sources || []);
+    const ts = srcs.map(s => byId[s.videoId] ? publishedEst(byId[s.videoId]) : null).filter(Boolean);
+    return { c, t: ts.length ? Math.min(...ts) : null, n: srcs.length };
+  }).sort((a, b) => (a.t ?? 9e15) - (b.t ?? 9e15));
+  $("series-firsts").innerHTML = firsts.length ? `<div class="firsts">
+    <div class="lbl">When each claim first appeared in this corpus</div>
+    ${firsts.map(f => `<div class="first">
+      <span class="when">${f.t ? isoDate(f.t) : "undated"}</span>
+      <span>${esc(f.c.statement)} <span class="n">· ${f.n} video${f.n === 1 ? "" : "s"}</span></span>
+    </div>`).join("")}
+  </div>` : "";
+
+  const item = (x, i, ep) => `
+    <div class="entry">
+      <div class="node" style="background:${(VERDICTS[x.v.verdict] || VERDICTS.UNREVIEWED).color}"></div>
+      <div class="card" id="ep-${esc(x.v.videoId)}">
+        <div class="e-head">
+          <span class="ep-num">Episode ${i + 1}</span>
+          <span class="e-date">${x.t ? isoDate(x.t) : "undated"}</span>
+          ${basisMark(x.v)}
+        </div>
+        <div class="e-claim"><a href="${esc(x.v.url)}" target="_blank" rel="noopener">${esc(x.v.title)}</a></div>
+        <div class="e-horizon">${esc(x.v.channel)}${x.v.length ? ` · ${esc(x.v.length)}` : ""}${x.v.views ? ` · ${esc(x.v.views)}` : ""}</div>
+        ${x.v.verdict_note ? `<div class="e-note">${esc(x.v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}
+        ${ep.angles.length ? `<div class="angles"><div class="lbl">${ep.angles.length} other angle${ep.angles.length === 1 ? "" : "s"} on this</div>
+          ${ep.angles.map(a => `<div class="angle">
+            <span class="when">${a.t ? isoDate(a.t) : "—"}</span>
+            <a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
+            <span class="when">${esc(a.v.channel)}</span> ${basisMark(a.v)}
+          </div>`).join("")}</div>` : ""}
+      </div>
+    </div>`;
+
+  let html = "", lastSeason = -1;
+  episodes.forEach((ep, i) => {
+    const s = seasonOf(ep.t);
+    if (s && s.i !== lastSeason) {
+      html += `<div class="season">Season ${s.i + 1} · ${s.year} <b>${esc(s.mechanism)}</b></div>`;
+      lastSeason = s.i;
+    }
+    html += item(ep, i, ep);
+  });
+  if (before.length) html += `<div class="season">Before the first original <b>${before.length} commentary video${before.length === 1 ? "" : "s"} with no episode to attach to</b></div>`
+    + before.map(a => `<div class="angle"><span class="when">${a.t ? isoDate(a.t) : "—"}</span>
+        <a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
+        <span class="when">${esc(a.v.channel)}</span> ${basisMark(a.v)}</div>`).join("");
+  $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
 }
 
 /* ---------- ledger view ---------- */
@@ -1573,7 +1720,7 @@ async function loadTopic(id) {
   if (!$("app-radar").hidden) { $("gallery").hidden = true; $("detail").hidden = false; }
   renderTopics();
   await loadTopicData(id);
-  renderCorpus(); renderLedger(); renderBriefs();
+  renderCorpus(); renderSeries(); renderLedger(); renderBriefs();
 }
 
 /* ---------- follows (device-local profile) ---------- */
@@ -2160,7 +2307,7 @@ document.addEventListener("click", async (ev) => {
   const tab = ev.target.closest(".tab");
   if (tab) {
     document.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === tab));
-    for (const v of ["corpus", "ledger", "briefs"])
+    for (const v of ["corpus", "series", "ledger", "briefs"])
       $("view-" + v).hidden = tab.dataset.view !== v;
     return;
   }
