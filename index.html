@@ -709,17 +709,21 @@ const $ = (id) => document.getElementById(id);
 const esc = (s) => (s ?? "").toString()
   .replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 
-// Data files are read from GitHub's raw CDN so engine commits show up
-// without a site rebuild; the deployed copy is only a fallback.
+// Data files come from the site's own origin first: a Pages deploy ships code
+// and data together, so what you see is at least as new as the code rendering
+// it. GitHub's raw CDN is the fallback (file:// previews, hosts without the
+// corpus). It used to be first, but raw.githubusercontent.com ignores query
+// cache-busters and lags several minutes behind a push — which showed a series
+// built on stale dates while the deployed copy was already correct.
 const RAW_BASE = "https://raw.githubusercontent.com/malikkawambwasinare-wq/narrative-radar/main/";
 async function getData(url, parse) {
-  if (!/^https?:/i.test(url)) {
+  if (!/^https?:/i.test(url) && /^https?:/i.test(location.protocol)) {
     try {
-      const r = await fetch(RAW_BASE + url + "?v=" + Date.now());
+      const r = await fetch(url, { cache: "no-cache" });   // revalidate, never serve a stale copy silently
       if (r.ok) return parse(r);
     } catch (e) {}
   }
-  const r = await fetch(url);
+  const r = await fetch(/^https?:/i.test(url) ? url : RAW_BASE + url + "?v=" + Date.now());
   if (!r.ok) throw new Error(url + " → " + r.status);
   return parse(r);
 }
