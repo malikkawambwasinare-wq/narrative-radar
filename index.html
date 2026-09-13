@@ -396,12 +396,28 @@
   .first .when { font-variant-numeric: tabular-nums; color: var(--ink-2); }
   .first .n { color: var(--muted); font-size: 12px; }
   /* thumbnails — served by YouTube for any public video, nothing stored here */
-  .ep-body { display: grid; grid-template-columns: 176px 1fr; gap: 14px; align-items: start; }
-  .thumb { display: block; width: 176px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px;
+  .ep-body { display: grid; grid-template-columns: 200px 1fr; gap: 14px; align-items: start; }
+  .thumbwrap { position: relative; display: block; width: 200px; flex: 0 0 auto; }
+  .thumbwrap.sm { width: 112px; }
+  .thumb { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px;
     background: var(--hairline); }
-  .thumb.sm { width: 96px; border-radius: 4px; }
+  .thumb.sm { border-radius: 5px; }
+  .dur { position: absolute; right: 6px; bottom: 6px; background: rgba(0,0,0,.82); color: #fff;
+    font-size: 11px; font-weight: 600; padding: 1px 5px; border-radius: 4px; font-variant-numeric: tabular-nums; }
+  .thumbwrap.sm .dur { font-size: 10px; right: 4px; bottom: 4px; }
+  .e-claim { font-size: 15px; line-height: 1.3; }
   .angle { align-items: center; }
-  .angle .thumb.sm { flex: 0 0 auto; }
+  details.angles > summary, details.lowreach > summary { cursor: pointer; list-style: none;
+    font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+    display: flex; align-items: center; gap: 8px; }
+  details.angles > summary::-webkit-details-marker, details.lowreach > summary::-webkit-details-marker { display: none; }
+  details.angles > summary::before, details.lowreach > summary::before { content: "▸"; font-size: 11px; transition: transform .15s; }
+  details[open].angles > summary::before, details[open].lowreach > summary::before { transform: rotate(90deg); }
+  details.angles > summary:hover, details.lowreach > summary:hover { color: var(--ink); }
+  details.angles .angle { margin-top: 8px; }
+  details.lowreach { margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--hairline); }
+  details.lowreach > summary b { color: var(--ink); letter-spacing: 0; text-transform: none; font-size: 13px; }
+  details.lowreach .entry { margin-top: 12px; }
   .vid-body { display: grid; grid-template-columns: 136px 1fr; gap: 12px; align-items: start; }
   .vid-body .thumb { width: 136px; }
   @media (max-width: 600px) {
@@ -1534,7 +1550,11 @@ function verdictBasis(v) {
   if ((v.verdict_note || "").includes("metadata-only")) return "metadata";
   return v.transcript ? "transcript" : "metadata";
 }
-const thumb = (v, cls = "") => `<a href="${esc(v.url)}" target="_blank" rel="noopener" tabindex="-1"><img class="thumb ${cls}" loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${esc(v.videoId)}/mqdefault.jpg"></a>`;
+// A YouTube-style card thumbnail: the frame, with the duration badged in the corner.
+const thumb = (v, cls = "") => `<a class="thumbwrap ${cls}" href="${esc(v.url)}" target="_blank" rel="noopener" tabindex="-1">
+  <img class="thumb ${cls}" loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${esc(v.videoId)}/mqdefault.jpg">
+  ${v.length ? `<span class="dur">${esc(v.length)}</span>` : ""}</a>`;
+const LOW_REACH = 1000;   // episodes under this many views are folded away, not deleted
 const basisMark = v => verdictBasis(v) === "transcript"
   ? `<span class="basis ok" title="Verdict made with the transcript on hand">✓ read</span>`
   : `<span class="basis prov" title="Verdict inferred from title and channel only — queued for transcript review">◌ provisional</span>`;
@@ -1598,6 +1618,11 @@ function renderSeries() {
     </div>`).join("")}
   </div>` : "";
 
+  const angleRow = a => `<div class="angle">
+      ${thumb(a.v, "sm")}
+      <span><a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
+        <span class="when">${esc(a.v.channel)}${a.v.views ? ` · ${esc(a.v.views)}` : ""} · ${a.t ? isoDate(a.t) : "—"}</span> ${basisMark(a.v)}</span>
+    </div>`;
   const item = (x, i, ep) => `
     <div class="entry">
       <div class="node" style="background:${(VERDICTS[x.v.verdict] || VERDICTS.UNREVIEWED).color}"></div>
@@ -1611,22 +1636,21 @@ function renderSeries() {
               ${basisMark(x.v)}
             </div>
             <div class="e-claim"><a href="${esc(x.v.url)}" target="_blank" rel="noopener">${esc(x.v.title)}</a></div>
-            <div class="e-horizon">${esc(x.v.channel)}${x.v.length ? ` · ${esc(x.v.length)}` : ""}${x.v.views ? ` · ${esc(x.v.views)}` : ""}</div>
+            <div class="e-horizon">${esc(x.v.channel)}${x.v.views ? ` · ${esc(x.v.views)}` : ""}</div>
             ${x.v.verdict_note ? `<div class="e-note">${esc(x.v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}
           </div>
         </div>
-        ${ep.angles.length ? `<div class="angles"><div class="lbl">${ep.angles.length} other angle${ep.angles.length === 1 ? "" : "s"} on this</div>
-          ${ep.angles.map(a => `<div class="angle">
-            ${thumb(a.v, "sm")}
-            <span class="when">${a.t ? isoDate(a.t) : "—"}</span>
-            <a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
-            <span class="when">${esc(a.v.channel)}</span> ${basisMark(a.v)}
-          </div>`).join("")}</div>` : ""}
+        ${ep.angles.length ? `<details class="angles"><summary>${ep.angles.length} other angle${ep.angles.length === 1 ? "" : "s"} on this</summary>
+          ${ep.angles.map(angleRow).join("")}</details>` : ""}
       </div>
     </div>`;
 
-  let html = "", lastSeason = -1;
+  // Low-reach episodes stay episodes — they keep their number and their angles —
+  // but fold away so the series reads as the videos people actually watched.
+  const isLow = ep => viewsNum(ep.v.views) > 0 && viewsNum(ep.v.views) < LOW_REACH;
+  let html = "", lastSeason = -1, low = "";
   episodes.forEach((ep, i) => {
+    if (isLow(ep)) { low += item(ep, i, ep); return; }
     const s = seasonOf(ep.t);
     if (s && s.i !== lastSeason) {
       html += `<div class="season">Season ${s.i + 1} · ${s.year} <b>${esc(s.mechanism)}</b></div>`;
@@ -1634,10 +1658,11 @@ function renderSeries() {
     }
     html += item(ep, i, ep);
   });
-  if (before.length) html += `<div class="season">Before the first original <b>${before.length} commentary video${before.length === 1 ? "" : "s"} with no episode to attach to</b></div>`
-    + before.map(a => `<div class="angle">${thumb(a.v, "sm")}<span class="when">${a.t ? isoDate(a.t) : "—"}</span>
-        <a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
-        <span class="when">${esc(a.v.channel)}</span> ${basisMark(a.v)}</div>`).join("");
+  const lowCount = episodes.filter(isLow).length;
+  if (lowCount) html += `<details class="lowreach"><summary>${lowCount} low-reach episode${lowCount === 1 ? "" : "s"}
+      <b>original material under ${LOW_REACH.toLocaleString()} views — kept, folded</b></summary>${low}</details>`;
+  if (before.length) html += `<details class="lowreach"><summary>${before.length} commentary video${before.length === 1 ? "" : "s"} before the first original
+      <b>no episode to attach to</b></summary>${before.map(angleRow).join("")}</details>`;
   $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
 }
 
