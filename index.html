@@ -395,6 +395,19 @@
     border-bottom: 1px solid var(--hairline); }
   .first .when { font-variant-numeric: tabular-nums; color: var(--ink-2); }
   .first .n { color: var(--muted); font-size: 12px; }
+  /* thumbnails — served by YouTube for any public video, nothing stored here */
+  .ep-body { display: grid; grid-template-columns: 176px 1fr; gap: 14px; align-items: start; }
+  .thumb { display: block; width: 176px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 6px;
+    background: var(--hairline); }
+  .thumb.sm { width: 96px; border-radius: 4px; }
+  .angle { align-items: center; }
+  .angle .thumb.sm { flex: 0 0 auto; }
+  .vid-body { display: grid; grid-template-columns: 136px 1fr; gap: 12px; align-items: start; }
+  .vid-body .thumb { width: 136px; }
+  @media (max-width: 600px) {
+    .ep-body, .vid-body { grid-template-columns: 1fr; }
+    .thumb, .vid-body .thumb { width: 100%; }
+  }
   .e-src a { color: var(--accent); text-decoration: none; }
   .e-src span { color: var(--muted); }
 
@@ -1486,21 +1499,26 @@ function renderCorpus() {
 
   $("videos").innerHTML = list.length ? list.map(v => `
     <div class="card" id="vid-${esc(v.videoId)}">
-      <div class="vid-title"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a></div>
-      <div class="vid-meta">
-        <span>${esc(v.channel)}</span>
-        <span class="dot">${esc(v.published || "?")}</span>
-        <span class="dot">${esc(v.views || "? views")}</span>
-        <span class="dot">${esc(v.length || "")}</span>
+      <div class="vid-body">
+        ${thumb(v)}
+        <div>
+          <div class="vid-title"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a></div>
+          <div class="vid-meta">
+            <span>${esc(v.channel)}</span>
+            <span class="dot">${esc(v.published || "?")}</span>
+            <span class="dot">${esc(v.views || "? views")}</span>
+            <span class="dot">${esc(v.length || "")}</span>
+          </div>
+          <div class="vid-row2">
+            ${vchip(v.verdict)} ${basisMark(v)}
+            ${v.transcript
+              ? `<button class="tbtn" data-t="${esc(v.transcript)}" data-title="${esc(v.title)}">Read transcript</button>`
+              : `<span class="no-t">no transcript yet</span>`}
+            <span class="pill query">found via “${esc(v.query)}”</span>
+          </div>
+          ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
+        </div>
       </div>
-      <div class="vid-row2">
-        ${vchip(v.verdict)} ${basisMark(v)}
-        ${v.transcript
-          ? `<button class="tbtn" data-t="${esc(v.transcript)}" data-title="${esc(v.title)}">Read transcript</button>`
-          : `<span class="no-t">no transcript yet</span>`}
-        <span class="pill query">found via “${esc(v.query)}”</span>
-      </div>
-      ${v.verdict_note ? `<div class="v-note">${esc(v.verdict_note)}</div>` : ""}
     </div>`).join("") : `<div class="empty">No videos collected for this topic yet.</div>`;
 }
 
@@ -1516,6 +1534,7 @@ function verdictBasis(v) {
   if ((v.verdict_note || "").includes("metadata-only")) return "metadata";
   return v.transcript ? "transcript" : "metadata";
 }
+const thumb = (v, cls = "") => `<a href="${esc(v.url)}" target="_blank" rel="noopener" tabindex="-1"><img class="thumb ${cls}" loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${esc(v.videoId)}/mqdefault.jpg"></a>`;
 const basisMark = v => verdictBasis(v) === "transcript"
   ? `<span class="basis ok" title="Verdict made with the transcript on hand">✓ read</span>`
   : `<span class="basis prov" title="Verdict inferred from title and channel only — queued for transcript review">◌ provisional</span>`;
@@ -1583,16 +1602,22 @@ function renderSeries() {
     <div class="entry">
       <div class="node" style="background:${(VERDICTS[x.v.verdict] || VERDICTS.UNREVIEWED).color}"></div>
       <div class="card" id="ep-${esc(x.v.videoId)}">
-        <div class="e-head">
-          <span class="ep-num">Episode ${i + 1}</span>
-          <span class="e-date">${x.t ? isoDate(x.t) : "undated"}</span>
-          ${basisMark(x.v)}
+        <div class="ep-body">
+          ${thumb(x.v)}
+          <div>
+            <div class="e-head">
+              <span class="ep-num">Episode ${i + 1}</span>
+              <span class="e-date">${x.t ? isoDate(x.t) : "undated"}</span>
+              ${basisMark(x.v)}
+            </div>
+            <div class="e-claim"><a href="${esc(x.v.url)}" target="_blank" rel="noopener">${esc(x.v.title)}</a></div>
+            <div class="e-horizon">${esc(x.v.channel)}${x.v.length ? ` · ${esc(x.v.length)}` : ""}${x.v.views ? ` · ${esc(x.v.views)}` : ""}</div>
+            ${x.v.verdict_note ? `<div class="e-note">${esc(x.v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}
+          </div>
         </div>
-        <div class="e-claim"><a href="${esc(x.v.url)}" target="_blank" rel="noopener">${esc(x.v.title)}</a></div>
-        <div class="e-horizon">${esc(x.v.channel)}${x.v.length ? ` · ${esc(x.v.length)}` : ""}${x.v.views ? ` · ${esc(x.v.views)}` : ""}</div>
-        ${x.v.verdict_note ? `<div class="e-note">${esc(x.v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}
         ${ep.angles.length ? `<div class="angles"><div class="lbl">${ep.angles.length} other angle${ep.angles.length === 1 ? "" : "s"} on this</div>
           ${ep.angles.map(a => `<div class="angle">
+            ${thumb(a.v, "sm")}
             <span class="when">${a.t ? isoDate(a.t) : "—"}</span>
             <a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
             <span class="when">${esc(a.v.channel)}</span> ${basisMark(a.v)}
@@ -1610,7 +1635,7 @@ function renderSeries() {
     html += item(ep, i, ep);
   });
   if (before.length) html += `<div class="season">Before the first original <b>${before.length} commentary video${before.length === 1 ? "" : "s"} with no episode to attach to</b></div>`
-    + before.map(a => `<div class="angle"><span class="when">${a.t ? isoDate(a.t) : "—"}</span>
+    + before.map(a => `<div class="angle">${thumb(a.v, "sm")}<span class="when">${a.t ? isoDate(a.t) : "—"}</span>
         <a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
         <span class="when">${esc(a.v.channel)}</span> ${basisMark(a.v)}</div>`).join("");
   $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
