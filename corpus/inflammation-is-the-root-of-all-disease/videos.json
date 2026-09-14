@@ -47,6 +47,22 @@
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard doctor-channel listicle of 'inflammatory foods to avoid' — familiar format within the anti-inflammatory diet genre.",
       "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "wjs2w7Cmkgw",
+      "url": "https://www.youtube.com/watch?v=wjs2w7Cmkgw",
+      "title": "The 2025 Guide to Eating Anti Inflammatory for a Healthier You",
+      "channel": "Healthline",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "auto-buildout",
+      "age_days": null,
+      "first_seen": "2026-09-14",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Standard anti-inflammatory diet explainer from a mainstream health publisher; repackages familiar food lists with a 2025 framing.",
+      "verdict_basis": "metadata"
     }
   ]
 }
