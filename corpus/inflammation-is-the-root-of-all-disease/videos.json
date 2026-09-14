@@ -79,6 +79,22 @@
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard anti-inflammatory food haul/recipe format repeating an established wellness framing; no new claims or evidence in metadata.",
       "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "NF5gOX-VsFY",
+      "url": "https://www.youtube.com/watch?v=NF5gOX-VsFY",
+      "title": "The Top Anti-Inflammatory Foods You Should Eat Every Day",
+      "channel": "Dr. Michael Ruscio, DC, DNM",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "auto-buildout",
+      "age_days": null,
+      "first_seen": "2026-09-14",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Standard anti-inflammatory food list format, near-identical to many tracked examples; clinician framing but no new claim visible in metadata.",
+      "verdict_basis": "metadata"
     }
   ]
 }
