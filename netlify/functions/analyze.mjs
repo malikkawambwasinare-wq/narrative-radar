@@ -99,7 +99,13 @@ const ANALYSIS_SCHEMA = {
     new_narrative_born: { type: ["string", "null"] },
     new_narrative_born_note: { type: ["string", "null"] },
     new_narrative_queries: { type: "array", items: { type: "string" } },
-    new_narrative_industry: { type: ["string", "null"], enum: ["AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", "Entertainment & media", "Gaming", "Sports", "Internet & creator economy", "Unsorted", null] },
+    // A nullable enum must be spelled as anyOf — the API's structured-output
+    // validator rejects `type: ["string","null"]` next to string enum values,
+    // which silently broke every live paste until a real one was traced.
+    new_narrative_industry: { anyOf: [
+      { type: "string", enum: ["AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", "Entertainment & media", "Gaming", "Sports", "Internet & creator economy", "Unsorted"] },
+      { type: "null" },
+    ] },
     explanation_layman: { type: ["string", "null"] },
     explanation_intermediate: { type: ["string", "null"] },
     explanation_expert: { type: ["string", "null"] },

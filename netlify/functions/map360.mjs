@@ -68,7 +68,7 @@ const MAP_SCHEMA = {
         required: ["type", "direction", "target_topic_id", "shadow", "label", "clock", "evidence", "confidence"],
         properties: {
           type: { type: "string", enum: REL_TYPES },
-          direction: { type: ["string", "null"], enum: ["out", "in", null] },
+          direction: { anyOf: [{ type: "string", enum: ["out", "in"] }, { type: "null" }] },
           target_topic_id: { type: ["string", "null"] },
           shadow: {
             type: ["object", "null"], additionalProperties: false,
