@@ -9,6 +9,7 @@
 //              unrelated         → nothing persisted (music/entertainment/how-to)
 import Anthropic from "@anthropic-ai/sdk";
 import { guard } from "./_guard.mjs";
+import { enrichVideo } from "./_youtube.mjs";
 
 const REPO = "malikkawambwasinare-wq/narrative-radar";
 const RAW = `https://raw.githubusercontent.com/${REPO}/main`;
@@ -197,10 +198,13 @@ const slugify = (s) => (s || "").toLowerCase()
 // Opus baseline on the EXACT prompt and schema production uses.
 export { SYSTEM, ANALYSIS_SCHEMA, summarizeCorpus, shortlistTopics };
 
-const videoEntry = (videoId, meta, verdict, note, today, source) => ({
+const videoEntry = (videoId, meta, verdict, note, today, source, rich) => ({
   videoId, url: `https://www.youtube.com/watch?v=${videoId}`,
   title: meta.title, channel: meta.channel,
-  published: "", views: "", length: "",
+  // Real date, views and length from the watch page when YouTube answered;
+  // empty strings (the old behaviour) when it did not — the Series page treats
+  // an empty date as "undated", never as today.
+  published: rich?.meta?.published || "", views: rich?.meta?.views || "", length: rich?.meta?.length || "",
   query: source === "buildout" ? "auto-buildout" : "user-submitted",
   age_days: null, first_seen: today,
   transcript: null,
@@ -211,6 +215,9 @@ const videoEntry = (videoId, meta, verdict, note, today, source) => ({
   // path is always metadata; scripts/fetch_transcripts.py + review-verdicts.mjs
   // upgrade it to "transcript" afterwards. Provisional is a state, not a fate.
   verdict_basis: "metadata",
+  // The same filter signals the batch script stores, when the fetch succeeded.
+  // Absent (not a zeroed stub) when it did not, so the page says "no signals yet".
+  ...(rich?.yt ? { yt: rich.yt } : {}),
 });
 
 export default async (req) => {
@@ -232,6 +239,10 @@ export default async (req) => {
     // Metadata first: the shortlist scores against the video's title/channel.
     const meta = await fetchVideoMeta(videoId);
     if (!meta) return json(404, { error: "video_not_found" });
+    // Filter signals ride alongside the model call, not ahead of it: started
+    // here, awaited only when the entry is written. A slow or refused YouTube
+    // costs nothing but the signals (6 s cap), never the verdict.
+    const richP = enrichVideo(videoId).catch(() => null);
 
     const candidates = shortlistTopics(watchlist.topics, meta);
     const topics = await Promise.all(
@@ -291,6 +302,10 @@ export default async (req) => {
     }
     const analysis = JSON.parse(response.content.find((b) => b.type === "text")?.text);
     const today = new Date().toISOString().slice(0, 10);
+    const rich = await richP;
+    // Surfaced in the response so the UI (and a curl) can see what YouTube
+    // answered from this IP: ["video","comments","channel"], partial, or nothing.
+    analysis.signals = rich ? { got: rich.got, error: rich.error } : { got: [], error: "enrichment_failed" };
 
     // The slug is ours to derive, not the model's to invent.
     analysis.new_narrative_id = analysis.decision === "new_narrative"
@@ -312,7 +327,7 @@ export default async (req) => {
     }
 
     if (analysis.decision === "existing_narrative" && analysis.topic_id) {
-      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today, body.source);
+      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today, body.source, rich);
       let persisted = false;
       const cur = await ghRead(`corpus/${analysis.topic_id}/videos.json`);
       if (cur && !cur.data.videos.some((v) => v.videoId === videoId)) {
@@ -334,7 +349,7 @@ export default async (req) => {
 
     if (analysis.decision === "new_narrative" && analysis.new_narrative_id) {
       const id = analysis.new_narrative_id;
-      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today, body.source);
+      const entry = videoEntry(videoId, meta, analysis.verdict, analysis.verdict_note, today, body.source, rich);
       const narrative = {
         name: analysis.new_narrative_name,
         claim: analysis.new_narrative_claim,
