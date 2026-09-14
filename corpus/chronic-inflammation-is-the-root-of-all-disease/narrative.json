@@ -1,0 +1,18 @@
+{
+  "name": "Chronic Inflammation Is the Root of All Disease",
+  "claim": "Low-grade chronic inflammation, driven by modern diet and lifestyle, is the hidden cause of fatigue, pain and most chronic illness — and can be reversed by eating specific anti-inflammatory foods.",
+  "predictor": "to be determined",
+  "born": "2004",
+  "born_note": "Estimate based on mid-2000s popularization of 'inflammation as root of disease' in mainstream health media and diet books. (model estimate, pending audit)",
+  "mutations": [],
+  "explanations": {
+    "layman": "This is the popular idea that a quiet, ongoing 'fire' inside your body causes tiredness, aches and long-term illness — and that eating the right foods puts the fire out. It's why you keep seeing lists of berries, olive oil and oily fish. Some of it is backed by science; a lot of it is oversimplified and used to sell books, supplements and courses.",
+    "intermediate": "Inflammation is a real biological process linked to cardiovascular and metabolic disease. The narrative extends that link into a single unifying cause of chronic illness, then offers dietary patterns as the lever. Camps: clinicians promoting whole-food Mediterranean-style eating with reasonable evidence; wellness marketers selling supplements and elimination diets; and skeptics noting markers like CRP are nonspecific and food-level claims rarely survive trials.",
+    "expert": "Lifecycle: mature, highly commercialized, continually refreshed by microbiome and polyphenol research. Falsifiers: RCTs showing no clinical outcome benefit from specific 'anti-inflammatory' foods independent of overall diet quality; inconsistent CRP/IL-6 effects. Clocks: publication cycles for books/programs, seasonal 'reset' content. Incentives: content is evergreen, SEO-rich, and funnels to recipe books, coaching and supplement affiliates. Audit by checking whether claims cite outcome trials or only biomarker studies."
+  },
+  "origin": {
+    "type": "engine",
+    "first_video": "3vKJPPd6Vjs",
+    "created": "2026-09-14"
+  }
+}
