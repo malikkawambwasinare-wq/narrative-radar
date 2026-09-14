@@ -423,8 +423,10 @@
     padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
   .sf label { display: flex; flex-direction: column; gap: 3px; font-size: 10.5px; letter-spacing: .08em;
     text-transform: uppercase; color: var(--muted); }
-  .sf select { padding: 5px 8px; font: inherit; font-size: 13px; border: 1px solid var(--border);
+  .sf select, .sf input[type=search] { padding: 5px 8px; font: inherit; font-size: 13px; border: 1px solid var(--border);
     border-radius: 7px; background: var(--bg, transparent); color: var(--ink); letter-spacing: 0; text-transform: none; }
+  .sf select { max-width: 260px; }
+  .sf input[type=search] { width: 150px; }
   .sf label.chk { flex-direction: row; align-items: center; gap: 6px; padding-bottom: 6px; cursor: pointer; }
   .sf .grp { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
     width: 100%; margin-top: 4px; }
@@ -1589,20 +1591,39 @@ const basisMark = v => verdictBasis(v) === "transcript"
    itself exposes (pulled by scripts/enrich_youtube.py into each video's `yt`)
    or our own ledger. Nothing is deleted by a filter — hidden episodes fold. */
 const SF_KEY = "series-filters";
-const SF_DEFAULT = { minViews: 1000, category: "all", verified: false, minSubs: 0, minAge: 0,
-                     country: "all", from: "all", sort: "chrono", track: false };
+const SF_DEFAULT = { q: "", minViews: 1000, sort: "chrono", length: "all", basis: "all",
+                     category: "all", verified: false, minSubs: 0, minAge: 0, maxRate: 0, channel: "all",
+                     minEng: 0, breakout: false, aboveAvg: false,
+                     track: false, speaker: "all", claim: "all",
+                     country: "all", from: "all", to: "all", season: "all" };
 let SF = (() => { try { return { ...SF_DEFAULT, ...(JSON.parse(lsGet(SF_KEY)) || {}) }; } catch (e) { return { ...SF_DEFAULT }; } })();
 const fmtCount = n => n == null ? null : n >= 1e9 ? (n / 1e9).toFixed(1).replace(/\.0$/, "") + "B"
   : n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M" : n >= 1e3 ? (n / 1e3).toFixed(1).replace(/\.0$/, "") + "K" : String(n);
 const NEWS_CATEGORY = "News & Politics";
 const channelAgeYears = v => v.yt?.channelJoined ? (Date.now() - Date.parse(v.yt.channelJoined)) / 31557600000 : null;
+// Derived signals — ratios YouTube never shows but its own numbers give away.
+const engRatio = v => v.yt?.likes != null && viewsNum(v.views) > 0 ? v.yt.likes / viewsNum(v.views) : null;          // likes per view
+const outputRate = v => v.yt?.channelVideos && channelAgeYears(v) ? v.yt.channelVideos / Math.max(channelAgeYears(v), 0.1) : null; // videos per year
+const channelAvgViews = v => v.yt?.channelViews && v.yt?.channelVideos ? v.yt.channelViews / v.yt.channelVideos : null;
+const lengthMin = v => { const p = (v.length || "").split(":").map(Number); return p.length < 2 || p.some(isNaN) ? null : p.length === 3 ? p[0] * 60 + p[1] + p[2] / 60 : p[0] + p[1] / 60; };
+const isBreakout = v => v.yt?.subscribers != null && viewsNum(v.views) >= v.yt.subscribers;          // more views than the channel has subscribers
+const isAboveAvg = v => channelAvgViews(v) != null && viewsNum(v.views) >= channelAvgViews(v);        // beat the channel's own average
+const RATE_LABEL = r => r == null ? null : r >= 365 ? `${Math.round(r / 365)}+/day` : r >= 52 ? `${Math.round(r / 52)}/week` : r >= 12 ? `${Math.round(r / 12)}/month` : `${Math.round(r)}/year`;
 
-// Who speaks in a video, from the consolidated claims that cite it.
+// Who speaks in a video, and which consolidated claims cite it.
 function videoSpeakers(data) {
   const map = {};
   for (const c of data?.claims?.claims || []) {
     const srcs = c.sources || (c.camps || []).flatMap(k => k.sources || []);
     for (const s of srcs) if (s.predictor) (map[s.videoId] ||= new Set()).add(s.predictor);
+  }
+  return map;
+}
+function videoClaims(data) {
+  const map = {};
+  for (const c of data?.claims?.claims || []) {
+    const srcs = c.sources || (c.camps || []).flatMap(k => k.sources || []);
+    for (const s of srcs) (map[s.videoId] ||= new Set()).add(c.id);
   }
   return map;
 }
@@ -1638,43 +1659,77 @@ function ytTags(v, recs) {
   if (y.channelCountry) t.push(`<span>${esc(y.channelCountry)}</span>`);
   if (y.channelJoined) t.push(`<span>channel since ${y.channelJoined.slice(0, 4)}</span>`);
   if (y.likes != null) t.push(`<span>${fmtCount(y.likes)} likes</span>`);
+  const e = engRatio(v); if (e != null) t.push(`<span title="likes per view">${(e * 100).toFixed(1)}% engagement</span>`);
+  const r = outputRate(v); if (r != null) t.push(`<span title="channel output: videos per unit time since it joined">${RATE_LABEL(r)} output</span>`);
+  if (isBreakout(v)) t.push(`<span title="more views than the channel has subscribers">breakout</span>`);
+  if (isAboveAvg(v)) t.push(`<span title="beat the channel's own average views per video">above channel avg</span>`);
   if (y.regionsAvailable && y.regionsAvailable < 200) t.push(`<span>${y.regionsAvailable} regions</span>`);
-  for (const r of recs || []) t.push(recTag(r));
+  for (const rec of recs || []) t.push(recTag(rec));
   return t.length ? `<div class="yt-tags">${t.join("")}</div>` : "";
 }
-function seriesPass(x, recs) {
+function seriesPass(x, ctx) {
   const v = x.v, y = v.yt || {};
+  if (SF.q && !(v.title + " " + v.channel).toLowerCase().includes(SF.q.toLowerCase())) return false;
+  if (SF.length !== "all") { const m = lengthMin(v); if (m == null) return false;
+    if (SF.length === "short" && m >= 4) return false; if (SF.length === "mid" && (m < 4 || m > 20)) return false; if (SF.length === "long" && m <= 20) return false; }
+  if (SF.basis !== "all" && verdictBasis(v) !== SF.basis) return false;
   if (SF.category === "news" && y.category !== NEWS_CATEGORY) return false;
   if (SF.category !== "all" && SF.category !== "news" && y.category !== SF.category) return false;
   if (SF.verified && !y.verified) return false;
   if (SF.minSubs && !(y.subscribers >= SF.minSubs)) return false;
   if (SF.minAge && !(channelAgeYears(v) >= SF.minAge)) return false;
+  if (SF.maxRate && !(outputRate(v) != null && outputRate(v) <= SF.maxRate)) return false;
+  if (SF.channel !== "all" && v.channel !== SF.channel) return false;
+  if (SF.minEng && !(engRatio(v) >= SF.minEng)) return false;
+  if (SF.breakout && !isBreakout(v)) return false;
+  if (SF.aboveAvg && !isAboveAvg(v)) return false;
+  if (SF.track && !x.recs.length) return false;
+  if (SF.speaker !== "all" && ![...(x.speakers || [])].some(s => nameKey(s) === SF.speaker)) return false;
+  if (SF.claim !== "all" && !(x.claims || new Set()).has(SF.claim)) return false;
   if (SF.country !== "all" && (y.channelCountry || "unknown") !== SF.country) return false;
   if (SF.from !== "all" && !(x.t && new Date(x.t).getUTCFullYear() >= +SF.from)) return false;
-  if (SF.track && !recs.length) return false;
+  if (SF.to !== "all" && !(x.t && new Date(x.t).getUTCFullYear() <= +SF.to)) return false;
+  if (SF.season !== "all" && (ctx.seasonOf(x.t)?.i ?? -1) !== +SF.season) return false;
   return true;
 }
-function seriesFilterBar(keep) {
+function seriesFilterBar(keep, ctx) {
   const facet = f => [...new Set(keep.map(f).filter(Boolean))].sort();
-  const cats = facet(v => v.yt?.category), countries = facet(v => v.yt?.channelCountry);
+  const cats = facet(v => v.yt?.category), countries = facet(v => v.yt?.channelCountry), channels = facet(v => v.channel);
   const years = facet(v => { const t = publishedEst(v); return t ? new Date(t).getUTCFullYear() : null; });
+  const speakers = [...new Map(keep.flatMap(v => [...(ctx.speakers[v.videoId] || [])]).map(s => [nameKey(s), s.replace(/\(.*?\)/g, "").trim()])).entries()].sort((a, b) => a[1].localeCompare(b[1]));
+  const claims = ctx.claims.map(c => [c.id, c.statement.length > 70 ? c.statement.slice(0, 68) + "…" : c.statement]);
+  const seasons = ctx.muts.map((m, i) => [i, `S${i + 1} · ${m.label} — ${m.mechanism.length > 40 ? m.mechanism.slice(0, 38) + "…" : m.mechanism}`]);
   const enriched = keep.filter(v => v.yt).length;
   const opt = (val, label, cur) => `<option value="${esc(String(val))}" ${String(cur) === String(val) ? "selected" : ""}>${esc(label)}</option>`;
-  const sel = (key, label, opts) => `<label>${label}<select data-sf="${key}">${opts.map(([v, l]) => opt(v, l, SF[key])).join("")}</select></label>`;
+  const sel = (key, label, opts, title = "") => `<label title="${esc(title)}">${label}<select data-sf="${key}">${opts.map(([v, l]) => opt(v, l, SF[key])).join("")}</select></label>`;
   const chk = (key, label, title = "") => `<label class="chk" title="${esc(title)}"><input type="checkbox" data-sf="${key}" ${SF[key] ? "checked" : ""}>${label}</label>`;
   return `
-    <div class="grp">Reach</div>
+    <div class="grp">Reach &amp; form</div>
+    <label>Search<input type="search" data-sf="q" value="${esc(SF.q)}" placeholder="title or channel"></label>
     ${sel("minViews", "Views at least", [[0, "any"], [1000, "1K"], [10000, "10K"], [100000, "100K"], [1000000, "1M"]])}
+    ${sel("length", "Length", [["all", "any"], ["short", "under 4 min"], ["mid", "4–20 min"], ["long", "over 20 min"]])}
+    ${sel("basis", "Verdict basis", [["all", "any"], ["transcript", "transcript read"], ["metadata", "provisional only"]], "Whether our original/derivative verdict was made with the transcript on hand")}
     ${sel("sort", "Order", [["chrono", "as it happened"], ["views", "most viewed"], ["new", "newest first"]])}
-    <div class="grp">Who's talking</div>
+    <div class="grp">The channel</div>
     ${sel("category", "Channel type", [["all", "any"], ["news", "news outlets only"], ...cats.map(c => [c, c])])}
-    ${chk("verified", "verified channels", "YouTube's verified badge on the channel")}
+    ${chk("verified", "verified", "YouTube's verified badge on the channel")}
     ${sel("minSubs", "Subscribers at least", [[0, "any"], [10000, "10K"], [100000, "100K"], [1000000, "1M"]])}
     ${sel("minAge", "Channel age", [[0, "any"], [1, "1+ years"], [3, "3+ years"], [5, "5+ years"], [10, "10+ years"]])}
-    ${chk("track", "speaker has a ledger record", "Only videos whose speaker has dated, scored claims in the prediction ledger")}
+    ${sel("maxRate", "Output rate at most", [[0, "any"], [52, "1 a week"], [156, "3 a week"], [365, "1 a day"], [1095, "3 a day"]], "Videos per year since the channel joined — content farms post several a day")}
+    ${sel("channel", "Channel", [["all", "any"], ...channels.map(c => [c, c])])}
+    <div class="grp">How it landed</div>
+    ${sel("minEng", "Engagement at least", [[0, "any"], [0.01, "1% likes/views"], [0.02, "2%"], [0.03, "3%"], [0.05, "5%"]], "Likes divided by views — passive views vs an audience that reacted")}
+    ${chk("breakout", "breakout", "More views than the channel has subscribers — it travelled beyond its own audience")}
+    ${chk("aboveAvg", "above channel average", "Beat the channel's own average views per video")}
+    <div class="grp">The speaker &amp; the claim</div>
+    ${chk("track", "has a ledger record", "Only videos whose speaker has dated, scored claims in the prediction ledger")}
+    ${speakers.length ? sel("speaker", "Speaker", [["all", "any"], ...speakers]) : ""}
+    ${claims.length ? sel("claim", "Cited for claim", [["all", "any"], ...claims]) : ""}
     <div class="grp">Where &amp; when</div>
     ${sel("country", "Channel country", [["all", "any"], ...countries.map(c => [c, c]), ["unknown", "not stated"]])}
     ${sel("from", "From", [["all", "the beginning"], ...years.map(y => [y, String(y)])])}
+    ${sel("to", "To", [["all", "now"], ...years.map(y => [y, String(y)])])}
+    ${seasons.length ? sel("season", "Season", [["all", "any"], ...seasons]) : ""}
     <div class="showing" id="sf-showing"></div>
     ${enriched < keep.length ? `<div class="showing">${keep.length - enriched} of ${keep.length} videos have no YouTube signals yet — they fail the channel filters, and pass reach and date.</div>` : ""}`;
 }
@@ -1691,10 +1746,10 @@ function renderSeries() {
     $("series").innerHTML = `<div class="empty">No videos collected for this topic yet.</div>`;
     return;
   }
-  const speakers = videoSpeakers(data), records = speakerRecords(data);
+  const speakers = videoSpeakers(data), records = speakerRecords(data), vclaims = videoClaims(data);
   const recsOf = v => recordFor(v, speakers, records);
 
-  const dated = keep.map(v => ({ v, t: publishedEst(v), recs: recsOf(v) }))
+  const dated = keep.map(v => ({ v, t: publishedEst(v), recs: recsOf(v), speakers: speakers[v.videoId], claims: vclaims[v.videoId] }))
     .sort((a, b) => (a.t ?? 9e15) - (b.t ?? 9e15));
   const episodes = [], before = [];
   let cur = null;
@@ -1726,13 +1781,14 @@ function renderSeries() {
     <div class="honest">${prov === 0
       ? `All ${keep.length} verdicts here were made with the transcript on hand.`
       : `${reviewed} of ${keep.length} verdicts were made with the transcript on hand; <b>${prov}</b> ${prov === 1 ? "is" : "are"} provisional — inferred from title and channel, marked ◌, and queued for transcript review. A provisional "original" may yet turn out to be a repeat.`}</div>`;
+  const claims = data?.claims?.claims || [];
+  const ctx = { seasonOf, speakers, claims, muts };
   const bar = $("series-filters");
-  const sig = topicId + ":" + keep.length;
-  if (bar.dataset.sig !== sig) { bar.innerHTML = seriesFilterBar(keep); bar.dataset.sig = sig; }
+  const sig = topicId + ":" + keep.length + ":" + claims.length;
+  if (bar.dataset.sig !== sig) { bar.innerHTML = seriesFilterBar(keep, ctx); bar.dataset.sig = sig; }
 
   // When each consolidated claim first appeared on YouTube, from its cited videos.
   const byId = Object.fromEntries(vids.map(v => [v.videoId, v]));
-  const claims = data?.claims?.claims || [];
   const firsts = claims.map(c => {
     const srcs = c.sources || (c.camps || []).flatMap(k => k.sources || []);
     const ts = srcs.map(s => byId[s.videoId] ? publishedEst(byId[s.videoId]) : null).filter(Boolean);
@@ -1779,7 +1835,7 @@ function renderSeries() {
   // every other filter hides, and the hidden ones fold at the bottom — nothing is deleted.
   const minViews = +SF.minViews || 0;
   const isLow = ep => minViews > 0 && viewsNum(ep.v.views) < minViews;
-  const passes = ep => seriesPass(ep, ep.recs);
+  const passes = ep => seriesPass(ep, ctx);
   const order = [...episodes.map((ep, i) => ({ ep, i }))];
   if (SF.sort === "views") order.sort((a, b) => viewsNum(b.ep.v.views) - viewsNum(a.ep.v.views));
   if (SF.sort === "new") order.reverse();
@@ -1819,14 +1875,16 @@ function renderSeries() {
       ${changed ? `<button type="button" data-sf-reset>reset filters</button>` : ""}`;
   }
 }
-$("series-filters").addEventListener("change", e => {
+function onSeriesFilter(e) {
   const el = e.target.closest("[data-sf]"); if (!el) return;
   const key = el.dataset.sf;
-  SF[key] = el.type === "checkbox" ? el.checked : (isNaN(+el.value) || el.value === "" ? el.value : +el.value);
-  if (key === "from" && el.value === "all") SF.from = "all";
+  if (key === "q") SF.q = el.value.trim();
+  else SF[key] = el.type === "checkbox" ? el.checked : (isNaN(+el.value) || el.value === "" ? el.value : +el.value);
   lsSet(SF_KEY, JSON.stringify(SF));
   renderSeries();
-});
+}
+$("series-filters").addEventListener("change", onSeriesFilter);
+$("series-filters").addEventListener("input", e => { if (e.target.dataset.sf === "q") onSeriesFilter(e); });
 $("series-filters").addEventListener("click", e => {
   if (!e.target.closest("[data-sf-reset]")) return;
   SF = { ...SF_DEFAULT }; lsSet(SF_KEY, JSON.stringify(SF));
