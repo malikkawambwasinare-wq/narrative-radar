@@ -31,6 +31,22 @@
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Mainstream news segment restating familiar anti-inflammatory food advice; no new claim or evidence signaled in metadata.",
       "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "pUy_eUD1nFo",
+      "url": "https://www.youtube.com/watch?v=pUy_eUD1nFo",
+      "title": "Inflammatory Foods: What To Avoid",
+      "channel": "Talking With Docs",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "auto-buildout",
+      "age_days": null,
+      "first_seen": "2026-09-14",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Standard doctor-channel listicle of 'inflammatory foods to avoid' — familiar format within the anti-inflammatory diet genre.",
+      "verdict_basis": "metadata"
     }
   ]
 }
