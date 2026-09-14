@@ -142,6 +142,23 @@
       ],
       "watched_predictors": [],
       "notes": "Created by the analysis engine. Low-grade chronic inflammation, driven by modern diet and lifestyle, is the hidden cause of fatigue, pain and most chronic illness — and can be reversed by eating specific anti-inflammatory foods."
+    },
+    {
+      "id": "inflammation-is-the-root-of-all-disease",
+      "name": "Inflammation Is the Root of All Disease",
+      "industry": "Health & biotech",
+      "status": "active",
+      "started": "2026-09-14",
+      "trigger": "User-submitted video: 10 anti-inflammatory foods for more energy, less pain and better health (The Doctor's Kitchen)",
+      "queries": [
+        "anti-inflammatory foods",
+        "chronic inflammation root cause of disease",
+        "anti-inflammatory diet doctor",
+        "foods that reduce inflammation energy",
+        "inflammation and chronic pain diet"
+      ],
+      "watched_predictors": [],
+      "notes": "Created by the analysis engine. Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease — and eating specific 'anti-inflammatory' foods can reverse it."
     }
   ]
 }
