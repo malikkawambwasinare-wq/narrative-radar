@@ -1,0 +1,44 @@
+{
+  "note": "Consolidated claims: what the corpus consistently talks about. Sources are the analyzed videos that carry each claim. Updated on narrative refresh.",
+  "updated": "2026-09-14",
+  "fingerprints": [
+    "anti-inflammatory foods",
+    "chronic inflammation",
+    "foods to avoid"
+  ],
+  "claims": [
+    {
+      "id": "anti-inflammatory-diet-daily-foods",
+      "type": "consensus",
+      "statement": "Eating specific anti-inflammatory foods daily reduces chronic inflammation, improving energy, pain and long-term health.",
+      "note": "Recurring listicle framing across doctor and media channels; trackable via repeated food lists and 'foods to avoid' counterpart videos.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "3vKJPPd6Vjs",
+          "predictor": "The Doctor's Kitchen"
+        },
+        {
+          "videoId": "NF5gOX-VsFY",
+          "predictor": "Dr. Michael Ruscio, DC, DNM"
+        },
+        {
+          "videoId": "66VdylXI0nQ",
+          "predictor": "Downshiftology"
+        },
+        {
+          "videoId": "wjs2w7Cmkgw",
+          "predictor": "Healthline"
+        },
+        {
+          "videoId": "pUy_eUD1nFo",
+          "predictor": "Talking With Docs"
+        },
+        {
+          "videoId": "FGmF1pwCDSo",
+          "predictor": "ABC News"
+        }
+      ]
+    }
+  ]
+}
