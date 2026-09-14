@@ -15,6 +15,22 @@
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard listicle format of anti-inflammatory foods; common recurring wellness content, no novel claim signalled in metadata.",
       "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "FGmF1pwCDSo",
+      "url": "https://www.youtube.com/watch?v=FGmF1pwCDSo",
+      "title": "What are good anti-inflammatory foods?",
+      "channel": "ABC News",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "auto-buildout",
+      "age_days": null,
+      "first_seen": "2026-09-14",
+      "transcript": null,
+      "verdict": "DERIVATIVE",
+      "verdict_note": "[live analysis, metadata-only] Mainstream news segment restating familiar anti-inflammatory food advice; no new claim or evidence signaled in metadata.",
+      "verdict_basis": "metadata"
     }
   ]
 }
