@@ -1,0 +1,18 @@
+{
+  "name": "Inflammation Is the Root of All Disease",
+  "claim": "Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease — and eating specific 'anti-inflammatory' foods can reverse it.",
+  "predictor": "to be determined",
+  "born": "2004",
+  "born_note": "Estimate based on mid-2000s popular-science and diet-book framing of inflammation as universal disease driver; later amplified by YouTube doctors. (model estimate, pending audit)",
+  "mutations": [],
+  "explanations": {
+    "layman": "A popular health idea says hidden 'inflammation' inside your body is behind tiredness, aches and most illness — and that eating the right foods can calm it down. Doctors and creators publish endless food lists promising more energy and less pain. Some of it rests on real science; much of it is simplified into shopping lists that sell books, supplements and courses.",
+    "intermediate": "The narrative links chronic low-grade inflammation to obesity, heart disease, depression and pain, then proposes dietary correction: polyphenols, omega-3s, fibre, fewer ultra-processed foods. Camps: mainstream nutrition science (inflammation matters but is one factor among many, effects modest) versus wellness-media maximalism (inflammation is THE cause, food is the cure). The listicle format is the narrative's dominant delivery vehicle.",
+    "expert": "Lifecycle: mature and heavily commercialised. Clocks are weak — claims are chronic-condition framed, so rarely falsified in public. Falsifiers: RCTs showing biomarker changes (CRP, IL-6) without hard-outcome benefit; heterogeneity of dietary inflammatory indices. Incentives: cookbooks, supplement affiliates, clinic funnels. Watch for mutation into gut-microbiome and 'metabolic health' framings, which absorb the same audience."
+  },
+  "origin": {
+    "type": "engine",
+    "first_video": "3vKJPPd6Vjs",
+    "created": "2026-09-14"
+  }
+}
