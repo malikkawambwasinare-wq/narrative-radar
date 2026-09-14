@@ -14,7 +14,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/NKIcBUmI2e4.txt",
       "verdict": "RECYCLED",
       "verdict_note": "Re-cut Matt Hougan podcast clips stitched with AI-narrated summary segments and subscribe prompts; no new material from the channel itself.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCsi0hRegxPqhuzJI7fkXQGQ",
+        "handle": "@thebitcoinmindsetofficial",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 34,
+        "comments": null,
+        "subscribers": 6020,
+        "channelCountry": "United States",
+        "channelJoined": "2025-08-11",
+        "channelViews": 1509080,
+        "channelVideos": 816,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "ks2i176-se8",
@@ -22,7 +39,7 @@
       "title": "Phong Le, CEO of Strategy: \"STRC to $100 and MSTR in S&P 500!\" | GG Bitcoin Podcast",
       "channel": "Gary Gill  and Gary Gill",
       "published": "2026-08-06",
-      "views": "11,801 views",
+      "views": "11,807 views",
       "length": "1:59:45",
       "query": "bitcoin bear market institutional adoption",
       "age_days": 0.67,
@@ -30,7 +47,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/ks2i176-se8.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Two-hour primary-source interview (dated Aug 6 2026) with Strategy CEO Phong Le on STRC buybacks, credit rating, and cycle views; title slightly punches up his actual statements.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Entertainment",
+        "channelId": "UCvK3k6on330eg-8AkRPkAIA",
+        "handle": "@GaryGillX",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 416,
+        "comments": null,
+        "subscribers": 28800,
+        "channelCountry": "Canada",
+        "channelJoined": "2022-11-10",
+        "channelViews": 1864000,
+        "channelVideos": 229,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "SpxCqrzGDiA",
@@ -46,7 +80,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/SpxCqrzGDiA.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Live Crypto Banter interview where Ivan on Tech announces a fresh pivot from bearish to bullish with specific bottom/top timing and quantum-risk caveats.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCN9Nj4tjXbVTLYWN0EKly_Q",
+        "handle": "@CryptoBanterGroup",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 1133,
+        "comments": null,
+        "subscribers": 1180000,
+        "channelCountry": "United States",
+        "channelJoined": "2017-09-15",
+        "channelViews": 193958545,
+        "channelVideos": 5032,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "y9PN4mfk1hs",
@@ -62,7 +113,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/y9PN4mfk1hs.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Analyst's own read of CBBI sub-indicators and stablecoin flows, producing his own bottom-timing thesis; genuinely novel analysis for this cycle debate.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCfQaLLoJYaxg9ZNJVHCR9Lg",
+        "handle": "@BitcoinStrategy",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 122,
+        "comments": null,
+        "subscribers": 162000,
+        "channelCountry": "Hong Kong",
+        "channelJoined": "2021-03-04",
+        "channelViews": 18957466,
+        "channelVideos": 6270,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "xJyNgxAozQw",
@@ -78,7 +146,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/xJyNgxAozQw.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "Savvy Finance re-cuts Gareth Soloway's chart breakdown with narrator framing and added macro commentary; title's shock framing is inflated but the $71K/$35K content is delivered.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Education",
+        "channelId": "UClMW7w5LIPCr98Hw17GeiYQ",
+        "handle": "@SavvyFinanceOfficial",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 75,
+        "comments": null,
+        "subscribers": 344000,
+        "channelCountry": "United States",
+        "channelJoined": "2020-07-23",
+        "channelViews": 65334549,
+        "channelVideos": 2841,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "bs6yz79MneQ",
@@ -94,7 +179,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/bs6yz79MneQ.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "First-on-CNBC interview; Strategy CEO Phong Le makes new on-record claims about the bear cycle, forced-selling denial, and next year's bull cycle.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
+        "handle": "@CNBCtelevision",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 188,
+        "comments": null,
+        "subscribers": 3400000,
+        "channelCountry": "United States",
+        "channelJoined": "2018-05-29",
+        "channelViews": 2658480017,
+        "channelVideos": 158846,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "Hgikc09SCgM",
@@ -110,7 +212,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/Hgikc09SCgM.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Hype title but delivers exactly the promised content: creator's own PMI-55-line research crossing that day, with a stated falsifier date.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCnMku7J_UtwlcSfZlIuQ3Kw",
+        "handle": "@CryptoCapitalVenture",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 1014,
+        "comments": null,
+        "subscribers": 402000,
+        "channelCountry": "United States",
+        "channelJoined": "2017-12-05",
+        "channelViews": 65418351,
+        "channelVideos": 3009,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "eT9X6C7cCH4",
@@ -126,7 +245,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/eT9X6C7cCH4.txt",
       "verdict": "CLICKBAIT",
       "verdict_note": "AI-narrated repackage of a Saylor interview on structural/regulatory thesis; the promised '0.1 Bitcoin in 2026' advice and 'latest prediction' never appear — narrator admits it is not a price target.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Education",
+        "channelId": "UC1owqQFqzvOP5hEWBINpDWg",
+        "handle": "@TheCryptoNutshell",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 85,
+        "comments": null,
+        "subscribers": 87500,
+        "channelCountry": "Australia",
+        "channelJoined": "2023-12-27",
+        "channelViews": 9083599,
+        "channelVideos": 424,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "NRRCwlgEGU8",
@@ -142,7 +278,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/NRRCwlgEGU8.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "Dan Gambardello repackages the familiar 'last altseason window' thesis with his own ETH/SUI/ADA chart levels and a post-QT liquidity argument; heavily hedged.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCnMku7J_UtwlcSfZlIuQ3Kw",
+        "handle": "@CryptoCapitalVenture",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 702,
+        "comments": null,
+        "subscribers": 402000,
+        "channelCountry": "United States",
+        "channelJoined": "2017-12-05",
+        "channelViews": 65418351,
+        "channelVideos": 3009,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "tjLPE9h6BKg",
@@ -158,7 +311,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/tjLPE9h6BKg.txt",
       "verdict": "CLICKBAIT",
       "verdict_note": "Title promises a 2026 institutional prediction; content is generic AI-narrated compilation of long-dated $1M targets from ARK, Bernstein, VanEck with no 2026 call.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "People & Blogs",
+        "channelId": "UCeW29EnrGvtN738VKzgkIEA",
+        "handle": "@CryptoRadarCoin",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": null,
+        "comments": null,
+        "subscribers": 246,
+        "channelCountry": "Vietnam",
+        "channelJoined": "2026-06-15",
+        "channelViews": 59690,
+        "channelVideos": 148,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "XNuL97I8bvc",
@@ -174,7 +344,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/XNuL97I8bvc.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Fresh long-form guest session on Krown's channel: trader FibSwanny argues the 4-year cycle may be dead and the low is forming now, with new chart-derived levels.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCnwxzpFzZNtLH8NgTeAROFA",
+        "handle": "@ECKrown",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 958,
+        "comments": null,
+        "subscribers": 202000,
+        "channelCountry": "United States",
+        "channelJoined": "2016-08-30",
+        "channelViews": 49756807,
+        "channelVideos": 4113,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "Lu-sOTkVWDM",
@@ -182,7 +369,7 @@
       "title": "What Cryptos Could 10X in the Next Bitcoin Bull Market?",
       "channel": "Cointelegraph",
       "published": "2026-07-30",
-      "views": "56,409 views",
+      "views": "56,430 views",
       "length": "23:18",
       "query": "is the crypto bull cycle over",
       "age_days": 7,
@@ -190,7 +377,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/Lu-sOTkVWDM.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Cointelegraph interview with Bitwise CIO Matt Hougan laying out a fresh thesis: onchain-TradFi convergence plus tokenomics-driven value capture leads the next bull market.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCRqBu-grVX1p97WaX4d-OuQ",
+        "handle": "@cointelegraph",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 989,
+        "comments": null,
+        "subscribers": 238000,
+        "channelCountry": "United States",
+        "channelJoined": "2014-03-27",
+        "channelViews": 18458963,
+        "channelVideos": 1386,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "zv4icJOfB-w",
@@ -198,7 +402,7 @@
       "title": "Coinbase Q2 2026 Earnings AMA w/ Brian Armstrong & Alesia Haas",
       "channel": "Coinbase",
       "published": "2026-07-30",
-      "views": "5,344 views",
+      "views": "5,345 views",
       "length": "27:08",
       "query": "Brian Armstrong crypto outlook",
       "age_days": 7,
@@ -206,7 +410,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/zv4icJOfB-w.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Primary source: official Coinbase Q2 2026 earnings AMA with Brian Armstrong and Alesia Haas taking live analyst questions; fresh positions on regulation, USDC, Base.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCofTOFX4QuhT8OY-3-fFRFw",
+        "handle": "@Coinbase",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 78,
+        "comments": null,
+        "subscribers": 128000,
+        "channelCountry": "United States",
+        "channelJoined": "2018-10-31",
+        "channelViews": 150131124,
+        "channelVideos": 757,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "qTPGkVaukjo",
@@ -222,7 +443,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/qTPGkVaukjo.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "Crypto Nutshell narration wrapped around Milk Road Show clips of Bitwise's Hougan and Rasmussen; adds recap and Vanguard-hiring framing but no new claims of its own.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Education",
+        "channelId": "UC1owqQFqzvOP5hEWBINpDWg",
+        "handle": "@TheCryptoNutshell",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 346,
+        "comments": null,
+        "subscribers": 87500,
+        "channelCountry": "Australia",
+        "channelJoined": "2023-12-27",
+        "channelViews": 9083599,
+        "channelVideos": 424,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "wJBYU7xND00",
@@ -230,7 +468,7 @@
       "title": "Bringing Back The Bitcoin Bull Market | Cory Klippsten",
       "channel": "What Bitcoin Did",
       "published": "2026-07-27",
-      "views": "11,907 views",
+      "views": "11,908 views",
       "length": "1:09:52",
       "query": "bitcoin bear market institutional adoption",
       "age_days": 10,
@@ -238,7 +476,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/wJBYU7xND00.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Long-form What Bitcoin Did interview; Swan CEO Cory Klippsten gives fresh bottom-timing, floor levels, and a paper-hands institutional critique.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "People & Blogs",
+        "channelId": "UCtvg5cXLY_tHDJeBoRySBtg",
+        "handle": "@WhatBitcoinDidPod",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 395,
+        "comments": null,
+        "subscribers": 39200,
+        "channelCountry": "United States",
+        "channelJoined": "2021-06-24",
+        "channelViews": 5011409,
+        "channelVideos": 210,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "SkR1NO6N-8g",
@@ -246,7 +501,7 @@
       "title": "Raoul Pal: “The Real Bull Run Hasn’t Even Started Yet” [2026 Bitcoin & Crypto Prediction]",
       "channel": "Crypto Nutshell",
       "published": "2026-07-26",
-      "views": "8,597 views",
+      "views": "8,598 views",
       "length": "21:00",
       "query": "is the crypto bull cycle over",
       "age_days": 11,
@@ -254,7 +509,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/SkR1NO6N-8g.txt",
       "verdict": "CLICKBAIT",
       "verdict_note": "Titled as a Pal quote and 2026 prediction, but the quote never appears; AI-narrated repackage of Pal/Wood macro clips plus newsletter promotion.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Education",
+        "channelId": "UC1owqQFqzvOP5hEWBINpDWg",
+        "handle": "@TheCryptoNutshell",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 328,
+        "comments": null,
+        "subscribers": 87500,
+        "channelCountry": "Australia",
+        "channelJoined": "2023-12-27",
+        "channelViews": 9083599,
+        "channelVideos": 424,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "l0Ia0GNzciI",
@@ -262,7 +534,7 @@
       "title": "We've Had Crypto Bull Runs. We Haven't Had a Utility Bull Run",
       "channel": "Vandell Aljarrah",
       "published": "2026-07-20",
-      "views": "56,248 views",
+      "views": "56,249 views",
       "length": "15:15",
       "query": "is the crypto bull cycle over",
       "age_days": 14,
@@ -270,7 +542,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/l0Ia0GNzciI.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "First-person thesis essay arguing all past crypto bull runs were liquidity/speculation-driven and a true utility-driven bull market is still ahead; novel framing, no repackaged claims.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "Education",
+        "channelId": "UCYF1_oqJm6-dpQdHmS_Qidw",
+        "handle": "@Vandell33",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 2773,
+        "comments": null,
+        "subscribers": 62900,
+        "channelCountry": "United States",
+        "channelJoined": "2013-03-09",
+        "channelViews": 4234799,
+        "channelVideos": 632,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "CqX7sirvtO8",
@@ -286,7 +575,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/CqX7sirvtO8.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "Micro-channel interview with retail holder Sophie Satoshi; genuine primary-source conversation delivering the promised hodl/DCA bear-market survival advice, minimal analysis.",
-      "verdict_basis": "transcript"
+      "verdict_basis": "transcript",
+      "yt": {
+        "category": "People & Blogs",
+        "channelId": "UCarxhrJr__ngun-Q99-2Urw",
+        "handle": "@libertarianbtc",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 12,
+        "comments": null,
+        "subscribers": 379,
+        "channelCountry": "Hong Kong",
+        "channelJoined": "2025-08-27",
+        "channelViews": 48395,
+        "channelVideos": 354,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "HeFwIsrtgVQ",
@@ -294,7 +600,7 @@
       "title": "Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter",
       "channel": "New York Times Events",
       "published": "2025-12-03",
-      "views": "271,197 views",
+      "views": "271,202 views",
       "length": "34:35",
       "query": "user-submitted",
       "age_days": 247,
@@ -302,7 +608,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/HeFwIsrtgVQ.txt",
       "verdict": "ORIGINAL",
       "verdict_note": "[live analysis, metadata-only] Live conference interview with Coinbase's Armstrong and BlackRock's Fink; primary-source remarks rather than repackaged commentary.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCtZNqEGzfQ6jO4SXWz51bRw",
+        "handle": "@NewYorkTimesEvents",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 4005,
+        "comments": null,
+        "subscribers": 310000,
+        "channelCountry": "United States",
+        "channelJoined": "2012-01-09",
+        "channelViews": 69999702,
+        "channelVideos": 1861,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "0QyKqoWaF_U",
@@ -310,7 +633,7 @@
       "title": "The Hard TRUTH about Crypto in 2026. (You May Not Want to Hear This)",
       "channel": "No Bs Crypto",
       "published": "2026-07-19",
-      "views": "11,857 views",
+      "views": "11,858 views",
       "length": "14:47",
       "query": "user-submitted",
       "age_days": 19,
@@ -318,7 +641,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/0QyKqoWaF_U.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Generic 'hard truth about crypto in 2026' framing repackages the familiar bear-cycle vs. institutional-adoption debate; no distinct new claim visible in metadata.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Entertainment",
+        "channelId": "UCVcMN2cHlHw1Q7wkF2GR8SQ",
+        "handle": "@NoBsCryptoOfficial",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 1052,
+        "comments": null,
+        "subscribers": 158000,
+        "channelCountry": "United Arab Emirates",
+        "channelJoined": "2021-04-29",
+        "channelViews": 20962662,
+        "channelVideos": 1057,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "es5Dw6yDc8o",
@@ -334,7 +674,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/es5Dw6yDc8o.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard crypto-winter framing with duration-and-survival angle; no new evidence signaled in metadata.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "People & Blogs",
+        "channelId": "UC3XrYzguhYmYrfrbeB-ZytQ",
+        "handle": "@TokenlyVideo",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 2,
+        "comments": null,
+        "subscribers": 6,
+        "channelCountry": "United States",
+        "channelJoined": "2026-04-08",
+        "channelViews": 755,
+        "channelVideos": 18,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "kUN0WYN5DiI",
@@ -342,7 +699,7 @@
       "title": "Why the bitcoin sell-off may not be the start of a crypto winter",
       "channel": "Yahoo Finance",
       "published": "2025-12-01",
-      "views": "48,428 views",
+      "views": "48,429 views",
       "length": "7:05",
       "query": "user-submitted",
       "age_days": 249,
@@ -350,7 +707,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/kUN0WYN5DiI.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Mainstream finance segment restating the 'this time it's not a winter' argument around a bitcoin sell-off; standard commentary, no evident new data.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCEAZeUIeJs0IjQiqTCdVSIg",
+        "handle": "@YahooFinance",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 292,
+        "comments": null,
+        "subscribers": 1520000,
+        "channelCountry": "United States",
+        "channelJoined": "2018-06-29",
+        "channelViews": 545748893,
+        "channelVideos": 61381,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "Fh26EiaF3vA",
@@ -366,7 +740,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/Fh26EiaF3vA.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Skull-emoji '2026 Crypto Winter' framing restates the recurring bear-cycle claim; same channel already appears in this narrative's corpus.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCfQaLLoJYaxg9ZNJVHCR9Lg",
+        "handle": "@BitcoinStrategy",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 194,
+        "comments": null,
+        "subscribers": 162000,
+        "channelCountry": "Hong Kong",
+        "channelJoined": "2021-03-04",
+        "channelViews": 18957466,
+        "channelVideos": 6270,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "_Dy6Kgnhd60",
@@ -382,7 +773,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/_Dy6Kgnhd60.txt",
       "verdict": "CLICKBAIT",
       "verdict_note": "[live analysis, metadata-only] Aggregator channel repackaging Tom Lee interview clips as a 'NEW prediction'; same channel previously produced similar Saylor compilation flagged clickbait.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Education",
+        "channelId": "UC1owqQFqzvOP5hEWBINpDWg",
+        "handle": "@TheCryptoNutshell",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 164,
+        "comments": null,
+        "subscribers": 87500,
+        "channelCountry": "Australia",
+        "channelJoined": "2023-12-27",
+        "channelViews": 9083599,
+        "channelVideos": 424,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "kop3tiai4L4",
@@ -398,7 +806,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/kop3tiai4L4.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard CNBC interview clip with a founder repeating a bullish six-figure Bitcoin price target; familiar cycle-vs-institutions framing.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCF8HUTbUwPKh2Q-KpGOCVGw",
+        "handle": "@CNBCInternationalLive",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 496,
+        "comments": null,
+        "subscribers": 494000,
+        "channelCountry": "United Kingdom",
+        "channelJoined": "2017-07-24",
+        "channelViews": 183502391,
+        "channelVideos": 36326,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "tC_zAiK7mic",
@@ -414,7 +839,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/tC_zAiK7mic.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Mainstream outlet framing the standard winter-vs-correction debate with an analyst guest; format is routine market-desk commentary, not new analysis.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "News & Politics",
+        "channelId": "UCEAZeUIeJs0IjQiqTCdVSIg",
+        "handle": "@YahooFinance",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 133,
+        "comments": null,
+        "subscribers": 1520000,
+        "channelCountry": "United States",
+        "channelJoined": "2018-06-29",
+        "channelViews": 545748893,
+        "channelVideos": 61381,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "cX9YTedFCoo",
@@ -430,7 +872,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/cX9YTedFCoo.txt",
       "verdict": "CLICKBAIT",
       "verdict_note": "[live analysis, metadata-only] Same channel repackages Saylor quotes into a 'crypto winter / 2026 prediction' hook; quoted headline plus prediction framing signals recycled commentary.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Education",
+        "channelId": "UC1owqQFqzvOP5hEWBINpDWg",
+        "handle": "@TheCryptoNutshell",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 266,
+        "comments": null,
+        "subscribers": 87500,
+        "channelCountry": "Australia",
+        "channelJoined": "2023-12-27",
+        "channelViews": 9083599,
+        "channelVideos": 424,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "U302AbHoPhc",
@@ -446,7 +905,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/U302AbHoPhc.txt",
       "verdict": "CLICKBAIT",
       "verdict_note": "[live analysis, metadata-only] Specific 'prophecy' price target ($30k) with 2026 winter framing — unfalsifiable-until-later prediction packaging, typical of engagement-driven crypto channels.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Entertainment",
+        "channelId": "UC0NXbp2__0612jqT4xw4gfw",
+        "handle": "@WealthTransferTC",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 177,
+        "comments": null,
+        "subscribers": 26100,
+        "channelCountry": "United States",
+        "channelJoined": "2011-09-01",
+        "channelViews": 3682616,
+        "channelVideos": 893,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "1Y1R8mxl_aE",
@@ -454,7 +930,7 @@
       "title": "⚠ Bitcoin Cycles Suggust A Bottoms At $39K",
       "channel": "Gerhard - Bitcoin Strategy",
       "published": "2026-08-08",
-      "views": "3,514 views",
+      "views": "3,516 views",
       "length": "7:50",
       "query": "user-submitted",
       "age_days": 0,
@@ -462,7 +938,24 @@
       "transcript": "corpus/crypto-winter-watch/transcripts/1Y1R8mxl_aE.txt",
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Cycle-based bottom target ($39K) is standard on-chain/cycle analysis; same channel already sampled asking 'Are We Near A Bitcoin Bottom?'",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCfQaLLoJYaxg9ZNJVHCR9Lg",
+        "handle": "@BitcoinStrategy",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 164,
+        "comments": null,
+        "subscribers": 162000,
+        "channelCountry": "Hong Kong",
+        "channelJoined": "2021-03-04",
+        "channelViews": 18957466,
+        "channelVideos": 6270,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "1SrK7p_8gVc",
@@ -478,7 +971,24 @@
       "transcript": null,
       "verdict": "ORIGINAL",
       "verdict_note": "[live analysis, metadata-only] Long-form guest interview with a known trader debating cycle top; likely fresh discussion, not repackaged clips.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Entertainment",
+        "channelId": "UCC7wmPT1SxevZdETxSO6m8A",
+        "handle": "@RektRadio1",
+        "verified": false,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 61,
+        "comments": null,
+        "subscribers": 2070,
+        "channelCountry": null,
+        "channelJoined": "2023-10-09",
+        "channelViews": 80470,
+        "channelVideos": 103,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "0BGfoVrtZao",
@@ -494,7 +1004,24 @@
       "transcript": null,
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Repackaged Raoul Pal interview clip with a 90-day countdown hook; channel routinely recycles pundit macro calls for crypto.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Education",
+        "channelId": "UClMW7w5LIPCr98Hw17GeiYQ",
+        "handle": "@SavvyFinanceOfficial",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 103,
+        "comments": null,
+        "subscribers": 344000,
+        "channelCountry": "United States",
+        "channelJoined": "2020-07-23",
+        "channelViews": 65334549,
+        "channelVideos": 2841,
+        "enrichedOn": "2026-09-13"
+      }
     },
     {
       "videoId": "yMalBuLO4cE",
@@ -502,7 +1029,7 @@
       "title": "The Biggest Crypto Bull Run In History Is Coming Soon (Here's How To Prepare) - And Avoid Mistakes!",
       "channel": "Crypto Casey",
       "published": "2026-06-07",
-      "views": "46,157 views",
+      "views": "46,179 views",
       "length": "12:33",
       "query": "user-submitted",
       "age_days": 62,
@@ -510,7 +1037,24 @@
       "transcript": null,
       "verdict": "DERIVATIVE",
       "verdict_note": "[live analysis, metadata-only] Standard 'biggest bull run ever is coming' cycle-prep video; framing and title formula recur across crypto channels.",
-      "verdict_basis": "metadata"
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "Science & Technology",
+        "channelId": "UCi7RBPfTtRkVchV6qO8PUzg",
+        "handle": "@CryptoCasey",
+        "verified": true,
+        "unlisted": false,
+        "familySafe": true,
+        "regionsAvailable": 249,
+        "likes": 6259,
+        "comments": null,
+        "subscribers": 676000,
+        "channelCountry": "United States",
+        "channelJoined": "2017-06-06",
+        "channelViews": 40383996,
+        "channelVideos": 947,
+        "enrichedOn": "2026-09-13"
+      }
     }
   ]
 }

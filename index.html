@@ -418,6 +418,31 @@
   details.lowreach { margin-top: 26px; padding-top: 14px; border-top: 1px solid var(--hairline); }
   details.lowreach > summary b { color: var(--ink); letter-spacing: 0; text-transform: none; font-size: 13px; }
   details.lowreach .entry { margin-top: 12px; }
+  /* Series filter bar — every control is a YouTube-sourced signal the viewer sets */
+  .sf { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: end; margin: 0 0 16px;
+    padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
+  .sf label { display: flex; flex-direction: column; gap: 3px; font-size: 10.5px; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--muted); }
+  .sf select { padding: 5px 8px; font: inherit; font-size: 13px; border: 1px solid var(--border);
+    border-radius: 7px; background: var(--bg, transparent); color: var(--ink); letter-spacing: 0; text-transform: none; }
+  .sf label.chk { flex-direction: row; align-items: center; gap: 6px; padding-bottom: 6px; cursor: pointer; }
+  .sf .grp { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+    width: 100%; margin-top: 4px; }
+  .sf .grp:first-child { margin-top: 0; }
+  .sf .showing { width: 100%; display: flex; gap: 12px; align-items: baseline; font-size: 12.5px;
+    color: var(--ink-2); margin-top: 6px; }
+  .sf .showing button { font: inherit; font-size: 12px; background: none; border: 0; color: var(--accent);
+    cursor: pointer; padding: 0; }
+  .yt-tags { display: flex; flex-wrap: wrap; gap: 4px 6px; margin-top: 6px; }
+  .yt-tags span { font-size: 11px; padding: 2px 7px; border-radius: 999px; background: var(--hairline);
+    color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .yt-tags .ver { color: var(--ok, #2F6B45); background: rgba(47,107,69,.1); }
+  .yt-tags .rec { color: var(--ink); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .yt-tags .rec.bad { color: var(--bad, #A23B2A); background: rgba(162,59,42,.1); }
+  details.prologue { margin: 0 0 14px; padding: 0; border: 0; }
+  details.prologue .season { margin: 8px 0 4px; }
+  details.prologue .mut { font-size: 13px; color: var(--ink-2); padding: 3px 0 3px 12px; border-left: 2px solid var(--hairline); }
+  details.prologue .mut b { color: var(--ink); font-weight: 500; font-variant-numeric: tabular-nums; margin-right: 8px; }
   .vid-body { display: grid; grid-template-columns: 136px 1fr; gap: 12px; align-items: start; }
   .vid-body .thumb { width: 136px; }
   @media (max-width: 600px) {
@@ -676,6 +701,7 @@
 
   <section id="view-series" hidden>
     <div class="series-head" id="series-head"></div>
+    <div class="sf" id="series-filters"></div>
     <div id="series-firsts"></div>
     <div id="series"></div>
   </section>
@@ -1554,10 +1580,104 @@ function verdictBasis(v) {
 const thumb = (v, cls = "") => `<a class="thumbwrap ${cls}" href="${esc(v.url)}" target="_blank" rel="noopener" tabindex="-1">
   <img class="thumb ${cls}" loading="lazy" decoding="async" alt="" src="https://i.ytimg.com/vi/${esc(v.videoId)}/mqdefault.jpg">
   ${v.length ? `<span class="dur">${esc(v.length)}</span>` : ""}</a>`;
-const LOW_REACH = 1000;   // episodes under this many views are folded away, not deleted
 const basisMark = v => verdictBasis(v) === "transcript"
   ? `<span class="basis ok" title="Verdict made with the transcript on hand">✓ read</span>`
   : `<span class="basis prov" title="Verdict inferred from title and channel only — queued for transcript review">◌ provisional</span>`;
+
+/* ---------- Series filters ----------
+   The viewer decides what is relevant. Every control here is a signal YouTube
+   itself exposes (pulled by scripts/enrich_youtube.py into each video's `yt`)
+   or our own ledger. Nothing is deleted by a filter — hidden episodes fold. */
+const SF_KEY = "series-filters";
+const SF_DEFAULT = { minViews: 1000, category: "all", verified: false, minSubs: 0, minAge: 0,
+                     country: "all", from: "all", sort: "chrono", track: false };
+let SF = (() => { try { return { ...SF_DEFAULT, ...(JSON.parse(lsGet(SF_KEY)) || {}) }; } catch (e) { return { ...SF_DEFAULT }; } })();
+const fmtCount = n => n == null ? null : n >= 1e9 ? (n / 1e9).toFixed(1).replace(/\.0$/, "") + "B"
+  : n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M" : n >= 1e3 ? (n / 1e3).toFixed(1).replace(/\.0$/, "") + "K" : String(n);
+const NEWS_CATEGORY = "News & Politics";
+const channelAgeYears = v => v.yt?.channelJoined ? (Date.now() - Date.parse(v.yt.channelJoined)) / 31557600000 : null;
+
+// Who speaks in a video, from the consolidated claims that cite it.
+function videoSpeakers(data) {
+  const map = {};
+  for (const c of data?.claims?.claims || []) {
+    const srcs = c.sources || (c.camps || []).flatMap(k => k.sources || []);
+    for (const s of srcs) if (s.predictor) (map[s.videoId] ||= new Set()).add(s.predictor);
+  }
+  return map;
+}
+const nameKey = s => (s || "").replace(/\(.*?\)/g, "").replace(/re-cut|clip/ig, "").trim().toLowerCase();
+// The ledger's track record per speaker: how their dated claims actually resolved.
+function speakerRecords(data) {
+  const p = data?.predictions; if (!p) return {};
+  const rec = {};
+  for (const e of p.entries || []) {
+    const name = e.predictor || p.predictor; if (!name) continue;
+    const r = (rec[nameKey(name)] ||= { name: name.replace(/\(.*?\)/g, "").trim(), sup: 0, ref: 0, amb: 0, upd: 0, open: 0 });
+    ({ SUPPORTED: () => r.sup++, REFUTED: () => r.ref++, AMBIGUOUS: () => r.amb++, UPDATED: () => r.upd++ }[e.status] || (() => r.open++))();
+  }
+  return rec;
+}
+function recordFor(v, speakers, records) {
+  const out = [];
+  for (const s of speakers[v.videoId] || []) { const r = records[nameKey(s)]; if (r && !out.includes(r)) out.push(r); }
+  return out;
+}
+const recTag = r => {
+  const scored = r.sup + r.ref + r.amb;
+  const bad = r.ref + r.upd > r.sup;
+  return `<span class="rec ${bad ? "bad" : ""}" title="From the prediction ledger: ${scored} scored, ${r.upd} goalpost moves, ${r.open} still open">
+    ${esc(r.name)} · ${r.sup} held / ${r.ref} refuted / ${r.upd} moved</span>`;
+};
+// The signal strip on a card: what YouTube says about the channel and the video.
+function ytTags(v, recs) {
+  const y = v.yt || {}, t = [];
+  if (y.category) t.push(`<span>${esc(y.category)}</span>`);
+  if (y.verified) t.push(`<span class="ver">✓ verified</span>`);
+  if (y.subscribers != null) t.push(`<span>${fmtCount(y.subscribers)} subs</span>`);
+  if (y.channelCountry) t.push(`<span>${esc(y.channelCountry)}</span>`);
+  if (y.channelJoined) t.push(`<span>channel since ${y.channelJoined.slice(0, 4)}</span>`);
+  if (y.likes != null) t.push(`<span>${fmtCount(y.likes)} likes</span>`);
+  if (y.regionsAvailable && y.regionsAvailable < 200) t.push(`<span>${y.regionsAvailable} regions</span>`);
+  for (const r of recs || []) t.push(recTag(r));
+  return t.length ? `<div class="yt-tags">${t.join("")}</div>` : "";
+}
+function seriesPass(x, recs) {
+  const v = x.v, y = v.yt || {};
+  if (SF.category === "news" && y.category !== NEWS_CATEGORY) return false;
+  if (SF.category !== "all" && SF.category !== "news" && y.category !== SF.category) return false;
+  if (SF.verified && !y.verified) return false;
+  if (SF.minSubs && !(y.subscribers >= SF.minSubs)) return false;
+  if (SF.minAge && !(channelAgeYears(v) >= SF.minAge)) return false;
+  if (SF.country !== "all" && (y.channelCountry || "unknown") !== SF.country) return false;
+  if (SF.from !== "all" && !(x.t && new Date(x.t).getUTCFullYear() >= +SF.from)) return false;
+  if (SF.track && !recs.length) return false;
+  return true;
+}
+function seriesFilterBar(keep) {
+  const facet = f => [...new Set(keep.map(f).filter(Boolean))].sort();
+  const cats = facet(v => v.yt?.category), countries = facet(v => v.yt?.channelCountry);
+  const years = facet(v => { const t = publishedEst(v); return t ? new Date(t).getUTCFullYear() : null; });
+  const enriched = keep.filter(v => v.yt).length;
+  const opt = (val, label, cur) => `<option value="${esc(String(val))}" ${String(cur) === String(val) ? "selected" : ""}>${esc(label)}</option>`;
+  const sel = (key, label, opts) => `<label>${label}<select data-sf="${key}">${opts.map(([v, l]) => opt(v, l, SF[key])).join("")}</select></label>`;
+  const chk = (key, label, title = "") => `<label class="chk" title="${esc(title)}"><input type="checkbox" data-sf="${key}" ${SF[key] ? "checked" : ""}>${label}</label>`;
+  return `
+    <div class="grp">Reach</div>
+    ${sel("minViews", "Views at least", [[0, "any"], [1000, "1K"], [10000, "10K"], [100000, "100K"], [1000000, "1M"]])}
+    ${sel("sort", "Order", [["chrono", "as it happened"], ["views", "most viewed"], ["new", "newest first"]])}
+    <div class="grp">Who's talking</div>
+    ${sel("category", "Channel type", [["all", "any"], ["news", "news outlets only"], ...cats.map(c => [c, c])])}
+    ${chk("verified", "verified channels", "YouTube's verified badge on the channel")}
+    ${sel("minSubs", "Subscribers at least", [[0, "any"], [10000, "10K"], [100000, "100K"], [1000000, "1M"]])}
+    ${sel("minAge", "Channel age", [[0, "any"], [1, "1+ years"], [3, "3+ years"], [5, "5+ years"], [10, "10+ years"]])}
+    ${chk("track", "speaker has a ledger record", "Only videos whose speaker has dated, scored claims in the prediction ledger")}
+    <div class="grp">Where &amp; when</div>
+    ${sel("country", "Channel country", [["all", "any"], ...countries.map(c => [c, c]), ["unknown", "not stated"]])}
+    ${sel("from", "From", [["all", "the beginning"], ...years.map(y => [y, String(y)])])}
+    <div class="showing" id="sf-showing"></div>
+    ${enriched < keep.length ? `<div class="showing">${keep.length - enriched} of ${keep.length} videos have no YouTube signals yet — they fail the channel filters, and pass reach and date.</div>` : ""}`;
+}
 
 function renderSeries() {
   const data = cache[topicId];
@@ -1567,12 +1687,14 @@ function renderSeries() {
   const dropped = vids.length - keep.length;
   $("c-series").textContent = keep.length ? `(${keep.length})` : "";
   if (!vids.length) {
-    $("series-head").innerHTML = ""; $("series-firsts").innerHTML = "";
+    $("series-head").innerHTML = ""; $("series-firsts").innerHTML = ""; $("series-filters").innerHTML = "";
     $("series").innerHTML = `<div class="empty">No videos collected for this topic yet.</div>`;
     return;
   }
+  const speakers = videoSpeakers(data), records = speakerRecords(data);
+  const recsOf = v => recordFor(v, speakers, records);
 
-  const dated = keep.map(v => ({ v, t: publishedEst(v) }))
+  const dated = keep.map(v => ({ v, t: publishedEst(v), recs: recsOf(v) }))
     .sort((a, b) => (a.t ?? 9e15) - (b.t ?? 9e15));
   const episodes = [], before = [];
   let cur = null;
@@ -1585,13 +1707,16 @@ function renderSeries() {
   const prov = keep.length - reviewed;
 
   // Seasons: the narrative's mechanism mutations, by year.
-  const muts = (n.mutations || [])
-    .map(m => ({ year: +((m.date || "").match(/\d{4}/) || [])[0] || null, mechanism: m.mechanism }))
-    .filter(m => m.year);
+  // A mutation dated "Feb 2026" starts its season that month; "2021–22" or "2015" on Jan 1.
+  const MONTHS = "jan feb mar apr may jun jul aug sep oct nov dec".split(" ");
+  const muts = (n.mutations || []).map(m => {
+    const d = m.date || "", year = +((d.match(/\d{4}/) || [])[0]);
+    const mo = MONTHS.indexOf((d.match(/[A-Za-z]{3}/) || [""])[0].toLowerCase());
+    return { year, t0: year ? Date.UTC(year, mo < 0 ? 0 : mo, 1) : null, label: d, mechanism: m.mechanism };
+  }).filter(m => m.t0);
   const seasonOf = t => {
     if (!t) return null;
-    const y = new Date(t).getUTCFullYear();
-    let s = null; muts.forEach((m, i) => { if (m.year <= y) s = { i, ...m }; });
+    let s = null; muts.forEach((m, i) => { if (m.t0 <= t) s = { i, ...m }; });
     return s;
   };
 
@@ -1601,6 +1726,9 @@ function renderSeries() {
     <div class="honest">${prov === 0
       ? `All ${keep.length} verdicts here were made with the transcript on hand.`
       : `${reviewed} of ${keep.length} verdicts were made with the transcript on hand; <b>${prov}</b> ${prov === 1 ? "is" : "are"} provisional — inferred from title and channel, marked ◌, and queued for transcript review. A provisional "original" may yet turn out to be a repeat.`}</div>`;
+  const bar = $("series-filters");
+  const sig = topicId + ":" + keep.length;
+  if (bar.dataset.sig !== sig) { bar.innerHTML = seriesFilterBar(keep); bar.dataset.sig = sig; }
 
   // When each consolidated claim first appeared on YouTube, from its cited videos.
   const byId = Object.fromEntries(vids.map(v => [v.videoId, v]));
@@ -1621,9 +1749,10 @@ function renderSeries() {
   const angleRow = a => `<div class="angle">
       ${thumb(a.v, "sm")}
       <span><a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
-        <span class="when">${esc(a.v.channel)}${a.v.views ? ` · ${esc(a.v.views)}` : ""} · ${a.t ? isoDate(a.t) : "—"}</span> ${basisMark(a.v)}</span>
+        <span class="when">${esc(a.v.channel)}${a.v.views ? ` · ${esc(a.v.views)}` : ""} · ${a.t ? isoDate(a.t) : "—"}</span> ${basisMark(a.v)}
+        ${ytTags(a.v, a.recs)}</span>
     </div>`;
-  const item = (x, i, ep) => `
+  const item = (x, i, ep, shown) => `
     <div class="entry">
       <div class="node" style="background:${(VERDICTS[x.v.verdict] || VERDICTS.UNREVIEWED).color}"></div>
       <div class="card" id="ep-${esc(x.v.videoId)}">
@@ -1637,34 +1766,72 @@ function renderSeries() {
             </div>
             <div class="e-claim"><a href="${esc(x.v.url)}" target="_blank" rel="noopener">${esc(x.v.title)}</a></div>
             <div class="e-horizon">${esc(x.v.channel)}${x.v.views ? ` · ${esc(x.v.views)}` : ""}</div>
+            ${ytTags(x.v, x.recs)}
             ${x.v.verdict_note ? `<div class="e-note">${esc(x.v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}
           </div>
         </div>
-        ${ep.angles.length ? `<details class="angles"><summary>${ep.angles.length} other angle${ep.angles.length === 1 ? "" : "s"} on this</summary>
-          ${ep.angles.map(angleRow).join("")}</details>` : ""}
+        ${ep.angles.length ? `<details class="angles"><summary>${shown.length} other angle${shown.length === 1 ? "" : "s"} on this${shown.length < ep.angles.length ? ` <b>· ${ep.angles.length - shown.length} hidden by your filters</b>` : ""}</summary>
+          ${shown.map(angleRow).join("")}</details>` : ""}
       </div>
     </div>`;
 
-  // Low-reach episodes stay episodes — they keep their number and their angles —
-  // but fold away so the series reads as the videos people actually watched.
-  const isLow = ep => viewsNum(ep.v.views) > 0 && viewsNum(ep.v.views) < LOW_REACH;
-  let html = "", lastSeason = -1, low = "";
-  episodes.forEach((ep, i) => {
-    if (isLow(ep)) { low += item(ep, i, ep); return; }
-    const s = seasonOf(ep.t);
+  // Apply the viewer's filters. Reach folds (the episode keeps its number);
+  // every other filter hides, and the hidden ones fold at the bottom — nothing is deleted.
+  const minViews = +SF.minViews || 0;
+  const isLow = ep => minViews > 0 && viewsNum(ep.v.views) < minViews;
+  const passes = ep => seriesPass(ep, ep.recs);
+  const order = [...episodes.map((ep, i) => ({ ep, i }))];
+  if (SF.sort === "views") order.sort((a, b) => viewsNum(b.ep.v.views) - viewsNum(a.ep.v.views));
+  if (SF.sort === "new") order.reverse();
+  let html = "", lastSeason = -1, low = "", hid = "", lowCount = 0, hidCount = 0, shownCount = 0;
+
+  // Seasons the narrative went through before any video in this corpus.
+  const firstS = SF.sort === "chrono" && episodes.length ? seasonOf(episodes.find(e => e.t)?.t) : null;
+  if (firstS && firstS.i > 0) {
+    const early = muts.slice(0, firstS.i);
+    html += `<details class="lowreach prologue"><summary>Seasons 1–${firstS.i} · ${esc(early[0].label)} – ${esc(early[early.length - 1].label)}
+        <b>before this corpus — how the story mutated before YouTube picked it up</b></summary>
+      ${early.map((m, i) => `<div class="mut"><b>Season ${i + 1} · ${esc(m.label)}</b>${esc(m.mechanism)}</div>`).join("")}</details>`;
+  }
+  for (const { ep, i } of order) {
+    const shown = ep.angles.filter(passes);
+    if (!passes(ep)) { hid += item(ep, i, ep, shown); hidCount++; continue; }
+    if (isLow(ep)) { low += item(ep, i, ep, shown); lowCount++; continue; }
+    const s = SF.sort === "chrono" ? seasonOf(ep.t) : null;
     if (s && s.i !== lastSeason) {
-      html += `<div class="season">Season ${s.i + 1} · ${s.year} <b>${esc(s.mechanism)}</b></div>`;
+      html += `<div class="season">Season ${s.i + 1} · ${esc(s.label)} <b>${esc(s.mechanism)}</b></div>`;
       lastSeason = s.i;
     }
-    html += item(ep, i, ep);
-  });
-  const lowCount = episodes.filter(isLow).length;
+    html += item(ep, i, ep, shown); shownCount++;
+  }
   if (lowCount) html += `<details class="lowreach"><summary>${lowCount} low-reach episode${lowCount === 1 ? "" : "s"}
-      <b>original material under ${LOW_REACH.toLocaleString()} views — kept, folded</b></summary>${low}</details>`;
-  if (before.length) html += `<details class="lowreach"><summary>${before.length} commentary video${before.length === 1 ? "" : "s"} before the first original
-      <b>no episode to attach to</b></summary>${before.map(angleRow).join("")}</details>`;
+      <b>original material under ${minViews.toLocaleString()} views — kept, folded</b></summary>${low}</details>`;
+  if (hidCount) html += `<details class="lowreach"><summary>${hidCount} episode${hidCount === 1 ? "" : "s"} hidden by your filters
+      <b>kept, folded</b></summary>${hid}</details>`;
+  const beforeShown = before.filter(passes);
+  if (beforeShown.length) html += `<details class="lowreach"><summary>${beforeShown.length} commentary video${beforeShown.length === 1 ? "" : "s"} before the first original
+      <b>no episode to attach to</b></summary>${beforeShown.map(angleRow).join("")}</details>`;
   $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
+  const showing = $("sf-showing");
+  if (showing) {
+    const changed = Object.keys(SF_DEFAULT).some(k => String(SF[k]) !== String(SF_DEFAULT[k]));
+    showing.innerHTML = `<span>Showing <b>${shownCount}</b> of ${episodes.length} episodes${lowCount ? ` · ${lowCount} folded for reach` : ""}${hidCount ? ` · ${hidCount} hidden` : ""}</span>
+      ${changed ? `<button type="button" data-sf-reset>reset filters</button>` : ""}`;
+  }
 }
+$("series-filters").addEventListener("change", e => {
+  const el = e.target.closest("[data-sf]"); if (!el) return;
+  const key = el.dataset.sf;
+  SF[key] = el.type === "checkbox" ? el.checked : (isNaN(+el.value) || el.value === "" ? el.value : +el.value);
+  if (key === "from" && el.value === "all") SF.from = "all";
+  lsSet(SF_KEY, JSON.stringify(SF));
+  renderSeries();
+});
+$("series-filters").addEventListener("click", e => {
+  if (!e.target.closest("[data-sf-reset]")) return;
+  SF = { ...SF_DEFAULT }; lsSet(SF_KEY, JSON.stringify(SF));
+  $("series-filters").dataset.sig = ""; renderSeries();
+});
 
 /* ---------- ledger view ---------- */
 function renderLedger() {
