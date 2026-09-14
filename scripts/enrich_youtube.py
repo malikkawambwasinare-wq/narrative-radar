@@ -20,8 +20,8 @@ Storage rule
 
 What it writes (per video, under "yt")
   category, channelId, handle, verified, unlisted, familySafe, regionsAvailable,
-  likes, comments, subscribers, channelCountry, channelJoined, channelViews,
-  channelVideos, enrichedOn
+  likes, comments, subscribers, paidPromotion, live, chapters, captions, language,
+  channelCountry, channelJoined, channelViews, channelVideos, enrichedOn
 """
 import json, re, sys, time, urllib.request
 from pathlib import Path
@@ -33,6 +33,8 @@ ONLY = [a for a in sys.argv[1:] if not a.startswith("--")]
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 PAUSE = 1.2   # seconds between page fetches; polite, and well under YouTube's tolerance
+# Fields added after the first run; a video missing any of them is re-pulled (video page only).
+NEW_FIELDS = ("paidPromotion", "live", "chapters", "captions", "language", "comments")
 
 
 def fetch(url):
@@ -96,11 +98,31 @@ def video_signals(video_id):
         if isinstance(s, str) and "like this video" in s:
             likes = to_int(re.search(r"([\d,]+) other people", s).group(1)) if "other people" in s else None
             break
+    # Comments are not in the page; they come from one POST to the same endpoint
+    # the page itself calls to load them. Count only — no comment text is kept.
     comments = None
-    for c in walk(d, "commentCount", []):
-        comments = to_int(text(c))
-        if comments is not None:
-            break
+    try:
+        secs = [s for s in walk(d, "itemSectionRenderer", []) if s.get("sectionIdentifier") == "comment-item-section"]
+        tok = walk(secs, "token", [])
+        key = re.search(r'"INNERTUBE_API_KEY":"([^"]+)"', html)
+        ver = re.search(r'"INNERTUBE_CLIENT_VERSION":"([^"]+)"', html)
+        if tok and key and ver:
+            body = json.dumps({"context": {"client": {"clientName": "WEB", "clientVersion": ver.group(1), "hl": "en", "gl": "US"}},
+                               "continuation": tok[0]}).encode()
+            req = urllib.request.Request(f"https://www.youtube.com/youtubei/v1/next?key={key.group(1)}&prettyPrint=false", data=body,
+                                         headers={"Content-Type": "application/json", "User-Agent": UA,
+                                                  "X-Youtube-Client-Name": "1", "X-Youtube-Client-Version": ver.group(1)})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                nxt = json.loads(r.read())
+            for hdr in walk(nxt, "commentsHeaderRenderer", []):
+                comments = to_int(text(hdr.get("countText")))
+                if comments is not None:
+                    break
+    except Exception:
+        pass
+    tracks = (walk(pr, "captionTracks", []) or [[]])[0]
+    manual = [t for t in tracks if t.get("kind") != "asr"]
+    lang = (walk(pr, "defaultAudioLanguage", []) or [None])[0] or (tracks[0].get("languageCode") if tracks else None)
     out = {
         "category": mf.get("category"),
         "channelId": vd.get("channelId"),
@@ -112,6 +134,11 @@ def video_signals(video_id):
         "likes": likes,
         "comments": comments,
         "subscribers": to_int(text(owner.get("subscriberCountText"))),
+        "paidPromotion": bool(walk(pr, "paidContentOverlayRenderer", [])),   # "Includes paid promotion" disclosure
+        "live": bool(vd.get("isLiveContent")),                                # was a live stream, not a produced upload
+        "chapters": len(walk(d, "macroMarkersListItemRenderer", [])) // 2 or None,   # listed twice in the page (panel + bar)
+        "captions": "manual" if manual else ("auto" if tracks else None),   # creator-uploaded vs speech-to-text vs none
+        "language": (lang or "").split("-")[0] or None,
     }
     # Fresh view count and publish date come along for free; keep them current.
     if vd.get("viewCount", "").isdigit():
@@ -152,7 +179,9 @@ def main():
         data = json.loads(f.read_text())
         print(f"\n{t.name}")
         for v in data["videos"]:
-            if v.get("yt") and not REFRESH:
+            have = v.get("yt") or {}
+            # Already enriched with the current field set → skip unless --refresh.
+            if have and not REFRESH and all(k in have for k in NEW_FIELDS):
                 continue
             try:
                 sig = video_signals(v["videoId"])
@@ -160,6 +189,12 @@ def main():
             except Exception as e:
                 print(f"  ! {v['videoId']}: {e}")
                 continue
+            # Channel fields already on the video carry over without a second About fetch.
+            for k in ("channelCountry", "channelJoined", "channelViews", "channelVideos"):
+                if k in have and have[k] is not None:
+                    channel_cache.setdefault(sig.get("channelId"), {}).setdefault(k, have[k])
+            if sig.get("channelId") in channel_cache:
+                channel_cache[sig["channelId"]].setdefault("subscribers", have.get("subscribers"))
             views, pub = sig.pop("_views", None), sig.pop("_published", None)
             if views:
                 v["views"] = views
@@ -185,7 +220,8 @@ def main():
             v["yt"] = sig
             total_v += 1
             print(f"  + {v['videoId']}  {sig.get('category') or '?':18s} {'✓' if sig['verified'] else ' '} "
-                  f"{(sig.get('channelCountry') or '—'):16s} subs {sig.get('subscribers') or '—'}  likes {sig.get('likes') or '—'}")
+                  f"{(sig.get('channelCountry') or '—'):16s} subs {sig.get('subscribers') or '—'}  likes {sig.get('likes') or '—'}  "
+                  f"comments {sig.get('comments') or '—'}{'  $paid' if sig.get('paidPromotion') else ''}{'  live' if sig.get('live') else ''}")
         if WRITE:
             f.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
     print(f"\n{total_v} videos enriched, {total_c} channels fetched{' · written' if WRITE else ' · dry run (add --write)'}")

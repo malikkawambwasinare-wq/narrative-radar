@@ -439,6 +439,7 @@
   .yt-tags span { font-size: 11px; padding: 2px 7px; border-radius: 999px; background: var(--hairline);
     color: var(--ink-2); white-space: nowrap; font-variant-numeric: tabular-nums; }
   .yt-tags .ver { color: var(--ok, #2F6B45); background: rgba(47,107,69,.1); }
+  .yt-tags .paid { color: var(--warn, #9A6410); background: rgba(154,100,16,.12); }
   .yt-tags .rec { color: var(--ink); background: color-mix(in srgb, var(--accent) 12%, transparent); }
   .yt-tags .rec.bad { color: var(--bad, #A23B2A); background: rgba(162,59,42,.1); }
   details.prologue { margin: 0 0 14px; padding: 0; border: 0; }
@@ -1593,7 +1594,8 @@ const basisMark = v => verdictBasis(v) === "transcript"
 const SF_KEY = "series-filters";
 const SF_DEFAULT = { q: "", minViews: 1000, sort: "chrono", length: "all", basis: "all",
                      category: "all", verified: false, minSubs: 0, minAge: 0, maxRate: 0, channel: "all",
-                     minEng: 0, breakout: false, aboveAvg: false,
+                     minEng: 0, minDisc: 0, breakout: false, aboveAvg: false,
+                     paid: "all", live: "all", chaptered: false, captions: "all", language: "all",
                      track: false, speaker: "all", claim: "all",
                      country: "all", from: "all", to: "all", season: "all" };
 let SF = (() => { try { return { ...SF_DEFAULT, ...(JSON.parse(lsGet(SF_KEY)) || {}) }; } catch (e) { return { ...SF_DEFAULT }; } })();
@@ -1603,6 +1605,7 @@ const NEWS_CATEGORY = "News & Politics";
 const channelAgeYears = v => v.yt?.channelJoined ? (Date.now() - Date.parse(v.yt.channelJoined)) / 31557600000 : null;
 // Derived signals — ratios YouTube never shows but its own numbers give away.
 const engRatio = v => v.yt?.likes != null && viewsNum(v.views) > 0 ? v.yt.likes / viewsNum(v.views) : null;          // likes per view
+const discRatio = v => v.yt?.comments != null && v.yt?.likes > 0 ? v.yt.comments / v.yt.likes : null;                 // comments per like: applauded vs argued over
 const outputRate = v => v.yt?.channelVideos && channelAgeYears(v) ? v.yt.channelVideos / Math.max(channelAgeYears(v), 0.1) : null; // videos per year
 const channelAvgViews = v => v.yt?.channelViews && v.yt?.channelVideos ? v.yt.channelViews / v.yt.channelVideos : null;
 const lengthMin = v => { const p = (v.length || "").split(":").map(Number); return p.length < 2 || p.some(isNaN) ? null : p.length === 3 ? p[0] * 60 + p[1] + p[2] / 60 : p[0] + p[1] / 60; };
@@ -1660,6 +1663,13 @@ function ytTags(v, recs) {
   if (y.channelJoined) t.push(`<span>channel since ${y.channelJoined.slice(0, 4)}</span>`);
   if (y.likes != null) t.push(`<span>${fmtCount(y.likes)} likes</span>`);
   const e = engRatio(v); if (e != null) t.push(`<span title="likes per view">${(e * 100).toFixed(1)}% engagement</span>`);
+  if (y.comments != null) t.push(`<span>${fmtCount(y.comments)} comments</span>`);
+  const dr = discRatio(v); if (dr != null) t.push(`<span title="comments per 100 likes — high means argued over, low means applauded">${Math.round(dr * 100)} comments/100 likes</span>`);
+  if (y.paidPromotion) t.push(`<span class="paid" title="The creator disclosed paid promotion in this video">$ paid promotion</span>`);
+  if (y.live) t.push(`<span title="Streamed live, not a produced upload">live</span>`);
+  if (y.chapters) t.push(`<span>${y.chapters} chapters</span>`);
+  if (y.captions === "manual") t.push(`<span title="Creator-uploaded captions, not speech-to-text">captions by creator</span>`);
+  if (y.language && y.language !== "en") t.push(`<span>${esc(y.language)}</span>`);
   const r = outputRate(v); if (r != null) t.push(`<span title="channel output: videos per unit time since it joined">${RATE_LABEL(r)} output</span>`);
   if (isBreakout(v)) t.push(`<span title="more views than the channel has subscribers">breakout</span>`);
   if (isAboveAvg(v)) t.push(`<span title="beat the channel's own average views per video">above channel avg</span>`);
@@ -1681,6 +1691,14 @@ function seriesPass(x, ctx) {
   if (SF.maxRate && !(outputRate(v) != null && outputRate(v) <= SF.maxRate)) return false;
   if (SF.channel !== "all" && v.channel !== SF.channel) return false;
   if (SF.minEng && !(engRatio(v) >= SF.minEng)) return false;
+  if (SF.minDisc && !(discRatio(v) >= SF.minDisc)) return false;
+  if (SF.paid === "no" && y.paidPromotion) return false;
+  if (SF.paid === "yes" && !y.paidPromotion) return false;
+  if (SF.live === "live" && !y.live) return false;
+  if (SF.live === "upload" && y.live) return false;
+  if (SF.chaptered && !y.chapters) return false;
+  if (SF.captions !== "all" && (y.captions || "none") !== SF.captions) return false;
+  if (SF.language !== "all" && y.language !== SF.language) return false;
   if (SF.breakout && !isBreakout(v)) return false;
   if (SF.aboveAvg && !isAboveAvg(v)) return false;
   if (SF.track && !x.recs.length) return false;
@@ -1695,6 +1713,7 @@ function seriesPass(x, ctx) {
 function seriesFilterBar(keep, ctx) {
   const facet = f => [...new Set(keep.map(f).filter(Boolean))].sort();
   const cats = facet(v => v.yt?.category), countries = facet(v => v.yt?.channelCountry), channels = facet(v => v.channel);
+  const langs = facet(v => v.yt?.language);
   const years = facet(v => { const t = publishedEst(v); return t ? new Date(t).getUTCFullYear() : null; });
   const speakers = [...new Map(keep.flatMap(v => [...(ctx.speakers[v.videoId] || [])]).map(s => [nameKey(s), s.replace(/\(.*?\)/g, "").trim()])).entries()].sort((a, b) => a[1].localeCompare(b[1]));
   const claims = ctx.claims.map(c => [c.id, c.statement.length > 70 ? c.statement.slice(0, 68) + "…" : c.statement]);
@@ -1719,8 +1738,15 @@ function seriesFilterBar(keep, ctx) {
     ${sel("channel", "Channel", [["all", "any"], ...channels.map(c => [c, c])])}
     <div class="grp">How it landed</div>
     ${sel("minEng", "Engagement at least", [[0, "any"], [0.01, "1% likes/views"], [0.02, "2%"], [0.03, "3%"], [0.05, "5%"]], "Likes divided by views — passive views vs an audience that reacted")}
+    ${sel("minDisc", "Discussion at least", [[0, "any"], [0.02, "2 comments/100 likes"], [0.05, "5"], [0.1, "10"], [0.2, "20"]], "Comments per like — a video people argue over draws far more comments than one they simply like")}
     ${chk("breakout", "breakout", "More views than the channel has subscribers — it travelled beyond its own audience")}
     ${chk("aboveAvg", "above channel average", "Beat the channel's own average views per video")}
+    <div class="grp">How it was made</div>
+    ${sel("paid", "Paid promotion", [["all", "any"], ["no", "none disclosed"], ["yes", "disclosed only"]], "YouTube's 'Includes paid promotion' disclosure, set by the creator")}
+    ${sel("live", "Format", [["all", "any"], ["upload", "produced uploads"], ["live", "live streams"]])}
+    ${chk("chaptered", "has chapters", "The creator added chapter markers — a sign of a structured, edited video")}
+    ${sel("captions", "Captions", [["all", "any"], ["manual", "by the creator"], ["auto", "auto-generated"], ["none", "none"]], "Creator-uploaded captions cost effort and make transcripts reliable")}
+    ${langs.length > 1 ? sel("language", "Language", [["all", "any"], ...langs.map(l => [l, l])]) : ""}
     <div class="grp">The speaker &amp; the claim</div>
     ${chk("track", "has a ledger record", "Only videos whose speaker has dated, scored claims in the prediction ledger")}
     ${speakers.length ? sel("speaker", "Speaker", [["all", "any"], ...speakers]) : ""}
