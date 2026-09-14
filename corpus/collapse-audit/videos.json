@@ -1420,6 +1420,22 @@
         "channelVideos": 394,
         "enrichedOn": "2026-09-13"
       }
+    },
+    {
+      "videoId": "4DbKUmKvbms",
+      "url": "https://www.youtube.com/watch?v=4DbKUmKvbms",
+      "title": "Ray Dalio: on Debt, Cycles, and What's About to Happen in 2026",
+      "channel": "The Dalio Method",
+      "published": "",
+      "views": "",
+      "length": "",
+      "query": "user-submitted",
+      "age_days": null,
+      "first_seen": "2026-09-14",
+      "transcript": null,
+      "verdict": "RECYCLED",
+      "verdict_note": "[live analysis, metadata-only] Dalio's own channel restating the big debt cycle framework with a 2026 hook; core claim unchanged.",
+      "verdict_basis": "metadata"
     }
   ]
 }
