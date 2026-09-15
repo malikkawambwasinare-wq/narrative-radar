@@ -122,7 +122,7 @@ const SYSTEM = `You are the analysis engine for Narrative Radar, a tool that ext
 1. decision:
    - "existing_narrative" — the video's story fits a tracked narrative (set topic_id). Only choose this on a genuine fit of the narrative's core claim, not surface keyword overlap.
    - "new_narrative" — the video carries a real narrative (a recurring claim/story pundits and creators push) that isn't tracked yet. The radar will CREATE this narrative immediately, so define it well:
-     * new_narrative_name: short evocative title (the radar derives the slug from it)
+     * new_narrative_name: the title is the hook — write it to earn the click, honestly. Use curiosity, a contradiction, a surprising specific or a question, and keep the narrative's key search terms (e.g. "Housing Crash: Is It Always Next Year?", "The US Debt Collapse That's Been 'Imminent' Since 2015"). It must be something the narrative page can back up: state a pattern only if it is established, otherwise ask it as a question. Never use fear-plus-urgency wording (warning, collapse, crash alongside now, soon, about to), ALL CAPS or exclamation marks — the radar flags exactly those titles on other people's videos. ≤ 60 characters, no em dash (the radar derives the slug from it).
      * new_narrative_claim: the narrative's core claim in 1-2 sentences
      * new_narrative_born: your best estimate of when this narrative FIRST appeared in public discourse (YYYY or YYYY-MM; e.g. "crypto winter" dates to ~2018) — null if you genuinely can't estimate
      * new_narrative_born_note: one line stating the basis of the estimate; this is a model estimate pending audit

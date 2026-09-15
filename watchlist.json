@@ -2,7 +2,7 @@
   "topics": [
     {
       "id": "collapse-audit",
-      "name": "US Debt Collapse — economic & AI doom predictions",
+      "name": "The US Debt Collapse That's Been \"Imminent\" Since 2015 — economic & AI doom predictions",
       "industry": "Economy & markets",
       "status": "active",
       "started": "2026-07-30",
@@ -21,12 +21,14 @@
       ],
       "notes": "Goal: audit trail of predictions. Every forecast logged with predictor, date made, horizon, and living status: PENDING / SUPPORTED / REFUTED / UPDATED. Track goalpost-moves explicitly.",
       "former_names": [
-        "Collapse Audit — economic & AI doom predictions"
-      ]
+        "Collapse Audit — economic & AI doom predictions",
+        "US Debt Collapse — economic & AI doom predictions"
+      ],
+      "title_basis": "Prediction ledger: earliest dated collapse call March 2015; 0 of 5 resolved calls landed."
     },
     {
       "id": "loop-engineering",
-      "name": "AI Agents Write the Code — agentic engineering loops",
+      "name": "Do AI Agents Really Write All the Code Now? — agentic engineering loops",
       "industry": "AI & technology",
       "status": "queued",
       "started": null,
@@ -39,13 +41,15 @@
       "watched_predictors": [],
       "notes": "Developers no longer write software line by line — they run AI coding agents in loops that plan, write, test and fix code on their own. Queued: a calibration topic whose wave was mapped by hand.",
       "former_names": [
-        "Loops / agentic engineering / agent workflows"
+        "Loops / agentic engineering / agent workflows",
+        "AI Agents Write the Code — agentic engineering loops"
       ],
-      "internal_note": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave."
+      "internal_note": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave.",
+      "title_basis": "Open question."
     },
     {
       "id": "crypto-winter-watch",
-      "name": "Crypto Winter Watch",
+      "name": "Crypto Winter: Is the 4-Year Cycle Finally Dead? — Crypto Winter Watch",
       "industry": "Economy & markets",
       "status": "active",
       "started": "2026-08-07",
@@ -59,11 +63,15 @@
         "crypto four year cycle dead"
       ],
       "watched_predictors": [],
-      "notes": "Created by the analysis engine. Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat."
+      "notes": "Created by the analysis engine. Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat.",
+      "former_names": [
+        "Crypto Winter Watch"
+      ],
+      "title_basis": "Open question; both camps' dated calls resolve on the ledger."
     },
     {
       "id": "the-2026-setup",
-      "name": "Generational Buying Opportunity — now is the time to buy",
+      "name": "\"Generational Buying Opportunity\": Pitched Every Year? — now is the time to buy",
       "industry": "Economy & markets",
       "status": "active",
       "started": "2026-08-07",
@@ -79,12 +87,14 @@
       "watched_predictors": [],
       "notes": "Created by the analysis engine. After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors — position now before the next leg up.",
       "former_names": [
-        "The 2026 Setup"
-      ]
+        "The 2026 Setup",
+        "Generational Buying Opportunity — now is the time to buy"
+      ],
+      "title_basis": "Open question, tested by the five-year corpus: is the same call made for every new year?"
     },
     {
       "id": "housing-crash-watch",
-      "name": "Housing Crash Watch",
+      "name": "Housing Crash: Is It Always Next Year? — Housing Crash Watch",
       "industry": "Economy & markets",
       "status": "active",
       "started": "2026-08-08",
@@ -98,11 +108,15 @@
         "real estate market collapse coming"
       ],
       "watched_predictors": [],
-      "notes": "Created by the analysis engine. US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward."
+      "notes": "Created by the analysis engine. US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward.",
+      "former_names": [
+        "Housing Crash Watch"
+      ],
+      "title_basis": "Open question, tested by the five-year corpus: does the predicted crash date keep sliding?"
     },
     {
       "id": "psi-declassified",
-      "name": "Psychic Spies — the CIA's remote viewing programme",
+      "name": "The CIA's Psychic Spies: Did Remote Viewing Work? — the Stargate programme",
       "industry": "Fringe & unexplained",
       "status": "active",
       "started": "2026-08-09",
@@ -118,12 +132,14 @@
       "watched_predictors": [],
       "notes": "Created by the analysis engine. Declassified government programs (CIA/DIA 'Stargate') supposedly proved remote viewing and psychic perception are real, trainable skills that mainstream science suppresses or ignores.",
       "former_names": [
-        "Psi, Declassified"
-      ]
+        "Psi, Declassified",
+        "Psychic Spies — the CIA's remote viewing programme"
+      ],
+      "title_basis": "Open question; US government psychic-intelligence research ran 1972–1995 (CIA-funded SRI work, then Army/DIA)."
     },
     {
       "id": "open-vs-closed-ai-race",
-      "name": "Open-Source AI vs the Big Labs — has the gap closed?",
+      "name": "Can Free Open-Source AI Beat ChatGPT and Claude? — open vs closed models",
       "industry": "AI & technology",
       "status": "active",
       "started": "2026-08-13",
@@ -139,12 +155,14 @@
       "watched_predictors": [],
       "notes": "Created by the analysis engine. Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
       "former_names": [
-        "Open Weights vs Closed Frontier"
-      ]
+        "Open Weights vs Closed Frontier",
+        "Open-Source AI vs the Big Labs — has the gap closed?"
+      ],
+      "title_basis": "Open question; each new open-model release restarts the debate."
     },
     {
       "id": "anti-inflammatory-diet",
-      "name": "Anti-Inflammatory Diet — inflammation as the root of all disease",
+      "name": "Anti-Inflammatory Diet: Nearly 1 in 3 Videos Is Selling Something — inflammation as the root of all disease",
       "industry": "Health & biotech",
       "status": "active",
       "started": "2026-09-14",
@@ -167,7 +185,11 @@
       "merged_from": [
         "chronic-inflammation-is-the-root-of-all-disease",
         "inflammation-is-the-root-of-all-disease"
-      ]
+      ],
+      "former_names": [
+        "Anti-Inflammatory Diet — inflammation as the root of all disease"
+      ],
+      "title_basis": "Transcript review, 2026-09-15: 22 of 77 videos read promote their own product (29%)."
     }
   ]
 }

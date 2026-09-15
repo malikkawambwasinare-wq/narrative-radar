@@ -20,10 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 WRITE = "--write" in sys.argv
 topic = [a for a in sys.argv[1:] if not a.startswith("--")][0]
 base = ROOT / "corpus" / topic
-ENUM = {"verdict": {"ORIGINAL", "DERIVATIVE", "RECYCLED", "CLICKBAIT"},
+# Health narratives use the evidence-and-stance labels on the left; every other
+# industry uses the for/against labels on the right. UNRELATED removes the video.
+ENUM = {"verdict": {"ORIGINAL", "DERIVATIVE", "RECYCLED", "CLICKBAIT", "UNRELATED"},
         "verdict_basis": {"transcript", "metadata"},
-        "stance": {"maximalist", "moderate", "skeptic", "none"},
-        "evidence": {"outcome-trials", "biomarkers", "anecdote", "none"}}
+        "stance": {"maximalist", "moderate", "skeptic", "none", "for", "against", "mixed"},
+        "evidence": {"outcome-trials", "biomarkers", "anecdote", "none", "data", "track-record", "authority"}}
 
 rows = []
 for f in sorted((base / "review").glob("verdicts-*.json")):
@@ -40,11 +42,15 @@ cf = base / "claims-extracted.json"
 claims = json.loads(cf.read_text()) if cf.exists() else []
 seen = {(c["videoId"], c["claim"]) for c in claims}
 today = date.today().isoformat()
-applied, new_claims, unknown = 0, 0, []
+applied, new_claims, unknown, unrelated = 0, 0, [], []
 for r in rows:
     v = by_id.get(r["videoId"])
     if not v:
         unknown.append(r["videoId"]); continue
+    if r["verdict"] == "UNRELATED":
+        # Off-topic catch from a broad search: out of the corpus, not merely hidden.
+        unrelated.append((r["videoId"], v["title"][:70]))
+        continue
     v["verdict"] = r["verdict"]
     v["verdict_note"] = r["note"]
     v["verdict_basis"] = r["verdict_basis"]
@@ -57,8 +63,13 @@ for r in rows:
             claims.append({"videoId": r["videoId"], "status": "UNREVIEWED", **c})
             new_claims += 1
 
+drop = {vid for vid, _ in unrelated}
+corpus["videos"] = [v for v in corpus["videos"] if v["videoId"] not in drop]
+claims = [c for c in claims if c["videoId"] not in drop]
 left = [v["videoId"] for v in corpus["videos"] if v.get("verdict") == "UNREVIEWED"]
-print(f"{applied} verdicts applied, {new_claims} claims extracted, {len(unknown)} unknown ids, {len(left)} videos still unreviewed")
+print(f"{applied} verdicts applied, {len(unrelated)} unrelated removed, {new_claims} claims extracted, {len(unknown)} unknown ids, {len(left)} videos still unreviewed")
+for vid, title in unrelated[:12]:
+    print(f"   − {vid} {title}")
 print("verdicts:", dict(collections.Counter(v["verdict"] for v in corpus["videos"])))
 if WRITE:
     vf.write_text(json.dumps(corpus, indent=2, ensure_ascii=False) + "\n")

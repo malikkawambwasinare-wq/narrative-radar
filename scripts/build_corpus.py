@@ -39,10 +39,25 @@ PAUSE = 1.5
 watch = json.loads((ROOT / "watchlist.json").read_text())
 topic = next(t for t in watch["topics"] if t["id"] == TOPIC)
 this_year = datetime.now().year
-queries = list(topic["queries"])
-for q in topic["queries"][:3]:
+# Queries often carry the year they were written in ("crypto winter 2026").
+# Strip it before adding each year, or "crypto winter 2026 2022" searches for nothing.
+import re
+def base(q):
+    return re.sub(r"\s+", " ", re.sub(r"\b(19|20)\d\d\b", "", q)).strip()
+queries, seen_q = [], set()
+for q in topic["queries"]:
+    if q.lower() not in seen_q:
+        queries.append(q); seen_q.add(q.lower())
+bases = []
+for q in topic["queries"]:
+    b = base(q)
+    if b and b.lower() not in [x.lower() for x in bases]:
+        bases.append(b)
+for q in bases[:3]:
     for y in range(this_year - YEARS + 1, this_year + 1):
-        queries.append(f"{q} {y}")
+        yq = f"{q} {y}"
+        if yq.lower() not in seen_q:
+            queries.append(yq); seen_q.add(yq.lower())
 
 tdir = ROOT / "corpus" / TOPIC
 tdir.mkdir(parents=True, exist_ok=True)
