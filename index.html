@@ -272,6 +272,13 @@
   .momentum svg { display: block; width: 100%; height: 60px; margin-top: 8px; }
   .momentum .axis { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--muted);
     font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .momentum .qaxis { position: relative; display: block; height: 14px; }
+  .momentum .qaxis span { position: absolute; top: 0; border-left: 1px solid var(--hairline); padding-left: 3px; }
+  .momentum rect.partial { opacity: .35; }
+  .momentum .mscale { display: inline-flex; gap: 4px; }
+  .momentum .mscale button { font: inherit; font-size: 11.5px; padding: 2px 9px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); }
+  .momentum .mscale button.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
   .momentum rect { fill: var(--accent); opacity: .7; }
   .momentum rect.peak { opacity: 1; }
   .momentum rect.empty { fill: var(--hairline); opacity: 1; }
@@ -354,7 +361,7 @@
   details[open].fold > summary::before { content: "▾ "; }
   details.fold > summary b { color: var(--ink-2); font-weight: 500; }
   .angle.folded { opacity: .55; }
-  details.removed .rm { padding: 8px 0; border-bottom: 1px solid var(--hairline); font-size: 13px; }
+  details.removed .rm, details.pending .rm { padding: 8px 0; border-bottom: 1px solid var(--hairline); font-size: 13px; }
   details.removed .rmv { font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 8px; }
   .galempty { color: var(--muted); font-size: 14px; padding: 26px 0; text-align: center; }
   .backgal { font: inherit; font-size: 13px; background: none; border: none; cursor: pointer;
@@ -982,7 +989,10 @@ function computeReceipt(data) {
     if (!next || t < next.t)
       next = { t, predictor: e.predictor || n.predictor || "", horizon: e.horizon, overdue: t < now };
   });
-  const dated = vids.map(v => ({ v, t: publishedEst(v) })).filter(x => x.t != null)
+  // The reheat window reads verdicts, so it only counts reviewed videos: a
+  // five-year sweep collected ahead of transcripts would otherwise read as
+  // "almost nothing is recycled".
+  const dated = vids.filter(v => v.verdict !== "UNREVIEWED").map(v => ({ v, t: publishedEst(v) })).filter(x => x.t != null)
     .sort((a, b) => b.t - a.t);
   const win = (dated.length >= 10 ? dated.slice(0, 20) : []).map(x => x.v);
   const by = {};
@@ -1920,7 +1930,55 @@ function momentum(vids, weeks = 16) {
   return { bins, older, last4, prior4, peak, end, swept, dated: ts.length, undated: vids.length - ts.length };
 }
 const staleDays = swept => Math.floor((Date.now() - swept) / 86400000);
+// Five years by quarter: the view the backfilled corpus exists for. Each bar is
+// videos published in that calendar quarter; the current quarter is marked as
+// partial and never compared as if it were complete.
+const Q_LABEL = t => { const d = new Date(t); return `Q${Math.floor(d.getUTCMonth() / 3) + 1} ${d.getUTCFullYear()}`; };
+const qStart = t => { const d = new Date(t); return Date.UTC(d.getUTCFullYear(), Math.floor(d.getUTCMonth() / 3) * 3, 1); };
+function momentumQuarters(vids, years = 5) {
+  const ts = vids.map(publishedEst).filter(Boolean);
+  if (!ts.length) return null;
+  const nowQ = qStart(Date.now());
+  const firstQ = Math.max(qStart(Math.min(...ts)), qStart(Date.now() - years * 365.25 * 86400000));
+  const qs = [];
+  for (let q = firstQ; q <= nowQ; ) { qs.push(q); const d = new Date(q); q = Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 3, 1); }
+  const bins = qs.map(() => 0);
+  let older = 0;
+  for (const t of ts) { const i = qs.indexOf(qStart(t)); if (i >= 0) bins[i]++; else if (t < firstQ) older++; }
+  const full = bins.slice(0, -1);
+  const peak = full.length ? full.indexOf(Math.max(...full)) : 0;
+  return { qs, bins, older, peak, undated: vids.length - ts.length };
+}
+let MOMENTUM_SCALE = (() => { try { return localStorage.getItem("momentum-scale") || "quarters"; } catch (e) { return "quarters"; } })();
 function momentumBlock(vids) {
+  const toggle = `<span class="mscale">${[["quarters", "5 years"], ["weeks", "16 weeks"]].map(([k, l]) =>
+    `<button type="button" data-mscale="${k}" class="${MOMENTUM_SCALE === k ? "on" : ""}">${l}</button>`).join("")}</span>`;
+  const swept0 = lastSweep(vids);
+  const pending = vids.filter(v => v.verdict === "UNREVIEWED").length;
+  if (MOMENTUM_SCALE === "quarters") {
+    const m = momentumQuarters(vids);
+    if (!m) return "";
+    const { qs, bins, older, peak, undated } = m;
+    // Scale to the full quarters: the current one is both partial and the most
+    // over-sampled (collected today), so it must not flatten everything else.
+    const w = 100 / bins.length, last = bins.length - 1;
+    const max = Math.max(1, ...bins.slice(0, -1));
+    const bars = bins.map((n, i) => {
+      const h = n ? Math.min(54, Math.max(3, (n / max) * 52)) : 1.5;
+      const cls = !n ? "empty" : i === last ? "partial" : i === peak ? "peak" : "";
+      return `<rect class="${cls}" x="${(i * w + 0.5).toFixed(2)}%" width="${(w - 1).toFixed(2)}%" y="${(56 - h).toFixed(1)}" height="${h.toFixed(1)}" rx="1"><title>${Q_LABEL(qs[i])}${i === last ? " (so far)" : ""}: ${n} video${n === 1 ? "" : "s"}</title></rect>`;
+    }).join("");
+    const years = qs.map((q, i) => [new Date(q).getUTCMonth() === 0 || i === 0 ? new Date(q).getUTCFullYear() : null, i]).filter(([y]) => y);
+    const lastFull = bins[last - 1] ?? 0, before = bins[last - 2] ?? 0, yearAgo = bins[last - 4];
+    const trend = `<b>${bins[last]}</b> so far in ${Q_LABEL(qs[last])} · last full quarter <b>${lastFull}</b>`
+      + (before ? ` (${lastFull >= before ? "+" : "−"}${Math.abs(Math.round((lastFull / before - 1) * 100))}% on the quarter before)` : "")
+      + (yearAgo != null ? ` · same quarter a year earlier ${yearAgo}` : "")
+      + ` · busiest full quarter ${Q_LABEL(qs[peak])} (${bins[peak]})`;
+    return `<div class="head"><span class="lbl">Publishing momentum · videos per quarter</span>${toggle}<span class="trend">${trend}</span></div>
+      <svg viewBox="0 0 100 58" preserveAspectRatio="none" aria-label="videos published per quarter, last ${bins.length} quarters">${bars}</svg>
+      <div class="axis qaxis">${years.map(([y, i]) => `<span style="left:${(i * w).toFixed(2)}%">${y}</span>`).join("")}</div>
+      <div class="note">Last collected ${isoDate(swept0)}. <b>These are the videos our search found, not everything published.</b> YouTube search favours new uploads, so the most recent quarters are over-sampled (the faded bar is also incomplete and is drawn off-scale). Compare earlier years with each other, not with the last two quarters${older ? `; ${older} older video${older === 1 ? " falls" : "s fall"} before the window` : ""}${undated ? `; ${undated} undated` : ""}${pending ? `. ${pending} of these videos are collected but not yet reviewed` : ""}.</div>`;
+  }
   const m = momentum(vids);
   if (!m) return "";
   const { bins, last4, prior4, peak, end, older, undated, swept } = m;
@@ -1937,7 +1995,7 @@ function momentumBlock(vids) {
     : last4 > prior4 ? `<b>${last4}</b> in the 4 weeks to the sweep vs ${prior4} before — <b>gaining</b> (+${Math.round((last4 / prior4 - 1) * 100)}%)`
     : last4 < prior4 ? `<b>${last4}</b> in the 4 weeks to the sweep vs ${prior4} before — <b>cooling</b> (−${Math.round((1 - last4 / prior4) * 100)}%)`
     : `<b>${last4}</b> in the 4 weeks to the sweep, same as the 4 before — <b>steady</b>`;
-  return `<div class="head"><span class="lbl">Publishing momentum · videos per week</span><span class="trend">${trend} · peak week ${peakDate} (${bins[peak]})</span></div>
+  return `<div class="head"><span class="lbl">Publishing momentum · videos per week</span>${toggle}<span class="trend">${trend} · peak week ${peakDate} (${bins[peak]})</span></div>
     <svg viewBox="0 0 100 58" preserveAspectRatio="none" aria-label="videos published per week, last ${bins.length} weeks">${bars}</svg>
     <div class="axis"><span>${isoDate(end - (bins.length - 1) * WEEK)}</span><span>${isoDate(end)}</span></div>
     <div class="note">${stale > 7 ? `<b>As of the last sweep, ${isoDate(swept)} — ${stale} days ago.</b> Nothing has been swept since${pastedSince(vids, swept) ? ` (${pastedSince(vids, swept)} pasted by hand)` : ""}, so the chart says nothing about the last ${stale} days. ` : `Last sweep ${isoDate(swept)}. `}Counts what our collection surfaced — YouTube search favours recent uploads, so older weeks are undercounted${older ? `; ${older} older video${older === 1 ? " falls" : "s fall"} before this window` : ""}${undated ? `; ${undated} undated` : ""}.</div>`;
@@ -2377,7 +2435,8 @@ function renderSeries2() {
   const n = data?.narrative || {};
   const vids = data?.videos?.videos || [];
   const removed = vids.filter(v => ["RECYCLED", "CLICKBAIT"].includes(v.verdict));
-  const keep = vids.filter(v => !["RECYCLED", "CLICKBAIT"].includes(v.verdict));
+  const pending = vids.filter(v => v.verdict === "UNREVIEWED");
+  const keep = vids.filter(v => !["RECYCLED", "CLICKBAIT", "UNREVIEWED"].includes(v.verdict));
   $("c-series").textContent = keep.length ? `(${keep.length})` : "";
   const speakers = videoSpeakers(data), records = speakerRecords2(data), vclaims = videoClaims(data);
   const ctx = { speakers, claims: data?.claims?.claims || [], camps: videoCamps(data), extracted: extractedSummary(data),
@@ -2464,6 +2523,7 @@ function renderSeries2() {
     ${removed.sort((a, b) => (publishedEst(a) ?? 0) - (publishedEst(b) ?? 0)).map(v => `<div class="rm"><span class="rmv">${esc(v.verdict)}</span>
       <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> <span class="when">${esc(v.channel)} · ${v.published ? esc(v.published) : "—"}${verdictBasis(v) === "metadata" ? " · metadata-only verdict" : ""}</span>
       ${v.verdict_note ? `<div class="e-note">${esc(v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}</div>`).join("") || `<div class="e-note">Nothing removed.</div>`}</details>`;
+  html += pendingFold(pending);
   $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
   const showing = $("sf-showing");
   if (showing) showing.innerHTML = `<span>Showing <b>${shownEp}</b> of ${episodes.length} episodes · ${anglesShown} of ${anglesShown + anglesFolded} angles${foldReasons.size ? ` (${[...foldReasons.entries()].map(([k, n]) => `${n} folded: ${esc(k)}`).join(", ")})` : ""} · ${removed.length} removed by our verdict${unavailable ? ` · ${unavailable} YouTube page unavailable` : ""}</span>
@@ -2478,6 +2538,12 @@ function onSeriesFilter2(e) {
   if (key === "claim") SF2.camp = "all";
   lsSet(SF2_KEY, JSON.stringify(SF2)); renderSeries();
 }
+$("momentum").addEventListener("click", e => {
+  const b = e.target.closest("[data-mscale]"); if (!b) return;
+  MOMENTUM_SCALE = b.dataset.mscale;
+  try { localStorage.setItem("momentum-scale", MOMENTUM_SCALE); } catch (err) {}
+  $("momentum").innerHTML = momentumBlock(cache[topicId]?.videos?.videos || []);
+});
 $("series-filters").addEventListener("change", onSeriesFilter2);
 $("series-filters").addEventListener("input", e => { if (e.target.dataset.sf2 === "q") onSeriesFilter2(e); });
 $("series-filters").addEventListener("click", e => {
@@ -2487,13 +2553,25 @@ $("series-filters").addEventListener("click", e => {
 });
 $("series").addEventListener("click", e => { const c = e.target.closest(".card[data-vid]"); if (c) arrivedFrom = c.dataset.vid; });
 
+// Collected but not yet reviewed: kept out of episodes and angles (no verdict to
+// file them by) and listed on their own, so the series never passes them off as read.
+function pendingFold(pending) {
+  if (!pending.length) return "";
+  const rows = [...pending].sort((a, b) => (publishedEst(b) ?? 0) - (publishedEst(a) ?? 0));
+  return `<details class="lowreach pending"><summary>${pending.length} collected video${pending.length === 1 ? "" : "s"} awaiting review
+      <b>not yet sorted into episodes — transcripts pending</b></summary>
+    ${rows.map(v => `<div class="rm"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a>
+      <span class="when">${esc(v.channel)} · ${publishedEst(v) ? isoDate(publishedEst(v)) : "undated"}</span></div>`).join("")}</details>`;
+}
+
 function renderSeries() {
   if (seriesVersion() === "v2") return renderSeries2();
   const data = cache[topicId];
   const n = data?.narrative || {};
   const vids = data?.videos?.videos || [];
-  const keep = vids.filter(v => !["RECYCLED", "CLICKBAIT"].includes(v.verdict));
-  const dropped = vids.length - keep.length;
+  const pending = vids.filter(v => v.verdict === "UNREVIEWED");
+  const keep = vids.filter(v => !["RECYCLED", "CLICKBAIT", "UNREVIEWED"].includes(v.verdict));
+  const dropped = vids.filter(v => ["RECYCLED", "CLICKBAIT"].includes(v.verdict)).length;
   $("c-series").textContent = keep.length ? `(${keep.length})` : "";
   if (!vids.length) {
     $("series-head").innerHTML = ""; $("series-firsts").innerHTML = ""; $("series-filters").innerHTML = "";
@@ -2621,6 +2699,7 @@ function renderSeries() {
   const beforeShown = before.filter(passes);
   if (beforeShown.length) html += `<details class="lowreach"><summary>${beforeShown.length} commentary video${beforeShown.length === 1 ? "" : "s"} before the first original
       <b>no episode to attach to</b></summary>${beforeShown.map(angleRow).join("")}</details>`;
+  html += pendingFold(pending);
   $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
   const showing = $("sf-showing");
   if (showing) {
