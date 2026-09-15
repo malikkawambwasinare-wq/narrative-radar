@@ -3,3 +3,4 @@ corpus/*/transcripts/
 .DS_Store
 node_modules/
 .cache/
+corpus/*/review/

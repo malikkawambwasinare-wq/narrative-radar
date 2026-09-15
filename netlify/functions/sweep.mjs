@@ -12,9 +12,11 @@ const json = (status, body) =>
     status, headers: { "Content-Type": "application/json", ...CORS },
   });
 
-async function searchNewest(query) {
+// newest=true sorts by upload date (the running sweep); false is YouTube's
+// relevance order, which — with a year in the query — reaches back years.
+async function searchNewest(query, newest = true) {
   const url = "https://www.youtube.com/results?search_query="
-    + encodeURIComponent(query) + "&sp=CAI%253D";
+    + encodeURIComponent(query) + (newest ? "&sp=CAI%253D" : "");
   const r = await fetch(url, {
     headers: {
       "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36",
@@ -52,17 +54,26 @@ export default async (req) => {
         .then((r) => r.json()).then((d) => d.videos.map((v) => v.videoId))
         .catch(() => [])),
     ]);
-    // Fan out across the topic's queries; newest-first per query
-    const results = await Promise.all(
-      queries.slice(0, 6).map((q) => searchNewest(q).catch(() => [])),
-    );
+    // Fan out across the topic's queries; newest-first per query. With `years`
+    // set (a build-out), add year-suffixed relevance queries so the sweep
+    // reaches back through the narrative's whole life, not the last fortnight.
+    // Collection is free; only the analysis of each returned video costs.
+    const years = Math.min(30, Math.max(0, Number(body.years) || 0));
+    const limit = Math.min(50, Math.max(1, Number(body.limit) || (years ? 25 : 5)));
+    const jobs = queries.slice(0, 6).map((q) => () => searchNewest(q));
+    if (years) {
+      const thisYear = new Date().getUTCFullYear();
+      for (const q of queries.slice(0, 2))
+        for (let y = thisYear - years + 1; y <= thisYear; y++) jobs.push(() => searchNewest(`${q} ${y}`, false));
+    }
+    const results = await Promise.all(jobs.map((j) => j().catch(() => [])));
     const fresh = [];
     for (const ids of results) {
-      for (const id of ids.slice(0, 8)) {
+      for (const id of ids.slice(0, years ? 12 : 8)) {
         if (!known.has(id) && !fresh.includes(id)) fresh.push(id);
       }
     }
-    return json(200, { topic: topicId, new_videos: fresh.slice(0, 5), seen: fresh.length });
+    return json(200, { topic: topicId, new_videos: fresh.slice(0, limit), seen: fresh.length, years });
   } catch (e) {
     return json(500, { error: String(e.message || e).slice(0, 300) });
   }

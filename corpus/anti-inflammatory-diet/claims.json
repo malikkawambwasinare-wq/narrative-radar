@@ -1,0 +1,828 @@
+{
+  "note": "Consolidated from 256 claims extracted in a transcript review of 77 videos (2019–2026). Camps are sides a viewer should hear before deciding; sources are the videos that argue each side. Our analysis, pending audit.",
+  "updated": "2026-09-15",
+  "fingerprints": [
+    "anti-inflammatory diet",
+    "seed oils inflammation",
+    "inflammation root of disease",
+    "foods that cause inflammation"
+  ],
+  "claims": [
+    {
+      "id": "core-question",
+      "type": "contested",
+      "statement": "Is chronic inflammation the root of most disease — and is food the cure?",
+      "note": "Skeptics are rare (7 of 77 videos read) and almost all argue about seed oils, not the framing itself. The maximalist side carries most of the product pitches.",
+      "camps": [
+        {
+          "position": "Yes — inflammation is the common root of chronic illness, and the right diet reverses it",
+          "watch_for": "One cause for every illness; group results with no comparison group; a book, supplement or programme at the end.",
+          "sources": [
+            {
+              "videoId": "bcSr7hueQOo",
+              "predictor": "Andrew Weil"
+            },
+            {
+              "videoId": "J9g_LAXfS24",
+              "predictor": "Dr. Eric Berg"
+            },
+            {
+              "videoId": "POS5inxBaAk",
+              "predictor": "Dr. Mandell"
+            },
+            {
+              "videoId": "_EZ0FY8HhqU",
+              "predictor": "Andrew Weil"
+            },
+            {
+              "videoId": "tl6_3tzjCNg",
+              "predictor": "Andrew Weil"
+            },
+            {
+              "videoId": "1wtboCE9K9o",
+              "predictor": "Andrew Weil"
+            },
+            {
+              "videoId": "KiNJ_whdvwA",
+              "predictor": "Dr. Micah Yu"
+            },
+            {
+              "videoId": "WQNNfNIbfHw",
+              "predictor": "Dr. Suneel Dhand"
+            },
+            {
+              "videoId": "pUyqK1LjuUw",
+              "predictor": "Plant Based Science London"
+            },
+            {
+              "videoId": "zogPOqn0guU",
+              "predictor": "Mike Mutzel"
+            },
+            {
+              "videoId": "5zP6eIgKVK8",
+              "predictor": "Dr. Rob Lustig"
+            },
+            {
+              "videoId": "cGGoY8uasQU",
+              "predictor": "Mark Hyman"
+            },
+            {
+              "videoId": "MuYvGyNXvPk",
+              "predictor": "Dr. Chris Knobbe"
+            },
+            {
+              "videoId": "I8VP9D1CP1Y",
+              "predictor": "Dr. William Li"
+            },
+            {
+              "videoId": "5SWWSBPnLfI",
+              "predictor": "Jenné Claiborne"
+            },
+            {
+              "videoId": "pjH9VER2jKo",
+              "predictor": "Anshul Gupta"
+            },
+            {
+              "videoId": "2G2y1M0J-xE",
+              "predictor": "Dr. William Li"
+            },
+            {
+              "videoId": "vcbDmKfY5qE",
+              "predictor": "Heart & Soil (unnamed researcher)"
+            },
+            {
+              "videoId": "qv_6PBLGqYE",
+              "predictor": "Dr. Josh Axe"
+            },
+            {
+              "videoId": "0c_TKVZY71I",
+              "predictor": "Dr. Josh Axe"
+            },
+            {
+              "videoId": "Ixf0DFExhq0",
+              "predictor": "Eric Berg"
+            },
+            {
+              "videoId": "fo6HM4AMFxM",
+              "predictor": "Tamiko Katsumoto"
+            },
+            {
+              "videoId": "_d6jGwkvrl0",
+              "predictor": "MYAutoimmuneMD (Dr. Micah Yu)"
+            },
+            {
+              "videoId": "F7TsXwIsje4",
+              "predictor": "JRE Clips"
+            },
+            {
+              "videoId": "TT5ig1EiIfQ",
+              "predictor": "Prof. Tim Spector"
+            },
+            {
+              "videoId": "hjjfqEyOKBQ",
+              "predictor": "Sten Ekberg"
+            },
+            {
+              "videoId": "OYWxGPTWPs4",
+              "predictor": "Bobby Parrish"
+            },
+            {
+              "videoId": "FvNhB-wPB_c",
+              "predictor": "Eric Berg"
+            },
+            {
+              "videoId": "I6jQgIjuNHU",
+              "predictor": "Will Bulsiewicz"
+            },
+            {
+              "videoId": "cOTQH_V8Lk8",
+              "predictor": "Kia Tatyana"
+            },
+            {
+              "videoId": "JtRCs3eZgVk",
+              "predictor": "Hansaji Yogendra"
+            },
+            {
+              "videoId": "2sv0sZYxGyE",
+              "predictor": "Doctors of Ojai"
+            },
+            {
+              "videoId": "t_vc0_WU8MI",
+              "predictor": "Dr. Suneel Dhand"
+            }
+          ]
+        },
+        {
+          "position": "It matters — a better diet lowers inflammation modestly; it is one factor among many",
+          "watch_for": "Drops in blood markers (CRP, IL-6) presented as if they prove you will feel better or live longer.",
+          "sources": [
+            {
+              "videoId": "xYo9J8RijQY",
+              "predictor": "Michael Greger"
+            },
+            {
+              "videoId": "FGmF1pwCDSo",
+              "predictor": "Dr. Jen Ashton"
+            },
+            {
+              "videoId": "wzYCCX-4i88",
+              "predictor": "Dr. Jennifer Ashton"
+            },
+            {
+              "videoId": "gCjN1Rya6es",
+              "predictor": "Tom Biernacki"
+            },
+            {
+              "videoId": "MZ6wBfkLaMM",
+              "predictor": "Mark Hyman"
+            },
+            {
+              "videoId": "rP-Y5E-kIwI",
+              "predictor": "Baptist Health"
+            },
+            {
+              "videoId": "GZ8SsMSBY5U",
+              "predictor": "Maria Lucey"
+            },
+            {
+              "videoId": "QAVd0HPf7e8",
+              "predictor": "Medical Centric Podcast"
+            },
+            {
+              "videoId": "Sl3g1Dl4ALE",
+              "predictor": "Thomas DeLauer"
+            },
+            {
+              "videoId": "fJPBrhgsS0U",
+              "predictor": "Diana Girnita"
+            },
+            {
+              "videoId": "OeskUWMUfms",
+              "predictor": "Dr. Paul Anderson"
+            },
+            {
+              "videoId": "cB_guz52c-o",
+              "predictor": "Dr. Rupy Aujla"
+            },
+            {
+              "videoId": "wjs2w7Cmkgw",
+              "predictor": "Lisa Valente"
+            },
+            {
+              "videoId": "psIXPettMC4",
+              "predictor": "Dr. Diana Girnita"
+            },
+            {
+              "videoId": "f9lfct20n1Y",
+              "predictor": "Thomas DeLauer"
+            },
+            {
+              "videoId": "yGns_QvtAQQ",
+              "predictor": "Ben Bikman"
+            },
+            {
+              "videoId": "CVACyQgN3ls",
+              "predictor": "Mark Hyman"
+            },
+            {
+              "videoId": "SYmE0n1Npxs",
+              "predictor": "Michael Greger"
+            },
+            {
+              "videoId": "xE-nC0HWKJw",
+              "predictor": "Nick Christelis"
+            },
+            {
+              "videoId": "KxZC1XQoGms",
+              "predictor": "Kimberly Elise"
+            },
+            {
+              "videoId": "mE8mCeloxxM",
+              "predictor": "Thomas DeLauer"
+            },
+            {
+              "videoId": "3vSXDXCSF_0",
+              "predictor": "Thomas DeLauer"
+            },
+            {
+              "videoId": "AtvhbXLxmlI",
+              "predictor": "Julia Zumpano"
+            },
+            {
+              "videoId": "7Esuf2u3KKc",
+              "predictor": "Mae Alice Suzuki"
+            },
+            {
+              "videoId": "f4kOYIzlAN8",
+              "predictor": "Dr. Rupy Aujla (The Doctor's Kitchen)"
+            },
+            {
+              "videoId": "wtlmqv8RVJc",
+              "predictor": "Dr. Jones, DC"
+            },
+            {
+              "videoId": "YW4izUf3u-k",
+              "predictor": "Will Bulsiewicz"
+            },
+            {
+              "videoId": "qznhpnuqU2w",
+              "predictor": "Dr. Will Bulsiewicz"
+            },
+            {
+              "videoId": "kijkEmtjswg",
+              "predictor": "Doctor Alex"
+            },
+            {
+              "videoId": "j-UM7nvcRl0",
+              "predictor": "Will Bulsiewicz"
+            },
+            {
+              "videoId": "A2GphlX-4VM",
+              "predictor": "Will Bulsiewicz"
+            },
+            {
+              "videoId": "p-DlhDNDLZA",
+              "predictor": "Dr Alex Wibberley"
+            }
+          ]
+        },
+        {
+          "position": "Overhyped — food-level inflammation scares don't hold up in human trials",
+          "watch_for": "'No proven harm' stretched into 'diet doesn't matter'; real individual food sensitivities waved away.",
+          "sources": [
+            {
+              "videoId": "-xTaAHSFHUU",
+              "predictor": "Gil Carvalho"
+            },
+            {
+              "videoId": "h2YKBp4JUQo",
+              "predictor": "Business Insider"
+            },
+            {
+              "videoId": "k6ts0e41pq8",
+              "predictor": "Physionic"
+            },
+            {
+              "videoId": "hXDrnL0K5TI",
+              "predictor": "Sarah Berry"
+            },
+            {
+              "videoId": "wkKPIUrFedw",
+              "predictor": "Layne Norton"
+            },
+            {
+              "videoId": "sJoCpRAwxnM",
+              "predictor": "Dr. Eric Westman"
+            },
+            {
+              "videoId": "zcqSYsHA0Jw",
+              "predictor": "Dr. William Li"
+            }
+          ]
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "seed-oils",
+      "type": "contested",
+      "statement": "Do seed oils drive chronic inflammation?",
+      "note": "The loudest fight in the corpus, and the side that flipped: harm claims dominate 2022–24, human-trial rebuttals dominate 2025–26. Mark Hyman moved between camps (2023 own channel → 2025 Huberman clip).",
+      "camps": [
+        {
+          "position": "Yes — omega-6 from seed oils is a main driver of inflammation and chronic disease",
+          "watch_for": "Charts of rising oil intake next to rising obesity (correlation), and animal or lab studies standing in for human trials.",
+          "sources": [
+            {
+              "videoId": "_EZ0FY8HhqU",
+              "predictor": "Andrew Weil"
+            },
+            {
+              "videoId": "WQNNfNIbfHw",
+              "predictor": "Dr. Suneel Dhand"
+            },
+            {
+              "videoId": "zogPOqn0guU",
+              "predictor": "Mike Mutzel"
+            },
+            {
+              "videoId": "MuYvGyNXvPk",
+              "predictor": "Dr. Chris Knobbe"
+            },
+            {
+              "videoId": "5zP6eIgKVK8",
+              "predictor": "Dr. Rob Lustig"
+            },
+            {
+              "videoId": "F7TsXwIsje4",
+              "predictor": "JRE Clips"
+            },
+            {
+              "videoId": "gCjN1Rya6es",
+              "predictor": "Tom Biernacki"
+            },
+            {
+              "videoId": "7Esuf2u3KKc",
+              "predictor": "Mae Alice Suzuki"
+            }
+          ]
+        },
+        {
+          "position": "Only when oxidised — heated or refined oils are the problem, not the fat itself",
+          "watch_for": "Rat and cell studies; ask whether a human trial with normal cooking use exists.",
+          "sources": [
+            {
+              "videoId": "MZ6wBfkLaMM",
+              "predictor": "Mark Hyman"
+            },
+            {
+              "videoId": "Sl3g1Dl4ALE",
+              "predictor": "Thomas DeLauer"
+            },
+            {
+              "videoId": "f9lfct20n1Y",
+              "predictor": "Thomas DeLauer"
+            },
+            {
+              "videoId": "yGns_QvtAQQ",
+              "predictor": "Ben Bikman"
+            }
+          ]
+        },
+        {
+          "position": "No — randomised trials show seed oils don't raise inflammation at normal intakes",
+          "watch_for": "Trials on markers and mortality don't cover every oil, dose or deep-fried use; 'not harmful' is not 'health food'.",
+          "sources": [
+            {
+              "videoId": "-xTaAHSFHUU",
+              "predictor": "Gil Carvalho"
+            },
+            {
+              "videoId": "hXDrnL0K5TI",
+              "predictor": "Sarah Berry"
+            },
+            {
+              "videoId": "h2YKBp4JUQo",
+              "predictor": "Business Insider"
+            },
+            {
+              "videoId": "k6ts0e41pq8",
+              "predictor": "Physionic"
+            },
+            {
+              "videoId": "CVACyQgN3ls",
+              "predictor": "Mark Hyman"
+            },
+            {
+              "videoId": "sJoCpRAwxnM",
+              "predictor": "Dr. Eric Westman"
+            },
+            {
+              "videoId": "zcqSYsHA0Jw",
+              "predictor": "Dr. William Li"
+            },
+            {
+              "videoId": "wkKPIUrFedw",
+              "predictor": "Layne Norton"
+            },
+            {
+              "videoId": "wtlmqv8RVJc",
+              "predictor": "Dr. Jones, DC"
+            }
+          ]
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "meat",
+      "type": "contested",
+      "statement": "Is meat inflammatory — or is a meat-based diet the fix?",
+      "note": "Both sides agree processed meat (bacon, deli meat) raises inflammatory markers; they split on unprocessed meat.",
+      "camps": [
+        {
+          "position": "Meat raises inflammation; whole-food plant-based diets lower it",
+          "watch_for": "A single-meal marker spike treated as long-term harm; processed and unprocessed meat lumped together.",
+          "sources": [
+            {
+              "videoId": "xYo9J8RijQY",
+              "predictor": "Michael Greger"
+            },
+            {
+              "videoId": "5SWWSBPnLfI",
+              "predictor": "Jenné Claiborne"
+            },
+            {
+              "videoId": "fJPBrhgsS0U",
+              "predictor": "Diana Girnita"
+            },
+            {
+              "videoId": "fo6HM4AMFxM",
+              "predictor": "Tamiko Katsumoto"
+            },
+            {
+              "videoId": "SYmE0n1Npxs",
+              "predictor": "Michael Greger"
+            }
+          ]
+        },
+        {
+          "position": "A meat-based, low-insulin diet is what calms inflammation",
+          "watch_for": "Clinic anecdotes and elimination 'successes' with no comparison group; supplements sold alongside.",
+          "sources": [
+            {
+              "videoId": "0c_TKVZY71I",
+              "predictor": "Dr. Josh Axe"
+            },
+            {
+              "videoId": "Ixf0DFExhq0",
+              "predictor": "Eric Berg"
+            },
+            {
+              "videoId": "hjjfqEyOKBQ",
+              "predictor": "Sten Ekberg"
+            },
+            {
+              "videoId": "3vSXDXCSF_0",
+              "predictor": "Thomas DeLauer"
+            }
+          ]
+        }
+      ],
+      "sources": []
+    },
+    {
+      "id": "upf-sugar",
+      "type": "consensus",
+      "statement": "Ultra-processed food, added sugar and refined carbohydrates raise inflammation.",
+      "note": "The closest thing to agreement across every side — even the seed-oil skeptics blame ultra-processed food for what gets pinned on oils.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "bcSr7hueQOo",
+          "predictor": "Andrew Weil"
+        },
+        {
+          "videoId": "xYo9J8RijQY",
+          "predictor": "Michael Greger"
+        },
+        {
+          "videoId": "_EZ0FY8HhqU",
+          "predictor": "Andrew Weil"
+        },
+        {
+          "videoId": "KiNJ_whdvwA",
+          "predictor": "Dr. Micah Yu"
+        },
+        {
+          "videoId": "QAVd0HPf7e8",
+          "predictor": "Medical Centric Podcast"
+        },
+        {
+          "videoId": "5zP6eIgKVK8",
+          "predictor": "Dr. Rob Lustig"
+        },
+        {
+          "videoId": "cGGoY8uasQU",
+          "predictor": "Mark Hyman"
+        },
+        {
+          "videoId": "MuYvGyNXvPk",
+          "predictor": "Dr. Chris Knobbe"
+        },
+        {
+          "videoId": "5SWWSBPnLfI",
+          "predictor": "Jenné Claiborne"
+        },
+        {
+          "videoId": "2G2y1M0J-xE",
+          "predictor": "Dr. William Li"
+        },
+        {
+          "videoId": "qv_6PBLGqYE",
+          "predictor": "Dr. Josh Axe"
+        },
+        {
+          "videoId": "fo6HM4AMFxM",
+          "predictor": "Tamiko Katsumoto"
+        },
+        {
+          "videoId": "CVACyQgN3ls",
+          "predictor": "Mark Hyman"
+        },
+        {
+          "videoId": "7Esuf2u3KKc",
+          "predictor": "Mae Alice Suzuki"
+        },
+        {
+          "videoId": "hXDrnL0K5TI",
+          "predictor": "Sarah Berry"
+        },
+        {
+          "videoId": "wtlmqv8RVJc",
+          "predictor": "Dr. Jones, DC"
+        },
+        {
+          "videoId": "kijkEmtjswg",
+          "predictor": "Doctor Alex"
+        },
+        {
+          "videoId": "p-DlhDNDLZA",
+          "predictor": "Dr Alex Wibberley"
+        }
+      ]
+    },
+    {
+      "id": "processed-meat",
+      "type": "consensus",
+      "statement": "Processed meat raises inflammatory markers.",
+      "note": "Cited with the most specific evidence in the corpus (UK Biobank CRP by meat type).",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "gCjN1Rya6es",
+          "predictor": "Tom Biernacki"
+        },
+        {
+          "videoId": "qznhpnuqU2w",
+          "predictor": "Dr. Will Bulsiewicz"
+        },
+        {
+          "videoId": "2sv0sZYxGyE",
+          "predictor": "Doctors of Ojai"
+        },
+        {
+          "videoId": "t_vc0_WU8MI",
+          "predictor": "Dr. Suneel Dhand"
+        }
+      ]
+    },
+    {
+      "id": "gut-route",
+      "type": "consensus",
+      "statement": "Fibre and the gut microbiome are a main route by which diet calms inflammation.",
+      "note": "The framing on the rise: about half of 2026's videos run through the gut.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "gCjN1Rya6es",
+          "predictor": "Tom Biernacki"
+        },
+        {
+          "videoId": "WQNNfNIbfHw",
+          "predictor": "Dr. Suneel Dhand"
+        },
+        {
+          "videoId": "GZ8SsMSBY5U",
+          "predictor": "Maria Lucey"
+        },
+        {
+          "videoId": "5zP6eIgKVK8",
+          "predictor": "Dr. Rob Lustig"
+        },
+        {
+          "videoId": "cGGoY8uasQU",
+          "predictor": "Mark Hyman"
+        },
+        {
+          "videoId": "5SWWSBPnLfI",
+          "predictor": "Jenné Claiborne"
+        },
+        {
+          "videoId": "2G2y1M0J-xE",
+          "predictor": "Dr. William Li"
+        },
+        {
+          "videoId": "wjs2w7Cmkgw",
+          "predictor": "Lisa Valente"
+        },
+        {
+          "videoId": "qv_6PBLGqYE",
+          "predictor": "Dr. Josh Axe"
+        },
+        {
+          "videoId": "f9lfct20n1Y",
+          "predictor": "Thomas DeLauer"
+        },
+        {
+          "videoId": "Ixf0DFExhq0",
+          "predictor": "Eric Berg"
+        },
+        {
+          "videoId": "3vSXDXCSF_0",
+          "predictor": "Thomas DeLauer"
+        },
+        {
+          "videoId": "7Esuf2u3KKc",
+          "predictor": "Mae Alice Suzuki"
+        },
+        {
+          "videoId": "I6jQgIjuNHU",
+          "predictor": "Will Bulsiewicz"
+        },
+        {
+          "videoId": "YW4izUf3u-k",
+          "predictor": "Will Bulsiewicz"
+        },
+        {
+          "videoId": "qznhpnuqU2w",
+          "predictor": "Dr. Will Bulsiewicz"
+        },
+        {
+          "videoId": "JtRCs3eZgVk",
+          "predictor": "Hansaji Yogendra"
+        },
+        {
+          "videoId": "kijkEmtjswg",
+          "predictor": "Doctor Alex"
+        },
+        {
+          "videoId": "2sv0sZYxGyE",
+          "predictor": "Doctors of Ojai"
+        },
+        {
+          "videoId": "t_vc0_WU8MI",
+          "predictor": "Dr. Suneel Dhand"
+        },
+        {
+          "videoId": "j-UM7nvcRl0",
+          "predictor": "Will Bulsiewicz"
+        },
+        {
+          "videoId": "A2GphlX-4VM",
+          "predictor": "Will Bulsiewicz"
+        },
+        {
+          "videoId": "p-DlhDNDLZA",
+          "predictor": "Dr Alex Wibberley"
+        }
+      ]
+    },
+    {
+      "id": "plants-fish",
+      "type": "consensus",
+      "statement": "Oily fish, olive oil, berries and other polyphenol-rich plants lower inflammation.",
+      "note": "Near-universal in list videos; mostly biomarker or mechanism evidence rather than outcome trials.",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "gCjN1Rya6es",
+          "predictor": "Tom Biernacki"
+        },
+        {
+          "videoId": "1wtboCE9K9o",
+          "predictor": "Andrew Weil"
+        },
+        {
+          "videoId": "WQNNfNIbfHw",
+          "predictor": "Dr. Suneel Dhand"
+        },
+        {
+          "videoId": "pUyqK1LjuUw",
+          "predictor": "Plant Based Science London"
+        },
+        {
+          "videoId": "GZ8SsMSBY5U",
+          "predictor": "Maria Lucey"
+        },
+        {
+          "videoId": "Sl3g1Dl4ALE",
+          "predictor": "Thomas DeLauer"
+        },
+        {
+          "videoId": "fJPBrhgsS0U",
+          "predictor": "Diana Girnita"
+        },
+        {
+          "videoId": "OeskUWMUfms",
+          "predictor": "Dr. Paul Anderson"
+        },
+        {
+          "videoId": "pjH9VER2jKo",
+          "predictor": "Anshul Gupta"
+        },
+        {
+          "videoId": "qv_6PBLGqYE",
+          "predictor": "Dr. Josh Axe"
+        },
+        {
+          "videoId": "0c_TKVZY71I",
+          "predictor": "Dr. Josh Axe"
+        },
+        {
+          "videoId": "OYWxGPTWPs4",
+          "predictor": "Bobby Parrish"
+        },
+        {
+          "videoId": "h2YKBp4JUQo",
+          "predictor": "Business Insider"
+        },
+        {
+          "videoId": "k6ts0e41pq8",
+          "predictor": "Physionic"
+        },
+        {
+          "videoId": "mE8mCeloxxM",
+          "predictor": "Thomas DeLauer"
+        },
+        {
+          "videoId": "3vSXDXCSF_0",
+          "predictor": "Thomas DeLauer"
+        },
+        {
+          "videoId": "AtvhbXLxmlI",
+          "predictor": "Julia Zumpano"
+        },
+        {
+          "videoId": "I6jQgIjuNHU",
+          "predictor": "Will Bulsiewicz"
+        },
+        {
+          "videoId": "YW4izUf3u-k",
+          "predictor": "Will Bulsiewicz"
+        },
+        {
+          "videoId": "qznhpnuqU2w",
+          "predictor": "Dr. Will Bulsiewicz"
+        },
+        {
+          "videoId": "lgb6hjVJ9PE",
+          "predictor": "Liezl Jayne Strydom"
+        }
+      ]
+    },
+    {
+      "id": "turmeric",
+      "type": "consensus",
+      "statement": "Turmeric (curcumin) reduces inflammation and pain.",
+      "note": "The trial-cited version (about 1 g/day, modest arthritis pain relief) is far narrower than the list version ('most powerful natural anti-inflammatory', a treatment for depression).",
+      "camps": null,
+      "sources": [
+        {
+          "videoId": "bcSr7hueQOo",
+          "predictor": "Andrew Weil"
+        },
+        {
+          "videoId": "POS5inxBaAk",
+          "predictor": "Dr. Mandell"
+        },
+        {
+          "videoId": "_EZ0FY8HhqU",
+          "predictor": "Andrew Weil"
+        },
+        {
+          "videoId": "psIXPettMC4",
+          "predictor": "Dr. Diana Girnita"
+        },
+        {
+          "videoId": "hjjfqEyOKBQ",
+          "predictor": "Sten Ekberg"
+        },
+        {
+          "videoId": "6MUE7nfA0G4",
+          "predictor": "Eat more Lose more"
+        }
+      ]
+    }
+  ]
+}

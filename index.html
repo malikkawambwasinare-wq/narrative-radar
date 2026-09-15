@@ -264,6 +264,42 @@
   .momentum rect.empty { fill: var(--hairline); opacity: 1; }
   .momentum .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   .vid-body .thumbwrap { width: 136px; }
+  /* Sides in this story */
+  .sides { margin: 14px 0 18px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px;
+    background: color-mix(in srgb, var(--accent) 5%, var(--surface)); }
+  .sides .side-claim { margin-top: 10px; }
+  .sides .side-q { font-weight: 600; font-size: 14.5px; margin-bottom: 8px; }
+  .sides .side-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .sides .side { padding: 10px 12px; border-radius: 8px; background: var(--surface); border: 1px solid var(--hairline); }
+  .sides .side-k { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .sides .side-p { font-size: 13.5px; margin-top: 4px; }
+  .sides .side-n { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .sides .side-w { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; }
+  .sides .side-w b { color: var(--ink); font-weight: 600; }
+  .sides > .qk { font-weight: 650; color: var(--ink); }
+  /* Series filters v2 */
+  .sf .presets { width: 100%; display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+  .sf .preset { font: inherit; font-size: 12.5px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--border);
+    background: var(--bg, transparent); color: var(--ink-2); cursor: pointer; }
+  .sf .preset.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+  .sf .preset.custom { cursor: default; color: var(--muted); border-style: dashed; }
+  .sf details.drawer { width: 100%; margin-top: 4px; }
+  .sf details.drawer > summary { cursor: pointer; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); list-style: none; }
+  .sf details.drawer > summary::before { content: "▸ "; }
+  .sf details[open].drawer > summary::before { content: "▾ "; }
+  .sf details.drawer > label { display: inline-flex; margin: 8px 14px 0 0; vertical-align: top; }
+  .yt-tags .pack { color: var(--muted); background: transparent; border: 1px solid var(--hairline); }
+  .yt-tags .pack.paid { color: var(--warn, #9A6410); border-color: rgba(154,100,16,.4); }
+  .yt-tags .muted { color: var(--muted); background: transparent; }
+  .yt-tags .det { color: var(--accent); background: transparent; cursor: help; text-decoration: underline dotted; }
+  details.fold { margin: 8px 0 8px 22px; }
+  details.fold > summary { cursor: pointer; font-size: 12px; color: var(--muted); list-style: none; padding: 6px 0; }
+  details.fold > summary::before { content: "▸ "; }
+  details[open].fold > summary::before { content: "▾ "; }
+  details.fold > summary b { color: var(--ink-2); font-weight: 500; }
+  .angle.folded { opacity: .55; }
+  details.removed .rm { padding: 8px 0; border-bottom: 1px solid var(--hairline); font-size: 13px; }
+  details.removed .rmv { font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-right: 8px; }
   .galempty { color: var(--muted); font-size: 14px; padding: 26px 0; text-align: center; }
   .backgal { font: inherit; font-size: 13px; background: none; border: none; cursor: pointer;
     color: var(--accent); padding: 0; margin-bottom: 10px; }
@@ -283,9 +319,13 @@
   .mutations .m { margin: 3px 0; }
   .mutations .d { color: var(--muted); font-variant-numeric: tabular-nums;
     display: inline-block; min-width: 64px; }
-  .explain { margin-top: 12px; }
+  /* The explanation is the first thing a viewer needs — a callout, not a footnote */
+  .explain { margin-top: 16px; padding: 14px 16px; border-radius: 10px;
+    background: color-mix(in srgb, var(--accent) 7%, var(--surface)); border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border)); }
   .explain .ek { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--muted); margin-right: 8px; }
+    color: var(--ink); font-weight: 650; margin-right: 8px; }
+  .explain .explain-text { font-size: 15px; line-height: 1.55; color: var(--ink); }
+  .explain .explain-text b { color: var(--accent); }
   .lvl {
     font: inherit; font-size: 12px; padding: 3px 12px; cursor: pointer;
     border-radius: 999px; border: 1px solid var(--border);
@@ -930,8 +970,21 @@ function narrativeStats(data) {
   const buckets = {};
   rel.forEach(x => (buckets[x.type] = buckets[x.type] || []).push(x));
   const dated = preds.filter(e => parseHorizonDate(e.horizon)).length;
+  // Evidence profile from our transcript review (labels only, set at review time):
+  // what kind of evidence each video leans on, whether it sells its own product,
+  // and which side of the core question it takes.
+  const rv = vids.filter(v => v.review && v.verdict_basis === "transcript");
+  const cnt = (k, val) => rv.filter(v => v.review[k] === val).length;
+  const review = rv.length ? {
+    n: rv.length,
+    trials: cnt("evidence", "outcome-trials"), biomarkers: cnt("evidence", "biomarkers"),
+    anecdote: cnt("evidence", "anecdote"), noEvidence: cnt("evidence", "none"),
+    pitch: cnt("pitch", true),
+    stance: { maximalist: cnt("stance", "maximalist"), moderate: cnt("stance", "moderate"), skeptic: cnt("stance", "skeptic"), none: cnt("stance", "none") },
+  } : null;
   return {
     ...r,
+    review, clock: industryProfile().clock,
     mutations: n.mutations || [],
     latestMutation: (n.mutations || [])[(n.mutations || []).length - 1] || null,
     coreThesis: n.claim || "",
@@ -962,7 +1015,7 @@ function buildRadarRead(s) {
 
   const bits = [];
   if (s.years != null) {
-    bits.push(`The core warning has been in circulation for ${s.years === 1 ? "a year" : `${s.years} years`}${s.verified ? "" : " (origin unverified)"}`);
+    bits.push(`The core ${s.clock ? "warning" : "claim"} has been in circulation for ${s.years === 1 ? "a year" : `${s.years} years`}${s.verified ? "" : " (origin unverified)"}`);
   }
   if (s.latestMutation?.mechanism) {
     bits.push(`its current mechanism — ${String(s.latestMutation.mechanism).replace(/\.$/, "")} — is the newest of ${s.mutations.length} on record`);
@@ -971,7 +1024,14 @@ function buildRadarRead(s) {
   const s1 = bits.length ? bits.slice(0, 2).join(", ").replace(/^./, c => c.toUpperCase()) + "." : "";
 
   const bits2 = [];
-  if (!s.hasLedger || s.datedClaims === 0) {
+  const pct = (a, b) => Math.round(a / b * 100);
+  if (!s.clock) {
+    // Evidence, not a clock: what the videos rest on, and who is selling.
+    if (s.review) {
+      bits2.push(`of ${s.review.n} videos read, ${pct(s.review.trials, s.review.n)}% cite outcome trials and ${pct(s.review.biomarkers + s.review.anecdote, s.review.n)}% rest on biomarkers or anecdote`);
+      if (s.review.pitch) bits2.push(`${pct(s.review.pitch, s.review.n)}% sell their own product`);
+    } else bits2.push("Its claims are judged against evidence, not a calendar — the review has not run yet");
+  } else if (!s.hasLedger || s.datedClaims === 0) {
     bits2.push("Few claims here are precise enough to test on a clock");
   } else if (s.resolved >= SCORE_GATE) {
     bits2.push(`${s.sup} of ${s.resolved} resolved calls landed`
@@ -1189,7 +1249,13 @@ function orientationHtml(data, s) {
     if (s.upd) nums.push(num(`${s.upd}×`, "deadline moves", "warn"));
   }
   if (s.reheatShare != null) nums.push(num(`${Math.round(s.reheatShare * 100)}%`, "recent reheats"));
-  nums.push(days == null
+  if (!s.clock) {
+    // Health and culture stories never "arrive" on a date: show what the evidence rests on instead.
+    if (s.review) {
+      nums.push(num(`${Math.round(s.review.trials / s.review.n * 100)}%`, "cite outcome trials", s.review.trials / s.review.n < 0.25 ? "warn" : ""));
+      nums.push(num(`${Math.round(s.review.pitch / s.review.n * 100)}%`, "sell their own product", s.review.pitch / s.review.n >= 0.25 ? "warn" : ""));
+    }
+  } else nums.push(days == null
     ? num("none dated", "next test")
     : num(days <= 0 ? "due now" : `${days}d`, "next test", days <= 30 ? "due" : ""));
   return `<div class="orient">
@@ -1216,11 +1282,53 @@ function orientationHtml(data, s) {
   </div>`;
 }
 
+/* Industry profiles — the analysis a narrative gets depends on what kind of
+   story it is. A market call resolves on a calendar; a health claim resolves
+   against evidence and never "arrives", so a prediction clock is noise there. */
+const INDUSTRY_PROFILES = {
+  "Health & biotech": { clock: false, claimsLabel: "What do they claim?", deadlineLabel: "Claims name a time frame",
+    noClock: "Health claims are graded against evidence, not a calendar — no prediction clock on this story." },
+  "Culture & society": { clock: false, claimsLabel: "What do they claim?", deadlineLabel: "Claims name a time frame",
+    noClock: "Cultural claims rarely carry a date — graded on evidence, not a clock." },
+};
+const topicIndustry = id => (watchlist?.topics || []).find(t => t.id === (id || topicId))?.industry || "Unsorted";
+const industryProfile = id => INDUSTRY_PROFILES[topicIndustry(id)] || { clock: true, claimsLabel: "What did they predict?", deadlineLabel: "Claims name a deadline" };
+
+// Sides in this story: every contested claim's camps, so a viewer sees the
+// other side before they have finished hearing the first one.
+function sidesHtml(data) {
+  const contested = (data?.claims?.claims || []).filter(c => (c.camps || []).length >= 2);
+  if (!contested.length) return "";
+  // One name per person: "Dr. Jen Ashton" and "Dr. Jennifer Ashton" share a surname.
+  const names = arr => [...new Map((arr || []).map(s => (s.predictor || "").split("(")[0].trim()).filter(Boolean)
+    .map(n => [n.toLowerCase().split(/\s+/).pop(), n])).values()].slice(0, 3).join(", ");
+  return `<div class="sides">
+    <div class="qk">Sides in this story — hear both before you decide</div>
+    ${contested.map(c => `<div class="side-claim"><div class="side-q">${esc(c.statement)}</div>
+      <div class="side-row">${c.camps.map((k, i) => {
+        const nv = (k.sources || []).length;
+        return `<div class="side">
+        <div class="side-k">Side ${i + 1} · ${nv ? `${nv} video${nv === 1 ? "" : "s"} in this corpus` : "not yet in this corpus"}</div>
+        <div class="side-p">${esc(k.position)}</div>
+        ${k.watch_for ? `<div class="side-w"><b>Look out for:</b> ${esc(k.watch_for)}</div>` : ""}
+        ${nv ? `<div class="side-n">e.g. ${esc(names(k.sources))}</div>` : ""}</div>`;
+      }).join("")}</div>
+      ${c.note ? `<div class="v-note">${esc(c.note)}</div>` : ""}</div>`).join("")}
+  </div>`;
+}
+
 /* LAYER 2 — metrics grouped by what they mean */
 function dashboardHtml(data, s) {
   const days = s.next ? Math.ceil((s.next.t - Date.now()) / 86400000) : null;
+  const prof = industryProfile();
   const track = [];
-  if (!s.hasLedger) track.push(`<div class="gline">No dated predictions on file yet.</div>
+  if (!prof.clock && !s.hasLedger) {
+    const ex = data?.claimsExtracted || [];
+    const dated = ex.filter(c => c.horizon_dated).length, vidsWith = new Set(ex.map(c => c.videoId)).size;
+    track.push(ex.length ? `<div class="gline">${ex.length} claims extracted from ${vidsWith} videos</div>
+      <div class="gsub">${dated} name a time frame · ${ex.length - dated} give none</div>` : `<div class="gline">Claims not yet extracted.</div>`);
+    track.push(`<div class="gsub">${esc(prof.noClock)}</div>`);
+  } else if (!s.hasLedger) track.push(`<div class="gline">No dated predictions on file yet.</div>
     <div class="gsub">Nothing here can be scored on a clock.</div>`);
   else {
     track.push(`<div class="gline">${s.resolved >= SCORE_GATE
@@ -1246,7 +1354,7 @@ function dashboardHtml(data, s) {
   if (s.spread) q.push(`<div class="gsub">${s.spread.channels} channels · top 3 carry ${s.spread.pct}%</div>`);
   if (!q.length) q.push(`<div class="gsub">Corpus still too small to judge.</div>`);
   return `<div class="grps">
-    <div class="grp"><div class="grp-k">What did they predict?</div>${track.join("")}</div>
+    <div class="grp"><div class="grp-k">${esc(prof.claimsLabel)}</div>${track.join("")}</div>
     <div class="grp"><div class="grp-k">How has the story behaved?</div>${beh.join("")}</div>
     <div class="grp"><div class="grp-k">Is this coming from many sources?</div>${q.join("")}</div>
   </div>`;
@@ -1421,13 +1529,15 @@ function renderNarrativeCard() {
     .join("");
   const trig = n.trigger;
 
-  const level = lsGet("nr-explain-level") || "layman";
-  const explHtml = n.explanations && isOpen("explain") ? `
+  // The explanation is open by default: it is the first thing a viewer needs,
+  // not a disclosure. The button still hides it.
+  const level = lsGet("nr-explain-level") || "intermediate";   // the level that names the camps
+  const explHtml = n.explanations && !disclosed[`${topicId}:explain-hidden`] ? `
     <div class="explain">
       <span class="ek">Explain this narrative</span>
       ${["layman", "intermediate", "expert"].map(l =>
         `<button class="lvl ${l === level ? "on" : ""}" data-explain-level="${l}">${l[0].toUpperCase() + l.slice(1)}</button>`).join("")}
-      <div class="explain-text">${esc(n.explanations[level] || n.explanations.layman || "")}</div>
+      <div class="explain-text">${esc(n.explanations[level] || n.explanations.layman || "").replace(/\b(Camps?:|Falsifiers:|Incentives:|Watch for|Clocks:)/g, "<b>$1</b>")}</div>
     </div>` : "";
 
   // Predictor breakdown: who drives this narrative, and in which videos
@@ -1526,7 +1636,7 @@ function renderNarrativeCard() {
   $("ncard").innerHTML = `
   <div class="ncard">
     <div class="util">
-      ${n.explanations ? discBtn("explain", "Explain this narrative ↓", "Hide explanation ↑") : ""}
+      ${n.explanations ? discBtn("explain-hidden", "Hide explanation ↑", "Explain this narrative ↓") : ""}
       <button data-refresh="${esc(topicId)}" title="Sweep for new videos and update the claims">↻ Refresh</button>
       <button data-trace="${esc(topicId)}" title="Trace the narrative's earliest utterance on X (paid X API — roughly $1-2 per trace)">⌖ Trace origin</button>
       ${cache[topicId]?.relations ? "" : `<button data-map360="${esc(topicId)}" title="Map the question this narrative competes to answer (one-time AI call, ~$0.10)">⊕ Map territory</button>`}
@@ -1535,6 +1645,7 @@ function renderNarrativeCard() {
     </div>
     ${orientationHtml(cache[topicId], stats)}
     ${explHtml}
+    ${sidesHtml(cache[topicId])}
     ${dashboardHtml(cache[topicId], stats)}
     ${answersHtml(cache[topicId], stats)}
     ${whatChangedHtml(cache[topicId], stats)}
@@ -1849,7 +1960,308 @@ function seriesFilterBar(keep, ctx) {
     ${enriched < keep.length ? `<div class="showing">${keep.length - enriched} of ${keep.length} videos have no YouTube signals yet — they fail the channel filters, and pass reach and date.</div>` : ""}`;
 }
 
+/* ---------- Series filters v2: the cautious-viewer suite ----------
+   Built from briefs/filter-suite/SPEC.md. A control earns its place only by
+   closing a named doom-watching trap with data on disk today; nothing here
+   ranks by size, and every fold stays in place with its reason. Enabled per
+   topic with `filters: "v2"` in watchlist.json. */
+const seriesVersion = () => (watchlist?.topics || []).find(t => t.id === topicId)?.filters || "v1";
+const SF2_KEY = "series-filters-v2";
+const SF2_DEFAULT = { q: "", sort: "chrono", titleBait: "both", basis: false, deadline: "all",
+                      claim: "all", camp: "all", channelAge: false, track: false, speaker: "all", paid: "all",
+                      pitch: "all", evidence: "all", stance: "all" };
+// Our transcript review's labels (set at review time, stored as labels only).
+const EVIDENCE_LABEL = { "outcome-trials": "cites outcome trials", biomarkers: "biomarkers / mechanism only", anecdote: "anecdote / clinical stories", none: "no evidence cited" };
+const STANCE_LABEL = { maximalist: "inflammation is THE cause, food the cure", moderate: "matters, one factor, modest effects", skeptic: "overhyped", none: "takes no position" };
+const SF2_PRESETS = {
+  bait: { label: "Bait off", one: "Folds crisis-now and shouty titles among the angles; episodes are never folded on a title.", set: { titleBait: "both" } },
+  read: { label: "Transcript-read only", one: "Bait off, plus only verdicts made with the transcript in hand, plus angles from channels under a year old.", set: { titleBait: "both", basis: true, channelAge: true } },
+  deadline: { label: "Deadline or nothing", one: "Bait off, plus fold videos whose every extracted claim has no date.", set: { titleBait: "both", deadline: "some" } },
+  everything: { label: "Everything", one: "Nothing folded except what our verdicts removed — still visible at the bottom.", set: { titleBait: "any" } },
+};
+let SF2 = (() => { try { return { ...SF2_DEFAULT, ...(JSON.parse(lsGet(SF2_KEY)) || {}) }; } catch (e) { return { ...SF2_DEFAULT }; } })();
+const activePreset = () => Object.entries(SF2_PRESETS).find(([, p]) => {
+  const want = { ...SF2_DEFAULT, ...p.set };
+  return Object.keys(SF2_DEFAULT).every(k => k === "q" || k === "sort" || String(SF2[k]) === String(want[k]));
+})?.[0] || "custom";
+
+// Title bait, lexicon v1: a title folds only when a fear term AND an urgency
+// term co-occur (either alone hits real originals), or when it shouts.
+// Published as our own analysis; badges cite the version.
+const TITLE_LEXICON_V1 = {
+  version: 1,
+  crisis: /\b(warn(?:s|ed|ing)?|collaps(?:e|es|ed|ing)|crash(?:es|ing|ed)?|bubble|burst|crisis|terrif(?:ied|ying)|chilling|shock(?:ing)?|panic(?:king)?|survive|protect|last chance|final|massive|expos(?:es|ed)|hidden|domino|prophecy|doom|toxic|poison(?:s|ous|ing)?|kill(?:s|ing|er)?|destroy(?:s|ing)?|danger(?:ous)?|deadly|worst|never eat|stop eating|secret|lie(?:s|d)?|won'?t tell you|silent(?:ly)?)\b/i,
+  now: /\b(just|now|already|about to|soon|last chance|immediately|urgent(?:ly)?|today|right now|before it'?s too late|stop)\b/i,
+  acronyms: new Set(["AI", "CIA", "BTC", "CEO", "ETH", "SUI", "ADA", "MSTR", "GPT", "STRC", "SRS", "AMD", "USA", "INC", "AMA", "ETF", "FED", "GDP", "SEC", "NYT", "CNBC", "MD", "DR", "PHD", "RD", "IBS", "CRP", "LDL", "HDL", "DNA", "TV", "UK", "US", "EU", "NHS", "FDA", "WHO", "IBD", "MS", "RA", "PCOS", "GI", "BBC", "NEW", "TOP", "BEST", "VS", "OK", "DIY"]),
+};
+const isCrisisNow = t => TITLE_LEXICON_V1.crisis.test(t) && TITLE_LEXICON_V1.now.test(t);
+const isShouty = t => (t.match(/[A-Za-z]{3,}/g) || []).filter(w => w === w.toUpperCase() && !TITLE_LEXICON_V1.acronyms.has(w)).length >= 3
+  || (t.match(/!/g) || []).length >= 2;
+const titleFlags = v => [isCrisisNow(v.title) && "crisis-now title", isShouty(v.title) && "shouty title"].filter(Boolean);
+const monthsAtPublish = v => v.yt?.channelJoined && publishedEst(v) ? (publishedEst(v) - Date.parse(v.yt.channelJoined)) / (30.44 * 86400000) : null;
+const ytUnavailable = v => !v.yt || !v.yt.channelId;
+
+// Per-video claim extraction summary and camp membership (client-side, from files already loaded).
+function extractedSummary(data) {
+  const m = {};
+  for (const c of data?.claimsExtracted || []) {
+    const s = (m[c.videoId] ||= { n: 0, dated: 0, unclassified: 0 });
+    s.n++; if (c.horizon_dated === true) s.dated++; else if (c.horizon_dated == null) s.unclassified++;
+  }
+  return m;
+}
+function videoCamps(data) {
+  const m = {};
+  for (const c of data?.claims?.claims || []) {
+    const camps = c.camps || []; if (camps.length < 2) continue;
+    camps.forEach((k, i) => { for (const s of k.sources || []) (m[s.videoId] ||= []).push({ claimId: c.id, k: i, n: camps.length, position: k.position || k.label || `side ${i + 1}` }); });
+  }
+  return m;
+}
+// Ledger chip, status-partitioned so nothing is counted twice; counts, never rates, never coloured.
+function ledgerChip(r) {
+  const parts = [["held", r.sup], ["refuted", r.ref], ["ambiguous", r.amb], ["moved", r.upd], ["pending", r.pendingDated], ["no date", r.pendingUndated]]
+    .filter(([, n]) => n).map(([l, n]) => `${n} ${l}`);
+  return `<span class="rec" data-speaker="${esc(nameKey(r.name))}" title="From the public prediction ledger: counts of dated claims by how they resolved. Recorded, not endorsed.">${esc(r.name)} · ${parts.join(" · ") || "on the ledger"}</span>`;
+}
+function speakerRecords2(data) {
+  const p = data?.predictions; if (!p) return {};
+  const rec = {};
+  for (const e of p.entries || []) {
+    const name = e.predictor || p.predictor; if (!name) continue;
+    const r = (rec[nameKey(name)] ||= { name: name.replace(/\(.*?\)/g, "").trim(), sup: 0, ref: 0, amb: 0, upd: 0, pendingDated: 0, pendingUndated: 0 });
+    if (e.status === "SUPPORTED") r.sup++; else if (e.status === "REFUTED") r.ref++; else if (e.status === "AMBIGUOUS") r.amb++;
+    else if (e.status === "UPDATED") r.upd++; else if (e.due?.end) r.pendingDated++; else r.pendingUndated++;
+  }
+  return rec;
+}
+
+// null = pass, {fold} = folded with a reason, {unknown} = data missing (folded as unknown, never a strike).
+// Originals never fold on packaging (title, channel age); they fold on verdict, claim and speaker controls.
+function seriesPass2(x, ctx) {
+  const v = x.v, isEp = v.verdict === "ORIGINAL";
+  if (SF2.q && !(v.title + " " + v.channel).toLowerCase().includes(SF2.q.toLowerCase())) return { fold: "no match" };
+  if (SF2.titleBait !== "any" && !isEp) {
+    if ((SF2.titleBait === "crisis" || SF2.titleBait === "both") && isCrisisNow(v.title)) return { fold: "crisis-now title" };
+    if ((SF2.titleBait === "shouty" || SF2.titleBait === "both") && isShouty(v.title)) return { fold: "shouty title" };
+  }
+  if (SF2.basis && verdictBasis(v) !== "transcript") return { fold: v.verdict === "UNREVIEWED" ? "not yet reviewed" : "sorted from title and metadata only, not yet re-read against the transcript" };
+  if (SF2.deadline !== "all") {
+    const s = ctx.extracted[v.videoId];
+    if (s && s.n > 0) {
+      if (s.dated === 0) return { fold: "no date stated in any extracted claim" };
+      if (SF2.deadline === "every" && s.dated < s.n) return { fold: "some claims undated" };
+    }
+  }
+  if (SF2.claim !== "all" && !(x.claims || new Set()).has(SF2.claim)) return { fold: "not cited for this claim" };
+  if (SF2.claim !== "all" && SF2.camp !== "all") {
+    const mine = (ctx.camps[v.videoId] || []).find(c => c.claimId === SF2.claim);
+    if (!mine) return { fold: "takes no side on this claim" };
+    if (SF2.camp === "other") { if (ctx.arrivedCamp != null && mine.k === ctx.arrivedCamp) return { fold: "the side you came from" }; }
+    else if (mine.k !== +SF2.camp) return { fold: "other side of this claim" };
+  }
+  if (SF2.channelAge && !isEp) {
+    const m = monthsAtPublish(v);
+    if (m == null) return ytUnavailable(v) ? { unknown: "channel age not on file" } : { unknown: "channel age not on file" };
+    if (m < 12) return { fold: `channel was ${m < 2 ? Math.round(m * 30.44) + " days" : Math.round(m) + " months"} old when this was posted` };
+  }
+  if (SF2.track && !x.recs.length) return { fold: "speaker not on the ledger" };
+  if (SF2.speaker !== "all" && ![...(x.speakers || [])].some(s => nameKey(s) === SF2.speaker)) return { fold: "other speakers" };
+  if (SF2.pitch !== "all" || SF2.evidence !== "all" || SF2.stance !== "all") {
+    const r = v.review;
+    if (!r) return { unknown: "not yet reviewed against its transcript" };
+    if (SF2.pitch === "no" && r.pitch === true) return { fold: "sells their own product" };
+    if (SF2.pitch === "yes" && r.pitch !== true) return { fold: "not selling their own product" };
+    if (SF2.evidence === "trials" && r.evidence !== "outcome-trials") return { fold: `evidence: ${EVIDENCE_LABEL[r.evidence] || "unclassified"}` };
+    if (SF2.evidence === "any" && (!r.evidence || r.evidence === "none")) return { fold: "no evidence cited" };
+    if (SF2.stance !== "all" && r.stance !== SF2.stance) return { fold: "other side" };
+  }
+  if (SF2.paid !== "all") {
+    if (ytUnavailable(v)) return { unknown: "YouTube page unavailable" };
+    if (SF2.paid === "no" && v.yt.paidPromotion) return { fold: "creator ticked paid promotion" };
+    if (SF2.paid === "yes" && !v.yt.paidPromotion) return { fold: "no disclosure ticked" };
+  }
+  return null;
+}
+
+function seriesFilterBar2(keep, ctx) {
+  const opt = (val, label, cur) => `<option value="${esc(String(val))}" ${String(cur) === String(val) ? "selected" : ""}>${esc(label)}</option>`;
+  const sel = (key, label, opts, title = "") => `<label title="${esc(title)}">${label}<select data-sf2="${key}">${opts.map(([v, l]) => opt(v, l, SF2[key])).join("")}</select></label>`;
+  const chk = (key, label, title = "") => `<label class="chk" title="${esc(title)}"><input type="checkbox" data-sf2="${key}" ${SF2[key] ? "checked" : ""}>${label}</label>`;
+  const claims = ctx.claims.map(c => [c.id, c.statement.length > 70 ? c.statement.slice(0, 68) + "…" : c.statement]);
+  const chosen = ctx.claims.find(c => c.id === SF2.claim);
+  const camps = (chosen?.camps || []).length >= 2 ? chosen.camps.map((k, i) => [i, `${k.position || k.label || "side " + (i + 1)}`.slice(0, 60)]) : [];
+  const speakers = [...new Map(keep.flatMap(v => [...(ctx.speakers[v.videoId] || [])]).map(s => [nameKey(s), s.replace(/\(.*?\)/g, "").trim()])).entries()].sort((a, b) => a[1].localeCompare(b[1]));
+  const active = activePreset();
+  return `
+    <div class="presets">${Object.entries(SF2_PRESETS).map(([k, p]) => `<button type="button" class="preset ${active === k ? "on" : ""}" data-preset="${k}" title="${esc(p.one)}">${esc(p.label)}</button>`).join("")}${active === "custom" ? `<span class="preset custom">custom</span>` : ""}</div>
+    <div class="grp">Find &amp; order</div>
+    <label>Find<input type="search" data-sf2="q" value="${esc(SF2.q)}" placeholder="title or channel"></label>
+    ${sel("sort", "Order", [["chrono", "as it happened"], ["new", "newest first"]])}
+    <div class="grp">Title bait</div>
+    ${sel("titleBait", "Title bait", [["any", "show all"], ["crisis", "fold crisis-now titles"], ["shouty", "fold shouty titles"], ["both", "fold both"]], "A fear word together with an urgency word, or three shouted words / two exclamation marks (lexicon v1). Angles fold; episodes only get the badge.")}
+    <div class="grp">Unread verdicts</div>
+    ${chk("basis", "Transcript-read verdicts only", "Our original/derivative call was made with the transcript in hand — this is about our confidence in the sorting, not whether the video is right.")}
+    ${ctx.hasExtracted ? `<div class="grp">${industryProfile().clock ? "Predictions that never resolve" : "Claims you can't check"}</div>
+    ${sel("deadline", industryProfile().deadlineLabel, [["all", "any"], ["some", "at least one claim dated"], ["every", "every claim dated"]], "From our claim extraction: does the stated horizon name a date or time frame? Dated means checkable, not credible. Videos with no extracted claims pass and say so.")}` : ""}
+    ${ctx.hasReview ? `<div class="grp">Who is selling, and on what evidence</div>
+    ${sel("pitch", "Selling their own product", [["all", "any"], ["no", "not selling anything"], ["yes", "selling only"]], "From our transcript review: the speaker or channel promotes its own supplement, course, book, programme or app. Catches pitches YouTube's paid-promotion box does not.")}
+    ${sel("evidence", "Evidence", [["all", "any"], ["any", "cites some evidence"], ["trials", "cites outcome trials"]], "From our transcript review: outcome trials measure disease or symptoms; biomarker studies (CRP, IL-6) do not show you will feel or live better.")}
+    ${sel("stance", "Position", [["all", "all positions"], ...Object.entries(STANCE_LABEL)], "Which side of the core question the video takes, from our transcript review.")}` : ""}
+    ${claims.length ? `<div class="grp">Confirmation loop</div>
+    ${sel("claim", "Cited for claim", [["all", "any"], ...claims])}
+    ${camps.length ? sel("camp", "Side", [["all", "all sides"], ...camps, ["other", "the other side"]], "Camps on this claim from our consolidation. 'The other side' folds the side of the video you arrived from.") : ""}` : ""}
+    <details class="drawer"><summary>More</summary>
+      ${chk("channelAge", "Not a pop-up channel (1+ year at publish)", "Folds angles from channels under a year old when the video was posted. A heuristic, not a credibility signal.")}
+      ${ctx.hasLedger ? chk("track", "Speaker is on the ledger", "At least one entry on the public prediction ledger — recorded, not necessarily graded. The chip on the card shows the counts.") : ""}
+      ${speakers.length ? sel("speaker", "Speaker", [["all", "any"], ...speakers]) : ""}
+      ${sel("paid", "Paid promotion (YouTube's flag)", [["all", "any"], ["no", "no disclosure ticked"], ["yes", "disclosure ticked"]], "Set by the creator. Undisclosed is not the same as unsponsored.")}
+    </details>
+    <div class="showing" id="sf-showing"></div>`;
+}
+
+function cardTags2(x, ctx) {
+  const v = x.v, y = v.yt || {}, t = [];
+  for (const r of x.recs) t.push(ledgerChip(r));
+  if (!x.recs.length && ctx.hasLedger && (x.speakers || new Set()).size) t.push(`<span class="muted">not on the ledger</span>`);
+  for (const c of ctx.camps[v.videoId] || []) if (SF2.claim === "all" || c.claimId === SF2.claim) t.push(`<span title="${esc(c.claimId)}">side ${c.k + 1} of ${c.n}: ${esc(c.position.slice(0, 40))}</span>`);
+  const s = ctx.extracted[v.videoId];
+  if (s) t.push(`<span title="extracted by our review, not adjudicated">${s.n} claim${s.n === 1 ? "" : "s"} · ${s.dated === 0 ? "no date stated" : s.dated === s.n ? "all dated" : `${s.dated} dated`}${s.unclassified ? " · horizon not classified" : ""}</span>`);
+  else if (SF2.deadline !== "all" && ctx.hasExtracted) t.push(`<span class="muted">claims not extracted</span>`);
+  if (v.review) {
+    if (v.review.pitch === true) t.push(`<span class="pack paid" title="our transcript review: promotes its own product">sells own product</span>`);
+    if (v.review.evidence) t.push(`<span title="our transcript review">${esc(EVIDENCE_LABEL[v.review.evidence] || v.review.evidence)}</span>`);
+    if (v.review.stance && v.review.stance !== "none") t.push(`<span title="side of the core question, our transcript review">side: ${esc(STANCE_LABEL[v.review.stance] || v.review.stance)}</span>`);
+  }
+  for (const f of titleFlags(v)) t.push(`<span class="pack" title="lexicon v1">${f}</span>`);
+  const m = monthsAtPublish(v); if (m != null && m < 12) t.push(`<span class="pack">channel was ${m < 2 ? Math.round(m * 30.44) + " days" : Math.round(m) + " months"} old when posted</span>`);
+  if (y.paidPromotion) t.push(`<span class="pack paid">$ paid promotion (creator ticked)</span>`);
+  if (y.live) t.push(`<span class="pack">live</span>`);
+  if (ytUnavailable(v)) t.push(`<span class="pack">YouTube page unavailable at last check${y.enrichedOn ? ` (${esc(y.enrichedOn)})` : ""}</span>`);
+  const det = [v.views, y.likes != null && `${fmtCount(y.likes)} likes`, y.comments != null && `${fmtCount(y.comments)} comments`, y.chapters && `${y.chapters} chapters`,
+    y.captions === "manual" && "captions by creator", y.category, y.channelCountry, y.channelJoined && `channel since ${y.channelJoined.slice(0, 4)}`,
+    outputRate(v) != null && outputRate(v) >= 365 && `posts ${Math.round(outputRate(v) / 365)}+/day`].filter(Boolean);
+  if (det.length) t.push(`<span class="det" title="${esc(det.join(" · "))}">details</span>`);
+  return t.length ? `<div class="yt-tags">${t.join("")}</div>` : "";
+}
+
+function renderSeries2() {
+  const data = cache[topicId];
+  const n = data?.narrative || {};
+  const vids = data?.videos?.videos || [];
+  const removed = vids.filter(v => ["RECYCLED", "CLICKBAIT"].includes(v.verdict));
+  const keep = vids.filter(v => !["RECYCLED", "CLICKBAIT"].includes(v.verdict));
+  $("c-series").textContent = keep.length ? `(${keep.length})` : "";
+  const speakers = videoSpeakers(data), records = speakerRecords2(data), vclaims = videoClaims(data);
+  const ctx = { speakers, claims: data?.claims?.claims || [], camps: videoCamps(data), extracted: extractedSummary(data),
+                hasExtracted: (data?.claimsExtracted || []).length > 0, hasLedger: !!data?.predictions, arrivedCamp: null,
+                hasReview: vids.some(v => v.review) };
+  if (arrivedFrom && SF2.claim !== "all") ctx.arrivedCamp = (ctx.camps[arrivedFrom] || []).find(c => c.claimId === SF2.claim)?.k ?? null;
+  const recsOf = v => recordFor(v, speakers, records);
+  const dated = keep.map(v => ({ v, t: publishedEst(v), recs: recsOf(v), speakers: speakers[v.videoId], claims: vclaims[v.videoId] }))
+    .sort((a, b) => (a.t ?? 9e15) - (b.t ?? 9e15));
+  const episodes = [], before = [];
+  let cur = null;
+  for (const x of dated) {
+    if (x.v.verdict === "ORIGINAL") { cur = { ...x, angles: [] }; episodes.push(cur); }
+    else if (cur) cur.angles.push(x); else before.push(x);
+  }
+  const anglesAll = episodes.reduce((a, e) => a + e.angles.length, 0) + before.length;
+  const reviewed = keep.filter(v => verdictBasis(v) === "transcript").length;
+  const unavailable = keep.filter(ytUnavailable).length;
+
+  const MONTHS = "jan feb mar apr may jun jul aug sep oct nov dec".split(" ");
+  const muts = (n.mutations || []).map(m => {
+    const d = m.date || "", year = +((d.match(/\d{4}/) || [])[0]);
+    const mo = MONTHS.indexOf((d.match(/[A-Za-z]{3}/) || [""])[0].toLowerCase());
+    return { year, t0: year ? Date.UTC(year, mo < 0 ? 0 : mo, 1) : null, label: d, mechanism: m.mechanism };
+  }).filter(m => m.t0);
+  const seasonOf = t => { if (!t) return null; let s = null; muts.forEach((m, i) => { if (m.t0 <= t) s = { i, ...m }; }); return s; };
+
+  $("series-head").innerHTML = `
+    <div class="big">${episodes.length} episode${episodes.length === 1 ? "" : "s"} · ${anglesAll} other angle${anglesAll === 1 ? "" : "s"} · ${removed.length} removed by our verdict</div>
+    <div class="sub">Every ORIGINAL video is an episode, in the order it appeared. Commentary is filed underneath as another angle. Re-cuts and clickbait are removed — and listed at the bottom with our reason, so you can check us.</div>
+    <div class="honest">${reviewed === keep.length ? `All ${keep.length} verdicts were made with the transcript on hand.`
+      : `${reviewed} of ${keep.length} verdicts were made with the transcript on hand; the rest are marked ◌ and queued for review.`}</div>`;
+  $("series-firsts").innerHTML = "";
+  const bar = $("series-filters");
+  const sig = "v2:" + topicId + ":" + keep.length + ":" + SF2.claim + ":" + activePreset();
+  if (bar.dataset.sig !== sig) { bar.innerHTML = seriesFilterBar2(keep, ctx); bar.dataset.sig = sig; }
+
+  const angleRow = a => `<div class="angle">${thumb(a.v, "sm")}
+      <span><a href="${esc(a.v.url)}" target="_blank" rel="noopener">${esc(a.v.title)}</a>
+        <span class="when">${esc(a.v.channel)} · ${a.t ? isoDate(a.t) : "—"}</span> ${basisMark(a.v)}${cardTags2(a, ctx)}</span></div>`;
+  const foldedRow = (a, r) => `<div class="angle folded"><span>${esc(a.v.title)} <span class="when">${esc(a.v.channel)} · ${r.fold || r.unknown}</span></span></div>`;
+  const item = (x, i) => {
+    const shown = [], folded = new Map();
+    for (const a of x.angles) { const r = seriesPass2(a, ctx); if (r) (folded.get(r.fold || r.unknown) || folded.set(r.fold || r.unknown, []).get(r.fold || r.unknown)).push([a, r]); else shown.push(a); }
+    const foldLine = [...folded.entries()].map(([k, arr]) => `${k} (${arr.length})`).join(", ");
+    return `<div class="entry">
+      <div class="node" style="background:${(VERDICTS[x.v.verdict] || VERDICTS.UNREVIEWED).color}"></div>
+      <div class="card" id="ep-${esc(x.v.videoId)}" data-vid="${esc(x.v.videoId)}">
+        <div class="ep-body">${thumb(x.v)}
+          <div>
+            <div class="e-head"><span class="ep-num">Episode ${i + 1}</span><span class="e-date">${x.t ? isoDate(x.t) : "undated"}</span>${basisMark(x.v)}</div>
+            <div class="e-claim"><a href="${esc(x.v.url)}" target="_blank" rel="noopener">${esc(x.v.title)}</a></div>
+            <div class="e-horizon">${esc(x.v.channel)}</div>
+            ${cardTags2(x, ctx)}
+            ${x.v.verdict_note ? `<div class="e-note">${esc(x.v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}
+          </div></div>
+        ${x.angles.length ? `<details class="angles"><summary>${shown.length} other angle${shown.length === 1 ? "" : "s"}${folded.size ? ` <b>· ${x.angles.length - shown.length} folded: ${esc(foldLine)}</b>` : ""}</summary>
+          ${shown.map(angleRow).join("")}${[...folded.values()].flat().map(([a, r]) => foldedRow(a, r)).join("")}</details>` : ""}
+      </div></div>`;
+  };
+  const foldedEp = (x, i, r) => `<details class="fold"><summary>Episode ${i + 1} · ${x.t ? isoDate(x.t) : "undated"} · <b>folded: ${esc(r.fold || r.unknown)}</b> — show</summary>${item(x, i)}</details>`;
+
+  const order = episodes.map((ep, i) => ({ ep, i }));
+  if (SF2.sort === "new") order.reverse();
+  let html = "", lastSeason = -1, shownEp = 0, foldedEp_ = 0, anglesShown = 0, anglesFolded = 0;
+  const foldReasons = new Map();
+  const firstS = SF2.sort === "chrono" && episodes.length ? seasonOf(episodes.find(e => e.t)?.t) : null;
+  if (firstS && firstS.i > 0) {
+    const early = muts.slice(0, firstS.i);
+    html += `<details class="lowreach prologue"><summary>Seasons 1–${firstS.i} · ${esc(early[0].label)} – ${esc(early[early.length - 1].label)} <b>before this corpus — how the story mutated before YouTube picked it up</b></summary>
+      ${early.map((m, i) => `<div class="mut"><b>Season ${i + 1} · ${esc(m.label)}</b>${esc(m.mechanism)}</div>`).join("")}</details>`;
+  }
+  for (const { ep, i } of order) {
+    const s = SF2.sort === "chrono" ? seasonOf(ep.t) : null;
+    if (s && s.i !== lastSeason) { html += `<div class="season">Season ${s.i + 1} · ${esc(s.label)} <b>${esc(s.mechanism)}</b></div>`; lastSeason = s.i; }
+    for (const a of ep.angles) { const r = seriesPass2(a, ctx); if (r) { anglesFolded++; const k = r.fold || r.unknown; foldReasons.set(k, (foldReasons.get(k) || 0) + 1); } else anglesShown++; }
+    const r = seriesPass2(ep, ctx);
+    if (r) { html += foldedEp(ep, i, r); foldedEp_++; const k = r.fold || r.unknown; foldReasons.set(k, (foldReasons.get(k) || 0) + 1); }
+    else { html += item(ep, i); shownEp++; }
+  }
+  const beforeShown = before.filter(a => !seriesPass2(a, ctx));
+  if (before.length) html += `<details class="lowreach"><summary>${beforeShown.length} of ${before.length} commentary video${before.length === 1 ? "" : "s"} before the first original <b>no episode to attach to</b></summary>${beforeShown.map(angleRow).join("")}</details>`;
+  html += `<details class="lowreach removed"><summary>${removed.length} removed by our verdict <b>re-cuts and clickbait — show</b></summary>
+    ${removed.sort((a, b) => (publishedEst(a) ?? 0) - (publishedEst(b) ?? 0)).map(v => `<div class="rm"><span class="rmv">${esc(v.verdict)}</span>
+      <a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> <span class="when">${esc(v.channel)} · ${v.published ? esc(v.published) : "—"}${verdictBasis(v) === "metadata" ? " · metadata-only verdict" : ""}</span>
+      ${v.verdict_note ? `<div class="e-note">${esc(v.verdict_note.replace(/^\[[^\]]*\]\s*/, ""))}</div>` : ""}</div>`).join("") || `<div class="e-note">Nothing removed.</div>`}</details>`;
+  $("series").innerHTML = html || `<div class="empty">No original videos yet — nothing to make a series from.</div>`;
+  const showing = $("sf-showing");
+  if (showing) showing.innerHTML = `<span>Showing <b>${shownEp}</b> of ${episodes.length} episodes · ${anglesShown} of ${anglesShown + anglesFolded} angles${foldReasons.size ? ` (${[...foldReasons.entries()].map(([k, n]) => `${n} folded: ${esc(k)}`).join(", ")})` : ""} · ${removed.length} removed by our verdict${unavailable ? ` · ${unavailable} YouTube page unavailable` : ""}</span>
+    ${activePreset() === "custom" ? `<button type="button" data-sf2-reset>reset to Bait off</button>` : ""}`;
+}
+let arrivedFrom = null;
+function onSeriesFilter2(e) {
+  const el = e.target.closest("[data-sf2]"); if (!el) return;
+  const key = el.dataset.sf2;
+  if (key === "q") SF2.q = el.value.trim();
+  else SF2[key] = el.type === "checkbox" ? el.checked : el.value;
+  if (key === "claim") SF2.camp = "all";
+  lsSet(SF2_KEY, JSON.stringify(SF2)); renderSeries();
+}
+$("series-filters").addEventListener("change", onSeriesFilter2);
+$("series-filters").addEventListener("input", e => { if (e.target.dataset.sf2 === "q") onSeriesFilter2(e); });
+$("series-filters").addEventListener("click", e => {
+  const p = e.target.closest("[data-preset]");
+  if (p) { SF2 = { ...SF2_DEFAULT, q: SF2.q, sort: SF2.sort, ...SF2_PRESETS[p.dataset.preset].set }; lsSet(SF2_KEY, JSON.stringify(SF2)); $("series-filters").dataset.sig = ""; renderSeries(); return; }
+  if (e.target.closest("[data-sf2-reset]")) { SF2 = { ...SF2_DEFAULT }; lsSet(SF2_KEY, JSON.stringify(SF2)); $("series-filters").dataset.sig = ""; renderSeries(); }
+});
+$("series").addEventListener("click", e => { const c = e.target.closest(".card[data-vid]"); if (c) arrivedFrom = c.dataset.vid; });
+
 function renderSeries() {
+  if (seriesVersion() === "v2") return renderSeries2();
   const data = cache[topicId];
   const n = data?.narrative || {};
   const vids = data?.videos?.videos || [];
@@ -2100,6 +2512,7 @@ async function loadTopicData(id) {
     try { entry.predictions = await getJSON(`corpus/${id}/predictions.json`); } catch (e) {}
     try { entry.narrative = await getJSON(`corpus/${id}/narrative.json`); } catch (e) {}
     try { entry.claims = await getJSON(`corpus/${id}/claims.json`); } catch (e) {}
+    try { entry.claimsExtracted = await getJSON(`corpus/${id}/claims-extracted.json`); } catch (e) {}
     try { entry.relations = await getJSON(`corpus/${id}/relations.json`); } catch (e) {}
     try { entry.indicators = await getJSON(`corpus/${id}/indicators.json`); } catch (e) {}
     cache[id] = entry;
@@ -2114,6 +2527,14 @@ async function loadTopic(id) {
   if (!$("app-radar").hidden) { $("gallery").hidden = true; $("detail").hidden = false; }
   renderTopics();
   await loadTopicData(id);
+  // No prediction ledger on stories that never resolve on a date (health, culture)
+  // unless someone has actually put dated calls on file.
+  const ledgerTab = document.querySelector('.tab[data-view="ledger"]');
+  const noLedger = !industryProfile(id).clock && !(cache[id]?.predictions?.entries || []).length;
+  if (ledgerTab) {
+    ledgerTab.hidden = noLedger;
+    if (noLedger && ledgerTab.classList.contains("active")) document.querySelector('.tab[data-view="corpus"]').click();
+  }
   renderCorpus(); renderSeries(); renderLedger(); renderBriefs();
 }
 
@@ -2208,11 +2629,21 @@ let refreshing = false;
 // plus a consolidate — real money, and previously it fired 800ms after every
 // lookup whether or not anyone wanted it. Now the user asks for it.
 let buildoutCtx = null;
+// How far back a build-out reaches: the narrative's whole life (from `born`),
+// never less than five years. Collection is free; each analyzed video costs
+// one engine unit (a few cents), so the cap is on analysis, not on depth.
+const BUILDOUT_LIMIT = 25;
+function buildoutYears(topicId) {
+  const born = cache[topicId]?.narrative?.born || "";
+  const y = +((born.match(/\d{4}/) || [])[0]);
+  return Math.min(30, Math.max(5, y ? new Date().getUTCFullYear() - y + 1 : 5));
+}
 function buildoutOffer(topicId, prefix) {
   buildoutCtx = { topicId, prefix };
+  const yrs = buildoutYears(topicId);
   return `<div class="n-offer">
     <button class="n-build" data-buildout="1">↻ Build out this narrative</button>
-    <span class="n-hint">Sweeps for newer videos and analyzes up to five of them.</span>
+    <span class="n-hint">Sweeps back ${yrs} years — the narrative's whole life — and analyzes up to ${BUILDOUT_LIMIT} videos (≈ $1). Run it again to go deeper.</span>
   </div>`;
 }
 
@@ -2302,6 +2733,7 @@ async function refreshNarrative(topicId, prefix = "") {
         topic: topicId,
         queries: t?.queries || [],
         known: (cache[topicId]?.videos?.videos || []).map(v => v.videoId),
+        years: buildoutYears(topicId), limit: BUILDOUT_LIMIT,
       }),
     }).then(r => r.json());
     const list = sw.new_videos || [];

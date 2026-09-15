@@ -1,10 +1,27 @@
 {
   "name": "Inflammation Is the Root of All Disease",
   "claim": "Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease — and eating specific 'anti-inflammatory' foods can reverse it.",
-  "predictor": "to be determined",
+  "predictor": "Andrew Weil · Mark Hyman (earliest and most-cited carriers in this corpus)",
   "born": "2004",
-  "born_note": "Estimate based on mid-2000s popular-science and diet-book framing of inflammation as universal disease driver; later amplified by YouTube doctors. (model estimate, pending audit)",
-  "mutations": [],
+  "born_note": "Model estimate: mid-2000s diet-book framing of inflammation as the universal disease driver (pending audit). This corpus reaches back to 2019; the root-cause claim is stated in its earliest dated claims (Andrew Weil, 2021).",
+  "mutations": [
+    {
+      "date": "2021",
+      "mechanism": "chronic inflammation as the shared root of disease — food lists and turmeric as the cure"
+    },
+    {
+      "date": "2022",
+      "mechanism": "seed oils named as the main villain"
+    },
+    {
+      "date": "2024",
+      "mechanism": "the gut microbiome as the route — fibre and fermented food as the lever"
+    },
+    {
+      "date": "2025",
+      "mechanism": "the seed-oil backlash — human-trial rebuttals outnumber the alarms; sugar, insulin and ultra-processed food take the blame"
+    }
+  ],
   "explanations": {
     "layman": "A popular health idea says hidden 'inflammation' inside your body is behind tiredness, aches and most illness — and that eating the right foods can calm it down. Doctors and creators publish endless food lists promising more energy and less pain. Some of it rests on real science; much of it is simplified into shopping lists that sell books, supplements and courses.",
     "intermediate": "The narrative links chronic low-grade inflammation to obesity, heart disease, depression and pain, then proposes dietary correction: polyphenols, omega-3s, fibre, fewer ultra-processed foods. Camps: mainstream nutrition science (inflammation matters but is one factor among many, effects modest) versus wellness-media maximalism (inflammation is THE cause, food is the cure). The listicle format is the narrative's dominant delivery vehicle.",
@@ -13,6 +30,18 @@
   "origin": {
     "type": "engine",
     "first_video": "3vKJPPd6Vjs",
-    "created": "2026-09-14"
+    "created": "2026-09-14",
+    "merged_from": [
+      "chronic-inflammation-is-the-root-of-all-disease",
+      "inflammation-is-the-root-of-all-disease"
+    ],
+    "merged": "2026-09-14"
+  },
+  "mutations_basis": "Dated to the first year a framing reached at least 3 videos and 20% of that year's corpus (transcript review, 2026-09-15). The corpus favours recent uploads, so early years are thin.",
+  "trigger": {
+    "videoId": "3vKJPPd6Vjs",
+    "title": "10 anti-inflammatory foods for more energy, less pain and better health",
+    "channel": "The Doctor's Kitchen",
+    "note": "The pasted video that founded this narrative on the live engine (twice — the duplicate was merged)."
   }
 }

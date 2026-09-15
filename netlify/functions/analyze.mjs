@@ -83,7 +83,7 @@ const ANALYSIS_SCHEMA = {
     "is_update", "update_note", "confidence",
     "new_narrative_name", "new_narrative_claim",
     "new_narrative_born", "new_narrative_born_note", "new_narrative_queries",
-    "new_narrative_industry",
+    "new_narrative_industry", "new_narrative_camps",
     "explanation_layman", "explanation_intermediate", "explanation_expert",
   ],
   properties: {
@@ -106,6 +106,11 @@ const ANALYSIS_SCHEMA = {
       { type: "string", enum: ["AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Fringe & unexplained", "Culture & society", "Entertainment & media", "Gaming", "Sports", "Internet & creator economy", "Unsorted"] },
       { type: "null" },
     ] },
+    // The sides a viewer should hear before deciding, each with what to look out for.
+    new_narrative_camps: { type: "array", items: {
+      type: "object", additionalProperties: false, required: ["position", "watch_for"],
+      properties: { position: { type: "string" }, watch_for: { type: "string" } },
+    } },
     explanation_layman: { type: ["string", "null"] },
     explanation_intermediate: { type: ["string", "null"] },
     explanation_expert: { type: ["string", "null"] },
@@ -123,7 +128,9 @@ const SYSTEM = `You are the analysis engine for Narrative Radar, a tool that ext
      * new_narrative_born_note: one line stating the basis of the estimate; this is a model estimate pending audit
      * new_narrative_queries: 4-6 YouTube search queries for collecting this narrative's video corpus
      * new_narrative_industry: the shelf this narrative belongs on — one of "AI & technology", "Economy & markets", "Health & biotech", "Politics & geopolitics", "Energy & climate", "Entertainment & media", "Gaming", "Sports", "Internet & creator economy", "Fringe & unexplained", "Culture & society", or "Unsorted" if none fit
-     * explanation_layman / explanation_intermediate / explanation_expert: three explanations of the narrative (each ≤ 75 words). Layman: plain everyday words, no jargon, why they should care. Intermediate: the mechanism and the main camps. Expert: audit framing — clocks, falsifiers, incentives, lifecycle stage. Null for other decisions.
+     * new_narrative_camps: the 2-4 sides a viewer should hear before forming an opinion. Each: position (≤ 15 words, stated fairly, as its best advocates would) and watch_for (≤ 20 words: the tell a viewer should look out for in videos from that side — e.g. biomarker studies sold as cures, a product pitch, a moving deadline). Empty array for other decisions.
+     * explanation_layman / explanation_intermediate / explanation_expert: three explanations of the narrative (each ≤ 75 words). Layman: plain everyday words, no jargon, why they should care. Intermediate: the mechanism and the main camps, named. Expert: audit framing — falsifiers, incentives, lifecycle stage. Null for other decisions.
+     * TAILOR TO THE INDUSTRY. Economy & markets, Politics & geopolitics, Energy & climate, AI & technology, Gaming: these narratives make calls that resolve on a date — frame the expert explanation around clocks and deadlines. Health & biotech, Culture & society, Fringe & unexplained, Entertainment & media, Sports: claims are judged against EVIDENCE, not a calendar — never frame them as predictions or clocks; name what evidence would settle them (outcome trials vs biomarker or mechanism studies, anecdote, replication) and who profits from the claim.
    - "unrelated" — reserved ONLY for content carrying no recurring claim at all: music tracks themselves, let's-plays, vlogs, pure tutorials, highlight reels. Note that commentary ABOUT entertainment, gaming, sport or the creator economy usually DOES carry a narrative ("streaming is dying", "GTA 6 will slip again", "the games industry is collapsing", "AI is taking the charts") — those are tracked narratives, not unrelated content. Claims-driven commentary about markets/politics/tech/society/culture almost always carries a narrative.
 2. verdict — from metadata alone: ORIGINAL / DERIVATIVE / RECYCLED / CLICKBAIT / UNKNOWN. Be honest about uncertainty; this is metadata-only, no transcript.
 3. is_update — for existing narratives: does the metadata suggest NEW claims or a NEW mechanism (an update to the narrative)? Set update_note.
@@ -197,6 +204,21 @@ const summarizeCorpus = (topics) =>
     })),
   }));
 
+// A proposed narrative's twin on the shelf: same trigger video, or names whose
+// content words nest (one inside the other) or overlap by ≥ 60%.
+function findTwin(topics, proposed) {
+  const words = (s) => new Set(keywords(s).filter((w) => w !== "all"));
+  const p = words(proposed.name);
+  return topics.find((t) => {
+    if (t.trigger && t.trigger === proposed.trigger) return true;
+    const q = words(t.name.split("—")[0]);
+    if (!p.size || !q.size) return false;
+    const inter = [...p].filter((w) => q.has(w)).length;
+    const nested = inter === Math.min(p.size, q.size);
+    return (nested && Math.min(p.size, q.size) >= 2) || inter / new Set([...p, ...q]).size >= 0.6;
+  }) || null;
+}
+
 const slugify = (s) => (s || "").toLowerCase()
   .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 48);
 
@@ -212,7 +234,9 @@ const videoEntry = (videoId, meta, verdict, note, today, source, rich) => ({
   // an empty date as "undated", never as today.
   published: rich?.meta?.published || "", views: rich?.meta?.views || "", length: rich?.meta?.length || "",
   query: source === "buildout" ? "auto-buildout" : "user-submitted",
-  age_days: null, first_seen: today,
+  // From the search-page fallback when the watch page was refused: relative
+  // age at capture, which the timeline turns into an approximate date.
+  age_days: rich?.meta?.age_days ?? null, first_seen: today,
   transcript: null,
   verdict: verdict === "UNKNOWN" ? "UNREVIEWED" : verdict,
   verdict_note: `[live analysis, metadata-only] ${note}`,
@@ -382,6 +406,27 @@ export default async (req) => {
       // watchlist first (read-modify-write), then the two new files in parallel
       let persisted = false;
       const wl = await ghRead("watchlist.json");
+      // Duplicate guard, against the FRESH watchlist (the raw CDN the shortlist
+      // read lags by minutes). One paste founded "Chronic Inflammation Is the
+      // Root of All Disease" and a second request founded "Inflammation Is the
+      // Root of All Disease" from the same video: the slug check missed it.
+      // Same trigger video, or one name's content words inside the other's
+      // (or ≥ 60% overlap), means the narrative already exists — file the
+      // video there instead of founding a twin.
+      const dup = wl && findTwin(wl.data.topics, topicRecord);
+      if (dup) {
+        const cur = await ghRead(`corpus/${dup.id}/videos.json`);
+        let added = false;
+        if (cur && !cur.data.videos.some((v) => v.videoId === videoId)) {
+          cur.data.videos.push(entry);
+          added = await ghWrite(`corpus/${dup.id}/videos.json`, cur.data,
+            `Engine: add ${videoId} to ${dup.id} (${entry.verdict}; twin of proposed "${analysis.new_narrative_name}")`, cur.sha);
+        }
+        analysis.decision = "existing_narrative";
+        analysis.topic_id = dup.id;
+        analysis.verdict_note += ` (Proposed new narrative matched existing "${dup.name}"; filed there.)`;
+        return json(200, { status: "analyzed", video: meta, analysis, persisted: added, video_entry: entry });
+      }
       if (wl && !wl.data.topics.some((t) => t.id === id)) {
         wl.data.topics.push(topicRecord);
         // Sequential: parallel contents-API writes race on the branch ref (409)
@@ -394,6 +439,22 @@ export default async (req) => {
         if (!ok3) {
           ok3 = await ghWrite(`corpus/${id}/videos.json`, { videos: [entry] },
             `Engine: first video for ${id} (${entry.verdict}, retry)`);
+        }
+        // The sides, from day one: a contested core question whose camps start
+        // empty and fill as consolidation files videos under them.
+        const camps = (analysis.new_narrative_camps || []).filter((c) => c.position);
+        if (camps.length >= 2) {
+          await ghWrite(`corpus/${id}/claims.json`, {
+            note: "Consolidated claims. The core question's camps were proposed at founding (model, pending audit) and fill with sources on refresh.",
+            updated: today, fingerprints: [],
+            claims: [{
+              id: "core-question", type: "contested",
+              statement: `Where the sides split on: ${analysis.new_narrative_claim}`,
+              note: "Camps proposed by the engine at founding — pending audit.",
+              camps: camps.map((c) => ({ position: c.position, watch_for: c.watch_for, sources: [] })),
+              sources: [],
+            }],
+          }, `Engine: founding camps for ${id}`);
         }
         persisted = ok1 && ok2 && ok3;
       }

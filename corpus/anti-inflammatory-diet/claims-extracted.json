@@ -1,0 +1,2306 @@
+[
+  {
+    "videoId": "xYo9J8RijQY",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "A single high-fat or high-sugar meal can double blood IL-6 within about six hours.",
+    "horizon": "within 6 hours",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "xYo9J8RijQY",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "Regular IL-6 levels around 3 pg/mL are associated with roughly twice the risk of death.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "xYo9J8RijQY",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "Even very lean meat such as kangaroo raises inflammatory markers within hours of eating.",
+    "horizon": "within hours",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "xYo9J8RijQY",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "Eating nuts, even several handfuls a day, does not raise inflammatory markers.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_EZ0FY8HhqU",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "All diseases of aging and chronic illness are at some level inflammatory diseases.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_EZ0FY8HhqU",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Refined vegetable oils in manufactured food supply pro-inflammatory fatty acids.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_EZ0FY8HhqU",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Turmeric is the most powerful natural anti-inflammatory agent.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_EZ0FY8HhqU",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Fast-digesting flour and sugar carbohydrates promote inflammation, while beans and squashes do not.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "-xTaAHSFHUU",
+    "status": "UNREVIEWED",
+    "predictor": "Gil Carvalho",
+    "claim": "Meta-analyses pooling 8 and 12 randomised trials find flaxseed oil does not significantly change CRP.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "-xTaAHSFHUU",
+    "status": "UNREVIEWED",
+    "predictor": "Gil Carvalho",
+    "claim": "A meta-analysis found flaxseed oil significantly reduced IL-6.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "-xTaAHSFHUU",
+    "status": "UNREVIEWED",
+    "predictor": "Gil Carvalho",
+    "claim": "Trial evidence does not support avoiding canola or sunflower oil on inflammation grounds.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "1wtboCE9K9o",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Chronic inflammation is the root cause of most chronic diseases, including heart disease, Alzheimer's and cancer.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "1wtboCE9K9o",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "The standard American diet is pro-inflammatory through wrong fats, wrong carbs and too few plant protective compounds.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "1wtboCE9K9o",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Olive oil is the healthiest cooking fat.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "1wtboCE9K9o",
+    "status": "UNREVIEWED",
+    "predictor": "Mehmet Oz",
+    "claim": "Seven all-natural solutions can eliminate pain within a week.",
+    "horizon": "7 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zogPOqn0guU",
+    "status": "UNREVIEWED",
+    "predictor": "Mike Mutzel",
+    "claim": "Linoleic acid from seed oils is stored in body fat with a half-life of about 680 days.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zogPOqn0guU",
+    "status": "UNREVIEWED",
+    "predictor": "Mike Mutzel",
+    "claim": "Linoleic acid's share of US adult fat tissue rose from about 10% to 25% over the last half-century.",
+    "horizon": "over ~50 years",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zogPOqn0guU",
+    "status": "UNREVIEWED",
+    "predictor": "Mike Mutzel",
+    "claim": "Oxidised linoleic acid metabolites from seed oils lead to chronic joint, back pain and depression over time.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zogPOqn0guU",
+    "status": "UNREVIEWED",
+    "predictor": "Mike Mutzel",
+    "claim": "People with chronic pain, anxiety, depression or IBS should fully avoid soy, corn, cottonseed and safflower oils.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "QAVd0HPf7e8",
+    "status": "UNREVIEWED",
+    "predictor": "Medical Centric Podcast",
+    "claim": "High intake of refined sugar and refined carbohydrates triggers inflammatory responses.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "QAVd0HPf7e8",
+    "status": "UNREVIEWED",
+    "predictor": "Medical Centric Podcast",
+    "claim": "Dairy can trigger inflammation in some people through lactose intolerance or allergy.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cGGoY8uasQU",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Chronic low-level systemic inflammation is the common root of fatigue, joint pain, gut, mood and skin symptoms.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cGGoY8uasQU",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "In his 600-person detox group, symptoms across all diseases fell 62%.",
+    "horizon": "10 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cGGoY8uasQU",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "The same detox group saw average blood sugar fall 18 points and blood pressure 11 points.",
+    "horizon": "10 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cGGoY8uasQU",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Most people are only a few days of diet change away from feeling better.",
+    "horizon": "a few days",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5SWWSBPnLfI",
+    "status": "UNREVIEWED",
+    "predictor": "Jenné Claiborne",
+    "claim": "Inflammation is the root of most disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5SWWSBPnLfI",
+    "status": "UNREVIEWED",
+    "predictor": "Jenné Claiborne",
+    "claim": "Oatmeal and other whole grains reduce inflammation through fibre and phytonutrients.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5SWWSBPnLfI",
+    "status": "UNREVIEWED",
+    "predictor": "Jenné Claiborne",
+    "claim": "Alcohol, dairy, red meat and ultra-processed foods cause the most inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pjH9VER2jKo",
+    "status": "UNREVIEWED",
+    "predictor": "Anshul Gupta",
+    "claim": "A high-protein breakfast lowers inflammation by supporting the body's enzymatic processes.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pjH9VER2jKo",
+    "status": "UNREVIEWED",
+    "predictor": "Anshul Gupta",
+    "claim": "Cooking ginger and garlic together multiplies their anti-inflammatory potency.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pjH9VER2jKo",
+    "status": "UNREVIEWED",
+    "predictor": "Anshul Gupta",
+    "claim": "Frying or high-heat cooking destroys the omega-3s in fish.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pjH9VER2jKo",
+    "status": "UNREVIEWED",
+    "predictor": "Anshul Gupta",
+    "claim": "Most people drink too little water, which keeps their inflammation high.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wjs2w7Cmkgw",
+    "status": "UNREVIEWED",
+    "predictor": "Lisa Valente",
+    "claim": "Anti-inflammatory eating patterns reduce pain in people with rheumatoid arthritis.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wjs2w7Cmkgw",
+    "status": "UNREVIEWED",
+    "predictor": "Lisa Valente",
+    "claim": "Anti-inflammatory eating may help maintain remission in Crohn's disease and ulcerative colitis.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wjs2w7Cmkgw",
+    "status": "UNREVIEWED",
+    "predictor": "Lisa Valente",
+    "claim": "A high-fibre diet reduces the number of inflammatory bacteria in the gut.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Ixf0DFExhq0",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "Fibromyalgia on the right side comes from bile sludge and improves quickly with bile salts such as TUDCA.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Ixf0DFExhq0",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "People with autoimmune gut conditions should follow a carnivore diet before reintroducing foods.",
+    "horizon": "a few months",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Ixf0DFExhq0",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "Eating one or two meals a day cuts liver and visceral fat and thereby inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Ixf0DFExhq0",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "Any inflammation calls for vitamin D; he takes 40,000-50,000 IU daily.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fo6HM4AMFxM",
+    "status": "UNREVIEWED",
+    "predictor": "Tamiko Katsumoto",
+    "claim": "Diets high in sugar, saturated fat and processed food drive whole-body inflammation that leads to arthritis.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fo6HM4AMFxM",
+    "status": "UNREVIEWED",
+    "predictor": "Tamiko Katsumoto",
+    "claim": "Arthritis can be reversed with the right foods.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fo6HM4AMFxM",
+    "status": "UNREVIEWED",
+    "predictor": "Tamiko Katsumoto",
+    "claim": "In a Dutch randomised trial of a whole-food plant-based diet, many arthritis patients got off their medications.",
+    "horizon": "by end of study (duration not stated in excerpt)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fo6HM4AMFxM",
+    "status": "UNREVIEWED",
+    "predictor": "Jonathan Wolf",
+    "claim": "Poor nutrition has replaced tobacco as the biggest cause of chronic disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "F7TsXwIsje4",
+    "status": "UNREVIEWED",
+    "predictor": "JRE Clips",
+    "claim": "Canola oil is made with hexane, high heat and sodium hydroxide, leaving it rancid before deodorising.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "F7TsXwIsje4",
+    "status": "UNREVIEWED",
+    "predictor": "JRE Clips",
+    "claim": "Seed oils cause arterial-wall inflammation, and cholesterol only responds to it rather than causing heart disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "SYmE0n1Npxs",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "High CRP raises premature death risk by about 42% and high IL-6 by about 49%.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "SYmE0n1Npxs",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "A strict whole-plant-food diet lowers CRP about 30% and IL-6 about 20%.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "SYmE0n1Npxs",
+    "status": "UNREVIEWED",
+    "predictor": "Michael Greger",
+    "claim": "Switching mostly to poultry or merely limiting meat leaves a diet pro-inflammatory.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "mE8mCeloxxM",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Bone broth given beforehand prevented induced ulcerative colitis in rodents and lowered IL-6 and TNF-alpha.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "mE8mCeloxxM",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Two 15 g servings of cacao nibs daily significantly lowered IL-1 beta without other diet changes.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "mE8mCeloxxM",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Blueberry anthocyanins raise the body's own superoxide dismutase and catalase.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "mE8mCeloxxM",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Blueberries are probably the most anti-inflammatory fruit.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hXDrnL0K5TI",
+    "status": "UNREVIEWED",
+    "predictor": "Sarah Berry",
+    "claim": "Raising polyunsaturated fat intake lowers LDL and cuts cardiovascular disease by roughly 30% in trials.",
+    "horizon": "long-term exposure (not overnight; no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hXDrnL0K5TI",
+    "status": "UNREVIEWED",
+    "predictor": "Sarah Berry",
+    "claim": "Rising seed-oil intake tracks chronic disease only by association, confounded by ultra-processed food and inactivity.",
+    "horizon": "over the last 50 years",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hXDrnL0K5TI",
+    "status": "UNREVIEWED",
+    "predictor": "Sarah Berry",
+    "claim": "Overall evidence shows omega-6 benefits health rather than causing harmful inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hXDrnL0K5TI",
+    "status": "UNREVIEWED",
+    "predictor": "Sarah Berry",
+    "claim": "A small genetic subgroup is susceptible to harm from high omega-6 intake.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "oMuqKGJrBp4",
+    "status": "UNREVIEWED",
+    "predictor": "Patricia Delicious Nutrition",
+    "claim": "Chia forms a gel that slows gastric emptying and reduces blood glucose swings.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "oMuqKGJrBp4",
+    "status": "UNREVIEWED",
+    "predictor": "Patricia Delicious Nutrition",
+    "claim": "Chia and ginger act as powerful natural anti-inflammatories.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "YW4izUf3u-k",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Morning light is the strongest signal setting the body clock that times immune activity.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "YW4izUf3u-k",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Inflammation levels vary through the day according to the circadian clock.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "YW4izUf3u-k",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Oat beta-glucan is fermented into short-chain fatty acids that keep colon inflammation quiet.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "YW4izUf3u-k",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Fibre, polyphenols, healthy fats and fermented foods are the four main dietary levers against inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "JtRCs3eZgVk",
+    "status": "UNREVIEWED",
+    "predictor": "Hansaji Yogendra",
+    "claim": "Following this food and habit routine begins calming chronic inflammation within a week.",
+    "horizon": "7 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "JtRCs3eZgVk",
+    "status": "UNREVIEWED",
+    "predictor": "Hansaji Yogendra",
+    "claim": "Chronic inflammation raises risk of heart disease, diabetes, arthritis, fatty liver, Alzheimer's and some cancers.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "JtRCs3eZgVk",
+    "status": "UNREVIEWED",
+    "predictor": "Hansaji Yogendra",
+    "claim": "A morning amla, pineapple and ginger drink helps calm inflammatory processes.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "JtRCs3eZgVk",
+    "status": "UNREVIEWED",
+    "predictor": "Hansaji Yogendra",
+    "claim": "About 70% of the immune system is connected to the gut.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "j-UM7nvcRl0",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "In a double-blind trial of 55 rheumatoid arthritis patients, pomegranate extract cut disease activity, pain and ESR but not CRP.",
+    "horizon": "8 weeks",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "j-UM7nvcRl0",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Daily walnuts shifted older adults' blood fatty-acid signals toward anti-inflammatory ones.",
+    "horizon": "2 years",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "j-UM7nvcRl0",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Home-grown broccoli sprouts are among the most anti-inflammatory foods available.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "j-UM7nvcRl0",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "About 70% of the immune system lives in the gut lining.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "lgb6hjVJ9PE",
+    "status": "UNREVIEWED",
+    "predictor": "Liezl Jayne Strydom",
+    "claim": "Tuna is a cheap anti-inflammatory protein because of its omega-3 content.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "lgb6hjVJ9PE",
+    "status": "UNREVIEWED",
+    "predictor": "Liezl Jayne Strydom",
+    "claim": "Bread for an anti-inflammatory diet should be 100% whole grain.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "J9g_LAXfS24",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Eric Berg",
+    "claim": "Eliminating chronic inflammation removes the symptoms and complications of autoimmune diseases such as Crohn's, rheumatoid arthritis and alopecia.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "J9g_LAXfS24",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Eric Berg",
+    "claim": "Cancer tends to spread into sites of old injury or chronic inflammation, such as a food-irritated colon or glucose-damaged arteries.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "J9g_LAXfS24",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Eric Berg",
+    "claim": "Excess iron from fortified grains, iron skillets and common multivitamins contributes to inflammation and should be avoided.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "J9g_LAXfS24",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Eric Berg",
+    "claim": "Chronic stress causes cortisol resistance, removing the body's main anti-inflammatory hormone signal.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "gCjN1Rya6es",
+    "status": "UNREVIEWED",
+    "predictor": "Tom Biernacki",
+    "claim": "Processed meats such as deli meat, bacon and jerky raise AGEs, IL-6 and CRP, worsening joint pain.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "gCjN1Rya6es",
+    "status": "UNREVIEWED",
+    "predictor": "Tom Biernacki",
+    "claim": "Drinking beyond about two drinks a day for women or three for men raises inflammatory markers and promotes leaky gut.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "gCjN1Rya6es",
+    "status": "UNREVIEWED",
+    "predictor": "Tom Biernacki",
+    "claim": "Green tea extract reduces joint pain according to a high-quality study.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "gCjN1Rya6es",
+    "status": "UNREVIEWED",
+    "predictor": "Tom Biernacki",
+    "claim": "The typical 25:1 omega-6 to omega-3 ratio should be moved toward 1:1 to ease joint inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Ocx8j4Fia2c",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Nina Ross",
+    "claim": "Oranges help flush heavy metals from the body and boost immunity.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Ocx8j4Fia2c",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Nina Ross",
+    "claim": "Tart cherry lowers inflammation throughout the body and helps people with gout.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "WQNNfNIbfHw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand",
+    "claim": "The high omega-6 to omega-3 ratio of seed oils drives significant whole-body inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "WQNNfNIbfHw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand",
+    "claim": "Seed oils disrupt the gut microbiome and increase intestinal permeability.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "WQNNfNIbfHw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand",
+    "claim": "Seed oil consumption directly raises risk of type 2 diabetes, heart disease, autoimmune disease and obesity.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "WQNNfNIbfHw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand",
+    "claim": "Extra virgin olive oil, butter and ghee are better cooking fats than refined seed oils.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5zP6eIgKVK8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rob Lustig",
+    "claim": "Fructose, unlike glucose, is pro-inflammatory because it shifts gut bacteria to erode the mucin layer and loosens tight junctions.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5zP6eIgKVK8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rob Lustig",
+    "claim": "Seed oils in ultra-processed food are pro-inflammatory because omega-6 is the precursor to arachidonic acid signalling molecules.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5zP6eIgKVK8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rob Lustig",
+    "claim": "Butyrate produced from dietary fibre reduces intestinal and systemic inflammation and Alzheimer's disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "5zP6eIgKVK8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rob Lustig",
+    "claim": "Vitamin D keeps inflammation in check by suppressing toll-like receptors.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MuYvGyNXvPk",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Chris Knobbe",
+    "claim": "Industrial seed oils, not sugar, are the main driver of obesity, diabetes and most chronic disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MuYvGyNXvPk",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Chris Knobbe",
+    "claim": "US sugar intake barely changed (about 473 to 497 kcal/day) while obesity rose more than sixfold.",
+    "horizon": "historical: 1922-1987",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MuYvGyNXvPk",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Chris Knobbe",
+    "claim": "US vegetable oil intake rose from about 78 to 497 kcal per person per day.",
+    "horizon": "historical: 1922-1987",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MuYvGyNXvPk",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Chris Knobbe",
+    "claim": "Average US seed oil consumption reached about 80 grams per person per day, not the commonly cited 20 grams.",
+    "horizon": "historical: by 2010",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "OeskUWMUfms",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Paul Anderson",
+    "claim": "The Mediterranean diet likely helps inflammatory conditions through plant polyphenols and flavonoids from vegetables, herbs and spices.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "OeskUWMUfms",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Paul Anderson",
+    "claim": "A modified Mediterranean diet that drops potatoes, whole grains and bread lowers insulin secretion and suits cases like cancer patients.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "OeskUWMUfms",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Paul Anderson",
+    "claim": "An elimination-and-challenge test can reveal individual trigger foods, such as eggs or cheese, behind joint flares.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "2G2y1M0J-xE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Eating anti-inflammatory foods can heal the brain, end constant tiredness and prevent weight gain.",
+    "horizon": "unspecified (7-day plan in title; effect timing not stated)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "2G2y1M0J-xE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Artificial sweeteners damage the gut microbiome and raise blood lipids and blood sugar, while pure stevia, monk fruit or a little honey are acceptable.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "psIXPettMC4",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Diana Girnita",
+    "claim": "Curcumin 1,000 mg daily reduced knee osteoarthritis pain versus placebo in a 2020 randomised trial of 70 patients.",
+    "horizon": "3 months",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "psIXPettMC4",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Diana Girnita",
+    "claim": "Curcumin 1,000 mg daily reduced pain and tender and swollen joint counts in rheumatoid arthritis patients (2016 study).",
+    "horizon": "at least 90 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "psIXPettMC4",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Diana Girnita",
+    "claim": "Effective turmeric doses are 1 to 1.5 g per day, ideally with pepper to improve absorption.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "psIXPettMC4",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Diana Girnita",
+    "claim": "Papaya, mango and pineapple reduce inflammation in inflammatory conditions, though the evidence is still small.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "0c_TKVZY71I",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Josh Axe",
+    "claim": "Following an anti-inflammatory diet heals cells and organs, reverses disease and extends lifespan.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "0c_TKVZY71I",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Josh Axe",
+    "claim": "Bone broth protein, grass-fed beef, pastured eggs and omega-3 foods make up the ideal inflammation-lowering diet.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_d6jGwkvrl0",
+    "status": "UNREVIEWED",
+    "predictor": "MYAutoimmuneMD (Dr. Micah Yu)",
+    "claim": "A week of pro-inflammatory eating can set back an anti-inflammatory diet's progress by one to three weeks.",
+    "horizon": "1-3 weeks",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_d6jGwkvrl0",
+    "status": "UNREVIEWED",
+    "predictor": "MYAutoimmuneMD (Dr. Micah Yu)",
+    "claim": "An anti-inflammatory diet must be followed for at least a couple of months before results show.",
+    "horizon": "at least a couple of months",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_d6jGwkvrl0",
+    "status": "UNREVIEWED",
+    "predictor": "MYAutoimmuneMD (Dr. Micah Yu)",
+    "claim": "Anti-inflammatory diets can relieve arthritis, brain fog and fatigue.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "_d6jGwkvrl0",
+    "status": "UNREVIEWED",
+    "predictor": "MYAutoimmuneMD (Dr. Micah Yu)",
+    "claim": "Eating the same few anti-inflammatory foods leads to B vitamin, magnesium and calcium gaps that cause fatigue.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "TT5ig1EiIfQ",
+    "status": "UNREVIEWED",
+    "predictor": "Prof. Tim Spector",
+    "claim": "Chronic low-level inflammation is a risk factor for nearly all cancers.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "TT5ig1EiIfQ",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Federica Amati",
+    "claim": "The right foods can lower inflammation comparably to ibuprofen.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "TT5ig1EiIfQ",
+    "status": "UNREVIEWED",
+    "predictor": "ZOE (Spector/Amati)",
+    "claim": "Cooking broccoli in a hot pan immediately deactivates its anti-inflammatory compounds unless a preparation trick is used.",
+    "horizon": "immediate",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "TT5ig1EiIfQ",
+    "status": "UNREVIEWED",
+    "predictor": "ZOE (Spector/Amati)",
+    "claim": "People switching from a poor diet to this advice feel more energy and better mood as inflammation falls.",
+    "horizon": "within a few days",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "h2YKBp4JUQo",
+    "status": "UNREVIEWED",
+    "predictor": "Business Insider",
+    "claim": "Hexane and bleaching agents used to refine seed oils do not remain in the finished oil.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "h2YKBp4JUQo",
+    "status": "UNREVIEWED",
+    "predictor": "Business Insider",
+    "claim": "The parallel rise of seed oil intake and obesity since 1940 shows correlation, not causation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "h2YKBp4JUQo",
+    "status": "UNREVIEWED",
+    "predictor": "Business Insider",
+    "claim": "Doctors interviewed would advise older heart-risk patients to eat more canola and sunflower oil.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "h2YKBp4JUQo",
+    "status": "UNREVIEWED",
+    "predictor": "Business Insider",
+    "claim": "A recent study found olive oil is the healthiest oil for frying.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "AtvhbXLxmlI",
+    "status": "UNREVIEWED",
+    "predictor": "Julia Zumpano",
+    "claim": "Chronic inflammation can show up as body aches, migraines, fatigue or allergies that people don't link to it.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "AtvhbXLxmlI",
+    "status": "UNREVIEWED",
+    "predictor": "Julia Zumpano",
+    "claim": "Omega-3 fatty acids from fatty fish suppress inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "AtvhbXLxmlI",
+    "status": "UNREVIEWED",
+    "predictor": "Julia Zumpano",
+    "claim": "Fully eliminating suspected trigger foods identifies personal inflammatory triggers.",
+    "horizon": "at least 3 weeks",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f4kOYIzlAN8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla (The Doctor's Kitchen)",
+    "claim": "Persistent low-grade inflammation raises the risk of dementia, metabolic disease, cancer and heart disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f4kOYIzlAN8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla (The Doctor's Kitchen)",
+    "claim": "Low-grade inflammation may present only as fatigue, joint pain, bloating or brain fog, or with no symptoms at all.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f4kOYIzlAN8",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla (The Doctor's Kitchen)",
+    "claim": "The Doctor's Kitchen app can rate a photographed meal as pro- or anti-inflammatory.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "sJoCpRAwxnM",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Eric Westman",
+    "claim": "Seed oils are not a proven health risk.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "sJoCpRAwxnM",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Eric Westman",
+    "claim": "His low-carb patients cut HbA1c from 10 to 5 and stopped insulin without any seed-oil advice.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "sJoCpRAwxnM",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Brad Stanfield",
+    "claim": "The evidence contradicts claims that seed oils cause widespread inflammation, weight gain and heart disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "kijkEmtjswg",
+    "status": "UNREVIEWED",
+    "predictor": "Doctor Alex",
+    "claim": "Repeated glucose spikes from sugary breakfast cereals cause insulin resistance, which drives inflammation and chronic disease.",
+    "horizon": "years of repeated spikes",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "kijkEmtjswg",
+    "status": "UNREVIEWED",
+    "predictor": "Doctor Alex",
+    "claim": "Fermented foods such as kefir, kimchi and sauerkraut are among the strongest dietary influences on whole-body inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "kijkEmtjswg",
+    "status": "UNREVIEWED",
+    "predictor": "Doctor Alex",
+    "claim": "Cruciferous vegetables lower inflammation and cancer risk.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "kijkEmtjswg",
+    "status": "UNREVIEWED",
+    "predictor": "Doctor Alex",
+    "claim": "Eating anti-inflammatory whole foods to fullness crowds out ultra-processed food without calorie counting.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zcqSYsHA0Jw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Human clinical studies show eating omega-6 fats does not increase inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zcqSYsHA0Jw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Some studies find higher omega-6 intake lowers inflammatory markers such as C-reactive protein.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zcqSYsHA0Jw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Seed oils as a category are not inherently harmful; effects depend on processing, use and overall diet.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "zcqSYsHA0Jw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Seed oil is an informal media term, not a scientific or nutritional food category.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "bcSr7hueQOo",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Chronic inappropriate inflammation is a shared root of coronary artery disease, cancer and neurodegenerative disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "bcSr7hueQOo",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Alzheimer's starts as brain inflammation, which is why ibuprofen and turmeric have a preventive effect.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "bcSr7hueQOo",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "The inflammation (cytokine) explanation of depression is better supported than the serotonin explanation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "bcSr7hueQOo",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Processed food lies behind much cancer, heart disease, obesity, type 2 diabetes and hypertension.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "POS5inxBaAk",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Mandell",
+    "claim": "A daily turmeric juice shot with black pepper relieves inflammation and body pain.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "FGmF1pwCDSo",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jen Ashton",
+    "claim": "Good nutrition evidence is lacking for individual foods marketed as anti-inflammatory; only overall eating patterns can really be studied.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "tl6_3tzjCNg",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Chronic low-level inflammation is the root cause of most serious diseases that kill people early.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "tl6_3tzjCNg",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Most commercial canola oil carries agrichemical residues and its heat-and-solvent extraction creates carcinogenic compounds.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "tl6_3tzjCNg",
+    "status": "UNREVIEWED",
+    "predictor": "Andrew Weil",
+    "claim": "Refined, processed and manufactured food is the main dietary driver of chronic disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "rP-Y5E-kIwI",
+    "status": "UNREVIEWED",
+    "predictor": "Baptist Health",
+    "claim": "Replacing refined grains with whole grains lowers dietary inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "rP-Y5E-kIwI",
+    "status": "UNREVIEWED",
+    "predictor": "Baptist Health",
+    "claim": "Herbs and spices contain phytonutrients with anti-inflammatory properties.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "GZ8SsMSBY5U",
+    "status": "UNREVIEWED",
+    "predictor": "Maria Lucey",
+    "claim": "The Mediterranean diet is the pattern research best supports for lowering inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "GZ8SsMSBY5U",
+    "status": "UNREVIEWED",
+    "predictor": "Maria Lucey",
+    "claim": "At least 25 g fibre daily and 30 plant types weekly feed gut bacteria that make anti-inflammatory short-chain fatty acids.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "GZ8SsMSBY5U",
+    "status": "UNREVIEWED",
+    "predictor": "Maria Lucey",
+    "claim": "Excess body weight is associated with chronic low-grade inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fJPBrhgsS0U",
+    "status": "UNREVIEWED",
+    "predictor": "Diana Girnita",
+    "claim": "RA patients who dropped gluten, lactose and red meat saw significant falls in pain and inflammation.",
+    "horizon": "3 months",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fJPBrhgsS0U",
+    "status": "UNREVIEWED",
+    "predictor": "Diana Girnita",
+    "claim": "Eating whole grains reduces inflammatory arthritis symptoms and gout attacks.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fJPBrhgsS0U",
+    "status": "UNREVIEWED",
+    "predictor": "Diana Girnita",
+    "claim": "High salt intake raises the risk of autoimmune diseases such as RA, psoriatic arthritis and lupus.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "fJPBrhgsS0U",
+    "status": "UNREVIEWED",
+    "predictor": "Diana Girnita",
+    "claim": "Daily olive oil, through oleocanthal and oleic acid, benefits arthritis.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "93aOwa1DnPc",
+    "status": "UNREVIEWED",
+    "predictor": "Mary Claire Haver",
+    "claim": "Resveratrol in grapes decreases inflammation of the heart.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "93aOwa1DnPc",
+    "status": "UNREVIEWED",
+    "predictor": "Mary Claire Haver",
+    "claim": "The listed foods are anti-inflammatory for everyone.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "vcbDmKfY5qE",
+    "status": "UNREVIEWED",
+    "predictor": "Heart & Soil (unnamed researcher)",
+    "claim": "Seed oils drive roughly 90% of obesity and chronic disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "vcbDmKfY5qE",
+    "status": "UNREVIEWED",
+    "predictor": "Heart & Soil",
+    "claim": "US vegetable oil intake rose from under 0.1 g to about 65 g per person daily between 1865 and 2014.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "vcbDmKfY5qE",
+    "status": "UNREVIEWED",
+    "predictor": "Heart & Soil",
+    "claim": "Around 1900 people had essentially no heart disease or chronic disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "vcbDmKfY5qE",
+    "status": "UNREVIEWED",
+    "predictor": "Heart & Soil",
+    "claim": "Cutting out vegetable oils lowers heart attack and stroke risk immediately.",
+    "horizon": "same day",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "yGns_QvtAQQ",
+    "status": "UNREVIEWED",
+    "predictor": "Ben Bikman",
+    "claim": "Oxidation products of linoleic acid such as 4-HNE and 13-HODE, rather than linoleic acid itself, directly impair insulin sensitivity.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "yGns_QvtAQQ",
+    "status": "UNREVIEWED",
+    "predictor": "Ben Bikman",
+    "claim": "Before industrial seed oils, linoleic acid made up only about 1-2% of dietary fat.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "yGns_QvtAQQ",
+    "status": "UNREVIEWED",
+    "predictor": "Ben Bikman",
+    "claim": "Animal fats and coconut or olive fats are metabolically preferable to refined seed oils.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hjjfqEyOKBQ",
+    "status": "UNREVIEWED",
+    "predictor": "Sten Ekberg",
+    "claim": "Insulin resistance is a primary cause of chronic inflammation, and low-insulin meat helps reverse it.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hjjfqEyOKBQ",
+    "status": "UNREVIEWED",
+    "predictor": "Sten Ekberg",
+    "claim": "Curcumin-based herbs treat the inflammatory root of depression, while SSRIs are toxic and lose effect.",
+    "horizon": "8 weeks, then maintenance dosing",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "hjjfqEyOKBQ",
+    "status": "UNREVIEWED",
+    "predictor": "Sten Ekberg",
+    "claim": "People who cannot tolerate meat usually have weak digestion that hydrochloric acid supplements fix.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "OYWxGPTWPs4",
+    "status": "UNREVIEWED",
+    "predictor": "Bobby Parrish",
+    "claim": "Canola, corn, soybean and sunflower oils are oxidised during processing and highly inflammatory.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "OYWxGPTWPs4",
+    "status": "UNREVIEWED",
+    "predictor": "Bobby Parrish",
+    "claim": "Wild blueberries carry about twice the antioxidant power of conventional blueberries.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "OYWxGPTWPs4",
+    "status": "UNREVIEWED",
+    "predictor": "Bobby Parrish",
+    "claim": "Wild salmon has about three times the anti-inflammatory antioxidants of farmed salmon.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "KxZC1XQoGms",
+    "status": "UNREVIEWED",
+    "predictor": "Kimberly Elise",
+    "claim": "Lingering inflammation causes joint pain, fatigue and mood swings, especially in midlife.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "KxZC1XQoGms",
+    "status": "UNREVIEWED",
+    "predictor": "Kimberly Elise",
+    "claim": "Chlorophyll in spinach lowers inflammation in the body.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "FvNhB-wPB_c",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "Vitamin D3 combined with K2 produces a strong anti-inflammatory effect in arthritis.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "FvNhB-wPB_c",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "Vitamin K2 stops calcium depositing in joints as arthritis.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "FvNhB-wPB_c",
+    "status": "UNREVIEWED",
+    "predictor": "Eric Berg",
+    "claim": "Every arthritis protocol should include at least 10,000 IU D3 with 100 mcg K2.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I6jQgIjuNHU",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Food choices begin changing the gut microbiome by the next day.",
+    "horizon": "within 24 hours",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I6jQgIjuNHU",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Supporting the gut microbiome improves how patients respond to cancer therapy.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I6jQgIjuNHU",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Eating plenty of extra virgin olive oil lowers heart attack risk rather than raising it.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I6jQgIjuNHU",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Fermented foods reduce inflammation enough for people to feel better quickly.",
+    "horizon": "within a few days",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wtlmqv8RVJc",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jones, DC",
+    "claim": "Removing gluten, dairy and sugar reduces inflammation for many people.",
+    "horizon": "2 weeks",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wtlmqv8RVJc",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jones, DC",
+    "claim": "A 14-16 hour daily fasting window directly reduces inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wtlmqv8RVJc",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jones, DC",
+    "claim": "Microdosed GLP-1 medication acts as an anti-inflammatory agent, not just a weight-loss drug.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wtlmqv8RVJc",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jones, DC",
+    "claim": "Large studies show seed oils cause no inflammatory harm at normal intakes.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "6MUE7nfA0G4",
+    "status": "UNREVIEWED",
+    "predictor": "Eat more Lose more",
+    "claim": "Following this anti-inflammatory plan lets people lose 10 kg easily.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "6MUE7nfA0G4",
+    "status": "UNREVIEWED",
+    "predictor": "Eat more Lose more",
+    "claim": "Boiled cumin and fennel water helps belly fat loss and acidity.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "6MUE7nfA0G4",
+    "status": "UNREVIEWED",
+    "predictor": "Eat more Lose more",
+    "claim": "Ginger-turmeric water on an empty stomach helps PCOS and PCOD.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "2sv0sZYxGyE",
+    "status": "UNREVIEWED",
+    "predictor": "Doctors of Ojai",
+    "claim": "Inflammation underlies almost every disease process.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "2sv0sZYxGyE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Ben (Doctors of Ojai)",
+    "claim": "Nitrates in processed meats form nitrosamines that cause inflammation and can cause cancer.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "2sv0sZYxGyE",
+    "status": "UNREVIEWED",
+    "predictor": "Doctors of Ojai",
+    "claim": "Nitrates can set off a near-immediate inflammatory response in the gut.",
+    "horizon": "immediate",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "2sv0sZYxGyE",
+    "status": "UNREVIEWED",
+    "predictor": "Doctors of Ojai",
+    "claim": "White bread spikes insulin, a pro-inflammatory hormone.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "A2GphlX-4VM",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "People with the highest fibre intake have about half the odds of elevated CRP.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "A2GphlX-4VM",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Fibre is the most powerful dietary lever on inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "A2GphlX-4VM",
+    "status": "UNREVIEWED",
+    "predictor": "Will Bulsiewicz",
+    "claim": "Cooking and then refrigerating beans and grains turns their starch into resistant starch that feeds gut microbes.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wzYCCX-4i88",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jennifer Ashton",
+    "claim": "Foods marketed as anti-inflammatory mostly lack good nutritional-science support for that benefit.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wzYCCX-4i88",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Jennifer Ashton",
+    "claim": "Any anti-inflammatory benefit comes from an overall whole-food eating pattern, not single ingredients studied in isolation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MZ6wBfkLaMM",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Industrial seed oils (soybean, canola, corn, safflower) are unstable, oxidize easily, and that oxidation drives inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MZ6wBfkLaMM",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Saturated fats such as butter, lard and coconut oil are generally fine for most people, especially the insulin resistant.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MZ6wBfkLaMM",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Coconut oil raises LDL but also HDL, so the overall lipid profile improves.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "MZ6wBfkLaMM",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Official advice to swap saturated fat for seed oils is far less clear-cut than guidelines suggest.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "KiNJ_whdvwA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Micah Yu",
+    "claim": "Ultra-processed foods drive the chronic inflammation behind rising chronic and autoimmune disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "KiNJ_whdvwA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Micah Yu",
+    "claim": "Fried foods raise inflammation through oxidative stress and advanced glycation end products; several days of them flare his arthritis pain.",
+    "horizon": "within a few consecutive days",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "KiNJ_whdvwA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Micah Yu",
+    "claim": "Non-celiac gluten sensitivity can cause brain fog, joint pain and headaches despite negative celiac tests.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pUyqK1LjuUw",
+    "status": "UNREVIEWED",
+    "predictor": "Plant Based Science London",
+    "claim": "Inflammation-related diseases account for well over half of all deaths.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pUyqK1LjuUw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Michael Greger",
+    "claim": "A single CRP blood test predicts older adults' physical and cognitive performance and remaining lifespan.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "pUyqK1LjuUw",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Michael Greger",
+    "claim": "Excess inflammation can be extinguished by cutting saturated fat and salt and eating beans, berries, greens, oats, flax, spices and green or chamomile tea.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Sl3g1Dl4ALE",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Oxidized linoleic acid, not linoleic acid itself, is what damages mitochondria and raises inflammation from seed oils.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "Sl3g1Dl4ALE",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Cooking in tallow, ghee, avocado or olive oil is safer long term than sunflower or corn oil.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I8VP9D1CP1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Women with lupus eating the most vitamin C foods (about 154 mg/day) had 74% fewer flares.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I8VP9D1CP1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Drinking the equivalent of five cups of green tea daily cuts lupus disease activity by half.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "I8VP9D1CP1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. William Li",
+    "claim": "Vitamin C and green-tea EGCG raise regulatory T cells, turning down autoimmune inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cB_guz52c-o",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla",
+    "claim": "Chronic inflammation drives the biggest killers and causes over 50% of all deaths.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cB_guz52c-o",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla",
+    "claim": "The more anti-inflammatory a diet, the lower the risk of overall and site-specific cancers.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cB_guz52c-o",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla",
+    "claim": "Pro-inflammatory diets carry roughly 40% higher odds of depression than anti-inflammatory diets.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cB_guz52c-o",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Rupy Aujla",
+    "claim": "The inflammation-driven disease burden will keep growing.",
+    "horizon": "next 30 years (from Oct 2024)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qv_6PBLGqYE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Josh Axe",
+    "claim": "Deep-fried foods in seed oils, like french fries, are the single most inflammatory food group.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qv_6PBLGqYE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Josh Axe",
+    "claim": "Heavy fast-food and fried-food eaters visibly age faster, as smokers do, because AGEs accelerate cellular aging.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qv_6PBLGqYE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Josh Axe",
+    "claim": "Chronic inflammation triggers leaky gut, hormone imbalance, autoimmune disease and cancer; removing inflammatory foods helps reverse disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qv_6PBLGqYE",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Josh Axe",
+    "claim": "Swapping white bread, refined sugar and seed oils for sourdough, honey or monk fruit, and butter or olive oil radically cuts inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f9lfct20n1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Seed oils are usually oxidized by cooking time, and oxidized linoleic acid harms cell membranes and raises oxidative stress.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f9lfct20n1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "18 of 20 food emulsifiers tested disrupted gut barrier integrity, letting LPS through and provoking inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f9lfct20n1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "A broad shift away from food emulsifiers will take hold.",
+    "horizon": "next couple of years (from Dec 2024)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "f9lfct20n1Y",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "About half the people he advises find pain and puffiness ease after cutting or eliminating gluten.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "BGYexogqeMQ",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "A 10-day anti-inflammatory diet stops tiredness, bloating and aches.",
+    "horizon": "10 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "CVACyQgN3ls",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Evidence that seed oils harm health is mixed; observational studies link higher intake to lower disease risk.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "CVACyQgN3ls",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Saturated fat combined with refined starch and sugar, not fat alone, is what drives metabolic disease.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "CVACyQgN3ls",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "Refined starch and sugar drive the metabolic crisis far more than seed oils do.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "CVACyQgN3ls",
+    "status": "UNREVIEWED",
+    "predictor": "Mark Hyman",
+    "claim": "White flour has a higher glycemic index than table sugar.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "xE-nC0HWKJw",
+    "status": "UNREVIEWED",
+    "predictor": "Nick Christelis",
+    "claim": "Wine promotes inflammation and makes chronic pain worse.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "xE-nC0HWKJw",
+    "status": "UNREVIEWED",
+    "predictor": "Sherry (Pain Specialists Australia dietitian)",
+    "claim": "Everyone, especially people with chronic pain, fibromyalgia, chronic fatigue, diabetes or bowel disease, should eat anti-inflammatory.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "xE-nC0HWKJw",
+    "status": "UNREVIEWED",
+    "predictor": "Sherry (Pain Specialists Australia dietitian)",
+    "claim": "Small dietary changes make a large difference to chronic pain over time.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "k6ts0e41pq8",
+    "status": "UNREVIEWED",
+    "predictor": "Physionic",
+    "claim": "Pooled randomized trials show no overall mortality increase from omega-6 seed-oil diets.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "k6ts0e41pq8",
+    "status": "UNREVIEWED",
+    "predictor": "Physionic",
+    "claim": "Unless someone drinks vegetable oil daily, typical omega-6 intake sits in a neutral-risk range.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "k6ts0e41pq8",
+    "status": "UNREVIEWED",
+    "predictor": "Physionic",
+    "claim": "Keeping the omega-6 to omega-3 ratio around 4 to 9 by eating more omega-3 is a sensible hedge.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "k6ts0e41pq8",
+    "status": "UNREVIEWED",
+    "predictor": "Physionic",
+    "claim": "Replacing seed oils with certain saturated fats may be more harmful than keeping them.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "3vSXDXCSF_0",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "The most anti-inflammatory diet is high-protein, relatively low-carb and meat-based, with added polyphenols and some carbohydrate.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "3vSXDXCSF_0",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Type 2 diabetics on a lower-carb diet lowered inflammation more than on low-fat, despite identical weight loss.",
+    "horizon": "6 months",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "3vSXDXCSF_0",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Most anti-inflammatory diet benefits seen in studies come down to caloric restriction.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "3vSXDXCSF_0",
+    "status": "UNREVIEWED",
+    "predictor": "Thomas DeLauer",
+    "claim": "Clear breaks between meals let the gut lining repair itself.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "7Esuf2u3KKc",
+    "status": "UNREVIEWED",
+    "predictor": "Mae Alice Suzuki",
+    "claim": "Refined added sugars and seed oils trigger inflammation.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "7Esuf2u3KKc",
+    "status": "UNREVIEWED",
+    "predictor": "Mae Alice Suzuki",
+    "claim": "US-processed gluten can inflame the gut and cause brain fog even without celiac disease, unlike bread in Europe or Asia.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cOTQH_V8Lk8",
+    "status": "UNREVIEWED",
+    "predictor": "Kia Tatyana",
+    "claim": "An anti-inflammatory diet visibly reduced her acne and skin inflammation.",
+    "horizon": "first 2-4 weeks",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cOTQH_V8Lk8",
+    "status": "UNREVIEWED",
+    "predictor": "Kia Tatyana",
+    "claim": "She lost 10 lbs on the diet without a calorie deficit.",
+    "horizon": "first 2 weeks",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "cOTQH_V8Lk8",
+    "status": "UNREVIEWED",
+    "predictor": "Kia Tatyana",
+    "claim": "The diet ended her daily bloating and midday energy crashes.",
+    "horizon": "within 100 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wkKPIUrFedw",
+    "status": "UNREVIEWED",
+    "predictor": "Layne Norton",
+    "claim": "About 30 g/day of soybean oil versus palm oil does not raise inflammatory markers or oxidized LDL.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wkKPIUrFedw",
+    "status": "UNREVIEWED",
+    "predictor": "Layne Norton",
+    "claim": "High linoleic acid intake does not increase arachidonic acid levels.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wkKPIUrFedw",
+    "status": "UNREVIEWED",
+    "predictor": "Layne Norton",
+    "claim": "LDL is oxidized mainly inside the artery wall in proportion to LDL concentration, which saturated fat raises.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "wkKPIUrFedw",
+    "status": "UNREVIEWED",
+    "predictor": "Layne Norton",
+    "claim": "Swapping saturated fat for seed oils has neutral or positive effects on inflammation, heart disease, insulin sensitivity and liver fat.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qznhpnuqU2w",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Will Bulsiewicz",
+    "claim": "Each 50 g of processed meat is linked to 38% higher CRP, about triple unprocessed red meat (14%) or poultry (13%).",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qznhpnuqU2w",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Will Bulsiewicz",
+    "claim": "Eating one hot dog a day raises colorectal cancer risk by about 18%.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qznhpnuqU2w",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Will Bulsiewicz",
+    "claim": "No single food causes disease; the overall dietary pattern is what matters.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "qznhpnuqU2w",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Will Bulsiewicz",
+    "claim": "The biggest anti-inflammatory gains come from adding fibre, polyphenols, plant diversity and fermented foods, not removing foods.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "t_vc0_WU8MI",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand",
+    "claim": "Inflammation is at the foundation of almost every disease process.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "t_vc0_WU8MI",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Ben (Dr. Suneel Dhand panel)",
+    "claim": "Nitrates in processed meats form nitrosamines that trigger gut inflammation and are carcinogenic.",
+    "horizon": "almost immediately",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "t_vc0_WU8MI",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand panel",
+    "claim": "White bread spikes glucose and insulin, and insulin is a pro-inflammatory hormone.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "t_vc0_WU8MI",
+    "status": "UNREVIEWED",
+    "predictor": "Dr. Suneel Dhand panel",
+    "claim": "Living an anti-inflammatory life makes you much less likely to get sick.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "p-DlhDNDLZA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr Alex Wibberley",
+    "claim": "Gut lining cells are replaced every 3-5 days, so this week's food rebuilds next week's gut barrier.",
+    "horizon": "3-5 days",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "p-DlhDNDLZA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr Alex Wibberley",
+    "claim": "Ultra-processed foods make the gut barrier leakier, unsettling the immune tissue behind it.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "p-DlhDNDLZA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr Alex Wibberley",
+    "claim": "Foods that protect the gut also protect the heart, kidneys, brain and joints.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  },
+  {
+    "videoId": "p-DlhDNDLZA",
+    "status": "UNREVIEWED",
+    "predictor": "Dr Alex Wibberley",
+    "claim": "People should eat at least 30 g of fibre daily, and ideally 40-50 g.",
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
+  }
+]

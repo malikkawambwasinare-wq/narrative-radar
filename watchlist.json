@@ -127,38 +127,31 @@
       "notes": "Created by the analysis engine. Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate."
     },
     {
-      "id": "chronic-inflammation-is-the-root-of-all-disease",
-      "name": "Chronic Inflammation Is the Root of All Disease",
+      "id": "anti-inflammatory-diet",
+      "name": "Anti-Inflammatory Diet — inflammation as the root of all disease",
       "industry": "Health & biotech",
       "status": "active",
       "started": "2026-09-14",
       "trigger": "User-submitted video: 10 anti-inflammatory foods for more energy, less pain and better health (The Doctor's Kitchen)",
       "queries": [
-        "anti-inflammatory foods",
+        "anti inflammatory diet",
+        "anti inflammatory foods",
+        "chronic inflammation diet doctor",
+        "foods that cause inflammation",
+        "anti inflammatory diet science debunked",
+        "seed oils inflammation",
         "chronic inflammation root of disease",
-        "anti-inflammatory diet doctor",
+        "anti inflammatory diet doctor",
         "foods that reduce inflammation",
         "inflammation fatigue joint pain diet"
       ],
       "watched_predictors": [],
-      "notes": "Created by the analysis engine. Low-grade chronic inflammation, driven by modern diet and lifestyle, is the hidden cause of fatigue, pain and most chronic illness — and can be reversed by eating specific anti-inflammatory foods."
-    },
-    {
-      "id": "inflammation-is-the-root-of-all-disease",
-      "name": "Inflammation Is the Root of All Disease",
-      "industry": "Health & biotech",
-      "status": "active",
-      "started": "2026-09-14",
-      "trigger": "User-submitted video: 10 anti-inflammatory foods for more energy, less pain and better health (The Doctor's Kitchen)",
-      "queries": [
-        "anti-inflammatory foods",
-        "chronic inflammation root cause of disease",
-        "anti-inflammatory diet doctor",
-        "foods that reduce inflammation energy",
-        "inflammation and chronic pain diet"
-      ],
-      "watched_predictors": [],
-      "notes": "Created by the analysis engine. Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease — and eating specific 'anti-inflammatory' foods can reverse it."
+      "notes": "Chronic low-grade inflammation, driven by modern diet, is framed as the hidden cause of fatigue, pain and most chronic disease — and specific 'anti-inflammatory' foods as the cure. Graded on evidence, not a clock: track which claims cite outcome trials vs biomarkers, which are recycled lists, and who is selling something.",
+      "filters": "v2",
+      "merged_from": [
+        "chronic-inflammation-is-the-root-of-all-disease",
+        "inflammation-is-the-root-of-all-disease"
+      ]
     }
   ]
 }

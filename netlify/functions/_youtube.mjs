@@ -130,6 +130,32 @@ export async function channelSignals(channelId, signal) {
   };
 }
 
+/* Fallback when the watch page is bot-walled (every datacenter IP): YouTube's
+   search page still answers there, and searching a video's ID returns that
+   video's card with its relative age ("3 years ago"), views and length. Age is
+   month- or year-coarse, stored as age_days so the timeline can place it. */
+const AGO = { second: 1 / 86400, minute: 1 / 1440, hour: 1 / 24, day: 1, week: 7, month: 30.44, year: 365.25 };
+export async function searchSignals(videoId, signal) {
+  const html = await fetchText(`https://www.youtube.com/results?search_query=${encodeURIComponent(`"${videoId}"`)}`, {}, signal);
+  const card = walk(ytjson(html, "ytInitialData"), "videoRenderer").find((r) => r.videoId === videoId);
+  if (!card) throw new Error("video not in its own search results");
+  // YouTube serves both "3 years ago" and the compact "3y ago" / "2mo ago".
+  const SHORT = { s: "second", m: "minute", min: "minute", h: "hour", d: "day", w: "week", mo: "month", y: "year", yr: "year" };
+  const rel = text(card.publishedTimeText);
+  const long = rel.match(/(\d+)\s+(second|minute|hour|day|week|month|year)s?\s+ago/);
+  const short = !long && rel.match(/(\d+)\s*(mo|min|yr|s|m|h|d|w|y)\b\s*ago/);
+  const ago = long || (short && [short[0], short[1], SHORT[short[2]]]);
+  const views = text(card.viewCountText).match(/[\d,]+/)?.[0];
+  return {
+    title: text(card.title) || null,
+    channel: text(card.ownerText || card.longBylineText) || null,
+    published: text(card.publishedTimeText) || null,          // relative text; not an ISO date
+    age_days: ago ? Math.round(+ago[1] * AGO[ago[2]] * 100) / 100 : null,
+    views: views ? `${views} views` : null,
+    length: text(card.lengthText) || null,
+  };
+}
+
 /* Everything the batch script stores, under one deadline. Returns
    { meta, yt, got: ["video","comments","channel"] } — `got` lists the steps
    that actually answered, so the caller can be honest about partial data. */
@@ -153,6 +179,11 @@ export async function enrichVideo(videoId, { timeoutMs = 6000 } = {}) {
     yt.enrichedOn = new Date().toISOString().slice(0, 10);
   } catch (e) {
     out.error = String(e.message || e);
+    // Watch page refused: at least get the video onto the timeline.
+    try {
+      out.meta = await searchSignals(videoId, ac.signal);
+      out.got.push("search");
+    } catch { /* no date either; the entry stays undated and says so */ }
   } finally {
     clearTimeout(timer);
   }

@@ -4,118 +4,152 @@
     "status": "UNREVIEWED",
     "predictor": "Ray Dalio",
     "claim": "Taiwan reunification with China will happen via non-military pressure, not a US-China war",
-    "horizon": "unspecified (no stated date)"
+    "horizon": "unspecified (no stated date)",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "e5jgTNJdRcE",
     "status": "UNREVIEWED",
     "predictor": "Scott Galloway (via ProfG Markets clip)",
     "claim": "Half a dozen significant headline forced-selling events from leveraged AI-stock holders",
-    "horizon": "August 2026"
+    "horizon": "August 2026",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "HvgjGiNm5Rk",
     "status": "UNREVIEWED",
     "predictor": "Reventure Consulting",
     "claim": "Hyperscaler AI capex growth will slow, threatening a 10-30% stock correction and recession",
-    "horizon": "end of 2026 into 2027"
+    "horizon": "end of 2026 into 2027",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "2DPA-AtFQQE",
     "status": "UNREVIEWED",
     "predictor": "Casey Simpson",
     "claim": "Google will overhaul and deprioritize Gemini",
-    "horizon": "within 1-2 years (by ~2028)"
+    "horizon": "within 1-2 years (by ~2028)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "Bu0xNDLNORU",
     "status": "UNREVIEWED",
     "predictor": "Dara Khosrowshahi (Uber CEO, clip within interview)",
     "claim": "Uber's ~9 million drivers largely replaced by autonomous vehicles (~20 million AVs), majority of trips fulfilled by robots",
-    "horizon": "20 years from now (~2046)"
+    "horizon": "20 years from now (~2046)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "2QbG7uwtZb0",
     "status": "UNREVIEWED",
     "predictor": "Elon Musk (as quoted by video)",
     "claim": "AI will surpass humans and threaten humanity",
-    "horizon": "within a decade (~2036)"
+    "horizon": "within a decade (~2036)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "2QbG7uwtZb0",
     "status": "UNREVIEWED",
     "predictor": "Elon Musk (as quoted by video)",
     "claim": "AI will surpass human intelligence",
-    "horizon": "within 5 years (~2031)"
+    "horizon": "within 5 years (~2031)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "qbnuJFRcvQE",
     "status": "UNREVIEWED",
     "predictor": "Steve Keen",
     "claim": "AI bubble bust causes a US recession (not depression); AI overinvestment is ~10x sustainable scale and most AI firms fail",
-    "horizon": "next one to two years (by ~2027-2028)"
+    "horizon": "next one to two years (by ~2027-2028)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "AgTk42rH4n8",
     "status": "UNREVIEWED",
     "predictor": "Martin Armstrong",
     "claim": "Collapse of republican forms of government per his model",
-    "horizon": "2032"
+    "horizon": "2032",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "AgTk42rH4n8",
     "status": "UNREVIEWED",
     "predictor": "Martin Armstrong",
     "claim": "Gold reaches $7,000-8,000, with a shot at $11,000",
-    "horizon": "by 2032"
+    "horizon": "by 2032",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "AgTk42rH4n8",
     "status": "UNREVIEWED",
     "predictor": "Martin Armstrong",
     "claim": "China takes Taiwan",
-    "horizon": "expected around 2027"
+    "horizon": "expected around 2027",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "AgTk42rH4n8",
     "status": "UNREVIEWED",
     "predictor": "Martin Armstrong",
     "claim": "Steep global recession intensifies after 2026, bottoming",
-    "horizon": "around 2028"
+    "horizon": "around 2028",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "JrASb2EeBiY",
     "status": "UNREVIEWED",
     "predictor": "Mustafa Suleyman (quoted by Sanders)",
     "claim": "Most white-collar work will be fully automated by an AI",
-    "horizon": "within 12-18 months of statement"
+    "horizon": "within 12-18 months of statement",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "JrASb2EeBiY",
     "status": "UNREVIEWED",
     "predictor": "Bernie Sanders (Senate HELP report)",
     "claim": "AI, automation, and robotics could replace nearly 100 million American jobs",
-    "horizon": "over the next decade (~2036)"
+    "horizon": "over the next decade (~2036)",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "vivFgXv2sCg",
     "status": "UNREVIEWED",
     "predictor": "Ray Dalio",
     "claim": "Republicans probably lose the House at midterms, then intensifying political/social conflict with possible irreconcilable differences",
-    "horizon": "Nov 2026 midterms through 2028 presidential election"
+    "horizon": "Nov 2026 midterms through 2028 presidential election",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "1a1hbOX6N2w",
     "status": "UNREVIEWED",
     "predictor": "Willem Middelkoop (as narrated)",
     "claim": "Silver runs back toward $100",
-    "horizon": "coming months"
+    "horizon": "coming months",
+    "horizon_dated": false,
+    "horizon_rule": "v1"
   },
   {
     "videoId": "1a1hbOX6N2w",
     "status": "UNREVIEWED",
     "predictor": "Willem Middelkoop (as narrated)",
     "claim": "Leading precious metal producers could double if gold/silver resume uptrend",
-    "horizon": "next 12-18 months"
+    "horizon": "next 12-18 months",
+    "horizon_dated": true,
+    "horizon_rule": "v1"
   }
 ]
