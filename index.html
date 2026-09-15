@@ -263,26 +263,63 @@
   .gsec-h span { font-size: 12.5px; color: var(--muted); }
   .gsector .gal { margin-top: 12px; }
   .galnow .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
-  /* Publishing momentum: videos published per week in this corpus */
-  .momentum { margin: 0 0 18px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
-  .momentum .head { display: flex; gap: 14px; align-items: baseline; flex-wrap: wrap; }
-  .momentum .lbl { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
-  .momentum .trend { font-size: 13px; color: var(--ink-2); }
-  .momentum .trend b { color: var(--ink); }
-  .momentum svg { display: block; width: 100%; height: 60px; margin-top: 8px; }
-  .momentum .axis { display: flex; justify-content: space-between; font-size: 10.5px; color: var(--muted);
-    font-variant-numeric: tabular-nums; margin-top: 2px; }
-  .momentum .qaxis { position: relative; display: block; height: 14px; }
-  .momentum .qaxis span { position: absolute; top: 0; border-left: 1px solid var(--hairline); padding-left: 3px; }
-  .momentum rect.partial { opacity: .35; }
-  .momentum .mscale { display: inline-flex; gap: 4px; }
-  .momentum .mscale button { font: inherit; font-size: 11.5px; padding: 2px 9px; border-radius: 999px; cursor: pointer;
-    border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); }
-  .momentum .mscale button.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
-  .momentum rect { fill: var(--accent); opacity: .7; }
-  .momentum rect.peak { opacity: 1; }
-  .momentum rect.empty { fill: var(--hairline); opacity: 1; }
-  .momentum .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+  /* Publishing momentum — interactive column chart (palette validated light + dark) */
+  .momentum { margin: 0 0 18px; padding: 14px 16px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface);
+    --mo-s1: #2a78d6; --mo-s2: #eb6834; --mo-s3: #1baf7a; --mo-s0: #d9d8d1; --mo-axis: #c3c2b7; --mo-band: rgba(137,135,129,.10); }
+  @media (prefers-color-scheme: dark) { .momentum { --mo-s1: #3987e5; --mo-s2: #d95926; --mo-s3: #199e70; --mo-s0: #45453f; --mo-axis: #383835; --mo-band: rgba(195,194,183,.07); } }
+  .mo-head { display: flex; justify-content: space-between; gap: 10px 16px; flex-wrap: wrap; align-items: flex-start; }
+  .mo-title { font-size: 15px; font-weight: 650; color: var(--ink); }
+  .mo-sub { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; }
+  .mo-ctl { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .mo-seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .mo-seg button, .mo-tbl { font: inherit; font-size: 12px; padding: 4px 10px; border: 0; background: var(--surface); color: var(--ink-2); cursor: pointer; }
+  .mo-seg button + button { border-left: 1px solid var(--border); }
+  .mo-seg button.on, .mo-tbl.on { background: var(--ink); color: var(--surface); }
+  .mo-tbl { border: 1px solid var(--border); border-radius: 8px; }
+  .mo-claim { font: inherit; font-size: 12px; padding: 4px 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--ink); max-width: 220px; }
+  .mo-ins { margin: 12px 0 4px; padding: 0; list-style: none; display: grid; gap: 6px; }
+  .mo-ins li { font-size: 13px; color: var(--ink-2); line-height: 1.45; padding-left: 14px; position: relative; }
+  .mo-ins li::before { content: ""; position: absolute; left: 2px; top: .6em; width: 5px; height: 5px; border-radius: 50%; background: var(--muted); }
+  .mo-ins b { color: var(--ink); font-weight: 600; }
+  .mo-legend { display: flex; gap: 6px 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); margin: 10px 0 0; }
+  .mo-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .mo-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+  .mo-legend i.mut { width: 1px; height: 12px; border-radius: 0; background: var(--muted); }
+  .momentum .s1 { fill: var(--mo-s1); background: var(--mo-s1); }
+  .momentum .s2 { fill: var(--mo-s2); background: var(--mo-s2); }
+  .momentum .s3 { fill: var(--mo-s3); background: var(--mo-s3); }
+  .momentum .s0 { fill: var(--mo-s0); background: var(--mo-s0); }
+  .mo-plot { position: relative; margin-top: 6px; touch-action: pan-y; }
+  .mo-plot svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .mo-plot .grid { stroke: var(--hairline); stroke-width: 1; }
+  .mo-plot .base { stroke: var(--mo-axis); stroke-width: 1; }
+  .mo-plot text { font-size: 10.5px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+  .mo-plot text.val { fill: var(--ink-2); font-weight: 600; }
+  .mo-plot .band { fill: var(--mo-band); }
+  .mo-plot .mut-line { stroke: var(--muted); stroke-width: 1; opacity: .55; }
+  .mo-plot .mo-col { transition: opacity .15s ease; }
+  .mo-plot .mo-col.partial { opacity: .5; }
+  .mo-plot.hovering .mo-col:not(.on) { opacity: .38; }
+  .mo-plot.hovering .mo-col.partial:not(.on) { opacity: .22; }
+  .mo-plot .selmark { fill: var(--ink); }
+  .mo-plot .mo-hit { fill: transparent; cursor: pointer; outline: none; }
+  .mo-plot .mo-hit:focus-visible { stroke: var(--accent); stroke-width: 2; }
+  .mo-tip { position: absolute; top: -6px; z-index: 3; min-width: 190px; max-width: 290px; padding: 9px 11px; border-radius: 10px;
+    background: var(--surface); border: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,.14); pointer-events: none; font-size: 12px; color: var(--ink-2); }
+  .mo-tip .tt-h { font-size: 11px; color: var(--muted); }
+  .mo-tip .tt-v { font-size: 16px; font-weight: 650; color: var(--ink); margin: 1px 0 5px; }
+  .mo-tip .tt-r { display: flex; align-items: center; gap: 7px; margin: 2px 0; }
+  .mo-tip .tt-r b { color: var(--ink); font-variant-numeric: tabular-nums; min-width: 22px; text-align: right; }
+  .mo-tip .tt-k { width: 12px; height: 2px; border-radius: 1px; display: inline-block; }
+  .mo-tip .tt-x { margin-top: 6px; font-size: 11.5px; line-height: 1.35; }
+  .mo-tip .tt-hint { margin-top: 6px; font-size: 11px; color: var(--muted); }
+  .mo-table { overflow-x: auto; margin-top: 10px; }
+  .mo-table table { border-collapse: collapse; width: 100%; font-size: 12px; font-variant-numeric: tabular-nums; }
+  .mo-table th { text-align: right; font-weight: 600; color: var(--muted); padding: 5px 8px; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+  .mo-table td { text-align: right; padding: 4px 8px; border-bottom: 1px solid var(--hairline); color: var(--ink-2); }
+  .mo-table th:first-child, .mo-table td:first-child { text-align: left; color: var(--ink); }
+  .momentum .note { font-size: 11.5px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+  .pchip { font: inherit; font-size: 12.5px; padding: 6px 12px; border-radius: 8px; cursor: pointer; border: 1px solid var(--ink); background: var(--ink); color: var(--surface); }
   .vid-body .thumbwrap { width: 136px; }
   /* Sides in this story */
   .sides { margin: 14px 0 18px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px;
@@ -810,6 +847,7 @@
     <div class="stats" id="stats"></div>
     <div class="momentum" id="momentum"></div>
     <div class="controls">
+      <span id="controls-period"></span>
       <input type="search" id="search" placeholder="Search title or channel…">
       <select id="sort">
         <option value="new">Newest first</option>
@@ -1930,75 +1968,287 @@ function momentum(vids, weeks = 16) {
   return { bins, older, last4, prior4, peak, end, swept, dated: ts.length, undated: vids.length - ts.length };
 }
 const staleDays = swept => Math.floor((Date.now() - swept) / 86400000);
-// Five years by quarter: the view the backfilled corpus exists for. Each bar is
-// videos published in that calendar quarter; the current quarter is marked as
-// partial and never compared as if it were complete.
+/* ---------- Publishing momentum (interactive) ----------
+   A column chart of the corpus over time. One metric at a time, never two axes:
+   videos stacked by our verdict, median views per video, or channels (new to
+   the story vs posted before). Hover or focus a column for its breakdown, click
+   it to list those videos below, or open the table. The insights come from the
+   same bins, in counts, with the sampling caveats stated. */
 const Q_LABEL = t => { const d = new Date(t); return `Q${Math.floor(d.getUTCMonth() / 3) + 1} ${d.getUTCFullYear()}`; };
 const qStart = t => { const d = new Date(t); return Date.UTC(d.getUTCFullYear(), Math.floor(d.getUTCMonth() / 3) * 3, 1); };
-function momentumQuarters(vids, years = 5) {
-  const ts = vids.map(publishedEst).filter(Boolean);
-  if (!ts.length) return null;
-  const nowQ = qStart(Date.now());
-  const firstQ = Math.max(qStart(Math.min(...ts)), qStart(Date.now() - years * 365.25 * 86400000));
-  const qs = [];
-  for (let q = firstQ; q <= nowQ; ) { qs.push(q); const d = new Date(q); q = Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 3, 1); }
-  const bins = qs.map(() => 0);
-  let older = 0;
-  for (const t of ts) { const i = qs.indexOf(qStart(t)); if (i >= 0) bins[i]++; else if (t < firstQ) older++; }
-  const full = bins.slice(0, -1);
-  const peak = full.length ? full.indexOf(Math.max(...full)) : 0;
-  return { qs, bins, older, peak, undated: vids.length - ts.length };
-}
-let MOMENTUM_SCALE = (() => { try { return localStorage.getItem("momentum-scale") || "quarters"; } catch (e) { return "quarters"; } })();
-function momentumBlock(vids) {
-  const toggle = `<span class="mscale">${[["quarters", "5 years"], ["weeks", "16 weeks"]].map(([k, l]) =>
-    `<button type="button" data-mscale="${k}" class="${MOMENTUM_SCALE === k ? "on" : ""}">${l}</button>`).join("")}</span>`;
-  const swept0 = lastSweep(vids);
-  const pending = vids.filter(v => v.verdict === "UNREVIEWED").length;
-  if (MOMENTUM_SCALE === "quarters") {
-    const m = momentumQuarters(vids);
-    if (!m) return "";
-    const { qs, bins, older, peak, undated } = m;
-    // Scale to the full quarters: the current one is both partial and the most
-    // over-sampled (collected today), so it must not flatten everything else.
-    const w = 100 / bins.length, last = bins.length - 1;
-    const max = Math.max(1, ...bins.slice(0, -1));
-    const bars = bins.map((n, i) => {
-      const h = n ? Math.min(54, Math.max(3, (n / max) * 52)) : 1.5;
-      const cls = !n ? "empty" : i === last ? "partial" : i === peak ? "peak" : "";
-      return `<rect class="${cls}" x="${(i * w + 0.5).toFixed(2)}%" width="${(w - 1).toFixed(2)}%" y="${(56 - h).toFixed(1)}" height="${h.toFixed(1)}" rx="1"><title>${Q_LABEL(qs[i])}${i === last ? " (so far)" : ""}: ${n} video${n === 1 ? "" : "s"}</title></rect>`;
-    }).join("");
-    const years = qs.map((q, i) => [new Date(q).getUTCMonth() === 0 || i === 0 ? new Date(q).getUTCFullYear() : null, i]).filter(([y]) => y);
-    const lastFull = bins[last - 1] ?? 0, before = bins[last - 2] ?? 0, yearAgo = bins[last - 4];
-    const trend = `<b>${bins[last]}</b> so far in ${Q_LABEL(qs[last])} · last full quarter <b>${lastFull}</b>`
-      + (before ? ` (${lastFull >= before ? "+" : "−"}${Math.abs(Math.round((lastFull / before - 1) * 100))}% on the quarter before)` : "")
-      + (yearAgo != null ? ` · same quarter a year earlier ${yearAgo}` : "")
-      + ` · busiest full quarter ${Q_LABEL(qs[peak])} (${bins[peak]})`;
-    return `<div class="head"><span class="lbl">Publishing momentum · videos per quarter</span>${toggle}<span class="trend">${trend}</span></div>
-      <svg viewBox="0 0 100 58" preserveAspectRatio="none" aria-label="videos published per quarter, last ${bins.length} quarters">${bars}</svg>
-      <div class="axis qaxis">${years.map(([y, i]) => `<span style="left:${(i * w).toFixed(2)}%">${y}</span>`).join("")}</div>
-      <div class="note">Last collected ${isoDate(swept0)}. <b>These are the videos our search found, not everything published.</b> YouTube search favours new uploads, so the most recent quarters are over-sampled (the faded bar is also incomplete and is drawn off-scale). Compare earlier years with each other, not with the last two quarters${older ? `; ${older} older video${older === 1 ? " falls" : "s fall"} before the window` : ""}${undated ? `; ${undated} undated` : ""}${pending ? `. ${pending} of these videos are collected but not yet reviewed` : ""}.</div>`;
+const qNext = t => { const d = new Date(t); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 3, 1); };
+const weekStart = t => { const d = new Date(t); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate() - (d.getUTCDay() + 6) % 7); };
+const medianOf = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : Math.round((s[m - 1] + s[m]) / 2); };
+const compact = n => n >= 1e6 ? (n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace(/\.0$/, "") + "M" : n >= 1e3 ? (n / 1e3).toFixed(n >= 1e4 ? 0 : 1).replace(/\.0$/, "") + "K" : String(n);
+const niceStep = raw => { const p = Math.pow(10, Math.floor(Math.log10(raw || 1))), f = raw / p; return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 5 ? 5 : 10) * p; };
+const MO_SERIES = {
+  videos: [
+    { key: "original", label: "Original", cls: "s1" },
+    { key: "derivative", label: "Commentary", cls: "s2" },
+    { key: "removed", label: "Re-cut or clickbait", cls: "s3" },
+    { key: "pending", label: "Awaiting review", cls: "s0" },
+  ],
+  channels: [
+    { key: "fresh", label: "New to this story", cls: "s1" },
+    { key: "returning", label: "Posted on it before", cls: "s2" },
+  ],
+  views: [{ key: "median", label: "Median views per video", cls: "s1" }],
+};
+const contestedClaims = data => (data?.claims?.claims || []).filter(c => (c.camps || []).length >= 2);
+const campName = (k, i) => k.name || (k.position || "").split(/\s+[—–-]\s+/)[0].slice(0, 42) || `Side ${i + 1}`;
+function momentumSides(vids, claim) {
+  const byId = Object.fromEntries(vids.map(v => [v.videoId, v]));
+  const camps = claim.camps.slice(0, 3);
+  const items = camps.flatMap((c, k) => (c.sources || []).map(s => ({ k, v: byId[s.videoId], t: byId[s.videoId] && publishedEst(byId[s.videoId]) }))).filter(x => x.t);
+  if (!items.length) return null;
+  const now = Date.now(), y1 = new Date(now).getUTCFullYear();
+  const y0 = Math.max(Math.min(...items.map(x => new Date(x.t).getUTCFullYear())), y1 - 5);
+  const bins = [];
+  for (let y = y0; y <= y1; y++) bins.push({ start: Date.UTC(y, 0, 1), end: Date.UTC(y + 1, 0, 1), vids: [], label: String(y), partial: y === y1 });
+  let before = 0;
+  for (const x of items) {
+    const b = bins.find(b => x.t >= b.start && x.t < b.end);
+    if (!b) { before++; continue; }
+    b.vids.push({ v: x.v, t: x.t, k: x.k });
   }
-  const m = momentum(vids);
-  if (!m) return "";
-  const { bins, last4, prior4, peak, end, older, undated, swept } = m;
-  const stale = staleDays(swept);
-  const max = Math.max(1, ...bins);
-  const w = 100 / bins.length;
-  const bars = bins.map((n, i) => {
-    const h = n ? Math.max(4, (n / max) * 52) : 2;
-    return `<rect class="${n ? (i === peak ? "peak" : "") : "empty"}" x="${(i * w + 0.6).toFixed(2)}%" width="${(w - 1.2).toFixed(2)}%" y="${(56 - h).toFixed(1)}" height="${h.toFixed(1)}" rx="1.5"><title>${n} video${n === 1 ? "" : "s"} · week of ${isoDate(end - (bins.length - 1 - i) * WEEK)}</title></rect>`;
-  }).join("");
-  const peakDate = isoDate(end - (bins.length - 1 - peak) * WEEK);
-  const trend = prior4 === 0 && last4 === 0 ? "quiet for 8 weeks"
-    : prior4 === 0 ? `<b>${last4}</b> in the 4 weeks to the sweep, none in the 4 before — <b>new heat</b>`
-    : last4 > prior4 ? `<b>${last4}</b> in the 4 weeks to the sweep vs ${prior4} before — <b>gaining</b> (+${Math.round((last4 / prior4 - 1) * 100)}%)`
-    : last4 < prior4 ? `<b>${last4}</b> in the 4 weeks to the sweep vs ${prior4} before — <b>cooling</b> (−${Math.round((1 - last4 / prior4) * 100)}%)`
-    : `<b>${last4}</b> in the 4 weeks to the sweep, same as the 4 before — <b>steady</b>`;
-  return `<div class="head"><span class="lbl">Publishing momentum · videos per week</span>${toggle}<span class="trend">${trend} · peak week ${peakDate} (${bins[peak]})</span></div>
-    <svg viewBox="0 0 100 58" preserveAspectRatio="none" aria-label="videos published per week, last ${bins.length} weeks">${bars}</svg>
-    <div class="axis"><span>${isoDate(end - (bins.length - 1) * WEEK)}</span><span>${isoDate(end)}</span></div>
-    <div class="note">${stale > 7 ? `<b>As of the last sweep, ${isoDate(swept)} — ${stale} days ago.</b> Nothing has been swept since${pastedSince(vids, swept) ? ` (${pastedSince(vids, swept)} pasted by hand)` : ""}, so the chart says nothing about the last ${stale} days. ` : `Last sweep ${isoDate(swept)}. `}Counts what our collection surfaced — YouTube search favours recent uploads, so older weeks are undercounted${older ? `; ${older} older video${older === 1 ? " falls" : "s fall"} before this window` : ""}${undated ? `; ${undated} undated` : ""}.</div>`;
+  for (const b of bins) {
+    camps.forEach((c, k) => { b[`c${k}`] = b.vids.filter(x => x.k === k).length; });
+    b.total = b.vids.length;
+    const chans = {}; for (const { v } of b.vids) { const n = (v.channel || "").trim(); if (n) chans[n] = (chans[n] || 0) + 1; }
+    const names = Object.keys(chans).sort((a, c) => chans[c] - chans[a]);
+    b.topChannel = names[0] || null; b.topChannelN = names.length ? chans[names[0]] : 0;
+    b.top = [...b.vids].sort((a, c) => viewsNum(c.v.views) - viewsNum(a.v.views))[0]?.v || null;
+  }
+  const series = camps.map((c, k) => ({ key: `c${k}`, label: campName(c, k), cls: `s${k + 1}` }));
+  return { bins, before, undated: 0, scale: "years", series, claim };
+}
+let MO = (() => { const d = { scale: "quarters", metric: "videos", table: false, claim: null };
+  try { return { ...d, ...(JSON.parse(localStorage.getItem("momentum-view")) || {}) }; } catch (e) { return d; } })();
+let periodFilter = null;   // { start, end, label } — set by clicking a column
+
+function momentumBins(vids, scale) {
+  const items = vids.map(v => ({ v, t: publishedEst(v) })).filter(x => x.t);
+  if (!items.length) return null;
+  const now = Date.now(), starts = [];
+  if (scale === "weeks") { const w0 = weekStart(now); for (let i = 15; i >= 0; i--) starts.push(w0 - i * WEEK); }
+  else {
+    const firstQ = Math.max(qStart(Math.min(...items.map(x => x.t))), qStart(now - 5 * 365.25 * 86400000));
+    for (let q = firstQ; q <= qStart(now); q = qNext(q)) starts.push(q);
+  }
+  const firstSeen = {};   // each channel's first video anywhere in the corpus
+  for (const x of items) { const k = (x.v.channel || "").trim().toLowerCase(); if (k && !(firstSeen[k] <= x.t)) firstSeen[k] = x.t; }
+  const bins = starts.map((s, i) => ({ start: s, end: i + 1 < starts.length ? starts[i + 1] : (scale === "weeks" ? s + WEEK : qNext(s)), vids: [] }));
+  let before = 0;
+  for (const x of items) {
+    if (x.t < starts[0]) { before++; continue; }
+    const b = bins.find(b => x.t >= b.start && x.t < b.end); if (b) b.vids.push(x);
+  }
+  for (const b of bins) {
+    const g = { original: 0, derivative: 0, removed: 0, pending: 0 };
+    const chans = {};
+    for (const { v } of b.vids) {
+      if (v.verdict === "ORIGINAL") g.original++; else if (v.verdict === "DERIVATIVE") g.derivative++;
+      else if (v.verdict === "RECYCLED" || v.verdict === "CLICKBAIT") g.removed++; else g.pending++;
+      const k = (v.channel || "").trim(); if (k) chans[k] = (chans[k] || 0) + 1;
+    }
+    const names = Object.keys(chans).sort((a, c) => chans[c] - chans[a]);
+    const fresh = names.filter(k => { const f = firstSeen[k.toLowerCase()]; return f >= b.start && f < b.end; }).length;
+    const views = b.vids.map(x => viewsNum(x.v.views)).filter(n => n > 0);
+    Object.assign(b, g, {
+      total: b.vids.length, channels: names.length, fresh, returning: names.length - fresh,
+      median: medianOf(views), topChannel: names[0] || null, topChannelN: names.length ? chans[names[0]] : 0,
+      top: [...b.vids].sort((a, c) => viewsNum(c.v.views) - viewsNum(a.v.views))[0]?.v || null,
+      partial: b.end > now, label: scale === "weeks" ? `Week of ${isoDate(b.start)}` : Q_LABEL(b.start),
+    });
+  }
+  return { bins, before, undated: vids.length - items.length, scale };
+}
+
+function momentumInsights(m, narr) {
+  const out = [], { bins, scale } = m, unit = scale === "weeks" ? "week" : "quarter";
+  if (scale === "years") {
+    const name = k => esc(m.series[k].label), all = bins.reduce((a, b) => a + b.total, 0);
+    const half = Math.ceil(bins.length / 2), early = bins.slice(0, half), late = bins.slice(half);
+    const lead = bs => m.series.map((s, k) => ({ k, n: bs.reduce((a, b) => a + b[s.key], 0) })).sort((a, b) => b.n - a.n);
+    const et = early.reduce((a, b) => a + b.total, 0), lt = late.reduce((a, b) => a + b.total, 0), e = lead(early), l = lead(late);
+    if (et >= 3 && lt >= 3) out.push(e[0].k !== l[0].k
+      ? `The louder side changed: <b>${name(e[0].k)}</b> had ${e[0].n} of ${et} videos up to ${early[early.length - 1].label}; <b>${name(l[0].k)}</b> has ${l[0].n} of ${lt} since.`
+      : `<b>${name(l[0].k)}</b> has been the louder side throughout: ${e[0].n} of ${et} videos up to ${early[early.length - 1].label}, ${l[0].n} of ${lt} since.`);
+    const tot = lead(bins), quiet = tot[tot.length - 1];
+    if (all) out.push(`Least heard: <b>${name(quiet.k)}</b>, ${quiet.n} of ${all} videos on this question — easy to miss if you only watch what comes next.`);
+    return out;
+  }
+  const full = bins.filter(b => !b.partial);
+  if (scale === "quarters") {
+    // 1. Busiest quarter outside the recent stretch that search over-samples.
+    const comparable = full.slice(0, -1).filter(b => b.total);
+    if (comparable.length >= 4) {
+      const peak = comparable.reduce((a, b) => b.total > a.total ? b : a);
+      const near = (narr?.mutations || []).map(x => ({ y: +((x.date || "").match(/\d{4}/) || [0])[0], ...x }))
+        .filter(x => x.y).find(x => Date.UTC(x.y, 0, 1) <= peak.start && Date.UTC(x.y + 1, 0, 1) > peak.start);
+      out.push(`Busiest quarter before the recent, over-sampled stretch: <b>${peak.label}</b>, ${peak.total} videos found${near ? ` — the year the story turned to “${esc(near.mechanism.split(/\s+[—–-]\s+/)[0])}”` : ""}.`);
+    }
+    // 2. Is the story being advanced or retold? Reviewed videos only.
+    const mid = Math.floor(full.length / 2);
+    const tally = bs => bs.reduce((a, b) => ({ o: a.o + b.original, r: a.r + b.original + b.derivative + b.removed }), { o: 0, r: 0 });
+    const early = tally(full.slice(0, mid)), late = tally(bins.slice(mid));
+    if (early.r >= 10 && late.r >= 10) {
+      const e = early.o / early.r, l = late.o / late.r;
+      out.push(`Original material: <b>${early.o} of ${early.r}</b> reviewed videos up to ${full[mid - 1].label}, <b>${late.o} of ${late.r}</b> since — ${l < e * .75 ? "the story is being retold more than advanced" : l > e * 1.25 ? "more new material is appearing, not less" : "the mix of new material and commentary has held steady"}.`);
+    } else {
+      const t = tally(bins), all = bins.reduce((a, b) => a + b.total, 0);
+      out.push(`Too few reviewed videos yet to tell whether the story is being advanced or just retold (<b>${t.r} of ${all}</b> reviewed).`);
+    }
+    // 3. Typical views per video, by upload year.
+    const byYear = {};
+    for (const b of bins) for (const { v } of b.vids) { const n = viewsNum(v.views); if (n > 0) (byYear[new Date(b.start).getUTCFullYear()] ||= []).push(n); }
+    const ys = Object.keys(byYear).map(Number).filter(y => byYear[y].length >= 5).sort();
+    if (ys.length >= 2) {
+      const best = ys.reduce((a, y) => medianOf(byYear[y]) > medianOf(byYear[a]) ? y : a, ys[0]), lastY = ys[ys.length - 1];
+      out.push(`Typical views per video: <b>${compact(medianOf(byYear[best]))}</b> for ${best} uploads${best !== lastY ? `, <b>${compact(medianOf(byYear[lastY]))}</b> for ${lastY} uploads` : ", the highest of any year"} — newer videos have had less time to collect views.`);
+    }
+  } else {
+    const last4 = full.slice(-4).reduce((a, b) => a + b.total, 0), prior4 = full.slice(-8, -4).reduce((a, b) => a + b.total, 0);
+    out.push(`<b>${last4}</b> videos found in the last 4 full weeks, ${prior4} in the 4 before. Search over-samples the newest uploads, so treat a rise with caution.`);
+    const views = full.slice(-4).flatMap(b => b.vids.map(x => viewsNum(x.v.views)).filter(n => n > 0));
+    if (views.length >= 5) out.push(`Typical views per video in those weeks: <b>${compact(medianOf(views))}</b>.`);
+  }
+  // 4. Are newcomers still arriving?
+  const recent = full.slice(-4), fresh = recent.reduce((a, b) => a + b.fresh, 0);
+  const active = new Set(recent.flatMap(b => b.vids.map(x => (x.v.channel || "").trim()).filter(Boolean))).size;
+  if (active >= 8) {
+    const s = fresh / active;
+    out.push(`In the last 4 full ${unit}s, <b>${fresh} of ${active}</b> channels posting on this story appear in our five-year sample for the first time — ${s >= .6 ? "an open field; newcomers keep arriving" : s <= .3 ? "a settled field of channels that have covered it before" : "a mix of newcomers and regulars"}.`);
+  }
+  return out;
+}
+
+function drawMomentum(host, m) {
+  const svg = host.querySelector("svg"), narr = cache[topicId]?.narrative;
+  const W = Math.max(300, Math.round(host.clientWidth)), H = 236, L = 40, R = 6, T = 24, B = 30;
+  const pw = W - L - R, ph = H - T - B, n = m.bins.length, slot = pw / n, bw = Math.max(4, Math.min(24, slot - 6));
+  const metric = MO.metric, series = m.series;
+  const val = b => metric === "views" ? (b.median || 0) : metric === "channels" ? b.channels : b.total;
+  const fullVals = m.bins.filter(b => !b.partial).map(val);
+  const raw = Math.max(1, ...(fullVals.length ? fullVals : m.bins.map(val)));
+  const step = niceStep(raw / 4), yMax = Math.ceil(raw / step) * step, base = T + ph;
+  const px = v => (v / yMax) * ph;
+  const parts = [];
+  for (let v = 0; v <= yMax + 1e-9; v += step) {
+    const y = base - px(v);
+    parts.push(`<line class="grid" x1="${L}" x2="${W - R}" y1="${y}" y2="${y}"/><text x="${L - 6}" y="${y + 3.5}" text-anchor="end">${compact(v)}</text>`);
+  }
+  const span = m.scale === "years" ? 1 : 2, bx = n - span;   // the most recent periods: over-sampled by search
+  parts.push(`<rect class="band" x="${L + bx * slot}" y="${T}" width="${span * slot}" height="${ph}"/><text x="${W - R}" y="${T - 8}" text-anchor="end">over-sampled →</text>`);
+  if (m.scale !== "weeks") (narr?.mutations || []).forEach((mu, k) => {
+    const y = +((mu.date || "").match(/\d{4}/) || [0])[0]; if (!y) return;
+    const mo = "jan feb mar apr may jun jul aug sep oct nov dec".split(" ").indexOf(((mu.date || "").match(/[A-Za-z]{3}/) || [""])[0].toLowerCase());
+    const t = Date.UTC(y, mo < 0 ? 0 : mo, 1), i = m.bins.findIndex(b => t >= b.start && t < b.end); if (i < 0) return;
+    const x = L + slot * i + 1;
+    parts.push(`<line class="mut-line" x1="${x}" x2="${x}" y1="${T - 2}" y2="${base}"><title>S${k + 1} · ${esc(mu.date)}: ${esc(mu.mechanism)}</title></line><text x="${x + 3}" y="${T - 8}">S${k + 1}</text>`);
+  });
+  parts.push(`<line class="base" x1="${L}" x2="${W - R}" y1="${base}" y2="${base}"/>`);
+  const peakI = fullVals.length ? m.bins.findIndex(b => !b.partial && val(b) === Math.max(...fullVals)) : -1;
+  const lastFullI = m.bins.map(b => !b.partial).lastIndexOf(true);
+  m.bins.forEach((b, i) => {
+    const cx = L + slot * i + slot / 2, x = cx - bw / 2;
+    const segs = metric === "views" ? [{ v: b.median || 0, cls: "s1" }] : series.map(s => ({ v: b[s.key], cls: s.cls })).filter(s => s.v);
+    let y0 = base, g = `<g class="mo-col${b.partial ? " partial" : ""}${periodFilter?.start === b.start ? " sel" : ""}" data-i="${i}">`;
+    const total = segs.reduce((a, s) => a + s.v, 0), topY = base - Math.min(ph + 8, px(total));
+    segs.forEach((s, k) => {
+      const h = Math.min(ph + 8, px(s.v)) - (k ? 2 : 0), yTop = Math.max(topY, y0 - (k ? 2 : 0) - h);
+      const hh = y0 - (k ? 2 : 0) - yTop; if (hh < .5) { y0 = yTop; return; }
+      if (k === segs.length - 1) {
+        const r = Math.min(4, hh, bw / 2);
+        g += `<path class="${s.cls}" d="M${x},${y0 - (k ? 2 : 0)}V${yTop + r}Q${x},${yTop} ${x + r},${yTop}H${x + bw - r}Q${x + bw},${yTop} ${x + bw},${yTop + r}V${y0 - (k ? 2 : 0)}Z"/>`;
+      } else g += `<rect class="${s.cls}" x="${x}" y="${yTop}" width="${bw}" height="${hh}"/>`;
+      y0 = yTop;
+    });
+    if (total && (i === peakI || i === lastFullI || (b.partial && px(total) > ph))) {
+      g += `<text class="val" x="${cx}" y="${topY - 5}" text-anchor="middle">${compact(total)}</text>`;
+    }
+    g += `</g>`;
+    parts.push(g);
+    if (periodFilter?.start === b.start) parts.push(`<rect class="selmark" x="${cx - bw / 2}" y="${base + 3}" width="${bw}" height="2" rx="1"/>`);
+    const lbl = m.scale === "weeks" ? (i % 4 === 0 ? isoDate(b.start).slice(5) : "") : m.scale === "years" ? b.label : (new Date(b.start).getUTCMonth() === 0 || i === 0 ? String(new Date(b.start).getUTCFullYear()) : "");
+    const mid = m.scale !== "quarters";
+    if (lbl) parts.push(`<text x="${mid ? cx : L + slot * i + 2}" y="${base + 16}" text-anchor="${mid ? "middle" : "start"}">${lbl}</text>`);
+    if (b.partial) parts.push(`<text x="${cx}" y="${base + 27}" text-anchor="middle">so far</text>`);
+    const aria = `${b.label}${b.partial ? " so far" : ""}: ${metric === "views" ? `median ${b.median ?? 0} views` : metric === "channels" ? `${b.channels} channels, ${b.fresh} new` : `${b.total} videos: ${series.map(s => `${b[s.key] || 0} ${s.label}`).join(", ")}`}`;
+    parts.push(`<rect class="mo-hit" x="${L + slot * i}" y="${T - 4}" width="${slot}" height="${ph + 8}" data-i="${i}" tabindex="0" role="button" aria-label="${esc(aria)}"/>`);
+  });
+  svg.setAttribute("viewBox", `0 0 ${W} ${H + 4}`);
+  svg.setAttribute("aria-label", `${metric === "views" ? "Median views per video" : metric === "channels" ? "Channels" : metric === "sides" ? "Videos per side" : "Videos"} per ${m.scale === "weeks" ? "week" : m.scale === "years" ? "year" : "quarter"}`);
+  svg.innerHTML = parts.join("");
+}
+
+function momentumTip(host, m, i) {
+  const b = m.bins[i], tip = host.querySelector(".mo-tip"), el = (cls, text, tag = "div") => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  tip.replaceChildren(el("tt-h", b.label + (b.partial ? " · so far" : "")));
+  tip.append(el("tt-v", MO.metric === "views" ? (b.median != null ? `${b.median.toLocaleString("en-US")} median views` : "No view data")
+    : MO.metric === "channels" ? `${b.channels} channel${b.channels === 1 ? "" : "s"}` : `${b.total} video${b.total === 1 ? "" : "s"}${MO.metric === "sides" ? " on this question" : ""}`));
+  if (MO.metric !== "views") for (const s of m.series) {
+    if (!b[s.key]) continue;
+    const r = el("tt-r"); r.append(el(`tt-k ${s.cls}`, null, "span"), el(null, String(b[s.key]), "b"), el(null, s.label, "span")); tip.append(r);
+  }
+  if (b.topChannel && b.topChannelN >= 2) tip.append(el("tt-x", `Most active: ${b.topChannel} (${b.topChannelN} videos)`));
+  if (b.top) tip.append(el("tt-x", `Most viewed: ${b.top.title.length > 64 ? b.top.title.slice(0, 62) + "…" : b.top.title} · ${compact(viewsNum(b.top.views))} views`));
+  if (b.total) tip.append(el("tt-hint", periodFilter?.start === b.start ? "Click to clear the filter" : "Click to list these videos below"));
+  tip.hidden = false;
+  const hit = host.querySelector(`.mo-hit[data-i="${i}"]`), hr = hit.getBoundingClientRect(), pr = host.getBoundingClientRect();
+  // Beside the column, never on top of it: right if it fits, else left.
+  const colL = hr.left - pr.left, colR = colL + hr.width, tw = tip.offsetWidth;
+  tip.style.left = `${colR + 8 + tw <= pr.width ? colR + 8 : Math.max(0, colL - 8 - tw)}px`;
+  host.classList.add("hovering");
+  host.querySelectorAll(".mo-col").forEach(c => c.classList.toggle("on", c.dataset.i === String(i)));
+}
+
+function momentumTable(m) {
+  if (m.scale === "years") return `<div class="mo-table"><table><thead><tr><th>Year</th>${m.series.map(s => `<th>${esc(s.label)}</th>`).join("")}<th>Videos</th></tr></thead><tbody>
+    ${m.bins.map(b => `<tr><td>${esc(b.label)}${b.partial ? " (so far)" : ""}</td>${m.series.map(s => `<td>${b[s.key]}</td>`).join("")}<td>${b.total}</td></tr>`).join("")}</tbody></table></div>`;
+  return `<div class="mo-table"><table><thead><tr><th>Period</th><th>Original</th><th>Commentary</th><th>Re-cut or clickbait</th><th>Awaiting review</th><th>Videos</th><th>Channels</th><th>New channels</th><th>Median views</th></tr></thead><tbody>
+    ${m.bins.map(b => `<tr><td>${esc(b.label)}${b.partial ? " (so far)" : ""}</td><td>${b.original}</td><td>${b.derivative}</td><td>${b.removed}</td><td>${b.pending}</td><td>${b.total}</td><td>${b.channels}</td><td>${b.fresh}</td><td>${b.median != null ? b.median.toLocaleString("en-US") : "—"}</td></tr>`).join("")}
+  </tbody></table></div>`;
+}
+
+let momentumRO = null;
+function renderMomentum(vids) {
+  const box = $("momentum"), narr = cache[topicId]?.narrative, contested = contestedClaims(cache[topicId]);
+  if (MO.metric === "sides" && !contested.length) MO.metric = "videos";
+  const claim = contested.find(c => c.id === MO.claim) || contested[0];
+  let m = MO.metric === "sides" ? momentumSides(vids, claim) : momentumBins(vids, MO.scale);
+  if (!m && MO.metric === "sides") { MO.metric = "videos"; m = momentumBins(vids, MO.scale); }
+  if (!m) { box.innerHTML = ""; return; }
+  m.series ||= MO_SERIES[MO.metric];
+  box._m = m;
+  const seg = (key, opts) => `<div class="mo-seg" role="group">${opts.map(([k, l]) =>
+    `<button type="button" data-mo-${key}="${k}" class="${MO[key] === k ? "on" : ""}" aria-pressed="${MO[key] === k}">${l}</button>`).join("")}</div>`;
+  const sides = MO.metric === "sides";
+  const unit = sides ? "year" : MO.scale === "weeks" ? "week" : "quarter";
+  const pending = vids.filter(v => v.verdict === "UNREVIEWED").length;
+  const legend = MO.metric === "views" ? "" : `<div class="mo-legend">${m.series.map(s => `<span><i class="${s.cls}"></i>${esc(s.label)}</span>`).join("")}${m.scale !== "weeks" && (narr?.mutations || []).length ? `<span><i class="mut"></i>S1–S${narr.mutations.length}: when the story's explanation changed</span>` : ""}</div>`;
+  const ins = momentumInsights(m, narr);
+  box.innerHTML = `
+    <div class="mo-head">
+      <div><div class="mo-title">Publishing momentum</div>
+        <div class="mo-sub">${sides ? `Videos arguing each side of “${esc(claim.statement)}”` : MO.metric === "views" ? "Median views per video published" : MO.metric === "channels" ? "Channels publishing on this story" : "Videos our search found, by our verdict"} · ${sides ? "by year" : `per ${unit}, ${MO.scale === "weeks" ? "last 16 weeks" : "last five years"}`}</div></div>
+      <div class="mo-ctl">${seg("metric", [["videos", "Videos"], ["views", "Views"], ["channels", "Channels"], ...(contested.length ? [["sides", "Sides"]] : [])])}${sides
+        ? (contested.length > 1 ? `<select class="mo-claim" data-mo-claim aria-label="Contested question">${contested.map(c => `<option value="${esc(c.id)}" ${c === claim ? "selected" : ""}>${esc(c.label || c.statement.slice(0, 48))}</option>`).join("")}</select>` : "")
+        : seg("scale", [["quarters", "5 years"], ["weeks", "16 weeks"]])}
+        <button type="button" class="mo-tbl${MO.table ? " on" : ""}" data-mo-table="1" aria-pressed="${MO.table}">Table</button></div>
+    </div>
+    ${ins.length ? `<ul class="mo-ins">${ins.map(s => `<li>${s}</li>`).join("")}</ul>` : ""}
+    ${MO.table ? "" : legend}
+    ${MO.table ? momentumTable(m) : `<div class="mo-plot"><svg role="img"></svg><div class="mo-tip" hidden></div></div>`}
+    <div class="note">${sides ? `<b>More videos on a side is not more evidence.</b> These count the reviewed videos that argue each side; the sides panel above says what each camp's videos should be checked for. ` : ""}Last collected ${isoDate(lastSweep(vids))}. <b>Videos our search found, not everything published.</b> Search favours new uploads, so the shaded recent ${unit}s are over-sampled and the faded current ${unit} is incomplete. ${MO.metric === "views" ? "Views keep growing after upload, so older videos have had longer to collect them. " : ""}${pending ? `${pending} videos await review, so verdict colours cover reviewed videos only. ` : ""}${m.before ? `${m.before} older video${m.before === 1 ? " falls" : "s fall"} before the window. ` : ""}Click a column to list its videos.</div>`;
+  const host = box.querySelector(".mo-plot");
+  if (host) {
+    drawMomentum(host, m);
+    momentumRO?.disconnect();
+    let lastW = host.clientWidth;
+    momentumRO = new ResizeObserver(() => { if (Math.abs(host.clientWidth - lastW) > 2) { lastW = host.clientWidth; drawMomentum(host, box._m); } });
+    momentumRO.observe(host);
+  }
 }
 
 function renderCorpus() {
@@ -2020,12 +2270,15 @@ function renderCorpus() {
     (!q || (v.title + " " + v.channel + " " + v.videoId).toLowerCase().includes(q)) &&
     (tf === "all" || (tf === "yes") === !!v.transcript) &&
     (vf === "all" || v.verdict === vf) &&
-    (!predictorFilter || predictorFilter.vids.includes(v.videoId)));
+    (!predictorFilter || predictorFilter.vids.includes(v.videoId)) &&
+    (!periodFilter || (periodFilter.ids ? periodFilter.ids.has(v.videoId) : (t => t && t >= periodFilter.start && t < periodFilter.end)(publishedEst(v)))));
   // Newest first by the real publish date (age_days was the age at capture —
   // it ranked a stale video found today above a fresh one found last month).
   if ($("sort").value === "views") list = [...list].sort((a,b) => viewsNum(b.views) - viewsNum(a.views));
   else list = [...list].sort((a,b) => (publishedEst(b) ?? -1) - (publishedEst(a) ?? -1));
-  $("momentum").innerHTML = momentumBlock(vids);
+  renderMomentum(vids);
+  $("controls-period").innerHTML = periodFilter
+    ? `<button type="button" class="pchip" data-clear-period title="Clear the period filter">${esc(periodFilter.label)} · ${list.length} video${list.length === 1 ? "" : "s"} ✕</button>` : "";
 
   $("videos").innerHTML = list.length ? list.map(v => `
     <div class="card" id="vid-${esc(v.videoId)}">
@@ -2539,11 +2792,50 @@ function onSeriesFilter2(e) {
   lsSet(SF2_KEY, JSON.stringify(SF2)); renderSeries();
 }
 $("momentum").addEventListener("click", e => {
-  const b = e.target.closest("[data-mscale]"); if (!b) return;
-  MOMENTUM_SCALE = b.dataset.mscale;
-  try { localStorage.setItem("momentum-scale", MOMENTUM_SCALE); } catch (err) {}
-  $("momentum").innerHTML = momentumBlock(cache[topicId]?.videos?.videos || []);
+  const box = $("momentum"), vids = cache[topicId]?.videos?.videos || [];
+  const ctl = e.target.closest("[data-mo-metric],[data-mo-scale],[data-mo-table]");
+  if (ctl) {
+    if (ctl.dataset.moMetric) MO.metric = ctl.dataset.moMetric;
+    if (ctl.dataset.moScale) MO.scale = ctl.dataset.moScale;
+    if (ctl.dataset.moTable) MO.table = !MO.table;
+    periodFilter = null;
+    try { localStorage.setItem("momentum-view", JSON.stringify(MO)); } catch (err) {}
+    renderMomentum(vids); return;
+  }
+  const hit = e.target.closest(".mo-hit");
+  if (hit && box._m) {
+    const b = box._m.bins[+hit.dataset.i];
+    periodFilter = periodFilter?.start === b.start || !b.total ? null
+      : { start: b.start, end: b.end, label: box._m.scale === "years" ? `${b.label} · on this question` : b.label, ids: box._m.scale === "years" ? new Set(b.vids.map(x => x.v.videoId)) : null };
+    renderCorpus();
+    const nh = $("momentum").querySelector(`.mo-hit[data-i="${hit.dataset.i}"]`); nh?.focus({ preventScroll: true });
+  }
 });
+$("momentum").addEventListener("change", e => {
+  if (!e.target.matches("[data-mo-claim]")) return;
+  MO.claim = e.target.value;
+  try { localStorage.setItem("momentum-view", JSON.stringify(MO)); } catch (err) {}
+  renderMomentum(cache[topicId]?.videos?.videos || []);
+});
+$("momentum").addEventListener("pointermove", e => {
+  const hit = e.target.closest(".mo-hit"), host = e.target.closest(".mo-plot"), box = $("momentum");
+  if (hit && host && box._m) momentumTip(host, box._m, +hit.dataset.i);
+});
+$("momentum").addEventListener("focusin", e => {
+  const hit = e.target.closest(".mo-hit"), host = e.target.closest(".mo-plot");
+  if (hit && host && $("momentum")._m) momentumTip(host, $("momentum")._m, +hit.dataset.i);
+});
+const hideMoTip = host => { if (!host) return; host.querySelector(".mo-tip").hidden = true; host.classList.remove("hovering"); host.querySelectorAll(".mo-col.on").forEach(c => c.classList.remove("on")); };
+$("momentum").addEventListener("pointerleave", e => hideMoTip($("momentum").querySelector(".mo-plot")), true);
+$("momentum").addEventListener("focusout", e => { if (!e.relatedTarget?.closest?.(".mo-plot")) hideMoTip($("momentum").querySelector(".mo-plot")); });
+$("momentum").addEventListener("keydown", e => {
+  const hit = e.target.closest(".mo-hit"); if (!hit) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    e.preventDefault();
+    const next = $("momentum").querySelector(`.mo-hit[data-i="${+hit.dataset.i + (e.key === "ArrowRight" ? 1 : -1)}"]`); next?.focus();
+  } else if (e.key === "Enter" || e.key === " ") { e.preventDefault(); hit.dispatchEvent(new MouseEvent("click", { bubbles: true })); }
+});
+$("controls-period")?.addEventListener("click", e => { if (e.target.closest("[data-clear-period]")) { periodFilter = null; renderCorpus(); } });
 $("series-filters").addEventListener("change", onSeriesFilter2);
 $("series-filters").addEventListener("input", e => { if (e.target.dataset.sf2 === "q") onSeriesFilter2(e); });
 $("series-filters").addEventListener("click", e => {
@@ -2827,7 +3119,7 @@ async function loadTopicData(id) {
 }
 
 async function loadTopic(id) {
-  if (id !== topicId) predictorFilter = null;
+  if (id !== topicId) { predictorFilter = null; periodFilter = null; }
   topicId = id;
   // Opening any narrative always lands on the detail pane, never the gallery
   if (!$("app-radar").hidden) { $("gallery").hidden = true; $("detail").hidden = false; }
