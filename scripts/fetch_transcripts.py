@@ -78,15 +78,19 @@ for tdir in sorted((ROOT / "corpus").iterdir()):
     doc = json.loads(vf.read_text())
     (tdir / "transcripts").mkdir(exist_ok=True)
     got_t = got_d = 0
+    blocked_streak, blocked = 0, False
     print(f"\n{topic}")
     for v in doc.get("videos", []):
         vid = v["videoId"]
         v["verdict_basis"] = basis_of(v)
         tpath = tdir / "transcripts" / f"{vid}.txt"
-        # transcript
-        if not tpath.exists():
+        # transcript — skipped once YouTube starts blocking: hammering a block
+        # only lengthens it. Re-run later; finished files are never re-fetched.
+        no_captions = (v.get("yt") or {}).get("channelId") and not (v.get("yt") or {}).get("captions")
+        if not tpath.exists() and not blocked and not no_captions:
             try:
                 txt = transcript(vid)
+                blocked_streak = 0
                 if txt:
                     if WRITE: tpath.write_text(txt)
                     v["transcript"] = str(tpath.relative_to(ROOT))
@@ -95,8 +99,14 @@ for tdir in sorted((ROOT / "corpus").iterdir()):
                 else:
                     print(f"  - no captions {vid}")
             except Exception as e:
-                print(f"  ! {vid}: {str(e).splitlines()[0][:80]}")
-            time.sleep(1.2)
+                name = type(e).__name__
+                print(f"  ! {vid}: {name} {str(e).splitlines()[0][:60]}")
+                if name in ("RequestBlocked", "IpBlocked", "TooManyRequests") or "429" in str(e):
+                    blocked_streak += 1
+                    if blocked_streak >= 3:
+                        blocked = True
+                        print("  ⏸ YouTube is blocking transcript requests from this IP — stopping; re-run later to resume.")
+            time.sleep(3.0)
         elif not v.get("transcript"):
             v["transcript"] = str(tpath.relative_to(ROOT))
         # real dates for anything stored as a relative string ("10 days ago") or missing
