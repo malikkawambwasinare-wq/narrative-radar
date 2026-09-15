@@ -1,0 +1,387 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-15",
+  "system": "briefs/narratives/SYSTEM.md",
+  "about": "The shelf. Industries are categories; narratives are subcategories. Tracked narratives live in watchlist.json and carry an `industry` that must match a `name` here. Candidates are claims we expect to pass the admission test (SYSTEM.md §1) but have not collected: no corpus, no stats, no verdicts. A candidate is admitted only after collection shows 3+ independent channels telling it across 2+ months. YouTube category IDs and topicCategories are weak signals for routing search results, never the taxonomy (coders agree with the uploader's category 28% of the time).",
+  "candidate_rules": {
+    "name": "Attributed, never asserted: the claim in its believers' words inside quotes, then 'story'. A believer should accept it as a fair statement of what they believe.",
+    "hook": "Written only at admission, from data: the tension the corpus can show. Candidates carry no hook.",
+    "frame": "Problem, cause, outcome or remedy, and clock (null if the claim carries no date)."
+  },
+  "industries": [
+    {
+      "id": "ai-technology",
+      "name": "AI & technology",
+      "definition": "Claims about what computing, AI and software will do to work, companies and capability.",
+      "includes": ["AI capability and timelines", "AI and jobs", "open vs closed models", "chips and compute", "quantum computing", "developer tooling"],
+      "excludes": ["AI as an investment bubble (Economy & markets)", "AI in film and music (Entertainment & media)", "platform and creator issues (Internet & creator economy)"],
+      "clock": true,
+      "resolves_by": "calendar: capability and adoption claims name dates",
+      "seed_terms": ["AGI", "artificial intelligence", "AI agents", "ChatGPT", "Claude", "Gemini", "open source model", "Nvidia", "quantum computer", "automation jobs"],
+      "youtube_signals": { "categoryIds": [28, 27], "topicCategories": ["Technology", "Knowledge"] },
+      "candidates": [
+        {
+          "id": "agi-imminent",
+          "name": "The \"AGI is a year or two away\" story",
+          "claim": "Human-level artificial general intelligence will arrive within one to two years, so jobs, companies and society must prepare now.",
+          "frame": { "problem": "Society is unprepared for AGI", "cause": "Scaling of frontier models", "outcome": "AGI transforms or replaces most knowledge work", "clock": "within 1–2 years of the video" },
+          "seed_queries": ["AGI by 2027", "AGI is coming", "when will AGI arrive"]
+        },
+        {
+          "id": "ai-takes-office-jobs",
+          "name": "The \"AI will take most white-collar jobs\" story",
+          "claim": "AI will eliminate most entry-level and white-collar office jobs within a few years, and workers should reskill or lose out.",
+          "frame": { "problem": "Mass white-collar unemployment", "cause": "AI models and agents doing office work", "outcome": "Most office jobs disappear; remedy is reskilling", "clock": "often 'within 5 years' or a named year" },
+          "seed_queries": ["AI will replace jobs", "jobs AI will take", "white collar jobs AI"]
+        },
+        {
+          "id": "quantum-breaks-encryption",
+          "name": "The \"quantum computers will break Bitcoin and encryption\" story",
+          "claim": "Quantum computers will soon break the encryption that secures Bitcoin, banking and the internet.",
+          "frame": { "problem": "All current encryption becomes unsafe", "cause": "Quantum computing progress", "outcome": "Bitcoin and banking security fail unless systems migrate", "clock": "'Q-day' dates, usually within a decade" },
+          "seed_queries": ["quantum computer break bitcoin", "Q-day encryption", "quantum threat crypto"]
+        }
+      ]
+    },
+    {
+      "id": "economy-markets",
+      "name": "Economy & markets",
+      "definition": "Claims about where economies, prices, currencies and asset markets are heading.",
+      "includes": ["recessions and collapses", "housing", "stocks and crypto cycles", "currencies and gold", "debt and banks"],
+      "excludes": ["personal finance tutorials with no claim", "company product news with no market call"],
+      "clock": true,
+      "resolves_by": "calendar: market calls name prices, dates or events",
+      "seed_terms": ["recession", "stock market crash", "housing market", "bitcoin", "dollar", "gold price", "silver price", "debt crisis", "interest rates", "bank failures"],
+      "youtube_signals": { "categoryIds": [25, 27, 22], "topicCategories": ["Business", "Society"] },
+      "candidates": [
+        {
+          "id": "recession-next-six-months",
+          "name": "The \"recession within six months\" story",
+          "claim": "A US recession is about to begin, as shown by an inverted yield curve, falling indicators or layoffs.",
+          "frame": { "problem": "The US economy is about to contract", "cause": "Rate hikes, inverted yield curve, weakening consumer", "outcome": "Recession and job losses", "clock": "the next 6–12 months, restated each year" },
+          "seed_queries": ["recession is coming", "yield curve recession", "recession 2027"]
+        },
+        {
+          "id": "silver-to-100",
+          "name": "The \"silver is about to explode\" story",
+          "claim": "Silver is massively undervalued and a short squeeze or supply shortage will send it to $100 or more.",
+          "frame": { "problem": "Silver price is suppressed", "cause": "Manipulation by banks, industrial shortage", "outcome": "Price explodes; remedy is to buy physical silver", "clock": "price targets with loose dates" },
+          "seed_queries": ["silver to 100", "silver squeeze", "silver price prediction"]
+        },
+        {
+          "id": "cre-bank-crisis",
+          "name": "The \"office real estate will sink the regional banks\" story",
+          "claim": "Empty offices and falling commercial property values will cause a wave of regional bank failures.",
+          "frame": { "problem": "Commercial real estate losses", "cause": "Remote work, high rates, refinancing wall", "outcome": "Regional banks fail", "clock": "tied to loan maturity years" },
+          "seed_queries": ["commercial real estate crisis banks", "office real estate collapse", "regional bank crisis"]
+        }
+      ]
+    },
+    {
+      "id": "health-biotech",
+      "name": "Health & biotech",
+      "definition": "Claims about what causes disease, what heals it, and what drugs, diets and technologies do to the body.",
+      "includes": ["diet and nutrition claims", "drugs and supplements", "longevity", "environmental health", "biotech breakthroughs"],
+      "excludes": ["workout tutorials with no health claim", "medical news with no recurring claim"],
+      "clock": false,
+      "resolves_by": "evidence: graded against the research, never a calendar",
+      "seed_terms": ["inflammation", "seed oils", "Ozempic", "GLP-1", "microplastics", "longevity", "supplements", "gut health", "insulin resistance", "cholesterol"],
+      "youtube_signals": { "categoryIds": [26, 27, 22], "topicCategories": ["Health", "Physical_fitness", "Food"] },
+      "candidates": [
+        {
+          "id": "glp1-ends-obesity",
+          "name": "The \"GLP-1 drugs will end obesity\" story",
+          "claim": "Ozempic-type GLP-1 drugs are a breakthrough that will end the obesity epidemic; critics say they carry hidden long-term costs.",
+          "frame": { "problem": "Obesity and metabolic disease", "cause": "Appetite biology that willpower can't fix", "outcome": "Weight-loss drugs as the remedy, contested on safety and rebound", "clock": null },
+          "seed_queries": ["Ozempic truth", "GLP-1 side effects", "Ozempic changes everything"]
+        },
+        {
+          "id": "microplastics-harm",
+          "name": "The \"microplastics are making us sick\" story",
+          "claim": "Microplastics now found in blood, brains and organs are a major hidden cause of disease.",
+          "frame": { "problem": "Rising chronic disease and infertility", "cause": "Microplastics from bottles, food and packaging", "outcome": "Remedy: avoid plastics, filter water", "clock": null },
+          "seed_queries": ["microplastics in brain", "microplastics health", "how to avoid microplastics"]
+        },
+        {
+          "id": "ageing-reversible",
+          "name": "The \"ageing can be reversed\" story",
+          "claim": "Ageing is a disease that can already be slowed or reversed with specific protocols, supplements and therapies.",
+          "frame": { "problem": "Ageing treated as inevitable", "cause": "Mainstream medicine ignores longevity science", "outcome": "Remedy: protocols, supplements, therapies", "clock": null },
+          "seed_queries": ["reverse aging", "longevity protocol", "anti aging supplements science"]
+        }
+      ]
+    },
+    {
+      "id": "politics-geopolitics",
+      "name": "Politics & geopolitics",
+      "definition": "Claims about wars, elections, states and the balance of power between countries.",
+      "includes": ["war and conflict", "elections", "great-power rivalry", "domestic political breakdown"],
+      "excludes": ["economic calls (Economy & markets)", "culture-war commentary (Culture & society)"],
+      "clock": true,
+      "resolves_by": "calendar: conflict and election claims name dates or events",
+      "seed_terms": ["World War 3", "Taiwan invasion", "civil war", "NATO", "Russia", "China", "election", "sanctions"],
+      "youtube_signals": { "categoryIds": [25, 29], "topicCategories": ["Politics", "Military", "Society"] },
+      "candidates": [
+        {
+          "id": "ww3-imminent",
+          "name": "The \"World War III is about to start\" story",
+          "claim": "Current conflicts are escalating toward a third world war that will begin soon.",
+          "frame": { "problem": "Global war", "cause": "Escalation between nuclear powers", "outcome": "World war; remedy: prepare", "clock": "'this year' or a named flashpoint" },
+          "seed_queries": ["World War 3 is coming", "WW3 warning signs", "third world war 2026"]
+        },
+        {
+          "id": "taiwan-2027",
+          "name": "The \"China will invade Taiwan by 2027\" story",
+          "claim": "China will invade or blockade Taiwan by 2027.",
+          "frame": { "problem": "War over Taiwan", "cause": "China's military build-up and deadlines", "outcome": "Invasion or blockade", "clock": "2027" },
+          "seed_queries": ["China invade Taiwan 2027", "Taiwan invasion", "China Taiwan war"]
+        },
+        {
+          "id": "us-civil-war",
+          "name": "The \"America is heading for civil war\" story",
+          "claim": "Political division in the United States is heading toward a second civil war.",
+          "frame": { "problem": "US political violence", "cause": "Polarisation and distrust of institutions", "outcome": "Civil war", "clock": "often tied to the next election" },
+          "seed_queries": ["second American civil war", "US civil war coming", "America divided civil war"]
+        }
+      ]
+    },
+    {
+      "id": "energy-climate",
+      "name": "Energy & climate",
+      "definition": "Claims about energy supply, electric vehicles, power grids and the climate.",
+      "includes": ["EVs", "grids and power demand", "oil and gas", "nuclear and fusion", "climate impacts"],
+      "excludes": ["energy stocks as trades (Economy & markets)"],
+      "clock": true,
+      "resolves_by": "calendar and evidence: supply and adoption claims name dates; science claims are graded on evidence",
+      "seed_terms": ["electric vehicles", "EV sales", "power grid", "data centers electricity", "fusion", "nuclear power", "oil price", "climate change"],
+      "youtube_signals": { "categoryIds": [28, 2, 25], "topicCategories": ["Technology", "Vehicle", "Society"] },
+      "candidates": [
+        {
+          "id": "evs-failing",
+          "name": "The \"electric cars are failing\" story",
+          "claim": "Electric vehicle demand is collapsing and carmakers' EV bets are a costly failure.",
+          "frame": { "problem": "EVs don't sell", "cause": "Price, charging, range, subsidies ending", "outcome": "Carmakers retreat from EVs", "clock": "tied to sales quarters" },
+          "seed_queries": ["EV demand collapse", "electric cars failing", "nobody wants EVs"]
+        },
+        {
+          "id": "grid-cant-handle-ai",
+          "name": "The \"the grid can't power AI\" story",
+          "claim": "AI data centres will consume so much electricity that power grids can't keep up, causing blackouts or price spikes.",
+          "frame": { "problem": "Electricity shortage", "cause": "AI data centre demand", "outcome": "Blackouts, price spikes; remedy: nuclear and gas", "clock": "named years for demand forecasts" },
+          "seed_queries": ["AI data centers power grid", "AI electricity demand", "grid can't handle AI"]
+        },
+        {
+          "id": "fusion-close",
+          "name": "The \"fusion power is finally close\" story",
+          "claim": "Recent breakthroughs mean commercial fusion power is only years away.",
+          "frame": { "problem": "Clean, unlimited energy is needed", "cause": "Fusion breakthroughs and private funding", "outcome": "Fusion on the grid", "clock": "named years, commonly the 2030s" },
+          "seed_queries": ["fusion breakthrough", "fusion power plant when", "commercial fusion energy"]
+        }
+      ]
+    },
+    {
+      "id": "entertainment-media",
+      "name": "Entertainment & media",
+      "definition": "Claims about film, TV, music, streaming and the businesses behind them.",
+      "includes": ["Hollywood and studios", "streaming", "franchises", "music industry", "AI in creative work"],
+      "excludes": ["the films and music themselves", "reviews with no recurring claim"],
+      "clock": true,
+      "resolves_by": "calendar: box office, subscriber and business claims resolve on results",
+      "seed_terms": ["Hollywood", "box office", "Marvel", "Disney", "Netflix", "streaming", "superhero fatigue", "AI actors"],
+      "youtube_signals": { "categoryIds": [24, 1, 10], "topicCategories": ["Entertainment", "Film", "Television_program", "Music"] },
+      "candidates": [
+        {
+          "id": "hollywood-collapsing",
+          "name": "The \"Hollywood is collapsing\" story",
+          "claim": "The Hollywood studio system is in terminal decline as box office, cable and streaming economics fail.",
+          "frame": { "problem": "Studios losing money and audiences", "cause": "Streaming economics, franchise fatigue, strikes", "outcome": "Studio collapse or consolidation", "clock": "tied to box-office seasons" },
+          "seed_queries": ["Hollywood is collapsing", "death of Hollywood", "box office disaster"]
+        },
+        {
+          "id": "superhero-fatigue",
+          "name": "The \"superhero movies are dead\" story",
+          "claim": "Audiences are tired of superhero films and the genre's era is over.",
+          "frame": { "problem": "Superhero films underperform", "cause": "Oversaturation and declining quality", "outcome": "The genre fades", "clock": "each major release is a test" },
+          "seed_queries": ["superhero fatigue", "MCU is dying", "Marvel box office flop"]
+        },
+        {
+          "id": "ai-replaces-actors",
+          "name": "The \"AI will replace actors and writers\" story",
+          "claim": "Generative AI will replace actors, writers and musicians in mainstream entertainment.",
+          "frame": { "problem": "Creative jobs disappear", "cause": "AI video, voice and script generation", "outcome": "AI-made films and music replace human work", "clock": "loose" },
+          "seed_queries": ["AI replace actors", "AI generated movie", "AI music replace artists"]
+        }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": "Gaming",
+      "definition": "Claims about the games industry, platforms and upcoming releases.",
+      "includes": ["release dates and delays", "studios and layoffs", "live-service games", "consoles and platforms"],
+      "excludes": ["let's-plays and walkthroughs", "reviews with no recurring claim"],
+      "clock": true,
+      "resolves_by": "calendar: release and business claims resolve on dates",
+      "seed_terms": ["GTA 6", "game delay", "games industry layoffs", "live service", "PlayStation", "Xbox", "Nintendo"],
+      "youtube_signals": { "categoryIds": [20], "topicCategories": ["Video_game_culture"] },
+      "candidates": [
+        {
+          "id": "gta6-delay",
+          "name": "The \"GTA 6 will be delayed again\" story",
+          "claim": "Grand Theft Auto VI will miss its announced release date again.",
+          "frame": { "problem": "The biggest release keeps slipping", "cause": "Development scale, publisher strategy", "outcome": "Another delay", "clock": "the announced release date" },
+          "seed_queries": ["GTA 6 delayed again", "GTA 6 release date", "GTA 6 delay"]
+        },
+        {
+          "id": "games-industry-collapsing",
+          "name": "The \"the games industry is collapsing\" story",
+          "claim": "Layoffs, studio closures and failed releases show the video game industry is in collapse.",
+          "frame": { "problem": "Studios closing, mass layoffs", "cause": "Budgets, live-service bets, investor pressure", "outcome": "Industry contraction", "clock": "loose" },
+          "seed_queries": ["gaming industry collapse", "game industry layoffs", "AAA games dying"]
+        },
+        {
+          "id": "live-service-dying",
+          "name": "The \"live-service games are dead\" story",
+          "claim": "The live-service game model is failing, with most new launches shutting down within months.",
+          "frame": { "problem": "Live-service launches fail", "cause": "Too many competing games, player fatigue", "outcome": "Publishers abandon the model", "clock": "each launch is a test" },
+          "seed_queries": ["live service games dead", "live service game shut down", "why live service fails"]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "definition": "Claims about leagues, money, players and the future of sport.",
+      "includes": ["league finances and rules", "ownership and state money", "ratings and popularity", "player and team futures"],
+      "excludes": ["highlight reels", "match analysis with no recurring claim"],
+      "clock": true,
+      "resolves_by": "calendar: rulings, seasons and ratings resolve on dates",
+      "seed_terms": ["Saudi", "Premier League", "NBA ratings", "115 charges", "LIV Golf", "transfer", "financial fair play"],
+      "youtube_signals": { "categoryIds": [17], "topicCategories": ["Sport"] },
+      "candidates": [
+        {
+          "id": "saudi-money-sport",
+          "name": "The \"Saudi money is taking over sport\" story",
+          "claim": "Saudi state investment is buying control of football, golf, boxing and other sports.",
+          "frame": { "problem": "Sport controlled by state money", "cause": "Saudi Public Investment Fund spending", "outcome": "Leagues and events reshaped", "clock": "loose" },
+          "seed_queries": ["Saudi Arabia sports takeover", "Saudi money football", "LIV golf Saudi"]
+        },
+        {
+          "id": "nba-ratings-collapse",
+          "name": "The \"the NBA is losing its audience\" story",
+          "claim": "NBA viewership is collapsing and the league is losing its fans.",
+          "frame": { "problem": "Falling ratings", "cause": "Style of play, load management, streaming", "outcome": "League decline", "clock": "each season's ratings" },
+          "seed_queries": ["NBA ratings decline", "why nobody watches NBA", "NBA viewership"]
+        },
+        {
+          "id": "man-city-115",
+          "name": "The \"the 115 charges will sink Man City\" story",
+          "claim": "Manchester City will be found guilty on the Premier League's financial charges and face severe punishment.",
+          "frame": { "problem": "Alleged financial rule breaches", "cause": "Premier League charges", "outcome": "Points deduction, titles stripped or relegation", "clock": "the ruling date" },
+          "seed_queries": ["Man City 115 charges", "Man City verdict", "City relegation charges"]
+        }
+      ]
+    },
+    {
+      "id": "internet-creator-economy",
+      "name": "Internet & creator economy",
+      "definition": "Claims about platforms, algorithms, creators and what the internet is becoming.",
+      "includes": ["platform algorithms", "creator income", "platform bans and regulation", "bots and AI content online"],
+      "excludes": ["creator drama with no recurring claim", "vlogs"],
+      "clock": true,
+      "resolves_by": "calendar and evidence: bans and policy changes resolve on dates; platform claims on evidence",
+      "seed_terms": ["YouTube algorithm", "dead internet", "TikTok ban", "small creators", "AI slop", "bots"],
+      "youtube_signals": { "categoryIds": [22, 28, 24], "topicCategories": ["Technology", "Society", "Lifestyle_(sociology)"] },
+      "candidates": [
+        {
+          "id": "dead-internet",
+          "name": "The \"dead internet\" story",
+          "claim": "Most of what's online is now made by bots and AI rather than people.",
+          "frame": { "problem": "The internet feels fake", "cause": "Bots and AI-generated content", "outcome": "Human internet disappears", "clock": null },
+          "seed_queries": ["dead internet theory", "internet is dead bots", "AI slop internet"]
+        },
+        {
+          "id": "youtube-kills-small-creators",
+          "name": "The \"YouTube is killing small creators\" story",
+          "claim": "YouTube's algorithm suppresses small creators in favour of big channels and advertisers.",
+          "frame": { "problem": "Small channels can't grow", "cause": "Algorithm changes favouring big channels", "outcome": "Creator middle class disappears", "clock": null },
+          "seed_queries": ["YouTube algorithm small creators", "YouTube is dying", "algorithm killed my channel"]
+        },
+        {
+          "id": "tiktok-ban",
+          "name": "The \"TikTok is about to be banned\" story",
+          "claim": "TikTok will be banned in the United States.",
+          "frame": { "problem": "A major platform disappears", "cause": "National security law and politics", "outcome": "Ban or forced sale", "clock": "legal deadlines, repeatedly extended" },
+          "seed_queries": ["TikTok ban", "TikTok ban date", "is TikTok getting banned"]
+        }
+      ]
+    },
+    {
+      "id": "fringe-unexplained",
+      "name": "Fringe & unexplained",
+      "definition": "Claims about the paranormal, UFOs, lost history and suppressed science.",
+      "includes": ["UFOs and disclosure", "psychic and paranormal claims", "alternative history", "space anomalies"],
+      "excludes": ["horror entertainment with no factual claim"],
+      "clock": true,
+      "resolves_by": "evidence and calendar: factual claims on evidence; disclosure dates on the calendar",
+      "seed_terms": ["UFO disclosure", "remote viewing", "ancient civilization", "Graham Hancock", "Avi Loeb", "interstellar object", "declassified"],
+      "youtube_signals": { "categoryIds": [27, 22, 24], "topicCategories": ["Knowledge", "Society"] },
+      "candidates": [
+        {
+          "id": "ufo-disclosure",
+          "name": "The \"UFO disclosure is imminent\" story",
+          "claim": "The US government is about to confirm it holds non-human craft and bodies.",
+          "frame": { "problem": "Secrecy about non-human intelligence", "cause": "Government cover-up", "outcome": "Official disclosure", "clock": "named hearings and dates, repeatedly moved" },
+          "seed_queries": ["UFO disclosure", "non-human intelligence hearing", "disclosure is coming"]
+        },
+        {
+          "id": "lost-civilisation",
+          "name": "The \"an advanced ice-age civilisation was erased\" story",
+          "claim": "An advanced civilisation existed before the last ice age and was wiped out, and mainstream archaeology ignores the evidence.",
+          "frame": { "problem": "History is incomplete", "cause": "Cataclysm, plus mainstream suppression", "outcome": "Hidden history revealed", "clock": null },
+          "seed_queries": ["lost ancient civilization", "Younger Dryas civilization", "advanced ancient civilization evidence"]
+        },
+        {
+          "id": "interstellar-probe",
+          "name": "The \"that interstellar object is alien technology\" story",
+          "claim": "Interstellar objects passing through the solar system, such as 'Oumuamua and 3I/ATLAS, may be alien probes.",
+          "frame": { "problem": "Unexplained objects in space", "cause": "Alien technology", "outcome": "Proof of extraterrestrial life", "clock": "each object's closest approach" },
+          "seed_queries": ["3I/ATLAS alien", "Oumuamua alien probe", "interstellar object alien technology"]
+        }
+      ]
+    },
+    {
+      "id": "culture-society",
+      "name": "Culture & society",
+      "definition": "Claims about how people live, relate, raise children and change as societies.",
+      "includes": ["family and birth rates", "gender and relationships", "technology and childhood", "generational change"],
+      "excludes": ["party politics (Politics & geopolitics)", "lifestyle content with no claim"],
+      "clock": false,
+      "resolves_by": "evidence: social claims rarely carry a date",
+      "seed_terms": ["birth rate", "male loneliness", "smartphones kids", "Gen Z", "dating crisis", "anxious generation"],
+      "youtube_signals": { "categoryIds": [22, 25, 27], "topicCategories": ["Society", "Lifestyle_(sociology)"] },
+      "candidates": [
+        {
+          "id": "birth-rate-collapse",
+          "name": "The \"falling birth rates will end civilisation\" story",
+          "claim": "Collapsing birth rates will shrink and age societies until economies and civilisation break down.",
+          "frame": { "problem": "Too few children", "cause": "Cost of living, culture, delayed family", "outcome": "Population collapse", "clock": "demographic projections by decade" },
+          "seed_queries": ["birth rate collapse", "population collapse", "fertility crisis"]
+        },
+        {
+          "id": "phones-rewire-kids",
+          "name": "The \"smartphones are rewiring kids' brains\" story",
+          "claim": "Smartphones and social media caused the rise in teen anxiety and depression.",
+          "frame": { "problem": "Teen mental-health crisis", "cause": "Phones and social media", "outcome": "Remedy: phone-free childhood", "clock": null },
+          "seed_queries": ["smartphones teen mental health", "anxious generation", "social media kids brains"]
+        },
+        {
+          "id": "men-falling-behind",
+          "name": "The \"men are falling behind\" story",
+          "claim": "Young men are falling behind in education, work and relationships, and society is ignoring it.",
+          "frame": { "problem": "Male loneliness and decline", "cause": "Economy, education, culture", "outcome": "Social breakdown unless addressed", "clock": null },
+          "seed_queries": ["male loneliness epidemic", "men falling behind", "crisis of men"]
+        }
+      ]
+    }
+  ]
+}

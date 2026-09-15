@@ -262,6 +262,11 @@
   .gsec-h h3 { margin: 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--ink); }
   .gsec-h span { font-size: 12.5px; color: var(--muted); }
   .gsector .gal { margin-top: 12px; }
+  .gsec-d { margin: 8px 0 0; font-size: 13px; color: var(--ink-2); line-height: 1.5; max-width: 72ch; }
+  .gsub { margin: 14px 0 -2px; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  .gtile.cand { cursor: default; border-style: dashed; background: transparent; }
+  .gtile.cand:hover { border-color: var(--hairline); }
+  .gtile.cand .gname { font-size: 15px; font-weight: 600; }
   .galnow .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   /* Publishing momentum — interactive column chart (palette validated light + dark) */
   .momentum { margin: 0 0 18px; padding: 14px 16px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface);
@@ -953,7 +958,7 @@ function narrativeAge(born) {
        : months >= 2 ? `${months} months old` : "brand new";
 }
 
-let watchlist = null, topicId = null;
+let watchlist = null, topicId = null, industries = null;
 const cache = {};   // topicId -> {videos, predictions}
 let briefsIndex = null;
 
@@ -3324,6 +3329,7 @@ async function traceOrigin(topicId) {
   const fps = cache[topicId]?.claims?.fingerprints || [];
   const suggested = n?.genesis?.phrase
     || fps[0]
+    || (n?.name || "").match(/"([^"]+)"/)?.[1]   // attributed names quote the claim itself
     || (n?.name || topicId).replace(/\b(watch|the)\b/gi, "").replace(/\s+/g, " ").trim();
   const phrase = prompt(
     "Trace the earliest X post carrying this phrase (edit if needed).\n" +
@@ -3506,10 +3512,18 @@ function openDetail(id) {
   $("detail").hidden = false;
   return loadTopic(id);
 }
+/* The shelf's categories come from industries.json: every industry shows, in
+   its fixed order, even before a narrative in it is tracked. Anything a topic
+   names that the file doesn't know (e.g. "Unsorted") is appended at the end. */
+function shelfIndustries() {
+  const known = (industries || []).map(i => i.name);
+  const extra = [...new Set(watchlist.topics.map(t => t.industry || "Unsorted"))].filter(n => !known.includes(n)).sort();
+  return [...(industries || []), ...extra.map(name => ({ name, candidates: [] }))];
+}
 function renderGalleryFilters() {
   const sel = $("gal-industry");
   if (sel.dataset.built) return;
-  const inds = [...new Set(watchlist.topics.map(t => t.industry || "Unsorted"))].sort();
+  const inds = shelfIndustries().map(i => i.name);
   sel.innerHTML = `<option value="all">All industries</option>` +
     inds.map(i => `<option value="${esc(i)}">${esc(i)}</option>`).join("");
   sel.dataset.built = "1";
@@ -3550,33 +3564,52 @@ function galTile(t) {
   </button>`;
 }
 
-// The shelf, by sector: each industry is a section holding its narratives,
-// busiest first. Sectors with more narratives come first; the filter and the
-// search still narrow it.
+// A candidate is a claim we expect to qualify but haven't collected: no corpus,
+// no numbers, not clickable. It shows what the category will hold.
+function galCandidate(c) {
+  return `<div class="gtile cand" title="Candidate: admitted once collection shows 3+ independent channels telling it across 2+ months">
+    <div class="gname">${esc(c.name)}</div>
+    <div class="gclaim">${esc(c.claim)}</div>
+    <div class="gstats"><span class="gs">candidate · not collected yet</span>${c.frame?.clock ? `<span class="gs">clock: ${esc(c.frame.clock)}</span>` : ""}</div>
+  </div>`;
+}
+const candSearchText = c => [c.name, c.claim, ...(c.seed_queries || [])].join(" ").toLowerCase();
+
+// The shelf, by industry: every industry is a section holding its tracked
+// narratives (busiest first), then its candidates. Industries with tracked
+// narratives come first; the rest keep their fixed order. The filter and the
+// search narrow both.
 function renderGallery() {
   const q = ($("gal-search").value || "").trim().toLowerCase();
   const ind = $("gal-industry").value || "all";
   const hits = watchlist.topics.filter(t =>
     (ind === "all" || (t.industry || "Unsorted") === ind) &&
     (!q || galSearchText(t).includes(q)));
-  $("gal-count").textContent = q || ind !== "all"
-    ? `${hits.length} of ${watchlist.topics.length} narratives`
-    : `${watchlist.topics.length} narratives tracked`;
-  const sectors = new Map();
-  for (const t of hits) {
-    const k = t.industry || "Unsorted";
-    if (!sectors.has(k)) sectors.set(k, []);
-    sectors.get(k).push(t);
-  }
+  const shelf = shelfIndustries().filter(i => ind === "all" || i.name === ind);
   const activity = t => galStats[t.id]?.quarter || 0;
-  const ordered = [...sectors.entries()].sort((a, b) => (b[1].length - a[1].length) || a[0].localeCompare(b[0]));
-  $("gal-grid").innerHTML = hits.length ? ordered.map(([name, ts]) => {
+  const sections = shelf.map((i, order) => ({
+    i, order,
+    ts: hits.filter(t => (t.industry || "Unsorted") === i.name),
+    cs: (i.candidates || []).filter(c => !q || candSearchText(c).includes(q)),
+  })).filter(s => s.ts.length || s.cs.length);
+  const candTotal = sections.reduce((n, s) => n + s.cs.length, 0);
+  $("gal-count").textContent = q || ind !== "all"
+    ? `${hits.length} of ${watchlist.topics.length} narratives · ${candTotal} candidate${candTotal === 1 ? "" : "s"}`
+    : `${watchlist.topics.length} narratives tracked · ${candTotal} candidates · ${(industries || []).length} industries`;
+  sections.sort((a, b) => (b.ts.length - a.ts.length) || (a.order - b.order));
+  $("gal-grid").innerHTML = sections.length ? sections.map(({ i, ts, cs }) => {
     ts.sort((a, b) => ((a.status === "queued") - (b.status === "queued")) || (activity(b) - activity(a)) || ((galStats[b.id]?.videos || 0) - (galStats[a.id]?.videos || 0)));
     const quarter = ts.reduce((n, t) => n + activity(t), 0);
+    const counts = [
+      ts.length ? `${ts.length} narrative${ts.length === 1 ? "" : "s"} tracked` : "none tracked yet",
+      quarter ? `${quarter} video${quarter === 1 ? "" : "s"} this quarter` : "",
+      cs.length ? `${cs.length} candidate${cs.length === 1 ? "" : "s"}` : "",
+    ].filter(Boolean).join(" · ");
     return `<section class="gsector">
-      <div class="gsec-h"><h3>${esc(name)}</h3>
-        <span>${ts.length} narrative${ts.length === 1 ? "" : "s"}${quarter ? ` · ${quarter} video${quarter === 1 ? "" : "s"} this quarter` : ""}</span></div>
-      <div class="gal">${ts.map(galTile).join("")}</div>
+      <div class="gsec-h"><h3>${esc(i.name)}</h3><span>${counts}</span></div>
+      ${i.definition ? `<p class="gsec-d">${esc(i.definition)}</p>` : ""}
+      ${ts.length ? `<div class="gal">${ts.map(galTile).join("")}</div>` : ""}
+      ${cs.length ? `<div class="gsub">Candidates · not collected yet</div><div class="gal">${cs.map(galCandidate).join("")}</div>` : ""}
     </section>`;
   }).join("") : `<div class="galempty">No narrative matches that${q ? ` — “${esc(q)}”` : ""}.
     Try another keyword, or paste a video link on the start page to found a new one.</div>`;
@@ -3900,6 +3933,7 @@ $("lookup-form").addEventListener("submit", (e) => {
 (async function init() {
   try {
     watchlist = await getJSON("watchlist.json");
+    try { industries = (await getJSON("industries.json")).industries || []; } catch (e) { industries = []; }
     loadLandingStats();
     try { briefsIndex = await getJSON("briefs/index.json"); } catch (e) { briefsIndex = []; }
     const first = watchlist.topics.find(t => t.status === "active") || watchlist.topics[0];

@@ -1,5 +1,9 @@
 {
-  "name": "Open-Source AI Has Caught Up",
+  "name": "The \"open-source AI has caught up\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "former_claim_names": [
+    "Open-Source AI Has Caught Up"
+  ],
   "claim": "Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
   "predictor": "to be determined",
   "born": "2023-07",

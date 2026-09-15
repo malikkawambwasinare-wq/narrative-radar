@@ -191,7 +191,7 @@ Nothing is re-published under v2 until the reliability gate passes.
 ## 5. Collection architecture
 
 **Industry layer**
-- Our twelve shelves, each with a written definition and seed vocabularies.
+- Our eleven shelves (plus Unsorted), each with a written definition and seed vocabularies. They live in `industries.json`.
 - YouTube's topicCategories and uploader categories are weak signals only. When coders agree on a category, it matches the uploader's choice just 28% of the time.
 
 **Discovery (search, API)**
@@ -221,7 +221,7 @@ Nothing is re-published under v2 until the reliability gate passes.
 - transcripts creators publish themselves;
 - creators who opt in.
 
-**Quota for 12 industries × 10 narratives**
+**Quota for 11 industries × 10 narratives**
 - Default quota covers the live rotation and a slow backfill, about 10 days per 5 million crawled records.
 - Faster backfill, more than 100 searches a day, and storing derived metrics beyond 30 days all need the **audit**.
 - Realistic first completeness estimates: about week 10.
@@ -245,7 +245,7 @@ The decision is the founder's.
 ## 7. What can be built now, and what is gated
 
 **Buildable today** (no keys, no compliance exposure)
-1. `industries.json`: the twelve shelves with definitions, seed vocabularies and weak YouTube-category mappings. Existing narratives assigned to shelves.
+1. `industries.json`: the eleven shelves with definitions, seed vocabularies and weak YouTube-category mappings. Existing narratives assigned to shelves.
 2. Narrative schema v2: claim core; frame (problem, cause, remedy, clock); grip-profile ingredients; three name layers; admission-test fields.
 3. Claim names rewritten in attributed form (the five in §3).
 4. STANDARD.md verdict section v2, as a draft, plus a 30-video pilot set from Anti-Inflammatory Diet for the double-coding test.

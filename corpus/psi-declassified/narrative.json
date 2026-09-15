@@ -1,5 +1,9 @@
 {
-  "name": "The CIA Proved Remote Viewing Works",
+  "name": "The \"CIA proved remote viewing works\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "former_claim_names": [
+    "The CIA Proved Remote Viewing Works"
+  ],
   "claim": "Declassified government programs (CIA/DIA 'Stargate') supposedly proved remote viewing and psychic perception are real, trainable skills that mainstream science suppresses or ignores.",
   "predictor": "to be determined",
   "born": "1995",

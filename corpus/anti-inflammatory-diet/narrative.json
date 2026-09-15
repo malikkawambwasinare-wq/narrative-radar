@@ -1,5 +1,9 @@
 {
-  "name": "Inflammation Is the Root of All Disease",
+  "name": "The \"inflammation is the root of all disease\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "former_claim_names": [
+    "Inflammation Is the Root of All Disease"
+  ],
   "claim": "Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease — and eating specific 'anti-inflammatory' foods can reverse it.",
   "predictor": "Andrew Weil · Mark Hyman (earliest and most-cited carriers in this corpus)",
   "born": "2004",

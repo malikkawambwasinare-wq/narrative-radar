@@ -1,5 +1,9 @@
 {
-  "name": "The Coming US Debt Collapse",
+  "name": "The \"US debt collapse is imminent\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "former_claim_names": [
+    "The Coming US Debt Collapse"
+  ],
   "claim": "A debt-driven collapse of the US economy is imminent — the '80-year big cycle' is ending. The predicted mechanism rotates with the news cycle; since mid-2026 it runs through the AI boom (debt-financed AI capex as the trigger).",
   "predictor": "Ray Dalio",
   "born": "2015-03",

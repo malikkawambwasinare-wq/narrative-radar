@@ -1,5 +1,9 @@
 {
-  "name": "Now Is the Generational Buying Opportunity",
+  "name": "The \"generational buying opportunity\" call",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "former_claim_names": [
+    "Now Is the Generational Buying Opportunity"
+  ],
   "claim": "After a volatile stretch, the coming year will hand patient investors a generational buying opportunity — position now before the next leg up. Tracked across five years to see whether the same call gets made for every new year.",
   "predictor": "to be determined",
   "born": "2025-04",
