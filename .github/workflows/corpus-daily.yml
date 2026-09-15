@@ -1,0 +1,78 @@
+name: Daily corpus sweep
+
+# Keeps every narrative's corpus current. Each morning it searches each
+# narrative's queries for new uploads, appends the ones not yet in the corpus
+# as UNREVIEWED, and commits — the site redeploys and the momentum chart's
+# "last collected" date is today. Nothing already in a corpus is changed.
+#
+# With a YT_API_KEY repository secret it uses the official YouTube Data API
+# (full details, works from any server); without one it reads YouTube's public
+# search page. Transcripts and reviews are not done here (see daily_sweep.py).
+
+on:
+  schedule:
+    - cron: "30 5 * * *"     # 05:30 UTC daily, before the 07:00 resolver. Actions cron is best-effort.
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "How many days back to look for uploads"
+        default: "14"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: corpus-daily
+  cancel-in-progress: false
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sweep every narrative for new uploads
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: python3 scripts/daily_sweep.py --write --days=${{ github.event.inputs.days || '14' }} | tee sweep.log
+
+      - name: Commit and push new videos
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: |
+          if git diff --quiet -- corpus; then
+            echo "No new videos today."
+            exit 0
+          fi
+          git config user.name  "narrative-radar-sweep"
+          git config user.email "sweep@users.noreply.github.com"
+          SUMMARY="$(tail -n 1 sweep.log)"
+          git add corpus/*/videos.json
+          # [skip netlify] keeps a data commit from triggering a function redeploy.
+          git commit -m "Daily sweep $(date -u +%Y-%m-%d): ${SUMMARY} [skip netlify]"
+          # The engine and local sessions also push to main. If this push loses
+          # the race, start again from the new main: the sweep is idempotent.
+          for attempt in 1 2 3; do
+            if git pull --rebase && git push; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            git fetch origin main && git reset --hard origin/main
+            python3 scripts/daily_sweep.py --write --days=${{ github.event.inputs.days || '14' }} > /dev/null
+            git diff --quiet -- corpus && exit 0
+            git add corpus/*/videos.json
+            git commit -m "Daily sweep $(date -u +%Y-%m-%d): ${SUMMARY} (retry ${attempt}) [skip netlify]"
+          done
+          exit 1
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo '```'
+            cat sweep.log 2>/dev/null || echo "no log"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
