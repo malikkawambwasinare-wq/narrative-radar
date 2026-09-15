@@ -319,6 +319,28 @@
   .mo-table td { text-align: right; padding: 4px 8px; border-bottom: 1px solid var(--hairline); color: var(--ink-2); }
   .mo-table th:first-child, .mo-table td:first-child { text-align: left; color: var(--ink); }
   .momentum .note { font-size: 11.5px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+  /* Search inside transcripts — results carry timestamps and short snippets only */
+  .tsearch { display: flex; gap: 8px; margin: 0 0 10px; }
+  .tsearch input { flex: 1; min-width: 180px; padding: 9px 12px; font: inherit; font-size: 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--ink); }
+  .tsearch button { font: inherit; font-size: 13px; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--ink); background: var(--ink); color: var(--surface); cursor: pointer; white-space: nowrap; }
+  #tsearch-results:not(:empty) { margin: 0 0 16px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+  .ts-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; font-size: 14px; color: var(--ink-2); }
+  .ts-head b { color: var(--ink); }
+  .ts-clear { font: inherit; font-size: 12px; background: none; border: 0; color: var(--accent); cursor: pointer; }
+  .ts-note, .ts-status { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .ts-row { display: grid; grid-template-columns: 112px 1fr; gap: 12px; padding: 12px 0; border-top: 1px solid var(--hairline); margin-top: 10px; }
+  .ts-title { font-weight: 600; font-size: 14px; line-height: 1.3; }
+  .ts-title a { color: inherit; text-decoration: none; }
+  .ts-title a:hover { color: var(--accent); }
+  .ts-n { font-weight: 600; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .ts-meta { font-size: 12px; color: var(--ink-2); margin-top: 2px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .ts-hits { margin-top: 6px; display: grid; gap: 4px; }
+  .ts-hit { display: grid; grid-template-columns: 64px 1fr; gap: 8px; align-items: baseline; font-size: 13px; color: var(--ink-2); text-decoration: none; padding: 3px 6px; border-radius: 6px; }
+  .ts-hit:hover { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+  .ts-t { font-variant-numeric: tabular-nums; color: var(--accent); font-weight: 600; font-size: 12px; white-space: nowrap; }
+  .ts-hit mark { background: color-mix(in srgb, #eda100 30%, transparent); color: var(--ink); border-radius: 3px; padding: 0 2px; }
+  .ts-more > summary { cursor: pointer; font-size: 12px; color: var(--muted); padding: 2px 6px; }
+  @media (max-width: 560px) { .tsearch { flex-direction: column; } .ts-row { grid-template-columns: 1fr; } }
   .pchip { font: inherit; font-size: 12.5px; padding: 6px 12px; border-radius: 8px; cursor: pointer; border: 1px solid var(--ink); background: var(--ink); color: var(--surface); }
   .vid-body .thumbwrap { width: 136px; }
   /* Sides in this story */
@@ -846,6 +868,11 @@
     <div id="ncard"></div>
     <div class="stats" id="stats"></div>
     <div class="momentum" id="momentum"></div>
+    <form class="tsearch" id="tsearch" autocomplete="off" role="search">
+      <input type="search" id="tsearch-q" placeholder="Search inside transcripts — a word or phrase, e.g. seed oil* or “root cause”" aria-label="Search inside transcripts">
+      <button type="submit">Search transcripts</button>
+    </form>
+    <div id="tsearch-results"></div>
     <div class="controls">
       <span id="controls-period"></span>
       <input type="search" id="search" placeholder="Search title or channel…">
@@ -2251,6 +2278,53 @@ function renderMomentum(vids) {
   }
 }
 
+/* ---------- Search inside transcripts ----------
+   Asks the engine's private transcript store; gets back timestamps and short
+   snippets, never whole transcripts. Every moment links to YouTube at that
+   second, so the viewer hears the claim in its own context. */
+const fmtT = s => { const hh = Math.floor(s / 3600), mm = Math.floor(s % 3600 / 60), ss = s % 60;
+  return hh ? `${hh}:${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}` : `${mm}:${String(ss).padStart(2, "0")}`; };
+const tsHit = (v, x) => `<a class="ts-hit" href="https://www.youtube.com/watch?v=${esc(v.videoId)}&t=${x.t}s" target="_blank" rel="noopener">
+  <span class="ts-t">▶ ${fmtT(x.t)}</span><span>…${esc(x.before)} <mark>${esc(x.match)}</mark>${/^[,.;:!?)'’]/.test(x.after) ? "" : " "}${esc(x.after)}…</span></a>`;
+function renderTsearch(q, d) {
+  const box = $("tsearch-results"), list = cache[topicId]?.videos?.videos || [];
+  const byId = Object.fromEntries(list.map(v => [v.videoId, v]));
+  if (!d.searched) { box.innerHTML = `<div class="ts-head"><div>No transcripts are in the search store for this narrative yet.</div><button type="button" class="ts-clear" data-ts-clear>Clear</button></div>`; return; }
+  const head = d.totalHits
+    ? `<b>“${esc(q)}”</b> is said <b>${d.totalHits.toLocaleString("en-US")}</b> time${d.totalHits === 1 ? "" : "s"} in <b>${d.videoCount}</b> of ${d.searched} videos with transcripts`
+    : `<b>“${esc(q)}”</b> isn't said in any of the ${d.searched} videos with transcripts`;
+  const unsearched = list.length - d.searched;
+  const rows = d.videos.filter(x => byId[x.videoId]).map(x => {
+    const v = byId[x.videoId];
+    return `<div class="ts-row">${thumb(v, "sm")}
+      <div><div class="ts-title"><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.title)}</a> <span class="ts-n">×${x.count}</span></div>
+        <div class="ts-meta">${esc(v.channel)}${publishedEst(v) ? ` · ${isoDate(publishedEst(v))}` : ""} ${vchip(v.verdict)}</div>
+        <div class="ts-hits">${x.hits.slice(0, 3).map(h => tsHit(v, h)).join("")}
+          ${x.hits.length > 3 ? `<details class="ts-more"><summary>${x.hits.length - 3} more moment${x.hits.length - 3 === 1 ? "" : "s"}</summary>${x.hits.slice(3).map(h => tsHit(v, h)).join("")}</details>` : ""}</div></div></div>`;
+  }).join("");
+  box.innerHTML = `<div class="ts-head"><div>${head}</div><button type="button" class="ts-clear" data-ts-clear>Clear</button></div>
+    <div class="ts-note">${unsearched > 0 ? `${unsearched} videos in this corpus have no transcript yet, so they can't be searched. ` : ""}Whole words only — add * for variants (seed oil* also finds “seed oils”). Snippets are a few words around each mention; ▶ opens the video at that moment.</div>${rows}`;
+}
+let tsearchSeq = 0;
+$("tsearch").addEventListener("submit", async e => {
+  e.preventDefault();
+  const q = $("tsearch-q").value.trim(), box = $("tsearch-results"), topic = topicId, seq = ++tsearchSeq;
+  if (!q) { box.innerHTML = ""; return; }
+  box.innerHTML = `<div class="ts-status">Searching transcripts for “${esc(q)}”…</div>`;
+  try {
+    const r = await fetch(`${API_BASE}/api/transcript-search?topic=${encodeURIComponent(topic)}&q=${encodeURIComponent(q)}`);
+    const d = await r.json().catch(() => ({}));
+    if (seq !== tsearchSeq || topic !== topicId) return;
+    if (!r.ok) { box.innerHTML = `<div class="ts-status">${esc(d.error === "rate_limited" ? "Too many searches in a minute — try again shortly." : d.error || "Search failed.")}</div>`; return; }
+    renderTsearch(q, d);
+  } catch (err) {
+    if (seq === tsearchSeq) box.innerHTML = `<div class="ts-status">Transcript search is unavailable right now.</div>`;
+  }
+});
+$("tsearch-results").addEventListener("click", e => {
+  if (e.target.closest("[data-ts-clear]")) { $("tsearch-results").innerHTML = ""; $("tsearch-q").value = ""; }
+});
+
 function renderCorpus() {
   const data = cache[topicId];
   const vids = data?.videos?.videos || [];
@@ -3119,7 +3193,7 @@ async function loadTopicData(id) {
 }
 
 async function loadTopic(id) {
-  if (id !== topicId) { predictorFilter = null; periodFilter = null; }
+  if (id !== topicId) { predictorFilter = null; periodFilter = null; $("tsearch-results").innerHTML = ""; $("tsearch-q").value = ""; }
   topicId = id;
   // Opening any narrative always lands on the detail pane, never the gallery
   if (!$("app-radar").hidden) { $("gallery").hidden = true; $("detail").hidden = false; }

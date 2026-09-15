@@ -4,3 +4,4 @@ corpus/*/transcripts/
 node_modules/
 .cache/
 corpus/*/review/
+.secrets/
