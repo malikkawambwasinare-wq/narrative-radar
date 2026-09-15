@@ -242,13 +242,26 @@
   .gtile .gs.due { color: var(--warning); border-color: var(--warning); }
   .gtile .gs.up { color: var(--ok, #2F6B45); border-color: var(--ok, #2F6B45); }
   .gtile .gs.down { color: var(--muted); }
-  /* What creators are on right now: topics ranked by videos published in the last 30 days */
-  .galnow { margin: 0 0 16px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px;
+  /* Most active narratives: top 5 by videos published in the last quarter */
+  .galnow { margin: 0 0 22px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px;
     background: var(--surface); font-size: 13px; }
   .galnow .lbl { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-  .galnow .row { display: grid; grid-template-columns: minmax(120px, 1fr) 2fr auto; gap: 10px; align-items: center; padding: 3px 0; }
-  .galnow .bar { height: 8px; border-radius: 4px; background: var(--accent); opacity: .75; min-width: 2px; }
+  .galnow .row { display: grid; grid-template-columns: 22px minmax(140px, 1.1fr) 2fr auto; gap: 10px; align-items: center;
+    width: 100%; padding: 6px 4px; border: 0; border-radius: 8px; background: none; font: inherit; color: var(--ink); text-align: left; cursor: pointer; }
+  .galnow .row:hover { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+  .galnow .rank { font-variant-numeric: tabular-nums; color: var(--muted); font-weight: 650; text-align: right; }
+  .galnow .who { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+  .galnow .who b { font-weight: 600; }
+  .galnow .who small { font-size: 11px; color: var(--muted); }
+  .galnow .bar { height: 8px; border-radius: 4px; background: var(--accent); opacity: .75; min-width: 2px; justify-self: start; }
   .galnow .n { font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
+  @media (max-width: 560px) { .galnow .row { grid-template-columns: 18px 1fr auto; } .galnow .bar { display: none; } }
+  /* The shelf, grouped by sector */
+  .gsector { margin: 0 0 26px; }
+  .gsec-h { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding-bottom: 8px; border-bottom: 1px solid var(--hairline); }
+  .gsec-h h3 { margin: 0; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--ink); }
+  .gsec-h span { font-size: 12.5px; color: var(--muted); }
+  .gsector .gal { margin-top: 12px; }
   .galnow .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   /* Publishing momentum: videos published per week in this corpus */
   .momentum { margin: 0 0 18px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
@@ -772,7 +785,7 @@
     </div>
     <div class="galcount" id="gal-count"></div>
     <div class="galnow" id="gal-now"></div>
-    <div class="gal" id="gal-grid"></div>
+    <div class="gal-sectors" id="gal-grid"></div>
   </div>
 
   <div id="detail" hidden>
@@ -1906,9 +1919,6 @@ function momentum(vids, weeks = 16) {
   const peak = bins.indexOf(Math.max(...bins));
   return { bins, older, last4, prior4, peak, end, swept, dated: ts.length, undated: vids.length - ts.length };
 }
-// Videos published in the `days` before the corpus's last sweep (not before today).
-const recentCount = (vids, days, until = lastSweep(vids)) =>
-  vids.filter(v => { const t = publishedEst(v); return t && t <= until && until - t <= days * 86400000; }).length;
 const staleDays = swept => Math.floor((Date.now() - swept) / 86400000);
 function momentumBlock(vids) {
   const m = momentum(vids);
@@ -3069,6 +3079,35 @@ function galSearchText(t) {
     (d.predictions?.entries || []).map(e => `${e.predictor || ""} ${e.claim}`).join(" "),
   ].filter(Boolean).join(" ").toLowerCase();
 }
+const QUARTER_DAYS = 90;
+// Videos published in the last `days` (a quarter by default), counted back from today.
+const publishedWithin = (vids, days = QUARTER_DAYS) =>
+  vids.filter(v => { const t = publishedEst(v); return t && t <= Date.now() && Date.now() - t <= days * 86400000; }).length;
+const shortName = t => t.name.split("—")[0].trim();
+
+function galTile(t) {
+  const d = cache[t.id] || {};
+  const claim = d.narrative?.claim || t.notes || "Corpus building — open to follow along.";
+  const s = galStats[t.id];
+  const chips = [];
+  if (t.status !== "active") chips.push(`<span class="gs">${esc(t.status)}</span>`);
+  if (s) {
+    if (s.age) chips.push(`<span class="gs">${esc(s.age)}</span>`);
+    if (s.videos) chips.push(`<span class="gs">${s.videos} video${s.videos === 1 ? "" : "s"}</span>`);
+    if (s.quarter) chips.push(`<span class="gs up" title="videos published in the last ${QUARTER_DAYS} days (last sweep ${esc(s.swept)})">${s.quarter} this quarter</span>`);
+    if (s.score) chips.push(`<span class="gs${s.warn ? " warn" : ""}">${esc(s.score)}</span>`);
+    if (s.next) chips.push(`<span class="gs${s.due ? " due" : ""}">${esc(s.next)}</span>`);
+  }
+  return `<button class="gtile" data-gopen="${esc(t.id)}">
+    <div class="gname">${esc(shortName(t))}</div>
+    <div class="gclaim">${esc(claim)}</div>
+    <div class="gstats">${chips.join("")}</div>
+  </button>`;
+}
+
+// The shelf, by sector: each industry is a section holding its narratives,
+// busiest first. Sectors with more narratives come first; the filter and the
+// search still narrow it.
 function renderGallery() {
   const q = ($("gal-search").value || "").trim().toLowerCase();
   const ind = $("gal-industry").value || "all";
@@ -3078,44 +3117,45 @@ function renderGallery() {
   $("gal-count").textContent = q || ind !== "all"
     ? `${hits.length} of ${watchlist.topics.length} narratives`
     : `${watchlist.topics.length} narratives tracked`;
-  $("gal-grid").innerHTML = hits.length ? hits.map(t => {
-    const d = cache[t.id] || {};
-    const claim = d.narrative?.claim || t.notes || "Corpus building — open to follow along.";
-    const s = galStats[t.id];
-    const chips = [];
-    if (t.status !== "active") chips.push(`<span class="gs">${esc(t.status)}</span>`);
-    if (s) {
-      if (s.age) chips.push(`<span class="gs">${esc(s.age)}</span>`);
-      if (s.videos) chips.push(`<span class="gs">${s.videos} videos</span>`);
-      if (s.recent || s.prior) chips.push(`<span class="gs ${s.recent > s.prior ? "up" : s.recent < s.prior ? "down" : ""}" title="videos published in the 30 days before the last sweep (${s.swept}) vs the 30 before that">${s.recent} in the month to ${s.swept.slice(5)}${s.recent > s.prior ? " ↑" : s.recent < s.prior ? " ↓" : ""}</span>`);
-      if (s.score) chips.push(`<span class="gs${s.warn ? " warn" : ""}">${esc(s.score)}</span>`);
-      if (s.next) chips.push(`<span class="gs${s.due ? " due" : ""}">${esc(s.next)}</span>`);
-    }
-    return `<button class="gtile" data-gopen="${esc(t.id)}">
-      <div class="gind">${esc(t.industry || "Unsorted")}</div>
-      <div class="gname">${esc(t.name.split("—")[0].trim())}</div>
-      <div class="gclaim">${esc(claim)}</div>
-      <div class="gstats">${chips.join("")}</div>
-    </button>`;
+  const sectors = new Map();
+  for (const t of hits) {
+    const k = t.industry || "Unsorted";
+    if (!sectors.has(k)) sectors.set(k, []);
+    sectors.get(k).push(t);
+  }
+  const activity = t => galStats[t.id]?.quarter || 0;
+  const ordered = [...sectors.entries()].sort((a, b) => (b[1].length - a[1].length) || a[0].localeCompare(b[0]));
+  $("gal-grid").innerHTML = hits.length ? ordered.map(([name, ts]) => {
+    ts.sort((a, b) => ((a.status === "queued") - (b.status === "queued")) || (activity(b) - activity(a)) || ((galStats[b.id]?.videos || 0) - (galStats[a.id]?.videos || 0)));
+    const quarter = ts.reduce((n, t) => n + activity(t), 0);
+    return `<section class="gsector">
+      <div class="gsec-h"><h3>${esc(name)}</h3>
+        <span>${ts.length} narrative${ts.length === 1 ? "" : "s"}${quarter ? ` · ${quarter} video${quarter === 1 ? "" : "s"} this quarter` : ""}</span></div>
+      <div class="gal">${ts.map(galTile).join("")}</div>
+    </section>`;
   }).join("") : `<div class="galempty">No narrative matches that${q ? ` — “${esc(q)}”` : ""}.
     Try another keyword, or paste a video link on the start page to found a new one.</div>`;
   renderGalleryNow();
 }
-// What creators are on right now: every tracked narrative ranked by videos
-// published in the last 30 days. Same caveat as the corpus chart — this is what
-// our collection surfaced, biased to recent uploads and to how often we sweep.
+
+// Most active narratives: the top 5 by videos published in the last quarter.
+// Honest about collection: a narrative that hasn't been swept lately is missing
+// its most recent weeks, and the note names which ones.
 function renderGalleryNow() {
   const rows = watchlist.topics
     .map(t => ({ t, s: galStats[t.id] }))
-    .filter(r => r.s && r.s.videos)
-    .sort((a, b) => (b.s.recent - a.s.recent) || (b.s.prior - a.s.prior));
-  const max = Math.max(1, ...rows.map(r => r.s.recent));
-  const oldest = Math.max(...rows.map(r => r.s.stale || 0));
-  $("gal-now").innerHTML = rows.length ? `<div class="lbl">What creators were on at the last sweep · videos published in the 30 days before each narrative's last sweep</div>
-    ${rows.map(r => `<div class="row"><span>${esc(r.t.name.split("—")[0].trim())}</span>
-      <span class="bar" style="width:${Math.round((r.s.recent / max) * 100)}%"></span>
-      <span class="n">${r.s.recent}${r.s.prior !== r.s.recent ? ` (${r.s.prior} the month before${r.s.recent > r.s.prior ? " ↑" : " ↓"})` : ""} · swept ${esc(r.s.swept)}</span></div>`).join("")}
-    <div class="note">Counts what our collection surfaced, up to each narrative's last sweep — a narrative swept less often reads cooler than it is.${oldest > 7 ? ` <b>The oldest sweep is ${oldest} days old; nothing here describes the last ${oldest} days.</b>` : ""}</div>` : "";
+    .filter(r => r.s && r.s.quarter)
+    .sort((a, b) => (b.s.quarter - a.s.quarter) || (b.s.videos - a.s.videos))
+    .slice(0, 5);
+  const max = Math.max(1, ...rows.map(r => r.s.quarter));
+  const stale = rows.filter(r => r.s.stale > 14);
+  $("gal-now").innerHTML = rows.length ? `<div class="lbl">Most active narratives · videos published in the last quarter (${QUARTER_DAYS} days)</div>
+    ${rows.map((r, i) => `<button type="button" class="row" data-gopen="${esc(r.t.id)}">
+      <span class="rank">${i + 1}</span>
+      <span class="who"><b>${esc(shortName(r.t))}</b><small>${esc(r.t.industry || "Unsorted")}</small></span>
+      <span class="bar" style="width:${Math.max(2, Math.round((r.s.quarter / max) * 100))}%"></span>
+      <span class="n">${r.s.quarter} video${r.s.quarter === 1 ? "" : "s"}</span></button>`).join("")}
+    <div class="note">Counts what our collection surfaced.${stale.length ? ` ${stale.map(r => esc(shortName(r.t))).join(", ")} ${stale.length === 1 ? "was" : "were"} last swept ${Math.min(...stale.map(r => r.s.stale))}+ days ago, so ${stale.length === 1 ? "its" : "their"} latest weeks aren't counted yet.` : ""}</div>` : "";
 }
 async function fillGalleryStats() {
   for (const t of watchlist.topics) {
@@ -3125,10 +3165,9 @@ async function fillGalleryStats() {
       const r = computeReceipt(d);
       const days = r.next ? Math.ceil((r.next.t - Date.now()) / 86400000) : null;
       galStats[t.id] = {
-        age: r.years != null ? `${r.years} yrs old` : "",
+        age: r.years != null ? `${r.years} yr${r.years === 1 ? "" : "s"} old` : "",
         videos: d.videos?.videos?.length || 0,
-        recent: recentCount(d.videos?.videos || [], 30),
-        prior: recentCount(d.videos?.videos || [], 60) - recentCount(d.videos?.videos || [], 30),
+        quarter: publishedWithin(d.videos?.videos || []),
         swept: isoDate(lastSweep(d.videos?.videos || [])) || "",
         stale: staleDays(lastSweep(d.videos?.videos || [])),
         score: r.hasLedger
