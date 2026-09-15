@@ -1,5 +1,5 @@
 {
-  "name": "Open Weights vs Closed Frontier",
+  "name": "Open-Source AI Has Caught Up",
   "claim": "Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
   "predictor": "to be determined",
   "born": "2023-07",
@@ -14,5 +14,8 @@
     "type": "engine",
     "first_video": "Db7N5KeB450",
     "created": "2026-08-13"
-  }
+  },
+  "former_names": [
+    "Open Weights vs Closed Frontier"
+  ]
 }

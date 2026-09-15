@@ -1,6 +1,6 @@
 {
-  "name": "The 2026 Setup",
-  "claim": "After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors — position now before the next leg up.",
+  "name": "Now Is the Generational Buying Opportunity",
+  "claim": "After a volatile stretch, the coming year will hand patient investors a generational buying opportunity — position now before the next leg up. Tracked across five years to see whether the same call gets made for every new year.",
   "predictor": "to be determined",
   "born": "2025-04",
   "born_note": "Estimate: forward-year 'opportunity of a lifetime' framing spread among retail investing channels after the 2025 tariff-driven selloff. (model estimate, pending audit)",
@@ -14,5 +14,8 @@
     "layman": "A popular story says 2026 is a once-in-a-generation chance to buy investments cheap — 'get in now before the next boom.' It's often used to sell courses and newsletters, so be careful: excitement is the product being sold. We track it so you can see whether the promised boom actually arrives.",
     "intermediate": "Forward-year opportunity framing ('position now before the next leg up') that spread through retail investing channels from ~2025. It monetizes urgency — the payoff date is always ahead, and the content frequently funnels into paid products. Tracked to audit whether 2026 delivers the promised generational entry point or the date quietly rolls to 2027.",
     "expert": "A perma-forward opportunity narrative — structurally the bull-side mirror of rolling-doom: unfalsifiable until year-end, then rescheduled. Founded from a clickbait-verdict video (pre-guard); retained for its audit value as a monetization-driven narrative. Signature to watch: end-of-2026 rebranding into 'The 2027 Setup' — a dated, checkable goalpost-move."
-  }
+  },
+  "former_names": [
+    "The 2026 Setup"
+  ]
 }
