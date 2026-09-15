@@ -277,6 +277,49 @@
   .sides .side-w { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; }
   .sides .side-w b { color: var(--ink); font-weight: 600; }
   .sides > .qk { font-weight: 650; color: var(--ink); }
+  .sides .sides-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0 2px; }
+  .sides .sides-tabs button { font: inherit; font-size: 12.5px; padding: 4px 12px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink-2); }
+  .sides .sides-tabs button.on { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+  .sides > .side-q { margin-top: 12px; text-align: center; }
+  .sides .side-row { margin-top: 12px; }
+  /* The camp stage: people holding their camp's claim */
+  .camp-stage { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 220px)); justify-content: center;
+    gap: clamp(10px, 4vw, 44px); align-items: end; margin: 6px auto 2px; padding: 6px 4px 0; }
+  .av { margin: 0; container-type: inline-size; text-align: center; min-width: 0;
+    --lx: 0; --ex: 0; --ey: 0; --tilt: 0deg; --brow: 0; }
+  .av .rig { transform-origin: 50% 100%; animation: av-sway var(--sway, 6s) ease-in-out infinite; animation-delay: var(--sway-delay, 0s); }
+  .av .board { position: relative; z-index: 1; margin: 0 5% -4cqw; padding: 5.5cqw 6cqw; min-height: 34cqw;
+    display: flex; align-items: center; justify-content: center; text-wrap: balance;
+    background: linear-gradient(#fffdf7, #efe6d3); color: #2a241d; border-radius: 2.4cqw;
+    font-size: max(10.5px, 6.1cqw); line-height: 1.24; font-weight: 650; letter-spacing: -.005em;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.9), 0 9px 18px rgba(40,30,20,.2), 0 2px 4px rgba(40,30,20,.14);
+    transform: perspective(520px) rotateX(8deg) rotate(var(--board-tilt, 0deg)); }
+  .av svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .av .upper { animation: av-breathe 3.9s ease-in-out infinite; animation-delay: var(--breathe-delay, 0s); }
+  .av .head { transform-box: view-box; transform-origin: 100px 100px;
+    transform: translateX(calc(var(--lx) * 1.6px)) rotate(var(--tilt)); transition: transform .9s cubic-bezier(.3,.7,.2,1); }
+  .av .face { transform: translate(calc(var(--lx) * 7px), calc(var(--ey) * .8px)); transition: transform .8s cubic-bezier(.3,.7,.2,1); }
+  .av .hair-front { transform: translateX(calc(var(--lx) * 3px)); transition: transform .85s cubic-bezier(.3,.7,.2,1); }
+  .av .hair-back, .av .ears { transform: translateX(calc(var(--lx) * -1.8px)); transition: transform .9s cubic-bezier(.3,.7,.2,1); }
+  .av .pupils { transform: translate(calc(var(--ex) * 2.3px), calc(var(--ey) * 1.9px)); transition: transform .45s cubic-bezier(.2,.8,.2,1); }
+  .av .brows { transform: translateY(calc(var(--brow) * 1px)); transition: transform .5s ease; }
+  .av .eyes { transform-box: fill-box; transform-origin: center; transition: transform .07s ease; }
+  .av.blink .eyes { transform: scaleY(.08); }
+  .av .m { fill: none; stroke: #7a3b32; stroke-width: 2.4; stroke-linecap: round; opacity: 0; transition: opacity .35s ease; }
+  .av[data-mood="neutral"] .m-neutral, .av[data-mood="smile"] .m-smile, .av[data-mood="hmm"] .m-hmm, .av:not([data-mood]) .m-neutral { opacity: 1; }
+  .av figcaption .name { margin-top: 4px; font-weight: 650; font-size: 13.5px; color: var(--ink); line-height: 1.25; }
+  .av figcaption .meta { font-size: 11.5px; color: var(--muted); }
+  @keyframes av-sway { 0%, 100% { transform: rotate(-.8deg); } 50% { transform: rotate(.8deg); } }
+  @keyframes av-breathe { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-1.4px); } }
+  @media (max-width: 560px) {
+    .camp-stage { grid-template-columns: repeat(var(--n), 170px); justify-content: start; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+    .av { scroll-snap-align: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .av .rig, .av .upper { animation: none; }
+    .av .head, .av .face, .av .hair-front, .av .hair-back, .av .ears, .av .pupils, .av .brows { transition: none; }
+  }
   /* Series filters v2 */
   .sf .presets { width: 100%; display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
   .sf .preset { font: inherit; font-size: 12.5px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--border);
@@ -1294,28 +1337,199 @@ const INDUSTRY_PROFILES = {
 const topicIndustry = id => (watchlist?.topics || []).find(t => t.id === (id || topicId))?.industry || "Unsorted";
 const industryProfile = id => INDUSTRY_PROFILES[topicIndustry(id)] || { clock: true, claimsLabel: "What did they predict?", deadlineLabel: "Claims name a deadline" };
 
-// Sides in this story: every contested claim's camps, so a viewer sees the
-// other side before they have finished hearing the first one.
+/* ---------- The camp stage ----------
+   Each side of a contested question is a person holding a placard with its
+   claim, the camp's name underneath. They are drawn, not modelled: SVG with
+   light-and-shadow gradients reads as rounder and more human than primitive
+   3D, keeps placard text crisp, and costs nothing to run. The choreography
+   (look at each other, glance away as if thinking, look at the viewer) runs on
+   timers only while the stage is on screen, and not at all under reduced motion. */
+const shade = (hex, t) => {   // t > 0 toward white, t < 0 toward black
+  const n = parseInt(hex.slice(1), 16);
+  return "#" + [n >> 16, (n >> 8) & 255, n & 255]
+    .map(v => Math.round(t >= 0 ? v + (255 - v) * t : v * (1 + t)).toString(16).padStart(2, "0")).join("");
+};
+const AV_LOOKS = [
+  { skin: "#C68A64", hair: "#2B1D16", style: "part", iris: "#4A3322", pants: "#2F3A4A", shoe: "#1E1A18" },
+  { skin: "#EDC6A6", hair: "#8A4A2A", style: "bob", iris: "#3E6A8A", pants: "#8C7B62", shoe: "#4A3A2C" },
+  { skin: "#7B4E36", hair: "#17110E", style: "curly", beard: true, iris: "#2A1A10", pants: "#55585E", shoe: "#1A1A1A" },
+];
+const CAMP_SHIRTS = ["#C4553D", "#3E72A8", "#5E8F55"];
+
+function avatarSvg(i) {
+  const L = AV_LOOKS[i % AV_LOOKS.length], shirt = CAMP_SHIRTS[i % CAMP_SHIRTS.length], p = `av${i}-`;
+  const hairBack = L.style === "bob"
+    ? `<path d="M57 60 C51 24 80 6 100 7 C122 7 151 23 143 60 C145 78 145 93 141 101 C133 106 124 102 121 95 L79 95 C76 102 67 106 59 101 C55 92 55 77 57 60 Z" fill="url(#${p}hair)"/>` : "";
+  const hairFront = {
+    part: `<path d="M63 60 C57 28 78 11 102 12 C128 13 145 31 137 58 C133 45 124 35 110 33 C98 40 80 37 70 45 C66 49 64 54 63 60 Z" fill="url(#${p}hair)"/>
+           <path d="M84 20 C96 15 112 15 124 22" stroke="${shade(L.hair, .35)}" stroke-width="2" fill="none" opacity=".5" stroke-linecap="round"/>`,
+    bob: `<path d="M64 55 C63 27 84 15 102 16 C123 16 139 30 136 53 C129 41 113 33 99 35 C86 37 73 44 64 55 Z" fill="url(#${p}hair)"/>
+          <path d="M80 26 C92 19 110 19 122 27" stroke="${shade(L.hair, .4)}" stroke-width="2" fill="none" opacity=".45" stroke-linecap="round"/>`,
+    curly: `<path d="M64 53 C59 30 76 13 100 13 C124 13 141 30 136 53 C133 47 127 44 122 47 C118 41 112 40 107 43 C102 38 95 38 91 43 C86 40 79 41 76 47 C71 45 66 47 64 53 Z" fill="url(#${p}hair)"/>
+            ${[[78, 26], [90, 19], [104, 18], [118, 23], [128, 34], [70, 37]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="4.5" fill="${shade(L.hair, .18)}" opacity=".55"/>`).join("")}`,
+  }[L.style];
+  const ears = L.style === "bob" ? "" : `<g class="ears">
+      <ellipse cx="64.5" cy="62" rx="6.5" ry="9.5" fill="${shade(L.skin, -.06)}"/><path d="M66 57 Q61.5 62 66 67" stroke="${shade(L.skin, -.3)}" stroke-width="1.4" fill="none"/>
+      <ellipse cx="135.5" cy="62" rx="6.5" ry="9.5" fill="${shade(L.skin, -.12)}"/><path d="M134 57 Q138.5 62 134 67" stroke="${shade(L.skin, -.35)}" stroke-width="1.4" fill="none"/></g>`;
+  const beard = L.beard ? `<path d="M66 66 C68 92 84 106 100 106 C116 106 132 92 134 66 C130 82 120 92 110 90 C104 88 96 88 90 90 C80 92 70 82 66 66 Z" fill="url(#${p}hair)" opacity=".92"/>
+      <path d="M88 80 Q100 76 112 80 Q106 82.5 100 81.5 Q94 82.5 88 80 Z" fill="${L.hair}"/>` : "";
+  const eye = (x) => `<ellipse cx="${x}" cy="59" rx="6.8" ry="5.2" fill="#fbfaf7"/>`;
+  const pupil = (x) => `<circle cx="${x}" cy="59.4" r="3.7" fill="${L.iris}"/><circle cx="${x}" cy="59.4" r="1.9" fill="#0d0b0a"/><circle cx="${x + 1.3}" cy="58" r="1" fill="#fff"/>`;
+  const lid = (x) => `<path d="M${x - 7} 57.5 Q${x} 52.6 ${x + 7} 57.5" stroke="${shade(L.skin, -.5)}" stroke-width="1.7" fill="none" stroke-linecap="round"/>`;
+  return `<svg viewBox="0 0 200 250" aria-hidden="true" focusable="false">
+    <defs>
+      <radialGradient id="${p}skin" cx="42%" cy="36%" r="72%"><stop offset="0" stop-color="${shade(L.skin, .2)}"/><stop offset=".55" stop-color="${L.skin}"/><stop offset="1" stop-color="${shade(L.skin, -.24)}"/></radialGradient>
+      <linearGradient id="${p}skinl" x1="0" x2="1"><stop offset="0" stop-color="${shade(L.skin, .12)}"/><stop offset="1" stop-color="${shade(L.skin, -.22)}"/></linearGradient>
+      <linearGradient id="${p}shirt" x1="0" x2="1"><stop offset="0" stop-color="${shade(shirt, .16)}"/><stop offset=".5" stop-color="${shirt}"/><stop offset="1" stop-color="${shade(shirt, -.3)}"/></linearGradient>
+      <radialGradient id="${p}chest" cx="42%" cy="30%" r="60%"><stop offset="0" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+      <linearGradient id="${p}pants" x1="0" x2="1"><stop offset="0" stop-color="${shade(L.pants, .14)}"/><stop offset="1" stop-color="${shade(L.pants, -.32)}"/></linearGradient>
+      <linearGradient id="${p}hair" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${shade(L.hair, .24)}"/><stop offset="1" stop-color="${shade(L.hair, -.25)}"/></linearGradient>
+      <linearGradient id="${p}pole" x1="0" x2="1"><stop offset="0" stop-color="#c29868"/><stop offset="1" stop-color="#7a5634"/></linearGradient>
+      <radialGradient id="${p}ground"><stop offset="0" stop-color="#000" stop-opacity=".26"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+    </defs>
+    <ellipse cx="100" cy="243" rx="64" ry="7.5" fill="url(#${p}ground)"/>
+    <rect x="46.5" y="0" width="6" height="84" rx="3" fill="url(#${p}pole)"/>
+    <rect x="147.5" y="0" width="6" height="84" rx="3" fill="url(#${p}pole)"/>
+    <path d="M80 176 L78 233 Q86 237 95 233 L98 180 Z" fill="url(#${p}pants)"/>
+    <path d="M102 180 L105 233 Q114 237 122 233 L120 176 Z" fill="url(#${p}pants)"/>
+    <ellipse cx="85" cy="237.5" rx="12.5" ry="5.5" fill="${L.shoe}"/><ellipse cx="115" cy="237.5" rx="12.5" ry="5.5" fill="${L.shoe}"/>
+    <g class="upper">
+      <path d="M67 117 Q46 109 44 90" stroke="url(#${p}shirt)" stroke-width="17" stroke-linecap="round" fill="none"/>
+      <path d="M133 117 Q154 109 156 90" stroke="${shade(shirt, -.2)}" stroke-width="17" stroke-linecap="round" fill="none"/>
+      <path d="M44 92 Q44 76 50 64" stroke="url(#${p}skinl)" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M156 92 Q156 76 150 64" stroke="${shade(L.skin, -.16)}" stroke-width="12" stroke-linecap="round" fill="none"/>
+      <path d="M62 119 Q64 104 84 102 L116 102 Q136 104 138 119 L134 182 Q100 190 66 182 Z" fill="url(#${p}shirt)"/>
+      <path d="M62 119 Q64 104 84 102 L116 102 Q136 104 138 119 L134 182 Q100 190 66 182 Z" fill="url(#${p}chest)"/>
+      <path d="M90 86 L90 104 Q100 111 110 104 L110 86 Z" fill="${shade(L.skin, -.14)}"/>
+      <ellipse cx="100" cy="97" rx="15" ry="5" fill="${shade(L.skin, -.4)}" opacity=".35"/>
+      <path d="M87 102 Q100 115 113 102" fill="none" stroke="${shade(shirt, -.35)}" stroke-width="2.6" stroke-linecap="round"/>
+      <circle cx="50" cy="62" r="8.6" fill="url(#${p}skin)"/><circle cx="150" cy="62" r="8.6" fill="url(#${p}skin)"/>
+      <path d="M44 58 Q50 55 56 58" stroke="${shade(L.skin, -.3)}" stroke-width="1.2" fill="none"/><path d="M144 58 Q150 55 156 58" stroke="${shade(L.skin, -.3)}" stroke-width="1.2" fill="none"/>
+      <g class="head">
+        <g class="hair-back">${hairBack}</g>
+        ${ears}
+        <ellipse cx="100" cy="58" rx="35" ry="41" fill="url(#${p}skin)"/>
+        <g class="face">
+          ${beard}
+          <ellipse cx="79" cy="74" rx="7" ry="4" fill="#e0707a" opacity=".16"/><ellipse cx="121" cy="74" rx="7" ry="4" fill="#e0707a" opacity=".13"/>
+          <g class="brows" stroke="${shade(L.hair, .05)}" stroke-width="3" stroke-linecap="round" fill="none">
+            <path d="M79 47.5 Q86 43.5 93 46.5"/><path d="M107 46.5 Q114 43.5 121 47.5"/></g>
+          <g class="eyes">${eye(86)}${eye(114)}<g class="pupils">${pupil(86)}${pupil(114)}</g>${lid(86)}${lid(114)}</g>
+          <path d="M100 61 Q97.5 70 95.5 72.5 Q100 75.8 104.5 72.5" fill="none" stroke="${shade(L.skin, -.28)}" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M98.5 63 Q97.6 68 97.2 70" stroke="${shade(L.skin, .3)}" stroke-width="1.2" fill="none" stroke-linecap="round" opacity=".7"/>
+          <path class="m m-neutral" d="M91 84.5 Q100 86.5 109 84.5"/>
+          <path class="m m-smile" d="M90 82.5 Q100 90.5 110 82.5"/>
+          <path class="m m-hmm" d="M95 85.5 Q101 83.2 106.5 86"/>
+        </g>
+        <g class="hair-front">${hairFront}</g>
+      </g>
+    </g>
+  </svg>`;
+}
+
+const sidesSel = {};   // chosen contested question, per narrative
 function sidesHtml(data) {
   const contested = (data?.claims?.claims || []).filter(c => (c.camps || []).length >= 2);
   if (!contested.length) return "";
+  const c = contested.find(x => x.id === sidesSel[topicId]) || contested[0];
   // One name per person: "Dr. Jen Ashton" and "Dr. Jennifer Ashton" share a surname.
   const names = arr => [...new Map((arr || []).map(s => (s.predictor || "").split("(")[0].trim()).filter(Boolean)
     .map(n => [n.toLowerCase().split(/\s+/).pop(), n])).values()].slice(0, 3).join(", ");
+  const campName = (k, i) => k.name || (k.position || "").split(/\s+[—–-]\s+/)[0] || `Side ${i + 1}`;
+  const n = Math.min(c.camps.length, 3);
   return `<div class="sides">
-    <div class="qk">Sides in this story — hear both before you decide</div>
-    ${contested.map(c => `<div class="side-claim"><div class="side-q">${esc(c.statement)}</div>
-      <div class="side-row">${c.camps.map((k, i) => {
+    <div class="qk">Sides in this story — hear every side before you decide</div>
+    ${contested.length > 1 ? `<div class="sides-tabs" role="tablist">${contested.map(x =>
+      `<button type="button" role="tab" aria-selected="${x === c}" class="${x === c ? "on" : ""}" data-sides-q="${esc(x.id)}">${esc(x.label || x.statement.slice(0, 40))}</button>`).join("")}</div>` : ""}
+    <div class="side-q">${esc(c.statement)}</div>
+    <div class="camp-stage" style="--n:${n}" aria-label="The sides of this question">
+      ${c.camps.slice(0, 3).map((k, i) => {
         const nv = (k.sources || []).length;
-        return `<div class="side">
-        <div class="side-k">Side ${i + 1} · ${nv ? `${nv} video${nv === 1 ? "" : "s"} in this corpus` : "not yet in this corpus"}</div>
-        <div class="side-p">${esc(k.position)}</div>
-        ${k.watch_for ? `<div class="side-w"><b>Look out for:</b> ${esc(k.watch_for)}</div>` : ""}
-        ${nv ? `<div class="side-n">e.g. ${esc(names(k.sources))}</div>` : ""}</div>`;
-      }).join("")}</div>
-      ${c.note ? `<div class="v-note">${esc(c.note)}</div>` : ""}</div>`).join("")}
+        return `<figure class="av" style="--sway:${(5.6 + i * .9).toFixed(1)}s;--sway-delay:-${(i * 1.7).toFixed(1)}s;--breathe-delay:-${(i * 1.1).toFixed(1)}s;--board-tilt:${[-1.5, 1, -.5][i]}deg">
+          <div class="rig">
+            <div class="board">${esc(k.position)}</div>
+            ${avatarSvg(i)}
+          </div>
+          <figcaption><div class="name">${esc(campName(k, i))}</div>
+            <div class="meta">${nv ? `${nv} video${nv === 1 ? "" : "s"} in this corpus` : "not yet in this corpus"}</div></figcaption>
+        </figure>`;
+      }).join("")}
+    </div>
+    <div class="side-row">${c.camps.map((k, i) => {
+      const nv = (k.sources || []).length;
+      return `<div class="side" style="border-top:3px solid ${CAMP_SHIRTS[i % 3]}">
+      <div class="side-k">${esc(campName(k, i))}</div>
+      <div class="side-p">${esc(k.position)}</div>
+      ${k.watch_for ? `<div class="side-w"><b>Look out for:</b> ${esc(k.watch_for)}</div>` : ""}
+      ${nv ? `<div class="side-n">e.g. ${esc(names(k.sources))}</div>` : ""}</div>`;
+    }).join("")}</div>
+    ${c.note ? `<div class="v-note">${esc(c.note)}</div>` : ""}
   </div>`;
 }
+
+let stageCtl = null;
+function initCampStage() {
+  stageCtl?.stop(); stageCtl = null;
+  const stage = document.querySelector("#ncard .camp-stage");
+  if (stage) stageCtl = campStageController(stage);
+}
+function campStageController(stage) {
+  const avs = [...stage.querySelectorAll(".av")], n = avs.length;
+  let alive = true, visible = true, timers = [];
+  const later = (fn, ms) => { const t = setTimeout(() => { timers = timers.filter(x => x !== t); if (alive) fn(); }, ms); timers.push(t); };
+  const pose = (av, p) => {
+    if (av.matches(":hover")) return;           // someone is looking at them: they look back
+    av.style.setProperty("--lx", p.lx); av.style.setProperty("--ex", p.ex); av.style.setProperty("--ey", p.ey);
+    av.style.setProperty("--tilt", p.tilt + "deg"); av.style.setProperty("--brow", p.brow);
+    av.dataset.mood = p.mood;
+  };
+  const POSES = {
+    screen: () => ({ lx: 0, ex: 0, ey: .25, tilt: 0, brow: 0, mood: "smile" }),
+    other: (i) => {                              // toward the neighbour; the middle one picks a side
+      const d = i === 0 ? 1 : i === n - 1 ? -1 : (Math.random() < .5 ? -1 : 1);
+      return { lx: d, ex: d, ey: 0, tilt: d * 2.5, brow: -1.2, mood: "neutral" };
+    },
+    away: () => {                                // wondering: eyes up and aside, head tipped
+      const d = Math.random() < .5 ? -1 : 1, up = Math.random() < .7;
+      return { lx: d * .7, ex: d * .95, ey: up ? -1 : .7, tilt: -d * (3 + Math.random() * 3), brow: up ? -2.4 : 0, mood: "hmm" };
+    },
+  };
+  avs.forEach(av => pose(av, POSES.screen()));
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return { stop() {} };
+
+  const ORDER = ["other", "away", "screen"];
+  let beatNo = 0;
+  const beat = () => {
+    if (!visible || document.hidden) return later(beat, 700);
+    const kind = ORDER[beatNo++ % ORDER.length];
+    avs.forEach((av, i) => {
+      const lag = kind === "other" ? i * 140 : 120 + Math.random() * 750;
+      // now and then one of them lingers, looking at you while the others move on
+      const kindHere = kind !== "other" && Math.random() < .18 ? "screen" : kind;
+      later(() => pose(av, POSES[kindHere](i)), lag);
+    });
+    later(beat, kind === "screen" ? 2800 + Math.random() * 1400 : 2300 + Math.random() * 1500);
+  };
+  const blink = (av) => {
+    av.classList.add("blink"); later(() => av.classList.remove("blink"), 130);
+    if (Math.random() < .22) later(() => { av.classList.add("blink"); later(() => av.classList.remove("blink"), 120); }, 280);
+    later(() => blink(av), 2200 + Math.random() * 4300);
+  };
+  avs.forEach((av, i) => {
+    later(() => blink(av), 600 + i * 900);
+    av.addEventListener("mouseenter", () => { av.style.setProperty("--lx", 0); av.style.setProperty("--ex", 0); av.style.setProperty("--ey", .25); av.style.setProperty("--tilt", "0deg"); av.dataset.mood = "smile"; });
+  });
+  later(beat, 1600);
+  const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; }, { threshold: .15 });
+  io.observe(stage);
+  return { stop() { alive = false; timers.forEach(clearTimeout); timers = []; io.disconnect(); } };
+}
+$("ncard").addEventListener("click", e => {
+  const b = e.target.closest("[data-sides-q]"); if (!b) return;
+  sidesSel[topicId] = b.dataset.sidesQ;
+  const el = $("ncard").querySelector(".sides");
+  if (el) { el.outerHTML = sidesHtml(cache[topicId]); initCampStage(); }
+});
 
 /* LAYER 2 — metrics grouped by what they mean */
 function dashboardHtml(data, s) {
@@ -1339,10 +1553,12 @@ function dashboardHtml(data, s) {
       : days <= 0 ? "A prediction window is open now" : `Next test in ${days} days`}</div>`);
   }
   const beh = [];
-  beh.push(`<div class="gline">${s.upd ? `Deadline moved ${s.upd}×` : "Deadlines have held so far"}</div>`);
+  beh.push(`<div class="gline">${!prof.clock
+    ? (s.mutations.length ? `Explanation changed ${s.mutations.length}× on record` : "Explanation unchanged on record")
+    : s.upd ? `Deadline moved ${s.upd}×` : "Deadlines have held so far"}</div>`);
   if (s.years != null) beh.push(`<div class="gsub">${s.years} years old${s.verified ? " · origin verified on X" : " · origin unverified"}</div>`);
   if (s.mutations.length) {
-    beh.push(`<div class="gsub">${s.mutations.length} change${s.mutations.length === 1 ? "" : "s"} of explanation since birth</div>`);
+    if (prof.clock) beh.push(`<div class="gsub">${s.mutations.length} change${s.mutations.length === 1 ? "" : "s"} of explanation since birth</div>`);
     if (s.latestMutation) beh.push(`<div class="gsub">Now: ${esc(s.latestMutation.mechanism)}</div>`);
   } else beh.push(`<div class="gsub">Explanation unchanged on record</div>`);
   const q = [];
@@ -1653,6 +1869,7 @@ function renderNarrativeCard() {
     ${whatTestsItHtml(cache[topicId], stats)}
     ${deepAnalyticsHtml(deepInner)}
   </div>`;
+  initCampStage();
   if (isOpen("map360") && cache[topicId]?.relations) patchMiniReceipts(cache[topicId].relations);
 }
 

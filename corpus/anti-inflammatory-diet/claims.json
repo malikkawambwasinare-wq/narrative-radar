@@ -150,7 +150,8 @@
               "videoId": "t_vc0_WU8MI",
               "predictor": "Dr. Suneel Dhand"
             }
-          ]
+          ],
+          "name": "Wellness-media maximalism"
         },
         {
           "position": "It matters — a better diet lowers inflammation modestly; it is one factor among many",
@@ -284,7 +285,8 @@
               "videoId": "p-DlhDNDLZA",
               "predictor": "Dr Alex Wibberley"
             }
-          ]
+          ],
+          "name": "Mainstream nutrition science"
         },
         {
           "position": "Overhyped — food-level inflammation scares don't hold up in human trials",
@@ -318,10 +320,12 @@
               "videoId": "zcqSYsHA0Jw",
               "predictor": "Dr. William Li"
             }
-          ]
+          ],
+          "name": "Trial-first skeptics"
         }
       ],
-      "sources": []
+      "sources": [],
+      "label": "The big question"
     },
     {
       "id": "seed-oils",
@@ -365,7 +369,8 @@
               "videoId": "7Esuf2u3KKc",
               "predictor": "Mae Alice Suzuki"
             }
-          ]
+          ],
+          "name": "Seed-oil critics"
         },
         {
           "position": "Only when oxidised — heated or refined oils are the problem, not the fat itself",
@@ -387,7 +392,8 @@
               "videoId": "yGns_QvtAQQ",
               "predictor": "Ben Bikman"
             }
-          ]
+          ],
+          "name": "The oxidation camp"
         },
         {
           "position": "No — randomised trials show seed oils don't raise inflammation at normal intakes",
@@ -429,10 +435,12 @@
               "videoId": "wtlmqv8RVJc",
               "predictor": "Dr. Jones, DC"
             }
-          ]
+          ],
+          "name": "Trial-evidence camp"
         }
       ],
-      "sources": []
+      "sources": [],
+      "label": "Seed oils"
     },
     {
       "id": "meat",
@@ -464,7 +472,8 @@
               "videoId": "SYmE0n1Npxs",
               "predictor": "Michael Greger"
             }
-          ]
+          ],
+          "name": "Plant-based camp"
         },
         {
           "position": "A meat-based, low-insulin diet is what calms inflammation",
@@ -486,10 +495,12 @@
               "videoId": "3vSXDXCSF_0",
               "predictor": "Thomas DeLauer"
             }
-          ]
+          ],
+          "name": "Low-insulin, meat-based camp"
         }
       ],
-      "sources": []
+      "sources": [],
+      "label": "Meat"
     },
     {
       "id": "upf-sugar",
