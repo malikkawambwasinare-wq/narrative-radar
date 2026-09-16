@@ -1,0 +1,239 @@
+{
+ "generated": "2026-09-16",
+ "method": "titles only; 4+ videos, 3+ independent channels, 2+ distinct months, claim wording in the phrase",
+ "candidates": [
+  {
+   "phrase": "model beats",
+   "videos": 16,
+   "channels": 10,
+   "months": 11,
+   "span": "2023-08 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "open-vs-closed-ai-race",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "Fine-tuned Llama model beats GPT-4 \ud83e\udd99, Apple's ultra fast ViT \ud83c\udf4e, detecting bias in LLMs \u2696\ufe0f",
+    "DeepSeek-V2: This NEW Opensource MoE Model Beats GPT-4, Claude-3 & Llama-3 in multiple benchmarks!",
+    "MiniCPM-Llama3-V 2.5 - This Open-Source Model BEATS GPT-4o in Vision #ai #llm #localllms"
+   ],
+   "ids": [
+    "2dWbuBuzWPM",
+    "2v_Hw3XPEb8",
+    "8Hhdqff0jHU",
+    "BG8A9UMWtXQ",
+    "D-Mzw7GmoiU",
+    "ERCdFgTXNY4",
+    "IYVOQxLRO60",
+    "_9zecUHs21c",
+    "dRN9hJyg5Rc",
+    "mmNb_rA7s7w",
+    "n4XMisTcL0k",
+    "p6Npi-HBoRU",
+    "qb2-wq9MKss",
+    "tz_Cp3Go9AA",
+    "wkERX-r6dwc",
+    "yY0RSqRs0xQ"
+   ],
+   "also": [
+    "open source model beats",
+    "source model beats"
+   ]
+  },
+  {
+   "phrase": "economic collapse",
+   "videos": 7,
+   "channels": 6,
+   "months": 6,
+   "span": "2023-04 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The Economic Collapse No One Wants To Talk About - Ray Dalio",
+    "China-US Conflict - Ray Dalio\u2019s Urgent Warning On Economic Collapse",
+    "Ray Dalio on Economic Collapse, Inflation, and Preparing for Recession"
+   ],
+   "ids": [
+    "1mdeBv7-oE8",
+    "EK6glMfP9NE",
+    "GDuXvOs0d_k",
+    "Tr0F-EQRm5o",
+    "cXI2knjwQNc",
+    "smGzWAADZT4",
+    "wkaxEI4Xwv8"
+   ]
+  },
+  {
+   "phrase": "dollar collapse",
+   "videos": 7,
+   "channels": 7,
+   "months": 6,
+   "span": "2023-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "What happens in the first stages of a dollar collapse",
+    "Experts Now Predict A DOLLAR COLLAPSE...Are They Right?",
+    "DOLLAR COLLAPSE: \"The US Has Made a MAJOR BLUNDER...\" - Peter Schiff"
+   ],
+   "ids": [
+    "0xVozihYRYs",
+    "B3yLsv9qyIQ",
+    "Dod336zi9us",
+    "HIFpXyuqRNE",
+    "PvT3WQKoNyc",
+    "oc9pM5MK4fY",
+    "rgjxSAZQM5E"
+   ]
+  },
+  {
+   "phrase": "cycle dead",
+   "videos": 7,
+   "channels": 7,
+   "months": 5,
+   "span": "2025-11 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The 4-Year Bitcoin Cycle Is DEAD \u2014 Here\u2019s Why",
+    "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!",
+    "Bitcoin: The Four Year Cycle Is Not Dead"
+   ],
+   "ids": [
+    "7byCfkDQxq8",
+    "XNuL97I8bvc",
+    "ctJSV8aTDSk",
+    "hODgBEgy4QA",
+    "k5dFxQUO_Uw",
+    "oOu6fEOC4zo",
+    "vgLC3AIXdJA"
+   ]
+  },
+  {
+   "phrase": "cause inflammation",
+   "videos": 6,
+   "channels": 4,
+   "months": 6,
+   "span": "2021-03 \u2192 2025-05",
+   "industry": "Health & biotech",
+   "home": "anti-inflammatory-diet",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "\ud83d\udd25Top 13 Foods that Cause Inflammation | Anti Inflammatory Foods to Replace",
+    "Foods That Cause Inflammation",
+    "The SHOCKING TRUTH About Seed Oils & How They Cause INFLAMMATION | Dr. Mark Hyman"
+   ],
+   "ids": [
+    "MZ6wBfkLaMM",
+    "SYmE0n1Npxs",
+    "Szsqo8pumLg",
+    "WQNNfNIbfHw",
+    "cGGoY8uasQU",
+    "xYo9J8RijQY"
+   ],
+   "also": [
+    "foods cause",
+    "foods cause inflammation"
+   ]
+  },
+  {
+   "phrase": "stock market crash",
+   "videos": 5,
+   "channels": 5,
+   "months": 5,
+   "span": "2022-02 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.8,
+   "kind": "sub-claim",
+   "examples": [
+    "THIS Will Predict the 2022 Stock Market Crash | It Happens Every Time...",
+    "Ray Dalio\u2019s Warning for the 2023 Stock Market Crash",
+    "The Stock Market Crash | What You Must Know"
+   ],
+   "ids": [
+    "B-RVmNjHaVc",
+    "EPMo1OkIUS0",
+    "F-IOc7U_hzM",
+    "TVqDEQeKjvs",
+    "udiEkZSvS5E"
+   ]
+  },
+  {
+   "phrase": "real estate crash",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2022-12 \u2192 2025-03",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The Real Estate Crash 2023",
+    "It's Started: The 2024 REVERSE Real Estate Crash Explained",
+    "Why A Real Estate Crash Won't Make Homes Affordable... For You"
+   ],
+   "ids": [
+    "1d08iOdJSnw",
+    "NIZ9PQduW4E",
+    "SPlD5mxUug0",
+    "uT0kHewjzkE"
+   ],
+   "also": [
+    "estate crash"
+   ]
+  },
+  {
+   "phrase": "beats gpt-5",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2025-12 \u2192 2026-05",
+   "industry": "AI & technology",
+   "home": "open-vs-closed-ai-race",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "#278 Neil: DeepSeek V3.2 Benchmarks Prove Open Source Finally Beats GPT-5",
+    "AI News: China Just Released a FREE AI That Beats GPT-5 \u2013 DeepSeek V3.2",
+    "Kimi K2.6: Open Source BEATS GPT-5.4 & Opus? "
+   ],
+   "ids": [
+    "0tcLBFtpeaE",
+    "J64RlVwAJo4",
+    "aFF2SfN97G4",
+    "qs_Wg5Hu6EY"
+   ]
+  },
+  {
+   "phrase": "crash 2023",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2022-12 \u2192 2023-07",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The Real Estate Crash 2023",
+    "How The Housing Market Will CRASH in 2023",
+    "ALL LIES: The Reverse Housing Market Crash of 2023"
+   ],
+   "ids": [
+    "1d08iOdJSnw",
+    "JXT4vfdhs2A",
+    "lSAggex3mMQ",
+    "yKbG6j-8La0"
+   ]
+  }
+ ]
+}
