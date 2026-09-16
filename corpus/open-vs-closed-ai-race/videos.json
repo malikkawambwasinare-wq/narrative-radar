@@ -8564,6 +8564,66 @@
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "o3hd9ZZqzeE",
+      "url": "https://www.youtube.com/watch?v=o3hd9ZZqzeE",
+      "title": "AI Labs Want to Slow Down. China Isn't.",
+      "channel": "Fahd Mirza",
+      "published": "2 days ago",
+      "views": "5,747 views",
+      "length": "8:18",
+      "query": "Chinese AI models catching up frontier labs",
+      "age_days": 2,
+      "first_seen": "2026-09-16",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "pnCJ5obS63I",
+      "url": "https://www.youtube.com/watch?v=pnCJ5obS63I",
+      "title": "Meshy 7 vs SupaVoxel – Which AI Creates Better 3D Models? 🤯 | Image to 3D Comparison",
+      "channel": "SoloDev Tom",
+      "published": "2 days ago",
+      "views": "61 views",
+      "length": "0:49",
+      "query": "AI model head to head 3D design test",
+      "age_days": 2,
+      "first_seen": "2026-09-16",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "xL0LpVXEkf8",
+      "url": "https://www.youtube.com/watch?v=xL0LpVXEkf8",
+      "title": "GPT-6 Astra Turns One Image into a 3D Architectural Model | AI Modeling Test",
+      "channel": "AIRIlab.",
+      "published": "3 hours ago",
+      "views": "10 views",
+      "length": "0:35",
+      "query": "AI model head to head 3D design test",
+      "age_days": 0.12,
+      "first_seen": "2026-09-16",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "J1jWqaNK8TM",
+      "url": "https://www.youtube.com/watch?v=J1jWqaNK8TM",
+      "title": "I 3D Printed an AI Model in Full Color From One Image (Hi3D)",
+      "channel": "DraftID and Hi3D",
+      "published": "1 day ago",
+      "views": "7,426 views",
+      "length": "11:37",
+      "query": "AI model head to head 3D design test",
+      "age_days": 1,
+      "first_seen": "2026-09-16",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata"
     }
   ]
 }
