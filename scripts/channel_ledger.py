@@ -150,6 +150,23 @@ def main():
             "crawl_units": math.ceil(min(uploads or 500, 20000) / 50),
         })
 
+    # Channels that search found but no corpus holds yet: they enter at tier B
+    # with basis "search", to be screened against their own uploads.
+    cf = ROOT / "channel-candidates.json"
+    if cf.exists():
+        have = {r.get("channelId") for r in rows if r.get("channelId")}
+        for c in json.loads(cf.read_text()).get("channels", []):
+            if c.get("channelId") in have:
+                continue
+            rows.append({
+                "channel": c.get("channel", ""), "tier": "B",
+                "reason": f"found by discovery search ({c.get('found_by', '')[:40]}) — screen its uploads",
+                "assessed": c.get("found", TODAY), "basis": "search", "score": 0.0,
+                "videos": 0, "months": 0, "span": "", "narratives": [], "graded": 0, "original": 0,
+                "originator_lead": 0, "thin_camp_videos": 0, "pitch": 0,
+                "channelId": c["channelId"], "handle": None, "subscribers": None,
+                "uploads_total": None, "crawl_units": 10,
+            })
     rows.sort(key=lambda r: (r["tier"], -r["score"]))
     by = defaultdict(list)
     for r in rows:

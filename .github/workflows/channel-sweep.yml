@@ -20,6 +20,9 @@ on:
       write:
         description: "Append to the corpora (false = dry run)"
         default: "true"
+      calls:
+        description: "Discovery search calls to spend (of the 100 daily)"
+        default: "40"
 
 permissions:
   contents: write
@@ -48,6 +51,12 @@ jobs:
             --tiers=${{ inputs.tiers || 'A' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
+      - name: Spend the day's discovery searches
+        if: ${{ inputs.write != 'false' }}
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: python3 scripts/discovery_search.py --calls=${{ inputs.calls || '40' }} --days=7 --write
+
       - name: Rebuild the ledger and the discovered claims
         if: ${{ inputs.write != 'false' }}
         run: |
@@ -60,7 +69,7 @@ jobs:
           git config user.name "narrative-radar-bot"
           git config user.email "actions@github.com"
           SUMMARY=$(tail -n 1 sweep.log)
-          git add corpus channels.json discovered.json
+          git add corpus channels.json discovered.json channel-candidates.json discovery-pool.json
           if git diff --cached --quiet; then
             echo "nothing new today"
             exit 0

@@ -20,7 +20,7 @@ Output per candidate: the phrase, how many videos and channels carry it, the
 month span, the industry it sits under, and example titles as evidence.
 """
 import json, re, sys, unicodedata
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -83,6 +83,15 @@ def phrases(title):
 
 def load():
     vids = []
+    # The pool: claim-carrying videos found by search that belong to no tracked
+    # narrative. New narratives come from here, so discovery must read it.
+    pf = ROOT / "discovery-pool.json"
+    if pf.exists():
+        for v in json.loads(pf.read_text()).get("videos", []):
+            if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", v.get("published") or ""):
+                continue
+            vids.append({**v, "_topic": "(pool)", "_industry": v.get("industry", "Unsorted"),
+                         "_month": v["published"][:7], "first_seen": v.get("found")})
     for p in sorted((ROOT / "corpus").glob("*/videos.json")):
         topic = p.parent.name
         for v in json.loads(p.read_text())["videos"]:
@@ -128,14 +137,17 @@ def main():
             continue
         top = max(h["tp"], key=h["tp"].get)
         share = h["tp"][top] / len(h["v"])
+        pooled = [x for x in h["v"] if x["_topic"] == "(pool)"]
         pw = set(ph.split())
         overlap = len(pw & tracked.get(top, set())) / max(1, len(pw))
         cands.append({
             "phrase": ph, "videos": len(h["v"]), "channels": len(h["ch"]),
             "months": len(h["mo"]), "span": f"{min(h['mo'])} → {max(h['mo'])}",
-            "industry": industry_of.get(top, "Unsorted"),
+            "industry": (Counter(x.get("_industry", "Unsorted") for x in pooled).most_common(1)[0][0]
+                         if top == "(pool)" and pooled else industry_of.get(top, "Unsorted")),
             "home": top, "home_share": round(share, 2),
-            "kind": "sub-claim" if (share >= 0.8 and overlap >= 0.5) else
+            "kind": "new candidate" if top == "(pool)" else
+                    "sub-claim" if (share >= 0.8 and overlap >= 0.5) else
                     ("cross-narrative" if share < 0.6 else "new candidate"),
             "examples": [x["title"] for x in sorted(h["v"], key=lambda x: x["_month"])[:3]],
             "ids": sorted({x["videoId"] for x in h["v"]}),
