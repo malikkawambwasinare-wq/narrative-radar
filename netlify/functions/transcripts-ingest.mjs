@@ -14,7 +14,11 @@ const MAX_TEXT = 600_000;   // characters per transcript; longest on file is ~13
 
 export default async (req) => {
   const key = process.env.TRANSCRIPT_INGEST_KEY;
-  if (!key || key.length < 32 || req.headers.get("x-ingest-key") !== key) return json(401, { error: "unauthorized" });
+  // A refused write says whether the key is configured at all and which commit is
+  // running, so a deploy problem can be told apart from a wrong key. Never the value.
+  if (!key || key.length < 32 || req.headers.get("x-ingest-key") !== key)
+    return json(401, { error: "unauthorized", configured: !!key && key.length >= 32,
+      build: (process.env.COMMIT_REF || "").slice(0, 7) || null });
   if (req.method !== "POST" && req.method !== "DELETE") return json(405, { error: "POST or DELETE" });
 
   let body;
