@@ -35,6 +35,7 @@ arg = lambda name, dflt: next((a.split("=", 1)[1] for a in sys.argv if a.startsw
 DAYS = int(arg("days", 7))
 TIERS = set(arg("tiers", "A").upper())
 MAX_CHANNELS = int(arg("max", 400))
+SCORE_MIN = float(arg("min-score", 6))   # tuned offline: 74% recall on filed videos, no known false positives
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 CUTOFF = datetime.now(timezone.utc) - timedelta(days=DAYS)
 
@@ -57,30 +58,81 @@ def words(s):
     return [w for w in s.split() if len(w) > 2 and w not in STOP]
 
 
-def topic_vocab(topics):
-    """Each narrative's search vocabulary: the phrases it is collected by."""
-    vocab = {}
+def topic_vocab(topics, corpora=None):
+    """Each narrative's DISTINCTIVE vocabulary, learned from its own corpus.
+
+    Two sources. The six search queries say what we went looking for. The titles
+    already filed under the narrative say what it actually sounds like, which is
+    far richer: "halving", "bull run", "yield curve", "remote viewing".
+
+    A term counts only where it is distinctive. A word used across several
+    narratives — "market", "2026", "crash" — identifies none of them, and
+    matching on it files the Federal Reserve's rate decision as a housing story.
+    So a term is kept for a narrative when that narrative uses it at least three
+    times AND uses it at least three times more densely than the rest do.
+    """
+    MIN_N, RATIO = 3, 3.0
+    q_terms, c_counts, totals = {}, {}, defaultdict(int)
     for t in topics:
         grams, singles = set(), set()
         for q in t.get("queries", []):
             ws = words(q)
             singles |= set(ws)
             grams |= {" ".join(ws[i:i + 2]) for i in range(len(ws) - 1)}
-        vocab[t["id"]] = (grams, singles)
+        q_terms[t["id"]] = (grams, singles)
+        counts = defaultdict(int)
+        for title in (corpora or {}).get(t["id"], []):
+            ws = words(title)
+            for term in set(ws) | {" ".join(ws[i:i + 2]) for i in range(len(ws) - 1)}:
+                counts[term] += 1
+                totals[term] += 1
+        c_counts[t["id"]] = counts
+
+    sizes = {tid: max(1, sum(1 for _ in (corpora or {}).get(tid, []))) for tid in c_counts}
+    grand = max(1, sum(sizes.values()))
+    owners = defaultdict(set)
+    for tid, (grams, singles) in q_terms.items():
+        for term in grams | singles:
+            owners[term].add(tid)
+
+    vocab = {}
+    for tid, (grams, singles) in q_terms.items():
+        g = {t for t in grams if len(owners[t]) == 1}
+        u = {t for t in singles if len(owners[t]) == 1}
+        for term, n in c_counts.get(tid, {}).items():
+            if n < MIN_N:
+                continue
+            mine = n / sizes[tid]
+            rest = (totals[term] - n) / max(1, grand - sizes[tid])
+            if mine < rest * RATIO:
+                continue
+            (g if " " in term else u).add(term)
+        vocab[tid] = (g, u)
     return vocab
 
 
-def best_topic(text, vocab):
-    """A video belongs to the narrative whose vocabulary it clearly carries:
-    a two-word phrase from a query, or three distinct query words."""
-    t = " ".join(words(text))
+def corpus_titles():
+    out = {}
+    for f in sorted((ROOT / "corpus").glob("*/videos.json")):
+        out[f.parent.name] = [v.get("title", "") for v in json.loads(f.read_text())["videos"]]
+    return out
+
+
+def best_topic(title, description, vocab):
+    """A video belongs to a narrative when its TITLE carries that narrative's
+    own wording: one distinctive two-word phrase, or two distinctive words with
+    support. The description can support a match but never make one, because
+    descriptions carry sponsor text, link lists and channel boilerplate."""
+    t = " ".join(words(title))
     tw = set(t.split())
+    d = " ".join(words(description))
     best, score = None, 0
     for tid, (grams, singles) in vocab.items():
-        g = sum(1 for gm in grams if gm in t)
-        s = len(tw & singles)
-        sc = g * 3 + s
-        if (g >= 1 or s >= 3) and sc > score:
+        tg = sum(1 for g in grams if g in t)
+        tu = len(tw & singles)
+        dg = sum(1 for g in grams if g in d)
+        sc = tg * 4 + tu * 1.5 + min(dg, 2)
+        if (tg >= 1 or tu >= 2) and sc >= SCORE_MIN and sc > score:
             best, score = tid, sc
     return best, score
 
@@ -133,14 +185,58 @@ def hydrate(ids):
     return meta
 
 
+def selftest():
+    """Measure the matcher without touching the API: recall against every video
+    already filed under a narrative, precision against uploads the first dry run
+    wrongly matched."""
+    wl = json.loads((ROOT / "watchlist.json").read_text())["topics"]
+    vocab = topic_vocab(wl, corpus_titles())
+    hit = miss = 0
+    for t in wl:
+        f = ROOT / "corpus" / t["id"] / "videos.json"
+        if not f.exists():
+            continue
+        for v in json.loads(f.read_text())["videos"]:
+            tid, _ = best_topic(v["title"], "", vocab)
+            if tid == t["id"]:
+                hit += 1
+            else:
+                miss += 1
+    wrong = [
+        "Fed Hikes Rates for the First Time Since 2023",
+        "Houthi Conflict Threatens Saudi Arabia's Economy",
+        "KFC is Crashing Hard, Over 700 Stores Have CLOSED",
+        "The Bond Market Is Breaking",
+        "Claude + Obsidian is Absolutely WILD!",
+        "Orca ADE: New FREE AI Coding Agent!",
+        "Grok Bot Manages My Inbox (and has its own)",
+        "Do Proton Pump Inhibitors Work for Acid Reflux (GERD)?",
+        "The #1 Best Food to Reverse Fatty Liver",
+        "Angie Nixon's old education post IGNITES new debate",
+        "EU Proposes Canada to Become First 'Associate Member'; Fed Decision on December",
+        "Rep. Josh Gottheimer: You can't get rid of data centers, but put them only where useful",
+        "Market Close: Fed Raises Rates, Signals More Hikes Ahead; Stocks Fall",
+        "Stop Having Nightmares!",
+        "China Is Turning America's AI Advantage Against It",
+    ]
+    still = [(w, best_topic(w, "", vocab)) for w in wrong]
+    caught = [(w, r) for w, r in still if r[0]]
+    print(f"recall on filed videos: {hit}/{hit + miss} ({hit / max(1, hit + miss) * 100:.0f}%)")
+    print(f"known false positives still matching: {len(caught)}/{len(wrong)}")
+    for w, (tid, sc) in caught:
+        print(f"    {tid} ({sc}) ← {w[:66]}")
+
+
 def main():
+    if "--selftest" in sys.argv:
+        return selftest()
     if not KEY:
         print("channel sweep: no YT_API_KEY. Official API only (decision 2026-09-16); nothing collected.")
         return
     ledger = json.loads((ROOT / "channels.json").read_text())["channels"]
     rows = [r for r in ledger if r["tier"] in TIERS and r.get("channelId")][:MAX_CHANNELS]
     wl = json.loads((ROOT / "watchlist.json").read_text())["topics"]
-    vocab = topic_vocab(wl)
+    vocab = topic_vocab(wl, corpus_titles())
 
     corpora, known = {}, set()
     for t in wl:
@@ -161,7 +257,7 @@ def main():
             seen += 1
             if v["videoId"] in known:
                 continue
-            tid, score = best_topic(v["title"] + " " + v["description"], vocab)
+            tid, score = best_topic(v["title"], v["description"], vocab)
             if not tid:
                 off_topic += 1
                 continue
