@@ -8624,6 +8624,37 @@
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata"
+    },
+    {
+      "videoId": "sYhNzNDfvDY",
+      "url": "https://www.youtube.com/watch?v=sYhNzNDfvDY",
+      "title": "Testing Viral AI Prompts From TikTok — Do They Actually Work?",
+      "channel": "ChatPlayground AI",
+      "published": "2026-09-15",
+      "views": "63 views",
+      "length": "17:13",
+      "query": "Kimi vs Claude Opus comparison",
+      "age_days": null,
+      "first_seen": "2026-09-16",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "People & Blogs",
+        "channelId": "UCcip2nUIZb2JewZoGLoBhoQ",
+        "likes": 0,
+        "comments": 0,
+        "captions": null,
+        "language": "en",
+        "live": false,
+        "enrichedOn": "2026-09-16",
+        "source": "data-api",
+        "channelCountry": null,
+        "channelJoined": "2024-05-07",
+        "subscribers": 485,
+        "channelViews": 43473,
+        "channelVideos": 68
+      }
     }
   ]
 }
