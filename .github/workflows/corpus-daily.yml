@@ -1,17 +1,19 @@
-name: Daily corpus sweep
+name: Weekly search sweep
 
-# Keeps every narrative's corpus current. Each morning it searches each
-# narrative's queries for new uploads, appends the ones not yet in the corpus
-# as UNREVIEWED, and commits — the site redeploys and the momentum chart's
-# "last collected" date is today. Nothing already in a corpus is changed.
+# Catches what the channel sweep cannot: uploads from channels that are not yet
+# in the ledger. It searches each narrative's queries, appends what is new as
+# UNREVIEWED and commits. Nothing already in a corpus is changed.
 #
-# With a YT_API_KEY repository secret it uses the official YouTube Data API
-# (full details, works from any server); without one it reads YouTube's public
-# search page. Transcripts and reviews are not done here (see daily_sweep.py).
+# It runs WEEKLY, not daily, because search.list is capped at 100 calls a day
+# and is the only way to reach channels we do not know. Daily collection is
+# channel-sweep.yml. Requires YT_API_KEY: without it the sweep stops rather than
+# reading YouTube's pages (decision 2026-09-16, API only).
 
 on:
   schedule:
-    - cron: "30 5 * * *"     # 05:30 UTC daily, before the 07:00 resolver. Actions cron is best-effort.
+    - cron: "30 5 * * 1"     # Mondays 05:30 UTC. Search is capped at 100 calls a day and is the
+                             # only way to find new channels, so the daily collection now runs on
+                             # channel uploads (channel-sweep.yml) and search runs weekly.
   workflow_dispatch:
     inputs:
       days:
