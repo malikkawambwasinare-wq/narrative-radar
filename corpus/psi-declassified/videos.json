@@ -6389,6 +6389,81 @@
         "channelViews": 76727,
         "channelVideos": 430
       }
+    },
+    {
+      "videoId": "qc-nLLObMUA",
+      "title": "Shawn Ryan Shoots with British 22 SAS Hero “Obi-Wan Nairobi”",
+      "channel": "Shawn Ryan Show",
+      "url": "https://www.youtube.com/watch?v=qc-nLLObMUA",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-16",
+      "views": 20374,
+      "length": "11:28",
+      "age_days": 0,
+      "query": "channel sweep: Shawn Ryan Show",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCkoujZQZatbqy4KGcgjpVxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3298,
+        "comments": 356,
+        "enrichedOn": "2026-09-16"
+      }
+    },
+    {
+      "videoId": "_CIYzyyFmd8",
+      "title": "The Biggest Interview of the Shawn Ryan Show?!",
+      "channel": "Shawn Ryan Show",
+      "url": "https://www.youtube.com/watch?v=_CIYzyyFmd8",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-16",
+      "views": 667313,
+      "length": "0:19",
+      "age_days": 5,
+      "query": "channel sweep: Shawn Ryan Show",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCkoujZQZatbqy4KGcgjpVxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13234,
+        "comments": 229,
+        "enrichedOn": "2026-09-16"
+      }
+    },
+    {
+      "videoId": "FuWEpHrOJUM",
+      "title": "A Cardinal Gave Shawn Ryan a Protector for His Studio 😳",
+      "channel": "Shawn Ryan Show",
+      "url": "https://www.youtube.com/watch?v=FuWEpHrOJUM",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-16",
+      "views": 487659,
+      "length": "0:54",
+      "age_days": 6,
+      "query": "channel sweep: Shawn Ryan Show",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCkoujZQZatbqy4KGcgjpVxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 22032,
+        "comments": 1539,
+        "enrichedOn": "2026-09-16"
+      }
     }
   ]
 }
