@@ -285,6 +285,27 @@
   #sets .chips.wide .chip { max-width: 250px; border-radius: 12px; padding: 8px 13px; }
   #sets .chip small { display: block; font-size: 11.5px; font-weight: 400; color: var(--muted); margin-top: 3px; line-height: 1.35; }
   .setopt { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--ink-2); padding-top: 7px; line-height: 1.45; }
+  /* Worked examples: one click builds a real set from the corpus */
+  .exwrap { padding: 4px 0 12px; }
+  .exgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; margin-top: 8px; }
+  .excard { border: 1px solid var(--hairline); border-radius: 12px; padding: 12px 13px; background: var(--page);
+    text-align: left; font: inherit; color: var(--ink); cursor: pointer; display: flex; flex-direction: column; gap: 5px; }
+  .excard:hover { border-color: var(--accent); }
+  .excard .exk { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  .excard .exn { font-size: 14px; font-weight: 600; line-height: 1.3; }
+  .excard .exd { font-size: 12.5px; color: var(--ink-2); line-height: 1.45; }
+  .excard .exgo { font-size: 12.5px; color: var(--accent); font-weight: 600; margin-top: auto; }
+  /* Theme preview: what this theme actually holds, one video at a time */
+  .pgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 10px; }
+  .ptile { border: 1px solid var(--hairline); border-radius: 12px; padding: 11px 13px; background: var(--page); min-height: 104px; }
+  .ptile .pname { font-size: 13px; font-weight: 650; line-height: 1.3; }
+  .ptile .pmeta { font-size: 11.5px; color: var(--muted); margin-top: 3px; }
+  .ptile .prot { margin-top: 8px; min-height: 42px; transition: opacity .45s ease; }
+  .ptile .prot.out { opacity: 0; }
+  .ptile .pt { font-size: 12.5px; line-height: 1.35; color: var(--ink);
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .ptile .pc { font-size: 11.5px; color: var(--muted); margin-top: 2px; }
+  @media (prefers-reduced-motion: reduce) { .ptile .prot { transition: none; } }
   .setact { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding-top: 14px; border-top: 1px solid var(--hairline); margin-top: 4px; }
   .setact button { font: inherit; font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 999px;
     border: 1px solid var(--ink); background: var(--ink); color: var(--surface); cursor: pointer; }
@@ -914,7 +935,12 @@
       <p class="setintro">Pick a theme or two, say how long you have, and get a finite, ordered set.
         It ends on purpose: one video per channel, no video repeating another's claim, and nothing
         ranked by views. Your choices stay on this device.</p>
-      <div class="setrow"><div class="setlbl">Themes<small>up to 2</small></div><div class="chips" id="set-themes"></div></div>
+      <div class="exwrap">
+        <div class="setlbl">See one first</div>
+        <div class="exgrid" id="set-examples"></div>
+      </div>
+      <div class="setrow"><div class="setlbl">Themes<small>up to 2</small></div>
+        <div><div class="chips" id="set-themes"></div><div class="pgrid" id="set-preview"></div></div></div>
       <div class="setrow"><div class="setlbl">Time</div><div class="chips" id="set-budget"></div></div>
       <div class="setrow"><div class="setlbl">Shape</div><div class="chips wide" id="set-type"></div></div>
       <div class="setrow"><div class="setlbl">Contrast</div>
@@ -3773,22 +3799,26 @@ async function buildSets() {
   for (const id of themes) {
     const data = await loadTopicData(id);
     const t = watchlist.topics.find(x => x.id === id) || { id, name: id };
-    let set = null, note = "";
+    let set = null, note = "", used = SET.type;
     if (SET.type === "debate") {
       set = setDebate(data, per);
       if (!set) {
-        note = `No contested claim with camps on both sides has been graded here yet, so this is the origin of the story instead.`;
-        set = setOrigin(data, per) || setCatchup(data, per);
+        set = setOrigin(data, per);
+        used = set ? "origin" : "catchup";
+        if (!set) set = setCatchup(data, per);
+        note = used === "origin"
+          ? "No contested claim with camps on both sides has been graded here yet, so this is the origin of the story instead."
+          : "No contested claim with camps on both sides has been graded here yet, so this is what's newest instead.";
       }
     } else if (SET.type === "origin") {
       set = setOrigin(data, per);
-      if (!set) { note = "The corpus doesn't reach back far enough here yet, so this is what's newest instead."; set = setCatchup(data, per); }
+      if (!set) { note = "The corpus doesn't reach back far enough here yet, so this is what's newest instead."; set = setCatchup(data, per); used = "catchup"; }
     } else {
       set = setCatchup(data, per);
     }
     if (!set) { built.push({ t, empty: true }); continue; }
     if (SET.popular) { const p = setPopular(data); if (p) set.cards = [...set.cards, p]; }
-    built.push({ t, data, set, note, per });
+    built.push({ t, data, set, note, per, used });
   }
   renderSets(built);
 }
@@ -3819,8 +3849,8 @@ function setCard(p, i) {
 }
 
 function renderSets(built) {
-  const shape = SET_TYPES.find(x => x[0] === SET.type)?.[1] || "";
-  $("set-out").innerHTML = built.map(({ t, set, note, empty }) => {
+  $("set-out").innerHTML = built.map(({ t, set, note, empty, used }) => {
+    const shape = SET_TYPES.find(x => x[0] === used)?.[1] || "";
     if (empty) return `<section class="setout"><div class="seth"><h3>${esc(shortName(t))}</h3></div>
       <div class="galempty">Nothing in this corpus clears the set's rules yet.</div></section>`;
     for (const c of set.cards) c.topicId = t.id;
@@ -3851,6 +3881,72 @@ function renderSets(built) {
   }).join("");
 }
 
+/* Worked examples. Each one builds a real set from the corpus when clicked —
+   nothing here is mocked up, so the example is also the product. */
+const SET_EXAMPLES = [
+  { type: "debate", topic: "anti-inflammatory-diet", budget: 60,
+    d: "Every video here is graded, so you get the claim at its strongest, the strongest answer to it, and then what the whole corpus shows." },
+  { type: "origin", topic: "collapse-audit", budget: 60,
+    d: "One video per turn the story took, oldest first: internal conflict, then the debt cycle, then AI spending as the trigger." },
+  { type: "catchup", topic: "housing-crash-watch", budget: 30,
+    d: "The newest uploads that clear the rules, one per channel, with bait titles and recycled uploads left out." },
+];
+function renderSetExamples() {
+  const name = id => { const t = (watchlist?.topics || []).find(x => x.id === id); return t ? shortName(t) : id; };
+  $("set-examples").innerHTML = SET_EXAMPLES.map((e, i) => {
+    const shape = SET_TYPES.find(x => x[0] === e.type);
+    return `<button type="button" class="excard" data-set-example="${i}">
+      <div class="exk">${esc(shape[1])} · ${e.budget} min</div>
+      <div class="exn">${esc(name(e.topic))}</div>
+      <div class="exd">${esc(e.d)}</div>
+      <div class="exgo">Build this one →</div>
+    </button>`;
+  }).join("");
+}
+
+/* Theme preview: the tile cycles through the videos this theme would draw on,
+   so the material is visible before anything is built. */
+let previewTimers = [];
+const setPreviewStop = () => { previewTimers.forEach(clearInterval); previewTimers = []; };
+async function renderSetPreview() {
+  setPreviewStop();
+  const host = $("set-preview"), ids = SET.themes.slice(0, 2);
+  host.innerHTML = ids.map(id => `<div class="ptile" id="ptile-${esc(id)}"><div class="pname">${esc(id)}</div>
+    <div class="pmeta">reading the corpus…</div></div>`).join("");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  for (const id of ids) {
+    const data = await loadTopicData(id);
+    const el = $("ptile-" + id);
+    if (!el || !SET.themes.includes(id)) continue;
+    const all = data.videos?.videos || [];
+    const pool = all.filter(v => setUsable(v)).sort((a, b) => (publishedEst(b) || 0) - (publishedEst(a) || 0));
+    const t = (watchlist?.topics || []).find(x => x.id === id);
+    const graded = pool.filter(setGraded).length;
+    const newest = pool.length ? publishedEst(pool[0]) : null;
+    if (!pool.length) {
+      el.innerHTML = `<div class="pname">${esc(shortName(t))}</div>
+        <div class="pmeta">nothing in this corpus clears the set's rules yet</div>`;
+      continue;
+    }
+    el.innerHTML = `<div class="pname">${esc(shortName(t))}</div>
+      <div class="pmeta">${pool.length} of ${all.length} videos clear the rules · ${graded} graded${newest ? ` · newest ${isoDate(newest)}` : ""}</div>
+      <div class="prot"></div>`;
+    const rot = el.querySelector(".prot");
+    const show = i => {
+      const v = pool[i % pool.length];
+      rot.innerHTML = `<div class="pt">${esc(v.title)}</div>
+        <div class="pc">${esc(v.channel || "")}${v.length ? ` · ${esc(v.length)}` : ""}${setGraded(v) ? ` · ${esc(v.verdict.toLowerCase())}` : " · not graded yet"}</div>`;
+    };
+    show(0);
+    if (reduce || pool.length < 2) continue;
+    let i = 0;
+    previewTimers.push(setInterval(() => {
+      rot.classList.add("out");
+      setTimeout(() => { show(++i); rot.classList.remove("out"); }, 450);
+    }, 2600));
+  }
+}
+
 function renderSetForm() {
   const topics = (watchlist?.topics || []).filter(t => t.status !== "queued");
   $("set-themes").innerHTML = topics.map(t => `<button class="chip" type="button" data-set-theme="${esc(t.id)}"
@@ -3863,6 +3959,8 @@ function renderSetForm() {
   $("set-build").disabled = !SET.themes.length;
   $("set-hint").textContent = !SET.themes.length ? "Pick one or two themes."
     : SET.themes.length === 2 ? `Two themes, about ${Math.round(SET.budget / 2)} minutes each.` : "";
+  renderSetExamples();
+  renderSetPreview();
 }
 
 function showSets() {
@@ -3877,6 +3975,7 @@ function showSets() {
 /* ---------- The narrative gallery: search + industry filter + tiles ---------- */
 const galStats = {};   // topicId -> {age, videos, score, next} filled lazily
 function showGallery() {
+  setPreviewStop();
   $("gallery").hidden = false;
   $("detail").hidden = true;
   $("sets").hidden = true;
@@ -3885,6 +3984,7 @@ function showGallery() {
   fillGalleryStats();
 }
 function openDetail(id) {
+  setPreviewStop();
   $("gallery").hidden = true;
   $("sets").hidden = true;
   $("detail").hidden = false;
@@ -4198,6 +4298,14 @@ document.addEventListener("click", async (ev) => {
   if (stb) { SET.budget = +stb.dataset.setBudget; setSave(); renderSetForm(); return; }
   const stt = ev.target.closest("[data-set-type]");
   if (stt) { SET.type = stt.dataset.setType; setSave(); renderSetForm(); return; }
+  const sex = ev.target.closest("[data-set-example]");
+  if (sex) {
+    const e = SET_EXAMPLES[+sex.dataset.setExample];
+    Object.assign(SET, { themes: [e.topic], type: e.type, budget: e.budget });
+    setSave(); renderSetForm();
+    $("set-out").scrollIntoView({ block: "start" });
+    return buildSets();
+  }
   if (ev.target.closest("#set-build")) return buildSets();
   const so = ev.target.closest("[data-set-open]");
   if (so) return openRadarAt(so.dataset.setTopic, so.dataset.setOpen);
