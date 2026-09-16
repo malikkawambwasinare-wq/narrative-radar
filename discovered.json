@@ -41,6 +41,58 @@
    ]
   },
   {
+   "phrase": "cycle dead",
+   "videos": 9,
+   "channels": 9,
+   "months": 6,
+   "span": "2025-11 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The 4-Year Bitcoin Cycle Is DEAD \u2014 Here\u2019s Why",
+    "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!",
+    "Bitcoin: The Four Year Cycle Is Not Dead"
+   ],
+   "ids": [
+    "25VoqwPch8o",
+    "7byCfkDQxq8",
+    "PkvFvQexkug",
+    "XNuL97I8bvc",
+    "ctJSV8aTDSk",
+    "hODgBEgy4QA",
+    "k5dFxQUO_Uw",
+    "oOu6fEOC4zo",
+    "vgLC3AIXdJA"
+   ]
+  },
+  {
+   "phrase": "stock market crash",
+   "videos": 7,
+   "channels": 7,
+   "months": 5,
+   "span": "2022-02 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.57,
+   "kind": "cross-narrative",
+   "examples": [
+    "THIS Will Predict the 2022 Stock Market Crash | It Happens Every Time...",
+    "Ray Dalio\u2019s Warning for the 2023 Stock Market Crash",
+    "The Stock Market Crash | What You Must Know"
+   ],
+   "ids": [
+    "62l8m0C2V3I",
+    "6nmwa_rCpU4",
+    "B-RVmNjHaVc",
+    "EPMo1OkIUS0",
+    "F-IOc7U_hzM",
+    "TVqDEQeKjvs",
+    "udiEkZSvS5E"
+   ]
+  },
+  {
    "phrase": "economic collapse",
    "videos": 7,
    "channels": 6,
@@ -91,31 +143,6 @@
    ]
   },
   {
-   "phrase": "cycle dead",
-   "videos": 7,
-   "channels": 7,
-   "months": 5,
-   "span": "2025-11 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "The 4-Year Bitcoin Cycle Is DEAD \u2014 Here\u2019s Why",
-    "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!",
-    "Bitcoin: The Four Year Cycle Is Not Dead"
-   ],
-   "ids": [
-    "7byCfkDQxq8",
-    "XNuL97I8bvc",
-    "ctJSV8aTDSk",
-    "hODgBEgy4QA",
-    "k5dFxQUO_Uw",
-    "oOu6fEOC4zo",
-    "vgLC3AIXdJA"
-   ]
-  },
-  {
    "phrase": "cause inflammation",
    "videos": 6,
    "channels": 4,
@@ -144,34 +171,11 @@
    ]
   },
   {
-   "phrase": "stock market crash",
+   "phrase": "real estate crash",
    "videos": 5,
    "channels": 5,
    "months": 5,
-   "span": "2022-02 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "the-2026-setup",
-   "home_share": 0.8,
-   "kind": "sub-claim",
-   "examples": [
-    "THIS Will Predict the 2022 Stock Market Crash | It Happens Every Time...",
-    "Ray Dalio\u2019s Warning for the 2023 Stock Market Crash",
-    "The Stock Market Crash | What You Must Know"
-   ],
-   "ids": [
-    "B-RVmNjHaVc",
-    "EPMo1OkIUS0",
-    "F-IOc7U_hzM",
-    "TVqDEQeKjvs",
-    "udiEkZSvS5E"
-   ]
-  },
-  {
-   "phrase": "real estate crash",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2022-12 \u2192 2025-03",
+   "span": "2022-12 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "housing-crash-watch",
    "home_share": 1.0,
@@ -185,6 +189,7 @@
     "1d08iOdJSnw",
     "NIZ9PQduW4E",
     "SPlD5mxUug0",
+    "Vn-_5vG-nTo",
     "uT0kHewjzkE"
    ],
    "also": [
