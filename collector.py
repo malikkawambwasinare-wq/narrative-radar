@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Narrative Radar — YouTube collector.
 
+RETIRED under the API-only decision of 2026-09-16: this reads YouTube's own
+pages, which the Terms forbid. Kept for reference and for the data it already
+collected. Do not run it against YouTube. See briefs/narratives/SYSTEM.md section 6.
+
+
 Reads watchlist.json, searches YouTube for each active topic's queries
 (newest uploads first), merges new finds into corpus/<topic>/videos.json,
 and pulls captions for new videos into corpus/<topic>/transcripts/<id>.txt.

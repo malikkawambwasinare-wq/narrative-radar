@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Narrative Radar — pull transcripts and real publish dates for videos that lack them.
 
+RETIRED under the API-only decision of 2026-09-16: this reads YouTube's own
+pages, which the Terms forbid. Kept for reference and for the data it already
+collected. Do not run it against YouTube. See briefs/narratives/SYSTEM.md section 6.
+
+
     python3 scripts/fetch_transcripts.py                 # every narrative, dry run
     python3 scripts/fetch_transcripts.py collapse-audit  # one narrative
     python3 scripts/fetch_transcripts.py --write         # save transcripts + update videos.json

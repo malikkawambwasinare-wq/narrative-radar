@@ -18,10 +18,10 @@ Two routes, chosen automatically:
     dates, views, likes, comments, duration, category and channel country/size.
     Works from any server. ~100 quota units per query per narrative per day;
     8 narratives x 6 queries is ~4,900 of the free 10,000.
-  * no key → YouTube's public search page, newest first, as collector.py does.
-    Gives title, channel, relative upload age, views and length. From a
-    data-centre IP YouTube may serve a bot wall; the sweep then reports zero
-    for that query rather than failing the run.
+  * no key → the sweep STOPS. Reading YouTube's search page is scraping, which
+    the Terms forbid and which would put API access at risk. The old page route
+    is kept below for reference only and runs solely with --allow-scraping,
+    which nothing in this repo passes. Decision of 2026-09-16: API only.
 
 Transcripts and reviews are not done here: YouTube withholds captions from
 data-centre IPs, and verdicts are made with the transcript in hand.
@@ -145,7 +145,13 @@ def via_search_page(queries, known):
 
 def main():
     watch = json.loads((ROOT / "watchlist.json").read_text())
-    route = "data-api" if KEY else "search-page"
+    if not KEY and "--allow-scraping" not in sys.argv:
+        print("daily sweep: no YT_API_KEY, so nothing was collected.")
+        print("  This project collects through the YouTube Data API only (decision 2026-09-16).")
+        print("  Set the YT_API_KEY secret to resume. The corpus is unchanged.")
+        print("+0 new videos across 0 narratives (no api key)")
+        return
+    route = "data-api" if KEY else "search-page (override)"
     total, touched = 0, []
     print(f"daily sweep {TODAY} · route: {route} · uploads from the last {DAYS} days")
     for t in watch["topics"]:

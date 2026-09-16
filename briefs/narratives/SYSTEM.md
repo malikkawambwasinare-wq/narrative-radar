@@ -238,7 +238,13 @@ Nothing is re-published under v2 until the reliability gate passes.
 
 **Recommendation: B.** The product's credibility rests on playing fairly with sources. A tool that grades other people's honesty cannot be built on a terms violation, and B is the only route that scales without escalating blocks.
 
-The decision is the founder's.
+### Decided, 2026-09-16: route B, API only
+
+In force. The daily sweep no longer falls back to YouTube's search page and stops instead, leaving
+the corpus untouched, until a `YT_API_KEY` secret exists. `collector.py`, `scripts/enrich_youtube.py`
+and `scripts/fetch_transcripts.py` are retired and carry a banner saying so; the data they already
+collected stays. Transcripts now come only from podcast feeds, creator-published transcripts and
+opt-ins. The pipeline this decision governs is [PIPELINE.md](../collection-engine/PIPELINE.md).
 
 ---
 
