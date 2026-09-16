@@ -68,6 +68,62 @@
    ]
   },
   {
+   "phrase": "cause inflammation",
+   "videos": 8,
+   "channels": 6,
+   "months": 7,
+   "span": "2021-03 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "anti-inflammatory-diet",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "\ud83d\udd25Top 13 Foods that Cause Inflammation | Anti Inflammatory Foods to Replace",
+    "Foods That Cause Inflammation",
+    "The SHOCKING TRUTH About Seed Oils & How They Cause INFLAMMATION | Dr. Mark Hyman"
+   ],
+   "ids": [
+    "MZ6wBfkLaMM",
+    "QFbQjTiTmJo",
+    "SYmE0n1Npxs",
+    "Szsqo8pumLg",
+    "WQNNfNIbfHw",
+    "cGGoY8uasQU",
+    "ugFSHlNjhbY",
+    "xYo9J8RijQY"
+   ],
+   "also": [
+    "foods cause",
+    "foods cause inflammation"
+   ]
+  },
+  {
+   "phrase": "economic collapse",
+   "videos": 8,
+   "channels": 7,
+   "months": 7,
+   "span": "2023-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.88,
+   "kind": "sub-claim",
+   "examples": [
+    "The Economic Collapse No One Wants To Talk About - Ray Dalio",
+    "China-US Conflict - Ray Dalio\u2019s Urgent Warning On Economic Collapse",
+    "Ray Dalio on Economic Collapse, Inflation, and Preparing for Recession"
+   ],
+   "ids": [
+    "1mdeBv7-oE8",
+    "EK6glMfP9NE",
+    "GDuXvOs0d_k",
+    "Tr0F-EQRm5o",
+    "cXI2knjwQNc",
+    "e9x8OTOIKT4",
+    "smGzWAADZT4",
+    "wkaxEI4Xwv8"
+   ]
+  },
+  {
    "phrase": "stock market crash",
    "videos": 7,
    "channels": 7,
@@ -90,31 +146,6 @@
     "F-IOc7U_hzM",
     "TVqDEQeKjvs",
     "udiEkZSvS5E"
-   ]
-  },
-  {
-   "phrase": "economic collapse",
-   "videos": 7,
-   "channels": 6,
-   "months": 6,
-   "span": "2023-04 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "The Economic Collapse No One Wants To Talk About - Ray Dalio",
-    "China-US Conflict - Ray Dalio\u2019s Urgent Warning On Economic Collapse",
-    "Ray Dalio on Economic Collapse, Inflation, and Preparing for Recession"
-   ],
-   "ids": [
-    "1mdeBv7-oE8",
-    "EK6glMfP9NE",
-    "GDuXvOs0d_k",
-    "Tr0F-EQRm5o",
-    "cXI2knjwQNc",
-    "smGzWAADZT4",
-    "wkaxEI4Xwv8"
    ]
   },
   {
@@ -143,42 +174,14 @@
    ]
   },
   {
-   "phrase": "cause inflammation",
-   "videos": 6,
-   "channels": 4,
-   "months": 6,
-   "span": "2021-03 \u2192 2025-05",
-   "industry": "Health & biotech",
-   "home": "anti-inflammatory-diet",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "\ud83d\udd25Top 13 Foods that Cause Inflammation | Anti Inflammatory Foods to Replace",
-    "Foods That Cause Inflammation",
-    "The SHOCKING TRUTH About Seed Oils & How They Cause INFLAMMATION | Dr. Mark Hyman"
-   ],
-   "ids": [
-    "MZ6wBfkLaMM",
-    "SYmE0n1Npxs",
-    "Szsqo8pumLg",
-    "WQNNfNIbfHw",
-    "cGGoY8uasQU",
-    "xYo9J8RijQY"
-   ],
-   "also": [
-    "foods cause",
-    "foods cause inflammation"
-   ]
-  },
-  {
    "phrase": "real estate crash",
-   "videos": 5,
-   "channels": 5,
+   "videos": 6,
+   "channels": 6,
    "months": 5,
    "span": "2022-12 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "housing-crash-watch",
-   "home_share": 1.0,
+   "home_share": 0.83,
    "kind": "sub-claim",
    "examples": [
     "The Real Estate Crash 2023",
@@ -186,6 +189,7 @@
     "Why A Real Estate Crash Won't Make Homes Affordable... For You"
    ],
    "ids": [
+    "1D3yy-GS3II",
     "1d08iOdJSnw",
     "NIZ9PQduW4E",
     "SPlD5mxUug0",
@@ -194,6 +198,58 @@
    ],
    "also": [
     "estate crash"
+   ]
+  },
+  {
+   "phrase": "truth seed oils",
+   "videos": 6,
+   "channels": 6,
+   "months": 4,
+   "span": "2023-04 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 0.5,
+   "kind": "new candidate",
+   "examples": [
+    "The SHOCKING TRUTH About Seed Oils & How They Cause INFLAMMATION | Dr. Mark Hyman",
+    "The Truth About Seed Oils | FED A LIE | Full Documentary",
+    "The Truth About Seed Oils | Dr. Mark Hyman & Dr. Andrew Huberman"
+   ],
+   "ids": [
+    "CVACyQgN3ls",
+    "GRZBo6LvLb4",
+    "MZ6wBfkLaMM",
+    "XXfTxSKnkKo",
+    "h4C3Aq_iCnU",
+    "vcbDmKfY5qE"
+   ],
+   "also": [
+    "truth seed"
+   ]
+  },
+  {
+   "phrase": "real estate market crash",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2022-02 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "2022 Real Estate Market Crash? Housing Inventory Surge Coming Soon? Mortgage Interest Rates Rising!",
+    "2025 Real Estate Market CRASH No One Sees Coming Except Warren Buffett",
+    "Are We Headed for a Real Estate Market Crash?"
+   ],
+   "ids": [
+    "-5Ar3f0oVeA",
+    "Ew8o262tf0A",
+    "JICT10G5gJY",
+    "TNFdYv9CCls"
+   ],
+   "also": [
+    "estate market crash"
    ]
   },
   {
@@ -219,6 +275,28 @@
    ]
   },
   {
+   "phrase": "actually work",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2023-09 \u2192 2026-09",
+   "industry": "Fringe & unexplained",
+   "home": "(pool)",
+   "home_share": 0.25,
+   "kind": "new candidate",
+   "examples": [
+    "Project STARGATE: Did the CIA's Declassified Psychic Experiments Actually Work?",
+    "Building AI Agents that actually work (Full Course)",
+    "Project Stargate: Did America\u2019s Psychic Spies Actually Work?"
+   ],
+   "ids": [
+    "6Ds-lcoBAR4",
+    "eA9Zf2-qYYM",
+    "sYhNzNDfvDY",
+    "tZ1dy7dG0M4"
+   ]
+  },
+  {
    "phrase": "beats gpt-5",
    "videos": 4,
    "channels": 4,
@@ -238,6 +316,28 @@
     "J64RlVwAJo4",
     "aFF2SfN97G4",
     "qs_Wg5Hu6EY"
+   ]
+  },
+  {
+   "phrase": "2008 crash",
+   "videos": 4,
+   "channels": 4,
+   "months": 2,
+   "span": "2026-07 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "Ray Dalio: I Predicted The 2008 CRASH, I Know What Comes Next!",
+    "Ray Dalio: I Predicted The 2008 CRASH, I Know What Comes Next!",
+    "What&#39;s Coming for Real Estate Is FAR WORSE Than the 2008 Crash  Prof  Jiang Xueqin"
+   ],
+   "ids": [
+    "3TyW-fkUkyo",
+    "Bu0xNDLNORU",
+    "_UsvYI5ZHjc",
+    "ikPdWq_DEaQ"
    ]
   },
   {

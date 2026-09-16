@@ -11429,6 +11429,56 @@
         "comments": 1,
         "enrichedOn": "2026-09-16"
       }
+    },
+    {
+      "videoId": "yMCv8KUgjCQ",
+      "title": "Down 91%, Is Nio Stock an Undervalued Stock to Buy on the Dip?",
+      "channel": "Parkev Tatevosian, CFA",
+      "url": "https://www.youtube.com/watch?v=yMCv8KUgjCQ",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-16",
+      "views": 561,
+      "length": "8:20",
+      "age_days": 0,
+      "query": "channel sweep: Parkev Tatevosian, CFA",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCwKB_00dPL3x5XmHF9IJCrg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 51,
+        "comments": 13,
+        "enrichedOn": "2026-09-16"
+      }
+    },
+    {
+      "videoId": "flFL9OlgJWo",
+      "title": "Down 40%, Is Grab Stock a Buy in September?",
+      "channel": "Parkev Tatevosian, CFA",
+      "url": "https://www.youtube.com/watch?v=flFL9OlgJWo",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "views": 5367,
+      "length": "5:47",
+      "age_days": 1,
+      "query": "channel sweep: Parkev Tatevosian, CFA",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCwKB_00dPL3x5XmHF9IJCrg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 96,
+        "comments": 10,
+        "enrichedOn": "2026-09-16"
+      }
     }
   ]
 }
