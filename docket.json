@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15",
+  "generated": "2026-09-16",
   "standard": "1.0",
   "grace_days": 30,
   "totals": {
@@ -13,7 +13,7 @@
   "narratives": [
     {
       "topic": "collapse-audit",
-      "name": "The 80-Year Collapse",
+      "name": "The \"US debt collapse is imminent\" story",
       "total": 12,
       "scoreable": 6,
       "unscorable": 6,
@@ -27,7 +27,7 @@
       "actionable": 0,
       "next": {
         "topic": "collapse-audit",
-        "narrative": "The 80-Year Collapse",
+        "narrative": "The \"US debt collapse is imminent\" story",
         "id": "dalio-2025-debt-3yr",
         "claimant": "Ray Dalio",
         "claim": "US debt crisis within ~3 years.",
@@ -37,7 +37,7 @@
           "end": "2028-09-30",
           "precision": "month"
         },
-        "days_to_due": 746,
+        "days_to_due": 745,
         "resolution_class": "review",
         "capture": "live",
         "status": "PENDING",
@@ -72,7 +72,7 @@
           "end": "2026-09-01",
           "precision": "day"
         },
-        "days_to_due": -14,
+        "days_to_due": -15,
         "resolution_class": "auto",
         "capture": "live",
         "status": "PENDING",
@@ -95,7 +95,7 @@
         "end": "2026-08-07",
         "precision": "month"
       },
-      "days_to_due": -39,
+      "days_to_due": -40,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "PENDING",
@@ -114,7 +114,7 @@
         "end": "2026-09-01",
         "precision": "day"
       },
-      "days_to_due": -14,
+      "days_to_due": -15,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -133,7 +133,7 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": 46,
+      "days_to_due": 45,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -142,7 +142,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2025-heart-attack",
       "claimant": "Ray Dalio",
       "claim": "US debt crisis like an 'economic heart attack' — convergence could trigger it; US in 'Phase 5' of the Big Debt Cycle.",
@@ -152,7 +152,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 838,
+      "days_to_due": 837,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -171,7 +171,7 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": 46,
+      "days_to_due": 45,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -190,7 +190,7 @@
         "end": "2026-11-30",
         "precision": "range"
       },
-      "days_to_due": 76,
+      "days_to_due": 75,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -209,7 +209,7 @@
         "end": "2026-12-31",
         "precision": "day"
       },
-      "days_to_due": 107,
+      "days_to_due": 106,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -228,7 +228,7 @@
         "end": "2027-02-28",
         "precision": "range"
       },
-      "days_to_due": 166,
+      "days_to_due": 165,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -247,7 +247,7 @@
         "end": "2027-08-31",
         "precision": "month"
       },
-      "days_to_due": 350,
+      "days_to_due": 349,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -266,7 +266,7 @@
         "end": "2027-12-31",
         "precision": "year"
       },
-      "days_to_due": 472,
+      "days_to_due": 471,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -275,7 +275,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2025-debt-3yr",
       "claimant": "Ray Dalio",
       "claim": "US debt crisis within ~3 years.",
@@ -285,7 +285,7 @@
         "end": "2028-09-30",
         "precision": "month"
       },
-      "days_to_due": 746,
+      "days_to_due": 745,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -304,7 +304,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 838,
+      "days_to_due": 837,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -323,7 +323,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1568,
+      "days_to_due": 1567,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -342,7 +342,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1568,
+      "days_to_due": 1567,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -351,7 +351,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2025-doac-dark-times",
       "claimant": "Ray Dalio",
       "claim": "US and UK entering the dangerous phase of the 80-year big cycle; 'very, very dark times' ahead. Five forces: debt, internal conflict, geopolitical conflict, natural disasters, technology.",
@@ -366,7 +366,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2026-capital-war",
       "claimant": "Ray Dalio",
       "claim": "World is 'on the brink' of a capital war — money weaponized via embargoes, market access, debt leverage; gold as hedge.",
@@ -381,7 +381,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2026-doac-80yr",
       "claimant": "Ray Dalio",
       "claim": "'The 80 Year Collapse Is Here' / 'AI Will Lose You Money... You Should Be Happy' — new DOAC video; AI bubble showing 'classic signs', 80-year cycle framing continues.",
@@ -426,7 +426,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2015-1937",
       "claimant": "Ray Dalio",
       "claim": "The Fed risks repeating 1937 — tightening into a downturn; economy looks like 1937.",
@@ -436,7 +436,7 @@
         "end": "2017-03-31",
         "precision": "range"
       },
-      "days_to_due": -3455,
+      "days_to_due": -3456,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
@@ -445,7 +445,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2018-downturn",
       "claimant": "Ray Dalio",
       "claim": "Economy looks like 1937; downturn coming in about two years.",
@@ -455,7 +455,7 @@
         "end": "2020-12-31",
         "precision": "year"
       },
-      "days_to_due": -2084,
+      "days_to_due": -2085,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -464,7 +464,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2019-recession-risk",
       "claimant": "Ray Dalio",
       "claim": "Significant recession risk ahead.",
@@ -474,7 +474,7 @@
         "end": "2021-01-31",
         "precision": "range"
       },
-      "days_to_due": -2053,
+      "days_to_due": -2054,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -483,7 +483,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2022-perfect-storm",
       "claimant": "Ray Dalio",
       "claim": "A 'perfect storm' is forming for the economy.",
@@ -493,7 +493,7 @@
         "end": "2024-10-31",
         "precision": "range"
       },
-      "days_to_due": -684,
+      "days_to_due": -685,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
@@ -502,7 +502,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2016-supercycle",
       "claimant": "Ray Dalio",
       "claim": "The 75-year debt supercycle is coming to an end.",
@@ -517,7 +517,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2020-cash-is-trash",
       "claimant": "Ray Dalio",
       "claim": "'Cash is trash' — get out of cash (Davos).",
@@ -532,7 +532,7 @@
     },
     {
       "topic": "collapse-audit",
-      "narrative": "The 80-Year Collapse",
+      "narrative": "The \"US debt collapse is imminent\" story",
       "id": "dalio-2023-debt-crisis",
       "claimant": "Ray Dalio",
       "claim": "US debt crisis coming.",
