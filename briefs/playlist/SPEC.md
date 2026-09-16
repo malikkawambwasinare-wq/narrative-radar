@@ -3,6 +3,10 @@
 Draft spec, 2026-09-15. Origin: a viewer who knows roughly what he wants to watch after work
 and wants it curated by theme, without browsing.
 
+**Status: step 1 of §7 is built** and live in the page under "Build a set". All three shapes work
+from the corpus we already ship. Timestamps, account export and the weekly drop are still ahead,
+and the landing header now carries two labels only: the set builder and the radar.
+
 Related: [psychology synthesis](../psychology/SYNTHESIS.md) · [the narrative system](../narratives/SYSTEM.md) · [filter suite](../filter-suite/SPEC.md)
 
 ---

@@ -267,6 +267,55 @@
   .gtile.cand { cursor: default; border-style: dashed; background: transparent; }
   .gtile.cand:hover { border-color: var(--hairline); }
   .gtile.cand .gname { font-size: 15px; font-weight: 600; }
+  /* The evening set: a finite, ordered playlist */
+  .setform { border: 1px solid var(--border); border-radius: 12px; padding: 18px 18px 16px; background: var(--surface); }
+  .setform h2 { margin: 0 0 6px; font-size: 20px; }
+  .setintro { margin: 0 0 16px; font-size: 13.5px; color: var(--ink-2); line-height: 1.55; max-width: 74ch; }
+  .setrow { display: grid; grid-template-columns: 116px 1fr; gap: 12px; align-items: start; padding: 9px 0; border-top: 1px solid var(--hairline); }
+  .setlbl { font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 650; padding-top: 7px; }
+  .setlbl small { display: block; letter-spacing: 0; text-transform: none; font-weight: 400; font-size: 11px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  #sets .chip, #gal-set { display: block; white-space: normal; font: inherit; font-size: 13px;
+    padding: 6px 12px; border-radius: 999px; cursor: pointer; line-height: 1.35;
+    border: 1px solid var(--hairline); background: var(--page); color: var(--ink-2); text-align: left; }
+  #sets .chip:hover, #gal-set:hover { border-color: var(--accent); }
+  #sets .chip[aria-pressed="true"] { border-color: var(--accent); color: var(--ink);
+    background: color-mix(in srgb, var(--accent) 12%, transparent); font-weight: 600; }
+  #sets .chip[disabled] { opacity: .45; cursor: not-allowed; }
+  #sets .chips.wide .chip { max-width: 250px; border-radius: 12px; padding: 8px 13px; }
+  #sets .chip small { display: block; font-size: 11.5px; font-weight: 400; color: var(--muted); margin-top: 3px; line-height: 1.35; }
+  .setopt { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--ink-2); padding-top: 7px; line-height: 1.45; }
+  .setact { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding-top: 14px; border-top: 1px solid var(--hairline); margin-top: 4px; }
+  .setact button { font: inherit; font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 999px;
+    border: 1px solid var(--ink); background: var(--ink); color: var(--surface); cursor: pointer; }
+  .setact button[disabled] { opacity: .45; cursor: not-allowed; }
+  #set-hint { font-size: 12.5px; color: var(--muted); }
+  .setout { margin: 22px 0 0; }
+  .seth { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+  .seth h3 { margin: 0; font-size: 17px; }
+  .seth .setmeta { font-size: 12.5px; color: var(--muted); }
+  .setcards { display: flex; flex-direction: column; gap: 10px; margin: 12px 0 8px; }
+  .setcard { display: grid; grid-template-columns: 30px 1fr; gap: 12px; border: 1px solid var(--hairline);
+    border-radius: 12px; padding: 13px 15px; background: var(--surface); }
+  .setcard .num { font-variant-numeric: tabular-nums; font-weight: 650; color: var(--muted); font-size: 13px; padding-top: 2px; }
+  .setcard .role { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  .setcard .st { font-size: 15.5px; font-weight: 600; line-height: 1.3; margin: 3px 0 2px; }
+  .setcard .sm { font-size: 12.5px; color: var(--ink-2); }
+  .setcard .why { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; line-height: 1.5; }
+  .setcard .look { font-size: 12.5px; margin-top: 6px; line-height: 1.5; color: var(--ink-2);
+    border-left: 2px solid var(--warning, #a06a00); padding-left: 9px; }
+  .setcard .schips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+  .setcard .sc { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; background: var(--page);
+    border: 1px solid var(--hairline); color: var(--ink-2); }
+  .setcard .acts { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 9px; }
+  .setcard .acts a { font-size: 12.5px; cursor: pointer; }
+  .setcard.note { background: var(--page); }
+  .setcard.note .body { font-size: 13px; color: var(--ink-2); line-height: 1.55; }
+  .setcard.note .body b { color: var(--ink); }
+  .setcard.pop { border-style: dashed; }
+  .setfoot { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; padding: 10px 2px 0; font-size: 12.5px; color: var(--muted); }
+  .setfoot a.play { font-weight: 600; color: var(--ink); }
+  @media (max-width: 560px) { .setrow { grid-template-columns: 1fr; } .setlbl { padding-top: 0; } }
   .galnow .note { font-size: 11.5px; color: var(--muted); margin-top: 6px; }
   /* Publishing momentum — interactive column chart (palette validated light + dark) */
   .momentum { margin: 0 0 18px; padding: 14px 16px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface);
@@ -817,9 +866,7 @@
     <nav class="lnav" aria-label="Main">
       <span class="logo"><span class="dot">●</span> Narrative Radar</span>
       <div class="lnav-links">
-        <a data-land-view="corpus">Corpus</a>
-        <a data-land-view="ledger">Ledger</a>
-        <a data-land-view="briefs">Briefs</a>
+        <a data-open-sets>Build a set</a>
       </div>
       <a class="lcta" data-land-view="corpus">Enter the radar</a>
     </nav>
@@ -853,10 +900,29 @@
       <input id="gal-search" type="search" placeholder="Search narratives — claim, predictor, keyword…"
         autocomplete="off" aria-label="Search narratives">
       <select id="gal-industry" aria-label="Filter by industry"></select>
+      <button class="chip" type="button" id="gal-set">Build an evening set</button>
     </div>
     <div class="galcount" id="gal-count"></div>
     <div class="galnow" id="gal-now"></div>
     <div class="gal-sectors" id="gal-grid"></div>
+  </div>
+
+  <div id="sets" hidden>
+    <button class="backgal" id="back-sets">← All narratives</button>
+    <div class="setform">
+      <h2>Build an evening set</h2>
+      <p class="setintro">Pick a theme or two, say how long you have, and get a finite, ordered set.
+        It ends on purpose: one video per channel, no video repeating another's claim, and nothing
+        ranked by views. Your choices stay on this device.</p>
+      <div class="setrow"><div class="setlbl">Themes<small>up to 2</small></div><div class="chips" id="set-themes"></div></div>
+      <div class="setrow"><div class="setlbl">Time</div><div class="chips" id="set-budget"></div></div>
+      <div class="setrow"><div class="setlbl">Shape</div><div class="chips wide" id="set-type"></div></div>
+      <div class="setrow"><div class="setlbl">Contrast</div>
+        <label class="setopt"><input type="checkbox" id="set-popular">
+          Add the popular version of the story at the end, labelled, so I can see the difference</label></div>
+      <div class="setact"><button id="set-build">Build the set</button><span id="set-hint"></span></div>
+    </div>
+    <div id="set-out"></div>
   </div>
 
   <div id="detail" hidden>
@@ -3498,17 +3564,329 @@ async function showRadar(topic) {
   showGallery();
 }
 
+/* ---------- The evening set ----------
+   A finite, ordered playlist built from the corpus (briefs/playlist/SPEC.md).
+   The rules here are constraints, not preferences, and they are what stops this
+   being a recommender: the set ends, one video per channel, no video repeating
+   another's claim, recycled and clickbait never carried, and nothing ranked by
+   views. Themes are chosen, never inferred; the choices stay in this browser. */
+const SET_KEY = "evening-set";
+const SET_TYPES = [
+  ["debate", "Debate", "One contested claim, each side's best video, then what the corpus shows."],
+  ["catchup", "Catch-up", "The newest material in this narrative, nothing recycled, one per channel."],
+  ["origin", "Origin", "How the story got here: one video per turn it took, oldest first."],
+];
+const SET_BUDGETS = [30, 60, 90];
+const SET = Object.assign({ themes: [], budget: 60, type: "debate", popular: false },
+  (() => { try { return JSON.parse(localStorage.getItem(SET_KEY) || "{}"); } catch (e) { return {}; } })());
+const setSave = () => { try { localStorage.setItem(SET_KEY, JSON.stringify(SET)); } catch (e) {} };
+
+function setMinutes(s) {                       // "11:03" or "1:02:33" -> minutes
+  const p = String(s || "").split(":");
+  if (p.length < 2 || p.some(x => x === "" || isNaN(+x))) return null;
+  const m = p.reduce((a, b) => a * 60 + +b, 0) / 60;
+  return m > 0 ? m : null;
+}
+const fmtMin = m => m >= 60 ? `${Math.floor(m / 60)}h ${String(Math.round(m % 60)).padStart(2, "0")}m` : `${Math.round(m)} min`;
+const setGraded = v => v.verdict && v.verdict !== "UNREVIEWED" && v.verdict !== "UNKNOWN";
+const SET_EVIDENCE = { "outcome-trials": 3, biomarkers: 2, anecdote: 1, none: 0 };
+
+// Hard exclusions. A video the set may never carry, whatever else recommends it.
+function setUsable(v, maxMin) {
+  if (!v || !v.videoId || v.yt?.live || v.yt?.unlisted) return false;
+  const m = setMinutes(v.length);
+  if (!m || (maxMin && m > maxMin)) return false;
+  if (v.verdict === "RECYCLED" || v.verdict === "CLICKBAIT") return false;
+  if (v.yt?.paidPromotion) return false;                     // paid placement is not evidence
+  if (!setGraded(v) && titleFlags(v).length) return false;   // ungraded: the title lexicon stands in
+  return true;
+}
+// Rank by role in the argument — never by views.
+const setScore = v => (v.verdict === "ORIGINAL" ? 30 : setGraded(v) ? 12 : 8)
+  + (SET_EVIDENCE[v.review?.evidence] || 0) * 4
+  + (v.review?.pitch ? -14 : 0)
+  + (v.yt?.captions ? 1 : 0);
+const setWords = s => new Set(String(s || "").toLowerCase().match(/[a-z0-9']{4,}/g) || []);
+function setSameClaim(a, b) {   // stand-in for claim identity while most videos are ungraded
+  const A = setWords(a), B = setWords(b);
+  let n = 0; for (const w of A) if (B.has(w)) n++;
+  return n >= 5 || (A.size >= 3 && n / A.size >= 0.6);
+}
+const setCampName = k => k.name || k.label || k.position || "this side";
+
+function setPicker(data) {
+  const used = new Set(), chans = new Set(), titles = [];
+  return {
+    take(pool, maxMin) {
+      for (const v of pool) {
+        if (used.has(v.videoId) || chans.has(v.channel)) continue;
+        if (!setUsable(v, maxMin)) continue;
+        if (titles.some(t => setSameClaim(v.title, t))) continue;
+        used.add(v.videoId); chans.add(v.channel); titles.push(v.title);
+        return v;
+      }
+      return null;
+    },
+    used,
+  };
+}
+
+/* The Debate Set: a contested claim, each camp's best video, then the receipts. */
+function setDebate(data, budget) {
+  const byId = {};
+  for (const v of data.videos?.videos || []) byId[v.videoId] = v;
+  let best = null;
+  for (const c of data.claims?.claims || []) {
+    const camps = (c.camps || []).map(k => ({
+      k, n: (k.sources || []).length,
+      pool: (k.sources || []).map(s => byId[s.videoId]).filter(v => setUsable(v))
+        .sort((a, b) => setScore(b) - setScore(a) || (publishedEst(b) || 0) - (publishedEst(a) || 0)),
+    })).filter(x => x.pool.length).sort((a, b) => b.n - a.n);
+    if (camps.length < 2) continue;
+    const score = camps.slice(0, 3).reduce((n, x) => n + setScore(x.pool[0]), 0);
+    if (!best || score > best.score) best = { c, camps, score };
+  }
+  if (!best) return null;
+  const pick = setPicker(data), cards = [], camps = best.camps.slice(0, 3);
+  let left = budget;
+  const ROLES = ["The claim, at its strongest", "The strongest answer to it", "A third reading"];
+  camps.forEach((x, i) => {
+    const reserve = 9 * (camps.length - i - 1);
+    const v = pick.take(x.pool, Math.max(8, left - reserve));
+    if (!v) return;
+    left -= setMinutes(v.length);
+    cards.push({ v, role: ROLES[i] || "Another side",
+      why: `${setCampName(x.k)} — ${x.n} video${x.n === 1 ? "" : "s"} in this corpus argue this side.`,
+      look: x.k.watch_for });
+  });
+  if (cards.length < 2) return null;
+  const extra = (data.videos?.videos || []).filter(v => v.verdict === "ORIGINAL")
+    .sort((a, b) => setScore(b) - setScore(a) || (publishedEst(b) || 0) - (publishedEst(a) || 0));
+  if (left > 12) {
+    const v = pick.take(extra, left);
+    if (v) { left -= setMinutes(v.length); cards.push({ v, role: "New information",
+      why: "First-hand material rather than commentary on someone else's." }); }
+  }
+  const vids = data.videos?.videos || [];
+  const graded = vids.filter(setGraded).length, pitch = vids.filter(v => v.review?.pitch).length;
+  const counts = best.camps.map(x => `${setCampName(x.k)}: ${x.n}`).join(" · ");
+  return {
+    open: { title: esc(best.c.statement || "A contested claim"),
+      body: `Before you start, hold one question: <b>what would have to be true for this to be right, and what would show it wrong?</b>
+        Asking it first is what stops the first confident voice deciding for you.` },
+    cards,
+    receipts: { title: "What this corpus shows",
+      body: `${vids.length} videos collected, ${graded} graded so far${pitch ? `, ${pitch} of them selling something` : ""}.
+        How the sides divide: ${esc(counts)}.${best.c.note ? ` ${esc(best.c.note)}` : ""}` },
+    close: { title: "That's the set",
+      body: `The question stays open: <b>${esc(best.c.statement || "")}</b> Each side's tell is on its card above.
+        Nothing here is ranked by how popular it is, and nothing follows this. Close the tab.` },
+  };
+}
+
+/* The Catch-Up Set: the newest material, nothing recycled, one per channel. */
+function setCatchup(data, budget) {
+  const pool = (data.videos?.videos || []).filter(v => setUsable(v))
+    .sort((a, b) => (publishedEst(b) || 0) - (publishedEst(a) || 0));
+  const pick = setPicker(data), cards = [];
+  let left = budget;
+  while (left > 6 && cards.length < 6) {
+    const v = pick.take(pool, left);
+    if (!v) break;
+    left -= setMinutes(v.length);
+    const t = publishedEst(v);
+    cards.push({ v, role: cards.length ? "Also new" : "The newest in this narrative",
+      why: t ? `Published ${isoDate(t)}.` : "Newest in the corpus." });
+  }
+  if (!cards.length) return null;
+  const newest = publishedEst(cards[0].v);
+  return {
+    open: { title: "What's new here",
+      body: `The newest material this corpus holds, one video per channel, with recycled uploads and
+        bait titles left out.${newest ? ` Newest was published ${isoDate(newest)}.` : ""}` },
+    cards,
+    close: { title: "That's the set",
+      body: `If two of these made the same claim, you only got one of them. Nothing follows this set.` },
+  };
+}
+
+/* The Origin Set: one video per turn the story took, oldest first. */
+function setOrigin(data, budget) {
+  const yr = s => { const m = String(s || "").match(/\d{4}/); return m ? +m[0] : null; };
+  const muts = (data.narrative?.mutations || []).filter(m => yr(m.date));
+  const eras = [{ y: yr(data.narrative?.born) || 0, mechanism: "the claim as it started" },
+    ...muts.map(m => ({ y: yr(m.date), mechanism: m.mechanism }))]
+    .sort((a, b) => a.y - b.y);
+  const vids = (data.videos?.videos || []).filter(v => setUsable(v) && publishedEst(v));
+  if (!vids.length) return null;
+  const pick = setPicker(data), cards = [], missing = [];
+  const per = Math.max(8, budget / Math.max(2, eras.length));
+  eras.forEach((e, i) => {
+    const from = Date.UTC(e.y, 0, 1), to = eras[i + 1] ? Date.UTC(eras[i + 1].y, 0, 1) : Infinity;
+    const pool = vids.filter(v => publishedEst(v) >= from && publishedEst(v) < to)
+      .sort((a, b) => setScore(b) - setScore(a) || publishedEst(a) - publishedEst(b));
+    const v = pool.length ? pick.take(pool, per * 1.6) : null;
+    if (!v) { missing.push(e.y); return; }
+    const vy = new Date(publishedEst(v)).getUTCFullYear();
+    cards.push({ v, role: `${vy} — ${e.mechanism}`,
+      why: vy === e.y ? `Published ${isoDate(publishedEst(v))}.`
+        : `Published ${isoDate(publishedEst(v))}. The earliest video the corpus holds for a turn the story took in ${e.y}.` });
+  });
+  if (cards.length < 2) return null;
+  let total = cards.reduce((n, c) => n + setMinutes(c.v.length), 0);
+  while (total > budget * 1.1 && cards.length > 2) {          // trim the weakest, keep the ends
+    let worst = 1;
+    for (let i = 1; i < cards.length - 1; i++) if (setScore(cards[i].v) < setScore(cards[worst].v)) worst = i;
+    total -= setMinutes(cards[worst].v.length); cards.splice(worst, 1);
+  }
+  return {
+    open: { title: "How this story got here",
+      body: `One video per turn the claim took, oldest first. The mechanism changes; the conclusion rarely does.
+        ${missing.length ? `Nothing in the corpus yet from ${missing.join(", ")}.` : ""}` },
+    cards,
+    close: { title: "That's the set",
+      body: `A story that survives by changing its mechanism is being kept alive by the change. That is the thing to watch for next time.` },
+  };
+}
+
+// The popular version, carried once and labelled: the contrast is the point.
+function setPopular(data) {
+  const pool = (data.videos?.videos || []).filter(v =>
+    v.videoId && !v.yt?.live && setMinutes(v.length) &&
+    (v.verdict === "CLICKBAIT" || v.verdict === "RECYCLED" || titleFlags(v).length));
+  if (!pool.length) return null;
+  pool.sort((a, b) => (b.views || 0) - (a.views || 0));
+  const v = pool[0];
+  const flags = titleFlags(v);
+  return { v, pop: true, role: "The popular version, for contrast",
+    why: `Kept out of the set itself: ${v.verdict === "CLICKBAIT" ? "graded clickbait" : v.verdict === "RECYCLED" ? "graded recycled" : flags.join(", ")}.
+      Same story, told the way that travels.` };
+}
+
+async function buildSets() {
+  const themes = SET.themes.slice(0, 2);
+  const out = $("set-out");
+  if (!themes.length) { out.innerHTML = `<div class="galempty">Pick a theme first.</div>`; return; }
+  out.innerHTML = `<div class="galempty">Building…</div>`;
+  const per = Math.round(SET.budget / themes.length);
+  const built = [];
+  for (const id of themes) {
+    const data = await loadTopicData(id);
+    const t = watchlist.topics.find(x => x.id === id) || { id, name: id };
+    let set = null, note = "";
+    if (SET.type === "debate") {
+      set = setDebate(data, per);
+      if (!set) {
+        note = `No contested claim with camps on both sides has been graded here yet, so this is the origin of the story instead.`;
+        set = setOrigin(data, per) || setCatchup(data, per);
+      }
+    } else if (SET.type === "origin") {
+      set = setOrigin(data, per);
+      if (!set) { note = "The corpus doesn't reach back far enough here yet, so this is what's newest instead."; set = setCatchup(data, per); }
+    } else {
+      set = setCatchup(data, per);
+    }
+    if (!set) { built.push({ t, empty: true }); continue; }
+    if (SET.popular) { const p = setPopular(data); if (p) set.cards = [...set.cards, p]; }
+    built.push({ t, data, set, note, per });
+  }
+  renderSets(built);
+}
+
+function setCard(p, i) {
+  const v = p.v;
+  const chips = [
+    setGraded(v) ? `<span class="sc">${esc(v.verdict.toLowerCase())}${v.verdict_basis ? ` · ${esc(v.verdict_basis)}` : ""}</span>`
+      : `<span class="sc">not graded yet</span>`,
+    v.review?.evidence && v.review.evidence !== "none" ? `<span class="sc">evidence: ${esc(v.review.evidence)}</span>` : "",
+    v.review?.pitch ? `<span class="sc">sells something</span>` : "",
+  ].filter(Boolean).join("");
+  return `<div class="setcard${p.pop ? " pop" : ""}">
+    <div class="num">${p.pop ? "+" : i}</div>
+    <div>
+      <div class="role">${esc(p.role)}</div>
+      <div class="st">${esc(v.title)}</div>
+      <div class="sm">${esc(v.channel || "")}${v.length ? ` · ${esc(v.length)}` : ""}</div>
+      <div class="schips">${chips}</div>
+      ${p.why ? `<div class="why">${esc(p.why)}</div>` : ""}
+      ${p.look ? `<div class="look"><b>Look out for:</b> ${esc(p.look)}</div>` : ""}
+      <div class="acts">
+        <a href="https://www.youtube.com/watch?v=${esc(v.videoId)}" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+        <a data-set-open="${esc(v.videoId)}" data-set-topic="${esc(p.topicId || "")}">See it in the corpus</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderSets(built) {
+  const shape = SET_TYPES.find(x => x[0] === SET.type)?.[1] || "";
+  $("set-out").innerHTML = built.map(({ t, set, note, empty }) => {
+    if (empty) return `<section class="setout"><div class="seth"><h3>${esc(shortName(t))}</h3></div>
+      <div class="galempty">Nothing in this corpus clears the set's rules yet.</div></section>`;
+    for (const c of set.cards) c.topicId = t.id;
+    const mins = set.cards.filter(c => !c.pop).reduce((n, c) => n + setMinutes(c.v.length), 0);
+    const ids = set.cards.map(c => c.v.videoId).join(",");
+    const n = set.cards.filter(c => !c.pop).length;
+    return `<section class="setout">
+      <div class="seth"><h3>${esc(shortName(t))}</h3>
+        <span class="setmeta">${esc(shape)} set · ${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}</span></div>
+      ${note ? `<div class="setcard note"><div class="num">·</div><div class="body">${esc(note)}</div></div>` : ""}
+      <div class="setcards">
+        <div class="setcard note"><div class="num">▸</div><div>
+          <div class="role">Before you start</div><div class="st">${set.open.title}</div>
+          <div class="body" style="margin-top:6px">${set.open.body}</div></div></div>
+        ${set.cards.map((c, i) => setCard(c, i + 1)).join("")}
+        ${set.receipts ? `<div class="setcard note"><div class="num">◆</div><div>
+          <div class="role">The receipts</div><div class="st">${esc(set.receipts.title)}</div>
+          <div class="body" style="margin-top:6px">${set.receipts.body}</div></div></div>` : ""}
+        <div class="setcard note"><div class="num">■</div><div>
+          <div class="role">The end</div><div class="st">${esc(set.close.title)}</div>
+          <div class="body" style="margin-top:6px">${set.close.body}</div></div></div>
+      </div>
+      <div class="setfoot">
+        <a class="play" href="https://www.youtube.com/watch_videos?video_ids=${esc(ids)}" target="_blank" rel="noopener">Open the whole set in YouTube ↗</a>
+        <span>A temporary playlist. Nothing is saved to your account, and we never see what you watch.</span>
+      </div>
+    </section>`;
+  }).join("");
+}
+
+function renderSetForm() {
+  const topics = (watchlist?.topics || []).filter(t => t.status !== "queued");
+  $("set-themes").innerHTML = topics.map(t => `<button class="chip" type="button" data-set-theme="${esc(t.id)}"
+    aria-pressed="${SET.themes.includes(t.id)}">${esc(shortName(t))}</button>`).join("");
+  $("set-budget").innerHTML = SET_BUDGETS.map(b => `<button class="chip" type="button" data-set-budget="${b}"
+    aria-pressed="${SET.budget === b}">${b} min</button>`).join("");
+  $("set-type").innerHTML = SET_TYPES.map(([id, name, desc]) => `<button class="chip" type="button" data-set-type="${id}"
+    aria-pressed="${SET.type === id}">${esc(name)}<small>${esc(desc)}</small></button>`).join("");
+  $("set-popular").checked = !!SET.popular;
+  $("set-build").disabled = !SET.themes.length;
+  $("set-hint").textContent = !SET.themes.length ? "Pick one or two themes."
+    : SET.themes.length === 2 ? `Two themes, about ${Math.round(SET.budget / 2)} minutes each.` : "";
+}
+
+function showSets() {
+  $("app-landing").hidden = true;
+  $("app-radar").hidden = false;
+  $("gallery").hidden = true;
+  $("detail").hidden = true;
+  $("sets").hidden = false;
+  renderSetForm();
+}
+
 /* ---------- The narrative gallery: search + industry filter + tiles ---------- */
 const galStats = {};   // topicId -> {age, videos, score, next} filled lazily
 function showGallery() {
   $("gallery").hidden = false;
   $("detail").hidden = true;
+  $("sets").hidden = true;
   renderGalleryFilters();
   renderGallery();
   fillGalleryStats();
 }
 function openDetail(id) {
   $("gallery").hidden = true;
+  $("sets").hidden = true;
   $("detail").hidden = false;
   return loadTopic(id);
 }
@@ -3807,6 +4185,22 @@ document.addEventListener("click", async (ev) => {
   if (ev.target.closest("#browse-link")) { showNotice(""); return showRadar(); }
   const gt = ev.target.closest("[data-gopen]");
   if (gt) return openDetail(gt.dataset.gopen);
+  if (ev.target.closest("[data-open-sets], #gal-set")) { showNotice(""); return showSets(); }
+  if (ev.target.closest("#back-sets")) { showNotice(""); return showGallery(); }
+  const sth = ev.target.closest("[data-set-theme]");
+  if (sth) {
+    const id = sth.dataset.setTheme;
+    if (SET.themes.includes(id)) SET.themes = SET.themes.filter(x => x !== id);
+    else SET.themes = [...SET.themes, id].slice(-2);
+    setSave(); renderSetForm(); return;
+  }
+  const stb = ev.target.closest("[data-set-budget]");
+  if (stb) { SET.budget = +stb.dataset.setBudget; setSave(); renderSetForm(); return; }
+  const stt = ev.target.closest("[data-set-type]");
+  if (stt) { SET.type = stt.dataset.setType; setSave(); renderSetForm(); return; }
+  if (ev.target.closest("#set-build")) return buildSets();
+  const so = ev.target.closest("[data-set-open]");
+  if (so) return openRadarAt(so.dataset.setTopic, so.dataset.setOpen);
   const lnv = ev.target.closest("[data-land-view]");
   if (lnv) {
     showNotice("");
@@ -3923,6 +4317,7 @@ document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay
 ["search", "sort", "tfilter", "vfilter"].forEach(id => $(id).addEventListener("input", renderCorpus));
 $("gal-search").addEventListener("input", renderGallery);
 $("gal-industry").addEventListener("change", renderGallery);
+$("set-popular").addEventListener("change", (e) => { SET.popular = e.target.checked; setSave(); });
 $("back-gallery").addEventListener("click", () => { showNotice(""); showGallery(); });
 
 $("lookup-form").addEventListener("submit", (e) => {
