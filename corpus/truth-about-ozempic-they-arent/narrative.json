@@ -1,0 +1,31 @@
+{
+  "name": "The \"truth about Ozempic they aren't telling you\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "claim": "GLP-1 weight-loss drugs like Ozempic carry serious downplayed side effects and risks that patients are not properly warned about.",
+  "predictor": "to be determined",
+  "born": "2023-01",
+  "born_note": "Ozempic's 2022-23 viral surge brought Ozempic face, muscle loss and gastroparesis claims into mass social media within months. (model estimate, pending audit)",
+  "mutations": [],
+  "frame": {
+    "problem": "Mass adoption of GLP-1 weight-loss injections",
+    "cause": "Pharma marketing and doctors downplaying side effects",
+    "outcome": "Users suffer muscle loss and other harms; seek alternatives or informed caution",
+    "clock": null
+  },
+  "explanations": {
+    "layman": "These videos say weight-loss shots like Ozempic have harms that patients are not warned about properly, from stomach paralysis and muscle loss to what happens when you stop. Millions are taking them, so anyone deciding whether to start, or already injecting, wants to know which warnings are real and which are clickbait around an unfamiliar drug.",
+    "intermediate": "Mechanism claimed: rapid GLP-1 uptake outran long-term safety data, and commercial pressure led prescribers and manufacturers to downplay gastrointestinal, muscle-mass, pancreatic and regain risks. Camps: critics ranging from cautious clinicians to supplement and natural-metabolism sellers; endocrinologists and obesity-medicine specialists citing trial data and cardiovascular benefit; regulators updating labels incrementally, which each side reads as vindication.",
+    "expert": "Falsifiable at the specific-claim level: pharmacovigilance and cohort studies on gastroparesis, thyroid cancer, suicidality, NAION and lean-mass loss either confirm or shrink each signal, and label changes are the public scoreboard. The unfalsifiable residue is the suppression premise. Gainers are litigation advertisers, compounded and natural-alternative sellers, and attention-driven health channels. Lifecycle: peak volume, moving from shock claims toward lawsuit and off-ramp content."
+  },
+  "origin": {
+    "type": "engine-discovery",
+    "phrase": "truth ozempic",
+    "created": "2026-09-17",
+    "evidence": {
+      "videos": 8,
+      "channels": 8,
+      "months": 3,
+      "span": "2024-04 → 2026-09"
+    }
+  }
+}

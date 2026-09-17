@@ -1,0 +1,31 @@
+{
+  "name": "The \"brain fog has a single root cause you can fix\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "claim": "Brain fog and cognitive decline are caused by an identifiable metabolic or dietary root cause (e.g. insulin resistance, 'type 3 diabetes'), and correcting it restores mental clarity.",
+  "predictor": "to be determined",
+  "born": "2005",
+  "born_note": "The type 3 diabetes framing entered literature in 2005 and reached mass audiences via grain and sugar brain books around 2013. (model estimate, pending audit)",
+  "mutations": [],
+  "frame": {
+    "problem": "Widespread brain fog and memory decline",
+    "cause": "Metabolic dysfunction from diet, especially insulin resistance",
+    "outcome": "Identifying and removing the root cause reverses the fog",
+    "clock": null
+  },
+  "explanations": {
+    "layman": "You feel foggy, forgetful and slow, and these videos promise one underlying cause, usually blood sugar or insulin problems, with a fix that restores clarity. Some even link it to Alzheimer's. It matters because real causes of fog include sleep debt, thyroid disease, anaemia, depression and medication effects, and a single-cause story can delay finding yours.",
+    "intermediate": "Mechanism: chronic high insulin and impaired brain glucose use starve or inflame neurons, so low-carb or ketogenic eating, fasting and supplements reverse it; hence Alzheimer's as type 3 diabetes. Camps: metabolic-health and functional-medicine creators offering one lever; neurologists and endocrinologists treating fog as a nonspecific symptom with many causes; researchers who accept insulin resistance as a risk factor, not the root.",
+    "expert": "Falsification path: trials where ketogenic or insulin-sensitising interventions fail to improve cognition beyond placebo in non-diabetic subjects, plus the mixed intranasal insulin and anti-diabetic Alzheimer's results already on record. Gainers are course and supplement sellers, continuous glucose monitor affiliates and keto brands. Lifecycle: mature and forking, with each channel substituting a new single culprit as the last one loses novelty."
+  },
+  "origin": {
+    "type": "engine-discovery",
+    "phrase": "cause brain",
+    "created": "2026-09-17",
+    "evidence": {
+      "videos": 6,
+      "channels": 6,
+      "months": 5,
+      "span": "2023-12 → 2026-09"
+    }
+  }
+}

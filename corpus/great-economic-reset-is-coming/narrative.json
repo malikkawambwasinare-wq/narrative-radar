@@ -1,0 +1,31 @@
+{
+  "name": "The \"great economic reset is coming\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "claim": "A once-in-a-lifetime reset of the monetary and financial system is imminent, wiping out savings and asset values in a shock worse than 2008.",
+  "predictor": "to be determined",
+  "born": "2020-06",
+  "born_note": "The World Economic Forum's June 2020 Great Reset launch gave older monetary-reset talk its current name and viral framing. (model estimate, pending audit)",
+  "mutations": [],
+  "frame": {
+    "problem": "the current debt-based monetary system is unsustainable",
+    "cause": "central banks, debt expansion and currency debasement",
+    "outcome": "a systemic reset that destroys wealth unless one moves into hard assets",
+    "clock": "soon, within the next few years"
+  },
+  "explanations": {
+    "layman": "Videos say the money system itself is about to be rebuilt, and when it happens your savings, pension and home value get wiped out in something worse than 2008. The pitch is to act before the door closes, usually by moving into gold, crypto or cash. It matters because fear drives expensive portfolio changes, and the promised date keeps moving.",
+    "intermediate": "The mechanism claimed: unsustainable debt and currency debasement force authorities to reset the system, devaluing paper claims overnight. Camps: hard-money and crypto commentators who see reset as inevitable and profitable if positioned early; mainstream economists who see slow inflation, restructuring and policy muddling instead; and a political camp reading reset as a deliberate elite plan rather than an economic outcome.",
+    "expert": "Falsified by nothing in practice, which is its strength: no named date, no defined reset mechanism, so delay is absorbed as proof of fragility. Testable versions would specify a devaluation, default or currency swap within a stated window. Beneficiaries are metals dealers, newsletter subscriptions and crypto funnels. Lifecycle: mature and evergreen since 2020, recycled at each inflation or debt-ceiling scare."
+  },
+  "origin": {
+    "type": "engine-discovery",
+    "phrase": "reset coming",
+    "created": "2026-09-17",
+    "evidence": {
+      "videos": 9,
+      "channels": 7,
+      "months": 8,
+      "span": "2022-06 → 2026-09"
+    }
+  }
+}

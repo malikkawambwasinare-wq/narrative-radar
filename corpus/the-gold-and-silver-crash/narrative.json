@@ -1,0 +1,31 @@
+{
+  "name": "The \"the gold and silver crash exposed the system\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "claim": "A sharp drop in gold and silver prices is not an ordinary correction but evidence of stress in the monetary/paper-metals system, and it is the beginning of a larger move to come.",
+  "predictor": "to be determined",
+  "born": "2011-05",
+  "born_note": "The May 2011 silver collapse crystallised the paper-metals manipulation reading that this narrative reuses after each selloff. (model estimate, pending audit)",
+  "mutations": [],
+  "frame": {
+    "problem": "Precious metals prices crashed unexpectedly",
+    "cause": "Paper markets, leverage and manipulation of the monetary system",
+    "outcome": "Further turmoil ahead; hold physical metals and prepare",
+    "clock": "Following the 2026 selloff, months ahead"
+  },
+  "explanations": {
+    "layman": "Gold and silver fell sharply, and instead of calling it a normal dip, these videos say the drop reveals something broken in how metals are traded on paper versus held in a vault. The message is that the real move is still ahead, so holders should not sell and should buy more. It matters because it turns a loss into a reason to add risk.",
+    "intermediate": "Mechanism: futures and unallocated paper claims vastly exceed deliverable metal, so forced selling or margin stress produces price drops that contradict physical demand, exposing leverage rather than weak fundamentals. Camps: hard-money analysts and macro traders reading the selloff as a setup for a larger repricing; market structure economists attributing it to positioning, real rates and dollar moves; exchanges denying dislocation.",
+    "expert": "Testable through lease rates, EFP spreads, physical premiums, vault and registered inventories, and delivery failures. Orderly deliveries with normal premiums after the drawdown falsify the systemic reading, leaving an ordinary correction. Gainers are bullion dealers, subscription macro services and mining promoters who need holders to average down. Lifecycle: early and event-driven, with a short shelf life unless price confirms within months."
+  },
+  "origin": {
+    "type": "engine-discovery",
+    "phrase": "gold silver crash",
+    "created": "2026-09-17",
+    "evidence": {
+      "videos": 7,
+      "channels": 5,
+      "months": 5,
+      "span": "2026-01 → 2026-09"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "The \"fix your gut, fix your health\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "claim": "Poor gut microbiome health is the underlying driver of chronic disease and inflammation, so repairing the gut resolves broad health problems.",
+  "predictor": "to be determined",
+  "born": "2013",
+  "born_note": "Microbiome bestsellers and functional-medicine media mainstreamed the older leaky-gut idea into a general theory of chronic disease. (model estimate, pending audit)",
+  "mutations": [],
+  "frame": {
+    "problem": "Widespread chronic illness and inflammation",
+    "cause": "A damaged gut lining and disrupted microbiome",
+    "outcome": "Healing the gut through diet and protocols reverses disease",
+    "clock": null
+  },
+  "explanations": {
+    "layman": "The claim is that a damaged gut lining and unbalanced gut bacteria are the hidden cause behind fatigue, joint pain, skin problems, mood and autoimmune disease, so healing the gut fixes the rest. It matters because the advice ranges from harmless (more fibre, less ultra-processed food) to costly testing, supplement stacks and elimination diets with real downsides.",
+    "intermediate": "Mechanism: dysbiosis and increased intestinal permeability let bacterial products cross into the bloodstream, driving chronic low-grade inflammation that manifests as disease elsewhere. Camps: functional-medicine clinicians selling protocols; microbiome researchers who accept associations but dispute causal direction and the leap to treatment; gastroenterologists who treat permeability as a consequence of illness rather than its root.",
+    "expert": "Falsification path: randomised trials where microbiome-targeted interventions fail to outperform placebo or general diet change on hard endpoints, plus causal work showing permeability follows disease. Fecal transplant results outside C. difficile are the key test case. Gainers are supplement brands, at-home microbiome test kits and clinic funnels. Lifecycle: mature and commercially saturated, now broadening into mood and brain claims."
+  },
+  "origin": {
+    "type": "engine-discovery",
+    "phrase": "fix gut",
+    "created": "2026-09-17",
+    "evidence": {
+      "videos": 15,
+      "channels": 8,
+      "months": 9,
+      "span": "2022-07 → 2026-09"
+    }
+  }
+}

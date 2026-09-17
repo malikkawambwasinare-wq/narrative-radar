@@ -1,195 +1,309 @@
 {
-  "topics": [
-    {
-      "id": "collapse-audit",
-      "name": "The US Debt Collapse That's Been \"Imminent\" Since 2015 — economic & AI doom predictions",
-      "industry": "Economy & markets",
-      "status": "active",
-      "started": "2026-07-30",
-      "trigger": "Diary Of A CEO — Ray Dalio 'The 80 Year Collapse Is Here' (135K views in first 3 hours)",
-      "queries": [
-        "ray dalio collapse",
-        "80 year cycle economy",
-        "billionaire warning AI economy",
-        "debt crisis prediction",
-        "dollar collapse prediction",
-        "AI bubble crash warning"
-      ],
-      "watched_predictors": [
-        "Ray Dalio",
-        "Diary Of A CEO guests making macro predictions"
-      ],
-      "notes": "Goal: audit trail of predictions. Every forecast logged with predictor, date made, horizon, and living status: PENDING / SUPPORTED / REFUTED / UPDATED. Track goalpost-moves explicitly.",
-      "former_names": [
-        "Collapse Audit — economic & AI doom predictions",
-        "US Debt Collapse — economic & AI doom predictions"
-      ],
-      "title_basis": "Prediction ledger: earliest dated collapse call March 2015; 0 of 5 resolved calls landed."
-    },
-    {
-      "id": "loop-engineering",
-      "name": "Do AI Agents Really Write All the Code Now? — agentic engineering loops",
-      "industry": "AI & technology",
-      "status": "queued",
-      "started": null,
-      "queries": [
-        "loop engineering claude code",
-        "coding loops AI agents",
-        "agentic engineering workflow",
-        "agent workflows"
-      ],
-      "watched_predictors": [],
-      "notes": "Developers no longer write software line by line — they run AI coding agents in loops that plan, write, test and fix code on their own. Queued: a calibration topic whose wave was mapped by hand.",
-      "former_names": [
-        "Loops / agentic engineering / agent workflows",
-        "AI Agents Write the Code — agentic engineering loops"
-      ],
-      "internal_note": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave.",
-      "title_basis": "Open question."
-    },
-    {
-      "id": "crypto-winter-watch",
-      "name": "Crypto Winter: Is the 4-Year Cycle Finally Dead? — Crypto Winter Watch",
-      "industry": "Economy & markets",
-      "status": "active",
-      "started": "2026-08-07",
-      "trigger": "User-submitted video: Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter (New York Times Events)",
-      "queries": [
-        "crypto winter 2026",
-        "is the crypto bull cycle over",
-        "Brian Armstrong crypto outlook",
-        "Larry Fink bitcoin BlackRock",
-        "bitcoin bear market institutional adoption",
-        "crypto four year cycle dead"
-      ],
-      "watched_predictors": [],
-      "notes": "Created by the analysis engine. Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat.",
-      "former_names": [
-        "Crypto Winter Watch"
-      ],
-      "title_basis": "Open question; both camps' dated calls resolve on the ledger."
-    },
-    {
-      "id": "the-2026-setup",
-      "name": "\"Generational Buying Opportunity\": Pitched Every Year? — now is the time to buy",
-      "industry": "Economy & markets",
-      "status": "active",
-      "started": "2026-08-07",
-      "trigger": "User-submitted video: The BIGGEST Opportunity Will Come in 2026! (Investing Made Simple)",
-      "queries": [
-        "biggest investing opportunity 2026",
-        "best stocks to buy for 2026",
-        "2026 stock market predictions bull",
-        "generational buying opportunity stocks",
-        "how to prepare portfolio for 2026",
-        "2026 market outlook retail investors"
-      ],
-      "watched_predictors": [],
-      "notes": "Created by the analysis engine. After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors — position now before the next leg up.",
-      "former_names": [
-        "The 2026 Setup",
-        "Generational Buying Opportunity — now is the time to buy"
-      ],
-      "title_basis": "Open question, tested by the five-year corpus: is the same call made for every new year?"
-    },
-    {
-      "id": "housing-crash-watch",
-      "name": "Housing Crash: Is It Always Next Year? — Housing Crash Watch",
-      "industry": "Economy & markets",
-      "status": "active",
-      "started": "2026-08-08",
-      "trigger": "User-submitted video: Is The Housing Market Still Going to Crash in 2026? (Michael Bordenaro)",
-      "queries": [
-        "housing market crash 2026",
-        "home prices falling inventory surge",
-        "housing market predictions 2026",
-        "is the housing bubble about to pop",
-        "mortgage rates housing crash",
-        "real estate market collapse coming"
-      ],
-      "watched_predictors": [],
-      "notes": "Created by the analysis engine. US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward.",
-      "former_names": [
-        "Housing Crash Watch"
-      ],
-      "title_basis": "Open question, tested by the five-year corpus: does the predicted crash date keep sliding?"
-    },
-    {
-      "id": "psi-declassified",
-      "name": "The CIA's Psychic Spies: Did Remote Viewing Work? — the Stargate programme",
-      "industry": "Fringe & unexplained",
-      "status": "active",
-      "started": "2026-08-09",
-      "trigger": "User-submitted video: The CIA Protocol: How to Train Your Brain for Remote Viewing (Dr. Mayim Bialik)",
-      "queries": [
-        "remote viewing CIA Stargate program",
-        "how to train remote viewing protocol",
-        "Ingo Swann Joseph McMoneagle remote viewing",
-        "psychic spies declassified documents",
-        "is remote viewing real science debunked",
-        "consciousness psi research podcast"
-      ],
-      "watched_predictors": [],
-      "notes": "Created by the analysis engine. Declassified government programs (CIA/DIA 'Stargate') supposedly proved remote viewing and psychic perception are real, trainable skills that mainstream science suppresses or ignores.",
-      "former_names": [
-        "Psi, Declassified",
-        "Psychic Spies — the CIA's remote viewing programme"
-      ],
-      "title_basis": "Open question; US government psychic-intelligence research ran 1972–1995 (CIA-funded SRI work, then Army/DIA)."
-    },
-    {
-      "id": "open-vs-closed-ai-race",
-      "name": "Can Free Open-Source AI Beat ChatGPT and Claude? — open vs closed models",
-      "industry": "AI & technology",
-      "status": "active",
-      "started": "2026-08-13",
-      "trigger": "User-submitted video: Can Opus 5 Beat Open-Source Kimi K3 in 3D Design? (Stefan 3D AI)",
-      "queries": [
-        "open source model beats GPT benchmark test",
-        "Kimi vs Claude Opus comparison",
-        "DeepSeek vs OpenAI frontier gap",
-        "best open weights model for coding test",
-        "Chinese AI models catching up frontier labs",
-        "AI model head to head 3D design test"
-      ],
-      "watched_predictors": [],
-      "notes": "Created by the analysis engine. Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
-      "former_names": [
-        "Open Weights vs Closed Frontier",
-        "Open-Source AI vs the Big Labs — has the gap closed?"
-      ],
-      "title_basis": "Open question; each new open-model release restarts the debate."
-    },
-    {
-      "id": "anti-inflammatory-diet",
-      "name": "Anti-Inflammatory Diet: Nearly 1 in 3 Videos Is Selling Something — inflammation as the root of all disease",
-      "industry": "Health & biotech",
-      "status": "active",
-      "started": "2026-09-14",
-      "trigger": "User-submitted video: 10 anti-inflammatory foods for more energy, less pain and better health (The Doctor's Kitchen)",
-      "queries": [
-        "anti inflammatory diet",
-        "anti inflammatory foods",
-        "chronic inflammation diet doctor",
-        "foods that cause inflammation",
-        "anti inflammatory diet science debunked",
-        "seed oils inflammation",
-        "chronic inflammation root of disease",
-        "anti inflammatory diet doctor",
-        "foods that reduce inflammation",
-        "inflammation fatigue joint pain diet"
-      ],
-      "watched_predictors": [],
-      "notes": "Chronic low-grade inflammation, driven by modern diet, is framed as the hidden cause of fatigue, pain and most chronic disease — and specific 'anti-inflammatory' foods as the cure. Graded on evidence, not a clock: track which claims cite outcome trials vs biomarkers, which are recycled lists, and who is selling something.",
-      "filters": "v2",
-      "merged_from": [
-        "chronic-inflammation-is-the-root-of-all-disease",
-        "inflammation-is-the-root-of-all-disease"
-      ],
-      "former_names": [
-        "Anti-Inflammatory Diet — inflammation as the root of all disease"
-      ],
-      "title_basis": "Transcript review, 2026-09-15: 22 of 77 videos read promote their own product (29%)."
-    }
-  ]
+ "topics": [
+  {
+   "id": "collapse-audit",
+   "name": "The US Debt Collapse That's Been \"Imminent\" Since 2015 — economic & AI doom predictions",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-07-30",
+   "trigger": "Diary Of A CEO — Ray Dalio 'The 80 Year Collapse Is Here' (135K views in first 3 hours)",
+   "queries": [
+    "ray dalio collapse",
+    "80 year cycle economy",
+    "billionaire warning AI economy",
+    "debt crisis prediction",
+    "dollar collapse prediction",
+    "AI bubble crash warning"
+   ],
+   "watched_predictors": [
+    "Ray Dalio",
+    "Diary Of A CEO guests making macro predictions"
+   ],
+   "notes": "Goal: audit trail of predictions. Every forecast logged with predictor, date made, horizon, and living status: PENDING / SUPPORTED / REFUTED / UPDATED. Track goalpost-moves explicitly.",
+   "former_names": [
+    "Collapse Audit — economic & AI doom predictions",
+    "US Debt Collapse — economic & AI doom predictions"
+   ],
+   "title_basis": "Prediction ledger: earliest dated collapse call March 2015; 0 of 5 resolved calls landed."
+  },
+  {
+   "id": "loop-engineering",
+   "name": "Do AI Agents Really Write All the Code Now? — agentic engineering loops",
+   "industry": "AI & technology",
+   "status": "queued",
+   "started": null,
+   "queries": [
+    "loop engineering claude code",
+    "coding loops AI agents",
+    "agentic engineering workflow",
+    "agent workflows"
+   ],
+   "watched_predictors": [],
+   "notes": "Developers no longer write software line by line — they run AI coding agents in loops that plan, write, test and fix code on their own. Queued: a calibration topic whose wave was mapped by hand.",
+   "former_names": [
+    "Loops / agentic engineering / agent workflows",
+    "AI Agents Write the Code — agentic engineering loops"
+   ],
+   "internal_note": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave.",
+   "title_basis": "Open question."
+  },
+  {
+   "id": "crypto-winter-watch",
+   "name": "Crypto Winter: Is the 4-Year Cycle Finally Dead? — Crypto Winter Watch",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-08-07",
+   "trigger": "User-submitted video: Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter (New York Times Events)",
+   "queries": [
+    "crypto winter 2026",
+    "is the crypto bull cycle over",
+    "Brian Armstrong crypto outlook",
+    "Larry Fink bitcoin BlackRock",
+    "bitcoin bear market institutional adoption",
+    "crypto four year cycle dead"
+   ],
+   "watched_predictors": [],
+   "notes": "Created by the analysis engine. Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat.",
+   "former_names": [
+    "Crypto Winter Watch"
+   ],
+   "title_basis": "Open question; both camps' dated calls resolve on the ledger."
+  },
+  {
+   "id": "the-2026-setup",
+   "name": "\"Generational Buying Opportunity\": Pitched Every Year? — now is the time to buy",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-08-07",
+   "trigger": "User-submitted video: The BIGGEST Opportunity Will Come in 2026! (Investing Made Simple)",
+   "queries": [
+    "biggest investing opportunity 2026",
+    "best stocks to buy for 2026",
+    "2026 stock market predictions bull",
+    "generational buying opportunity stocks",
+    "how to prepare portfolio for 2026",
+    "2026 market outlook retail investors"
+   ],
+   "watched_predictors": [],
+   "notes": "Created by the analysis engine. After 2025's volatility, 2026 will deliver a generational buying opportunity for patient investors — position now before the next leg up.",
+   "former_names": [
+    "The 2026 Setup",
+    "Generational Buying Opportunity — now is the time to buy"
+   ],
+   "title_basis": "Open question, tested by the five-year corpus: is the same call made for every new year?"
+  },
+  {
+   "id": "housing-crash-watch",
+   "name": "Housing Crash: Is It Always Next Year? — Housing Crash Watch",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-08-08",
+   "trigger": "User-submitted video: Is The Housing Market Still Going to Crash in 2026? (Michael Bordenaro)",
+   "queries": [
+    "housing market crash 2026",
+    "home prices falling inventory surge",
+    "housing market predictions 2026",
+    "is the housing bubble about to pop",
+    "mortgage rates housing crash",
+    "real estate market collapse coming"
+   ],
+   "watched_predictors": [],
+   "notes": "Created by the analysis engine. US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward.",
+   "former_names": [
+    "Housing Crash Watch"
+   ],
+   "title_basis": "Open question, tested by the five-year corpus: does the predicted crash date keep sliding?"
+  },
+  {
+   "id": "psi-declassified",
+   "name": "The CIA's Psychic Spies: Did Remote Viewing Work? — the Stargate programme",
+   "industry": "Fringe & unexplained",
+   "status": "active",
+   "started": "2026-08-09",
+   "trigger": "User-submitted video: The CIA Protocol: How to Train Your Brain for Remote Viewing (Dr. Mayim Bialik)",
+   "queries": [
+    "remote viewing CIA Stargate program",
+    "how to train remote viewing protocol",
+    "Ingo Swann Joseph McMoneagle remote viewing",
+    "psychic spies declassified documents",
+    "is remote viewing real science debunked",
+    "consciousness psi research podcast"
+   ],
+   "watched_predictors": [],
+   "notes": "Created by the analysis engine. Declassified government programs (CIA/DIA 'Stargate') supposedly proved remote viewing and psychic perception are real, trainable skills that mainstream science suppresses or ignores.",
+   "former_names": [
+    "Psi, Declassified",
+    "Psychic Spies — the CIA's remote viewing programme"
+   ],
+   "title_basis": "Open question; US government psychic-intelligence research ran 1972–1995 (CIA-funded SRI work, then Army/DIA)."
+  },
+  {
+   "id": "open-vs-closed-ai-race",
+   "name": "Can Free Open-Source AI Beat ChatGPT and Claude? — open vs closed models",
+   "industry": "AI & technology",
+   "status": "active",
+   "started": "2026-08-13",
+   "trigger": "User-submitted video: Can Opus 5 Beat Open-Source Kimi K3 in 3D Design? (Stefan 3D AI)",
+   "queries": [
+    "open source model beats GPT benchmark test",
+    "Kimi vs Claude Opus comparison",
+    "DeepSeek vs OpenAI frontier gap",
+    "best open weights model for coding test",
+    "Chinese AI models catching up frontier labs",
+    "AI model head to head 3D design test"
+   ],
+   "watched_predictors": [],
+   "notes": "Created by the analysis engine. Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
+   "former_names": [
+    "Open Weights vs Closed Frontier",
+    "Open-Source AI vs the Big Labs — has the gap closed?"
+   ],
+   "title_basis": "Open question; each new open-model release restarts the debate."
+  },
+  {
+   "id": "anti-inflammatory-diet",
+   "name": "Anti-Inflammatory Diet: Nearly 1 in 3 Videos Is Selling Something — inflammation as the root of all disease",
+   "industry": "Health & biotech",
+   "status": "active",
+   "started": "2026-09-14",
+   "trigger": "User-submitted video: 10 anti-inflammatory foods for more energy, less pain and better health (The Doctor's Kitchen)",
+   "queries": [
+    "anti inflammatory diet",
+    "anti inflammatory foods",
+    "chronic inflammation diet doctor",
+    "foods that cause inflammation",
+    "anti inflammatory diet science debunked",
+    "seed oils inflammation",
+    "chronic inflammation root of disease",
+    "anti inflammatory diet doctor",
+    "foods that reduce inflammation",
+    "inflammation fatigue joint pain diet"
+   ],
+   "watched_predictors": [],
+   "notes": "Chronic low-grade inflammation, driven by modern diet, is framed as the hidden cause of fatigue, pain and most chronic disease — and specific 'anti-inflammatory' foods as the cure. Graded on evidence, not a clock: track which claims cite outcome trials vs biomarkers, which are recycled lists, and who is selling something.",
+   "filters": "v2",
+   "merged_from": [
+    "chronic-inflammation-is-the-root-of-all-disease",
+    "inflammation-is-the-root-of-all-disease"
+   ],
+   "former_names": [
+    "Anti-Inflammatory Diet — inflammation as the root of all disease"
+   ],
+   "title_basis": "Transcript review, 2026-09-15: 22 of 77 videos read promote their own product (29%)."
+  },
+  {
+   "id": "great-economic-reset-is-coming",
+   "name": "The Great Reset: Always Coming, Never Here?",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-09-17",
+   "trigger": "Found by the engine: \"reset coming\" across 7 independent channels over 8 months",
+   "queries": [
+    "great reset is coming",
+    "once in a lifetime economic reset",
+    "monetary reset coming soon",
+    "worse than 2008 collapse warning",
+    "currency reset explained"
+   ],
+   "watched_predictors": [],
+   "notes": "Promoted from a discovered proposal on 2026-09-17. A once-in-a-lifetime reset of the monetary and financial system is imminent, wiping out savings and asset values in a shock worse than 2008.",
+   "title_basis": "Nine videos over years all promise an imminent once-in-a-lifetime reset without a dated arrival, so the hook asks about the recurring deadline.",
+   "filters": "v2"
+  },
+  {
+   "id": "condo-crash-will-break-canadas",
+   "name": "Condo Crash: Can It Really Break Canada's Banks?",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-09-17",
+   "trigger": "Found by the engine: \"condo crash\" across 5 independent channels over 8 months",
+   "queries": [
+    "canada condo crash",
+    "toronto condo presale collapse",
+    "canadian banks mortgage risk",
+    "condo investor default canada",
+    "canada housing crash 2026"
+   ],
+   "watched_predictors": [],
+   "notes": "Promoted from a discovered proposal on 2026-09-17. Canada's condo market is collapsing after years of risky lending and speculative presale building, and the resulting defaults threaten the country's banking system.",
+   "title_basis": "Evidence shows a live price and presale downturn plus lending allegations, but the banking-crisis step is the contested claim, so it stays a question.",
+   "filters": "v2"
+  },
+  {
+   "id": "fix-your-gut-fix-your",
+   "name": "Fix Your Gut: Does It Really Fix Everything?",
+   "industry": "Health & biotech",
+   "status": "active",
+   "started": "2026-09-17",
+   "trigger": "Found by the engine: \"fix gut\" across 8 independent channels over 9 months",
+   "queries": [
+    "fix your gut fix your health",
+    "leaky gut inflammation root cause",
+    "gut microbiome chronic disease",
+    "mark hyman gut health",
+    "heal your gut protocol"
+   ],
+   "watched_predictors": [],
+   "notes": "Promoted from a discovered proposal on 2026-09-17. Poor gut microbiome health is the underlying driver of chronic disease and inflammation, so repairing the gut resolves broad health problems.",
+   "title_basis": "Fifteen videos claim gut repair resolves broad chronic disease, a single-cause framing the hook questions rather than asserts.",
+   "filters": "v2"
+  },
+  {
+   "id": "truth-about-ozempic-they-arent",
+   "name": "Ozempic Side Effects: What Are They Not Telling?",
+   "industry": "Health & biotech",
+   "status": "active",
+   "started": "2026-09-17",
+   "trigger": "Found by the engine: \"truth ozempic\" across 8 independent channels over 3 months",
+   "queries": [
+    "truth about ozempic side effects",
+    "ozempic dangers doctors wont tell you",
+    "glp 1 muscle loss risk",
+    "semaglutide gastroparesis lawsuit",
+    "ozempic after 50 warning"
+   ],
+   "watched_predictors": [],
+   "notes": "Promoted from a discovered proposal on 2026-09-17. GLP-1 weight-loss drugs like Ozempic carry serious downplayed side effects and risks that patients are not properly warned about.",
+   "title_basis": "The videos share one move, promising withheld truth about GLP-1 harms, so the hook frames the disclosure question without endorsing it.",
+   "filters": "v2"
+  },
+  {
+   "id": "the-gold-and-silver-crash",
+   "name": "Gold and Silver Crash: Correction or System Stress?",
+   "industry": "Economy & markets",
+   "status": "active",
+   "started": "2026-09-17",
+   "trigger": "Found by the engine: \"gold silver crash\" across 5 independent channels over 5 months",
+   "queries": [
+    "gold and silver crash explained",
+    "silver paper market manipulation",
+    "comex default silver squeeze",
+    "why did gold crash 2026",
+    "gold silver just the beginning"
+   ],
+   "watched_predictors": [],
+   "notes": "Promoted from a discovered proposal on 2026-09-17. A sharp drop in gold and silver prices is not an ordinary correction but evidence of stress in the monetary/paper-metals system, and it is the beginning of a larger move to come.",
+   "title_basis": "Seven videos reinterpret the 2026 metals selloff as systemic evidence rather than a normal drawdown, the exact dispute the hook names.",
+   "filters": "v2"
+  },
+  {
+   "id": "brain-fog-has-a-single",
+   "name": "Brain Fog: Is There One Root Cause to Fix?",
+   "industry": "Health & biotech",
+   "status": "active",
+   "started": "2026-09-17",
+   "trigger": "Found by the engine: \"cause brain\" across 6 independent channels over 5 months",
+   "queries": [
+    "real cause of brain fog",
+    "alzheimers type 3 diabetes",
+    "insulin resistance brain fog",
+    "brain fog root cause fix",
+    "metabolic health mental clarity"
+   ],
+   "watched_predictors": [],
+   "notes": "Promoted from a discovered proposal on 2026-09-17. Brain fog and cognitive decline are caused by an identifiable metabolic or dietary root cause (e.g. insulin resistance, 'type 3 diabetes'), and correcting it restores mental clarity.",
+   "title_basis": "Six videos each name a different single cause, from insulin resistance to type 3 diabetes, so the singular root cause is posed as a question.",
+   "filters": "v2"
+  }
+ ]
 }

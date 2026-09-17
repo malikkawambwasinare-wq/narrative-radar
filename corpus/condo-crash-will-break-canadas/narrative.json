@@ -1,0 +1,31 @@
+{
+  "name": "The \"condo crash will break Canada's banks\" story",
+  "name_rule": "Attributed, not asserted (briefs/narratives/SYSTEM.md §3): a name is one more repetition of the claim.",
+  "claim": "Canada's condo market is collapsing after years of risky lending and speculative presale building, and the resulting defaults threaten the country's banking system.",
+  "predictor": "to be determined",
+  "born": "2024-03",
+  "born_note": "Presale cancellations and falling Toronto condo prices in 2024 turned long-running Canadian bubble talk into a condo-specific bank-risk claim. (model estimate, pending audit)",
+  "mutations": [],
+  "frame": {
+    "problem": "Collapsing condo prices and stalled presales in Canada",
+    "cause": "Risky lending and speculative overbuilding",
+    "outcome": "Defaults spread into a banking crisis",
+    "clock": "Now unfolding, next 1-2 years"
+  },
+  "explanations": {
+    "layman": "Canadian condo prices and presale sales have fallen hard, and some investors who bought units they cannot afford are walking away. These videos argue the losses will land on the banks and lenders that funded them, triggering a wider crisis. If you own a condo, rent one, or hold bank shares and Canadian mortgages, the difference between a bad market and a banking crisis matters.",
+    "intermediate": "Mechanism: loose appraisal and private lending fuelled speculative presale buying, so closing failures and negative equity cascade into lender losses, credit tightening and a broader downturn. Camps: bearish analysts and mortgage-industry whistleblowers pointing at fraud and alternative lenders; banks and regulators pointing to insured mortgages, low arrears and capital buffers; developers blaming taxes and rates rather than credit quality.",
+    "expert": "Falsifiable: watch arrears rates, uninsured mortgage loss provisions, alternative-lender funding stress and CMHC data. Bank-level impairment staying in basis points falsifies the systemic step even if condo prices keep sliding. Gainers are bearish commentators, bank short sellers and buyer-side agents courting renters. Lifecycle: early-to-mid, still fed by real price declines, vulnerable to a rate-cut stabilisation that strands the banking-crisis prediction."
+  },
+  "origin": {
+    "type": "engine-discovery",
+    "phrase": "condo crash",
+    "created": "2026-09-17",
+    "evidence": {
+      "videos": 12,
+      "channels": 5,
+      "months": 8,
+      "span": "2025-08 → 2026-07"
+    }
+  }
+}
