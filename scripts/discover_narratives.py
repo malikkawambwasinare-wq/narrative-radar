@@ -41,40 +41,9 @@ been being do does did doing have has had having i you he she it we they them hi
 new best top vs video watch full episode part live today tomorrow yesterday week month year years ep podcast
 subscribe channel please like comment share""".split())
 
-# A claim is a statement about the world that could be wrong. These markers are
-# how claims announce themselves in a title; a title with none of them is
-# usually a subject, a reaction or a tutorial.
-CLAIM_MARK = re.compile(r"""\b(
- will|won'?t|going\ to|about\ to|coming|next\ year|by\ 20\d\d|soon|imminent|
- is|are|isn'?t|aren'?t|was|were|has|have|
- causes?|caused|cause|drives?|proves?|proven|shows?|means?|explains?|
- crash(?:es|ing)?|collaps(?:e|es|ing)|boom|bubble|burst|end(?:s|ing|ed)?|dead|dying|over|
- bans?|banned|wins?|beats?|replac(?:e|es|ing)|kills?|saves?|fix(?:es)?|
- should|must|why|truth|really|actually|myth|lie|scam|hoax
-)\b""", re.X | re.I)
+from _lexicon import CLAIM_MARK, RHETORIC, has_content
 
 TRACKED_VOCAB = {}
-# Rhetoric, not subject matter. Across thousands of channels the phrases that
-# recur most are sales formulas — "shocking truth", "you won't believe", "what
-# nobody tells you". They travel everywhere precisely because they are about
-# nothing. A narrative has to name what the claim is ABOUT, so a phrase must
-# carry at least one word that is neither stopword, claim marker nor rhetoric.
-RHETORIC = set("""truth truths shocking shock brutal harsh dark ugly hidden secret real reality actually
-really literally insane crazy wild unbelievable believe know knows knowing learn learned tell tells telling
-told say says said reveal reveals revealed revealing explain explains explained explaining expert experts
-economist economists doctor doctors analyst analysts guru warns warning nobody everyone everybody someone
-thing things something anything everything stuff way ways here there they you your his her our their
-biggest bigger huge massive major minor small tiny crazy important must need needs needed want wants
-come comes coming came get gets getting got make makes making made take takes taking took give gives
-happen happens happening happened work works working worked try tries trying let lets good bad worse
-worst better best right wrong sure certain maybe perhaps probably possibly obviously clearly simply just
-one two three next last first final new old full part update guide tips tricks hack hacks step steps
-watch watching look looking see seeing seen saw start starts starting stop stops stopped keep keeps
-it's here's what's that's there's don't doesn't isn't won't can't didn't you're we're they're i'm let's
-well enough far away back out off again still yet ever never always sometimes soon later ahead behind
-save saves saving saved buy buys buying bought sell sells selling sold use uses using used doing does
-much many more less least own free easy hard simple quick fast slow big long short low high""".split())
-
 MONTH = lambda t: datetime.fromtimestamp(t / 1000, timezone.utc).strftime("%Y-%m")
 
 
@@ -150,6 +119,7 @@ def main():
         """Words that say what the claim is about, once rhetoric is removed."""
         return [w for w in ph.split()
                 if w not in RHETORIC and not CLAIM_MARK.fullmatch(w)]
+    assert has_content("dollar collapse") and not has_content("shocking truth")
 
     def distinctive(ph):
         c = content(ph)

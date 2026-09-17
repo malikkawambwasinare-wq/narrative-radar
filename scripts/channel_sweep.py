@@ -27,6 +27,9 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _lexicon import has_content
+
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://www.googleapis.com/youtube/v3/"
 KEY = os.environ.get("YT_API_KEY", "").strip()
@@ -106,7 +109,14 @@ def topic_vocab(topics, corpora=None):
                 totals[term] += 1
         c_counts[t["id"]] = counts
 
-    sizes = {tid: max(1, sum(1 for _ in (corpora or {}).get(tid, []))) for tid in c_counts}
+    # A floor on corpus size. Without it a narrative holding ten seed videos
+    # makes every word in them look distinctive — three mentions in ten titles
+    # is a 30% density nothing else can match — and the matcher then files
+    # supplement videos under an economics narrative. With the floor, a young
+    # narrative leans on its search queries until it has collected enough to
+    # teach anything.
+    VOCAB_FLOOR = 200
+    sizes = {tid: max(VOCAB_FLOOR, sum(1 for _ in (corpora or {}).get(tid, []))) for tid in c_counts}
     grand = max(1, sum(sizes.values()))
     owners = defaultdict(set)
     for tid, (grams, singles) in q_terms.items():
@@ -115,11 +125,15 @@ def topic_vocab(topics, corpora=None):
 
     vocab = {}
     for tid, (grams, singles) in q_terms.items():
-        g = {t for t in grams if len(owners[t]) == 1}
-        u = {t for t in singles if len(owners[t]) == 1}
+        # Query wording gets the same test as learned wording. A query written
+        # as "worse than 2008 collapse warning" must not teach the matcher
+        # "worse than", which files a video about smoking under an economics
+        # narrative.
+        g = {t for t in grams if len(owners[t]) == 1 and has_content(t)}
+        u = {t for t in singles if len(owners[t]) == 1 and has_content(t)}
         for term, n in c_counts.get(tid, {}).items():
-            if n < MIN_N:
-                continue
+            if n < MIN_N or not has_content(term):
+                continue                      # a phrase must name a subject, not a mood
             mine = n / sizes[tid]
             rest = (totals[term] - n) / max(1, grand - sizes[tid])
             if mine < rest * RATIO:
@@ -172,7 +186,7 @@ def prune():
     print(f"-{total} videos the matcher no longer accepts{'' if WRITE else ' (dry run)'}")
 
 
-def best_topic(title, description, vocab):
+def best_topic(title, description, vocab, min_score=None, require_gram=False):
     """A video belongs to a narrative when its TITLE carries that narrative's
     own wording: one distinctive two-word phrase, or two distinctive words with
     support. The description can support a match but never make one, because
@@ -186,7 +200,8 @@ def best_topic(title, description, vocab):
         tu = len(tw & singles)
         dg = sum(1 for g in grams if g in d)
         sc = tg * 4 + tu * 1.5 + min(dg, 2)
-        if (tg >= 1 or tu >= 2) and sc >= SCORE_MIN and sc > score:
+        gate = tg >= 1 if require_gram else (tg >= 1 or tu >= 2)
+        if gate and sc >= (min_score if min_score is not None else SCORE_MIN) and sc > score:
             best, score = tid, sc
     return best, score
 
@@ -304,7 +319,7 @@ def main():
     # Uploads that carry a claim but match no tracked narrative are the raw
     # material for narratives we do not have yet. Dropping them was throwing
     # away the answer to "which narratives are we missing".
-    from discover_narratives import CLAIM_MARK
+    from _lexicon import CLAIM_MARK
     pool_f = ROOT / "discovery-pool.json"
     pool = json.loads(pool_f.read_text())["videos"] if pool_f.exists() else []
     pool_ids = {v["videoId"] for v in pool}

@@ -45,7 +45,7 @@
    "span": "2022-08 \u2192 2026-09",
    "industry": "Unsorted",
    "home": "(pool)",
-   "home_share": 0.62,
+   "home_share": 0.59,
    "kind": "new candidate",
    "examples": [
     "The ROOT CAUSE Of Disease & How To START HEALING The Body & Mind! | Alberto Villoldo",
@@ -337,41 +337,6 @@
    "rank": 50.0
   },
   {
-   "phrase": "collapse first usa enters",
-   "videos": 9,
-   "channels": 5,
-   "months": 5,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.56,
-   "kind": "new candidate",
-   "examples": [
-    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
-   ],
-   "ids": [
-    "2rwaCLtUMUY",
-    "6qGtzQdoW78",
-    "Dz4mPUE14_I",
-    "HgIB8ounbIs",
-    "jp5hHUupNcU",
-    "nhFtUBzUP18",
-    "oWogTWbnGd0",
-    "ugXVPKb_V_w",
-    "y0xGkFgui9Y"
-   ],
-   "also": [
-    "states collapse",
-    "collapse first usa enters",
-    "states collapse first usa",
-    "collapse first usa"
-   ],
-   "specificity": 0.0005,
-   "rank": 50.0
-  },
-  {
    "phrase": "uncomfortable truth",
    "videos": 5,
    "channels": 5,
@@ -379,7 +344,7 @@
    "span": "2026-02 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.8,
    "kind": "new candidate",
    "examples": [
     "The Uncomfortable Truth About Staying Safe #security  #wellness",
@@ -678,7 +643,7 @@
    "span": "2025-11 \u2192 2026-09",
    "industry": "Unsorted",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.97,
    "kind": "new candidate",
    "examples": [
     "ANEMIA CAUSES SYMPTOMS AND CLASSIFICATION",
@@ -817,7 +782,7 @@
    "span": "2023-10 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.8,
    "kind": "new candidate",
    "examples": [
     "Why US National Debt is In a Total Collapse",
@@ -900,8 +865,8 @@
     "model actually",
     "beats gpt",
     "open source model beats",
-    "source model beats",
     "model beats claude",
+    "source model beats",
     "model beat"
    ],
    "specificity": 0.0103,
@@ -1005,7 +970,7 @@
    "span": "2025-04 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.71,
+   "home_share": 0.57,
    "kind": "new candidate",
    "examples": [
     "People Have NO IDEA What's Coming For The Stock Market...",
@@ -1108,9 +1073,9 @@
    "months": 8,
    "span": "2022-06 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "(pool)",
+   "home": "great-economic-reset-is-coming",
    "home_share": 0.33,
-   "kind": "new candidate",
+   "kind": "cross-narrative",
    "examples": [
     "BEWARE The Great Reset is Coming Soon\u2026",
     "A Once in a Lifetime Economic Reset is Coming.",
@@ -1239,18 +1204,66 @@
    "rank": 19.2
   },
   {
+   "phrase": "recession coming",
+   "videos": 24,
+   "channels": 24,
+   "months": 7,
+   "span": "2022-06 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.58,
+   "kind": "cross-narrative",
+   "examples": [
+    "Is A Recession Coming 2022 - Do This Now To Prepare",
+    "Prepare Now 50% Housing Crash Recession Coming",
+    "Recession Coming: 3 ETFs Worth Buying Today"
+   ],
+   "ids": [
+    "1umehs9tVns",
+    "3_4tNeEwX0E",
+    "7yZ1Coz96XY",
+    "9-vixeaVsI0",
+    "Bl1CbJhAtBI",
+    "CFtZH6wqStc",
+    "CRMVDW2flmI",
+    "H6SoDxvTlFk",
+    "Q97XETAbrqU",
+    "QVqkQHryc7w",
+    "SH-zhfvflNM",
+    "TEZJgl720qE",
+    "WQRoZ32qnGY",
+    "Wh9OpffZ5WQ",
+    "XqZ1WqUmMYw",
+    "Ys_haNfnZPQ",
+    "a6RZ_f1WFi4",
+    "e8ltV32qO1c",
+    "eefpaW5AuIw",
+    "hbxtJ2ZTP-U",
+    "iyaEJioo4-0",
+    "jgMjEfBYwyk",
+    "kdBH9P8vkmo",
+    "oDNO4hCqsnw"
+   ],
+   "also": [
+    "coming worse recession",
+    "crash recession"
+   ],
+   "specificity": 0.0088,
+   "rank": 19.1
+  },
+  {
    "phrase": "condo crash",
    "videos": 12,
    "channels": 5,
    "months": 8,
    "span": "2025-08 \u2192 2026-07",
    "industry": "Economy & markets",
-   "home": "(pool)",
+   "home": "condo-crash-will-break-canadas",
    "home_share": 0.83,
-   "kind": "new candidate",
+   "kind": "sub-claim",
    "examples": [
-    "Risky Lending Fuels Condo Crash \u2014 and Suspicious Fires",
     "Condo Crash Warning: Is a Banking Crisis Next in Canada?",
+    "Risky Lending Fuels Condo Crash \u2014 and Suspicious Fires",
     "Canada\u2019s Banking System at Risk From the Condo Crash"
    ],
    "ids": [
@@ -1297,54 +1310,6 @@
    ],
    "specificity": 0.0021,
    "rank": 19.0
-  },
-  {
-   "phrase": "recession coming",
-   "videos": 24,
-   "channels": 24,
-   "months": 7,
-   "span": "2022-06 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.92,
-   "kind": "new candidate",
-   "examples": [
-    "Is A Recession Coming 2022 - Do This Now To Prepare",
-    "Prepare Now 50% Housing Crash Recession Coming",
-    "Recession Coming: 3 ETFs Worth Buying Today"
-   ],
-   "ids": [
-    "1umehs9tVns",
-    "3_4tNeEwX0E",
-    "7yZ1Coz96XY",
-    "9-vixeaVsI0",
-    "Bl1CbJhAtBI",
-    "CFtZH6wqStc",
-    "CRMVDW2flmI",
-    "H6SoDxvTlFk",
-    "Q97XETAbrqU",
-    "QVqkQHryc7w",
-    "SH-zhfvflNM",
-    "TEZJgl720qE",
-    "WQRoZ32qnGY",
-    "Wh9OpffZ5WQ",
-    "XqZ1WqUmMYw",
-    "Ys_haNfnZPQ",
-    "a6RZ_f1WFi4",
-    "e8ltV32qO1c",
-    "eefpaW5AuIw",
-    "hbxtJ2ZTP-U",
-    "iyaEJioo4-0",
-    "jgMjEfBYwyk",
-    "kdBH9P8vkmo",
-    "oDNO4hCqsnw"
-   ],
-   "also": [
-    "coming worse recession",
-    "crash recession"
-   ],
-   "specificity": 0.0089,
-   "rank": 18.9
   },
   {
    "phrase": "could save",
@@ -1397,8 +1362,8 @@
     "could save life",
     "could end"
    ],
-   "specificity": 0.0162,
-   "rank": 18.1
+   "specificity": 0.0161,
+   "rank": 18.3
   },
   {
    "phrase": "currency collapse",
@@ -1432,7 +1397,7 @@
    "span": "2023-01 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.92,
+   "home_share": 0.88,
    "kind": "new candidate",
    "examples": [
     "Don\u2019t Save Your Money - Do This Instead",
@@ -1497,6 +1462,34 @@
    ],
    "specificity": 0.0007,
    "rank": 17.1
+  },
+  {
+   "phrase": "event coming",
+   "videos": 8,
+   "channels": 3,
+   "months": 5,
+   "span": "2025-10 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "great-economic-reset-is-coming",
+   "home_share": 0.88,
+   "kind": "sub-claim",
+   "examples": [
+    "IMPORTANT WARNING: A Once in a Lifetime Event is Coming",
+    "IMPORTANT WARNING: A Once in a Lifetime Event is Coming",
+    "IMPORTANT WARNING: A Once in a Lifetime Event is Coming"
+   ],
+   "ids": [
+    "EixI7r1ZoxI",
+    "KdbMHZkcQ8Y",
+    "OtxK0jWmJ68",
+    "azbX3zILvQA",
+    "cqbDJk6bdfg",
+    "eqCBpXm1RN8",
+    "ta0gA_sCxVg",
+    "tpSaHTEMIT0"
+   ],
+   "specificity": 0.0009,
+   "rank": 16.7
   },
   {
    "phrase": "crash beginning",
@@ -1667,8 +1660,8 @@
    "span": "2023-08 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "collapse-audit",
-   "home_share": 0.75,
-   "kind": "new candidate",
+   "home_share": 0.83,
+   "kind": "sub-claim",
    "examples": [
     "Property Market Collapse 2008 Crash vs 2023",
     "DR Horton Insiders Dumping Stock CEO Warns of Something Far Worse than 2008 Crash",
@@ -1696,14 +1689,49 @@
    "rank": 13.8
   },
   {
+   "phrase": "states collapse first usa",
+   "videos": 9,
+   "channels": 5,
+   "months": 5,
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.56,
+   "kind": "new candidate",
+   "examples": [
+    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
+   ],
+   "ids": [
+    "2rwaCLtUMUY",
+    "6qGtzQdoW78",
+    "Dz4mPUE14_I",
+    "HgIB8ounbIs",
+    "jp5hHUupNcU",
+    "nhFtUBzUP18",
+    "oWogTWbnGd0",
+    "ugXVPKb_V_w",
+    "y0xGkFgui9Y"
+   ],
+   "also": [
+    "states collapse",
+    "states collapse first usa",
+    "collapse first usa enters",
+    "collapse first usa"
+   ],
+   "specificity": 0.0019,
+   "rank": 13.2
+  },
+  {
    "phrase": "crash already",
    "videos": 11,
    "channels": 9,
    "months": 6,
    "span": "2025-12 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 0.36,
+   "home": "housing-crash-watch",
+   "home_share": 0.45,
    "kind": "cross-narrative",
    "examples": [
     "Market Crash \u2018Already Happened\u2019: Trader Reveals Stocks, Bitcoin Next Moves | Lance Breitstein",
@@ -1793,14 +1821,14 @@
    "channels": 8,
    "months": 9,
    "span": "2022-07 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
+   "industry": "Health & biotech",
+   "home": "fix-your-gut-fix-your",
    "home_share": 0.67,
    "kind": "new candidate",
    "examples": [
     "This Is Causing Disease! - How To End Inflammation & Fix Your Gut Health | Dr. Mark Hyman",
-    "Fix Your Gut, Fix Your Health #shorts #functionalmedicine",
-    "How To Fix Your Gut Microbiome (It\u2019s Not What You Think) | Dr. Mark Hyman"
+    "How To Fix Your Gut Microbiome (It\u2019s Not What You Think) | Dr. Mark Hyman",
+    "Fix Your Gut, Fix Your Health #shorts #functionalmedicine"
    ],
    "ids": [
     "-nxFiKlU2sA",
@@ -1820,6 +1848,7 @@
     "y1H-ZRPMKfg"
    ],
    "also": [
+    "fix gut health",
     "really gut",
     "gut fix"
    ],
@@ -1834,12 +1863,12 @@
    "span": "2023-12 \u2192 2026-09",
    "industry": "Unsorted",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.75,
    "kind": "new candidate",
    "examples": [
     "Why \u201cSimple\u201d Doesn\u2019t Mean \u201cEasy\u201d",
     "#sponsored Although family meals are a priority for me, it doesn\u2019t mean that they are easy",
-    "Reversing Insulin Resistance Doesn\u2019t Mean You\u2019re Cured\u2026"
+    "Intentional Moments | Getting Older Doesn\u2019t Mean You Have Less Value"
    ],
    "ids": [
     "0bfCTO7aHeE",
@@ -1922,13 +1951,13 @@
    "months": 3,
    "span": "2024-04 \u2192 2026-09",
    "industry": "Health & biotech",
-   "home": "(pool)",
+   "home": "truth-about-ozempic-they-arent",
    "home_share": 1.0,
-   "kind": "new candidate",
+   "kind": "sub-claim",
    "examples": [
     "The SHOCKING Truth About Ozempic Side Effects (And How To Avoid Them)",
     "Want the Truth About Ozempic? #healthtips #shorts",
-    "The Truth About Ozempic You Need To Hear After 60"
+    "Doctor Reveals The Truth About Ozempic"
    ],
    "ids": [
     "4a6Uj2Eec74",
@@ -1975,7 +2004,7 @@
    "span": "2021-03 \u2192 2026-09",
    "industry": "Health & biotech",
    "home": "anti-inflammatory-diet",
-   "home_share": 0.92,
+   "home_share": 1.0,
    "kind": "sub-claim",
    "examples": [
     "\ud83d\udd25Top 13 Foods that Cause Inflammation | Anti Inflammatory Foods to Replace",
@@ -2118,12 +2147,12 @@
    "span": "2025-10 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.75,
    "kind": "new candidate",
    "examples": [
     "The Terrifying Truth About the Next Generation of Rifles",
     "The Terrifying Truth Behind D\u00e9j\u00e0 Vu: Your Brain Is Lying To You",
-    "The Terrifying Truth About The Ozempic Revolution"
+    "The Terrifying Truth About What Happens While You Sleep #science #facts #usa"
    ],
    "ids": [
     "Ew8t9Ko7C68",
@@ -2494,7 +2523,7 @@
    "span": "2026-03 \u2192 2026-09",
    "industry": "Health & biotech",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.86,
    "kind": "new candidate",
    "examples": [
     "Collagen and Your Gut Health: What Does the Science Actually Say?",
@@ -2524,7 +2553,7 @@
    "span": "2022-04 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.6,
+   "home_share": 0.4,
    "kind": "new candidate",
    "examples": [
     "SUPER HIKE COMING SOON - 1% In June",
@@ -2644,7 +2673,7 @@
    "span": "2026-06 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.8,
+   "home_share": 0.6,
    "kind": "new candidate",
    "examples": [
     "WTF Just Happened? [CRASH ALERT]",
@@ -2768,7 +2797,7 @@
    "examples": [
     "They\u2019re Trying To Reverse Engineer The 2008 Financial Crash",
     "The REAL Reason A Financial Crash Is Coming Next",
-    "Financial Crash Expert: A Once In a Lifetime Crisis Is Coming"
+    "Financial Crash Expert: The unthinkable is about to happen to the daily wage workers"
    ],
    "ids": [
     "3E779xZhQxQ",
@@ -2796,7 +2825,7 @@
    "months": 5,
    "span": "2026-01 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "(pool)",
+   "home": "the-gold-and-silver-crash",
    "home_share": 0.71,
    "kind": "new candidate",
    "examples": [
@@ -2826,9 +2855,9 @@
    "months": 4,
    "span": "2024-05 \u2192 2026-06",
    "industry": "Economy & markets",
-   "home": "housing-crash-watch",
+   "home": "(pool)",
    "home_share": 0.5,
-   "kind": "cross-narrative",
+   "kind": "new candidate",
    "examples": [
     "BACK-TO-BACK Interest Rate Cuts Coming!?",
     "Fed Rate Cuts are Coming: Impact the US Housing Market @MinorityMindset",
@@ -2875,7 +2904,7 @@
    "span": "2023-11 \u2192 2026-08",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.67,
+   "home_share": 0.56,
    "kind": "new candidate",
    "examples": [
     "JP Morgan Warning About Debt Collapse",
@@ -3013,13 +3042,13 @@
    "months": 3,
    "span": "2022-11 \u2192 2026-08",
    "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
+   "home": "brain-fog-has-a-single",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
    "examples": [
     "You\u2019ll NEVER Reverse Insulin Resistance Until You Fix THIS | Dr. Robert Lustig",
     "Stop Taking Vitamin D Until You Fix This First",
-    "You\u2019ll NEVER reverse insulin resistance until you FIX THIS..."
+    "Stop letting AI write code until you fix this one thing (with Antigravity) | The Agent Factory"
    ],
    "ids": [
     "Lpsmq6S7BMQ",
@@ -3091,12 +3120,12 @@
    "span": "2026-08 \u2192 2026-09",
    "industry": "Health & biotech",
    "home": "anti-inflammatory-diet",
-   "home_share": 0.86,
+   "home_share": 1.0,
    "kind": "sub-claim",
    "examples": [
     "Are Seed Oils Really Toxic? What the Research Actually Says",
-    "Seed Oil Shock: What Heated Seed Oils REALLY Do To Your Arteries",
-    "Are Seed Oils Really Toxic? Let\u2019s Look at the Science (Fat Wars P.1)"
+    "Are Seed Oils Really Toxic? Let\u2019s Look at the Science (Fat Wars P.1)",
+    "Are Seed Oils Really the Problem? Look at the Whole Diet"
    ],
    "ids": [
     "-WnXepJaDlA",
@@ -3122,8 +3151,8 @@
    "span": "2025-04 \u2192 2026-08",
    "industry": "Economy & markets",
    "home": "housing-crash-watch",
-   "home_share": 0.6,
-   "kind": "new candidate",
+   "home_share": 0.8,
+   "kind": "sub-claim",
    "examples": [
     "Is This The Biggest Job Market Collapse in Canadian History?",
     "Mass Layoffs Are Getting WORSE, Job Market Collapse 2025",
@@ -3177,7 +3206,7 @@
    "span": "2023-10 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "housing-crash-watch",
-   "home_share": 0.83,
+   "home_share": 1.0,
    "kind": "sub-claim",
    "examples": [
     "The Housing Crash Will Be Worse Than 2008 (Real Reason)",
@@ -3203,7 +3232,7 @@
    "span": "2023-01 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.7,
+   "home_share": 0.3,
    "kind": "new candidate",
    "examples": [
     "The Debt Crisis Is Coming Soon",
@@ -3401,13 +3430,42 @@
    "rank": 4.4
   },
   {
+   "phrase": "cause insulin resistance",
+   "videos": 5,
+   "channels": 3,
+   "months": 3,
+   "span": "2026-02 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "brain-fog-has-a-single",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The New Cause of Insulin Resistance is NOT Just Sugar",
+    "The New Cause of Insulin Resistance has been Discovered (it\u2019s not sugar)",
+    "The New Discovered Cause of Insulin Resistance is Because of Your Liver"
+   ],
+   "ids": [
+    "ME0mmqO-xGk",
+    "_2OT4fMS4Kg",
+    "dHjYxYg5rLM",
+    "f8D3UR72FrU",
+    "ie7xPWz4YOw"
+   ],
+   "also": [
+    "cause insulin",
+    "fix insulin resistance"
+   ],
+   "specificity": 0.0021,
+   "rank": 4.3
+  },
+  {
    "phrase": "crash signal",
    "videos": 4,
    "channels": 4,
    "months": 3,
    "span": "2026-01 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "housing-crash-watch",
+   "home": "the-2026-setup",
    "home_share": 0.5,
    "kind": "cross-narrative",
    "examples": [
@@ -3425,15 +3483,39 @@
    "rank": 4.3
   },
   {
+   "phrase": "fix insulin",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2026-03 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "brain-fog-has-a-single",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "How to Balance Blood Sugar & Fix Insulin Resistance: 5 Simple Steps for Women | Living Simpler",
+    "How to Balance Blood Sugar & Fix Insulin Resistance: 5 Simple Steps for Women | Living Simpler",
+    "Over 65? STOP Dieting! Fix Insulin Resistance & Melt Belly Fat Naturally| Dr. Alan Mandell #wellness"
+   ],
+   "ids": [
+    "0uKDYK17Roc",
+    "WgQ4u28t1cU",
+    "iehqJTc0udY",
+    "nNGHmew6rYE"
+   ],
+   "specificity": 0.0021,
+   "rank": 4.3
+  },
+  {
    "phrase": "cause brain",
    "videos": 6,
    "channels": 6,
    "months": 5,
    "span": "2023-12 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
+   "industry": "Health & biotech",
+   "home": "brain-fog-has-a-single",
    "home_share": 0.83,
-   "kind": "new candidate",
+   "kind": "sub-claim",
    "examples": [
     "Alzheimer's is 'Type 3 Diabetes' (The REAL Root Cause of Brain Fog)",
     "The Shocking Cause of Brain Fog (it\u2019s NOT Sugar)",
@@ -3745,34 +3827,6 @@
    "rank": 3.6
   },
   {
-   "phrase": "could trigger market crash",
-   "videos": 5,
-   "channels": 4,
-   "months": 2,
-   "span": "2024-08 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.6,
-   "kind": "new candidate",
-   "examples": [
-    "\ud83d\udea8NEW Inflation Report EMERGENCY FED Rate Cut to prevent stock market crash & recession",
-    "The $1 Trillion AI Debt Bomb Could Trigger a Market Crash \u2014 Recession 2027?",
-    "The $1 Trillion AI Debt Crisis Could Trigger a Massive Market Crash | Recession 2027 | Prof Jiang"
-   ],
-   "ids": [
-    "8AlqOlgdZDQ",
-    "BW47P0V0OSo",
-    "Bbx8w27A2xs",
-    "k0szvFmHPnI"
-   ],
-   "also": [
-    "could trigger market crash",
-    "trigger market crash"
-   ],
-   "specificity": 0.0023,
-   "rank": 3.5
-  },
-  {
    "phrase": "collapse begun",
    "videos": 5,
    "channels": 4,
@@ -3923,7 +3977,7 @@
     "war end",
     "war coming"
    ],
-   "specificity": 0.0092,
+   "specificity": 0.0091,
    "rank": 3.3
   },
   {
@@ -4111,6 +4165,30 @@
    "rank": 3.1
   },
   {
+   "phrase": "energy crashes",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2026-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
+   "examples": [
+    "How to Stop Afternoon Energy Crashes Caused by Insulin Resistance",
+    "The Real Reason Your Energy Crashes and Cravings Take Over After 35 | Living Simpler",
+    "The Real Reason Your Energy Crashes and Cravings Take Over After 35 | Living Simpler"
+   ],
+   "ids": [
+    "I6DkDIoWKrQ",
+    "X8I3w_j-MK4",
+    "k2YkbKgR9b8",
+    "z7pzXGv--Ww"
+   ],
+   "specificity": 0.003,
+   "rank": 3.0
+  },
+  {
    "phrase": "investors must",
    "videos": 8,
    "channels": 7,
@@ -4201,7 +4279,7 @@
    "span": "2024-04 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.6,
+   "home_share": 0.4,
    "kind": "new candidate",
    "examples": [
     "Fastest Housing Price Crash Since 2008 On New Homes",
@@ -4346,8 +4424,8 @@
     "mV1iw0aN9uo",
     "q6FZYhEsEXg"
    ],
-   "specificity": 0.0036,
-   "rank": 2.5
+   "specificity": 0.0035,
+   "rank": 2.6
   },
   {
    "phrase": "bank collapse",
@@ -4611,13 +4689,13 @@
    "months": 2,
    "span": "2026-08 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "(pool)",
+   "home": "collapse-audit",
    "home_share": 0.8,
    "kind": "new candidate",
    "examples": [
     "Iran, China, and Russia Just Did Something That Changes Everything \u2014 Here's What's Coming  Prof  Jia",
     "Forget the Recession \u2014 The REAL Crisis Is Coming | Prof Jiang",
-    "Worse Than a Recession? 3 Threats to Your Money Are Coming | Prof Jiang Xueqin"
+    "Gold\u2019s NEXT Move Is UNTHINKABLE \u2014 Central Banks Already Know What\u2019s Coming | Prof. Jiang"
    ],
    "ids": [
     "-SkIw1ygb7E",
@@ -4652,7 +4730,7 @@
     "vtU0VTbZSU0",
     "wxTyD5lPLss"
    ],
-   "specificity": 0.0162,
+   "specificity": 0.0161,
    "rank": 1.9
   },
   {
@@ -4686,8 +4764,8 @@
    "months": 2,
    "span": "2024-11 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
+   "home": "collapse-audit",
+   "home_share": 0.75,
    "kind": "new candidate",
    "examples": [
     "Why Florida Might Be Unlivable Soon! (What They Don\u2019t Want You to Know!)",
@@ -4760,9 +4838,10 @@
     "tbKrMYtVll8"
    ],
    "also": [
-    "crash fed"
+    "crash fed",
+    "fed save"
    ],
-   "specificity": 0.0123,
+   "specificity": 0.0122,
    "rank": 1.5
   },
   {
@@ -4790,7 +4869,7 @@
    "also": [
     "end iran"
    ],
-   "specificity": 0.0068,
+   "specificity": 0.0067,
    "rank": 1.5
   },
   {
@@ -4973,6 +5052,30 @@
     "truth home"
    ],
    "specificity": 0.018,
+   "rank": 0.9
+  },
+  {
+   "phrase": "market crash recession",
+   "videos": 4,
+   "channels": 4,
+   "months": 2,
+   "span": "2024-08 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "\ud83d\udea8NEW Inflation Report EMERGENCY FED Rate Cut to prevent stock market crash & recession",
+    "The $1 Trillion AI Debt Crisis Could Trigger a Massive Market Crash | Recession 2027 | Prof Jiang",
+    "The $1 Trillion AI Debt Bomb Could Trigger a Market Crash \u2014 Recession 2027?"
+   ],
+   "ids": [
+    "8AlqOlgdZDQ",
+    "BW47P0V0OSo",
+    "Bbx8w27A2xs",
+    "k0szvFmHPnI"
+   ],
+   "specificity": 0.0088,
    "rank": 0.9
   },
   {
