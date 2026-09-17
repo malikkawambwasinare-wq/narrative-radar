@@ -54,6 +54,27 @@ CLAIM_MARK = re.compile(r"""\b(
 )\b""", re.X | re.I)
 
 TRACKED_VOCAB = {}
+# Rhetoric, not subject matter. Across thousands of channels the phrases that
+# recur most are sales formulas — "shocking truth", "you won't believe", "what
+# nobody tells you". They travel everywhere precisely because they are about
+# nothing. A narrative has to name what the claim is ABOUT, so a phrase must
+# carry at least one word that is neither stopword, claim marker nor rhetoric.
+RHETORIC = set("""truth truths shocking shock brutal harsh dark ugly hidden secret real reality actually
+really literally insane crazy wild unbelievable believe know knows knowing learn learned tell tells telling
+told say says said reveal reveals revealed revealing explain explains explained explaining expert experts
+economist economists doctor doctors analyst analysts guru warns warning nobody everyone everybody someone
+thing things something anything everything stuff way ways here there they you your his her our their
+biggest bigger huge massive major minor small tiny crazy important must need needs needed want wants
+come comes coming came get gets getting got make makes making made take takes taking took give gives
+happen happens happening happened work works working worked try tries trying let lets good bad worse
+worst better best right wrong sure certain maybe perhaps probably possibly obviously clearly simply just
+one two three next last first final new old full part update guide tips tricks hack hacks step steps
+watch watching look looking see seeing seen saw start starts starting stop stops stopped keep keeps
+it's here's what's that's there's don't doesn't isn't won't can't didn't you're we're they're i'm let's
+well enough far away back out off again still yet ever never always sometimes soon later ahead behind
+save saves saving saved buy buys buying bought sell sells selling sold use uses using used doing does
+much many more less least own free easy hard simple quick fast slow big long short low high""".split())
+
 MONTH = lambda t: datetime.fromtimestamp(t / 1000, timezone.utc).strftime("%Y-%m")
 
 
@@ -125,7 +146,14 @@ def main():
         for w in set(words(v.get("title") or "")):
             df[w] += 1
     N = max(1, len(vids))
-    distinctive = lambda ph: any(df[w] / N <= MAX_DF for w in ph.split() if not CLAIM_MARK.fullmatch(w))
+    def content(ph):
+        """Words that say what the claim is about, once rhetoric is removed."""
+        return [w for w in ph.split()
+                if w not in RHETORIC and not CLAIM_MARK.fullmatch(w)]
+
+    def distinctive(ph):
+        c = content(ph)
+        return bool(c) and any(df[w] / N <= MAX_DF for w in c)
 
     hits = defaultdict(lambda: {"v": [], "ch": set(), "mo": set(), "tp": defaultdict(int)})
     for v in vids:
@@ -173,8 +201,12 @@ def main():
     # Cluster: phrases carried by the same videos are one candidate. The longest
     # phrase names it, and its evidence is the union.
     cands.sort(key=lambda c: (-c["videos"], -len(c["phrase"])))
-    kept = []
+    kept, bags = [], {}
     for c in cands:
+        bag = frozenset(content(c["phrase"]))
+        if bag and bag in bags:
+            bags[bag].setdefault("also", []).append(c["phrase"])
+            continue
         ids = set(c["ids"])
         home = next((k for k in kept if len(ids & set(k["ids"])) / max(1, min(len(ids), len(k["ids"]))) >= 0.5), None)
         if home:
@@ -183,6 +215,13 @@ def main():
                 home["phrase"], c["phrase"] = c["phrase"], home["phrase"]
             continue
         kept.append(c)
+        if bag:
+            bags[bag] = c
+
+    for c in kept:
+        c["specificity"] = round(min((df[w] / N for w in content(c["phrase"])), default=1), 4)
+        c["rank"] = round(c["channels"] * c["months"] / max(c["specificity"], 0.0005) / 1000, 1)
+    kept.sort(key=lambda c: -c["rank"])
 
     claimy = sum(1 for v in vids if CLAIM_MARK.search(v.get("title") or ""))
     print(f"{len(vids)} videos · {claimy} carry claim wording")
