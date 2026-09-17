@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # A commit pushed by a workflow using the default token does NOT trigger other
+  # workflows, so the sweeps' own commits never published. Running after those
+  # workflows finish does work, and it is why the site now updates itself.
+  workflow_run:
+    workflows: ["Channel sweep", "Naming pass", "Weekly search sweep", "Resolver"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
