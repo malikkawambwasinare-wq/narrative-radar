@@ -3966,7 +3966,7 @@ function renderSets(built) {
     const n = set.cards.filter(c => !c.pop).length;
     return `<section class="setout">
       <div class="seth"><h3>${esc(shortName(t))}</h3>
-        <span class="setmeta">${esc(shape)} set · ${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}</span></div>
+        <span class="setmeta">${esc(shape)} · ${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}</span></div>
       ${note ? `<div class="setcard note"><div class="num">·</div><div class="body">${esc(note)}</div></div>` : ""}
       <div class="setcards">
         <div class="setcard note"><div class="num">▸</div><div>
