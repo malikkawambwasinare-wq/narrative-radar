@@ -34,8 +34,8 @@
     "z3Ud05lVkl8",
     "zPeLBqUZhHU"
    ],
-   "specificity": 0.0006,
-   "rank": 220.0
+   "specificity": 0.0005,
+   "rank": 264.0
   },
   {
    "phrase": "root cause",
@@ -192,7 +192,7 @@
    "span": "2023-08 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "housing-crash-watch",
-   "home_share": 0.42,
+   "home_share": 0.5,
    "kind": "cross-narrative",
    "examples": [
     "Michael Burry Bets Against the Market. Crash Incoming?",
@@ -216,8 +216,8 @@
    "also": [
     "market crash incoming"
    ],
-   "specificity": 0.0011,
-   "rank": 72.7
+   "specificity": 0.0012,
+   "rank": 66.7
   },
   {
    "phrase": "economic collapse",
@@ -304,36 +304,38 @@
    "rank": 63.0
   },
   {
-   "phrase": "scientifically proven",
-   "videos": 13,
+   "phrase": "collapse first usa enters",
+   "videos": 9,
    "channels": 5,
    "months": 5,
-   "span": "2025-08 \u2192 2026-09",
-   "industry": "Health & biotech",
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Unsorted",
    "home": "(pool)",
-   "home_share": 0.69,
+   "home_share": 0.56,
    "kind": "new candidate",
    "examples": [
-    "How to Never Get Cancer (30 Scientifically Proven Tips)",
-    "Never Get Menstrual Cramps Again (13 Scientifically Proven Tips)",
-    "Scientifically Proven To Repair DNA, SLOW & REVERSE AGING! | Dr. William Li"
+    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
    ],
    "ids": [
-    "5ZXqxlCVCmk",
-    "81yh0MQhhV8",
-    "9Ruc4LDAGHY",
-    "EKPhAv55EoQ",
-    "Gp1nxJ7CGxo",
-    "HKUrRrQjEKw",
-    "VPr65hAl9r4",
-    "db0wIhcP2tc",
-    "hZ7BFzH53uY",
-    "mUK-dUA564Y",
-    "tcPA6FwZihU",
-    "uFwZmRKisYU",
-    "wMxH1koN_VU"
+    "2rwaCLtUMUY",
+    "6qGtzQdoW78",
+    "Dz4mPUE14_I",
+    "HgIB8ounbIs",
+    "jp5hHUupNcU",
+    "nhFtUBzUP18",
+    "oWogTWbnGd0",
+    "ugXVPKb_V_w",
+    "y0xGkFgui9Y"
    ],
-   "specificity": 0.0004,
+   "also": [
+    "states collapse",
+    "collapse first usa enters",
+    "states collapse first usa",
+    "collapse first usa"
+   ],
+   "specificity": 0.0005,
    "rank": 50.0
   },
   {
@@ -414,6 +416,32 @@
    "rank": 40.0
   },
   {
+   "phrase": "must understand",
+   "videos": 6,
+   "channels": 5,
+   "months": 6,
+   "span": "2025-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.67,
+   "kind": "new candidate",
+   "examples": [
+    "To Understand the Present, You Must Understand The Past",
+    "Investors must understand what just happened this week! My Big Buy!!",
+    "\u0938\u093f\u0930\u094d\u092b \u0921\u093f\u0917\u094d\u0930\u0940 \u0928\u0939\u0940\u0902... \u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u094b \u092f\u0947 \u0938\u092e\u091d\u0928\u093e \u091c\u093c\u0930\u0942\u0930\u0940 \u0939\u0948 \ud83d\udc94\ud83e\ude7a A doctor must understand this | Dr. Jainith"
+   ],
+   "ids": [
+    "0oo79CZoW8k",
+    "L-mTrFOD57M",
+    "TSkEcZSPm7Q",
+    "ii4LnjSUifQ",
+    "nHkCYkwHpKE",
+    "yD4NxAX3S4Q"
+   ],
+   "specificity": 0.0008,
+   "rank": 37.5
+  },
+  {
    "phrase": "plane crash",
    "videos": 13,
    "channels": 6,
@@ -481,32 +509,6 @@
    "rank": 36.0
   },
   {
-   "phrase": "must understand",
-   "videos": 6,
-   "channels": 5,
-   "months": 6,
-   "span": "2025-04 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.67,
-   "kind": "new candidate",
-   "examples": [
-    "To Understand the Present, You Must Understand The Past",
-    "Investors must understand what just happened this week! My Big Buy!!",
-    "\u0938\u093f\u0930\u094d\u092b \u0921\u093f\u0917\u094d\u0930\u0940 \u0928\u0939\u0940\u0902... \u0921\u0949\u0915\u094d\u091f\u0930 \u0915\u094b \u092f\u0947 \u0938\u092e\u091d\u0928\u093e \u091c\u093c\u0930\u0942\u0930\u0940 \u0939\u0948 \ud83d\udc94\ud83e\ude7a A doctor must understand this | Dr. Jainith"
-   ],
-   "ids": [
-    "0oo79CZoW8k",
-    "L-mTrFOD57M",
-    "TSkEcZSPm7Q",
-    "ii4LnjSUifQ",
-    "nHkCYkwHpKE",
-    "yD4NxAX3S4Q"
-   ],
-   "specificity": 0.0009,
-   "rank": 33.3
-  },
-  {
    "phrase": "crash begins",
    "videos": 8,
    "channels": 6,
@@ -533,6 +535,70 @@
    ],
    "specificity": 0.0013,
    "rank": 32.3
+  },
+  {
+   "phrase": "causes symptoms",
+   "videos": 40,
+   "channels": 8,
+   "months": 10,
+   "span": "2025-11 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.97,
+   "kind": "new candidate",
+   "examples": [
+    "ANEMIA CAUSES SYMPTOMS AND CLASSIFICATION",
+    "HIGH SERUM IRON CAUSES AND SYMPTOMS.IRON OVERLOAD AND IRON TOXICITY.IRON STUDIES  TEST.IRON STUDY",
+    "PELVIC INFLAMMATORY DISEASE(PID) CAUSES SYMPTOMS AND TREATMENT IN KANNADA.\u0caa\u0cc6\u0cb2\u0ccd\u0cb5\u0cbf\u0c95\u0ccd \u0c89\u0cb0\u0cbf\u0caf\u0cc2\u0ca4\u0ca6 \u0c95\u0cbe\u0caf\u0cbf\u0cb2\u0cc6"
+   ],
+   "ids": [
+    "-O7NsLSvRZ0",
+    "0touXTAbt-E",
+    "1HDZMDkdNR8",
+    "1ar-u5lgUMo",
+    "449JvbyfLY8",
+    "46ntGkfjYco",
+    "7GROTEjEsKw",
+    "7tyKexXf1Rs",
+    "89cx6r5OfJ8",
+    "93yuLPY6eZk",
+    "BUmFhbElzvs",
+    "BtrH9mFisz4",
+    "DkQoUNwbmB8",
+    "EanXu7M0JKI",
+    "MlhcgEaLgQQ",
+    "O5E9b1MQ1pc",
+    "OSuzsJwy5YM",
+    "TvwGM6Zu-8g",
+    "UHtpB1gn4wo",
+    "V6772712ZVw",
+    "WXMiMvJScbw",
+    "XfJQZbgWY4c",
+    "YODtqHqoXak",
+    "Yhos10H61P0",
+    "a_It4SBbx-4",
+    "bGt-uHAqjZM",
+    "dSbm7tuhseE",
+    "dcxQICUomyo",
+    "f_dmaffPxS0",
+    "hLuaLjJskkQ",
+    "jGUSy0jy_eI",
+    "lc0OcSVbG88",
+    "neWCV5Lo64I",
+    "qXN1YhaZ1rQ",
+    "sF7rlIvlQ0Y",
+    "sYY2WBf0frA",
+    "uG1jVIGy8Dg",
+    "wCqtWYVuujA",
+    "yr4flWpH-30",
+    "zvrE6Hstkjs"
+   ],
+   "also": [
+    "causes symptoms treatment",
+    "symptoms causes"
+   ],
+   "specificity": 0.0025,
+   "rank": 32.0
   },
   {
    "phrase": "replace paycheck",
@@ -634,70 +700,6 @@
    ],
    "specificity": 0.0001,
    "rank": 32.0
-  },
-  {
-   "phrase": "causes symptoms",
-   "videos": 40,
-   "channels": 8,
-   "months": 10,
-   "span": "2025-11 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.97,
-   "kind": "new candidate",
-   "examples": [
-    "ANEMIA CAUSES SYMPTOMS AND CLASSIFICATION",
-    "HIGH SERUM IRON CAUSES AND SYMPTOMS.IRON OVERLOAD AND IRON TOXICITY.IRON STUDIES  TEST.IRON STUDY",
-    "PELVIC INFLAMMATORY DISEASE(PID) CAUSES SYMPTOMS AND TREATMENT IN KANNADA.\u0caa\u0cc6\u0cb2\u0ccd\u0cb5\u0cbf\u0c95\u0ccd \u0c89\u0cb0\u0cbf\u0caf\u0cc2\u0ca4\u0ca6 \u0c95\u0cbe\u0caf\u0cbf\u0cb2\u0cc6"
-   ],
-   "ids": [
-    "-O7NsLSvRZ0",
-    "0touXTAbt-E",
-    "1HDZMDkdNR8",
-    "1ar-u5lgUMo",
-    "449JvbyfLY8",
-    "46ntGkfjYco",
-    "7GROTEjEsKw",
-    "7tyKexXf1Rs",
-    "89cx6r5OfJ8",
-    "93yuLPY6eZk",
-    "BUmFhbElzvs",
-    "BtrH9mFisz4",
-    "DkQoUNwbmB8",
-    "EanXu7M0JKI",
-    "MlhcgEaLgQQ",
-    "O5E9b1MQ1pc",
-    "OSuzsJwy5YM",
-    "TvwGM6Zu-8g",
-    "UHtpB1gn4wo",
-    "V6772712ZVw",
-    "WXMiMvJScbw",
-    "XfJQZbgWY4c",
-    "YODtqHqoXak",
-    "Yhos10H61P0",
-    "a_It4SBbx-4",
-    "bGt-uHAqjZM",
-    "dSbm7tuhseE",
-    "dcxQICUomyo",
-    "f_dmaffPxS0",
-    "hLuaLjJskkQ",
-    "jGUSy0jy_eI",
-    "lc0OcSVbG88",
-    "neWCV5Lo64I",
-    "qXN1YhaZ1rQ",
-    "sF7rlIvlQ0Y",
-    "sYY2WBf0frA",
-    "uG1jVIGy8Dg",
-    "wCqtWYVuujA",
-    "yr4flWpH-30",
-    "zvrE6Hstkjs"
-   ],
-   "also": [
-    "causes symptoms treatment",
-    "symptoms causes"
-   ],
-   "specificity": 0.0026,
-   "rank": 30.8
   },
   {
    "phrase": "brink collapse",
@@ -865,11 +867,81 @@
     "model actually",
     "beats gpt",
     "open source model beats",
-    "model beats claude",
     "source model beats",
+    "model beats claude",
     "model beat"
    ],
-   "specificity": 0.0103,
+   "specificity": 0.0101,
+   "rank": 24.5
+  },
+  {
+   "phrase": "actually worth",
+   "videos": 16,
+   "channels": 12,
+   "months": 10,
+   "span": "2024-10 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.94,
+   "kind": "new candidate",
+   "examples": [
+    "Are Custom Homes Actually Worth It?",
+    "Tesla Stock Collapses: What's the Stock Actually Worth?",
+    "Is n8n V2 Actually Worth the Hype? (Full Review)"
+   ],
+   "ids": [
+    "0JjeHaOCoFo",
+    "8u_sEsX3pek",
+    "GRfznvYyuE8",
+    "Gz576-6Mccs",
+    "I38N6emXfis",
+    "Pawvas4eNOs",
+    "TcPeBADWiHY",
+    "V4YAY6zpJ2E",
+    "dHh4CUjgHkk",
+    "gCwxXtM7q0U",
+    "h2bblp5j3fU",
+    "lFC-Xd98nC4",
+    "md0iwAkVeAM",
+    "nEmgOYsWc-U",
+    "nI6dHcb99ok",
+    "rjwmYcy3sr4"
+   ],
+   "also": [
+    "really worth"
+   ],
+   "specificity": 0.005,
+   "rank": 24.0
+  },
+  {
+   "phrase": "scientifically proven",
+   "videos": 11,
+   "channels": 4,
+   "months": 3,
+   "span": "2026-05 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 0.64,
+   "kind": "new candidate",
+   "examples": [
+    "Scientifically Proven To Repair DNA, SLOW & REVERSE AGING! | Dr. William Li",
+    "Scientifically Proven To STARVE Cancer Cells, Stop Inflammation & Repair DNA | Dr. William Li",
+    "Scientifically Proven\u2026THESE Drinks Destroy Cancer Cells & Regrows Stem Cells | Dr. William Li"
+   ],
+   "ids": [
+    "81yh0MQhhV8",
+    "9Ruc4LDAGHY",
+    "EKPhAv55EoQ",
+    "Gp1nxJ7CGxo",
+    "HKUrRrQjEKw",
+    "VPr65hAl9r4",
+    "db0wIhcP2tc",
+    "hZ7BFzH53uY",
+    "tcPA6FwZihU",
+    "uFwZmRKisYU",
+    "wMxH1koN_VU"
+   ],
+   "specificity": 0.0003,
    "rank": 24.0
   },
   {
@@ -922,45 +994,6 @@
    ],
    "specificity": 0.0002,
    "rank": 24.0
-  },
-  {
-   "phrase": "actually worth",
-   "videos": 16,
-   "channels": 12,
-   "months": 10,
-   "span": "2024-10 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.94,
-   "kind": "new candidate",
-   "examples": [
-    "Are Custom Homes Actually Worth It?",
-    "Tesla Stock Collapses: What's the Stock Actually Worth?",
-    "Is n8n V2 Actually Worth the Hype? (Full Review)"
-   ],
-   "ids": [
-    "0JjeHaOCoFo",
-    "8u_sEsX3pek",
-    "GRfznvYyuE8",
-    "Gz576-6Mccs",
-    "I38N6emXfis",
-    "Pawvas4eNOs",
-    "TcPeBADWiHY",
-    "V4YAY6zpJ2E",
-    "dHh4CUjgHkk",
-    "gCwxXtM7q0U",
-    "h2bblp5j3fU",
-    "lFC-Xd98nC4",
-    "md0iwAkVeAM",
-    "nEmgOYsWc-U",
-    "nI6dHcb99ok",
-    "rjwmYcy3sr4"
-   ],
-   "also": [
-    "really worth"
-   ],
-   "specificity": 0.0051,
-   "rank": 23.5
   },
   {
    "phrase": "idea what's coming",
@@ -1030,6 +1063,35 @@
    "rank": 22.9
   },
   {
+   "phrase": "reset coming",
+   "videos": 9,
+   "channels": 7,
+   "months": 8,
+   "span": "2022-06 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "great-economic-reset-is-coming",
+   "home_share": 0.33,
+   "kind": "cross-narrative",
+   "examples": [
+    "BEWARE The Great Reset is Coming Soon\u2026",
+    "A Once in a Lifetime Economic Reset is Coming.",
+    "A Once in a Lifetime Economic Reset is Coming (Worse Than 2008)"
+   ],
+   "ids": [
+    "92-bgzjR7f0",
+    "JagigbXyY2A",
+    "S6chzad1S_I",
+    "YXFvwJQBzJc",
+    "_cbMfNTvvlU",
+    "_rwFYNlKtEc",
+    "fqY4zMtBS74",
+    "inUGgMv9Zq0",
+    "zMAS5QyvZSU"
+   ],
+   "specificity": 0.0025,
+   "rank": 22.4
+  },
+  {
    "phrase": "move coming",
    "videos": 14,
    "channels": 10,
@@ -1063,37 +1125,8 @@
    "also": [
     "big move coming"
    ],
-   "specificity": 0.0049,
-   "rank": 22.4
-  },
-  {
-   "phrase": "reset coming",
-   "videos": 9,
-   "channels": 7,
-   "months": 8,
-   "span": "2022-06 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "great-economic-reset-is-coming",
-   "home_share": 0.33,
-   "kind": "cross-narrative",
-   "examples": [
-    "BEWARE The Great Reset is Coming Soon\u2026",
-    "A Once in a Lifetime Economic Reset is Coming.",
-    "A Once in a Lifetime Economic Reset is Coming (Worse Than 2008)"
-   ],
-   "ids": [
-    "92-bgzjR7f0",
-    "JagigbXyY2A",
-    "S6chzad1S_I",
-    "YXFvwJQBzJc",
-    "_cbMfNTvvlU",
-    "_rwFYNlKtEc",
-    "fqY4zMtBS74",
-    "inUGgMv9Zq0",
-    "zMAS5QyvZSU"
-   ],
-   "specificity": 0.0026,
-   "rank": 21.5
+   "specificity": 0.005,
+   "rank": 22.0
   },
   {
    "phrase": "doctor explains common medications",
@@ -1179,31 +1212,6 @@
    "rank": 20.0
   },
   {
-   "phrase": "officially dead",
-   "videos": 5,
-   "channels": 5,
-   "months": 5,
-   "span": "2025-02 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 0.6,
-   "kind": "new candidate",
-   "examples": [
-    "Pickering Airport is Officially DEAD \u2013 What This Means for You!",
-    "\ud83d\udea8 THE FOUR YEAR CYCLE IS OFFICIALLY DEAD!!!",
-    "5,000 US Nukes. NATO Is Officially DEAD"
-   ],
-   "ids": [
-    "-Eftkfrz6Ms",
-    "L9GlUjLbKEU",
-    "VXdCxfgA3ZA",
-    "_GnkbrsGmnU",
-    "wrVJXIuJt0o"
-   ],
-   "specificity": 0.0013,
-   "rank": 19.2
-  },
-  {
    "phrase": "recession coming",
    "videos": 24,
    "channels": 24,
@@ -1211,7 +1219,7 @@
    "span": "2022-06 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "collapse-audit",
-   "home_share": 0.58,
+   "home_share": 0.54,
    "kind": "cross-narrative",
    "examples": [
     "Is A Recession Coming 2022 - Do This Now To Prepare",
@@ -1248,8 +1256,33 @@
     "coming worse recession",
     "crash recession"
    ],
-   "specificity": 0.0088,
-   "rank": 19.1
+   "specificity": 0.0087,
+   "rank": 19.3
+  },
+  {
+   "phrase": "officially dead",
+   "videos": 5,
+   "channels": 5,
+   "months": 5,
+   "span": "2025-02 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 0.6,
+   "kind": "new candidate",
+   "examples": [
+    "Pickering Airport is Officially DEAD \u2013 What This Means for You!",
+    "\ud83d\udea8 THE FOUR YEAR CYCLE IS OFFICIALLY DEAD!!!",
+    "5,000 US Nukes. NATO Is Officially DEAD"
+   ],
+   "ids": [
+    "-Eftkfrz6Ms",
+    "L9GlUjLbKEU",
+    "VXdCxfgA3ZA",
+    "_GnkbrsGmnU",
+    "wrVJXIuJt0o"
+   ],
+   "specificity": 0.0013,
+   "rank": 19.2
   },
   {
    "phrase": "condo crash",
@@ -1282,88 +1315,6 @@
    ],
    "specificity": 0.0021,
    "rank": 19.0
-  },
-  {
-   "phrase": "supplements actually",
-   "videos": 8,
-   "channels": 8,
-   "months": 5,
-   "span": "2026-04 \u2192 2026-09",
-   "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "The ONLY 5 Supplements You Actually Need (Stop Wasting Money)",
-    "How to Lower Cholesterol with Supplements That Actually Work",
-    "6 Supplements That Actually Work After 60 (Backed by Science) | Dr. Alan Mandell"
-   ],
-   "ids": [
-    "2Do6hARie-Y",
-    "7loiIN5Tp1g",
-    "8u_sEsX3pek",
-    "GzUenHt02_o",
-    "Z54oMcuHPnM",
-    "_0obbWP0QUQ",
-    "nI6dHcb99ok",
-    "nNofJ4xT-ME"
-   ],
-   "specificity": 0.0021,
-   "rank": 19.0
-  },
-  {
-   "phrase": "could save",
-   "videos": 23,
-   "channels": 21,
-   "months": 14,
-   "span": "2023-12 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.87,
-   "kind": "new candidate",
-   "examples": [
-    "An Investing Strategy That Could SAVE You $1000s",
-    "New Program That Could Save You From Losing Your Home",
-    "Stop Ignoring These Screenings: They Could Save Your Life"
-   ],
-   "ids": [
-    "6kUMnEo7aNI",
-    "7ELJ_KSsqw8",
-    "ACkhpudBbTk",
-    "G5YGAzWCgW0",
-    "JcyTyJDggNA",
-    "Mpk4pJkWqgU",
-    "OSHkpwOYPgQ",
-    "SSQLDrSd6oo",
-    "UpcJxEiJjuM",
-    "WJAmc5gKrd8",
-    "WZ1otpazkFo",
-    "ZSocxvpJoCs",
-    "ZU4I78LVB4s",
-    "ZttA9_IQzaY",
-    "_CMOpfqJgEU",
-    "_D7uAgMOMIM",
-    "apoKSLtcm-4",
-    "cXIw6kjEkE0",
-    "eDyDwGvWgqY",
-    "gQrZVDIFmts",
-    "pIpaiT9VRfg",
-    "r1wA9KPq2vc",
-    "usOANFprxiU"
-   ],
-   "also": [
-    "could crash",
-    "could kill",
-    "could mean",
-    "could cause",
-    "save life",
-    "crash could",
-    "could collapse",
-    "could save life",
-    "could end"
-   ],
-   "specificity": 0.0161,
-   "rank": 18.3
   },
   {
    "phrase": "currency collapse",
@@ -1436,8 +1387,8 @@
     "money actually",
     "actually make money"
    ],
-   "specificity": 0.0176,
-   "rank": 17.5
+   "specificity": 0.0174,
+   "rank": 17.7
   },
   {
    "phrase": "crash continues",
@@ -1462,6 +1413,42 @@
    ],
    "specificity": 0.0007,
    "rank": 17.1
+  },
+  {
+   "phrase": "crash started",
+   "videos": 11,
+   "channels": 9,
+   "months": 9,
+   "span": "2022-12 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.36,
+   "kind": "cross-narrative",
+   "examples": [
+    "The Real Estate Crash Has Started (How Bad Will It Get?)",
+    "The 2024 Stock Market Crash Just Started",
+    "The 2025 Stock Market Crash Just Started"
+   ],
+   "ids": [
+    "-YWNipc3K80",
+    "8plymAmhqz4",
+    "E_c-LQaOVcQ",
+    "NVC7cB-QVSo",
+    "NiUrVUet4M4",
+    "WQgNUMHysQM",
+    "_2A3ma2Nbls",
+    "oQ3UVUVzNkA",
+    "t5ssiP5gahg",
+    "tPsXXg7WNS4",
+    "wgakU3FZevI"
+   ],
+   "also": [
+    "stock market crash started",
+    "market crash started",
+    "collapse started"
+   ],
+   "specificity": 0.0048,
+   "rank": 16.9
   },
   {
    "phrase": "event coming",
@@ -1519,70 +1506,57 @@
    "rank": 16.7
   },
   {
-   "phrase": "mistakes must",
-   "videos": 6,
-   "channels": 6,
-   "months": 5,
-   "span": "2022-04 \u2192 2026-07",
+   "phrase": "could save",
+   "videos": 22,
+   "channels": 20,
+   "months": 13,
+   "span": "2023-12 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.83,
+   "home_share": 0.86,
    "kind": "new candidate",
    "examples": [
-    "5 Mortgage Mistakes You Must Avoid",
-    "The #1 WORST \"Healthy Foods\" Men & Women MUST Avoid",
-    "The foods you must avoid to live longer | Dan Buettner"
+    "An Investing Strategy That Could SAVE You $1000s",
+    "New Program That Could Save You From Losing Your Home",
+    "Stop Ignoring These Screenings: They Could Save Your Life"
    ],
    "ids": [
-    "0H8_xP1VcHg",
-    "PnkgM9wJylg",
-    "QOKlRRml8sU",
-    "dxelUjTeBfo",
-    "j2AaoEHt3XY",
-    "kOcTsDgTDE0"
+    "6kUMnEo7aNI",
+    "ACkhpudBbTk",
+    "G5YGAzWCgW0",
+    "JcyTyJDggNA",
+    "Mpk4pJkWqgU",
+    "OSHkpwOYPgQ",
+    "SSQLDrSd6oo",
+    "UpcJxEiJjuM",
+    "WJAmc5gKrd8",
+    "WZ1otpazkFo",
+    "ZSocxvpJoCs",
+    "ZU4I78LVB4s",
+    "ZttA9_IQzaY",
+    "_CMOpfqJgEU",
+    "_D7uAgMOMIM",
+    "apoKSLtcm-4",
+    "cXIw6kjEkE0",
+    "eDyDwGvWgqY",
+    "gQrZVDIFmts",
+    "pIpaiT9VRfg",
+    "r1wA9KPq2vc",
+    "usOANFprxiU"
    ],
    "also": [
-    "mistakes must",
-    "mistakes must avoid"
+    "could crash",
+    "could mean",
+    "could kill",
+    "could cause",
+    "save life",
+    "crash could",
+    "could collapse",
+    "could end",
+    "could save life"
    ],
-   "specificity": 0.0018,
-   "rank": 16.7
-  },
-  {
-   "phrase": "crash started",
-   "videos": 11,
-   "channels": 9,
-   "months": 9,
-   "span": "2022-12 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.36,
-   "kind": "cross-narrative",
-   "examples": [
-    "The Real Estate Crash Has Started (How Bad Will It Get?)",
-    "The 2024 Stock Market Crash Just Started",
-    "The 2025 Stock Market Crash Just Started"
-   ],
-   "ids": [
-    "-YWNipc3K80",
-    "8plymAmhqz4",
-    "E_c-LQaOVcQ",
-    "NVC7cB-QVSo",
-    "NiUrVUet4M4",
-    "WQgNUMHysQM",
-    "_2A3ma2Nbls",
-    "oQ3UVUVzNkA",
-    "t5ssiP5gahg",
-    "tPsXXg7WNS4",
-    "wgakU3FZevI"
-   ],
-   "also": [
-    "stock market crash started",
-    "market crash started",
-    "collapse started"
-   ],
-   "specificity": 0.0049,
-   "rank": 16.5
+   "specificity": 0.0161,
+   "rank": 16.1
   },
   {
    "phrase": "dollar collapse",
@@ -1649,8 +1623,35 @@
     "oOu6fEOC4zo",
     "vgLC3AIXdJA"
    ],
-   "specificity": 0.0053,
-   "rank": 14.5
+   "specificity": 0.0052,
+   "rank": 14.8
+  },
+  {
+   "phrase": "supplements actually",
+   "videos": 7,
+   "channels": 7,
+   "months": 4,
+   "span": "2026-06 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "How to Lower Cholesterol with Supplements That Actually Work",
+    "6 Supplements That Actually Work After 60 (Backed by Science) | Dr. Alan Mandell",
+    "Do Supplements Actually Help You Live Longer? | The Honest Answer"
+   ],
+   "ids": [
+    "2Do6hARie-Y",
+    "7loiIN5Tp1g",
+    "8u_sEsX3pek",
+    "GzUenHt02_o",
+    "Z54oMcuHPnM",
+    "_0obbWP0QUQ",
+    "nI6dHcb99ok"
+   ],
+   "specificity": 0.002,
+   "rank": 14.0
   },
   {
    "phrase": "2008 crash",
@@ -1689,75 +1690,6 @@
    "rank": 13.8
   },
   {
-   "phrase": "states collapse first usa",
-   "videos": 9,
-   "channels": 5,
-   "months": 5,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.56,
-   "kind": "new candidate",
-   "examples": [
-    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
-   ],
-   "ids": [
-    "2rwaCLtUMUY",
-    "6qGtzQdoW78",
-    "Dz4mPUE14_I",
-    "HgIB8ounbIs",
-    "jp5hHUupNcU",
-    "nhFtUBzUP18",
-    "oWogTWbnGd0",
-    "ugXVPKb_V_w",
-    "y0xGkFgui9Y"
-   ],
-   "also": [
-    "states collapse",
-    "states collapse first usa",
-    "collapse first usa enters",
-    "collapse first usa"
-   ],
-   "specificity": 0.0019,
-   "rank": 13.2
-  },
-  {
-   "phrase": "crash already",
-   "videos": 11,
-   "channels": 9,
-   "months": 6,
-   "span": "2025-12 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.45,
-   "kind": "cross-narrative",
-   "examples": [
-    "Market Crash \u2018Already Happened\u2019: Trader Reveals Stocks, Bitcoin Next Moves | Lance Breitstein",
-    "This Is Worse Than a Housing Crash \u2014 And It\u2019s Already Happening in Canada",
-    "The Crash Already Started \u2014 $500K+ Losses (Canada Housing 2026)"
-   ],
-   "ids": [
-    "2Ru5_6TV28c",
-    "32u5T6lO8qk",
-    "4_x_iSjyx68",
-    "BwbfvissvhY",
-    "GTK9PgCsod0",
-    "Hp9pz3owqM0",
-    "JAdoHOCMuWk",
-    "RmEFOPzN1LY",
-    "Vg9KE2SCB_8",
-    "nCPBMgAYbYc",
-    "u0yzLQkzr-M"
-   ],
-   "also": [
-    "crash already started"
-   ],
-   "specificity": 0.0042,
-   "rank": 12.9
-  },
-  {
    "phrase": "coming prepare",
    "videos": 8,
    "channels": 7,
@@ -1782,7 +1714,48 @@
     "oGS0G9N_evc",
     "pOO_1c7J-d4"
    ],
-   "specificity": 0.0039,
+   "specificity": 0.0038,
+   "rank": 12.9
+  },
+  {
+   "phrase": "fix gut",
+   "videos": 16,
+   "channels": 8,
+   "months": 9,
+   "span": "2022-07 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "fix-your-gut-fix-your",
+   "home_share": 0.69,
+   "kind": "new candidate",
+   "examples": [
+    "This Is Causing Disease! - How To End Inflammation & Fix Your Gut Health | Dr. Mark Hyman",
+    "How To Fix Your Gut Microbiome (It\u2019s Not What You Think) | Dr. Mark Hyman",
+    "Fix Your Gut, Fix Your Health #shorts #functionalmedicine"
+   ],
+   "ids": [
+    "-nxFiKlU2sA",
+    "0KtphM0jQvQ",
+    "3Gv6XEuymkM",
+    "5OviPpbTfmk",
+    "Aw5jkJzw4eY",
+    "FWG-8A9hrc0",
+    "FsXVko50CFw",
+    "Ka9kgulCPcA",
+    "QsCqgl5rImk",
+    "b6sp9k3K-S8",
+    "gpcVqS14Zvs",
+    "qutPwz9yEUE",
+    "tPp4FSd6PXc",
+    "u32ub9gCk4M",
+    "xmoUGM0No38",
+    "y1H-ZRPMKfg"
+   ],
+   "also": [
+    "fix gut health",
+    "really gut",
+    "gut fix"
+   ],
+   "specificity": 0.0057,
    "rank": 12.6
   },
   {
@@ -1816,44 +1789,69 @@
    "rank": 12.5
   },
   {
-   "phrase": "fix gut",
-   "videos": 15,
-   "channels": 8,
-   "months": 9,
-   "span": "2022-07 \u2192 2026-09",
-   "industry": "Health & biotech",
-   "home": "fix-your-gut-fix-your",
-   "home_share": 0.67,
-   "kind": "new candidate",
+   "phrase": "crash already",
+   "videos": 11,
+   "channels": 9,
+   "months": 6,
+   "span": "2025-12 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.45,
+   "kind": "cross-narrative",
    "examples": [
-    "This Is Causing Disease! - How To End Inflammation & Fix Your Gut Health | Dr. Mark Hyman",
-    "How To Fix Your Gut Microbiome (It\u2019s Not What You Think) | Dr. Mark Hyman",
-    "Fix Your Gut, Fix Your Health #shorts #functionalmedicine"
+    "Market Crash \u2018Already Happened\u2019: Trader Reveals Stocks, Bitcoin Next Moves | Lance Breitstein",
+    "This Is Worse Than a Housing Crash \u2014 And It\u2019s Already Happening in Canada",
+    "The Crash Already Started \u2014 $500K+ Losses (Canada Housing 2026)"
    ],
    "ids": [
-    "-nxFiKlU2sA",
-    "0KtphM0jQvQ",
-    "5OviPpbTfmk",
-    "Aw5jkJzw4eY",
-    "FWG-8A9hrc0",
-    "FsXVko50CFw",
-    "Ka9kgulCPcA",
-    "QsCqgl5rImk",
-    "b6sp9k3K-S8",
-    "gpcVqS14Zvs",
-    "qutPwz9yEUE",
-    "tPp4FSd6PXc",
-    "u32ub9gCk4M",
-    "xmoUGM0No38",
-    "y1H-ZRPMKfg"
+    "2Ru5_6TV28c",
+    "32u5T6lO8qk",
+    "4_x_iSjyx68",
+    "BwbfvissvhY",
+    "GTK9PgCsod0",
+    "Hp9pz3owqM0",
+    "JAdoHOCMuWk",
+    "RmEFOPzN1LY",
+    "Vg9KE2SCB_8",
+    "nCPBMgAYbYc",
+    "u0yzLQkzr-M"
    ],
    "also": [
-    "fix gut health",
-    "really gut",
-    "gut fix"
+    "crash already started"
    ],
-   "specificity": 0.0058,
-   "rank": 12.4
+   "specificity": 0.0045,
+   "rank": 12.0
+  },
+  {
+   "phrase": "must avoid",
+   "videos": 7,
+   "channels": 7,
+   "months": 6,
+   "span": "2022-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.86,
+   "kind": "new candidate",
+   "examples": [
+    "5 Mortgage Mistakes You Must Avoid",
+    "The #1 WORST \"Healthy Foods\" Men & Women MUST Avoid",
+    "The foods you must avoid to live longer | Dan Buettner"
+   ],
+   "ids": [
+    "-UogOabbP8Q",
+    "0H8_xP1VcHg",
+    "PnkgM9wJylg",
+    "QOKlRRml8sU",
+    "dxelUjTeBfo",
+    "j2AaoEHt3XY",
+    "kOcTsDgTDE0"
+   ],
+   "also": [
+    "mistakes must",
+    "mistakes must avoid"
+   ],
+   "specificity": 0.0035,
+   "rank": 12.0
   },
   {
    "phrase": "doesn mean",
@@ -1913,7 +1911,8 @@
    ],
    "also": [
     "prices crashing",
-    "prices collapsing"
+    "prices collapsing",
+    "prices aren't"
    ],
    "specificity": 0.0147,
    "rank": 11.5
@@ -2031,8 +2030,8 @@
     "kill inflammation",
     "foods cause inflammation"
    ],
-   "specificity": 0.0084,
-   "rank": 10.7
+   "specificity": 0.0083,
+   "rank": 10.8
   },
   {
    "phrase": "might actually",
@@ -2061,29 +2060,32 @@
    "rank": 10.7
   },
   {
-   "phrase": "actually costs",
-   "videos": 5,
-   "channels": 5,
-   "months": 4,
-   "span": "2024-05 \u2192 2026-09",
-   "industry": "Economy & markets",
+   "phrase": "cause cancer",
+   "videos": 8,
+   "channels": 7,
+   "months": 7,
+   "span": "2025-12 \u2192 2026-09",
+   "industry": "Unsorted",
    "home": "(pool)",
-   "home_share": 0.8,
+   "home_share": 1.0,
    "kind": "new candidate",
    "examples": [
-    "How Much It ACTUALLY Costs to Buy a House",
-    "How Much it ACTUALLY Costs to Build a Custom Home",
-    "How Much Owning A Yacht ACTUALLY Costs | Ben Mallah"
+    "Carnivore Claims \"Plants Cause Cancer\" | What the Fitness | Biolayne",
+    "The SHOCKING ROOT CAUSE of Cancer & How To STARVE It! | Dr. William Li",
+    "\u0c2b\u0c4d\u0c2f\u0c3e\u0c1f\u0c40 \u0c32\u0c3f\u0c35\u0c30\u0c4d \u0c09\u0c02\u0c1f\u0c47 \u0c15\u0c4d\u0c2f\u0c3e\u0c28\u0c4d\u0c38\u0c30\u0c4d \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3e? |Will Fatty Liver Cause Cancer?"
    ],
    "ids": [
-    "-IZ0MAQzTL4",
-    "-tla_RtS0vU",
-    "04ePeOyRN0k",
-    "n7oje5wsGWo",
-    "vr3rN4FFBTQ"
+    "5ntt74O0hnc",
+    "8_5yjmZWiM4",
+    "F9jMUKPH9uA",
+    "Mmev2HJZtw0",
+    "MuIseq_AMd4",
+    "jktPmw1NRiU",
+    "wadUiM8qdhQ",
+    "x-Y-IxNWFMw"
    ],
-   "specificity": 0.0019,
-   "rank": 10.5
+   "specificity": 0.0048,
+   "rank": 10.2
   },
   {
    "phrase": "index fund bubble",
@@ -2135,6 +2137,56 @@
     "tJgaZrdX2iI",
     "toqd8c2zvWg",
     "wq001sxDTWw"
+   ],
+   "specificity": 0.002,
+   "rank": 10.0
+  },
+  {
+   "phrase": "numbers really",
+   "videos": 5,
+   "channels": 4,
+   "months": 3,
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "Foreclosure \u201cCrisis\u201d Exposed: What the Numbers Really Say",
+    "The Housing Shortage Lie? What The Numbers Really Show",
+    "Are shark attacks on the rise? What the numbers really show"
+   ],
+   "ids": [
+    "2oxyAEsJkvU",
+    "QJv1xdsQxoc",
+    "TZD-lUo7fMw",
+    "rLawLuZjBL8",
+    "v5-aoGsjH7E"
+   ],
+   "specificity": 0.0012,
+   "rank": 10.0
+  },
+  {
+   "phrase": "actually costs",
+   "videos": 5,
+   "channels": 5,
+   "months": 4,
+   "span": "2024-05 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "How Much It ACTUALLY Costs to Buy a House",
+    "How Much it ACTUALLY Costs to Build a Custom Home",
+    "How Much Owning A Yacht ACTUALLY Costs | Ben Mallah"
+   ],
+   "ids": [
+    "-IZ0MAQzTL4",
+    "-tla_RtS0vU",
+    "04ePeOyRN0k",
+    "n7oje5wsGWo",
+    "vr3rN4FFBTQ"
    ],
    "specificity": 0.002,
    "rank": 10.0
@@ -2249,34 +2301,6 @@
    "rank": 9.8
   },
   {
-   "phrase": "cause cancer",
-   "videos": 8,
-   "channels": 7,
-   "months": 7,
-   "span": "2025-12 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Carnivore Claims \"Plants Cause Cancer\" | What the Fitness | Biolayne",
-    "The SHOCKING ROOT CAUSE of Cancer & How To STARVE It! | Dr. William Li",
-    "\u0c2b\u0c4d\u0c2f\u0c3e\u0c1f\u0c40 \u0c32\u0c3f\u0c35\u0c30\u0c4d \u0c09\u0c02\u0c1f\u0c47 \u0c15\u0c4d\u0c2f\u0c3e\u0c28\u0c4d\u0c38\u0c30\u0c4d \u0c35\u0c38\u0c4d\u0c24\u0c41\u0c02\u0c26\u0c3e? |Will Fatty Liver Cause Cancer?"
-   ],
-   "ids": [
-    "5ntt74O0hnc",
-    "8_5yjmZWiM4",
-    "F9jMUKPH9uA",
-    "Mmev2HJZtw0",
-    "MuIseq_AMd4",
-    "jktPmw1NRiU",
-    "wadUiM8qdhQ",
-    "x-Y-IxNWFMw"
-   ],
-   "specificity": 0.005,
-   "rank": 9.8
-  },
-  {
    "phrase": "depression coming",
    "videos": 5,
    "channels": 3,
@@ -2326,59 +2350,6 @@
    "rank": 9.4
   },
   {
-   "phrase": "research actually",
-   "videos": 5,
-   "channels": 4,
-   "months": 3,
-   "span": "2026-07 \u2192 2026-09",
-   "industry": "Health & biotech",
-   "home": "anti-inflammatory-diet",
-   "home_share": 0.6,
-   "kind": "new candidate",
-   "examples": [
-    "Can You Glide the Vagus Nerve? What the Research Actually Says",
-    "The Science of Out-of-Body Experiences: What Research Actually Shows",
-    "Are Seed Oils Really Toxic? What the Research Actually Says"
-   ],
-   "ids": [
-    "1DqzKmRxMMY",
-    "F7TKQkSwu80",
-    "ROCppNaBWXQ",
-    "hj-0B-blWSI",
-    "xvSkF2ql3i0"
-   ],
-   "also": [
-    "research shows"
-   ],
-   "specificity": 0.0013,
-   "rank": 9.2
-  },
-  {
-   "phrase": "numbers really",
-   "videos": 5,
-   "channels": 4,
-   "months": 3,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.8,
-   "kind": "new candidate",
-   "examples": [
-    "Foreclosure \u201cCrisis\u201d Exposed: What the Numbers Really Say",
-    "The Housing Shortage Lie? What The Numbers Really Show",
-    "Are shark attacks on the rise? What the numbers really show"
-   ],
-   "ids": [
-    "2oxyAEsJkvU",
-    "QJv1xdsQxoc",
-    "TZD-lUo7fMw",
-    "rLawLuZjBL8",
-    "v5-aoGsjH7E"
-   ],
-   "specificity": 0.0013,
-   "rank": 9.2
-  },
-  {
    "phrase": "strategy actually",
    "videos": 6,
    "channels": 6,
@@ -2408,33 +2379,32 @@
    "rank": 9.0
   },
   {
-   "phrase": "fake crash",
-   "videos": 9,
-   "channels": 3,
-   "months": 5,
-   "span": "2025-11 \u2192 2026-05",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 0.78,
+   "phrase": "research actually",
+   "videos": 5,
+   "channels": 4,
+   "months": 3,
+   "span": "2026-07 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "anti-inflammatory-diet",
+   "home_share": 0.6,
    "kind": "new candidate",
    "examples": [
-    "Tom Lee: Important Warning To All Small Bitcoin & Ethereum Investors \"It's A Fake Crash\"",
-    "7 Stocks I\u2019m Buying for the Stock Market\u2019s Fake Crash",
-    "Michael Saylor: Important Warning To All Small Bitcoin Investors \"It's A Fake Crash\""
+    "Can You Glide the Vagus Nerve? What the Research Actually Says",
+    "The Science of Out-of-Body Experiences: What Research Actually Shows",
+    "Are Seed Oils Really Toxic? What the Research Actually Says"
    ],
    "ids": [
-    "3XjYeGCFTo8",
-    "OpRy3WJO7mA",
-    "UcbGnhGgV-Y",
-    "fHBk-f9CotQ",
-    "g4VdctJHpyA",
-    "mNEaH-1GMno",
-    "ot1l6OMDqRU",
-    "t7-FO_qOqp8",
-    "wSIxg3iKT3U"
+    "1DqzKmRxMMY",
+    "F7TKQkSwu80",
+    "ROCppNaBWXQ",
+    "hj-0B-blWSI",
+    "xvSkF2ql3i0"
    ],
-   "specificity": 0.0018,
-   "rank": 8.3
+   "also": [
+    "research shows"
+   ],
+   "specificity": 0.0014,
+   "rank": 8.6
   },
   {
    "phrase": "save hours",
@@ -2492,30 +2462,6 @@
    "rank": 8.1
   },
   {
-   "phrase": "actually found",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2024-07 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Bryan Johnson Is Trying to Reverse Death! Here's What He's Actually Found.",
-    "Rapamycin and Aging: What the Human Trials Actually Found",
-    "The Zodiac Killer's Identity - Was He Ever Actually Found?"
-   ],
-   "ids": [
-    "5xFSoQM77xo",
-    "Fla3ybL_0Iw",
-    "QyyG-PWk0T4",
-    "li2fhq-tI8A"
-   ],
-   "specificity": 0.002,
-   "rank": 8.0
-  },
-  {
    "phrase": "science actually",
    "videos": 7,
    "channels": 7,
@@ -2542,33 +2488,37 @@
    "also": [
     "science actually says"
    ],
-   "specificity": 0.0045,
-   "rank": 7.8
+   "specificity": 0.0044,
+   "rank": 8.0
   },
   {
-   "phrase": "hike coming",
-   "videos": 5,
-   "channels": 4,
-   "months": 4,
-   "span": "2022-04 \u2192 2026-09",
+   "phrase": "fake crash",
+   "videos": 9,
+   "channels": 3,
+   "months": 5,
+   "span": "2025-11 \u2192 2026-05",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.4,
+   "home": "crypto-winter-watch",
+   "home_share": 0.78,
    "kind": "new candidate",
    "examples": [
-    "SUPER HIKE COMING SOON - 1% In June",
-    "Key Fed Inflation Rate Just Heated Up: Rate Hike Coming!",
-    "Mortgage Rate Update & Another Fed Hike Coming?"
+    "Tom Lee: Important Warning To All Small Bitcoin & Ethereum Investors \"It's A Fake Crash\"",
+    "7 Stocks I\u2019m Buying for the Stock Market\u2019s Fake Crash",
+    "Michael Saylor: Important Warning To All Small Bitcoin Investors \"It's A Fake Crash\""
    ],
    "ids": [
-    "GgY3EB3uXHc",
-    "JhRklX0yxZk",
-    "NqSORnATHAU",
-    "ecGgViz8THY",
-    "xMeYxdTAms4"
+    "3XjYeGCFTo8",
+    "OpRy3WJO7mA",
+    "UcbGnhGgV-Y",
+    "fHBk-f9CotQ",
+    "g4VdctJHpyA",
+    "mNEaH-1GMno",
+    "ot1l6OMDqRU",
+    "t7-FO_qOqp8",
+    "wSIxg3iKT3U"
    ],
-   "specificity": 0.0021,
-   "rank": 7.6
+   "specificity": 0.0019,
+   "rank": 7.9
   },
   {
    "phrase": "doctor explains fruit eat",
@@ -2632,6 +2582,55 @@
    "rank": 7.5
   },
   {
+   "phrase": "won save",
+   "videos": 5,
+   "channels": 5,
+   "months": 4,
+   "span": "2025-01 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.6,
+   "kind": "new candidate",
+   "examples": [
+    "Why Love Alone Won\u2019t Save Your Relationship! The Truth About Marriage | Jordan B. Peterson",
+    "Rate Cuts Won\u2019t Save You? Why Your Mortgage Might Stay HIGH!",
+    "\u201cBitcoin & AI Won\u2019t Save You\u201d \u2014 The Dangerous Lie People Are Betting Their Lives On"
+   ],
+   "ids": [
+    "4u3r7Br1FtY",
+    "TnHNQUTFPMk",
+    "YBIcInnIV9s",
+    "l6HFB3IYKJ0",
+    "moOZDlbzcVw"
+   ],
+   "specificity": 0.0027,
+   "rank": 7.4
+  },
+  {
+   "phrase": "actually found",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2024-07 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Bryan Johnson Is Trying to Reverse Death! Here's What He's Actually Found.",
+    "Rapamycin and Aging: What the Human Trials Actually Found",
+    "The Zodiac Killer's Identity - Was He Ever Actually Found?"
+   ],
+   "ids": [
+    "5xFSoQM77xo",
+    "Fla3ybL_0Iw",
+    "QyyG-PWk0T4",
+    "li2fhq-tI8A"
+   ],
+   "specificity": 0.0022,
+   "rank": 7.3
+  },
+  {
    "phrase": "crash 2024",
    "videos": 11,
    "channels": 7,
@@ -2662,8 +2661,8 @@
    "also": [
     "market crash 2024"
    ],
-   "specificity": 0.0073,
-   "rank": 6.7
+   "specificity": 0.0072,
+   "rank": 6.8
   },
   {
    "phrase": "crash alert",
@@ -2689,6 +2688,33 @@
    ],
    "specificity": 0.0012,
    "rank": 6.7
+  },
+  {
+   "phrase": "ready what's coming",
+   "videos": 7,
+   "channels": 6,
+   "months": 7,
+   "span": "2025-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.57,
+   "kind": "new candidate",
+   "examples": [
+    "are you ready for what's coming? \ud83d\udc40",
+    "The Stock Market Is Primed for WAR - Get Ready for What's Coming...",
+    "You're Not Ready For What's Coming Next."
+   ],
+   "ids": [
+    "ANG2WmfY3w8",
+    "GJ13qEkcetY",
+    "NMrWpz9wcT4",
+    "_g4l7YkDQwA",
+    "n0HrzsglZUw",
+    "qbD2-D0HF70",
+    "wVRuzofIBiw"
+   ],
+   "specificity": 0.0065,
+   "rank": 6.5
   },
   {
    "phrase": "markets crashing",
@@ -2726,45 +2752,18 @@
     "crash markets",
     "coming markets"
    ],
-   "specificity": 0.0085,
-   "rank": 6.5
-  },
-  {
-   "phrase": "ready what's coming",
-   "videos": 7,
-   "channels": 6,
-   "months": 7,
-   "span": "2025-04 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.57,
-   "kind": "new candidate",
-   "examples": [
-    "are you ready for what's coming? \ud83d\udc40",
-    "The Stock Market Is Primed for WAR - Get Ready for What's Coming...",
-    "You're Not Ready For What's Coming Next."
-   ],
-   "ids": [
-    "ANG2WmfY3w8",
-    "GJ13qEkcetY",
-    "NMrWpz9wcT4",
-    "_g4l7YkDQwA",
-    "n0HrzsglZUw",
-    "qbD2-D0HF70",
-    "wVRuzofIBiw"
-   ],
-   "specificity": 0.0065,
-   "rank": 6.5
+   "specificity": 0.0086,
+   "rank": 6.4
   },
   {
    "phrase": "actually build",
-   "videos": 8,
+   "videos": 9,
    "channels": 6,
    "months": 7,
    "span": "2024-12 \u2192 2026-09",
-   "industry": "Health & biotech",
+   "industry": "AI & technology",
    "home": "(pool)",
-   "home_share": 0.38,
+   "home_share": 0.44,
    "kind": "new candidate",
    "examples": [
     "Simple Tips to (ACTUALLY) Build Net-Worth with Stock market Investing",
@@ -2776,12 +2775,64 @@
     "FluKUJyeYD8",
     "HfwfR2f32wM",
     "HqD5a2Cae60",
+    "LoLYw--s-5w",
     "Ysr7oNDajJI",
     "b9FeIKChZV8",
     "jtpEU-e14tg",
     "tjaD65OCoE8"
    ],
    "specificity": 0.0066,
+   "rank": 6.4
+  },
+  {
+   "phrase": "shawn ryan show",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2024-02 \u2192 2026-09",
+   "industry": "Fringe & unexplained",
+   "home": "psi-declassified",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Remote Viewer Discovers Ancient Civilization On Mars | Joe Mcmoneagle  (Shawn Ryan Show)",
+    "Joe McMoneagle: How ego sabotages remote viewing | Shawn Ryan Show #95",
+    "The Biggest Interview of the Shawn Ryan Show?!"
+   ],
+   "ids": [
+    "2udefG5N2zQ",
+    "U3VTAmFD8ug",
+    "_CIYzyyFmd8",
+    "pCPvSFDxykw"
+   ],
+   "also": [
+    "ryan show"
+   ],
+   "specificity": 0.0014,
+   "rank": 6.4
+  },
+  {
+   "phrase": "etfs beat",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2024-09 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "These ETFs beat every other stock EVERY TIME \ud83d\udcc8\ud83d\udcb0",
+    "The Top AI ETFs That Beat Your 401K: My Complete Allocation Mapped Out!",
+    "Buy These 5 ETFs To Beat The S&P500 & Retire 10 Years Faster"
+   ],
+   "ids": [
+    "FZl42IIgxdk",
+    "dYYpdHK1Fec",
+    "fACoGYkyQ1o",
+    "t9zeQv_83gA"
+   ],
+   "specificity": 0.0025,
    "rank": 6.4
   },
   {
@@ -2815,86 +2866,8 @@
    "also": [
     "financial collapse"
    ],
-   "specificity": 0.0058,
-   "rank": 6.2
-  },
-  {
-   "phrase": "gold silver crash",
-   "videos": 7,
-   "channels": 5,
-   "months": 5,
-   "span": "2026-01 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "the-gold-and-silver-crash",
-   "home_share": 0.71,
-   "kind": "new candidate",
-   "examples": [
-    "URGENT UPDATE: The Gold & Silver Crash Has Exposed the Entire System -   Raoul Pal",
-    "The Gold & Silver Crash Was Just The Beginning (Nobody's Talking About What Comes Next)",
-    "The TRUTH about the Gold and Silver Crash"
-   ],
-   "ids": [
-    "0YukEH5UcPY",
-    "4Isgtn0Jc2Y",
-    "I_AkvgsNU6U",
-    "cjKkU8_WMxo",
-    "dOD4tez9aMA",
-    "siJ6GNqAVfY",
-    "xg4gU5B42OA"
-   ],
-   "also": [
-    "gold silver crash"
-   ],
-   "specificity": 0.004,
-   "rank": 6.2
-  },
-  {
-   "phrase": "cuts coming",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2024-05 \u2192 2026-06",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.5,
-   "kind": "new candidate",
-   "examples": [
-    "BACK-TO-BACK Interest Rate Cuts Coming!?",
-    "Fed Rate Cuts are Coming: Impact the US Housing Market @MinorityMindset",
-    "Rate Cuts Coming! What's Next for Stocks & Bonds?"
-   ],
-   "ids": [
-    "GD1Z8MOaKIg",
-    "f8W60z6H8yE",
-    "f9qPbjgFUj4",
-    "l_c-ddSEIoU"
-   ],
-   "specificity": 0.0026,
-   "rank": 6.2
-  },
-  {
-   "phrase": "etfs beat",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2024-09 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "These ETFs beat every other stock EVERY TIME \ud83d\udcc8\ud83d\udcb0",
-    "The Top AI ETFs That Beat Your 401K: My Complete Allocation Mapped Out!",
-    "Buy These 5 ETFs To Beat The S&P500 & Retire 10 Years Faster"
-   ],
-   "ids": [
-    "FZl42IIgxdk",
-    "dYYpdHK1Fec",
-    "fACoGYkyQ1o",
-    "t9zeQv_83gA"
-   ],
-   "specificity": 0.0026,
-   "rank": 6.2
+   "specificity": 0.0057,
+   "rank": 6.3
   },
   {
    "phrase": "debt collapse",
@@ -2925,8 +2898,63 @@
    "also": [
     "debt bubble"
    ],
-   "specificity": 0.0093,
-   "rank": 6.0
+   "specificity": 0.0091,
+   "rank": 6.2
+  },
+  {
+   "phrase": "gold silver crash",
+   "videos": 7,
+   "channels": 5,
+   "months": 5,
+   "span": "2026-01 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-gold-and-silver-crash",
+   "home_share": 0.71,
+   "kind": "new candidate",
+   "examples": [
+    "URGENT UPDATE: The Gold & Silver Crash Has Exposed the Entire System -   Raoul Pal",
+    "The Gold & Silver Crash Was Just The Beginning (Nobody's Talking About What Comes Next)",
+    "The TRUTH about the Gold and Silver Crash"
+   ],
+   "ids": [
+    "0YukEH5UcPY",
+    "4Isgtn0Jc2Y",
+    "I_AkvgsNU6U",
+    "cjKkU8_WMxo",
+    "dOD4tez9aMA",
+    "siJ6GNqAVfY",
+    "xg4gU5B42OA"
+   ],
+   "also": [
+    "gold silver crash",
+    "silver boom"
+   ],
+   "specificity": 0.004,
+   "rank": 6.2
+  },
+  {
+   "phrase": "cuts coming",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2024-05 \u2192 2026-06",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
+   "examples": [
+    "BACK-TO-BACK Interest Rate Cuts Coming!?",
+    "Fed Rate Cuts are Coming: Impact the US Housing Market @MinorityMindset",
+    "Rate Cuts Coming! What's Next for Stocks & Bonds?"
+   ],
+   "ids": [
+    "GD1Z8MOaKIg",
+    "f8W60z6H8yE",
+    "f9qPbjgFUj4",
+    "l_c-ddSEIoU"
+   ],
+   "specificity": 0.0026,
+   "rank": 6.2
   },
   {
    "phrase": "beats mythos",
@@ -2956,27 +2984,32 @@
    "rank": 6.0
   },
   {
-   "phrase": "won save",
-   "videos": 4,
+   "phrase": "truth sugar",
+   "videos": 6,
    "channels": 4,
-   "months": 4,
-   "span": "2025-01 \u2192 2026-09",
-   "industry": "Economy & markets",
+   "months": 5,
+   "span": "2025-09 \u2192 2026-09",
+   "industry": "Unsorted",
    "home": "(pool)",
-   "home_share": 0.5,
+   "home_share": 1.0,
    "kind": "new candidate",
    "examples": [
-    "Why Love Alone Won\u2019t Save Your Relationship! The Truth About Marriage | Jordan B. Peterson",
-    "Rate Cuts Won\u2019t Save You? Why Your Mortgage Might Stay HIGH!",
-    "\u201cBitcoin & AI Won\u2019t Save You\u201d \u2014 The Dangerous Lie People Are Betting Their Lives On"
+    "Doctor Reveals BRUTAL Truth About Sugar",
+    "READ THIS Before Your Next Sweet | Shocking Truth About Sugar | What Sugar REALLY Does to Your Body",
+    "Why Sugar Is Called The Silent Killer | Hidden Dangers of Sugar | Shocking Truth About Sugar #health"
    ],
    "ids": [
-    "TnHNQUTFPMk",
-    "YBIcInnIV9s",
-    "l6HFB3IYKJ0",
-    "moOZDlbzcVw"
+    "32S4bOcxWp4",
+    "6zGIkXXDfCU",
+    "CHTNVwSoS58",
+    "dw25V_T74Dg",
+    "tBzbvpcjVi0",
+    "thyap4tGPX4"
    ],
-   "specificity": 0.0027,
+   "also": [
+    "sugar really"
+   ],
+   "specificity": 0.0034,
    "rank": 5.9
   },
   {
@@ -3007,59 +3040,6 @@
    "rank": 5.7
   },
   {
-   "phrase": "truth sugar",
-   "videos": 6,
-   "channels": 4,
-   "months": 5,
-   "span": "2025-09 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Doctor Reveals BRUTAL Truth About Sugar",
-    "READ THIS Before Your Next Sweet | Shocking Truth About Sugar | What Sugar REALLY Does to Your Body",
-    "Why Sugar Is Called The Silent Killer | Hidden Dangers of Sugar | Shocking Truth About Sugar #health"
-   ],
-   "ids": [
-    "32S4bOcxWp4",
-    "6zGIkXXDfCU",
-    "CHTNVwSoS58",
-    "dw25V_T74Dg",
-    "tBzbvpcjVi0",
-    "thyap4tGPX4"
-   ],
-   "also": [
-    "sugar really"
-   ],
-   "specificity": 0.0035,
-   "rank": 5.7
-  },
-  {
-   "phrase": "until fix",
-   "videos": 4,
-   "channels": 4,
-   "months": 3,
-   "span": "2022-11 \u2192 2026-08",
-   "industry": "Health & biotech",
-   "home": "brain-fog-has-a-single",
-   "home_share": 0.5,
-   "kind": "cross-narrative",
-   "examples": [
-    "You\u2019ll NEVER Reverse Insulin Resistance Until You Fix THIS | Dr. Robert Lustig",
-    "Stop Taking Vitamin D Until You Fix This First",
-    "Stop letting AI write code until you fix this one thing (with Antigravity) | The Agent Factory"
-   ],
-   "ids": [
-    "Lpsmq6S7BMQ",
-    "RgNqmo7dGg8",
-    "X9qn1fJVhiI",
-    "kWqAzY8oIDU"
-   ],
-   "specificity": 0.0021,
-   "rank": 5.7
-  },
-  {
    "phrase": "changes coming",
    "videos": 9,
    "channels": 5,
@@ -3085,7 +3065,7 @@
     "x3beId8mNx4",
     "y9lNXO_Om4U"
    ],
-   "specificity": 0.0063,
+   "specificity": 0.0062,
    "rank": 5.6
   },
   {
@@ -3109,8 +3089,68 @@
     "h7fgLeKEDHs",
     "jUGxC6CxmlM"
    ],
+   "specificity": 0.0022,
+   "rank": 5.5
+  },
+  {
+   "phrase": "isn crashing",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2026-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.25,
+   "kind": "new candidate",
+   "examples": [
+    "Florida Housing Isn\u2019t Crashing\u2026 It\u2019s Worse Than That",
+    "Clarity Act Delayed (Shockingly Bitcoin Isn\u2019t Crashing)",
+    "Washington DC Housing Isn\u2019t Crashing \u2014 It\u2019s Repricing \ud83c\udfe0\ud83d\udcc9"
+   ],
+   "ids": [
+    "-gKKuX8Mm14",
+    "2ZikVkkQcW4",
+    "4qhcwl9E8Gs",
+    "QO2SqK-NyYU"
+   ],
    "specificity": 0.0023,
    "rank": 5.2
+  },
+  {
+   "phrase": "bubble history",
+   "videos": 10,
+   "channels": 6,
+   "months": 5,
+   "span": "2025-06 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
+   "examples": [
+    "Zillow CEO FINALLY Admits The Biggest Housing Bubble in US History Just Imploded",
+    "The Biggest Housing Bubble in THE US HISTORY IMPLODES",
+    "Redfin CEO FINALLY Admits The Biggest Housing Bubble in US History Just Imploded"
+   ],
+   "ids": [
+    "-5BPuF9TQDw",
+    "4TjyXJOaR_4",
+    "81WZ86cnEDk",
+    "8elx6iN0toQ",
+    "Dw2Vcc2CmDc",
+    "FB2cU59IdvU",
+    "TDR084lXY1Q",
+    "_XC8leI9eCY",
+    "oR8sNKdU77c",
+    "qNPA6-0AmYw"
+   ],
+   "also": [
+    "crash history",
+    "history coming",
+    "biggest housing bubble history",
+    "housing bubble history"
+   ],
+   "specificity": 0.006,
+   "rank": 5.0
   },
   {
    "phrase": "seed oils really",
@@ -3165,8 +3205,8 @@
     "lEWTVxR11Ps",
     "wfYEo-weAYk"
    ],
-   "specificity": 0.0041,
-   "rank": 4.9
+   "specificity": 0.004,
+   "rank": 5.0
   },
   {
    "phrase": "really happens inside body",
@@ -3195,34 +3235,33 @@
    "also": [
     "really happens inside"
    ],
-   "specificity": 0.0034,
-   "rank": 4.7
+   "specificity": 0.0033,
+   "rank": 4.8
   },
   {
-   "phrase": "housing crash worse 2008",
-   "videos": 6,
+   "phrase": "hike coming",
+   "videos": 5,
    "channels": 4,
-   "months": 6,
-   "span": "2023-10 \u2192 2026-09",
+   "months": 4,
+   "span": "2022-04 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "housing-crash-watch",
-   "home_share": 1.0,
-   "kind": "sub-claim",
+   "home_share": 0.4,
+   "kind": "cross-narrative",
    "examples": [
-    "The Housing Crash Will Be Worse Than 2008 (Real Reason)",
-    "Why The Next HOUSING CRASH Will Be WORSE Than 2008",
-    "This Housing Crash Will Be Worse Than 2008 (Real Reason)"
+    "SUPER HIKE COMING SOON - 1% In June",
+    "Key Fed Inflation Rate Just Heated Up: Rate Hike Coming!",
+    "Mortgage Rate Update & Another Fed Hike Coming?"
    ],
    "ids": [
-    "E2GzEXJAUDo",
-    "SgvskrETw34",
-    "XpD2jyMC8Hw",
-    "YQh6wO36HnM",
-    "_oy07_qrJD4",
-    "bPfBbOD33FQ"
+    "GgY3EB3uXHc",
+    "JhRklX0yxZk",
+    "NqSORnATHAU",
+    "ecGgViz8THY",
+    "xMeYxdTAms4"
    ],
-   "specificity": 0.0052,
-   "rank": 4.6
+   "specificity": 0.0033,
+   "rank": 4.8
   },
   {
    "phrase": "crisis coming",
@@ -3231,9 +3270,9 @@
    "months": 7,
    "span": "2023-01 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.3,
-   "kind": "new candidate",
+   "home": "collapse-audit",
+   "home_share": 0.4,
+   "kind": "cross-narrative",
    "examples": [
     "The Debt Crisis Is Coming Soon",
     "WARNING: 2nd Wave Of Banking Crisis Coming!!",
@@ -3251,8 +3290,8 @@
     "s7u_nyMg1Xw",
     "wuJXTD41lKM"
    ],
-   "specificity": 0.0125,
-   "rank": 4.5
+   "specificity": 0.0123,
+   "rank": 4.6
   },
   {
    "phrase": "crash banks",
@@ -3279,34 +3318,34 @@
     "bZ8BZZVwKys",
     "r_vhIGnwcbU"
    ],
-   "specificity": 0.0053,
-   "rank": 4.5
+   "specificity": 0.0052,
+   "rank": 4.6
   },
   {
-   "phrase": "beat inflation",
+   "phrase": "housing crash worse 2008",
    "videos": 6,
-   "channels": 5,
-   "months": 5,
-   "span": "2022-06 \u2192 2026-04",
+   "channels": 4,
+   "months": 6,
+   "span": "2023-10 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.5,
-   "kind": "new candidate",
+   "home": "housing-crash-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
    "examples": [
-    "Stocks That Beat Inflation | By Adam Khoo",
-    "5 Dividend Stocks That Beat Inflation",
-    "5 Dividend Stocks that BEAT Inflation"
+    "The Housing Crash Will Be Worse Than 2008 (Real Reason)",
+    "Why The Next HOUSING CRASH Will Be WORSE Than 2008",
+    "This Housing Crash Will Be Worse Than 2008 (Real Reason)"
    ],
    "ids": [
-    "Epk99AWQs0k",
-    "OKbsBfxlgRY",
-    "VM1XJxmG4BY",
-    "YF2CsQLoG-g",
-    "bkwUOo_DVGA",
-    "eIYVHmw2EnA"
+    "E2GzEXJAUDo",
+    "SgvskrETw34",
+    "XpD2jyMC8Hw",
+    "YQh6wO36HnM",
+    "_oy07_qrJD4",
+    "bPfBbOD33FQ"
    ],
-   "specificity": 0.0056,
-   "rank": 4.5
+   "specificity": 0.0052,
+   "rank": 4.6
   },
   {
    "phrase": "actually body",
@@ -3344,8 +3383,36 @@
     "really body",
     "body actually"
    ],
-   "specificity": 0.0113,
-   "rank": 4.4
+   "specificity": 0.011,
+   "rank": 4.5
+  },
+  {
+   "phrase": "beats gpt-5",
+   "videos": 5,
+   "channels": 5,
+   "months": 4,
+   "span": "2025-12 \u2192 2026-05",
+   "industry": "AI & technology",
+   "home": "open-vs-closed-ai-race",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "#278 Neil: DeepSeek V3.2 Benchmarks Prove Open Source Finally Beats GPT-5",
+    "AI News: China Just Released a FREE AI That Beats GPT-5 \u2013 DeepSeek V3.2",
+    "China\u2019s New Coding AI Beats GPT-5.1 & Claude Sonnet 4.5!"
+   ],
+   "ids": [
+    "0tcLBFtpeaE",
+    "J64RlVwAJo4",
+    "aFF2SfN97G4",
+    "hmZag6L6UOM",
+    "qs_Wg5Hu6EY"
+   ],
+   "also": [
+    "beat gpt-5"
+   ],
+   "specificity": 0.0044,
+   "rank": 4.5
   },
   {
    "phrase": "scam exposed",
@@ -3399,34 +3466,6 @@
     "vgDeC1j5814"
    ],
    "specificity": 0.0027,
-   "rank": 4.4
-  },
-  {
-   "phrase": "beats gpt-5",
-   "videos": 5,
-   "channels": 5,
-   "months": 4,
-   "span": "2025-12 \u2192 2026-05",
-   "industry": "AI & technology",
-   "home": "open-vs-closed-ai-race",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "#278 Neil: DeepSeek V3.2 Benchmarks Prove Open Source Finally Beats GPT-5",
-    "AI News: China Just Released a FREE AI That Beats GPT-5 \u2013 DeepSeek V3.2",
-    "China\u2019s New Coding AI Beats GPT-5.1 & Claude Sonnet 4.5!"
-   ],
-   "ids": [
-    "0tcLBFtpeaE",
-    "J64RlVwAJo4",
-    "aFF2SfN97G4",
-    "hmZag6L6UOM",
-    "qs_Wg5Hu6EY"
-   ],
-   "also": [
-    "beat gpt-5"
-   ],
-   "specificity": 0.0045,
    "rank": 4.4
   },
   {
@@ -3507,6 +3546,32 @@
    "rank": 4.3
   },
   {
+   "phrase": "beat inflation",
+   "videos": 6,
+   "channels": 5,
+   "months": 5,
+   "span": "2022-06 \u2192 2026-04",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.5,
+   "kind": "new candidate",
+   "examples": [
+    "Stocks That Beat Inflation | By Adam Khoo",
+    "5 Dividend Stocks That Beat Inflation",
+    "5 Dividend Stocks that BEAT Inflation"
+   ],
+   "ids": [
+    "Epk99AWQs0k",
+    "OKbsBfxlgRY",
+    "VM1XJxmG4BY",
+    "YF2CsQLoG-g",
+    "bkwUOo_DVGA",
+    "eIYVHmw2EnA"
+   ],
+   "specificity": 0.0059,
+   "rank": 4.2
+  },
+  {
    "phrase": "cause brain",
    "videos": 6,
    "channels": 6,
@@ -3533,68 +3598,32 @@
     "cause brain fog",
     "fix brain"
    ],
-   "specificity": 0.0073,
+   "specificity": 0.0072,
+   "rank": 4.2
+  },
+  {
+   "phrase": "hiding truth",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2026-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "AI Whistleblower: We Are Being Gaslit By AI Companies, They\u2019re Hiding The Truth! - Karen Hao",
+    "The REAL Reason They're Hiding The Truth",
+    "The REAL Reason They're Hiding The Truth About AI"
+   ],
+   "ids": [
+    "Cn8HBj8QAbk",
+    "O3G3pcYZg2k",
+    "ko94c5EdvCY",
+    "pvdPAOq5R5c"
+   ],
+   "specificity": 0.0022,
    "rank": 4.1
-  },
-  {
-   "phrase": "bubble history",
-   "videos": 9,
-   "channels": 6,
-   "months": 4,
-   "span": "2025-06 \u2192 2026-07",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.56,
-   "kind": "cross-narrative",
-   "examples": [
-    "Zillow CEO FINALLY Admits The Biggest Housing Bubble in US History Just Imploded",
-    "The Biggest Housing Bubble in THE US HISTORY IMPLODES",
-    "Redfin CEO FINALLY Admits The Biggest Housing Bubble in US History Just Imploded"
-   ],
-   "ids": [
-    "-5BPuF9TQDw",
-    "4TjyXJOaR_4",
-    "81WZ86cnEDk",
-    "8elx6iN0toQ",
-    "Dw2Vcc2CmDc",
-    "TDR084lXY1Q",
-    "_XC8leI9eCY",
-    "oR8sNKdU77c",
-    "qNPA6-0AmYw"
-   ],
-   "also": [
-    "crash history",
-    "history coming",
-    "biggest housing bubble history",
-    "housing bubble history"
-   ],
-   "specificity": 0.006,
-   "rank": 4.0
-  },
-  {
-   "phrase": "crash 2023",
-   "videos": 5,
-   "channels": 4,
-   "months": 4,
-   "span": "2022-12 \u2192 2023-08",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "The Real Estate Crash 2023",
-    "How The Housing Market Will CRASH in 2023",
-    "ALL LIES: The Reverse Housing Market Crash of 2023"
-   ],
-   "ids": [
-    "1d08iOdJSnw",
-    "8MHNBzmNiPo",
-    "JXT4vfdhs2A",
-    "lSAggex3mMQ",
-    "yKbG6j-8La0"
-   ],
-   "specificity": 0.004,
-   "rank": 4.0
   },
   {
    "phrase": "seniors must",
@@ -3620,8 +3649,33 @@
     "lv_DfqRqeBs",
     "s2jqnNQxwKI"
    ],
-   "specificity": 0.0021,
-   "rank": 3.8
+   "specificity": 0.002,
+   "rank": 4.0
+  },
+  {
+   "phrase": "crash 2023",
+   "videos": 5,
+   "channels": 4,
+   "months": 4,
+   "span": "2022-12 \u2192 2023-08",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The Real Estate Crash 2023",
+    "How The Housing Market Will CRASH in 2023",
+    "ALL LIES: The Reverse Housing Market Crash of 2023"
+   ],
+   "ids": [
+    "1d08iOdJSnw",
+    "8MHNBzmNiPo",
+    "JXT4vfdhs2A",
+    "lSAggex3mMQ",
+    "yKbG6j-8La0"
+   ],
+   "specificity": 0.0041,
+   "rank": 3.9
   },
   {
    "phrase": "ray dalio explains",
@@ -3652,8 +3706,8 @@
    "also": [
     "dalio explains"
    ],
-   "specificity": 0.0065,
-   "rank": 3.7
+   "specificity": 0.0064,
+   "rank": 3.8
   },
   {
    "phrase": "isn't think",
@@ -3683,8 +3737,8 @@
    "also": [
     "bubble worse think"
    ],
-   "specificity": 0.0094,
-   "rank": 3.7
+   "specificity": 0.0092,
+   "rank": 3.8
   },
   {
    "phrase": "explains invest",
@@ -3708,7 +3762,59 @@
     "gMyVHBhDvz4",
     "m01sY9v5myw"
    ],
-   "specificity": 0.0054,
+   "specificity": 0.0053,
+   "rank": 3.8
+  },
+  {
+   "phrase": "bear market ending",
+   "videos": 7,
+   "channels": 3,
+   "months": 6,
+   "span": "2026-02 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "The Crypto Bear Market Is Ending (They Want You To Sell)",
+    "The CRYPTO Bear Market Is ENDING. Here's Why Both Sides Are Right",
+    "The Crypto Bear Market Is Ending (Explained In 5 Minutes)"
+   ],
+   "ids": [
+    "2nGClfvMMIo",
+    "4XbxNJq1bDM",
+    "4zJYlIzB1TA",
+    "8DS4LMc-XnQ",
+    "VpfxeHf89y4",
+    "bTZJwI6M1DU",
+    "iNBi47xQrYY"
+   ],
+   "specificity": 0.0049,
+   "rank": 3.7
+  },
+  {
+   "phrase": "agents actually",
+   "videos": 5,
+   "channels": 5,
+   "months": 5,
+   "span": "2025-12 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "Agent Experts: Finally, Agents That ACTUALLY Learn",
+    "NEW Browser API That Makes AI Agents Actually Work (WebMCP)",
+    "Building AI Agents that actually work (Full Course)"
+   ],
+   "ids": [
+    "8QTPWt4XEWY",
+    "PwtMdYeuFNg",
+    "eA9Zf2-qYYM",
+    "jI2mYU8-PqU",
+    "zTcDwqopvKE"
+   ],
+   "specificity": 0.0068,
    "rank": 3.7
   },
   {
@@ -3746,59 +3852,7 @@
     "foods must",
     "foods beat"
    ],
-   "specificity": 0.0169,
-   "rank": 3.6
-  },
-  {
-   "phrase": "bear market ending",
-   "videos": 7,
-   "channels": 3,
-   "months": 6,
-   "span": "2026-02 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "The Crypto Bear Market Is Ending (They Want You To Sell)",
-    "The CRYPTO Bear Market Is ENDING. Here's Why Both Sides Are Right",
-    "The Crypto Bear Market Is Ending (Explained In 5 Minutes)"
-   ],
-   "ids": [
-    "2nGClfvMMIo",
-    "4XbxNJq1bDM",
-    "4zJYlIzB1TA",
-    "8DS4LMc-XnQ",
-    "VpfxeHf89y4",
-    "bTZJwI6M1DU",
-    "iNBi47xQrYY"
-   ],
-   "specificity": 0.005,
-   "rank": 3.6
-  },
-  {
-   "phrase": "agents actually",
-   "videos": 5,
-   "channels": 5,
-   "months": 5,
-   "span": "2025-12 \u2192 2026-09",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 0.8,
-   "kind": "new candidate",
-   "examples": [
-    "Agent Experts: Finally, Agents That ACTUALLY Learn",
-    "NEW Browser API That Makes AI Agents Actually Work (WebMCP)",
-    "Building AI Agents that actually work (Full Course)"
-   ],
-   "ids": [
-    "8QTPWt4XEWY",
-    "PwtMdYeuFNg",
-    "eA9Zf2-qYYM",
-    "jI2mYU8-PqU",
-    "zTcDwqopvKE"
-   ],
-   "specificity": 0.0069,
+   "specificity": 0.0166,
    "rank": 3.6
   },
   {
@@ -3823,8 +3877,71 @@
     "UQSUhzveA4M",
     "Z-hfyuVAwFs"
    ],
-   "specificity": 0.0045,
+   "specificity": 0.0044,
    "rank": 3.6
+  },
+  {
+   "phrase": "coming bitcoin ethereum",
+   "videos": 17,
+   "channels": 3,
+   "months": 9,
+   "span": "2024-07 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Matt Hougan: A Tsunami Is Coming For Bitcoin & Ethereum! Why Smart Money Is Buying",
+    "BlackRock: \"A TSUNAMI Is Coming For Bitcoin & Ethereum\u201d Larry Fink 2025 Crypto Prediction",
+    "Crypto ETF Season is Coming! Bitcoin, Ethereum & Altcoins News #shorts"
+   ],
+   "ids": [
+    "18660T9GTUY",
+    "1Uk-o8yZ4Y0",
+    "50U3SJTbNpg",
+    "5i8VvNd-uJk",
+    "893cikwwjdw",
+    "AjuM4-WRQoE",
+    "Gys5vX-3hfg",
+    "KLmtxISXI8A",
+    "XBTHXlyMRuY",
+    "XMa4ImNquPE",
+    "dK9fW80oEng",
+    "flWpcHoofDw",
+    "hKO5jSIXKHU",
+    "iDL2i2RJtw8",
+    "ie3zMA8ffJw",
+    "kUgMPkZeH1A",
+    "x1-8ftbh8_8"
+   ],
+   "specificity": 0.0078,
+   "rank": 3.5
+  },
+  {
+   "phrase": "end world",
+   "videos": 6,
+   "channels": 6,
+   "months": 5,
+   "span": "2023-07 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.67,
+   "kind": "new candidate",
+   "examples": [
+    "End of The World | InvestED Podcast | Episode #426",
+    "Why 2025 was the end of the world as we knew it | Peter Leyden",
+    "CIA Hid Book Predicting End of World! 60 Years! #shorts"
+   ],
+   "ids": [
+    "-zoCpFfOH04",
+    "4_zRFWi8YJs",
+    "9E_GddSi1p8",
+    "FxuaBJGkeeo",
+    "UhvOkUBCFyw",
+    "rtwJVH_efzE"
+   ],
+   "specificity": 0.0085,
+   "rank": 3.5
   },
   {
    "phrase": "collapse begun",
@@ -3879,41 +3996,34 @@
    "rank": 3.5
   },
   {
-   "phrase": "coming bitcoin ethereum",
-   "videos": 17,
-   "channels": 3,
-   "months": 9,
-   "span": "2024-07 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 1.0,
-   "kind": "new candidate",
+   "phrase": "beats fable",
+   "videos": 10,
+   "channels": 5,
+   "months": 3,
+   "span": "2026-06 \u2192 2026-08",
+   "industry": "AI & technology",
+   "home": "open-vs-closed-ai-race",
+   "home_share": 0.9,
+   "kind": "sub-claim",
    "examples": [
-    "Matt Hougan: A Tsunami Is Coming For Bitcoin & Ethereum! Why Smart Money Is Buying",
-    "BlackRock: \"A TSUNAMI Is Coming For Bitcoin & Ethereum\u201d Larry Fink 2025 Crypto Prediction",
-    "Crypto ETF Season is Coming! Bitcoin, Ethereum & Altcoins News #shorts"
+    "Sakana Fugu Ultra BEATS Fable 5 & GPT-5.5? (Fully Tested)",
+    "OpenRouter Fusion: They OFFICIALLY CLAIM THAT THIS MODEL beats FABLE?",
+    "Opus 5 Beats Fable... at Half the Price?"
    ],
    "ids": [
-    "18660T9GTUY",
-    "1Uk-o8yZ4Y0",
-    "50U3SJTbNpg",
-    "5i8VvNd-uJk",
-    "893cikwwjdw",
-    "AjuM4-WRQoE",
-    "Gys5vX-3hfg",
-    "KLmtxISXI8A",
-    "XBTHXlyMRuY",
-    "XMa4ImNquPE",
-    "dK9fW80oEng",
-    "flWpcHoofDw",
-    "hKO5jSIXKHU",
-    "iDL2i2RJtw8",
-    "ie3zMA8ffJw",
-    "kUgMPkZeH1A",
-    "x1-8ftbh8_8"
+    "56wK2ttgIsc",
+    "FU0cl9_3DUQ",
+    "JnC2MuAEOiQ",
+    "LEnYkEIOhIY",
+    "Rf-koenLV9k",
+    "VESRlr6lRQ8",
+    "WVcsxMcoCLs",
+    "Wf1hgNfGtEs",
+    "pDwfG5uDItE",
+    "s2ngxmDZekE"
    ],
-   "specificity": 0.0079,
-   "rank": 3.4
+   "specificity": 0.0046,
+   "rank": 3.3
   },
   {
    "phrase": "home prices crashing",
@@ -3977,63 +4087,8 @@
     "war end",
     "war coming"
    ],
-   "specificity": 0.0091,
+   "specificity": 0.0092,
    "rank": 3.3
-  },
-  {
-   "phrase": "collapse global economy",
-   "videos": 5,
-   "channels": 3,
-   "months": 5,
-   "span": "2021-09 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 0.6,
-   "kind": "new candidate",
-   "examples": [
-    "How Evergrande And China Could Collapse The Global Economy!!",
-    "Trump\u2019s New Strategy Could Collapse The Global Economy",
-    "China Will COLLAPSE The Global Economy"
-   ],
-   "ids": [
-    "8IMaULrNHfo",
-    "llRVaq1lexk",
-    "mJ9Q2Xpzf1Y",
-    "mkj2YoKbzeg",
-    "nqIESCmMc-c"
-   ],
-   "specificity": 0.0045,
-   "rank": 3.3
-  },
-  {
-   "phrase": "beats fable",
-   "videos": 10,
-   "channels": 5,
-   "months": 3,
-   "span": "2026-06 \u2192 2026-08",
-   "industry": "AI & technology",
-   "home": "open-vs-closed-ai-race",
-   "home_share": 0.9,
-   "kind": "sub-claim",
-   "examples": [
-    "Sakana Fugu Ultra BEATS Fable 5 & GPT-5.5? (Fully Tested)",
-    "OpenRouter Fusion: They OFFICIALLY CLAIM THAT THIS MODEL beats FABLE?",
-    "Opus 5 Beats Fable... at Half the Price?"
-   ],
-   "ids": [
-    "56wK2ttgIsc",
-    "FU0cl9_3DUQ",
-    "JnC2MuAEOiQ",
-    "LEnYkEIOhIY",
-    "Rf-koenLV9k",
-    "VESRlr6lRQ8",
-    "WVcsxMcoCLs",
-    "Wf1hgNfGtEs",
-    "pDwfG5uDItE",
-    "s2ngxmDZekE"
-   ],
-   "specificity": 0.0047,
-   "rank": 3.2
   },
   {
    "phrase": "actually healthy",
@@ -4060,7 +4115,61 @@
    "also": [
     "really healthy"
    ],
-   "specificity": 0.0062,
+   "specificity": 0.0061,
+   "rank": 3.3
+  },
+  {
+   "phrase": "collapse global economy",
+   "videos": 5,
+   "channels": 3,
+   "months": 5,
+   "span": "2021-09 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.6,
+   "kind": "new candidate",
+   "examples": [
+    "How Evergrande And China Could Collapse The Global Economy!!",
+    "Trump\u2019s New Strategy Could Collapse The Global Economy",
+    "China Will COLLAPSE The Global Economy"
+   ],
+   "ids": [
+    "8IMaULrNHfo",
+    "llRVaq1lexk",
+    "mJ9Q2Xpzf1Y",
+    "mkj2YoKbzeg",
+    "nqIESCmMc-c"
+   ],
+   "specificity": 0.0047,
+   "rank": 3.2
+  },
+  {
+   "phrase": "causes chronic inflammation",
+   "videos": 5,
+   "channels": 4,
+   "months": 2,
+   "span": "2026-08 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "anti-inflammatory-diet",
+   "home_share": 0.8,
+   "kind": "sub-claim",
+   "examples": [
+    "Did you know... 3 hidden causes of chronic fatigue",
+    "Child Abuse Causes Chronic Inflammation and Autoimmune Diseases #shorts",
+    "Child Abuse Causes Chronic Inflammation and Autoimmune Diseases #shorts"
+   ],
+   "ids": [
+    "2nR5LEAfXCI",
+    "CcHrcjCNjF4",
+    "PyyshJSriRY",
+    "spgGHh3uX58",
+    "viUW8ft30g4"
+   ],
+   "also": [
+    "causes chronic inflammation",
+    "cause chronic"
+   ],
+   "specificity": 0.0025,
    "rank": 3.2
   },
   {
@@ -4112,81 +4221,28 @@
    "rank": 3.2
   },
   {
-   "phrase": "causes chronic inflammation",
-   "videos": 5,
+   "phrase": "problem isn't",
+   "videos": 4,
    "channels": 4,
-   "months": 2,
-   "span": "2026-08 \u2192 2026-09",
-   "industry": "Health & biotech",
-   "home": "anti-inflammatory-diet",
-   "home_share": 0.8,
-   "kind": "sub-claim",
-   "examples": [
-    "Did you know... 3 hidden causes of chronic fatigue",
-    "Child Abuse Causes Chronic Inflammation and Autoimmune Diseases #shorts",
-    "Child Abuse Causes Chronic Inflammation and Autoimmune Diseases #shorts"
-   ],
-   "ids": [
-    "2nR5LEAfXCI",
-    "CcHrcjCNjF4",
-    "PyyshJSriRY",
-    "spgGHh3uX58",
-    "viUW8ft30g4"
-   ],
-   "also": [
-    "cause chronic",
-    "causes chronic inflammation"
-   ],
-   "specificity": 0.0026,
-   "rank": 3.1
-  },
-  {
-   "phrase": "crash since",
-   "videos": 4,
-   "channels": 3,
-   "months": 3,
-   "span": "2024-04 \u2192 2026-07",
+   "months": 4,
+   "span": "2025-11 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.5,
-   "kind": "cross-narrative",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
    "examples": [
-    "Fastest Housing Price Crash Since 2008 On New Homes",
-    "The Biggest Crash since 2008 is underway (HOAs bankrupt)",
-    "It's a Depression (Biggest Housing Market Crash since 2009 underway)"
+    "\u201cThe real problem isn't deficits, It's Neoliberalism\u201c Top Economist warns",
+    "Why DeFi's Biggest Problem Isn't Regulation \u2014 It's Complexity | defi.com CEO Neil May",
+    "The Real Problem Isn't Mamdani or AOC"
    ],
    "ids": [
-    "-49kIiKGTw4",
-    "3oRNtmTE0gA",
-    "Bzpsqr_D2PE",
-    "ScDl9QvS2hk"
+    "J-plGasSmn4",
+    "NJ2puKiKBdE",
+    "OfmmjJ-BOIc",
+    "pslmsXejyxM"
    ],
-   "specificity": 0.0029,
-   "rank": 3.1
-  },
-  {
-   "phrase": "energy crashes",
-   "videos": 4,
-   "channels": 3,
-   "months": 3,
-   "span": "2026-03 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 0.5,
-   "kind": "cross-narrative",
-   "examples": [
-    "How to Stop Afternoon Energy Crashes Caused by Insulin Resistance",
-    "The Real Reason Your Energy Crashes and Cravings Take Over After 35 | Living Simpler",
-    "The Real Reason Your Energy Crashes and Cravings Take Over After 35 | Living Simpler"
-   ],
-   "ids": [
-    "I6DkDIoWKrQ",
-    "X8I3w_j-MK4",
-    "k2YkbKgR9b8",
-    "z7pzXGv--Ww"
-   ],
-   "specificity": 0.003,
-   "rank": 3.0
+   "specificity": 0.005,
+   "rank": 3.2
   },
   {
    "phrase": "investors must",
@@ -4216,8 +4272,8 @@
    "also": [
     "means investors"
    ],
-   "specificity": 0.0143,
-   "rank": 2.9
+   "specificity": 0.0142,
+   "rank": 3.0
   },
   {
    "phrase": "save 000",
@@ -4242,59 +4298,56 @@
     "wKomYTHUi6Q",
     "wNFC2RbgFVw"
    ],
-   "specificity": 0.0102,
+   "specificity": 0.0104,
    "rank": 2.9
   },
   {
-   "phrase": "coming down",
-   "videos": 6,
+   "phrase": "energy crashes",
+   "videos": 4,
    "channels": 3,
-   "months": 6,
-   "span": "2025-12 \u2192 2026-07",
+   "months": 3,
+   "span": "2026-03 \u2192 2026-09",
    "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.83,
-   "kind": "sub-claim",
+   "home": "collapse-audit",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
    "examples": [
-    "Why Buy a House Now if Prices Are Coming Down?",
-    "HOUSING BUBBLE IS POPPING! PRICES ARE COMING DOWN! DON'T BUY! Housing Market Crash -Tall Mike Talks",
-    "Prices Are Coming DOWN - Don't Make These 10 Homebuyer Mistakes"
+    "How to Stop Afternoon Energy Crashes Caused by Insulin Resistance",
+    "The Real Reason Your Energy Crashes and Cravings Take Over After 35 | Living Simpler",
+    "The Real Reason Your Energy Crashes and Cravings Take Over After 35 | Living Simpler"
    ],
    "ids": [
-    "3JZNlWHWQRU",
-    "SXN84F9AAd4",
-    "a_98rCBJAVY",
-    "cnvLmGiFGg0",
-    "k0Do8-RvYVs",
-    "uBT1QiOYcVM"
+    "I6DkDIoWKrQ",
+    "X8I3w_j-MK4",
+    "k2YkbKgR9b8",
+    "z7pzXGv--Ww"
    ],
-   "specificity": 0.0065,
-   "rank": 2.8
+   "specificity": 0.0031,
+   "rank": 2.9
   },
   {
-   "phrase": "price crash",
-   "videos": 5,
-   "channels": 5,
-   "months": 4,
-   "span": "2024-04 \u2192 2026-09",
+   "phrase": "crash since",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2024-04 \u2192 2026-07",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.4,
-   "kind": "new candidate",
+   "home": "housing-crash-watch",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
    "examples": [
     "Fastest Housing Price Crash Since 2008 On New Homes",
-    "Gold and Silver Price Crash Explained: Is The Precious Metals Bull Run Over?",
-    "\ud83d\udea8BREAKING: Buffett Bets $400 BILLION on PRICE CRASH"
+    "The Biggest Crash since 2008 is underway (HOAs bankrupt)",
+    "It's a Depression (Biggest Housing Market Crash since 2009 underway)"
    ],
    "ids": [
-    "ANr2pOBs1Us",
+    "-49kIiKGTw4",
+    "3oRNtmTE0gA",
     "Bzpsqr_D2PE",
-    "K2S_8lCbMPg",
-    "_Gaxm3KWBLs",
-    "iVKXkYZ0GFs"
+    "ScDl9QvS2hk"
    ],
-   "specificity": 0.0075,
-   "rank": 2.7
+   "specificity": 0.0031,
+   "rank": 2.9
   },
   {
    "phrase": "really blood",
@@ -4321,8 +4374,8 @@
     "ZwlvA5LtDCI",
     "lp8BjnvUVXk"
    ],
-   "specificity": 0.0038,
-   "rank": 2.6
+   "specificity": 0.0037,
+   "rank": 2.7
   },
   {
    "phrase": "truth weight loss",
@@ -4350,33 +4403,34 @@
    "also": [
     "truth weight loss"
    ],
-   "specificity": 0.0047,
-   "rank": 2.6
+   "specificity": 0.0045,
+   "rank": 2.7
   },
   {
-   "phrase": "economy collapse",
-   "videos": 5,
-   "channels": 5,
-   "months": 5,
-   "span": "2025-04 \u2192 2026-07",
+   "phrase": "coming down",
+   "videos": 6,
+   "channels": 3,
+   "months": 6,
+   "span": "2025-12 \u2192 2026-07",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
+   "home": "housing-crash-watch",
+   "home_share": 0.83,
+   "kind": "sub-claim",
    "examples": [
-    "Is the US Economy About to Collapse   [...more]",
-    "Will the US Economy Collapse? (after spoiling their relationship with everyone) | Akshat Shrivastava",
-    "Watching the American Economy Collapse in Real Time"
+    "Why Buy a House Now if Prices Are Coming Down?",
+    "HOUSING BUBBLE IS POPPING! PRICES ARE COMING DOWN! DON'T BUY! Housing Market Crash -Tall Mike Talks",
+    "Prices Are Coming DOWN - Don't Make These 10 Homebuyer Mistakes"
    ],
    "ids": [
-    "A_OdNSctBhY",
-    "BXOAEDewk-A",
-    "rMMUPzLyqQw",
-    "zETRAxjEkho",
-    "zuR6Yb9Dbj4"
+    "3JZNlWHWQRU",
+    "SXN84F9AAd4",
+    "a_98rCBJAVY",
+    "cnvLmGiFGg0",
+    "k0Do8-RvYVs",
+    "uBT1QiOYcVM"
    ],
-   "specificity": 0.0097,
-   "rank": 2.6
+   "specificity": 0.0066,
+   "rank": 2.7
   },
   {
    "phrase": "minutes save",
@@ -4400,110 +4454,58 @@
     "_qr7ogLpTJs",
     "xDDNW2A3NKU"
    ],
-   "specificity": 0.0038,
-   "rank": 2.6
+   "specificity": 0.0037,
+   "rank": 2.7
   },
   {
-   "phrase": "bond market collapsing",
-   "videos": 4,
-   "channels": 3,
-   "months": 3,
-   "span": "2025-06 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "BREAKING: The Bond Market Is Collapsing (JPMorgan\u2019s Final Warning)",
-    "The Bond Market is Collapsing",
-    "BREAKING: The Bond Market Is Collapsing - Massive Bailout Has Begun!"
-   ],
-   "ids": [
-    "9X3h3swRftY",
-    "Mb7uOSd8RlM",
-    "mV1iw0aN9uo",
-    "q6FZYhEsEXg"
-   ],
-   "specificity": 0.0035,
-   "rank": 2.6
-  },
-  {
-   "phrase": "bank collapse",
-   "videos": 4,
-   "channels": 4,
-   "months": 3,
-   "span": "2023-03 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Former Goldman Sachs Manager Reveals Truth About Silicon Valley Bank Collapse",
-    "This Is What \"Always\" Happens Before A Bank Collapse",
-    "The Math Behind a Bank Collapse"
-   ],
-   "ids": [
-    "aYLC6znCzKY",
-    "mNhCLEd5gvY",
-    "pqj-xYVEC0w",
-    "qo3qZP1KjbI"
-   ],
-   "specificity": 0.0048,
-   "rank": 2.5
-  },
-  {
-   "phrase": "agent actually",
-   "videos": 9,
-   "channels": 4,
-   "months": 6,
-   "span": "2026-04 \u2192 2026-09",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 0.67,
-   "kind": "new candidate",
-   "examples": [
-    "Gemma 4 + Hermes/OpenClaw: HOW IS THIS POSSIBLE? FULLY LOCAL AI Agent that ACTUALLY WORKS!",
-    "\u201cThey\u2019re Broke!\u201d - Luxury Real Estate Agent On Who ACTUALLY Buys in NYC",
-    "Mistral Vibe (+Free API): This Free AI Coding Agent is ACTUALLY CRAZY!"
-   ],
-   "ids": [
-    "0T3XVfOFxEY",
-    "5zdvwxEouQ0",
-    "9PkNh6b1P8A",
-    "Fx2YMcjL7oE",
-    "XVmBfScMcw0",
-    "j93hY9rcijY",
-    "nrqmgvc9TJ8",
-    "otIhfQaex80",
-    "x3IG3elJvZk"
-   ],
-   "specificity": 0.0102,
-   "rank": 2.4
-  },
-  {
-   "phrase": "end world",
+   "phrase": "price crash",
    "videos": 5,
    "channels": 5,
    "months": 4,
-   "span": "2023-07 \u2192 2026-08",
+   "span": "2024-04 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.6,
+   "home_share": 0.4,
    "kind": "new candidate",
    "examples": [
-    "End of The World | InvestED Podcast | Episode #426",
-    "Why 2025 was the end of the world as we knew it | Peter Leyden",
-    "CIA Hid Book Predicting End of World! 60 Years! #shorts"
+    "Fastest Housing Price Crash Since 2008 On New Homes",
+    "Gold and Silver Price Crash Explained: Is The Precious Metals Bull Run Over?",
+    "\ud83d\udea8BREAKING: Buffett Bets $400 BILLION on PRICE CRASH"
    ],
    "ids": [
-    "-zoCpFfOH04",
-    "9E_GddSi1p8",
-    "FxuaBJGkeeo",
-    "UhvOkUBCFyw",
-    "rtwJVH_efzE"
+    "ANr2pOBs1Us",
+    "Bzpsqr_D2PE",
+    "K2S_8lCbMPg",
+    "_Gaxm3KWBLs",
+    "iVKXkYZ0GFs"
    ],
-   "specificity": 0.0085,
-   "rank": 2.4
+   "specificity": 0.0075,
+   "rank": 2.7
+  },
+  {
+   "phrase": "economy collapse",
+   "videos": 5,
+   "channels": 5,
+   "months": 5,
+   "span": "2025-04 \u2192 2026-07",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Is the US Economy About to Collapse   [...more]",
+    "Will the US Economy Collapse? (after spoiling their relationship with everyone) | Akshat Shrivastava",
+    "Watching the American Economy Collapse in Real Time"
+   ],
+   "ids": [
+    "A_OdNSctBhY",
+    "BXOAEDewk-A",
+    "rMMUPzLyqQw",
+    "zETRAxjEkho",
+    "zuR6Yb9Dbj4"
+   ],
+   "specificity": 0.0096,
+   "rank": 2.6
   },
   {
    "phrase": "truth getting rich",
@@ -4526,8 +4528,8 @@
     "jFCBfoNGQuo",
     "vSvvMNsi1RQ"
    ],
-   "specificity": 0.0066,
-   "rank": 2.4
+   "specificity": 0.0065,
+   "rank": 2.5
   },
   {
    "phrase": "must eat",
@@ -4563,7 +4565,142 @@
     "must eat daily",
     "vegetables must eat"
    ],
-   "specificity": 0.0138,
+   "specificity": 0.0135,
+   "rank": 2.4
+  },
+  {
+   "phrase": "end 2025",
+   "videos": 8,
+   "channels": 6,
+   "months": 5,
+   "span": "2024-12 \u2192 2025-12",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.38,
+   "kind": "cross-narrative",
+   "examples": [
+    "7 Things To Do Before The End of 2025 (Financially)",
+    "Zillow: Home Values to Decrease by the end of 2025",
+    "Ethereum: Realistic Prediction For End Of 2025 - $10k Or Crash? Latest Upgrades & Price Analysis"
+   ],
+   "ids": [
+    "1iWUGcLLqh4",
+    "DLlQuqo4i0I",
+    "DSG_hJgi8Ek",
+    "FNT6UDvz4o0",
+    "Htx6IeRQz2A",
+    "ZRcfHk3unR8",
+    "moydWGOAIqU",
+    "wRmTV2OlQyo"
+   ],
+   "also": [
+    "truth 2025",
+    "crash 2025",
+    "crashing 2025"
+   ],
+   "specificity": 0.0126,
+   "rank": 2.4
+  },
+  {
+   "phrase": "plan fix",
+   "videos": 5,
+   "channels": 4,
+   "months": 4,
+   "span": "2025-08 \u2192 2026-07",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "US Debt Crisis \u2014 Trump\u2019s New Plan to Fix It with Crypto & Gold",
+    "Ex-OpenAI CTO Reveals Plan to Fix LLMs Biggest Problem",
+    "The $1.6 billion plan to fix the Panama Canal's drought problem"
+   ],
+   "ids": [
+    "63OkQOictLo",
+    "CZeEAgE5xGA",
+    "MMhIdwoOLTo",
+    "siKfPK5jhtI",
+    "twH1Z3uIqMg"
+   ],
+   "specificity": 0.0067,
+   "rank": 2.4
+  },
+  {
+   "phrase": "bond market collapsing",
+   "videos": 4,
+   "channels": 3,
+   "months": 3,
+   "span": "2025-06 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "BREAKING: The Bond Market Is Collapsing (JPMorgan\u2019s Final Warning)",
+    "The Bond Market is Collapsing",
+    "BREAKING: The Bond Market Is Collapsing - Massive Bailout Has Begun!"
+   ],
+   "ids": [
+    "9X3h3swRftY",
+    "Mb7uOSd8RlM",
+    "mV1iw0aN9uo",
+    "q6FZYhEsEXg"
+   ],
+   "specificity": 0.0037,
+   "rank": 2.4
+  },
+  {
+   "phrase": "bank collapse",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2023-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Former Goldman Sachs Manager Reveals Truth About Silicon Valley Bank Collapse",
+    "This Is What \"Always\" Happens Before A Bank Collapse",
+    "The Math Behind a Bank Collapse"
+   ],
+   "ids": [
+    "aYLC6znCzKY",
+    "mNhCLEd5gvY",
+    "pqj-xYVEC0w",
+    "qo3qZP1KjbI"
+   ],
+   "specificity": 0.0049,
+   "rank": 2.4
+  },
+  {
+   "phrase": "agent actually",
+   "videos": 9,
+   "channels": 4,
+   "months": 6,
+   "span": "2026-04 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.67,
+   "kind": "new candidate",
+   "examples": [
+    "Gemma 4 + Hermes/OpenClaw: HOW IS THIS POSSIBLE? FULLY LOCAL AI Agent that ACTUALLY WORKS!",
+    "\u201cThey\u2019re Broke!\u201d - Luxury Real Estate Agent On Who ACTUALLY Buys in NYC",
+    "Mistral Vibe (+Free API): This Free AI Coding Agent is ACTUALLY CRAZY!"
+   ],
+   "ids": [
+    "0T3XVfOFxEY",
+    "5zdvwxEouQ0",
+    "9PkNh6b1P8A",
+    "Fx2YMcjL7oE",
+    "XVmBfScMcw0",
+    "j93hY9rcijY",
+    "nrqmgvc9TJ8",
+    "otIhfQaex80",
+    "x3IG3elJvZk"
+   ],
+   "specificity": 0.0104,
    "rank": 2.3
   },
   {
@@ -4591,65 +4728,7 @@
     "YF2CsQLoG-g",
     "yQx_5q05NAU"
    ],
-   "specificity": 0.0079,
-   "rank": 2.3
-  },
-  {
-   "phrase": "end 2025",
-   "videos": 8,
-   "channels": 6,
-   "months": 5,
-   "span": "2024-12 \u2192 2025-12",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.38,
-   "kind": "new candidate",
-   "examples": [
-    "7 Things To Do Before The End of 2025 (Financially)",
-    "Zillow: Home Values to Decrease by the end of 2025",
-    "Ethereum: Realistic Prediction For End Of 2025 - $10k Or Crash? Latest Upgrades & Price Analysis"
-   ],
-   "ids": [
-    "1iWUGcLLqh4",
-    "DLlQuqo4i0I",
-    "DSG_hJgi8Ek",
-    "FNT6UDvz4o0",
-    "Htx6IeRQz2A",
-    "ZRcfHk3unR8",
-    "moydWGOAIqU",
-    "wRmTV2OlQyo"
-   ],
-   "also": [
-    "truth 2025",
-    "crash 2025",
-    "crashing 2025"
-   ],
-   "specificity": 0.0133,
-   "rank": 2.3
-  },
-  {
-   "phrase": "plan fix",
-   "videos": 5,
-   "channels": 4,
-   "months": 4,
-   "span": "2025-08 \u2192 2026-07",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 0.8,
-   "kind": "new candidate",
-   "examples": [
-    "US Debt Crisis \u2014 Trump\u2019s New Plan to Fix It with Crypto & Gold",
-    "Ex-OpenAI CTO Reveals Plan to Fix LLMs Biggest Problem",
-    "The $1.6 billion plan to fix the Panama Canal's drought problem"
-   ],
-   "ids": [
-    "63OkQOictLo",
-    "CZeEAgE5xGA",
-    "MMhIdwoOLTo",
-    "siKfPK5jhtI",
-    "twH1Z3uIqMg"
-   ],
-   "specificity": 0.0069,
+   "specificity": 0.0078,
    "rank": 2.3
   },
   {
@@ -4679,7 +4758,7 @@
    "also": [
     "investment opportunity coming"
    ],
-   "specificity": 0.0091,
+   "specificity": 0.0089,
    "rank": 2.2
   },
   {
@@ -4694,8 +4773,8 @@
    "kind": "new candidate",
    "examples": [
     "Iran, China, and Russia Just Did Something That Changes Everything \u2014 Here's What's Coming  Prof  Jia",
-    "Forget the Recession \u2014 The REAL Crisis Is Coming | Prof Jiang",
-    "Gold\u2019s NEXT Move Is UNTHINKABLE \u2014 Central Banks Already Know What\u2019s Coming | Prof. Jiang"
+    "Worse Than a Recession? 3 Threats to Your Money Are Coming | Prof Jiang Xueqin",
+    "The $90 Billion Threat Just Accelerated the Divorce Washington Never Saw Coming | Prof Jiang Xueqin"
    ],
    "ids": [
     "-SkIw1ygb7E",
@@ -4810,67 +4889,8 @@
     "qxtoQy7E0R0",
     "t5ssiP5gahg"
    ],
-   "specificity": 0.0133,
-   "rank": 1.5
-  },
-  {
-   "phrase": "fed must",
-   "videos": 7,
-   "channels": 6,
-   "months": 3,
-   "span": "2022-11 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.71,
-   "kind": "new candidate",
-   "examples": [
-    "Elon Musk: Fed must cut rates now to avoid severe recession",
-    "Fed Must Act Now Or System Collapses: 'Never Seen Anything Like This' | Danielle DiMartino Booth",
-    "Trump Says Fed Must Cut Rates | Balance of Power"
-   ],
-   "ids": [
-    "-98MIHb0N70",
-    "B1TRKfw0tnQ",
-    "SF7-Fx6w5Io",
-    "ZHgxrjR5KgE",
-    "dpTkW9FXB2Q",
-    "qHnHgr2gyW8",
-    "tbKrMYtVll8"
-   ],
-   "also": [
-    "crash fed",
-    "fed save"
-   ],
-   "specificity": 0.0122,
-   "rank": 1.5
-  },
-  {
-   "phrase": "end iran war",
-   "videos": 5,
-   "channels": 5,
-   "months": 2,
-   "span": "2026-03 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Prof Jiang: Trump Is STUCK. He Can't End The Iran War Even If He Wanted Too... Here's Why...",
-    "Rep. Crow Thinks Congress Should and Can End Iran War",
-    "Seven House Republicans call for an end to the Iran war"
-   ],
-   "ids": [
-    "FRd4Y0oseeo",
-    "aDPj_8UpRUA",
-    "qbVq-k1Jsmk",
-    "uP9Fnq23lsA",
-    "vNh0wwwf9AU"
-   ],
-   "also": [
-    "end iran"
-   ],
-   "specificity": 0.0067,
-   "rank": 1.5
+   "specificity": 0.0126,
+   "rank": 1.6
   },
   {
    "phrase": "truth investing",
@@ -4893,7 +4913,7 @@
     "XnrdXyRJU1w",
     "jsj9g0VTqyA"
    ],
-   "specificity": 0.0108,
+   "specificity": 0.0107,
    "rank": 1.5
   },
   {
@@ -4943,8 +4963,67 @@
     "pkYITu3lgCo",
     "rvDMD3to_zA"
    ],
-   "specificity": 0.0133,
+   "specificity": 0.0126,
    "rank": 1.4
+  },
+  {
+   "phrase": "end iran war",
+   "videos": 5,
+   "channels": 5,
+   "months": 2,
+   "span": "2026-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "Prof Jiang: Trump Is STUCK. He Can't End The Iran War Even If He Wanted Too... Here's Why...",
+    "Rep. Crow Thinks Congress Should and Can End Iran War",
+    "Seven House Republicans call for an end to the Iran war"
+   ],
+   "ids": [
+    "FRd4Y0oseeo",
+    "aDPj_8UpRUA",
+    "qbVq-k1Jsmk",
+    "uP9Fnq23lsA",
+    "vNh0wwwf9AU"
+   ],
+   "also": [
+    "end iran"
+   ],
+   "specificity": 0.007,
+   "rank": 1.4
+  },
+  {
+   "phrase": "fed must",
+   "videos": 7,
+   "channels": 6,
+   "months": 3,
+   "span": "2022-11 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.71,
+   "kind": "new candidate",
+   "examples": [
+    "Elon Musk: Fed must cut rates now to avoid severe recession",
+    "Fed Must Act Now Or System Collapses: 'Never Seen Anything Like This' | Danielle DiMartino Booth",
+    "Trump Says Fed Must Cut Rates | Balance of Power"
+   ],
+   "ids": [
+    "-98MIHb0N70",
+    "B1TRKfw0tnQ",
+    "SF7-Fx6w5Io",
+    "ZHgxrjR5KgE",
+    "dpTkW9FXB2Q",
+    "qHnHgr2gyW8",
+    "tbKrMYtVll8"
+   ],
+   "also": [
+    "crash fed",
+    "fed save"
+   ],
+   "specificity": 0.0136,
+   "rank": 1.3
   },
   {
    "phrase": "people actually",
@@ -4971,7 +5050,7 @@
    "also": [
     "people won't"
    ],
-   "specificity": 0.0155,
+   "specificity": 0.0154,
    "rank": 1.3
   },
   {
@@ -4998,7 +5077,7 @@
    "also": [
     "openai bubble"
    ],
-   "specificity": 0.0073,
+   "specificity": 0.0074,
    "rank": 1.1
   },
   {
@@ -5022,7 +5101,7 @@
     "igglA9gTVfA",
     "ulPYx9ZWAyE"
    ],
-   "specificity": 0.0158,
+   "specificity": 0.0156,
    "rank": 1.0
   },
   {
@@ -5051,7 +5130,7 @@
     "home isn't",
     "truth home"
    ],
-   "specificity": 0.018,
+   "specificity": 0.0178,
    "rank": 0.9
   },
   {
@@ -5075,7 +5154,7 @@
     "Bbx8w27A2xs",
     "k0szvFmHPnI"
    ],
-   "specificity": 0.0088,
+   "specificity": 0.0087,
    "rank": 0.9
   },
   {
@@ -5091,7 +5170,7 @@
    "examples": [
     "Will Fed Hike Rates This Year, Crash Markets? Economist Reveals Next Move | Komal Sri-Kumar",
     "\ud83d\udea8Mortgage Rates CRASH | FED Ends Market Bailout",
-    "Will Rising Long Term Rates Crash Stocks?"
+    "Housing Market Rates: Will It Crash? Buyer Power Explained #shorts"
    ],
    "ids": [
     "3CSVzI5Y46g",
@@ -5099,7 +5178,7 @@
     "nLEa5VBkH68",
     "t9P3BKPndnI"
    ],
-   "specificity": 0.0145,
+   "specificity": 0.0149,
    "rank": 0.8
   }
  ]
