@@ -271,6 +271,8 @@
   .gtile.cand .gname { font-size: 15px; font-weight: 600; }
   .gtile.cand.prop { border-style: solid; border-color: color-mix(in srgb, var(--accent) 35%, var(--hairline)); background: var(--surface); }
   .gtile.cand.prop .gname { font-size: 16px; font-weight: 650; }
+  .gtile .gkick { font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; font-weight: 700;
+    color: var(--muted); }
   .gtile.cand.disc { border-style: solid; border-color: var(--hairline); background: var(--page); }
   .gtile.cand.disc .gclaim { font-style: italic; }
   /* Today's sets: a numbered row, rebuilt daily. The rank sits behind the tile,
@@ -1567,7 +1569,7 @@ function orientationHtml(data, s) {
              to place this narrative against the rival answers.</div>`}
     <div class="ansrow">
       <div class="qk">Answer under review</div>
-      <h2>${esc(n.name)}</h2>
+      <h2>${esc(claimDisplay(n.name))}</h2>
       <div class="claim">${esc(n.claim)}</div>
     </div>
     <div class="rread">
@@ -4312,10 +4314,26 @@ const discSearchText = d => [d.phrase, ...(d.also || []), ...(d.examples || [])]
    channels and months, then survived a reading pass that threw out the sales
    formulas. Named in its believers' own words, never asserted. Not yet a tracked
    narrative: no corpus of its own, no verdicts, no ledger. */
+/* The stored name attributes the claim in full: The "seed oils are poison" story.
+   That is the right record and the wrong display — stacked in a grid, two dozen
+   cards each ending in "story" reads as a tic. The quotation marks and a "they
+   claim" label carry the attribution; the frame around them does not need to. */
+function claimDisplay(name) {
+  const raw = String(name || "").trim();
+  // The quoted run is the claim itself, whatever frame the writer wrapped it in —
+  // including a name that arrived with its own claim appended after a colon.
+  // Double quotes delimit; an apostrophe inside is part of the claim, so
+  // "condo crash will break Canada's banks" keeps its banks.
+  const q = raw.match(/[“"]([^“”"]{6,160})[”"]/) || raw.match(/'([^']{6,160})'/);
+  const inner = q ? q[1] : raw.replace(/^the\s+/i, "").replace(/\s+(story|call|claim)$/i, "");
+  return inner.charAt(0).toUpperCase() + inner.slice(1);
+}
+
 function galProposed(p) {
   const e = p.evidence || {}, f = p.frame || {};
   return `<div class="gtile cand prop" title="${esc(p.why || "")}">
-    <div class="gname">${esc(p.claim_name || p.phrase)}</div>
+    <div class="gkick">They claim</div>
+    <div class="gname">“${esc(claimDisplay(p.claim_name || p.phrase))}”</div>
     <div class="gclaim">${esc(p.claim || "")}</div>
     <div class="gstats">
       <span class="gs">${e.videos || 0} videos · ${e.channels || 0} channels · ${e.months || 0} months</span>

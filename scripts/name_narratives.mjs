@@ -79,7 +79,7 @@ RHETORIC is a phrase that recurs because of how it sells, not what it claims: "s
 Judge the phrase by the example titles, which are real titles from the corpus. If the titles do not share one checkable claim, it is rhetoric, however often the phrase recurs. Be strict: a wrongly admitted narrative pollutes the product, while a rejected one can be proposed again when more evidence arrives.
 
 For a narrative, write:
-- claim_name: the claim in its believers' own words, ATTRIBUTED and never asserted, in the form The "<claim>" story. A believer should accept it as a fair statement of what they believe. Add no villain, out-group or moral words the narrative itself does not use.
+- claim_name: the claim in its believers' own words, ATTRIBUTED and never asserted, in the form The "<claim>" story — the name ALONE, nothing appended after it, since the claim itself goes in the claim field. A believer should accept it as a fair statement of what they believe. Add no villain, out-group or moral words the narrative itself does not use.
 - claim: one or two sentences stating what is claimed.
 - frame: the problem it names, the cause it blames, the outcome or remedy it implies, and the clock it runs on (null if the claim carries no date).
 - industry: exactly one of the shelves listed in the request, or null if none fit.
