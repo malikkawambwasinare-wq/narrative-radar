@@ -103,8 +103,9 @@ async function main() {
   const client = new Anthropic();
 
   const out = [];
-  let inTok = 0, outTok = 0;
+  let inTok = 0, outTok = 0, stopped = null;
   for (let i = 0; i < cands.length; i += BATCH) {
+    if (stopped) break;
     const slice = cands.slice(i, i + BATCH);
     const body = slice.map((c, n) => [
       `${n + 1}. phrase: "${c.phrase}"`,
@@ -114,7 +115,9 @@ async function main() {
       ...(c.examples || []).slice(0, 3).map((t) => `     - ${t}`),
     ].join("\n")).join("\n\n");
 
-    const r = await client.messages.create({
+    let r;
+    try {
+      r = await client.messages.create({
       model: MODEL,
       max_tokens: 8000,
       system: SYSTEM,
@@ -125,7 +128,13 @@ async function main() {
           `Narratives already tracked (a restatement of one of these is a duplicate):\n${tracked.join("\n")}\n\n` +
           `Decide on each phrase below. Return one decision per phrase, in order.\n\n${body}`,
       }],
-    });
+      });
+    } catch (e) {
+      // Stop on the first failure and keep what was already read, so a run that
+      // dies halfway (a spent balance, a rate limit) is not thrown away.
+      stopped = e.message || String(e);
+      break;
+    }
     inTok += r.usage.input_tokens || 0;
     outTok += r.usage.output_tokens || 0;
     const parsed = r.parsed_output || JSON.parse(r.content.find((b) => b.type === "text")?.text || "{}");
@@ -145,6 +154,7 @@ async function main() {
     console.log(`    ${d.industry} · ${d.evidence?.channels} channels · ${d.evidence?.months} months · clock: ${d.frame?.clock || "none"}`);
   }
   const cost = inTok * PRICE.in + outTok * PRICE.out;
+  if (stopped) console.log(`\n  STOPPED after ${out.length} of ${cands.length}: ${stopped}`);
   console.log(`\n  ${inTok} input tokens, ${outTok} output tokens · about US$${cost.toFixed(3)}`);
 
   if (WRITE) {
@@ -155,6 +165,7 @@ async function main() {
     }, null, 1) + "\n");
     console.log(`  wrote narratives-proposed.json`);
   }
+  if (stopped) process.exit(3);
 }
 
 main().catch((e) => { console.error(e.message); process.exit(1); });
