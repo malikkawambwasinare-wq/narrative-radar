@@ -31880,6 +31880,81 @@
         "comments": 1179,
         "enrichedOn": "2026-09-17"
       }
+    },
+    {
+      "videoId": "SNJ3yuJ_QwY",
+      "title": "Jev (Fully Tested) + Browser Use: FASTEST AI Agent I'VE TRIED YET!",
+      "channel": "AICodeKing",
+      "url": "https://www.youtube.com/watch?v=SNJ3yuJ_QwY",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "views": 58,
+      "length": "8:22",
+      "age_days": 0,
+      "query": "channel sweep: AICodeKing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC0m81bQuthaQZmFbXEY9QSw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-09-17"
+      }
+    },
+    {
+      "videoId": "KN8YnGnaY-0",
+      "title": "GPT 6 Astra Is a Game Changer for Web Design!",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=KN8YnGnaY-0",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-17",
+      "views": 51,
+      "length": "8:59",
+      "age_days": 0,
+      "query": "channel sweep: Julian Goldie SEO",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-09-17"
+      }
+    },
+    {
+      "videoId": "ypFnhVt9dRo",
+      "title": "Build Anything with DeepSeek V4.1 Flash, Here's How..",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=ypFnhVt9dRo",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-17",
+      "views": 457,
+      "length": "8:07",
+      "age_days": 1,
+      "query": "channel sweep: Julian Goldie SEO",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-09-17"
+      }
     }
   ]
 }

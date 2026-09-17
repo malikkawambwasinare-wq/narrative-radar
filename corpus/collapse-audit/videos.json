@@ -34819,6 +34819,31 @@
         "comments": 402,
         "enrichedOn": "2026-09-17"
       }
+    },
+    {
+      "videoId": "_Fi4cpKCXss",
+      "title": "More AI researchers speak out after viral warning that AI could kill humanity within a decade",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=_Fi4cpKCXss",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-17",
+      "views": 594908,
+      "length": "12:10",
+      "age_days": 6,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 2970,
+        "comments": 1824,
+        "enrichedOn": "2026-09-17"
+      }
     }
   ]
 }
