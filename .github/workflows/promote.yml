@@ -1,0 +1,63 @@
+name: Promote narratives
+
+# Turns a proposal the engine proved recurs into a tracked narrative: a place on
+# the watchlist, its own corpus seeded with the videos that evidenced it, search
+# queries so the daily sweep collects for it, and an honest hook title.
+
+on:
+  workflow_dispatch:
+    inputs:
+      min_channels:
+        description: "Independent channels required"
+        default: "5"
+      min_months:
+        description: "Distinct months required (or strong_channels instead)"
+        default: "5"
+      strong_channels:
+        description: "Channels that qualify on their own, for a fast-moving claim"
+        default: "8"
+      write:
+        description: "Promote them (false = report only)"
+        default: "true"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: promote
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm install --no-save --no-audit --no-fund @anthropic-ai/sdk@^0.115.0
+      - name: Promote
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+          node scripts/promote_narratives.mjs \
+            --min-channels=${{ inputs.min_channels || '5' }} \
+            --min-months=${{ inputs.min_months || '5' }} \
+            --strong-channels=${{ inputs.strong_channels || '8' }} \
+            ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee promote.log
+      - name: Rebuild the ledger and commit
+        if: ${{ always() && inputs.write != 'false' }}
+        run: |
+          python3 scripts/channel_ledger.py --write || true
+          git config user.name "narrative-radar-bot"
+          git config user.email "actions@github.com"
+          git add watchlist.json corpus narratives-proposed.json discovery-pool.json channels.json
+          if git diff --cached --quiet; then echo "nothing promoted"; exit 0; fi
+          git commit -m "Promoted narratives $(date -u +%F): $(grep -c '^  + ' promote.log) now tracked [skip netlify]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
