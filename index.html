@@ -223,6 +223,8 @@
     background: var(--surface); color: var(--ink); cursor: pointer; }
   .galbar input:focus, .galbar select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
   .galcount { font-size: 13px; color: var(--muted); margin: 10px 0 2px; }
+  .paste-rate { font-size: 12.5px; color: rgba(255,255,255,.55); margin-top: 8px; }
+  .paste-rate b { color: rgba(255,255,255,.8); font-weight: 600; }
   .gal { display: grid; grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
     gap: 12px; margin: 8px 0 20px; }
   .gtile { border: 1px solid var(--hairline); border-radius: 14px; padding: 14px 16px;
@@ -903,6 +905,7 @@
         <button type="submit" aria-label="Run the receipt">→</button>
       </form>
       <div class="landing-stats" id="landing-stats"></div>
+      <div class="paste-rate" id="paste-rate"></div>
       <div class="browse"><a id="browse-link">The narrative field ↓</a></div>
     </div>
     <div class="result" id="lookup-result"></div>
@@ -4165,6 +4168,59 @@ async function fillGalleryStats() {
   }
 }
 
+/* ---------- The paste log ----------
+   One number decides how much library is enough: the share of pasted links that
+   land in a narrative we already hold. Events buffer in this browser and flush
+   to the engine when it is reachable, so nothing is lost while a deploy is
+   broken. Only the video, its channel and hit-or-miss are recorded — nothing
+   about the person pasting. */
+const PASTE_KEY = "paste-log-v1";
+const pasteRead = () => { try { return JSON.parse(localStorage.getItem(PASTE_KEY) || "") || {}; } catch (e) { return {}; } };
+const pasteSave = (d) => { try { localStorage.setItem(PASTE_KEY, JSON.stringify(d)); } catch (e) {} };
+
+async function logPaste(hit, info = {}) {
+  const d = pasteRead();
+  d.pastes = (d.pastes || 0) + 1;
+  d[hit ? "hits" : "misses"] = (d[hit ? "hits" : "misses"] || 0) + 1;
+  d.queue = (d.queue || []).slice(-199);
+  d.queue.push({ ...info, hit, at: new Date().toISOString() });
+  pasteSave(d);
+  renderPasteRate();
+  try {
+    const r = await fetch(API_BASE + "/api/paste-log", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ events: d.queue.slice(0, 50) }),
+    });
+    if (r.ok) { const now = pasteRead(); now.queue = (now.queue || []).slice(50); pasteSave(now); }
+  } catch (e) { /* engine unreachable: the queue waits */ }
+}
+
+/* A miss is only useful once it names a channel: that is what queues the channel
+   for screening. The engine learns it a few seconds after the paste, so the
+   event is amended rather than counted twice. */
+function logPasteChannel(videoId, channel, channelId) {
+  const d = pasteRead();
+  const e = (d.queue || []).find(x => x.videoId === videoId && !x.channel);
+  if (!e) return;
+  if (channel) e.channel = channel;
+  if (channelId) e.channelId = channelId;
+  pasteSave(d);
+  fetch(API_BASE + "/api/paste-log", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ events: [e] }),
+  }).catch(() => {});
+}
+
+function renderPasteRate() {
+  const el = $("paste-rate");
+  if (!el) return;
+  const d = pasteRead();
+  if (!d.pastes) { el.textContent = ""; return; }
+  const pct = Math.round((d.hits || 0) / d.pastes * 100);
+  el.innerHTML = `<b>${d.hits || 0}</b> of <b>${d.pastes}</b> link${d.pastes === 1 ? "" : "s"} you pasted
+    ${d.pastes === 1 ? "was" : "were"} already tracked · ${pct}% hit rate${(d.queue || []).length ? " · queued to report" : ""}`;
+}
+
 async function runLookup(raw) {
   const box = $("lookup-result");
   const vid = parseVideoId(raw);
@@ -4184,12 +4240,15 @@ async function runLookup(raw) {
         ${n ? `(${esc(narrativeAge(n.born))}, ${n.mutations?.length || 0} mutations)` : ""}
         — ${vchip(v.verdict)}
         <span class="n-advice">${esc(ADVICE[v.verdict] || ADVICE.UNREVIEWED)}</span>`;
+      logPaste(true, { videoId: vid, topicId: t.id, channel: v.channel, channelId: v.yt?.channelId });
       showNotice(summary + buildoutOffer(t.id, summary + "<br>"));
       openRadarAt(t.id, vid);
       return;
     }
   }
-  // Unknown video → live analysis via the engine
+  // Unknown video → a miss. The engine answers live, and the miss names a
+  // channel we do not hold, which is how pastes drive what we collect next.
+  logPaste(false, { videoId: vid });
   box.innerHTML = `<div class="card">
     <div class="r-kicker">Analyzing…</div>
     <div class="r-meta">This video isn't tracked yet — running a live analysis against the
@@ -4202,6 +4261,9 @@ async function runLookup(raw) {
       body: JSON.stringify({ url: raw }),
     });
     const d = await r.json();
+    const ch = d.video?.channel || d.meta?.channel || d.entry?.channel;
+    const chId = d.video?.yt?.channelId || d.meta?.channelId || d.entry?.yt?.channelId;
+    if (ch || chId) logPasteChannel(vid, ch, chId);
     if (r.status === 429 || r.status === 503) {
       box.innerHTML = `<div class="card">
         <div class="r-kicker">${r.status === 429 ? "Slow down a moment" : "The engine is resting"}</div>
@@ -4466,6 +4528,7 @@ $("lookup-form").addEventListener("submit", (e) => {
     try { industries = (await getJSON("industries.json")).industries || []; } catch (e) { industries = []; }
     try { discovered = (await getJSON("discovered.json")).candidates || []; } catch (e) { discovered = []; }
     loadLandingStats();
+    renderPasteRate();
     try { briefsIndex = await getJSON("briefs/index.json"); } catch (e) { briefsIndex = []; }
     const first = watchlist.topics.find(t => t.status === "active") || watchlist.topics[0];
     await loadTopic(first.id);   // prerender the radar behind the landing

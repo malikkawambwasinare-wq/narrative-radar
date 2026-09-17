@@ -57,6 +57,10 @@ jobs:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python3 scripts/discovery_search.py --calls=${{ inputs.calls || '40' }} --days=7 --write
 
+      - name: Queue channels that people pasted and we do not hold
+        if: ${{ inputs.write != 'false' }}
+        run: python3 scripts/paste_queue.py --write
+
       - name: Rebuild the ledger and the discovered claims
         if: ${{ inputs.write != 'false' }}
         run: |
