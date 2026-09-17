@@ -1,0 +1,65 @@
+name: Naming pass
+
+# Reads each candidate cluster and decides whether it is a narrative, a turn of
+# phrase, or a restatement of something we already track. The one stage that
+# uses a model, and it reads clusters (about a hundred) rather than videos
+# (tens of thousands), so it costs cents.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "How many candidate clusters to read"
+        default: "40"
+      write:
+        description: "Write narratives-proposed.json (false = read only)"
+        default: "true"
+  schedule:
+    - cron: "30 5 * * *"      # after the channel sweep at 05:00 rebuilds the candidates
+
+permissions:
+  contents: write
+
+concurrency:
+  group: naming-pass
+  cancel-in-progress: false
+
+jobs:
+  name-them:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install the SDK
+        run: npm install --no-save --no-audit --no-fund @anthropic-ai/sdk@^0.115.0
+
+      - name: Read the candidates
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node scripts/name_narratives.mjs \
+            --limit=${{ inputs.limit || '40' }} \
+            ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee naming.log
+
+      - name: Commit what it decided
+        if: ${{ inputs.write != 'false' }}
+        run: |
+          git config user.name "narrative-radar-bot"
+          git config user.email "actions@github.com"
+          git add narratives-proposed.json
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          SUMMARY=$(grep -m1 "narratives .* rhetoric" naming.log | sed 's/^ *//')
+          git commit -m "Naming pass $(date -u +%F): ${SUMMARY} [skip netlify]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
