@@ -90,6 +90,22 @@ jobs:
           python3 scripts/channel_ledger.py --write
           python3 scripts/discover_narratives.py --write
 
+      # Belt and braces. The commit step can itself fail — a push conflict, a
+      # bad token — and a runner is destroyed the moment the job ends. An
+      # artifact means a run's reading is downloadable even then.
+      - name: Keep what was read, whatever else happens
+        if: ${{ always() && inputs.write != 'false' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: corpus-${{ github.run_id }}
+          path: |
+            corpus/**/videos.json
+            crawl-state.json
+            discovery-pool.json
+            sweep.log
+          retention-days: 14
+          if-no-files-found: warn
+
       - name: Commit what changed
         if: ${{ always() && inputs.write != 'false' }}
         run: |

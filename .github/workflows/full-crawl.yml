@@ -1,0 +1,88 @@
+name: Full history crawl
+
+# Reads the whole upload history of the ledger's tier A channels, a day's
+# allowance at a time. It resumes: a channel read in full in the last 30 days is
+# skipped, so the job finishes itself over however many mornings it takes.
+#
+# Runs at 07:05 UTC, five minutes after the YouTube quota resets at midnight
+# Pacific, so it starts on a full allowance rather than yesterday's remainder.
+
+on:
+  schedule:
+    - cron: "5 7 * * *"
+  workflow_dispatch:
+    inputs:
+      tiers:
+        description: "Ledger tiers to crawl in full"
+        default: "A"
+      units:
+        description: "Stop after this many quota units (allowance is 10,000)"
+        default: "8500"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: channel-sweep      # never runs beside the daily sweep
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Crawl full histories
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: |
+          set -o pipefail
+          python3 scripts/channel_sweep.py \
+            --days=3650 --pages=400 --full \
+            --tiers=${{ inputs.tiers || 'A' }} \
+            --units=${{ inputs.units || '8500' }} \
+            --write | tee crawl.log
+
+      - name: Keep what was read, whatever else happens
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawl-${{ github.run_id }}
+          path: |
+            corpus/**/videos.json
+            crawl-state.json
+            discovery-pool.json
+            crawl.log
+          retention-days: 14
+          if-no-files-found: warn
+
+      - name: Fill in runtimes
+        if: always()
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: python3 scripts/fill_details.py --write --max=6000 || true
+
+      - name: Rebuild the ledger and the candidates
+        if: always()
+        run: |
+          python3 scripts/refile_pool.py --write || true
+          python3 scripts/channel_ledger.py --write || true
+          python3 scripts/discover_narratives.py --write || true
+
+      - name: Commit what was read
+        if: always()
+        run: |
+          git config user.name "narrative-radar-bot"
+          git config user.email "actions@github.com"
+          git add corpus crawl-state.json discovery-pool.json channels.json discovered.json
+          if git diff --cached --quiet; then echo "nothing read"; exit 0; fi
+          git commit -m "Full crawl $(date -u +%F): $(tail -n 1 crawl.log) [skip netlify]"
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
