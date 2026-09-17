@@ -62,6 +62,16 @@ jobs:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python3 scripts/discovery_search.py --calls=${{ inputs.calls || '40' }} --days=7 --write
 
+      - name: Fill in runtimes for videos that arrived without them
+        if: ${{ inputs.write != 'false' }}
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+        run: python3 scripts/fill_details.py --write --max=8000
+
+      - name: Re-file the pool against every narrative
+        if: ${{ inputs.write != 'false' }}
+        run: python3 scripts/refile_pool.py --write
+
       - name: Queue channels that people pasted and we do not hold
         if: ${{ inputs.write != 'false' }}
         run: python3 scripts/paste_queue.py --write
