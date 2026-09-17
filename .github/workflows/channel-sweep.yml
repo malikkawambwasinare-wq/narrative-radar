@@ -23,6 +23,9 @@ on:
       calls:
         description: "Discovery search calls to spend (of the 100 daily)"
         default: "40"
+      pages:
+        description: "Upload pages per channel, 50 each (2 = a screen, 10 = a backfill)"
+        default: "10"
 
 permissions:
   contents: write
@@ -46,9 +49,11 @@ jobs:
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: |
+          set -o pipefail
           python3 scripts/channel_sweep.py \
             --days=${{ inputs.days || '7' }} \
             --tiers=${{ inputs.tiers || 'A' }} \
+            --pages=${{ inputs.pages || '10' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
       - name: Spend the day's discovery searches

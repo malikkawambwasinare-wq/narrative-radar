@@ -22,7 +22,7 @@ How it works
 
   Requires YT_API_KEY. Official API only (decision 2026-09-16).
 """
-import json, os, re, sys, urllib.parse, urllib.request
+import json, os, re, sys, time, urllib.error, urllib.parse, urllib.request
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -35,6 +35,7 @@ arg = lambda name, dflt: next((a.split("=", 1)[1] for a in sys.argv if a.startsw
 DAYS = int(arg("days", 7))
 TIERS = set(arg("tiers", "A").upper())
 MAX_CHANNELS = int(arg("max", 400))
+PAGES = int(arg("pages", 10))          # 50 uploads a page; screening needs 2, backfill wants all
 SCORE_MIN = float(arg("min-score", 6))   # tuned offline: 74% recall on filed videos, no known false positives
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 CUTOFF = datetime.now(timezone.utc) - timedelta(days=DAYS)
@@ -45,12 +46,29 @@ units = 0
 
 
 def call(endpoint, **params):
+    """One API call, with backoff.
+
+    Screening hundreds of channels in one run means thousands of requests, and
+    without a retry the far end resets connections and the run quietly collects
+    nothing — which is exactly what the first tier B screen did: 53 channels
+    lost to "connection reset by peer" and no videos filed."""
     global units
     params["key"] = KEY
     url = API + endpoint + "?" + urllib.parse.urlencode(params, doseq=True)
-    with urllib.request.urlopen(url, timeout=30) as r:
-        units += 1
-        return json.loads(r.read().decode())
+    last = None
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(url, timeout=30) as r:
+                units += 1
+                return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 400) or e.code < 500 and e.code != 429:
+                raise                      # quota or a bad request: retrying will not help
+            last = e
+        except Exception as e:
+            last = e
+        time.sleep(1.5 * (3 ** attempt))   # 1.5s, 4.5s, 13.5s
+    raise last
 
 
 def words(s):
@@ -176,7 +194,7 @@ def best_topic(title, description, vocab):
 def uploads_items(playlist_id):
     """Videos from an uploads playlist, newest first, back to the cutoff."""
     out, page = [], None
-    for _ in range(10):                       # 500 videos per channel per run, hard stop
+    for _ in range(PAGES):                    # 50 uploads a page
         r = call("playlistItems", part="snippet,contentDetails", playlistId=playlist_id,
                  maxResults=50, **({"pageToken": page} if page else {}))
         stop = False
@@ -301,6 +319,7 @@ def main():
         except Exception as e:
             print(f"  ! {r['channel'][:34]}: {e}")
             continue
+        time.sleep(0.15)                      # be a polite client across hundreds of channels
         for v in items:
             seen += 1
             if v["videoId"] in known:
