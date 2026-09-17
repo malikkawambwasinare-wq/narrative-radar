@@ -112,10 +112,46 @@ def topic_vocab(topics, corpora=None):
 
 
 def corpus_titles():
+    """Titles the matcher may learn from.
+
+    Never its own output. A video this matcher filed teaches it that its own
+    wording belongs, so one wrong match becomes vocabulary and the error widens.
+    Videos added by the channel sweep are therefore excluded from learning; they
+    are still part of the corpus, just not part of the dictionary."""
     out = {}
     for f in sorted((ROOT / "corpus").glob("*/videos.json")):
-        out[f.parent.name] = [v.get("title", "") for v in json.loads(f.read_text())["videos"]]
+        out[f.parent.name] = [v.get("title", "") for v in json.loads(f.read_text())["videos"]
+                              if not str(v.get("query", "")).startswith("channel sweep:")]
     return out
+
+
+def prune():
+    """Remove videos the channel sweep filed that the current matcher rejects.
+    Only its own additions: nothing collected by search or by hand is touched."""
+    wl = json.loads((ROOT / "watchlist.json").read_text())["topics"]
+    vocab = topic_vocab(wl, corpus_titles())
+    total = 0
+    for t in wl:
+        f = ROOT / "corpus" / t["id"] / "videos.json"
+        if not f.exists():
+            continue
+        doc = json.loads(f.read_text())
+        keep, drop = [], []
+        for v in doc["videos"]:
+            if str(v.get("query", "")).startswith("channel sweep:") and \
+               best_topic(v.get("title", ""), "", vocab)[0] != t["id"]:
+                drop.append(v)
+            else:
+                keep.append(v)
+        if drop:
+            print(f"  {t['id']:28s} -{len(drop)}")
+            for v in drop[:3]:
+                print(f"      {v.get('title','')[:74]}")
+            total += len(drop)
+            if WRITE:
+                doc["videos"] = keep
+                f.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+    print(f"-{total} videos the matcher no longer accepts{'' if WRITE else ' (dry run)'}")
 
 
 def best_topic(title, description, vocab):
@@ -230,6 +266,8 @@ def selftest():
 def main():
     if "--selftest" in sys.argv:
         return selftest()
+    if "--prune" in sys.argv:
+        return prune()
     if not KEY:
         print("channel sweep: no YT_API_KEY. Official API only (decision 2026-09-16); nothing collected.")
         return
@@ -245,8 +283,18 @@ def main():
             corpora[t["id"]] = json.loads(f.read_text())
             known |= {v["videoId"] for v in corpora[t["id"]]["videos"]}
 
+    # Uploads that carry a claim but match no tracked narrative are the raw
+    # material for narratives we do not have yet. Dropping them was throwing
+    # away the answer to "which narratives are we missing".
+    from discover_narratives import CLAIM_MARK
+    pool_f = ROOT / "discovery-pool.json"
+    pool = json.loads(pool_f.read_text())["videos"] if pool_f.exists() else []
+    pool_ids = {v["videoId"] for v in pool}
+    ind_of_channel = {r.get("channelId"): (r.get("narratives") or [None])[0] for r in ledger}
+    ind_of_topic = {t["id"]: t.get("industry", "Unsorted") for t in wl}
+
     print(f"channel sweep {TODAY} · tier {''.join(sorted(TIERS))} · {len(rows)} channels · last {DAYS} days")
-    seen, matched, off_topic = 0, defaultdict(list), 0
+    seen, matched, off_topic, pooled = 0, defaultdict(list), 0, 0
     for r in rows:
         try:
             items = uploads_items("UU" + r["channelId"][2:])
@@ -260,6 +308,14 @@ def main():
             tid, score = best_topic(v["title"], v["description"], vocab)
             if not tid:
                 off_topic += 1
+                if CLAIM_MARK.search(v["title"]) and v["videoId"] not in pool_ids:
+                    pool_ids.add(v["videoId"])
+                    home = ind_of_channel.get(r.get("channelId"))
+                    pool.append({"videoId": v["videoId"], "title": v["title"], "channel": v["channel"],
+                                 "channelId": r.get("channelId"), "published": v["published"],
+                                 "industry": ind_of_topic.get(home, "Unsorted"),
+                                 "found": TODAY, "found_by": f"channel:{r['channel'][:40]}"})
+                    pooled += 1
                 continue
             v["_score"] = score
             matched[tid].append(v)
@@ -294,7 +350,12 @@ def main():
             (ROOT / "corpus" / tid / "videos.json").write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
         total += len(add)
 
-    print(f"  {seen} uploads read · {off_topic} off-topic for these narratives · {units} quota units")
+    if WRITE:
+        pool_f.write_text(json.dumps({"generated": TODAY,
+                                      "note": "claim-carrying videos matching no tracked narrative; raw material for new ones",
+                                      "videos": pool[-200000:]}, indent=1) + "\n")
+    print(f"  {seen} uploads read · {off_topic} outside the tracked narratives, of which {pooled} carry a claim and went to the pool")
+    print(f"  pool holds {len(pool)} · {units} quota units")
     print(f"+{total} new videos across {len(matched)} narratives (channel uploads)")
 
 

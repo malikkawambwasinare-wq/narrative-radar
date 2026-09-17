@@ -9621,56 +9621,6 @@
       }
     },
     {
-      "videoId": "pivVojkSFfM",
-      "title": "Anthropic CEO Dario Amodei on plan to slow frontier research",
-      "channel": "CNBC Television",
-      "url": "https://www.youtube.com/watch?v=pivVojkSFfM",
-      "published": "2026-09-16",
-      "first_seen": "2026-09-16",
-      "views": 456,
-      "length": "0:39",
-      "age_days": 0,
-      "query": "channel sweep: CNBC Television",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 9,
-        "comments": 26,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "MIpiiYGQMMs",
-      "title": "Pentagon CTO criticizes Anthropic CEO's AI safety vision",
-      "channel": "CNBC Television",
-      "url": "https://www.youtube.com/watch?v=MIpiiYGQMMs",
-      "published": "2026-09-16",
-      "first_seen": "2026-09-16",
-      "views": 301,
-      "length": "0:47",
-      "age_days": 0,
-      "query": "channel sweep: CNBC Television",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 4,
-        "comments": 17,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
       "videoId": "GEW9L89adAg",
       "title": "Billionaire investor Ron Baron on Tesla: The time to buy the stock is now",
       "channel": "CNBC Television",
@@ -9721,31 +9671,6 @@
       }
     },
     {
-      "videoId": "WjqzjlU7wgE",
-      "title": "Elon Musk's NEW Grok 4.8 is COMING!",
-      "channel": "Julian Goldie SEO",
-      "url": "https://www.youtube.com/watch?v=WjqzjlU7wgE",
-      "published": "2026-09-16",
-      "first_seen": "2026-09-16",
-      "views": 9450,
-      "length": "9:05",
-      "age_days": 0,
-      "query": "channel sweep: Julian Goldie SEO",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "27",
-        "channelId": "UCGpsgNbzdF7BECCVbB1COHw",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 57,
-        "comments": 4,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
       "videoId": "W_Y5TWg-fqI",
       "title": "The REAL Reason Scientists Know It's Already Too Late",
       "channel": "The Diary Of A CEO Clips",
@@ -9771,31 +9696,6 @@
       }
     },
     {
-      "videoId": "cmgG9ZvaOC4",
-      "title": "Why the Bond Market Has Everyone On Edge",
-      "channel": "Bloomberg Television",
-      "url": "https://www.youtube.com/watch?v=cmgG9ZvaOC4",
-      "published": "2026-09-16",
-      "first_seen": "2026-09-16",
-      "views": 3539,
-      "length": "2:06",
-      "age_days": 0,
-      "query": "channel sweep: Bloomberg Television",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 56,
-        "comments": 1,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
       "videoId": "uXS337Waf7w",
       "title": "Final Warning on Fed [Watch Now]",
       "channel": "Meet Kevin",
@@ -9817,56 +9717,6 @@
         "live": false,
         "likes": 783,
         "comments": 78,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "CYlkrThr2VQ",
-      "title": "Dan Niles: Don't fight the Fed or bond market",
-      "channel": "CNBC Television",
-      "url": "https://www.youtube.com/watch?v=CYlkrThr2VQ",
-      "published": "2026-09-15",
-      "first_seen": "2026-09-16",
-      "views": 3526,
-      "length": "1:00",
-      "age_days": 1,
-      "query": "channel sweep: CNBC Television",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 30,
-        "comments": 16,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "PONkNA64Rcw",
-      "title": "White House AI czar David Sacks calls for Anthropic CEO Dario Amodei to step down",
-      "channel": "CNBC Television",
-      "url": "https://www.youtube.com/watch?v=PONkNA64Rcw",
-      "published": "2026-09-15",
-      "first_seen": "2026-09-16",
-      "views": 7837,
-      "length": "0:42",
-      "age_days": 1,
-      "query": "channel sweep: CNBC Television",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 87,
-        "comments": 10,
         "enrichedOn": "2026-09-16"
       }
     },
@@ -10046,31 +9896,6 @@
       }
     },
     {
-      "videoId": "IuzfPLOo0Wk",
-      "title": "Some AI Players Are Worse Than Others, Amodei Says",
-      "channel": "Bloomberg Television",
-      "url": "https://www.youtube.com/watch?v=IuzfPLOo0Wk",
-      "published": "2026-09-14",
-      "first_seen": "2026-09-16",
-      "views": 4244,
-      "length": "0:33",
-      "age_days": 2,
-      "query": "channel sweep: Bloomberg Television",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg",
-        "language": "en",
-        "captions": true,
-        "live": false,
-        "likes": 37,
-        "comments": 10,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
       "videoId": "ZxmczZjLPew",
       "title": "Elon Musk Says AI Will 10x The Economy",
       "channel": "Meet Kevin",
@@ -10092,31 +9917,6 @@
         "live": false,
         "likes": 236,
         "comments": 39,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "YPAj30chlwk",
-      "title": "Anthropic CEO calls for slowdown in AI race",
-      "channel": "NBC News",
-      "url": "https://www.youtube.com/watch?v=YPAj30chlwk",
-      "published": "2026-09-13",
-      "first_seen": "2026-09-16",
-      "views": 22009,
-      "length": "1:34",
-      "age_days": 3,
-      "query": "channel sweep: NBC News",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
-        "language": "en",
-        "captions": true,
-        "live": false,
-        "likes": 710,
-        "comments": 86,
         "enrichedOn": "2026-09-16"
       }
     },
@@ -10421,31 +10221,6 @@
       }
     },
     {
-      "videoId": "fBvVHV2Uw4I",
-      "title": "Coxon says AI builders believe it 'could kill everyone'",
-      "channel": "NBC News",
-      "url": "https://www.youtube.com/watch?v=fBvVHV2Uw4I",
-      "published": "2026-09-10",
-      "first_seen": "2026-09-16",
-      "views": 17868,
-      "length": "0:32",
-      "age_days": 6,
-      "query": "channel sweep: NBC News",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
-        "language": "en",
-        "captions": true,
-        "live": false,
-        "likes": 194,
-        "comments": 17,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
       "videoId": "ujAU3qGKNMw",
       "title": "Former Anthropic AI researcher: 'this technology could kill everyone'",
       "channel": "NBC News",
@@ -10467,31 +10242,6 @@
         "live": false,
         "likes": 947,
         "comments": 143,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "Dy2kbPEwoi4",
-      "title": "AI researcher says there is 'substantial probability' AI could kill all humans in next decade",
-      "channel": "NBC News",
-      "url": "https://www.youtube.com/watch?v=Dy2kbPEwoi4",
-      "published": "2026-09-10",
-      "first_seen": "2026-09-16",
-      "views": 1159584,
-      "length": "13:40",
-      "age_days": 6,
-      "query": "channel sweep: NBC News",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
-        "language": "en",
-        "captions": true,
-        "live": false,
-        "likes": 11393,
-        "comments": 3933,
         "enrichedOn": "2026-09-16"
       }
     },
@@ -10542,56 +10292,6 @@
         "live": false,
         "likes": 818,
         "comments": 209,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "DdjA7wlvr2A",
-      "title": "Anthropic's Dario Amodei wants the US to invest in more AI safety. ‼️",
-      "channel": "Yahoo Finance",
-      "url": "https://www.youtube.com/watch?v=DdjA7wlvr2A",
-      "published": "2026-09-16",
-      "first_seen": "2026-09-16",
-      "views": 541,
-      "length": "0:34",
-      "age_days": 0,
-      "query": "channel sweep: Yahoo Finance",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCEAZeUIeJs0IjQiqTCdVSIg",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 7,
-        "comments": 7,
-        "enrichedOn": "2026-09-16"
-      }
-    },
-    {
-      "videoId": "eEAVcIK_53g",
-      "title": "Mark Zuckerberg Is SMARTER Than You Think",
-      "channel": "Meet Kevin",
-      "url": "https://www.youtube.com/watch?v=eEAVcIK_53g",
-      "published": "2026-09-15",
-      "first_seen": "2026-09-16",
-      "views": 1981,
-      "length": "0:46",
-      "age_days": 1,
-      "query": "channel sweep: Meet Kevin",
-      "transcript": null,
-      "verdict": "UNREVIEWED",
-      "verdict_basis": "metadata",
-      "yt": {
-        "category": "25",
-        "channelId": "UCUvvj5lwue7PspotMDjk5UA",
-        "language": "en",
-        "captions": false,
-        "live": false,
-        "likes": 30,
-        "comments": 1,
         "enrichedOn": "2026-09-16"
       }
     }
