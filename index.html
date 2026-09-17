@@ -269,6 +269,8 @@
   .gtile.cand { cursor: default; border-style: dashed; background: transparent; }
   .gtile.cand:hover { border-color: var(--hairline); }
   .gtile.cand .gname { font-size: 15px; font-weight: 600; }
+  .gtile.cand.prop { border-style: solid; border-color: color-mix(in srgb, var(--accent) 35%, var(--hairline)); background: var(--surface); }
+  .gtile.cand.prop .gname { font-size: 16px; font-weight: 650; }
   .gtile.cand.disc { border-style: solid; border-color: var(--hairline); background: var(--page); }
   .gtile.cand.disc .gclaim { font-style: italic; }
   /* The evening set: a finite, ordered playlist */
@@ -1055,7 +1057,7 @@ function narrativeAge(born) {
        : months >= 2 ? `${months} months old` : "brand new";
 }
 
-let watchlist = null, topicId = null, industries = null, discovered = null;
+let watchlist = null, topicId = null, industries = null, discovered = null, proposed = null;
 const cache = {};   // topicId -> {videos, predictions}
 let briefsIndex = null;
 
@@ -4078,6 +4080,25 @@ function galDiscovered(d) {
 }
 const discSearchText = d => [d.phrase, ...(d.also || []), ...(d.examples || [])].join(" ").toLowerCase();
 
+/* Found by the engine and read by it: a phrase that recurred across independent
+   channels and months, then survived a reading pass that threw out the sales
+   formulas. Named in its believers' own words, never asserted. Not yet a tracked
+   narrative: no corpus of its own, no verdicts, no ledger. */
+function galProposed(p) {
+  const e = p.evidence || {}, f = p.frame || {};
+  return `<div class="gtile cand prop" title="${esc(p.why || "")}">
+    <div class="gname">${esc(p.claim_name || p.phrase)}</div>
+    <div class="gclaim">${esc(p.claim || "")}</div>
+    <div class="gstats">
+      <span class="gs">${e.videos || 0} videos · ${e.channels || 0} channels · ${e.months || 0} months</span>
+      ${e.span ? `<span class="gs">${esc(e.span)}</span>` : ""}
+      ${f.clock ? `<span class="gs">clock: ${esc(f.clock)}</span>` : ""}
+      <span class="gs">proposed by the engine</span>
+    </div>
+  </div>`;
+}
+const propSearchText = p => [p.claim_name, p.claim, p.phrase, ...(p.merged_from || [])].join(" ").toLowerCase();
+
 // The shelf, by industry: every industry is a section holding its tracked
 // narratives (busiest first), then its candidates. Industries with tracked
 // narratives come first; the rest keep their fixed order. The filter and the
@@ -4095,26 +4116,31 @@ function renderGallery() {
     ts: hits.filter(t => (t.industry || "Unsorted") === i.name),
     cs: (i.candidates || []).filter(c => !q || candSearchText(c).includes(q)),
     ds: (discovered || []).filter(d => (d.industry || "Unsorted") === i.name && (!q || discSearchText(d).includes(q))),
-  })).filter(s => s.ts.length || s.cs.length || s.ds.length);
+    ps: (proposed || []).filter(p => (p.industry || "Unsorted") === i.name && (!q || propSearchText(p).includes(q))),
+  })).filter(s => s.ts.length || s.cs.length || s.ds.length || s.ps.length);
   const candTotal = sections.reduce((n, s) => n + s.cs.length, 0);
   const discTotal = sections.reduce((n, s) => n + s.ds.length, 0);
+  const propTotal = sections.reduce((n, s) => n + s.ps.length, 0);
   $("gal-count").textContent = q || ind !== "all"
-    ? `${hits.length} of ${watchlist.topics.length} narratives · ${candTotal} candidate${candTotal === 1 ? "" : "s"} · ${discTotal} found in the corpus`
-    : `${watchlist.topics.length} narratives tracked · ${candTotal} candidates · ${discTotal} found in the corpus · ${(industries || []).length} industries`;
+    ? `${hits.length} of ${watchlist.topics.length} narratives · ${propTotal} proposed · ${candTotal} candidate${candTotal === 1 ? "" : "s"} · ${discTotal} found in the corpus`
+    : `${watchlist.topics.length} narratives tracked · ${propTotal} proposed by the engine · ${candTotal} candidates · ${discTotal} found in the corpus · ${(industries || []).length} industries`;
   sections.sort((a, b) => (b.ts.length - a.ts.length) || (a.order - b.order));
-  $("gal-grid").innerHTML = sections.length ? sections.map(({ i, ts, cs, ds }) => {
+  $("gal-grid").innerHTML = sections.length ? sections.map(({ i, ts, cs, ds, ps }) => {
     ts.sort((a, b) => ((a.status === "queued") - (b.status === "queued")) || (activity(b) - activity(a)) || ((galStats[b.id]?.videos || 0) - (galStats[a.id]?.videos || 0)));
     const quarter = ts.reduce((n, t) => n + activity(t), 0);
     const counts = [
       ts.length ? `${ts.length} narrative${ts.length === 1 ? "" : "s"} tracked` : "none tracked yet",
       quarter ? `${quarter} video${quarter === 1 ? "" : "s"} this quarter` : "",
       cs.length ? `${cs.length} candidate${cs.length === 1 ? "" : "s"}` : "",
+      ps.length ? `${ps.length} proposed` : "",
       ds.length ? `${ds.length} found in the corpus` : "",
     ].filter(Boolean).join(" · ");
     return `<section class="gsector">
       <div class="gsec-h"><h3>${esc(i.name)}</h3><span>${counts}</span></div>
       ${i.definition ? `<p class="gsec-d">${esc(i.definition)}</p>` : ""}
       ${ts.length ? `<div class="gal">${ts.map(galTile).join("")}</div>` : ""}
+      ${ps.length ? `<div class="gsub">Proposed by the engine · found in the corpus, then read and named</div>
+        <div class="gal">${ps.map(galProposed).join("")}</div>` : ""}
       ${cs.length ? `<div class="gsub">Candidates · not collected yet</div><div class="gal">${cs.map(galCandidate).join("")}</div>` : ""}
       ${ds.length ? `<div class="gsub">Found in the corpus · claims repeated across channels and months</div>
         <div class="gal">${ds.map(galDiscovered).join("")}</div>` : ""}
@@ -4527,6 +4553,7 @@ $("lookup-form").addEventListener("submit", (e) => {
     watchlist = await getJSON("watchlist.json");
     try { industries = (await getJSON("industries.json")).industries || []; } catch (e) { industries = []; }
     try { discovered = (await getJSON("discovered.json")).candidates || []; } catch (e) { discovered = []; }
+    try { proposed = ((await getJSON("narratives-proposed.json")).proposals || []).filter(p => p.verdict === "narrative"); } catch (e) { proposed = []; }
     loadLandingStats();
     renderPasteRate();
     try { briefsIndex = await getJSON("briefs/index.json"); } catch (e) { briefsIndex = []; }
