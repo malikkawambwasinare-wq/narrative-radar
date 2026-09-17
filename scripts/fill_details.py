@@ -31,6 +31,10 @@ TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 units = 0
 
 
+class QuotaGone(Exception):
+    """The day's allowance is spent. What is already filled still counts."""
+
+
 def fetch(ids):
     global units
     url = API + "?" + urllib.parse.urlencode({
@@ -41,7 +45,9 @@ def fetch(ids):
                 units += 1
                 return json.loads(r.read().decode())
         except urllib.error.HTTPError as e:
-            if e.code in (400, 403):
+            if e.code == 403:
+                raise QuotaGone()      # the day's allowance is spent; keep what is filled
+            if e.code == 400:
                 raise
         except Exception:
             pass
@@ -76,9 +82,14 @@ def main():
         by_id[v["videoId"]].append(v)
     ids = list(by_id)
     filled, gone = 0, 0
+    stopped = None
     for i in range(0, len(ids), 50):
         batch = ids[i:i + 50]
-        got = {it["id"]: it for it in fetch(batch).get("items", [])}
+        try:
+            got = {it["id"]: it for it in fetch(batch).get("items", [])}
+        except QuotaGone:
+            stopped = "daily quota reached"
+            break
         for vid in batch:
             it = got.get(vid)
             if not it:
@@ -108,6 +119,8 @@ def main():
         for f, doc in docs.items():
             doc["updated"] = TODAY
             f.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+    if stopped:
+        print(f"  STOPPED: {stopped} — {len(ids) - i:,} videos left for the next run")
     print(f"filled {filled:,} · {gone:,} no longer available · {units} quota units{'' if WRITE else ' (dry run)'}")
 
 
