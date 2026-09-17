@@ -145,9 +145,57 @@ async function main() {
     process.stdout.write(`  read ${Math.min(i + BATCH, cands.length)}/${cands.length}\r`);
   }
 
+  // Batches are read independently, so the same claim can be admitted twice
+  // under different wording ("AI will replace your job" / "AI will replace these
+  // jobs"). One more pass merges them, because a narrative told twice on the
+  // shelf is the repetition we exist to expose.
+  let merges = [];
+  const admitted = out.filter((d) => d.verdict === "narrative");
+  if (!stopped && admitted.length > 1) {
+    try {
+      const m = await client.messages.create({
+        model: MODEL,
+        max_tokens: 4000,
+        system: "You merge narratives that state the same claim. Two entries belong together when a believer in one would say the other is the same belief in different words. Different claims about the same subject stay separate: 'a recession is coming' and 'the job market is collapsing' are different claims. Keep the name that states the claim most plainly, and list every phrase in the group.",
+        output_config: { format: { type: "json_schema", schema: {
+          type: "object", additionalProperties: false, required: ["groups"],
+          properties: { groups: { type: "array", items: {
+            type: "object", additionalProperties: false, required: ["claim_name", "phrases"],
+            properties: { claim_name: { type: "string" }, phrases: { type: "array", items: { type: "string" } } } } } } } } },
+        messages: [{ role: "user", content:
+          `Group these narratives. Return every group, including groups of one.\n\n` +
+          admitted.map((d) => `- phrase "${d.phrase}" → ${d.claim_name}: ${d.claim}`).join("\n") }],
+      });
+      inTok += m.usage.input_tokens || 0;
+      outTok += m.usage.output_tokens || 0;
+      const g = m.parsed_output || JSON.parse(m.content.find((b) => b.type === "text")?.text || "{}");
+      merges = (g.groups || []).filter((x) => (x.phrases || []).length > 1);
+      for (const group of merges) {
+        const keep = admitted.find((d) => d.phrase === group.phrases[0]);
+        if (!keep) continue;
+        keep.claim_name = group.claim_name;
+        keep.merged_from = group.phrases.slice(1);
+        for (const ph of group.phrases.slice(1)) {
+          const dup = out.find((d) => d.phrase === ph && d.verdict === "narrative");
+          if (!dup) continue;
+          dup.verdict = "duplicate";
+          dup.duplicate_of = group.claim_name;
+          dup.why = "Same claim as another proposal, merged.";
+          keep.evidence = keep.evidence && dup.evidence ? {
+            ...keep.evidence,
+            videos: (keep.evidence.videos || 0) + (dup.evidence.videos || 0),
+            channels: Math.max(keep.evidence.channels || 0, dup.evidence.channels || 0),
+            months: Math.max(keep.evidence.months || 0, dup.evidence.months || 0),
+          } : keep.evidence;
+        }
+      }
+    } catch (e) { console.log(`  merge step skipped: ${e.message}`); }
+  }
+
   const by = (v) => out.filter((d) => d.verdict === v);
   console.log(`\nnaming pass · ${cands.length} clusters read · ${MODEL}`);
-  console.log(`  narratives ${by("narrative").length} · rhetoric ${by("rhetoric").length} · duplicates ${by("duplicate").length}`);
+  console.log(`  narratives ${by("narrative").length} · rhetoric ${by("rhetoric").length} · duplicates ${by("duplicate").length}` +
+    (merges.length ? ` · merged ${merges.length} group${merges.length === 1 ? "" : "s"}` : ""));
   for (const d of by("narrative")) {
     console.log(`\n  ${d.claim_name}`);
     console.log(`    ${d.claim}`);
