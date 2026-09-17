@@ -2,12 +2,12 @@
  "generated": "2026-09-17",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track.",
- "cost_usd": 0.4188,
+ "cost_usd": 0.4489,
  "proposals": [
   {
    "phrase": "bubble popped",
    "verdict": "rhetoric",
-   "why": "The titles apply the same catchphrase to unrelated subjects (car loans, car market, Russian weapons), sharing no single checkable claim.",
+   "why": "Applied to unrelated subjects (car loans, Russian arms) with no shared checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -40,7 +40,7 @@
   {
    "phrase": "root cause",
    "verdict": "duplicate",
-   "why": "These titles push the single-underlying-cause-of-chronic-disease framing already tracked as inflammation-as-root-of-all-disease.",
+   "why": "Functional-medicine 'one root cause of chronic disease' framing already tracked as inflammation-as-root-of-all-disease.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -75,7 +75,7 @@
   {
    "phrase": "bubble bursting",
    "verdict": "rhetoric",
-   "why": "A generic bubble label spread across tech and housing with no shared, testable claim.",
+   "why": "Spans tech and housing with no single claim; a stock phrase for imminent decline.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -108,7 +108,7 @@
   {
    "phrase": "bubble pop",
    "verdict": "rhetoric",
-   "why": "Mostly speculative question headlines about different markets; the phrase sells suspense rather than one claim.",
+   "why": "Generic teaser applied to different markets, mostly as open questions.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -143,7 +143,7 @@
   {
    "phrase": "boom bust",
    "verdict": "rhetoric",
-   "why": "An either/or question framing with no asserted outcome.",
+   "why": "A framing question about various topics, asserting nothing.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -172,7 +172,7 @@
   {
    "phrase": "sees coming",
    "verdict": "rhetoric",
-   "why": "Classic surprise-hook phrasing attached to unrelated topics.",
+   "why": "Pure hype phrasing about hidden foresight, no shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -202,7 +202,7 @@
   {
    "phrase": "crash incoming",
    "verdict": "rhetoric",
-   "why": "Question-mark crash teasers across different markets rather than one stated prediction.",
+   "why": "Question-mark clickbait spanning stocks, housing and crypto without one checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -232,7 +232,7 @@
   {
    "phrase": "dead cat bounce",
    "verdict": "rhetoric",
-   "why": "Trader jargon used as a recurring headline format, not a claim about the world.",
+   "why": "Trader jargon posed as a question about different assets, not a claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -259,7 +259,7 @@
   {
    "phrase": "plane crash",
    "verdict": "rhetoric",
-   "why": "A bare news subject; the titles share no checkable claim.",
+   "why": "A news subject with no shared checkable claim across titles.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -295,7 +295,7 @@
   {
    "phrase": "brink collapse",
    "verdict": "rhetoric",
-   "why": "Generic doom phrasing applied to unrelated subjects (UK, US, asset class) with no single claim.",
+   "why": "Hype framing applied to unrelated subjects (UK, US, asset classes) with no single claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -324,18 +324,13 @@
   },
   {
    "phrase": "nearing end",
-   "verdict": "narrative",
-   "why": "Titles converge on one checkable claim that the stock market crash is bottoming out.",
-   "claim_name": "The \"stock market crash is nearing its end\" story",
-   "claim": "The ongoing stock market decline is close to bottoming out, so the selloff is nearly over and the recovery is at hand.",
-   "industry": "Economy & markets",
+   "verdict": "rhetoric",
+   "why": "A timing tease about an ongoing selloff rather than a stable falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
    "duplicate_of": null,
-   "frame": {
-    "problem": "Investors fear further losses during a market selloff",
-    "cause": "A crash cycle that has already run most of its course",
-    "outcome": "Market bottoms and rebounds; investors should buy or hold",
-    "clock": "Near term, within months"
-   },
+   "frame": null,
    "evidence": {
     "videos": 6,
     "channels": 3,
@@ -359,7 +354,7 @@
   {
    "phrase": "save thousands",
    "verdict": "rhetoric",
-   "why": "A sales promise attached to unrelated topics, not a claim about the world.",
+   "why": "Pure promotional promise with no claim about the world.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -386,16 +381,16 @@
   {
    "phrase": "reset coming",
    "verdict": "narrative",
-   "why": "Shared claim that a sweeping economic/monetary reset is imminent and viewers must prepare.",
-   "claim_name": "The \"great economic reset is coming\" story",
-   "claim": "A once-in-a-lifetime economic or monetary reset is approaching that will upend the existing financial order, and people should reposition their money now.",
+   "why": "Titles share the claim that a systemic monetary/economic reset is imminent and viewers must prepare.",
+   "claim_name": "The \"a great economic reset is coming\" story",
+   "claim": "The existing monetary and financial system is heading for a once-in-a-lifetime reset of debt and currency, and people should reposition their savings before it happens.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "The current financial and monetary system is unsustainable",
-    "cause": "Debt levels, currency debasement and elite/institutional restructuring plans",
-    "outcome": "A systemic reset; viewers should move into protective assets",
-    "clock": "Soon, within the next few years"
+    "problem": "Unsustainable debt and a fragile monetary system",
+    "cause": "Decades of money printing, deficits and central-bank policy",
+    "outcome": "A systemic reset of currency and asset values; prepare with hard assets",
+    "clock": "Soon / within the next few years"
    },
    "evidence": {
     "videos": 8,
@@ -422,7 +417,7 @@
   {
    "phrase": "officially dead",
    "verdict": "rhetoric",
-   "why": "Obituary framing sprayed across airports, crypto cycles and NATO with no common claim.",
+   "why": "Same declaratory phrasing over unrelated topics; no shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -450,15 +445,15 @@
   {
    "phrase": "recession coming",
    "verdict": "narrative",
-   "why": "Many channels assert an imminent recession and tell viewers to prepare.",
-   "claim_name": "The \"a recession is coming\" story",
-   "claim": "A recession is imminent in the US economy, and viewers should prepare their finances and portfolios now.",
+   "why": "Titles share the checkable claim that a recession is imminent and viewers should prepare.",
+   "claim_name": "The \"a recession is coming, prepare now\" story",
+   "claim": "A US recession is imminent, and investors and households should position defensively before it hits.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "Economic conditions are deteriorating",
-    "cause": "Rate hikes, debt, weakening jobs and housing markets",
-    "outcome": "A recession arrives; prepare with cash, defensive assets or specific ETFs",
+    "problem": "An economic downturn is about to arrive",
+    "cause": "Rate hikes, inflation, debt and weakening consumer demand",
+    "outcome": "Job losses and falling asset prices; prepare cash and defensive assets",
     "clock": "Within the next year"
    },
    "evidence": {
@@ -498,7 +493,7 @@
   {
    "phrase": "crash begins",
    "verdict": "duplicate",
-   "why": "Restates the recurring imminent-crash prediction already tracked.",
+   "why": "Restates the recurring imminent market/housing crash prediction already tracked.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -527,7 +522,7 @@
   {
    "phrase": "crash beginning",
    "verdict": "duplicate",
-   "why": "Titles all assert a market crash is underway with worse to come, same family as the tracked collapse/crash predictions.",
+   "why": "Restates the perennial imminent-crash/collapse prediction already tracked.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -557,7 +552,7 @@
   {
    "phrase": "during market crash",
    "verdict": "rhetoric",
-   "why": "These are tactical how-to/stock-pick formats using 'market crash' as a setting, with no shared checkable claim.",
+   "why": "Format/advice hook (what to buy or do in a crash) with no shared checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -586,7 +581,7 @@
   {
    "phrase": "idea what's coming",
    "verdict": "rhetoric",
-   "why": "Pure teaser phrasing attached to unrelated topics (stocks, AI, nuclear).",
+   "why": "Pure alarm hook attached to unrelated subjects (stocks, AI, nuclear).",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -615,7 +610,7 @@
   {
    "phrase": "crash started",
    "verdict": "duplicate",
-   "why": "Repeated declarations that the crash has already begun restate the tracked perpetual-collapse prediction audit.",
+   "why": "Another wording of the crash-is-here doom prediction already tracked.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -648,7 +643,7 @@
   {
    "phrase": "supplements actually",
    "verdict": "rhetoric",
-   "why": "Product-recommendation format; no shared falsifiable claim across titles.",
+   "why": "Product-recommendation framing, no single checkable claim shared across titles.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -675,7 +670,7 @@
   {
    "phrase": "cause chronic",
    "verdict": "duplicate",
-   "why": "Root-cause-of-chronic-disease framing restates the tracked inflammation-as-root-of-all-disease narrative.",
+   "why": "Root-cause-of-chronic-disease framing already covered by the inflammation narrative.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -703,7 +698,7 @@
   {
    "phrase": "move coming",
    "verdict": "rhetoric",
-   "why": "Vague anticipation teaser across unrelated assets, with no specified direction or checkable claim.",
+   "why": "Generic anticipation teaser across unrelated assets, no specific claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -735,7 +730,7 @@
   {
    "phrase": "save money",
    "verdict": "rhetoric",
-   "why": "Generic personal-finance advice topic, not a single contestable claim.",
+   "why": "Broad personal-finance topic label with contradictory advice, not one claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -832,7 +827,7 @@
   {
    "phrase": "could crash",
    "verdict": "duplicate",
-   "why": "Generic imminent-crash warnings restate the long-running collapse prediction narrative.",
+   "why": "Generic imminent-crash warnings restate the ongoing collapse/crash prediction narrative.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -874,7 +869,7 @@
   {
    "phrase": "actually worth",
    "verdict": "rhetoric",
-   "why": "A valuation-question hook spanning unrelated subjects with no common claim.",
+   "why": "A valuation-explainer hook spanning unrelated subjects with no single claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -906,7 +901,7 @@
   {
    "phrase": "coming prepare",
    "verdict": "rhetoric",
-   "why": "Preparation urgency attached to opposite predictions (melt-up and dip), so no single claim.",
+   "why": "Urgency framing used for both crashes and melt-ups, so no consistent claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -963,7 +958,7 @@
   {
    "phrase": "actually costs",
    "verdict": "rhetoric",
-   "why": "A cost-breakdown explainer format rather than a contestable claim.",
+   "why": "Cost-breakdown explainer format with no shared assertion.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -990,16 +985,16 @@
   {
    "phrase": "end humanity",
    "verdict": "narrative",
-   "why": "Titles share the checkable claim that advanced AI poses an extinction risk within a stated horizon.",
+   "why": "Titles converge on a checkable claim that advanced AI poses an extinction risk within a stated horizon.",
    "claim_name": "The \"AI could end humanity\" story",
-   "claim": "Advanced AI, possibly reaching AGI within a few years, poses an existential threat that could wipe out humanity. Urgent safety measures or preparation are needed before it is too late.",
+   "claim": "Rapidly advancing AI, possibly reaching AGI within a few years, poses an existential threat that could wipe out or subjugate humanity by around 2030 unless it is controlled or aligned.",
    "industry": "AI & technology",
    "duplicate_of": null,
    "frame": {
-    "problem": "Rapidly advancing AI may become uncontrollable",
-    "cause": "Race to build AGI without adequate alignment or safety controls",
-    "outcome": "Human extinction unless development is slowed or made safe",
-    "clock": "By roughly 2027-2030"
+    "problem": "AI capabilities are advancing faster than our ability to control them",
+    "cause": "Race to build AGI without solved alignment or safety guarantees",
+    "outcome": "Human extinction or loss of control unless development is slowed or aligned",
+    "clock": "2027-2030"
    },
    "evidence": {
     "videos": 4,
@@ -1022,16 +1017,16 @@
   {
    "phrase": "index fund bubble",
    "verdict": "narrative",
-   "why": "Titles share one checkable claim that passive index investing is inflating a stock market bubble.",
-   "claim_name": "The \"passive index fund investing is inflating a market bubble\" story",
-   "claim": "The mass flow of money into passive index funds distorts price discovery and has created a bubble in stocks that will burst.",
+   "why": "Titles share a checkable claim that passive indexing is inflating a stock market bubble.",
+   "claim_name": "The \"passive index fund investing is creating a stock market bubble\" story",
+   "claim": "The mass flow of money into passive index funds distorts price discovery and has inflated a bubble that will burst.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "Stock prices detached from fundamentals",
-    "cause": "Passive index fund flows overwhelming active price discovery",
-    "outcome": "A bubble that bursts, punishing index investors",
-    "clock": "Repeatedly forecast year-by-year (2023, 2025)"
+    "problem": "Index funds buy indiscriminately, detaching prices from fundamentals",
+    "cause": "Mass shift from active to passive investing",
+    "outcome": "A bubble that bursts, hurting passive investors",
+    "clock": "Repeatedly forecast year by year (2023, 2025)"
    },
    "evidence": {
     "videos": 6,
@@ -1056,16 +1051,16 @@
   {
    "phrase": "fake crash",
    "verdict": "narrative",
-   "why": "Shared claim that the current selloff is not a real crash and should be bought.",
-   "claim_name": "The \"this crash is fake, so buy the dip\" story",
-   "claim": "The current decline in bitcoin and stocks is a manufactured or temporary 'fake crash' rather than a genuine bear market, making it a buying opportunity.",
+   "why": "Shared claim that the current selloff is not a real crash but a buying opportunity.",
+   "claim_name": "The \"this selloff is a fake crash\" story",
+   "claim": "The recent decline in crypto and stocks is a manufactured or temporary 'fake crash' rather than a genuine bear market, so investors should buy rather than sell.",
    "industry": "Economy & markets",
    "duplicate_of": "the-2026-setup",
    "frame": {
-    "problem": "Investors panicking over falling prices",
-    "cause": "Manipulated or sentiment-driven selling, not fundamentals",
-    "outcome": "Prices rebound; buyers of the dip profit",
-    "clock": "Current selloff, near-term rebound"
+    "problem": "Investors panic-sell during a sharp drawdown",
+    "cause": "Manipulation or temporary liquidity shakeout, not fundamentals",
+    "outcome": "Prices recover; buying the dip pays off",
+    "clock": "Current selloff, near-term recovery"
    },
    "evidence": {
     "videos": 9,
@@ -1093,7 +1088,7 @@
   {
    "phrase": "won save",
    "verdict": "rhetoric",
-   "why": "A rhetorical template applied to unrelated subjects with no shared claim.",
+   "why": "A catchphrase template applied to unrelated subjects with no shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1120,16 +1115,16 @@
   },
   {
    "phrase": "agi coming",
-   "verdict": "duplicate",
-   "why": "Restates the tracked near-term AGI arrival claim.",
-   "claim_name": "The \"AGI arrives within a couple of years\" story",
-   "claim": "Artificial general intelligence is imminent, arriving within the next year or two.",
+   "verdict": "narrative",
+   "why": "Titles share the checkable claim that AGI arrives within a couple of years.",
+   "claim_name": "The \"AGI is coming within a few years\" story",
+   "claim": "Artificial general intelligence will be achieved imminently, within the next year or two.",
    "industry": "AI & technology",
-   "duplicate_of": "collapse-audit",
+   "duplicate_of": null,
    "frame": {
-    "problem": "Society unprepared for human-level AI",
-    "cause": "Rapid capability scaling at frontier labs",
-    "outcome": "AGI transforms work and life imminently",
+    "problem": "Society is unprepared for human-level AI",
+    "cause": "Rapid scaling of frontier AI labs' models",
+    "outcome": "Transformative or disruptive change; urgency to prepare",
     "clock": "This year to 2027"
    },
    "evidence": {
@@ -1160,7 +1155,7 @@
   {
    "phrase": "lie exposed",
    "verdict": "rhetoric",
-   "why": "Debunking formula across unrelated topics; no shared claim.",
+   "why": "Debunking formula spanning unrelated topics with no common claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1187,16 +1182,16 @@
   {
    "phrase": "gold silver crash",
    "verdict": "narrative",
-   "why": "Titles converge on a claim that the precious metals crash signals something systemic and a further move ahead.",
-   "claim_name": "The \"gold and silver crash is just the beginning\" story",
-   "claim": "The sharp drop in gold and silver prices exposes deeper problems in the financial system and is the start of a bigger move, not the end.",
+   "why": "Titles share the claim that precious metals have crashed and this signals more to come.",
+   "claim_name": "The \"gold and silver crash signals what's coming next\" story",
+   "claim": "The sharp drop in gold and silver prices exposes deeper problems in the monetary system and precedes a larger move in markets.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
     "problem": "Precious metals sold off sharply",
-    "cause": "Stress and leverage in the monetary/financial system",
-    "outcome": "Further turmoil and a subsequent surge in metals",
-    "clock": "Following the 2026 crash, near term"
+    "cause": "Stress or manipulation in the financial/monetary system",
+    "outcome": "Further turmoil, then a bigger repricing of metals",
+    "clock": "Immediate aftermath, 'just the beginning'"
    },
    "evidence": {
     "videos": 5,
@@ -1220,7 +1215,7 @@
   {
    "phrase": "might actually",
    "verdict": "rhetoric",
-   "why": "Hedging phrase, not a claim.",
+   "why": "Hedging phrase with no shared claim across titles.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1247,7 +1242,7 @@
   {
    "phrase": "strategy actually",
    "verdict": "rhetoric",
-   "why": "Marketing formula for how-to content with no shared checkable claim.",
+   "why": "Generic 'what actually works' marketing formula across unrelated topics.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1275,7 +1270,7 @@
   {
    "phrase": "survive coming",
    "verdict": "rhetoric",
-   "why": "Survivalist framing attached to varied crash predictions; the shared element is urgency, not one checkable claim.",
+   "why": "Survival framing across varied crash predictions; no single checkable claim beyond generic doom.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1302,7 +1297,7 @@
   {
    "phrase": "earnings beat",
    "verdict": "rhetoric",
-   "why": "A reporting format about a subject with no shared claim.",
+   "why": "A news subject/format label with no shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1330,7 +1325,7 @@
   {
    "phrase": "must avoid",
    "verdict": "rhetoric",
-   "why": "Listicle warning format spanning mortgages, food and crypto with no common claim.",
+   "why": "Listicle warning format spanning unrelated topics.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1357,16 +1352,16 @@
   {
    "phrase": "cuts coming",
    "verdict": "narrative",
-   "why": "Titles share a checkable forecast that the Fed will cut rates and that this moves markets and housing.",
+   "why": "Titles share a checkable forecast that the Fed will cut rates with predictable market effects.",
    "claim_name": "The \"Fed rate cuts are coming\" story",
-   "claim": "Believers hold that the Federal Reserve is about to begin (or continue) cutting interest rates, and that investors should position stocks, bonds and housing for the easing cycle.",
+   "claim": "Believers hold that the Federal Reserve is about to begin (or continue) cutting interest rates, and that this easing will reshape stocks, bonds and the housing market.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "Uncertainty about the direction of interest rates and asset prices",
-    "cause": "Cooling inflation and a weakening labour market pushing the Fed toward easing",
-    "outcome": "Back-to-back cuts that lift stocks, bonds and housing demand",
-    "clock": "Within the coming months / next few FOMC meetings"
+    "problem": "Investors and homebuyers are unsure where borrowing costs are headed",
+    "cause": "Cooling inflation and a weakening labor market pushing the Fed to ease",
+    "outcome": "Rate cuts that lift stocks, bonds and housing activity",
+    "clock": "Next few FOMC meetings / within the year"
    },
    "evidence": {
     "videos": 4,
@@ -1389,19 +1384,19 @@
   {
    "phrase": "jobs replace",
    "verdict": "narrative",
-   "why": "Most titles carry the checkable claim that AI will replace specific jobs within a set time, with lists of safe jobs as the flip side.",
-   "claim_name": "The \"AI will replace these jobs\" story",
-   "claim": "Believers hold that AI is about to automate away large categories of human work within a few years, so workers must move into the few roles AI cannot do.",
+   "why": "Recurring checkable claim about AI displacing specific jobs on a timeline.",
+   "claim_name": "The \"AI will replace your job\" story",
+   "claim": "AI is claimed to be on track to automate away large categories of human jobs within a few years, leaving only a shrinking set of AI-proof occupations.",
    "industry": "AI & technology",
    "duplicate_of": null,
    "frame": {
-    "problem": "Widespread job loss from automation",
-    "cause": "Rapidly improving AI and agents doing white-collar tasks",
-    "outcome": "Mass displacement; retrain into AI-resistant roles",
+    "problem": "Workers face displacement from their occupations",
+    "cause": "Rapidly improving AI and automation",
+    "outcome": "Mass job loss except in AI-resistant roles; reskill or reposition",
     "clock": "Within about five years"
    },
    "evidence": {
-    "videos": 10,
+    "videos": 15,
     "channels": 10,
     "months": 3,
     "span": "2024-10 → 2026-09",
@@ -1422,12 +1417,15 @@
      "wQyAWUBDo50",
      "zIqWTl3jE0Q"
     ]
-   }
+   },
+   "merged_from": [
+    "replace job"
+   ]
   },
   {
    "phrase": "save hours",
    "verdict": "rhetoric",
-   "why": "Productivity-promise hook for tutorials; the hours figure is a selling point, not a shared falsifiable claim.",
+   "why": "Productivity-promise hook for tutorials, not a contestable claim about the world.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1457,7 +1455,7 @@
   {
    "phrase": "ready what's coming",
    "verdict": "rhetoric",
-   "why": "Pure suspense teaser with no specified event or cause.",
+   "why": "Pure suspense hook with no specified event or claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1487,7 +1485,7 @@
   {
    "phrase": "data shows",
    "verdict": "rhetoric",
-   "why": "Authority-appeal phrasing attached to unrelated claims.",
+   "why": "Authority-appeal phrasing attached to unrelated assertions.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1517,16 +1515,16 @@
   {
    "phrase": "markets crashing",
    "verdict": "narrative",
-   "why": "Titles share a checkable claim that specific regional real estate markets are crashing now.",
-   "claim_name": "The \"these housing markets are crashing fast\" story",
-   "claim": "Specific regional US real estate markets (Florida, Texas, and certain states) are already crashing and buyers should avoid them.",
+   "why": "Titles share a checkable claim that specific regional housing markets are now falling and should be avoided.",
+   "claim_name": "The \"these local housing markets are crashing right now\" story",
+   "claim": "Specific US metro and state housing markets are already in rapid price decline, and buyers should avoid them.",
    "industry": "Economy & markets",
    "duplicate_of": "housing-crash-watch",
    "frame": {
     "problem": "Home prices in named metros are falling fast",
-    "cause": "Overbuilding, insurance costs and pandemic-era speculation",
-    "outcome": "Buyers should avoid these markets; further declines ahead",
-    "clock": "Now and over the coming year"
+    "cause": "Overbuilt supply, insurance costs and pandemic-era overpricing",
+    "outcome": "Buyers should avoid these areas or wait for lower prices",
+    "clock": "Now / ongoing"
    },
    "evidence": {
     "videos": 13,
@@ -1558,7 +1556,7 @@
   {
    "phrase": "beats mythos",
    "verdict": "rhetoric",
-   "why": "A recurring benchmark-hype format about new model releases, not one checkable claim.",
+   "why": "A recurring benchmark-hype format about new models topping a rival model, with no shared checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1588,7 +1586,7 @@
   {
    "phrase": "beat inflation",
    "verdict": "rhetoric",
-   "why": "Stock-pick listicle format; no shared falsifiable claim about the world.",
+   "why": "A stock-picking listicle format rather than a single falsifiable claim about the world.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1617,7 +1615,7 @@
   {
    "phrase": "cause brain",
    "verdict": "rhetoric",
-   "why": "Titles cover unrelated brain topics with no single shared causal claim.",
+   "why": "Titles point at different causes and different brain effects, sharing no one claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1643,17 +1641,22 @@
   },
   {
    "phrase": "crash already",
-   "verdict": "duplicate",
-   "why": "Restates the perennial imminent-crash prediction already tracked.",
-   "claim_name": null,
-   "claim": null,
-   "industry": null,
+   "verdict": "narrative",
+   "why": "Shared checkable claim that a major market crash is already underway.",
+   "claim_name": "The \"the crash has already started\" story",
+   "claim": "A major market decline is already underway rather than looming, so investors should sell or reposition now.",
+   "industry": "Economy & markets",
    "duplicate_of": "collapse-audit",
-   "frame": null,
+   "frame": {
+    "problem": "Asset prices are in the early stage of a large drawdown",
+    "cause": "Overvaluation, debt and hidden stress already breaking",
+    "outcome": "Sell risk assets before the rest of the decline",
+    "clock": "Already begun"
+   },
    "evidence": {
-    "videos": 5,
+    "videos": 17,
     "channels": 4,
-    "months": 4,
+    "months": 5,
     "span": "2025-12 → 2026-09",
     "examples": [
      "Market Crash ‘Already Happened’: Trader Reveals Stocks, Bitcoin Next Moves | Lance Breitstein",
@@ -1667,17 +1670,25 @@
      "nCPBMgAYbYc",
      "u0yzLQkzr-M"
     ]
-   }
+   },
+   "merged_from": [
+    "2025 stock market crash"
+   ]
   },
   {
    "phrase": "financial crash",
-   "verdict": "duplicate",
-   "why": "Same imminent financial collapse prediction already covered by the collapse audit.",
-   "claim_name": null,
-   "claim": null,
-   "industry": null,
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that a major financial crisis is coming.",
+   "claim_name": "The \"a once-in-a-lifetime financial crash is coming\" story",
+   "claim": "A systemic financial crisis on the scale of or larger than 2008 is approaching.",
+   "industry": "Economy & markets",
    "duplicate_of": "collapse-audit",
-   "frame": null,
+   "frame": {
+    "problem": "The financial system is fragile and near breaking",
+    "cause": "Debt, leverage and policy errors echoing 2008",
+    "outcome": "Prepare for a systemic crash",
+    "clock": "Coming soon / next"
+   },
    "evidence": {
     "videos": 10,
     "channels": 5,
@@ -1705,7 +1716,7 @@
   {
    "phrase": "save 000",
    "verdict": "rhetoric",
-   "why": "How-to money format with no shared claim, and titles even span unrelated topics.",
+   "why": "A how-to format about saving money, not a claim that could be wrong.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1735,10 +1746,10 @@
   {
    "phrase": "debt collapse",
    "verdict": "duplicate",
-   "why": "Directly restates the tracked US debt collapse narrative.",
+   "why": "Restates the tracked debt-collapse doom narrative.",
    "claim_name": null,
    "claim": null,
-   "industry": null,
+   "industry": "Economy & markets",
    "duplicate_of": "collapse-audit",
    "frame": null,
    "evidence": {
@@ -1765,7 +1776,7 @@
   {
    "phrase": "crash worse 2008",
    "verdict": "duplicate",
-   "why": "Restates the tracked housing crash prediction narrative with a severity comparison.",
+   "why": "Restates the tracked housing-crash prediction narrative with a severity comparison.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1796,7 +1807,7 @@
   {
    "phrase": "war end",
    "verdict": "rhetoric",
-   "why": "Titles span different wars and offer no shared checkable claim.",
+   "why": "Titles span different wars and no shared checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1827,16 +1838,16 @@
   {
    "phrase": "job market collapse",
    "verdict": "narrative",
-   "why": "Shared checkable claim that the labor market is collapsing now amid mass layoffs.",
+   "why": "Shared falsifiable claim that the labor market is collapsing now with mass layoffs.",
    "claim_name": "The \"job market is collapsing\" story",
-   "claim": "The labor market is undergoing a historic collapse, with mass layoffs and vanishing hiring leaving workers unable to find jobs.",
+   "claim": "The labor market is undergoing a collapse, with mass layoffs and vanishing hiring leaving workers unable to find jobs.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "Workers cannot find jobs and layoffs are accelerating",
-    "cause": "Mass layoffs, automation and a hiring freeze across employers",
-    "outcome": "A prolonged employment crisis; workers urged to prepare or reskill",
-    "clock": "2025-2026"
+    "problem": "Workers can't find jobs and layoffs are accelerating",
+    "cause": "Corporate cost-cutting, automation and a weakening economy",
+    "outcome": "A sustained employment downturn; prepare and reskill",
+    "clock": "2025–2026, happening now"
    },
    "evidence": {
     "videos": 5,
@@ -1860,7 +1871,7 @@
   {
    "phrase": "crisis coming",
    "verdict": "duplicate",
-   "why": "Generic imminent-financial-collapse warnings already covered by the collapse audit.",
+   "why": "Generic imminent-financial-collapse warnings already tracked.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1892,7 +1903,7 @@
   {
    "phrase": "investors must",
    "verdict": "rhetoric",
-   "why": "Advice-format phrasing with no shared claim about the world.",
+   "why": "Advice-formula phrasing with no shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1922,7 +1933,7 @@
   {
    "phrase": "collapse global economy",
    "verdict": "duplicate",
-   "why": "Another imminent-economic-collapse prediction of the kind already tracked.",
+   "why": "Another imminent-economic-collapse prediction of the tracked doom family.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1950,7 +1961,7 @@
   {
    "phrase": "coming bitcoin ethereum",
    "verdict": "rhetoric",
-   "why": "A subject plus hype wording; titles share no single checkable claim.",
+   "why": "Hype teaser about crypto news/ETFs rather than one checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -1990,7 +2001,7 @@
   {
    "phrase": "end world",
    "verdict": "rhetoric",
-   "why": "Catch-all doom phrasing used metaphorically across unrelated topics.",
+   "why": "Catchphrase used loosely across unrelated topics with no common claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2018,7 +2029,7 @@
   {
    "phrase": "plan fix",
    "verdict": "rhetoric",
-   "why": "Titles span unrelated topics (debt, LLMs, Panama Canal) with no shared claim.",
+   "why": "Titles span debt, LLMs and the Panama Canal with no shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2046,7 +2057,7 @@
   {
    "phrase": "explains invest",
    "verdict": "rhetoric",
-   "why": "Format/authority framing for beginner investing advice, not a checkable claim.",
+   "why": "Format/authority framing for beginner investing advice, no checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2073,7 +2084,7 @@
   {
    "phrase": "changes coming",
    "verdict": "rhetoric",
-   "why": "Vague anticipation hook across different subjects with no specific shared claim.",
+   "why": "Vague teaser about unspecified upcoming changes across different topics.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2101,7 +2112,7 @@
   {
    "phrase": "truth getting rich",
    "verdict": "rhetoric",
-   "why": "Classic 'the truth about' hook with no consistent claim.",
+   "why": "Curiosity-gap wealth-advice framing, no shared falsifiable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2128,7 +2139,7 @@
   {
    "phrase": "bubble history",
    "verdict": "duplicate",
-   "why": "Restates the ongoing housing-bubble-bursting claim already tracked.",
+   "why": "Claims the largest US housing bubble is bursting, already tracked as housing crash watch.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2158,12 +2169,12 @@
   },
   {
    "phrase": "market crash could",
-   "verdict": "duplicate",
-   "why": "Generic imminent-crash prediction already covered by the collapse prediction audit.",
+   "verdict": "rhetoric",
+   "why": "Speculative crash hedging across condos, bitcoin and stocks with no single claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
-   "duplicate_of": "collapse-audit",
+   "duplicate_of": null,
    "frame": null,
    "evidence": {
     "videos": 6,
@@ -2188,7 +2199,7 @@
   {
    "phrase": "isn't think",
    "verdict": "rhetoric",
-   "why": "Pure contrarian curiosity hook across unrelated subjects.",
+   "why": "Pure contrarian hook applied to unrelated subjects.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2216,15 +2227,15 @@
   {
    "phrase": "dividend stocks beat",
    "verdict": "narrative",
-   "why": "Shares a checkable claim that dividend stocks outperform and protect against inflation.",
+   "why": "Recurring checkable claim that dividend stocks outperform inflation and other assets.",
    "claim_name": "The \"dividend stocks beat inflation\" story",
-   "claim": "Holding high-yield dividend stocks delivers income and returns that outpace inflation and beat the broader market or income ETFs.",
+   "claim": "Holding high-quality dividend-paying stocks protects and grows purchasing power better than cash, bonds or other income products during inflation and stagflation.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "Inflation and stagflation erode savings and fixed income",
-    "cause": "Cash and low-yield or covered-call products fail to keep pace with rising prices",
-    "outcome": "Buy selected dividend-paying stocks for inflation-beating income",
+    "problem": "Inflation and stagflation erode savings and income",
+    "cause": "Cash and fixed-income assets lose real value as prices rise",
+    "outcome": "Buy dividend-growth stocks to generate rising income that outpaces inflation",
     "clock": null
    },
    "evidence": {
@@ -2251,16 +2262,16 @@
   },
   {
    "phrase": "replace job",
-   "verdict": "narrative",
-   "why": "Titles converge on AI displacing human jobs within a few years, a checkable claim, though one title is off-topic stock content.",
+   "verdict": "duplicate",
+   "why": "Same claim as another proposal, merged.",
    "claim_name": "The \"AI will replace your job\" story",
-   "claim": "AI systems will take over a large share of human jobs within a few years, leaving many workers displaced.",
+   "claim": "Artificial intelligence will automate large numbers of existing jobs within a few years, displacing human workers.",
    "industry": "AI & technology",
-   "duplicate_of": null,
+   "duplicate_of": "The \"AI will replace your job\" story",
    "frame": {
-    "problem": "Human workers are being made redundant by AI",
-    "cause": "Rapid capability gains in AI tools and agents",
-    "outcome": "Mass job displacement; workers must reskill or find income elsewhere",
+    "problem": "Widespread job loss to automation",
+    "cause": "Rapidly improving AI and agents",
+    "outcome": "Mass displacement of workers; need to reskill or find income alternatives",
     "clock": "within five years / by 2026"
    },
    "evidence": {
@@ -2285,7 +2296,7 @@
   {
    "phrase": "beat every",
    "verdict": "rhetoric",
-   "why": "A superlative performance boast spanning ETFs, Bitcoin and altcoins with no single checkable claim.",
+   "why": "Superlative marketing hook spanning ETFs, Bitcoin and altcoins with no single checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2313,7 +2324,7 @@
   {
    "phrase": "end 2025",
    "verdict": "rhetoric",
-   "why": "A date tag attached to unrelated financial topics rather than one shared claim.",
+   "why": "A date tag attached to unrelated finance predictions, not one shared claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2344,7 +2355,7 @@
   {
    "phrase": "bubble finally",
    "verdict": "duplicate",
-   "why": "Restates the recurring imminent-housing/market-crash claim already tracked.",
+   "why": "Restates the housing/market crash-is-imminent claim already tracked.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2371,16 +2382,16 @@
   {
    "phrase": "fed must",
    "verdict": "narrative",
-   "why": "Titles share a claim that the Fed must cut rates or act now to avert recession or systemic collapse.",
+   "why": "Titles share the claim that the Fed must cut rates now or the economy breaks.",
    "claim_name": "The \"Fed must cut rates now or the system breaks\" story",
-   "claim": "The Federal Reserve is holding policy too tight for too long, and unless it cuts rates immediately the economy will fall into severe recession or financial system failure.",
+   "claim": "The Federal Reserve is holding policy too tight and must cut interest rates immediately to avoid a severe recession or a financial system collapse.",
    "industry": "Economy & markets",
    "duplicate_of": null,
    "frame": {
-    "problem": "Tight monetary policy is strangling the economy and financial system",
+    "problem": "Credit stress and slowing economy",
     "cause": "Fed keeping rates too high for too long",
-    "outcome": "Severe recession or systemic collapse unless the Fed cuts rates immediately",
-    "clock": "now / imminent"
+    "outcome": "Severe recession or systemic collapse unless rates are cut",
+    "clock": "now / immediate"
    },
    "evidence": {
     "videos": 7,
@@ -2406,7 +2417,7 @@
   {
    "phrase": "economy collapse",
    "verdict": "duplicate",
-   "why": "Imminent US economic collapse is already tracked under the collapse audit narrative.",
+   "why": "Same imminent US economic collapse claim already tracked.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2433,7 +2444,7 @@
   {
    "phrase": "going crash",
    "verdict": "duplicate",
-   "why": "Mostly housing-crash-is-coming framing already tracked.",
+   "why": "Housing/crypto crash-next-year framing already covered.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2460,7 +2471,7 @@
   {
    "phrase": "people won't",
    "verdict": "rhetoric",
-   "why": "Curiosity-gap phrasing about secrets most people ignore, with no shared checkable claim.",
+   "why": "Curiosity-gap hook with no shared checkable claim.",
    "claim_name": null,
    "claim": null,
    "industry": null,
@@ -2486,17 +2497,17 @@
   },
   {
    "phrase": "2025 stock market crash",
-   "verdict": "narrative",
-   "why": "Titles share one checkable, dated claim that equities crash in 2025, with advice implied.",
+   "verdict": "duplicate",
+   "why": "Same claim as another proposal, merged.",
    "claim_name": "The \"2025 stock market crash is here\" story",
-   "claim": "US stock markets are entering or already in a major crash during 2025, and investors should act now to protect or profit from it.",
+   "claim": "A major US stock market crash is beginning in 2025, and investors should reposition immediately to avoid losses or profit from the decline.",
    "industry": "Economy & markets",
-   "duplicate_of": null,
+   "duplicate_of": "The \"the crash has already started\" story",
    "frame": {
-    "problem": "Stretched equity valuations and a fragile economy",
-    "cause": "Overvaluation, debt and policy shocks",
-    "outcome": "A sharp market crash that prepared investors can hedge or profit from",
-    "clock": "2025"
+    "problem": "Overvalued equities are set to fall sharply",
+    "cause": "Stretched valuations, debt and macro deterioration",
+    "outcome": "Investors who sell or hedge now protect or grow wealth through the crash",
+    "clock": "During 2025"
    },
    "evidence": {
     "videos": 12,
