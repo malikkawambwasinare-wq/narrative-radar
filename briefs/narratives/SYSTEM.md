@@ -84,11 +84,11 @@ Every narrative has three names, each with a different job.
 |---|---|---|---|
 | **ID** | Stable address | Neutral topic slug; never changes | `housing-crash-watch` |
 | **Claim name** (card heading) | Say what the story claims without adding belief | **Attribute it; never assert it.** A name is itself one more repetition, so a bare "Seed Oils Are Poison" adds fluency to the claim. It passes if a believer would call it a fair statement of what they believe | *The "housing crash is coming next year" story* |
-| **Hook title** (tile) | Earn the click honestly | See the rules below | *Housing Crash: Is It Always Next Year?* |
+| **Hook title** (tile) | Earn the click honestly | See the rules below | *Housing Crash: A New Deadline Every Year Since 2021* |
 
 **Hook title rules**
 1. It keeps the narrative's search terms.
-2. It opens a concrete gap that the page answers. Headlines perform best at intermediate concreteness (Aubin Le Quéré & Matias 2025).
+2. **It leads with the finding, not a question.** The specific thing this corpus shows, with its number or its year: "Nearly 1 in 3 Videos Is Selling Something", "A New Deadline Every Year Since 2021". A question is the fallback when the data supports no finding yet. A coy question reads as a sneer and says nothing, which is the failure mode to avoid. Headlines perform best at intermediate concreteness (Aubin Le Quéré & Matias 2025).
 3. It states a pattern only when our data establishes it; otherwise it asks a question.
 4. It passes our own title-bait lexicon.
 5. It adds no villain, out-group or moral-emotional words the narrative doesn't use.
