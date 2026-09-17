@@ -39,6 +39,8 @@ DAYS = int(arg("days", 7))
 TIERS = set(arg("tiers", "A").upper())
 MAX_CHANNELS = int(arg("max", 400))
 PAGES = int(arg("pages", 10))          # 50 uploads a page; screening needs 2, backfill wants all
+FULL = "--full" in sys.argv            # walk a channel's whole history, and remember it was done
+REDO_DAYS = int(arg("redo", 30))       # a channel crawled in full this recently is skipped
 SCORE_MIN = float(arg("min-score", 6))   # tuned offline: 74% recall on filed videos, no known false positives
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 CUTOFF = datetime.now(timezone.utc) - timedelta(days=DAYS)
@@ -148,12 +150,15 @@ def corpus_titles():
 
     Never its own output. A video this matcher filed teaches it that its own
     wording belongs, so one wrong match becomes vocabulary and the error widens.
-    Videos added by the channel sweep are therefore excluded from learning; they
-    are still part of the corpus, just not part of the dictionary."""
+    Every machine-filed entry is therefore excluded from learning — the channel
+    sweep's, the pool re-filing's, and a promoted narrative's seed videos. They
+    stay in the corpus; they are just not part of the dictionary. What teaches is
+    what search collected or a person added."""
+    MACHINE = ("channel sweep:", "refiled from the pool", "discovered:")
     out = {}
     for f in sorted((ROOT / "corpus").glob("*/videos.json")):
         out[f.parent.name] = [v.get("title", "") for v in json.loads(f.read_text())["videos"]
-                              if not str(v.get("query", "")).startswith("channel sweep:")]
+                              if not str(v.get("query", "")).startswith(MACHINE)]
     return out
 
 
@@ -296,6 +301,16 @@ def selftest():
         print(f"    {tid} ({sc}) ← {w[:66]}")
 
 
+def load_state():
+    f = ROOT / "crawl-state.json"
+    return json.loads(f.read_text()) if f.exists() else {"crawled": {}}
+
+
+def save_state(st):
+    st["updated"] = TODAY
+    (ROOT / "crawl-state.json").write_text(json.dumps(st, indent=1, sort_keys=True) + "\n")
+
+
 def main():
     if "--selftest" in sys.argv:
         return selftest()
@@ -305,7 +320,19 @@ def main():
         print("channel sweep: no YT_API_KEY. Official API only (decision 2026-09-16); nothing collected.")
         return
     ledger = json.loads((ROOT / "channels.json").read_text())["channels"]
-    rows = [r for r in ledger if r["tier"] in TIERS and r.get("channelId")][:MAX_CHANNELS]
+    rows = [r for r in ledger if r["tier"] in TIERS and r.get("channelId")]
+    state = load_state()
+    if FULL:
+        # Resume: a channel whose whole history was read recently is skipped, so a
+        # crawl too big for one day's quota continues where it stopped.
+        before = len(rows)
+        rows = [r for r in rows if (TODAY > (state["crawled"].get(r["channelId"], "")[:10] or "")
+                                    or (datetime.now(timezone.utc) - datetime.fromisoformat(
+                                        state["crawled"][r["channelId"]])).days >= REDO_DAYS)
+                if r["channelId"] not in state["crawled"] or
+                (datetime.now(timezone.utc) - datetime.fromisoformat(state["crawled"][r["channelId"]])).days >= REDO_DAYS]
+        print(f"  resume: {before - len(rows)} of {before} channels already read in full within {REDO_DAYS} days")
+    rows = rows[:MAX_CHANNELS]
     wl = json.loads((ROOT / "watchlist.json").read_text())["topics"]
     vocab = topic_vocab(wl, corpus_titles())
 
@@ -326,14 +353,69 @@ def main():
     ind_of_channel = {r.get("channelId"): (r.get("narratives") or [None])[0] for r in ledger}
     ind_of_topic = {t["id"]: t.get("industry", "Unsorted") for t in wl}
 
-    print(f"channel sweep {TODAY} · tier {''.join(sorted(TIERS))} · {len(rows)} channels · last {DAYS} days")
+    def flush():
+        """Write what has been matched so far. A long crawl can hit the daily
+        quota wall at any point, and everything read up to then must survive."""
+        if not WRITE:
+            return
+        for tid, vs in matched.items():
+            doc, add = corpora.get(tid), []
+            if not doc or not vs:
+                continue
+            have = {v["videoId"] for v in doc["videos"]}
+            for v in vs:
+                if v["videoId"] in have:
+                    continue
+                m = meta_cache.get(v["videoId"], {})
+                add.append(entry(v, m))
+                have.add(v["videoId"])
+            if add:
+                doc["videos"].extend(add)
+                doc["updated"] = TODAY
+                (ROOT / "corpus" / tid / "videos.json").write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+        pool_f.write_text(json.dumps({"generated": TODAY,
+                                      "note": "claim-carrying videos matching no tracked narrative; raw material for new ones",
+                                      "videos": pool[-200000:]}, indent=1) + "\n")
+        if FULL:
+            save_state(state)
+
+    def entry(v, m):
+        return {
+            "videoId": v["videoId"], "title": v["title"], "channel": v["channel"],
+            "url": f"https://www.youtube.com/watch?v={v['videoId']}",
+            "published": v["published"], "first_seen": TODAY,
+            "views": m.get("views"), "length": m.get("length"),
+            "age_days": (datetime.now(timezone.utc) - datetime.fromisoformat(v["published"] + "T00:00:00+00:00")).days,
+            "query": f"channel sweep: {v['channel']}", "transcript": None,
+            "verdict": "UNREVIEWED", "verdict_basis": "metadata", "yt": m.get("yt", {}),
+        }
+
+    meta_cache = {}
+    print(f"channel sweep {TODAY} · tier {''.join(sorted(TIERS))} · {len(rows)} channels · last {DAYS} days{' · full history' if FULL else ''}")
     seen, matched, off_topic, pooled = 0, defaultdict(list), 0, 0
-    for r in rows:
+    stopped = None
+    for n, r in enumerate(rows, 1):
         try:
             items = uploads_items("UU" + r["channelId"][2:])
+        except urllib.error.HTTPError as e:
+            body = ""
+            try: body = e.read().decode()[:200]
+            except Exception: pass
+            if e.code == 403 and "quota" in body.lower():
+                stopped = "daily quota reached"
+                break
+            print(f"  ! {r['channel'][:34]}: HTTP {e.code}")
+            continue
         except Exception as e:
             print(f"  ! {r['channel'][:34]}: {e}")
             continue
+        if FULL:
+            state["crawled"][r["channelId"]] = datetime.now(timezone.utc).isoformat(timespec="seconds")
+        if n % 25 == 0:
+            ids_now = [v["videoId"] for vs in matched.values() for v in vs if v["videoId"] not in meta_cache]
+            meta_cache.update(hydrate(ids_now) if ids_now else {})
+            flush()
+            print(f"  … {n}/{len(rows)} channels · {seen:,} uploads read · {units} units")
         time.sleep(0.15)                      # be a polite client across hundreds of channels
         for v in items:
             seen += 1
@@ -354,42 +436,21 @@ def main():
             v["_score"] = score
             matched[tid].append(v)
 
-    ids = [v["videoId"] for vs in matched.values() for v in vs]
-    meta = hydrate(ids) if ids else {}
-
+    ids = [v["videoId"] for vs in matched.values() for v in vs if v["videoId"] not in meta_cache]
+    if ids:
+        meta_cache.update(hydrate(ids))
+    before = {tid: len(doc["videos"]) for tid, doc in corpora.items()}
+    flush()
     total = 0
-    for tid, vs in sorted(matched.items()):
-        doc = corpora.get(tid)
-        if not doc:
-            continue
-        add = []
-        for v in sorted(vs, key=lambda x: x["published"], reverse=True):
-            m = meta.get(v["videoId"], {})
-            if m.get("yt", {}).get("live"):
-                continue
-            add.append({
-                "videoId": v["videoId"], "title": v["title"], "channel": v["channel"],
-                "url": f"https://www.youtube.com/watch?v={v['videoId']}",
-                "published": v["published"], "first_seen": TODAY,
-                "views": m.get("views"), "length": m.get("length"),
-                "age_days": (datetime.now(timezone.utc) - datetime.fromisoformat(v["published"] + "T00:00:00+00:00")).days,
-                "query": f"channel sweep: {v['channel']}", "transcript": None,
-                "verdict": "UNREVIEWED", "verdict_basis": "metadata", "yt": m.get("yt", {}),
-            })
-        print(f"  {tid:28s} +{len(add)}")
-        for v in add[:4]:
-            print(f"      {v['published']}  {v['title'][:74]}")
-        if add and WRITE:
-            doc["videos"].extend(add)
-            (ROOT / "corpus" / tid / "videos.json").write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
-        total += len(add)
-
+    for tid, doc in sorted(corpora.items()):
+        added = len(doc["videos"]) - before[tid]
+        if added:
+            print(f"  {tid:28s} +{added}")
+            total += added
+    if stopped:
+        print(f"  STOPPED: {stopped} — {len(rows) - n} channels left for the next run, everything read is saved")
     if WRITE:
-        pool_f.write_text(json.dumps({"generated": TODAY,
-                                      "note": "claim-carrying videos matching no tracked narrative; raw material for new ones",
-                                      "videos": pool[-200000:]}, indent=1) + "\n")
-    print(f"  {seen} uploads read · {off_topic} outside the tracked narratives, of which {pooled} carry a claim and went to the pool")
-    print(f"  pool holds {len(pool)} · {units} quota units")
+        pass
     print(f"+{total} new videos across {len(matched)} narratives (channel uploads)")
 
 

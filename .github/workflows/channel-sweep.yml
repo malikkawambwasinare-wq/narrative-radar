@@ -26,6 +26,9 @@ on:
       pages:
         description: "Upload pages per channel, 50 each (2 = a screen, 10 = a backfill)"
         default: "10"
+      full:
+        description: "Whole history per channel, resuming where the last run stopped"
+        default: "false"
 
 permissions:
   contents: write
@@ -37,7 +40,7 @@ concurrency:
 jobs:
   sweep:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 350        # a full-history crawl runs for hours
     steps:
       - uses: actions/checkout@v4
 
@@ -54,6 +57,7 @@ jobs:
             --days=${{ inputs.days || '7' }} \
             --tiers=${{ inputs.tiers || 'A' }} \
             --pages=${{ inputs.pages || '10' }} \
+            ${{ (inputs.full == 'true') && '--full' || ' ' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
       - name: Spend the day's discovery searches
@@ -88,7 +92,7 @@ jobs:
           git config user.name "narrative-radar-bot"
           git config user.email "actions@github.com"
           SUMMARY=$(tail -n 1 sweep.log)
-          git add corpus channels.json discovered.json channel-candidates.json discovery-pool.json
+          git add corpus channels.json discovered.json channel-candidates.json discovery-pool.json crawl-state.json
           if git diff --cached --quiet; then
             echo "nothing new today"
             exit 0
