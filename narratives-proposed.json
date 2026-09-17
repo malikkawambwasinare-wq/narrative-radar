@@ -1,0 +1,2528 @@
+{
+ "generated": "2026-09-17",
+ "model": "claude-opus-5",
+ "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track.",
+ "cost_usd": 0.4188,
+ "proposals": [
+  {
+   "phrase": "bubble popped",
+   "verdict": "rhetoric",
+   "why": "The titles apply the same catchphrase to unrelated subjects (car loans, car market, Russian weapons), sharing no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 9,
+    "span": "2022-10 → 2026-08",
+    "examples": [
+     "The Car Loan Bubble Has Popped.",
+     "It’s Over: The Car Market Bubble Just Popped",
+     "The $15 Billion Russian Weapons Bubble Just POPPED"
+    ],
+    "ids": [
+     "-8mnk7epzYQ",
+     "4xiMj8ftOKo",
+     "WRnErUg0qs8",
+     "hy90LdpEUvQ",
+     "lSBuGKlhZP4",
+     "paLy21TVecw",
+     "piaff5fEUyA",
+     "pnmDOGJ_TTE",
+     "ukUd0NZ0MAU",
+     "ziA-ziO3_ok"
+    ]
+   }
+  },
+  {
+   "phrase": "root cause",
+   "verdict": "duplicate",
+   "why": "These titles push the single-underlying-cause-of-chronic-disease framing already tracked as inflammation-as-root-of-all-disease.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "anti-inflammatory-diet",
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 11,
+    "span": "2022-08 → 2026-09",
+    "examples": [
+     "The ROOT CAUSE Of Disease & How To START HEALING The Body & Mind! | Alberto Villoldo",
+     "The ROOT CAUSE Of Disease & Aging! - FIX THIS Today Or Else... | David Furman",
+     "The ROOT CAUSE Of Autoimmune Disease & How To REDUCE Its Effects | Mark Hyman & Sunjya Schweig"
+    ],
+    "ids": [
+     "QFbQjTiTmJo",
+     "VtzKXsvSUts",
+     "YkKXlvepPnU",
+     "cwCfDEOY8ls",
+     "ffnemp80ILc",
+     "iSER2qxP8r4",
+     "j6FEuSFmo6s",
+     "sUSyqPWHmBw",
+     "wbUdVvchDEw",
+     "x-Y-IxNWFMw",
+     "xL1McUz1pK0",
+     "z9vA76jtRd8"
+    ]
+   }
+  },
+  {
+   "phrase": "bubble bursting",
+   "verdict": "rhetoric",
+   "why": "A generic bubble label spread across tech and housing with no shared, testable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 8,
+    "span": "2022-05 → 2026-09",
+    "examples": [
+     "Is the tech bubble bursting right now?",
+     "The 2 Million People Exit: Canada’s Housing Bubble Is Bursting",
+     "The 2 Million People Exit: Canada’s Housing Bubble Is Bursting"
+    ],
+    "ids": [
+     "0w-Q5oMoCYg",
+     "OZhbi8m1Mw8",
+     "V_Q0LttAeS8",
+     "XX0frNf7QwU",
+     "_YxnvQWTQSQ",
+     "bIvSMirawyg",
+     "g-_hVXzkn0o",
+     "kggqWhMXvD0",
+     "xQkTdNl6a7I",
+     "z3Ud05lVkl8"
+    ]
+   }
+  },
+  {
+   "phrase": "bubble pop",
+   "verdict": "rhetoric",
+   "why": "Mostly speculative question headlines about different markets; the phrase sells suspense rather than one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 9,
+    "months": 7,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "Is the Housing Market Bubble About to Pop?",
+     "10 Signs the Housing Market Bubble is About To Pop",
+     "The AI Bubble POP"
+    ],
+    "ids": [
+     "Hsb5AM2NPCg",
+     "NU_k9JAWsqE",
+     "RWY3g_qRkV4",
+     "XDbEbnjOXJQ",
+     "Xwi6ouACYHw",
+     "YMhm36cjqZs",
+     "ZAp6DgSQ9fA",
+     "c4KlFzN5GNg",
+     "cVzknDbIU7s",
+     "hhHPfNvUzM8",
+     "lcqqIk_se_0",
+     "urjCwkOwSj4"
+    ]
+   }
+  },
+  {
+   "phrase": "boom bust",
+   "verdict": "rhetoric",
+   "why": "An either/or question framing with no asserted outcome.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2023-06 → 2026-04",
+    "examples": [
+     "What's Next for Stocks? AI Boom or Bust?",
+     "Will Javier Milei's Policies Create an Economy Boom or Bust?",
+     "Will The Trump Tariffs Lead To An Economic BOOM Or BUST?"
+    ],
+    "ids": [
+     "-_BZgYh3uas",
+     "A0KTWj_NU_4",
+     "lLZ8j7tApJE",
+     "o5UZpio3-aA",
+     "sDwjpduvsck",
+     "uFpz6ALDgJw"
+    ]
+   }
+  },
+  {
+   "phrase": "sees coming",
+   "verdict": "rhetoric",
+   "why": "Classic surprise-hook phrasing attached to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 7,
+    "span": "2024-01 → 2026-02",
+    "examples": [
+     "Nobody Sees It Coming.",
+     "Nobody Sees This Coming.",
+     "2025 Real Estate Market CRASH No One Sees Coming Except Warren Buffett"
+    ],
+    "ids": [
+     "-5Ar3f0oVeA",
+     "-7Y2xa3HDLw",
+     "OgZubA_ZG6s",
+     "bn-fwjgpsjE",
+     "nyG_O_P4ft0",
+     "o2A1YNm0nNg",
+     "ycc9qyTCnpA"
+    ]
+   }
+  },
+  {
+   "phrase": "crash incoming",
+   "verdict": "rhetoric",
+   "why": "Question-mark crash teasers across different markets rather than one stated prediction.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 6,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Michael Burry Bets Against the Market. Crash Incoming?",
+     "Stock Market Bubble? Crash Incoming?",
+     "Warren Buffett Just DUMPED D.R. Horton Stock - Housing Market Crash Incoming?"
+    ],
+    "ids": [
+     "5htHffTQ21w",
+     "DRZLA8yyOik",
+     "JcngMzVBu7M",
+     "M1w1rrBm8QA",
+     "W-ICrkSw9dE",
+     "eV8FLTQIGhU",
+     "gC8GVjSSPwU"
+    ]
+   }
+  },
+  {
+   "phrase": "dead cat bounce",
+   "verdict": "rhetoric",
+   "why": "Trader jargon used as a recurring headline format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-03 → 2024-12",
+    "examples": [
+     "BITCOIN DEAD CAT BOUNCE OR NEW RUN SOON?",
+     "Stock Market Bottom or Dead Cat Bounce?",
+     "The Dividend Power Hour: Dead Cat Bounce or Time To Rally?"
+    ],
+    "ids": [
+     "8cvikmEizN8",
+     "8iqtGhYonnY",
+     "EZKZmWuOovs",
+     "cS0FvDM25EY"
+    ]
+   }
+  },
+  {
+   "phrase": "plane crash",
+   "verdict": "rhetoric",
+   "why": "A bare news subject; the titles share no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 6,
+    "months": 3,
+    "span": "2026-03 → 2026-09",
+    "examples": [
+     "What Captain Steeeve MISSED: Deadly Plane Crash vs Firetruck Laguardia Airport | Air Canada AC8646",
+     "The Mystery Behind Beijing’s Skyscraper Plane Crash",
+     "NTSB gives the latest update on the deadly Amazon cargo plane crash investigation"
+    ],
+    "ids": [
+     "0GsvNd-ISU4",
+     "AWSK8O_hJo0",
+     "Cx295PRUCD4",
+     "H7OVf_niJaU",
+     "TKRTcMzp1iQ",
+     "UjnVQQZnBxU",
+     "VzPNBzZBHKA",
+     "f69u368_e9s",
+     "j3v2-rdl9D8",
+     "nvpb47YitmI",
+     "s8jk-Zd6crc",
+     "vA3_ExMV0tY",
+     "xM3OMdgv41k"
+    ]
+   }
+  },
+  {
+   "phrase": "brink collapse",
+   "verdict": "rhetoric",
+   "why": "Generic doom phrasing applied to unrelated subjects (UK, US, asset class) with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2022-10 → 2026-03",
+    "examples": [
+     "UK Is On The Brink Of Collapse!! What Happens Next?",
+     "World's Largest Asset Class Is On The Brink Of COLLAPSE",
+     "Is the US on the Brink of Collapse? | Kara Swisher"
+    ],
+    "ids": [
+     "C78zq_iSSu4",
+     "Jfnpy6KPSuM",
+     "W3UmA8xH1dQ",
+     "frze_8iei0A",
+     "ixbYVvKxayU",
+     "kKhGwVTxX68",
+     "kmpxnyIjdEE"
+    ]
+   }
+  },
+  {
+   "phrase": "nearing end",
+   "verdict": "narrative",
+   "why": "Titles converge on one checkable claim that the stock market crash is bottoming out.",
+   "claim_name": "The \"stock market crash is nearing its end\" story",
+   "claim": "The ongoing stock market decline is close to bottoming out, so the selloff is nearly over and the recovery is at hand.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Investors fear further losses during a market selloff",
+    "cause": "A crash cycle that has already run most of its course",
+    "outcome": "Market bottoms and rebounds; investors should buy or hold",
+    "clock": "Near term, within months"
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 3,
+    "months": 5,
+    "span": "2025-02 → 2026-08",
+    "examples": [
+     "The Stock Market Crash is Nearing The End!",
+     "The Stock Market Crash is Nearing The End! (For Now)",
+     "Stock Market Crash Is Nearing The End! (Here's Why)"
+    ],
+    "ids": [
+     "4wYNRr-ynPc",
+     "6k3g4CinbdA",
+     "G9peC5ZZMuo",
+     "KW-xgaS7VUI",
+     "X-GhCi2nYXc",
+     "zbZg_Gmm0MA"
+    ]
+   }
+  },
+  {
+   "phrase": "save thousands",
+   "verdict": "rhetoric",
+   "why": "A sales promise attached to unrelated topics, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-12 → 2026-05",
+    "examples": [
+     "This New Coinbase Feature Can Save You Thousands 💰 #ad Coinbase",
+     "Save Thousands: Biweekly Mortgage Payments Explained",
+     "How to Get a DEAL on Your Home in 2025 (And Save Thousands)"
+    ],
+    "ids": [
+     "YbsulwNvVok",
+     "jjmr_jlALp8",
+     "rPwIBuudfD0",
+     "xPeqI56Kd88"
+    ]
+   }
+  },
+  {
+   "phrase": "reset coming",
+   "verdict": "narrative",
+   "why": "Shared claim that a sweeping economic/monetary reset is imminent and viewers must prepare.",
+   "claim_name": "The \"great economic reset is coming\" story",
+   "claim": "A once-in-a-lifetime economic or monetary reset is approaching that will upend the existing financial order, and people should reposition their money now.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "The current financial and monetary system is unsustainable",
+    "cause": "Debt levels, currency debasement and elite/institutional restructuring plans",
+    "outcome": "A systemic reset; viewers should move into protective assets",
+    "clock": "Soon, within the next few years"
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 8,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "BEWARE The Great Reset is Coming Soon…",
+     "A Once in a Lifetime Economic Reset is Coming.",
+     "Trump vs China - America’s $37 Trillion Reset Is Coming (Do This Now)"
+    ],
+    "ids": [
+     "JagigbXyY2A",
+     "PxCWgiQLW_4",
+     "S6chzad1S_I",
+     "YXFvwJQBzJc",
+     "_cbMfNTvvlU",
+     "_rwFYNlKtEc",
+     "fqY4zMtBS74",
+     "inUGgMv9Zq0"
+    ]
+   }
+  },
+  {
+   "phrase": "officially dead",
+   "verdict": "rhetoric",
+   "why": "Obituary framing sprayed across airports, crypto cycles and NATO with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-02 → 2026-08",
+    "examples": [
+     "Pickering Airport is Officially DEAD – What This Means for You!",
+     "🚨 THE FOUR YEAR CYCLE IS OFFICIALLY DEAD!!!",
+     "5,000 US Nukes. NATO Is Officially DEAD"
+    ],
+    "ids": [
+     "-Eftkfrz6Ms",
+     "L9GlUjLbKEU",
+     "VXdCxfgA3ZA",
+     "_GnkbrsGmnU",
+     "wrVJXIuJt0o"
+    ]
+   }
+  },
+  {
+   "phrase": "recession coming",
+   "verdict": "narrative",
+   "why": "Many channels assert an imminent recession and tell viewers to prepare.",
+   "claim_name": "The \"a recession is coming\" story",
+   "claim": "A recession is imminent in the US economy, and viewers should prepare their finances and portfolios now.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Economic conditions are deteriorating",
+    "cause": "Rate hikes, debt, weakening jobs and housing markets",
+    "outcome": "A recession arrives; prepare with cash, defensive assets or specific ETFs",
+    "clock": "Within the next year"
+   },
+   "evidence": {
+    "videos": 21,
+    "channels": 21,
+    "months": 7,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "Is A Recession Coming 2022 - Do This Now To Prepare",
+     "Prepare Now 50% Housing Crash Recession Coming",
+     "Recession Coming: 3 ETFs Worth Buying Today"
+    ],
+    "ids": [
+     "1umehs9tVns",
+     "9-vixeaVsI0",
+     "Bl1CbJhAtBI",
+     "CFtZH6wqStc",
+     "CRMVDW2flmI",
+     "H6SoDxvTlFk",
+     "Q97XETAbrqU",
+     "QVqkQHryc7w",
+     "SH-zhfvflNM",
+     "TEZJgl720qE",
+     "WQRoZ32qnGY",
+     "Wh9OpffZ5WQ",
+     "Ys_haNfnZPQ",
+     "a6RZ_f1WFi4",
+     "e8ltV32qO1c",
+     "eefpaW5AuIw",
+     "hbxtJ2ZTP-U",
+     "iyaEJioo4-0",
+     "jgMjEfBYwyk",
+     "kdBH9P8vkmo"
+    ]
+   }
+  },
+  {
+   "phrase": "crash begins",
+   "verdict": "duplicate",
+   "why": "Restates the recurring imminent-crash prediction already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2023-07 → 2026-07",
+    "examples": [
+     "Phase 3 of The Housing Market Crash Begins Causing Panic (Inventory Shortage)",
+     "The Great Market Crash Begins in 2024 Prepare Now",
+     "STOCK CRASH BEGINS: How I'm investing TODAY global stock crash; S&P 500 plummets; NASDAQ sinks 4%"
+    ],
+    "ids": [
+     "4H0i7lmhJ2U",
+     "Ge1vv1nLMuM",
+     "RoT-_O5-1l0",
+     "_9ZVEDXzVjE",
+     "by1_fFxx7Lg",
+     "tmvSS92HvxA"
+    ]
+   }
+  },
+  {
+   "phrase": "crash beginning",
+   "verdict": "duplicate",
+   "why": "Titles all assert a market crash is underway with worse to come, same family as the tracked collapse/crash predictions.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-04 → 2026-06",
+    "examples": [
+     "The 2025 Stock Market Crash is Only The Beginning... (HERE'S WHY)",
+     "The Gold & Silver Crash Was Just The Beginning (Nobody's Talking About What Comes Next)",
+     "A Once In A Lifetime Stock Market Crash is Just Beginning!"
+    ],
+    "ids": [
+     "-h7lxFYnnEQ",
+     "3A-YgX48Rek",
+     "4Isgtn0Jc2Y",
+     "PSZqx7XBAxs",
+     "Ta9-I2KEE0I",
+     "bGY8E_9su8M",
+     "ke1cCb2H-tU"
+    ]
+   }
+  },
+  {
+   "phrase": "during market crash",
+   "verdict": "rhetoric",
+   "why": "These are tactical how-to/stock-pick formats using 'market crash' as a setting, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-03 → 2025-11",
+    "examples": [
+     "How To Not Lose Everything During A Market Crash",
+     "$143,000 I just Spent on this Stock‼️During Market Crash",
+     "Top 5 Stocks to BUY NOW (During the Market Crash)"
+    ],
+    "ids": [
+     "-1AJBCQ4bIA",
+     "1dgQa_-oh1I",
+     "MJ9Q9oGxuMQ",
+     "drmzGBFyl9Q",
+     "dyYInFbqAdw",
+     "zebG5JFgKPE"
+    ]
+   }
+  },
+  {
+   "phrase": "idea what's coming",
+   "verdict": "rhetoric",
+   "why": "Pure teaser phrasing attached to unrelated topics (stocks, AI, nuclear).",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2025-04 → 2026-09",
+    "examples": [
+     "People Have NO IDEA What's Coming For The Stock Market...",
+     "Godfather of AI WARNS: \"You Have No Idea What's Coming\"",
+     "Nuclear Expert WARNS: \"You Have No Idea What's Coming\""
+    ],
+    "ids": [
+     "035USfeJtgw",
+     "5KmopXwjXik",
+     "OgLAfG1DMOU",
+     "fnGw_mT1278",
+     "tiIGkG_54rs",
+     "zcoVkNb0IVU"
+    ]
+   }
+  },
+  {
+   "phrase": "crash started",
+   "verdict": "duplicate",
+   "why": "Repeated declarations that the crash has already begun restate the tracked perpetual-collapse prediction audit.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 9,
+    "span": "2022-12 → 2026-08",
+    "examples": [
+     "The Real Estate Crash Has Started (How Bad Will It Get?)",
+     "The 2024 Stock Market Crash Just Started",
+     "The 2025 Stock Market Crash Just Started"
+    ],
+    "ids": [
+     "-YWNipc3K80",
+     "8plymAmhqz4",
+     "E_c-LQaOVcQ",
+     "NVC7cB-QVSo",
+     "NiUrVUet4M4",
+     "WQgNUMHysQM",
+     "_2A3ma2Nbls",
+     "oQ3UVUVzNkA",
+     "t5ssiP5gahg",
+     "wgakU3FZevI"
+    ]
+   }
+  },
+  {
+   "phrase": "supplements actually",
+   "verdict": "rhetoric",
+   "why": "Product-recommendation format; no shared falsifiable claim across titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 3,
+    "span": "2026-04 → 2026-09",
+    "examples": [
+     "The ONLY 5 Supplements You Actually Need (Stop Wasting Money)",
+     "How to Lower Cholesterol with Supplements That Actually Work",
+     "This is the gut supplements that actually stood out to me"
+    ],
+    "ids": [
+     "2Do6hARie-Y",
+     "8u_sEsX3pek",
+     "_0obbWP0QUQ",
+     "nNofJ4xT-ME"
+    ]
+   }
+  },
+  {
+   "phrase": "cause chronic",
+   "verdict": "duplicate",
+   "why": "Root-cause-of-chronic-disease framing restates the tracked inflammation-as-root-of-all-disease narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "anti-inflammatory-diet",
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 3,
+    "months": 5,
+    "span": "2025-11 → 2026-09",
+    "examples": [
+     "The #1 Root Cause of All Chronic Disease is NOT What You Think...",
+     "We Finally Know the Root Cause of Chronic Inflammation 🎙 The Gut Insiders Ep 02",
+     "The HIDDEN Cause of Chronic Phlegmy (Mucus) Throat"
+    ],
+    "ids": [
+     "YkKXlvepPnU",
+     "e0gQsbKxWHA",
+     "kchuJUyiV1c",
+     "pL-uqYbFWiY",
+     "xL1McUz1pK0"
+    ]
+   }
+  },
+  {
+   "phrase": "move coming",
+   "verdict": "rhetoric",
+   "why": "Vague anticipation teaser across unrelated assets, with no specified direction or checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 7,
+    "span": "2023-03 → 2026-05",
+    "examples": [
+     "This is a Major Threat to a Fragile Banking System | Charts Say a Big Move Is Coming Soon.",
+     "This Stock is UP next‼️ Major Move coming",
+     "\"We’re Entering Bitcoin’s Acceleration Zone, The Real Move Is Coming!\" - James Lavish & Ben Cowen"
+    ],
+    "ids": [
+     "-15kJ5ckah0",
+     "8c3yhE-N3b8",
+     "BB7hmCMG1vM",
+     "TBzi1Ysxhro",
+     "TD5u7Ng_cWA",
+     "VCj8O2qAeiM",
+     "ie3zMA8ffJw",
+     "tkFYLb49_0A",
+     "ujVfko8K6Ws"
+    ]
+   }
+  },
+  {
+   "phrase": "save money",
+   "verdict": "rhetoric",
+   "why": "Generic personal-finance advice topic, not a single contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 15,
+    "months": 13,
+    "span": "2023-01 → 2026-09",
+    "examples": [
+     "Don’t Save Your Money - Do This Instead",
+     "They trick you so you can’t save money 🚨😳",
+     "Spend & Save Your Money Smartly! #financewithakshat #wisdomhatch"
+    ],
+    "ids": [
+     "-_BGtKmtQTo",
+     "4XHwbXk_hww",
+     "6VGyJSEMbmQ",
+     "9GnZETDRmQ4",
+     "AcydNeBxu0o",
+     "Bc78p8OrhRk",
+     "Hn4F-UKJOaM",
+     "HrxnkIc7rD8",
+     "JNQIr5uYLNY",
+     "KHyPHMBsM8Q",
+     "QVEIZE32LKY",
+     "XKxoHOIxyjA",
+     "YbJa8Df5U1Y",
+     "YokvURauxdk",
+     "gWnI6bwXDRY",
+     "jMKpagYWpis",
+     "o69yGTxB8EE",
+     "tt2tQ0PA1qY",
+     "wa55G2K6gcQ"
+    ]
+   }
+  },
+  {
+   "phrase": "crash alert",
+   "verdict": "rhetoric",
+   "why": "An urgency label applied to gold, crypto and stocks alike with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 3,
+    "span": "2025-11 → 2026-09",
+    "examples": [
+     "Crash Alert Or Wild Upside Next? Fund Manager Reveals What's Next For Gold, Miners | Adrian Day",
+     "WTF Just Happened? [CRASH ALERT]",
+     "URGENT: Cardano Crash Alert"
+    ],
+    "ids": [
+     "9TUwrOrjYfU",
+     "AKykGbjjKso",
+     "Nn7Dun6B9UM",
+     "bpLFkDtuW-w",
+     "jv41opeL4ZY"
+    ]
+   }
+  },
+  {
+   "phrase": "actually afford",
+   "verdict": "rhetoric",
+   "why": "A personal-finance explainer format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-06 → 2026-01",
+    "examples": [
+     "How Much Home Can You ACTUALLY Afford In Canada (By Salary)",
+     "How Much Home You Can ACTUALLY Afford (By Salary)",
+     "How Much Car You Can ACTUALLY Afford (By Income) - Not What You Think!"
+    ],
+    "ids": [
+     "2z0DQMMrIJ8",
+     "FYOMAqrsWAo",
+     "RJEk9mG5JHM",
+     "X56G_hTsHIQ"
+    ]
+   }
+  },
+  {
+   "phrase": "could crash",
+   "verdict": "duplicate",
+   "why": "Generic imminent-crash warnings restate the long-running collapse prediction narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 11,
+    "months": 12,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "Stocks Could Crash Soon...Here's Why",
+     "It Could Crash By 50%...Or More (Here's Why)",
+     "Global Real Estate Markets Could Crash Because Of This..."
+    ],
+    "ids": [
+     "-EeIB4OQ0b0",
+     "E-zU5Kyz6hk",
+     "GSEv6j9Do4Q",
+     "GeFHDzigeIg",
+     "Gy4KWgH_Ais",
+     "MRd5gBSsE1k",
+     "PFhhH1mjDdA",
+     "UGwjalxGIOU",
+     "VhmgOM2T5zY",
+     "cvs5SJNkq8w",
+     "fm-Ui8S1eTU",
+     "gQLYbCZfkU4",
+     "myjpnYUlYRY",
+     "omNjBDkiBRE",
+     "q4erUwd0TDo",
+     "sNCLpMx7ar4",
+     "u06mxXTYqEc",
+     "xDyBCdPFsmI",
+     "yfOnuUceQ6g"
+    ]
+   }
+  },
+  {
+   "phrase": "actually worth",
+   "verdict": "rhetoric",
+   "why": "A valuation-question hook spanning unrelated subjects with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 8,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "Are Custom Homes Actually Worth It?",
+     "Tesla Stock Collapses: What's the Stock Actually Worth?",
+     "What is your time ACTUALLY worth?"
+    ],
+    "ids": [
+     "8u_sEsX3pek",
+     "GRfznvYyuE8",
+     "I38N6emXfis",
+     "Pawvas4eNOs",
+     "V4YAY6zpJ2E",
+     "h2bblp5j3fU",
+     "lFC-Xd98nC4",
+     "md0iwAkVeAM",
+     "nEmgOYsWc-U"
+    ]
+   }
+  },
+  {
+   "phrase": "coming prepare",
+   "verdict": "rhetoric",
+   "why": "Preparation urgency attached to opposite predictions (melt-up and dip), so no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 7,
+    "span": "2024-11 → 2026-09",
+    "examples": [
+     "Stock Market Meltup 2.0 is Coming❤️ Prepare Now...",
+     "Market DIP Coming: How to Prepare Your Portfolio",
+     "\"It's REALLY COMING! Prepare for a Massive Flood of Green Candles\"- Dan Tapiero"
+    ],
+    "ids": [
+     "3jqgOIKh1p0",
+     "HWr6RUykWGY",
+     "XGlPEsi4qEQ",
+     "i0CbfyAAPs4",
+     "kSyqIL4b_zw",
+     "oGS0G9N_evc",
+     "pOO_1c7J-d4"
+    ]
+   }
+  },
+  {
+   "phrase": "save retirement",
+   "verdict": "rhetoric",
+   "why": "Retirement-planning subject matter; titles do not share one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "How Much Should You Save For Retirement?",
+     "Stop Following The 60/40 Rule - This New Investing Strategy Could Save Your Retirement",
+     "‘There Is A 100% Certainty’ Bonds Won’t Save Your Retirement Warns Strategist | John D’Agostino"
+    ],
+    "ids": [
+     "81bQ5CXJUNI",
+     "ACkhpudBbTk",
+     "HIFpXyuqRNE",
+     "kTaZhZ4GEBs"
+    ]
+   }
+  },
+  {
+   "phrase": "actually costs",
+   "verdict": "rhetoric",
+   "why": "A cost-breakdown explainer format rather than a contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-05 → 2026-09",
+    "examples": [
+     "How Much It ACTUALLY Costs to Buy a House",
+     "How Much it ACTUALLY Costs to Build a Custom Home",
+     "How Much Owning A Yacht ACTUALLY Costs | Ben Mallah"
+    ],
+    "ids": [
+     "-IZ0MAQzTL4",
+     "-tla_RtS0vU",
+     "04ePeOyRN0k",
+     "vr3rN4FFBTQ"
+    ]
+   }
+  },
+  {
+   "phrase": "end humanity",
+   "verdict": "narrative",
+   "why": "Titles share the checkable claim that advanced AI poses an extinction risk within a stated horizon.",
+   "claim_name": "The \"AI could end humanity\" story",
+   "claim": "Advanced AI, possibly reaching AGI within a few years, poses an existential threat that could wipe out humanity. Urgent safety measures or preparation are needed before it is too late.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Rapidly advancing AI may become uncontrollable",
+    "cause": "Race to build AGI without adequate alignment or safety controls",
+    "outcome": "Human extinction unless development is slowed or made safe",
+    "clock": "By roughly 2027-2030"
+   },
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 2,
+    "span": "2026-08 → 2026-09",
+    "examples": [
+     "Professor Brian Greene: The Threat of AI, Consciousness & The End of Humanity",
+     "AGI 2027: The &quot;End of Humanity&quot; Warning &amp; Your Survival Guide",
+     "Ex-OpenAI Researcher Says AI Could End Humanity by 2030 😳"
+    ],
+    "ids": [
+     "AB2QMyh3X7s",
+     "Qifsxitq_q4",
+     "WT_S6xPf0aM",
+     "ygPUIdY1ez0"
+    ]
+   }
+  },
+  {
+   "phrase": "index fund bubble",
+   "verdict": "narrative",
+   "why": "Titles share one checkable claim that passive index investing is inflating a stock market bubble.",
+   "claim_name": "The \"passive index fund investing is inflating a market bubble\" story",
+   "claim": "The mass flow of money into passive index funds distorts price discovery and has created a bubble in stocks that will burst.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Stock prices detached from fundamentals",
+    "cause": "Passive index fund flows overwhelming active price discovery",
+    "outcome": "A bubble that bursts, punishing index investors",
+    "clock": "Repeatedly forecast year-by-year (2023, 2025)"
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-11 → 2026-03",
+    "examples": [
+     "Michael Burry's Warning for the Index Fund Bubble in 2023",
+     "Explainer: This simple investment strategy is creating a stock market bubble | Index Fund Bubble",
+     "The Looming Index Fund Bubble in 2025"
+    ],
+    "ids": [
+     "1JXytcQd8K4",
+     "KehT8FXR9fU",
+     "XLGTSzm9iko",
+     "av-AI21ToRc",
+     "fnj0q75MoM0",
+     "ihHFWhoA5zU"
+    ]
+   }
+  },
+  {
+   "phrase": "fake crash",
+   "verdict": "narrative",
+   "why": "Shared claim that the current selloff is not a real crash and should be bought.",
+   "claim_name": "The \"this crash is fake, so buy the dip\" story",
+   "claim": "The current decline in bitcoin and stocks is a manufactured or temporary 'fake crash' rather than a genuine bear market, making it a buying opportunity.",
+   "industry": "Economy & markets",
+   "duplicate_of": "the-2026-setup",
+   "frame": {
+    "problem": "Investors panicking over falling prices",
+    "cause": "Manipulated or sentiment-driven selling, not fundamentals",
+    "outcome": "Prices rebound; buyers of the dip profit",
+    "clock": "Current selloff, near-term rebound"
+   },
+   "evidence": {
+    "videos": 9,
+    "channels": 3,
+    "months": 5,
+    "span": "2025-11 → 2026-05",
+    "examples": [
+     "Tom Lee: Important Warning To All Small Bitcoin & Ethereum Investors \"It's A Fake Crash\"",
+     "7 Stocks I’m Buying for the Stock Market’s Fake Crash",
+     "Michael Saylor: Important Warning To All Small Bitcoin Investors \"It's A Fake Crash\""
+    ],
+    "ids": [
+     "3XjYeGCFTo8",
+     "OpRy3WJO7mA",
+     "UcbGnhGgV-Y",
+     "fHBk-f9CotQ",
+     "g4VdctJHpyA",
+     "mNEaH-1GMno",
+     "ot1l6OMDqRU",
+     "t7-FO_qOqp8",
+     "wSIxg3iKT3U"
+    ]
+   }
+  },
+  {
+   "phrase": "won save",
+   "verdict": "rhetoric",
+   "why": "A rhetorical template applied to unrelated subjects with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-01 → 2026-09",
+    "examples": [
+     "Why Love Alone Won’t Save Your Relationship! The Truth About Marriage | Jordan B. Peterson",
+     "Rate Cuts Won’t Save You? Why Your Mortgage Might Stay HIGH!",
+     "“Bitcoin & AI Won’t Save You” — The Dangerous Lie People Are Betting Their Lives On"
+    ],
+    "ids": [
+     "TnHNQUTFPMk",
+     "YBIcInnIV9s",
+     "kTaZhZ4GEBs",
+     "l6HFB3IYKJ0",
+     "moOZDlbzcVw"
+    ]
+   }
+  },
+  {
+   "phrase": "agi coming",
+   "verdict": "duplicate",
+   "why": "Restates the tracked near-term AGI arrival claim.",
+   "claim_name": "The \"AGI arrives within a couple of years\" story",
+   "claim": "Artificial general intelligence is imminent, arriving within the next year or two.",
+   "industry": "AI & technology",
+   "duplicate_of": "collapse-audit",
+   "frame": {
+    "problem": "Society unprepared for human-level AI",
+    "cause": "Rapid capability scaling at frontier labs",
+    "outcome": "AGI transforms work and life imminently",
+    "clock": "This year to 2027"
+   },
+   "evidence": {
+    "videos": 11,
+    "channels": 11,
+    "months": 2,
+    "span": "2026-08 → 2026-09",
+    "examples": [
+     "OpenAI Just Confirmed AGI Is Coming This Year",
+     "Prediction markets confirm AGI is coming by 2027 #shorts #superintelligence #artificialintelligence",
+     "AGI is Coming: Will It Make Us Smarter? #shorts"
+    ],
+    "ids": [
+     "03tLOt5bw6c",
+     "3wOn1VVel5E",
+     "B0nkZ9BVzD4",
+     "MBK78Zk7bjo",
+     "QA4KsHs0fRU",
+     "TvwahKRNQ6M",
+     "mLvUexawTfs",
+     "s5Gw-M3iXeI",
+     "sWZT164R_tA",
+     "v1nGYAKK4mU",
+     "v3cf47zepRQ"
+    ]
+   }
+  },
+  {
+   "phrase": "lie exposed",
+   "verdict": "rhetoric",
+   "why": "Debunking formula across unrelated topics; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-02 → 2026-06",
+    "examples": [
+     "$3 Trillion ESG Lie Exposed",
+     "BIGGEST CREATINE LIE EXPOSED?!",
+     "The 8 Hour Sleep Lie EXPOSED"
+    ],
+    "ids": [
+     "06MRX_MxD-0",
+     "I3YR5xVpcS4",
+     "KXlkaC2tHZg",
+     "buP2ZgxOeu0"
+    ]
+   }
+  },
+  {
+   "phrase": "gold silver crash",
+   "verdict": "narrative",
+   "why": "Titles converge on a claim that the precious metals crash signals something systemic and a further move ahead.",
+   "claim_name": "The \"gold and silver crash is just the beginning\" story",
+   "claim": "The sharp drop in gold and silver prices exposes deeper problems in the financial system and is the start of a bigger move, not the end.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Precious metals sold off sharply",
+    "cause": "Stress and leverage in the monetary/financial system",
+    "outcome": "Further turmoil and a subsequent surge in metals",
+    "clock": "Following the 2026 crash, near term"
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2026-01 → 2026-09",
+    "examples": [
+     "URGENT UPDATE: The Gold & Silver Crash Has Exposed the Entire System -   Raoul Pal",
+     "The Gold & Silver Crash Was Just The Beginning (Nobody's Talking About What Comes Next)",
+     "Rick Rule Perfectly Called Silver Crash, Here’s What ‘Goes Crazy’ Next"
+    ],
+    "ids": [
+     "4Isgtn0Jc2Y",
+     "I_AkvgsNU6U",
+     "Pti76j6BToE",
+     "dOD4tez9aMA",
+     "siJ6GNqAVfY"
+    ]
+   }
+  },
+  {
+   "phrase": "might actually",
+   "verdict": "rhetoric",
+   "why": "Hedging phrase, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-05 → 2026-07",
+    "examples": [
+     "VEO 3 is UNREAL...it might actually take my job",
+     "Claude and ChatGPT Entered My Bracket Pool. One Might Actually Win.",
+     "We Might Actually Need to Stop AI"
+    ],
+    "ids": [
+     "CvA8-aScqio",
+     "Xj4BDwgEwd4",
+     "ZMOAy_FHL2o",
+     "mN8vsbKx13k"
+    ]
+   }
+  },
+  {
+   "phrase": "strategy actually",
+   "verdict": "rhetoric",
+   "why": "Marketing formula for how-to content with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-11 → 2026-03",
+    "examples": [
+     "The 7-Figure AI Agency Pricing Strategy That ACTUALLY Works",
+     "Use this strategy to actually find the best influencers for your startup",
+     "This Belly Fat Reduction Strategy (Actually) Works With ZERO Exercise"
+    ],
+    "ids": [
+     "IA4f7vpoB4Q",
+     "Tuv4cRs-ysY",
+     "flAqfALecJ4",
+     "obVCQx4imlc",
+     "owdN96DwdT4"
+    ]
+   }
+  },
+  {
+   "phrase": "survive coming",
+   "verdict": "rhetoric",
+   "why": "Survivalist framing attached to varied crash predictions; the shared element is urgency, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 3,
+    "span": "2025-12 → 2026-09",
+    "examples": [
+     "How to Survive the Coming Stock Market Crash - No Fear, Just Facts",
+     "Markets 'Primed To Fall': Which Assets Will Survive Coming Wipeout? | Adrian Day",
+     "Jeff Booth’s WARNING: Only the STRONG Survive What’s Coming"
+    ],
+    "ids": [
+     "1JUGyiOUWOY",
+     "R7L6c6VJbJg",
+     "VbJ7O9YSJAU",
+     "oEt07L438X4"
+    ]
+   }
+  },
+  {
+   "phrase": "earnings beat",
+   "verdict": "rhetoric",
+   "why": "A reporting format about a subject with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 3,
+    "span": "2026-05 → 2026-09",
+    "examples": [
+     "AbbVie’s Earnings Beat Wall Street’s Estimates. Investors Are Still Worried",
+     "Coreweave stock soars on solid earnings beat",
+     "SpaceX posts debut earnings beat but bloated AI capex raises concerns"
+    ],
+    "ids": [
+     "72OAStpGNPA",
+     "SPRvdrXpYUk",
+     "eBewLGCkJ6A",
+     "sxFqeimX90I",
+     "wNqNbjMPygY"
+    ]
+   }
+  },
+  {
+   "phrase": "must avoid",
+   "verdict": "rhetoric",
+   "why": "Listicle warning format spanning mortgages, food and crypto with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-04 → 2026-09",
+    "examples": [
+     "5 Mortgage Mistakes You Must Avoid",
+     "The #1 WORST \"Healthy Foods\" Men & Women MUST Avoid",
+     "Worst Crypto Mistakes (MUST Avoid These)"
+    ],
+    "ids": [
+     "-UogOabbP8Q",
+     "PnkgM9wJylg",
+     "QOKlRRml8sU",
+     "dxelUjTeBfo"
+    ]
+   }
+  },
+  {
+   "phrase": "cuts coming",
+   "verdict": "narrative",
+   "why": "Titles share a checkable forecast that the Fed will cut rates and that this moves markets and housing.",
+   "claim_name": "The \"Fed rate cuts are coming\" story",
+   "claim": "Believers hold that the Federal Reserve is about to begin (or continue) cutting interest rates, and that investors should position stocks, bonds and housing for the easing cycle.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Uncertainty about the direction of interest rates and asset prices",
+    "cause": "Cooling inflation and a weakening labour market pushing the Fed toward easing",
+    "outcome": "Back-to-back cuts that lift stocks, bonds and housing demand",
+    "clock": "Within the coming months / next few FOMC meetings"
+   },
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-05 → 2026-06",
+    "examples": [
+     "BACK-TO-BACK Interest Rate Cuts Coming!?",
+     "Fed Rate Cuts are Coming: Impact the US Housing Market @MinorityMindset",
+     "Rate Cuts Coming! What's Next for Stocks & Bonds?"
+    ],
+    "ids": [
+     "GD1Z8MOaKIg",
+     "f8W60z6H8yE",
+     "f9qPbjgFUj4",
+     "l_c-ddSEIoU"
+    ]
+   }
+  },
+  {
+   "phrase": "jobs replace",
+   "verdict": "narrative",
+   "why": "Most titles carry the checkable claim that AI will replace specific jobs within a set time, with lists of safe jobs as the flip side.",
+   "claim_name": "The \"AI will replace these jobs\" story",
+   "claim": "Believers hold that AI is about to automate away large categories of human work within a few years, so workers must move into the few roles AI cannot do.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread job loss from automation",
+    "cause": "Rapidly improving AI and agents doing white-collar tasks",
+    "outcome": "Mass displacement; retrain into AI-resistant roles",
+    "clock": "Within about five years"
+   },
+   "evidence": {
+    "videos": 10,
+    "channels": 10,
+    "months": 3,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "Top 10 Jobs That AI Can’t Replace",
+     "I Renovated 2 Rentals WHILE Working 2 Jobs to Replace My $35K Salary",
+     "5 Jobs AI Will Replace in 5 Years"
+    ],
+    "ids": [
+     "-xEiBAwSbRg",
+     "9wwIZ35qJqk",
+     "IB-tstUvn7s",
+     "KTTdWGSAILU",
+     "MmTepbyIOF8",
+     "QbhTDmu5zaQ",
+     "WGyyfE48sN0",
+     "wDm9VkePYcg",
+     "wQyAWUBDo50",
+     "zIqWTl3jE0Q"
+    ]
+   }
+  },
+  {
+   "phrase": "save hours",
+   "verdict": "rhetoric",
+   "why": "Productivity-promise hook for tutorials; the hours figure is a selling point, not a shared falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-04 → 2026-06",
+    "examples": [
+     "NEW Client Intelligence System (Save 19 Hours)",
+     "OpenAI's Image API Just Changed the Game (save 10+ hours/week, n8n tutorial)",
+     "I built 5 AI Agents in 36 Minutes to save me 20+ hours of work a week"
+    ],
+    "ids": [
+     "-7tv1uuUbqE",
+     "ACkHpQQnfxQ",
+     "_qr7ogLpTJs",
+     "mgcMqkyspHQ",
+     "skU1-k7_wWE",
+     "zMy5yoA-ub8",
+     "zotIie7QQmM"
+    ]
+   }
+  },
+  {
+   "phrase": "ready what's coming",
+   "verdict": "rhetoric",
+   "why": "Pure suspense teaser with no specified event or cause.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 7,
+    "span": "2025-04 → 2026-07",
+    "examples": [
+     "are you ready for what's coming? 👀",
+     "The Stock Market Is Primed for WAR - Get Ready for What's Coming...",
+     "You're Not Ready For What's Coming Next."
+    ],
+    "ids": [
+     "ANG2WmfY3w8",
+     "I_w81rptxkc",
+     "NMrWpz9wcT4",
+     "_g4l7YkDQwA",
+     "n0HrzsglZUw",
+     "qbD2-D0HF70",
+     "wVRuzofIBiw"
+    ]
+   }
+  },
+  {
+   "phrase": "data shows",
+   "verdict": "rhetoric",
+   "why": "Authority-appeal phrasing attached to unrelated claims.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2023-02 → 2026-08",
+    "examples": [
+     "New Data Shows Early Signs of Accelerating Inflation",
+     "This Hasn't Happened to Stocks Since 1967. | Historical Data Shows Us the Truth.",
+     "70 Years of Data Shows Us This NEVER Ends Well…"
+    ],
+    "ids": [
+     "0Dgr8luV_Ss",
+     "IpzQh6F7kLk",
+     "ODkE_uczWe0",
+     "RM2fJmC70O4",
+     "RebMr4779Q0",
+     "TUGJliVjPwc",
+     "Uvq_Y7K6ysU"
+    ]
+   }
+  },
+  {
+   "phrase": "markets crashing",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that specific regional real estate markets are crashing now.",
+   "claim_name": "The \"these housing markets are crashing fast\" story",
+   "claim": "Specific regional US real estate markets (Florida, Texas, and certain states) are already crashing and buyers should avoid them.",
+   "industry": "Economy & markets",
+   "duplicate_of": "housing-crash-watch",
+   "frame": {
+    "problem": "Home prices in named metros are falling fast",
+    "cause": "Overbuilding, insurance costs and pandemic-era speculation",
+    "outcome": "Buyers should avoid these markets; further declines ahead",
+    "clock": "Now and over the coming year"
+   },
+   "evidence": {
+    "videos": 13,
+    "channels": 4,
+    "months": 11,
+    "span": "2024-11 → 2026-07",
+    "examples": [
+     "Top 12 Florida Real Estate Markets Crashing Fast! Avoid These Areas!",
+     "Top 10 States Real Estate Markets Crashing Fast! Avoid These Areas!",
+     "Top 12 Texas Real Estate Markets Crashing Fast! Avoid These Areas!"
+    ],
+    "ids": [
+     "926Fad2Xh3w",
+     "AaFILeD3xPk",
+     "Bi6_ps6YjhE",
+     "BqjpGaDSnkk",
+     "GGG-Yzxh_tA",
+     "HOO8lL85st4",
+     "HhHULu9NL-8",
+     "MFZSPnPNUm0",
+     "OeJJLuX7uz0",
+     "QACWqYLgkpY",
+     "SkoLA_wte4A",
+     "gA9YhZRZNWA",
+     "k-sOwL5RFrI"
+    ]
+   }
+  },
+  {
+   "phrase": "beats mythos",
+   "verdict": "rhetoric",
+   "why": "A recurring benchmark-hype format about new model releases, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 3,
+    "months": 3,
+    "span": "2026-05 → 2026-08",
+    "examples": [
+     "Microsoft’s New AI Beats Mythos And Shocks OpenAI",
+     "OpenAI's New GPT Cyber Beats Mythos 5",
+     "Fugu Ultra: A Model That Beats Mythos and Fable? This Can't Be True..."
+    ],
+    "ids": [
+     "0Pr5ADoQSxE",
+     "3_zj989K6fs",
+     "E17Lb3osqrw",
+     "RNCaZhLlspk",
+     "idNpTUrr3r0",
+     "yMoUwyyTe3E",
+     "zzN-wbWf6m0"
+    ]
+   }
+  },
+  {
+   "phrase": "beat inflation",
+   "verdict": "rhetoric",
+   "why": "Stock-pick listicle format; no shared falsifiable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-06 → 2026-04",
+    "examples": [
+     "Stocks That Beat Inflation | By Adam Khoo",
+     "5 Dividend Stocks That Beat Inflation",
+     "5 Dividend Stocks that BEAT Inflation"
+    ],
+    "ids": [
+     "Epk99AWQs0k",
+     "OKbsBfxlgRY",
+     "VM1XJxmG4BY",
+     "YF2CsQLoG-g",
+     "bkwUOo_DVGA",
+     "eIYVHmw2EnA"
+    ]
+   }
+  },
+  {
+   "phrase": "cause brain",
+   "verdict": "rhetoric",
+   "why": "Titles cover unrelated brain topics with no single shared causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "Alzheimer's is 'Type 3 Diabetes' (The REAL Root Cause of Brain Fog)",
+     "The Shocking Cause of Brain Fog (it’s NOT Sugar)",
+     "HAVING A CHILD CAN CAUSE YOUR BRAIN TO SHRINK?"
+    ],
+    "ids": [
+     "07tdlWrbiNI",
+     "VtzKXsvSUts",
+     "WRF8zybKvDs",
+     "YFeEa4x6Wgo"
+    ]
+   }
+  },
+  {
+   "phrase": "crash already",
+   "verdict": "duplicate",
+   "why": "Restates the perennial imminent-crash prediction already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-12 → 2026-09",
+    "examples": [
+     "Market Crash ‘Already Happened’: Trader Reveals Stocks, Bitcoin Next Moves | Lance Breitstein",
+     "Billionaire's WARNING: I'm SELLING. The Crash Is Already Here!",
+     "Billionaire WARNS: \"A 70% Crash Has Already Started''"
+    ],
+    "ids": [
+     "32u5T6lO8qk",
+     "Hp9pz3owqM0",
+     "RmEFOPzN1LY",
+     "nCPBMgAYbYc",
+     "u0yzLQkzr-M"
+    ]
+   }
+  },
+  {
+   "phrase": "financial crash",
+   "verdict": "duplicate",
+   "why": "Same imminent financial collapse prediction already covered by the collapse audit.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 5,
+    "span": "2026-02 → 2026-09",
+    "examples": [
+     "They’re Trying To Reverse Engineer The 2008 Financial Crash",
+     "The REAL Reason A Financial Crash Is Coming Next",
+     "Financial Crash Expert: A Once In a Lifetime Crisis Is Coming"
+    ],
+    "ids": [
+     "3E779xZhQxQ",
+     "5CDo8QSEv9Q",
+     "OU-nDL7lDt8",
+     "PUO51DoSEqk",
+     "j2kUtbfE3eo",
+     "jgMjEfBYwyk",
+     "l0oHnwlDB5I",
+     "oSHXPBslXGY",
+     "vytx2xqzfM8",
+     "wgakU3FZevI"
+    ]
+   }
+  },
+  {
+   "phrase": "save 000",
+   "verdict": "rhetoric",
+   "why": "How-to money format with no shared claim, and titles even span unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2023-09 → 2026-06",
+    "examples": [
+     "How To Save $10,000 Fast (Step-By-Step Guide)",
+     "How I Save 10,000 Make.com Operations/Day (Google Sheets Hack)",
+     "How To Save $10,000 ASAP"
+    ],
+    "ids": [
+     "7YOJx3D-3RQ",
+     "898WpSTxbFU",
+     "I9Be-OC7KWM",
+     "XtNQWg6EYls",
+     "uJNFhewlzRI",
+     "wKomYTHUi6Q",
+     "wNFC2RbgFVw"
+    ]
+   }
+  },
+  {
+   "phrase": "debt collapse",
+   "verdict": "duplicate",
+   "why": "Directly restates the tracked US debt collapse narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 7,
+    "span": "2023-11 → 2026-08",
+    "examples": [
+     "JP Morgan Warning About Debt Collapse",
+     "Are Canadian Banks Ready For A Massive Debt Collapse?",
+     "Trump’s Secret Crypto & Gold Plan to Survive the US Debt Collapse"
+    ],
+    "ids": [
+     "C6bSTzlLOAk",
+     "RhtC4BZqjr8",
+     "TFztHbmOyrs",
+     "ksEeIkPgBmY",
+     "oC0ywzok_Ng",
+     "pYFBf15XunU",
+     "susa99zFrsw"
+    ]
+   }
+  },
+  {
+   "phrase": "crash worse 2008",
+   "verdict": "duplicate",
+   "why": "Restates the tracked housing crash prediction narrative with a severity comparison.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 3,
+    "months": 7,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "The Housing Crash Will Be Worse Than 2008 (Real Reason)",
+     "Why The Next HOUSING CRASH Will Be WORSE Than 2008",
+     "The Real Housing Market Crash Is Here (Worse Than 2008)"
+    ],
+    "ids": [
+     "Dql6QDfMTfQ",
+     "E2GzEXJAUDo",
+     "SgvskrETw34",
+     "XpD2jyMC8Hw",
+     "_oy07_qrJD4",
+     "bPfBbOD33FQ",
+     "ncy4n-yA2sY",
+     "zY0d-RKtYaQ"
+    ]
+   }
+  },
+  {
+   "phrase": "war end",
+   "verdict": "rhetoric",
+   "why": "Titles span different wars and offer no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 5,
+    "span": "2026-02 → 2026-09",
+    "examples": [
+     "Why Trump Doesn't Need a War to End China",
+     "How The War Will End",
+     "The REAL Reason The Iran War Is About To End"
+    ],
+    "ids": [
+     "7AUvLjT9Hp8",
+     "7XzgopLWxXw",
+     "7cMLwjkFNuc",
+     "8ZIBC5e1abA",
+     "8yPQ0mLoWIY",
+     "UqlAqzf6mxc",
+     "mwYncQXbVgk",
+     "s7PYilrcpHQ"
+    ]
+   }
+  },
+  {
+   "phrase": "job market collapse",
+   "verdict": "narrative",
+   "why": "Shared checkable claim that the labor market is collapsing now amid mass layoffs.",
+   "claim_name": "The \"job market is collapsing\" story",
+   "claim": "The labor market is undergoing a historic collapse, with mass layoffs and vanishing hiring leaving workers unable to find jobs.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Workers cannot find jobs and layoffs are accelerating",
+    "cause": "Mass layoffs, automation and a hiring freeze across employers",
+    "outcome": "A prolonged employment crisis; workers urged to prepare or reskill",
+    "clock": "2025-2026"
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-04 → 2026-08",
+    "examples": [
+     "Is This The Biggest Job Market Collapse in Canadian History?",
+     "Mass Layoffs Are Getting WORSE, Job Market Collapse 2025",
+     "The Job Market Collapse IS HERE"
+    ],
+    "ids": [
+     "8q_ZARUGK4c",
+     "IdOZ-Nyb4iQ",
+     "aeEqEuZDidQ",
+     "lEWTVxR11Ps",
+     "wfYEo-weAYk"
+    ]
+   }
+  },
+  {
+   "phrase": "crisis coming",
+   "verdict": "duplicate",
+   "why": "Generic imminent-financial-collapse warnings already covered by the collapse audit.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 6,
+    "span": "2023-01 → 2026-09",
+    "examples": [
+     "The Debt Crisis Is Coming Soon",
+     "WARNING: 2nd Wave Of Banking Crisis Coming!!",
+     "Financial Crash Expert: A Once In a Lifetime Crisis Is Coming"
+    ],
+    "ids": [
+     "-SkIw1ygb7E",
+     "3PrsRmjuEE4",
+     "4Rz6UfU3dQc",
+     "OU-nDL7lDt8",
+     "XawX7XKSd6E",
+     "jEt8w7ABivE",
+     "l0oHnwlDB5I",
+     "s7u_nyMg1Xw",
+     "wuJXTD41lKM"
+    ]
+   }
+  },
+  {
+   "phrase": "investors must",
+   "verdict": "rhetoric",
+   "why": "Advice-format phrasing with no shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 7,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "Warren Buffett Explains the 7 Rules Investors Must Follow in 2023",
+     "MarketWatch’s Nvidia Stock (NVDA) Warning Investors MUST NOT Ignore!",
+     "5 HOT Stocks every investors MUST OWN‼️"
+    ],
+    "ids": [
+     "-2jQm1t9pBs",
+     "8dUdCM-hK-k",
+     "CC7kTsHDfWk",
+     "PEPrpSCZkeU",
+     "X_-50aZb51M",
+     "roGqru1eevc",
+     "yD4NxAX3S4Q"
+    ]
+   }
+  },
+  {
+   "phrase": "collapse global economy",
+   "verdict": "duplicate",
+   "why": "Another imminent-economic-collapse prediction of the kind already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 3,
+    "months": 5,
+    "span": "2021-09 → 2026-08",
+    "examples": [
+     "How Evergrande And China Could Collapse The Global Economy!!",
+     "Trump’s New Strategy Could Collapse The Global Economy",
+     "China Will COLLAPSE The Global Economy"
+    ],
+    "ids": [
+     "8IMaULrNHfo",
+     "llRVaq1lexk",
+     "mJ9Q2Xpzf1Y",
+     "mkj2YoKbzeg",
+     "nqIESCmMc-c"
+    ]
+   }
+  },
+  {
+   "phrase": "coming bitcoin ethereum",
+   "verdict": "rhetoric",
+   "why": "A subject plus hype wording; titles share no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 3,
+    "months": 9,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Matt Hougan: A Tsunami Is Coming For Bitcoin & Ethereum! Why Smart Money Is Buying",
+     "BlackRock: \"A TSUNAMI Is Coming For Bitcoin & Ethereum” Larry Fink 2025 Crypto Prediction",
+     "Crypto ETF Season is Coming! Bitcoin, Ethereum & Altcoins News #shorts"
+    ],
+    "ids": [
+     "18660T9GTUY",
+     "1Uk-o8yZ4Y0",
+     "50U3SJTbNpg",
+     "5i8VvNd-uJk",
+     "893cikwwjdw",
+     "AjuM4-WRQoE",
+     "Gys5vX-3hfg",
+     "KLmtxISXI8A",
+     "XBTHXlyMRuY",
+     "XMa4ImNquPE",
+     "dK9fW80oEng",
+     "flWpcHoofDw",
+     "hKO5jSIXKHU",
+     "iDL2i2RJtw8",
+     "ie3zMA8ffJw",
+     "kUgMPkZeH1A",
+     "x1-8ftbh8_8"
+    ]
+   }
+  },
+  {
+   "phrase": "end world",
+   "verdict": "rhetoric",
+   "why": "Catch-all doom phrasing used metaphorically across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-07 → 2026-08",
+    "examples": [
+     "End of The World | InvestED Podcast | Episode #426",
+     "Why 2025 was the end of the world as we knew it | Peter Leyden",
+     "You’re Watching the End of the World in Real Time - Eric Weinstein"
+    ],
+    "ids": [
+     "-zoCpFfOH04",
+     "FxuaBJGkeeo",
+     "I-iyGGPabpI",
+     "UhvOkUBCFyw",
+     "sLwoDhhfk3s"
+    ]
+   }
+  },
+  {
+   "phrase": "plan fix",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated topics (debt, LLMs, Panama Canal) with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-08 → 2026-07",
+    "examples": [
+     "US Debt Crisis — Trump’s New Plan to Fix It with Crypto & Gold",
+     "Ex-OpenAI CTO Reveals Plan to Fix LLMs Biggest Problem",
+     "The $1.6 billion plan to fix the Panama Canal's drought problem"
+    ],
+    "ids": [
+     "63OkQOictLo",
+     "CZeEAgE5xGA",
+     "MMhIdwoOLTo",
+     "siKfPK5jhtI",
+     "twH1Z3uIqMg"
+    ]
+   }
+  },
+  {
+   "phrase": "explains invest",
+   "verdict": "rhetoric",
+   "why": "Format/authority framing for beginner investing advice, not a checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-09 → 2026-06",
+    "examples": [
+     "Guy Spier Explains How to Invest like Warren Buffett",
+     "Millionaire Explains: How to Invest for Beginners in 2026",
+     "Ex-Banker Explains: How to Invest for Beginners in 2026"
+    ],
+    "ids": [
+     "8o-x2vX2Izk",
+     "Jd8Xv1v51vU",
+     "dpO4mv9xHw0",
+     "gMyVHBhDvz4"
+    ]
+   }
+  },
+  {
+   "phrase": "changes coming",
+   "verdict": "rhetoric",
+   "why": "Vague anticipation hook across different subjects with no specific shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 3,
+    "months": 5,
+    "span": "2023-09 → 2026-01",
+    "examples": [
+     "Retiring in 10 years just got EASIER! (Big retirement plan changes coming)",
+     "Buckle Up! Huge Changes Coming to the US Housing Market",
+     "Big Changes Coming to the Housing Market?"
+    ],
+    "ids": [
+     "ABN-nPsBr18",
+     "HziryIpDaHU",
+     "l6Gt2jD8E80",
+     "wRCwQHXJO7E",
+     "y9lNXO_Om4U"
+    ]
+   }
+  },
+  {
+   "phrase": "truth getting rich",
+   "verdict": "rhetoric",
+   "why": "Classic 'the truth about' hook with no consistent claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-01 → 2026-09",
+    "examples": [
+     "The Truth About Getting Rich (it’s not rocket 🚀 science) #shorts",
+     "The Harsh Truth About \"Getting Rich\" In Corporate America",
+     "The TRUTH About Getting Rich in 2027..."
+    ],
+    "ids": [
+     "RvahSOeRo1A",
+     "YZuVTzR9G_A",
+     "jFCBfoNGQuo",
+     "vSvvMNsi1RQ"
+    ]
+   }
+  },
+  {
+   "phrase": "bubble history",
+   "verdict": "duplicate",
+   "why": "Restates the ongoing housing-bubble-bursting claim already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 3,
+    "span": "2025-06 → 2026-07",
+    "examples": [
+     "Zillow CEO FINALLY Admits The Biggest Housing Bubble in US History Just Imploded",
+     "The Biggest Housing Bubble in THE US HISTORY IMPLODES",
+     "Redfin CEO FINALLY Admits The Biggest Housing Bubble in US History Just Imploded"
+    ],
+    "ids": [
+     "4TjyXJOaR_4",
+     "81WZ86cnEDk",
+     "8elx6iN0toQ",
+     "Dw2Vcc2CmDc",
+     "TDR084lXY1Q",
+     "_XC8leI9eCY",
+     "oR8sNKdU77c",
+     "qNPA6-0AmYw"
+    ]
+   }
+  },
+  {
+   "phrase": "market crash could",
+   "verdict": "duplicate",
+   "why": "Generic imminent-crash prediction already covered by the collapse prediction audit.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-09 → 2026-08",
+    "examples": [
+     "Canada’s Condo Market Crash Could Spark a Banking Crisis",
+     "Is The Bitcoin Winter Over? | Why a Violent Market Crash Could Already be in Motion!",
+     "The 2026 Stock Market Crash Could Make You a Millionaire (HERE’S HOW)"
+    ],
+    "ids": [
+     "7wJqckmWq2Y",
+     "GiRlrxhlnLY",
+     "LggjAPilubg",
+     "PsVc0lxWUBg",
+     "vtU0VTbZSU0",
+     "wxTyD5lPLss"
+    ]
+   }
+  },
+  {
+   "phrase": "isn't think",
+   "verdict": "rhetoric",
+   "why": "Pure contrarian curiosity hook across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-08 → 2026-07",
+    "examples": [
+     "The Cost of Living Crisis Isn't What You Think",
+     "The Average Bitcoin Holder Isn't Who You Think",
+     "Trump's Real Endgame in Iran Isn't What You Think"
+    ],
+    "ids": [
+     "BwgnWoZZ4A8",
+     "GJJclNlF8TA",
+     "Q-2f62RrS60",
+     "lOtaUxv3tZo",
+     "oTPSIPp8ieU"
+    ]
+   }
+  },
+  {
+   "phrase": "dividend stocks beat",
+   "verdict": "narrative",
+   "why": "Shares a checkable claim that dividend stocks outperform and protect against inflation.",
+   "claim_name": "The \"dividend stocks beat inflation\" story",
+   "claim": "Holding high-yield dividend stocks delivers income and returns that outpace inflation and beat the broader market or income ETFs.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Inflation and stagflation erode savings and fixed income",
+    "cause": "Cash and low-yield or covered-call products fail to keep pace with rising prices",
+    "outcome": "Buy selected dividend-paying stocks for inflation-beating income",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 3,
+    "months": 6,
+    "span": "2023-05 → 2024-11",
+    "examples": [
+     "3 Dividend Stocks To BEAT Stagflation",
+     "5 Dividend Stocks That Beat Inflation",
+     "5 Monthly Dividend Stocks that Beat the QYLD"
+    ],
+    "ids": [
+     "-XR9hqX2yHI",
+     "0FyFAu_63NM",
+     "9gNiq0uzS6w",
+     "OKbsBfxlgRY",
+     "UhT4jzoaa-w",
+     "Xd_oi5-XGJU",
+     "YF2CsQLoG-g",
+     "yQx_5q05NAU"
+    ]
+   }
+  },
+  {
+   "phrase": "replace job",
+   "verdict": "narrative",
+   "why": "Titles converge on AI displacing human jobs within a few years, a checkable claim, though one title is off-topic stock content.",
+   "claim_name": "The \"AI will replace your job\" story",
+   "claim": "AI systems will take over a large share of human jobs within a few years, leaving many workers displaced.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Human workers are being made redundant by AI",
+    "cause": "Rapid capability gains in AI tools and agents",
+    "outcome": "Mass job displacement; workers must reskill or find income elsewhere",
+    "clock": "within five years / by 2026"
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 2,
+    "span": "2026-01 → 2026-09",
+    "examples": [
+     "$1000 in 5 Stocks Will Replace Your Job",
+     "Will AI Replace Your Job? Truth in 2026 #ai   #aivideo  #aishorts  #chatgpt  #aitools  #students",
+     "AI 🤖 replace job holders within five years #artificialintelligence #security #job # #jobkiller ￼"
+    ],
+    "ids": [
+     "IoRm-nI9nyM",
+     "XckQugo8da0",
+     "_wazR9l4aSk",
+     "rlqCiXZ6wLg",
+     "sLNCKIa-LCM"
+    ]
+   }
+  },
+  {
+   "phrase": "beat every",
+   "verdict": "rhetoric",
+   "why": "A superlative performance boast spanning ETFs, Bitcoin and altcoins with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-09 → 2026-09",
+    "examples": [
+     "These ETFs beat every other stock EVERY TIME 📈💰",
+     "📈 Bitcoin Beat Every Crypto 4 Years Straight",
+     "📈 Bitcoin Is Set to Beat Every Altcoin Right Now"
+    ],
+    "ids": [
+     "BsGXOlMjtRE",
+     "C4kyCW1nLUc",
+     "D7M0MreqWko",
+     "FZl42IIgxdk",
+     "rBOfbApb-4A"
+    ]
+   }
+  },
+  {
+   "phrase": "end 2025",
+   "verdict": "rhetoric",
+   "why": "A date tag attached to unrelated financial topics rather than one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 5,
+    "span": "2024-12 → 2025-12",
+    "examples": [
+     "7 Things To Do Before The End of 2025 (Financially)",
+     "Zillow: Home Values to Decrease by the end of 2025",
+     "Ethereum: Realistic Prediction For End Of 2025 - $10k Or Crash? Latest Upgrades & Price Analysis"
+    ],
+    "ids": [
+     "1iWUGcLLqh4",
+     "DLlQuqo4i0I",
+     "DSG_hJgi8Ek",
+     "FNT6UDvz4o0",
+     "Htx6IeRQz2A",
+     "ZRcfHk3unR8",
+     "moydWGOAIqU",
+     "wRmTV2OlQyo"
+    ]
+   }
+  },
+  {
+   "phrase": "bubble finally",
+   "verdict": "duplicate",
+   "why": "Restates the recurring imminent-housing/market-crash claim already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 3,
+    "months": 3,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Is The Market Bubble Finally Imploding? | Jim Bianco",
+     "The Housing Bubble Is Finally Imploding — Hilliard Macbeth Warns What’s Coming",
+     "The Housing Bubble Is Finally Imploding — Hilliard Macbeth Warns What’s Coming"
+    ],
+    "ids": [
+     "6hEJ38sRl-E",
+     "dF0BSI0y0tc",
+     "dd52-r6BLk8",
+     "iFC9W11PI6M"
+    ]
+   }
+  },
+  {
+   "phrase": "fed must",
+   "verdict": "narrative",
+   "why": "Titles share a claim that the Fed must cut rates or act now to avert recession or systemic collapse.",
+   "claim_name": "The \"Fed must cut rates now or the system breaks\" story",
+   "claim": "The Federal Reserve is holding policy too tight for too long, and unless it cuts rates immediately the economy will fall into severe recession or financial system failure.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Tight monetary policy is strangling the economy and financial system",
+    "cause": "Fed keeping rates too high for too long",
+    "outcome": "Severe recession or systemic collapse unless the Fed cuts rates immediately",
+    "clock": "now / imminent"
+   },
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 3,
+    "span": "2022-11 → 2026-09",
+    "examples": [
+     "Elon Musk: Fed must cut rates now to avoid severe recession",
+     "Fed Must Act Now Or System Collapses: 'Never Seen Anything Like This' | Danielle DiMartino Booth",
+     "Trump Says Fed Must Cut Rates | Balance of Power"
+    ],
+    "ids": [
+     "-98MIHb0N70",
+     "B1TRKfw0tnQ",
+     "SF7-Fx6w5Io",
+     "ZHgxrjR5KgE",
+     "dpTkW9FXB2Q",
+     "qHnHgr2gyW8",
+     "tbKrMYtVll8"
+    ]
+   }
+  },
+  {
+   "phrase": "economy collapse",
+   "verdict": "duplicate",
+   "why": "Imminent US economic collapse is already tracked under the collapse audit narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-04 → 2026-07",
+    "examples": [
+     "Is the US Economy About to Collapse   [...more]",
+     "Will the US Economy Collapse? (after spoiling their relationship with everyone) | Akshat Shrivastava",
+     "Watching the American Economy Collapse in Real Time"
+    ],
+    "ids": [
+     "BXOAEDewk-A",
+     "rMMUPzLyqQw",
+     "zETRAxjEkho",
+     "zuR6Yb9Dbj4"
+    ]
+   }
+  },
+  {
+   "phrase": "going crash",
+   "verdict": "duplicate",
+   "why": "Mostly housing-crash-is-coming framing already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 3,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Crypto Isn't Going To Crash... And THESE Coins Will Explode by December",
+     "When is the Australian housing market going to crash?",
+     "Is The Housing Market Still Going to Crash in 2026?"
+    ],
+    "ids": [
+     "1zjEXg5B174",
+     "FfuIoTLOR4Y",
+     "KW_6GLt4Ym8",
+     "M0aYmOBalJs"
+    ]
+   }
+  },
+  {
+   "phrase": "people won't",
+   "verdict": "rhetoric",
+   "why": "Curiosity-gap phrasing about secrets most people ignore, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-08 → 2026-02",
+    "examples": [
+     "3 Things RICH People WON'T Tell You",
+     "99% people won't do SIP for 20 years (starting 2025) | Data Backed Analysis",
+     "Warren Buffett Is Warning You... (& Most People Won't Listen)"
+    ],
+    "ids": [
+     "31HQaDjuoqo",
+     "DZnf2QcwpT0",
+     "bThz0jiDBmo",
+     "jQ2pV7e3nOg"
+    ]
+   }
+  },
+  {
+   "phrase": "2025 stock market crash",
+   "verdict": "narrative",
+   "why": "Titles share one checkable, dated claim that equities crash in 2025, with advice implied.",
+   "claim_name": "The \"2025 stock market crash is here\" story",
+   "claim": "US stock markets are entering or already in a major crash during 2025, and investors should act now to protect or profit from it.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Stretched equity valuations and a fragile economy",
+    "cause": "Overvaluation, debt and policy shocks",
+    "outcome": "A sharp market crash that prepared investors can hedge or profit from",
+    "clock": "2025"
+   },
+   "evidence": {
+    "videos": 12,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-01 → 2025-08",
+    "examples": [
+     "How To Profit From A Potential 2025 Stock Market Crash!?",
+     "The 2025 Stock Market Crash Just Got WORSE | Do This ASAP",
+     "The 2025 Stock Market Crash Just Started"
+    ],
+    "ids": [
+     "-IifFTUB39o",
+     "5Sxh-nAYsHE",
+     "HkoOi0yxTQo",
+     "KrNDJ-l8aUw",
+     "Ta9-I2KEE0I",
+     "TsptUaOqG-o",
+     "Vq-GJeCMBBI",
+     "ZKD1EFMJzzw",
+     "d1ls5Cp3-XY",
+     "eG5Yt25mrVE",
+     "qxtoQy7E0R0",
+     "t5ssiP5gahg"
+    ]
+   }
+  }
+ ]
+}
