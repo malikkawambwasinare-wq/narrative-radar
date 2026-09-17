@@ -24,10 +24,14 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from channel_sweep import best_topic, corpus_titles, topic_vocab   # one definition of "belongs to this narrative"
+
 ROOT = Path(__file__).resolve().parent.parent
 WRITE = "--write" in sys.argv
 MIN_CHANNELS, MIN_MONTHS, MIN_VIDEOS = 3, 2, 4
-MAX_DF = 0.05          # a phrase needs one word used in 5% of titles or fewer
+MAX_DF = 0.02          # a phrase needs one word used in 2% of titles or fewer
+POOL_MIN_CHANNELS = 4  # material from the open pool has to clear a higher bar than a curated corpus
 NGRAM = (2, 4)
 
 STOP = set("""a an the and or but if then than that this these those of in on at to for from by with without
@@ -49,6 +53,7 @@ CLAIM_MARK = re.compile(r"""\b(
  should|must|why|truth|really|actually|myth|lie|scam|hoax
 )\b""", re.X | re.I)
 
+TRACKED_VOCAB = {}
 MONTH = lambda t: datetime.fromtimestamp(t / 1000, timezone.utc).strftime("%Y-%m")
 
 
@@ -106,7 +111,9 @@ def load():
 
 
 def main():
+    global TRACKED_VOCAB
     vids, wl, inds = load()
+    TRACKED_VOCAB = topic_vocab(wl, corpus_titles())
     industry_of = {t["id"]: t.get("industry", "Unsorted") for t in wl}
     tracked = {t["id"]: set(w for q in t.get("queries", []) for w in words(q)) for t in wl}
 
@@ -138,6 +145,16 @@ def main():
         top = max(h["tp"], key=h["tp"].get)
         share = h["tp"][top] / len(h["v"])
         pooled = [x for x in h["v"] if x["_topic"] == "(pool)"]
+        if top == "(pool)":
+            if len(h["ch"]) < POOL_MIN_CHANNELS:
+                continue
+            # A pool phrase often just restates something we already track. Ask the
+            # channel sweep's matcher, which knows each narrative's learned wording.
+            votes = Counter(filter(None, (best_topic(x["title"], "", TRACKED_VOCAB)[0] for x in h["v"])))
+            if votes and votes.most_common(1)[0][1] >= len(h["v"]) / 2:
+                top = votes.most_common(1)[0][0]
+                share = votes.most_common(1)[0][1] / len(h["v"])
+                pooled = []
         pw = set(ph.split())
         overlap = len(pw & tracked.get(top, set())) / max(1, len(pw))
         cands.append({
