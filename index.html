@@ -273,6 +273,44 @@
   .gtile.cand.prop .gname { font-size: 16px; font-weight: 650; }
   .gtile.cand.disc { border-style: solid; border-color: var(--hairline); background: var(--page); }
   .gtile.cand.disc .gclaim { font-style: italic; }
+  /* Today's sets: a numbered row, rebuilt daily. The rank sits behind the tile,
+     as a big outlined numeral, so the order reads at a glance. */
+  .todaywrap { margin: 30px 0 6px; }
+  .tkick { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700;
+    color: var(--muted); margin-bottom: 10px; }
+  .trow { display: flex; gap: 6px; overflow-x: auto; padding: 8px 2px 18px;
+    scroll-snap-type: x proximity; -webkit-overflow-scrolling: touch; }
+  .trow::-webkit-scrollbar { height: 6px; }
+  .trow::-webkit-scrollbar-thumb { background: var(--hairline); border-radius: 3px; }
+  .tcard { flex: 0 0 auto; display: flex; align-items: stretch; gap: 0; padding: 0; border: 0;
+    background: none; font: inherit; cursor: pointer; scroll-snap-align: start; }
+  .tcard .rank { font-size: 104px; line-height: .86; font-weight: 800; letter-spacing: -.06em;
+    color: transparent; -webkit-text-stroke: 2px var(--hairline); align-self: flex-end;
+    margin-right: -16px; padding-left: 4px; user-select: none; }
+  .tcard .poster { position: relative; width: 150px; height: 208px; border-radius: 10px; overflow: hidden;
+    display: flex; flex-direction: column; justify-content: flex-end; gap: 5px; padding: 12px 12px 13px;
+    text-align: left; color: #f6f4ef; background: #1b1b1b; box-shadow: 0 1px 4px rgba(0,0,0,.18); }
+  .tcard .poster.i1 { background: linear-gradient(165deg, #2a3f6b, #131a2c); }
+  .tcard .poster.i2 { background: linear-gradient(165deg, #6b3327, #23120e); }
+  .tcard .poster.i3 { background: linear-gradient(165deg, #1f5147, #0e1f1c); }
+  .tcard .poster.i4 { background: linear-gradient(165deg, #5a3d6b, #1d1425); }
+  .tcard .poster.i5 { background: linear-gradient(165deg, #6b5a27, #221d0e); }
+  .tcard .pk { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; font-weight: 700;
+    color: rgba(246,244,239,.72); }
+  .tcard .pn { font-size: 14px; font-weight: 650; line-height: 1.25;
+    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .tcard .pf { font-size: 11.5px; color: rgba(246,244,239,.72); font-variant-numeric: tabular-nums; }
+  .tcard:hover .poster { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.28); }
+  .tcard .poster { transition: transform .16s ease, box-shadow .16s ease; }
+  .tnote { font-size: 12.5px; color: var(--muted); }
+  #app-landing .todaywrap { position: relative; z-index: 2; max-width: 880px; margin: 40px auto 0; padding: 0 16px; }
+  #app-landing .tkick { color: rgba(235,232,225,.55); }
+  #app-landing .tnote { color: rgba(235,232,225,.45); }
+  #app-landing .tcard .rank { -webkit-text-stroke: 2px rgba(235,232,225,.3); }
+  @media (prefers-reduced-motion: reduce) { .tcard .poster { transition: none; } }
+  @media (max-width: 560px) { .tcard .rank { font-size: 74px; margin-right: -12px; }
+    .tcard .poster { width: 132px; height: 186px; } }
+
   /* The evening set: a finite, ordered playlist */
   .setform { border: 1px solid var(--border); border-radius: 12px; padding: 18px 18px 16px; background: var(--surface); }
   .setform h2 { margin: 0 0 6px; font-size: 20px; }
@@ -911,6 +949,7 @@
       <div class="browse"><a id="browse-link">The narrative field ↓</a></div>
     </div>
     <div class="result" id="lookup-result"></div>
+    <div class="todaywrap" id="today-land"></div>
     <div class="yours" id="yours"></div>
   </div>
 
@@ -937,6 +976,7 @@
 
   <div id="sets" hidden>
     <button class="backgal" id="back-sets">← All narratives</button>
+    <div class="todaywrap" id="today-sets"></div>
     <div class="setform">
       <h2>Build an evening set</h2>
       <p class="setintro">Pick a theme or two, say how long you have, and get a finite, ordered set.
@@ -3370,6 +3410,7 @@ function showLanding() {
   $("app-landing").hidden = false;
   $("app-radar").hidden = true;
   renderYours();
+  renderToday("today-land");
   $("lookup-input").focus();
   if (window.resumeSpace) window.resumeSpace();
 }
@@ -3888,6 +3929,78 @@ function renderSets(built) {
   }).join("");
 }
 
+/* ---------- Today's sets ----------
+   Five sets, ready to watch, rebuilt every day. Which narratives feature rotates
+   with the date, and each set is assembled from that day's corpus, so the row on
+   a Tuesday is not the row on a Monday. Ranked by activity in the last 30 days,
+   because that is what is actually being pushed at people right now — the one
+   place popularity belongs, and it ranks OUR shelf, not the videos inside a set. */
+const dayIndex = () => Math.floor(Date.now() / 86400000);
+const TODAY_N = 5;
+
+async function todaySets() {
+  const topics = (watchlist?.topics || []).filter(t => t.status !== "queued");
+  const rows = [];
+  for (const t of topics) {
+    const d = await loadTopicData(t.id);
+    const vids = d.videos?.videos || [];
+    if (!vids.length) continue;
+    const recent = publishedWithin(vids, 30);
+    const camps = (d.claims?.claims || []).filter(c => (c.camps || []).length >= 2).length;
+    const muts = (d.narrative?.mutations || []).length;
+    rows.push({ t, d, recent, camps, muts, videos: vids.length });
+  }
+  // Activity decides the order; the day's rotation decides who gets a turn.
+  rows.sort((a, b) => b.recent - a.recent || b.videos - a.videos);
+  const turn = dayIndex() % Math.max(1, rows.length);
+  const picked = Array.from({ length: Math.min(TODAY_N, rows.length) },
+    (_, i) => rows[(turn + i) % rows.length]);
+
+  // A different shape each day for the same narrative, but only one it can fill.
+  return picked.map((r, i) => {
+    const shapes = [r.camps ? "debate" : null, r.muts ? "origin" : null, "catchup"].filter(Boolean);
+    const type = shapes[(dayIndex() + i) % shapes.length];
+    const budget = type === "catchup" ? 30 : 60;
+    return { ...r, type, budget };
+  });
+}
+
+function todayCard(r, i, set) {
+  const shape = SET_TYPES.find(x => x[0] === r.type);
+  const mins = set ? set.cards.filter(c => !c.pop).reduce((n, c) => n + setMinutes(c.v.length), 0) : null;
+  const n = set ? set.cards.filter(c => !c.pop).length : null;
+  return `<button type="button" class="tcard" data-today="${i}" data-today-topic="${esc(r.t.id)}"
+      data-today-type="${esc(r.type)}" data-today-budget="${r.budget}">
+    <span class="rank" aria-hidden="true">${i + 1}</span>
+    <span class="poster i${(i % 5) + 1}">
+      <span class="pk">${esc(shape[1])}</span>
+      <span class="pn">${esc(shortName(r.t))}</span>
+      <span class="pf">${set ? `${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}` : "building…"}</span>
+    </span>
+  </button>`;
+}
+
+async function renderToday(hostId) {
+  const host = $(hostId);
+  if (!host || !watchlist) return;
+  const picks = await todaySets();
+  if (!picks.length) { host.innerHTML = ""; return; }
+  const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+  host.innerHTML = `<div class="tkick">Ready tonight · ${esc(stamp)}</div>
+    <div class="trow">${picks.map((r, i) => todayCard(r, i, null)).join("")}</div>
+    <div class="tnote">Built this morning from the corpus. One video per channel, nothing recycled, and it ends.</div>`;
+  todayPicks = picks;
+  // Fill in each card's real length once its set is assembled.
+  picks.forEach((r, i) => {
+    const set = r.type === "debate" ? setDebate(r.d, r.budget)
+      : r.type === "origin" ? setOrigin(r.d, r.budget) : setCatchup(r.d, r.budget);
+    if (!set) return;
+    const el = host.querySelector(`[data-today="${i}"]`);
+    if (el) el.outerHTML = todayCard(r, i, set);
+  });
+}
+let todayPicks = [];
+
 /* Worked examples. Each one builds a real set from the corpus when clicked —
    nothing here is mocked up, so the example is also the product. */
 const SET_EXAMPLES = [
@@ -3977,6 +4090,7 @@ function showSets() {
   $("detail").hidden = true;
   $("sets").hidden = false;
   renderSetForm();
+  renderToday("today-sets");
 }
 
 /* ---------- The narrative gallery: search + industry filter + tiles ---------- */
@@ -4413,6 +4527,14 @@ document.addEventListener("click", async (ev) => {
   if (stb) { SET.budget = +stb.dataset.setBudget; setSave(); renderSetForm(); return; }
   const stt = ev.target.closest("[data-set-type]");
   if (stt) { SET.type = stt.dataset.setType; setSave(); renderSetForm(); return; }
+  const tc = ev.target.closest("[data-today-topic]");
+  if (tc) {
+    Object.assign(SET, { themes: [tc.dataset.todayTopic], type: tc.dataset.todayType, budget: +tc.dataset.todayBudget });
+    setSave();
+    showSets();
+    setTimeout(() => { buildSets().then(() => $("set-out").scrollIntoView({ block: "start" })); }, 30);
+    return;
+  }
   const sex = ev.target.closest("[data-set-example]");
   if (sex) {
     const e = SET_EXAMPLES[+sex.dataset.setExample];
