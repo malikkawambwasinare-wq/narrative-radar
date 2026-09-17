@@ -488,8 +488,8 @@
     "model beats sonnet",
     "model actually",
     "open source model beats",
-    "model beats claude",
     "source model beats",
+    "model beats claude",
     "beats gpt"
    ],
    "specificity": 0.0133,
@@ -1651,34 +1651,6 @@
    "rank": 4.7
   },
   {
-   "phrase": "crash banks",
-   "videos": 8,
-   "channels": 3,
-   "months": 8,
-   "span": "2024-03 \u2192 2026-08",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "Housing Crash Here Banks Foreclosing on Low-Income Homeowners",
-    "Canadian Housing Market CRASH: Banks Taking Massive Losses as Foreclosures Soar!",
-    "Canadian Housing Market CRASH: Banks Taking Massive Losses as Foreclosures Soar!"
-   ],
-   "ids": [
-    "9wNjrV-q5fA",
-    "9yk1F9isXwI",
-    "MQ2JO5rUMKo",
-    "PFy8p0fqzgo",
-    "Pw1WQL6J_Og",
-    "VsVvV3RKoAQ",
-    "bZ8BZZVwKys",
-    "r_vhIGnwcbU"
-   ],
-   "specificity": 0.0056,
-   "rank": 4.3
-  },
-  {
    "phrase": "ready what's coming",
    "videos": 7,
    "channels": 5,
@@ -1706,7 +1678,35 @@
     "coming ready",
     "isn't ready"
    ],
-   "specificity": 0.0081,
+   "specificity": 0.008,
+   "rank": 4.4
+  },
+  {
+   "phrase": "crash banks",
+   "videos": 8,
+   "channels": 3,
+   "months": 8,
+   "span": "2024-03 \u2192 2026-08",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "Housing Crash Here Banks Foreclosing on Low-Income Homeowners",
+    "Canadian Housing Market CRASH: Banks Taking Massive Losses as Foreclosures Soar!",
+    "Canadian Housing Market CRASH: Banks Taking Massive Losses as Foreclosures Soar!"
+   ],
+   "ids": [
+    "9wNjrV-q5fA",
+    "9yk1F9isXwI",
+    "MQ2JO5rUMKo",
+    "PFy8p0fqzgo",
+    "Pw1WQL6J_Og",
+    "VsVvV3RKoAQ",
+    "bZ8BZZVwKys",
+    "r_vhIGnwcbU"
+   ],
+   "specificity": 0.0056,
    "rank": 4.3
   },
   {
@@ -1905,7 +1905,7 @@
    "also": [
     "financial collapse"
    ],
-   "specificity": 0.0067,
+   "specificity": 0.0068,
    "rank": 3.7
   },
   {
@@ -2200,8 +2200,8 @@
     "s7u_nyMg1Xw",
     "wuJXTD41lKM"
    ],
-   "specificity": 0.0133,
-   "rank": 3.2
+   "specificity": 0.0134,
+   "rank": 3.1
   },
   {
    "phrase": "sales crash",
@@ -2641,6 +2641,30 @@
     "oTPSIPp8ieU"
    ],
    "specificity": 0.0085,
+   "rank": 1.9
+  },
+  {
+   "phrase": "price crash",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2024-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.5,
+   "kind": "new candidate",
+   "examples": [
+    "Fastest Housing Price Crash Since 2008 On New Homes",
+    "Gold and Silver Price Crash Explained: Is The Precious Metals Bull Run Over?",
+    "Rick Rule Called Gold Price Crash; Reveals Shocking Move After The Storm"
+   ],
+   "ids": [
+    "Bzpsqr_D2PE",
+    "K2S_8lCbMPg",
+    "_Gaxm3KWBLs",
+    "lxkKPCkvlww"
+   ],
+   "specificity": 0.0084,
    "rank": 1.9
   },
   {
