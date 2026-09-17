@@ -8,7 +8,7 @@ name: Channel sweep
 
 on:
   schedule:
-    - cron: "0 5 * * *"        # 05:00 UTC, before the resolver. Actions cron is best-effort.
+    - cron: "0 8 * * *"        # 08:00 UTC: just after the API quota resets at 07:00 UTC (midnight Pacific).
   workflow_dispatch:
     inputs:
       days:
@@ -29,6 +29,9 @@ on:
       full:
         description: "Whole history per channel, resuming where the last run stopped"
         default: "false"
+      units:
+        description: "Stop after this many quota units (the daily allowance is 10,000)"
+        default: "8500"
 
 permissions:
   contents: write
@@ -58,36 +61,37 @@ jobs:
             --tiers=${{ inputs.tiers || 'A' }} \
             --pages=${{ inputs.pages || '10' }} \
             ${{ (inputs.full == 'true') && '--full' || ' ' }} \
+            --units=${{ inputs.units || '8500' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
       - name: Spend the day's discovery searches
-        if: ${{ inputs.write != 'false' }}
+        if: ${{ always() && inputs.write != 'false' }}
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python3 scripts/discovery_search.py --calls=${{ inputs.calls || '40' }} --days=7 --write
 
       - name: Fill in runtimes for videos that arrived without them
-        if: ${{ inputs.write != 'false' }}
+        if: ${{ always() && inputs.write != 'false' }}
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python3 scripts/fill_details.py --write --max=8000
 
       - name: Re-file the pool against every narrative
-        if: ${{ inputs.write != 'false' }}
+        if: ${{ always() && inputs.write != 'false' }}
         run: python3 scripts/refile_pool.py --write
 
       - name: Queue channels that people pasted and we do not hold
-        if: ${{ inputs.write != 'false' }}
+        if: ${{ always() && inputs.write != 'false' }}
         run: python3 scripts/paste_queue.py --write
 
       - name: Rebuild the ledger and the discovered claims
-        if: ${{ inputs.write != 'false' }}
+        if: ${{ always() && inputs.write != 'false' }}
         run: |
           python3 scripts/channel_ledger.py --write
           python3 scripts/discover_narratives.py --write
 
       - name: Commit what changed
-        if: ${{ inputs.write != 'false' }}
+        if: ${{ always() && inputs.write != 'false' }}
         run: |
           git config user.name "narrative-radar-bot"
           git config user.email "actions@github.com"

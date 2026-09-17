@@ -41,6 +41,7 @@ MAX_CHANNELS = int(arg("max", 400))
 PAGES = int(arg("pages", 10))          # 50 uploads a page; screening needs 2, backfill wants all
 FULL = "--full" in sys.argv            # walk a channel's whole history, and remember it was done
 REDO_DAYS = int(arg("redo", 30))       # a channel crawled in full this recently is skipped
+UNIT_BUDGET = int(arg("units", 8500))  # stop cleanly below the 10,000 daily allowance
 SCORE_MIN = float(arg("min-score", 6))   # tuned offline: 74% recall on filed videos, no known false positives
 TODAY = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 CUTOFF = datetime.now(timezone.utc) - timedelta(days=DAYS)
@@ -237,11 +238,20 @@ def uploads_items(playlist_id):
     return out
 
 
+class QuotaGone(Exception):
+    """The day's allowance is spent. Everything read so far still counts."""
+
+
 def hydrate(ids):
     """Duration, views and the rest, 50 at a time."""
     meta = {}
     for i in range(0, len(ids), 50):
-        r = call("videos", part="contentDetails,statistics,snippet", id=",".join(ids[i:i + 50]), maxResults=50)
+        try:
+            r = call("videos", part="contentDetails,statistics,snippet", id=",".join(ids[i:i + 50]), maxResults=50)
+        except urllib.error.HTTPError as e:
+            if e.code == 403:
+                raise QuotaGone() from e
+            raise
         for it in r.get("items", []):
             cd, st, sn = it.get("contentDetails", {}), it.get("statistics", {}), it.get("snippet", {})
             m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", cd.get("duration", "") or "")
@@ -398,12 +408,15 @@ def main():
         try:
             items = uploads_items("UU" + r["channelId"][2:])
         except urllib.error.HTTPError as e:
-            body = ""
-            try: body = e.read().decode()[:200]
-            except Exception: pass
-            if e.code == 403 and "quota" in body.lower():
-                stopped = "daily quota reached"
-                break
+            if e.code == 403:                 # quota, or this channel is closed to us
+                body = ""
+                try: body = e.read().decode()[:200]
+                except Exception: pass
+                if "quota" in body.lower() or "exceeded" in body.lower():
+                    stopped = "daily quota reached"
+                    break
+                print(f"  ! {r['channel'][:34]}: forbidden")
+                continue
             print(f"  ! {r['channel'][:34]}: HTTP {e.code}")
             continue
         except Exception as e:
@@ -411,11 +424,19 @@ def main():
             continue
         if FULL:
             state["crawled"][r["channelId"]] = datetime.now(timezone.utc).isoformat(timespec="seconds")
-        if n % 25 == 0:
+        if n % 25 == 0 or units >= UNIT_BUDGET:
             ids_now = [v["videoId"] for vs in matched.values() for v in vs if v["videoId"] not in meta_cache]
-            meta_cache.update(hydrate(ids_now) if ids_now else {})
+            try:
+                meta_cache.update(hydrate(ids_now) if ids_now else {})
+            except QuotaGone:
+                stopped = "daily quota reached while filling details"
             flush()
             print(f"  … {n}/{len(rows)} channels · {seen:,} uploads read · {units} units")
+            if stopped:
+                break
+            if units >= UNIT_BUDGET:
+                stopped = f"unit budget of {UNIT_BUDGET} reached"
+                break
         time.sleep(0.15)                      # be a polite client across hundreds of channels
         for v in items:
             seen += 1
@@ -438,7 +459,10 @@ def main():
 
     ids = [v["videoId"] for vs in matched.values() for v in vs if v["videoId"] not in meta_cache]
     if ids:
-        meta_cache.update(hydrate(ids))
+        try:
+            meta_cache.update(hydrate(ids))
+        except QuotaGone:
+            stopped = stopped or "daily quota reached while filling details"
     before = {tid: len(doc["videos"]) for tid, doc in corpora.items()}
     flush()
     total = 0
