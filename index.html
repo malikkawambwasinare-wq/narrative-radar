@@ -328,6 +328,23 @@
   #sets .chip[disabled] { opacity: .45; cursor: not-allowed; }
   #sets .chips.wide .chip { max-width: 250px; border-radius: 12px; padding: 8px 13px; }
   #sets .chip small { display: block; font-size: 11.5px; font-weight: 400; color: var(--muted); margin-top: 3px; line-height: 1.35; }
+  #set-q { width: 100%; max-width: 520px; font: inherit; font-size: 14px; padding: 9px 13px;
+    border: 1px solid var(--hairline); border-radius: 999px; background: var(--page); color: var(--ink); }
+  #set-q:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .qhits { display: flex; flex-direction: column; gap: 7px; margin: 10px 0 2px; }
+  .qhit { display: flex; flex-direction: column; gap: 2px; text-align: left; font: inherit; cursor: pointer;
+    border: 1px solid var(--hairline); border-radius: 12px; padding: 10px 13px; background: var(--page); color: var(--ink); }
+  .qhit:hover { border-color: var(--accent); }
+  .qhit[aria-pressed="true"] { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+  .qhit.off { cursor: default; border-style: dashed; }
+  .qhit.off:hover { border-color: var(--hairline); }
+  .qhit .qn { font-size: 14.5px; font-weight: 650; line-height: 1.3; }
+  .qhit .qm { font-size: 12.5px; color: var(--ink-2); }
+  .qhit .qe { font-size: 12.5px; color: var(--ink-2); font-style: italic;
+    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+  .qhit .qt { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-top: 3px; }
+  .qempty { font-size: 13px; color: var(--muted); line-height: 1.5; max-width: 60ch; margin: 10px 0 2px; }
+
   .setopt { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; color: var(--ink-2); padding-top: 7px; line-height: 1.45; }
   /* Worked examples: one click builds a real set from the corpus */
   .exwrap { padding: 4px 0 12px; }
@@ -987,7 +1004,13 @@
         <div class="exgrid" id="set-examples"></div>
       </div>
       <div class="setrow"><div class="setlbl">Themes<small>up to 2</small></div>
-        <div><div class="chips" id="set-themes"></div><div class="pgrid" id="set-preview"></div></div></div>
+        <div>
+          <input id="set-q" type="search" autocomplete="off" placeholder="Type a word — inflation, bitcoin, seed oils, layoffs…"
+            aria-label="Find themes by word">
+          <div class="qhits" id="set-qhits"></div>
+          <div class="chips" id="set-themes"></div>
+          <div class="pgrid" id="set-preview"></div>
+        </div></div>
       <div class="setrow"><div class="setlbl">Time</div><div class="chips" id="set-budget"></div></div>
       <div class="setrow"><div class="setlbl">Shape</div><div class="chips wide" id="set-type"></div></div>
       <div class="setrow"><div class="setlbl">Contrast</div>
@@ -3929,6 +3952,83 @@ function renderSets(built) {
   }).join("");
 }
 
+/* ---------- Find a theme by word ----------
+   A person arrives with a word, not a narrative id: "inflation", "seed oils",
+   "layoffs". This searches what each theme actually contains — every collected
+   title — and answers with the themes that carry that word and how much of
+   each does. Proposed narratives and candidates are searched too, and say
+   plainly that they have no corpus yet, so a word can return "we see this
+   forming" rather than nothing. */
+let themeIdx = null;
+
+async function buildThemeIndex() {
+  if (themeIdx) return themeIdx;
+  const idx = [];
+  for (const t of (watchlist?.topics || []).filter(x => x.status !== "queued")) {
+    const d = await loadTopicData(t.id);
+    const vids = d.videos?.videos || [];
+    idx.push({
+      t, tracked: true, videos: vids.length,
+      titles: vids.map(v => v.title || ""),
+      hay: [t.name, d.narrative?.name, d.narrative?.claim, ...(t.queries || [])].filter(Boolean).join(" ").toLowerCase(),
+    });
+  }
+  themeIdx = idx;
+  return idx;
+}
+
+function searchThemes(q) {
+  const needle = q.trim().toLowerCase();
+  if (needle.length < 2) return [];
+  const out = [];
+  for (const row of themeIdx || []) {
+    let hits = 0, example = "";
+    for (const ti of row.titles) {
+      if (ti.toLowerCase().includes(needle)) { hits++; if (!example) example = ti; }
+    }
+    const named = row.hay.includes(needle);
+    if (hits || named) out.push({ kind: "tracked", t: row.t, hits, videos: row.videos, example, named });
+  }
+  for (const p of proposed || []) {
+    if (![p.claim_name, p.claim, p.phrase].filter(Boolean).join(" ").toLowerCase().includes(needle)) continue;
+    out.push({ kind: "proposed", name: p.claim_name, claim: p.claim, industry: p.industry, ev: p.evidence || {} });
+  }
+  for (const c of discovered || []) {
+    if (!discSearchText(c).includes(needle)) continue;
+    out.push({ kind: "forming", name: `“${c.phrase}”`, claim: c.examples?.[0] || "", industry: c.industry,
+      ev: { channels: c.channels, months: c.months, videos: c.videos } });
+  }
+  return out.sort((a, b) => (b.hits || 0) - (a.hits || 0) ||
+    (a.kind === "tracked" ? -1 : 1) - (b.kind === "tracked" ? -1 : 1)).slice(0, 8);
+}
+
+function renderThemeHits(q) {
+  const host = $("set-qhits");
+  if (!host) return;
+  if (q.trim().length < 2) { host.innerHTML = ""; return; }
+  const rows = searchThemes(q);
+  if (!rows.length) {
+    host.innerHTML = `<div class="qempty">Nothing on “${esc(q.trim())}” yet. The engine only answers for what it has
+      collected, and that word has not turned up across enough channels to form a theme.</div>`;
+    return;
+  }
+  host.innerHTML = rows.map(r => r.kind === "tracked"
+    ? `<button type="button" class="qhit" data-set-theme="${esc(r.t.id)}"
+         aria-pressed="${SET.themes.includes(r.t.id)}">
+        <span class="qn">${esc(shortName(r.t))}</span>
+        <span class="qm">${r.hits ? `${r.hits} of ${r.videos} collected videos say “${esc(q.trim())}”` :
+          `no title says it, but the theme is about it`}</span>
+        ${r.example ? `<span class="qe">${esc(r.example)}</span>` : ""}
+        <span class="qt">tracked · pick it for a set</span>
+      </button>`
+    : `<div class="qhit off">
+        <span class="qn">${esc(r.name)}</span>
+        <span class="qm">${esc((r.claim || "").slice(0, 120))}</span>
+        <span class="qt">${r.kind === "proposed" ? "proposed by the engine" : "forming in the corpus"} ·
+          ${r.ev.channels || 0} channels · ${r.ev.months || 0} months · no corpus of its own yet</span>
+      </div>`).join("");
+}
+
 /* ---------- Today's sets ----------
    Five sets, ready to watch, rebuilt every day. Which narratives feature rotates
    with the date, and each set is assembled from that day's corpus, so the row on
@@ -4081,6 +4181,7 @@ function renderSetForm() {
     : SET.themes.length === 2 ? `Two themes, about ${Math.round(SET.budget / 2)} minutes each.` : "";
   renderSetExamples();
   renderSetPreview();
+  renderThemeHits($("set-q")?.value || "");
 }
 
 function showSets() {
@@ -4091,6 +4192,7 @@ function showSets() {
   $("sets").hidden = false;
   renderSetForm();
   renderToday("today-sets");
+  buildThemeIndex();
 }
 
 /* ---------- The narrative gallery: search + industry filter + tiles ---------- */
@@ -4663,6 +4765,12 @@ document.addEventListener("keydown", (e) => { if (e.key === "Escape") $("overlay
 $("gal-search").addEventListener("input", renderGallery);
 $("gal-industry").addEventListener("change", renderGallery);
 $("set-popular").addEventListener("change", (e) => { SET.popular = e.target.checked; setSave(); });
+let themeQT = null;
+$("set-q").addEventListener("input", (e) => {
+  const q = e.target.value;
+  clearTimeout(themeQT);
+  themeQT = setTimeout(async () => { await buildThemeIndex(); renderThemeHits(q); }, 160);
+});
 $("back-gallery").addEventListener("click", () => { showNotice(""); showGallery(); });
 
 $("lookup-form").addEventListener("submit", (e) => {
