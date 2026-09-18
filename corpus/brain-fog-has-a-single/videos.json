@@ -8726,6 +8726,31 @@
         "comments": 1,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "e953lDEQH84",
+      "title": "How I Reversed My Insulin Resistance And Shrinked My Waist #shorts",
+      "channel": "Fast Like A Babe",
+      "url": "https://www.youtube.com/watch?v=e953lDEQH84",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "views": 0,
+      "length": "1:12",
+      "age_days": 0,
+      "query": "channel sweep: Fast Like A Babe",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCp0zR_5Sr8tgePzG6wQ9wyw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-18"
+      }
     }
   ]
 }

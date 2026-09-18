@@ -140232,6 +140232,74 @@
         "comments": null,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "5VmGBaFBJWo",
+      "title": "Warren Buffett steps down as chairman of Berkshire Hathaway",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=5VmGBaFBJWo",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "views": 55,
+      "length": "1:24",
+      "age_days": 0,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 3,
+        "comments": 1,
+        "enrichedOn": "2026-09-18"
+      }
+    },
+    {
+      "videoId": "dyrDarbpLRA",
+      "title": "The Man Who Saw Chakras - Charles Leadbetter And The Map Of The Invisible Body",
+      "channel": "Brian Scott",
+      "url": "https://www.youtube.com/watch?v=dyrDarbpLRA",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-18",
+      "views": 0,
+      "length": "0:00",
+      "age_days": 2,
+      "query": "channel sweep: Brian Scott",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCOgXHr5S3oF0qetPfqxJfSw",
+        "language": "en",
+        "captions": false,
+        "live": true,
+        "likes": 27,
+        "comments": 4,
+        "enrichedOn": "2026-09-18"
+      }
+    },
+    {
+      "videoId": "sFvhKC43jI8",
+      "title": "How BYD Beat Tesla After Elon Musk Laughed at It in 2011",
+      "channel": "The Greed Files",
+      "url": "https://www.youtube.com/watch?v=sFvhKC43jI8",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (industry seed)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnjVxmvODvCUasobHLh3dsg"
+      }
     }
   ],
   "updated": "2026-09-18"

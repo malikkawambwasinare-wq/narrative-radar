@@ -342450,6 +342450,31 @@
         "comments": null,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "QHR_i8p6Q0s",
+      "title": "Philadelphia Real Estate Is SLOWING — Is a Housing Crash Next? 🏠📉",
+      "channel": "MAK Mortgage Solutions",
+      "url": "https://www.youtube.com/watch?v=QHR_i8p6Q0s",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-18",
+      "views": 46,
+      "length": "1:23",
+      "age_days": 1,
+      "query": "channel sweep: MAK Mortgage Solutions",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCY1vT4Jc6ZBuVooXqrGKf0A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-18"
+      }
     }
   ],
   "updated": "2026-09-18"

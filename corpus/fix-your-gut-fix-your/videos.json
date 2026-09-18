@@ -4926,6 +4926,56 @@
         "comments": null,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "BqZ2lSmaMKo",
+      "title": "3 F to improve gut health",
+      "channel": "Karan Kakkad",
+      "url": "https://www.youtube.com/watch?v=BqZ2lSmaMKo",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "views": 164,
+      "length": "1:35",
+      "age_days": 0,
+      "query": "channel sweep: Karan Kakkad",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCEm7GOYabdB1WskmOFY4yIg",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-09-18"
+      }
+    },
+    {
+      "videoId": "ZPt5AeFRezI",
+      "title": "Estrobolome: Gut Health's Direct Link to Estrogen #shorts",
+      "channel": "Timeless Beauty Journal",
+      "url": "https://www.youtube.com/watch?v=ZPt5AeFRezI",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-18",
+      "views": 41,
+      "length": "0:53",
+      "age_days": 5,
+      "query": "channel sweep: Timeless Beauty Journal",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC39QMkqZZQLsSkWjNNALiBQ",
+        "language": "en-AU",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-18"
+      }
     }
   ]
 }

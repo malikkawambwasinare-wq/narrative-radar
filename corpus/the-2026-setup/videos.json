@@ -408029,6 +408029,81 @@
         "comments": null,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "-Nw8Qryt1H0",
+      "title": "Arrest made in fatal North York shooting | CP24 Live at Five for Sept. 17, 2026",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=-Nw8Qryt1H0",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "views": 8001,
+      "length": "44:41",
+      "age_days": 0,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 2,
+        "enrichedOn": "2026-09-18"
+      }
+    },
+    {
+      "videoId": "v9IEncunRhM",
+      "title": "Bombshell allegations released in 'Project South' case | CTV News Toronto at Six for Sept. 17, 2026",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=v9IEncunRhM",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-18",
+      "views": 8500,
+      "length": "46:16",
+      "age_days": 1,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 4,
+        "enrichedOn": "2026-09-18"
+      }
+    },
+    {
+      "videoId": "1DbbqzsRAKo",
+      "title": "Global National: Sept. 17, 2026 | Carney embraces EU associate membership proposal for Canada",
+      "channel": "Global News",
+      "url": "https://www.youtube.com/watch?v=1DbbqzsRAKo",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "views": 444017,
+      "length": "22:20",
+      "age_days": 0,
+      "query": "channel sweep: Global News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChLtXXpo4Ge1ReTEboVvTDg",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 623,
+        "comments": 675,
+        "enrichedOn": "2026-09-18"
+      }
     }
   ],
   "updated": "2026-09-18"
