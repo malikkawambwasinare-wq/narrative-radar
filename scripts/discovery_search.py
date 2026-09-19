@@ -38,7 +38,9 @@ CALLS = int(arg("calls", 40))
 DAYS = int(arg("days", 7))
 TODAY = datetime.now(timezone.utc)
 DAY_INDEX = int(TODAY.strftime("%j"))
-POOL_CAP = 20000
+POOL_CAP = 200000      # same ceiling the channel sweep uses. When this was 20,000 a
+                       # crawl wrote 122,857 pooled videos and the next step silently
+                       # threw 100,000 of them away.
 
 
 def search(q, after):

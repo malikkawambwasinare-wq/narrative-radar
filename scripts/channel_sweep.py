@@ -363,6 +363,8 @@ def main():
     ind_of_channel = {r.get("channelId"): (r.get("narratives") or [None])[0] for r in ledger}
     ind_of_topic = {t["id"]: t.get("industry", "Unsorted") for t in wl}
 
+    filed = set()
+
     def flush():
         """Write what has been matched so far. A long crawl can hit the daily
         quota wall at any point, and everything read up to then must survive."""
@@ -379,6 +381,7 @@ def main():
                 m = meta_cache.get(v["videoId"], {})
                 add.append(entry(v, m))
                 have.add(v["videoId"])
+                filed.add(v["videoId"])
             if add:
                 doc["videos"].extend(add)
                 doc["updated"] = TODAY
@@ -463,11 +466,14 @@ def main():
             meta_cache.update(hydrate(ids))
         except QuotaGone:
             stopped = stopped or "daily quota reached while filling details"
-    before = {tid: len(doc["videos"]) for tid, doc in corpora.items()}
     flush()
+    # Count what was filed across the whole run, not since the last flush —
+    # the incremental writes meant the summary always said "+0 new videos".
     total = 0
-    for tid, doc in sorted(corpora.items()):
-        added = len(doc["videos"]) - before[tid]
+    for tid, vs in sorted(matched.items()):
+        if not vs:
+            continue
+        added = sum(1 for v in vs if v["videoId"] in filed)
         if added:
             print(f"  {tid:28s} +{added}")
             total += added
