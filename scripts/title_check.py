@@ -12,16 +12,24 @@ rewriting.
 
 It also enforces the shape rules, which are easy to state and easy to forget:
 
-  ≤ 60 characters · no em dash · no fear word beside an urgency word · not
-  shouty · no colon followed by a coy question · a number in the title must
-  exist in the corpus · a year in the title must be one the corpus knows.
+  ≤ 60 characters · no em dash · never a question · no fear word beside an
+  urgency word · not shouty · at most two figures · every number must still
+  exist in the corpus · every year must be one the corpus knows.
+
+Why no question, ever: a question in a name implants the proposition at
+d ≈ 0.43–0.50 against d ≈ 0.66–0.72 for a flat assertion (Letourneau &
+Gawronski 2024, preregistered replication of Wegner 1981, N = 506), it raises
+endorsement a week later (Clifford & Sullivan 2023), and readers trust the
+format least. Where a name must carry uncertainty, name the competing
+explanation instead — the one format measured not to spread the claim.
 
 Shapes, in order of preference (briefs/narratives/SYSTEM.md §3):
   tally  — a count that lands            "Nearly 1 in 3 Videos Sells Something"
   clock  — a date that moved, or passed  "7 Collapse Deadlines Have Passed"
   split  — how the sides divide          "43 Channels Say Your Gut Explains Everything"
   scale  — the sheer volume being pushed "1,541 Videos, 155 Channels"
-  question — only where nothing is provable yet
+  contest — the competing explanation, where nothing is provable yet
+           "Canada's Condo Crash: Banking Crisis or Contained Slump"
 """
 import json, re, sys
 from collections import Counter
@@ -84,8 +92,14 @@ def main():
             bad.append("a fear word beside an urgency word — the pattern we flag on other people's videos")
         if len([w for w in re.findall(r"[A-Za-z]{3,}", title) if w.isupper()]) >= 3:
             bad.append("shouty")
-        if re.search(r":.*\?$", title):
-            bad.append("colon then a question: the formula that says nothing")
+        if title.rstrip().endswith("?"):
+            bad.append("a question in the name plants the claim at ~70% of the strength of asserting it "
+                       "(Letourneau & Gawronski 2024, preregistered, N=506) — state the finding, or name "
+                       "the competing explanation instead")
+        figs = [n for n in re.findall(r"\b\d[\d,]{0,6}\b", title) if not (1900 < int(n.replace(",", "")) < 2100)]
+        if len(figs) > 2:
+            bad.append(f"{len(figs)} figures: decorative precision reads as incompetence (Loschelder 2016) "
+                       "and a wrong number anchors even after retraction (Stubenvoll & Matthes 2021)")
         if not t.get("title_basis"):
             bad.append("no title_basis recorded, so the claim in the title cannot be checked")
 

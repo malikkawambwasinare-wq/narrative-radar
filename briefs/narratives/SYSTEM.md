@@ -51,7 +51,32 @@ A candidate becomes a narrative only if **all** of the following hold:
 | 4 | Checkability | It can be judged against evidence (health, science) or a clock (markets, politics) | Otherwise it can never be graded |
 | 5 | Not a twin | It is not the same core claim and outcome as an existing narrative | Engine duplicate guard |
 
-**Mutation vs new narrative.** A change of **mechanism** with the same outcome is a mutation, i.e. a new season. Example: the collapse is now caused by AI capex instead of debt. A change of **outcome** is a new narrative.
+### One narrative, or two? The slot test
+
+Write each side as one sentence **before** comparing them: *[AGENT] is doing [MECHANISM] to
+[TARGET], producing [OUTCOME] by [CLOCK]*. Then check the slots in this order and stop at the
+first difference.
+
+| Slot differs | Verdict |
+|---|---|
+| Outcome | Two narratives |
+| Agent, or the blame shifts between accident and intent | Two narratives |
+| Mechanism only | One narrative, a mutation — a new season |
+| Target only | One narrative, unless the target change moves the outcome |
+
+**Why the agent counts.** People merge stories by role, not by wording. In Bower, Black and Turner
+(1979), readers confused "the nurse checked John's blood pressure" with "the dental hygienist
+x-rayed Bill's teeth" — sentences sharing no words — because the characters fill the same script
+slot. Surface dissimilarity does not stop the merge, so a matcher comparing wording is measuring
+the wrong thing. Under this rule "the Fed is killing the dollar" and "BRICS is killing the dollar"
+are two narratives, which our earlier mechanism-only rule wrongly fused.
+
+**The abstraction guard.** If two claims can only be merged by climbing to "elites are hiding
+something", they are two. The outcome must stay specific enough to be wrong.
+
+**Make it mechanical, not philosophical.** Asking annotators the abstract question "could one
+fact-check serve both?" was tried and found unhelpful; replacing it with a concrete judgement
+raised agreement to 0.64–0.91 (Kazemi et al. 2021).
 
 ---
 
@@ -78,54 +103,66 @@ For every narrative, the page shows a "grip profile": which of these ingredients
 
 ## 3. The naming system
 
-Every narrative has three names, each with a different job.
+Grounded in three briefs: [naming psychology](04-naming-psychology.md), [naming across
+fields](05-naming-across-fields.md), [narrative as a belief system](06-narrative-as-belief-system.md).
 
-| Layer | Job | Rule | Example |
-|---|---|---|---|
-| **ID** | Stable address | Neutral topic slug; never changes | `housing-crash-watch` |
-| **Claim name** (card heading) | Say what the story claims without adding belief | **Attribute it; never assert it.** A name is itself one more repetition, so a bare "Seed Oils Are Poison" adds fluency to the claim. It passes if a believer would call it a fair statement of what they believe | *The "housing crash is coming next year" story* |
-| **Hook title** (tile) | Earn the click honestly | See the rules below | *Housing Crash: A New Deadline Every Year Since 2021* |
+**Why this matters more than it looks.** Allport and Postman measured what survives as a story
+travels: details level out, but the label does not — "when a scene is set, the label conferred
+upon the incident tends to remain unchanged." The name outlives the page, the corpus and the
+evidence. It is the most durable thing we publish.
 
-### The hook title system
+### Four layers, because six fields independently arrived at the same architecture
 
-One line. One finding. No formula.
+Library cataloguing, folklore indexing, rumour research, fact-checking, disease naming and
+extremism research all converge on: a stable meaningless identifier, one authorised name, a
+register of variant wordings, and a dated note for every change.
 
-A hook is the single strongest thing this corpus can prove, written so a person
-can act on it. It takes one of four shapes, in order of preference. The shape is
-recorded on the narrative, so the next rewrite starts from the same footing.
+| Layer | Job | Rule |
+|---|---|---|
+| **ID** | A stable address | Never changes, even when every name does. Links must not rot. |
+| **Claim name** | What believers claim | Attributed, never asserted. A believer must accept it as fair. |
+| **Hook** | What we found | The strongest thing the corpus proves, in one line. |
+| **Variants** | Every other wording seen in the wild | Searchable, never displayed as the name. Records that two phrasings are one narrative. |
+
+The fields disagree on exactly one point: cataloguing says use the group's own words, amplification
+research says never use the aggressor's insider language. Both resolve the same way, and this is
+how the Library of Congress settled "Illegal aliens": the believers' phrasing lives in the variant
+register where search can find it, and the authorised name describes the claim neutrally.
+
+### The hook: one line, one finding, five shapes
 
 | Shape | What it states | Example |
 |---|---|---|
 | **tally** | A count that lands | Nearly 1 in 3 Anti-Inflammatory Videos Sells Something |
 | **clock** | A date that moved, or one that passed | 7 Collapse Deadlines Have Passed. None Landed. |
-| **split** | How the sides divide | 43 Channels Say Your Gut Explains Everything |
-| **scale** | The sheer volume being pushed | AI Agents Write the Code: 1,541 Videos, 155 Channels |
-| *question* | Only where the corpus can prove nothing yet | Will Canada's Condo Crash Break the Banks? |
+| **split** | How the sides divide | 64 Channels Say Your Gut Explains Everything |
+| **scale** | The volume being pushed | AI Agents Write the Code: 1,541 Videos, 155 Channels |
+| **contest** | The competing explanation, where nothing is provable yet | Canada's Condo Crash: Banking Crisis or Contained Slump |
 
-**The rules, all machine-checked by `scripts/title_check.py`:**
+**Never a question.** This replaces the rule written on 18 September, which allowed a question as
+the fallback. A question in a name implants the proposition at d ≈ 0.43–0.50, against d ≈ 0.66–0.72
+for flatly asserting it (Letourneau & Gawronski 2024, preregistered replication of Wegner 1981,
+N = 506). It raises endorsement a week later (Clifford & Sullivan 2023), and readers rate the
+format least credible. It spreads the claim at roughly seventy per cent of assertion strength with
+none of the accountability. Where uncertainty must be carried, the **contest** shape names the
+competing explanation, which is the one format measured not to spread the claim.
 
-1. 60 characters or fewer.
-2. No em dash, and no descriptive tail after one. A title is a line, not a line with a label.
-3. No colon followed by a coy question. "Is It Always Next Year?" asks the reader something and tells them nothing.
-4. No fear word beside an urgency word, and never shouty. We flag exactly that on other people's videos.
-5. Keep the words a person would search for.
-6. Every number in the title must still exist in the corpus, within 15%. A title built on a count goes stale when the count moves, so the numbers are re-derived on every run and drift is reported.
-7. `title_basis` records the figures behind the title, so the claim in it can be checked by anyone.
-8. Never cast believers as fools, and never make Narrative Radar the hero.
+### The rules, machine-checked by `scripts/title_check.py`
 
-**Why a finding rather than a question.** A question costs the reader effort and
-returns nothing; a finding is the product doing its job in one line. The question
-shape exists only for a narrative too young to show anything, and it is asked
-plainly rather than archly.
+1. 60 characters or fewer. Google's claim-review standard independently caps claim text at 75 for the same reason.
+2. Never a question.
+3. No em dash, and no descriptive tail after one.
+4. No fear word beside an urgency word, and never shouty. Disease-naming standards ban fear words outright; we allow the claim's own subject noun, because a narrative about a crash cannot be named without the word, but we never add fear the narrative does not carry.
+5. At most two figures, each audited. Numbers raise credibility, but decorative precision reads as incompetence to expert readers (Loschelder 2016) and a wrong figure anchors judgement even after retraction (Stubenvoll & Matthes 2021). Two is a deliberate deviation from the brief's "at most one": a moved deadline needs both numbers to show the move.
+6. Every number still exists in the corpus within 15%, re-derived on every run. `title_basis` records the figures.
+7. Name the claim, never the believer. No "truthers", no "crowd", no pejorative category word — and note that calling something a conspiracy theory does not reduce belief in it anyway (Wood 2016; Douglas et al. 2022), because readers apply that label themselves.
+8. Descriptive, never contemptuous. Freedom-threatening language raises anger and counter-arguing and cuts persuasion (Li & Shi 2026, 33 samples).
+9. Keep a name stable. Rewrite only when its basis drifts materially, and record the former name with the date.
 
-**Current claim names that assert instead of attribute — fix these:**
-- "Inflammation Is the Root of All Disease"
-- "The Coming US Debt Collapse"
-- "The CIA Proved Remote Viewing Works"
-- "Open-Source AI Has Caught Up"
-- "Now Is the Generational Buying Opportunity"
-
----
+**What we do not claim.** Nobody has tested a short public name for a recurring claim. Every rule
+above is transferred from headlines, tags and warning labels. The attributed form we use for claim
+names is untested, and two ideas that once justified it — familiarity backfire and the concreteness
+effect — both failed replication. The rules stand on the strongest adjacent evidence, not on proof.
 
 ## 4. The verdict standard, v2: two axes, one answer each
 

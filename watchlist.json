@@ -234,7 +234,7 @@
   },
   {
    "id": "condo-crash-will-break-canadas",
-   "name": "Will Canada's Condo Crash Break the Banks?",
+   "name": "11 Channels Say Canada's Condos Will Break the Banks",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-09-17",
@@ -248,16 +248,17 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. Canada's condo market is collapsing after years of risky lending and speculative presale building, and the resulting defaults threaten the country's banking system.",
-   "title_basis": "123 videos from 11 channels; too few to state a pattern, so the claim is asked as a question.",
+   "title_basis": "123 videos from 11 channels claiming a Canadian condo-price collapse takes the banks with it. Previously asked as a question; a question in a name plants the claim (Letourneau & Gawronski 2024, preregistered, N=506, d≈0.43–0.50).",
    "filters": "v2",
    "former_names": [
-    "Condo Crash: Can It Really Break Canada's Banks?"
+    "Condo Crash: Can It Really Break Canada's Banks?",
+    "Will Canada's Condo Crash Break the Banks?"
    ],
-   "title_shape": "question"
+   "title_shape": "split"
   },
   {
    "id": "fix-your-gut-fix-your",
-   "name": "43 Channels Say Your Gut Explains Everything",
+   "name": "64 Channels Say Your Gut Explains Everything",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-17",
@@ -271,16 +272,17 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. Poor gut microbiome health is the underlying driver of chronic disease and inflammation, so repairing the gut resolves broad health problems.",
-   "title_basis": "199 videos from 43 channels claiming gut health is the underlying driver of chronic disease.",
+   "title_basis": "331 videos from 64 channels claiming gut health is the underlying driver of chronic disease.",
    "filters": "v2",
    "former_names": [
-    "Fix Your Gut: Does It Really Fix Everything?"
+    "Fix Your Gut: Does It Really Fix Everything?",
+    "43 Channels Say Your Gut Explains Everything"
    ],
    "title_shape": "split"
   },
   {
    "id": "truth-about-ozempic-they-arent",
-   "name": "54 Channels Say You're Not Told About Ozempic",
+   "name": "73 Channels Say You're Not Told About Ozempic",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-17",
@@ -294,16 +296,17 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. GLP-1 weight-loss drugs like Ozempic carry serious downplayed side effects and risks that patients are not properly warned about.",
-   "title_basis": "194 videos from 54 channels claiming GLP-1 side effects are downplayed.",
+   "title_basis": "322 videos from 73 channels claiming GLP-1 side effects are downplayed.",
    "filters": "v2",
    "former_names": [
-    "Ozempic Side Effects: What Are They Not Telling?"
+    "Ozempic Side Effects: What Are They Not Telling?",
+    "54 Channels Say You're Not Told About Ozempic"
    ],
    "title_shape": "split"
   },
   {
    "id": "the-gold-and-silver-crash",
-   "name": "After the Gold Crash, 41 Channels Say It's the Start",
+   "name": "After the Gold Crash, 45 Channels Say It's the Start",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-09-17",
@@ -317,16 +320,17 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. A sharp drop in gold and silver prices is not an ordinary correction but evidence of stress in the monetary/paper-metals system, and it is the beginning of a larger move to come.",
-   "title_basis": "220 videos from 41 channels reading the metals selloff as the beginning of something systemic.",
+   "title_basis": "227 videos from 45 channels reading the metals selloff as the start of something systemic.",
    "filters": "v2",
    "former_names": [
-    "Gold and Silver Crash: Correction or System Stress?"
+    "Gold and Silver Crash: Correction or System Stress?",
+    "After the Gold Crash, 41 Channels Say It's the Start"
    ],
    "title_shape": "split"
   },
   {
    "id": "brain-fog-has-a-single",
-   "name": "47 Channels, One Root Cause for Brain Fog",
+   "name": "65 Channels, One Root Cause for Brain Fog",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-17",
@@ -340,10 +344,11 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. Brain fog and cognitive decline are caused by an identifiable metabolic or dietary root cause (e.g. insulin resistance, 'type 3 diabetes'), and correcting it restores mental clarity.",
-   "title_basis": "350 videos from 47 channels claiming brain fog has a single metabolic or dietary cause.",
+   "title_basis": "513 videos from 65 channels claiming brain fog has a single metabolic or dietary cause.",
    "filters": "v2",
    "former_names": [
-    "Brain Fog: Is There One Root Cause to Fix?"
+    "Brain Fog: Is There One Root Cause to Fix?",
+    "47 Channels, One Root Cause for Brain Fog"
    ],
    "title_shape": "split"
   }
