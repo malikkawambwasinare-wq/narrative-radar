@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -8751,6 +8751,70 @@
         "comments": null,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "sS6orlnWvag",
+      "title": "Brain Fog, Memory Loss, Chronic Fatigue? It Might Be Mold Toxicity",
+      "channel": "MYAutoimmuneMD",
+      "url": "https://www.youtube.com/watch?v=sS6orlnWvag",
+      "published": "2026-03-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": 198,
+      "query": "channel sweep: MYAutoimmuneMD",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {}
+    },
+    {
+      "videoId": "kV0hGak5kI0",
+      "title": "Mattel introduces first Barbie with Type 1 diabetes",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=kV0hGak5kI0",
+      "published": "2025-07-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": 436,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {}
+    },
+    {
+      "videoId": "BDvl849r30w",
+      "title": "Mattel launches Barbie with Type I diabetes and a glucose monitor",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=BDvl849r30w",
+      "published": "2025-07-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": 437,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {}
+    },
+    {
+      "videoId": "LumxTRIRQDM",
+      "title": "Alcohol &Midlife: Uncorking the Truth About Hormones, Brain Fog & Belly Fat | Living Simpler Podcast",
+      "channel": "Amy Mewborn",
+      "url": "https://www.youtube.com/watch?v=LumxTRIRQDM",
+      "published": "2025-10-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": 347,
+      "query": "channel sweep: Amy Mewborn",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {}
     }
   ]
 }
