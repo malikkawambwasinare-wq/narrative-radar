@@ -66,6 +66,12 @@ jobs:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python3 scripts/fill_details.py --write --max=6000 || true
 
+      - name: Keep the numbers in the titles true
+        if: always()
+        run: |
+          python3 scripts/title_refresh.py --write || true
+          python3 scripts/title_check.py || true
+
       - name: Rebuild the ledger and the candidates
         if: always()
         run: |
@@ -78,7 +84,7 @@ jobs:
         run: |
           git config user.name "narrative-radar-bot"
           git config user.email "actions@github.com"
-          git add corpus crawl-state.json discovery-pool.json channels.json discovered.json
+          git add corpus crawl-state.json discovery-pool.json channels.json discovered.json watchlist.json
           if git diff --cached --quiet; then echo "nothing read"; exit 0; fi
           git commit -m "Full crawl $(date -u +%F): $(tail -n 1 crawl.log) [skip netlify]"
           for i in 1 2 3; do

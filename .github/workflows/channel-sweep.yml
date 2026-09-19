@@ -88,6 +88,12 @@ jobs:
         if: ${{ always() && inputs.write != 'false' }}
         run: python3 scripts/paste_queue.py --write
 
+      - name: Keep the numbers in the titles true
+        if: always()
+        run: |
+          python3 scripts/title_refresh.py --write || true
+          python3 scripts/title_check.py || true
+
       - name: Rebuild the ledger and the discovered claims
         if: ${{ always() && inputs.write != 'false' }}
         run: |
@@ -116,7 +122,7 @@ jobs:
           git config user.name "narrative-radar-bot"
           git config user.email "actions@github.com"
           SUMMARY=$(tail -n 1 sweep.log)
-          git add corpus channels.json discovered.json channel-candidates.json discovery-pool.json crawl-state.json
+          git add corpus channels.json discovered.json channel-candidates.json discovery-pool.json crawl-state.json watchlist.json
           if git diff --cached --quiet; then
             echo "nothing new today"
             exit 0
