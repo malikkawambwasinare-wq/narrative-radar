@@ -989,7 +989,7 @@
       <input id="gal-search" type="search" placeholder="Search narratives — claim, predictor, keyword…"
         autocomplete="off" aria-label="Search narratives">
       <select id="gal-industry" aria-label="Filter by industry"></select>
-      <button class="chip" type="button" id="gal-set">Build an evening set</button>
+      <button class="chip" type="button" id="gal-set">Build a set</button>
     </div>
     <div class="galcount" id="gal-count"></div>
     <div class="galnow" id="gal-now"></div>
@@ -4818,7 +4818,8 @@ window.addEventListener("popstate", () => {
     watchlist = await getJSON("watchlist.json");
     try { industries = (await getJSON("industries.json")).industries || []; } catch (e) { industries = []; }
     try { discovered = (await getJSON("discovered.json")).candidates || []; } catch (e) { discovered = []; }
-    try { proposed = ((await getJSON("narratives-proposed.json")).proposals || []).filter(p => p.verdict === "narrative"); } catch (e) { proposed = []; }
+    try { proposed = ((await getJSON("narratives-proposed.json")).proposals || [])
+      .filter(p => p.verdict === "narrative" && !p.promoted); } catch (e) { proposed = []; }
     loadLandingStats();
     renderPasteRate();
     try { briefsIndex = await getJSON("briefs/index.json"); } catch (e) { briefsIndex = []; }

@@ -31,6 +31,7 @@ const LIMIT = +arg("limit", 200);
 const BATCH = +arg("batch", 8);
 const MODEL = arg("model", "claude-opus-5");
 const PRICE = { in: 5 / 1e6, out: 25 / 1e6 };      // claude-opus-5, US$ per token
+const TODAY = new Date().toISOString().slice(0, 10);
 
 const read = (f, dflt) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, f), "utf8")); } catch { return dflt; } };
 
@@ -93,8 +94,20 @@ async function main() {
     console.error("naming pass: no ANTHROPIC_API_KEY set; nothing read.");
     process.exit(2);
   }
-  const cands = (read("discovered.json", { candidates: [] }).candidates || [])
-    .filter((c) => c.kind !== "sub-claim").slice(0, LIMIT);
+  // The record accumulates. Overwriting it each run threw away every earlier
+  // decision — 24 named narratives and their promotion flags vanished the next
+  // morning — and paid to re-read the same rhetoric again.
+  const prior = read("narratives-proposed.json", { proposals: [] }).proposals || [];
+  const decided = new Map(prior.map((p) => [p.phrase, p]));
+  const REDO = process.argv.includes("--redo");
+  const all = (read("discovered.json", { candidates: [] }).candidates || [])
+    .filter((c) => c.kind !== "sub-claim");
+  const cands = (REDO ? all : all.filter((c) => !decided.has(c.phrase))).slice(0, LIMIT);
+  if (!cands.length) {
+    console.log(`naming pass: nothing new to read · ${decided.size} clusters already decided`);
+    return;
+  }
+  console.log(`  ${all.length - cands.length} clusters already decided, skipping them`);
   if (!cands.length) { console.log("naming pass: no candidates to read"); return; }
 
   const shelves = (read("industries.json", { industries: [] }).industries || []).map((i) => i.name);
@@ -208,8 +221,16 @@ async function main() {
   if (WRITE) {
     fs.writeFileSync(path.join(ROOT, "narratives-proposed.json"), JSON.stringify({
       generated: new Date().toISOString().slice(0, 10), model: MODEL,
-      note: "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track.",
-      cost_usd: +cost.toFixed(4), proposals: out,
+      note: "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
+      cost_usd: +cost.toFixed(4),
+      proposals: (() => {
+        const merged = new Map(prior.map((p) => [p.phrase, p]));
+        for (const d of out) {
+          const was = merged.get(d.phrase);
+          merged.set(d.phrase, { ...d, promoted: was?.promoted || d.promoted, first_read: was?.first_read || TODAY, last_read: TODAY });
+        }
+        return [...merged.values()];
+      })(),
     }, null, 1) + "\n");
     console.log(`  wrote narratives-proposed.json`);
   }
