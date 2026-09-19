@@ -86,15 +86,37 @@ Every narrative has three names, each with a different job.
 | **Claim name** (card heading) | Say what the story claims without adding belief | **Attribute it; never assert it.** A name is itself one more repetition, so a bare "Seed Oils Are Poison" adds fluency to the claim. It passes if a believer would call it a fair statement of what they believe | *The "housing crash is coming next year" story* |
 | **Hook title** (tile) | Earn the click honestly | See the rules below | *Housing Crash: A New Deadline Every Year Since 2021* |
 
-**Hook title rules**
-1. It keeps the narrative's search terms.
-2. **It leads with the finding, not a question.** The specific thing this corpus shows, with its number or its year: "Nearly 1 in 3 Videos Is Selling Something", "A New Deadline Every Year Since 2021". A question is the fallback when the data supports no finding yet. A coy question reads as a sneer and says nothing, which is the failure mode to avoid. Headlines perform best at intermediate concreteness (Aubin Le Quéré & Matias 2025).
-3. It states a pattern only when our data establishes it; otherwise it asks a question.
-4. It passes our own title-bait lexicon.
-5. It adds no villain, out-group or moral-emotional words the narrative doesn't use.
-6. It never casts believers as fools, and never makes Narrative Radar the hero.
+### The hook title system
 
-**Formula:** *[the claim in its believers' words] + [the tension our data can show]*
+One line. One finding. No formula.
+
+A hook is the single strongest thing this corpus can prove, written so a person
+can act on it. It takes one of four shapes, in order of preference. The shape is
+recorded on the narrative, so the next rewrite starts from the same footing.
+
+| Shape | What it states | Example |
+|---|---|---|
+| **tally** | A count that lands | Nearly 1 in 3 Anti-Inflammatory Videos Sells Something |
+| **clock** | A date that moved, or one that passed | 7 Collapse Deadlines Have Passed. None Landed. |
+| **split** | How the sides divide | 43 Channels Say Your Gut Explains Everything |
+| **scale** | The sheer volume being pushed | AI Agents Write the Code: 1,541 Videos, 155 Channels |
+| *question* | Only where the corpus can prove nothing yet | Will Canada's Condo Crash Break the Banks? |
+
+**The rules, all machine-checked by `scripts/title_check.py`:**
+
+1. 60 characters or fewer.
+2. No em dash, and no descriptive tail after one. A title is a line, not a line with a label.
+3. No colon followed by a coy question. "Is It Always Next Year?" asks the reader something and tells them nothing.
+4. No fear word beside an urgency word, and never shouty. We flag exactly that on other people's videos.
+5. Keep the words a person would search for.
+6. Every number in the title must still exist in the corpus, within 15%. A title built on a count goes stale when the count moves, so the numbers are re-derived on every run and drift is reported.
+7. `title_basis` records the figures behind the title, so the claim in it can be checked by anyone.
+8. Never cast believers as fools, and never make Narrative Radar the hero.
+
+**Why a finding rather than a question.** A question costs the reader effort and
+returns nothing; a finding is the product doing its job in one line. The question
+shape exists only for a narrative too young to show anything, and it is asked
+plainly rather than archly.
 
 **Current claim names that assert instead of attribute — fix these:**
 - "Inflammation Is the Root of All Disease"

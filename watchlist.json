@@ -2,7 +2,7 @@
  "topics": [
   {
    "id": "collapse-audit",
-   "name": "The US Debt Collapse That's Been \"Imminent\" Since 2015 — economic & AI doom predictions",
+   "name": "7 Collapse Deadlines Have Passed. None Landed.",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-07-30",
@@ -22,13 +22,15 @@
    "notes": "Goal: audit trail of predictions. Every forecast logged with predictor, date made, horizon, and living status: PENDING / SUPPORTED / REFUTED / UPDATED. Track goalpost-moves explicitly.",
    "former_names": [
     "Collapse Audit — economic & AI doom predictions",
-    "US Debt Collapse — economic & AI doom predictions"
+    "US Debt Collapse — economic & AI doom predictions",
+    "The US Debt Collapse That's Been \"Imminent\" Since 2015 — economic & AI doom predictions"
    ],
-   "title_basis": "Prediction ledger: earliest dated collapse call March 2015; 0 of 5 resolved calls landed."
+   "title_basis": "Ledger of 12 dated calls: 2 refuted, 3 ambiguous, 2 moved, 5 still pending. None supported.",
+   "title_shape": "clock"
   },
   {
    "id": "loop-engineering",
-   "name": "Do AI Agents Really Write All the Code Now? — agentic engineering loops",
+   "name": "AI Agents Write the Code: 1,541 Videos, 155 Channels",
    "industry": "AI & technology",
    "status": "queued",
    "started": null,
@@ -42,14 +44,16 @@
    "notes": "Developers no longer write software line by line — they run AI coding agents in loops that plan, write, test and fix code on their own. Queued: a calibration topic whose wave was mapped by hand.",
    "former_names": [
     "Loops / agentic engineering / agent workflows",
-    "AI Agents Write the Code — agentic engineering loops"
+    "AI Agents Write the Code — agentic engineering loops",
+    "Do AI Agents Really Write All the Code Now? — agentic engineering loops"
    ],
    "internal_note": "Calibration topic — ground truth already mapped by hand (Anthropic blog + Cherny/Steinberger tweets -> ~15 videos -> counter-wave). Use to verify the originality engine reconstructs a known wave.",
-   "title_basis": "Open question."
+   "title_basis": "1,541 videos from 155 channels, the earliest from 2017, on agents writing production code.",
+   "title_shape": "scale"
   },
   {
    "id": "crypto-winter-watch",
-   "name": "Crypto Winter: Is the 4-Year Cycle Finally Dead? — Crypto Winter Watch",
+   "name": "14 Crypto Deadlines on the Clock, Every One Pending",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-08-07",
@@ -65,13 +69,15 @@
    "watched_predictors": [],
    "notes": "Created by the analysis engine. Crypto is either heading into another prolonged bear-market 'winter' or has outgrown the cycle thanks to institutional adoption, ETFs and regulatory clarity. Insiders argue this time the downturn won't repeat.",
    "former_names": [
-    "Crypto Winter Watch"
+    "Crypto Winter Watch",
+    "Crypto Winter: Is the 4-Year Cycle Finally Dead? — Crypto Winter Watch"
    ],
-   "title_basis": "Open question; both camps' dated calls resolve on the ledger."
+   "title_basis": "All 14 dated calls in this ledger are still pending; none has resolved either way.",
+   "title_shape": "clock"
   },
   {
    "id": "the-2026-setup",
-   "name": "Generational Buying Opportunity: It Was 2025, Now It's 2026",
+   "name": "982 Videos Say 2026 Is the Year to Buy. 454 Said 2025.",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-08-07",
@@ -89,13 +95,15 @@
    "former_names": [
     "The 2026 Setup",
     "Generational Buying Opportunity — now is the time to buy",
-    "\"Generational Buying Opportunity\": Pitched Every Year? — now is the time to buy"
+    "\"Generational Buying Opportunity\": Pitched Every Year? — now is the time to buy",
+    "Generational Buying Opportunity: It Was 2025, Now It's 2026"
    ],
-   "title_basis": "512 titles name 2026 as the year to buy; 114 named 2025 and 259 name a year that has already passed. 289 channels, 3,144 videos."
+   "title_basis": "Titles naming the year to buy: 470 named 2023, 584 named 2024, 454 named 2025, 982 name 2026.",
+   "title_shape": "tally"
   },
   {
    "id": "housing-crash-watch",
-   "name": "Housing Crash: A New Deadline Every Year Since 2021",
+   "name": "566 Videos Called the 2023 Crash. 482 Call 2026.",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-08-08",
@@ -112,13 +120,15 @@
    "notes": "Created by the analysis engine. US home prices are unsustainably high and a major correction or crash is imminent, driven by unaffordability, rising inventory, and mortgage-rate shock. The predicted crash date keeps sliding forward.",
    "former_names": [
     "Housing Crash Watch",
-    "Housing Crash: Is It Always Next Year? — Housing Crash Watch"
+    "Housing Crash: Is It Always Next Year? — Housing Crash Watch",
+    "Housing Crash: A New Deadline Every Year Since 2021"
    ],
-   "title_basis": "Titles naming each year as the crash year: 6 named 2021, 44 named 2022, 58 named 2023, 80 named 2024, 144 named 2025, 317 name 2026. 333 name a year that has already passed."
+   "title_basis": "Titles naming each year as the crash year: 368 named 2022, 566 named 2023, 566 named 2024, 513 named 2025, 482 name 2026.",
+   "title_shape": "tally"
   },
   {
    "id": "psi-declassified",
-   "name": "The CIA's Psychic Spies: Did Remote Viewing Work? — the Stargate programme",
+   "name": "Stargate Closed in 1995. 183 Channels Still Argue It.",
    "industry": "Fringe & unexplained",
    "status": "active",
    "started": "2026-08-09",
@@ -135,13 +145,15 @@
    "notes": "Created by the analysis engine. Declassified government programs (CIA/DIA 'Stargate') supposedly proved remote viewing and psychic perception are real, trainable skills that mainstream science suppresses or ignores.",
    "former_names": [
     "Psi, Declassified",
-    "Psychic Spies — the CIA's remote viewing programme"
+    "Psychic Spies — the CIA's remote viewing programme",
+    "The CIA's Psychic Spies: Did Remote Viewing Work? — the Stargate programme"
    ],
-   "title_basis": "Open question; US government psychic-intelligence research ran 1972–1995 (CIA-funded SRI work, then Army/DIA)."
+   "title_basis": "The CIA's remote viewing programme was declassified in 1995; 183 channels and 1,300 videos still contest the result.",
+   "title_shape": "clock"
   },
   {
    "id": "open-vs-closed-ai-race",
-   "name": "Can Free Open-Source AI Beat ChatGPT and Claude? — open vs closed models",
+   "name": "Every Open Model Release Restarts the Same Debate",
    "industry": "AI & technology",
    "status": "active",
    "started": "2026-08-13",
@@ -158,13 +170,15 @@
    "notes": "Created by the analysis engine. Chinese/open-source models (DeepSeek, Qwen, Kimi) are closing or erasing the gap with closed frontier labs (OpenAI, Anthropic, Google), making paid frontier subscriptions unnecessary. Each new release restarts the 'gap is dead' debate.",
    "former_names": [
     "Open Weights vs Closed Frontier",
-    "Open-Source AI vs the Big Labs — has the gap closed?"
+    "Open-Source AI vs the Big Labs — has the gap closed?",
+    "Can Free Open-Source AI Beat ChatGPT and Claude? — open vs closed models"
    ],
-   "title_basis": "Open question; each new open-model release restarts the debate."
+   "title_basis": "2,424 videos from 270 channels since 2023; each frontier release renews the same 'the gap is dead' argument.",
+   "title_shape": "clock"
   },
   {
    "id": "anti-inflammatory-diet",
-   "name": "Anti-Inflammatory Diet: Nearly 1 in 3 Videos Is Selling Something — inflammation as the root of all disease",
+   "name": "Nearly 1 in 3 Anti-Inflammatory Videos Sells Something",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-14",
@@ -189,13 +203,15 @@
     "inflammation-is-the-root-of-all-disease"
    ],
    "former_names": [
-    "Anti-Inflammatory Diet — inflammation as the root of all disease"
+    "Anti-Inflammatory Diet — inflammation as the root of all disease",
+    "Anti-Inflammatory Diet: Nearly 1 in 3 Videos Is Selling Something — inflammation as the root of all disease"
    ],
-   "title_basis": "Transcript review, 2026-09-15: 22 of 77 videos read promote their own product (29%)."
+   "title_basis": "22 of 105 graded videos carry a product pitch: a book, a supplement or a programme.",
+   "title_shape": "tally"
   },
   {
    "id": "great-economic-reset-is-coming",
-   "name": "The Great Reset: Always Coming, Never Here?",
+   "name": "The Great Reset Has Been Coming Since 2020",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-09-17",
@@ -209,12 +225,16 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. A once-in-a-lifetime reset of the monetary and financial system is imminent, wiping out savings and asset values in a shock worse than 2008.",
-   "title_basis": "Nine videos over years all promise an imminent once-in-a-lifetime reset without a dated arrival, so the hook asks about the recurring deadline.",
-   "filters": "v2"
+   "title_basis": "195 videos from 41 channels, the claim dated to 2020 and still stated as imminent.",
+   "filters": "v2",
+   "former_names": [
+    "The Great Reset: Always Coming, Never Here?"
+   ],
+   "title_shape": "clock"
   },
   {
    "id": "condo-crash-will-break-canadas",
-   "name": "Condo Crash: Can It Really Break Canada's Banks?",
+   "name": "Will Canada's Condo Crash Break the Banks?",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-09-17",
@@ -228,12 +248,16 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. Canada's condo market is collapsing after years of risky lending and speculative presale building, and the resulting defaults threaten the country's banking system.",
-   "title_basis": "Evidence shows a live price and presale downturn plus lending allegations, but the banking-crisis step is the contested claim, so it stays a question.",
-   "filters": "v2"
+   "title_basis": "123 videos from 11 channels; too few to state a pattern, so the claim is asked as a question.",
+   "filters": "v2",
+   "former_names": [
+    "Condo Crash: Can It Really Break Canada's Banks?"
+   ],
+   "title_shape": "question"
   },
   {
    "id": "fix-your-gut-fix-your",
-   "name": "Fix Your Gut: Does It Really Fix Everything?",
+   "name": "43 Channels Say Your Gut Explains Everything",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-17",
@@ -247,12 +271,16 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. Poor gut microbiome health is the underlying driver of chronic disease and inflammation, so repairing the gut resolves broad health problems.",
-   "title_basis": "Fifteen videos claim gut repair resolves broad chronic disease, a single-cause framing the hook questions rather than asserts.",
-   "filters": "v2"
+   "title_basis": "199 videos from 43 channels claiming gut health is the underlying driver of chronic disease.",
+   "filters": "v2",
+   "former_names": [
+    "Fix Your Gut: Does It Really Fix Everything?"
+   ],
+   "title_shape": "split"
   },
   {
    "id": "truth-about-ozempic-they-arent",
-   "name": "Ozempic Side Effects: What Are They Not Telling?",
+   "name": "54 Channels Say You're Not Told About Ozempic",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-17",
@@ -266,12 +294,16 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. GLP-1 weight-loss drugs like Ozempic carry serious downplayed side effects and risks that patients are not properly warned about.",
-   "title_basis": "The videos share one move, promising withheld truth about GLP-1 harms, so the hook frames the disclosure question without endorsing it.",
-   "filters": "v2"
+   "title_basis": "194 videos from 54 channels claiming GLP-1 side effects are downplayed.",
+   "filters": "v2",
+   "former_names": [
+    "Ozempic Side Effects: What Are They Not Telling?"
+   ],
+   "title_shape": "split"
   },
   {
    "id": "the-gold-and-silver-crash",
-   "name": "Gold and Silver Crash: Correction or System Stress?",
+   "name": "After the Gold Crash, 41 Channels Say It's the Start",
    "industry": "Economy & markets",
    "status": "active",
    "started": "2026-09-17",
@@ -285,12 +317,16 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. A sharp drop in gold and silver prices is not an ordinary correction but evidence of stress in the monetary/paper-metals system, and it is the beginning of a larger move to come.",
-   "title_basis": "Seven videos reinterpret the 2026 metals selloff as systemic evidence rather than a normal drawdown, the exact dispute the hook names.",
-   "filters": "v2"
+   "title_basis": "220 videos from 41 channels reading the metals selloff as the beginning of something systemic.",
+   "filters": "v2",
+   "former_names": [
+    "Gold and Silver Crash: Correction or System Stress?"
+   ],
+   "title_shape": "split"
   },
   {
    "id": "brain-fog-has-a-single",
-   "name": "Brain Fog: Is There One Root Cause to Fix?",
+   "name": "47 Channels, One Root Cause for Brain Fog",
    "industry": "Health & biotech",
    "status": "active",
    "started": "2026-09-17",
@@ -304,8 +340,12 @@
    ],
    "watched_predictors": [],
    "notes": "Promoted from a discovered proposal on 2026-09-17. Brain fog and cognitive decline are caused by an identifiable metabolic or dietary root cause (e.g. insulin resistance, 'type 3 diabetes'), and correcting it restores mental clarity.",
-   "title_basis": "Six videos each name a different single cause, from insulin resistance to type 3 diabetes, so the singular root cause is posed as a question.",
-   "filters": "v2"
+   "title_basis": "350 videos from 47 channels claiming brain fog has a single metabolic or dietary cause.",
+   "filters": "v2",
+   "former_names": [
+    "Brain Fog: Is There One Root Cause to Fix?"
+   ],
+   "title_shape": "split"
   }
  ]
 }
