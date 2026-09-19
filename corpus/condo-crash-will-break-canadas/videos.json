@@ -3076,6 +3076,56 @@
         "comments": 82,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "nWXLElktQoU",
+      "title": "16-year-old shot dead inside downtown Toronto condo, firearm recovered from lake",
+      "channel": "Global News",
+      "url": "https://www.youtube.com/watch?v=nWXLElktQoU",
+      "published": "2025-03-24",
+      "first_seen": "2026-09-19",
+      "views": 17890,
+      "length": "1:47",
+      "age_days": 544,
+      "query": "channel sweep: Global News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChLtXXpo4Ge1ReTEboVvTDg",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 133,
+        "comments": 112,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "CR_7wgZYsBc",
+      "title": "Canadian banks poised for 0.25% interest rate hike: lot of pain yet to come, economist says",
+      "channel": "Global News",
+      "url": "https://www.youtube.com/watch?v=CR_7wgZYsBc",
+      "published": "2023-07-08",
+      "first_seen": "2026-09-19",
+      "views": 124055,
+      "length": "4:23",
+      "age_days": 1169,
+      "query": "channel sweep: Global News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChLtXXpo4Ge1ReTEboVvTDg",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 191,
+        "comments": 209,
+        "enrichedOn": "2026-09-19"
+      }
     }
   ]
 }

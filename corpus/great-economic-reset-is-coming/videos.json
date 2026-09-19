@@ -4876,6 +4876,81 @@
         "comments": 31,
         "enrichedOn": "2026-09-18"
       }
+    },
+    {
+      "videoId": "InNWXDPVit0",
+      "title": "NYC buried in snow after \"once in a lifetime storm\" brings whiteout conditions",
+      "channel": "Global News",
+      "url": "https://www.youtube.com/watch?v=InNWXDPVit0",
+      "published": "2026-02-23",
+      "first_seen": "2026-09-19",
+      "views": 43836,
+      "length": "3:14",
+      "age_days": 208,
+      "query": "channel sweep: Global News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChLtXXpo4Ge1ReTEboVvTDg",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 221,
+        "comments": 57,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "4rhwXe5EoDg",
+      "title": "They Are Selling EVERYTHING | Worse Than 2008",
+      "channel": "Snyder Reports",
+      "url": "https://www.youtube.com/watch?v=4rhwXe5EoDg",
+      "published": "2024-07-27",
+      "first_seen": "2026-09-19",
+      "views": 10090,
+      "length": "10:43",
+      "age_days": 784,
+      "query": "channel sweep: Snyder Reports",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCGSS2mBuqH5MGDLP0Q5C7Kw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1207,
+        "comments": 128,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "RvaWmZUgnnM",
+      "title": "Is Biden’s $5.8 Trillion Tax Plan The GREAT RESET...",
+      "channel": "Snyder Reports",
+      "url": "https://www.youtube.com/watch?v=RvaWmZUgnnM",
+      "published": "2022-04-10",
+      "first_seen": "2026-09-19",
+      "views": 7986,
+      "length": "9:54",
+      "age_days": 1623,
+      "query": "channel sweep: Snyder Reports",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCGSS2mBuqH5MGDLP0Q5C7Kw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 763,
+        "comments": 152,
+        "enrichedOn": "2026-09-19"
+      }
     }
   ]
 }
