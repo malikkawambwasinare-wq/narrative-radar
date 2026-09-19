@@ -58,6 +58,53 @@ one audience is not one in another.
   evaluatively, and it is hard to apply consistently. If we code it, we need a narrow
   operational definition and an agreement check, not the concept as written.
 
+## Story vs discourse: the events, and the telling of them
+
+Narratology has split exactly the thing Malik split — the events (*fabula*, story) from
+the telling (*sjuzhet*, discourse). Genette *Narrative Discourse* (1980) p. 27: story is
+"the signified or narrative content", narrative is "the signifier, statement, discourse or
+narrative text itself", narrating is "the producing narrative action". Chatman (1978) p. 19:
+"the story is the *what* in a narrative that is depicted, discourse the *how*."
+
+Two corrections to the versions that circulate online, both checked against the books:
+
+- The famous media-independence passage ("the subject of a story may serve as argument for
+  a ballet…") is **Bremond 1964**, block-quoted on Chatman's p. 20 — not Chatman's own words.
+  Chatman's sentence is the inference after it: "This transposability of the story is the
+  strongest reason for arguing that narratives are indeed structures independent of any medium."
+- "Shklovsky coined fabula/sjuzhet" is everywhere and has no scholarly source behind it. The
+  systematic statement is Tomashevsky, "Thematics" (1925).
+
+**The part that matters for us.** Culler (1981) names the invariant as an invariant and then
+pulls it out: the analyst almost never has two tellings of the same events to compare, so
+"the analyst is not presented with contrasting narratives of the same sequence of actions;
+the analyst is confronted with a single narrative and must postulate what 'actually happens'."
+He calls the distinction a heuristic fiction.
+
+**We are the rare case where that objection does not apply.** A tracked narrative is n tellings
+of one event set, gathered. Housing-crash-watch is 15,288 tellings of the same housing market.
+The contrast Culler says narratology lacks is the thing our corpus is made of.
+
+Even the defenders have moved to the reader's side. Shen (2005) defends the split — you cannot
+define unreliable narration without a version to be unreliable about — but concedes it holds
+"on a subjective level", for a reader trying to work out what really happened. Herman replaces
+fabula with the **storyworld**: "mental models of who did what to and with whom", built from
+cues and revised mid-reading. Ryan defines story as "a mental image".
+
+**One direct experiment exists.** Ohtsuka & Brewer, *Discourse Processes* 15.3 (1992) 317–336:
+100 listeners, one event set, five discourse orders, 20 true/false items on the underlying
+order (chance 10, max 20). Canonical 17.7 · backward 14.9 · flashback 14.7 · embedded 13.6 ·
+**flashforward 10.3 — chance**. Recovery of the events from the telling is real, graded, and in
+one arrangement no better than guessing. Caveat the authors flag: with the text still in front
+of them the gap narrows (19.1 → 15.2), so part of it is memory load, not reconstruction failure.
+
+So the honest headline is neither "the events are the invariant" nor "there is no invariant":
+**the invariant is a reconstruction, its success is discourse-dependent, and it is measurable.**
+That is our product in one line.
+
+No study appears to exist that runs the same test across *media* — prose vs film vs video.
+That gap is ours to fill.
+
 ## Open, not yet researched
 
 Whether our unit should be the claim, the telling, or both; the neural evidence that two
