@@ -32,6 +32,9 @@ on:
       units:
         description: "Stop after this many quota units (the daily allowance is 10,000)"
         default: "8500"
+      max_channels:
+        description: "How many channels this run may read (tier B is thousands)"
+        default: "400"
 
 permissions:
   contents: write
@@ -62,6 +65,7 @@ jobs:
             --pages=${{ inputs.pages || '10' }} \
             ${{ (inputs.full == 'true') && '--full' || ' ' }} \
             --units=${{ inputs.units || '8500' }} \
+            --max=${{ inputs.max_channels || '400' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
       - name: Spend the day's discovery searches
