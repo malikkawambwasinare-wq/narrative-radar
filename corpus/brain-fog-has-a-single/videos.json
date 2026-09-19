@@ -12801,6 +12801,31 @@
         "comments": 1,
         "enrichedOn": "2026-09-19"
       }
+    },
+    {
+      "videoId": "Rjw6TXPeuoY",
+      "title": "Type 2 Diabetes? 🥦 Add these smart, balanced foods to your daily plate! 💚",
+      "channel": "HOME REMEDIES BY DOC NAINA",
+      "url": "https://www.youtube.com/watch?v=Rjw6TXPeuoY",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": 480,
+      "length": "0:05",
+      "age_days": 1,
+      "query": "channel sweep: HOME REMEDIES BY DOC NAINA",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCaxSWHGwsm48N4WePJe8IjA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": null,
+        "enrichedOn": "2026-09-19"
+      }
     }
   ]
 }

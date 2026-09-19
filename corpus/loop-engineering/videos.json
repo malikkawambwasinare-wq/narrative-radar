@@ -44409,6 +44409,106 @@
         "comments": 65,
         "enrichedOn": "2026-09-19"
       }
+    },
+    {
+      "videoId": "b7BDrfe-Yu8",
+      "title": "NEW Claude Agent OS is MIND BLOWING!",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=b7BDrfe-Yu8",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": 415,
+      "length": "8:16",
+      "age_days": 0,
+      "query": "channel sweep: Julian Goldie SEO",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": 1,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "u1dW4z5Ye90",
+      "title": "Claude Code 3.0 (New Mods Feature): Anthropic has SILENTLY dropped their BIGGEST NEW Feature!",
+      "channel": "AICodeKing",
+      "url": "https://www.youtube.com/watch?v=u1dW4z5Ye90",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": 1156,
+      "length": "7:10",
+      "age_days": 0,
+      "query": "channel sweep: AICodeKing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC0m81bQuthaQZmFbXEY9QSw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 35,
+        "comments": 1,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "Ow_z94c3wKk",
+      "title": "This New Design Tool Just Fixed Claude Code's Design Problem",
+      "channel": "AI LABS",
+      "url": "https://www.youtube.com/watch?v=Ow_z94c3wKk",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": 19453,
+      "length": "12:35",
+      "age_days": 1,
+      "query": "channel sweep: AI LABS",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCelfWQr9sXVMTvBzviPGlFw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 480,
+        "comments": 11,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "DFEF1mFDacU",
+      "title": "You Can Learn Personal Agent Harness (GrokBot vs Meta Muse AI) System Design | Waku Memory, Compute",
+      "channel": "Sean‘s AI Stories",
+      "url": "https://www.youtube.com/watch?v=DFEF1mFDacU",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": 5871,
+      "length": "27:19",
+      "age_days": 1,
+      "query": "channel sweep: Sean‘s AI Stories",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCx-OfB7xsTN_GnoplitHfXg",
+        "language": "en-US",
+        "captions": true,
+        "live": false,
+        "likes": 65,
+        "comments": 17,
+        "enrichedOn": "2026-09-19"
+      }
     }
   ],
   "updated": "2026-09-19"

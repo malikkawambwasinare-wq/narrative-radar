@@ -36589,6 +36589,56 @@
         "comments": 67,
         "enrichedOn": "2026-09-19"
       }
+    },
+    {
+      "videoId": "9eE6hd8TYmI",
+      "title": "Shawn Ryan is Going to Need a Bigger Gun Room 😂",
+      "channel": "Shawn Ryan Show",
+      "url": "https://www.youtube.com/watch?v=9eE6hd8TYmI",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": 39369,
+      "length": "0:34",
+      "age_days": 0,
+      "query": "channel sweep: Shawn Ryan Show",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCkoujZQZatbqy4KGcgjpVxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1896,
+        "comments": 49,
+        "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "i7hmyky5g7M",
+      "title": "\"A Sentinel From The Matrix\" — Remote Viewers WARN Waymo's Robotaxi Isn't What You Think",
+      "channel": "Future Forecasters",
+      "url": "https://www.youtube.com/watch?v=i7hmyky5g7M",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": 12554,
+      "length": "8:10",
+      "age_days": 1,
+      "query": "channel sweep: Future Forecasters",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCKSW19p8dMre9UxLWwCYK5w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 497,
+        "comments": 70,
+        "enrichedOn": "2026-09-19"
+      }
     }
   ],
   "updated": "2026-09-19"
