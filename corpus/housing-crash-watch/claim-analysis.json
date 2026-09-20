@@ -1,0 +1,36 @@
+{
+ "topic": "housing-crash-watch",
+ "read_on": "2026-09-19",
+ "model": "gemini-3.6-flash",
+ "videos_read": 8,
+ "sampled_from": 15288,
+ "sampling": "at most 2 per channel, spread across months",
+ "status": "inconclusive",
+ "status_reason": "only 8 videos read, need 12",
+ "central_claim": "The listed videos do not share a single central claim, spanning practical real estate investment advice, macro housing market crash forecasts, and corporate news analysis.",
+ "videos_asserting_it": 0,
+ "variants": [],
+ "not_about": "This collection does not represent a unified narrative about housing market trends or investment strategies.",
+ "claim_name": "Unrelated real estate topics and market forecasts",
+ "hook_candidates": [
+  "Diverse real estate topics grouped together",
+  "Real estate strategies and market crash forecasts"
+ ],
+ "is_one_narrative": false,
+ "disagreement": "The videos range from practical guides on multi-family property management and deal sourcing to conflicting macroeconomic forecasts regarding housing market crashes versus moderate cool-offs.",
+ "split_into": [
+  "Macro housing market downturn and price crash predictions",
+  "Real estate investment and deal sourcing strategies",
+  "Analysis of corporate real estate events and developments"
+ ],
+ "evidence": [
+  "1tTVHgLwptc",
+  "5Kka6lM38eE",
+  "Crsl6rFj2ic",
+  "FTriOm5DQRs",
+  "JDHSFwmAdwg",
+  "mgEUZgMyQ0M",
+  "t25qOEhPDFA",
+  "zavGPBw1iZ8"
+ ]
+}

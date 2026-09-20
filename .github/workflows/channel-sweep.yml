@@ -1,10 +1,19 @@
 name: Channel sweep
 
-# The daily collection route. Reads the uploads of every channel in the ledger's
-# chosen tiers and files the ones that carry a tracked narrative. Costs 1 quota
-# unit per 50 uploads from the 10,000 bucket and spends no search calls, so the
-# 100 daily searches stay free for discovering channels and narratives we do not
-# know yet. Official API only (decision 2026-09-16).
+# The daily collection route. Reads every channel in the ledger — all 7,000, not
+# a tier — for what they published in the last two days, files what matches a
+# tracked narrative, pools the claim-carrying rest, and archives everything else
+# so that a video we cannot place yet is still recorded as having existed.
+#
+# The quota arithmetic that makes the whole ledger affordable: uploads_items
+# stops paging the moment it reaches a video older than the cutoff, so at
+# --days=2 almost every channel costs exactly 1 unit of the 10,000. Seven
+# thousand channels plus detail lookups lands near 7,200, which is why this can
+# run daily over the entire ledger where the old tier-A-only, ten-page defaults
+# could not. Deep backfills belong in full-crawl.yml, not here.
+#
+# Spends no search calls, so the 100 daily searches stay free for discovering
+# channels and narratives we do not know yet. Official API only (2026-09-16).
 
 on:
   schedule:
@@ -13,10 +22,10 @@ on:
     inputs:
       days:
         description: "How many days of uploads to read"
-        default: "7"
+        default: "2"
       tiers:
-        description: "Ledger tiers to sweep (A, AB)"
-        default: "A"
+        description: "Ledger tiers to sweep (ABC is the whole ledger)"
+        default: "ABC"
       write:
         description: "Append to the corpora (false = dry run)"
         default: "true"
@@ -24,17 +33,20 @@ on:
         description: "Discovery search calls to spend (of the 100 daily)"
         default: "40"
       pages:
-        description: "Upload pages per channel, 50 each (2 = a screen, 10 = a backfill)"
-        default: "10"
+        description: "Upload pages per channel, 50 each (2 = a daily catch-up, 10 = a backfill)"
+        default: "2"
       full:
         description: "Whole history per channel, resuming where the last run stopped"
         default: "false"
       units:
         description: "Stop after this many quota units (the daily allowance is 10,000)"
-        default: "8500"
+        default: "9000"
       max_channels:
-        description: "How many channels this run may read (tier B is thousands)"
-        default: "400"
+        description: "How many channels this run may read (the ledger holds ~7,000)"
+        default: "8000"
+      archive:
+        description: "Record every upload seen, including ones we cannot place"
+        default: "true"
 
 permissions:
   contents: write
@@ -54,18 +66,28 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Cheap and first: ~60 quota units, and if the sweep later exhausts the
+      # day's allowance we still have the board. X is skipped silently when no
+      # token is set, so this costs nothing until you decide it should.
+      - name: What is trending, on YouTube and on X
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+        run: python3 scripts/trending.py --write || true
+
       - name: Read the ledger's channels for new uploads
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: |
           set -o pipefail
           python3 scripts/channel_sweep.py \
-            --days=${{ inputs.days || '7' }} \
-            --tiers=${{ inputs.tiers || 'A' }} \
-            --pages=${{ inputs.pages || '10' }} \
+            --days=${{ inputs.days || '2' }} \
+            --tiers=${{ inputs.tiers || 'ABC' }} \
+            --pages=${{ inputs.pages || '2' }} \
+            ${{ (inputs.archive == 'false') && ' ' || '--archive' }} \
             ${{ (inputs.full == 'true') && '--full' || ' ' }} \
-            --units=${{ inputs.units || '8500' }} \
-            --max=${{ inputs.max_channels || '400' }} \
+            --units=${{ inputs.units || '9000' }} \
+            --max=${{ inputs.max_channels || '8000' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
       - name: Spend the day's discovery searches
@@ -110,6 +132,8 @@ jobs:
           name: corpus-${{ github.run_id }}
           path: |
             corpus/**/videos.json
+            archive/*.json
+            trending/*.json
             crawl-state.json
             discovery-pool.json
             sweep.log
@@ -122,7 +146,7 @@ jobs:
           git config user.name "narrative-radar-bot"
           git config user.email "actions@github.com"
           SUMMARY=$(tail -n 1 sweep.log)
-          git add corpus channels.json discovered.json channel-candidates.json discovery-pool.json crawl-state.json watchlist.json
+          git add corpus archive trending channels.json discovered.json channel-candidates.json discovery-pool.json crawl-state.json watchlist.json
           if git diff --cached --quiet; then
             echo "nothing new today"
             exit 0

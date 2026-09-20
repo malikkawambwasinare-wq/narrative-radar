@@ -38,6 +38,7 @@ arg = lambda name, dflt: next((a.split("=", 1)[1] for a in sys.argv if a.startsw
 DAYS = int(arg("days", 7))
 TIERS = set(arg("tiers", "A").upper())
 MAX_CHANNELS = int(arg("max", 400))
+ARCHIVE = "--archive" in sys.argv      # keep every upload seen, not only the ones we can place
 PAGES = int(arg("pages", 10))          # 50 uploads a page; screening needs 2, backfill wants all
 FULL = "--full" in sys.argv            # walk a channel's whole history, and remember it was done
 REDO_DAYS = int(arg("redo", 30))       # a channel crawled in full this recently is skipped
@@ -389,6 +390,7 @@ def main():
         pool_f.write_text(json.dumps({"generated": TODAY,
                                       "note": "claim-carrying videos matching no tracked narrative; raw material for new ones",
                                       "videos": pool[-200000:]}, indent=1) + "\n")
+        flush_archive()
         if FULL:
             save_state(state)
 
@@ -407,6 +409,53 @@ def main():
     print(f"channel sweep {TODAY} · tier {''.join(sorted(TIERS))} · {len(rows)} channels · last {DAYS} days{' · full history' if FULL else ''}")
     seen, matched, off_topic, pooled = 0, defaultdict(list), 0, 0
     stopped = None
+
+    # The archive. Until now a video that matched no narrative and carried no
+    # claim word in its title was counted as off_topic and dropped — we did not
+    # even record that it existed. That is the difference between a corpus of
+    # what we could place and a corpus of what was published. Sharded by the
+    # month a video came out so no single file grows without bound, and keyed by
+    # videoId so a re-read updates rather than duplicates.
+    archive_new, archive_months = {}, set()
+
+    def remember(v, channel_id, disposition, topic=None):
+        if not ARCHIVE:
+            return
+        month = (v.get("published") or TODAY)[:7]
+        archive_months.add(month)
+        archive_new.setdefault(month, {})[v["videoId"]] = {
+            "videoId": v["videoId"],
+            "title": v["title"],
+            "channel": v["channel"],
+            "channelId": channel_id,
+            "published": v.get("published"),
+            "seen": TODAY,
+            "disposition": disposition,        # filed | pooled | unplaced
+            **({"topic": topic} if topic else {}),
+        }
+
+    def flush_archive():
+        """Merge this run into the monthly shards. Read-modify-write per month
+        keeps it correct when several runs touch the same month in a day."""
+        if not (ARCHIVE and WRITE and archive_new):
+            return
+        d = ROOT / "archive"
+        d.mkdir(exist_ok=True)
+        for month, rows in archive_new.items():
+            p = d / f"{month}.json"
+            have = {}
+            if p.exists():
+                try:
+                    have = {r["videoId"]: r for r in json.loads(p.read_text())["videos"]}
+                except Exception:
+                    have = {}
+            have.update(rows)
+            p.write_text(json.dumps(
+                {"month": month, "updated": TODAY, "count": len(have),
+                 "note": "every upload seen from a ledger channel, placed or not",
+                 "videos": sorted(have.values(), key=lambda r: (r.get("published") or "", r["videoId"]))},
+                indent=1, ensure_ascii=False) + "\n")
+        archive_new.clear()
     for n, r in enumerate(rows, 1):
         try:
             items = uploads_items("UU" + r["channelId"][2:])
@@ -456,9 +505,13 @@ def main():
                                  "industry": ind_of_topic.get(home, "Unsorted"),
                                  "found": TODAY, "found_by": f"channel:{r['channel'][:40]}"})
                     pooled += 1
+                    remember(v, r.get("channelId"), "pooled")
+                else:
+                    remember(v, r.get("channelId"), "unplaced")
                 continue
             v["_score"] = score
             matched[tid].append(v)
+            remember(v, r.get("channelId"), "filed", tid)
 
     ids = [v["videoId"] for vs in matched.values() for v in vs if v["videoId"] not in meta_cache]
     if ids:

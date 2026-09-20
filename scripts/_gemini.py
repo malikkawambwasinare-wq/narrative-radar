@@ -34,6 +34,15 @@ class ApiError(Exception):
         super().__init__(f"{code}: {detail[:300]}")
 
 
+class DailyLimit(ApiError):
+    """Out of requests until the quota resets. Nothing to do but stop, and
+    stopping cleanly matters: whatever has been read so far is cached, and the
+    synthesis can run off the cache later without paying for the videos twice."""
+
+    def __init__(self, detail):
+        super().__init__(429, detail)
+
+
 def key():
     k = os.environ.get("GEMINI_API_KEY", "").strip()
     if not k:
@@ -140,13 +149,21 @@ def ask(model, parts, schema, k, budget=None, est_tokens=None, retries=3):
         except ApiError as e:
             if e.code == 400 and _strip_unknown(body, e.detail):
                 continue
-            if e.code == 429 and attempt < retries:
-                # The limit is per minute, so the window always reopens.
-                print(f"    (rate limited, waiting 60s — attempt {attempt + 1})")
-                time.sleep(60)
-                if budget:
-                    budget.spent.clear()
-                continue
+            if e.code == 429:
+                # Two different limits arrive as the same status code, and they
+                # want opposite responses. A per-minute ceiling reopens on its
+                # own, so wait. A per-day ceiling will not clear for hours, and
+                # every retry against it spends another of the requests you have
+                # already run out of — which is how a 24-video run burned its
+                # remaining budget discovering the same thing sixteen times.
+                if "per day" in e.detail or "PerDay" in e.detail:
+                    raise DailyLimit(e.detail)
+                if attempt < retries:
+                    print(f"    (per-minute limit, waiting 60s — attempt {attempt + 1})")
+                    time.sleep(60)
+                    if budget:
+                        budget.spent.clear()
+                    continue
             raise
     raise ApiError(429, "still rate limited after retries")
 

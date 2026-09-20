@@ -40,10 +40,9 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _gemini import (ROOT, ApiError, Budget, ask, key, payload, spend, video_tokens)
+from _gemini import (ROOT, ApiError, Budget, DailyLimit, ask, key, payload, spend, video_tokens)
 
 CACHE = ROOT / ".cache" / "narrative-read"
-MODEL = "gemini-3.8-flash"
 MIN_READS = 12      # below this, convergence is anecdote
 MIN_SHARE = 0.40    # below this, the narrative has no centre worth naming
 PER_CHANNEL = 2     # no channel may dominate the sample
@@ -63,6 +62,9 @@ def flag(name, default):
 
 N = int(flag("--n", 24))
 ONLY = flag("--topic", None)
+# Each model carries its own free-tier request-per-day allowance, so a run that
+# has exhausted one can often still finish on another.
+MODEL = flag("--model", "gemini-3.8-flash")
 
 # ---------------------------------------------------------------- pass one
 
@@ -182,6 +184,9 @@ def read_videos(topic, vids, k, budget):
             r = ask(MODEL, [{"type": "text", "text": CLAIM_PROMPT},
                             {"type": "video", "uri": v["url"]}],
                     CLAIM_SCHEMA, k, budget=budget, est_tokens=est)
+        except DailyLimit:
+            print(f"      out of requests for today. {len(reads)} read and cached.")
+            raise
         except ApiError as e:
             print(f"      skipped ({e.code}): {e.detail[:100]}")
             skipped += 1
@@ -296,7 +301,16 @@ def run(topic, k, budget):
             print("  no videos")
             return 0.0
         print(f"  sampled {len(vids)} of the corpus, at most {PER_CHANNEL} per channel")
-        reads, cost, skipped = read_videos(topic, vids, k, budget)
+        try:
+            reads, cost, skipped = read_videos(topic, vids, k, budget)
+        except DailyLimit:
+            # The reads are on disk. Synthesising needs one more request we do
+            # not have, so stop here rather than lose the run to a failed call.
+            print(f"\n  Daily request limit reached. Reads are cached in"
+                  f" {(CACHE / topic).relative_to(ROOT)}/")
+            print(f"  Resume with:  python3 scripts/narrative_read.py --topic {topic} --n {N} --write")
+            print(f"  Or synthesise what we have:  ... --topic {topic} --synthesize-only --write")
+            raise
     if not reads:
         print("  nothing read")
         return cost if not SYNTH_ONLY else 0.0
@@ -353,6 +367,11 @@ def main():
     for t in topics:
         try:
             spent += run(t, k, budget)
+        except DailyLimit:
+            print("\nOut of free-tier requests for today (20 per model per day).")
+            print("Either wait for the reset, pass --model with another model, or")
+            print("enable billing — the whole library is about $12 at measured rates.")
+            break
         except ApiError as e:
             if e.code in (401, 403):
                 sys.exit(f"\nKey rejected ({e.code}).")
