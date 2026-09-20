@@ -60,6 +60,7 @@ def flag(name, default):
 N = int(flag("--n", 10))
 MODEL = flag("--model", "gemini-3.8-flash")
 RAW = "--raw" in sys.argv
+REPLAY = "--replay" in sys.argv
 
 
 def key():
@@ -197,18 +198,44 @@ def read_video(url, k):
 
 
 def payload(r):
-    """Pull the JSON out of whatever shape the response arrives in."""
-    for path in (
+    """Pull the JSON out of the response.
+
+    An interaction comes back as a list of steps — the model's private thinking
+    first, then the answer. We want the step typed model_output; the thought
+    step carries only an opaque signature and is no use to us."""
+    for step in r.get("steps", []):
+        if isinstance(step, dict) and step.get("type") == "model_output":
+            for part in step.get("content", []):
+                try:
+                    return json.loads(part["text"])
+                except Exception:
+                    continue
+    for path in (  # other surfaces, in case the shape moves again
         lambda: r["output"][0]["content"][0]["text"],
         lambda: r["candidates"][0]["content"]["parts"][0]["text"],
         lambda: r["output_text"],
-        lambda: r["text"],
     ):
         try:
             return json.loads(path())
         except Exception:
             continue
     return None
+
+
+def cost(usage):
+    """What that video actually cost, in tokens and cents.
+
+    Flash input runs about $0.30 per million and output about $2.50. Thinking
+    tokens bill as output, so they belong in the total — a cost model that drops
+    them understates by a third on a video like these."""
+    if not usage:
+        return None
+    vid = next((m["tokens"] for m in usage.get("input_tokens_by_modality", [])
+                if m.get("modality") == "video"), 0)
+    inp = usage.get("total_input_tokens", 0)
+    out = usage.get("total_output_tokens", 0) + usage.get("total_thought_tokens", 0)
+    return {"video": vid, "in": inp, "out": out,
+            "usd": inp * 0.30 / 1e6 + out * 2.50 / 1e6}
 
 
 def sample():
@@ -239,8 +266,69 @@ def truth(v, lines=6):
     return "\n".join(p.read_text(errors="ignore").splitlines()[:lines])
 
 
+def report(topic, v, data, usage):
+    """One video, printed so the title and the read sit next to each other and
+    you can see at a glance whether the read earned its money."""
+    print(f"  {topic}")
+    print(f"  title seen today   {v['title'][:88]}")
+    print(f"  gemini says        {data.get('one_line','')[:88]}")
+    print(f"  sells something    {data.get('sells_something')}")
+    claims = data.get("claims", [])
+    for c in claims:
+        mark = "hedged" if c.get("hedged") else "flat  "
+        pred = "PREDICTION" if c.get("is_prediction") else "          "
+        when = f"  [by {c['deadline']}]" if c.get("deadline") else ""
+        print(f"    {c.get('timestamp','--:--')} {mark} {pred} {c['text'][:66]}{when}")
+    if not claims:
+        print("    (no checkable claim)")
+    tr = truth(v)
+    if tr:
+        print("  actually said:")
+        for line in tr.splitlines():
+            print(f"    {line[:84]}")
+    c = cost(usage)
+    if c:
+        print(f"  cost               {c['video']:,} video tokens · {c['in']:,} in · {c['out']:,} out · ${c['usd']:.4f}")
+    return claims, c
+
+
+def replay():
+    """Re-read the saved responses. Costs nothing — the videos are already paid
+    for, and a parser fix should never mean spending them twice."""
+    index = {}
+    for f in sorted((ROOT / "corpus").glob("*/videos.json")):
+        for v in json.load(f.open())["videos"]:
+            index[v["videoId"]] = (f.parent.name, v)
+    files = sorted(OUT.glob("*.response.json"))
+    if not files:
+        sys.exit(f"Nothing saved in {OUT.relative_to(ROOT)}/ — run the pilot first.")
+    print(f"replaying {len(files)} saved responses · no API calls\n")
+    total, nclaims, preds = 0.0, 0, 0
+    for f in files:
+        vid = f.name.replace(".response.json", "")
+        raw = json.loads(f.read_text())
+        topic, v = index.get(vid, ("?", {"title": "(not in corpus)", "url": ""}))
+        data = payload(raw)
+        print(f"[{vid}]")
+        if data is None:
+            print(f"  still unparsed. keys: {list(raw)}\n")
+            continue
+        claims, c = report(topic, v, data, raw.get("usage"))
+        nclaims += len(claims)
+        preds += sum(1 for x in claims if x.get("is_prediction"))
+        total += c["usd"] if c else 0
+        print()
+    n = len(files)
+    print(f"{n} videos · {nclaims} claims ({preds} predictions) · ${total:.4f} total · ${total/max(n,1):.4f} each")
+    hours = 19490
+    print(f"at that rate the whole {hours:,}-hour corpus would run about ${total/max(n,1)*72437:,.0f}")
+
+
 def main():
-    k = key()
+    k = key() if not REPLAY else None
+
+    if REPLAY:
+        return replay()
 
     if LIST:
         req = urllib.request.Request(MODELS, headers={"x-goog-api-key": k})
