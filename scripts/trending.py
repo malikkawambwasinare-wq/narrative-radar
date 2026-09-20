@@ -11,10 +11,20 @@ Two sources, because they answer different questions.
   per region-category slice, returning 50 videos each, from the same API and
   the same terms as everything else we do. Roughly 60 units a day of the 10,000.
 
-  X's trends endpoint is what people are ARGUING ABOUT, and it usually knows
-  first — a claim circulates as text long before anyone films a thirty minute
-  video about it. Trends cost $0.010 per REQUEST, flat, so five locations a day
-  is about $1.50 a month.
+  X's trends endpoint is what people are ARGUING ABOUT. Trends cost $0.010 per
+  REQUEST, flat, so three locations a day is about $1 a month.
+
+  It is NOT an early-warning system, and this repo has the measurements to say
+  so. analysis/FINDINGS.md tested GDELT, Hacker News and Wikipedia against ten
+  source-story pairs: every lift sat inside noise, and in nine of ten the
+  placebo scored higher. X itself was not tested, so this is inference rather
+  than proof — but nothing here should be built on "we see it first". The
+  finding that survived was that framing is the edge, not timing.
+
+  What trends are good for is SEEDING: a phrase people are arguing over today is
+  a cheap place to point a YouTube search, and a claim that trends three times
+  across three weeks is a narrative candidate. That is a discovery job, and it
+  does not depend on being early.
 
 Why we never read the posts
   Reading X posts costs $0.005 per post, which is where a bill like this runs
