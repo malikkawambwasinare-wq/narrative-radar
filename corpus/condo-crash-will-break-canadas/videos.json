@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -3250,6 +3250,106 @@
         "likes": 3,
         "comments": 5,
         "enrichedOn": "2026-09-19"
+      }
+    },
+    {
+      "videoId": "ftCrr0tr_Kc",
+      "title": "Toronto Condos Are Falling Apart… Now What?",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=ftCrr0tr_Kc",
+      "published": "2026-03-22",
+      "first_seen": "2026-09-20",
+      "views": 252,
+      "length": "1:03",
+      "age_days": 182,
+      "query": "channel sweep: (REIN) The Real Estate Investment Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-09-20"
+      }
+    },
+    {
+      "videoId": "ICSWobZP9Go",
+      "title": "Toronto’s Condo Market Has a Serious Problem",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=ICSWobZP9Go",
+      "published": "2026-03-19",
+      "first_seen": "2026-09-20",
+      "views": 273,
+      "length": "14:58",
+      "age_days": 185,
+      "query": "channel sweep: (REIN) The Real Estate Investment Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 14,
+        "comments": 8,
+        "enrichedOn": "2026-09-20"
+      }
+    },
+    {
+      "videoId": "wiIvIxknDCo",
+      "title": "Rare Large Condo in North York | 405-133 Wynford Drive | Toronto Condo Tour",
+      "channel": "Chestnut Park Homes",
+      "url": "https://www.youtube.com/watch?v=wiIvIxknDCo",
+      "published": "2026-04-06",
+      "first_seen": "2026-09-20",
+      "views": 159,
+      "length": "0:59",
+      "age_days": 167,
+      "query": "channel sweep: Chestnut Park Homes",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "19",
+        "channelId": "UCKTorpac9IYJqIiP7YYksaw",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-20"
+      }
+    },
+    {
+      "videoId": "JrAbX5dpb1M",
+      "title": "Rare 4-Bedroom Midtown Toronto Condo | 2-Storey Art Deco Residence",
+      "channel": "Chestnut Park Homes",
+      "url": "https://www.youtube.com/watch?v=JrAbX5dpb1M",
+      "published": "2025-08-14",
+      "first_seen": "2026-09-20",
+      "views": 877,
+      "length": "1:42",
+      "age_days": 402,
+      "query": "channel sweep: Chestnut Park Homes",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "19",
+        "channelId": "UCKTorpac9IYJqIiP7YYksaw",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": 1,
+        "enrichedOn": "2026-09-20"
       }
     }
   ]
