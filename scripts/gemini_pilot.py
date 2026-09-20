@@ -36,11 +36,12 @@ Cost
   sample of ~10 minute videos is a few cents, and the free tier covers 8 hours of
   YouTube video a day, so a pilot this size should cost nothing at all.
 """
-import json, os, random, sys, time, urllib.error, urllib.request
+import json, os, random, re, sys, time, urllib.error, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / ".cache" / "gemini-pilot"
+API = "https://generativelanguage.googleapis.com/v1beta/interactions"
 MODELS = "https://generativelanguage.googleapis.com/v1beta/models"
 
 WRITE = "--write" in sys.argv
@@ -57,7 +58,8 @@ def flag(name, default):
 
 
 N = int(flag("--n", 10))
-MODEL = flag("--model", "gemini-2.5-flash")
+MODEL = flag("--model", "gemini-3.8-flash")
+RAW = "--raw" in sys.argv
 
 
 def key():
@@ -136,32 +138,62 @@ Be strict. A video that asserts nothing checkable returns an empty claims list �
 that is a valid and useful answer."""
 
 
-def read_video(url, k, low_res=True):
-    """generateContent, the surface the 2.5 models speak.
+def strip_unknown(body, detail):
+    """The API names the field it did not recognise:
 
-    mediaResolution is the lever that makes this affordable — low is ~100 tokens
-    per second of video against ~300 at high. Not every model build accepts the
-    field, so a rejection drops it and retries rather than losing the video."""
+        Unknown parameter 'media_resolution' at 'input[1]'.
+
+    Rather than guess where each knob lives on a surface that is still moving,
+    take the API at its word, drop that key, and try again. Returns False when
+    there is nothing left to drop."""
+    m = re.search(r"Unknown parameter '([^']+)'", detail or "")
+    if not m:
+        return False
+    bad = m.group(1).split(".")[-1]
+    hit = [False]
+
+    def walk(node):
+        if isinstance(node, dict):
+            if bad in node:
+                node.pop(bad)
+                hit[0] = True
+            for v in node.values():
+                walk(v)
+        elif isinstance(node, list):
+            for v in node:
+                walk(v)
+
+    walk(body)
+    if hit[0]:
+        print(f"  (API does not know '{bad}' here — dropped it, retrying)")
+    return hit[0]
+
+
+def read_video(url, k):
+    """The /interactions surface, which is what this key's models speak.
+
+    media_resolution would be the lever that makes video cheap — low is ~100
+    tokens per second against ~300 — but the API rejected it on the video part
+    and the docs are ahead of the deployed shape. For ten videos the difference
+    is pennies, so the pilot runs at default and we find the right knob before
+    anything scales."""
     body = {
-        "contents": [{"parts": [{"text": PROMPT}, {"file_data": {"file_uri": url}}]}],
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "responseSchema": SCHEMA,
-            "temperature": 0,
-        },
+        "model": MODEL,
+        "input": [
+            {"type": "text", "text": PROMPT},
+            {"type": "video", "uri": url},
+        ],
+        "response_format": {"type": "text", "mime_type": "application/json", "schema": SCHEMA},
     }
-    if low_res:
-        body["generationConfig"]["mediaResolution"] = "MEDIA_RESOLUTION_LOW"
-    endpoint = f"{MODELS}/{MODEL}:generateContent"
     t0 = time.time()
-    try:
-        r = post(endpoint, body, k)
-    except ApiError as e:
-        if low_res and e.code == 400 and "edia" in e.detail and "esolution" in e.detail:
-            print("  (this build rejects mediaResolution — retrying at default)")
-            return read_video(url, k, low_res=False)
-        raise
-    return r, time.time() - t0
+    for _ in range(4):
+        try:
+            return post(API, body, k), time.time() - t0
+        except ApiError as e:
+            if e.code == 400 and strip_unknown(body, e.detail):
+                continue
+            raise
+    raise ApiError(400, "gave up stripping unknown parameters")
 
 
 def payload(r):
@@ -253,9 +285,17 @@ def main():
             failed += 1
             continue
         secs += dt
+        if RAW:
+            print(json.dumps(raw, indent=1)[:3000])
         data = payload(raw)
         if data is None:
-            print(f"  unparsed response  {json.dumps(raw)[:200]}\n")
+            # Not a failure of the read — a shape we have not seen. Keep it so
+            # the next run can parse it instead of spending the video again.
+            OUT.mkdir(parents=True, exist_ok=True)
+            dump = OUT / f"{vid}.response.json"
+            dump.write_text(json.dumps(raw, indent=1))
+            print(f"  response not parsed, saved whole: {dump.relative_to(ROOT)}")
+            print(f"  top-level keys: {list(raw)}\n")
             failed += 1
             continue
         claims = data.get("claims", [])
