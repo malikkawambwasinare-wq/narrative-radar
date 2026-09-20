@@ -41,7 +41,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / ".cache" / "gemini-pilot"
-API = "https://generativelanguage.googleapis.com/v1beta/interactions"
 MODELS = "https://generativelanguage.googleapis.com/v1beta/models"
 
 WRITE = "--write" in sys.argv
@@ -58,7 +57,7 @@ def flag(name, default):
 
 
 N = int(flag("--n", 10))
-MODEL = flag("--model", "gemini-3.8-flash")
+MODEL = flag("--model", "gemini-2.5-flash")
 
 
 def key():
@@ -76,6 +75,12 @@ def key():
     return k
 
 
+class ApiError(Exception):
+    def __init__(self, code, detail):
+        self.code, self.detail = code, detail
+        super().__init__(f"{code}: {detail[:300]}")
+
+
 def post(url, body, k):
     req = urllib.request.Request(
         url,
@@ -84,15 +89,10 @@ def post(url, body, k):
         method="POST",
     )
     try:
-        with urllib.request.urlopen(req, timeout=300) as r:
+        with urllib.request.urlopen(req, timeout=600) as r:
             return json.loads(r.read())
     except urllib.error.HTTPError as e:
-        detail = e.read().decode("utf-8", "ignore")[:800]
-        raise SystemExit(
-            f"\nGemini returned {e.code}.\n{detail}\n\n"
-            "If it says the model is not found, run --list-models and pass a live one\n"
-            "with --model. Model ids move faster than this script does."
-        )
+        raise ApiError(e.code, e.read().decode("utf-8", "ignore"))
 
 
 # What we want out of a video. Deliberately narrow: the claim, when it was said,
@@ -136,17 +136,31 @@ Be strict. A video that asserts nothing checkable returns an empty claims list �
 that is a valid and useful answer."""
 
 
-def read_video(url, k):
+def read_video(url, k, low_res=True):
+    """generateContent, the surface the 2.5 models speak.
+
+    mediaResolution is the lever that makes this affordable — low is ~100 tokens
+    per second of video against ~300 at high. Not every model build accepts the
+    field, so a rejection drops it and retries rather than losing the video."""
     body = {
-        "model": MODEL,
-        "input": [
-            {"type": "text", "text": PROMPT},
-            {"type": "video", "uri": url, "media_resolution": "low"},
-        ],
-        "response_format": {"type": "text", "mime_type": "application/json", "schema": SCHEMA},
+        "contents": [{"parts": [{"text": PROMPT}, {"file_data": {"file_uri": url}}]}],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "responseSchema": SCHEMA,
+            "temperature": 0,
+        },
     }
+    if low_res:
+        body["generationConfig"]["mediaResolution"] = "MEDIA_RESOLUTION_LOW"
+    endpoint = f"{MODELS}/{MODEL}:generateContent"
     t0 = time.time()
-    r = post(API, body, k)
+    try:
+        r = post(endpoint, body, k)
+    except ApiError as e:
+        if low_res and e.code == 400 and "edia" in e.detail and "esolution" in e.detail:
+            print("  (this build rejects mediaResolution — retrying at default)")
+            return read_video(url, k, low_res=False)
+        raise
     return r, time.time() - t0
 
 
@@ -219,8 +233,21 @@ def main():
         print(f"  title seen today   {title[:88]}")
         try:
             raw, dt = read_video(v["url"], k)
-        except SystemExit:
-            raise
+        except ApiError as e:
+            if e.code in (401, 403):
+                sys.exit(f"\nKey rejected ({e.code}). {e.detail[:300]}")
+            if e.code == 404:
+                sys.exit(f"\nNo such model '{MODEL}'. Run --list-models and pass one with --model.")
+            if e.code == 429:
+                print(f"  RATE LIMITED       {e.detail[:160]}")
+                print("\nFree tier is 8 hours of YouTube video a day. Stopping here;")
+                print("what has run so far is still printed above.")
+                break
+            # A single video can be refused (age-gated, region-locked, too long)
+            # without the run being in trouble. Note it and keep going.
+            print(f"  FAILED ({e.code})       {e.detail[:160]}\n")
+            failed += 1
+            continue
         except Exception as e:
             print(f"  FAILED             {e}\n")
             failed += 1
