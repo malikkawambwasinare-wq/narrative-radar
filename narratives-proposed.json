@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-20",
+ "generated": "2026-09-21",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1963,
+ "cost_usd": 0.2006,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -7579,6 +7579,1656 @@
    },
    "first_read": "2026-09-20",
    "last_read": "2026-09-20"
+  },
+  {
+   "phrase": "dead sea",
+   "verdict": "rhetoric",
+   "why": "A place name attached to unrelated news and finds, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 28,
+    "channels": 19,
+    "months": 10,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Israel rockslide: Boy killed, 8 others injured near Dead Sea",
+     "Millenia-old Roman swords discovered in Dead Sea cave that was likely hideout for Jewish rebels",
+     "An Underwater Drone Just FOUND The Dead Sea Scrolls On The Ocean Floor!"
+    ],
+    "ids": [
+     "5KB1lsygsNE",
+     "6v0LyX3xByE",
+     "9XzPd_udp24",
+     "BC5d23bpmZE",
+     "CpVgfV2hrkc",
+     "EPozeHS2dGM",
+     "MlVrDjxMwdE",
+     "N7oWBYQaOWg",
+     "Q0iBVRYOR24",
+     "T43_0SXD0g8",
+     "W5uKhv3FVdo",
+     "X-yvisR9tC0",
+     "ZpaLBFBo7P4",
+     "aTjj7rwk7iM",
+     "c6MMB6MBh8s",
+     "gobqD_UClgY",
+     "k97jVtxVZT8",
+     "kQcEWGDBkeo",
+     "m2IGiKS_Amk",
+     "nXeHBKaU5fo"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "export ban",
+   "verdict": "rhetoric",
+   "why": "Subject label spanning gas, rice and chips with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 11,
+    "months": 10,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "White House Disaster | Gas Export Ban? | SHTF",
+     "India rice export ban prompts panic buying: “We are expecting many, many countries to run out”",
+     "China Slams the Door on Nvidia s AI Chips Export Ban Bites Hard"
+    ],
+    "ids": [
+     "2lENiedB-eo",
+     "99-gMIP7JuE",
+     "BmqXKbc7KoI",
+     "Cuh3zxtASH4",
+     "JX-6AkA7pPo",
+     "_c-T-1-JWeY",
+     "dnVI2-4kc0o",
+     "gyn6uX1aEnY",
+     "j_CULcFpBoM",
+     "n7fLcUlDdew",
+     "pPNraGD7nyg",
+     "qHUXPL5KF2M",
+     "qdAxKY6KESs",
+     "uBqBd6Xw4DM"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "holders must",
+   "verdict": "rhetoric",
+   "why": "Urgency hook for crypto videos, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 115,
+    "channels": 9,
+    "months": 45,
+    "span": "2020-04 → 2026-09",
+    "examples": [
+     "Bitcoin Holders MUST WATCH! Billionaire Investor REVEALS Bitcoin Price Prediction 2020",
+     "WARNING!!! STOCK MARKET CRASH SIGNAL FLASHED! BITCOIN HOLDERS MUST SEE",
+     "BITCOIN MASSIVE PRICE MOVE TOMORROW? ETHEREUM IN CRISIS! SHOCKING! [ETH Holders Must See]"
+    ],
+    "ids": [
+     "-5YEpxtGFQU",
+     "-L9hjoo7pUQ",
+     "-Z8wjqmm5bQ",
+     "-bjjuHnv3u8",
+     "1p0zCfZUB0c",
+     "1yUF31ZP7JQ",
+     "2CEgYvAjfEM",
+     "2JetL9goNGY",
+     "2X01cqBW0mM",
+     "2ildRfm5Smo",
+     "3PEh2XufDOI",
+     "4tYFNL9mOAw",
+     "508m9mhrVkk",
+     "5l8g0WrN8yk",
+     "5r9jDZjXfZE",
+     "6iYd8611xhM",
+     "6jPQHrXiukk",
+     "6lMlsZKW7oQ",
+     "75j-02pMZCY",
+     "7R3aHW2qtMo"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "unveiling truth",
+   "verdict": "rhetoric",
+   "why": "Pure reveal formula across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 10,
+    "months": 10,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Unveiling the Truth: A Detailed Investigation into the OceanGate Submarine Tragedy",
+     "Can You Really Reverse Type 2 Diabetes? Unveiling the Truth and 5 Effective Methods to Achieve It!",
+     "Unveiling the Truth Behind \"#1 Real Estate Agents\""
+    ],
+    "ids": [
+     "1vqOE2FlP7k",
+     "BytXs3PoJOQ",
+     "KE4ZoQksli8",
+     "Q-JNp9biFas",
+     "fygqorvQQaw",
+     "hQeYX-DlOy8",
+     "hdBoXSsly58",
+     "oA0CzDvsP7E",
+     "wTK6vWvARl4",
+     "x_r3sIU-gko",
+     "zLexrIX79Pc"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "cause bloating",
+   "verdict": "rhetoric",
+   "why": "Symptom topic posed as questions, no shared asserted cause.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 9,
+    "months": 11,
+    "span": "2020-03 → 2026-09",
+    "examples": [
+     "How to Get Rid of BLOATING | Does the VEGAN Diet Cause Bloating???",
+     "Can Vegetables Cause Bloating?",
+     "Can Vegetables Cause Bloating?"
+    ],
+    "ids": [
+     "49K8ynOHtKI",
+     "BwdTOKg6SsU",
+     "MbIndxzisag",
+     "OnJaiGNRDrI",
+     "R0-Fu-OCOiw",
+     "SCQUzkyGtiM",
+     "Y5tlnjZFW0Q",
+     "ZEoJfKQKyzU",
+     "hoOECyqpBpQ",
+     "kbFxOPm89QY",
+     "vMaT9MqwGXQ",
+     "wT1rL-lzRBA",
+     "zeoPIe--e_0"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "truth exposed",
+   "verdict": "rhetoric",
+   "why": "Classic clickbait reveal phrasing with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 28,
+    "channels": 19,
+    "months": 18,
+    "span": "2019-06 → 2026-09",
+    "examples": [
+     "Truth Exposed on How To Drink Absinthe",
+     "LEO \"THE END TO STRUGGLES! TRUTH EXPOSED!\" FEBRUARY 2022",
+     "*TRUTH EXPOSED* Changes Everything - SILVER GOLD 🚀🚀 (waiting on the herd)"
+    ],
+    "ids": [
+     "3baNGJeMWxA",
+     "7Qs0E8pvMVs",
+     "BKf98qwWelo",
+     "Be1Zw7xW1hU",
+     "Cb8EPODGsVw",
+     "GcSydWYfvf4",
+     "HEllE5pdW30",
+     "Hgb72d7nQNM",
+     "JLvnKtribJc",
+     "KHKOFa_mnWA",
+     "Oa_nvMsEH9I",
+     "RLyK7HknRrQ",
+     "UKqFBxXqTeM",
+     "UT-ZX8H4O3g",
+     "WmW6vxh0TfE",
+     "YVcJx-pJT1A",
+     "amGPFNexPik",
+     "jLmem_PNQaI",
+     "k9F-h7s2Jm8",
+     "mcNGNXYBiMA"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "causes diagnosis",
+   "verdict": "rhetoric",
+   "why": "Medical explainer format label, not a contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 5,
+    "months": 15,
+    "span": "2017-12 → 2026-09",
+    "examples": [
+     "Nil Sperm Treatment Delhi Causes Diagnosis Cure | Nil Sperm Specialist Doctor in Delhi NCR india Dr.",
+     "IBS Irritable Hormone Disorder causes diagnosis how to live with it | chronic Diarrea in hindi",
+     "Short Height  Treatment Delhi Causes Diagnosis | Short Height Specialist Doctor in Delhi Noida indi"
+    ],
+    "ids": [
+     "2jQMeCKCEoU",
+     "3PGaoM7yJQQ",
+     "4Jzmn9LoA28",
+     "4okzvsvGEjI",
+     "Ajjcq2Ttbq0",
+     "DDYBlWb7_xE",
+     "EbNiAq-2eE8",
+     "EyoeegwuweM",
+     "IDbsFZOpmR4",
+     "Mi-eg3yNvho",
+     "MyCitrEKV7g",
+     "SOUXIb2F6Ig",
+     "UB7yKv9AeT4",
+     "iXv-uowe68E",
+     "kxSK3ioD8XM",
+     "l-iY3wG6cWg",
+     "pQP3EL0mwIE",
+     "y7nxRmubwPM"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "must hear",
+   "verdict": "rhetoric",
+   "why": "Attention-grabbing imperative used across unrelated genres.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 52,
+    "channels": 8,
+    "months": 22,
+    "span": "2018-05 → 2026-09",
+    "examples": [
+     "The One Piece Of Advice Every Entrepreneur MUST Hear",
+     "Ledger Bitcoin & Crypto Wallet - Essential Security - Must Hear Interview",
+     "AQUARIUS APRIL 2022 \"OMG! THIS IS HUGE! YOU MUST HEAR THIS MESSAGE!\""
+    ],
+    "ids": [
+     "-1ACXaI6Hh0",
+     "1mdQHZi4PtE",
+     "4tTdlPoJQ9Q",
+     "5VTH1l7x244",
+     "5Xa0-mW5v-Q",
+     "604G-7yYkTQ",
+     "9dMndQQ-Orw",
+     "AvnPM4m-QNA",
+     "DFkw8pbwOik",
+     "DHZ7n6zCYqY",
+     "DMZyOs68dXA",
+     "EMS1SW9vDW8",
+     "GuT10hobS3g",
+     "I8KqvTCgx9g",
+     "IGjnt7iKPBo",
+     "JWqatCSmqdw",
+     "KLvwDCOjWBc",
+     "KNjdl2-td4U",
+     "LU1eCbVvUvI",
+     "MxaNtNu1H7M"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "bitter truth",
+   "verdict": "rhetoric",
+   "why": "A reveal formula; the titles cover different subjects with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 9,
+    "span": "2019-08 → 2026-08",
+    "examples": [
+     "The Bitter Truth About Stevia Ingredients in the Grocery Store",
+     "The BITTER TRUTH About Sugar! (How It CAUSES CANCER) | Jason Fung & Mark Hyman",
+     "The BITTER TRUTH About Sugar: It's Destroying Your Health! | Gary Taubes & Mark Hyman"
+    ],
+    "ids": [
+     "1ghffpRaym0",
+     "4KxQveJnLRs",
+     "8VcZ7OjSFO0",
+     "Lqmy5Db0NrE",
+     "UgUdBEXqE8E",
+     "WI9dArfbMQM",
+     "awTimqqIkFU",
+     "bBcJOtupTCA",
+     "kSJHU8UHwpU",
+     "p4hYeK2OBxk"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "cannot explain",
+   "verdict": "rhetoric",
+   "why": "Mystery-teaser framing across unrelated topics, no one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 10,
+    "months": 7,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "5 MINUTES AGO! Something Just EMERGED In Antarctica That Even Scientists Cannot Explain!",
+     "30 Historical Photos That Scientists Cannot Explain",
+     "The Ancient Mystery of the Shroud That Science Cannot Explain! - Remote Viewed"
+    ],
+    "ids": [
+     "1aVgSxE32ec",
+     "8lm-IRwsMjQ",
+     "ELHAKPIGmD8",
+     "En5Ey9_--pQ",
+     "LcN0hVjYHbw",
+     "_EOtVFxolhE",
+     "cneKXS5gy3M",
+     "qn-_oAplps0",
+     "v3sbvWirC-M",
+     "vnUL5mBn55g",
+     "z74LzHKMEJU"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "really help",
+   "verdict": "rhetoric",
+   "why": "A question format applied to unrelated subjects, not a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 32,
+    "channels": 25,
+    "months": 21,
+    "span": "2017-11 → 2026-09",
+    "examples": [
+     "Do These Foods REALLY Help Morning Sickness?! | Diet Debbie | Pregnancy | Nausea & Vomiting",
+     "Good News For Rising Gas Prices… Will Congress Really Help?",
+     "Does The Berberine Supplement Really Help You Lose Weight?"
+    ],
+    "ids": [
+     "5u-wJPeY1NU",
+     "8oiHy5eHnhk",
+     "92TWSFZGxSQ",
+     "9MAWxGM3Cjw",
+     "As3LD7oWwZM",
+     "BFLtPY7fL_g",
+     "EuSADeZQWKk",
+     "GUXu81fI3P0",
+     "H-n42_aTIcs",
+     "HMQ7Xh1Hhsc",
+     "HYaPNWYOY-w",
+     "IBiDWuxmiew",
+     "JnFLJnFBouA",
+     "KsrMQ2LG-JI",
+     "PpulKtur4lU",
+     "ZDXJ3MQuw3A",
+     "_aZ0BeW9gLs",
+     "_bxT2_OtRdc",
+     "dEJimM8cdOY",
+     "fvYg-rNdSwM"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "car crash",
+   "verdict": "rhetoric",
+   "why": "A subject with no claim attached, spanning tarot, predictions and celebrity news.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 50,
+    "channels": 20,
+    "months": 19,
+    "span": "2020-09 → 2026-09",
+    "examples": [
+     "Cancer Not A Tarot Reading \"CAR CRASH WAITING TO HAPPEN I FLIPPED IT TWICE\"  September 15th 31st",
+     "I PREDICTED A CAR CRASH AND 2 DEATHS",
+     "Tiger Woods: Car Crash, Injuries and Surgery - Surgeons Break It Down"
+    ],
+    "ids": [
+     "-sW63fV_auE",
+     "0J05Qx3TttA",
+     "1LDzxZscsXg",
+     "1jkgyEzc0Mw",
+     "2CFSWqE2aaY",
+     "3BNiZ5lFAi8",
+     "3ytA6cP4PcY",
+     "4MVYqmBZwJo",
+     "4zAgVfdK2QM",
+     "512GiavJ_54",
+     "5_TSUpxwH7E",
+     "7fgmoZbGUj4",
+     "8oj9y0FhIlI",
+     "8untpslb9dk",
+     "A0-AKWse9aI",
+     "C-myO_XuLhE",
+     "EptFAOZCefA",
+     "F9zEpfn5Q8w",
+     "FZXE2mA2lD0",
+     "He34mFpN6S8"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "exposes truth",
+   "verdict": "rhetoric",
+   "why": "Pure reveal packaging; subjects range from UFOs to psychics with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 12,
+    "months": 12,
+    "span": "2023-11 → 2026-09",
+    "examples": [
+     "Biblical Astrophysicists Exposes TRUTH Behind UFO Phenomenon | Hugh Ross",
+     "Psychic Exposes Truth: The Actual Reality Behind Human Existence #shorts #future",
+     "Math-Physicist Exposes TRUTH About Bob Lazar | Curt Jaimungal"
+    ],
+    "ids": [
+     "33_bk4M_7Tg",
+     "7iQqAAdDLfo",
+     "7ubbqzhEKMQ",
+     "AeaFb96tHW0",
+     "C8m4R7nnbto",
+     "DaMB58CmFDQ",
+     "E-WPaP3YxP4",
+     "H-c_IZKVRPs",
+     "O0APywg6UPg",
+     "OW3uDOyToO4",
+     "ROtXEBG_SU8",
+     "U0W5S7qvDnM",
+     "XAKWxLq7kY0",
+     "eFM3EhTdqrs",
+     "faWcUoshAHA",
+     "t_eMJvO6IKE",
+     "wFW0Ew4ejOo"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "hiding truth",
+   "verdict": "narrative",
+   "why": "Titles converge on a specific claim that the real silver story is being concealed.",
+   "claim_name": "The \"they're hiding the truth about silver\" story",
+   "claim": "Powerful institutions and insiders are suppressing information about silver's true supply and value, and the price is being manipulated to hide an imminent revaluation.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Silver's price does not reflect its real scarcity or value",
+    "cause": "Deliberate concealment and price suppression by banks, governments and insiders",
+    "outcome": "Buy physical silver before the truth surfaces and the price explodes",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 16,
+    "channels": 12,
+    "months": 14,
+    "span": "2019-11 → 2026-09",
+    "examples": [
+     "They are HIDING the TRUTH about Silver...",
+     "THEY ARE HIDING THE TRUTH ABOUT SILVER!",
+     "IS ELON MUSK HIDING THE TRUTH ABOUT SILVER?"
+    ],
+    "ids": [
+     "370D75t9G3Q",
+     "6nUeE0RMaQk",
+     "8Bq-5DWhRAE",
+     "9MMNj82e3G8",
+     "B-dtftE75WA",
+     "Cn8HBj8QAbk",
+     "GXw2kIaod1Y",
+     "O3G3pcYZg2k",
+     "S7RQIiZ8XpI",
+     "Tf0UjAHC-pk",
+     "WKVFgDRyyA0",
+     "ZcTm2NuNjRs",
+     "aaXjMr8IF_A",
+     "pvdPAOq5R5c",
+     "qbmIXbgnaXM",
+     "qkuZ9EloPlk"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "save yourself",
+   "verdict": "rhetoric",
+   "why": "An imperative hook used across pandemic, diabetes and money topics with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 12,
+    "months": 15,
+    "span": "2020-03 → 2026-09",
+    "examples": [
+     "Save Yourself Now and STOP the Pandemic - Dr Alan Mandell, DC",
+     "Warning for Diabetes Patients Save yourself from chemist may kill you | Common Causes of High Sugar",
+     "My $6M Mistake In India & How To Save Yourself!"
+    ],
+    "ids": [
+     "0qHV6xlKN3M",
+     "4jDctwt5c0I",
+     "86cLnpBbNQs",
+     "Cq7VUdXRenM",
+     "D5ivRtcNW6g",
+     "FYqg0dozy-o",
+     "Of3LfMD_0Qo",
+     "OqtrfWhOb1c",
+     "P5FPu-NB1Q8",
+     "dYRF3kvg2Nk",
+     "jv_3_lbYemo",
+     "kjtkqJU9IuQ",
+     "l-grSgXxRQM",
+     "v3AiOAORFuQ",
+     "wb9Z9puSJ7g",
+     "yVHdsTHQ8ks",
+     "ybZEKDvEG-8"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "won't survive",
+   "verdict": "rhetoric",
+   "why": "Doom phrasing attached to unrelated subjects rather than one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 14,
+    "months": 11,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "Some Car Companies Won't Survive Battle Over EVs",
+     "SILVER WON'T SURVIVE MUCH LONGER..",
+     "Bitcoin Bull Run WON'T Survive If This Happens!"
+    ],
+    "ids": [
+     "AdyAW9q5adk",
+     "BurJvbqFr4c",
+     "DpPruY4TNAc",
+     "F2Uf8Q8LOXE",
+     "HPR53i7yrkg",
+     "IPPCACRz2EE",
+     "L9uOpNnsOqo",
+     "Ub6PiQtzqlM",
+     "X1pD13nTQD0",
+     "YAq8sxDdHz0",
+     "i3P9etsVXPs",
+     "oL2G3ygRero",
+     "otYhFze9uD0",
+     "v9xZB87_rrU",
+     "y5FT1YzPwdc"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "studies show",
+   "verdict": "rhetoric",
+   "why": "A credibility hedge attached to unrelated subjects, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 8,
+    "months": 8,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Dogs can detect COVID, studies show. Why aren't they widely used for testing?",
+     "#shorts Studies Show Gen Z Men Can’t Handle Women Making More Money",
+     "Studies show metabolism and immunity shift at 44 and 60, but your choices can slow that down."
+    ],
+    "ids": [
+     "HD0YxBS5qD8",
+     "UJC7Oiptav4",
+     "XWNbEnsMG20",
+     "XxfMFUsEQQc",
+     "g_Gc1U9FvN8",
+     "gz0rUGOVc4s",
+     "qqiGfDWSqAU",
+     "wWgVjicQTE0",
+     "xGNqu7fMN7A"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "causes acne",
+   "verdict": "rhetoric",
+   "why": "Titles name many different alleged causes of acne with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 8,
+    "span": "2022-06 → 2026-07",
+    "examples": [
+     "9 root causes of acne",
+     "How Stress Causes ACNE!  Dr. Mandell",
+     "Dr. Berg explains the causes of acne #drberg #acne #sebum #oilyskin #bacteria"
+    ],
+    "ids": [
+     "2Yr2-r3BhE4",
+     "FZ7Z4-EAuzk",
+     "P63RvNZMuDo",
+     "dgZwktynZjs",
+     "gbDviIoPPd4",
+     "v-lE8FBxaA0",
+     "vIGWGgu4_uA",
+     "ybDWaWLtqkg"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "coming true",
+   "verdict": "rhetoric",
+   "why": "Tarot/astrology hook phrasing, no falsifiable shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 40,
+    "channels": 7,
+    "months": 31,
+    "span": "2019-06 → 2026-04",
+    "examples": [
+     "LIBRA JULY 2019 OMG! WISHES COMING TRUE!",
+     "TAURUS SEPTEMBER 2019 - WOW! IT'S RAINING MONEY! A WISH COMING TRUE!",
+     "WEEKEND GUIDANCE 21st & 22nd SEPTEMBER 2019 - WISHES COMING TRUE!"
+    ],
+    "ids": [
+     "0iwabnZw6fE",
+     "3bKDQy28JuQ",
+     "4U7jfZ78O7Q",
+     "5k5fWt7Lnz0",
+     "7bNYGsmJvaA",
+     "8m02MQjSiAo",
+     "AiBfVRwSXBg",
+     "BETuXEU2Cb0",
+     "D-5AxKIMh5g",
+     "FZ2ap_VTUdk",
+     "I-QtNann0-w",
+     "JptB8S9VczM",
+     "Mj0RBNtnxPc",
+     "OC2mniA3fSs",
+     "Ou7AAZobbRQ",
+     "SMQMqAr357o",
+     "TCFZ6PcKZn0",
+     "WhFKJMlS7Ks",
+     "Wv5Ru07vc1A",
+     "YA4oaIi9jA8"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "fix broken",
+   "verdict": "rhetoric",
+   "why": "A generic fix-it format applied to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 15,
+    "months": 11,
+    "span": "2019-02 → 2026-09",
+    "examples": [
+     "How to Fix a Broken Business Model in Your SaaS Startup",
+     "Rates Are Falling: Will It Fix The BROKEN Housing Market?",
+     "Fix Your BROKEN Credit Score NOW!"
+    ],
+    "ids": [
+     "1cdcP-4aQTI",
+     "6uVLYB3dl8I",
+     "CJLz2yEvhkE",
+     "CqZDgXRFpbo",
+     "FIFYvMH_QDQ",
+     "HqL-UFYA2is",
+     "KycZ9I6-2Cg",
+     "SgiwAQC05Nc",
+     "Zq_Wc0KFnFQ",
+     "_esBt2gkZtc",
+     "_stwddfyhhs",
+     "eIlxa5RdWx0",
+     "h74ApyWHzsI",
+     "lkYIDw5Skb4",
+     "wfqAI_e2KZ0",
+     "xK_3Tiw9P40",
+     "xdGdo4B_hCc",
+     "ybpLM4XpyvU"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "win midterms",
+   "verdict": "rhetoric",
+   "why": "News-subject phrase about midterm coverage; no single shared predictive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 9,
+    "months": 7,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Trump Says Argentina Aid 'Gone' if Milei Doesn't Win Midterms: Q&A",
+     "Trump Warns He’ll Be Impeached If Republicans Don’t Win Midterms",
+     "Trump warns Republicans they have to win midterms or he'll 'get impeached'"
+    ],
+    "ids": [
+     "67c07H3pWOg",
+     "7SR93gtZrqE",
+     "9OGQfP1NbWQ",
+     "9gAA519sPk0",
+     "BoAS_MMiVnU",
+     "HsLjjrcmsfk",
+     "LfRBPmE6nLY",
+     "MYRV7DriOqE",
+     "PGn43F5QeN4",
+     "WGNU6fTmTfI",
+     "YX94YUnVmQo",
+     "e_9TLvq8T24",
+     "ftZ7EOKgJJ8",
+     "hUUIr563tN0",
+     "jCZzMumPIq4",
+     "jffX2T45zCA",
+     "opGopgfO5aM",
+     "rfHbEocqLGE",
+     "t0S2Yozdmfo",
+     "vH9GmS9UxO8"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "dot-com bubble",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that today's AI/tech boom mirrors the 2000 dot-com bubble and will burst.",
+   "claim_name": "The \"AI boom is another dot-com bubble\" story",
+   "claim": "Today's AI and tech stock boom is inflating a bubble comparable to the 1999-2000 dot-com era, and it will deflate the same way, punishing investors who buy the hype.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Tech and AI valuations have run far ahead of earnings",
+    "cause": "Speculative mania and easy money chasing a new technology story",
+    "outcome": "A crash in AI/tech stocks; investors should favor proven cash-generating leaders or wait",
+    "clock": "No fixed date; framed as imminent"
+   },
+   "evidence": {
+    "videos": 12,
+    "channels": 9,
+    "months": 7,
+    "span": "2021-01 → 2026-08",
+    "examples": [
+     "The Dot-Com Bubble - Wall Street History",
+     "Lessons from the 2000 Dot-Com Bubble for Today’s Tech Investors (Investment History)",
+     "Not Another Dot-Com Bubble - Buffett's Rule Point To These 3 AI Leaders - Should You Buy Now??"
+    ],
+    "ids": [
+     "0FuBBdR_sEQ",
+     "18AoA02QOLM",
+     "3U-ZYaoBo14",
+     "AXLcRbLRues",
+     "BUJtThx6-1I",
+     "FlRisYx9NHY",
+     "K21EAENxhS0",
+     "Ov19N5Rs7bA",
+     "VmQlsvxuobM",
+     "Vu_sr8Jn2c4",
+     "kHxq62qB7_s",
+     "vRwISxRMPxk"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "cause infertility",
+   "verdict": "rhetoric",
+   "why": "Different alleged causes debated across titles, with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 9,
+    "span": "2019-06 → 2026-09",
+    "examples": [
+     "Varicocele  Treatment as Cause of Infertility Low Sperm Count Motility in Men Cure",
+     "Does the Birth Control Pill Cause Infertility? Feat. Mama Doctor Jones & Dr Hannam (MY Fertility Dr)",
+     "MYTHS AND FACTS ABOUT ORAL CONTRACEPTIVE PILLS.OCPS MAKE GAIN WEIGHT,CAUSE INFERTILITY, ABORTION"
+    ],
+    "ids": [
+     "02ILYGphJ4g",
+     "GRLpM8u9WJY",
+     "LcRh4dyCDok",
+     "Pp_o8Az74rk",
+     "S83EKxnieQk",
+     "TrBCLOdHgjg",
+     "YGbH7kumC5c",
+     "pukdY-CPDVU",
+     "sAJ62E1SJZg"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "coming together",
+   "verdict": "rhetoric",
+   "why": "Generic uplift phrasing from tarot and crypto hype titles, no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 7,
+    "months": 14,
+    "span": "2019-04 → 2026-09",
+    "examples": [
+     "SCORPIO MAY 2019 - IT'S ALL COMING TOGETHER",
+     "PISCES LOVE:  AUG. 15TH-31ST  \"SOULMATES COMING TOGETHER, AFTER A MUCH NEEDED BREAK.\"",
+     "CRYPTO Puzzle Pieces Coming Together! - German Banks - Bakkt CEO Senate -   Bitcoin XRP Ethereum"
+    ],
+    "ids": [
+     "AKZsT7UuKuw",
+     "DHIUGAu-wI0",
+     "HGqOsM1ACEo",
+     "MABrOoyz_qU",
+     "UeC8IaF85Ug",
+     "WbRVmJi68oc",
+     "Z1zBn3WLLgE",
+     "_DG_48h-3lE",
+     "kEuJ2QrR_oQ",
+     "kPKx2w6pSpI",
+     "l4rcfJ-CFVU",
+     "nOvUPVqs2UI",
+     "v6DxnsWYDIo",
+     "xNI05MISG5k",
+     "zlmH_hyC0T4"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "coming months",
+   "verdict": "rhetoric",
+   "why": "Generic time-horizon filler attached to unrelated subjects with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 14,
+    "months": 14,
+    "span": "2018-01 → 2026-09",
+    "examples": [
+     "Ethereum Surges Past $1000! Sell of HODL? $5000 in coming Months? - Casper & Plasma Upgrades",
+     "Bitcoin ‘Worthless’ & Will Perform Worse Than Stocks In The Coming Months: Capital Economics | CNBC",
+     "Elon Musk: SpaceX Starship prototype to fly from Florida in coming months"
+    ],
+    "ids": [
+     "01gELrYvwlM",
+     "5-MJ7u3GAjY",
+     "6q8vMWiKon4",
+     "E8ex_4O2p6I",
+     "H1BdPx5ZsYc",
+     "Ou7w3YJkZss",
+     "R6p6mtizpl8",
+     "TsdyVuyJjpU",
+     "XgbzW5Nhnho",
+     "dZ0UpSYUkqg",
+     "hgteMkw7dcQ",
+     "jwYARoXpAEM",
+     "opk4xHGg0Vk",
+     "p9CoaNW4Etg"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "investor must",
+   "verdict": "rhetoric",
+   "why": "Urgency/attention hook for educational finance content, not a checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 46,
+    "channels": 17,
+    "months": 23,
+    "span": "2016-09 → 2026-09",
+    "examples": [
+     "Stock Market Terminology every Investor MUST KNOW! - Part 2",
+     "Stock Market Terminology every Investor MUST KNOW! - Part 1",
+     "Stock Market Terminology every Investor MUST KNOW! - Part 7"
+    ],
+    "ids": [
+     "0-qC1-txooY",
+     "0s40TD-KZO0",
+     "0ygtLZvPXCA",
+     "1BWmdd1etH8",
+     "1CvscSipsRY",
+     "5NzoenrO0h0",
+     "5Xa0-mW5v-Q",
+     "5txdkIc7BWE",
+     "9guch3YD4Bs",
+     "AklUXYldjtI",
+     "DXWEya7HEqc",
+     "F7mvOsTlIW0",
+     "FIhpF9PZoOQ",
+     "FxMM84jDbKg",
+     "KqXh1bo6NiQ",
+     "Lu97jb7kl30",
+     "Os0p2dJ5Z40",
+     "Qyk98PKcI-Y",
+     "R5GCZJJls-o",
+     "SZ4yKJFjrQk"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "fix hormones",
+   "verdict": "narrative",
+   "why": "Titles share the claim that specific foods/remedies correct hormone imbalance underlying varied symptoms.",
+   "claim_name": "The \"fix your hormones\" story",
+   "claim": "Common symptoms like poor sleep, fatigue and weight gain stem from hormone imbalance, which natural foods, oils and supplements can correct.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread fatigue, sleep problems and weight issues",
+    "cause": "Hormonal imbalance caused by diet and modern living",
+    "outcome": "Natural remedies and dietary changes restore hormone balance and health",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 14,
+    "channels": 11,
+    "months": 10,
+    "span": "2025-01 → 2026-09",
+    "examples": [
+     "Sleepless Nights? USE THESE SECRETS to Fix Your Hormones – Wake Up Refreshed! || Barbara O’Neill",
+     "4 Bee Products to Eat DAILY to 10x Gut Health, Reduce Cancer Risk, & Fix Hormones",
+     "Can Black Seed Oil Fix Your Hormones Fast?"
+    ],
+    "ids": [
+     "0RES7ZfCtpI",
+     "FpRhduS-SKM",
+     "I24Rxn4LyCA",
+     "JKUdg2_6OcE",
+     "RJ67vARZ120",
+     "TlwtV7sKnis",
+     "UzAiBKEZKbg",
+     "XpFZwErv6kc",
+     "YbuctZSkITA",
+     "b6sp9k3K-S8",
+     "khY3AlDfSh8",
+     "lIHjt-X6Bx0",
+     "owEa49KA3nI",
+     "sqDL0oGrpIc"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "radio show",
+   "verdict": "rhetoric",
+   "why": "A format label, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 6,
+    "months": 10,
+    "span": "2018-05 → 2026-08",
+    "examples": [
+     "Brandon Rimes  Launch Your Own Radio Show Take 5",
+     "2019-02-24 RLA Radio Show with Host Dennis Tubbergen",
+     "2019-03-17 RLA Weekly Radio Show"
+    ],
+    "ids": [
+     "0QSQZywpBGk",
+     "4wvDxHxweQw",
+     "AUk7NQBknm4",
+     "EuOZ7-ut-zo",
+     "FT9IaP1biFk",
+     "GTHDbvyqV0s",
+     "Ia1PFOQwMKg",
+     "KEoEGxqI6-8",
+     "M4A4G5PPLVQ",
+     "RJ41Mu-EKZo",
+     "Z-uK0lJo9lg",
+     "apIzmO08GrY",
+     "cQ2D-CXOk_4",
+     "hE83zw5h_uM",
+     "mC5vZzftZfQ",
+     "o9V_XAO4sqM",
+     "xMQsLOyFuBI"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "save planet",
+   "verdict": "rhetoric",
+   "why": "Shared phrase but titles range from advocacy to skepticism with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 8,
+    "months": 9,
+    "span": "2021-11 → 2026-09",
+    "examples": [
+     "Speed & Scale: John Doerr’s Plan to Save the Planet",
+     "Investing to Save the Planet",
+     "Will Electric Cars Save The Planet? Or Is It Just Propaganda?"
+    ],
+    "ids": [
+     "0oMvek6QVMA",
+     "5HKbKaScqNM",
+     "5sCTKGet1jM",
+     "SgMWejbE6jw",
+     "TvhQoyMtVkw",
+     "VgKoAhfDrwk",
+     "ZGrZrw_Hp70",
+     "ZSi6EOd5HjI",
+     "zTTpGxKbZvU"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "could mean",
+   "verdict": "rhetoric",
+   "why": "Speculative connective used across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 91,
+    "channels": 44,
+    "months": 37,
+    "span": "2016-12 → 2026-09",
+    "examples": [
+     "What a Trump Presidency Could Mean for Silicon Valley",
+     "What DOT Pick Eliane Chao Could Mean For Drone Industry",
+     "What the Popularity of 'Fortnite' Could Mean for the Future of ESports"
+    ],
+    "ids": [
+     "-BDu4BYEtsw",
+     "06pwf5O8adk",
+     "1jeKuVfb1uE",
+     "1k-wTtBE_qE",
+     "3TD5ehJ0OTo",
+     "3pniP4LTH5I",
+     "4WL_t2l0BlU",
+     "4d7NWZtNDrw",
+     "4e8K2VaM1CU",
+     "5rgN5xqjuUc",
+     "6ME3gLaAlrc",
+     "6Q_mvfB9BvU",
+     "6tVHI0C_jm8",
+     "8DLoCwRQlPs",
+     "8SgounKd6pc",
+     "8pI1UkQwtCM",
+     "8samK87l0Ng",
+     "9VCuHCVjU2k",
+     "9e2r7ZHTCiA",
+     "9n36dql7CFI"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "fatal crash",
+   "verdict": "rhetoric",
+   "why": "News subject matter, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 8,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "Tesla’s FSD Factored in Fatal Crash, GlobalFoundries Boosts US Production | Bloomberg Technology",
+     "Tesla’s Full Self-Driving Factored in Fatal Crash",
+     "Gunfire riddles home of BC speed boat operator involved in fatal crash of 10-year-old boy"
+    ],
+    "ids": [
+     "16N32HB96EY",
+     "9qgAtYjtp7s",
+     "Av6BuyXiaQk",
+     "OY2YOQKMusw",
+     "OcX7qNncBho",
+     "QvzP4oy79XU",
+     "f36rlQeZOf4",
+     "gvyMADTLo1g",
+     "iuGnV3wBScs",
+     "tRBYLfWICFU"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "beats expectations",
+   "verdict": "rhetoric",
+   "why": "Earnings-report format phrase with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 7,
+    "months": 11,
+    "span": "2021-09 → 2026-08",
+    "examples": [
+     "Affirm Beats Expectations as 'Buy Now Pay Later' Surges",
+     "Zscaler Beats Expectations, Raises Full Year Guidance",
+     "UiPath's Revenue Forecast Beats Expectations"
+    ],
+    "ids": [
+     "-LapLFLYGqI",
+     "5Z1wV_Eh0MQ",
+     "ADbZiuROi8s",
+     "BHdQnCu81Ns",
+     "Bp2mPtQ30ow",
+     "F9VSfoRs_Qg",
+     "G9UndRDR7H4",
+     "HFx21phluIg",
+     "MJn2uTApRwQ",
+     "YBeqhyXUXRQ",
+     "cx_35f6Umn4",
+     "dvCSa4EdAc8",
+     "izjLEhY-70c",
+     "nTYoUlj3L6o",
+     "q8Yh1GIx2aU",
+     "qJRmBnUZUok",
+     "ss87pUI19TI"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "liquidations coming",
+   "verdict": "rhetoric",
+   "why": "A recurring warning label spanning unrelated assets (landlords, crypto) with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 3,
+    "months": 18,
+    "span": "2022-06 → 2026-08",
+    "examples": [
+     "Wall Street Landlords Taking HUGE LOSSES. Forced Liquidations Coming.",
+     "Crypto LIQUIDATIONS Coming If THIS Happens!! Bitcoin News Today & Ethereum Price Prediction!",
+     "CRYPTO LIQUIDATIONS COMING?! (New Chart)!! Bitcoin News Today & Ethereum Price Prediction (BTC, ETH)"
+    ],
+    "ids": [
+     "044o4K5-hME",
+     "9JIhxX94oBY",
+     "B0i-g2lIWUg",
+     "FTZ2SryzySY",
+     "HAjrB2XmTYI",
+     "HSC4xILV_E8",
+     "Kyj2-1ODPDg",
+     "MIhJWfwryYw",
+     "N08P7kWkNJQ",
+     "P21lQPbGhVk",
+     "TzV2yY_Qx74",
+     "WptTf5LnW-0",
+     "ZueVBKixwwk",
+     "_YfeYqSKeH0",
+     "crlHDyCtpX0",
+     "eawvqX7af2A",
+     "hq9yvvd4ZhE",
+     "kMuZA4mROIM",
+     "mPFNhRrTBB8",
+     "p6KNB0rixrs"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "sad truth",
+   "verdict": "rhetoric",
+   "why": "Pure teaser framing attached to wholly different subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 9,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "The Sad Truth About Michael Burry's Crash Prediction",
+     "The Sad Truth of Modern Feminism",
+     "THE SAD TRUTH ABOUT THE NEW MIDDLE CLASS..."
+    ],
+    "ids": [
+     "7Pdnb2LNSyQ",
+     "BXsl4vdVoY0",
+     "M7JIhSBkE48",
+     "MVUeUtpmCS4",
+     "Q-sCVH1FKRU",
+     "YbsesiNq_C0",
+     "eJjyIKoDyWw",
+     "eaLIjr4r3Zk",
+     "oBpp1we2bto"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "common causes",
+   "verdict": "rhetoric",
+   "why": "An explainer format label across unrelated conditions, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 13,
+    "months": 14,
+    "span": "2017-04 → 2026-09",
+    "examples": [
+     "Most Common Causes of a Pinched Nerve - Dr Mandell",
+     "Warning for Diabetes Patients Save yourself from chemist may kill you | Common Causes of High Sugar",
+     "Top 6 Most Common Causes of Hypothyroidism #healthtips #hypothyroidism"
+    ],
+    "ids": [
+     "0hyddUFsuLQ",
+     "EcA3HzG-mZA",
+     "GjYRT2_2EE0",
+     "LcRh4dyCDok",
+     "Of3LfMD_0Qo",
+     "PKJ9bPaXyBs",
+     "TvDVDvBsPf0",
+     "U5QystLXmxE",
+     "XmZG11pjyqM",
+     "cUvPxyV4KWY",
+     "e8QBygOFLs4",
+     "iTtzhMhC52M",
+     "iyXIX6ccCOU",
+     "qTPlMGVxMUM",
+     "rAgtVKZ8JyU",
+     "sI0U-k3bMQg",
+     "uzdCaEWpUNo",
+     "zSTW6A4KqcQ"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "end game",
+   "verdict": "rhetoric",
+   "why": "Dramatic finale phrasing spanning crashes, oil and resets without one testable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 26,
+    "channels": 18,
+    "months": 20,
+    "span": "2020-02 → 2026-09",
+    "examples": [
+     "Fastest Stock Market Crash In History: Is This The End Game?",
+     "Oil Crashes! Chaos Worse Than 2008 (End Game Revealed)",
+     "Mike Maloney (The Great Reset End Game, Inflation, Deflation, US Dollar, Bitcoin, Gold)"
+    ],
+    "ids": [
+     "73SE524h2-U",
+     "8EgNxPQJ3mQ",
+     "A25wq45a4oo",
+     "BoJXNERNSz8",
+     "D-j9hHHqToo",
+     "FfBp6Tpiy1M",
+     "Io1pORoF5fU",
+     "L-DhQ8sSHUA",
+     "ObMb0uZ5TgA",
+     "On7Ti25BmW8",
+     "StWaq5DouL0",
+     "VQjqkIbiZAo",
+     "WT8qxZBvZSw",
+     "Xmm1mHMJC04",
+     "a7wOytr8zbs",
+     "bdgNSAT634M",
+     "c7Ph2xStWNc",
+     "cu_XmhLdHWg",
+     "dt2NcSEqijs",
+     "gipl0Go-8AI"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "layoffs coming",
+   "verdict": "narrative",
+   "why": "Titles share a forecast that a mass layoff wave is imminent.",
+   "claim_name": "The \"mass layoffs are coming\" story",
+   "claim": "Channels claim a wave of large-scale layoffs is imminent as companies and Wall Street brace for economic downturn, with job losses spreading across tech and other sectors.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Jobs are about to disappear en masse",
+    "cause": "Slowing economy, corporate cost-cutting and overhiring",
+    "outcome": "Widespread unemployment; viewers should prepare financially",
+    "clock": "Imminent, repeatedly forecast from 2022 onward"
+   },
+   "evidence": {
+    "videos": 16,
+    "channels": 6,
+    "months": 14,
+    "span": "2022-05 → 2026-09",
+    "examples": [
+     "Voters Are Furious! Stimulus Update | $1,000 Guaranteed Income | Layoffs Are Coming | May 3rd",
+     "Wall Street CEO WARNING: Massive Layoffs are Coming",
+     "Home Sales Get Worse & Google Layoffs Coming | Market Update November 18, 2022"
+    ],
+    "ids": [
+     "1dADxBImO8Q",
+     "21o63qzcFm8",
+     "6FERFYfnl5w",
+     "9sOVt5s96xo",
+     "J7hXzaXXe1A",
+     "JxYoE1dwid4",
+     "aEUou5AF1Fs",
+     "aKa-V0Cn2Mo",
+     "j1jsOHpNnfQ",
+     "lbzGptEfFU4",
+     "oS4TSiz6U5s",
+     "ob45V3awGUI",
+     "omNmvz5qDfA",
+     "q2ZtlMauQWE",
+     "wRFSaa3cr0A",
+     "x_v1GRiKOKA"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "sex drive",
+   "verdict": "rhetoric",
+   "why": "A topic label, not a shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 7,
+    "months": 9,
+    "span": "2017-09 → 2026-09",
+    "examples": [
+     "Supercharge Your Sex Drive With Mother Nature's Most Powerful Fruits - Dr Alan Mandell, D.C.",
+     "Study Proves to Boost Your Sex Drive & Libido by Adding 1 Deficient Vitamin - Dr Alan Mandell, DC",
+     "Psychologist Explains Why “The Male Sex Drive Is A Tragedy”"
+    ],
+    "ids": [
+     "0lIKdglp2eM",
+     "4wiAeeUaPA4",
+     "6-GJlh96OD0",
+     "8vNNehCn8Ac",
+     "9LZrosh8KSc",
+     "KLBXE7Gn3rk",
+     "OAnqm3yy2cY",
+     "W4cmFgp_vk8",
+     "gXuDejYDJus",
+     "p0TjwU0Rx9I",
+     "v8Ov-2bv7Ek",
+     "vpU9U7hG16Y",
+     "yMy32F5WQgc"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "dead including",
+   "verdict": "rhetoric",
+   "why": "News casualty-count phrasing, a format not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 21,
+    "channels": 4,
+    "months": 13,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Johannesburg building fire: At least 74 dead, including 12 children",
+     "Sault Ste. Marie shooting: 5 dead including 3 children in intimate partner incident, police say",
+     "Germany knife attack: At least 2 dead including 2-year-old boy, former asylum seeker in custody"
+    ],
+    "ids": [
+     "7Zy4LgQ1Iyc",
+     "8b8K_lIOdfo",
+     "AjUjEcjjX54",
+     "BaF63ol7lXg",
+     "CxOwXp7_Gi0",
+     "FYP5vcaj2h8",
+     "GacKYdg41R8",
+     "NiP_uPk54Rg",
+     "TxwngTbxYuk",
+     "V5cDtrsrP90",
+     "WR29F7aNbFE",
+     "XfsxHJ5rcgI",
+     "XnxMSlT-l2I",
+     "YSr_uhd0FmQ",
+     "YizUk6p1VzA",
+     "dIKOslLaMPg",
+     "gps2GE1ajew",
+     "qRkEDH0VpjY",
+     "wHKpN4kiJ-4",
+     "xGg7ElfpIW4"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "fix neck",
+   "verdict": "rhetoric",
+   "why": "A how-to remedy format from one dominant channel, no contestable world-claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 21,
+    "channels": 4,
+    "months": 18,
+    "span": "2017-08 → 2026-01",
+    "examples": [
+     "Fix Neck Pain Fast - Unlock Tight Muscles & Joints Reducing Scar Tissue w/ Towel  (Dr Mandell, D.C.)",
+     "Relieve Your Trigger Points In Seconds & Fix Neck Pain - Dr Alan Mandell, DC",
+     "\"Do Not Kiss Me Technique\"...Fix Neck Pain the Smart Way - Dr Alan Mandell, DC"
+    ],
+    "ids": [
+     "7uT2NZNLgN0",
+     "CXUtOm6cDC8",
+     "IlCyVaoLR4Y",
+     "MOuav9w-vOE",
+     "NogTt1-F7qg",
+     "QcCBPulFAEs",
+     "SQJhxC5Nnso",
+     "UaV4h_sLAU4",
+     "ZxyqwaVoD44",
+     "_MOQW_HuetQ",
+     "_ojQ1HVQrFY",
+     "aUBFg5LzdoY",
+     "cB4lUsfbhRI",
+     "fCB2mQYJrOE",
+     "gF-HPwHapNE",
+     "op2-xSa1s5c",
+     "qPuE80umHrE",
+     "uxuWumQGrVo",
+     "wzwyQ9tNKCA",
+     "yPrSvCViOnA"
+    ]
+   },
+   "first_read": "2026-09-21",
+   "last_read": "2026-09-21"
   }
  ]
 }
