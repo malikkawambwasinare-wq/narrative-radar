@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-09-20"
+      "unavailable": "2026-09-21"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-09-20"
+      "unavailable": "2026-09-21"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -210240,15 +210240,22 @@
       "url": "https://www.youtube.com/watch?v=b4PMerjRS28",
       "published": "2026-09-13",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 558,
+      "length": "16:56",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCLPLP2jmKGx01DAKMZzr-fg"
+        "channelId": "UCLPLP2jmKGx01DAKMZzr-fg",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -210258,15 +210265,22 @@
       "url": "https://www.youtube.com/watch?v=MNNZ_WrILKI",
       "published": "2026-09-17",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 342,
+      "length": "18:09",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCTdYCtuxNqIpw0C7jbrIIag"
+        "channelId": "UCTdYCtuxNqIpw0C7jbrIIag",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": 1,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -210276,15 +210290,22 @@
       "url": "https://www.youtube.com/watch?v=3Ek_MOXs4NM",
       "published": "2026-09-18",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 34,
+      "length": "1:27",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCoq8sfRL8rlzK-GHyEb7E2w"
+        "channelId": "UCoq8sfRL8rlzK-GHyEb7E2w",
+        "category": "28",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -210294,15 +210315,22 @@
       "url": "https://www.youtube.com/watch?v=3NcDuKJ4mPY",
       "published": "2026-09-19",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 38,
+      "length": "12:52",
       "age_days": null,
       "query": "refiled from the pool (candidate:birth-rate-collapse)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyI1BPihwY0ga78gS-tCasQ"
+        "channelId": "UCyI1BPihwY0ga78gS-tCasQ",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -210312,15 +210340,22 @@
       "url": "https://www.youtube.com/watch?v=jx1XMVqcSr0",
       "published": "2026-09-20",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 11,
+      "length": "35:01",
       "age_days": null,
       "query": "refiled from the pool (candidate:ufo-disclosure)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCLwRfFJfwVEJkb7AioCQFnA"
+        "channelId": "UCLwRfFJfwVEJkb7AioCQFnA",
+        "category": "22",
+        "language": "ja",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -211562,7 +211597,4723 @@
         "channelViews": 8103,
         "channelVideos": 48
       }
+    },
+    {
+      "videoId": "KELonZC2WK8",
+      "title": "Digital Defense: Bluetooth Is Less Secure Than You Think (07/26/18)",
+      "channel": "Bloomberg Tech",
+      "url": "https://www.youtube.com/watch?v=KELonZC2WK8",
+      "published": "2018-07-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bloomberg Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrM7B7SL_g1edFOnmj-SDKg"
+      }
+    },
+    {
+      "videoId": "Lbm6eF-mqr8",
+      "title": "Silver Supply Dropping is more Serious than you think.",
+      "channel": "Silver Slayer",
+      "url": "https://www.youtube.com/watch?v=Lbm6eF-mqr8",
+      "published": "2019-08-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Silver Slayer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHSk08tGQasDxb-PpYPowVg"
+      }
+    },
+    {
+      "videoId": "7llADs-ahUo",
+      "title": "Meditation Is Easier Than You Think - Dr. Patrick Porter - BrainTap Inventor - TEDx Talk",
+      "channel": "Dr. Patrick Porter",
+      "url": "https://www.youtube.com/watch?v=7llADs-ahUo",
+      "published": "2021-03-03",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Patrick Porter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZ2tOyICABoDsExUuz9n7A"
+      }
+    },
+    {
+      "videoId": "2jqihLOa2wg",
+      "title": "BITCOIN BREAKOUT CLOSER THAN YOU THINK!!! TRADES ARE ACTIVE!",
+      "channel": "Crypto Rover",
+      "url": "https://www.youtube.com/watch?v=2jqihLOa2wg",
+      "published": "2021-04-09",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Crypto Rover)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCoUcIy0SWXXIhzWgJNdMoFQ"
+      }
+    },
+    {
+      "videoId": "eoBfonRabzo",
+      "title": "CHAINLINK GOING TO $100 FASTER THAN YOU THINK!",
+      "channel": "Crypto Rover",
+      "url": "https://www.youtube.com/watch?v=eoBfonRabzo",
+      "published": "2021-04-14",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Crypto Rover)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCoUcIy0SWXXIhzWgJNdMoFQ"
+      }
+    },
+    {
+      "videoId": "dcL7pNLny8g",
+      "title": "$100 SILVER COMING SOONER THAN YOU THINK..",
+      "channel": "Silver Slayer",
+      "url": "https://www.youtube.com/watch?v=dcL7pNLny8g",
+      "published": "2021-08-28",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Silver Slayer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHSk08tGQasDxb-PpYPowVg"
+      }
+    },
+    {
+      "videoId": "VdzUETbMTJY",
+      "title": "Becoming \"THAT GIRL\" is more DANGEROUS than you think!!! (Vanessa Tiiu Guide Review)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=VdzUETbMTJY",
+      "published": "2022-02-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "m7AfiJRlNxU",
+      "title": "Physics Is Far Stranger Than You Think - Jim Al-Khalili",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=m7AfiJRlNxU",
+      "published": "2022-05-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "QpFKUuqFb2g",
+      "title": "Frozen Berries are More Nutritious Than You Think!  Dr. Mandell",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=QpFKUuqFb2g",
+      "published": "2022-06-03",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "61hAFYLTkHY",
+      "title": "My car insurance is lower than you think! 📈",
+      "channel": "Ricky Gutierrez",
+      "url": "https://www.youtube.com/watch?v=61hAFYLTkHY",
+      "published": "2022-06-15",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ricky Gutierrez)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtlAFoYl2aWb6pMiHCctQHA"
+      }
+    },
+    {
+      "videoId": "_-ZjLWakne4",
+      "title": "Buying a supercar has more value than you think!",
+      "channel": "Ricky Gutierrez",
+      "url": "https://www.youtube.com/watch?v=_-ZjLWakne4",
+      "published": "2022-07-01",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ricky Gutierrez)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtlAFoYl2aWb6pMiHCctQHA"
+      }
+    },
+    {
+      "videoId": "0G9uEZDm1p0",
+      "title": "Ice Bath & Sauna Effects Are Crazier Than You Think - Andrew Huberman",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=0G9uEZDm1p0",
+      "published": "2022-08-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "ybDk3edmej8",
+      "title": "You Are Much Stronger Than You Think!  Dr. Mandell",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=ybDk3edmej8",
+      "published": "2022-08-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "N9I-1yXf40Q",
+      "title": "The Dollar's Demise Will Happen Sooner Than You Think",
+      "channel": "MoneyShow",
+      "url": "https://www.youtube.com/watch?v=N9I-1yXf40Q",
+      "published": "2022-11-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MoneyShow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLnjAUrBG0G5Z8oGae_yZKg"
+      }
+    },
+    {
+      "videoId": "-RzVk3vBB-k",
+      "title": "There Are FAR More Billionaires Than We Think!",
+      "channel": "How Money Works",
+      "url": "https://www.youtube.com/watch?v=-RzVk3vBB-k",
+      "published": "2023-05-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:How Money Works)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkCGANrihzExmu9QiqZpPlQ"
+      }
+    },
+    {
+      "videoId": "zXbLEv3zt2Y",
+      "title": "Insulin drives weight gain more than you think! #health #weightloss #fasting #insulinresistance",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=zXbLEv3zt2Y",
+      "published": "2023-06-01",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "SzhJzdAzcx0",
+      "title": "Why Bad Skin Conditions Are MORE Serious Than You Think...",
+      "channel": "The Biblical Nutritionist",
+      "url": "https://www.youtube.com/watch?v=SzhJzdAzcx0",
+      "published": "2023-06-15",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Biblical Nutritionist)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w"
+      }
+    },
+    {
+      "videoId": "Hus0pABecB4",
+      "title": "You will never get a penny more than you think you deserve",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=Hus0pABecB4",
+      "published": "2023-10-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "XCW5Hh1Vxuk",
+      "title": "the Palworld AI situation is crazier than you think…",
+      "channel": "David Ondrej",
+      "url": "https://www.youtube.com/watch?v=XCW5Hh1Vxuk",
+      "published": "2024-01-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:David Ondrej)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGrgwfbkjTIgPoOh2q1BAg"
+      }
+    },
+    {
+      "videoId": "eQlLzRt1F0I",
+      "title": "You Will Never Get More Than You Think You Deserve",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=eQlLzRt1F0I",
+      "published": "2024-04-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "AjdLtgtd3Y8",
+      "title": "Your brain 🧠 is more powerful than you think | strategies & biohacks #shorts #braintap",
+      "channel": "Dr. Patrick Porter",
+      "url": "https://www.youtube.com/watch?v=AjdLtgtd3Y8",
+      "published": "2024-04-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Patrick Porter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZ2tOyICABoDsExUuz9n7A"
+      }
+    },
+    {
+      "videoId": "xz2lGRggatk",
+      "title": "Junk foods are costing you more than you think!",
+      "channel": "Dr. Josh Axe",
+      "url": "https://www.youtube.com/watch?v=xz2lGRggatk",
+      "published": "2024-04-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Josh Axe)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgtp61tf9tYF7nG_gIQ94LQ"
+      }
+    },
+    {
+      "videoId": "2Yy049OOltM",
+      "title": "Social media is costing you more than you think.",
+      "channel": "Dr. Josh Axe",
+      "url": "https://www.youtube.com/watch?v=2Yy049OOltM",
+      "published": "2024-05-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Josh Axe)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgtp61tf9tYF7nG_gIQ94LQ"
+      }
+    },
+    {
+      "videoId": "nxHu20AxvcA",
+      "title": "(Live Stream) The silent killer in your pantry. Why cooking from scratch is easier than you think!",
+      "channel": "Kirsten Liebelt",
+      "url": "https://www.youtube.com/watch?v=nxHu20AxvcA",
+      "published": "2024-06-07",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kirsten Liebelt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUvknyV1tiZIlW---pVA6UQ"
+      }
+    },
+    {
+      "videoId": "-mRc2t4V9y0",
+      "title": "Why Small Events Matter More Than You Think - Brian Klaas",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=-mRc2t4V9y0",
+      "published": "2024-07-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "pbZ-y4VHkho",
+      "title": "You Are Better Than You Think You Are",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=pbZ-y4VHkho",
+      "published": "2024-07-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "vyMcz05rsLQ",
+      "title": "You will never get a penny more than you think you deserve",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=vyMcz05rsLQ",
+      "published": "2024-07-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "ln724uQQ7pw",
+      "title": "\"SILVER WILL GO HIGHER THAN YOU THINK\" #silverslayer #crypto #silverdegenerates",
+      "channel": "Silver Slayer",
+      "url": "https://www.youtube.com/watch?v=ln724uQQ7pw",
+      "published": "2024-07-29",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Silver Slayer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHSk08tGQasDxb-PpYPowVg"
+      }
+    },
+    {
+      "videoId": "HRWUt3UYStY",
+      "title": "You will not attract a penny more than you think you deserve",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=HRWUt3UYStY",
+      "published": "2024-08-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "yeu6L1bLMnI",
+      "title": "URGENT! This Brain Health Mistake Is More Dangerous Than You Think | Barbara O'Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=yeu6L1bLMnI",
+      "published": "2024-09-04",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "70Oz5nAAVTw",
+      "title": "Gout Relief at Home is EASIER Than You Think!",
+      "channel": "Dr. Diana Girnita - Rheumatologist OnCall",
+      "url": "https://www.youtube.com/watch?v=70Oz5nAAVTw",
+      "published": "2024-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Diana Girnita - Rheumatologist OnCal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4s5oHh_8U_xWJ7UYnTa1rQ"
+      }
+    },
+    {
+      "videoId": "H4FPC5dwJ54",
+      "title": "Why Leaders Are More Vulnerable Than You Think #Leadership #Vulnerability #shorts",
+      "channel": "Future Ready Leadership With Jacob Morgan",
+      "url": "https://www.youtube.com/watch?v=H4FPC5dwJ54",
+      "published": "2024-10-29",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Future Ready Leadership With Jacob Morga)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCn-LrHNSs5UefYS1tUbmgWg"
+      }
+    },
+    {
+      "videoId": "uhQ_r10Wm60",
+      "title": "$1 Million Bitcoin Happening SOONER Than You Think [HERE’S WHY]",
+      "channel": "Crypto by Jess",
+      "url": "https://www.youtube.com/watch?v=uhQ_r10Wm60",
+      "published": "2024-11-14",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Crypto by Jess)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiwZc1iC8BWTcQJQjYyqhAA"
+      }
+    },
+    {
+      "videoId": "nkoiif9eROg",
+      "title": "Why Movement is More Critical Than You Think",
+      "channel": "Dr David Jockers",
+      "url": "https://www.youtube.com/watch?v=nkoiif9eROg",
+      "published": "2024-11-15",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr David Jockers)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIAZtlZSFlnBp_hAlvB6QSw"
+      }
+    },
+    {
+      "videoId": "CBwV8SUkklU",
+      "title": "Why Who You Watch Matters More Than You Think",
+      "channel": "Valuetainment",
+      "url": "https://www.youtube.com/watch?v=CBwV8SUkklU",
+      "published": "2024-11-20",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Valuetainment)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIHdDJ0tjn_3j-FS7s_X1kQ"
+      }
+    },
+    {
+      "videoId": "nRQSfBhd7FE",
+      "title": "Walking Fixes More Than You Think - Dr Mike Israetel",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=nRQSfBhd7FE",
+      "published": "2024-11-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "VX-z-7L96uM",
+      "title": "\"There's No Stopping it! $1,000,000 BTC Is Closer Than You Think\" - Jack Mallers",
+      "channel": "Digital Coin",
+      "url": "https://www.youtube.com/watch?v=VX-z-7L96uM",
+      "published": "2024-11-27",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Coin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCp7Rg8q0s_F8PDGkuEUj5ew"
+      }
+    },
+    {
+      "videoId": "aQG5gW7L3JY",
+      "title": "\"There's No Stopping it! $1,000,000 BTC Is Closer Than You Think\" - Jack Mallers",
+      "channel": "Digital Coin",
+      "url": "https://www.youtube.com/watch?v=aQG5gW7L3JY",
+      "published": "2024-12-16",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Coin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCp7Rg8q0s_F8PDGkuEUj5ew"
+      }
+    },
+    {
+      "videoId": "iGmHupOr1-4",
+      "title": "Why Ignoring Your Finances Costs You More Than You Think",
+      "channel": "Financial Freedom with Lisa Sakai",
+      "url": "https://www.youtube.com/watch?v=iGmHupOr1-4",
+      "published": "2024-12-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Financial Freedom with Lisa Sakai)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCG0ymYn1LZxIgcFmPiZfOLA"
+      }
+    },
+    {
+      "videoId": "LH42uwrmmpE",
+      "title": "STOP! These 10 COFFEE MISTAKES Are More Harmful Than You Think!",
+      "channel": "Biohealthy",
+      "url": "https://www.youtube.com/watch?v=LH42uwrmmpE",
+      "published": "2024-12-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Biohealthy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOhE6Cq6tT9Jh6BcCxcPM4g"
+      }
+    },
+    {
+      "videoId": "9ZXghQnxBQ4",
+      "title": "Python OOP Mastery Is Easier Than You Think! #pythontutorial #codingforbeginners",
+      "channel": "Sophia An",
+      "url": "https://www.youtube.com/watch?v=9ZXghQnxBQ4",
+      "published": "2024-12-28",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sophia An)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCj4spbBI0UXvnsuwGSdJiAw"
+      }
+    },
+    {
+      "videoId": "l0m1FB0V_bQ",
+      "title": "Running Out Of Meds Is A BIGGER Problem Than You Think!",
+      "channel": "Dr. Diana Girnita - Rheumatologist OnCall",
+      "url": "https://www.youtube.com/watch?v=l0m1FB0V_bQ",
+      "published": "2024-12-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Diana Girnita - Rheumatologist OnCal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4s5oHh_8U_xWJ7UYnTa1rQ"
+      }
+    },
+    {
+      "videoId": "kTJQJnRH9B0",
+      "title": "Building AI Agents is Easier Than You Think (I'll Show You)",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=kTJQJnRH9B0",
+      "published": "2025-01-11",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "p5dS4lZZ_WQ",
+      "title": "Reducing Cortisol with these 7 Foods is EASIER Than You Think",
+      "channel": "The Health Lens",
+      "url": "https://www.youtube.com/watch?v=p5dS4lZZ_WQ",
+      "published": "2025-01-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Health Lens)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8gz3Tc2KHY-qmPD670Yv-Q"
+      }
+    },
+    {
+      "videoId": "56QgYIj4vdw",
+      "title": "STOP! These 10 OATMEAL MISTAKES Are More Harmful Than You Think!",
+      "channel": "Biohealthy",
+      "url": "https://www.youtube.com/watch?v=56QgYIj4vdw",
+      "published": "2025-01-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Biohealthy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOhE6Cq6tT9Jh6BcCxcPM4g"
+      }
+    },
+    {
+      "videoId": "t1L5n1zwIvY",
+      "title": "(LIVE) Why Your Belly Fat is More Dangerous Than You Think - And How to Shrink it Fast!",
+      "channel": "Kirsten Liebelt",
+      "url": "https://www.youtube.com/watch?v=t1L5n1zwIvY",
+      "published": "2025-02-07",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kirsten Liebelt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUvknyV1tiZIlW---pVA6UQ"
+      }
+    },
+    {
+      "videoId": "SAZmbTgIBHc",
+      "title": "Challenges of \"Made in Canada\": Why its harder than you think",
+      "channel": "Global News",
+      "url": "https://www.youtube.com/watch?v=SAZmbTgIBHc",
+      "published": "2025-02-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Global News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChLtXXpo4Ge1ReTEboVvTDg"
+      }
+    },
+    {
+      "videoId": "29bJqVwT6tE",
+      "title": "The RFK & MLK Files Are More Explosive Than You Think | John Kiriakou",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=29bJqVwT6tE",
+      "published": "2025-02-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "NOdb_XLFuYI",
+      "title": "7 Signs You Should Retire Earlier Than You Think",
+      "channel": "Business Upside",
+      "url": "https://www.youtube.com/watch?v=NOdb_XLFuYI",
+      "published": "2025-03-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Business Upside)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuSkeS5oU-B2tRIBDYntmaw"
+      }
+    },
+    {
+      "videoId": "Wwe0qJzE-q0",
+      "title": "7 Signs You Should Retire Earlier Than You Think",
+      "channel": "Business Upside",
+      "url": "https://www.youtube.com/watch?v=Wwe0qJzE-q0",
+      "published": "2025-03-25",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Business Upside)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuSkeS5oU-B2tRIBDYntmaw"
+      }
+    },
+    {
+      "videoId": "2jv_H6fXdEY",
+      "title": "7 Signs You Should Retire Earlier Than You Think",
+      "channel": "Business Upside",
+      "url": "https://www.youtube.com/watch?v=2jv_H6fXdEY",
+      "published": "2025-03-25",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Business Upside)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuSkeS5oU-B2tRIBDYntmaw"
+      }
+    },
+    {
+      "videoId": "thfVwyeeLl4",
+      "title": "How Sugar Sneaks Into Your Diet Without You Knowing?🍭🚨 | Are You Eating More Sugar Than You Think?",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=thfVwyeeLl4",
+      "published": "2025-04-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "L_21H-EjEI8",
+      "title": "Quantum Computers are Closer Than You Think: Recent News & Breakthroughs Pave the Way",
+      "channel": "The Quantum Bull",
+      "url": "https://www.youtube.com/watch?v=L_21H-EjEI8",
+      "published": "2025-04-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Quantum Bull)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCadNcTFsjFZOKg1ARo393AA"
+      }
+    },
+    {
+      "videoId": "aIcq7rs9xL8",
+      "title": "Is Lithium Shortage a Bigger Deal Than You Think?",
+      "channel": "Financial Freedom with Lisa Sakai",
+      "url": "https://www.youtube.com/watch?v=aIcq7rs9xL8",
+      "published": "2025-04-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Financial Freedom with Lisa Sakai)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCG0ymYn1LZxIgcFmPiZfOLA"
+      }
+    },
+    {
+      "videoId": "VQgNrzlAVRQ",
+      "title": "Failing These Tests Could Mean More Health Risks Than You Think",
+      "channel": "Talking With Docs",
+      "url": "https://www.youtube.com/watch?v=VQgNrzlAVRQ",
+      "published": "2025-04-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Talking With Docs)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqYI3lmZgTsRs202mY15QfA"
+      }
+    },
+    {
+      "videoId": "0UiFQnvjiTE",
+      "title": "IS A U.S.–CHINA TRADE DEAL CLOSER THAN WE THINK?",
+      "channel": "Crypto by Jess",
+      "url": "https://www.youtube.com/watch?v=0UiFQnvjiTE",
+      "published": "2025-04-19",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Crypto by Jess)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiwZc1iC8BWTcQJQjYyqhAA"
+      }
+    },
+    {
+      "videoId": "Ms81Mlp6o5U",
+      "title": "Your Buyer's Agent Saves More Than You Think - 3 SHOCKING Home Buying Myths...",
+      "channel": "Ravi & Sijy - The Rams Group | Seattle & Eastside",
+      "url": "https://www.youtube.com/watch?v=Ms81Mlp6o5U",
+      "published": "2025-04-25",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ravi & Sijy - The Rams Group | Seattle &)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAHoI3F-YWg95HIlgtWpDYg"
+      }
+    },
+    {
+      "videoId": "OL_FlVXQavc",
+      "title": "Altcoin Season Is Closer Than You Think... Get Ready!🚀",
+      "channel": "CryptoHersens",
+      "url": "https://www.youtube.com/watch?v=OL_FlVXQavc",
+      "published": "2025-05-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CryptoHersens)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8qkYSMIOGUt_1Ou-sXGJ6g"
+      }
+    },
+    {
+      "videoId": "tS54xm7nluU",
+      "title": "Discovering True Happiness Is Easier Than You Think #motivation #happiness",
+      "channel": "Food Decoded",
+      "url": "https://www.youtube.com/watch?v=tS54xm7nluU",
+      "published": "2025-07-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Food Decoded)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCh8eX1zZayWWqrbYee12iDg"
+      }
+    },
+    {
+      "videoId": "l-edzrpZXf8",
+      "title": "“Why Japanese Beer Culture Is Deeper Than You Think 🍺🇯🇵”",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=l-edzrpZXf8",
+      "published": "2025-07-27",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "vQOLWgCmqpo",
+      "title": "“What’s REALLY Inside a Big Mac? (It’s More Than You Think)”",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=vQOLWgCmqpo",
+      "published": "2025-07-28",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "tfQwZF5SPJI",
+      "title": "Why Parasite Infections Might Be More Common in the USA Than You Think",
+      "channel": "Dr David Jockers",
+      "url": "https://www.youtube.com/watch?v=tfQwZF5SPJI",
+      "published": "2025-07-30",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr David Jockers)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIAZtlZSFlnBp_hAlvB6QSw"
+      }
+    },
+    {
+      "videoId": "eehQrSXekyI",
+      "title": "WARNING: THE BITCOIN TOP IS CLOSER THAN YOU THINK...",
+      "channel": "Crypto Rover",
+      "url": "https://www.youtube.com/watch?v=eehQrSXekyI",
+      "published": "2025-07-30",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Crypto Rover)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCoUcIy0SWXXIhzWgJNdMoFQ"
+      }
+    },
+    {
+      "videoId": "TNHe04_5ywY",
+      "title": "“The Hidden Danger in Baby Wipes? 👶 Why pH Level Matters More Than You Think”",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=TNHe04_5ywY",
+      "published": "2025-07-31",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "yq8GS6yMi6g",
+      "title": "Why this NEW AI \"Tool\" Might Be More Dangerous Than You Think | Riz Virk",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=yq8GS6yMi6g",
+      "published": "2025-08-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "DQJF8djuNZs",
+      "title": "Why Oil & Gas Outlook is Brighter Than You Think",
+      "channel": "ITR Economics",
+      "url": "https://www.youtube.com/watch?v=DQJF8djuNZs",
+      "published": "2025-09-02",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ITR Economics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJx7dfActtS_noNjNq6sumA"
+      }
+    },
+    {
+      "videoId": "uMekOTkhJTc",
+      "title": "Why Reviving the Woolly Mammoth (+ Others) Is More Important Than You Think | Forrest Galante",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=uMekOTkhJTc",
+      "published": "2025-09-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "mPDj7Z9RMqI",
+      "title": "The Breakthrough You've Been Waiting For Is Closer Than You Think",
+      "channel": "Brian Scott",
+      "url": "https://www.youtube.com/watch?v=mPDj7Z9RMqI",
+      "published": "2025-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brian Scott)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOgXHr5S3oF0qetPfqxJfSw"
+      }
+    },
+    {
+      "videoId": "8u-NYRyDPrc",
+      "title": "Why Population Collapse is Closer Than You Think - Stephen J. Shaw",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=8u-NYRyDPrc",
+      "published": "2025-09-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "mMrYr746ozo",
+      "title": "You Are Greater Than You Think",
+      "channel": "Brian Scott",
+      "url": "https://www.youtube.com/watch?v=mMrYr746ozo",
+      "published": "2025-09-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brian Scott)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOgXHr5S3oF0qetPfqxJfSw"
+      }
+    },
+    {
+      "videoId": "WxMdhDoyrts",
+      "title": "Darryl Cooper Is More Dangerous Than You Think | RocaNews",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=WxMdhDoyrts",
+      "published": "2025-09-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "70rLbNl9JIE",
+      "title": "The Singularity Is Closer Than You Think — Just 5 Years Away?",
+      "channel": "AInewsCode",
+      "url": "https://www.youtube.com/watch?v=70rLbNl9JIE",
+      "published": "2025-09-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AInewsCode)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA07eEcbiRLAOj9L4kxZY9A"
+      }
+    },
+    {
+      "videoId": "XkhWSzOB7fI",
+      "title": "Why $25K Is Closer to $100K Than You Think",
+      "channel": "Nick Invests",
+      "url": "https://www.youtube.com/watch?v=XkhWSzOB7fI",
+      "published": "2025-10-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Invests)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXzNNA2ngRpRiWvyA7eGd6w"
+      }
+    },
+    {
+      "videoId": "Ph6dYgX1CzY",
+      "title": "Opening a Hong Kong Traditional Bank Account is Harder Than You Think",
+      "channel": "Statrys",
+      "url": "https://www.youtube.com/watch?v=Ph6dYgX1CzY",
+      "published": "2025-10-10",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Statrys)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC39jphb_m0Cv6MHHWGyP8iQ"
+      }
+    },
+    {
+      "videoId": "o-EunGY5wMA",
+      "title": "Why Your Balance Matters More Than You Think",
+      "channel": "The Movement Paradigm®",
+      "url": "https://www.youtube.com/watch?v=o-EunGY5wMA",
+      "published": "2025-10-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Movement Paradigm®)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpN9Yu4ok6w0BH57HYObamQ"
+      }
+    },
+    {
+      "videoId": "5xLrgGCi0SQ",
+      "title": "Why Bitcoin might pump sooner than you think!  ALERT.",
+      "channel": "Craig's CoinPurse",
+      "url": "https://www.youtube.com/watch?v=5xLrgGCi0SQ",
+      "published": "2025-10-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Craig's CoinPurse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqEX9pnsArBYK0RQ7x2a6wg"
+      }
+    },
+    {
+      "videoId": "809o9_Oz6j0",
+      "title": "Why Hydration Is More Important Than You Think!",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=809o9_Oz6j0",
+      "published": "2025-10-31",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Tips By  H.S)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
+      }
+    },
+    {
+      "videoId": "qxLzp_FgSrA",
+      "title": "Aging and reproduction are more connected than we think.",
+      "channel": "The Proactive Longevity",
+      "url": "https://www.youtube.com/watch?v=qxLzp_FgSrA",
+      "published": "2025-11-06",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Proactive Longevity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfre7X8Sl4Fee6QjuBWg_gw"
+      }
+    },
+    {
+      "videoId": "nzHMTN7TNnc",
+      "title": "8 Signs You Should Retire Earlier Than You Think!",
+      "channel": "Money Strategist",
+      "url": "https://www.youtube.com/watch?v=nzHMTN7TNnc",
+      "published": "2025-11-11",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Money Strategist)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJoUwf4OJaRvjSfsDnK-bqw"
+      }
+    },
+    {
+      "videoId": "fivpHJDCAks",
+      "title": "Prepare! U.S. Crypto Regulations Will Pass Sooner Than You Think! | Patrick Witt",
+      "channel": "Thinking Crypto",
+      "url": "https://www.youtube.com/watch?v=fivpHJDCAks",
+      "published": "2025-11-14",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Thinking Crypto)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjpkwsuHgYx9fBE0ojsJ_-w"
+      }
+    },
+    {
+      "videoId": "3IDNRBiHdY8",
+      "title": "This HEALING Diet is simpler than you think",
+      "channel": "The Biblical Nutritionist",
+      "url": "https://www.youtube.com/watch?v=3IDNRBiHdY8",
+      "published": "2025-11-22",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Biblical Nutritionist)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w"
+      }
+    },
+    {
+      "videoId": "JtMc-fNjfpo",
+      "title": "Wealth Is Way Easier Than You Think (Most People Just Don’t Realize It)",
+      "channel": "Nick Invests",
+      "url": "https://www.youtube.com/watch?v=JtMc-fNjfpo",
+      "published": "2025-11-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Invests)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXzNNA2ngRpRiWvyA7eGd6w"
+      }
+    },
+    {
+      "videoId": "oYS4G4iXvqw",
+      "title": "The Probability We Aren’t From Earth Is Higher Than You Think | David Kipping",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=oYS4G4iXvqw",
+      "published": "2025-11-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "BnPx7fxG3x4",
+      "title": "50 Year Mortgages Are Actually Even Dumber Than You Think",
+      "channel": "How Money Works",
+      "url": "https://www.youtube.com/watch?v=BnPx7fxG3x4",
+      "published": "2025-11-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:How Money Works)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkCGANrihzExmu9QiqZpPlQ"
+      }
+    },
+    {
+      "videoId": "KtNvCYKq1Hs",
+      "title": "Solving EV Charging Costs and Availability Is Easier Than We Think",
+      "channel": "Adam's Everything EV",
+      "url": "https://www.youtube.com/watch?v=KtNvCYKq1Hs",
+      "published": "2025-11-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Adam's Everything EV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTPJmDZPJt17iq4lsTuH61g"
+      }
+    },
+    {
+      "videoId": "bYmB2S2h_B4",
+      "title": "Why “Not-So-Smart” People Get Rich Faster Than You Think",
+      "channel": "Nick Invests",
+      "url": "https://www.youtube.com/watch?v=bYmB2S2h_B4",
+      "published": "2025-12-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Invests)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXzNNA2ngRpRiWvyA7eGd6w"
+      }
+    },
+    {
+      "videoId": "XpmsjYCHtIs",
+      "title": "Why U.S. Markets Are More Resilient Than You Think | Alicia Levine",
+      "channel": "MoneyShow",
+      "url": "https://www.youtube.com/watch?v=XpmsjYCHtIs",
+      "published": "2025-12-09",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MoneyShow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLnjAUrBG0G5Z8oGae_yZKg"
+      }
+    },
+    {
+      "videoId": "1N3f8pepiAk",
+      "title": "Why getting a data center built may be harder than you think",
+      "channel": "Bloomberg Podcasts",
+      "url": "https://www.youtube.com/watch?v=1N3f8pepiAk",
+      "published": "2025-12-11",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bloomberg Podcasts)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChF5O40UBqAc82I7-i5ig6A"
+      }
+    },
+    {
+      "videoId": "6C0t5mN26nI",
+      "title": "ChatGPT 5.2 Is Here… and It’s WAY Smarter Than You Think",
+      "channel": "Practical AI Digest",
+      "url": "https://www.youtube.com/watch?v=6C0t5mN26nI",
+      "published": "2025-12-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Practical AI Digest)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCz-YQJ3nA9m4hpy4RWB5e3A"
+      }
+    },
+    {
+      "videoId": "JXAADlo7FEs",
+      "title": "Why getting a data center built may be harder than you think",
+      "channel": "Bloomberg Television",
+      "url": "https://www.youtube.com/watch?v=JXAADlo7FEs",
+      "published": "2025-12-13",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bloomberg Television)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
+      }
+    },
+    {
+      "videoId": "rzu5hp-ZWyo",
+      "title": "n8n 2.0 Code Nodes are MORE Powerful Than You Think",
+      "channel": "Tyler AI",
+      "url": "https://www.youtube.com/watch?v=rzu5hp-ZWyo",
+      "published": "2025-12-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tyler AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrnqntHQ4oNe7HJtfiAMQ2g"
+      }
+    },
+    {
+      "videoId": "1QuS_J7uXfQ",
+      "title": "The Occultist Godfather is SCARIER Than You Think | Mark Gagnon",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=1QuS_J7uXfQ",
+      "published": "2025-12-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "YPnu_Mk3nnc",
+      "title": "What Is Infantilization? Signs, Examples & Why It’s More Dangerous Than You Think",
+      "channel": "[indistinct chatter]",
+      "url": "https://www.youtube.com/watch?v=YPnu_Mk3nnc",
+      "published": "2025-12-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:[indistinct chatter])",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKah0AKe0SVcXKgqVYWWyxg"
+      }
+    },
+    {
+      "videoId": "Dma7e3Ph0TQ",
+      "title": "The \"Bet On Everything\" Epidemic Is Actually Even Dumber Than You Think",
+      "channel": "How Money Works",
+      "url": "https://www.youtube.com/watch?v=Dma7e3Ph0TQ",
+      "published": "2025-12-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:How Money Works)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkCGANrihzExmu9QiqZpPlQ"
+      }
+    },
+    {
+      "videoId": "NDetsS0P2ic",
+      "title": "This Bread Causes More Gas Than You Think!  #drmandell #bread #gas #digestion",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=NDetsS0P2ic",
+      "published": "2026-01-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "GzcC8Tfv8jQ",
+      "title": "Who Do We Really Owe? Global Debt Explained in 60 Seconds #GlobalDebt #MoneySystem #FiatCurrency",
+      "channel": "Epoch Vault TV",
+      "url": "https://www.youtube.com/watch?v=GzcC8Tfv8jQ",
+      "published": "2026-01-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Epoch Vault TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwMqGC4JOK0Ha6u-4rlpahQ"
+      }
+    },
+    {
+      "videoId": "xMATsHY_r_I",
+      "title": "Why Workplace Behavior Matters More Than You Think",
+      "channel": "Predictive Index Hacks",
+      "url": "https://www.youtube.com/watch?v=xMATsHY_r_I",
+      "published": "2026-01-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Predictive Index Hacks)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCino6VfAoONBx9jorpCroew"
+      }
+    },
+    {
+      "videoId": "7AiJpVVKlqQ",
+      "title": "Why Pneumonia Is More Dangerous Than You Think",
+      "channel": "Dr. John Chuback",
+      "url": "https://www.youtube.com/watch?v=7AiJpVVKlqQ",
+      "published": "2026-01-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. John Chuback)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAXIGpQX31tiBBwXgi3Ft8A"
+      }
+    },
+    {
+      "videoId": "74yEql7HI0E",
+      "title": "The Venezuelan Gold Reserves Story is Crazier Than You Think | Daniel DiMartino",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=74yEql7HI0E",
+      "published": "2026-01-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "ll8oq7meb9Q",
+      "title": "The Truth About Property Cycles: Why Timing Matters More Than You Think",
+      "channel": "The Follio Property Podcast",
+      "url": "https://www.youtube.com/watch?v=ll8oq7meb9Q",
+      "published": "2026-01-10",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Follio Property Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_c__Ji5cQUe20zGmAfoA_A"
+      }
+    },
+    {
+      "videoId": "BTQvRdDzFOw",
+      "title": "The Golden Globes Just Recognized Podcasts - And Here's Why That's a Bigger Deal Than You Think",
+      "channel": "[indistinct chatter]",
+      "url": "https://www.youtube.com/watch?v=BTQvRdDzFOw",
+      "published": "2026-01-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:[indistinct chatter])",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKah0AKe0SVcXKgqVYWWyxg"
+      }
+    },
+    {
+      "videoId": "7h8LW1uBwh8",
+      "title": "Why Stress, Self-Talk, and Hormones Matter More Than You Think — with Rupina Meer",
+      "channel": "Dr. Julia Ward",
+      "url": "https://www.youtube.com/watch?v=7h8LW1uBwh8",
+      "published": "2026-01-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Julia Ward)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPz2YJi8Lw43i6XwNQiS6wg"
+      }
+    },
+    {
+      "videoId": "7jD3GiQhj0s",
+      "title": "AI Is Coming for More Jobs Than You Think",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=7jD3GiQhj0s",
+      "published": "2026-02-15",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:(REIN) The Real Estate Investment Networ)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ"
+      }
+    },
+    {
+      "videoId": "AATAtLGU-DQ",
+      "title": "“Reverse Aging Is Easier Than You Think” - Longevity Expert CALLS OUT Age Reversal HYPE",
+      "channel": "Valuetainment",
+      "url": "https://www.youtube.com/watch?v=AATAtLGU-DQ",
+      "published": "2026-02-17",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Valuetainment)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIHdDJ0tjn_3j-FS7s_X1kQ"
+      }
+    },
+    {
+      "videoId": "OkIjj9N_DBs",
+      "title": "ये 10 निशानियाँ हैं तो आप पूरी तरह स्वस्थ हैं! | 10 Signs You Are Healthier Than You Think!",
+      "channel": "Healthy Hamesha",
+      "url": "https://www.youtube.com/watch?v=OkIjj9N_DBs",
+      "published": "2026-02-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Hamesha)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCys-KuZ7z2KHsPaW4U_lEBQ"
+      }
+    },
+    {
+      "videoId": "GBFOiWEz_mk",
+      "title": "Ancient Europe Was More Civilized Than You Think #shortsfeed #facts #historyshorts #historyfacts",
+      "channel": "Forgotten Hidden Histories",
+      "url": "https://www.youtube.com/watch?v=GBFOiWEz_mk",
+      "published": "2026-02-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Forgotten Hidden Histories)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnImRiMFFxsBjAX6tpDWYhw"
+      }
+    },
+    {
+      "videoId": "bgphU9b-12M",
+      "title": "Why Hydration Affects Glucose More Than You Think",
+      "channel": "Food Decoded",
+      "url": "https://www.youtube.com/watch?v=bgphU9b-12M",
+      "published": "2026-02-25",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Food Decoded)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCh8eX1zZayWWqrbYee12iDg"
+      }
+    },
+    {
+      "videoId": "lpWht5Ixi7o",
+      "title": "Asymptomatic Osteoarthritis Is Way More Common Than You Think #health #shorts",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=lpWht5Ixi7o",
+      "published": "2026-03-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Tips By  H.S)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
+      }
+    },
+    {
+      "videoId": "I5jNEPKb0e0",
+      "title": "Building My Automation Business Publicly! Here's My Real Reason Why",
+      "channel": "Sayujya Gupta",
+      "url": "https://www.youtube.com/watch?v=I5jNEPKb0e0",
+      "published": "2026-03-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sayujya Gupta)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHI3TnQXvJJUR_iDZh0jVMg"
+      }
+    },
+    {
+      "videoId": "2eMXCo_xvsY",
+      "title": "Genghis Khan Was More Disturbing Than You Think",
+      "channel": "The Lame Guy",
+      "url": "https://www.youtube.com/watch?v=2eMXCo_xvsY",
+      "published": "2026-03-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Lame Guy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4dD4astRJCyLY1_QCrtSow"
+      }
+    },
+    {
+      "videoId": "aA8yHXLG-Qg",
+      "title": "If You Have THESE Signs… You’re Healthier Than You Think! 😳(Most People Ignore!) 🤯",
+      "channel": "FitNutriLife",
+      "url": "https://www.youtube.com/watch?v=aA8yHXLG-Qg",
+      "published": "2026-03-18",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitNutriLife)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w"
+      }
+    },
+    {
+      "videoId": "CxONp5cuc6k",
+      "title": "AI Will Change Your Job Faster Than You Think | Microsoft CPO Amy Coleman Explains",
+      "channel": "Future Ready Leadership With Jacob Morgan",
+      "url": "https://www.youtube.com/watch?v=CxONp5cuc6k",
+      "published": "2026-03-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Future Ready Leadership With Jacob Morga)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCn-LrHNSs5UefYS1tUbmgWg"
+      }
+    },
+    {
+      "videoId": "YYzQo4_ReH0",
+      "title": "Is the Dollar’s End Closer Than You Think? #shorts",
+      "channel": "The Sujal Show",
+      "url": "https://www.youtube.com/watch?v=YYzQo4_ReH0",
+      "published": "2026-03-25",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Sujal Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSM86HfHcfVuz7qzwtQQQg"
+      }
+    },
+    {
+      "videoId": "P-DNJj2bRQk",
+      "title": "The Truth About Cholesterol. it's Sneakier than You Think.",
+      "channel": "GNG Feel Great",
+      "url": "https://www.youtube.com/watch?v=P-DNJj2bRQk",
+      "published": "2026-04-02",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GNG Feel Great)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsinOJvH7PeE50ACaAFxgnQ"
+      }
+    },
+    {
+      "videoId": "4Ej2pmkwofk",
+      "title": "LATEST: THE UFO COVER-UP IS BIGGER THAN YOU THINK",
+      "channel": "Cristina Gomez",
+      "url": "https://www.youtube.com/watch?v=4Ej2pmkwofk",
+      "published": "2026-04-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Cristina Gomez)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTHxG7ncMYHl5r66fqPnDDg"
+      }
+    },
+    {
+      "videoId": "opQWK-I7ZkU",
+      "title": "Why Industry-Specific Inflation Matters More Than You Think",
+      "channel": "ITR Economics",
+      "url": "https://www.youtube.com/watch?v=opQWK-I7ZkU",
+      "published": "2026-04-16",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ITR Economics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJx7dfActtS_noNjNq6sumA"
+      }
+    },
+    {
+      "videoId": "h_qisWt4ohc",
+      "title": "Perimenopause Starts Earlier Than You Think — Here's Why",
+      "channel": "Dr. Diana Girnita - Rheumatologist OnCall",
+      "url": "https://www.youtube.com/watch?v=h_qisWt4ohc",
+      "published": "2026-04-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Diana Girnita - Rheumatologist OnCal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4s5oHh_8U_xWJ7UYnTa1rQ"
+      }
+    },
+    {
+      "videoId": "9HYOQqlhzwY",
+      "title": "Scientists say Tatooine-like planets with 2 suns are more common than we think",
+      "channel": "Global News",
+      "url": "https://www.youtube.com/watch?v=9HYOQqlhzwY",
+      "published": "2026-05-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Global News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChLtXXpo4Ge1ReTEboVvTDg"
+      }
+    },
+    {
+      "videoId": "pY1LOum6C7M",
+      "title": "🥑 8 \"Healthy\" Foods That Are Way More Powerful Than You Think #healthylifestyle",
+      "channel": "FitNutriLife",
+      "url": "https://www.youtube.com/watch?v=pY1LOum6C7M",
+      "published": "2026-05-05",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitNutriLife)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w"
+      }
+    },
+    {
+      "videoId": "24Tn04dyWBE",
+      "title": "Why Lemon Water Is More Powerful Than You Think",
+      "channel": "Dr. Berg Shorts",
+      "url": "https://www.youtube.com/watch?v=24Tn04dyWBE",
+      "published": "2026-05-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Berg Shorts)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpWhiwlOPxOmwQu5xyjtLDw"
+      }
+    },
+    {
+      "videoId": "5NlCvXtpOzE",
+      "title": "Your Toothbrush is Dirtier Than You Think!  #drmandell #toothbrush #dirty #sick",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=5NlCvXtpOzE",
+      "published": "2026-05-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "nwGTgueHAvg",
+      "title": "\"Samson Mow: The Omega Candle To $1.33M Is Closer Than You Think\"",
+      "channel": "Digital Coin",
+      "url": "https://www.youtube.com/watch?v=nwGTgueHAvg",
+      "published": "2026-05-10",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Coin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCp7Rg8q0s_F8PDGkuEUj5ew"
+      }
+    },
+    {
+      "videoId": "ynFRHUqNE3I",
+      "title": "Parasites & The GI-MAP Test: Why They’re More Common Than You Think (And How to Detect Them)",
+      "channel": "What Did Adam Say?",
+      "url": "https://www.youtube.com/watch?v=ynFRHUqNE3I",
+      "published": "2026-05-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:What Did Adam Say?)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0tZV6LuMKg_99WCD7ef0sA"
+      }
+    },
+    {
+      "videoId": "19qBIJtgaJ0",
+      "title": "If You Can’t Do These, Your Body Is Aging Faster Than You Think ⚠️ Doctor Explains #healthtips",
+      "channel": "FitNutriLife",
+      "url": "https://www.youtube.com/watch?v=19qBIJtgaJ0",
+      "published": "2026-05-15",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitNutriLife)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w"
+      }
+    },
+    {
+      "videoId": "ByOX0Z_cnh0",
+      "title": "What If Human History Is Way More Incomplete Than We Think?  #shorts #fyp",
+      "channel": "Noetic Nomad",
+      "url": "https://www.youtube.com/watch?v=ByOX0Z_cnh0",
+      "published": "2026-05-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Noetic Nomad)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC6KLwXMuDWanu4uMEv1XR2w"
+      }
+    },
+    {
+      "videoId": "5vt9AGeH1UE",
+      "title": "Why the Fed’s Wording on Rate Cuts Matters More Than You Think",
+      "channel": "ITR Economics",
+      "url": "https://www.youtube.com/watch?v=5vt9AGeH1UE",
+      "published": "2026-05-22",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ITR Economics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJx7dfActtS_noNjNq6sumA"
+      }
+    },
+    {
+      "videoId": "qJNeH5GAip4",
+      "title": "The Future Is Changing Faster Than You Think | SophNovAi™",
+      "channel": "SophNovAi™",
+      "url": "https://www.youtube.com/watch?v=qJNeH5GAip4",
+      "published": "2026-05-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SophNovAi™)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCRXvDh3TyruJ2Xev67jVh4w"
+      }
+    },
+    {
+      "videoId": "QpesaxxwnVI",
+      "title": "Stress Is Aging Your Body Faster Than You Think!  #drmandell #health #body #stress",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=QpesaxxwnVI",
+      "published": "2026-05-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "znKLdyryeLU",
+      "title": "\"AI Needs To Be DISARMED\" - The Pope's 13-Point AI Warning Is DARKER Than You Think",
+      "channel": "Valuetainment",
+      "url": "https://www.youtube.com/watch?v=znKLdyryeLU",
+      "published": "2026-05-27",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Valuetainment)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIHdDJ0tjn_3j-FS7s_X1kQ"
+      }
+    },
+    {
+      "videoId": "XXd7xOeBDQ0",
+      "title": "Art and Cats have more in common than you think 🤔 #digitalart #doodles #petart #sketches #artstudy",
+      "channel": "Neko Rina",
+      "url": "https://www.youtube.com/watch?v=XXd7xOeBDQ0",
+      "published": "2026-05-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Neko Rina)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwYhFAz5aSEoat4B_SJzoQg"
+      }
+    },
+    {
+      "videoId": "9T3KYV0ZdEo",
+      "title": "7 Fruits That Spike Blood Sugar Faster Than You Think - snap shot at the end #bloodsugarcontrol",
+      "channel": "GNG Feel Great",
+      "url": "https://www.youtube.com/watch?v=9T3KYV0ZdEo",
+      "published": "2026-06-01",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GNG Feel Great)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsinOJvH7PeE50ACaAFxgnQ"
+      }
+    },
+    {
+      "videoId": "859_TTVdfn4",
+      "title": "Accountant explains: You might be richer than you think",
+      "channel": "Nischa",
+      "url": "https://www.youtube.com/watch?v=859_TTVdfn4",
+      "published": "2026-06-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nischa)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCQpPo9BNwezg54N9hMFQp6Q"
+      }
+    },
+    {
+      "videoId": "dcBcspvIPy4",
+      "title": "The 2030s Are Closer Than You Think. Is Your Business Ready?",
+      "channel": "ITR Economics",
+      "url": "https://www.youtube.com/watch?v=dcBcspvIPy4",
+      "published": "2026-06-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ITR Economics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJx7dfActtS_noNjNq6sumA"
+      }
+    },
+    {
+      "videoId": "Vqjv1b0pRws",
+      "title": "AI Cost Crisis Is Bigger Than You Think",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=Vqjv1b0pRws",
+      "published": "2026-06-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Tech Lead)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw"
+      }
+    },
+    {
+      "videoId": "uCKhOmth2ms",
+      "title": "The best AI agents are simpler than you think",
+      "channel": "LangChain",
+      "url": "https://www.youtube.com/watch?v=uCKhOmth2ms",
+      "published": "2026-06-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LangChain)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCC-lyoTfSrcJzA1ab3APAgw"
+      }
+    },
+    {
+      "videoId": "E8SNL35bgac",
+      "title": "The JFK Hijacked Autopsy Conspiracy is Crazier Than You Think | Stu Wexler",
+      "channel": "JULIAN DOREY Clips",
+      "url": "https://www.youtube.com/watch?v=E8SNL35bgac",
+      "published": "2026-06-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JULIAN DOREY Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChs-BsSX71a_leuqUk7vtDg"
+      }
+    },
+    {
+      "videoId": "IluH3QMxXqA",
+      "title": "You Have More Control Than You Think",
+      "channel": "MYAutoimmuneMD",
+      "url": "https://www.youtube.com/watch?v=IluH3QMxXqA",
+      "published": "2026-06-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MYAutoimmuneMD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCcnEfNnK14iI-Yr1PsV-VeQ"
+      }
+    },
+    {
+      "videoId": "agSRMrhNTf4",
+      "title": "Why Enterprise AI Adoption Is Slower Than You Think — Aaron Levie (Box) + Harrison Chase",
+      "channel": "LangChain",
+      "url": "https://www.youtube.com/watch?v=agSRMrhNTf4",
+      "published": "2026-06-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LangChain)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCC-lyoTfSrcJzA1ab3APAgw"
+      }
+    },
+    {
+      "videoId": "aGM3XgSoNm8",
+      "title": "Your Head Is Heavier Than You Think  #drmandell  #health  #head #posture",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=aGM3XgSoNm8",
+      "published": "2026-07-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "nRv96KCyklw",
+      "title": "The Manosphere Is Bigger Than You Think.",
+      "channel": "Dr Myriam François",
+      "url": "https://www.youtube.com/watch?v=nRv96KCyklw",
+      "published": "2026-07-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr Myriam François)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCT4kJCZyg26egbPAuJVj2kA"
+      }
+    },
+    {
+      "videoId": "-tO9W87TjrY",
+      "title": "PISCES ♓ You Are More Ready Than You Think ✨",
+      "channel": "Julie Poole",
+      "url": "https://www.youtube.com/watch?v=-tO9W87TjrY",
+      "published": "2026-07-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Julie Poole)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCO2xpFJEJNrwmZ0rS_uJ2iQ"
+      }
+    },
+    {
+      "videoId": "NoMt7I5_eCo",
+      "title": "The DSA Is More Sinister Than You Think, Caleb Hammer Explains Taxes, & Alex Karp Pops The AI Bubble",
+      "channel": "Tom Bilyeu",
+      "url": "https://www.youtube.com/watch?v=NoMt7I5_eCo",
+      "published": "2026-07-03",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tom Bilyeu and ProfSteveKeen)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnYMOamNKLGVlJgRUbamveA"
+      }
+    },
+    {
+      "videoId": "6XzTOKmc_JM",
+      "title": "Why AI Reasoning Tokens Cost More Than You Think #technology #aiupdates #generativeai #markettechai",
+      "channel": "Markets, Tech & AI Insights",
+      "url": "https://www.youtube.com/watch?v=6XzTOKmc_JM",
+      "published": "2026-07-03",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Markets, Tech & AI Insights)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_t4_sFI3SeFFiJjwMNQv8A"
+      }
+    },
+    {
+      "videoId": "2ybUIXCHtyY",
+      "title": "🚨 The METALS Triple Play Catalyst: Why $8,000 Gold Is Closer Than You Think",
+      "channel": "Rons Basement",
+      "url": "https://www.youtube.com/watch?v=2ybUIXCHtyY",
+      "published": "2026-07-07",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Rons Basement)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7KRV9tVt7JqaSO3t6ifAsA"
+      }
+    },
+    {
+      "videoId": "_74Iyc3H3R4",
+      "title": "Sympathy Is Hurting People More Than You Think #Empathy #LifeCoaching #EmotionalIntelligence #shorts",
+      "channel": "Rahul Pamecha",
+      "url": "https://www.youtube.com/watch?v=_74Iyc3H3R4",
+      "published": "2026-07-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Rahul Pamecha)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOFYGxQPb0TVrOVfqqzD6Lg"
+      }
+    },
+    {
+      "videoId": "NStjINbKBRI",
+      "title": "The Demographics of Europe are Changing FASTER Than You Think! 📉🚨",
+      "channel": "Jiang Xueqin Clips",
+      "url": "https://www.youtube.com/watch?v=NStjINbKBRI",
+      "published": "2026-07-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jiang Xueqin Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_p6YYqOir916LpFsLZ93UA"
+      }
+    },
+    {
+      "videoId": "mFQc7DG4FT0",
+      "title": "Being Out of Shape Predicts Death Better Than Smoking. The Bar Is Lower Than You Think.",
+      "channel": "Minimum Effective Dose",
+      "url": "https://www.youtube.com/watch?v=mFQc7DG4FT0",
+      "published": "2026-07-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Minimum Effective Dose)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJnJcTzYt5952rLvbF71T_w"
+      }
+    },
+    {
+      "videoId": "v-ZDB7D4pQo",
+      "title": "Painting skin is easier than you think 🤭 #arttips #howtodraw #digitalart #clipstudio",
+      "channel": "Neko Rina",
+      "url": "https://www.youtube.com/watch?v=v-ZDB7D4pQo",
+      "published": "2026-07-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Neko Rina)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwYhFAz5aSEoat4B_SJzoQg"
+      }
+    },
+    {
+      "videoId": "_i-v6px--g0",
+      "title": "What If We Have More in Common with Aliens Than We Think? | Richard Dolan Intelligent Disclosure",
+      "channel": "Richard Dolan Intelligent Disclosure",
+      "url": "https://www.youtube.com/watch?v=_i-v6px--g0",
+      "published": "2026-07-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Richard Dolan Intelligent Disclosure )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnaIeNm-jSa1l8yHrn7PlQg"
+      }
+    },
+    {
+      "videoId": "7WXrri__AB0",
+      "title": "6 Everyday Things That Are Dirtier Than You Think | Dr. Mandell",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=7WXrri__AB0",
+      "published": "2026-07-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "-6PqoTbGbE4",
+      "title": "Is life out there more common than we think?",
+      "channel": "UAP Crossfire",
+      "url": "https://www.youtube.com/watch?v=-6PqoTbGbE4",
+      "published": "2026-07-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:UAP Crossfire)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7zPXs12r1ESmAn1brT4QrQ"
+      }
+    },
+    {
+      "videoId": "AGNZ45HS6WE",
+      "title": "The Real Story Behind Moby Dick Is Way Darker Than You Think",
+      "channel": "Creepy Stories",
+      "url": "https://www.youtube.com/watch?v=AGNZ45HS6WE",
+      "published": "2026-07-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Creepy Stories)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk6_IbIQiBghO63pZSG_rfQ"
+      }
+    },
+    {
+      "videoId": "795hppqALNY",
+      "title": "Why Paper Filters Are Better Than You Think #coffee #cholesterol #nutrition",
+      "channel": "Milligan Method",
+      "url": "https://www.youtube.com/watch?v=795hppqALNY",
+      "published": "2026-07-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Milligan Method)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjZu_HWhAwzFaJgPzMwoInA"
+      }
+    },
+    {
+      "videoId": "sDOlsgvd8QI",
+      "title": "Your Phone Is Dirtier Than You Think #drmandell #phone #germs",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=sDOlsgvd8QI",
+      "published": "2026-07-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "SBumo2sqCwY",
+      "title": "Steven Greer: Trump Was Told to Delay UFO Disclosure… The Truth Is Bigger Than You Think",
+      "channel": "Abducted By Celestials",
+      "url": "https://www.youtube.com/watch?v=SBumo2sqCwY",
+      "published": "2026-07-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abducted By Celestials)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCl69KFlVjszbJcBjugeKXxQ"
+      }
+    },
+    {
+      "videoId": "x0ziC9qtTjQ",
+      "title": "Our Reality is More Improbable Than You Think #shorts",
+      "channel": "iclip business podcast",
+      "url": "https://www.youtube.com/watch?v=x0ziC9qtTjQ",
+      "published": "2026-07-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:iclip business podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZ-Bqueb4PkYVGPdq0G_5Yg"
+      }
+    },
+    {
+      "videoId": "tWvzXcwIIkw",
+      "title": "Pickleball Is More Mental Than You Think 🧠",
+      "channel": "Dr. Patrick Porter",
+      "url": "https://www.youtube.com/watch?v=tWvzXcwIIkw",
+      "published": "2026-07-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Patrick Porter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZ2tOyICABoDsExUuz9n7A"
+      }
+    },
+    {
+      "videoId": "p8rhm1L2eyA",
+      "title": "War Robots - This “Weak” Mauler Build Is WAY Better Than You Think!",
+      "channel": "Adrian Chong",
+      "url": "https://www.youtube.com/watch?v=p8rhm1L2eyA",
+      "published": "2026-07-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Adrian Chong)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk_jiByxmYqfZ11tYl0OCOw"
+      }
+    },
+    {
+      "videoId": "0E8jU1wqUDQ",
+      "title": "Sugar Is More Dangerous Than You Think #sugar #whitepoison",
+      "channel": "Healthy Hamesha",
+      "url": "https://www.youtube.com/watch?v=0E8jU1wqUDQ",
+      "published": "2026-07-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Hamesha)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCys-KuZ7z2KHsPaW4U_lEBQ"
+      }
+    },
+    {
+      "videoId": "Qp-2eSa2UUM",
+      "title": "Why The Journey To The Nearest Star System Is Scarier Than You Think",
+      "channel": "Nightfall Science",
+      "url": "https://www.youtube.com/watch?v=Qp-2eSa2UUM",
+      "published": "2026-07-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nightfall Science)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCmQiHymJRL1-SzoTX9cG0eQ"
+      }
+    },
+    {
+      "videoId": "ezPId8nC_-k",
+      "title": "Why Eating Insects Is Healthier Than You Think ft. Dr. Pal",
+      "channel": "ClipFuel",
+      "url": "https://www.youtube.com/watch?v=ezPId8nC_-k",
+      "published": "2026-08-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ClipFuel)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_K6jwyYd0x9DiZkQm8v6zQ"
+      }
+    },
+    {
+      "videoId": "N4DH6ik9OBY",
+      "title": "Acne's Mental Toll: Why It Matters More Than You Think",
+      "channel": "My Allergist Dad",
+      "url": "https://www.youtube.com/watch?v=N4DH6ik9OBY",
+      "published": "2026-08-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:My Allergist Dad)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsd61QF4vC_CjYo0Rmn7okw"
+      }
+    },
+    {
+      "videoId": "-Toy91XTovM",
+      "title": "Do You Really Need Ozempic? | This $10 Packet Does More Than You Think",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=-Toy91XTovM",
+      "published": "2026-08-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "5WFdkVPt4rs",
+      "title": "Your Gut & V@ginal  Are More Connected Than You Think 🌸 #viralshorts #womenhealth #ytshorts",
+      "channel": "within.educates",
+      "url": "https://www.youtube.com/watch?v=5WFdkVPt4rs",
+      "published": "2026-08-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:within.educates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCRLJ51kwKOCckgBuJevAcBA"
+      }
+    },
+    {
+      "videoId": "PXR00MP_dnE",
+      "title": "Feynman Reveals Why Airplanes Shouldn’t Be Able to Fly — The Physics Is Stranger Than You Think",
+      "channel": "Brain Beacon",
+      "url": "https://www.youtube.com/watch?v=PXR00MP_dnE",
+      "published": "2026-08-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brain Beacon)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC3QzG16nA0oWNc5MH9yw_lQ"
+      }
+    },
+    {
+      "videoId": "3bSRr4kYD14",
+      "title": "The Disappearance of Amelia Earhart - The True Story Is Stranger Than You Think",
+      "channel": "The Untold Vault",
+      "url": "https://www.youtube.com/watch?v=3bSRr4kYD14",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Untold Vault)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCb8CoBWq_r6kfjs80NkeFLQ"
+      }
+    },
+    {
+      "videoId": "_CMuAmK4Qaw",
+      "title": "Sleep Debt Is More Serious Than You Think.",
+      "channel": "MindForgeX",
+      "url": "https://www.youtube.com/watch?v=_CMuAmK4Qaw",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MindForgeX)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxj_ZZNtFb6T_hajxTe9fXA"
+      }
+    },
+    {
+      "videoId": "IZA4ZOSHX6Q",
+      "title": "You Have Less Time Than You Think! Your Sun Skipped A Step It Was Never Supposed To Skip",
+      "channel": "The Truth Can Change Your Life",
+      "url": "https://www.youtube.com/watch?v=IZA4ZOSHX6Q",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Truth Can Change Your Life)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4IeHqz-9-SED5DJsn2Ldqw"
+      }
+    },
+    {
+      "videoId": "CwPJjZskSqM",
+      "title": "You have more impact than you think",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=CwPJjZskSqM",
+      "published": "2026-08-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "eerHhFMz3xM",
+      "title": "Claude AI is more powerful than you think #claude #ai #shorts",
+      "channel": "Sophia An",
+      "url": "https://www.youtube.com/watch?v=eerHhFMz3xM",
+      "published": "2026-08-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sophia An)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCj4spbBI0UXvnsuwGSdJiAw"
+      }
+    },
+    {
+      "videoId": "sEygoOPF8q4",
+      "title": "Glyphosate Is Hiding in More Foods Than You Think",
+      "channel": "MaraLabs+",
+      "url": "https://www.youtube.com/watch?v=sEygoOPF8q4",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MaraLabs+)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC2_GtepCpRxjrU69EnKmLjg"
+      }
+    },
+    {
+      "videoId": "b9X7DtRqv1w",
+      "title": "Glyphosate Is in More Foods Than You Think...Here is how to detox.",
+      "channel": "MaraLabs+",
+      "url": "https://www.youtube.com/watch?v=b9X7DtRqv1w",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MaraLabs+)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC2_GtepCpRxjrU69EnKmLjg"
+      }
+    },
+    {
+      "videoId": "qTPWWtUsQ7c",
+      "title": "🟠 SAUDI ARABIA’S REGIME IS MORE UNSTABLE THAN YOU THINK",
+      "channel": "21st Century Wire",
+      "url": "https://www.youtube.com/watch?v=qTPWWtUsQ7c",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:21st Century Wire)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCY_sGiAswJNo8HQBOKme01g"
+      }
+    },
+    {
+      "videoId": "uw0L5A7VGts",
+      "title": "$42,000 SUV Now Worth Just $9,500 - Here is the Real Reason why!",
+      "channel": "LuxuryMYK",
+      "url": "https://www.youtube.com/watch?v=uw0L5A7VGts",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LuxuryMYK)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuCy_j51xNnyA1xiDGZEMCA"
+      }
+    },
+    {
+      "videoId": "Dcp_TYut2nE",
+      "title": "9 Signs Your Finances Are Healthier Than You Think (Most People Miss These)",
+      "channel": "Noah Wealth",
+      "url": "https://www.youtube.com/watch?v=Dcp_TYut2nE",
+      "published": "2026-08-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Noah Wealth)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCm5yd7j9U86QUa2LQf4hwVA"
+      }
+    },
+    {
+      "videoId": "PabtRzSxVbQ",
+      "title": "The Hidden Reason Your Body Is Aging Faster Than You Think",
+      "channel": "SARKO LONGEVITY",
+      "url": "https://www.youtube.com/watch?v=PabtRzSxVbQ",
+      "published": "2026-08-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SARKO LONGEVITY)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHQqJNGh4NuMmSf8_wJRbqg"
+      }
+    },
+    {
+      "videoId": "WIaUDG_mMdw",
+      "title": "Your Spiritual Power Is Greater Than You Think",
+      "channel": "Unlimited knowledge",
+      "url": "https://www.youtube.com/watch?v=WIaUDG_mMdw",
+      "published": "2026-08-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Unlimited knowledge )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCbJrb6Y-mXbIUa08PX66VjA"
+      }
+    },
+    {
+      "videoId": "q944FL7b4iM",
+      "title": "Is That Black Patch on Your Wall More Dangerous Than You Think? Discover the Truth About Mould!",
+      "channel": "The Health Lens",
+      "url": "https://www.youtube.com/watch?v=q944FL7b4iM",
+      "published": "2026-08-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Health Lens)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8gz3Tc2KHY-qmPD670Yv-Q"
+      }
+    },
+    {
+      "videoId": "6WzXCg4azdA",
+      "title": "Master Numbers: Why Being Numerate Matters More Than You Think! #shorts",
+      "channel": "FranksWorld of AI",
+      "url": "https://www.youtube.com/watch?v=6WzXCg4azdA",
+      "published": "2026-08-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FranksWorld of AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtBFq_fzk_qDMClmnMZEB1g"
+      }
+    },
+    {
+      "videoId": "fBlsSvDnCBQ",
+      "title": "Jobs AI Is Replacing Faster Than You Think 🤖",
+      "channel": "SophNovAi™",
+      "url": "https://www.youtube.com/watch?v=fBlsSvDnCBQ",
+      "published": "2026-08-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SophNovAi™)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCRXvDh3TyruJ2Xev67jVh4w"
+      }
+    },
+    {
+      "videoId": "2QP2TvisoV4",
+      "title": "Nobel Prize Winner Proves Reality is WEIRDER Than You Think! #shorts",
+      "channel": "From First Principles",
+      "url": "https://www.youtube.com/watch?v=2QP2TvisoV4",
+      "published": "2026-08-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:From First Principles)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCti75CTVwxq71t2WYzy85_w"
+      }
+    },
+    {
+      "videoId": "pTx-j3ZAFfA",
+      "title": "It's deeper than you think, the U.S. is not at war with Iran",
+      "channel": "Sam Putnam",
+      "url": "https://www.youtube.com/watch?v=pTx-j3ZAFfA",
+      "published": "2026-08-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sam Putnam)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw"
+      }
+    },
+    {
+      "videoId": "ZKvi7DziNps",
+      "title": "Pokémon Worlds 2026 Has WAY More Going On Than You Think 😍",
+      "channel": "SaiyaRan Gaming",
+      "url": "https://www.youtube.com/watch?v=ZKvi7DziNps",
+      "published": "2026-08-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SaiyaRan Gaming)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXmm_QU4ZnQFiNfmEIeYSAA"
+      }
+    },
+    {
+      "videoId": "52N_n8pwpI8",
+      "title": "Gen Z is SECRETLY Richer Than You Think",
+      "channel": "Financial Freedom with Lisa Sakai",
+      "url": "https://www.youtube.com/watch?v=52N_n8pwpI8",
+      "published": "2026-08-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Financial Freedom with Lisa Sakai)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCG0ymYn1LZxIgcFmPiZfOLA"
+      }
+    },
+    {
+      "videoId": "uZzwbi4lWiU",
+      "title": "The Alphabet's Secret History & Why Capital Letters Matter More Than You Think",
+      "channel": "SophNovAi™",
+      "url": "https://www.youtube.com/watch?v=uZzwbi4lWiU",
+      "published": "2026-08-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SophNovAi™)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCRXvDh3TyruJ2Xev67jVh4w"
+      }
+    },
+    {
+      "videoId": "Bq81mezM_nY",
+      "title": "Wholesaling Is Way Easier Than You Think",
+      "channel": "Flip With Rick",
+      "url": "https://www.youtube.com/watch?v=Bq81mezM_nY",
+      "published": "2026-08-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Flip With Rick)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrJwaBihSNoEV7y2NWth4Jw"
+      }
+    },
+    {
+      "videoId": "gfksl5Z8PrI",
+      "title": "These Everyday Foods Are More Powerful Than You Think #seniorhealth",
+      "channel": "Healthy Remedies",
+      "url": "https://www.youtube.com/watch?v=gfksl5Z8PrI",
+      "published": "2026-08-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Remedies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXqvDWFIO0U6YYZDcBofsPw"
+      }
+    },
+    {
+      "videoId": "KLcZZtl3ATE",
+      "title": "David Rosenberg: Why The AI Boom Is Bigger—and RISKIER—Than You Think",
+      "channel": "MoneyShow",
+      "url": "https://www.youtube.com/watch?v=KLcZZtl3ATE",
+      "published": "2026-08-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MoneyShow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLnjAUrBG0G5Z8oGae_yZKg"
+      }
+    },
+    {
+      "videoId": "CXzN53VyxtM",
+      "title": "What's Actually Inside Saturn? It's Stranger Than You Think 😳",
+      "channel": "Beyond Decoded",
+      "url": "https://www.youtube.com/watch?v=CXzN53VyxtM",
+      "published": "2026-08-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Beyond Decoded)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCc_MDDggvBK84J6p2tt3IrQ"
+      }
+    },
+    {
+      "videoId": "NbVsYJTgVMg",
+      "title": "Your Hair Is More Complex Than You Think! | Understanding the Hair Shaft",
+      "channel": "Coach Kimmy",
+      "url": "https://www.youtube.com/watch?v=NbVsYJTgVMg",
+      "published": "2026-08-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Coach Kimmy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZi0BknmN3HeWgQMdmVdHJQ"
+      }
+    },
+    {
+      "videoId": "sX1BmSd-ZDo",
+      "title": "ASHTAR: YOU HAVE LESS TIME THAN YOU THINK... THIS WINDOW IS CLOSING",
+      "channel": "The Truth Can Change Your Life",
+      "url": "https://www.youtube.com/watch?v=sX1BmSd-ZDo",
+      "published": "2026-08-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Truth Can Change Your Life)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4IeHqz-9-SED5DJsn2Ldqw"
+      }
+    },
+    {
+      "videoId": "B_fv9lyP5NE",
+      "title": "10# The Silent Fire: Why You Are Aging Faster Than You Think",
+      "channel": "SARKO LONGEVITY",
+      "url": "https://www.youtube.com/watch?v=B_fv9lyP5NE",
+      "published": "2026-08-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SARKO LONGEVITY)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHQqJNGh4NuMmSf8_wJRbqg"
+      }
+    },
+    {
+      "videoId": "1ikMpBEp1oI",
+      "title": "4 Foods That Are More Useful Than You Think 👀",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=1ikMpBEp1oI",
+      "published": "2026-08-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:HealthVerse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg"
+      }
+    },
+    {
+      "videoId": "rwTKrPuK5cw",
+      "title": "Too much sugar can show up in your body in more ways than you think #insulinresistance #diabetes",
+      "channel": "I Am That Glucose Girl | Metabolic Health",
+      "url": "https://www.youtube.com/watch?v=rwTKrPuK5cw",
+      "published": "2026-08-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:I Am That Glucose Girl | Metabolic Healt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUktAVBJwtLT4nCeUtjpy8w"
+      }
+    },
+    {
+      "videoId": "-B_VdjDA2kY",
+      "title": "10 Rare Photos That May Prove the Bible Is More Historical Than You Think",
+      "channel": "Jesus Light",
+      "url": "https://www.youtube.com/watch?v=-B_VdjDA2kY",
+      "published": "2026-08-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jesus Light)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtA6l4Wo8_ZUvuWSuI45Erw"
+      }
+    },
+    {
+      "videoId": "eLaf3JArV_c",
+      "title": "Constipation is a Bigger Deal Than You Think",
+      "channel": "Aging Untold",
+      "url": "https://www.youtube.com/watch?v=eLaf3JArV_c",
+      "published": "2026-09-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Aging Untold)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCN-M5LR7ocm_wIdhYp-futA"
+      }
+    },
+    {
+      "videoId": "M1Wo4LKbxbQ",
+      "title": "Putin's Latest Pledge Is Scarier Than You Think!",
+      "channel": "Tom Bilyeu",
+      "url": "https://www.youtube.com/watch?v=M1Wo4LKbxbQ",
+      "published": "2026-09-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tom Bilyeu and ProfSteveKeen)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnYMOamNKLGVlJgRUbamveA"
+      }
+    },
+    {
+      "videoId": "r7Iv8Ftb5YU",
+      "title": "Stop Skipping This Before Bed: Why Your Olive Oil Does More Than You Think",
+      "channel": "The Longevity Ledger",
+      "url": "https://www.youtube.com/watch?v=r7Iv8Ftb5YU",
+      "published": "2026-09-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Longevity Ledger)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZ7YEr6ENp4oLo-Z_q6nhKQ"
+      }
+    },
+    {
+      "videoId": "9dhRN1FIpb8",
+      "title": "The Universe Is Far Bigger Than You Think",
+      "channel": "krunal verma",
+      "url": "https://www.youtube.com/watch?v=9dhRN1FIpb8",
+      "published": "2026-09-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel: krunal verma )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa5emy7KxkYsJuhljaWVuOQ"
+      }
+    },
+    {
+      "videoId": "4CQhGKtIN68",
+      "title": "The Andromedan Council: Why Tibet Matters More Than You Think",
+      "channel": "Dreemtime Academy",
+      "url": "https://www.youtube.com/watch?v=4CQhGKtIN68",
+      "published": "2026-09-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dreemtime Academy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCE6KE5xH13AMUajXvz_w8vA"
+      }
+    },
+    {
+      "videoId": "UNjBR84wntA",
+      "title": "Space Elevators Are Closer Than You Think: Material Science Breakthrough",
+      "channel": "LiftPort Group",
+      "url": "https://www.youtube.com/watch?v=UNjBR84wntA",
+      "published": "2026-09-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LiftPort Group)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTYRuIKdVbzBtMccxxz8y3g"
+      }
+    },
+    {
+      "videoId": "BO_Si_qM1Ng",
+      "title": "The World's First Computer Is Older Than You Think! #factorito",
+      "channel": "Facto rito",
+      "url": "https://www.youtube.com/watch?v=BO_Si_qM1Ng",
+      "published": "2026-09-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Facto rito)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1iu0pZZIE0Obbmgy0Oir0Q"
+      }
+    },
+    {
+      "videoId": "eLM5HCTjFww",
+      "title": "Why When You Walk Matters More Than You Think",
+      "channel": "The Movement Paradigm®",
+      "url": "https://www.youtube.com/watch?v=eLM5HCTjFww",
+      "published": "2026-09-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Movement Paradigm®)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpN9Yu4ok6w0BH57HYObamQ"
+      }
+    },
+    {
+      "videoId": "LLs5QzgDTE0",
+      "title": "3 Plants That Are More Useful Than You Think 🌿",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=LLs5QzgDTE0",
+      "published": "2026-09-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:HealthVerse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg"
+      }
+    },
+    {
+      "videoId": "5NBK2HMxYq8",
+      "title": "THIS READING IS A PROPHECY... Your Future Is Very Different Than You Think!",
+      "channel": "Minnow Pond Tarot",
+      "url": "https://www.youtube.com/watch?v=5NBK2HMxYq8",
+      "published": "2026-09-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Minnow Pond Tarot)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqh4ve8brfZVRyzlFNqDiOA"
+      }
+    },
+    {
+      "videoId": "rIjpJ_eu78c",
+      "title": "Your Feelings Are Costing You More Than You Think",
+      "channel": "DL Saint, I Really Want To Know Podcast",
+      "url": "https://www.youtube.com/watch?v=rIjpJ_eu78c",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DL Saint, I Really Want To Know Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChAjGe-ZUp8uaJge39f9tWw"
+      }
+    },
+    {
+      "videoId": "L3PrJVcF4fc",
+      "title": "Why Mortgage REITs Are Riskier Than You Think #StockMarket #Finance",
+      "channel": "THE BULL YOU CAN'T BEAR",
+      "url": "https://www.youtube.com/watch?v=L3PrJVcF4fc",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:THE BULL YOU CAN'T BEAR)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsz-wexqvgks352Jn_vUhcA"
+      }
+    },
+    {
+      "videoId": "OwGp6ZGEz9o",
+      "title": "WARNING: A New Map Shows What India Cannot Build Yet and the Gaps Are Bigger Than You Think",
+      "channel": "AIM Network",
+      "url": "https://www.youtube.com/watch?v=OwGp6ZGEz9o",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AIM Network)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAlwrsgeJavG1vw9qSFOUmA"
+      }
+    },
+    {
+      "videoId": "CXFsq5bgsY8",
+      "title": "Prophetic Word: Your Divine Release Is Closer Than You Think | Joshua Giles",
+      "channel": "Joshua Giles Prophetic",
+      "url": "https://www.youtube.com/watch?v=CXFsq5bgsY8",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Joshua Giles Prophetic)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvyV_lC2m_J47eB6W-w-pQQ"
+      }
+    },
+    {
+      "videoId": "gUorKI0V9L4",
+      "title": "Why Muscles Recover Faster Than You Think in Your 70s!",
+      "channel": "Senior Health Card",
+      "url": "https://www.youtube.com/watch?v=gUorKI0V9L4",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Senior Health Card)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqLxVKp46EkwiXBhQzQQ_Fw"
+      }
+    },
+    {
+      "videoId": "ERAVlyP6kOs",
+      "title": "7 Signs Your Body Is Healthier Than You Think | Health Signs You Should Notice",
+      "channel": "Sharavanan V N",
+      "url": "https://www.youtube.com/watch?v=ERAVlyP6kOs",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sharavanan V N)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCcTYZSnEsfFtDWX1JaVYd9g"
+      }
+    },
+    {
+      "videoId": "6IT3xSXMiB8",
+      "title": "Hummingbirds Leave New Jersey Earlier Than You Think – Here's When & Why #Shorts",
+      "channel": "WonderWhizBros",
+      "url": "https://www.youtube.com/watch?v=6IT3xSXMiB8",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:WonderWhizBros)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0YNp8US-FwfzQIEkrCBU8g"
+      }
+    },
+    {
+      "videoId": "1ikmNfv_0p8",
+      "title": "IonQ Says Q-Day Is Closer Than You Think — Investor Day Breakdown",
+      "channel": "Big Picture Investing With Kevin McCormick",
+      "url": "https://www.youtube.com/watch?v=1ikmNfv_0p8",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Big Picture Investing With Kevin McCormi)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCD6YjhZMNj_iz1tDAxc97_w"
+      }
+    },
+    {
+      "videoId": "fpbsivY8mng",
+      "title": "Are fake news farms making millions? The solution might be simpler than we think.",
+      "channel": "ppfr.clipps",
+      "url": "https://www.youtube.com/watch?v=fpbsivY8mng",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ppfr.clipps)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYCIWa7zYdhDSpH6lm3aonA"
+      }
+    },
+    {
+      "videoId": "kGNaxFttepI",
+      "title": "Low testosterone can show up in more ways than you think. Your symptoms deserve a closer look. 🧬",
+      "channel": "Danielle Johnson, MSN, APRN, FNP-C",
+      "url": "https://www.youtube.com/watch?v=kGNaxFttepI",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Danielle Johnson, MSN, APRN, FNP-C)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1_4SFvCgEiR3UVvUq37Csg"
+      }
+    },
+    {
+      "videoId": "Dnpw6KuGDPk",
+      "title": "The Sphinx Is Older Than We Think",
+      "channel": "The Randall Carlson",
+      "url": "https://www.youtube.com/watch?v=Dnpw6KuGDPk",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Randall Carlson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAPciy143ZBXBrFpCVPnWDg"
+      }
+    },
+    {
+      "videoId": "sSyVXvVdw7Q",
+      "title": "You Have More Than You Think… And You Don't Even Notice",
+      "channel": "krunal verma",
+      "url": "https://www.youtube.com/watch?v=sSyVXvVdw7Q",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel: krunal verma )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa5emy7KxkYsJuhljaWVuOQ"
+      }
+    },
+    {
+      "videoId": "L3PPG3NpQKU",
+      "title": "Your Smartphone Is Smarter Than You Think! 10 Hidden AI Features #ai #trending #technology",
+      "channel": "CuriozenTV",
+      "url": "https://www.youtube.com/watch?v=L3PPG3NpQKU",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CuriozenTV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCWWGpewyYd4vBRKlZ8__H0A"
+      }
+    },
+    {
+      "videoId": "zgfosu-6iFk",
+      "title": "AI Is Changing America Faster Than You Think! 🇺🇸🤖 | Jobs at Risk? #ai #usa",
+      "channel": "American Fact Stories",
+      "url": "https://www.youtube.com/watch?v=zgfosu-6iFk",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:American Fact Stories )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZfz60tRVIdx5aMNGBTCRWw"
+      }
+    },
+    {
+      "videoId": "H6usLHv55ok",
+      "title": "Quantum Sensing Could Trigger the Next Quantum Boom | The Future Is Closer Than You Think",
+      "channel": "Hardware Brief",
+      "url": "https://www.youtube.com/watch?v=H6usLHv55ok",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Hardware Brief)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7lIfu71jy1m8EINev4qAcg"
+      }
+    },
+    {
+      "videoId": "GudPfDgXK1Y",
+      "title": "Fed Rate Decision Looms Over Currency and Bond Markets This Week #Shorts",
+      "channel": "First Financial News",
+      "url": "https://www.youtube.com/watch?v=GudPfDgXK1Y",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:First Financial News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdOvJlyXYK3yvpVjJe4ontQ"
+      }
+    },
+    {
+      "videoId": "C-v2jBYmdgo",
+      "title": "Fed Rate Decision Looms Over Currency and Bond Markets This Week",
+      "channel": "First Financial News",
+      "url": "https://www.youtube.com/watch?v=C-v2jBYmdgo",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:First Financial News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdOvJlyXYK3yvpVjJe4ontQ"
+      }
+    },
+    {
+      "videoId": "Dd3db8snSlM",
+      "title": "Defining a building in code is harder than you think 🏢 #softwareengineering #data",
+      "channel": "FINOS",
+      "url": "https://www.youtube.com/watch?v=Dd3db8snSlM",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FINOS)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfJAdRALzJ7J7snubrb_Y-Q"
+      }
+    },
+    {
+      "videoId": "sWZT164R_tA",
+      "title": "AGI Is Coming Sooner Than You Think — What Happens When AI Understands Everything",
+      "channel": "Future Uncovered",
+      "url": "https://www.youtube.com/watch?v=sWZT164R_tA",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Future Uncovered)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCSuYmVFfWtE2TUnDtBITrrQ"
+      }
+    },
+    {
+      "videoId": "6bmodxzMgXY",
+      "title": "AI Will Replace These Jobs Sooner Than You Think    #ArtificialIntelligence  #techhubfuturedecoder",
+      "channel": "Tech Hub Future Decoder",
+      "url": "https://www.youtube.com/watch?v=6bmodxzMgXY",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tech Hub Future Decoder)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTHNvwosRuqTuMkOf0f3DOQ"
+      }
+    },
+    {
+      "videoId": "Nn3NHivOh8o",
+      "title": "It's deeper than you think, the U.S. is not at war with Iran",
+      "channel": "Sam Putnam",
+      "url": "https://www.youtube.com/watch?v=Nn3NHivOh8o",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sam Putnam)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw"
+      }
+    },
+    {
+      "videoId": "H5IKpcaZcP8",
+      "title": "Why fighting Ticketmaster is harder than you think.",
+      "channel": "ppfr.clipps",
+      "url": "https://www.youtube.com/watch?v=H5IKpcaZcP8",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ppfr.clipps)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYCIWa7zYdhDSpH6lm3aonA"
+      }
+    },
+    {
+      "videoId": "_XRo9gGoCHI",
+      "title": "Why 'Narrow AI' Is More Important Than You Think",
+      "channel": "Encyclopedia of Technology",
+      "url": "https://www.youtube.com/watch?v=_XRo9gGoCHI",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Encyclopedia of Technology)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAscdJnCSZAUh6s4Qz-NZbA"
+      }
+    },
+    {
+      "videoId": "2XqLYJYHc0E",
+      "title": "“AI Is Being Misused — And It’s More Dangerous Than You Think”",
+      "channel": "Truth Decoded",
+      "url": "https://www.youtube.com/watch?v=2XqLYJYHc0E",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Truth Decoded)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIB_pVIT8MAcVtPELpcy2nQ"
+      }
+    },
+    {
+      "videoId": "OA7pZ-gen7M",
+      "title": "Why your morning routine matters more than you think 🔥 #shorts #viral",
+      "channel": "FactAmaze",
+      "url": "https://www.youtube.com/watch?v=OA7pZ-gen7M",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FactAmaze)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4fyg97InbiYUtw4mMDzQ9w"
+      }
+    },
+    {
+      "videoId": "-xrlV4_CaLc",
+      "title": "The Secret UFO Files of Area 51 👽 The Truth Is Stranger Than You Think",
+      "channel": "Bee Curious",
+      "url": "https://www.youtube.com/watch?v=-xrlV4_CaLc",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bee Curious)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCeYPEQGfFhxd9LxhD9DYsKA"
+      }
+    },
+    {
+      "videoId": "eEAVcIK_53g",
+      "title": "Mark Zuckerberg Is SMARTER Than You Think",
+      "channel": "Meet Kevin",
+      "url": "https://www.youtube.com/watch?v=eEAVcIK_53g",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Meet Kevin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUvvj5lwue7PspotMDjk5UA"
+      }
+    },
+    {
+      "videoId": "f7c8gDyfx5o",
+      "title": "The Recovery Protocol Dr. Jess Actually Trusts — And Why It's Simpler Than You Think",
+      "channel": "Dr. Jessica Tranchina",
+      "url": "https://www.youtube.com/watch?v=f7c8gDyfx5o",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jessica Tranchina)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9fQMO1kWWOoEd1BeUdpbWQ"
+      }
+    },
+    {
+      "videoId": "0l08OM7f7hM",
+      "title": "Pisces “A Big Opportunity Is About To Work Faster Than You Think!” September 21st - 27th Tarot",
+      "channel": "Minnow Pond Tarot",
+      "url": "https://www.youtube.com/watch?v=0l08OM7f7hM",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Minnow Pond Tarot)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqh4ve8brfZVRyzlFNqDiOA"
+      }
+    },
+    {
+      "videoId": "Ko2BA9UAwCA",
+      "title": "This Is a Better Fire Starter Than You Think! 🔥🤮Old Spice deodorant. #firestarter #gimmick #campfire",
+      "channel": "HalfInsaneOutDoorGuy",
+      "url": "https://www.youtube.com/watch?v=Ko2BA9UAwCA",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:HalfInsaneOutDoorGuy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjqKhaSofF465e8A3StZ8Ug"
+      }
+    },
+    {
+      "videoId": "NmBqkCgt1FI",
+      "title": "Why AI will take your job faster than you think 🤖 #ai #jobmarket",
+      "channel": "AI Signal",
+      "url": "https://www.youtube.com/watch?v=NmBqkCgt1FI",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Signal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYi_ANEUUQrxnc4JW7SYUXg"
+      }
+    },
+    {
+      "videoId": "GjmBUHFnEmc",
+      "title": "What If AI Could Read Your Mind? 🧠🤖 | The Future Is Closer Than You Think #Shorts",
+      "channel": "krunal verma",
+      "url": "https://www.youtube.com/watch?v=GjmBUHFnEmc",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel: krunal verma )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa5emy7KxkYsJuhljaWVuOQ"
+      }
+    },
+    {
+      "videoId": "MmTepbyIOF8",
+      "title": "​5 Jobs AI Will Replace Sooner Than You Think 🤖⚠️ #Shorts",
+      "channel": "Stellaris Lab",
+      "url": "https://www.youtube.com/watch?v=MmTepbyIOF8",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Stellaris Lab)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7y8VTvQ2FWKKPh4YRm8l-g"
+      }
+    },
+    {
+      "videoId": "UEP44DF1JAk",
+      "title": "Loneliness Kills Faster Than You Think #Shorts",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=UEP44DF1JAk",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Protocol Page)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA"
+      }
+    },
+    {
+      "videoId": "qRfP7NJbFvs",
+      "title": "A Green AI Security Scan Proves Less Than You Think",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=qRfP7NJbFvs",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "T3CuLJEc3sk",
+      "title": "Why can't we land on the moon again? The challenges are bigger than you think!",
+      "channel": "JMC Broadcasting",
+      "url": "https://www.youtube.com/watch?v=T3CuLJEc3sk",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JMC Broadcasting)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC004nQrtGsj-11CfCZ-6GmQ"
+      }
+    },
+    {
+      "videoId": "ViYKla06vi4",
+      "title": "Sphinx Older Than You Think! Ancient Floods Reveal The Truth #shorts",
+      "channel": "iclip business podcast",
+      "url": "https://www.youtube.com/watch?v=ViYKla06vi4",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:iclip business podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZ-Bqueb4PkYVGPdq0G_5Yg"
+      }
+    },
+    {
+      "videoId": "KB2M7rgxM94",
+      "title": "Why OpenAI’s ‘Math Breakthrough’ Is More Complex Than You Think",
+      "channel": "Orizen X",
+      "url": "https://www.youtube.com/watch?v=KB2M7rgxM94",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Orizen X)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC43bDvGnyDmaoxKiS5Tf0hg"
+      }
+    },
+    {
+      "videoId": "RskkagylRIk",
+      "title": "It's deeper than you think, the U.S. is not at war with Iran",
+      "channel": "Sam Putnam",
+      "url": "https://www.youtube.com/watch?v=RskkagylRIk",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sam Putnam)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw"
+      }
+    },
+    {
+      "videoId": "DbLSS4zfb48",
+      "title": "Medical error is prevalent… more than you’d think",
+      "channel": "Dr. Reese",
+      "url": "https://www.youtube.com/watch?v=DbLSS4zfb48",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Reese )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC85sC6mhn8cd094hJCpJwZQ"
+      }
+    },
+    {
+      "videoId": "NdV8gm3W5nQ",
+      "title": "Why industry standards matter more than you think #standards #finance #tech",
+      "channel": "FINOS",
+      "url": "https://www.youtube.com/watch?v=NdV8gm3W5nQ",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FINOS)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfJAdRALzJ7J7snubrb_Y-Q"
+      }
+    },
+    {
+      "videoId": "THfyelgYUQ8",
+      "title": "Infinity Is Bigger Than You Think | Math",
+      "channel": "PromptToProfit",
+      "url": "https://www.youtube.com/watch?v=THfyelgYUQ8",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:PromptToProfit)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCt7EIkEyi_BII-Q7EFOd5ZA"
+      }
+    },
+    {
+      "videoId": "v-aNdXXOBYw",
+      "title": "Is nuclear power really safer than you think? #NuclearAI #Energy",
+      "channel": "El_Scribbler",
+      "url": "https://www.youtube.com/watch?v=v-aNdXXOBYw",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (industry seed)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCou2Guvrh_Ixes_-tGAYWZw"
+      }
+    },
+    {
+      "videoId": "ZLEE3Bn7w-U",
+      "title": "Ai Debate: Are We Closer to Extinction Than We Think?",
+      "channel": "Vast Catalyst",
+      "url": "https://www.youtube.com/watch?v=ZLEE3Bn7w-U",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Vast Catalyst)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1vJwB-PivTmnFcGPlTCk_w"
+      }
+    },
+    {
+      "videoId": "Bdub59kMoyQ",
+      "title": "Gurudev explains “why God may be closer than we think” to Theo von #shorts",
+      "channel": "Podcast Mindset",
+      "url": "https://www.youtube.com/watch?v=Bdub59kMoyQ",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Podcast Mindset)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCQ_Uh5IaWpap2VM9G04fLlg"
+      }
+    },
+    {
+      "videoId": "LBaMUPY8HBo",
+      "title": "Losing Muscle After 50 Is Faster Than You Think — 2 Fixes",
+      "channel": "Bio Upgrade",
+      "url": "https://www.youtube.com/watch?v=LBaMUPY8HBo",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bio Upgrade)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAKhCk67mMcfBF5fdLoO_Rg"
+      }
+    },
+    {
+      "videoId": "DpnagqEW94k",
+      "title": "7 Historical Facts That Sound Fake!  | History Is Stranger Than You Think",
+      "channel": "Meher’s Story World",
+      "url": "https://www.youtube.com/watch?v=DpnagqEW94k",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Meher’s Story World)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTNDuzdJgboP87XfQ3Su_Lw"
+      }
+    },
+    {
+      "videoId": "Wz8jcwq093E",
+      "title": "Emma Stone Was Rejected 500+ Times—Then She Gave the Woman Who Believed in Her a $4.2 Million Home",
+      "channel": "Stellar HOLLYWOOD",
+      "url": "https://www.youtube.com/watch?v=Wz8jcwq093E",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Stellar HOLLYWOOD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxLid0DLxY6VYEtYW1KzmqA"
+      }
+    },
+    {
+      "videoId": "SanQHShebrU",
+      "title": "Have a Spleen Problem? What You Eat Could Matter More Than You Think",
+      "channel": "FitNutriLife",
+      "url": "https://www.youtube.com/watch?v=SanQHShebrU",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitNutriLife)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w"
+      }
+    },
+    {
+      "videoId": "J3zmZ3HxpF8",
+      "title": "Peptides vs. Drugs: The Real Difference and Why Cycling Matters More Than You Think",
+      "channel": "CharlieJohnsonShowClips",
+      "url": "https://www.youtube.com/watch?v=J3zmZ3HxpF8",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CharlieJohnsonShowClips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCH9syCajCxm_n1OPvy7wI0w"
+      }
+    },
+    {
+      "videoId": "Ow1660IXeiM",
+      "title": "Why Are Airplane Windows Round? ✈️ The Reason Is More Serious Than You Think",
+      "channel": "Behind Ordinary",
+      "url": "https://www.youtube.com/watch?v=Ow1660IXeiM",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Behind Ordinary)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrC2jahgMGiZqnnfLye-Y-w"
+      }
+    },
+    {
+      "videoId": "yY28xSdFfjA",
+      "title": "The Fed Rate: Why It Affects Your Wallet More Than You Think",
+      "channel": "Money Machinery",
+      "url": "https://www.youtube.com/watch?v=yY28xSdFfjA",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Money Machinery)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCmf2_1kIIazgwSXcAZGKe-w"
+      }
+    },
+    {
+      "videoId": "jyaVo_4hqfA",
+      "title": "They are learning to do your job faster than you think 🤖 #robotics #ai",
+      "channel": "AI Signal",
+      "url": "https://www.youtube.com/watch?v=jyaVo_4hqfA",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Signal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYi_ANEUUQrxnc4JW7SYUXg"
+      }
+    },
+    {
+      "videoId": "Dw9c1d1PLzk",
+      "title": "The AI Bubble Is Bigger Than You Think #ai #bubble",
+      "channel": "AI Signal",
+      "url": "https://www.youtube.com/watch?v=Dw9c1d1PLzk",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Signal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYi_ANEUUQrxnc4JW7SYUXg"
+      }
+    },
+    {
+      "videoId": "QYkkeaX_I1Q",
+      "title": "India is Bigger than you Think @GeoByJames  (YouTube Reaction)",
+      "channel": "El_Scribbler",
+      "url": "https://www.youtube.com/watch?v=QYkkeaX_I1Q",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:El_Scribbler)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCou2Guvrh_Ixes_-tGAYWZw"
+      }
+    },
+    {
+      "videoId": "IQfigV3R7kA",
+      "title": "What If AI Is Smarter Than We Think?",
+      "channel": "NEXA MIND",
+      "url": "https://www.youtube.com/watch?v=IQfigV3R7kA",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NEXA MIND)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCSOmBFT2lTwUJ6K8lglIDeA"
+      }
+    },
+    {
+      "videoId": "6L6sL1Tawwc",
+      "title": "Why Scaling Business is Harder Than You Think",
+      "channel": "Dan Sfera",
+      "url": "https://www.youtube.com/watch?v=6L6sL1Tawwc",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Sfera)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvw9kVKHEyAlZPZ6ZuOd2VA"
+      }
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }

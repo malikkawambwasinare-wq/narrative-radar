@@ -437008,15 +437008,22 @@
       "url": "https://www.youtube.com/watch?v=62l9WQAwd00",
       "published": "2026-09-18",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 105,
+      "length": "0:47",
       "age_days": null,
       "query": "refiled from the pool (candidate:birth-rate-collapse)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCxkZzuQRpGKewHgTDsLchhw"
+        "channelId": "UCxkZzuQRpGKewHgTDsLchhw",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -437026,15 +437033,22 @@
       "url": "https://www.youtube.com/watch?v=BpYm27FWqgA",
       "published": "2026-09-20",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 117489,
+      "length": "14:38",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCLwNTXWEjVd2qIHLcXxQWxA"
+        "channelId": "UCLwNTXWEjVd2qIHLcXxQWxA",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2171,
+        "comments": 871,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -438276,7 +438290,907 @@
         "channelViews": 2595,
         "channelVideos": 47
       }
+    },
+    {
+      "videoId": "MIOZ0w9hAZU",
+      "title": "\"It Is A Capital Mistake To Theorize Before One Has Data\"  Weekly Market Update 5-24-20",
+      "channel": "John Polomny",
+      "url": "https://www.youtube.com/watch?v=MIOZ0w9hAZU",
+      "published": "2020-05-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:John Polomny)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCafCiSnC9iMRB7Dv7a68Ixw"
+      }
+    },
+    {
+      "videoId": "IaHZkbm38sQ",
+      "title": "Real Estate Mistakes I Wish I Would Have Known! #Realestate #investing",
+      "channel": "Ricky Gutierrez",
+      "url": "https://www.youtube.com/watch?v=IaHZkbm38sQ",
+      "published": "2022-06-03",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ricky Gutierrez)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtlAFoYl2aWb6pMiHCctQHA"
+      }
+    },
+    {
+      "videoId": "AGgaGMNuCjQ",
+      "title": "The \"coming soon\" sign in Real Estate  #realestate #luxuryrealestate #podcast",
+      "channel": "Chestnut Park Homes",
+      "url": "https://www.youtube.com/watch?v=AGgaGMNuCjQ",
+      "published": "2025-02-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chestnut Park Homes)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKTorpac9IYJqIiP7YYksaw"
+      }
+    },
+    {
+      "videoId": "xv4Y0eXCcFI",
+      "title": "The Real Reason Birth Rates Are Falling - Lyman Stone",
+      "channel": "Chris Williamson",
+      "url": "https://www.youtube.com/watch?v=xv4Y0eXCcFI",
+      "published": "2025-07-03",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Williamson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIaH-gZIVC432YRjNVvnyCA"
+      }
+    },
+    {
+      "videoId": "DFUgX1_MhU0",
+      "title": "Sunshine State Sweep: All 4 Major Florida Housing Markets Favor Buyers-Here's What That Means",
+      "channel": "Jay Hundt",
+      "url": "https://www.youtube.com/watch?v=DFUgX1_MhU0",
+      "published": "2025-10-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jay Hundt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC26bIh9Xi0I2WWPx0U-n49Q"
+      }
+    },
+    {
+      "videoId": "FuABLbO4lCo",
+      "title": "Washington to Texas: The REAL Reason So Many People Are Moving South",
+      "channel": "Living in Washington - Kennon Maurer",
+      "url": "https://www.youtube.com/watch?v=FuABLbO4lCo",
+      "published": "2025-11-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Living in Washington - Kennon Maurer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCP4TxyrcflB53A56icH60qg"
+      }
+    },
+    {
+      "videoId": "Vh6YYYx2MQw",
+      "title": "The REAL Reason Crypto Prices Are CRASHING - Cathie Wood",
+      "channel": "Digital Coin",
+      "url": "https://www.youtube.com/watch?v=Vh6YYYx2MQw",
+      "published": "2025-11-23",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Coin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCp7Rg8q0s_F8PDGkuEUj5ew"
+      }
+    },
+    {
+      "videoId": "ObU10ZcvQmE",
+      "title": "The REAL Reason Crypto Prices Are CRASHING - Anthony Scaramucci",
+      "channel": "Digital Coin",
+      "url": "https://www.youtube.com/watch?v=ObU10ZcvQmE",
+      "published": "2025-11-25",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Coin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCp7Rg8q0s_F8PDGkuEUj5ew"
+      }
+    },
+    {
+      "videoId": "5SZsKpA2fHE",
+      "title": "The REAL Reason People Are Moving to Olympia, WA (Local Realtor Explains)",
+      "channel": "Living in Washington - Kennon Maurer",
+      "url": "https://www.youtube.com/watch?v=5SZsKpA2fHE",
+      "published": "2025-11-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Living in Washington - Kennon Maurer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCP4TxyrcflB53A56icH60qg"
+      }
+    },
+    {
+      "videoId": "jS4bzB67nuw",
+      "title": "NYC commercial real estate demand is up, says Newmark’s Hart #shorts #realestate #nyc #returntowork",
+      "channel": "Bloomberg Television",
+      "url": "https://www.youtube.com/watch?v=jS4bzB67nuw",
+      "published": "2025-12-16",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bloomberg Television)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
+      }
+    },
+    {
+      "videoId": "Pj9Vmkrr7Wg",
+      "title": "The REAL Reason Crypto Prices Are CRASHING - Cathie Wood",
+      "channel": "Digital Coin",
+      "url": "https://www.youtube.com/watch?v=Pj9Vmkrr7Wg",
+      "published": "2025-12-17",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Coin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCp7Rg8q0s_F8PDGkuEUj5ew"
+      }
+    },
+    {
+      "videoId": "Ti7r5qH6D6o",
+      "title": "Dubai Real Estate: Why Emaar's Valley Phase 3 Will EXPLODE! #shorts",
+      "channel": "Calculated Chaos",
+      "url": "https://www.youtube.com/watch?v=Ti7r5qH6D6o",
+      "published": "2026-01-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Calculated Chaos)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrIRGbQFPZLh9E_V1stUFeg"
+      }
+    },
+    {
+      "videoId": "hXgFZx5MZGA",
+      "title": "Melbourne Is the Market to Watch in 2026",
+      "channel": "The Follio Property Podcast",
+      "url": "https://www.youtube.com/watch?v=hXgFZx5MZGA",
+      "published": "2026-01-16",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Follio Property Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_c__Ji5cQUe20zGmAfoA_A"
+      }
+    },
+    {
+      "videoId": "Ef4PqyCzUDA",
+      "title": "EXPOSED: The Real Reason 2026 Solid-State Batteries are Still a Scam!",
+      "channel": "Electric Rideables",
+      "url": "https://www.youtube.com/watch?v=Ef4PqyCzUDA",
+      "published": "2026-02-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Electric Rideables)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUDR6p5PQAgunS2D9mlzCyA"
+      }
+    },
+    {
+      "videoId": "6m-lFdRY2UE",
+      "title": "Why I Started Talking About AI (My Real Reason)",
+      "channel": "FutureByteAI",
+      "url": "https://www.youtube.com/watch?v=6m-lFdRY2UE",
+      "published": "2026-02-28",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FutureByteAI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UClWP-NgPadWg7pSvyzu86oA"
+      }
+    },
+    {
+      "videoId": "ptdxR2tm4aA",
+      "title": "🎙️ New Episode | This CGT Change Will Crash Australian Property Market\" in 2026 | ft. Ben Kingsley",
+      "channel": "The Follio Property Podcast",
+      "url": "https://www.youtube.com/watch?v=ptdxR2tm4aA",
+      "published": "2026-03-24",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Follio Property Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_c__Ji5cQUe20zGmAfoA_A"
+      }
+    },
+    {
+      "videoId": "FjSD2ygPH80",
+      "title": "The Wealth Gap in Real Estate: Why Luxury is Winning While Others Stall",
+      "channel": "Financial Freedom with Lisa Sakai",
+      "url": "https://www.youtube.com/watch?v=FjSD2ygPH80",
+      "published": "2026-04-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Financial Freedom with Lisa Sakai)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCG0ymYn1LZxIgcFmPiZfOLA"
+      }
+    },
+    {
+      "videoId": "xjSQ63cjT3I",
+      "title": "The Real Reason Housing Affordability Is Still Broken",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=xjSQ63cjT3I",
+      "published": "2026-05-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:(REIN) The Real Estate Investment Networ)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ"
+      }
+    },
+    {
+      "videoId": "m9lrA6qS2o8",
+      "title": "The Real Reason RAM Prices Are Exploding... 🤯 #shorts #technews",
+      "channel": "TheHardwareCore",
+      "url": "https://www.youtube.com/watch?v=m9lrA6qS2o8",
+      "published": "2026-06-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:TheHardwareCore)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4zLbI1IPmAO8SeTBORob9A"
+      }
+    },
+    {
+      "videoId": "ZBoIAMErLCU",
+      "title": "Buy and Hold real estate is DEAD! #realestate #commercialrealestate #millionairemindcast",
+      "channel": "Matt Aitchison",
+      "url": "https://www.youtube.com/watch?v=ZBoIAMErLCU",
+      "published": "2026-07-20",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Matt Aitchison)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCinIteUWBIk-ycgg5i7q99w"
+      }
+    },
+    {
+      "videoId": "e__zT_IuOf8",
+      "title": "Can I win ALL 5 New Chess Odyssey Bots (August 2026)",
+      "channel": "Agrah Agrawal",
+      "url": "https://www.youtube.com/watch?v=e__zT_IuOf8",
+      "published": "2026-08-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Agrah Agrawal )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0KM-zSCR_TRd5yNKcelE_Q"
+      }
+    },
+    {
+      "videoId": "PhC6ywZhNog",
+      "title": "August 11, 2026 — Four Atoms, One Chip: Pasqal's Bid to Fix Quantum's Scaling Wall",
+      "channel": "Quickly Quantum",
+      "url": "https://www.youtube.com/watch?v=PhC6ywZhNog",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Quickly Quantum)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk5E3jH7i0IYuYzoGdc7USw"
+      }
+    },
+    {
+      "videoId": "mBmUkaerxAE",
+      "title": "AI Has Left the Screen: The Physical Reality Stack of August 2026 🧠⚡@AI_Vanguard_AI",
+      "channel": "AI Vanguard AI",
+      "url": "https://www.youtube.com/watch?v=mBmUkaerxAE",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Vanguard AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfYTTSysBErs4FgML-854EA"
+      }
+    },
+    {
+      "videoId": "YItGL_4J9i4",
+      "title": "The August 2026 Mass Tort Power Rankings: What to Acquire, What to Watch, and What Is Settling",
+      "channel": "Jon and Marc",
+      "url": "https://www.youtube.com/watch?v=YItGL_4J9i4",
+      "published": "2026-08-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jon and Marc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgfw1tF_QIvKPPE0ZRznsUQ"
+      }
+    },
+    {
+      "videoId": "GwvWR0HJNPQ",
+      "title": "NEW at DOLLAR TREE: 12 Items That WON'T LAST (And 4 to Avoid) — August 2026",
+      "channel": "Frugal Now Official",
+      "url": "https://www.youtube.com/watch?v=GwvWR0HJNPQ",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Frugal Now Official)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCP55X-D9LqBYTVW50ebq88Q"
+      }
+    },
+    {
+      "videoId": "zkA640Icxo0",
+      "title": "August 15, 2026 — Weekly Recap: Quantinuum's Breakout Week Steals the Show",
+      "channel": "Quickly Quantum",
+      "url": "https://www.youtube.com/watch?v=zkA640Icxo0",
+      "published": "2026-08-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Quickly Quantum)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk5E3jH7i0IYuYzoGdc7USw"
+      }
+    },
+    {
+      "videoId": "SKaP2nVnEVo",
+      "title": "NEW at DOLLAR TREE: 12 Items That Won't Last (And 7 to Avoid) August 2026",
+      "channel": "Frugal Now Official",
+      "url": "https://www.youtube.com/watch?v=SKaP2nVnEVo",
+      "published": "2026-08-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Frugal Now Official)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCP55X-D9LqBYTVW50ebq88Q"
+      }
+    },
+    {
+      "videoId": "Uztc5G1FlQU",
+      "title": "IT Job Market 2026: What Is Really Happening?",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=Uztc5G1FlQU",
+      "published": "2026-08-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Tech Lead)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw"
+      }
+    },
+    {
+      "videoId": "N91KsyWfWvU",
+      "title": "New Beginning Christian Fellowship: Was live! Sunday Morning August 16, 2026",
+      "channel": "End Times Shaking: The Overcomers",
+      "url": "https://www.youtube.com/watch?v=N91KsyWfWvU",
+      "published": "2026-08-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:End Times Shaking: The Overcomers)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC2OvlP163rTIZ3VucoKIocA"
+      }
+    },
+    {
+      "videoId": "OF04jekz6PY",
+      "title": "🔥 5 Upcoming IPOs You Should Know About | August 2026 #ipo  #indianstockmarket #shorts  #shortvideo",
+      "channel": "Abinash Pandit",
+      "url": "https://www.youtube.com/watch?v=OF04jekz6PY",
+      "published": "2026-08-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abinash Pandit)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDOFUfWerX6e7oAbgUuD56A"
+      }
+    },
+    {
+      "videoId": "gv_QSA8zQiY",
+      "title": "August 20, 2026 — Cornell's Krypton Fix: Tantalum Heat Drops From 400°C to 200°C",
+      "channel": "Quickly Quantum",
+      "url": "https://www.youtube.com/watch?v=gv_QSA8zQiY",
+      "published": "2026-08-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Quickly Quantum)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk5E3jH7i0IYuYzoGdc7USw"
+      }
+    },
+    {
+      "videoId": "j4lEqDTgt7k",
+      "title": "\"Something important is recovering!\" Giant Coffee Cup & Tarot Reading ☕︎ (August 2026)",
+      "channel": "Divine Light and Moon",
+      "url": "https://www.youtube.com/watch?v=j4lEqDTgt7k",
+      "published": "2026-08-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Divine Light and Moon)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiMEjpWdXx3Z5bOytoQSDSw"
+      }
+    },
+    {
+      "videoId": "rcrYxmI70RA",
+      "title": "August 2026 – The Month AI Took Over the Physical World 🌍🧠@AI_Vanguard_AI",
+      "channel": "AI Vanguard AI",
+      "url": "https://www.youtube.com/watch?v=rcrYxmI70RA",
+      "published": "2026-08-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Vanguard AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfYTTSysBErs4FgML-854EA"
+      }
+    },
+    {
+      "videoId": "ctQLw9UyGwU",
+      "title": "🚀 TOP 3 MUST-HAVE Magisk Modules for August 2026! 🔥 (Faster UI, OLED Colors & No Ads)",
+      "channel": "TechyNoob",
+      "url": "https://www.youtube.com/watch?v=ctQLw9UyGwU",
+      "published": "2026-08-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:TechyNoob)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCScgT0BJ1AIWUlq2XUoqiew"
+      }
+    },
+    {
+      "videoId": "CtzzKD5e-ys",
+      "title": "Solar Eclipse on Fänø Denmark: Astronomical Truth vs. Optical Illusion (August 12, 2026)",
+      "channel": "Bistro Ginkgo | The Longevity Cuisine",
+      "url": "https://www.youtube.com/watch?v=CtzzKD5e-ys",
+      "published": "2026-08-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bistro Ginkgo | The Longevity Cuisine)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvTwlJlid0gOR6qg3uRf-2A"
+      }
+    },
+    {
+      "videoId": "5OMJf-NitoA",
+      "title": "New Beginning Christian Fellowship: Was Live! Sunday Morning Service August 23, 2026",
+      "channel": "End Times Shaking: The Overcomers",
+      "url": "https://www.youtube.com/watch?v=5OMJf-NitoA",
+      "published": "2026-08-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:End Times Shaking: The Overcomers)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC2OvlP163rTIZ3VucoKIocA"
+      }
+    },
+    {
+      "videoId": "EF1C6BX2VvM",
+      "title": "Blood Moon August 27/28 2026: Signs in the Heavens; Rapture Alert? End Time 6th Seal Warning?",
+      "channel": "The Tribulation Institute",
+      "url": "https://www.youtube.com/watch?v=EF1C6BX2VvM",
+      "published": "2026-08-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Tribulation Institute )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1bOH_5ptYsUJuGYCnPiKTg"
+      }
+    },
+    {
+      "videoId": "NifpFqOiRBI",
+      "title": "🔥 Top 3 MUST-HAVE LSPosed Modules in August 2026! (Ultimate Root Tweaks) 📱⚡",
+      "channel": "TechyNoob",
+      "url": "https://www.youtube.com/watch?v=NifpFqOiRBI",
+      "published": "2026-08-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:TechyNoob)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCScgT0BJ1AIWUlq2XUoqiew"
+      }
+    },
+    {
+      "videoId": "6Qc2YsQTZow",
+      "title": "Why Everyone Is Leaving Gumroad in 2026 — The Real Reason Creators Are Switching",
+      "channel": "Future_AI",
+      "url": "https://www.youtube.com/watch?v=6Qc2YsQTZow",
+      "published": "2026-08-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Future_AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwJN1f8zBvUtC3XPni3628g"
+      }
+    },
+    {
+      "videoId": "5d48sPYYEyc",
+      "title": "August 26, 2026 — Dead and Alive: Quantum Computing's Credibility Gap",
+      "channel": "Quickly Quantum",
+      "url": "https://www.youtube.com/watch?v=5d48sPYYEyc",
+      "published": "2026-08-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Quickly Quantum)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk5E3jH7i0IYuYzoGdc7USw"
+      }
+    },
+    {
+      "videoId": "J422vEdu51A",
+      "title": "Lunar Eclipse Portal is Open (August 27, 2026): Full Moon Energy to Manifest Your Deepest Desire ✨",
+      "channel": "Good Vibes - Binaural Beats",
+      "url": "https://www.youtube.com/watch?v=J422vEdu51A",
+      "published": "2026-08-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Good Vibes - Binaural Beats)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIauBb6cmot_0cYlYeEb8Mw"
+      }
+    },
+    {
+      "videoId": "K7gtH4yeILc",
+      "title": "August 29, 2026 — Quantum's SPAC Boom Meets a Real Court Loss",
+      "channel": "Quickly Quantum",
+      "url": "https://www.youtube.com/watch?v=K7gtH4yeILc",
+      "published": "2026-08-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Quickly Quantum)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCk5E3jH7i0IYuYzoGdc7USw"
+      }
+    },
+    {
+      "videoId": "UeTjH7wFWUY",
+      "title": "Which AI tools should you be using as of August 2026?",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=UeTjH7wFWUY",
+      "published": "2026-08-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "dBCRlmv7QRM",
+      "title": "New Beginning Fellowship was live. Sunday Morning Service August 30, 2026",
+      "channel": "End Times Shaking: The Overcomers",
+      "url": "https://www.youtube.com/watch?v=dBCRlmv7QRM",
+      "published": "2026-08-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:End Times Shaking: The Overcomers)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC2OvlP163rTIZ3VucoKIocA"
+      }
+    },
+    {
+      "videoId": "hluvWncqmnQ",
+      "title": "TVS Beats Chetak & Ather! 😱 August 2026 EV Sales EXPLAINED ⚡ #Shorts",
+      "channel": "Evfy",
+      "url": "https://www.youtube.com/watch?v=hluvWncqmnQ",
+      "published": "2026-09-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Evfy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCmD_zvZ92tkirqlbLsgEMqg"
+      }
+    },
+    {
+      "videoId": "VUl_o7y6mxE",
+      "title": "Middle-Class Americans Regret Moving to Texas — Here’s the Real Reason Why",
+      "channel": "Alexs Brooks",
+      "url": "https://www.youtube.com/watch?v=VUl_o7y6mxE",
+      "published": "2026-09-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Alexs Brooks)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCd074reA1HKvUhDITD1RZJQ"
+      }
+    },
+    {
+      "videoId": "oiIRc_OGeKQ",
+      "title": "Top 10 U.S. Cities Where Rents Are CRASHING – The Hidden Trap Nobody Is Talking About | Prof. Jiang",
+      "channel": "Nadeem Khan",
+      "url": "https://www.youtube.com/watch?v=oiIRc_OGeKQ",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nadeem Khan)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7y4qfRqC35jQKSBCwn-ACQ"
+      }
+    },
+    {
+      "videoId": "LKozQUfhHx8",
+      "title": "Top 10 U.S. Cities Where Rents Are CRASHING — The Hidden Trap Nobody Is Talking About | Prof. Jiang",
+      "channel": "Nadeem Khan",
+      "url": "https://www.youtube.com/watch?v=LKozQUfhHx8",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nadeem Khan)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7y4qfRqC35jQKSBCwn-ACQ"
+      }
+    },
+    {
+      "videoId": "PzFMSBZ5aFg",
+      "title": "Why Are Gas Prices So High? The REAL Reason Explained! #shorts",
+      "channel": "John Polomny",
+      "url": "https://www.youtube.com/watch?v=PzFMSBZ5aFg",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:John Polomny)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCafCiSnC9iMRB7Dv7a68Ixw"
+      }
+    },
+    {
+      "videoId": "_u9tb5n0t2Y",
+      "title": "Arabian Travel Market 2026: How AI And New Aviation Tech Are Changing The Way You Fly Forever",
+      "channel": "NDTV World",
+      "url": "https://www.youtube.com/watch?v=_u9tb5n0t2Y",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NDTV World)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXBD5iG5cr4ZYZ99K-fmDHg"
+      }
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }

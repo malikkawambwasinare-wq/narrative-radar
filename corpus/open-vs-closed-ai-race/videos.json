@@ -113789,7 +113789,583 @@
         "channelViews": 43257,
         "channelVideos": 127
       }
+    },
+    {
+      "videoId": "UHvJfNOmqhA",
+      "title": "Dyad AI is a free, Open-source Alternative to Lovable and Bolt that runs on Local AI Models",
+      "channel": "Nick Automates",
+      "url": "https://www.youtube.com/watch?v=UHvJfNOmqhA",
+      "published": "2025-12-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Automates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUX5AP1M0mBbgUi_WklPbOQ"
+      }
+    },
+    {
+      "videoId": "VZaJVtRydh4",
+      "title": "Should you use Local AI Models? #ai #claude",
+      "channel": "Sayujya Gupta",
+      "url": "https://www.youtube.com/watch?v=VZaJVtRydh4",
+      "published": "2026-04-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sayujya Gupta)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHI3TnQXvJJUR_iDZh0jVMg"
+      }
+    },
+    {
+      "videoId": "Ty_50J84fMY",
+      "title": "Claude Fable 5 beats Pokémon FireRed only using vision",
+      "channel": "Claude",
+      "url": "https://www.youtube.com/watch?v=Ty_50J84fMY",
+      "published": "2026-06-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Claude)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCV03SRZXJEz-hchIAogeJOg"
+      }
+    },
+    {
+      "videoId": "ynx26VBvggg",
+      "title": "Claude Fable 5 Beat Everything — But There's a Catch #shorts",
+      "channel": "Kernel Cast",
+      "url": "https://www.youtube.com/watch?v=ynx26VBvggg",
+      "published": "2026-06-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kernel Cast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC3PhOJM5EpgVJgurVPrnqiw"
+      }
+    },
+    {
+      "videoId": "G6PRP4zqwuA",
+      "title": "Claude Fable 5 Is Mythos With Guardrails",
+      "channel": "The Swag Wala PM",
+      "url": "https://www.youtube.com/watch?v=G6PRP4zqwuA",
+      "published": "2026-06-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Swag Wala PM)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCbygDe8SRwTaEiFwHdoQxgg"
+      }
+    },
+    {
+      "videoId": "tcQlib7IZTU",
+      "title": "Claude Fable 5 vs. Schulalltag: Was kann die neue KI wirklich?",
+      "channel": "Björn Sydow - TeachSmarter",
+      "url": "https://www.youtube.com/watch?v=tcQlib7IZTU",
+      "published": "2026-06-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Björn Sydow - TeachSmarter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHp9wcRSd5x7Rrc2h3eZx-w"
+      }
+    },
+    {
+      "videoId": "l-w8yWuPzOA",
+      "title": "The US Government Just Banned Claude Fable 5... (Full Breakdown)",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=l-w8yWuPzOA",
+      "published": "2026-06-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "ScKqO35j6rk",
+      "title": "#169 Topic: Claude Fable & Mythos Ban durch US-Regierung",
+      "channel": "todo:cast Developer Podcast",
+      "url": "https://www.youtube.com/watch?v=ScKqO35j6rk",
+      "published": "2026-06-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:todo:cast Developer Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCB4a4M410IsYE19WnB_yHRQ"
+      }
+    },
+    {
+      "videoId": "5mJQePqMszs",
+      "title": "Why the US Government Shut Off Claude Fable 5 (Explained)",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=5mJQePqMszs",
+      "published": "2026-06-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "npTJsbJAFvs",
+      "title": "Claude Fable & Mythos Ban durch US-Regierung",
+      "channel": "todo:cast Developer Podcast",
+      "url": "https://www.youtube.com/watch?v=npTJsbJAFvs",
+      "published": "2026-06-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:todo:cast Developer Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCB4a4M410IsYE19WnB_yHRQ"
+      }
+    },
+    {
+      "videoId": "34HxzYKwk1Q",
+      "title": "Sakana Fugu is a freak! Better than Claude Fable 5 #shorts #ainews",
+      "channel": "Kai",
+      "url": "https://www.youtube.com/watch?v=34HxzYKwk1Q",
+      "published": "2026-06-25",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kai)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgUfJoPtkt7-RiiuYh4vmGA"
+      }
+    },
+    {
+      "videoId": "8GfFiQ_90dQ",
+      "title": "Claude Fable 5 is back. Why is it refusing people?",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=8GfFiQ_90dQ",
+      "published": "2026-07-02",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "sfDaIcRv_0A",
+      "title": "Claude Fable 5 is expensive 🤧",
+      "channel": "The Middle Class Breaker",
+      "url": "https://www.youtube.com/watch?v=sfDaIcRv_0A",
+      "published": "2026-07-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Middle Class Breaker)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9WyNPmuvs3EMipofjGo5Vg"
+      }
+    },
+    {
+      "videoId": "mUh5OyDQUcQ",
+      "title": "Claude Fable 5 relaunch faces criticism over heavy censorship and #CloudFable5 #Anthropic #AIsafety",
+      "channel": "Roddy Lawson",
+      "url": "https://www.youtube.com/watch?v=mUh5OyDQUcQ",
+      "published": "2026-07-11",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Roddy Lawson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJV08mrHrluU2TtAZOCR2hg"
+      }
+    },
+    {
+      "videoId": "3glW9PAMN60",
+      "title": "GPT-5.6 vs Claude Fable 5: Is Claude Worth 3× More?",
+      "channel": "Kernel Cast",
+      "url": "https://www.youtube.com/watch?v=3glW9PAMN60",
+      "published": "2026-07-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kernel Cast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC3PhOJM5EpgVJgurVPrnqiw"
+      }
+    },
+    {
+      "videoId": "9PAl8gfZgFE",
+      "title": "GPT-5.6 Sol users are raising alarms.",
+      "channel": "Snaphomz_AI",
+      "url": "https://www.youtube.com/watch?v=9PAl8gfZgFE",
+      "published": "2026-07-15",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Snaphomz_AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCm0KeTh5lmQMYgTU2Uk3VUw"
+      }
+    },
+    {
+      "videoId": "bRwqolnciWc",
+      "title": "CLAUDE FABLE BEATS THIS SCIENTIST #ai #claude #claudefable5",
+      "channel": "Beyond Hype by Bverse",
+      "url": "https://www.youtube.com/watch?v=bRwqolnciWc",
+      "published": "2026-07-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Beyond Hype by Bverse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCY3tyuP3jJDaXQkqvnkUTig"
+      }
+    },
+    {
+      "videoId": "SW9sTBjWLNA",
+      "title": "Claude Fable 5 Access Terms Are Now Final #Shorts",
+      "channel": "Aspyn AI",
+      "url": "https://www.youtube.com/watch?v=SW9sTBjWLNA",
+      "published": "2026-07-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Aspyn AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLziOwxipypepaH5il-SNbQ"
+      }
+    },
+    {
+      "videoId": "ywtY1bmZ_SU",
+      "title": "Claude Fable 5 Is Scarce. Use It Like This.",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=ywtY1bmZ_SU",
+      "published": "2026-07-21",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "s0CdBshP1n8",
+      "title": "Ollama vs Kimi K3 - Which Free AI Is Better?",
+      "channel": "Bryan Software",
+      "url": "https://www.youtube.com/watch?v=s0CdBshP1n8",
+      "published": "2026-07-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bryan Software)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4G0FyD2ONZP2khtTeDvzEw"
+      }
+    },
+    {
+      "videoId": "u6dwjXkMx_c",
+      "title": "Yes, you should be scared of Claude Fable",
+      "channel": "Alberta Tech",
+      "url": "https://www.youtube.com/watch?v=u6dwjXkMx_c",
+      "published": "2026-07-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Alberta Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkdgAA0rfK7lG5dv4o__Paw"
+      }
+    },
+    {
+      "videoId": "o6yQfkAcmBM",
+      "title": "GPT-5.6 Sol: Is It Actually Worth It?",
+      "channel": "Bryan Software",
+      "url": "https://www.youtube.com/watch?v=o6yQfkAcmBM",
+      "published": "2026-08-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bryan Software)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4G0FyD2ONZP2khtTeDvzEw"
+      }
+    },
+    {
+      "videoId": "zzuhQpUYGyU",
+      "title": "GPT-5.6 Sol: Is It Actually Worth It?",
+      "channel": "Bryan Software",
+      "url": "https://www.youtube.com/watch?v=zzuhQpUYGyU",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bryan Software)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4G0FyD2ONZP2khtTeDvzEw"
+      }
+    },
+    {
+      "videoId": "MwNQLod3MvE",
+      "title": "Is Here: Best Local AI Model Yet? | Coding, Vision & 262K Context #ai #coding #qwen3",
+      "channel": "Markets, Tech & AI Insights",
+      "url": "https://www.youtube.com/watch?v=MwNQLod3MvE",
+      "published": "2026-08-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Markets, Tech & AI Insights)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_t4_sFI3SeFFiJjwMNQv8A"
+      }
+    },
+    {
+      "videoId": "bXGCoQ_CKUw",
+      "title": "Qwen3.8-27B Is Here: Best Local AI Model Yet? | Coding, Vision & 262K Context",
+      "channel": "Markets, Tech & AI Insights",
+      "url": "https://www.youtube.com/watch?v=bXGCoQ_CKUw",
+      "published": "2026-08-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Markets, Tech & AI Insights)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_t4_sFI3SeFFiJjwMNQv8A"
+      }
+    },
+    {
+      "videoId": "Cxz5tFKs9ok",
+      "title": "Claude Fable 5.1 LEAKED? Here's What We Actually Know",
+      "channel": "AI Pulse HQ | AI News • 150k views • 8 hours ago",
+      "url": "https://www.youtube.com/watch?v=Cxz5tFKs9ok",
+      "published": "2026-08-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Pulse HQ)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOGUuHqetHJ3kDC9EjoysZg"
+      }
+    },
+    {
+      "videoId": "L_ZwIzsKIwE",
+      "title": "OpenAI Cuts GPT-5.6 Sol Prices Over 20% — For Three Months Only",
+      "channel": "Go Brief",
+      "url": "https://www.youtube.com/watch?v=L_ZwIzsKIwE",
+      "published": "2026-08-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Go Brief)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCT6AlEdc-GlQ74iNbIl_Oag"
+      }
+    },
+    {
+      "videoId": "KBqQHkOziFY",
+      "title": "Claude Fable 5.1 just dropped and the real story is endurance, not IQ. Comment FABLE",
+      "channel": "Druski AI",
+      "url": "https://www.youtube.com/watch?v=KBqQHkOziFY",
+      "published": "2026-09-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Druski AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnHdVFTOUQUXRsiWz6y69EQ"
+      }
+    },
+    {
+      "videoId": "PvpPZatjd9M",
+      "title": "Claude Fable 5.1 is FREE to Test in Arena! 🔥 Limited Time",
+      "channel": "Code With Yousaf",
+      "url": "https://www.youtube.com/watch?v=PvpPZatjd9M",
+      "published": "2026-09-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Code With Yousaf)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZyFxfw1M44QyjRv751MlGg"
+      }
+    },
+    {
+      "videoId": "UrgIxv8ryc8",
+      "title": "Claude Fable 5.1 Finally Fixes the AI Website Problem?",
+      "channel": "Prem Mohan | AI for Bharat",
+      "url": "https://www.youtube.com/watch?v=UrgIxv8ryc8",
+      "published": "2026-09-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Prem Mohan | AI for Bharat)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7bhbyn3nR3_bL6LnWoG1tw"
+      }
+    },
+    {
+      "videoId": "sCuHn8KdAs4",
+      "title": "AI PC NPU Explained: Why It Doesn't Run Your Local AI Models",
+      "channel": "AI Unpacked",
+      "url": "https://www.youtube.com/watch?v=sCuHn8KdAs4",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Unpacked)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxx4re9LXjufy0IPaFytJ9Q"
+      }
+    },
+    {
+      "videoId": "UzYlemYewFU",
+      "title": "This Tiny Local AI Model Has 1 Million Tokens of Context. But How?",
+      "channel": "Cloud Codes",
+      "url": "https://www.youtube.com/watch?v=UzYlemYewFU",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Cloud Codes)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0DZj1PNa_Fp0MU6uPSKv5w"
+      }
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }

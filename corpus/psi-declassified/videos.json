@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-09-20"
+      "unavailable": "2026-09-21"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -52964,15 +52964,22 @@
       "url": "https://www.youtube.com/watch?v=WEGSkUAnCOA",
       "published": "2026-09-19",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "0:39",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCpVyd5tJaPZvu0e_nqJwJ7w"
+        "channelId": "UCpVyd5tJaPZvu0e_nqJwJ7w",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -52982,15 +52989,22 @@
       "url": "https://www.youtube.com/watch?v=BZxbc_svBQY",
       "published": "2026-09-19",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 7,
+      "length": "2:24",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7NK5LCkQBHAP_aVkEI9kFQ"
+        "channelId": "UC7NK5LCkQBHAP_aVkEI9kFQ",
+        "category": "20",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -53000,15 +53014,22 @@
       "url": "https://www.youtube.com/watch?v=Z3u9903FLvo",
       "published": "2026-09-19",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 7550,
+      "length": "32:19",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCUBGn5rX6gT1QlycvP-1Cfg"
+        "channelId": "UCUBGn5rX6gT1QlycvP-1Cfg",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 466,
+        "comments": 38,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -53018,15 +53039,22 @@
       "url": "https://www.youtube.com/watch?v=YhG3L2lSHIw",
       "published": "2026-09-19",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 2,
+      "length": "3:00",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCauV7T6sAAf62WtWzHBdFGg"
+        "channelId": "UCauV7T6sAAf62WtWzHBdFGg",
+        "category": "28",
+        "language": "pl",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-21"
       }
     },
     {
@@ -53896,7 +53924,151 @@
         "channelViews": 2621,
         "channelVideos": 35
       }
+    },
+    {
+      "videoId": "XmOrwiU0KJ4",
+      "title": "Why did the CIA ban this book?",
+      "channel": "The Why Files",
+      "url": "https://www.youtube.com/watch?v=XmOrwiU0KJ4",
+      "published": "2023-04-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Why Files)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIFk2uvCNcEmZ77g0ESKLcQ"
+      }
+    },
+    {
+      "videoId": "hZPU89RjLjk",
+      "title": "Why Did the CIA Go Back to Psychics 41 Different Times?",
+      "channel": "Shawn Ryan Clips",
+      "url": "https://www.youtube.com/watch?v=hZPU89RjLjk",
+      "published": "2024-07-25",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Shawn Ryan Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1vUksRWfEfd6V4pPDIQ0jw"
+      }
+    },
+    {
+      "videoId": "ZdhXj3xndiU",
+      "title": "Did the CIA Train Oswald to Kill JFK?",
+      "channel": "Valuetainment",
+      "url": "https://www.youtube.com/watch?v=ZdhXj3xndiU",
+      "published": "2025-03-20",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Valuetainment)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIHdDJ0tjn_3j-FS7s_X1kQ"
+      }
+    },
+    {
+      "videoId": "OLhxOKOOla8",
+      "title": "Capricorn Psychic Remote 🤬 SPIRIT HAS A BIG MESSAGE FOR YOU 🤬",
+      "channel": "7 Tarot",
+      "url": "https://www.youtube.com/watch?v=OLhxOKOOla8",
+      "published": "2025-09-30",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:7 Tarot)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPDUeRp6OU6xVAYSOOvEXTw"
+      }
+    },
+    {
+      "videoId": "fs2RzrSI_kE",
+      "title": "Calls for UFO transparency, 'Disclosure Day' movie, and debate over government secrets | Backscroll",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=fs2RzrSI_kE",
+      "published": "2026-06-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NewsNation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ"
+      }
+    },
+    {
+      "videoId": "n7IoQJLUfgI",
+      "title": "Did the CIA drop ticks over Cuba?",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=n7IoQJLUfgI",
+      "published": "2026-06-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NewsNation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ"
+      }
+    },
+    {
+      "videoId": "Ocnc_jF7U9I",
+      "title": "Why did CIA Director Ratcliffe go to Moscow? Donald Trump clarified everything.",
+      "channel": "Bizarre daily",
+      "url": "https://www.youtube.com/watch?v=Ocnc_jF7U9I",
+      "published": "2026-08-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bizarre daily )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCNy2ix0pxCi9EcO1Yt4JQmQ"
+      }
+    },
+    {
+      "videoId": "8b5vkwuxDW0",
+      "title": "The Insider Who Saw Too Much: 4 Alien Species, Warp Drives, and the Terrifying 'Hitchhiker Effect'",
+      "channel": "TheShadowArchives",
+      "url": "https://www.youtube.com/watch?v=8b5vkwuxDW0",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:TheShadowArchives)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPLMwCVGi5ZZ78TCA_pzijA"
+      }
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }

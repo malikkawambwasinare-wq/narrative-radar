@@ -76224,7 +76224,1825 @@
         "channelViews": 26451,
         "channelVideos": 31
       }
+    },
+    {
+      "videoId": "9nMT-1kmByw",
+      "title": "What Is SaaS? Software As A Service Explained (In 9 Minutes)",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=9nMT-1kmByw",
+      "published": "2021-02-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "3eDrAHjSqXo",
+      "title": "Is this the Best Vibe Coding Platform? (Lovable AI)",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=3eDrAHjSqXo",
+      "published": "2024-12-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "c1FbNK5PFIs",
+      "title": "How to Build AI Agents That Actually Work (Just Code with examples)",
+      "channel": "Tyler AI",
+      "url": "https://www.youtube.com/watch?v=c1FbNK5PFIs",
+      "published": "2025-02-14",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tyler AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrnqntHQ4oNe7HJtfiAMQ2g"
+      }
+    },
+    {
+      "videoId": "7MiFIhlkBoE",
+      "title": "Patrick Dougherty: How to Build AI Agents that Actually Work",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=7MiFIhlkBoE",
+      "published": "2025-02-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "JADQ5FbYem0",
+      "title": "What the Hell is Vibe Coding? (Let Me Tell You)",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=JADQ5FbYem0",
+      "published": "2025-03-14",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "nzxMrY2Kmhw",
+      "title": "What is Vibe Coding?",
+      "channel": "Caleb Writes Code",
+      "url": "https://www.youtube.com/watch?v=nzxMrY2Kmhw",
+      "published": "2025-03-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Caleb Writes Code)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuU9jE4MHHEIyYMbDfUPSew"
+      }
+    },
+    {
+      "videoId": "dlyRQvgfzSI",
+      "title": "5 FREE AI courses to learn AI coding / vibe coding! Start with the 1st one, also YouTube is very",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=dlyRQvgfzSI",
+      "published": "2025-05-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "f8873OVRqno",
+      "title": "Rocket.New is a New AI Coder that can build entire Apps and Websites on its own.",
+      "channel": "Nick Automates",
+      "url": "https://www.youtube.com/watch?v=f8873OVRqno",
+      "published": "2025-06-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Automates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUX5AP1M0mBbgUi_WklPbOQ"
+      }
+    },
+    {
+      "videoId": "lO0lQLZKzI0",
+      "title": "This new vibe coding app is insane… Pythagora",
+      "channel": "David Ondrej",
+      "url": "https://www.youtube.com/watch?v=lO0lQLZKzI0",
+      "published": "2025-06-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:David Ondrej)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGrgwfbkjTIgPoOh2q1BAg"
+      }
+    },
+    {
+      "videoId": "jVGCulhBRZI",
+      "title": "Building AI Agents that actually automate Knowledge Work - Jerry Liu, LlamaIndex",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=jVGCulhBRZI",
+      "published": "2025-06-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "I_eOG7TEfGk",
+      "title": "Which AI vibe coding tool should you use? It depends on what you’re building and whether you have",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=I_eOG7TEfGk",
+      "published": "2025-07-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "fJIApdg1Ezg",
+      "title": "Context Engineering is NOW the New Vibe Coding Explained",
+      "channel": "Tyler AI",
+      "url": "https://www.youtube.com/watch?v=fJIApdg1Ezg",
+      "published": "2025-07-13",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tyler AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrnqntHQ4oNe7HJtfiAMQ2g"
+      }
+    },
+    {
+      "videoId": "RtaNa7KIQtk",
+      "title": "Emergent AI is a new AI Coder that can build entire apps and websites all on its own.",
+      "channel": "Nick Automates",
+      "url": "https://www.youtube.com/watch?v=RtaNa7KIQtk",
+      "published": "2025-07-14",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Automates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUX5AP1M0mBbgUi_WklPbOQ"
+      }
+    },
+    {
+      "videoId": "X4BwOu0GWb8",
+      "title": "Your Coding Agent Just Got Cloned And Your Brain Isn't Ready - Rustin Banks, Google Jules",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=X4BwOu0GWb8",
+      "published": "2025-07-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "q5zIoWagRgk",
+      "title": "Wix’s New $80M Vibe Coding App is the Future? (Base44)",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=q5zIoWagRgk",
+      "published": "2025-08-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "gDi-7egdP54",
+      "title": "This might be controversial but here’s my 2 cents on AI vibe coding in 2025. I have a top-visited vi",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=gDi-7egdP54",
+      "published": "2025-08-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "nADessnO2ic",
+      "title": "Hoffman : Vibe Coding  End of Software or New Beginning",
+      "channel": "AInewsCode",
+      "url": "https://www.youtube.com/watch?v=nADessnO2ic",
+      "published": "2025-08-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AInewsCode)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA07eEcbiRLAOj9L4kxZY9A"
+      }
+    },
+    {
+      "videoId": "O4Jq9Tw-xxQ",
+      "title": "Rocket.New is a New AI Coder that builds full stack complete applications all on its own.",
+      "channel": "Nick Automates",
+      "url": "https://www.youtube.com/watch?v=O4Jq9Tw-xxQ",
+      "published": "2025-08-31",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Automates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUX5AP1M0mBbgUi_WklPbOQ"
+      }
+    },
+    {
+      "videoId": "im9ekKHGtKw",
+      "title": "Vibe coding has turned senior developers into AI babysitters",
+      "channel": "AInewsCode",
+      "url": "https://www.youtube.com/watch?v=im9ekKHGtKw",
+      "published": "2025-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AInewsCode)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA07eEcbiRLAOj9L4kxZY9A"
+      }
+    },
+    {
+      "videoId": "maY9G6JrDAU",
+      "title": "AI Agents explained in 3 sentences: First, tools and memory are NOT required for AI agents. The only",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=maY9G6JrDAU",
+      "published": "2025-09-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "uBZaiiTIpPA",
+      "title": "Replying to @Tc great quick win idea if you have a technical background. Obviously vibe coding keeps",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=uBZaiiTIpPA",
+      "published": "2025-09-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "1tg85_cns0Y",
+      "title": "This is a simple and free vibe coding hack that everyone should know! You don’t have to start from s",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=1tg85_cns0Y",
+      "published": "2025-10-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "K123m3nCA90",
+      "title": "New Gemini 3 Vibe Coding is INSANE (Free)",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=K123m3nCA90",
+      "published": "2025-11-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "Q5IVm_CxN2w",
+      "title": "Infra that fixes itself, thanks to coding agents — Mahmoud Abdelwahab, Railway",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=Q5IVm_CxN2w",
+      "published": "2025-11-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "zsRPoR28xyM",
+      "title": "Which AI Tool Should You Use? (Vibe Coding)",
+      "channel": "Sabrina Ramonov 🍄",
+      "url": "https://www.youtube.com/watch?v=zsRPoR28xyM",
+      "published": "2025-12-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sabrina Ramonov 🍄)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiGWNa6QK6CiKPvv5-YPv8g"
+      }
+    },
+    {
+      "videoId": "srk_WLm5-kc",
+      "title": "What vibe coding an app is like",
+      "channel": "Alberta Tech",
+      "url": "https://www.youtube.com/watch?v=srk_WLm5-kc",
+      "published": "2025-12-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Alberta Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkdgAA0rfK7lG5dv4o__Paw"
+      }
+    },
+    {
+      "videoId": "_axtKLz0Q08",
+      "title": "Did you Google has silently relased over 10+ Vibe Coding Tools and most of them are Completely Free",
+      "channel": "Nick Automates",
+      "url": "https://www.youtube.com/watch?v=_axtKLz0Q08",
+      "published": "2025-12-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Automates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUX5AP1M0mBbgUi_WklPbOQ"
+      }
+    },
+    {
+      "videoId": "G4XKpGmjtvE",
+      "title": "Andrew Ng explains why “vibe coding” understates the mental effort of AI assisted development.",
+      "channel": "No Priors: AI, Machine Learning, Tech, & Startups",
+      "url": "https://www.youtube.com/watch?v=G4XKpGmjtvE",
+      "published": "2026-01-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:No Priors: AI, Machine Learning, Tech, &)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCSI7h9hydQ40K5MJHnCrQvw"
+      }
+    },
+    {
+      "videoId": "yZUy66ILO_8",
+      "title": "Why Vibe Coding Will Get Replaced in 2026 (Here’s How to Prepare)",
+      "channel": "Edwin Chen | AI Automation",
+      "url": "https://www.youtube.com/watch?v=yZUy66ILO_8",
+      "published": "2026-01-13",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Edwin Chen | AI Automation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxascJTY9ZG3YmyD7YI-FGA"
+      }
+    },
+    {
+      "videoId": "lllkfxD6LEk",
+      "title": "Forget Cursor cause Google just released Jules, their new Free AI coding agent",
+      "channel": "Nick Automates",
+      "url": "https://www.youtube.com/watch?v=lllkfxD6LEk",
+      "published": "2026-01-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Automates)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUX5AP1M0mBbgUi_WklPbOQ"
+      }
+    },
+    {
+      "videoId": "GmZCgTx7PlA",
+      "title": "Vibe Coding is Officially Over.  #chatgpt #ai #aiautomation #fyp #stem",
+      "channel": "Edwin Chen | AI Automation",
+      "url": "https://www.youtube.com/watch?v=GmZCgTx7PlA",
+      "published": "2026-01-21",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Edwin Chen | AI Automation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxascJTY9ZG3YmyD7YI-FGA"
+      }
+    },
+    {
+      "videoId": "xyWgECDFkXA",
+      "title": "Vibe Coding is Overhyped – Here’s the Truth Nobody Tells You",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=xyWgECDFkXA",
+      "published": "2026-02-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Tech Lead)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw"
+      }
+    },
+    {
+      "videoId": "NaP6_AcpcII",
+      "title": "كراش كورس Replit | اتعلّم Vibe Coding وابدأ تبني Apps كاملة بالذكاء الاصطناعي (Replit Crash Course)",
+      "channel": "ePreneurs حسام الدين حسن",
+      "url": "https://www.youtube.com/watch?v=NaP6_AcpcII",
+      "published": "2026-02-16",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ePreneurs حسام الدين حسن)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC-LKb9hpKpJFQCXngQOTbXQ"
+      }
+    },
+    {
+      "videoId": "hUqe3twgI6A",
+      "title": "Vibe Coding Was for Code. This Is for Everything Else.",
+      "channel": "Terence Bristol",
+      "url": "https://www.youtube.com/watch?v=hUqe3twgI6A",
+      "published": "2026-02-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Terence Bristol)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXX1qOpH2zRrxBmTJcNU3XQ"
+      }
+    },
+    {
+      "videoId": "xVL7A-GrKMc",
+      "title": "This is How You Should Build using Coding Agents",
+      "channel": "CoderOne",
+      "url": "https://www.youtube.com/watch?v=xVL7A-GrKMc",
+      "published": "2026-02-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CoderOne)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCMm15RFnHUvM-aSc50e7R9A"
+      }
+    },
+    {
+      "videoId": "66E3VVVTL3g",
+      "title": "Vibe Coding Is a Lie. Here’s What's wrong & how to fix it",
+      "channel": "Beyond Hype by Bverse",
+      "url": "https://www.youtube.com/watch?v=66E3VVVTL3g",
+      "published": "2026-03-21",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Beyond Hype by Bverse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCY3tyuP3jJDaXQkqvnkUTig"
+      }
+    },
+    {
+      "videoId": "jcquVEzMHOc",
+      "title": "Your co-worker who won't stop vibe coding (sponsored by @bootdotdev )",
+      "channel": "Alberta Tech",
+      "url": "https://www.youtube.com/watch?v=jcquVEzMHOc",
+      "published": "2026-03-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Alberta Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkdgAA0rfK7lG5dv4o__Paw"
+      }
+    },
+    {
+      "videoId": "k8npfhN22KE",
+      "title": "Half Your Salary in Tokens? + Apple Bans Vibe Coding  -  From the Future Podcast  Ep06",
+      "channel": "DeGen Forest",
+      "url": "https://www.youtube.com/watch?v=k8npfhN22KE",
+      "published": "2026-03-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DeGen Forest)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8G0FRLXYQ6DWlxAAUI2Svg"
+      }
+    },
+    {
+      "videoId": "eZxeWoMEHQQ",
+      "title": "Vibe Coding is Gambling",
+      "channel": "Alberta Tech",
+      "url": "https://www.youtube.com/watch?v=eZxeWoMEHQQ",
+      "published": "2026-04-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Alberta Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkdgAA0rfK7lG5dv4o__Paw"
+      }
+    },
+    {
+      "videoId": "2LLvcJiZQOc",
+      "title": "Product Management Whiz Dan Olsen on Why Entrepreneurs Need to Pay Attention to Vibe Coding Right...",
+      "channel": "Pittsburgh Technology Council",
+      "url": "https://www.youtube.com/watch?v=2LLvcJiZQOc",
+      "published": "2026-04-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Pittsburgh Technology Council)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOhBQbCRuWD9IjG2k3vS3wg"
+      }
+    },
+    {
+      "videoId": "BjyqxhK6gBk",
+      "title": "The 300-Gigawatt Gap: Why AI Infrastructure Is Building Its Own Private Power Grid",
+      "channel": "Jason Lowe on AI",
+      "url": "https://www.youtube.com/watch?v=BjyqxhK6gBk",
+      "published": "2026-04-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jason Lowe on AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCPudlL4CJltN2dpIco_3mQ"
+      }
+    },
+    {
+      "videoId": "xYU7zaaRjmE",
+      "title": "The Vibe Coding Era: Why AI Won’t Replace Software Engineers",
+      "channel": "Bloomberg Television",
+      "url": "https://www.youtube.com/watch?v=xYU7zaaRjmE",
+      "published": "2026-05-02",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bloomberg Television)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
+      }
+    },
+    {
+      "videoId": "GmAQKINjv1E",
+      "title": "Skill Issue: How We Used AI to Make Agents Actually Good at Supabase — Pedro Rodrigues, Supabase",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=GmAQKINjv1E",
+      "published": "2026-05-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "ExpkaDVBxeo",
+      "title": "Why AI Coding Agents Still Think Like Juniors 😳",
+      "channel": "K-Transfer",
+      "url": "https://www.youtube.com/watch?v=ExpkaDVBxeo",
+      "published": "2026-05-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:K-Transfer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw6BP_IUn4wI_nLYWOx8aQg"
+      }
+    },
+    {
+      "videoId": "-tvVk2AAqZk",
+      "title": "Why India is building its own AI ecosystem #IndiaAI #GovTech #Innovation",
+      "channel": "Prem Mohan | AI for Bharat",
+      "url": "https://www.youtube.com/watch?v=-tvVk2AAqZk",
+      "published": "2026-05-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Prem Mohan | AI for Bharat)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7bhbyn3nR3_bL6LnWoG1tw"
+      }
+    },
+    {
+      "videoId": "GJky-RXrOlM",
+      "title": "What is Vibe Coding? | 8 Stages of AI-Assisted Coding",
+      "channel": "Inno Sufiyan",
+      "url": "https://www.youtube.com/watch?v=GJky-RXrOlM",
+      "published": "2026-06-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Inno Sufiyan)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCn4XzRuRpcTpCxpKsoI4K1Q"
+      }
+    },
+    {
+      "videoId": "LBhGJKpNUPU",
+      "title": "Kubernetes Networking Explained in 30 Minutes | 5 Critical Flows Every DevOps Engineer Must Know",
+      "channel": "Nitin Dhiman",
+      "url": "https://www.youtube.com/watch?v=LBhGJKpNUPU",
+      "published": "2026-06-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nitin Dhiman)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1TezLwzWaD9VogOx8V8Xfw"
+      }
+    },
+    {
+      "videoId": "rd05ZOJjScw",
+      "title": "Stop Asking Which Coding Agent Wins",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=rd05ZOJjScw",
+      "published": "2026-06-10",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "axobJD90r8E",
+      "title": "How to Build AI Agents That Actually Work! | Building Effective Agents By Anthropic",
+      "channel": "Cloud Codes",
+      "url": "https://www.youtube.com/watch?v=axobJD90r8E",
+      "published": "2026-06-23",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Cloud Codes)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0DZj1PNa_Fp0MU6uPSKv5w"
+      }
+    },
+    {
+      "videoId": "N9aFsi6mH_c",
+      "title": "China Built A Building So Large It Has Its Own Weather — And Hid A Beach Inside",
+      "channel": "Mila",
+      "url": "https://www.youtube.com/watch?v=N9aFsi6mH_c",
+      "published": "2026-06-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Mila)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCQBtMQEtvPidaizFAeG7yTw"
+      }
+    },
+    {
+      "videoId": "0WlPleZ2xqQ",
+      "title": "REST API vs MCP: How AI Agents Actually Talk to Software",
+      "channel": "Cloud Codes",
+      "url": "https://www.youtube.com/watch?v=0WlPleZ2xqQ",
+      "published": "2026-06-27",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Cloud Codes)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0DZj1PNa_Fp0MU6uPSKv5w"
+      }
+    },
+    {
+      "videoId": "6B2xxBuG0sQ",
+      "title": "Claude can't scrape the web on its own… here's what actually unblocks it #claudeai #webscraping",
+      "channel": "browserless",
+      "url": "https://www.youtube.com/watch?v=6B2xxBuG0sQ",
+      "published": "2026-07-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:browserless)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIGMawm-wZEeb9IhML8XyVg"
+      }
+    },
+    {
+      "videoId": "LONi6UJDbQI",
+      "title": "Why Can't Your Team Operate on Its Own? The Lean Book",
+      "channel": "RESTORED REPUBLIC VIA A GCR",
+      "url": "https://www.youtube.com/watch?v=LONi6UJDbQI",
+      "published": "2026-07-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:RESTORED REPUBLIC VIA A GCR)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8tlMzRqh45gy0ILW-Cpe_Q"
+      }
+    },
+    {
+      "videoId": "psszX04xeGU",
+      "title": "MCP vs REST vs A2A How AI Agents Actually Talk",
+      "channel": "Kai",
+      "url": "https://www.youtube.com/watch?v=psszX04xeGU",
+      "published": "2026-07-15",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kai)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgUfJoPtkt7-RiiuYh4vmGA"
+      }
+    },
+    {
+      "videoId": "KKCQA9LPKt4",
+      "title": "Why Microsoft Dissolved Its Own Copilot",
+      "channel": "Venture State",
+      "url": "https://www.youtube.com/watch?v=KKCQA9LPKt4",
+      "published": "2026-07-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Venture State)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPrTBEo1rf5LcS7cSLqk89w"
+      }
+    },
+    {
+      "videoId": "xW-yPOlOCH4",
+      "title": "Why \"vibe coding\" fixed her imposter syndrome | The Agent Factory",
+      "channel": "Google Cloud Tech",
+      "url": "https://www.youtube.com/watch?v=xW-yPOlOCH4",
+      "published": "2026-07-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Google Cloud Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJS9pqu9BzkAMNTmzNMNhvg"
+      }
+    },
+    {
+      "videoId": "CgnEciajKwE",
+      "title": "Why Coding Agents Break on Real Codebases — 6 Public Repos That Fix It",
+      "channel": "Steady Matter",
+      "url": "https://www.youtube.com/watch?v=CgnEciajKwE",
+      "published": "2026-07-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Steady Matter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtZou_KXZpWjPU2LUX1fG2Q"
+      }
+    },
+    {
+      "videoId": "IiLZflue4xE",
+      "title": "Your Coding Agent Is Under-Equipped #AIAgents #CodingAgents #aiengineering  #aiagents",
+      "channel": "Steady Matter",
+      "url": "https://www.youtube.com/watch?v=IiLZflue4xE",
+      "published": "2026-07-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Steady Matter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtZou_KXZpWjPU2LUX1fG2Q"
+      }
+    },
+    {
+      "videoId": "RmS5s6Wbin4",
+      "title": "Gadgets: Personal app vibe coding that is actually safe — Kenton Varda, Cloudflare",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=RmS5s6Wbin4",
+      "published": "2026-08-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "WK0VqGHNJMk",
+      "title": "AI Agent Orchestration: How AI Agents Actually Work",
+      "channel": "Kernel Cast",
+      "url": "https://www.youtube.com/watch?v=WK0VqGHNJMk",
+      "published": "2026-08-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kernel Cast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC3PhOJM5EpgVJgurVPrnqiw"
+      }
+    },
+    {
+      "videoId": "AcllQueQo2k",
+      "title": "A Non-Coder Just Built His Own App With Vibe Coding — The Implications Are Huge",
+      "channel": "NHI Mgmt Group",
+      "url": "https://www.youtube.com/watch?v=AcllQueQo2k",
+      "published": "2026-08-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NHI Mgmt Group)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnUtVe_iBC5zkIfJ_HpeFQA"
+      }
+    },
+    {
+      "videoId": "OA-jzybnXRs",
+      "title": "What Are AI Agents? 🤖⚡ | AI Agents Explained Simply #shorts #ai #agent #dataanalysis #chatbot #tech",
+      "channel": "Skill Spark",
+      "url": "https://www.youtube.com/watch?v=OA-jzybnXRs",
+      "published": "2026-08-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Skill Spark)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCmtLGNuFRnX721FaxPPUyA"
+      }
+    },
+    {
+      "videoId": "gowUEwNvxS4",
+      "title": "This AI Fixes Its Own Code When It Crashes 🔧🧠 @AI_Vanguard_AI",
+      "channel": "AI Vanguard AI",
+      "url": "https://www.youtube.com/watch?v=gowUEwNvxS4",
+      "published": "2026-08-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Vanguard AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfYTTSysBErs4FgML-854EA"
+      }
+    },
+    {
+      "videoId": "vVXpK37JF5U",
+      "title": "The AI Coding Agent That Is Taking Over#DeepSeekReasonix #AI #DevTools #SoftwareEngineering #Tech...",
+      "channel": "Nerimurai Kondhar",
+      "url": "https://www.youtube.com/watch?v=vVXpK37JF5U",
+      "published": "2026-08-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nerimurai Kondhar)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCcPhrRJ-HPp8VTuaN-63S-A"
+      }
+    },
+    {
+      "videoId": "4vAUjXYNIdo",
+      "title": "Europe is building its own AI stack. Its first move? Hosting a Chinese model. #europe #mistral",
+      "channel": "AI Verse",
+      "url": "https://www.youtube.com/watch?v=4vAUjXYNIdo",
+      "published": "2026-08-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Verse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCB_a009pROOlnU5Tb9C5YPA"
+      }
+    },
+    {
+      "videoId": "oLuGZ0khWjI",
+      "title": "AI coding agent at $12/hr vs engineer at $100/hr: which one is actually cheaper?",
+      "channel": "AI Tokenomics",
+      "url": "https://www.youtube.com/watch?v=oLuGZ0khWjI",
+      "published": "2026-08-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Tokenomics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLPDrIt1gkzrDxnd_T6DQpQ"
+      }
+    },
+    {
+      "videoId": "R2HVlXweJbw",
+      "title": "The end of coding Agents | Deepseek Harness is Here",
+      "channel": "Abhishek.Veeramalla",
+      "url": "https://www.youtube.com/watch?v=R2HVlXweJbw",
+      "published": "2026-08-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abhishek.Veeramalla)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnnQ3ybuyFdzvgv2Ky5jnAA"
+      }
+    },
+    {
+      "videoId": "L3EfAJIUG2M",
+      "title": "Claude Design Should Not Grade Its Own Homework",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=L3EfAJIUG2M",
+      "published": "2026-08-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "SCKgBajJsN0",
+      "title": "CLI Anything fixes that. Point it at any app or repo, it reads the code, writes its own commands.",
+      "channel": "Ali | AI Automation Telugu",
+      "url": "https://www.youtube.com/watch?v=SCKgBajJsN0",
+      "published": "2026-08-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ali | AI Automation Telugu)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_B5BParHXi2qD9B1KjL9uQ"
+      }
+    },
+    {
+      "videoId": "8FzslcvgsnY",
+      "title": "One Security Professional, One Honest Take — Vibe Coding Has a Credential Problem Nobody's Fixed",
+      "channel": "NHI Mgmt Group",
+      "url": "https://www.youtube.com/watch?v=8FzslcvgsnY",
+      "published": "2026-08-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NHI Mgmt Group)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnUtVe_iBC5zkIfJ_HpeFQA"
+      }
+    },
+    {
+      "videoId": "tg6TKr6d2vE",
+      "title": "What Is an AI Coding Agent?",
+      "channel": "German Bhashi",
+      "url": "https://www.youtube.com/watch?v=tg6TKr6d2vE",
+      "published": "2026-08-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:German Bhashi)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCd-33kLjrzhr49ukriiETQg"
+      }
+    },
+    {
+      "videoId": "MP5N_r-A-bE",
+      "title": "AI Coding Agents Are Changing How Developers Code 🤖",
+      "channel": "GotIT-Tech",
+      "url": "https://www.youtube.com/watch?v=MP5N_r-A-bE",
+      "published": "2026-08-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GotIT-Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCbrr7jaOM4IXMNWl-g78d3w"
+      }
+    },
+    {
+      "videoId": "y1nHoYX3jBo",
+      "title": "This is my phone, talking to all of my coding agents | DevThrottle",
+      "channel": "DevThrottle",
+      "url": "https://www.youtube.com/watch?v=y1nHoYX3jBo",
+      "published": "2026-08-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DevThrottle)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC5Cw7SSn-BRnWgMiaA9BLBQ"
+      }
+    },
+    {
+      "videoId": "eLwhUMBdCdw",
+      "title": "Stewie & Peter react: What? The Pentagon actually launched its own versio #ai #viral #claude #shorts",
+      "channel": "Peter Ai News",
+      "url": "https://www.youtube.com/watch?v=eLwhUMBdCdw",
+      "published": "2026-09-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Peter Ai News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYroiHPOHEc1oxP_vypQvRw"
+      }
+    },
+    {
+      "videoId": "i95Yut1zXdA",
+      "title": "DevThrottle is not the coding agent - here is what it is",
+      "channel": "DevThrottle",
+      "url": "https://www.youtube.com/watch?v=i95Yut1zXdA",
+      "published": "2026-09-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DevThrottle)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC5Cw7SSn-BRnWgMiaA9BLBQ"
+      }
+    },
+    {
+      "videoId": "MNQOOJvbuiE",
+      "title": "AI Agents Explained 🤖 | What Are AI Agents & How Do They Work? | Agentic AI",
+      "channel": "techshalawithabhi",
+      "url": "https://www.youtube.com/watch?v=MNQOOJvbuiE",
+      "published": "2026-09-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:techshalawithabhi)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCbYf9vA7fcBA_kNy5nKkf2A"
+      }
+    },
+    {
+      "videoId": "Hcn0YbVhlaY",
+      "title": "Vicoa is the ADE for running a team of coding agents from any device — vicoa",
+      "channel": "Amplify Imagination",
+      "url": "https://www.youtube.com/watch?v=Hcn0YbVhlaY",
+      "published": "2026-09-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Amplify Imagination)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1hvd57dAmZeXShhJ-ngoFg"
+      }
+    },
+    {
+      "videoId": "PRuwVGBQ5X8",
+      "title": "How Vibe Coding Is Revolutionizing Apps and Trading Strategies",
+      "channel": "OPXERA",
+      "url": "https://www.youtube.com/watch?v=PRuwVGBQ5X8",
+      "published": "2026-09-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:OPXERA)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdfS_Ka5-tw7pZyURZvkZnA"
+      }
+    },
+    {
+      "videoId": "6pJZ-4RC33w",
+      "title": "Vibe Coding Is Quietly Insane — Here’s Why Traders Are Obsessed",
+      "channel": "OPXERA",
+      "url": "https://www.youtube.com/watch?v=6pJZ-4RC33w",
+      "published": "2026-09-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:OPXERA)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdfS_Ka5-tw7pZyURZvkZnA"
+      }
+    },
+    {
+      "videoId": "sxtRwLohV18",
+      "title": "Stop Over-Specifying Your Autonomous Coding Agents #Shorts",
+      "channel": "AI Under Audit",
+      "url": "https://www.youtube.com/watch?v=sxtRwLohV18",
+      "published": "2026-09-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Under Audit )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGp5GIgi3Z959Qjj7gfisMQ"
+      }
+    },
+    {
+      "videoId": "9JrjwvJhD5s",
+      "title": "This AI Coding Agent Has an Undo Button",
+      "channel": "Amplify Imagination",
+      "url": "https://www.youtube.com/watch?v=9JrjwvJhD5s",
+      "published": "2026-09-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Amplify Imagination)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1hvd57dAmZeXShhJ-ngoFg"
+      }
+    },
+    {
+      "videoId": "G7BM_4CHpUw",
+      "title": "What Are AI Agents? 🤖 | AI Agents Explained Simply #shorts #ai #dataanlysis #agent #chatbot #plans",
+      "channel": "Skill Spark",
+      "url": "https://www.youtube.com/watch?v=G7BM_4CHpUw",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Skill Spark)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCmtLGNuFRnX721FaxPPUyA"
+      }
+    },
+    {
+      "videoId": "cVXarUinTrc",
+      "title": "Stop Coding Agents Burying the Fix — i-have-adhd",
+      "channel": "Repo Rundown",
+      "url": "https://www.youtube.com/watch?v=cVXarUinTrc",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Repo Rundown)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChtbsBNyJ-yRAO4PELlvFaA"
+      }
+    },
+    {
+      "videoId": "n1GmpUTYIUI",
+      "title": "DeepSeek's Open Coding Agent Is Customizable — But Not Ready Yet",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=n1GmpUTYIUI",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "H4ieSpc7olw",
+      "title": "This is how you brief sixteen coding agents",
+      "channel": "DevThrottle",
+      "url": "https://www.youtube.com/watch?v=H4ieSpc7olw",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DevThrottle)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC5Cw7SSn-BRnWgMiaA9BLBQ"
+      }
+    },
+    {
+      "videoId": "u_v7nryP_nU",
+      "title": "This Framework Forces AI Coding Agents To Actually Plan First  #opensource #ai #github",
+      "channel": "DevPik",
+      "url": "https://www.youtube.com/watch?v=u_v7nryP_nU",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DevPik)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYEemrDNdDq2lHAf6_mNBYQ"
+      }
+    },
+    {
+      "videoId": "PnLAYibr_V4",
+      "title": "AI Coding Agents Were Cheating Their Own Benchmark",
+      "channel": "prashank kadam",
+      "url": "https://www.youtube.com/watch?v=PnLAYibr_V4",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:prashank kadam)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1LjsHP0TjuMVCW9v_mMh6g"
+      }
+    },
+    {
+      "videoId": "Ck8WA10wZio",
+      "title": "Why Claude won't draw that character, in its own docs",
+      "channel": "Chris Alarcon |  AI for Non-Coders",
+      "url": "https://www.youtube.com/watch?v=Ck8WA10wZio",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Alarcon |  AI for Non-Coders)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTt0JyqPZpwu51CrZCazjIQ"
+      }
+    },
+    {
+      "videoId": "AJWr5LSIkdI",
+      "title": "Russia Is Building Its Own Lenovo + Foxconn—Meet Beshtau",
+      "channel": "Altitude Addicts",
+      "url": "https://www.youtube.com/watch?v=AJWr5LSIkdI",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Altitude Addicts)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCviEFTf1xIPKsjmyF_zvFug"
+      }
+    },
+    {
+      "videoId": "DVd5fLPT-UA",
+      "title": "10 AI & Vibe Coding Jokes That Are Funny Because They’re Almost True",
+      "channel": "PJ FinanceShow",
+      "url": "https://www.youtube.com/watch?v=DVd5fLPT-UA",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:PJ FinanceShow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLWMj6EyXI2-NXSw6LHBoew"
+      }
+    },
+    {
+      "videoId": "QYsfu8yIfT8",
+      "title": "AI Coding Agents: Which One Should You Use?",
+      "channel": "Bryan Software",
+      "url": "https://www.youtube.com/watch?v=QYsfu8yIfT8",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bryan Software)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4G0FyD2ONZP2khtTeDvzEw"
+      }
+    },
+    {
+      "videoId": "ZgeSif869C0",
+      "title": "Stop Paying for AI Coding Tools || This FREE AI Coding Agent Is Insane",
+      "channel": "Likant's Lab",
+      "url": "https://www.youtube.com/watch?v=ZgeSif869C0",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Likant's Lab)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdjtIYcQB3-Omnh1CyChbbg"
+      }
+    },
+    {
+      "videoId": "0T3XVfOFxEY",
+      "title": "Mini SWE Agent: The Coding Agent You Can Actually Read #AIagents #opensource #python #codingagent",
+      "channel": "Steady Matter",
+      "url": "https://www.youtube.com/watch?v=0T3XVfOFxEY",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Steady Matter)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCtZou_KXZpWjPU2LUX1fG2Q"
+      }
+    },
+    {
+      "videoId": "nEwH5HLpvTI",
+      "title": "Vibe coding isn't programming",
+      "channel": "Vibe Coding Money 101",
+      "url": "https://www.youtube.com/watch?v=nEwH5HLpvTI",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Vibe Coding Money 101)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCcuaxerjvSPkzC37ztjnW5Q"
+      }
+    },
+    {
+      "videoId": "g0MP3aqfss4",
+      "title": "AI is now building its own successor. Who has control of it?",
+      "channel": "Scripps News",
+      "url": "https://www.youtube.com/watch?v=g0MP3aqfss4",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Scripps News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTln5ss6h6L_xNfMeujfPbg"
+      }
+    },
+    {
+      "videoId": "MLB9IlL7n5A",
+      "title": "Same Model, Different Wrapper: What Actually Makes Coding Agents Work",
+      "channel": "prashank kadam",
+      "url": "https://www.youtube.com/watch?v=MLB9IlL7n5A",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:prashank kadam)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1LjsHP0TjuMVCW9v_mMh6g"
+      }
+    },
+    {
+      "videoId": "dVVBrkIW6ks",
+      "title": "AI Is Helping Build Its Own Successor 🤖",
+      "channel": "meshugge",
+      "url": "https://www.youtube.com/watch?v=dVVBrkIW6ks",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:meshugge)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDC5jc4AUviF03g1cE69xQA"
+      }
+    },
+    {
+      "videoId": "xBLwcYgVpCs",
+      "title": "Why everyone is talking about Vibe Coding #coding #ai #future",
+      "channel": "AI Signal",
+      "url": "https://www.youtube.com/watch?v=xBLwcYgVpCs",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Signal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYi_ANEUUQrxnc4JW7SYUXg"
+      }
+    },
+    {
+      "videoId": "gzOeqqXTLfk",
+      "title": "Four major AI coding agents are vulnerable to a zero-click remote code execution flaw, and two",
+      "channel": "The AI Situation Report",
+      "url": "https://www.youtube.com/watch?v=gzOeqqXTLfk",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The AI Situation Report)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiMyUGZ_wYYtgq_tzeKgRJQ"
+      }
+    },
+    {
+      "videoId": "2uNVZxAa77c",
+      "title": "jcode is an AI coding agent in your terminal",
+      "channel": "safesynt",
+      "url": "https://www.youtube.com/watch?v=2uNVZxAa77c",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:safesynt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCSY203nHFhvh9TKu069Ly0Q"
+      }
+    },
+    {
+      "videoId": "SLE17j0qyRU",
+      "title": "AI coding agents are a lie because of the Amdahl's Law bottleneck #Shorts",
+      "channel": "AI Under Audit",
+      "url": "https://www.youtube.com/watch?v=SLE17j0qyRU",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Under Audit)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGp5GIgi3Z959Qjj7gfisMQ"
+      }
     }
   ],
-  "updated": "2026-09-20"
+  "updated": "2026-09-21"
 }
