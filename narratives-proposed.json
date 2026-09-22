@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-21",
+ "generated": "2026-09-22",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2006,
+ "cost_usd": 0.1887,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -9229,6 +9229,1565 @@
    },
    "first_read": "2026-09-21",
    "last_read": "2026-09-21"
+  },
+  {
+   "phrase": "actually taste",
+   "verdict": "rhetoric",
+   "why": "A selling hook about palatability, not a checkable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 7,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "These Sugar Free Cookies ACTUALLY Taste Good",
+     "6 EASY Anti Inflammatory Smoothies That Actually Taste Good!",
+     "A protein pancake that actually taste good #proteinpancakes #highproteinbreakfast #healthydessert"
+    ],
+    "ids": [
+     "8ii3Gjq_T2o",
+     "FcrEud9sHPQ",
+     "Fwro8c15JaQ",
+     "PaxmFxXE5bA",
+     "RfqrXOXAe3s",
+     "Wq8QEw8TXWw",
+     "YEeruPtnqTo",
+     "rqXz6OQE_ps",
+     "uF2JaAHcXk4",
+     "yhN7e4fJ_NE"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "election win",
+   "verdict": "rhetoric",
+   "why": "News subject label covering unrelated elections with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 38,
+    "channels": 19,
+    "months": 16,
+    "span": "2016-11 → 2026-09",
+    "examples": [
+     "What Trump's Election Win Means for Immigration",
+     "Manitoba Premier-elect Wab Kinew expresses \"extraordinary gratitude\" after election win | FULL",
+     "\"Enough with Peronism\": Argentinians celebrate Milei's election win"
+    ],
+    "ids": [
+     "10KxIZcuoZs",
+     "1Qd3t5IW16Q",
+     "41D1MmTQyiQ",
+     "4cB8O5U8QSY",
+     "51LQG72dUvM",
+     "8r3sWUXadA8",
+     "B2mvgoKMpuw",
+     "DT-Ib6066NI",
+     "E6B_p_6EL28",
+     "Ew_zzOkvuZ8",
+     "J0KhksPWpz0",
+     "JJPovF1rrSU",
+     "NaFyHNEux68",
+     "O_zLS0Pp3f0",
+     "QcNTEQIyB4Y",
+     "S9DgWd0Ewlw",
+     "T8z2MfsPCVE",
+     "TBPyuJ8C1sI",
+     "TP692TL-kgo",
+     "TYMMKftODY4"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "polls show",
+   "verdict": "rhetoric",
+   "why": "Reporting formula attached to different races, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 7,
+    "months": 8,
+    "span": "2024-01 → 2026-09",
+    "examples": [
+     "Trump appears to eye New Hampshire primary win despite legal drama, polls show",
+     "2024 US election: Trump-Biden presidential rematch met with fatigue by voters, polls show",
+     "Liberal party support rebounds as Canadian election looms, new polls show"
+    ],
+    "ids": [
+     "3OAW-sjnc7c",
+     "4MItrHcn7oE",
+     "8FSbKG6_nEQ",
+     "96-fZNCCyFU",
+     "FophqTwRlGw",
+     "TP692TL-kgo",
+     "XfIbrdNZ69E",
+     "Z29W7x4CBlk",
+     "_1Z-wvh0dvA",
+     "baGtMPz1yuw",
+     "jWea_zd-iEc",
+     "lt173XOHl3M",
+     "rT_nVW20wrA",
+     "s89lcQEzO3k"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "speak truth",
+   "verdict": "rhetoric",
+   "why": "Tarot-reading phrasing used as a teaser, not a falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 8,
+    "span": "2020-02 → 2026-09",
+    "examples": [
+     "LIBRA:  They're ready to speak their truth.  Expect communication.",
+     "\"They are ready to speak their truth, and offer you a commitment.\"",
+     "THEY'RE RESTLESS OVER YOU, AND ARE ABOUT TO SPEAK THEIR TRUTH."
+    ],
+    "ids": [
+     "AwfuoGiMOiM",
+     "CWEG07Q2--k",
+     "EVkZHEvMjCM",
+     "IWzmenRJU_8",
+     "IvMuIoTpdUs",
+     "c9UNVrpcQ5o",
+     "eWB5S3NlYiM",
+     "ggrdlptt0BM",
+     "n9htXms01jU",
+     "nbUGrD_LWwE",
+     "vJdeH76CfGo"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "steals show",
+   "verdict": "rhetoric",
+   "why": "Pure headline idiom for human-interest clips.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 8,
+    "months": 7,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "Stunning ‘Griswold House’ Christmas display steals the show in Ontario",
+     "Rockslide steals the show at Utah wedding photoshoot",
+     "Bored boy steals show at Texas kindergarten graduation ceremony"
+    ],
+    "ids": [
+     "0dOElqHxNKg",
+     "5ZIa07wsYjE",
+     "C3O9T_XAbRo",
+     "MlH-djfiF_s",
+     "N2jv1aVPUdE",
+     "YZ_fSZY9k3Q",
+     "bs8oPzTszCU",
+     "ePXzCw7jjGM",
+     "gB2vRXkwhdM",
+     "tZFo6_2Euk8",
+     "zkA640Icxo0"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "uncovering truth",
+   "verdict": "rhetoric",
+   "why": "Generic revelation hook spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 7,
+    "span": "2019-04 → 2026-09",
+    "examples": [
+     "SAGITTARIUS MAY/UNCOVERING THE TRUTH ABOUT WORK LOVE &  MARRIAGE",
+     "How to Stop Emotional Eating By Uncovering the Truth of Why You Do it",
+     "Uncovering the TRUTH Behind SoFi's Monthly Active Users!"
+    ],
+    "ids": [
+     "4oVSzFqSPpg",
+     "AYHS_LOl6Ps",
+     "ESfS_86Y0pQ",
+     "FbrcPG6UynY",
+     "KJV6cewTbN8",
+     "QG5NK-lGVPI",
+     "ijP750hZ1DU",
+     "skDjetgydBo"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "really driving",
+   "verdict": "rhetoric",
+   "why": "Curiosity-gap framing with no shared substantive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 10,
+    "months": 11,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "What's REALLY Driving the Real Estate Market 🫢🏘️",
+     "What's REALLY Driving the Real Estate Market Shift?",
+     "India’s Economy: What’s Really Driving Growth"
+    ],
+    "ids": [
+     "0y-ubu2Q77c",
+     "3xdFTpo_4Cw",
+     "99vw-BaEL6k",
+     "DAqghiiEsX0",
+     "G2UmM-xlZMk",
+     "JUv-HC2C06A",
+     "Oh955GX_E7g",
+     "P_z3nn9eUtA",
+     "ffxSSRmXNbs",
+     "jrIEZn5Luns",
+     "kKihEnd95gE",
+     "uWWQ3b24B-4",
+     "vFVr_93T1e0"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "causes flooding",
+   "verdict": "rhetoric",
+   "why": "Event-report subject describing separate incidents, no common thesis.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 5,
+    "months": 11,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Heavy rain in Ottawa causes flooding, power outages and road closures",
+     "Tropical Storm Alberto causes flooding, flight cancellations in Mexico and southern Texas",
+     "\"Huge\" water main break causes flooding chaos in parts of downtown Montreal"
+    ],
+    "ids": [
+     "BcrqsdXeXWY",
+     "DSde1L0TuiQ",
+     "HUeoKncl_98",
+     "MoQHkG-ntzk",
+     "NBAx-91ozJ4",
+     "XXFvdtN_7pQ",
+     "gnCXkgbDid8",
+     "mYZgkTqbID0",
+     "mpykzRd0JRQ",
+     "oFg9HQCqMQw",
+     "s7Chw3_6YPs"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "really going",
+   "verdict": "rhetoric",
+   "why": "A curiosity-gap teaser phrase, not a shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 46,
+    "channels": 40,
+    "months": 26,
+    "span": "2022-01 → 2026-09",
+    "examples": [
+     "What's really really going on with real estate 2022? 1 of 2",
+     "What’s REALLY GOING ON With the Housing Market?",
+     "What's really going on with today's housing market and why it is not like 2008"
+    ],
+    "ids": [
+     "-LTuMupV310",
+     "1Fh_z1PsHK4",
+     "1bzjb_6T_sM",
+     "1t2nTzZuDzo",
+     "3Pf61Qfj7PU",
+     "3iP9w8SQB2k",
+     "4RlHDia2AZ8",
+     "5GfyjiZfFyA",
+     "C06SGCFppxA",
+     "EXNLgVyr8yQ",
+     "HB-bm8J88Z0",
+     "HopCJSoTH9Y",
+     "L2a3XBqk2DE",
+     "MyxYZsp-UBA",
+     "NgCLT28pSr0",
+     "O5MihMTu0y8",
+     "OjLueYio7iw",
+     "OmxFMh8YzPQ",
+     "OvkzSIKqHFY",
+     "ShYLnqGC81k"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "air show",
+   "verdict": "rhetoric",
+   "why": "A subject/event label spanning unrelated topics with no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 44,
+    "channels": 25,
+    "months": 8,
+    "span": "2023-04 → 2026-09",
+    "examples": [
+     "TEXAS CATTLE MUTILATIONS, AIR SHOW UFOS & A GIANT WOLF ATTACK",
+     "Canadian International Air Show commemorates 75th anniversary, dazzles Toronto skies",
+     "Paris Air Show: What to Expect"
+    ],
+    "ids": [
+     "5C8Ued1Fphg",
+     "8KWgSrLKPHE",
+     "8ZzEtxW1NgQ",
+     "ACl15i1jArU",
+     "BXGbqHUiVrE",
+     "Eq9R8wA_GiU",
+     "Ey3WD1ozjIU",
+     "FrYKkkM39wU",
+     "KrttEPsGEDc",
+     "LTSkVvJZzrk",
+     "MTUVnExxKEU",
+     "NnE2e8qAeQI",
+     "P3-9h1a-6kM",
+     "PTDExOWbaVc",
+     "Rh3OEVnLaOc",
+     "S0o-rJ00boc",
+     "TbUQxVbM1v4",
+     "UgYR0kXkDhM",
+     "WLZG2YeoGGk",
+     "WbzNV2IbBOA"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "data center boom",
+   "verdict": "narrative",
+   "why": "Titles share the claim that AI data center buildout is driving a surge in power and investment demand.",
+   "claim_name": "The \"AI data center boom\" story",
+   "claim": "Explosive construction of AI data centers is creating a massive new demand for electricity and infrastructure, making power and related suppliers a prime investment opportunity.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "AI compute demand is outrunning existing power and infrastructure capacity",
+    "cause": "Rapid buildout of hyperscale AI data centers",
+    "outcome": "Surging investment into energy, land and power suppliers serving data centers",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 20,
+    "channels": 15,
+    "months": 8,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Bitcoin Miners | The Secret Power Behind AI’s Data Center Boom",
+     "Data Center Boom Pushes Investors Toward Power",
+     "Data Center Boom Heads for Silicon Valley’s Backyard"
+    ],
+    "ids": [
+     "-LBiIKYVpP8",
+     "-sLRJ3dBhQg",
+     "4FG-eTob_Jc",
+     "6AadZL5j4Vs",
+     "7sRzbr2XCqU",
+     "98tz_EE8t0o",
+     "AC-Yqb3BxDw",
+     "GSquw_3KvpI",
+     "OXHttBHVD9U",
+     "OpeQmWUPkDM",
+     "Ou6leqSltM8",
+     "P4rvwTXEksk",
+     "S2KDTuDHvM0",
+     "W7yZcNXmycI",
+     "Zo7p8VrhE48",
+     "ba50rf_6AAA",
+     "p5CwBIX_6xI",
+     "vEDU98AiN1U",
+     "xeINw4mam30",
+     "zSeGKh_At30"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "really causing",
+   "verdict": "rhetoric",
+   "why": "Curiosity-gap formula applied to unrelated subjects; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 11,
+    "months": 10,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "What's REALLY Causing Stocks to Drop Right Now",
+     "What's REALLY Causing Mortgage Rates to Fluctuate?",
+     "“Dry Eye vs Allergies: How to Tell What’s Really Causing Your Eye Problems”"
+    ],
+    "ids": [
+     "-9flCH4DM6c",
+     "0M4Pqt-1LrU",
+     "0MDMdcBu1Eg",
+     "CjNCS4S8XD8",
+     "K-_jR20cxMI",
+     "QLm9VKZfbxw",
+     "SrgsV7pA-co",
+     "VGdIkVcGJ9s",
+     "e8qiixVXPfw",
+     "eMxqhQXUcTE",
+     "k7Py2kfpuNY",
+     "lC84s80Mwgw",
+     "mgela4NS0Ko",
+     "ukVvqm0WKYQ"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "feared dead",
+   "verdict": "rhetoric",
+   "why": "News headline formula about disasters, carries no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 5,
+    "months": 10,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "2 RCAF members feared dead after Chinook helicopter crash in Ontario",
+     "More than 60 feared dead after migrant boat capsizes off Cape Verde",
+     "Hundreds feared dead after massive landslide in Papua New Guinea"
+    ],
+    "ids": [
+     "H5WoHnmgmlk",
+     "L5d5COMYi7Y",
+     "SGElRc6amVs",
+     "axgEHV0zi0o",
+     "cEM4OOpmQJI",
+     "gS4S1JkBmYM",
+     "i5sqXwczT6s",
+     "pyIQPrmOHkw",
+     "t6A2Cntg2X0",
+     "uLoagBz3wJ8",
+     "v5cljMclLEU",
+     "w6EAd-_6D-0",
+     "xFhQkohHQw4"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "medications cause",
+   "verdict": "rhetoric",
+   "why": "A question format across unrelated drug/side-effect topics, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 5,
+    "months": 10,
+    "span": "2023-05 → 2026-08",
+    "examples": [
+     "Medications That Cause Gout Attacks: What to Watch For",
+     "What Medications Can Cause Gout ?",
+     "Can blood pressure medications cause erectile dysfunction?"
+    ],
+    "ids": [
+     "4Pxug1FLjM8",
+     "E0DdB8Tz08s",
+     "HT7yc8P48mE",
+     "KGlCdTZypEg",
+     "MyoXGlxr9-4",
+     "RwNxv-tRqEc",
+     "SOPMbls_LEU",
+     "gCXy1D-zjzI",
+     "hZV1_u92JBw",
+     "tcJaxP8p0uQ",
+     "vu1NKjsTQbg"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "stacker must",
+   "verdict": "rhetoric",
+   "why": "Urgency hook aimed at silver buyers rather than a specific falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 7,
+    "months": 7,
+    "span": "2019-04 → 2026-09",
+    "examples": [
+     "10 Important Tips Every Stacker Must Know!",
+     "ALERT! Every Silver Stacker Must Watch This Urgent Silver Market Update",
+     "ALERT! Every Silver Stacker Must Watch This Urgent Silver Market Update"
+    ],
+    "ids": [
+     "0hx50AA5_TQ",
+     "TtFMl7B854A",
+     "Tz8R0CY_LWE",
+     "YuZOkd99w6A",
+     "ZAFMgZ7oqhY",
+     "ZMtf4bkq1sc",
+     "dZOas52i_VE",
+     "fczBAxBZIF8",
+     "oEuLaFxK2CA",
+     "t-0TUHI6Gis",
+     "tgciMN8R0q4",
+     "uSUuZSiK0ak",
+     "ua4JaufNRQQ"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "lie detector",
+   "verdict": "rhetoric",
+   "why": "A recurring tarot-reading title flourish with no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 7,
+    "span": "2018-08 → 2026-09",
+    "examples": [
+     "Aquarius Love:  Aug. 1st-15th  “Straight jacket or lie detector test?  You decide.\"",
+     "Gemini Love:  Oct. 1st-15th  “Does that wand come with a lie detector test?\"",
+     "AQUARIUS LOVE:  AUG. 22ND-28TH  \"SOMEONE NEEDS A LIE DETECTOR TEST.\""
+    ],
+    "ids": [
+     "-0HiNLUNm30",
+     "1Ob8U_o_3mU",
+     "4yE7HXsA3B0",
+     "86SQLZVkQwI",
+     "OhM6OmhiHE8",
+     "ULSVaPWFh-8",
+     "gN5vSJwVnHU",
+     "oUzbJSdcl7E",
+     "pM1L8_IUGmQ",
+     "sLJYCLGOZk4",
+     "v7hsFZhD_zw"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "show host",
+   "verdict": "rhetoric",
+   "why": "Format/role label with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 7,
+    "span": "2019-02 → 2026-08",
+    "examples": [
+     "2019-02-24 RLA Radio Show with Host Dennis Tubbergen",
+     "2019-03-03_RLA Radio Show with Host Dennis Tubbergen",
+     "Inside the Life of a Health Conscious TV Show Host with Cameron Mathison"
+    ],
+    "ids": [
+     "1EChw8dA1SA",
+     "3vjIDTi0kWs",
+     "D97Hvp3iTJE",
+     "FT9IaP1biFk",
+     "GTHDbvyqV0s",
+     "MMpDVbDmadc",
+     "lff65osr__M",
+     "wQM76WScnvM",
+     "wv69iprqYEU",
+     "xMQsLOyFuBI",
+     "zuM2A6nm0EI"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "unspoken truth",
+   "verdict": "rhetoric",
+   "why": "Curiosity-gap phrasing spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 7,
+    "span": "2020-08 → 2026-09",
+    "examples": [
+     "Virgo August 2020 Tarot~The Shallow Grave & The Unspoken Truth",
+     "The Unspoken Truth: The U.S. Has been on a Silent Gold Standard All Along!!",
+     "Touch Yourself, Heal Yourself...The Unspoken Truth!  Dr. Mandell"
+    ],
+    "ids": [
+     "5SWtCvpQlXE",
+     "8QF6Xz9ooyI",
+     "ANKQe5tGklo",
+     "BWUtxDC-TL0",
+     "KwsZxrOG9fk",
+     "NmZsPot3GW0",
+     "cQmOhrp2bjI",
+     "ktGY1P9iaks",
+     "tgX_9mIdFw4"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "speaking truth",
+   "verdict": "rhetoric",
+   "why": "Praise framing, no common checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 7,
+    "span": "2022-07 → 2026-09",
+    "examples": [
+     "#investor #warrenbuffett speaking truth about #investing during #stockmarket crashes",
+     "Joe Rogan on RFK Jr.: The Only Politician Speaking the Truth",
+     "Speaking Your Truth: The \"No Filter\" Zone in Your 50s #nofilter"
+    ],
+    "ids": [
+     "1-I177WYNRk",
+     "GuEnnnAkCDo",
+     "Jrkc8SRMG3c",
+     "X8CbphX_308",
+     "XvvLPYYlLrc",
+     "_j6gENQ_P6Y",
+     "j4qgK6ip6nA",
+     "xhNhdJemAT8"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "cause concern",
+   "verdict": "rhetoric",
+   "why": "Generic worry phrasing across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 7,
+    "span": "2018-10 → 2026-04",
+    "examples": [
+     "Why Amazon's Earnings May Be Cause for Concern",
+     "NEXT WEEK! Biden’s Next Move! Manchin Threatens Stimulus | Inflation A REAL Cause For Concern & More",
+     "WHY Jobs Numbers KILLED Silver & Gold...cause for concern?"
+    ],
+    "ids": [
+     "2cY7d1AzkEU",
+     "Bvj6ZpfkFRU",
+     "IP-83jcbN_w",
+     "OFKBxSe-DOQ",
+     "S3LzLZJpIJg",
+     "bJZ4UgY-tic",
+     "c8QLRdjQ8m8",
+     "ngaghclAkJE"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "cause hair",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that common substances/supplements cause hair loss.",
+   "claim_name": "The \"everyday substances are causing your hair loss\" story",
+   "claim": "Common exposures and supplements — tap/shower water, creatine, medications, diet — are blamed as hidden causes of hair loss and damage, with removal or avoidance presented as the fix.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread unexplained hair loss and thinning",
+    "cause": "Everyday exposures like shower water chemicals, creatine and other supplements",
+    "outcome": "Avoid or filter the culprit to stop or reverse hair loss",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 19,
+    "channels": 11,
+    "months": 15,
+    "span": "2022-09 → 2026-09",
+    "examples": [
+     "Dr. Berg explains how shower water can cause hair damage #drberg #shower #water #flouride #hairloss",
+     "Does Creatine Cause Hair loss #shorts",
+     "Does Creatine Cause Hair loss?"
+    ],
+    "ids": [
+     "2ElTooWQa-0",
+     "2SduhHlUQ1Y",
+     "GR4D6ujSwZg",
+     "K_enlzUQW5U",
+     "SCixIR7cvDo",
+     "UgcKO7stYFg",
+     "VbRMXXBD83w",
+     "_HrBgj97q2w",
+     "b4wDUrLUnTI",
+     "c69QaMsLf3E",
+     "e1Tk1ZbEhbY",
+     "jTF7nyitMq0",
+     "jex_Ayk2RVM",
+     "n5a43H8M2Uo",
+     "nuLJV-HJQP0",
+     "ofN9zQkIxa4",
+     "sHeFKGDq8YI",
+     "tcJaxP8p0uQ",
+     "v_HIVVSHljg"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "research shows",
+   "verdict": "rhetoric",
+   "why": "Authority hedge attached to wildly different claims.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 18,
+    "months": 7,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "COVID-19 linked to mental health conditions such as depression, research shows",
+     "Stop spiraling crazy and acknowledge what you’ve accomplished so far! research shows we remember the",
+     "\"Our research shows Ethereum hits $16,000 this cycle!\" Crypto Expert Shares Top 3 Altcoins!!"
+    ],
+    "ids": [
+     "-UNthNAoFaI",
+     "1mTUzeiA4XA",
+     "4HoO-taG4gk",
+     "9I7TZU4P6Ro",
+     "CSjN1OdFJ58",
+     "L_xvpS0IvSY",
+     "NHCB6Oli4X8",
+     "PaGWeq7j38g",
+     "PiT_1qHSoc0",
+     "Z0bcSBb298M",
+     "bfhM49D-TVo",
+     "d3RuqXD0a8Q",
+     "f6D7OnYE_iI",
+     "j-1ns2zsLw4",
+     "mHfh-YkzPkM",
+     "muCC8MJuLzM",
+     "oT8FEaIw9M4",
+     "p8fe5g73Htg",
+     "vO4A2xhFPCQ"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "alone won't",
+   "verdict": "rhetoric",
+   "why": "Sentence fragment, no shared claim across topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 11,
+    "months": 7,
+    "span": "2020-07 → 2026-09",
+    "examples": [
+     "Dow CEO Fitterling Says Money Alone Won't Solve Social Inequality",
+     "Why Inspiration Alone Won't Make You Successful | Mike Israetel",
+     "Yield alone won't cut it in Perth's 2026 market."
+    ],
+    "ids": [
+     "4kCDmOTGoss",
+     "Bu4_FPgKwk8",
+     "CeNBuBOxTkQ",
+     "Lw4GOH9GJ6E",
+     "RY5LF6L3TEU",
+     "WyMsmlLkwHY",
+     "XM5BXJ1WWmo",
+     "b156BaDr_sM",
+     "ihoV-g9jR3s",
+     "lfgIpwYwb1k",
+     "uAOAycdQ5Ho"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "appears show",
+   "verdict": "rhetoric",
+   "why": "News footage hedge phrasing, a format not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 26,
+    "channels": 4,
+    "months": 12,
+    "span": "2025-06 → 2026-07",
+    "examples": [
+     "Footage appears to show the sole survivor of Air India plane crash",
+     "New video appears to show escaped New Orleans inmate pleading for help",
+     "UFO sighting? 2023 Navy footage appears to show four \"tic tac-shaped\" UFOs #Backscroll"
+    ],
+    "ids": [
+     "5FMXmzQc1iw",
+     "6ddFgxhCbIc",
+     "8i73xhkJYgw",
+     "9VD7T30KN3I",
+     "9ojdOc2igY0",
+     "ABfvFK_PehI",
+     "B5KPA3L7Jtc",
+     "CuLoyXebDvs",
+     "F8XQARj2K5Q",
+     "FlGf-MBgKvY",
+     "Fm1tNKYAuKc",
+     "HLO-ZIdg-0k",
+     "J1mknn98Na4",
+     "JV3DH2WMRZg",
+     "M8w7mv2ROzQ",
+     "VJrVdp2LwIo",
+     "YbqtVcWTMZc",
+     "bOFwlvKf80o",
+     "cb-eteTbDz4",
+     "d8WrkKD2RJ8"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "explains importance",
+   "verdict": "rhetoric",
+   "why": "Format phrasing across unrelated topics with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 4,
+    "months": 12,
+    "span": "2019-10 → 2023-05",
+    "examples": [
+     "Daniel Sloss Explains The Importance Of Understanding Yourself",
+     "Critical Care Doctor Explains the Importance of the COVID-19 Vaccines",
+     "Dr. Berg explains the importance of grass-fed-beef #drberg #grassfed #beef #protein #keto #ketodiet"
+    ],
+    "ids": [
+     "0u6SaVqjoLU",
+     "KVvuenp8zdw",
+     "Lc1FcOFYOx8",
+     "OuNMcdP6HlQ",
+     "R7-L6omIHFo",
+     "UomvLO_UyyE",
+     "W9MdLVeXZkw",
+     "WEURMJWPqP0",
+     "WvQ3LWFA0rk",
+     "YS95QylquDI",
+     "ZbpRy-R5EyM",
+     "aof4rx8VTXE",
+     "cBwXmK7FMJE",
+     "iLoOX0jfSw4",
+     "jD1VpSuD5-4",
+     "naGLWWYlthI",
+     "obvqWnTFCc0",
+     "rIzLRHZPsWQ",
+     "rTidGPK0x7E",
+     "yrriBhJwwfY"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "images show",
+   "verdict": "rhetoric",
+   "why": "News framing device for varied events, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 4,
+    "months": 12,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "New images show rescues amid heavy rains impacting East Coast flood zones",
+     "Satellite images show aftermath of Ukraine drone attack on Russian airfields",
+     "Global National: June 22, 2025 | Satellite images show damage to Iran’s Fordow nuclear site"
+    ],
+    "ids": [
+     "3qHjsTJUKv4",
+     "3shNrkowIgc",
+     "8pInsu7Wu8g",
+     "9wLmha6yZ5Y",
+     "A5-j1C9bAU8",
+     "C4vUxUbU1oc",
+     "H5GkheyhtRE",
+     "H7yDVYuN16c",
+     "KLFLDqdCS0E",
+     "McZC2mTTJ_w",
+     "U9Be92cjE6A",
+     "biP2V1LOYW4",
+     "h47HFgnjwkU",
+     "mz_6kHcqhKc",
+     "r8RgJc-bhk0",
+     "rE0vYb19bj4",
+     "roCu1WTm8ss",
+     "v5ndh9qQ5zQ",
+     "vGVTeygyIHU"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "shows promise",
+   "verdict": "rhetoric",
+   "why": "Headline template spanning vaccines, treatments and stocks with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 8,
+    "span": "2019-06 → 2026-08",
+    "examples": [
+     "Experimental Glioblastoma Vaccine Shows Promise in Slowing Brain Tumor Growth",
+     "Recurrent Pericarditis: New Treatment Shows Promise",
+     "Vector Group Ltd. Shows Promise...Is It A Buy? | $VGR Stock Analysis"
+    ],
+    "ids": [
+     "28EMjRwtcyE",
+     "6zwjwaWa9gw",
+     "DkR9ry7HtbA",
+     "DmsPwhQuLmo",
+     "KiIh53javPc",
+     "QcC90YEs6a4",
+     "RPkoA7mqKMk",
+     "RmAy96Ezbls",
+     "UbliC-hXNao",
+     "imHgcYxqun0",
+     "m3gzhA-GkSc"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "surgeon explains",
+   "verdict": "rhetoric",
+   "why": "Authority-credential format, subjects unrelated.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 6,
+    "months": 8,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "(LIVE) Gastro Intestinal Surgeon explains how gut health fuels insulin resistance.",
+     "Lower Blood Pressure Naturally – Cardiovascular Surgeon Explains",
+     "Varicose Vein Treatment Options: Vascular Surgeon Explains"
+    ],
+    "ids": [
+     "7GROTEjEsKw",
+     "8XdSYbJoWhE",
+     "K4QxDEhLQU8",
+     "NBVgHGkFqC4",
+     "YttosFagjqc",
+     "Zv-Yo1EoSO4",
+     "fdWT6rcoX5Q",
+     "ryS2FwC1uDU",
+     "vqD3pbVsL3Q",
+     "zxVXoDa-9O0"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "causes prevention",
+   "verdict": "rhetoric",
+   "why": "Generic health explainer format, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 8,
+    "span": "2022-02 → 2026-08",
+    "examples": [
+     "Difference between Piles, Fissures and Anal Fistula. Causes ,prevention and treatment  in kannada",
+     "Hearing Loss:  Causes And Prevention. How to Keep Your Hearing Sharp",
+     "Why do Bones Weaken with Age? Causes & Prevention Explained #bonehealth #bonedensity"
+    ],
+    "ids": [
+     "02uJDNZaG8M",
+     "EFGnHj96HtQ",
+     "SL3N0KX-TZU",
+     "Yuznfq0RkG4",
+     "_AyAmh2c87k",
+     "_JzLvfTs_qg",
+     "e2Z2GwP1d88",
+     "lOgGmC2gBTE",
+     "sW3rpWjyFBE"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "actually useful",
+   "verdict": "rhetoric",
+   "why": "Evaluative hook about tools, no consistent falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 8,
+    "months": 6,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "Is AI Actually Useful?",
+     "7 AI Tools You Won’t Believe Are Free (ACTUALLY Useful)",
+     "Elon Musk: Tesla will make 'first actually useful humanoid robots'"
+    ],
+    "ids": [
+     "FTs35x-xUg4",
+     "QcDtTU0y02g",
+     "Um2OFHJHMds",
+     "ZoCW4MdnTbc",
+     "Zzi7JwXyCb4",
+     "fo2zVjUtDt8",
+     "jOm_x7RJDvI",
+     "tSiBzQEFTiQ",
+     "zZEWXSBi6Ps"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "launching soon",
+   "verdict": "rhetoric",
+   "why": "Announcement phrasing about assorted products, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 8,
+    "span": "2018-11 → 2026-09",
+    "examples": [
+     "Nasdaq Powered DX Exchange Launching Soon! - US in 2019 - Interview with CEO Daniel Skowronski @ WCC",
+     "Euro coin(EUROC)- A stablecoin launching soon & more | Friday, June 17 I",
+     "🚨$1M BTC BET: $87K Bitcoin by Nov 29? (XRP ETF Launching Soon?)"
+    ],
+    "ids": [
+     "2bvIW1vOWCc",
+     "7bu_AKJCDuo",
+     "KamUNGzVIwY",
+     "SNryiPs7to0",
+     "fcgFfPIUCvg",
+     "p6OPX6OMh_0",
+     "qs1t8mPJUnI",
+     "zVGBGAEiyaY"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "won't solve",
+   "verdict": "rhetoric",
+   "why": "Rhetorical negation applied to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 6,
+    "span": "2020-07 → 2026-09",
+    "examples": [
+     "Dow CEO Fitterling Says Money Alone Won't Solve Social Inequality",
+     "Coding Challenges: AI Won't Solve Everything!",
+     "Lowering interest rates won't solve problems in the labor market, says Ed Yardeni"
+    ],
+    "ids": [
+     "23utJQWbyHI",
+     "A5oqcY9VftU",
+     "GhpdicQcKfQ",
+     "Rc-xGByhrEM",
+     "RsV0LNJv_70",
+     "UBhHhVfa354",
+     "uAOAycdQ5Ho",
+     "xAurZv9zeDs"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "bridge collapse",
+   "verdict": "rhetoric",
+   "why": "News event coverage with no shared checkable claim across titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 27,
+    "channels": 8,
+    "months": 7,
+    "span": "2024-03 → 2026-06",
+    "examples": [
+     "\"Infrastructure Attack\" - Was Baltimore’s Key Bridge Collapse An Attack From A Foreign Enemy?",
+     "Baltimore bridge collapse: US economy at stake in getting port operating again, governor says",
+     "Baltimore bridge collapse: Investigators release timeline of disaster"
+    ],
+    "ids": [
+     "1GdKkOQvLqo",
+     "1vxE-nMLEw8",
+     "6BCqB8d-g8U",
+     "6mGxE0uQh0I",
+     "8qzon4nU224",
+     "98tj9owJIQw",
+     "CeH_0IA63D4",
+     "D9RonQGBzos",
+     "L5lLr8azBdc",
+     "SAgyaZ_IPlk",
+     "SMR2ap8rA8M",
+     "Y3Ji9bvHzrU",
+     "_kfDfjYdNqk",
+     "aJ6tL7L4URU",
+     "apM9a3L448I",
+     "d_pgTT-6MZ8",
+     "fo0geakWKQM",
+     "glPLAn6lkXE",
+     "hqtEldt3Z4M",
+     "kTQrTMPWQMM"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "drone shows",
+   "verdict": "rhetoric",
+   "why": "Format/footage descriptor, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 53,
+    "channels": 5,
+    "months": 26,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "Italy floods: Drone video shows scale of flooding damage in northern region",
+     "Texas tornado: Drone video shows trail of destruction in Perryton",
+     "Haunting drone video shows Greek island of Rhodes blackened by wildfires"
+    ],
+    "ids": [
+     "-h7UyPu4CYU",
+     "0N-IH4aIjfU",
+     "2a9xEbWJT_4",
+     "2wTSlsOAzIs",
+     "3vNfOHEKxSg",
+     "585LnNea4IE",
+     "5DTm6W4pl3U",
+     "6_p4hqZee2Y",
+     "71APGgKhzx4",
+     "7qzizOWHCdg",
+     "94kIfNmh7xE",
+     "9Pz1FUDB-xE",
+     "9mI5dEhFH60",
+     "An9t0zJPo1I",
+     "Aq4ibqpl34E",
+     "Aw9rAUJ53K4",
+     "EAVic58mqRo",
+     "EQaJBn_bJN8",
+     "FHrZXytRbhg",
+     "FVpOg_7Zqk4"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "building collapse",
+   "verdict": "rhetoric",
+   "why": "Recurring news subject with no common claim, cause or remedy.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 53,
+    "channels": 26,
+    "months": 11,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "Iowa building collapse: 8 people rescued as search efforts continue",
+     "Building collapse in Alexandria, Egypt leaves at least 4 injured",
+     "1 dead, 2 critically injured in Montreal building collapse"
+    ],
+    "ids": [
+     "-u7oTgnQXAw",
+     "3LGLTBnDHCQ",
+     "4aTIeZ0Hvws",
+     "4oBY-b2RnnU",
+     "5d60zgAxI4o",
+     "5ujsaTsw8xY",
+     "6KKYilYulAE",
+     "B6lgcZyHcmc",
+     "Bz2-aXkub2k",
+     "C4F2oEarpZo",
+     "FHLfhjOS9-Q",
+     "FP9iXBH_1GE",
+     "FPtEU6IDZzo",
+     "J9LKODTtqoI",
+     "L3mD8q3STNs",
+     "LO1YB5fTRsQ",
+     "LZjjM7PlmBE",
+     "NDM-jfGC18I",
+     "NeVkEd0bfsI",
+     "O5wRSb6oxos"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "explains difference",
+   "verdict": "rhetoric",
+   "why": "Explainer format phrase covering unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 8,
+    "span": "2023-01 → 2026-08",
+    "examples": [
+     "Dr. Berg explains the difference between ascorbic acid and Vitamin C #drericberg #ascorbicacid",
+     "Dr. Berg explains the difference between MS and a B1 deficiency #drberg #myelin #autonomic #POTS #MS",
+     "\"Doesn't Have it\" - Candace Owens Explains the Difference Between Trump and DeSantis"
+    ],
+    "ids": [
+     "37rh6yphee4",
+     "65onZiQpYhg",
+     "9z6QOv47UbU",
+     "NI386dJCas0",
+     "RhU_UvhkHWg",
+     "SRtjCCnLzGw",
+     "mjTqwVUUcgc",
+     "tC_zAiK7mic",
+     "uZBjjI6hfdI",
+     "xbcZCTVq-7E"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "toxic truth",
+   "verdict": "rhetoric",
+   "why": "Hype wrapper applied to varied subjects; no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 8,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "The Toxic Truth!  Dr. Mandell",
+     "\"You’re Showering In Pesticides\" – Paul Saladino UNCOVERS The TOXIC TRUTH About Tap Water",
+     "The TOXIC Truth About Black Plastic—You’re Eating Poison! || Barbara O'Neill"
+    ],
+    "ids": [
+     "AGK8ENTrdhI",
+     "IdaM-l1MjD0",
+     "SXe51LJTFEQ",
+     "WoHW8vMEaZo",
+     "YLA5p0Damh8",
+     "Zs6ljD2ZC9w",
+     "muYDCA4T0Bs",
+     "nW-4aczRSOk"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "cause autoimmune",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that diet/gut/lifestyle factors cause autoimmune disease and can reverse it.",
+   "claim_name": "The \"autoimmune disease starts in the gut and on your plate\" story",
+   "claim": "Autoimmune disease is claimed to be triggered by diet, gut permeability and stress rather than genetics alone, so changing food and healing the gut can reverse it.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Rising rates of autoimmune disease that conventional medicine only manages with drugs",
+    "cause": "Modern diet, leaky gut and chronic stress driving immune dysfunction",
+    "outcome": "Remove trigger foods and heal the gut to put autoimmunity into remission",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 14,
+    "channels": 7,
+    "months": 13,
+    "span": "2021-07 → 2026-09",
+    "examples": [
+     "The #1 CAUSE Of Autoimmune Disease & POOR GUT HEALTH? | Mark Hyman & George Papanicolaou",
+     "Did Stress Cause Your Autoimmune Disease?",
+     "Did Diet Cause Your Autoimmune Disease?"
+    ],
+    "ids": [
+     "-WBFTDu1q6c",
+     "3sra0jOb4sY",
+     "7nR8W6yqp0M",
+     "9OU4RdrZrZk",
+     "M1gsHvhRUQ0",
+     "M39btEZdtTI",
+     "OwD6BdPaHWQ",
+     "XBvB5x1lVkk",
+     "ZaOSPMit60M",
+     "ltisGeuxhdw",
+     "tzrFb3awagg",
+     "vVgyN-UbxtE",
+     "wbUdVvchDEw",
+     "yMegOR4rsa4"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "explosion coming",
+   "verdict": "rhetoric",
+   "why": "Generic hype for an imminent price move, spanning unrelated assets and events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 10,
+    "months": 10,
+    "span": "2021-08 → 2026-05",
+    "examples": [
+     "CATHIE WOOD: EXPLOSION IS COMING",
+     "CRYPTO NEWS: A Multi-Trillion Dollar Explosion Is Coming!",
+     "BIG SILVER NEWS EXPOSED AN EXPLOSION COMING!?"
+    ],
+    "ids": [
+     "190j2Vkqw1M",
+     "5trDPlkj1-k",
+     "7P8HSh3k1a4",
+     "BuofSFdBzB8",
+     "CYD1KGu8yNw",
+     "G7WqaTRcyi8",
+     "IwGZZz9Wses",
+     "RtptZ5ZqdYo",
+     "Wm1iKm8q7Vo",
+     "gPwLVI1XGC0",
+     "kKNYwP9EgWc",
+     "sk-qRtUOs-w",
+     "wNnqCKcUtSo"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "deadly crash",
+   "verdict": "rhetoric",
+   "why": "Incident news subject, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 30,
+    "channels": 9,
+    "months": 15,
+    "span": "2021-04 → 2026-09",
+    "examples": [
+     "Musk Says Autopilot Not On During Deadly Crash",
+     "Woman who witnessed deadly crash in Mississauga wonders why 911 took so long to respond",
+     "New dashcam video shows wrong-way police chase on Highway 401 that ended in deadly crash"
+    ],
+    "ids": [
+     "-9lT_BDMYz4",
+     "0KFBs5C85JM",
+     "0u3WikbESZQ",
+     "3HsUqOuqofc",
+     "6ZQNl6DypR4",
+     "80eQi_o7IJM",
+     "8apoFoqQGRE",
+     "C__2ptL_vTk",
+     "DlmVKZOjHtc",
+     "Ef4he8OoD8o",
+     "I9XRTMryMwg",
+     "NEMN2vKYiLY",
+     "NG2aINeUMB0",
+     "SLrKg6fGCcQ",
+     "WCwMOTwpUIk",
+     "ct3ECov8Qsc",
+     "elJQkFSbMIY",
+     "ersMm4rOeU8",
+     "fV5MfKKG9qU",
+     "guGZ8dBEGY0"
+    ]
+   },
+   "first_read": "2026-09-22",
+   "last_read": "2026-09-22"
   }
  ]
 }
