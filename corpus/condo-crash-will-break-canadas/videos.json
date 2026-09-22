@@ -5141,6 +5141,31 @@
         "comments": null,
         "enrichedOn": "2026-09-22"
       }
+    },
+    {
+      "videoId": "W9TSUQ-0PVo",
+      "title": "Bank of Canada Raises Alarm Amid Trade War, Warns U.S. tariffs Could Slash Fourth-Quarter Growth",
+      "channel": "The Financial Express",
+      "url": "https://www.youtube.com/watch?v=W9TSUQ-0PVo",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "views": 1221,
+      "length": "24:57",
+      "age_days": 0,
+      "query": "channel sweep: The Financial Express",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCmk6ZFMy1CT80orXca4tKew",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 32,
+        "comments": 4,
+        "enrichedOn": "2026-09-22"
+      }
     }
   ]
 }
