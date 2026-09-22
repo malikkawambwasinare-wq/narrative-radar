@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -5124,15 +5124,22 @@
       "url": "https://www.youtube.com/watch?v=MhUXhnzIN2U",
       "published": "2026-09-17",
       "first_seen": "2026-09-21",
-      "views": null,
-      "length": null,
+      "views": 2,
+      "length": "9:31",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCcSENjFJDH-pJq_kl-jdqRw"
+        "channelId": "UCcSENjFJDH-pJq_kl-jdqRw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
       }
     }
   ]

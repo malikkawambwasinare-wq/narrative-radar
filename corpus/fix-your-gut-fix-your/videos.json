@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -22115,6 +22115,106 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-09-21"
+      }
+    },
+    {
+      "videoId": "gGDdGAwbCbk",
+      "title": "Optimize Your GLP-1s Through Gut Health",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=gGDdGAwbCbk",
+      "published": "2025-08-28",
+      "first_seen": "2026-09-22",
+      "views": 641,
+      "length": "0:54",
+      "age_days": 390,
+      "query": "channel sweep: GLP-1 Hub",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UChKuewv_LGcU79grXky3J4w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
+      }
+    },
+    {
+      "videoId": "_dIOgwokL_A",
+      "title": "Gut health and weight loss with Kara Siedman, RD",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=_dIOgwokL_A",
+      "published": "2025-08-25",
+      "first_seen": "2026-09-22",
+      "views": 628,
+      "length": "43:45",
+      "age_days": 393,
+      "query": "channel sweep: GLP-1 Hub",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UChKuewv_LGcU79grXky3J4w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 36,
+        "comments": 1,
+        "enrichedOn": "2026-09-22"
+      }
+    },
+    {
+      "videoId": "_mysP8z2BwA",
+      "title": "Gut health is the foundation of true health @weighlessmd1040 #guthealth #weightloss",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=_mysP8z2BwA",
+      "published": "2025-05-16",
+      "first_seen": "2026-09-22",
+      "views": 678,
+      "length": "0:34",
+      "age_days": 494,
+      "query": "channel sweep: GLP-1 Hub",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UChKuewv_LGcU79grXky3J4w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
+      }
+    },
+    {
+      "videoId": "RzREnEe3NWU",
+      "title": "Gondh: The Tiny Superfood for Gut Health | Beat Bloating, Gas & Acidity Naturally!",
+      "channel": "Pachouli Wellness By Dr. Preeti Seth",
+      "url": "https://www.youtube.com/watch?v=RzREnEe3NWU",
+      "published": "2025-04-11",
+      "first_seen": "2026-09-22",
+      "views": 1059,
+      "length": "0:44",
+      "age_days": 529,
+      "query": "channel sweep: Pachouli Wellness By Dr. Preeti Seth",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCyKZd4jnX1o5964cKjsAJeA",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
       }
     }
   ]

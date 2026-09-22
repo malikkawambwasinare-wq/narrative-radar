@@ -530876,15 +530876,22 @@
       "url": "https://www.youtube.com/watch?v=nWgPE05fmt0",
       "published": "2026-09-17",
       "first_seen": "2026-09-21",
-      "views": null,
-      "length": null,
+      "views": 148,
+      "length": "1:13:03",
       "age_days": null,
       "query": "refiled from the pool (narrative:crypto-winter-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCts3vtoEzYWFLw2WRcYW3Cw"
+        "channelId": "UCts3vtoEzYWFLw2WRcYW3Cw",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": 4,
+        "enrichedOn": "2026-09-22"
       }
     },
     {
@@ -530894,15 +530901,22 @@
       "url": "https://www.youtube.com/watch?v=eYzNU9gwan0",
       "published": "2026-09-18",
       "first_seen": "2026-09-21",
-      "views": null,
-      "length": null,
+      "views": 37,
+      "length": "1:07",
       "age_days": null,
       "query": "refiled from the pool (narrative:crypto-winter-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCDUySPsosZz0eXZao2EyY2g"
+        "channelId": "UCDUySPsosZz0eXZao2EyY2g",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
       }
     },
     {
@@ -530912,15 +530926,22 @@
       "url": "https://www.youtube.com/watch?v=T3vOy1JGsbE",
       "published": "2026-09-20",
       "first_seen": "2026-09-21",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "7:21",
       "age_days": null,
       "query": "refiled from the pool (narrative:crypto-winter-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCrayCQ2IO8urf3raEzVxXKA"
+        "channelId": "UCrayCQ2IO8urf3raEzVxXKA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
       }
     },
     {
@@ -530930,17 +530951,74 @@
       "url": "https://www.youtube.com/watch?v=b8NnFg5H5M0",
       "published": "2026-09-21",
       "first_seen": "2026-09-21",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "0:54",
       "age_days": null,
       "query": "refiled from the pool (narrative:crypto-winter-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCiU0ZHChQFp-xXPzCd1mF1Q"
+        "channelId": "UCiU0ZHChQFp-xXPzCd1mF1Q",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
+      }
+    },
+    {
+      "videoId": "J7C958gfp48",
+      "title": "Get Ready With Me! GLP-1 Edition",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=J7C958gfp48",
+      "published": "2025-06-21",
+      "first_seen": "2026-09-22",
+      "views": 4049,
+      "length": "36:04",
+      "age_days": 458,
+      "query": "channel sweep: DOWNSIZED",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 400,
+        "comments": 137,
+        "enrichedOn": "2026-09-22"
+      }
+    },
+    {
+      "videoId": "vv-jy0oaS_Y",
+      "title": "What Does “Healthy” Appetite Suppression Really Look Like?",
+      "channel": "PillSorted",
+      "url": "https://www.youtube.com/watch?v=vv-jy0oaS_Y",
+      "published": "2025-12-31",
+      "first_seen": "2026-09-22",
+      "views": 18,
+      "length": "2:19",
+      "age_days": 265,
+      "query": "channel sweep: PillSorted",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCOOjzE-PU3_lIbrbScBph3Q",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-09-22"
       }
     }
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-22"
 }

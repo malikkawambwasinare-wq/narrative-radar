@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-09-21"
+      "unavailable": "2026-09-22"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -55399,7 +55399,57 @@
         "comments": null,
         "enrichedOn": "2026-09-21"
       }
+    },
+    {
+      "videoId": "s7-Okhgnzdk",
+      "title": "Conspiracy Corner: Chemtrails, Cloud Seeding & Government Secrets",
+      "channel": "Pigweed and Crowhill",
+      "url": "https://www.youtube.com/watch?v=s7-Okhgnzdk",
+      "published": "2026-06-07",
+      "first_seen": "2026-09-22",
+      "views": 8,
+      "length": "20:22",
+      "age_days": 107,
+      "query": "channel sweep: Pigweed and Crowhill",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9aHXtFzrUUg-pvhBqTBSXw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
+      }
+    },
+    {
+      "videoId": "NwAv6IsXpwg",
+      "title": "525: CIA Mind Control & Psychic Warfare: The Secret Programs That Never Really Ended",
+      "channel": "Pigweed and Crowhill",
+      "url": "https://www.youtube.com/watch?v=NwAv6IsXpwg",
+      "published": "2025-06-24",
+      "first_seen": "2026-09-22",
+      "views": 8,
+      "length": "33:30",
+      "age_days": 455,
+      "query": "channel sweep: Pigweed and Crowhill",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9aHXtFzrUUg-pvhBqTBSXw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-22"
+      }
     }
   ],
-  "updated": "2026-09-21"
+  "updated": "2026-09-22"
 }
