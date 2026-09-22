@@ -75,6 +75,10 @@ jobs:
           X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
         run: python3 scripts/trending.py --write || true
 
+      # Quota decision 2026-09-21: upload polling moved to the free RSS firehose
+      # (scripts/firehose.py, local). This sweep keeps a 2,500-unit cap and the
+      # discovery searches 10 calls, so scripts/discover.py can spend ~6,000 a day
+      # at the 07:00 UTC reset. Raise via workflow inputs for a one-off.
       - name: Read the ledger's channels for new uploads
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
@@ -86,7 +90,7 @@ jobs:
             --pages=${{ inputs.pages || '2' }} \
             ${{ (inputs.archive == 'false') && ' ' || '--archive' }} \
             ${{ (inputs.full == 'true') && '--full' || ' ' }} \
-            --units=${{ inputs.units || '9000' }} \
+            --units=${{ inputs.units || '2500' }} \
             --max=${{ inputs.max_channels || '8000' }} \
             ${{ (inputs.write == 'false') && ' ' || '--write' }} | tee sweep.log
 
@@ -94,7 +98,7 @@ jobs:
         if: ${{ always() && inputs.write != 'false' }}
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
-        run: python3 scripts/discovery_search.py --calls=${{ inputs.calls || '40' }} --days=7 --write
+        run: python3 scripts/discovery_search.py --calls=${{ inputs.calls || '10' }} --days=7 --write
 
       - name: Fill in runtimes for videos that arrived without them
         if: ${{ always() && inputs.write != 'false' }}
