@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-22",
+ "generated": "2026-09-23",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1887,
+ "cost_usd": 0.1902,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -10788,6 +10788,1559 @@
    },
    "first_read": "2026-09-22",
    "last_read": "2026-09-22"
+  },
+  {
+   "phrase": "who's really",
+   "verdict": "rhetoric",
+   "why": "A curiosity-bait framing applied to unrelated subjects with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 15,
+    "months": 8,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Who's Really on Trump's Team?",
+     "Trump vs Harris: Who's really better to tackle the housing market?",
+     "\"Biden's Been Brain Dead for 4 Years!\" - Candace Owens QUESTIONS Who's REALLY Running America"
+    ],
+    "ids": [
+     "6mUCL1lfjV8",
+     "8PoEtCnCOfg",
+     "8bkjklPEro8",
+     "9-AENkvHLfw",
+     "D-nSUPT6DWs",
+     "EAPp64vgOmM",
+     "KF3yvJQxdgc",
+     "OP-rdlEzI2I",
+     "Wk9AlXavOqQ",
+     "YX7RgEvk6A8",
+     "lqI9QEv4wO8",
+     "mcEhdT8AoaQ",
+     "obI5Aord1gI",
+     "sSk1bXjOHiM",
+     "wYC-QEy9jXM",
+     "xzaAdteTOck",
+     "zkswIfZ6BoU"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "must read",
+   "verdict": "rhetoric",
+   "why": "Listicle/recommendation format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 9,
+    "months": 9,
+    "span": "2016-12 → 2026-09",
+    "examples": [
+     "3 Must Read Articles For Growing Your Amazon FBA Business - My Commentary",
+     "Why You MUST Read Your Tenants Rental Insurance",
+     "CAREER: 5 Must Read Books to succeed in the business world #shorts #youtubeshorts #shortvideo"
+    ],
+    "ids": [
+     "AklUXYldjtI",
+     "EvVhF9Cs5bo",
+     "GNAC_h7eIn0",
+     "GaIrmRfEdHk",
+     "JmvDUYR1VQg",
+     "_18__ELmJd0",
+     "otEF8RwKjs4",
+     "qVePZquU3fw",
+     "vN429oCZT4I"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "cause hair loss",
+   "verdict": "narrative",
+   "why": "Titles share the checkable claim that common substances (creatine, water, supplements) cause hair loss.",
+   "claim_name": "The \"everyday substances are causing your hair loss\" story",
+   "claim": "Common consumables and exposures — creatine, tap/shower water chemicals, certain supplements and medications — are blamed for causing hair loss, and avoiding them protects or restores hair.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread unexplained hair loss",
+    "cause": "Everyday substances like creatine, fluoridated shower water and other consumables",
+    "outcome": "Avoid or filter the culprit to stop or reverse hair loss",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 20,
+    "channels": 12,
+    "months": 16,
+    "span": "2022-09 → 2026-09",
+    "examples": [
+     "Dr. Berg explains how shower water can cause hair damage #drberg #shower #water #flouride #hairloss",
+     "Does Creatine Cause Hair loss #shorts",
+     "Does Creatine Cause Hair loss?"
+    ],
+    "ids": [
+     "2ElTooWQa-0",
+     "2SduhHlUQ1Y",
+     "GR4D6ujSwZg",
+     "K_enlzUQW5U",
+     "N15jy_wmB-E",
+     "SCixIR7cvDo",
+     "UgcKO7stYFg",
+     "VbRMXXBD83w",
+     "_HrBgj97q2w",
+     "b4wDUrLUnTI",
+     "c69QaMsLf3E",
+     "e1Tk1ZbEhbY",
+     "jTF7nyitMq0",
+     "jex_Ayk2RVM",
+     "n5a43H8M2Uo",
+     "nuLJV-HJQP0",
+     "ofN9zQkIxa4",
+     "sHeFKGDq8YI",
+     "tcJaxP8p0uQ",
+     "v_HIVVSHljg"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "actually exist",
+   "verdict": "rhetoric",
+   "why": "Listicle curiosity format spanning animals, robots and inventions with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 6,
+    "span": "2020-10 → 2026-09",
+    "examples": [
+     "Top 10 Terrifying Animals That Actually Exist",
+     "Futuristic AI Robots That Actually Exist",
+     "Bizarre Inventions You Won't Believe Actually Exist #inventions #creativity #innovation"
+    ],
+    "ids": [
+     "Dg9391bYa2I",
+     "FNiXDiNsM9Q",
+     "MNwM-VnTmEQ",
+     "MOL_665IvjY",
+     "YCSdcXJTovo",
+     "_bhlJhRSOdM",
+     "fB41kQweF_E",
+     "gNrW23ifpxs",
+     "pbKvbWHzPrM",
+     "vRrzi4LVX0k"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "ban sparks",
+   "verdict": "rhetoric",
+   "why": "News-headline formula covering unrelated bans; no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 7,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "“Universal Porn Enforcement” - Florida's PornHub Ban Sparks FEAR Of Government Overreach",
+     "TikTok Ban Sparks \"No Tax\" Revolt: Creators vs. the IRS and Uncle Sam!",
+     "Trump's new travel ban sparks criticism, concern"
+    ],
+    "ids": [
+     "29CUxBvQRak",
+     "I6NzsNO2wqs",
+     "QyvnUVX_YnY",
+     "Rv-6FO-3xIM",
+     "UIX9sWYltoQ",
+     "VBrQoRtHXCA",
+     "VUtNtQEG7rs",
+     "gUrrFcrsqzA",
+     "lONP3RynUvA",
+     "nQxIimb45nA",
+     "pQFw1MP27k0"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "crash recovery",
+   "verdict": "rhetoric",
+   "why": "Generic market-timing phrasing across assets without one shared, falsifiable prediction.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 12,
+    "span": "2021-12 → 2026-09",
+    "examples": [
+     "BITCOIN CRASH OR RECOVERY?? (must watch)!! Bitcoin News Today & Bitcoin Price Prediction Explained",
+     "Why We are About to See a Major 1946 Stock Market CRASH Recovery",
+     "How Howard Marks Predicts Each Stock Market Crash & Recovery"
+    ],
+    "ids": [
+     "5bJkj8MXoUM",
+     "5y5KrmF1DcM",
+     "BGJvKxNHy7A",
+     "GOKmcEFgobk",
+     "KnFS5cRnd5c",
+     "YyZdBir-pDQ",
+     "aIDaRHIgJnw",
+     "cyEUNvtFfUg",
+     "hDJRnggaIKs",
+     "kuQdTO-hYGk",
+     "nRq-fkcDxO4",
+     "tRZ5FMJYijo",
+     "vQRAk8EFzog",
+     "zTpYzCcMkls"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "won't budge",
+   "verdict": "rhetoric",
+   "why": "Idiom used for politics, weight loss and more; no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 7,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "Why India's Modi won't budge on Russian oil",
+     "Celebrating Victory When The Scale Won't Budge",
+     "Stubborn Belly Fat won't budge, this could be the problem"
+    ],
+    "ids": [
+     "1-uxglDqPQ4",
+     "4r14IYWq_aA",
+     "5hP9lUo6nIE",
+     "68rqs16vZoU",
+     "9EYl85j91Fc",
+     "ACKLzZs3h54",
+     "QjmepoRIFUs",
+     "USlUHJgLC8c",
+     "bx8rE14KGSs",
+     "heNtlQRQVYA",
+     "qC8_TvPFeYs"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "population collapse",
+   "verdict": "narrative",
+   "why": "Titles converge on a checkable claim that falling birth rates will collapse populations and wreck economies.",
+   "claim_name": "The \"population collapse is the real crisis\" story",
+   "claim": "Global birth rates have fallen so far that populations will shrink drastically, and this demographic collapse will devastate economies — a bigger threat than climate change.",
+   "industry": "Culture & society",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Birth rates far below replacement in most major economies",
+    "cause": "Falling fertility, urbanization and cultural shifts away from childbearing",
+    "outcome": "Shrinking workforces, economic contraction and pension collapse unless birth rates rise",
+    "clock": "Coming decades"
+   },
+   "evidence": {
+    "videos": 11,
+    "channels": 8,
+    "months": 6,
+    "span": "2022-10 → 2026-09",
+    "examples": [
+     "Peter Zeihan - Are We Facing A Global Population Collapse?",
+     "Population Collapse Is A Bigger Problem Than Climate Change",
+     "Will Population Collapse Destroy The Economy?"
+    ],
+    "ids": [
+     "0-1_NujQlNg",
+     "0OtBlGoY0x8",
+     "8u-NYRyDPrc",
+     "D8CzDvYhMU0",
+     "cGQ2CP5h62k",
+     "dbL9VHPj_IY",
+     "f-PwE_uE1kE",
+     "nSPEeED0Za0",
+     "qPFrDEhDt7I",
+     "rPXf6013Q8g",
+     "tn_bwTbjhcs"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "main causes",
+   "verdict": "rhetoric",
+   "why": "A generic explainer format applied to unrelated ailments, with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 8,
+    "span": "2021-09 → 2026-09",
+    "examples": [
+     "The MAIN CAUSES Of Chronic Inflammation IN THE BODY! | Rupa Marya, Raj Patel & Mark Hyman",
+     "Understanding the 4 Main Causes of Hip Pain",
+     "The 2 Main Causes of Weight Gain!  Dr. Mandell"
+    ],
+    "ids": [
+     "035oesitE6Y",
+     "2ejg9cGPfm0",
+     "BiD0YuVBw5c",
+     "Fozpa3y5_uw",
+     "YJPZstD7hTg",
+     "bMpMaodgBiM",
+     "ht8Xa1vj1BA",
+     "wHhXvsqdokc"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "american dream dead",
+   "verdict": "narrative",
+   "why": "Recurring contested claim that upward mobility in the US has become unattainable, with some titles arguing against it.",
+   "claim_name": "The \"American Dream is dead\" story",
+   "claim": "Rising costs of housing, education and living have put homeownership and middle-class prosperity out of reach, so the traditional American promise of upward mobility no longer works.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Ordinary Americans can no longer afford homes or a middle-class life",
+    "cause": "Inflation, wage stagnation and unaffordable housing/education costs",
+    "outcome": "A permanently downwardly mobile generation unless the economic system changes",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 14,
+    "channels": 8,
+    "months": 13,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Why The American Dream is NOT Dead 😤 | Shawn Ryan",
+     "The “American Dream” Is Dead | Millions Are Becoming Desperate",
+     "The American Dream is Dead"
+    ],
+    "ids": [
+     "-iTTzhSj-9M",
+     "2v9o5oDdpag",
+     "4Y4RgCdSAUw",
+     "IrqX5e2hQOU",
+     "Wm76LYUtVC8",
+     "Z8SkNQ5J7Go",
+     "a3XJvOEYUO0",
+     "ddR_jkoAlNc",
+     "hos3oPdDWFs",
+     "ioW4bL-90d8",
+     "pmkbcbPDgjQ",
+     "rVJwCtpaMwg",
+     "wfpbD9SfQ0U",
+     "y-SpcrWXJ00"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "shawn ryan show",
+   "verdict": "rhetoric",
+   "why": "A show title and format, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 32,
+    "channels": 5,
+    "months": 22,
+    "span": "2019-08 → 2026-09",
+    "examples": [
+     "Shawn Ryan Show with Vigilance Elite - Episode 001",
+     "Shawn Ryan Show #1 Green Beret Mike Glover",
+     "Shawn Ryan Show #003 Don Bradley A.K.A.Headshot Don"
+    ],
+    "ids": [
+     "0JQ0fMWZtf8",
+     "0yy_Zepxo2c",
+     "1LqlMUXcYK4",
+     "20HtxmEmLfI",
+     "2r-e4IuK6EI",
+     "2udefG5N2zQ",
+     "CQzO-VQgW1A",
+     "Dk_xV3Sdfcs",
+     "ENrRFiKrgAg",
+     "GAB2UOk3U2Q",
+     "HUhayTEzIbE",
+     "IMRwwfJnP34",
+     "InO5vun_QVY",
+     "L79_Iy7Y9po",
+     "LAS55toJIUQ",
+     "Q1D3fMQGZVI",
+     "U3VTAmFD8ug",
+     "VQjo-olMnSI",
+     "V_Rgba1gdQ4",
+     "ZBYC7QnHrQA"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "actually matter",
+   "verdict": "rhetoric",
+   "why": "Generic hook phrase spanning unrelated subjects with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 25,
+    "channels": 16,
+    "months": 8,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "Grades don't actually matter",
+     "Do hashtags actually matter in 2025?",
+     "These Trade Talks Actually Matter #shorts"
+    ],
+    "ids": [
+     "2QKobY80Qfc",
+     "3z2uT5aDx_Y",
+     "40ZMWHJI0RI",
+     "591AHzeJ6P4",
+     "6S1rfzyS2zs",
+     "8QPlGOnHccM",
+     "9JKVCqjxoXM",
+     "HTmf-Gj1Dic",
+     "JNT9-2BQSEE",
+     "KL34xCAZRkc",
+     "Tif8NYum90s",
+     "UVeeNW_z068",
+     "YqrA8xCjk-g",
+     "_PcH3_jbk8c",
+     "anBcmWM_0gA",
+     "d5nm6zC9_fM",
+     "enFpk94R_0k",
+     "h1lc4lsRvpg",
+     "iAfYTL7Dsyo",
+     "pxDIopUsYew"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "timelapse shows",
+   "verdict": "rhetoric",
+   "why": "Footage-format label for news clips, carries no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 5,
+    "months": 9,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Oklahoma tornadoes: Timelapse shows funnel cloud forming over western town",
+     "Timelapse video shows Canadian freighter trapped in ice on Lake Erie",
+     "Timelapse shows growing smoke and flames from Palisades fire burning overnight #lawildfires 🔥"
+    ],
+    "ids": [
+     "3SIRUO65_sQ",
+     "3xrfrLnoix8",
+     "4hKa6jurNiI",
+     "5KvvBG1bKFU",
+     "9I6JAUmwTNc",
+     "AUOx59R_ihE",
+     "COQcv6tRUBw",
+     "GIP_qCbnryY",
+     "Jq39tMIVkSs",
+     "K91y44AhDaw",
+     "S_8UPQBNt5s",
+     "eEf5Ew0Rsfs",
+     "eKsf1GZVvA4"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "surprise coming",
+   "verdict": "rhetoric",
+   "why": "Teaser phrasing across tarot and crypto content with no common checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 9,
+    "months": 12,
+    "span": "2022-10 → 2026-09",
+    "examples": [
+     "SCORPIO:  They Want You Back, but There's a Surprise Coming!  Mid Oct. 2022 ♏️",
+     "CAPRICORN:  There's a Surprise Coming!  This is an Offer You Don't Want to Turn Down  ♑️ March 2023",
+     "Bitcoin Support SHATTERED! Cardano FREEFALLS - and a Big GREEN Surprise Coming NEXT WEEK?"
+    ],
+    "ids": [
+     "5e19vrGm5ic",
+     "9abP_T389qA",
+     "DWnDBbMBfMw",
+     "Fc08ywiRZR4",
+     "G7vLZNAkpEA",
+     "GN9d9YwxGcE",
+     "KF8JjaMvKxs",
+     "NwTHzP7PN68",
+     "R4iNsG8a0sM",
+     "RFsv9aHd7IA",
+     "_teDBrb5Wsw",
+     "aF8maKeGpfY",
+     "gCMZYoktZzA"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "numbers don't lie",
+   "verdict": "rhetoric",
+   "why": "Credibility-signalling catchphrase attached to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 10,
+    "months": 9,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "\"Numbers Don't Lie!\" - Ben Mallah on the BEST Real Estate to Buy RIGHT NOW",
+     "The Numbers Don't Lie | Canada's Economy is Cracking",
+     "Valley Phase 3: Financial Analysis Unveiled! Numbers Don't Lie #shorts"
+    ],
+    "ids": [
+     "0Sf6zL3fIds",
+     "2E9f-ldC2U8",
+     "2bNOyrtaGyk",
+     "4xmKj8nYN_M",
+     "5ylUZu22FK4",
+     "9Qit0urzDuE",
+     "ABa6o29-4D4",
+     "O10Hi0NYH0Y",
+     "_H4RhIJW6Zw",
+     "hT2icKhl8kY",
+     "xSfhbeH-HvA"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "airstrikes kill",
+   "verdict": "rhetoric",
+   "why": "News event reporting, a subject with no argued claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 5,
+    "months": 9,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Israeli airstrikes kill at least 9 in West Bank, including a Hamas commander",
+     "Israeli airstrikes kill at least 70 in Gaza, Lebanon as US tries to secure ceasefire deal",
+     "Israeli airstrikes kill at least 23 more Palestinians across Gaza Strip"
+    ],
+    "ids": [
+     "01iTIRSLQbg",
+     "5rB8vX6Yj4k",
+     "AsrDK5VCHOw",
+     "B-KfInkFj34",
+     "H-U7D1VOOLY",
+     "NOG8cho-ntw",
+     "QJv-mEdlBv4",
+     "dCAAnYLHqcA",
+     "oVG_STwyyQM",
+     "vbPCWfVUvz8",
+     "ycUoePxjibU"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "every beginner must",
+   "verdict": "rhetoric",
+   "why": "Instructional hook across unrelated topics with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 5,
+    "span": "2026-04 → 2026-09",
+    "examples": [
+     "How to Start UPSC Preparation? | 5 Myths Every Beginner Must Avoid | By Atul Jain",
+     "Every Claude Code Beginner Must Watch This",
+     "The 5 Rules Every Crypto Beginner Must Follow"
+    ],
+    "ids": [
+     "4aC-5HoZR4g",
+     "E25wNGBspV4",
+     "EX-baBijcOE",
+     "KIC3JihzNDI",
+     "RqpjGF8uKhg",
+     "SHHiFzWjWbk",
+     "YhdGbo7EHHo",
+     "bY8iTV9FiB0",
+     "pGti3g7Fcmk",
+     "vKZlgM6rawc",
+     "w8WrTWlQT10"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "earnings beat",
+   "verdict": "rhetoric",
+   "why": "A recurring financial-news subject/format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 60,
+    "channels": 19,
+    "months": 19,
+    "span": "2019-02 → 2026-09",
+    "examples": [
+     "Why Shares of Square Are Slipping After 4th-Qtr Earnings Beat",
+     "VMware CEO on Earnings Beat and Partnership Strategy",
+     "SurveyMonkey CEO on Earnings Beat, 2020 Election and Antitrust Scrutiny of Big Tech"
+    ],
+    "ids": [
+     "-2toEMSQ0ZM",
+     "0lVLZjgYJAM",
+     "16OVSg_w_Uo",
+     "1_rs-tPMJgQ",
+     "3l053WUxYfE",
+     "81bFrLutblw",
+     "8VVJBRYNtFg",
+     "8hH33AQyaSU",
+     "A2BdrKmblRM",
+     "BEh3K_OnYMM",
+     "BJI2_aAQuFw",
+     "BRDbEHHJrs0",
+     "DULMQoDbo4Y",
+     "ETFez9bEiiQ",
+     "Eubi85KPRJ0",
+     "F7wp2fUPDbg",
+     "FwJX7ELjvBw",
+     "Gm_s569KfMI",
+     "HRTERLw0vHg",
+     "HTYBISBndHU"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "end era",
+   "verdict": "rhetoric",
+   "why": "Dramatic framing applied to unrelated subjects; no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 12,
+    "months": 8,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "The END OF AN ERA… This Is Your Final WARNING",
+     "Will RFK Jr. Reform Health Policy and End the Era of Harmful Food Practices?",
+     "Ethereum End Of An Era?"
+    ],
+    "ids": [
+     "0vA3CgtzDSI",
+     "3ealCB9HLm0",
+     "I8BXGfRZWaw",
+     "K5-o53Esn8Q",
+     "LwePc08kxl4",
+     "QOgW-3tHCR8",
+     "ZLE_d86vLtQ",
+     "btGhmYcH42o",
+     "exxzpbgGYU4",
+     "hWFKF2Q3uN4",
+     "lxiAvPl3qsk",
+     "rkwoxNMfjW8",
+     "uiONPVhx8h4"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "crash killed",
+   "verdict": "rhetoric",
+   "why": "Generic accident-news phrasing, a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 28,
+    "channels": 11,
+    "months": 17,
+    "span": "2022-08 → 2026-09",
+    "examples": [
+     "Military Helo crash killed all aboard including Navy SEALs except for 1 survivor #navyseals",
+     "Speed under investigation in Ontario boat crash that killed 3",
+     "Man charged after fatal Gardiner Expressway crash killed woman, injured toddler: Toronto police"
+    ],
+    "ids": [
+     "-TCokLhr5e4",
+     "1zZ3UdkD1HY",
+     "2IIofVp72kI",
+     "7gnG_RaTnkE",
+     "I3vWDVt-6FY",
+     "KSyx5QrK4No",
+     "OCo7CNJhVMQ",
+     "P53AiYdm8rs",
+     "Ps6jEQPgK88",
+     "RN1EOKjcZP4",
+     "RtzICDGpVO8",
+     "WCRiT1lM7yI",
+     "WxIx2IZ1S5s",
+     "YpNjDJpWneE",
+     "akT5R9tLpBs",
+     "bXyhSMu8QyU",
+     "cZ4wTaqoBlw",
+     "ci1gLf0QAjc",
+     "gYFybrq7fuo",
+     "gb56eEJzOFQ"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "shift coming",
+   "verdict": "rhetoric",
+   "why": "Vague anticipation hook spanning stimulus, bitcoin and pole shifts.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 13,
+    "months": 13,
+    "span": "2021-07 → 2026-09",
+    "examples": [
+     "More Money! 4th Stimulus Check Update | Democrats Demand More | Major Shift Coming - July 7",
+     "HUGE MARKET SHIFT COMING FOR BITCOIN!! Bitcoin News Today & BTC Price Prediction after Bitcoin Crash",
+     "Is a pole shift coming?"
+    ],
+    "ids": [
+     "Jq9Ghk5bPxk",
+     "SviMjLainGU",
+     "Y1XMlXO3YaE",
+     "YBPtKo8Cb6o",
+     "YPHhC4OHLOc",
+     "_fEuwzsPlZ0",
+     "fT4EsB_U29I",
+     "fpn6ks69PIU",
+     "iMGCEVzAQIo",
+     "jcyAmQFvYOY",
+     "k52KRCLzsWs",
+     "mKwg548gR9g",
+     "p8XlXVrlOhw",
+     "sVXUgdiDXSg",
+     "yuwCHDGutjU"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "scientists can't explain",
+   "verdict": "rhetoric",
+   "why": "Mystery-mongering hook, not one falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 21,
+    "months": 6,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "These Strange Things Were Just Seen in the Sky And Scientists Can't Explain",
+     "Reality Doesn't Work Here. Scientists Can't Explain Why.",
+     "The Truth About The Sumerian Tablet That Scientists Can't Explain"
+    ],
+    "ids": [
+     "3TFgJfSqigQ",
+     "GtcygLzliSc",
+     "K6CXQ0KHmy0",
+     "KUNgfzNXeeQ",
+     "LSq-Mye7CoY",
+     "N8sIm609iPE",
+     "O7JrteoWZr8",
+     "PEcqjq531F8",
+     "S-y-vXfxask",
+     "WK0JoWasyJU",
+     "Ws9y85vm_p0",
+     "b29ky1v7YSM",
+     "eT3cWah14SI",
+     "ee5DE93q-10",
+     "fu1PRBzCdYg",
+     "hVQv5_FxVno",
+     "jr-R6ZYmWXU",
+     "kVySGop4kU0",
+     "pQ0Xfo01o6M",
+     "qgvzjQYC0GQ"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "casey means",
+   "verdict": "rhetoric",
+   "why": "A named guest/person, not a claim; titles share only the interviewee.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 7,
+    "months": 6,
+    "span": "2020-11 → 2026-02",
+    "examples": [
+     "Digital Tools to Measure Blood Sugar & Metabolic Health with Dr Casey Means",
+     "The 3 KEY SIGNS You're Not Healthy & How To LIVE LONGER Today! | Casey Means & Mark Hyman",
+     "This is why we are all so sick | Dr  Casey Means"
+    ],
+    "ids": [
+     "2-3ytt1YhbU",
+     "C4cy3x0cXGg",
+     "EPz3xM0Fnog",
+     "Idf9W10HPIY",
+     "KLKgXLyWI-I",
+     "Qhe48sTEL5U",
+     "RK-ztvmvXaE",
+     "kYZ3sjcA0Ag",
+     "l_7uoez-eLE",
+     "rnEvcrklj_o",
+     "u4rzbNaPYME",
+     "x0pfoHB4AQc",
+     "yineBV2bSzk"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "fashion show",
+   "verdict": "rhetoric",
+   "why": "Topic label with no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 6,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "AI fashion show using latest AI video generation tech & featuring your favorite world leaders 😜 #ai",
+     "Festive fashion show: NICU babies rocking holiday attire!",
+     "A-list stars walk Victoria’s Secret Fashion Show"
+    ],
+    "ids": [
+     "-jr_nhhr9B8",
+     "26j8tnYVDU8",
+     "57xeD9PO-QQ",
+     "QrjzFi4gj38",
+     "XN9oT6nIbh0",
+     "fk8Caai2od0",
+     "jTCNm7uldik",
+     "nIq_W1BTc3o",
+     "pxsYNiOvIcQ",
+     "ymJYfiAyNWc"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "among dead",
+   "verdict": "rhetoric",
+   "why": "A news-format fragment about casualty reports, carrying no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 6,
+    "span": "2024-03 → 2026-09",
+    "examples": [
+     "Rockford stabbings: 15-year-old girl among 4 dead, 7 other injured",
+     "Swedish school attack: At least 10 killed, gunman believed among dead",
+     "Journalists among the dead after Israeli airstrike hits Gaza hospital"
+    ],
+    "ids": [
+     "2G-BFgjciSk",
+     "3GYDpIKOrGY",
+     "9VIDu5XmAeo",
+     "BTnOd6Knm5E",
+     "PyoS76XCLus",
+     "R28Nyk-S5Lk",
+     "TB0wnaoU7N0",
+     "VEMC-KlQK1A",
+     "YS8mr-pS8PA",
+     "ll7NC-C4Ezc"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "cause constipation",
+   "verdict": "rhetoric",
+   "why": "A listicle topic about constipation triggers with no single shared causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 6,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "Medical Conditions That Can Cause Constipation: 3 Common Causes Explained",
+     "6 Surprising Foods That Cause Constipation! 🚫🍽️ #constipation",
+     "Surprising Foods That Cause Constipation #GutHealth"
+    ],
+    "ids": [
+     "2_AuhjtGuGg",
+     "3KS41_pyMEY",
+     "43WAyiaB5Uc",
+     "6h1CmXZTHE4",
+     "C_nqoT0KYBc",
+     "GjYRT2_2EE0",
+     "eNN6uyRkwRA",
+     "pT127yto0ZY"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "save hundreds",
+   "verdict": "rhetoric",
+   "why": "Pure sales hook spanning unrelated subjects from real estate to groceries.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 6,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "This real estate tip could save you ‘hundreds of thousands of dollars,’ expert says",
+     "10 AI Tools That Will SAVE You HUNDREDS of Hours!",
+     "How I Grocery Shop to Save Hundreds! (Tip #7 Surprised Me!)"
+    ],
+    "ids": [
+     "9K2taT7OZkw",
+     "DNlpgX7MAv4",
+     "DjGfTfJQn3w",
+     "Ngwt1WhTtEw",
+     "NoAxl93koAo",
+     "Qi83qEfbyWQ",
+     "pTZteFC8JRU",
+     "vGeU3CfcID0"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "crash soar",
+   "verdict": "rhetoric",
+   "why": "A stock-analysis title format that hedges both directions, asserting nothing.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 7,
+    "span": "2021-05 → 2025-11",
+    "examples": [
+     "SPCE FULL Stock Analysis | How Virgin Galactic Could CRASH or SOAR (Q1 2021)",
+     "Palantir FULL Stock Analysis | How PLTR Could CRASH or SOAR (Q1 2021)",
+     "Crowdstrike FULL Stock Analysis | How CRWD Could CRASH or SOAR (Q1 2022)"
+    ],
+    "ids": [
+     "3EFByXtprgA",
+     "FfRhKdQxzEo",
+     "JEtD_KCYjmI",
+     "PoXTaDg7-z8",
+     "QJH5Lgv02KE",
+     "VGkyYNVrihY",
+     "X8whCnJQ6go",
+     "fYVU26tQ2wM"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "syndrome causes",
+   "verdict": "rhetoric",
+   "why": "Generic medical explainer format across unrelated conditions.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 7,
+    "span": "2018-02 → 2026-09",
+    "examples": [
+     "Pain in Hand in diabetes thyroid obesity Carpal Tunnel Syndrome causes treatment Dr B K ROY",
+     "klinefelter syndrome causes diagnosis Treatment Small Testis Nil Sperm Less Beard Delhi Dr B K ROY",
+     "IBS(IRRITABLE BOWEL SYNDROME) CAUSES  RISK FACTORS TRIGGERS  SYMPTOMS TREATMENT EXPLAINED IN KANNADA"
+    ],
+    "ids": [
+     "B0JubpsxgBA",
+     "L2Z8HvRugL0",
+     "PWWB1ZMaTtE",
+     "Ywvw2pKk7NE",
+     "bXCw898xlx8",
+     "f_9nFz_ndFQ",
+     "iXv-uowe68E"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "dead arrival",
+   "verdict": "rhetoric",
+   "why": "A stock idiom applied to housing, bills and subsidies with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Is Canada’s spring housing market “dead on arrival” amid tariffs?",
+     "Trumps Stimulus Bill Could Be Dead On Arrival | WARNING",
+     "Clean extension of health care subsidies likely ‘dead on arrival’ in Senate"
+    ],
+    "ids": [
+     "L7Jns0sAc5U",
+     "Xykbl_7iuAU",
+     "_wU_FBoW5W0",
+     "fNEmkXEfnOM",
+     "nbSMo6etnls",
+     "wTbpsVudqk0",
+     "zZVQJ6bHX_o"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "gold-silver crash",
+   "verdict": "duplicate",
+   "why": "Restates the tracked precious-metals crash narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "the-gold-and-silver-crash",
+   "frame": null,
+   "evidence": {
+    "videos": 36,
+    "channels": 5,
+    "months": 10,
+    "span": "2025-12 → 2026-09",
+    "examples": [
+     "31 Dec: Gold-Silver crash के बाद rebound! Volatility क्यों बढ़ी? 2026 precious metals का असली signal",
+     "CME Margin Hike Monday से लागू: Gold-Silver Crash क्यों? Violent गिरावट, Trump Fed Move और आगे क्या?",
+     "Silver 35% Crash | Gold-Silver Crash: ETFs, Warsh Effect, Paper vs Physical सच—यह गिरावट क्यों आई?"
+    ],
+    "ids": [
+     "2d1YGZUgaL0",
+     "3lugppF2KC0",
+     "59VCiqK3vz8",
+     "6259crYVgXU",
+     "7a94-3cTkmk",
+     "BGJvKxNHy7A",
+     "FsHnQOQVPRI",
+     "G9kj6kLPIKU",
+     "KtJt67sNCS0",
+     "MGFO2SXF-Ok",
+     "OLA0spk5DjE",
+     "Pt_U-oWdjdo",
+     "Rdk4eoJ49wY",
+     "RiO03KbynXo",
+     "TQZYqThR0dk",
+     "VKKlHhALJbU",
+     "WN6_NLwxIRc",
+     "WoiJKoXr3Cw",
+     "Y391iU7WPTE",
+     "ZfA-PWIStw0"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "calls end",
+   "verdict": "rhetoric",
+   "why": "News phrasing for advocacy statements across unrelated issues, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 26,
+    "channels": 11,
+    "months": 15,
+    "span": "2024-09 → 2026-09",
+    "examples": [
+     "\"It’s not Canadian:\" Jann Arden calls for the end of live horse exports for meat",
+     "Trudeau calls for end to violence after 3rd Canadian killed in Lebanon",
+     "Anti-Hamas protest held in Gaza amid calls to end war with Israel"
+    ],
+    "ids": [
+     "0QpUuV4euHo",
+     "2yxPDHZJkV0",
+     "3Qc6gDQNcfY",
+     "3WEtb2hTvk8",
+     "5cKZxUxRd-8",
+     "68ApuoiCwKY",
+     "Bhqg8R0xUUQ",
+     "E5ibijie06I",
+     "HVbGB7sKMRc",
+     "HpxDTOWH_Rk",
+     "JbZcFfSLRSk",
+     "MkPBRzP8C8c",
+     "Ol7OkdhATC0",
+     "QaZCYNBI0FA",
+     "UPnYYw3x8jk",
+     "YrxVAlLzHik",
+     "ZKxrmIal7BE",
+     "cNb4fQBUzDs",
+     "jESkTuj_aAY",
+     "jPdHWfieC8U"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "report shows",
+   "verdict": "rhetoric",
+   "why": "A generic news-framing phrase attached to varied data releases, no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 49,
+    "channels": 17,
+    "months": 23,
+    "span": "2023-01 → 2026-09",
+    "examples": [
+     "Inflation Report | CPI Report Shows Progress | Finally Good News",
+     "GOOD NEWS… CPI Report Shows Progress | FED Interest Rate News",
+     "It’s Starting: Bankruptcies Are Up 45% | Jobs Report Shows Signs Of Slowing"
+    ],
+    "ids": [
+     "0u-McQEdRkE",
+     "4uuVlichrlA",
+     "5gLCayHRAf4",
+     "9dlDqjfALAc",
+     "CDz29jNbEJs",
+     "CUCh0EccvdM",
+     "F3hLurPRW1M",
+     "F7kKdYpItpE",
+     "FCL4GysoqnU",
+     "FseqpBLBfHY",
+     "IitPPtSf0gU",
+     "Ikjrj1tJj8Q",
+     "IpsBefK7s5U",
+     "K6vsEOxaUlU",
+     "MR5zc7StmFM",
+     "ObfaPTOvfaI",
+     "OlxT1ONSK2s",
+     "Po8tCjh7oPw",
+     "Q4_4DQRx8TE",
+     "QFBjOE7A_Uk"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "travel ban",
+   "verdict": "rhetoric",
+   "why": "A policy subject, not a shared claim; titles argue opposing things about it.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 37,
+    "channels": 11,
+    "months": 11,
+    "span": "2017-01 → 2026-07",
+    "examples": [
+     "Tech CEOs Speak Out Against Trump's Travel Ban",
+     "Travel Ban to Stop Overseas Tech Workers Coming to U.S.?",
+     "Why Trump’s Travel Ban Is Fantastic for China"
+    ],
+    "ids": [
+     "-No7ozsmV9c",
+     "29CUxBvQRak",
+     "3R4Gc-LQEco",
+     "3q7RRjKC8eA",
+     "5LQ5uEPF7nE",
+     "7n7dCUSIKyE",
+     "9kCYKzv337w",
+     "AZ5pFXVaoL4",
+     "B-TrYWBJKb4",
+     "DqIEs5fX1_U",
+     "GmOCrhQvZKI",
+     "HQ6HTBgXelE",
+     "HzztbEeHLNs",
+     "SBg_lrQs4WA",
+     "Stq0bAIzVQ0",
+     "TTmCL4vIqzo",
+     "USNRF1spLYI",
+     "V9-gVVAQ67c",
+     "V_VdxK24Vz0",
+     "VuyZlf3MjBs"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "shows moments",
+   "verdict": "rhetoric",
+   "why": "Footage-teaser format across unrelated incidents.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 5,
+    "months": 8,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "Vdeo shows the moments after a self-driving taxi fell into a construction pit in central China",
+     "Surveillance video shows moments of shooting at Dallas ICE facility",
+     "Video shows moments prior to fatal train stabbing"
+    ],
+    "ids": [
+     "1r71XV0fmFo",
+     "4XKgJBV5uYI",
+     "CIvHdNyHeZk",
+     "GdcPGxUIBd0",
+     "Gy9FX0vJ9z4",
+     "MVNfM-rXwnk",
+     "Oas83B56sxo",
+     "RK9DOtNftbg",
+     "SHgt5U9blGs",
+     "UbaKxE3DYwI",
+     "UmcYSisLcGk",
+     "Z7UKSfyWSoU",
+     "d7BbwDtHkt8",
+     "dH_2xAfzRzs",
+     "ilM30NwCajg",
+     "kWi-bUbbq48",
+     "m0Tg6hByZGU",
+     "wWIYM41zjBk",
+     "wcLze-iozho"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "dead several",
+   "verdict": "rhetoric",
+   "why": "Casualty-count headline boilerplate, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 4,
+    "months": 10,
+    "span": "2023-06 → 2026-02",
+    "examples": [
+     "Video captures crash of city bus that left woman dead, several others injured in Mississauga, Ont.",
+     "Auckland shooting: 3 dead, several injured at construction site in New Zealand",
+     "1 person dead, several injured after tent collapses at Alberta meditation centre"
+    ],
+    "ids": [
+     "1rD10jfYbvc",
+     "2Waarxrk9PE",
+     "KRQPWGPYcFM",
+     "MNefue_M7TE",
+     "SbAFBROozf4",
+     "T4UGFwzwmMU",
+     "aZNRt8bIZKY",
+     "bv4MOJnVYlE",
+     "cjo8KXCq3LU",
+     "db2u6OMBppA",
+     "gBuTb96Tk5M",
+     "opDqJucMYqk",
+     "rHr17ERZ4rE",
+     "uBH3GJdUlSM"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "truck crashes",
+   "verdict": "rhetoric",
+   "why": "Unrelated accident events with no common assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 7,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "U-Haul truck crashes into barriers near White House, investigators recover Nazi flag",
+     "Dump truck crashes into house in New Jersey",
+     "Millions of bees set loose, swarm Washington road after transport truck crashes 🐝"
+    ],
+    "ids": [
+     "-CY-mc0d-pc",
+     "0HduqUiyJ9Q",
+     "0Ph6gX83kqQ",
+     "2_qQVtGfgWU",
+     "3GZ3Zn9NZY8",
+     "JBS3SqNNnvM",
+     "JKj1J8iw5Og",
+     "LXZb2XfvbNo",
+     "dzCJ0fnusGk",
+     "hgWnbGzv_zM",
+     "kZbhTPF7edk",
+     "tu8m4AfKmUE"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "roof collapse",
+   "verdict": "rhetoric",
+   "why": "Disaster subject matter, no shared cause or outcome claimed.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 8,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "Mexico church roof collapse: At least 10 dead, dozens injured as rescue operations continue",
+     "Serbia protests: Anti-government students march 80 km after fatal railway roof collapse",
+     "Death toll from Dominican Republic nightclub roof collapse rises to 124"
+    ],
+    "ids": [
+     "7HoEX98rTr4",
+     "B4ZI2kPAA-4",
+     "H01A9rI2XM4",
+     "H1tCq71D81c",
+     "IYMZYxMdrmM",
+     "JVUbziOmgsU",
+     "ad9GD_VMNh0",
+     "c3_MKNdE9Nw",
+     "eKd3yEKHEgw",
+     "nzvXPsftUwk"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "dead wounded",
+   "verdict": "rhetoric",
+   "why": "Standard casualty phrasing in breaking-news titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 8,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "Texas shooting: 3 dead, 8 wounded in Fort Worth minutes before 4th of July",
+     "BC RCMP officer shot dead,  2 wounded and suspect shot in Metro Vancouver",
+     "\"Christians Are Under Attack\" - Michigan LDS Church Shooting Sparks OUTRAGE After 4 Dead, 8 Wounded"
+    ],
+    "ids": [
+     "88vPCwjk3HE",
+     "8sLKdKjzYf0",
+     "A0yA6iV_xQY",
+     "BUFWlESnE2s",
+     "GHvLXMDo6ik",
+     "XjNJCdYSUFU",
+     "bWLe5JSgVQE",
+     "ecg8LVmDmvg",
+     "fdL0DNa0G9M",
+     "llvfgtlkI3Y"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
+  },
+  {
+   "phrase": "trick saves",
+   "verdict": "rhetoric",
+   "why": "Clickbait hook formula spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 6,
+    "span": "2025-10 → 2026-07",
+    "examples": [
+     "This 3-Second Trick Saves Your Back!  #drmandell #health #back #noseovertoes",
+     "The Android Trick That SAVES Your Battery! 🔋 #shorts #android #techtips #androidtricks #bluetooth",
+     "This .EDU Email Trick Saves You Thousands"
+    ],
+    "ids": [
+     "02neW__b3IA",
+     "5UracdPuFdU",
+     "KqVKacnkc00",
+     "R4JZ0Oqq53o",
+     "Rc7AlqlZ8Lc",
+     "TDCxtQQPaWs",
+     "TW2RAW8Rh1w",
+     "bCTa0Qtayqc",
+     "eyxeNoFjjSM",
+     "jDGaEwhVdRo"
+    ]
+   },
+   "first_read": "2026-09-23",
+   "last_read": "2026-09-23"
   }
  ]
 }
