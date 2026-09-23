@@ -5166,6 +5166,81 @@
         "comments": 4,
         "enrichedOn": "2026-09-22"
       }
+    },
+    {
+      "videoId": "qu-AP6d1R8U",
+      "title": "Canadian Dollar TANKING AGAIN! Bank of Canada WARNING — Should You Be Worried?",
+      "channel": "Market Mania 🏴‍☠️",
+      "url": "https://www.youtube.com/watch?v=qu-AP6d1R8U",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": 28974,
+      "length": "20:39",
+      "age_days": 1,
+      "query": "channel sweep: Market Mania 🏴‍☠️",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UClkNEKZ_pExnu6oCC4YpFAA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1078,
+        "comments": 219,
+        "enrichedOn": "2026-09-23"
+      }
+    },
+    {
+      "videoId": "RAqfB3lSbec",
+      "title": "Bank of Canada Governor Warns of Growth Risks as Trade Talks Falter",
+      "channel": "First Financial News",
+      "url": "https://www.youtube.com/watch?v=RAqfB3lSbec",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": 0,
+      "length": "3:06",
+      "age_days": 1,
+      "query": "channel sweep: First Financial News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCdOvJlyXYK3yvpVjJe4ontQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
+      }
+    },
+    {
+      "videoId": "FEZ_kDqXd40",
+      "title": "Bank of Canada Governor Warns of Growth Risks as Trade Talks Falter #Shorts",
+      "channel": "First Financial News",
+      "url": "https://www.youtube.com/watch?v=FEZ_kDqXd40",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": 7,
+      "length": "1:01",
+      "age_days": 1,
+      "query": "channel sweep: First Financial News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCdOvJlyXYK3yvpVjJe4ontQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
+      }
     }
   ]
 }
