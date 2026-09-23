@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-09-22",
+  "updated": "2026-09-23",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-09-22"
+      "unavailable": "2026-09-23"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -47968,15 +47968,22 @@
       "url": "https://www.youtube.com/watch?v=ulVim9E_o9M",
       "published": "2026-09-21",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 6,
+      "length": "3:40",
       "age_days": null,
       "query": "refiled from the pool (narrative:truth-about-ozempic-they-arent)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCa-pK8t2qrDjIJi84cd1ncQ"
+        "channelId": "UCa-pK8t2qrDjIJi84cd1ncQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -47986,15 +47993,22 @@
       "url": "https://www.youtube.com/watch?v=gy0hUvmdG8I",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "4:48",
       "age_days": null,
       "query": "refiled from the pool (narrative:truth-about-ozempic-they-arent)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCk3rUdaNO9p4kwJVmei0Jnw"
+        "channelId": "UCk3rUdaNO9p4kwJVmei0Jnw",
+        "category": "1",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-22",
+ "generated": "2026-09-23",
  "method": "titles only; 4+ videos, 3+ independent channels, 2+ distinct months, claim wording in the phrase",
  "candidates": [
   {
@@ -6405,60 +6405,6 @@
    "rank": 175.1
   },
   {
-   "phrase": "idea what's coming",
-   "videos": 29,
-   "channels": 14,
-   "months": 16,
-   "span": "2021-09 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "the-gold-and-silver-crash",
-   "home_share": 0.38,
-   "kind": "cross-narrative",
-   "examples": [
-    "Life Changing Money: \"You Have No Idea What's Coming With Bitcoin & Crypto In 2025\" | Raoul Pal",
-    "Most People have NO IDEA what's coming in the Stock Market",
-    "Most People Have NO IDEA What's Coming With The Bitcoin ETF - Michael Saylor"
-   ],
-   "ids": [
-    "035USfeJtgw",
-    "0_jPFXOgqJU",
-    "0eiIY2jezS4",
-    "3P19FbXlcyY",
-    "3Pszc59jajU",
-    "3_Zv8k1hxos",
-    "533-UvPMeOk",
-    "9EAwLjNY6wg",
-    "AXQ83uq8DU0",
-    "AjK6LOCDhPU",
-    "EHBUKPjreVE",
-    "Hc8M8w_kBe4",
-    "JrWRqMaptDA",
-    "OdjFDyG-Y_w",
-    "QjrhfJSahos",
-    "RennZ2vwY74",
-    "TcQjqtuFVw0",
-    "VCdLVfELuY0",
-    "VyFPZzMCzD8",
-    "X21J9R4SrRE",
-    "d1R8vrFo7oQ",
-    "he8-ktmXyi8",
-    "tiIGkG_54rs",
-    "wcb7v81MC5o",
-    "xVcPCw-PQN0",
-    "ybyou8r5deA",
-    "z9ibdR4RVso",
-    "zcoVkNb0IVU",
-    "zleUpcaz5pM"
-   ],
-   "also": [
-    "people idea what's coming",
-    "idea coming",
-    "idea what's coming gold"
-   ],
-   "specificity": 0.0013,
-   "rank": 172.3
-  },
-  {
    "phrase": "move coming",
    "videos": 99,
    "channels": 27,
@@ -6583,8 +6529,62 @@
     "won't move",
     "next big move coming"
    ],
-   "specificity": 0.0065,
-   "rank": 170.3
+   "specificity": 0.0064,
+   "rank": 173.0
+  },
+  {
+   "phrase": "idea what's coming",
+   "videos": 29,
+   "channels": 14,
+   "months": 16,
+   "span": "2021-09 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-gold-and-silver-crash",
+   "home_share": 0.38,
+   "kind": "cross-narrative",
+   "examples": [
+    "Life Changing Money: \"You Have No Idea What's Coming With Bitcoin & Crypto In 2025\" | Raoul Pal",
+    "Most People have NO IDEA what's coming in the Stock Market",
+    "Most People Have NO IDEA What's Coming With The Bitcoin ETF - Michael Saylor"
+   ],
+   "ids": [
+    "035USfeJtgw",
+    "0_jPFXOgqJU",
+    "0eiIY2jezS4",
+    "3P19FbXlcyY",
+    "3Pszc59jajU",
+    "3_Zv8k1hxos",
+    "533-UvPMeOk",
+    "9EAwLjNY6wg",
+    "AXQ83uq8DU0",
+    "AjK6LOCDhPU",
+    "EHBUKPjreVE",
+    "Hc8M8w_kBe4",
+    "JrWRqMaptDA",
+    "OdjFDyG-Y_w",
+    "QjrhfJSahos",
+    "RennZ2vwY74",
+    "TcQjqtuFVw0",
+    "VCdLVfELuY0",
+    "VyFPZzMCzD8",
+    "X21J9R4SrRE",
+    "d1R8vrFo7oQ",
+    "he8-ktmXyi8",
+    "tiIGkG_54rs",
+    "wcb7v81MC5o",
+    "xVcPCw-PQN0",
+    "ybyou8r5deA",
+    "z9ibdR4RVso",
+    "zcoVkNb0IVU",
+    "zleUpcaz5pM"
+   ],
+   "also": [
+    "people idea what's coming",
+    "idea coming",
+    "idea what's coming gold"
+   ],
+   "specificity": 0.0013,
+   "rank": 172.3
   },
   {
    "phrase": "2008 crash",
@@ -9958,6 +9958,59 @@
    "rank": 107.6
   },
   {
+   "phrase": "cycle dead",
+   "videos": 25,
+   "channels": 19,
+   "months": 13,
+   "span": "2025-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 1.0,
+   "kind": "sub-claim",
+   "examples": [
+    "Trump Tariffs Cause Bitcoin CRASH: 4 Year Cycle Dead?!",
+    "Is The Bitcoin 4-Year Cycle Dead?",
+    "The 4-Year Crypto Cycle Is DEAD \u2013 Here\u2019s What\u2019s Replacing It"
+   ],
+   "ids": [
+    "25VoqwPch8o",
+    "6dduNHVwG04",
+    "7byCfkDQxq8",
+    "AuX7lJLwamI",
+    "B-HPs6cPjdU",
+    "GEx6gh-g37M",
+    "PkvFvQexkug",
+    "T3vOy1JGsbE",
+    "UKBSyCaZnic",
+    "UkFnlzplkGg",
+    "XNuL97I8bvc",
+    "Y8--hjbs8AU",
+    "YMLtpQwUOtk",
+    "ctJSV8aTDSk",
+    "eYzNU9gwan0",
+    "hODgBEgy4QA",
+    "iCZqVszBUdk",
+    "k5dFxQUO_Uw",
+    "mMdgsabCjow",
+    "nEsfJCoyCLE",
+    "nOD0bG4DsdU",
+    "oOu6fEOC4zo",
+    "pQ7VHBAmXAo",
+    "u7KXf6qVPs8",
+    "vgLC3AIXdJA"
+   ],
+   "also": [
+    "4-year cycle dead",
+    "end cycle",
+    "bitcoin cycle dead",
+    "cycle ends",
+    "crypto cycle dead",
+    "crash cycle"
+   ],
+   "specificity": 0.0023,
+   "rank": 107.4
+  },
+  {
    "phrase": "data center boom",
    "videos": 21,
    "channels": 16,
@@ -10147,59 +10200,6 @@
    "rank": 104.0
   },
   {
-   "phrase": "cycle dead",
-   "videos": 25,
-   "channels": 19,
-   "months": 13,
-   "span": "2025-03 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "Trump Tariffs Cause Bitcoin CRASH: 4 Year Cycle Dead?!",
-    "Is The Bitcoin 4-Year Cycle Dead?",
-    "The 4-Year Crypto Cycle Is DEAD \u2013 Here\u2019s What\u2019s Replacing It"
-   ],
-   "ids": [
-    "25VoqwPch8o",
-    "6dduNHVwG04",
-    "7byCfkDQxq8",
-    "AuX7lJLwamI",
-    "B-HPs6cPjdU",
-    "GEx6gh-g37M",
-    "PkvFvQexkug",
-    "T3vOy1JGsbE",
-    "UKBSyCaZnic",
-    "UkFnlzplkGg",
-    "XNuL97I8bvc",
-    "Y8--hjbs8AU",
-    "YMLtpQwUOtk",
-    "ctJSV8aTDSk",
-    "eYzNU9gwan0",
-    "hODgBEgy4QA",
-    "iCZqVszBUdk",
-    "k5dFxQUO_Uw",
-    "mMdgsabCjow",
-    "nEsfJCoyCLE",
-    "nOD0bG4DsdU",
-    "oOu6fEOC4zo",
-    "pQ7VHBAmXAo",
-    "u7KXf6qVPs8",
-    "vgLC3AIXdJA"
-   ],
-   "also": [
-    "4-year cycle dead",
-    "end cycle",
-    "bitcoin cycle dead",
-    "cycle ends",
-    "crypto cycle dead",
-    "crash cycle"
-   ],
-   "specificity": 0.0024,
-   "rank": 102.9
-  },
-  {
    "phrase": "officially dead",
    "videos": 10,
    "channels": 9,
@@ -10314,82 +10314,6 @@
    ],
    "specificity": 0.0009,
    "rank": 101.1
-  },
-  {
-   "phrase": "drone shows",
-   "videos": 53,
-   "channels": 5,
-   "months": 26,
-   "span": "2023-05 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Italy floods: Drone video shows scale of flooding damage in northern region",
-    "Texas tornado: Drone video shows trail of destruction in Perryton",
-    "Haunting drone video shows Greek island of Rhodes blackened by wildfires"
-   ],
-   "ids": [
-    "-h7UyPu4CYU",
-    "0N-IH4aIjfU",
-    "2a9xEbWJT_4",
-    "2wTSlsOAzIs",
-    "3vNfOHEKxSg",
-    "585LnNea4IE",
-    "5DTm6W4pl3U",
-    "6_p4hqZee2Y",
-    "71APGgKhzx4",
-    "7qzizOWHCdg",
-    "94kIfNmh7xE",
-    "9Pz1FUDB-xE",
-    "9mI5dEhFH60",
-    "An9t0zJPo1I",
-    "Aq4ibqpl34E",
-    "Aw9rAUJ53K4",
-    "EAVic58mqRo",
-    "EQaJBn_bJN8",
-    "FHrZXytRbhg",
-    "FVpOg_7Zqk4",
-    "FdhhAk7HlEs",
-    "GVc81-9tM84",
-    "HWsAi8UaY1A",
-    "Huemt54sv80",
-    "PLYryfiANKE",
-    "Pan4Lo7UZ7Q",
-    "S-k8fnsHGU0",
-    "S5XDePM1dPI",
-    "UebiHOnkMSQ",
-    "VxzUu_hOBU4",
-    "WSUu4ce-_Ds",
-    "Z-7FWvck4gI",
-    "bQpJydsFG2A",
-    "bnWgQu7vkto",
-    "eM1kpWRUQCw",
-    "gGyLresjuWg",
-    "gMEYZX469gs",
-    "hKGrc--tNyM",
-    "hpLrEXch2QI",
-    "inolYugdhkE",
-    "lhOqf8b525I",
-    "pBxcVxNIfY4",
-    "q8kD7wU95FM",
-    "qXq3IAiughs",
-    "rk9pnS1znU0",
-    "ruC9x4_nmOs",
-    "so8XVpJKbh8",
-    "suWENA0dDT4",
-    "t9n3xcWzmDI",
-    "uRzBjoLmMww",
-    "uS4koOsWXVA",
-    "z0flqflGWMM",
-    "zh_tNRdlqfE"
-   ],
-   "also": [
-    "drone show"
-   ],
-   "specificity": 0.0013,
-   "rank": 100.0
   },
   {
    "phrase": "air show",
@@ -11343,6 +11267,82 @@
    ],
    "specificity": 0.0011,
    "rank": 94.5
+  },
+  {
+   "phrase": "drone shows",
+   "videos": 53,
+   "channels": 5,
+   "months": 26,
+   "span": "2023-05 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Italy floods: Drone video shows scale of flooding damage in northern region",
+    "Texas tornado: Drone video shows trail of destruction in Perryton",
+    "Haunting drone video shows Greek island of Rhodes blackened by wildfires"
+   ],
+   "ids": [
+    "-h7UyPu4CYU",
+    "0N-IH4aIjfU",
+    "2a9xEbWJT_4",
+    "2wTSlsOAzIs",
+    "3vNfOHEKxSg",
+    "585LnNea4IE",
+    "5DTm6W4pl3U",
+    "6_p4hqZee2Y",
+    "71APGgKhzx4",
+    "7qzizOWHCdg",
+    "94kIfNmh7xE",
+    "9Pz1FUDB-xE",
+    "9mI5dEhFH60",
+    "An9t0zJPo1I",
+    "Aq4ibqpl34E",
+    "Aw9rAUJ53K4",
+    "EAVic58mqRo",
+    "EQaJBn_bJN8",
+    "FHrZXytRbhg",
+    "FVpOg_7Zqk4",
+    "FdhhAk7HlEs",
+    "GVc81-9tM84",
+    "HWsAi8UaY1A",
+    "Huemt54sv80",
+    "PLYryfiANKE",
+    "Pan4Lo7UZ7Q",
+    "S-k8fnsHGU0",
+    "S5XDePM1dPI",
+    "UebiHOnkMSQ",
+    "VxzUu_hOBU4",
+    "WSUu4ce-_Ds",
+    "Z-7FWvck4gI",
+    "bQpJydsFG2A",
+    "bnWgQu7vkto",
+    "eM1kpWRUQCw",
+    "gGyLresjuWg",
+    "gMEYZX469gs",
+    "hKGrc--tNyM",
+    "hpLrEXch2QI",
+    "inolYugdhkE",
+    "lhOqf8b525I",
+    "pBxcVxNIfY4",
+    "q8kD7wU95FM",
+    "qXq3IAiughs",
+    "rk9pnS1znU0",
+    "ruC9x4_nmOs",
+    "so8XVpJKbh8",
+    "suWENA0dDT4",
+    "t9n3xcWzmDI",
+    "uRzBjoLmMww",
+    "uS4koOsWXVA",
+    "z0flqflGWMM",
+    "zh_tNRdlqfE"
+   ],
+   "also": [
+    "drone show"
+   ],
+   "specificity": 0.0014,
+   "rank": 92.9
   },
   {
    "phrase": "building collapse",
@@ -12932,6 +12932,260 @@
    "rank": 80.7
   },
   {
+   "phrase": "end war",
+   "videos": 199,
+   "channels": 37,
+   "months": 27,
+   "span": "2023-08 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.98,
+   "kind": "new candidate",
+   "examples": [
+    "Vivek Ramaswamy's Plan to End the War Between Russia and Ukraine",
+    "Tensions Erupt\u2026China And US Will End In War (WARNING)",
+    "Lose/Lose Situation\u2026The United States Could End This War TODAY"
+   ],
+   "ids": [
+    "-4dfaOMUMRw",
+    "-IwLDjYuf7w",
+    "-bDZ-sVSCws",
+    "0MJPvogYt54",
+    "0RorvsUyPr0",
+    "0TXHpq1DtdI",
+    "0negYFr442E",
+    "13Hkk_kJz6A",
+    "16_W5xnOOsk",
+    "1dHi5ZTSntE",
+    "1lxEieXLcDk",
+    "29L3Ve5Oo-0",
+    "2DX6RPEd-Ho",
+    "2yxPDHZJkV0",
+    "31EJU7drxbA",
+    "35Jtl44_agE",
+    "3GUFj972V70",
+    "3Qc6gDQNcfY",
+    "3WEtb2hTvk8",
+    "3wDCuNG5s2I",
+    "4YHhsTrBNpo",
+    "4hfI8bYmk0A",
+    "56Ec0ZBfV2s",
+    "5MZv4TrjFr8",
+    "5cY0DIOdEW8",
+    "67g2hxy2p78",
+    "67o-Sn9zVrU",
+    "6_JGtN4Wa0I",
+    "6fAG0ejL2Hc",
+    "6l1nBEL6-20",
+    "73DQ8DtBUng",
+    "7FCp44_jizs",
+    "8VgUi4bApNA",
+    "8brRBQiYvgA",
+    "8qF802uLpoo",
+    "9DlaW-TpIjM",
+    "9KV3eFimdTE",
+    "AY-XGc7SCRo",
+    "A_T-J7OIhI8",
+    "AejzyiLPfU4",
+    "AowBrDRH7Co",
+    "AqHCn5jyJks",
+    "AwwU_e1_YxA",
+    "B8d_ZIoPBQg",
+    "BTOh40n4l7w",
+    "Bja5qP2b3kI",
+    "CJS2Z-kDsfE",
+    "DLTBfBlahIs",
+    "DeJiOnoHmh0",
+    "DobrO9MiNvI",
+    "Dr6jD4DVOYs",
+    "Dt0siw2armk",
+    "EI4aZeIPotk",
+    "EXVjYE6EPAM",
+    "EdaZzxfPYp0",
+    "Ef4hfFEpHn8",
+    "EokTmDGoFaE",
+    "FDN7z8tGWXM",
+    "G6MQj0xeuDY",
+    "GIHE_dO5yOE",
+    "GWDGZqnOsSE",
+    "Gpl08i14Y5k",
+    "HK8d0tz_gbA",
+    "HVbGB7sKMRc",
+    "HkCosaveiHQ",
+    "HsNo5ORNEGU",
+    "HtTG0VqhlqA",
+    "INw3W0DTaZY",
+    "ISgPESo2ZeY",
+    "IYxIi9rrtZc",
+    "Ix6_vsGOtIk",
+    "JP5kKmPOGYY",
+    "KAhk-RVyEik",
+    "KWldMiiD9ng",
+    "KkBLgGZeGgM",
+    "Kq4NjPGd8OY",
+    "KyaMpUci-w4",
+    "LHmZ4pjDgA4",
+    "LnfxtoafzVs",
+    "M3jqOaB0eyo",
+    "M_LQ_v-plSw",
+    "MmeQ6KtWEq4",
+    "NhRHuknembE",
+    "O-fHsW19FW4",
+    "O4pdrgN6s2M",
+    "OJPypbCs6vI",
+    "OZH10fKxoRw",
+    "PG364b_TJYU",
+    "P_UkNWAM-fg",
+    "Q3xjRcqUf3E",
+    "Q6PS3_Etf_4",
+    "QAnjIiTgCHM",
+    "QCpRUz2u3IU",
+    "QU5b-9-c1v0",
+    "R1G0sbsrMdE",
+    "RA1His8elEc",
+    "REmwPg3qfOo",
+    "RLc76vgiiu8",
+    "Rg2wRn5VvgY",
+    "RscD4zRK5Tk",
+    "SRgUJEK4tkE",
+    "SqCgFM_8yUA",
+    "TATgGoUUK-4",
+    "TLqrZntBFXQ",
+    "TpOwpWwmRcM",
+    "Tx_rWmc8hXs",
+    "URIfRa2J4Cg",
+    "Um8nk4gyPek",
+    "UwnxTXLvXf4",
+    "Vhpbdxva3J8",
+    "VnhVRO6V5mE",
+    "VrVv59HSVWs",
+    "WcYtlwkMDjE",
+    "WvaDlPuHfks",
+    "X5hgZX2n6DY",
+    "XNd90ti55oc",
+    "XwbSm2sejWY",
+    "Y7P-zdnz-Rw",
+    "Y8qhbAz9lvQ",
+    "YAGnCKddeFE",
+    "YJORruS582Q",
+    "YgrgUEl4_d4",
+    "Z-VMF0Q5WDM",
+    "ZBHeHauQReI",
+    "ZWRt7TW3OIk",
+    "ZfyIXj-pPEo",
+    "_Dxk-rsYbp0",
+    "_pSI0cvu1lo",
+    "ay5hrOsxv6A",
+    "bQ10_KUIKWo",
+    "bdzidcUiPng",
+    "cIY8jczMWFU",
+    "cmT9eLrMCOw",
+    "d0JzZCSAPe0",
+    "d4VNVybZuG8",
+    "dE2cgz0MCCw",
+    "dZmNJX3xCm4",
+    "dzL80eJZqog",
+    "ePKH1JVDNzA",
+    "eU7xJP-6E6E",
+    "f1V7WcTpOBk",
+    "f4N7-dHg3IE",
+    "fZiuHRNoZE0",
+    "fzbhOLpCRZQ",
+    "g4xzL-QUSGk",
+    "gLxLr2vAlvs",
+    "goNrINmZrUk",
+    "h1llfWQnyGw",
+    "hDNkADpVuxo",
+    "hzk4yHWSpKw",
+    "ifmAfcAsbjU",
+    "iyZeA7vDXJo",
+    "jEd54lWggHA",
+    "jIfzeCFN488",
+    "jNpkYybCAhc",
+    "jboUrZDAssk",
+    "jcUDWsxEiuA",
+    "jdawTfVF2s8",
+    "jf4zyBvQ06c",
+    "jt-Cxm6KD-8",
+    "k0a00C916nk",
+    "k37-z9SLah0",
+    "k4GW6wkJQs0",
+    "kvE3cf5WFhc",
+    "nAbaCU7cFBY",
+    "nMYhdYbTjHA",
+    "ns6-fLAtWIA",
+    "oDMUYufWK5Q",
+    "oS09ywVfoe4",
+    "obCvA0itytE",
+    "p9PatXXKuIo",
+    "pEbyEZ3IuX4",
+    "q0sOxwvKde0",
+    "q81tqhY0qXk",
+    "qsbPN8p5hNc",
+    "rIfiXBIgWSE",
+    "rRrsxLxyRZE",
+    "rXd7H0nQQl0",
+    "roLTRhCFTyU",
+    "ruVTnqExBEc",
+    "s61zL58ZdY0",
+    "suY8Aa89KSE",
+    "tqpBdVy0wi4",
+    "tw-ePIdnuH8",
+    "u0s45VXD5Cs",
+    "uMgAp0_loKg",
+    "uqmc70T-RJw",
+    "vL-DjOqE26E",
+    "vsAyxI-XpS0",
+    "w4Nl-3c29bk",
+    "w8zxu4o5dr8",
+    "wMNMmph05Xs",
+    "wSqsY0xYaGY",
+    "wh7nMY5JZIw",
+    "wiF7y_3ci1s",
+    "wuE5FbM57Zw",
+    "x7SW_6t6trY",
+    "yiR9rfUFQ9g",
+    "yzwh2-N6Tao"
+   ],
+   "also": [
+    "war end",
+    "end war gaza",
+    "war ends",
+    "end war ukraine",
+    "deal end war",
+    "win war",
+    "ending war",
+    "plan end war",
+    "war coming",
+    "war imminent",
+    "proposal end",
+    "war means",
+    "putin end",
+    "crash war",
+    "proposal end war",
+    "end war trump",
+    "war ending",
+    "demands end",
+    "war ended",
+    "plan end war gaza",
+    "end war russia",
+    "putin end war",
+    "trump end war",
+    "war actually",
+    "war drives",
+    "war soon",
+    "push end",
+    "calls end war",
+    "says war end",
+    "demands end war",
+    "war end soon",
+    "war really",
+    "war won't"
+   ],
+   "specificity": 0.0124,
+   "rank": 80.6
+  },
+  {
    "phrase": "truth ozempic",
    "videos": 20,
    "channels": 19,
@@ -13459,260 +13713,6 @@
    ],
    "specificity": 0.0003,
    "rank": 80.0
-  },
-  {
-   "phrase": "end war",
-   "videos": 199,
-   "channels": 37,
-   "months": 27,
-   "span": "2023-08 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.98,
-   "kind": "new candidate",
-   "examples": [
-    "Vivek Ramaswamy's Plan to End the War Between Russia and Ukraine",
-    "Tensions Erupt\u2026China And US Will End In War (WARNING)",
-    "Lose/Lose Situation\u2026The United States Could End This War TODAY"
-   ],
-   "ids": [
-    "-4dfaOMUMRw",
-    "-IwLDjYuf7w",
-    "-bDZ-sVSCws",
-    "0MJPvogYt54",
-    "0RorvsUyPr0",
-    "0TXHpq1DtdI",
-    "0negYFr442E",
-    "13Hkk_kJz6A",
-    "16_W5xnOOsk",
-    "1dHi5ZTSntE",
-    "1lxEieXLcDk",
-    "29L3Ve5Oo-0",
-    "2DX6RPEd-Ho",
-    "2yxPDHZJkV0",
-    "31EJU7drxbA",
-    "35Jtl44_agE",
-    "3GUFj972V70",
-    "3Qc6gDQNcfY",
-    "3WEtb2hTvk8",
-    "3wDCuNG5s2I",
-    "4YHhsTrBNpo",
-    "4hfI8bYmk0A",
-    "56Ec0ZBfV2s",
-    "5MZv4TrjFr8",
-    "5cY0DIOdEW8",
-    "67g2hxy2p78",
-    "67o-Sn9zVrU",
-    "6_JGtN4Wa0I",
-    "6fAG0ejL2Hc",
-    "6l1nBEL6-20",
-    "73DQ8DtBUng",
-    "7FCp44_jizs",
-    "8VgUi4bApNA",
-    "8brRBQiYvgA",
-    "8qF802uLpoo",
-    "9DlaW-TpIjM",
-    "9KV3eFimdTE",
-    "AY-XGc7SCRo",
-    "A_T-J7OIhI8",
-    "AejzyiLPfU4",
-    "AowBrDRH7Co",
-    "AqHCn5jyJks",
-    "AwwU_e1_YxA",
-    "B8d_ZIoPBQg",
-    "BTOh40n4l7w",
-    "Bja5qP2b3kI",
-    "CJS2Z-kDsfE",
-    "DLTBfBlahIs",
-    "DeJiOnoHmh0",
-    "DobrO9MiNvI",
-    "Dr6jD4DVOYs",
-    "Dt0siw2armk",
-    "EI4aZeIPotk",
-    "EXVjYE6EPAM",
-    "EdaZzxfPYp0",
-    "Ef4hfFEpHn8",
-    "EokTmDGoFaE",
-    "FDN7z8tGWXM",
-    "G6MQj0xeuDY",
-    "GIHE_dO5yOE",
-    "GWDGZqnOsSE",
-    "Gpl08i14Y5k",
-    "HK8d0tz_gbA",
-    "HVbGB7sKMRc",
-    "HkCosaveiHQ",
-    "HsNo5ORNEGU",
-    "HtTG0VqhlqA",
-    "INw3W0DTaZY",
-    "ISgPESo2ZeY",
-    "IYxIi9rrtZc",
-    "Ix6_vsGOtIk",
-    "JP5kKmPOGYY",
-    "KAhk-RVyEik",
-    "KWldMiiD9ng",
-    "KkBLgGZeGgM",
-    "Kq4NjPGd8OY",
-    "KyaMpUci-w4",
-    "LHmZ4pjDgA4",
-    "LnfxtoafzVs",
-    "M3jqOaB0eyo",
-    "M_LQ_v-plSw",
-    "MmeQ6KtWEq4",
-    "NhRHuknembE",
-    "O-fHsW19FW4",
-    "O4pdrgN6s2M",
-    "OJPypbCs6vI",
-    "OZH10fKxoRw",
-    "PG364b_TJYU",
-    "P_UkNWAM-fg",
-    "Q3xjRcqUf3E",
-    "Q6PS3_Etf_4",
-    "QAnjIiTgCHM",
-    "QCpRUz2u3IU",
-    "QU5b-9-c1v0",
-    "R1G0sbsrMdE",
-    "RA1His8elEc",
-    "REmwPg3qfOo",
-    "RLc76vgiiu8",
-    "Rg2wRn5VvgY",
-    "RscD4zRK5Tk",
-    "SRgUJEK4tkE",
-    "SqCgFM_8yUA",
-    "TATgGoUUK-4",
-    "TLqrZntBFXQ",
-    "TpOwpWwmRcM",
-    "Tx_rWmc8hXs",
-    "URIfRa2J4Cg",
-    "Um8nk4gyPek",
-    "UwnxTXLvXf4",
-    "Vhpbdxva3J8",
-    "VnhVRO6V5mE",
-    "VrVv59HSVWs",
-    "WcYtlwkMDjE",
-    "WvaDlPuHfks",
-    "X5hgZX2n6DY",
-    "XNd90ti55oc",
-    "XwbSm2sejWY",
-    "Y7P-zdnz-Rw",
-    "Y8qhbAz9lvQ",
-    "YAGnCKddeFE",
-    "YJORruS582Q",
-    "YgrgUEl4_d4",
-    "Z-VMF0Q5WDM",
-    "ZBHeHauQReI",
-    "ZWRt7TW3OIk",
-    "ZfyIXj-pPEo",
-    "_Dxk-rsYbp0",
-    "_pSI0cvu1lo",
-    "ay5hrOsxv6A",
-    "bQ10_KUIKWo",
-    "bdzidcUiPng",
-    "cIY8jczMWFU",
-    "cmT9eLrMCOw",
-    "d0JzZCSAPe0",
-    "d4VNVybZuG8",
-    "dE2cgz0MCCw",
-    "dZmNJX3xCm4",
-    "dzL80eJZqog",
-    "ePKH1JVDNzA",
-    "eU7xJP-6E6E",
-    "f1V7WcTpOBk",
-    "f4N7-dHg3IE",
-    "fZiuHRNoZE0",
-    "fzbhOLpCRZQ",
-    "g4xzL-QUSGk",
-    "gLxLr2vAlvs",
-    "goNrINmZrUk",
-    "h1llfWQnyGw",
-    "hDNkADpVuxo",
-    "hzk4yHWSpKw",
-    "ifmAfcAsbjU",
-    "iyZeA7vDXJo",
-    "jEd54lWggHA",
-    "jIfzeCFN488",
-    "jNpkYybCAhc",
-    "jboUrZDAssk",
-    "jcUDWsxEiuA",
-    "jdawTfVF2s8",
-    "jf4zyBvQ06c",
-    "jt-Cxm6KD-8",
-    "k0a00C916nk",
-    "k37-z9SLah0",
-    "k4GW6wkJQs0",
-    "kvE3cf5WFhc",
-    "nAbaCU7cFBY",
-    "nMYhdYbTjHA",
-    "ns6-fLAtWIA",
-    "oDMUYufWK5Q",
-    "oS09ywVfoe4",
-    "obCvA0itytE",
-    "p9PatXXKuIo",
-    "pEbyEZ3IuX4",
-    "q0sOxwvKde0",
-    "q81tqhY0qXk",
-    "qsbPN8p5hNc",
-    "rIfiXBIgWSE",
-    "rRrsxLxyRZE",
-    "rXd7H0nQQl0",
-    "roLTRhCFTyU",
-    "ruVTnqExBEc",
-    "s61zL58ZdY0",
-    "suY8Aa89KSE",
-    "tqpBdVy0wi4",
-    "tw-ePIdnuH8",
-    "u0s45VXD5Cs",
-    "uMgAp0_loKg",
-    "uqmc70T-RJw",
-    "vL-DjOqE26E",
-    "vsAyxI-XpS0",
-    "w4Nl-3c29bk",
-    "w8zxu4o5dr8",
-    "wMNMmph05Xs",
-    "wSqsY0xYaGY",
-    "wh7nMY5JZIw",
-    "wiF7y_3ci1s",
-    "wuE5FbM57Zw",
-    "x7SW_6t6trY",
-    "yiR9rfUFQ9g",
-    "yzwh2-N6Tao"
-   ],
-   "also": [
-    "war end",
-    "end war gaza",
-    "war ends",
-    "end war ukraine",
-    "deal end war",
-    "win war",
-    "ending war",
-    "plan end war",
-    "war coming",
-    "war imminent",
-    "proposal end",
-    "war means",
-    "putin end",
-    "crash war",
-    "proposal end war",
-    "end war trump",
-    "war ending",
-    "demands end",
-    "war ended",
-    "plan end war gaza",
-    "end war russia",
-    "putin end war",
-    "trump end war",
-    "war actually",
-    "war drives",
-    "war soon",
-    "push end",
-    "calls end war",
-    "says war end",
-    "demands end war",
-    "war end soon",
-    "war really",
-    "war won't"
-   ],
-   "specificity": 0.0125,
-   "rank": 79.9
   },
   {
    "phrase": "actually healthy",
@@ -15032,6 +15032,83 @@
    "rank": 72.0
   },
   {
+   "phrase": "save time",
+   "videos": 40,
+   "channels": 36,
+   "months": 22,
+   "span": "2017-03 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.9,
+   "kind": "new candidate",
+   "examples": [
+    "Dr Mandell's Self-Help Videos to Save You Time & Money",
+    "How an App and AI Is Helping Doctors Save Time During the Pandemic",
+    "BrainTap can save you time \ud83e\uddd8\ud83c\udffc\u200d\u2640\ufe0f\ud83e\udde0#shorts #meditation"
+   ],
+   "ids": [
+    "-02L_Abp0Jw",
+    "-owyTLMfv0g",
+    "0EqmwC3PFQo",
+    "1WqDc66K_dw",
+    "4qnm-niU53M",
+    "5ID22ACI7IM",
+    "76LjnRYE-HE",
+    "CptJ9XNEs4g",
+    "FYozWmg-pi4",
+    "Gj7vjnO-uhA",
+    "HkRiNEoSakU",
+    "IRAbcpMrOiY",
+    "IU3MYIWK-uY",
+    "JaPjcs5gMmw",
+    "QIo-ZQjj77k",
+    "QKotGScKDmc",
+    "STd07QswCpk",
+    "UhHFKCPotGk",
+    "WBlKeiq8fQc",
+    "WEHM4OcRMzs",
+    "X8xV3jqw9oE",
+    "XElZQW_qbqw",
+    "ZSnJqcEYDds",
+    "ZUksy9NtaQg",
+    "ZuXAsesLwRw",
+    "_TliRVyDXq0",
+    "b8p0cL0HGbA",
+    "bQgr6baLwa0",
+    "bpracRKaLFU",
+    "bxmNnyOD1mA",
+    "dsAxcmNVEKQ",
+    "dv9Tzq6PVQM",
+    "gai79B0_BrE",
+    "gyWL_t0Da-A",
+    "hBAQThmxTuU",
+    "hoA3wHNIkYE",
+    "oqTbBOOzUzA",
+    "pQso_lZKei8",
+    "rxPJRjq4TRo",
+    "xAIK_oCijP8"
+   ],
+   "also": [
+    "end time",
+    "crash time",
+    "time coming",
+    "time fix",
+    "long time coming",
+    "time high soon",
+    "truth time",
+    "saves time",
+    "time end",
+    "time actually",
+    "coming time",
+    "time show",
+    "time soon",
+    "crashing time",
+    "show time"
+   ],
+   "specificity": 0.0111,
+   "rank": 71.4
+  },
+  {
    "phrase": "until end",
    "videos": 15,
    "channels": 12,
@@ -15443,82 +15520,6 @@
    ],
    "specificity": 0.0031,
    "rank": 69.7
-  },
-  {
-   "phrase": "save time",
-   "videos": 39,
-   "channels": 35,
-   "months": 22,
-   "span": "2017-03 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.9,
-   "kind": "new candidate",
-   "examples": [
-    "Dr Mandell's Self-Help Videos to Save You Time & Money",
-    "How an App and AI Is Helping Doctors Save Time During the Pandemic",
-    "BrainTap can save you time \ud83e\uddd8\ud83c\udffc\u200d\u2640\ufe0f\ud83e\udde0#shorts #meditation"
-   ],
-   "ids": [
-    "-02L_Abp0Jw",
-    "-owyTLMfv0g",
-    "0EqmwC3PFQo",
-    "1WqDc66K_dw",
-    "4qnm-niU53M",
-    "5ID22ACI7IM",
-    "76LjnRYE-HE",
-    "CptJ9XNEs4g",
-    "FYozWmg-pi4",
-    "Gj7vjnO-uhA",
-    "HkRiNEoSakU",
-    "IRAbcpMrOiY",
-    "IU3MYIWK-uY",
-    "JaPjcs5gMmw",
-    "QIo-ZQjj77k",
-    "QKotGScKDmc",
-    "STd07QswCpk",
-    "UhHFKCPotGk",
-    "WBlKeiq8fQc",
-    "WEHM4OcRMzs",
-    "X8xV3jqw9oE",
-    "ZSnJqcEYDds",
-    "ZUksy9NtaQg",
-    "ZuXAsesLwRw",
-    "_TliRVyDXq0",
-    "b8p0cL0HGbA",
-    "bQgr6baLwa0",
-    "bpracRKaLFU",
-    "bxmNnyOD1mA",
-    "dsAxcmNVEKQ",
-    "dv9Tzq6PVQM",
-    "gai79B0_BrE",
-    "gyWL_t0Da-A",
-    "hBAQThmxTuU",
-    "hoA3wHNIkYE",
-    "oqTbBOOzUzA",
-    "pQso_lZKei8",
-    "rxPJRjq4TRo",
-    "xAIK_oCijP8"
-   ],
-   "also": [
-    "end time",
-    "crash time",
-    "time coming",
-    "time fix",
-    "long time coming",
-    "time high soon",
-    "truth time",
-    "saves time",
-    "time end",
-    "time actually",
-    "coming time",
-    "time show",
-    "time soon",
-    "crashing time",
-    "show time"
-   ],
-   "specificity": 0.0111,
-   "rank": 69.4
   },
   {
    "phrase": "must eat",
@@ -15941,6 +15942,54 @@
    "rank": 65.0
   },
   {
+   "phrase": "replace human",
+   "videos": 21,
+   "channels": 18,
+   "months": 9,
+   "span": "2016-11 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "AI and Automation Can't Replace Being Human  - Jacob Morgan",
+    "Can Artificial Intelligence Truly Replace Human Doctors?",
+    "How AI-Powered Iron Man Suits Could Replace the Human Warfighter"
+   ],
+   "ids": [
+    "3tURhOtmSWs",
+    "5VzICHlovfc",
+    "ArZMFaKgrtU",
+    "Cut7PkCycvE",
+    "H6GzGrHdhwA",
+    "HL1UsSNl1XE",
+    "JiNmY1vh7SM",
+    "KS9rERJfxcg",
+    "MoGgVkDfxO8",
+    "P1id5tYD1WU",
+    "Pdq4U9xQQrY",
+    "Tue4a0EADA4",
+    "VJEBIU3CfhU",
+    "VQtxB69Uq2Q",
+    "XPiAD9ppaZs",
+    "_cbWRpvK9xw",
+    "huwxUdEgLBI",
+    "jqnOxNlHxMg",
+    "pUWasmfO6ak",
+    "pai73pFNjDI",
+    "yEsuK8ENnug"
+   ],
+   "also": [
+    "end human",
+    "actually human",
+    "beats human",
+    "isn't human",
+    "truth human"
+   ],
+   "specificity": 0.0025,
+   "rank": 64.8
+  },
+  {
    "phrase": "partially collapses",
    "videos": 12,
    "channels": 4,
@@ -16125,53 +16174,6 @@
    ],
    "specificity": 0.001,
    "rank": 63.0
-  },
-  {
-   "phrase": "replace human",
-   "videos": 20,
-   "channels": 17,
-   "months": 9,
-   "span": "2016-11 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "AI and Automation Can't Replace Being Human  - Jacob Morgan",
-    "Can Artificial Intelligence Truly Replace Human Doctors?",
-    "How AI-Powered Iron Man Suits Could Replace the Human Warfighter"
-   ],
-   "ids": [
-    "3tURhOtmSWs",
-    "5VzICHlovfc",
-    "Cut7PkCycvE",
-    "H6GzGrHdhwA",
-    "HL1UsSNl1XE",
-    "JiNmY1vh7SM",
-    "KS9rERJfxcg",
-    "MoGgVkDfxO8",
-    "P1id5tYD1WU",
-    "Pdq4U9xQQrY",
-    "Tue4a0EADA4",
-    "VJEBIU3CfhU",
-    "VQtxB69Uq2Q",
-    "XPiAD9ppaZs",
-    "_cbWRpvK9xw",
-    "huwxUdEgLBI",
-    "jqnOxNlHxMg",
-    "pUWasmfO6ak",
-    "pai73pFNjDI",
-    "yEsuK8ENnug"
-   ],
-   "also": [
-    "end human",
-    "actually human",
-    "beats human",
-    "isn't human",
-    "truth human"
-   ],
-   "specificity": 0.0025,
-   "rank": 61.2
   },
   {
    "phrase": "banned countries",
@@ -17330,7 +17332,8 @@
     "zRtWbydCqFo"
    ],
    "also": [
-    "really build"
+    "really build",
+    "must build"
    ],
    "specificity": 0.0038,
    "rank": 55.0
@@ -18297,8 +18300,8 @@
     "lifetime event coming",
     "lifetime event coming 2026",
     "event coming 2026",
-    "coming 2026 get ready",
-    "event coming 2026 get"
+    "event coming 2026 get",
+    "coming 2026 get ready"
    ],
    "specificity": 0.0011,
    "rank": 50.9
@@ -20153,6 +20156,45 @@
    "rank": 45.7
   },
   {
+   "phrase": "cause high blood pressure",
+   "videos": 10,
+   "channels": 9,
+   "months": 10,
+   "span": "2019-10 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 0.9,
+   "kind": "new candidate",
+   "examples": [
+    "Mistakes by Most Diabetes Patient in Breakfast  Diet Cause of  High PP Blood Sugar \u0928\u093e\u0936\u094d\u0924\u0947 \u092e\u0947\u0902  \u0916\u093e\u092f\u0947\u0902",
+    "Avoid the ROOT CAUSE of High Blood Sugar and INSULIN RESISTANCE",
+    "Does Too Much Salt Cause High Blood Pressure?"
+   ],
+   "ids": [
+    "1-axmzZPoIg",
+    "AZjWrW9tZCk",
+    "G5C9-QDwm-A",
+    "K4jN2XlNjVU",
+    "MYuAnFajPPQ",
+    "MdO338i34PY",
+    "OZTXKoLSl1k",
+    "aQxi93feHTk",
+    "fLXhou58NSQ",
+    "sRMjFmTrJWU"
+   ],
+   "also": [
+    "cause high blood pressure",
+    "causes high blood",
+    "cause low blood",
+    "really blood",
+    "truth blood",
+    "mean blood",
+    "fix blood"
+   ],
+   "specificity": 0.002,
+   "rank": 45.0
+  },
+  {
    "phrase": "dead shooting",
    "videos": 34,
    "channels": 7,
@@ -20644,79 +20686,6 @@
    "rank": 42.9
   },
   {
-   "phrase": "cause high blood pressure",
-   "videos": 10,
-   "channels": 9,
-   "months": 10,
-   "span": "2019-10 \u2192 2026-09",
-   "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 0.9,
-   "kind": "new candidate",
-   "examples": [
-    "Mistakes by Most Diabetes Patient in Breakfast  Diet Cause of  High PP Blood Sugar \u0928\u093e\u0936\u094d\u0924\u0947 \u092e\u0947\u0902  \u0916\u093e\u092f\u0947\u0902",
-    "Avoid the ROOT CAUSE of High Blood Sugar and INSULIN RESISTANCE",
-    "Does Too Much Salt Cause High Blood Pressure?"
-   ],
-   "ids": [
-    "1-axmzZPoIg",
-    "AZjWrW9tZCk",
-    "G5C9-QDwm-A",
-    "K4jN2XlNjVU",
-    "MYuAnFajPPQ",
-    "MdO338i34PY",
-    "OZTXKoLSl1k",
-    "aQxi93feHTk",
-    "fLXhou58NSQ",
-    "sRMjFmTrJWU"
-   ],
-   "also": [
-    "cause high blood pressure",
-    "causes high blood",
-    "cause low blood",
-    "really blood",
-    "truth blood",
-    "mean blood",
-    "fix blood"
-   ],
-   "specificity": 0.0021,
-   "rank": 42.9
-  },
-  {
-   "phrase": "means nothing",
-   "videos": 10,
-   "channels": 10,
-   "months": 6,
-   "span": "2025-05 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.9,
-   "kind": "new candidate",
-   "examples": [
-    "Family Sales Means Nothing #shorts",
-    "Success Means Nothing Without Loyalty",
-    "Comparison means nothing when it comes to weight loss. #glp1 #weightlossjourney"
-   ],
-   "ids": [
-    "HUs5so6QUho",
-    "ITxFflb4nIM",
-    "UnAgBnE_etE",
-    "XoFfMb3EeTg",
-    "ZyultwV3gcw",
-    "fmsDS-BbjjE",
-    "hHbU_4A5VEk",
-    "k2rC92OKlNo",
-    "neUJ8eMDar0",
-    "qThVN_wZ1wc"
-   ],
-   "also": [
-    "mean nothing",
-    "nothing beats"
-   ],
-   "specificity": 0.0014,
-   "rank": 42.9
-  },
-  {
    "phrase": "housing crash worse 2008",
    "videos": 11,
    "channels": 8,
@@ -20843,6 +20812,41 @@
     "dalio explains"
    ],
    "specificity": 0.002,
+   "rank": 42.0
+  },
+  {
+   "phrase": "hike coming",
+   "videos": 11,
+   "channels": 9,
+   "months": 7,
+   "span": "2022-03 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.45,
+   "kind": "new candidate",
+   "examples": [
+    "URGENT! Mega Rate Hike Coming Soon? (STOCK MARKET CRASH UPDATE)",
+    "SUPER HIKE COMING SOON - 1% In June",
+    "Canadian Inflation Expectations set New Record - Jumbo Interest Rate Hike Coming?"
+   ],
+   "ids": [
+    "6h-Jo_x46pE",
+    "CGB8Z2hxz0g",
+    "GgY3EB3uXHc",
+    "JhRklX0yxZk",
+    "JkXqre3DckA",
+    "NjJYsdeblxA",
+    "NqSORnATHAU",
+    "QfwlVO0Qs84",
+    "ecGgViz8THY",
+    "rk5MwKrxK9U",
+    "xMeYxdTAms4"
+   ],
+   "also": [
+    "rate hike coming",
+    "hike means"
+   ],
+   "specificity": 0.0015,
    "rank": 42.0
   },
   {
@@ -21373,6 +21377,41 @@
    "rank": 40.0
   },
   {
+   "phrase": "leaders must",
+   "videos": 15,
+   "channels": 5,
+   "months": 12,
+   "span": "2019-07 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Why All Leaders Must be Coaches And Mentors",
+    "Leaders Must Be the Lighthouses Inside of Their Organizations - Jacob Morgan",
+    "CEO Of Qlik On Why Leaders Must Get Out Of Their Comfort Zones | Mike Capone"
+   ],
+   "ids": [
+    "0m8MO7eFhCA",
+    "6zT17Jzdyg4",
+    "9kUZKzQt-pg",
+    "JOIKtDzwJOU",
+    "S7OY0dKlgHQ",
+    "VJfEuGmhFdE",
+    "X8QPu8ylayE",
+    "gsqq52L4jBk",
+    "inD9UFh87hg",
+    "lKuAHiCCN8U",
+    "pCujrwrtDi8",
+    "qKBnfofOlE8",
+    "rMeiln7mcFA",
+    "teSM6YWENuc",
+    "w0-t4DMeidc"
+   ],
+   "specificity": 0.0015,
+   "rank": 40.0
+  },
+  {
    "phrase": "driver crashes",
    "videos": 14,
    "channels": 4,
@@ -21439,6 +21478,40 @@
     "lifetime coming"
    ],
    "specificity": 0.001,
+   "rank": 40.0
+  },
+  {
+   "phrase": "means nothing",
+   "videos": 10,
+   "channels": 10,
+   "months": 6,
+   "span": "2025-05 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.9,
+   "kind": "new candidate",
+   "examples": [
+    "Family Sales Means Nothing #shorts",
+    "Success Means Nothing Without Loyalty",
+    "Comparison means nothing when it comes to weight loss. #glp1 #weightlossjourney"
+   ],
+   "ids": [
+    "HUs5so6QUho",
+    "ITxFflb4nIM",
+    "UnAgBnE_etE",
+    "XoFfMb3EeTg",
+    "ZyultwV3gcw",
+    "fmsDS-BbjjE",
+    "hHbU_4A5VEk",
+    "k2rC92OKlNo",
+    "neUJ8eMDar0",
+    "qThVN_wZ1wc"
+   ],
+   "also": [
+    "mean nothing",
+    "nothing beats"
+   ],
+   "specificity": 0.0015,
    "rank": 40.0
   },
   {
@@ -22726,41 +22799,6 @@
    "rank": 39.4
   },
   {
-   "phrase": "hike coming",
-   "videos": 11,
-   "channels": 9,
-   "months": 7,
-   "span": "2022-03 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.45,
-   "kind": "new candidate",
-   "examples": [
-    "URGENT! Mega Rate Hike Coming Soon? (STOCK MARKET CRASH UPDATE)",
-    "SUPER HIKE COMING SOON - 1% In June",
-    "Canadian Inflation Expectations set New Record - Jumbo Interest Rate Hike Coming?"
-   ],
-   "ids": [
-    "6h-Jo_x46pE",
-    "CGB8Z2hxz0g",
-    "GgY3EB3uXHc",
-    "JhRklX0yxZk",
-    "JkXqre3DckA",
-    "NjJYsdeblxA",
-    "NqSORnATHAU",
-    "QfwlVO0Qs84",
-    "ecGgViz8THY",
-    "rk5MwKrxK9U",
-    "xMeYxdTAms4"
-   ],
-   "also": [
-    "rate hike coming",
-    "hike means"
-   ],
-   "specificity": 0.0016,
-   "rank": 39.4
-  },
-  {
    "phrase": "season coming",
    "videos": 13,
    "channels": 7,
@@ -23041,41 +23079,6 @@
    "rank": 37.5
   },
   {
-   "phrase": "leaders must",
-   "videos": 15,
-   "channels": 5,
-   "months": 12,
-   "span": "2019-07 \u2192 2026-09",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Why All Leaders Must be Coaches And Mentors",
-    "Leaders Must Be the Lighthouses Inside of Their Organizations - Jacob Morgan",
-    "CEO Of Qlik On Why Leaders Must Get Out Of Their Comfort Zones | Mike Capone"
-   ],
-   "ids": [
-    "0m8MO7eFhCA",
-    "6zT17Jzdyg4",
-    "9kUZKzQt-pg",
-    "JOIKtDzwJOU",
-    "S7OY0dKlgHQ",
-    "VJfEuGmhFdE",
-    "X8QPu8ylayE",
-    "gsqq52L4jBk",
-    "inD9UFh87hg",
-    "lKuAHiCCN8U",
-    "pCujrwrtDi8",
-    "qKBnfofOlE8",
-    "rMeiln7mcFA",
-    "teSM6YWENuc",
-    "w0-t4DMeidc"
-   ],
-   "specificity": 0.0016,
-   "rank": 37.5
-  },
-  {
    "phrase": "revenue beat",
    "videos": 9,
    "channels": 5,
@@ -23132,6 +23135,39 @@
    ],
    "specificity": 0.0015,
    "rank": 37.3
+  },
+  {
+   "phrase": "mistakes kill",
+   "videos": 9,
+   "channels": 9,
+   "months": 7,
+   "span": "2024-12 \u2192 2026-08",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Avoid the Top Trading Mistakes That Kill Your Portfolio",
+    "\u201cOnly 30% of Family Businesses Survive\u201d \u2014 10 Succession Mistakes That Kill Legacies",
+    "3 Mistakes That Kill Black Seed Oil Results"
+   ],
+   "ids": [
+    "4swDsq05-_o",
+    "6iYLwVZXnGQ",
+    "6y6lUKQjfos",
+    "EqRu7Gxg86E",
+    "OMKYYQNLXRQ",
+    "cVmhezmBd5Q",
+    "puVRYNE-yyQ",
+    "rTYQAHWMufU",
+    "s2Fqek-Ho0c"
+   ],
+   "also": [
+    "mistakes cause",
+    "fix mistakes"
+   ],
+   "specificity": 0.0017,
+   "rank": 37.1
   },
   {
    "phrase": "crash history",
@@ -23412,48 +23448,6 @@
    ],
    "specificity": 0.0011,
    "rank": 36.4
-  },
-  {
-   "phrase": "actually safe",
-   "videos": 16,
-   "channels": 15,
-   "months": 6,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.94,
-   "kind": "new candidate",
-   "examples": [
-    "Only 2% Know This! 7 Canned Sardine Brands to AVOID at All Costs \u2014 and 2 That Are Actually Safe",
-    "Charcoal toothpaste is trending everywhere\u2026 but is it actually safe for your teeth?",
-    "Are GLP-1s actually safe for Type 1 Diabetics? #t1d #diabetes #doctor"
-   ],
-   "ids": [
-    "3yGHQT1cBiE",
-    "8PI0Fhr0T7w",
-    "9uTE17mj8Xo",
-    "EUMNb89fIvo",
-    "KqxbYUrcUw8",
-    "L7LhrXVis7Q",
-    "RmS5s6Wbin4",
-    "SNCMmuArE5k",
-    "XCBCNkALhsQ",
-    "d4C6o6JrHvM",
-    "mEIuqnW4CXo",
-    "opUxLFVoUfA",
-    "qMui4rcZ0cw",
-    "tK05s2G5ZWU",
-    "tbQ7ESYyQkM",
-    "yJX-Qj1iXNU"
-   ],
-   "also": [
-    "really safe",
-    "isn't safe",
-    "mean safe",
-    "aren't safe"
-   ],
-   "specificity": 0.0025,
-   "rank": 36.0
   },
   {
    "phrase": "states collapse first",
@@ -24031,38 +24025,6 @@
    "rank": 35.0
   },
   {
-   "phrase": "mistakes kill",
-   "videos": 8,
-   "channels": 8,
-   "months": 7,
-   "span": "2024-12 \u2192 2026-08",
-   "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Avoid the Top Trading Mistakes That Kill Your Portfolio",
-    "\u201cOnly 30% of Family Businesses Survive\u201d \u2014 10 Succession Mistakes That Kill Legacies",
-    "3 Mistakes That Kill Black Seed Oil Results"
-   ],
-   "ids": [
-    "4swDsq05-_o",
-    "6iYLwVZXnGQ",
-    "6y6lUKQjfos",
-    "EqRu7Gxg86E",
-    "OMKYYQNLXRQ",
-    "cVmhezmBd5Q",
-    "puVRYNE-yyQ",
-    "s2Fqek-Ho0c"
-   ],
-   "also": [
-    "mistakes cause",
-    "fix mistakes"
-   ],
-   "specificity": 0.0016,
-   "rank": 35.0
-  },
-  {
    "phrase": "crash because",
    "videos": 8,
    "channels": 7,
@@ -24176,6 +24138,48 @@
    ],
    "specificity": 0.0012,
    "rank": 35.0
+  },
+  {
+   "phrase": "actually safe",
+   "videos": 16,
+   "channels": 15,
+   "months": 6,
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.94,
+   "kind": "new candidate",
+   "examples": [
+    "Only 2% Know This! 7 Canned Sardine Brands to AVOID at All Costs \u2014 and 2 That Are Actually Safe",
+    "Charcoal toothpaste is trending everywhere\u2026 but is it actually safe for your teeth?",
+    "Are GLP-1s actually safe for Type 1 Diabetics? #t1d #diabetes #doctor"
+   ],
+   "ids": [
+    "3yGHQT1cBiE",
+    "8PI0Fhr0T7w",
+    "9uTE17mj8Xo",
+    "EUMNb89fIvo",
+    "KqxbYUrcUw8",
+    "L7LhrXVis7Q",
+    "RmS5s6Wbin4",
+    "SNCMmuArE5k",
+    "XCBCNkALhsQ",
+    "d4C6o6JrHvM",
+    "mEIuqnW4CXo",
+    "opUxLFVoUfA",
+    "qMui4rcZ0cw",
+    "tK05s2G5ZWU",
+    "tbQ7ESYyQkM",
+    "yJX-Qj1iXNU"
+   ],
+   "also": [
+    "really safe",
+    "isn't safe",
+    "mean safe",
+    "aren't safe"
+   ],
+   "specificity": 0.0026,
+   "rank": 34.6
   },
   {
    "phrase": "world cup win",
@@ -25609,7 +25613,7 @@
     "WhMCQ4ynzPw",
     "iQJFCAsJptc"
    ],
-   "specificity": 0.0002,
+   "specificity": 0.0003,
    "rank": 32.0
   },
   {
@@ -30763,7 +30767,8 @@
     "cause home",
     "home won't",
     "truth home",
-    "mean home"
+    "mean home",
+    "fix home"
    ],
    "specificity": 0.0122,
    "rank": 23.4
@@ -31647,6 +31652,45 @@
    "rank": 21.6
   },
   {
+   "phrase": "opportunity coming",
+   "videos": 14,
+   "channels": 9,
+   "months": 11,
+   "span": "2019-09 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.57,
+   "kind": "cross-narrative",
+   "examples": [
+    "TAURUS~BIG OPPORTUNITY COMING IN THINK AND FAST(SEPTEMBER 16/30)",
+    "SAGITTARIUS:  You'll Hear From Them soon....Big Opportunity is Coming!  June 12-19",
+    "GEMINI:  WOW!  An Amazing opportunity is Coming!  \u264a\ufe0f"
+   ],
+   "ids": [
+    "ABfdKM3vGoo",
+    "GA777j8vHck",
+    "IZM_Qds2ssU",
+    "SiDHI-dRR2Y",
+    "WD34GG4qGqw",
+    "b8fywCalNnM",
+    "cSYOB1otipg",
+    "dtpqB_VshLU",
+    "fwZLK30Dxqg",
+    "jyCSmXYQxxg",
+    "qgiW5DacuN8",
+    "ttPZCx7F8y4",
+    "xj3ejxMFHgI",
+    "zQ6G5Nh1YrA"
+   ],
+   "also": [
+    "crash opportunity",
+    "crash buying opportunity",
+    "investment opportunity coming"
+   ],
+   "specificity": 0.0046,
+   "rank": 21.5
+  },
+  {
    "phrase": "crash officially begun",
    "videos": 6,
    "channels": 5,
@@ -32005,45 +32049,6 @@
    "rank": 21.2
   },
   {
-   "phrase": "opportunity coming",
-   "videos": 14,
-   "channels": 9,
-   "months": 11,
-   "span": "2019-09 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "the-2026-setup",
-   "home_share": 0.57,
-   "kind": "cross-narrative",
-   "examples": [
-    "TAURUS~BIG OPPORTUNITY COMING IN THINK AND FAST(SEPTEMBER 16/30)",
-    "SAGITTARIUS:  You'll Hear From Them soon....Big Opportunity is Coming!  June 12-19",
-    "GEMINI:  WOW!  An Amazing opportunity is Coming!  \u264a\ufe0f"
-   ],
-   "ids": [
-    "ABfdKM3vGoo",
-    "GA777j8vHck",
-    "IZM_Qds2ssU",
-    "SiDHI-dRR2Y",
-    "WD34GG4qGqw",
-    "b8fywCalNnM",
-    "cSYOB1otipg",
-    "dtpqB_VshLU",
-    "fwZLK30Dxqg",
-    "jyCSmXYQxxg",
-    "qgiW5DacuN8",
-    "ttPZCx7F8y4",
-    "xj3ejxMFHgI",
-    "zQ6G5Nh1YrA"
-   ],
-   "also": [
-    "crash opportunity",
-    "crash buying opportunity",
-    "investment opportunity coming"
-   ],
-   "specificity": 0.0047,
-   "rank": 21.1
-  },
-  {
    "phrase": "dead age",
    "videos": 14,
    "channels": 5,
@@ -32140,8 +32145,8 @@
    ],
    "also": [
     "much protein really need",
-    "protein really need",
     "much protein really",
+    "protein really need",
     "protein actually",
     "protein actually need",
     "much protein actually need",
@@ -32282,11 +32287,11 @@
     "people dying",
     "dead people",
     "kills people",
+    "people lie",
     "truth people",
     "causes people",
     "people must",
     "show people",
-    "people lie",
     "people win",
     "explains people",
     "drive people"
@@ -34028,7 +34033,8 @@
     "strategy win",
     "strategy actually works",
     "proven strategy",
-    "crash strategy"
+    "crash strategy",
+    "strategy must"
    ],
    "specificity": 0.0042,
    "rank": 18.3
@@ -34427,6 +34433,32 @@
     "body fix"
    ],
    "specificity": 0.0068,
+   "rank": 17.6
+  },
+  {
+   "phrase": "fail win",
+   "videos": 6,
+   "channels": 5,
+   "months": 6,
+   "span": "2024-07 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "How CMOs Fail to Win Over Peers and the Pitfalls of Budget Complaints in the CEO\u2019s World",
+    "FAIL TO WIN! #trading #success #motivation #travel #andrewtate #gains",
+    "FAIL TO WIN! #trading  #money  #motivation  #btc"
+   ],
+   "ids": [
+    "IHMFHEeaWFA",
+    "QibM5NRr_kQ",
+    "VvnTlZ7bXI8",
+    "XiRImqqnrV4",
+    "p7RkY0C5HI0",
+    "sVAgINuXIbo"
+   ],
+   "specificity": 0.0017,
    "rank": 17.6
   },
   {
@@ -36603,9 +36635,9 @@
     "don see coming",
     "truth don",
     "crash don",
+    "don lie",
     "don really",
     "don cause",
-    "don lie",
     "don fix"
    ],
    "specificity": 0.0043,
@@ -37779,30 +37811,6 @@
    "rank": 13.3
   },
   {
-   "phrase": "apps actually",
-   "videos": 4,
-   "channels": 4,
-   "months": 3,
-   "span": "2023-10 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Can mental health apps actually help?",
-    "How AI Apps Actually Use APIs \ud83e\udd16\ud83d\udd0c | Explained Simply #shorts #ai #dataanlysis #app #api #technology",
-    "How Free Trading Apps Actually Make Money (Payment for Order Flow Explained)"
-   ],
-   "ids": [
-    "LFWg6M4806g",
-    "OhvR9ppKYpE",
-    "Q0cPi8ONiIA",
-    "dGvXNKVFupc"
-   ],
-   "specificity": 0.0009,
-   "rank": 13.3
-  },
-  {
    "phrase": "opening soon",
    "videos": 4,
    "channels": 4,
@@ -38663,44 +38671,6 @@
    "rank": 12.3
   },
   {
-   "phrase": "chatgpt actually",
-   "videos": 12,
-   "channels": 10,
-   "months": 5,
-   "span": "2024-09 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Can ChatGPT o1 actually *think*?",
-    "How ChatGPT Actually Generates Answers | Inside the Brain of ChatGPT | AI Series Day 12 #Shorts",
-    "How Does ChatGPT Actually Work? Explained in 30 Seconds | AI Basics #shorts #chatgpt #ai"
-   ],
-   "ids": [
-    "2IV3PbdiawM",
-    "8Hye4nurJLA",
-    "Ae0mz1cX8kI",
-    "MJq3N2WRrRU",
-    "OuSvVlgvyGs",
-    "ZsSB2raFww4",
-    "f3H5db6CgS0",
-    "fwo5OST3Jh8",
-    "ktrxtcTHW8c",
-    "m6EVyzQkAQ0",
-    "oyPeBejoprs",
-    "ppBmSyUsA8k"
-   ],
-   "also": [
-    "chatgpt actually works",
-    "beats chatgpt",
-    "beat chatgpt",
-    "chatgpt really"
-   ],
-   "specificity": 0.0041,
-   "rank": 12.2
-  },
-  {
    "phrase": "drive electric",
    "videos": 7,
    "channels": 4,
@@ -38813,6 +38783,30 @@
    "rank": 12.0
   },
   {
+   "phrase": "apps actually",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2023-10 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Can mental health apps actually help?",
+    "How AI Apps Actually Use APIs \ud83e\udd16\ud83d\udd0c | Explained Simply #shorts #ai #dataanlysis #app #api #technology",
+    "How Free Trading Apps Actually Make Money (Payment for Order Flow Explained)"
+   ],
+   "ids": [
+    "LFWg6M4806g",
+    "OhvR9ppKYpE",
+    "Q0cPi8ONiIA",
+    "dGvXNKVFupc"
+   ],
+   "specificity": 0.001,
+   "rank": 12.0
+  },
+  {
    "phrase": "silent cause",
    "videos": 4,
    "channels": 4,
@@ -38835,6 +38829,44 @@
    ],
    "specificity": 0.001,
    "rank": 12.0
+  },
+  {
+   "phrase": "chatgpt actually",
+   "videos": 12,
+   "channels": 10,
+   "months": 5,
+   "span": "2024-09 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Can ChatGPT o1 actually *think*?",
+    "How ChatGPT Actually Generates Answers | Inside the Brain of ChatGPT | AI Series Day 12 #Shorts",
+    "How Does ChatGPT Actually Work? Explained in 30 Seconds | AI Basics #shorts #chatgpt #ai"
+   ],
+   "ids": [
+    "2IV3PbdiawM",
+    "8Hye4nurJLA",
+    "Ae0mz1cX8kI",
+    "MJq3N2WRrRU",
+    "OuSvVlgvyGs",
+    "ZsSB2raFww4",
+    "f3H5db6CgS0",
+    "fwo5OST3Jh8",
+    "ktrxtcTHW8c",
+    "m6EVyzQkAQ0",
+    "oyPeBejoprs",
+    "ppBmSyUsA8k"
+   ],
+   "also": [
+    "chatgpt actually works",
+    "beats chatgpt",
+    "beat chatgpt",
+    "chatgpt really"
+   ],
+   "specificity": 0.0042,
+   "rank": 11.9
   },
   {
    "phrase": "drop dead",
@@ -38931,31 +38963,6 @@
    "rank": 11.8
   },
   {
-   "phrase": "fail win",
-   "videos": 5,
-   "channels": 4,
-   "months": 5,
-   "span": "2024-07 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "How CMOs Fail to Win Over Peers and the Pitfalls of Budget Complaints in the CEO\u2019s World",
-    "FAIL TO WIN! #trading #success #motivation #travel #andrewtate #gains",
-    "FAIL TO WIN! #trading  #money  #motivation  #btc"
-   ],
-   "ids": [
-    "IHMFHEeaWFA",
-    "QibM5NRr_kQ",
-    "VvnTlZ7bXI8",
-    "XiRImqqnrV4",
-    "sVAgINuXIbo"
-   ],
-   "specificity": 0.0017,
-   "rank": 11.8
-  },
-  {
    "phrase": "actually smart",
    "videos": 7,
    "channels": 7,
@@ -39010,6 +39017,44 @@
    ],
    "specificity": 0.0013,
    "rank": 11.5
+  },
+  {
+   "phrase": "fat truth",
+   "videos": 10,
+   "channels": 6,
+   "months": 7,
+   "span": "2019-01 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 0.9,
+   "kind": "new candidate",
+   "examples": [
+    "Why You Are Not Losing Fat (The Truth)",
+    "(LIVE) Why You're Struggling to Lose Belly Fat: The Truth About Cortisol vs. Insulin Bellies",
+    "\u201cDoes Ketchup Secretly Cause Belly Fat? The Truth May Surprise You!\u201d"
+   ],
+   "ids": [
+    "1fA68NQb2FI",
+    "26N0_YwmmLI",
+    "5WitYKS35fU",
+    "7tLus7vlQ0Y",
+    "ACPNhLg6EMs",
+    "Fu7LWOJWzBU",
+    "VX2iPhhwdLY",
+    "m4_Yg6v_Opw",
+    "t6DBjqf-J0M",
+    "tTCKZLF0yxE"
+   ],
+   "also": [
+    "fat won't",
+    "truth fat",
+    "fat fix",
+    "fat really",
+    "fat actually",
+    "fat isn't"
+   ],
+   "specificity": 0.0037,
+   "rank": 11.4
   },
   {
    "phrase": "coming november",
@@ -39314,44 +39359,6 @@
    "rank": 11.2
   },
   {
-   "phrase": "fat truth",
-   "videos": 10,
-   "channels": 6,
-   "months": 7,
-   "span": "2019-01 \u2192 2026-09",
-   "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 0.9,
-   "kind": "new candidate",
-   "examples": [
-    "Why You Are Not Losing Fat (The Truth)",
-    "(LIVE) Why You're Struggling to Lose Belly Fat: The Truth About Cortisol vs. Insulin Bellies",
-    "\u201cDoes Ketchup Secretly Cause Belly Fat? The Truth May Surprise You!\u201d"
-   ],
-   "ids": [
-    "1fA68NQb2FI",
-    "26N0_YwmmLI",
-    "5WitYKS35fU",
-    "7tLus7vlQ0Y",
-    "ACPNhLg6EMs",
-    "Fu7LWOJWzBU",
-    "VX2iPhhwdLY",
-    "m4_Yg6v_Opw",
-    "t6DBjqf-J0M",
-    "tTCKZLF0yxE"
-   ],
-   "also": [
-    "fat won't",
-    "truth fat",
-    "fat fix",
-    "fat really",
-    "fat actually",
-    "fat isn't"
-   ],
-   "specificity": 0.0038,
-   "rank": 11.1
-  },
-  {
    "phrase": "late show",
    "videos": 8,
    "channels": 7,
@@ -39636,35 +39643,6 @@
    "rank": 10.7
   },
   {
-   "phrase": "end review",
-   "videos": 6,
-   "channels": 5,
-   "months": 6,
-   "span": "2018-12 \u2192 2026-01",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.83,
-   "kind": "new candidate",
-   "examples": [
-    "2018 Year End Review and 2019 Forecast",
-    "How To Properly Do An End Of Year Review - Chris Sparks | Modern Wisdom Podcast 262",
-    "End Of Year Review: 2021's Lessons, Hacks & Fails"
-   ],
-   "ids": [
-    "A_LU-ZO_z_k",
-    "Bn788NbliLQ",
-    "MLWvACA0AvM",
-    "OBySOqQGgVE",
-    "emIGkqJ19fs",
-    "xO43OMK35n0"
-   ],
-   "also": [
-    "review really"
-   ],
-   "specificity": 0.0028,
-   "rank": 10.7
-  },
-  {
    "phrase": "actually possible",
    "videos": 5,
    "channels": 4,
@@ -39688,6 +39666,31 @@
    ],
    "also": [
     "soon possible"
+   ],
+   "specificity": 0.0015,
+   "rank": 10.7
+  },
+  {
+   "phrase": "crash claims",
+   "videos": 5,
+   "channels": 4,
+   "months": 4,
+   "span": "2025-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "\ud83d\udd4a Tragedy Over the Hudson: Sightseeing Helicopter Crash Claims Six Lives \ud83d\udc94",
+    "\ud83d\udc94Air India Crash Claims Over 240 Lives in Ahmedabad \ud83d\udd4a\ufe0f\ud83c\uddee\ud83c\uddf3",
+    "Brazil UFO crash claims & new UFO files released | Backscroll"
+   ],
+   "ids": [
+    "2lpFkqy4vRA",
+    "G3m8RK-_1qQ",
+    "SmsAqhe-Hfc",
+    "m9AllPeNWZs",
+    "xZE2DJcxgXU"
    ],
    "specificity": 0.0015,
    "rank": 10.7
@@ -40012,6 +40015,35 @@
    "rank": 10.3
   },
   {
+   "phrase": "end review",
+   "videos": 6,
+   "channels": 5,
+   "months": 6,
+   "span": "2018-12 \u2192 2026-01",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.83,
+   "kind": "new candidate",
+   "examples": [
+    "2018 Year End Review and 2019 Forecast",
+    "How To Properly Do An End Of Year Review - Chris Sparks | Modern Wisdom Podcast 262",
+    "End Of Year Review: 2021's Lessons, Hacks & Fails"
+   ],
+   "ids": [
+    "A_LU-ZO_z_k",
+    "Bn788NbliLQ",
+    "MLWvACA0AvM",
+    "OBySOqQGgVE",
+    "emIGkqJ19fs",
+    "xO43OMK35n0"
+   ],
+   "also": [
+    "review really"
+   ],
+   "specificity": 0.0029,
+   "rank": 10.3
+  },
+  {
    "phrase": "tesla stock crashing",
    "videos": 16,
    "channels": 5,
@@ -40088,8 +40120,8 @@
     "drive tech",
     "end tech"
    ],
-   "specificity": 0.0082,
-   "rank": 10.2
+   "specificity": 0.0083,
+   "rank": 10.1
   },
   {
    "phrase": "women actually",
@@ -40183,6 +40215,31 @@
    "rank": 10.0
   },
   {
+   "phrase": "rate hike means",
+   "videos": 5,
+   "channels": 5,
+   "months": 3,
+   "span": "2022-07 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.6,
+   "kind": "new candidate",
+   "examples": [
+    "What the Fed Rate Hike Means for You & the Housing Market",
+    "What Japan's Rate Hike Means For YOU!",
+    "Start Here Sept. 17 | What the Fed Rate Hike Means for You"
+   ],
+   "ids": [
+    "EhBvI-J6IDk",
+    "EpGLf_RsYiw",
+    "Np9ohvLYEs4",
+    "RUE3dokY49g",
+    "ZG4H8kPKOzI"
+   ],
+   "specificity": 0.0015,
+   "rank": 10.0
+  },
+  {
    "phrase": "center coming",
    "videos": 5,
    "channels": 4,
@@ -40228,31 +40285,6 @@
     "Np8Mcj1FlAY",
     "e2o1Hla9e7g",
     "j-UM7nvcRl0"
-   ],
-   "specificity": 0.0016,
-   "rank": 10.0
-  },
-  {
-   "phrase": "crash claims",
-   "videos": 5,
-   "channels": 4,
-   "months": 4,
-   "span": "2025-04 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "\ud83d\udd4a Tragedy Over the Hudson: Sightseeing Helicopter Crash Claims Six Lives \ud83d\udc94",
-    "\ud83d\udc94Air India Crash Claims Over 240 Lives in Ahmedabad \ud83d\udd4a\ufe0f\ud83c\uddee\ud83c\uddf3",
-    "Brazil UFO crash claims & new UFO files released | Backscroll"
-   ],
-   "ids": [
-    "2lpFkqy4vRA",
-    "G3m8RK-_1qQ",
-    "SmsAqhe-Hfc",
-    "m9AllPeNWZs",
-    "xZE2DJcxgXU"
    ],
    "specificity": 0.0016,
    "rank": 10.0
@@ -40716,31 +40748,6 @@
    "rank": 9.5
   },
   {
-   "phrase": "rate hike means",
-   "videos": 5,
-   "channels": 5,
-   "months": 3,
-   "span": "2022-07 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "the-2026-setup",
-   "home_share": 0.6,
-   "kind": "new candidate",
-   "examples": [
-    "What the Fed Rate Hike Means for You & the Housing Market",
-    "What Japan's Rate Hike Means For YOU!",
-    "Start Here Sept. 17 | What the Fed Rate Hike Means for You"
-   ],
-   "ids": [
-    "EhBvI-J6IDk",
-    "EpGLf_RsYiw",
-    "Np9ohvLYEs4",
-    "RUE3dokY49g",
-    "ZG4H8kPKOzI"
-   ],
-   "specificity": 0.0016,
-   "rank": 9.4
-  },
-  {
    "phrase": "coming btc",
    "videos": 36,
    "channels": 6,
@@ -40837,8 +40844,8 @@
     "china bans",
     "china won't",
     "beat china",
-    "crash china",
     "china beat",
+    "crash china",
     "china win",
     "china really",
     "collapse china",
@@ -42877,7 +42884,7 @@
    "also": [
     "coming elon"
    ],
-   "specificity": 0.0132,
+   "specificity": 0.0131,
    "rank": 6.7
   },
   {
@@ -43434,6 +43441,31 @@
    "rank": 6.1
   },
   {
+   "phrase": "causes high blood pressure",
+   "videos": 5,
+   "channels": 4,
+   "months": 3,
+   "span": "2023-04 \u2192 2026-09",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Dr. Berg explains what causes high blood pressure #drberg #copd #oxygen #highbloodpressure #hypoxia",
+    "Dr. Berg explains what causes high blood pressure #drberg #copd #oxygen #highbloodpressure #hypoxia",
+    "3 Hidden Causes of High Blood Pressure"
+   ],
+   "ids": [
+    "OP5KVjpZhoM",
+    "TvDVDvBsPf0",
+    "U3ecbB8VDEk",
+    "WGqmYFq0O-8",
+    "pDcspLqYw7k"
+   ],
+   "specificity": 0.002,
+   "rank": 6.0
+  },
+  {
    "phrase": "crash prof jiang xueqin",
    "videos": 5,
    "channels": 3,
@@ -43726,31 +43758,6 @@
     "must daily"
    ],
    "specificity": 0.0044,
-   "rank": 5.7
-  },
-  {
-   "phrase": "causes high blood pressure",
-   "videos": 5,
-   "channels": 4,
-   "months": 3,
-   "span": "2023-04 \u2192 2026-09",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Dr. Berg explains what causes high blood pressure #drberg #copd #oxygen #highbloodpressure #hypoxia",
-    "Dr. Berg explains what causes high blood pressure #drberg #copd #oxygen #highbloodpressure #hypoxia",
-    "3 Hidden Causes of High Blood Pressure"
-   ],
-   "ids": [
-    "OP5KVjpZhoM",
-    "TvDVDvBsPf0",
-    "U3ecbB8VDEk",
-    "WGqmYFq0O-8",
-    "pDcspLqYw7k"
-   ],
-   "specificity": 0.0021,
    "rank": 5.7
   },
   {
@@ -45092,6 +45099,30 @@
    "rank": 3.7
   },
   {
+   "phrase": "market crash opportunity",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2025-11 \u2192 2026-04",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "This Market Crash Has An Opportunity",
+    "Once In A Lifetime Stock Market Crash Opportunity is HERE",
+    "Market Crash ya Opportunity? Oil, War, Liquidity Truth | Smart Investor Strategy \u091c\u093e\u0928\u0947\u0902 \u0905\u092d\u0940 \u0926\u0947\u0916\u0947\u0902 \u0905\u092c!"
+   ],
+   "ids": [
+    "8-UwSyfh-pw",
+    "KH0iRP_zCbs",
+    "L1sPhxKkRW8",
+    "ek6wPZkOCXk"
+   ],
+   "specificity": 0.0046,
+   "rank": 3.5
+  },
+  {
    "phrase": "prices won't drop",
    "videos": 4,
    "channels": 4,
@@ -45145,30 +45176,6 @@
     "uRuEGdiiCxs"
    ],
    "specificity": 0.0118,
-   "rank": 3.4
-  },
-  {
-   "phrase": "market crash opportunity",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2025-11 \u2192 2026-04",
-   "industry": "Economy & markets",
-   "home": "the-2026-setup",
-   "home_share": 0.75,
-   "kind": "new candidate",
-   "examples": [
-    "This Market Crash Has An Opportunity",
-    "Once In A Lifetime Stock Market Crash Opportunity is HERE",
-    "Market Crash ya Opportunity? Oil, War, Liquidity Truth | Smart Investor Strategy \u091c\u093e\u0928\u0947\u0902 \u0905\u092d\u0940 \u0926\u0947\u0916\u0947\u0902 \u0905\u092c!"
-   ],
-   "ids": [
-    "8-UwSyfh-pw",
-    "KH0iRP_zCbs",
-    "L1sPhxKkRW8",
-    "ek6wPZkOCXk"
-   ],
-   "specificity": 0.0047,
    "rank": 3.4
   },
   {
@@ -46296,7 +46303,7 @@
     "crash prediction",
     "prediction end"
    ],
-   "specificity": 0.0193,
+   "specificity": 0.0192,
    "rank": 1.4
   },
   {
@@ -46415,7 +46422,7 @@
     "fKfuuI5bVZA",
     "gPHss6U6p_g"
    ],
-   "specificity": 0.0193,
+   "specificity": 0.0192,
    "rank": 1.3
   },
   {
@@ -46440,7 +46447,7 @@
     "e-tYPuCEu6k",
     "kU_jSG40CEE"
    ],
-   "specificity": 0.0125,
+   "specificity": 0.0124,
    "rank": 1.3
   },
   {
@@ -46634,7 +46641,7 @@
     "jZuqcwvXBHo",
     "rPQOEIEL-0Q"
    ],
-   "specificity": 0.0193,
+   "specificity": 0.0192,
    "rank": 1.0
   },
   {
@@ -46734,7 +46741,7 @@
     "xVz5lN0ONfo",
     "yCpuJfJ67Pw"
    ],
-   "specificity": 0.0125,
+   "specificity": 0.0124,
    "rank": 0.6
   }
  ]

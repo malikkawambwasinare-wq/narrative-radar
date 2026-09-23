@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-09-22"
+      "unavailable": "2026-09-23"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-09-22"
+      "unavailable": "2026-09-23"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119320,15 +119320,22 @@
       "url": "https://www.youtube.com/watch?v=Nmb3QQk9N3g",
       "published": "2026-09-16",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "21:10",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCaDF4zls1Mi1aPQRQ_PSBfw"
+        "channelId": "UCaDF4zls1Mi1aPQRQ_PSBfw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119338,15 +119345,22 @@
       "url": "https://www.youtube.com/watch?v=HGZxz9FvZIU",
       "published": "2026-09-16",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 343,
+      "length": "2:13",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCietqKPqLkhE7HAqT-1sU6g"
+        "channelId": "UCietqKPqLkhE7HAqT-1sU6g",
+        "category": "26",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 10,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119356,15 +119370,22 @@
       "url": "https://www.youtube.com/watch?v=ipniclh2Y3c",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "0:38",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC_03ZGX0WzUvciMZKYL1xHQ"
+        "channelId": "UC_03ZGX0WzUvciMZKYL1xHQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119374,15 +119395,22 @@
       "url": "https://www.youtube.com/watch?v=9zA_y995TwA",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 67,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7L1wu0SfyJJ-agKPdAX8EQ"
+        "channelId": "UC7L1wu0SfyJJ-agKPdAX8EQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119392,15 +119420,22 @@
       "url": "https://www.youtube.com/watch?v=X31pMeKs56o",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 68,
+      "length": "1:01",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCM7PSWHcucXFu11vTcgJ_HA"
+        "channelId": "UCM7PSWHcucXFu11vTcgJ_HA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 5,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119410,15 +119445,22 @@
       "url": "https://www.youtube.com/watch?v=FiqikvCxqWE",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "9:33",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCos3HlveZIH3mHWIZ98aUQA"
+        "channelId": "UCos3HlveZIH3mHWIZ98aUQA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119428,15 +119470,22 @@
       "url": "https://www.youtube.com/watch?v=NwXnq0cWqKY",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 203,
+      "length": "10:57",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCO2b3SxyFyyA8OFoE9Xli1g"
+        "channelId": "UCO2b3SxyFyyA8OFoE9Xli1g",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119446,15 +119495,22 @@
       "url": "https://www.youtube.com/watch?v=7zMW8vIYlBc",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 543,
+      "length": "0:32",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCX_h0TDysFL9QuabEYXHsvA"
+        "channelId": "UCX_h0TDysFL9QuabEYXHsvA",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119464,15 +119520,22 @@
       "url": "https://www.youtube.com/watch?v=AewtjawBq9g",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 80,
+      "length": "21:36",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC0d7go_EKYOZkjoQ9vE5y5w"
+        "channelId": "UC0d7go_EKYOZkjoQ9vE5y5w",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119482,15 +119545,22 @@
       "url": "https://www.youtube.com/watch?v=OrDwmXfhN98",
       "published": "2026-09-18",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 9,
+      "length": "18:49",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC-zhubBb6s8Oyvu-5TekZuA"
+        "channelId": "UC-zhubBb6s8Oyvu-5TekZuA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119500,15 +119570,22 @@
       "url": "https://www.youtube.com/watch?v=YozaErsGLVY",
       "published": "2026-09-18",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 3573,
+      "length": "1:20",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCsD-Qms-AkXDrsU962OicLw"
+        "channelId": "UCsD-Qms-AkXDrsU962OicLw",
+        "category": "25",
+        "language": "en-US",
+        "captions": true,
+        "live": false,
+        "likes": 103,
+        "comments": 9,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119518,15 +119595,22 @@
       "url": "https://www.youtube.com/watch?v=cqqL67Gkyds",
       "published": "2026-09-18",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 132,
+      "length": "38:53",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC8R5Xaz5LpADQkDHSjT1-Pw"
+        "channelId": "UC8R5Xaz5LpADQkDHSjT1-Pw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 26,
+        "comments": 18,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119536,15 +119620,22 @@
       "url": "https://www.youtube.com/watch?v=g9r7-Wpa6Lg",
       "published": "2026-09-18",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 30,
+      "length": "28:53",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyHuhu5VWitobQ3q3Z_wl9Q"
+        "channelId": "UCyHuhu5VWitobQ3q3Z_wl9Q",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119554,15 +119645,22 @@
       "url": "https://www.youtube.com/watch?v=OPOimAwkb9c",
       "published": "2026-09-18",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 10,
+      "length": "18:09",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC5fozBWxIeK-eDTZjoIvsdQ"
+        "channelId": "UC5fozBWxIeK-eDTZjoIvsdQ",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119572,15 +119670,22 @@
       "url": "https://www.youtube.com/watch?v=lhGVe9FVpSs",
       "published": "2026-09-19",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "14:40",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC6pc6XsZH7VoNuB3fN1-M6Q"
+        "channelId": "UC6pc6XsZH7VoNuB3fN1-M6Q",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119599,7 +119704,8 @@
       "verdict_basis": "metadata",
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
-      }
+      },
+      "unavailable": "2026-09-23"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119608,15 +119714,22 @@
       "url": "https://www.youtube.com/watch?v=8oatfiNU8S4",
       "published": "2026-09-19",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 1484,
+      "length": "0:42",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCbva2pq2mlXkE0WeqBP63Dw"
+        "channelId": "UCbva2pq2mlXkE0WeqBP63Dw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 26,
+        "comments": 1,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119626,15 +119739,22 @@
       "url": "https://www.youtube.com/watch?v=-hceTbGfJZw",
       "published": "2026-09-19",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "21:06",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC4_o6iG2-B9ItWbwgDn_rNQ"
+        "channelId": "UC4_o6iG2-B9ItWbwgDn_rNQ",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119644,15 +119764,22 @@
       "url": "https://www.youtube.com/watch?v=cq0mL2IOntg",
       "published": "2026-09-19",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 27,
+      "length": "11:17",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC39_Mvnn6M3e3VIETDBgwhA"
+        "channelId": "UC39_Mvnn6M3e3VIETDBgwhA",
+        "category": "26",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119662,15 +119789,22 @@
       "url": "https://www.youtube.com/watch?v=KlR9q-buzWM",
       "published": "2026-09-20",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 30,
+      "length": "8:54",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7v1nExXujoXmJAu0PWXWsA"
+        "channelId": "UC7v1nExXujoXmJAu0PWXWsA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119680,15 +119814,22 @@
       "url": "https://www.youtube.com/watch?v=HZa33z8cnHQ",
       "published": "2026-09-20",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 4,
+      "length": "25:17",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyQSk1ZY27syS2r85jnJmVw"
+        "channelId": "UCyQSk1ZY27syS2r85jnJmVw",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119698,15 +119839,22 @@
       "url": "https://www.youtube.com/watch?v=0XHTTLVqETg",
       "published": "2026-09-20",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 213124,
+      "length": "37:26",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCSd_37JhlS1-cTL-XhPuKdQ"
+        "channelId": "UCSd_37JhlS1-cTL-XhPuKdQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2382,
+        "comments": 67,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119716,15 +119864,22 @@
       "url": "https://www.youtube.com/watch?v=b2Kqrc7sEBs",
       "published": "2026-09-20",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 14,
+      "length": "15:13",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCfuJo_BKJKEZAOw53ZX25cw"
+        "channelId": "UCfuJo_BKJKEZAOw53ZX25cw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119743,7 +119898,8 @@
       "verdict_basis": "metadata",
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
-      }
+      },
+      "unavailable": "2026-09-23"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -119752,15 +119908,22 @@
       "url": "https://www.youtube.com/watch?v=qa9YQsYg3ms",
       "published": "2026-09-21",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 8,
+      "length": "18:19",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7CkFigqso2NdLyWVMht98A"
+        "channelId": "UC7CkFigqso2NdLyWVMht98A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119770,15 +119933,22 @@
       "url": "https://www.youtube.com/watch?v=iDNx9pBjotM",
       "published": "2026-09-21",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 88,
+      "length": "22:55",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCUgYSFQ02rXgL6W_AhdSA6w"
+        "channelId": "UCUgYSFQ02rXgL6W_AhdSA6w",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119788,15 +119958,22 @@
       "url": "https://www.youtube.com/watch?v=uJV7_wmVykw",
       "published": "2026-09-21",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "21:37",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCjegDPCwqfIelruQ8TaEosA"
+        "channelId": "UCjegDPCwqfIelruQ8TaEosA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119806,15 +119983,22 @@
       "url": "https://www.youtube.com/watch?v=RGRG-3IluDw",
       "published": "2026-09-21",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 69,
+      "length": "19:47",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCMS9g8SZhSrnjJoUfThVkIQ"
+        "channelId": "UCMS9g8SZhSrnjJoUfThVkIQ",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119824,15 +120008,22 @@
       "url": "https://www.youtube.com/watch?v=nHqElEnAisM",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 666,
+      "length": "0:24",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA"
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119842,15 +120033,22 @@
       "url": "https://www.youtube.com/watch?v=ISprhnSTLic",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 10,
+      "length": "0:31",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCcHRvQjpnxULrE0neBUHi8A"
+        "channelId": "UCcHRvQjpnxULrE0neBUHi8A",
+        "category": "27",
+        "language": "te",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119860,15 +120058,22 @@
       "url": "https://www.youtube.com/watch?v=UpsP55Bl96I",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "7:24",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCPzaQaW66kQPPItPrOUVdLw"
+        "channelId": "UCPzaQaW66kQPPItPrOUVdLw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119878,15 +120083,22 @@
       "url": "https://www.youtube.com/watch?v=gxGRWhg0SQY",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 548,
+      "length": "0:52",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCjT6qneBM9ziyIW31XV9Zuw"
+        "channelId": "UCjT6qneBM9ziyIW31XV9Zuw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119896,15 +120108,22 @@
       "url": "https://www.youtube.com/watch?v=o9PDiGAhAO0",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 4,
+      "length": "21:36",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCLQLMWGvoaCe8WVCBoDZ1kA"
+        "channelId": "UCLQLMWGvoaCe8WVCBoDZ1kA",
+        "category": "28",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119914,15 +120133,22 @@
       "url": "https://www.youtube.com/watch?v=pqwSD99U3b4",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "12:01",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UClJWPo20RmDlc8JiATYNxMA"
+        "channelId": "UClJWPo20RmDlc8JiATYNxMA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119932,15 +120158,22 @@
       "url": "https://www.youtube.com/watch?v=BupIcQ-qVMc",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 3,
+      "length": "30:30",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuR8WneI0YD3iRFPmFPh7Xw"
+        "channelId": "UCuR8WneI0YD3iRFPmFPh7Xw",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -119950,17 +120183,99 @@
       "url": "https://www.youtube.com/watch?v=mgooGVcF6pg",
       "published": "2026-09-22",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "16:24",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCCBuYMV1F5DQbCrIQVWfzFQ"
+        "channelId": "UCCBuYMV1F5DQbCrIQVWfzFQ",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 2,
+        "enrichedOn": "2026-09-23"
+      }
+    },
+    {
+      "videoId": "8LqmNB2TmWE",
+      "title": "Grocery shopping is easier with fig. #snacks #viral #shortsfeed #food #healthylifestyle",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=8LqmNB2TmWE",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-23",
+      "views": 11,
+      "length": "0:18",
+      "age_days": 43,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
+      }
+    },
+    {
+      "videoId": "vtgjsO-90cs",
+      "title": "Some of these “normal” foods are wrecking your stomach 😭 #viralvideo #food #snacks",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=vtgjsO-90cs",
+      "published": "2026-05-24",
+      "first_seen": "2026-09-23",
+      "views": 1315,
+      "length": "0:16",
+      "age_days": 122,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 14,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
+      }
+    },
+    {
+      "videoId": "oYBXNMSgrhk",
+      "title": "Some ‘healthy’ foods are keeping your inflammation worse #viralvideo #snacks #lifestyle #shortsfeed",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=oYBXNMSgrhk",
+      "published": "2026-05-06",
+      "first_seen": "2026-09-23",
+      "views": 1267,
+      "length": "0:14",
+      "age_days": 140,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": 2,
+        "enrichedOn": "2026-09-23"
       }
     }
   ],
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
 }

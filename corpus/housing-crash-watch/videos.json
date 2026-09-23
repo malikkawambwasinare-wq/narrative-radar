@@ -447148,15 +447148,22 @@
       "url": "https://www.youtube.com/watch?v=3JHgF16tbgk",
       "published": "2026-09-15",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 3,
+      "length": "28:52",
       "age_days": null,
       "query": "refiled from the pool (narrative:great-economic-reset-is-coming)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCmVgmF5eKI1ZTIirlyN0m7Q"
+        "channelId": "UCmVgmF5eKI1ZTIirlyN0m7Q",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -447166,15 +447173,22 @@
       "url": "https://www.youtube.com/watch?v=oen2zLqrPUM",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "28:58",
       "age_days": null,
       "query": "refiled from the pool (narrative:great-economic-reset-is-coming)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCnFVxJDCAeQTuYyaE7GVzPg"
+        "channelId": "UCnFVxJDCAeQTuYyaE7GVzPg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -447184,15 +447198,22 @@
       "url": "https://www.youtube.com/watch?v=s2b2ilqSmQs",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 203,
+      "length": "7:19",
       "age_days": null,
       "query": "refiled from the pool (narrative:the-gold-and-silver-crash)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCfryAUibsR-oUpmomghJHzw"
+        "channelId": "UCfryAUibsR-oUpmomghJHzw",
+        "category": "27",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-23"
       }
     },
     {
@@ -447202,17 +447223,24 @@
       "url": "https://www.youtube.com/watch?v=xuNC78pWEes",
       "published": "2026-09-21",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 21023,
+      "length": "9:45",
       "age_days": null,
       "query": "refiled from the pool (narrative:condo-crash-will-break-canadas)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCdgdLLynsRsfHG-0rTAxLIw"
+        "channelId": "UCdgdLLynsRsfHG-0rTAxLIw",
+        "category": "24",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 704,
+        "comments": 28,
+        "enrichedOn": "2026-09-23"
       }
     }
   ],
-  "updated": "2026-09-22"
+  "updated": "2026-09-23"
 }
