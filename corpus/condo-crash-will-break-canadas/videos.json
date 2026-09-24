@@ -5241,6 +5241,106 @@
         "comments": null,
         "enrichedOn": "2026-09-23"
       }
+    },
+    {
+      "videoId": "O-Kc4esZYeE",
+      "title": "What could lead to a Bank of Canada hike?",
+      "channel": "BNN Bloomberg",
+      "url": "https://www.youtube.com/watch?v=O-Kc4esZYeE",
+      "published": "2026-09-23",
+      "first_seen": "2026-09-24",
+      "views": 3339,
+      "length": "7:32",
+      "age_days": 1,
+      "query": "channel sweep: BNN Bloomberg",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UC5aNPmKYwbudeNngDMTY3lw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 16,
+        "comments": 2,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "5o_K9caAjmk",
+      "title": "Canada SHOCKED As Bank Of Canada Prepares To DESTROY Homeowners!",
+      "channel": "Canada Exposed",
+      "url": "https://www.youtube.com/watch?v=5o_K9caAjmk",
+      "published": "2026-09-23",
+      "first_seen": "2026-09-24",
+      "views": 25444,
+      "length": "17:17",
+      "age_days": 1,
+      "query": "channel sweep: Canada Exposed",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCtTPHakxHQMQvPDZjU96nAQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 293,
+        "comments": 116,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "ED7euWZhfzQ",
+      "title": "Why Your Toronto Condo Investment Might Be A Mistake #Toronto #RealEstateInvesting #Condos",
+      "channel": "Ragona Sisters: Canadian Real Estate & Market Talk",
+      "url": "https://www.youtube.com/watch?v=ED7euWZhfzQ",
+      "published": "2026-09-23",
+      "first_seen": "2026-09-24",
+      "views": 266,
+      "length": "2:03",
+      "age_days": 1,
+      "query": "channel sweep: Ragona Sisters: Canadian Real Estate & Market Talk",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCFnMzlJKN536ABWi_ZpqVTw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "5PJ56z6MAZE",
+      "title": "Bank Of Canada Sends A Warning",
+      "channel": "Angry Mortgage Podcast",
+      "url": "https://www.youtube.com/watch?v=5PJ56z6MAZE",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "views": 7697,
+      "length": "9:05",
+      "age_days": 0,
+      "query": "channel sweep: Angry Mortgage Podcast",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC8vl-_vvvf7VZcxKPJ-v-Xg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 693,
+        "comments": 75,
+        "enrichedOn": "2026-09-24"
+      }
     }
   ]
 }
