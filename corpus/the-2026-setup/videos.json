@@ -661069,7 +661069,57 @@
         "comments": null,
         "enrichedOn": "2026-09-23"
       }
+    },
+    {
+      "videoId": "T_tzHv6LA_A",
+      "title": "New Black Wall street in Mason Tennessee Mobstyle￼ takeover￼",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=T_tzHv6LA_A",
+      "published": "2022-03-25",
+      "first_seen": "2026-09-24",
+      "views": 24,
+      "length": "17:50",
+      "age_days": 1644,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "xnK-q_WvGfk",
+      "title": "Solar Storm Survival; Cisco's Sinking Revenue Doesn't Dampen Wall Street",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=xnK-q_WvGfk",
+      "published": "2024-05-21",
+      "first_seen": "2026-09-24",
+      "views": 134,
+      "length": "41:53",
+      "age_days": 856,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
     }
   ],
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }

@@ -449815,7 +449815,82 @@
         "comments": 4,
         "enrichedOn": "2026-09-23"
       }
+    },
+    {
+      "videoId": "vUxKzQ4Gdek",
+      "title": "August 25, 2026",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=vUxKzQ4Gdek",
+      "published": "2026-08-26",
+      "first_seen": "2026-09-24",
+      "views": 270,
+      "length": "2:39",
+      "age_days": 29,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 2,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "FqbFyL00Wiw",
+      "title": "The real reason they are taking down diddy #pdiddy #diddy #short #guttaandsaint",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=FqbFyL00Wiw",
+      "published": "2024-10-11",
+      "first_seen": "2026-09-24",
+      "views": 4735,
+      "length": "1:01",
+      "age_days": 713,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 109,
+        "comments": 4,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "9IsXQ7lYaBw",
+      "title": "IPv6 Predictions for 2026",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=9IsXQ7lYaBw",
+      "published": "2026-01-08",
+      "first_seen": "2026-09-24",
+      "views": 274,
+      "length": "47:19",
+      "age_days": 259,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
     }
   ],
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }

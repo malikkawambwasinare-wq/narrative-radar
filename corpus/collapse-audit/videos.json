@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-09-23"
+      "unavailable": "2026-09-24"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-09-23"
+      "unavailable": "2026-09-24"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -225430,15 +225430,22 @@
       "url": "https://www.youtube.com/watch?v=49fX80ToWxQ",
       "published": "2026-09-17",
       "first_seen": "2026-09-23",
-      "views": null,
-      "length": null,
+      "views": 54,
+      "length": "2:10",
       "age_days": null,
       "query": "refiled from the pool (candidate:agi-imminent)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCDn3GywfYpU9znxSqsqgsDg"
+        "channelId": "UCDn3GywfYpU9znxSqsqgsDg",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
       }
     },
     {
@@ -225448,15 +225455,22 @@
       "url": "https://www.youtube.com/watch?v=MEUzUoGhwYA",
       "published": "2026-09-20",
       "first_seen": "2026-09-23",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "4:28",
       "age_days": null,
       "query": "refiled from the pool (candidate:ai-takes-office-jobs)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC4ExWfeB68hysM7e3SrsHxg"
+        "channelId": "UC4ExWfeB68hysM7e3SrsHxg",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
       }
     },
     {
@@ -225466,17 +225480,224 @@
       "url": "https://www.youtube.com/watch?v=uklllhevaUs",
       "published": "2026-09-20",
       "first_seen": "2026-09-23",
-      "views": null,
-      "length": null,
+      "views": 4,
+      "length": "4:07",
       "age_days": null,
       "query": "refiled from the pool (candidate:ai-takes-office-jobs)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCdBachD9ZbDwvRZ49xw4f_w"
+        "channelId": "UCdBachD9ZbDwvRZ49xw4f_w",
+        "category": "28",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "En1CSIN5DVk",
+      "title": "Part 2 of how slavery was worse than you think #guttaandsaint",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=En1CSIN5DVk",
+      "published": "2026-02-20",
+      "first_seen": "2026-09-24",
+      "views": 1167,
+      "length": "2:59",
+      "age_days": 216,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 93,
+        "comments": 8,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "Crd9pN9jWWc",
+      "title": "Young white lady explains how slavery was worse than history Books tells it.",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=Crd9pN9jWWc",
+      "published": "2026-02-19",
+      "first_seen": "2026-09-24",
+      "views": 5149,
+      "length": "2:59",
+      "age_days": 217,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 362,
+        "comments": 35,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "tqG7dkCliNA",
+      "title": "The real reason why Trump won the election #short ￼",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=tqG7dkCliNA",
+      "published": "2024-11-14",
+      "first_seen": "2026-09-24",
+      "views": 479,
+      "length": "1:01",
+      "age_days": 679,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 30,
+        "comments": 3,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "nU9DsdGnvNE",
+      "title": "Elon musk Halloween costume! #elonmusk ##Halloween ##ElonMuskHalloweencostume #guttaandsaint #fyp",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=nU9DsdGnvNE",
+      "published": "2022-11-05",
+      "first_seen": "2026-09-24",
+      "views": 1047,
+      "length": "0:48",
+      "age_days": 1419,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 59,
+        "comments": 3,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "T2cYvEM25t8",
+      "title": "Elon Musk x Samurai satan superhero￼.",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=T2cYvEM25t8",
+      "published": "2022-11-04",
+      "first_seen": "2026-09-24",
+      "views": 58,
+      "length": "7:19",
+      "age_days": 1420,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "dI2JHwzRiL8",
+      "title": "Elon Musk and Trump fights! ￼#elonmusk #trump #guttaandsaint #billgates",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=dI2JHwzRiL8",
+      "published": "2022-07-15",
+      "first_seen": "2026-09-24",
+      "views": 402,
+      "length": "1:00",
+      "age_days": 1532,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "61C-nQuM5B4",
+      "title": "Bill Gates and Elon Musk: Are They Planning to Control the World's Population?",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=61C-nQuM5B4",
+      "published": "2022-07-11",
+      "first_seen": "2026-09-24",
+      "views": 14,
+      "length": "14:08",
+      "age_days": 1536,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": 1,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "HDENPaC0IUI",
+      "title": "Why SBOMs Are Cooler and More Useful Than You Think",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=HDENPaC0IUI",
+      "published": "2025-11-18",
+      "first_seen": "2026-09-24",
+      "views": 74,
+      "length": "46:09",
+      "age_days": 310,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
       }
     }
   ],
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }

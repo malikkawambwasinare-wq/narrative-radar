@@ -83749,7 +83749,57 @@
         "comments": null,
         "enrichedOn": "2026-09-23"
       }
+    },
+    {
+      "videoId": "6pGF0hwvsGo",
+      "title": "Vibe Coding for Wireless Engineers",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=6pGF0hwvsGo",
+      "published": "2026-01-20",
+      "first_seen": "2026-09-24",
+      "views": 133,
+      "length": "28:53",
+      "age_days": 247,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "a7O_ZOKUpfg",
+      "title": "Campus Network Automation, Powered by Cisco Agentic Workflows (Sponsored)",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=a7O_ZOKUpfg",
+      "published": "2025-11-05",
+      "first_seen": "2026-09-24",
+      "views": 214,
+      "length": "44:33",
+      "age_days": 323,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
     }
   ],
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }

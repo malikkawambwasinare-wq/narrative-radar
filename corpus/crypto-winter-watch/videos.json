@@ -535201,17 +535201,74 @@
       "url": "https://www.youtube.com/watch?v=vRRAIv2BcD8",
       "published": "2026-09-18",
       "first_seen": "2026-09-23",
-      "views": null,
-      "length": null,
+      "views": 13,
+      "length": "6:34",
       "age_days": null,
       "query": "refiled from the pool (candidate:quantum-breaks-encryption)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCIyyfVosK42Z11QDUYSPMZg"
+        "channelId": "UCIyyfVosK42Z11QDUYSPMZg",
+        "category": "22",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "Y-O84qHG46I",
+      "title": "What should Godly Dating Look Like in 2026?",
+      "channel": "GUTTA & SAINT",
+      "url": "https://www.youtube.com/watch?v=Y-O84qHG46I",
+      "published": "2026-03-17",
+      "first_seen": "2026-09-24",
+      "views": 46,
+      "length": "16:07",
+      "age_days": 191,
+      "query": "channel sweep: GUTTA & SAINT",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCafy2C1JNGQdYgCtx1GBh4w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": 2,
+        "enrichedOn": "2026-09-24"
+      }
+    },
+    {
+      "videoId": "TtnEs8dpPt4",
+      "title": "Strength training doesn’t make women look like body builder ❌",
+      "channel": "Your Fitness Coach",
+      "url": "https://www.youtube.com/watch?v=TtnEs8dpPt4",
+      "published": "2025-12-17",
+      "first_seen": "2026-09-24",
+      "views": 3005,
+      "length": "1:00",
+      "age_days": 281,
+      "query": "channel sweep: Your Fitness Coach",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCuUARy0G5Z_jBqer4d9jfMg",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-24"
       }
     }
   ],
-  "updated": "2026-09-23"
+  "updated": "2026-09-24"
 }
