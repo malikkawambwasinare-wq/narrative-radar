@@ -944,6 +944,41 @@
   .yours .card:hover { border-color: var(--accent); }
   .yours .yn { font-weight: 650; font-size: 15px; }
   .yours .ym { color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+  /* ---------- The set player ----------
+     Press once, then put the phone down. The frame is 16:9 at any width; the
+     "now playing" panel carries the card's role and the thing to look out for,
+     so the set's argument travels with the video instead of sitting in a list
+     underneath it. The end card is deliberately plain: the set is over. */
+  .setplayer { margin: 10px 0 4px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .setplayer.live { display: block; }
+  .spplay, .spbtn { font: inherit; cursor: pointer; border-radius: 999px; border: 1px solid var(--hairline);
+    background: var(--surface); color: var(--ink); padding: 8px 14px; font-size: 13px; }
+  .spplay { background: var(--ink); color: var(--page); border-color: var(--ink); font-weight: 650;
+    font-size: 14px; padding: 10px 18px; }
+  .spplay:hover, .spbtn:hover { border-color: var(--accent); }
+  .spbtn:disabled { opacity: .45; cursor: default; }
+  .spsub { font-size: 12.5px; color: var(--muted); }
+  .spframe { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; background: #000;
+    border-radius: 10px; overflow: hidden; }
+  .spframe iframe, .spframe > div { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .sptap { position: absolute; inset: 0; margin: auto; width: max-content; height: max-content; font: inherit;
+    font-size: 16px; font-weight: 650; padding: 12px 22px; border-radius: 999px; border: 0;
+    background: var(--page); color: var(--ink); cursor: pointer; }
+  .spnow { padding: 12px 2px 4px; }
+  .spline { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .spn { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  .sprole { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+  .spt { font-size: 17px; font-weight: 650; line-height: 1.3; margin: 4px 0 2px; }
+  .spm { font-size: 12.5px; color: var(--ink-2); }
+  .spwhy, .splook { font-size: 13px; color: var(--ink-2); line-height: 1.55; margin-top: 6px; }
+  .splook { border-left: 2px solid var(--warning, #a06a00); padding-left: 9px; }
+  .splook b, .spwhy b { color: var(--ink); }
+  .spacts { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+  .spnext { font-size: 12.5px; color: var(--muted); }
+  .spend { border: 1px solid var(--hairline); border-radius: 10px; padding: 14px; background: var(--page); }
+  .spfine { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .setcard.now { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+  .setfoot .play { font-size: 12.5px; }
 </style>
 </head>
 <body>
@@ -3887,8 +3922,10 @@ function setPageMode(on) {
   $("set-page-bar").hidden = !on;
 }
 
-async function openSetPage(themes, type, budget, { push = true } = {}) {
+async function openSetPage(themes, type, budget, { push = true, autoplay = false } = {}) {
+  spStop();                                   // a new page, so whatever was playing is over
   Object.assign(SET, { themes: themes.slice(0, 2), type, budget });
+  setAutoplay = autoplay;                     // "Ready tonight": the tap that opened this is the tap that plays it
   setSave();
   showSets();
   renderSetForm();
@@ -3940,7 +3977,9 @@ function setCard(p, i) {
     v.review?.evidence && v.review.evidence !== "none" ? `<span class="sc">evidence: ${esc(v.review.evidence)}</span>` : "",
     v.review?.pitch ? `<span class="sc">sells something</span>` : "",
   ].filter(Boolean).join("");
-  return `<div class="setcard${p.pop ? " pop" : ""}">
+  // The popular-for-contrast card sits outside the sequence, so it has no
+  // position for the player to jump to.
+  return `<div class="setcard${p.pop ? " pop" : ""}"${p.pop ? "" : ` data-card="${i - 1}"`}>
     <div class="num">${p.pop ? "+" : i}</div>
     <div>
       <div class="role">${esc(p.role)}</div>
@@ -3950,6 +3989,7 @@ function setCard(p, i) {
       ${p.why ? `<div class="why">${esc(p.why)}</div>` : ""}
       ${p.look ? `<div class="look"><b>Look out for:</b> ${esc(p.look)}</div>` : ""}
       <div class="acts">
+        ${p.pop ? "" : `<a data-sp-play="${p.sec}" data-sp-at="${i - 1}">▶ Play from here</a>`}
         <a href="https://www.youtube.com/watch?v=${esc(v.videoId)}" target="_blank" rel="noopener">Watch on YouTube ↗</a>
         <a data-set-open="${esc(v.videoId)}" data-set-topic="${esc(p.topicId || "")}">See it in the corpus</a>
       </div>
@@ -3958,22 +3998,32 @@ function setCard(p, i) {
 }
 
 function renderSets(built) {
+  SETS_BUILT = built;                          // the player reads cards from here
   const bar = $("set-page-name");
   if (bar) {
     const shape = SET_TYPES.find(x => x[0] === SET.type)?.[1] || "Set";
     bar.textContent = `${shape} · ${built.map(b => shortName(b.t)).join(" + ")} · ${SET.budget} min`;
   }
-  $("set-out").innerHTML = built.map(({ t, set, note, empty, used }) => {
+  $("set-out").innerHTML = built.map(({ t, set, note, empty, used }, sec) => {
     const shape = SET_TYPES.find(x => x[0] === used)?.[1] || "";
-    if (empty) return `<section class="setout"><div class="seth"><h3>${esc(shortName(t))}</h3></div>
+    if (empty) return `<section class="setout" data-sec="${sec}"><div class="seth"><h3>${esc(shortName(t))}</h3></div>
       <div class="galempty">Nothing in this corpus clears the set's rules yet.</div></section>`;
-    for (const c of set.cards) c.topicId = t.id;
+    for (const c of set.cards) { c.topicId = t.id; c.sec = sec; }
     const mins = set.cards.filter(c => !c.pop).reduce((n, c) => n + setMinutes(c.v.length), 0);
     const ids = set.cards.map(c => c.v.videoId).join(",");
     const n = set.cards.filter(c => !c.pop).length;
-    return `<section class="setout">
+    // Left a set half-watched? Offer to pick it up, like a season, not a feed.
+    const r = spRecall();
+    const resume = r && r.sec === sec && r.at > 0 && r.at < n
+      ? `<button type="button" class="spbtn" data-sp-play="${sec}" data-sp-at="${r.at}">Resume at ${r.at + 1} of ${n}</button>` : "";
+    return `<section class="setout" data-sec="${sec}">
       <div class="seth"><h3>${esc(shortName(t))}</h3>
         <span class="setmeta">${esc(shape)} · ${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}</span></div>
+      <div class="setplayer">
+        <button type="button" class="spplay" data-sp-play="${sec}">▶ Play the set</button>
+        ${resume}
+        <span class="spsub">Plays through, hands free, then it ends.</span>
+      </div>
       ${note ? `<div class="setcard note"><div class="num">·</div><div class="body">${esc(note)}</div></div>` : ""}
       <div class="setcards">
         <div class="setcard note"><div class="num">▸</div><div>
@@ -3988,11 +4038,151 @@ function renderSets(built) {
           <div class="body" style="margin-top:6px">${set.close.body}</div></div></div>
       </div>
       <div class="setfoot">
-        <a class="play" href="https://www.youtube.com/watch_videos?video_ids=${esc(ids)}" target="_blank" rel="noopener">Open the whole set in YouTube ↗</a>
-        <span>A temporary playlist. Nothing is saved to your account, and we never see what you watch.</span>
+        <a class="play" href="https://www.youtube.com/watch_videos?video_ids=${esc(ids)}" target="_blank" rel="noopener">Or open it in the YouTube app ↗</a>
+        <span>For casting to a TV. A temporary playlist: nothing is saved to your account, and we never see what you watch.</span>
       </div>
     </section>`;
   }).join("");
+  // Opened from "Ready tonight": that tap was the decision. Play, don't ask again.
+  if (setAutoplay) { setAutoplay = false; startSet(0); }
+}
+
+/* ---------- The set player ----------
+   Everything above assembles a set. This plays it, which is the point: press
+   once and don't pick the phone up again until it ends.
+
+   The official IFrame Player API on the privacy-enhanced host, and we drive the
+   sequence ourselves — one video ends, we load the next — so YouTube's own
+   playlist behaviour never gets a turn and nothing queues past the last card.
+   The end card is the product statement: the set is over, and it says so. */
+let SETS_BUILT = [];        // what renderSets last drew, so the player can read the cards
+let setAutoplay = false;    // set by "Ready tonight": the tap that opened the page is the tap that plays it
+let ytLoad = null;
+let sp = { player: null, sec: -1, at: -1, cards: [], watch: null };
+
+function loadYouTubeAPI() {
+  if (window.YT?.Player) return Promise.resolve();
+  if (ytLoad) return ytLoad;
+  ytLoad = new Promise(resolve => {
+    const prev = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => { prev?.(); resolve(); };
+    const s = document.createElement("script");
+    s.src = "https://www.youtube.com/iframe_api";
+    s.async = true;
+    document.head.appendChild(s);
+  });
+  return ytLoad;
+}
+
+// Where you left off, per set. A set is a season, not a feed: coming back
+// should mean picking it up, not starting over.
+const spKey = () => `nr.play.${setHash()}`;
+function spRemember(sec, at) { try { localStorage.setItem(spKey(), JSON.stringify({ sec, at, when: Date.now() })); } catch {} }
+function spRecall() { try { return JSON.parse(localStorage.getItem(spKey()) || "null"); } catch { return null; } }
+function spForget() { try { localStorage.removeItem(spKey()); } catch {} }
+
+function spStop() {
+  clearTimeout(sp.watch);
+  try { sp.player?.destroy(); } catch {}
+  sp = { player: null, sec: -1, at: -1, cards: [], watch: null };
+  document.querySelectorAll(".setcard.now").forEach(el => el.classList.remove("now"));
+}
+
+async function startSet(sec, at = 0) {
+  const b = SETS_BUILT[sec];
+  if (!b?.set) return;
+  const cards = b.set.cards.filter(c => !c.pop);
+  if (!cards.length) return;
+  if (sp.sec !== sec) spStop();
+  sp.sec = sec; sp.cards = cards;
+  const host = document.querySelector(`.setout[data-sec="${sec}"] .setplayer`);
+  if (!host) return;
+  host.classList.add("live");
+  host.innerHTML = `<div class="spframe"><div id="sp-frame-${sec}"></div></div><div class="spnow"></div>`;
+  await loadYouTubeAPI();
+  if (sp.sec !== sec) return;               // the person moved on while the API loaded
+  sp.at = Math.min(Math.max(at, 0), cards.length - 1);
+  sp.player = new YT.Player(`sp-frame-${sec}`, {
+    host: "https://www.youtube-nocookie.com",
+    videoId: cards[sp.at].v.videoId,
+    playerVars: { autoplay: 1, rel: 0, playsinline: 1, modestbranding: 1, iv_load_policy: 3, origin: location.origin },
+    events: {
+      onReady: e => { e.target.playVideo(); spArmWatch(); },
+      onStateChange: e => {
+        if (e.data === YT.PlayerState.ENDED) spNext();
+        if (e.data === YT.PlayerState.PLAYING) { clearTimeout(sp.watch); host.querySelector(".sptap")?.remove(); }
+      },
+    },
+  });
+  spShow();
+  host.scrollIntoView({ block: "start", behavior: "smooth" });
+}
+
+function spArmWatch() {
+  // A browser may refuse to start sound without a gesture of its own. If
+  // nothing is playing shortly after ready, offer one tap. Still one press —
+  // the browser's, not ours — and it never happens on the second video.
+  clearTimeout(sp.watch);
+  sp.watch = setTimeout(() => {
+    const st = sp.player?.getPlayerState?.();
+    if (st === YT.PlayerState.PLAYING || st === YT.PlayerState.BUFFERING) return;
+    const frame = document.querySelector(`.setout[data-sec="${sp.sec}"] .spframe`);
+    if (frame && !frame.querySelector(".sptap"))
+      frame.insertAdjacentHTML("beforeend", `<button type="button" class="sptap" data-sp-tap>▶ Tap to play</button>`);
+  }, 1800);
+}
+
+function spPlayAt(at) {
+  if (!sp.player || at < 0 || at >= sp.cards.length) return;
+  sp.at = at;
+  sp.player.loadVideoById(sp.cards[at].v.videoId);
+  spShow();
+}
+
+function spNext() {
+  if (sp.at + 1 < sp.cards.length) return spPlayAt(sp.at + 1);
+  spFinish();
+}
+
+function spShow() {
+  const { sec, at, cards } = sp;
+  const host = document.querySelector(`.setout[data-sec="${sec}"] .spnow`);
+  if (!host) return;
+  const c = cards[at], v = c.v, next = cards[at + 1];
+  spRemember(sec, at);
+  host.innerHTML = `
+    <div class="spline"><span class="spn">Now playing · ${at + 1} of ${cards.length}</span>
+      <span class="sprole">${esc(c.role)}</span></div>
+    <div class="spt">${esc(v.title)}</div>
+    <div class="spm">${esc(v.channel || "")}${v.length ? ` · ${esc(v.length)}` : ""}</div>
+    ${c.why ? `<div class="spwhy">${esc(c.why)}</div>` : ""}
+    ${c.look ? `<div class="splook"><b>Look out for:</b> ${esc(c.look)}</div>` : ""}
+    <div class="spacts">
+      <button type="button" class="spbtn" data-sp-prev${at === 0 ? " disabled" : ""}>‹ Previous</button>
+      <button type="button" class="spbtn" data-sp-next>${next ? "Next ›" : "Finish ■"}</button>
+      <span class="spnext">${next ? `Up next: ${esc(next.v.title)}` : "This is the last one. The set ends after it."}</span>
+    </div>`;
+  document.querySelectorAll(`.setout[data-sec="${sec}"] .setcard.now`).forEach(el => el.classList.remove("now"));
+  document.querySelector(`.setout[data-sec="${sec}"] .setcard[data-card="${at}"]`)?.classList.add("now");
+}
+
+function spFinish() {
+  const { sec } = sp, b = SETS_BUILT[sec];
+  spForget();
+  try { sp.player?.stopVideo(); } catch {}
+  const host = document.querySelector(`.setout[data-sec="${sec}"] .spnow`);
+  if (!host || !b?.set) return;
+  document.querySelectorAll(`.setout[data-sec="${sec}"] .setcard.now`).forEach(el => el.classList.remove("now"));
+  host.innerHTML = `<div class="spend">
+    <div class="spline"><span class="spn">■ The end</span></div>
+    <div class="spt">${esc(b.set.close.title)}</div>
+    <div class="spwhy">${b.set.close.body}</div>
+    <div class="spacts">
+      <button type="button" class="spbtn" data-sp-again>Play it again</button>
+      <button type="button" class="spbtn" data-set-back>Build another set</button>
+    </div>
+    <div class="spfine">That's the set. Nothing queues after it — that's the point.</div>
+  </div>`;
 }
 
 /* ---------- Find a theme by word ----------
@@ -4118,7 +4308,7 @@ function todayCard(r, i, set) {
     <span class="poster i${(i % 5) + 1}">
       <span class="pk">${esc(shape[1])}</span>
       <span class="pn">${esc(shortName(r.t))}</span>
-      <span class="pf">${set ? `${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}` : "building…"}</span>
+      <span class="pf">${set ? `▶ ${n} video${n === 1 ? "" : "s"} · ${fmtMin(mins)}` : "building…"}</span>
     </span>
   </button>`;
 }
@@ -4131,7 +4321,7 @@ async function renderToday(hostId) {
   const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
   host.innerHTML = `<div class="tkick">Ready tonight · ${esc(stamp)}</div>
     <div class="trow">${picks.map((r, i) => todayCard(r, i, null)).join("")}</div>
-    <div class="tnote">Built this morning from the corpus. One video per channel, nothing recycled, and it ends.</div>`;
+    <div class="tnote">Tap one and it plays — hands free, one video per channel, nothing recycled, and it ends.</div>`;
   todayPicks = picks;
   // Fill in each card's real length once its set is assembled.
   picks.forEach((r, i) => {
@@ -4213,12 +4403,14 @@ function showSets() {
   renderSetForm();
   if ($("set-page-bar").hidden) renderToday("today-sets");
   buildThemeIndex();
+  loadYouTubeAPI();            // warm, so the tap on a card is the tap that plays it
 }
 
 /* ---------- The narrative gallery: search + industry filter + tiles ---------- */
 const galStats = {};   // topicId -> {age, videos, score, next} filled lazily
 function showGallery() {
   setPreviewStop();
+  spStop();                    // leaving the sets view must not leave audio running behind it
   $("gallery").hidden = false;
   $("detail").hidden = true;
   $("sets").hidden = true;
@@ -4228,6 +4420,7 @@ function showGallery() {
 }
 function openDetail(id) {
   setPreviewStop();
+  spStop();
   $("gallery").hidden = true;
   $("sets").hidden = true;
   $("detail").hidden = false;
@@ -4666,8 +4859,16 @@ document.addEventListener("click", async (ev) => {
   const stt = ev.target.closest("[data-set-type]");
   if (stt) { SET.type = stt.dataset.setType; setSave(); renderSetForm(); return; }
   const tc = ev.target.closest("[data-today-topic]");
-  if (tc) return openSetPage([tc.dataset.todayTopic], tc.dataset.todayType, +tc.dataset.todayBudget);
-  if (ev.target.closest("#set-page-back")) {
+  if (tc) return openSetPage([tc.dataset.todayTopic], tc.dataset.todayType, +tc.dataset.todayBudget, { autoplay: true });
+  // The player's own controls. One press each, and only ever within the set.
+  const spp = ev.target.closest("[data-sp-play]");
+  if (spp) return startSet(+spp.dataset.spPlay, +(spp.dataset.spAt || 0));
+  if (ev.target.closest("[data-sp-tap]")) { sp.player?.playVideo(); return; }
+  if (ev.target.closest("[data-sp-prev]")) return spPlayAt(sp.at - 1);
+  if (ev.target.closest("[data-sp-next]")) return spNext();
+  if (ev.target.closest("[data-sp-again]")) return spPlayAt(0);
+  if (ev.target.closest("#set-page-back, [data-set-back]")) {
+    spStop();
     setPageMode(false);
     history.pushState(null, "", location.pathname + location.search);
     $("set-out").innerHTML = "";
