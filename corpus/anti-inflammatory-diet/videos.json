@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-09-24"
+      "unavailable": "2026-09-25"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-09-24"
+      "unavailable": "2026-09-25"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119705,7 +119705,7 @@
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
       },
-      "unavailable": "2026-09-24"
+      "unavailable": "2026-09-25"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119899,7 +119899,7 @@
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
       },
-      "unavailable": "2026-09-24"
+      "unavailable": "2026-09-25"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -122025,7 +122025,32 @@
         "comments": null,
         "enrichedOn": "2026-09-24"
       }
+    },
+    {
+      "videoId": "Ev8NQVhxmQQ",
+      "title": "Your Muscles Shrink After 60— Eat These 7 Foods To Strengthen Them FAST!",
+      "channel": "Herbal Legacy",
+      "url": "https://www.youtube.com/watch?v=Ev8NQVhxmQQ",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-25",
+      "views": 40,
+      "length": "25:21",
+      "age_days": 10,
+      "query": "channel sweep: Herbal Legacy",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCxumwXuCJZxnrumLkKD254g",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
+      }
     }
   ],
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }

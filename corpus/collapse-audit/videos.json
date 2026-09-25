@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-09-24"
+      "unavailable": "2026-09-25"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-09-24"
+      "unavailable": "2026-09-25"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -227105,15 +227105,22 @@
       "url": "https://www.youtube.com/watch?v=_RwgqN-2-Mg",
       "published": "2026-09-19",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 18387,
+      "length": "9:39",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCJp4RDnENx92h4LifC4l6yw"
+        "channelId": "UCJp4RDnENx92h4LifC4l6yw",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 415,
+        "comments": 38,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227123,15 +227130,22 @@
       "url": "https://www.youtube.com/watch?v=1hQKtBZCf2A",
       "published": "2026-09-19",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 9,
+      "length": "17:10",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCypQtfgDNie4UjEEBjcrKKw"
+        "channelId": "UCypQtfgDNie4UjEEBjcrKKw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227141,15 +227155,22 @@
       "url": "https://www.youtube.com/watch?v=yEbpSDsDmF4",
       "published": "2026-09-20",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 138,
+      "length": "16:00",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCcl04Z-V0CZkO1j4ioc3SbA"
+        "channelId": "UCcl04Z-V0CZkO1j4ioc3SbA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227159,15 +227180,22 @@
       "url": "https://www.youtube.com/watch?v=BadqETzez1U",
       "published": "2026-09-20",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 7,
+      "length": "19:58",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCSAzOx37eR6yrVGNVFCQ0mA"
+        "channelId": "UCSAzOx37eR6yrVGNVFCQ0mA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227177,15 +227205,22 @@
       "url": "https://www.youtube.com/watch?v=e114xE1cD0w",
       "published": "2026-09-21",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 2945,
+      "length": "23:23",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyNO87KxhRyEFy2ied4AtXw"
+        "channelId": "UCyNO87KxhRyEFy2ied4AtXw",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 110,
+        "comments": 15,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227195,15 +227230,22 @@
       "url": "https://www.youtube.com/watch?v=d2HQ47d4518",
       "published": "2026-09-22",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 69,
+      "length": "16:38",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UClOXhNB9owUYAZ8sPZJN7_g"
+        "channelId": "UClOXhNB9owUYAZ8sPZJN7_g",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227213,15 +227255,22 @@
       "url": "https://www.youtube.com/watch?v=NgLUc7YPQyw",
       "published": "2026-09-22",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 58,
+      "length": "10:38",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuRwxf3jHbqGqXowwhyVBTQ"
+        "channelId": "UCuRwxf3jHbqGqXowwhyVBTQ",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227231,15 +227280,22 @@
       "url": "https://www.youtube.com/watch?v=JP3JSs3gcL0",
       "published": "2026-09-22",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 4723,
+      "length": "21:28",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCaa_mhQPPdddAkCpaFEiTcA"
+        "channelId": "UCaa_mhQPPdddAkCpaFEiTcA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": 6,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227249,15 +227305,22 @@
       "url": "https://www.youtube.com/watch?v=dpQSrAhXTzk",
       "published": "2026-09-23",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 5,
+      "length": "5:10",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCetW8rJ6_cLuXujooBndY_Q"
+        "channelId": "UCetW8rJ6_cLuXujooBndY_Q",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227267,15 +227330,22 @@
       "url": "https://www.youtube.com/watch?v=SZvu1MC9NW4",
       "published": "2026-09-23",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 18,
+      "length": "11:46",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCtltjHMUurCZ2zNTAXNWvXg"
+        "channelId": "UCtltjHMUurCZ2zNTAXNWvXg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227285,15 +227355,22 @@
       "url": "https://www.youtube.com/watch?v=SO7AjJesCMs",
       "published": "2026-09-24",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 2310,
+      "length": "1:53:23",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCGBMzlENmf1_vBgcohF9fJQ"
+        "channelId": "UCGBMzlENmf1_vBgcohF9fJQ",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 34,
+        "comments": 1,
+        "enrichedOn": "2026-09-25"
       }
     },
     {
@@ -227303,17 +227380,24 @@
       "url": "https://www.youtube.com/watch?v=t3_lWSBXVOs",
       "published": "2026-09-24",
       "first_seen": "2026-09-24",
-      "views": null,
-      "length": null,
+      "views": 3722,
+      "length": "10:38",
       "age_days": null,
       "query": "refiled from the pool (candidate:recession-next-six-months)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCvAiQWGOjiJG1As_jxknZhA"
+        "channelId": "UCvAiQWGOjiJG1As_jxknZhA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 35,
+        "comments": null,
+        "enrichedOn": "2026-09-25"
       }
     }
   ],
-  "updated": "2026-09-24"
+  "updated": "2026-09-25"
 }
