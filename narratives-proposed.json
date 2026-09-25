@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-24",
+ "generated": "2026-09-25",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2065,
+ "cost_usd": 0.2026,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -13891,6 +13891,1522 @@
    },
    "first_read": "2026-09-24",
    "last_read": "2026-09-24"
+  },
+  {
+   "phrase": "dramatic shows",
+   "verdict": "rhetoric",
+   "why": "News-clip format label with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 4,
+    "months": 11,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "Dramatic video shows officer pull woman from burning vehicle in Georgia, US",
+     "Dramatic new video shows rescue of Florida couple",
+     "Dramatic video shows firefighters rescuing dog stranded on cliffside"
+    ],
+    "ids": [
+     "1v39GmTcgpA",
+     "6m3dF1p_z2o",
+     "Af2v1BTxyiM",
+     "MgXG2jIoalo",
+     "Mhb_K-SE0oU",
+     "MmvzUqV1LMg",
+     "PqsOV6MN1vA",
+     "e0TrjUwW1-g",
+     "fbabrKbjJx4",
+     "g9tCdkKIZPE",
+     "l6qMQA64YPM",
+     "tIz2JTUTOgw"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "exposing truth",
+   "verdict": "rhetoric",
+   "why": "Generic reveal hook spanning unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 7,
+    "span": "2021-04 → 2026-01",
+    "examples": [
+     "WALLSTREETSILVER EXPOSING THE TRUTH",
+     "Exposing The Truth Behind Stock Trading GURUS (AVOID THIS!)",
+     "Exposing the truth about false pastors. #pastors #faith #church #larryreidlive #guttaandsaint #fyp"
+    ],
+    "ids": [
+     "1M107JmtBX8",
+     "4E-vfK0rCac",
+     "AJHkPCY9XO8",
+     "FFAkDtmx5iE",
+     "GZH9sMR5Jbk",
+     "UmeH8ojnvto",
+     "i3Q1hsBNDPs"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "myth busting",
+   "verdict": "rhetoric",
+   "why": "Series format label, not a single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 5,
+    "months": 8,
+    "span": "2021-01 → 2026-09",
+    "examples": [
+     "LOSE FAT BY DRINKING WATER 100% GUARANTEED | Myth Busting Series Episode -3 | HINDI",
+     "Is Spot Fat Reduction Possible? | Lose Belly fat in 7 days | Myth Busting Series Episode  2 l Hindi",
+     "Protein Shake After Workout Not Important | Myth Busting Series Episode -1 |(Hindi)"
+    ],
+    "ids": [
+     "1TOQC24LKo0",
+     "3-BiqT7h9QU",
+     "BWRebOyfwqA",
+     "LiyaL0UTzL4",
+     "OGyfjtf36rQ",
+     "QYgs8Bh2A50",
+     "ZH8fuLdT-NA",
+     "bNGxj7k-r9c",
+     "g5WVxOIyTd4",
+     "gdh74Y7n6_8",
+     "k56HCuzVyW0",
+     "t_og4GZ1OyY",
+     "uBiK7BALUhc",
+     "zZLVtHncuO0"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "hide truth",
+   "verdict": "rhetoric",
+   "why": "Concealment hook applied to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 5,
+    "span": "2022-12 → 2026-09",
+    "examples": [
+     "Don't hide from the truth | David Goggins",
+     "The Modern Tactics Politicians Use to Hide from the Truth",
+     "The Soviet Union Executed an Innocent Man to Hide the Truth"
+    ],
+    "ids": [
+     "1hGGjJ6_310",
+     "9zs3EIjmvnc",
+     "AkpsOuLyWCM",
+     "CTlKzD-_gQQ",
+     "MJQQ4IbbcA8",
+     "NkTOGbuOKXM",
+     "mzQDEv3Hdwk",
+     "sxMqlJU92ng"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "reported dead",
+   "verdict": "rhetoric",
+   "why": "Breaking-news phrasing, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 6,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "Cyclone Mocha: Cleanup efforts underway in Bangladesh as 6 reported dead in Myanmar",
+     "Top Iranian generals reported dead in massive Israeli attack | NewsNation",
+     "Shooter reported in New York City. At least two people reported dead."
+    ],
+    "ids": [
+     "-uNMbv_e_sc",
+     "4jdc7_HClfo",
+     "WU9eePOPX9w",
+     "lY56vQxaf9U",
+     "phvMQukJRdA",
+     "t6T2flsfRDw",
+     "toF1e6P9IIk"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "auto show",
+   "verdict": "rhetoric",
+   "why": "Event subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 6,
+    "months": 7,
+    "span": "2024-04 → 2026-09",
+    "examples": [
+     "Beijing Auto Show displays futuristic cars, showcases EV development",
+     "Tesla removed from Vancouver International Auto Show over safety concern",
+     "China's Thriving Car Industry on Display at Shanghai Auto Show"
+    ],
+    "ids": [
+     "JH6khjBjQIA",
+     "KSjbVBT6bGo",
+     "M3gYZLKQ3uo",
+     "_TniSlr65nQ",
+     "asnmTsswgdA",
+     "f3xSrUhU2ZE",
+     "hq9vXFGGbcg",
+     "mgDdML3fLe4",
+     "mkwsubU_wvE",
+     "qDk-RHc3pjM",
+     "qvTGXYjCP3Q",
+     "r5ZmAGLCT4U"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "peptides actually",
+   "verdict": "rhetoric",
+   "why": "Titles debate whether peptides work rather than sharing one asserted claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 7,
+    "span": "2024-07 → 2026-08",
+    "examples": [
+     "Do Peptides ACTUALLY Work? Interview With Dr. Dan Kellams | Epi 29 #LastingWeightLossPodcast",
+     "What Your Peptides ACTUALLY Need #peptides",
+     "Doctor Reviews NAD+ vs Peptides - Which Actually Works Better"
+    ],
+    "ids": [
+     "-j9SjwxHbAo",
+     "59EA5ugw6FU",
+     "GPBvpbd8uNc",
+     "YeeZELBE80w",
+     "jIUkAvncYQU",
+     "kIu8Xyv_l-A",
+     "lYlvF_LphWc",
+     "oMysEqfFg8c",
+     "ssGpEKpeUtk",
+     "tK05s2G5ZWU",
+     "udST9u2yJAU"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "exercises fix",
+   "verdict": "narrative",
+   "why": "Titles share the claim that posture problems like rounded shoulders are correctable with a few targeted exercises.",
+   "claim_name": "The \"a few exercises fix your posture\" story",
+   "claim": "Postural problems such as rounded shoulders and slouching are caused by muscle imbalances and can be reversed by doing a handful of simple corrective exercises.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread poor posture, rounded shoulders and related pain",
+    "cause": "Muscle imbalance and weakness from modern sedentary habits",
+    "outcome": "Doing a short set of targeted exercises reverses the posture problem",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 7,
+    "span": "2022-04 → 2026-09",
+    "examples": [
+     "3 Key Exercises to Fix Rounded Shoulders!  Dr. Mandell",
+     "5 Great Exercises to Fix Your Posture!  Dr. Mandell",
+     "Reverse Slouching: Exercises to Fix Rounded Shoulders"
+    ],
+    "ids": [
+     "0nPes9O40As",
+     "67nMXa4--V4",
+     "9YSWJ6nChc8",
+     "CsBdl3iC3Wk",
+     "Q99TYMXVvbM",
+     "ZvAazazEou4",
+     "_HQ7V4hzyHk",
+     "mHYLjsnb7cM",
+     "t0W2IYhcpZo",
+     "yhBz92LRedM"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "cause anxiety",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that anxiety stems from diet/nutrient or gut causes rather than psychology.",
+   "claim_name": "The \"anxiety is a nutritional problem\" story",
+   "claim": "Anxiety and related mood disorders are driven by specific foods, nutrient deficiencies and gut/brain permeability, so fixing diet and deficiencies resolves them.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread anxiety and mood disorders",
+    "cause": "Dietary triggers, nutrient deficiencies and leaky gut/brain",
+    "outcome": "Remove trigger foods and correct deficiencies to cure anxiety",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 8,
+    "span": "2020-01 → 2026-09",
+    "examples": [
+     "Top 6 Foods That Cause Anxiety and What to Eat Instead",
+     "Does Leaky Brain Cause Anxiety, Depression and Addictions?",
+     "The Real Cause of Anxiety and How Nutrient Deficiencies Are at the Core"
+    ],
+    "ids": [
+     "1xRC_7fdbdg",
+     "BLUd-3DI-Ic",
+     "KexPxi9O_MQ",
+     "SOOEgZ9BpMA",
+     "TqciWMXotLo",
+     "UjEv0rXy1KI",
+     "cVfoE6ZbygU",
+     "dJaiavOVBck",
+     "moMCceiZWZM"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "causes solutions",
+   "verdict": "rhetoric",
+   "why": "A generic listicle format label spanning unrelated conditions, with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 7,
+    "span": "2018-08 → 2026-09",
+    "examples": [
+     "Histamine Intolerance:  Causes and Solutions",
+     "Chronic Inflammation Summit - Root Causes & Solutions",
+     "Zinc Deficiency:  Symptoms, Lab Testing, Root Causes and Solutions!"
+    ],
+    "ids": [
+     "D6-OGz-YMeo",
+     "Wou70-7Ldr0",
+     "YXQvuYCKztU",
+     "cfa3G9Cl11E",
+     "eKmhwEWsfEs",
+     "kQwMGrXkkPQ",
+     "rFa7clmCXws",
+     "upch_XqHFcY"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "owner must",
+   "verdict": "rhetoric",
+   "why": "Advice-packaging phrase across unrelated topics; no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Maintain Your Hong Kong Business Account Properly: 4 Rules Every Owner Must Know",
+     "The Sales Ratio Every Business Owner Must Know. 💡📈 #sales #salesstrategy #entrepreneurship",
+     "How To Plan an EV Road Trip Without Range Anxiety ⚡ 5 Apps Every EV Owner Must Have 2026"
+    ],
+    "ids": [
+     "02Bs3HSz7IU",
+     "E6bQxhBXHOk",
+     "HRaYstwTgQk",
+     "K5RtXyUTH88",
+     "NSonvWSnElg",
+     "Pe9GIEHQKQY",
+     "Pne0BqnmJHA",
+     "hg1vNUhCNJ0"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "end dollar dominance",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that the US dollar is losing its reserve-currency status.",
+   "claim_name": "The \"end of dollar dominance\" story",
+   "claim": "The US dollar is losing its status as the world's dominant reserve currency, with de-dollarization and gold's rise signalling the shift.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "US dollar hegemony is eroding",
+    "cause": "Debt, monetary policy and de-dollarization by other nations",
+    "outcome": "A new monetary order; hold gold and hard assets",
+    "clock": "Underway now, near-term years"
+   },
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-04 → 2026-09",
+    "examples": [
+     "Ray Dalio’s Final Warning in 2025 | The End of Dollar Dominance | The WealthEchelon",
+     "Why the End of US Dollar Dominance Is Now Possible | Trumponomics",
+     "Is Gold Signaling the End of Dollar Dominance? #explorepage"
+    ],
+    "ids": [
+     "2hQqYZ577nU",
+     "8_2w7dGRCFc",
+     "b0mqWTMPAGI",
+     "cDltck0OsAA",
+     "fRCOGYASxig",
+     "gKFirISsSNA",
+     "sBwW0nvRHHo"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "scientist explains",
+   "verdict": "rhetoric",
+   "why": "Authority-format phrase attached to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 5,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "Scientist Explains the Big Bang Theory",
+     "Natural Flavors Causing Insulin Resistance? Insulin Scientist Explains Maltodextrin Concerns",
+     "Scientist explains how he hunts for alien life in space | Hot Take with Jesse Weber"
+    ],
+    "ids": [
+     "09ighYj8RRI",
+     "bifUQkrmgFA",
+     "chnHJ0scC90",
+     "e0emxFXHVbM",
+     "i1rc-Z6RwTU",
+     "ojtSfk86tT8",
+     "wtUzja7Kygc"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "win against",
+   "verdict": "rhetoric",
+   "why": "A generic event descriptor covering lawsuits, unions and crypto with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 26,
+    "channels": 12,
+    "months": 18,
+    "span": "2021-04 → 2026-09",
+    "examples": [
+     "Ripple XRP Huge Win Against SEC & Coinbase Massive Revenue of $1.8 BILLION Ahead of IPO",
+     "Ripple XRP New Win Against SEC - Flare FXRP Spark Token Distribution - Crypto Kiosk at 2K Locations",
+     "Historic Labor Union Win Against Amazon In New York"
+    ],
+    "ids": [
+     "0PeRGk4keEk",
+     "2_SyC68Suoo",
+     "36lHkwgmCNg",
+     "4HZLMeE9_b0",
+     "4t6Axx7w0ss",
+     "6sdQ-sQHIXs",
+     "CCjUA-yo-pc",
+     "DU81t8WBqt4",
+     "EdySgw4C9Yg",
+     "Mxmu-8D910M",
+     "S51KWX8xCaY",
+     "VaqFSLGMBBQ",
+     "WiK7RYWduZM",
+     "Z30_MnvY_2M",
+     "_nlxEi3tVdI",
+     "cEWyCjd3sTk",
+     "f8pvoL-Bfkk",
+     "g-_CHZ15HtU",
+     "gTl8n86FgU8",
+     "iAyv98AmNCg"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "shows signs",
+   "verdict": "rhetoric",
+   "why": "Headline connector applied to any trend; no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 32,
+    "channels": 19,
+    "months": 20,
+    "span": "2017-10 → 2026-09",
+    "examples": [
+     "Twitter Shows Signs of Life With User Growth",
+     "Meatless Burger Craze Shows No Signs of Slowing Down",
+     "US Stock Market Shows SIGNS OF REVERSAL for the First Time in 2020"
+    ],
+    "ids": [
+     "0CEXaYkqeVg",
+     "0mmw9B4r34U",
+     "2q0E2oPsasU",
+     "4DFlnIMLPis",
+     "8Q2jzgzcgEE",
+     "9FdVpKgiS0M",
+     "As8Svdz_tdA",
+     "CgVq_uqD70k",
+     "D55IMkVmy1w",
+     "IQF3dKNbFTI",
+     "JCAuxVQ3_Hg",
+     "OQnT3bh4di4",
+     "OyAa431cIXs",
+     "PoHq5GiOLSY",
+     "TZNNsdgGnX0",
+     "TxKsytqPo1w",
+     "UB4S5IPuOo0",
+     "UqtN0JqxgVU",
+     "Y189TpT9IwA",
+     "Y_NXzmlCwts"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "really thinks",
+   "verdict": "rhetoric",
+   "why": "Curiosity-gap phrasing, subjects unrelated.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 6,
+    "span": "2022-09 → 2026-09",
+    "examples": [
+     "What Justin Trudeau Really Thinks About The Housing Crisis #Shorts",
+     "Simon Cowell Finally Comments On What He Really Thinks About His Son's Transformation",
+     "What a Dietitian REALLY Thinks About Sucralose, Cereal and Seed Oils"
+    ],
+    "ids": [
+     "191qf-zkAeY",
+     "OQC1jrOMxIU",
+     "Xb5bKQTUiXA",
+     "cTZuuTTRjU0",
+     "ceBQcAEA2lI",
+     "e8ALK3a8pTY",
+     "eViTJgf6JIY",
+     "zCN1Hamv_JU"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "replace human",
+   "verdict": "rhetoric",
+   "why": "Titles pose an open question across unrelated domains rather than assert one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 19,
+    "months": 9,
+    "span": "2016-11 → 2026-09",
+    "examples": [
+     "AI and Automation Can't Replace Being Human  - Jacob Morgan",
+     "Can Artificial Intelligence Truly Replace Human Doctors?",
+     "How AI-Powered Iron Man Suits Could Replace the Human Warfighter"
+    ],
+    "ids": [
+     "3tURhOtmSWs",
+     "5VzICHlovfc",
+     "ArZMFaKgrtU",
+     "Cut7PkCycvE",
+     "H6GzGrHdhwA",
+     "HL1UsSNl1XE",
+     "JiNmY1vh7SM",
+     "KS9rERJfxcg",
+     "MoGgVkDfxO8",
+     "P1id5tYD1WU",
+     "Pdq4U9xQQrY",
+     "Tue4a0EADA4",
+     "VJEBIU3CfhU",
+     "VQtxB69Uq2Q",
+     "XPiAD9ppaZs",
+     "_cbWRpvK9xw",
+     "huwxUdEgLBI",
+     "jqnOxNlHxMg",
+     "nkknxciLPDI",
+     "pUWasmfO6ak"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "videos show",
+   "verdict": "rhetoric",
+   "why": "News-footage framing device with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 6,
+    "months": 9,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Alberta wildfires: Jasper evacuees await update as pictures, videos show extent of the devastation",
+     "New videos show initial response to sinkhole on I-80 in New Jersey",
+     "Videos show violent Florida traffic stop"
+    ],
+    "ids": [
+     "-hxakmJxGYo",
+     "0L3jZHBNKUM",
+     "2esW3zw0Uac",
+     "ABErj6p2iUI",
+     "D020JyJlJ80",
+     "LuKqNZI3eXc",
+     "NFq8R6K7xHo",
+     "NcbsI8wNq58",
+     "OsvMqVoKHc8",
+     "UmxkUKbWzds",
+     "d2gICYYX8oI",
+     "d42hT0E0PK0",
+     "iud0DXCuuas",
+     "khJ2jEmt4zU",
+     "l6N7JdZTQq8",
+     "qMl92MGmk-Q",
+     "yBnpzXd8kCc",
+     "zZbxoz9dWBE"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "show strength",
+   "verdict": "rhetoric",
+   "why": "Generic market-commentary phrasing applied to different tickers, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 9,
+    "months": 6,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Surprising sectors: financials show strength, utilities lead, followed by communication services",
+     "Markets Bleed, But Quantum Stocks Show Strength – IonQ, Rigetti & D-Wave",
+     "Nvidia Rises as Results Show Strength Despite China"
+    ],
+    "ids": [
+     "1iEefmROJ2s",
+     "4QvOo1haaQE",
+     "69W2a8MVgYs",
+     "AXBDs8YQMb8",
+     "SOFjOO1YfWA",
+     "SmQ1pOnLX4Y",
+     "Uads0olnpYw",
+     "VhJMxv_28L0",
+     "pNp-woXkcuU"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "cause heart",
+   "verdict": "rhetoric",
+   "why": "Titles blame many different causes for heart problems; no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 13,
+    "months": 15,
+    "span": "2017-12 → 2026-09",
+    "examples": [
+     "The Cause of Heart Palpitations – Dr. Berg on Insulin Resistance & Electrolytes Deficiency",
+     "Your Low Good HDL Cholesterol will Cause Heart Attack or Paralysis Know Treatment Cure",
+     "Do Diuretics (water pills) Now Cause Heart Attacks? – Dr.Berg On Thiazide Diuretics Side Effects"
+    ],
+    "ids": [
+     "09my0_zQcOo",
+     "0wsGzQ47Ovg",
+     "7CIOc-GVnt4",
+     "9iqX9HEq6NE",
+     "AOaLV6bMKG8",
+     "GsSKdpxt0-c",
+     "J0wl1k6QeQ8",
+     "Ogk6ohgkcNI",
+     "P6H2gbWsqRo",
+     "Q54PibLtWyw",
+     "WUX2B9nLqcY",
+     "X0faSl8qvu0",
+     "_lZaOE_3MWg",
+     "bkRBnB00lZM",
+     "cbrbN40xW-Y",
+     "hKWmVzQEySE",
+     "vU8CyIcytX8"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "win race",
+   "verdict": "rhetoric",
+   "why": "Open 'who will win the AI race' question, each title naming a different contender.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 14,
+    "months": 10,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Who will win the AI race?",
+     "Will Google Win The AI Race? | Fintech Fridays",
+     "Can Europe Win the AI Race?"
+    ],
+    "ids": [
+     "-E88RyyfK0w",
+     "1fTV1f2xn0s",
+     "7fKtBLmoX6w",
+     "AutDUwvOmAI",
+     "KjN0sWmAAek",
+     "RFnF5hlRZ88",
+     "WhSTRVN7Gpk",
+     "X4s96SM8aDI",
+     "fkXIWa2prGI",
+     "hL2QV1Ql9CM",
+     "l4hF_ZpwanQ",
+     "nYhPPSrZAYA",
+     "owLAxrbN78A",
+     "pBr99UVh3CA",
+     "pDzeLFSI_og",
+     "qDPI_K7U5TE",
+     "qiOYt6tX2VI"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "prepared what's coming",
+   "verdict": "rhetoric",
+   "why": "Pure teaser dread with no specified event or mechanism.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 6,
+    "months": 10,
+    "span": "2024-06 → 2026-09",
+    "examples": [
+     "\"100% BIGGER Than 2021! Nobody Is Prepared for What's Coming in 2024\" - Brian Armstrong",
+     "\"Nobody Is Prepared for What's Coming in 2025\" - Lyn Alden",
+     "\"MOST People Are NOT Prepared For What's COMING...\" – James Lavish"
+    ],
+    "ids": [
+     "2viL4rWLEcQ",
+     "44CUMiOoNKE",
+     "5gmFHkMIrb4",
+     "Cz5sA_rvT2I",
+     "IJrr7tXedi4",
+     "JHqo8nbHPxg",
+     "Z4-Ct0y05Jw",
+     "apScUCQXhhc",
+     "hbK_SWVzd7U",
+     "osXaMLCqaiw",
+     "sL7Zq_aPJkA",
+     "u_hSUE1plO8"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "fix flip",
+   "verdict": "rhetoric",
+   "why": "A real-estate investing genre label, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 4,
+    "months": 10,
+    "span": "2021-05 → 2026-03",
+    "examples": [
+     "Wholesaling Fix & Flip Formula with Jamil Damji",
+     "Cheap Houses For Sale in South Carolina - Fix and Flip Real Estate Investing - Conway SC",
+     "Как защитить свой капитал в рецессию? Экономический прогноз, лето 2022? Fix and flip во Флориде"
+    ],
+    "ids": [
+     "9lqmKKN1DiM",
+     "O8pni2lqMXA",
+     "ZYu6YFykK28",
+     "_kUKlu1voGI",
+     "alGtAiWCIQ0",
+     "eSSXGPD1yTk",
+     "pGHGsVMGwg8",
+     "tkPP9GHjPao",
+     "yS-AURPWsU0",
+     "ynqe1E3iVUE"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "rally coming",
+   "verdict": "rhetoric",
+   "why": "Predictions of imminent rallies span silver, stocks and crypto with no single claim or shared cause.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 34,
+    "channels": 13,
+    "months": 21,
+    "span": "2019-12 → 2026-07",
+    "examples": [
+     "A Silver Price RALLY is Coming!",
+     "Stock Market Post-Election Rally Coming",
+     "BITCOIN SMASHES $19,000! MEGA PRICE RALLY COMING! XRP & XLM CRYPTO PUMPING HARD! [This Is INSANE]"
+    ],
+    "ids": [
+     "-_AHO8z1HH8",
+     "0XhoT54rLvw",
+     "449LxpuZDv0",
+     "6AS8-W8mYv4",
+     "79QAjnvpDlM",
+     "7y7m2CQWj7Q",
+     "8XwmhToHSks",
+     "9NhO_BI9DN8",
+     "D8pRTgLvre8",
+     "FXNLvqegDdQ",
+     "Fi66eKk2yNc",
+     "HWr6RUykWGY",
+     "JbjIKyeLr6s",
+     "LJb2VW67smw",
+     "MzB017MW7gE",
+     "P8yUWZQY4fY",
+     "S6reSNOj9d0",
+     "SIV5MMUOKIg",
+     "UJ1_sIn6WRI",
+     "Wo-ZfWCLO-I"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "kill him",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated assassination subjects with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 13,
+    "months": 9,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "\"Trump Knows There's a Plan To Kill Him\" - Alex Jones Warning",
+     "Details of Wagner Leader Prigozhin Plane Crash: Did Putin Kill Him?",
+     "\"We Couldn't Kill Him\" - SEAL Team 6 Operator"
+    ],
+    "ids": [
+     "1iUyKs7XA04",
+     "9_86fUIa4hs",
+     "DQbNhyWQksA",
+     "MKziP3czvH4",
+     "S-t2IfCpY00",
+     "TcROC9XIbNs",
+     "UT07pSkczvk",
+     "iNIOzFGed4A",
+     "jdMrbE9qmLc",
+     "maEFhGJNaeE",
+     "sI6sQtHvliA",
+     "sjkImugSpfI",
+     "wt-ByAVqFVw",
+     "xC4HTP8VKYk",
+     "y7RepmAaxAM",
+     "y9U71v1Ubm4"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "partially collapses",
+   "verdict": "rhetoric",
+   "why": "News event descriptor for unrelated building/dam incidents, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 4,
+    "months": 8,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Thousands evacuated in Norway due to severe flooding as dam partially collapses",
+     "Bronx apartment building partially collapses, all occupants safely evacuated",
+     "Building partially collapses as flash floods hit West Virginia"
+    ],
+    "ids": [
+     "0Zix5eevSgc",
+     "37gJC-r9eso",
+     "6fm8aRxY9fI",
+     "9Onlfbnq2hI",
+     "BnhtInyg_lo",
+     "I2TJIe_phq8",
+     "UyvyHBdt1NM",
+     "XsPF11KCK58",
+     "ZeTt-keTgfU",
+     "hCk4ki-U9Y0",
+     "iW66oFjMG3Q",
+     "t4HZz8OQCVU"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "apology coming",
+   "verdict": "rhetoric",
+   "why": "Tarot reading format hook, not a shared falsifiable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 8,
+    "span": "2019-12 → 2026-09",
+    "examples": [
+     "Taurus:  Dec. 5th-11th  \"APOLOGY COMING...TOO LATE?\"",
+     "CAPRICORN:  Apology coming, but they're worried you've moved on.",
+     "VIRGO:  AN APOLOGY IS COMING SOON."
+    ],
+    "ids": [
+     "-M153D7HsJ8",
+     "3Uw4_pXc_IE",
+     "7Khm4Kb95aI",
+     "EphrZrm5YRw",
+     "XtNSStuTHN4",
+     "gIXiyZagZrY",
+     "hyU9MK3wmu0",
+     "lev_1mQm7tM",
+     "rmrVyAVX0dE"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "replace devops",
+   "verdict": "narrative",
+   "why": "Shared claim that AI/automation will displace DevOps engineering roles.",
+   "claim_name": "The \"AI will replace DevOps\" story",
+   "claim": "AI tools such as ChatGPT, AIOps and workflow automation will take over DevOps work, making DevOps jobs unsafe or obsolete.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "DevOps roles may be unnecessary as tooling automates pipelines and operations",
+    "cause": "Rapid capability gains in AI assistants and automation platforms",
+    "outcome": "DevOps job losses; engineers must reskill toward AI-driven operations",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 4,
+    "months": 8,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "CAN CHATGPT REPLACE DEVOPS ? | ARE DEVOPS JOBS SAFE ? |CHATGPT vs DEVOPS | #devops #openai #chatgpt",
+     "Can n8n workflow automation replace DevOps ?",
+     "Will AIOps replace DevOps ? Harsh Reality"
+    ],
+    "ids": [
+     "3JW97XUiFFQ",
+     "Eu3I3fEOC7E",
+     "FoSD9ot9LY4",
+     "SrI_xuZHrHI",
+     "YcKvw1tdCoU",
+     "dx0tHdJdO_M",
+     "eM2V6cgmwug",
+     "ob82fM-NCoo"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "irs coming",
+   "verdict": "narrative",
+   "why": "Recurring claim that the IRS is moving to tax and enforce against crypto holders.",
+   "claim_name": "The \"IRS is coming for your crypto\" story",
+   "claim": "Tax authorities are ramping up enforcement and new rules to tax bitcoin and virtual currency gains, and holders will be pursued.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Crypto gains previously untracked are being targeted by tax authorities",
+    "cause": "Expanded IRS reporting requirements and enforcement budgets",
+    "outcome": "Audits and tax bills for crypto holders; need to report and plan taxes",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 4,
+    "months": 8,
+    "span": "2020-04 → 2025-05",
+    "examples": [
+     "IRS is Coming For Bitcoin & Virtual Currency (How is it Taxed?)",
+     "BIDENS BIG CHANGE! 4th Stimulus Check Update | IRS COMING | Tax Hikes & Daily News - May 3",
+     "IRS Is Coming After BITCOIN Gains! (CEO Has HOPE For Crypto Markets!)"
+    ],
+    "ids": [
+     "7fFSCoPCJro",
+     "FXVnm-KnbEs",
+     "TIa_E1puDa8",
+     "XBOfGraKXow",
+     "hfQ6KsYPedM",
+     "oBiCVsKo2I0",
+     "orF6mwC7Dn4",
+     "wun7ceJddsg"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "saves baby",
+   "verdict": "rhetoric",
+   "why": "Human-interest rescue story format with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 9,
+    "span": "2021-12 → 2026-09",
+    "examples": [
+     "Two Time Living Organ Donor Donates Liver, Saves Baby’s Life",
+     "Gosling guardian: Saskatchewan man saves baby goose while on the way to work",
+     "Heroic Teenager Saves Baby Trapped in a Well"
+    ],
+    "ids": [
+     "6LjaoundSsc",
+     "ChAmXVRua4o",
+     "LNrM8rujf8o",
+     "NTMaDlw-1WY",
+     "e67i2jiFgH4",
+     "gtKTRNHxIP8",
+     "sYL7p8eBaBM",
+     "utZo703tsKA",
+     "wVkmKrptTcw"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "won't rule out",
+   "verdict": "rhetoric",
+   "why": "News phrasing about officials declining to exclude options; subjects unrelated.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 9,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "BC Conservative leader won't rule out trying to topple NDP government",
+     "Trump won't rule out military, economic action to acquire Greenland",
+     "🚨WARNING: TRUMP WON'T RULE OUT A RECESSION!!!"
+    ],
+    "ids": [
+     "6jpvMViqUr4",
+     "Ial1Lx-VJLI",
+     "L10Mss4x0M0",
+     "NtJMR1aG-X4",
+     "OeR9TaNh1Ng",
+     "ROHzb1r9rdI",
+     "a4hF7kFZaSE",
+     "d9tJD9oX4cU",
+     "hnE2Lbica0U",
+     "m3owAQOlEp4",
+     "pXxK0ca2EDE",
+     "raE7pjJZijU",
+     "u7Xq-fNw100",
+     "zM9olJcv2JI"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "banned countries",
+   "verdict": "rhetoric",
+   "why": "Shared wording covers media bans, travel, and food additives with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 7,
+    "span": "2022-03 → 2026-09",
+    "examples": [
+     "Why Russia Today is being banned in some countries",
+     "Trump is Now Banned From 37 Countries Due to “Convicted Felon” Status",
+     "You're Eating Foods BANNED in Other Countries (But NOT in the US)!"
+    ],
+    "ids": [
+     "2avV_gUiH_E",
+     "5GQEk47MN1o",
+     "A5PsyCPzGcY",
+     "Sr7GOtzR0yg",
+     "c9zfxRITQRY",
+     "t-09IiS1SUo",
+     "wITAprC8RZc",
+     "xEZvM0BnCec"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "suspect dead",
+   "verdict": "rhetoric",
+   "why": "Crime news label with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 25,
+    "channels": 5,
+    "months": 12,
+    "span": "2018-04 → 2026-09",
+    "examples": [
+     "YouTube HQ Shooting Ends With Female Suspect Dead",
+     "Vancouver stranger attacks: Police arrest suspect after 1 dead, 1 man's hand severed in random crime",
+     "Suspect dead after shooting in Midtown Manhattan in NYC"
+    ],
+    "ids": [
+     "2JBwAhsG6gk",
+     "416WEyI0EEs",
+     "7NGmO2R9H5U",
+     "8SZrRVisfUI",
+     "9zBUpiULKMA",
+     "A0eIthUbQWw",
+     "BtW3zrCweY8",
+     "F_KIAz_h4tc",
+     "G6T9Jqic9WA",
+     "Hc5kIwEvkIM",
+     "JU3IP_UQSJI",
+     "LGNE9TBfOdw",
+     "ODEAf8YlhK0",
+     "Wzb7NUemJaU",
+     "YZkXHtAB7eU",
+     "bHF3W5LV86U",
+     "eTdPcMnBpJE",
+     "fcWbQ2CdlK4",
+     "gDpBqQIqEjc",
+     "mm1Tv87REDs"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "binaural beats",
+   "verdict": "rhetoric",
+   "why": "Subject topic; titles range from skeptical to astral projection, no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 5,
+    "months": 6,
+    "span": "2020-12 → 2026-09",
+    "examples": [
+     "The Story Behind Binaural Beats - Cory Allen | Modern Wisdom Podcast 254",
+     "Binaural Beats - Do They Actually Work? #binauralbeats #binauralbeatsmeditation #eHealthyinfo",
+     "Instant Astral Projection With Binaural Beats Explained"
+    ],
+    "ids": [
+     "0myWGOmNuOM",
+     "3uaQKAtlX_8",
+     "59KNJPeE3a0",
+     "E0dZ7fMvwn4",
+     "FBr6_fygGrc",
+     "Gqce2bKNRD8",
+     "HbYEb97lAvY",
+     "KaQE9N9corI",
+     "KkC10z-vZCk",
+     "WrczMxRg9qI",
+     "ZaZ-cXXYEnM",
+     "dKeAPKmrVHs",
+     "eLsNVigJatU",
+     "fX5aVqAznww",
+     "fpW957LpRwg",
+     "jXs_aShGBdY",
+     "m7WUlsZRQL4",
+     "msb3E0_Q9OI",
+     "sf4crbXGr_o",
+     "wSBSN3z2gMo"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "projected win",
+   "verdict": "rhetoric",
+   "why": "Election reporting format across unrelated countries, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-02 → 2026-08",
+    "examples": [
+     "Indonesia election: Human rights activists protest Prabowo's projected win",
+     "Carney’s Liberals Projected to Win Canada Election With Narrow Victory",
+     "Mark Carney Liberals projected to win government in close election"
+    ],
+    "ids": [
+     "4ktx1B-EYIQ",
+     "61uf9RQDMk8",
+     "76HiAEvByZc",
+     "AdOvZ-GC5Uc",
+     "BL-KuLUMkjk",
+     "CJauANAVfck",
+     "GD_yIWKff4M",
+     "LOjnCh5KwYU",
+     "OYglnC_E-GU",
+     "Qn2d2pEM2jU",
+     "YS4MSFb4eZQ",
+     "_kQ8KmYcD98",
+     "jNSIfyafgrw",
+     "k8HsGTFwoi4",
+     "o0mr0wcUqPY",
+     "oeq4i73iMeA",
+     "pZqdoNAaPkw",
+     "smd5hoTQSIk",
+     "sqksI94pUZQ",
+     "xoZCA9oo6i8"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "show force",
+   "verdict": "rhetoric",
+   "why": "Stock news descriptor for unrelated military/policing events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 12,
+    "months": 6,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Canada among Western nations making a strong show of force in the East China Sea",
+     "\"New Cuban Missile Crisis\" - Putin Send Nuclear Submarine To Cuba In Show Of Force Against Joe Biden",
+     "Pres. Trump defends show of force in LA"
+    ],
+    "ids": [
+     "4bafi5Wf9uE",
+     "5X3a6IyJG8g",
+     "9q6sdMxN3o0",
+     "DgJfB-Zk53o",
+     "Lvh8mm98sZ4",
+     "Rv7_1rbsca8",
+     "V9JEq1ag45o",
+     "dNKssLebzxY",
+     "f-XJQDeWDWQ",
+     "lnZl-61TXhE",
+     "pIpsqP6Hxj0",
+     "p_urZKxjQ3s",
+     "snVVZLTgvSw",
+     "tgzFxnhuT60",
+     "vSjSVL0s8oQ",
+     "vvYhjA_tdsw",
+     "wUIfH1loQV4",
+     "wc6wEAFjXYg"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "glacier collapse",
+   "verdict": "rhetoric",
+   "why": "Coverage of one Swiss event, an occurrence rather than a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 10,
+    "months": 3,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "1 missing after glacier collapse buries Swiss village in mud and rock",
+     "Swiss glacier collapse buries mountain village",
+     "Glacier collapse in the Alps buries Swiss mountain village"
+    ],
+    "ids": [
+     "038AVxMVyPU",
+     "BfAVJbt5Suk",
+     "HUxXgPenX64",
+     "J9bbC2AMAuM",
+     "KHXBVAnKDDY",
+     "LdPOZC9d8rw",
+     "OdZKrtgCiW0",
+     "Ru8bxmi0pmw",
+     "SswKGGetvFo",
+     "bt9-5mtPXSI",
+     "cpPM6hzgh6c",
+     "wS3vRBOp9aA"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "shows arrest",
+   "verdict": "rhetoric",
+   "why": "Bodycam footage format label, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Video shows arrest of Devil’s Den killing suspect at barbershop",
+     "Bodycam footage shows the arrest of a man in a Chuck E. Cheese costume",
+     "Police bodycam footage shows arrest of Rhode Island assistant attorney general"
+    ],
+    "ids": [
+     "0TDeVRJaBoU",
+     "2CbMDc979io",
+     "9ro1lWcCqXs",
+     "KTgeI5DM__s",
+     "bienR-kuTT4",
+     "d5sNwAH0mR0",
+     "i1lMoJ8jaOQ",
+     "m3xCc3Rct_Y",
+     "yLSZCFbIUys"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "wanted kill",
+   "verdict": "rhetoric",
+   "why": "Crime-reporting phrasing spanning unrelated cases.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 5,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "2 teens arrested in terror plot wanted to “kill large crowd” at Taylor Swift concert in Austria",
+     "Diddy’s ex-assistant testifies rap mogul wanted to kill Kid Cudi l Diddy Trial Day 14 #Backscroll",
+     "Diddy’s ex-assistant testifies rapper wanted to kill Kid Cudi | Banfield"
+    ],
+    "ids": [
+     "6AWDKLEAZR4",
+     "A7iHBuNqOjU",
+     "F--lrIjmKyQ",
+     "GVJ-bbAH56c",
+     "IpaofrCHh_M",
+     "P4uO_YQkcHg",
+     "iS4xj5K2YCo",
+     "j6z8kTcYCeQ",
+     "nhWD2hTp15I"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "physicist explains",
+   "verdict": "rhetoric",
+   "why": "Authority-format title with varied subjects, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "Physicist EXPLAINS String Theory & Controversy | Brian Keating",
+     "Theoretical Physicist Explains Fascination with Universe | Lawrence Krauss",
+     "3I/ATLAS: Physicist explains away some ‘alien tech’ theories | NewsNation Prime"
+    ],
+    "ids": [
+     "-ktKGaCGRXA",
+     "44M-VFtLtwQ",
+     "HkuG7CMvj_Q",
+     "N3aKvcx2ZTs",
+     "XUNNxU1nUVg",
+     "bE0KbICUV6Q",
+     "bNZTIu96QfU",
+     "m_7WaMH99Ko"
+    ]
+   },
+   "first_read": "2026-09-25",
+   "last_read": "2026-09-25"
   }
  ]
 }
