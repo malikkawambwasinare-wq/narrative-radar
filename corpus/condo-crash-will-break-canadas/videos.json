@@ -5341,6 +5341,31 @@
         "comments": 75,
         "enrichedOn": "2026-09-24"
       }
+    },
+    {
+      "videoId": "zuNKuqzFmYo",
+      "title": "Are Canadian Banks a Trade War Target? Special Guest Marc Cohodes",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=zuNKuqzFmYo",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-25",
+      "views": 1236,
+      "length": "58:01",
+      "age_days": 1,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 20,
+        "comments": 3,
+        "enrichedOn": "2026-09-25"
+      }
     }
   ]
 }
