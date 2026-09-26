@@ -1,0 +1,48 @@
+{
+ "topic": "the-2026-setup",
+ "read_on": "2026-09-26",
+ "model": "gemini-3.7-flash",
+ "videos_read": 15,
+ "sampled_from": 25666,
+ "sampling": "at most 2 per channel, spread across months",
+ "status": "split",
+ "status_reason": "these are separate narratives filed together",
+ "central_claim": "Individual retail investing and trading across stocks, precious metals, and cryptocurrencies consistently yields superior financial returns.",
+ "videos_asserting_it": 1,
+ "variants": [],
+ "not_about": "A single coherent financial thesis, specific market event, particular asset class, or unified economic forecast.",
+ "claim_name": "Retail Investment Outperformance",
+ "hook_candidates": [
+  "Retail Investing Strategies Across Diverse Asset Classes",
+  "Independent Market Analysis and Financial Forecasting"
+ ],
+ "is_one_narrative": false,
+ "born": "2018",
+ "turns": [],
+ "camps": [],
+ "disagreement": "The videos do not share a common subject matter; they cover completely distinct assets including individual equities (TSMC, SoFi, BHEL, ChargePoint), Pakistani bullion rates, personal budgeting and tax strategies, general US macro market timing, and cryptocurrency trading.",
+ "split_into": [
+  "Individual Stock Valuation and Company Earnings Analyses",
+  "Macroeconomic Stock Market Timing and Volatility Forecasts",
+  "Precious Metals Price Predictions and Bullion Tracking",
+  "Personal Finance Habits and Long-Term Wealth Accumulation",
+  "Cryptocurrency Technical Analysis and Market Commentary"
+ ],
+ "evidence": [
+  "4dixeN3nm24",
+  "5Qalo_WYEIk",
+  "903iQkbTyvc",
+  "9lgQqWGRmXA",
+  "AGaCLVfUIIU",
+  "FPgw-REdLvk",
+  "TOz1a0DHE1A",
+  "TkXg772lplU",
+  "TrhPZd-E-kA",
+  "WQXi7krzJwA",
+  "hWBse9VjOks",
+  "si24Q4xpT_Y",
+  "tN1o0E2JmGU",
+  "tv0GqOhl3e0",
+  "wqlwlB22kq0"
+ ]
+}
