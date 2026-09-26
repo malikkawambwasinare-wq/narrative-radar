@@ -4,6 +4,7 @@
     python3 scripts/narrative_read.py --topic housing-crash-watch --n 24
     python3 scripts/narrative_read.py --all --n 24 --write
     python3 scripts/narrative_read.py --topic housing-crash-watch --synthesize-only
+    python3 scripts/narrative_read.py --topic the-2026-setup --write --apply   # fill turns and camps where the corpus has none
 
 Two passes.
 
@@ -50,6 +51,7 @@ PER_CHANNEL = 2     # no channel may dominate the sample
 WRITE = "--write" in sys.argv
 SYNTH_ONLY = "--synthesize-only" in sys.argv
 ALL = "--all" in sys.argv
+APPLY = "--apply" in sys.argv     # fill narrative.json / claims.json where they are empty; never overwrite
 
 
 def flag(name, default):
@@ -228,9 +230,32 @@ SYNTH_SCHEMA = {
         "is_one_narrative": {"type": "boolean", "description": "False if these claims are really two or more separate narratives filed together"},
         "split_into": {"type": "array", "items": {"type": "string"},
                        "description": "If is_one_narrative is false, the narratives this should split into"},
+        # The two things a set is built from. Origin sets slice the corpus by
+        # the years in `turns`; debate sets need two `camps` each holding videos.
+        "born": {"type": "string", "description": "The earliest year the claim appears in these videos, YYYY. Empty if the sample cannot say."},
+        "turns": {
+            "type": "array",
+            "description": "The turns the story took as these videos show it, oldest first. Only turns visible in the listed videos.",
+            "items": {"type": "object", "properties": {
+                "date": {"type": "string", "description": "YYYY or YYYY-MM, taken from the video dates shown"},
+                "mechanism": {"type": "string", "description": "What changed, under 12 words"},
+                "videoIds": {"type": "array", "items": {"type": "string"},
+                             "description": "Ids from the list that show this turn"}},
+                "required": ["date", "mechanism", "videoIds"]},
+        },
+        "camps": {
+            "type": "array",
+            "description": "The sides that disagree about the central claim, strongest first. Two minimum, or leave empty.",
+            "items": {"type": "object", "properties": {
+                "position": {"type": "string", "description": "This side's position, under 10 words"},
+                "watch_for": {"type": "string", "description": "The tell: what a viewer should notice when this side argues"},
+                "videoIds": {"type": "array", "items": {"type": "string"},
+                             "description": "Ids from the list whose channel argues this side"}},
+                "required": ["position", "watch_for", "videoIds"]},
+        },
     },
     "required": ["central_claim", "videos_asserting_it", "variants", "not_about",
-                 "claim_name", "hook_candidates", "is_one_narrative"],
+                 "claim_name", "hook_candidates", "is_one_narrative", "born", "turns", "camps"],
 }
 
 SYNTH_PROMPT = """Below are the claims extracted from videos we have grouped into one narrative.
@@ -252,7 +277,23 @@ Tell us what they converge on.
 
 For claim_name and hook_candidates: name the claim, not the topic. Never a
 question. No em dashes. Hooks stay under 60 characters. Do not invent numbers —
-if you want a count in a hook, use only counts present in this data."""
+if you want a count in a hook, use only counts present in this data.
+
+Then the two things an evening's set is built from:
+
+- turns: the story's timeline as THESE videos show it. Each turn is a date
+  (from the dates listed, YYYY or YYYY-MM) and what changed, oldest first, with
+  the ids that show it. born is the earliest year the claim appears here. If
+  the sample does not reach back to a turn, do not invent one.
+- camps: the sides that disagree about the central claim. Each camp has a
+  position, a watch_for (the tell a viewer should notice when this side
+  argues), and the ids of videos whose CHANNEL argues that side. Two camps
+  minimum to be worth listing; one side is not a disagreement, so return an
+  empty list rather than a single camp. A video goes in one camp only.
+
+Cite only ids from the list above, exactly as written. An id you did not see
+is worse than none: it would put a video that does not exist into someone's
+evening."""
 
 
 def synthesize(topic, reads, k, budget):
@@ -273,6 +314,73 @@ def synthesize(topic, reads, k, budget):
     r = ask(MODEL, [{"type": "text", "text": SYNTH_PROMPT + "\n\n" + blob}],
             SYNTH_SCHEMA, k, budget=budget, est_tokens=len(blob) // 3)
     return payload(r), spend(r)
+
+
+def sanitize(synth, reads):
+    """Every videoId the model cites must be one it was shown.
+
+    Models produce plausible ids that do not exist, and an invented id here
+    would put a video that does not exist into someone's evening. So drop any
+    id we did not send. A camp with no surviving videos is dropped too, since a
+    debate set needs sources; a turn survives on its date and mechanism alone,
+    because the origin set slices the corpus by year and does not need ids."""
+    have = {r["videoId"] for r in reads}
+    keep = lambda ids: [i for i in (ids or []) if i in have]
+    camps = [dict(c, videoIds=keep(c.get("videoIds"))) for c in synth.get("camps") or []]
+    synth["camps"] = [c for c in camps if c.get("position") and c["videoIds"]]
+    if len(synth["camps"]) < 2:              # one side is not a disagreement
+        synth["camps"] = []
+    turns = [dict(t, videoIds=keep(t.get("videoIds"))) for t in synth.get("turns") or []]
+    synth["turns"] = [t for t in turns if t.get("date") and t.get("mechanism")]
+    return synth
+
+
+def apply_to_corpus(topic, synth, n_read):
+    """Fill narrative.json and claims.json only where they are empty.
+
+    The stories with hand-built turns and camps keep them: this never
+    overwrites, and everything it adds says where it came from, so a later
+    reviewer can tell a read from a graded judgement."""
+    d = ROOT / "corpus" / topic
+    changed = []
+    stamp = time.strftime("%Y-%m-%d")
+
+    npath = d / "narrative.json"
+    nar = json.loads(npath.read_text()) if npath.exists() else {}
+    if not (nar.get("mutations") or []) and synth.get("turns"):
+        nar["mutations"] = [{"date": t["date"], "mechanism": t["mechanism"], "source": "gemini-read"}
+                            for t in synth["turns"]]
+        nar["mutations_note"] = (f"Turns read by {MODEL} from a {n_read}-video sample on {stamp}; "
+                                 f"evidence in claim-analysis.json.")
+        if not nar.get("born") and synth.get("born"):
+            nar["born"] = str(synth["born"])[:4]
+        npath.write_text(json.dumps(nar, indent=2, ensure_ascii=False) + "\n")
+        changed.append(f"narrative.json: {len(nar['mutations'])} turns"
+                       + (f", born {nar['born']}" if nar.get("born") else ""))
+
+    cpath = d / "claims.json"
+    cl = json.loads(cpath.read_text()) if cpath.exists() else {"note": "", "claims": []}
+    has_contest = any(len(c.get("camps") or []) >= 2 for c in cl.get("claims", []))
+    camps = synth.get("camps") or []
+    if not has_contest and len(camps) >= 2:
+        cl.setdefault("claims", []).append({
+            "id": f"gemini-{stamp.replace('-', '')}",
+            "type": "contested",
+            "statement": synth.get("central_claim", ""),
+            "note": synth.get("disagreement", ""),
+            "source": "gemini-read",
+            "camps": [{"position": c["position"], "watch_for": c.get("watch_for", ""),
+                       "sources": [{"videoId": v} for v in c["videoIds"]]} for c in camps],
+            "sources": [],
+        })
+        cl["updated"] = stamp
+        cpath.write_text(json.dumps(cl, indent=2, ensure_ascii=False) + "\n")
+        changed.append(f"claims.json: 1 contested claim, {len(camps)} camps")
+
+    for c in changed:
+        print(f"  applied      {c}")
+    if not changed:
+        print("  applied      nothing: the corpus already has turns and camps, or the read gave none")
 
 
 def verdict(synth, n_read):
@@ -318,6 +426,7 @@ def run(topic, k, budget):
     if not synth:
         print("  synthesis unparsed")
         return cost
+    synth = sanitize(synth, reads)
     total = (cost or 0) + scost
     state, why = verdict(synth, len(reads))
 
@@ -333,6 +442,12 @@ def run(topic, k, budget):
         print(f"  SPLIT INTO   {', '.join(synth.get('split_into', []))}")
     for v in synth.get("variants", [])[:4]:
         print(f"    {v['count']:>3}x  {v['claim'][:74]}")
+    if synth.get("born"):
+        print(f"  born         {synth['born']}")
+    for t in synth.get("turns", [])[:6]:
+        print(f"  turn {t['date']:>7}  {t['mechanism'][:58]}  ({len(t.get('videoIds', []))} videos)")
+    for c in synth.get("camps", [])[:3]:
+        print(f"  camp         {c['position'][:56]}  ({len(c['videoIds'])} videos)")
     print(f"  cost         ${total:.3f}")
 
     if WRITE:
@@ -351,6 +466,12 @@ def run(topic, k, budget):
         p = ROOT / "corpus" / topic / "claim-analysis.json"
         p.write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
         print(f"  wrote        {p.relative_to(ROOT)}")
+        # Only an established read may fill the corpus. An inconclusive one, or
+        # a group that is really two narratives, has no centre to build a set on.
+        if APPLY and state == "established":
+            apply_to_corpus(topic, synth, len(reads))
+        elif APPLY:
+            print(f"  applied      nothing: status is {state}, and only an established read may fill the corpus")
     return total
 
 
