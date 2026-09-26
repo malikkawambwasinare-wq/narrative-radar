@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-25",
+ "generated": "2026-09-26",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2026,
+ "cost_usd": 0.1962,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -15407,6 +15407,1436 @@
    },
    "first_read": "2026-09-25",
    "last_read": "2026-09-25"
+  },
+  {
+   "phrase": "event coming",
+   "verdict": "rhetoric",
+   "why": "Vague teaser of an unspecified coming event; the titles span astrology, economy and survivalism with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 9,
+    "months": 9,
+    "span": "2022-02 → 2026-09",
+    "examples": [
+     "LEO:  A LIFE CHANGING EVENT IS COMING!  FEB. 7-13",
+     "Life-Altering Event Coming | Good News For The US Economy In 2023",
+     "Life-Threatening Event Coming Tomorrow | Possible Relief For Lower Income Households | SHTF"
+    ],
+    "ids": [
+     "2HvLcJDdyWY",
+     "4fGMSQWttFs",
+     "5JDVB1hGEwI",
+     "EixI7r1ZoxI",
+     "KdbMHZkcQ8Y",
+     "OtxK0jWmJ68",
+     "TIPFvrfsmEA",
+     "XdTNxiI3N5w",
+     "YP1VDjK_aEE",
+     "azbX3zILvQA",
+     "cqbDJk6bdfg",
+     "eqCBpXm1RN8",
+     "sohTLhcjb34",
+     "ta0gA_sCxVg",
+     "tpSaHTEMIT0",
+     "yRu5FsGYsrM"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "highway crash",
+   "verdict": "rhetoric",
+   "why": "A news subject label for unrelated local accidents, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 6,
+    "span": "2024-11 → 2026-09",
+    "examples": [
+     "Doctor-turned-Uber driver hit by car while helping victims of highway crash in BC",
+     "$700 fine for BC Highway 1 crash caused by loose dump truck tire \"an insult,\" victim says",
+     "Hazmat team responds to highway crash involving radioactive material"
+    ],
+    "ids": [
+     "Aqf7crFgL1o",
+     "BCQrI_AbW2E",
+     "RE3odXQWAlQ",
+     "W_OBkzMtO6Y",
+     "WcVwbsBERIw",
+     "WvP6Kqc4P1k",
+     "uHZVURXs7Jg",
+     "vfEdIe2iPsw",
+     "yqdLTVUi_Ks"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "fiery crash",
+   "verdict": "rhetoric",
+   "why": "Descriptive incident-report wording shared by unrelated crash stories with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 7,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "2 dead after multi-vehicle fiery crash on Hwy 401 near Pickering, Ont.",
+     "7 killed in fiery crash near Yellowstone National Park",
+     "Brother of Pat Tillman arrested on suspected arson after fiery crash: Police"
+    ],
+    "ids": [
+     "6IOFn6djuBk",
+     "FMEUJPQsvBo",
+     "WTklYawsz40",
+     "mCJnFNdadEU",
+     "mryJszxKzbo",
+     "wfNxrbH4CIA",
+     "wunopdC_PbY",
+     "z9zgzj-dOHg"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "ban lifted",
+   "verdict": "rhetoric",
+   "why": "An event headline template covering crypto, aviation and travel bans; no single contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 5,
+    "span": "2020-03 → 2026-09",
+    "examples": [
+     "India CRYPTO Banking BAN Lifted - HTC 5G Router Bitcoin - Ethereum DeFi Baseline Protocol - PwC ADA",
+     "US-China Trade: Boeing's China Deliveries to Resume After Ban Lifted",
+     "New York City Travel Ban is Lifted Says Mayor Mamdani (Full Presser)"
+    ],
+    "ids": [
+     "8kt-dnMnW6Q",
+     "E_7TObtZoLg",
+     "GmOCrhQvZKI",
+     "M7CLrB6YOaU",
+     "OZZtCQEGQ18",
+     "j_CULcFpBoM",
+     "m8Ha0m3X208",
+     "rSVt-TOf-e8"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "demands end",
+   "verdict": "rhetoric",
+   "why": "Generic headline phrasing for someone calling for something to stop, across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 11,
+    "months": 3,
+    "span": "2024-11 → 2026-09",
+    "examples": [
+     "Israel-Hezbollah ceasefire ignites demands for end to war in Gaza",
+     "Booker STOPS the Senate, Demands End to Illegal Iran War",
+     "Hafiz Naeem Demands End to Petroleum Levy as Protests Continue | Breaking News | Capital TV"
+    ],
+    "ids": [
+     "4YHhsTrBNpo",
+     "ArxvRODqMAA",
+     "Rwm9cVififA",
+     "VGZ9yHdb2L4",
+     "mB-TjkTc_bs",
+     "roLTRhCFTyU",
+     "s61zL58ZdY0",
+     "wAyMKjoesx8",
+     "wSqsY0xYaGY",
+     "x5IdrCRe3dk",
+     "yg--tzzsWgw"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "strikes kill",
+   "verdict": "rhetoric",
+   "why": "Standard war-casualty news formatting, a subject rather than a claim that could be wrong.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 25,
+    "channels": 10,
+    "months": 9,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Russian missile strikes kill at least 10, injures dozens in Zelenskyy’s hometown",
+     "Global National: July 8, 2024 | Ukrainian children's hospital hit as Russian strikes kill dozens",
+     "Russian missile strikes kill at least 20 across Ukraine"
+    ],
+    "ids": [
+     "0ZaSzCRxuRc",
+     "1qniqLQ9A90",
+     "3DQRgxoGeoA",
+     "4FY_7O0hZKI",
+     "58VRmp9uEHs",
+     "6dSDKYqYJRY",
+     "915lBIhnqpw",
+     "9dW3eOoxJxk",
+     "DGZoTGIRDR0",
+     "HNnu02Wx_CY",
+     "PUO3PJzp6yk",
+     "QwgxMy9hFSM",
+     "Rc7Th4VQurY",
+     "TqZ2JyNhpC8",
+     "UGUUNony2QY",
+     "U_N_UVhg_Hs",
+     "Vy38IBmtIaE",
+     "Xd0tbABVerk",
+     "aDQHg15a1GI",
+     "dPNehLPXv84"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "ray-ban meta",
+   "verdict": "rhetoric",
+   "why": "A product name with no claim attached; titles are device showcases.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "نظارة فيها كاميرا وذكاء اصطناعي من شركة ميتا!!  Ray-Ban Meta Smartglasses",
+     "نظارة فيها كاميرا وذكاء اصطناعي من شركة ميتا!!  Ray-Ban Meta Smartglasses",
+     "نظارة فيها كاميرا وذكاء اصطناعي من شركة ميتا!!  Ray-Ban Meta Smartglasses"
+    ],
+    "ids": [
+     "05ZbOqQhKH0",
+     "0w08Fy6y8mA",
+     "7RDr8ox1yEk",
+     "9oZpij9gRy8",
+     "BUsmmFwHHaU",
+     "N8W-H4Icy18",
+     "NBuOFdO0Csk",
+     "_p4R2yHQhl4",
+     "hrgoHjyNXdc",
+     "sL-MLCqJGO0",
+     "scex7RH1iro"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "ones actually",
+   "verdict": "rhetoric",
+   "why": "Listicle filler phrasing promising the 'real' picks, with no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 10,
+    "months": 3,
+    "span": "2026-04 → 2026-09",
+    "examples": [
+     "The Worst E-Bike Brands in 2026 (And the Ones Actually Worth Your Money)!",
+     "Tech Entrepreneur Insights: Screens Everywhere, but Which Ones Actually Create Value?",
+     "What if the people with direct knowledge—the ones who actually *worked* on it—are the"
+    ],
+    "ids": [
+     "235rifmsQAc",
+     "Ah_sxm5WMSk",
+     "CQxaneSm_IE",
+     "EDZTLXgsjmU",
+     "IyDEJ_0FhbY",
+     "J7xqfLU6XAw",
+     "To7tQ1uaTFE",
+     "X9Ija5Ud7zM",
+     "bmfC3FGW_2I",
+     "qhN3bsrHtYU"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "actually tastes",
+   "verdict": "rhetoric",
+   "why": "A selling hook for healthy recipes, not a checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-05 → 2026-07",
+    "examples": [
+     "Detox Soup Recipe That Actually Tastes Good | Homemade Lentil Soup Recipe",
+     "Healthy chocolate cake that actually tastes good! #chocolatecake #healthydessert #weightlossdessert",
+     "Make a Superfood Smoothie That Actually Tastes Good"
+    ],
+    "ids": [
+     "84_BQXUn3lo",
+     "K3VaPY1jlGw",
+     "QfnC2G01tek",
+     "VF9vcX8aHHc",
+     "YzNjOGJQcns",
+     "dNKd03hIYPI",
+     "fCbB5Kt9X38",
+     "zaasr1X5NC0"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "boat crash",
+   "verdict": "rhetoric",
+   "why": "News subject with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-05 → 2026-09",
+    "examples": [
+     "Deadly Ontario boat crash witness says he's seen same boat speeding many times before",
+     "Speed under investigation in Ontario boat crash that killed 3",
+     "Deadly Ontario boat crash: Man faces multiple charges after 3 killed in collision on Bobs Lake"
+    ],
+    "ids": [
+     "6NueZ2-BqrM",
+     "6VXgh3wL-Qc",
+     "H7q24l-bLLM",
+     "IBu_xiW7Zss",
+     "KHcuwX-6HwE",
+     "cZ4wTaqoBlw",
+     "j7M57gyMhJM",
+     "wtwuudZOk1E"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "fix resume",
+   "verdict": "rhetoric",
+   "why": "Advice format for job hunting; no common falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2026-02 → 2026-09",
+    "examples": [
+     "5 Free AI Certifications to Fix Your Resume in 2026",
+     "3 AI Prompts to Fix Your Resume and Beat Recruiter Systems",
+     "Fix your resume in 7 min | avoid these 5 resume mistakes"
+    ],
+    "ids": [
+     "8z9_OLNWDek",
+     "DiHRiiaj0uA",
+     "XFWXGKCBg9g",
+     "gS2Rq07hPc4",
+     "p7l0bmg5Bks",
+     "tKSrkqJnsE8",
+     "uZhEYR862YY",
+     "xd57Lio-0e0"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "remedies actually",
+   "verdict": "rhetoric",
+   "why": "Generic 'actually works' hook across unrelated home remedies.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-08 → 2026-07",
+    "examples": [
+     "Simple Joint Relief: Home Remedies That Actually Work",
+     "Top Natural Remedies That Actually Work | Barbara O'Neill",
+     "Top Health Hacks for Common Body Problems | Natural Remedies That Actually Work #healthylifestyle"
+    ],
+    "ids": [
+     "-w3QPpJ9DhI",
+     "GSF87-_KbtM",
+     "Q9KlHBciqKc",
+     "UAEeTWn0ECk",
+     "_v8e19H6m4M",
+     "haKjLZDOe40",
+     "ryFHE0S9pS8"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "raw truth",
+   "verdict": "rhetoric",
+   "why": "Pure attention phrase attached to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-04 → 2026-09",
+    "examples": [
+     "The Raw Truth about Finding Real Friends in Entertainment #pbdpodcast #shorts",
+     "Former Pfizer CEO Jeff Kindler - The Raw Truth About Leadership and Resilience",
+     "David Goggins: The Raw Truth About What It Means to Be a Real Man"
+    ],
+    "ids": [
+     "2DL_gJ4xLac",
+     "8Z-_-S5LDdI",
+     "RoU_Su2wvy0",
+     "T0mcw7nMQC4",
+     "Vvjg94u2B7k",
+     "izxE9DXDLms",
+     "wHTdiAqXitE"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "fix dry",
+   "verdict": "rhetoric",
+   "why": "Symptom-fix format spanning eyes, cough, lips with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "Castor Oil For Your EYES: Fix Dry Eyes, Cataracts,  and Eye Floaters",
+     "The BEST Fix for Dry Cough #shorts #drericberg",
+     "How to Fix Dry Lips? Here Are the 6 Causes of Dry Lips"
+    ],
+    "ids": [
+     "534VZUuY5P8",
+     "HdJNpQaW1QQ",
+     "Q4Qn5h0O-24",
+     "SoxTvHTZ-bU",
+     "ixT7Dp1oBt0",
+     "wP4MCPcKcFs",
+     "xSIN0n-w37U"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "probiotics actually",
+   "verdict": "rhetoric",
+   "why": "Titles disagree on whether probiotics work; no shared claim, and gut framing is already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-11 → 2026-09",
+    "examples": [
+     "Probiotics - Do They Actually Do Anything? And 10 Fermented Foods You Should Eat",
+     "$2 Homemade Probiotics That Actually Work!  | How To Make Sauerkraut Recipe",
+     "Stop Wasting Money on Probiotics. Here’s What Actually Improves Gut Health"
+    ],
+    "ids": [
+     "9i40lBR3pG4",
+     "F6pzSlnQ9nI",
+     "RvQB__dJmvY",
+     "Tuh0Na_H7LU",
+     "adLv02g8FWI",
+     "vUelUAicc90"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "horrifying truth",
+   "verdict": "rhetoric",
+   "why": "Clickbait revelation phrasing with no consistent claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "This 2000 Year Old BANNED Book Of Judith Revealed THE Horrifying Truth About Our Spieces!",
+     "This 2000-Year-Old BANNED Book of Judith Reveals the Horrifying Truth About Our Species!",
+     "The Horrifying Truth About Mount Everest Nobody Tells You"
+    ],
+    "ids": [
+     "2-6dCPSwymc",
+     "4YMWb9f9IlI",
+     "9FFz3ij41Y8",
+     "OO-txVnAM6g",
+     "OqNu7URjj7g",
+     "luvKS_RggP4"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "crash inevitable",
+   "verdict": "duplicate",
+   "why": "Titles predict an unavoidable housing/real-estate crash, already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2021-12 → 2026-02",
+    "examples": [
+     "REPORT WARNING!  Americans Can't Afford Rent / 2022 Housing Crash Inevitable",
+     "Sellers in PANIC MODE. Rushing to List Homes.  (2022 Housing Crash Inevitable)",
+     "Is a Commercial Real Estate Crash Inevitable? Will it Affect the Housing Market?"
+    ],
+    "ids": [
+     "8SbwXuSyqUI",
+     "OB8MZwRNNV0",
+     "Zy834kuTafY",
+     "j30qJMyyqrQ",
+     "q6oPErA3khU",
+     "r5BKDVsuku0"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "fix acid reflux",
+   "verdict": "rhetoric",
+   "why": "A remedy-format phrase; titles share a topic and promise, not one checkable causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2023-05 → 2026-08",
+    "examples": [
+     "Fix Your ACID REFLUX the Easy Way | Dr. Mandell",
+     "Fix Your Acid Reflux!  Dr. Mandell",
+     "Fix Acid Reflux By Boosting Stomach Acid"
+    ],
+    "ids": [
+     "2_Th6ypWU5g",
+     "4csC0wb8Wdc",
+     "aJ_rsqV38CE",
+     "gzb6M10OCCQ",
+     "s7ZbMbxyb9I",
+     "yvIznS5ho1g"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "discover truth",
+   "verdict": "rhetoric",
+   "why": "Pure curiosity hook attached to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-07 → 2026-08",
+    "examples": [
+     "Discover the Truth About WorldCoin WLD! WorldCoin Explained!",
+     "Less Than 6 Hours of Sleep Is “Suicide”? Discover the truth behind the viral claim #shorts #sleep",
+     "Live: Discover the Truth About GLP-1 Weight Loss - Your Questions Answered!\""
+    ],
+    "ids": [
+     "1E6BwtZt7js",
+     "9CqCNE4gSZU",
+     "CaR7HpU_cc0",
+     "NOnuQgEijb0",
+     "i61Q86adbvs",
+     "q944FL7b4iM"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "truth alcohol",
+   "verdict": "rhetoric",
+   "why": "Subject plus 'truth' hook; titles span weight loss, GLP-1 and success with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "LIVE The Truth about Alcohol and Weight Loss: Survive Holiday Parties Without Sabotaging Your Goals!",
+     "Why GLP-1 Medications Make You Hate Alcohol; The truth about alcohol and GLP-1",
+     "The real truth about alcohol and success"
+    ],
+    "ids": [
+     "8Uc01mnniSA",
+     "aclOB4zPQf0",
+     "n34mbY6CkEE",
+     "rEtXsdWvOTQ",
+     "wMO_sz9WZPo",
+     "yLrmt6UJq0g"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "mission save",
+   "verdict": "rhetoric",
+   "why": "Shared wording across UFO, military and channeling content with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2022-08 → 2026-09",
+    "examples": [
+     "Valiant Thor: A UFO, the Pentagon and a 3-year Mission to Save the World",
+     "160th SOAR Pilot Recounts the Rescue Mission to Save Marcus Luttrell the \"Lone Survivor\"",
+     "The Arcturian Council - Your Mission To Save Humanity, Earth And The Universe"
+    ],
+    "ids": [
+     "K_NKCESXm7w",
+     "XCfWZiUND7E",
+     "glehaMc-w98",
+     "hEXswJPTRAY",
+     "qtLb6cXvd9E",
+     "s685fYkogOc"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "isn't random",
+   "verdict": "rhetoric",
+   "why": "A hook formula applied to mood, acne and aging alike; no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Your Mood Isn't Random—It's Missing This One Thing",
+     "Pimple Isn't Random — Here's What It's Actually Telling You",
+     "Aging isn't random..."
+    ],
+    "ids": [
+     "-sV2ZktnPm8",
+     "0zL78WFNv0k",
+     "5zgWUM9pld4",
+     "FHXB-YG-Wiw",
+     "cy883M-O5E0",
+     "yulq9HjjvMI"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "truth female",
+   "verdict": "rhetoric",
+   "why": "Topic label with a 'truth' hook spanning hair loss, pleasure and attraction.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-01 → 2026-08",
+    "examples": [
+     "The Truth About Female Hair Loss",
+     "Why Most Men Are Failing in the Bedroom – The Shocking Truth About Female Pleasure | Susan Bratton",
+     "The Brutal Truth About Female Attraction - Macken Murphy"
+    ],
+    "ids": [
+     "FqPplgDCtkU",
+     "Q-sCVH1FKRU",
+     "QrhqDfdTPAI",
+     "aiHDK8y6oE4",
+     "oOIEIEXH_f4",
+     "qF3krSnXwi4"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "tea really",
+   "verdict": "rhetoric",
+   "why": "Question-format hook about tea; titles disagree on whether it helps or harms.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2022-10 → 2026-09",
+    "examples": [
+     "Is Tea Really Bad For Your Health? | (Shocking) Truth About Tea Benefits & Side Effects",
+     "Peppermint tea really kicks up your immune system!",
+     "Can Green Tea Really Help Fight Cancer?"
+    ],
+    "ids": [
+     "0zWgk4ml0T0",
+     "8oiHy5eHnhk",
+     "AFP_n3_SjFg",
+     "Fdc9-xI1boE",
+     "gU89cfd9fAg",
+     "kSwb1OnO6PM"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "end goal",
+   "verdict": "rhetoric",
+   "why": "Titles share only a generic phrase, no common checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "Ray Dalio and Elliot Choy on Why Money Shouldn't be an End Goal",
+     "Not every sign is for the end goal - #isabeaumaxwell #signs #thesagemethod",
+     "China Hawk on the End Goal of US-China Relations"
+    ],
+    "ids": [
+     "AA4UdnA75w0",
+     "VaeU3IgcEEI",
+     "bn8Ck2k6PXI",
+     "bxR89vtI_k0",
+     "heosczaoDUs",
+     "sB5_KMF011Y"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "must decide",
+   "verdict": "rhetoric",
+   "why": "Unrelated news subjects sharing a stock phrase.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Trump says Israel must decide next steps as Hamas stalls hostage talks",
+     "Countdown to Sep 30: Govt employees must decide—NPS or UPS? Secure retirement or risk gains?",
+     "Jury must decide if deadly force was lawful in Sonya Massey case: Attorney | NewsNation Live"
+    ],
+    "ids": [
+     "COdExKZeBcw",
+     "FF7SIoQuA28",
+     "KoOMtHfCgi8",
+     "LxXgonRcSC8",
+     "brxTW3ZNniE",
+     "dtIynGNYnGY",
+     "shkILni-PIU",
+     "t6M4c4VuceM"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "replace jobs",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that AI will replace human jobs.",
+   "claim_name": "The \"AI will replace jobs\" story",
+   "claim": "Artificial intelligence and automation will eliminate large numbers of human jobs across industries, including white-collar fields like banking and finance.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Human workers are being displaced from their occupations",
+    "cause": "Rapid capability gains in AI and automation adopted by employers",
+    "outcome": "Mass job losses and the need to retrain or restructure work",
+    "clock": "Ongoing, with claims focused on 2025–2026"
+   },
+   "evidence": {
+    "videos": 32,
+    "channels": 26,
+    "months": 8,
+    "span": "2024-01 → 2026-09",
+    "examples": [
+     "Is Technology and AI Going To Replace Jobs? Yes!",
+     "Jamie Dimon On AI impact: It Will Replace Jobs In Banking And Financial Services",
+     "Will AI Replace Jobs In 2025? #Shorts"
+    ],
+    "ids": [
+     "0QUG_WNrFP0",
+     "63SnTrkvDb8",
+     "6DJn13He1yM",
+     "6WIEs90UAUY",
+     "6bmodxzMgXY",
+     "8mQ_IPUndwY",
+     "8roNEahqE8A",
+     "9wwIZ35qJqk",
+     "AV9yrEugm7s",
+     "EeXH6jZcz7s",
+     "F9ds1edFGmY",
+     "HpZVy28kB40",
+     "KknGZX9dDjk",
+     "MXQjj49XPKg",
+     "MrfFSsbkuD8",
+     "QbhTDmu5zaQ",
+     "SYUHU28n9i4",
+     "Xg0ihzI4txs",
+     "ZGCYolepASA",
+     "aR1QMa9_g6s"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "bubble fears",
+   "verdict": "rhetoric",
+   "why": "A recurring market-mood label; titles argue both for and against, with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 21,
+    "channels": 7,
+    "months": 8,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "Cliff Asness Pushes Back on Bubble Fears | Open Interest 6/3/2025",
+     "Nvidia Earnings: Traders Hope AI Chip Firm Can Soothe Tech Bubble Fears",
+     "AI Bubble Fears Rejected, Bumper Bank Earnings, Speedy Trading Showdown | Bloomberg Daybreak:..."
+    ],
+    "ids": [
+     "1_dU9EKtS5w",
+     "34J9ipGHALQ",
+     "7Z1SxxKTCK4",
+     "ETteNpkCrVA",
+     "GbdyYrOrw2M",
+     "Glj_PsxbknQ",
+     "GpEFf4iahW8",
+     "KmTL-IP1Mpg",
+     "ObQO_n0gWv8",
+     "ScESPiwCXTk",
+     "TVpss2cZnd0",
+     "UHb5Q0oRLmg",
+     "VZfQBjkx-dM",
+     "WXHVBAX9qUc",
+     "W_cK2g8PphA",
+     "d6KIZTcSS_A",
+     "dUQjKJaB1Gw",
+     "mvZbR5IkZgQ",
+     "pvouc4blSwY",
+     "qaxGmAUjAdg"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "confirmed dead",
+   "verdict": "rhetoric",
+   "why": "News-report boilerplate about unrelated events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 6,
+    "months": 14,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "Nova Scotia flooding: Human remains found, man confirmed dead | FULL",
+     "Global National: Oct. 15, 2023 | 5th Canadian confirmed dead from Hamas attack in Israel",
+     "Israel-Gaza: Last Canadian missing after Hamas attack confirmed dead, family says"
+    ],
+    "ids": [
+     "24d7YK89ja4",
+     "7mZIGNotgdg",
+     "87VZBqUKhOU",
+     "LOoGCb_BOKI",
+     "SAgyaZ_IPlk",
+     "UzSo6mUWwb0",
+     "YY6g0VZWa1M",
+     "Ydkhtn9X1Ys",
+     "ZaWeOF1e1oc",
+     "b-NGtCKhZig",
+     "c9k1oYlWU1I",
+     "cu4l5HgfMyE",
+     "hPkM3us722Y",
+     "j9y0mmrZCpI",
+     "kQ-K0IMtcs8",
+     "qMBY2qmqyPY",
+     "r97uNh8sPjg",
+     "wjVfXnO0h2k"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "glp-1s actually",
+   "verdict": "rhetoric",
+   "why": "Explainer format about drug effects; no shared contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 7,
+    "span": "2026-01 → 2026-09",
+    "examples": [
+     "How GLP-1s actually change your hunger #weightloss #health",
+     "How GLP-1s actually cause constipation #science #glp1 #shorts",
+     "What GLP-1s Actually Do to Your Body"
+    ],
+    "ids": [
+     "2MFsogI23Mc",
+     "3KS41_pyMEY",
+     "ADPRRGDt6vk",
+     "C_nqoT0KYBc",
+     "K_-8B-VJmXU",
+     "SNCMmuArE5k",
+     "c7Q-dpTMULQ",
+     "chCyUuu8Rl0",
+     "dxe56Zmq9U0",
+     "kJMxvqVj1sg",
+     "oA_OV8Rd92k",
+     "oYyv15lmv9U"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "cause diarrhea",
+   "verdict": "rhetoric",
+   "why": "A symptom topic spanning different causes, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 4,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "Can alcohol cause diarrhea?",
+     "Surprising Foods That Cause Diarrhea — Watch Out! #DigestiveHealth",
+     "Can Wegovy Cause Diarrhea Pepio App Review Organize Progress Pics"
+    ],
+    "ids": [
+     "1fvh53cDivU",
+     "35NYBhECAC8",
+     "5OGFYQpvr8o",
+     "5hP2uTJ1qlk",
+     "6aUsXWLeM58",
+     "NiigldOdOLc",
+     "iIzOTR0Q7qU",
+     "oIywzlZJciw",
+     "q9LPtYyOfEc",
+     "tJgNpb1aruc"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "blast kills",
+   "verdict": "rhetoric",
+   "why": "Headline formula for unrelated explosions.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 7,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "Israel-Gaza: Hospital blast kills hundreds of Palestinians, global community outraged",
+     "Illegal Nigerian oil refinery blast kills at least 37 people",
+     "Nigeria blast kills at least 3, injures dozens as buildings collapse"
+    ],
+    "ids": [
+     "7JatcR_b96E",
+     "DxNdhlfO3m8",
+     "EMZlmUWVSR4",
+     "fmPdF4FPj1M",
+     "gMwv0RKNSfU",
+     "jEGJog_BGq0",
+     "qFyEiS2d9hE",
+     "yR5xHiJEYAo",
+     "zUbUwE7dOHo"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "chase ends",
+   "verdict": "rhetoric",
+   "why": "A news-event subject with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 4,
+    "span": "2026-03 → 2026-09",
+    "examples": [
+     "High-speed chase ends with rollover on highway",
+     "Migrant indicted after police chase ends in fatal crash | NewsNation Live",
+     "Arkansas high-speed police chase ends in major crash"
+    ],
+    "ids": [
+     "-nBeRBtDC2g",
+     "FEqMkMr7rY8",
+     "KuMHMP0nI1g",
+     "M0ML7rhdMXk",
+     "W0oRck1mT6E",
+     "ZuetFAZnzQM",
+     "ggM4cmMO5Tc",
+     "gvyMADTLo1g",
+     "roDChNUoCVk"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "berberine really",
+   "verdict": "narrative",
+   "why": "Titles share one testable claim that berberine works like Ozempic for weight loss.",
+   "claim_name": "The \"berberine is nature's Ozempic\" story",
+   "claim": "Berberine, a cheap over-the-counter supplement, produces weight-loss effects comparable to GLP-1 drugs like Ozempic.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "GLP-1 weight-loss drugs are expensive and hard to access",
+    "cause": "Pharmaceutical pricing and gatekeeping of obesity treatment",
+    "outcome": "Take berberine supplements as a natural substitute",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 4,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Is Berberine REALLY Natures Ozempic? (Weight Loss Drug Dupe TRUTH)",
+     "Is Berberine Really \"Nature's Ozempic? Here's What The Research Says",
+     "Is Berberine REALLY Natures Ozempic Weight Loss Drug Dupe EXPOSED"
+    ],
+    "ids": [
+     "2nnu3xjc2kQ",
+     "HezujvVkrkw",
+     "I9pkXxb9K84",
+     "II85rzRljko",
+     "XnOxoP1MzAw",
+     "h2be3DMC6js",
+     "xGNqu7fMN7A"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "1929 crash",
+   "verdict": "narrative",
+   "why": "Shared claim that current markets mirror 1929 and a comparable crash is coming.",
+   "claim_name": "The \"1929 all over again\" story",
+   "claim": "Today's stock market shows the same overvaluation and speculative excess as 1929, so a crash of similar or worse magnitude is coming.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Stocks are dangerously overvalued",
+    "cause": "Speculative mania and easy money, as in the 1920s",
+    "outcome": "A historic market crash; get out or hedge now",
+    "clock": "Imminent, repeatedly reset"
+   },
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 4,
+    "span": "2020-03 → 2026-09",
+    "examples": [
+     "Stock Market Crash 2020 | Analyzing The 1929 Crash | (Is this time different?)",
+     "Stock Market More Dangerous Than Right Before The 1929 Crash | David Hay",
+     "Roaring 20s Repeat? 1929 Crash Echoes Today! #shorts"
+    ],
+    "ids": [
+     "0PA7hGcf6xg",
+     "2o1LA3IujtU",
+     "5Z3j-qLw4K4",
+     "Fee-On5FN8o",
+     "U7oe2fnQBMw",
+     "VTAF4LAZ24c",
+     "gYARJbNEVE0"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "bull run coming",
+   "verdict": "duplicate",
+   "why": "Restates the tracked crypto-cycle timing narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": "Economy & markets",
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 27,
+    "channels": 17,
+    "months": 21,
+    "span": "2018-02 → 2026-09",
+    "examples": [
+     "J. Christopher Giancarlo of CFTC Saves Crypto Market - Bull Run Coming! - U.S. Supports Crypto",
+     "Cryptocurrency Alt Coins Bull Run Coming? Cardano vs. Litecoin",
+     "Stellar Lumen! 🚀 Bull Run Coming? [Cryptocurrency/Bitcoin/Altcoin News]"
+    ],
+    "ids": [
+     "-c5fiB0v7LM",
+     "0iq_u95OSi0",
+     "1Q0iXD98Hg0",
+     "6IzoUHgNJqc",
+     "7EXBpFPCc6M",
+     "Aa_nG_mC_0E",
+     "AsewvnLGLxY",
+     "D9PvqOXQRl0",
+     "E6eLYtaJQJA",
+     "GVtUmw4tQAw",
+     "GddwH3tUebA",
+     "OUB0xu9DcZ0",
+     "V4yWxC0Gij4",
+     "d4n53mUARu4",
+     "he3kX2GWekc",
+     "k1VLd_3rLY0",
+     "mdLBTyWhMls",
+     "nCceJu-Rykc",
+     "nzNNjEr_lUk",
+     "o8IW9CLsVZk"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "financial collapse",
+   "verdict": "duplicate",
+   "why": "Generic imminent-systemic-collapse prediction already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": "Economy & markets",
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 15,
+    "months": 13,
+    "span": "2022-02 → 2026-09",
+    "examples": [
+     "Total Financial Collapse Ahead!! - Stock Market Crash Update - Stock Market Gambler",
+     "CATASTROPHIC FINANCIAL COLLAPSE COMING SOON! Housing Market Crash 2024 -Tall Mike Talks",
+     "Experts Are Warning of a Potential Financial Collapse (Are They Right?)"
+    ],
+    "ids": [
+     "3OVhjZgGYAg",
+     "4MsN0CNcEEs",
+     "Cwb2x73dmGs",
+     "Jc2oWbiyhxI",
+     "Nm-aVPYGbXQ",
+     "PbygFsPclx0",
+     "aLegwNoMLO4",
+     "gJJ_xFV3l-Y",
+     "j6a50kT6-Nk",
+     "jCxSylW2h0A",
+     "jT2B1GK4_3g",
+     "jrCqXpMaAH8",
+     "nntSk_JG1cU",
+     "tR8JFkdtltg",
+     "vjE3XUJM9Cc",
+     "vyEaXpKd3rI",
+     "wzkp8S1ToRo",
+     "x-Uer3vOpDY"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "causes chronic",
+   "verdict": "rhetoric",
+   "why": "Titles cover many different diseases and causes with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 8,
+    "months": 9,
+    "span": "2019-06 → 2026-09",
+    "examples": [
+     "Causes of Chronic Diarroea Nausea Vomiting Stress Anxiety Commonest Reason Cure",
+     "The MAIN CAUSES Of Chronic Inflammation IN THE BODY! | Rupa Marya, Raj Patel & Mark Hyman",
+     "What are the Integrative Root Causes of Chronic Fatigue Syndrome or CFS? | Dr. Micah Yu"
+    ],
+    "ids": [
+     "1e0PVMrwUIo",
+     "3FwZmbHA5dw",
+     "6PSiGBVIddY",
+     "CcHrcjCNjF4",
+     "J-H0cggSLk0",
+     "JK_MUp0MkIk",
+     "PyyshJSriRY",
+     "YJPZstD7hTg",
+     "kEvhzDTR1Qs",
+     "nWf7nCcW304",
+     "spgGHh3uX58",
+     "viUW8ft30g4",
+     "yamkItbQyZM"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "coming down",
+   "verdict": "rhetoric",
+   "why": "Applied to oil, mortgages, home prices — no one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 33,
+    "channels": 22,
+    "months": 23,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "Finally Some Good News: Oil Prices Will Start Coming Down SLOWLY If We Do THIS NOW! | Gas Prices",
+     "OSFI \"Very Worried\" about Canadian Finances - New Mortgage Rules Coming Down",
+     "YES... Home Prices Are Coming Down #shorts #realestate #homeprices #housingmarket"
+    ],
+    "ids": [
+     "1mUsOqFj1dg",
+     "2hkf100LUoQ",
+     "3JZNlWHWQRU",
+     "3_x-PFZS1Pk",
+     "5XZAuuTZ3z4",
+     "8Nfa2_PUfUs",
+     "AkkJpZQCFJA",
+     "B-_KOmkBF9s",
+     "EIxozRcepqE",
+     "I_x7YtAcaUg",
+     "IjOV7io7iYQ",
+     "JsC5hL--DyU",
+     "LgAt26wRlPA",
+     "SSWCACr-oRI",
+     "SXN84F9AAd4",
+     "T4WhOtnkbAg",
+     "TaElL6W9alg",
+     "WYfyEPsbgLc",
+     "bGnpTJXGqSs",
+     "cnvLmGiFGg0"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
+  },
+  {
+   "phrase": "must act",
+   "verdict": "rhetoric",
+   "why": "Urgency call-to-action phrasing spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 21,
+    "channels": 17,
+    "months": 11,
+    "span": "2021-11 → 2026-09",
+    "examples": [
+     "CRAZY News! Stimulus Package Update | Congress MUST Act Now | Rising Costs | Biden To Sign Bill",
+     "**ALERT** GOLD & SILVER \"Community MEMBERS\" must ACT Now - This is YOUR Fight",
+     "TIME IS RUNNING OUT…The United States MUST Act Fast!!"
+    ],
+    "ids": [
+     "1mJiOw0HETA",
+     "5CZYNvUBKh8",
+     "6M6qDq0yTSw",
+     "7R3aHW2qtMo",
+     "BrssczRLye4",
+     "DrHuSol3aHE",
+     "Duj1vdN9tSk",
+     "FQtOQ2B4Wy0",
+     "J0BxKRNNnJ8",
+     "JlaCVST8jtk",
+     "LRnmK3MPQaY",
+     "VGH2nC1Gkr8",
+     "W2Dw-f4PTBY",
+     "XA0P6wSavso",
+     "Zh-bgFttZGA",
+     "dpTkW9FXB2Q",
+     "kad8sjpBpVs",
+     "meIk9DGZvPM",
+     "nyXPZslkiAs",
+     "uuh461VbU7w"
+    ]
+   },
+   "first_read": "2026-09-26",
+   "last_read": "2026-09-26"
   }
  ]
 }
