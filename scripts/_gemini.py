@@ -14,7 +14,7 @@ Why a token budget and not a sleep
   cost before sending it, waits until there is room, and refuses the ones that
   can never fit rather than burning a retry to find out.
 """
-import json, os, re, sys, time, urllib.error, urllib.request
+import http.client, json, os, re, socket, sys, time, urllib.error, urllib.request
 from collections import deque
 from pathlib import Path
 
@@ -146,6 +146,19 @@ def ask(model, parts, schema, k, budget=None, est_tokens=None, retries=3):
                 u = r.get("usage") or {}
                 budget.record(u.get("total_input_tokens") or est_tokens or 0)
             return r
+        except (http.client.RemoteDisconnected, urllib.error.URLError, ConnectionResetError,
+                socket.timeout, TimeoutError) as e:
+            # The connection dropped before any status came back — Gemini closing
+            # a long video request, or the network. Not an API error, so it never
+            # reached the branch below and took the whole run down with it. Wait,
+            # retry, and if it keeps dropping hand back a skippable error so the
+            # caller loses one video rather than the day's reads.
+            if attempt < retries:
+                wait = 5 * (attempt + 1)
+                print(f"    (connection dropped: {type(e).__name__} — retrying in {wait}s)")
+                time.sleep(wait)
+                continue
+            raise ApiError(0, f"connection dropped {retries + 1} times: {type(e).__name__}")
         except ApiError as e:
             if e.code == 400 and _strip_unknown(body, e.detail):
                 continue
