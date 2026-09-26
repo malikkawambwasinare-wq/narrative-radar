@@ -177,6 +177,15 @@ def ask(model, parts, schema, k, budget=None, est_tokens=None, retries=3):
                     if budget:
                         budget.spent.clear()
                     continue
+            if e.code == 503 and attempt < retries:
+                # "High demand, spikes are usually temporary." Five reads were
+                # lost to this in one run, and each one skipped is a video the
+                # sample never gets back. Back off and try again before giving
+                # the video up.
+                wait = 20 * (attempt + 1)
+                print(f"    (503 high demand — retrying in {wait}s, attempt {attempt + 1})")
+                time.sleep(wait)
+                continue
             raise
     raise ApiError(429, "still rate limited after retries")
 
