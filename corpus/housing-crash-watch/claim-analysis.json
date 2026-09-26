@@ -1,27 +1,94 @@
 {
  "topic": "housing-crash-watch",
- "read_on": "2026-09-19",
+ "read_on": "2026-09-25",
  "model": "gemini-3.6-flash",
  "videos_read": 8,
- "sampled_from": 15288,
+ "sampled_from": 17785,
  "sampling": "at most 2 per channel, spread across months",
  "status": "inconclusive",
  "status_reason": "only 8 videos read, need 12",
- "central_claim": "The listed videos do not share a single central claim, spanning practical real estate investment advice, macro housing market crash forecasts, and corporate news analysis.",
- "videos_asserting_it": 0,
- "variants": [],
- "not_about": "This collection does not represent a unified narrative about housing market trends or investment strategies.",
- "claim_name": "Unrelated real estate topics and market forecasts",
+ "central_claim": "Rising mortgage rates and declining demand will drive a downturn in the US housing market and lower home prices.",
+ "videos_asserting_it": 4,
+ "variants": [
+  {
+   "claim": "Rising mortgage rates and declining buyer demand will cause US home prices to drop.",
+   "count": 3
+  },
+  {
+   "claim": "The US housing market is entering a severe downturn comparable to historic market crashes.",
+   "count": 1
+  }
+ ],
+ "not_about": "Tactical real estate investing methods like Facebook advertising and apartment management, or foreign corporate debt defaults like Evergrande.",
+ "claim_name": "US housing market downturn and price drops",
  "hook_candidates": [
-  "Diverse real estate topics grouped together",
-  "Real estate strategies and market crash forecasts"
+  "Why housing market forecasts predict falling home prices",
+  "Rising mortgage rates drive US home price declines",
+  "How mortgage rates are shaping home price drops"
  ],
  "is_one_narrative": false,
- "disagreement": "The videos range from practical guides on multi-family property management and deal sourcing to conflicting macroeconomic forecasts regarding housing market crashes versus moderate cool-offs.",
+ "born": "2019",
+ "turns": [
+  {
+   "date": "2021-10",
+   "mechanism": "Zillow halts iBuying while broader market metrics remain stable",
+   "videoIds": [
+    "t25qOEhPDFA"
+   ]
+  },
+  {
+   "date": "2022-09",
+   "mechanism": "Rising mortgage rates slow buyer demand and cool housing growth",
+   "videoIds": [
+    "JDHSFwmAdwg"
+   ]
+  },
+  {
+   "date": "2023-01",
+   "mechanism": "Forecasts warn of severe regional housing price downturns",
+   "videoIds": [
+    "Crsl6rFj2ic"
+   ]
+  },
+  {
+   "date": "2023-03",
+   "mechanism": "Elevated mortgage rates push median sold home prices down year-over-year",
+   "videoIds": [
+    "mgEUZgMyQ0M"
+   ]
+  },
+  {
+   "date": "2023-09",
+   "mechanism": "Mortgage rates near eight percent force builders to cut prices",
+   "videoIds": [
+    "zavGPBw1iZ8"
+   ]
+  }
+ ],
+ "camps": [
+  {
+   "position": "Housing market faces a severe price downturn",
+   "watch_for": "Focusing on high mortgage rates and mandatory homebuilder price cuts",
+   "videoIds": [
+    "Crsl6rFj2ic",
+    "mgEUZgMyQ0M",
+    "zavGPBw1iZ8"
+   ]
+  },
+  {
+   "position": "Housing market experiences moderate cooling without crashing",
+   "watch_for": "Highlighting low housing inventory and comparisons against 2008 crash metrics",
+   "videoIds": [
+    "JDHSFwmAdwg",
+    "t25qOEhPDFA"
+   ]
+  }
+ ],
+ "disagreement": "Analysts disagree on whether rising interest rates will cause a deep 2008-style housing crash or merely a modest market correction.",
  "split_into": [
-  "Macro housing market downturn and price crash predictions",
-  "Real estate investment and deal sourcing strategies",
-  "Analysis of corporate real estate events and developments"
+  "US housing market downturn predictions",
+  "Real estate investment and deal sourcing tactics",
+  "Evergrande debt crisis impact on international real estate"
  ],
  "evidence": [
   "1tTVHgLwptc",
