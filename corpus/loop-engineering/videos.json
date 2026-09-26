@@ -85124,7 +85124,57 @@
         "comments": null,
         "enrichedOn": "2026-09-25"
       }
+    },
+    {
+      "videoId": "jInLBRBCBUg",
+      "title": "CITIZENS REPORT 27/2/2025 - Stop the looming CASH-tastrophe! / Aus doesn’t like its own medicine",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=jInLBRBCBUg",
+      "published": "2025-02-28",
+      "first_seen": "2026-09-26",
+      "views": 5529,
+      "length": "51:57",
+      "age_days": 575,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 574,
+        "comments": 173,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "yWbCPnZV5wE",
+      "title": "8 May 2020 - The Citizens Report - Australia Its Own Worst Enemy / Commonwealth Development Bank",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=yWbCPnZV5wE",
+      "published": "2020-05-09",
+      "first_seen": "2026-09-26",
+      "views": 5400,
+      "length": "24:29",
+      "age_days": 2331,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 327,
+        "comments": 117,
+        "enrichedOn": "2026-09-26"
+      }
     }
   ],
-  "updated": "2026-09-25"
+  "updated": "2026-09-26"
 }

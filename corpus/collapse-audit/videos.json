@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-09-25"
+      "unavailable": "2026-09-26"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-09-25"
+      "unavailable": "2026-09-26"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -228755,15 +228755,22 @@
       "url": "https://www.youtube.com/watch?v=dN-c0nwmVIE",
       "published": "2026-09-25",
       "first_seen": "2026-09-25",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "7:41",
       "age_days": null,
       "query": "refiled from the pool (candidate:cre-bank-crisis)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCbJwpV81OeJYqb_q6w8uRyQ"
+        "channelId": "UCbJwpV81OeJYqb_q6w8uRyQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-26"
       }
     },
     {
@@ -228773,17 +228780,249 @@
       "url": "https://www.youtube.com/watch?v=73A9VswWOkk",
       "published": "2026-09-25",
       "first_seen": "2026-09-25",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "17:01",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCXLjDOSFMVubgirAfvbuKdw"
+        "channelId": "UCXLjDOSFMVubgirAfvbuKdw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "Gik23dY3sOc",
+      "title": "CITIZENS REPORT 5/12/2024 - The conman who hates cash / Victory over RBA / What’s China really like?",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=Gik23dY3sOc",
+      "published": "2024-12-06",
+      "first_seen": "2026-09-26",
+      "views": 5257,
+      "length": "58:11",
+      "age_days": 659,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 690,
+        "comments": 145,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "L7HFHM33W8Q",
+      "title": "6 March 2020 - The Citizens Report - Cashban Win Pre Financial Crisis / Tax Derivatives Speculation",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=L7HFHM33W8Q",
+      "published": "2020-03-07",
+      "first_seen": "2026-09-26",
+      "views": 11297,
+      "length": "24:25",
+      "age_days": 2394,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 688,
+        "comments": 204,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "1nQG7FSekBM",
+      "title": "14 June 2019 - The CEC Report - Police raids & war: Financial elite prepare for economic Armageddon",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=1nQG7FSekBM",
+      "published": "2019-06-15",
+      "first_seen": "2026-09-26",
+      "views": 7257,
+      "length": "24:30",
+      "age_days": 2660,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 392,
+        "comments": 70,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "PKzkYlqhdZM",
+      "title": "CEC's 5-point program to survive the economic crisis: 5. A new global financial architecture",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=PKzkYlqhdZM",
+      "published": "2019-01-03",
+      "first_seen": "2026-09-26",
+      "views": 3119,
+      "length": "23:50",
+      "age_days": 2823,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 64,
+        "comments": 32,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "SsIKqBNaDGE",
+      "title": "2 November 2018 - The CEC Report – The ‘everything bubble’ global debt bomb / The UK 'finance curse'",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=SsIKqBNaDGE",
+      "published": "2018-11-04",
+      "first_seen": "2026-09-26",
+      "views": 5608,
+      "length": "24:30",
+      "age_days": 2883,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 206,
+        "comments": 73,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "-9kbDbhBMY4",
+      "title": "11 May 2018 - The CEC Report - Surviving the financial crisis / Trump's Iran move could spark WWIII",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=-9kbDbhBMY4",
+      "published": "2018-05-12",
+      "first_seen": "2026-09-26",
+      "views": 5202,
+      "length": "24:26",
+      "age_days": 3059,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 145,
+        "comments": 49,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "VVL64yhoy0k",
+      "title": "CEC Report Special - Bank crimes worse than reported - Interview with Denise Brailey (Part 2)",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=VVL64yhoy0k",
+      "published": "2018-03-29",
+      "first_seen": "2026-09-26",
+      "views": 5822,
+      "length": "24:18",
+      "age_days": 3103,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 136,
+        "comments": 33,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "t0mxYFAH_3c",
+      "title": "22 March 2018 - The CEC Report - Bank crimes worse than reported (Interview with Denise Brailey)",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=t0mxYFAH_3c",
+      "published": "2018-03-24",
+      "first_seen": "2026-09-26",
+      "views": 7248,
+      "length": "24:26",
+      "age_days": 3108,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 170,
+        "comments": 36,
+        "enrichedOn": "2026-09-26"
+      }
+    },
+    {
+      "videoId": "6zv7C2TW-NQ",
+      "title": "11 August 2017 - The CEC Report - Financial Crisis Investments / Commonwealth Bank Money Laundering",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=6zv7C2TW-NQ",
+      "published": "2017-08-12",
+      "first_seen": "2026-09-26",
+      "views": 4798,
+      "length": "24:38",
+      "age_days": 3332,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 87,
+        "comments": 58,
+        "enrichedOn": "2026-09-26"
       }
     }
   ],
-  "updated": "2026-09-25"
+  "updated": "2026-09-26"
 }

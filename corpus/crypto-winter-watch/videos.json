@@ -538293,7 +538293,32 @@
         "comments": 200,
         "enrichedOn": "2026-09-25"
       }
+    },
+    {
+      "videoId": "Vp8NYjjJz4Q",
+      "title": "CITIZENS REPORT 26/01/2023 - Banks take the money and run / God of War devouring more and more",
+      "channel": "Australian Citizens Party",
+      "url": "https://www.youtube.com/watch?v=Vp8NYjjJz4Q",
+      "published": "2023-01-28",
+      "first_seen": "2026-09-26",
+      "views": 3373,
+      "length": "41:00",
+      "age_days": 1337,
+      "query": "channel sweep: Australian Citizens Party",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCViMLG8C8qWrbODb00LGDpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 396,
+        "comments": 90,
+        "enrichedOn": "2026-09-26"
+      }
     }
   ],
-  "updated": "2026-09-25"
+  "updated": "2026-09-26"
 }
