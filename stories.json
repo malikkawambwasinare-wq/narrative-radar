@@ -1,0 +1,94 @@
+{
+ "note": "Industry > Story > Narrative > Video. A story is the events; a narrative is one telling of them. status: ready = a full series can be built; partial = some shapes; reading = no turns or camps yet; splitting = the reader found several narratives under one name.",
+ "updated": "2026-09-26",
+ "stories": [
+  {
+   "id": "crypto-cycle",
+   "name": "The four-year cycle",
+   "industry": "Economy & markets",
+   "about": "Whether crypto still moves in four-year halving cycles or institutions have broken the pattern.",
+   "narratives": [
+    "crypto-winter-watch"
+   ],
+   "status": "ready"
+  },
+  {
+   "id": "inflammation",
+   "name": "Inflammation as the root",
+   "industry": "Health & biotech",
+   "about": "Whether chronic inflammation from diet is the hidden cause of most illness, and food the cure.",
+   "narratives": [
+    "anti-inflammatory-diet",
+    "fix-your-gut-fix-your",
+    "brain-fog-has-a-single"
+   ],
+   "status": "ready"
+  },
+  {
+   "id": "collapse",
+   "name": "The coming collapse",
+   "industry": "Economy & markets",
+   "about": "Whether a debt-driven collapse of the US economy is imminent, and what would trigger it.",
+   "narratives": [
+    "collapse-audit",
+    "great-economic-reset-is-coming",
+    "the-gold-and-silver-crash"
+   ],
+   "status": "ready"
+  },
+  {
+   "id": "housing",
+   "name": "Housing",
+   "industry": "Economy & markets",
+   "about": "Where home prices go next, in the US and Canada.",
+   "narratives": [
+    "housing-crash-watch",
+    "condo-crash-will-break-canadas"
+   ],
+   "status": "splitting",
+   "split_from": "housing-crash-watch"
+  },
+  {
+   "id": "markets-2026",
+   "name": "The 2026 setup",
+   "industry": "Economy & markets",
+   "about": "Whether 2026 is the year to buy, and what.",
+   "narratives": [
+    "the-2026-setup"
+   ],
+   "status": "splitting",
+   "split_from": "the-2026-setup"
+  },
+  {
+   "id": "ai-race",
+   "name": "The AI race",
+   "industry": "AI & technology",
+   "about": "Open versus closed models, and who builds the agents.",
+   "narratives": [
+    "open-vs-closed-ai-race",
+    "loop-engineering"
+   ],
+   "status": "partial"
+  },
+  {
+   "id": "glp1",
+   "name": "The Ozempic question",
+   "industry": "Health & biotech",
+   "about": "What GLP-1 drugs do, and what they cost the body.",
+   "narratives": [
+    "truth-about-ozempic-they-arent"
+   ],
+   "status": "reading"
+  },
+  {
+   "id": "psi",
+   "name": "Psi declassified",
+   "industry": "Fringe & unexplained",
+   "about": "Whether declassified programmes prove remote viewing worked.",
+   "narratives": [
+    "psi-declassified"
+   ],
+   "status": "reading"
+  }
+ ]
+}
