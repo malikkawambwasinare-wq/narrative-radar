@@ -539651,17 +539651,24 @@
       "url": "https://www.youtube.com/watch?v=5PTolRZIohE",
       "published": "2026-09-26",
       "first_seen": "2026-09-26",
-      "views": null,
-      "length": null,
+      "views": 633,
+      "length": "1:22",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC1902N2kuLJsHJu8w5QeaIA"
+        "channelId": "UC1902N2kuLJsHJu8w5QeaIA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 11,
+        "comments": null,
+        "enrichedOn": "2026-09-27"
       }
     }
   ],
-  "updated": "2026-09-26"
+  "updated": "2026-09-27"
 }

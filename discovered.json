@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26",
+ "generated": "2026-09-27",
  "method": "titles only; 4+ videos, 3+ independent channels, 2+ distinct months, claim wording in the phrase",
  "candidates": [
   {
@@ -266,8 +266,8 @@
   },
   {
    "phrase": "surprising truth",
-   "videos": 60,
-   "channels": 29,
+   "videos": 61,
+   "channels": 30,
    "months": 33,
    "span": "2023-02 \u2192 2026-09",
    "industry": "Health & biotech",
@@ -338,6 +338,7 @@
     "t_gteEXHO2I",
     "wpfoty1Ewmc",
     "wzRrSM8uOCw",
+    "xAB9fq7vBns",
     "yoaqMBjrdns",
     "zmLTPRBl8rk"
    ],
@@ -345,7 +346,7 @@
     "surprising causes"
    ],
    "specificity": 0.0009,
-   "rank": 1063.3
+   "rank": 1100.0
   },
   {
    "phrase": "anytime soon",
@@ -15664,8 +15665,8 @@
     "lifetime event coming",
     "lifetime event coming 2026",
     "event coming 2026",
-    "coming 2026 get ready",
-    "event coming 2026 get"
+    "event coming 2026 get",
+    "coming 2026 get ready"
    ],
    "specificity": 0.0011,
    "rank": 73.6
@@ -23461,8 +23462,8 @@
    ],
    "also": [
     "states collapse",
-    "states collapse first usa",
     "collapse first usa enters",
+    "states collapse first usa",
     "collapse first usa",
     "states ban",
     "coming states"
@@ -30194,8 +30195,8 @@
    ],
    "also": [
     "much protein really need",
-    "much protein really",
     "protein really need",
+    "much protein really",
     "protein actually",
     "protein actually need",
     "much protein actually need",
