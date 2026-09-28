@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-09-27"
+      "unavailable": "2026-09-28"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-09-27"
+      "unavailable": "2026-09-28"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -50887,15 +50887,22 @@
       "url": "https://www.youtube.com/watch?v=-e8iBFxHnsc",
       "published": "2026-09-26",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 1234,
+      "length": "0:38",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCBwWJfD50vgGb12ELTs7F8A"
+        "channelId": "UCBwWJfD50vgGb12ELTs7F8A",
+        "category": "27",
+        "language": "en-US",
+        "captions": true,
+        "live": false,
+        "likes": 46,
+        "comments": 5,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -51888,6 +51895,2256 @@
         "subscribers": 29,
         "channelViews": 47105,
         "channelVideos": 574
+      }
+    },
+    {
+      "videoId": "-aZOxXb-udA",
+      "title": "How long should you stay on Mounjaro, Ozempic, Wegovy for? #shorts (full vid on TikTok)",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=-aZOxXb-udA",
+      "published": "2023-10-16",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "8wHG7Cvls1g",
+      "title": "Are you losing muscle mass on GLP-1s? #glp1medication #tirzepatideweightloss #semaglutideforweightlo",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=8wHG7Cvls1g",
+      "published": "2023-12-04",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "Io7Pkd3PeE0",
+      "title": "When Should You Move Up in Dose on GLP1 Mounjaro Ozempic Wegovy Zepbound? Titrate Slowly",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=Io7Pkd3PeE0",
+      "published": "2024-02-06",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "IMZw3_mFdTo",
+      "title": "Not Losing Weight? Are You Doing These 4 Things?!? Mounjaro Ozempic Wegovy Zepbound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=IMZw3_mFdTo",
+      "published": "2024-02-07",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "iVbnLL0_ADE",
+      "title": "Gain It Back?!? Will You Gain Back The Weight When You Stop Mounjaro Ozempic Wegovy? TRUTH",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=iVbnLL0_ADE",
+      "published": "2024-02-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "9QIe21oIf5E",
+      "title": "What is Food Noise? 🧐 Mounjaro Zepbound Ozempic Wegovy GLP1 Compound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=9QIe21oIf5E",
+      "published": "2024-02-22",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "1DBZoOl-XVQ",
+      "title": "Should You Do Weight Watchers or Meal Delivery on Mounjaro Ozempic Wegovy Zepbound GLP-1",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=1DBZoOl-XVQ",
+      "published": "2024-04-02",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "Ou7Ft2Bt0rM",
+      "title": "You Have To Eat On Mounjaro: Why Intuitive Eating Doesn’t Work Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=Ou7Ft2Bt0rM",
+      "published": "2024-04-09",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "Y_hsEOJDwus",
+      "title": "Shortage: If You Miss a Dose Do You Have To Start Over? Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=Y_hsEOJDwus",
+      "published": "2024-04-11",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "D_l_UCklqO4",
+      "title": "Are You Eating ENOUGH on Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=D_l_UCklqO4",
+      "published": "2024-05-01",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "B1tLJ97AicA",
+      "title": "What I Eat When Suppression is High on Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=B1tLJ97AicA",
+      "published": "2024-05-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "XhJUqEjVHAI",
+      "title": "Metabolic Damage: How Low Is Too Low For Calorie Deficit Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=XhJUqEjVHAI",
+      "published": "2024-05-14",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "zS2YhQ9ofJs",
+      "title": "Why Do People Ask About Calories If Posting In Support group? Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=zS2YhQ9ofJs",
+      "published": "2024-05-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "sy4OGzWuS7g",
+      "title": "Over Eating On GLP1: What To Do Mounjaro Zepbound Ozempic Wegovy Compound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=sy4OGzWuS7g",
+      "published": "2024-05-21",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "8ZWQZEgnP2U",
+      "title": "Heal Your Relationship With Food: What Does That Mean? Mounjaro Zepbound Ozempic Wegovy Compound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=8ZWQZEgnP2U",
+      "published": "2024-06-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "5XVQw0zZNDs",
+      "title": "How are you disposing of your pens? #zepbound #mounjaro #ozempic #wegovy #weightlossmedication",
+      "channel": "Insiya Klapper | GLP-1 Strategist & Mindset Coach",
+      "url": "https://www.youtube.com/watch?v=5XVQw0zZNDs",
+      "published": "2024-06-17",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Insiya Klapper | GLP-1 Strategist & Mind)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwQEiZbBZRqYOgfRjiQcoTQ"
+      }
+    },
+    {
+      "videoId": "T4ghHzZElgo",
+      "title": "Why Won’t Your Dr Prescribe GLP1? Replying to Comments Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=T4ghHzZElgo",
+      "published": "2024-06-19",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "WfMk3Di0MJ4",
+      "title": "Dr Visit Update: Labs Were BAD! Now What? Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=WfMk3Di0MJ4",
+      "published": "2024-06-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "b9cs5-FbHCk",
+      "title": "GLP1 Causes Blindness?!?! Misinformation & What You Need To Know Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=b9cs5-FbHCk",
+      "published": "2024-07-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "BgSHZ2hfEC0",
+      "title": "Hiding Meds From Your Spouse? Why It’s a Bad Idea Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=BgSHZ2hfEC0",
+      "published": "2024-07-15",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "pULG1bsXADI",
+      "title": "Will Insurance Cover Maintenance for  Mounjaro Zepbound Ozempic Wegovy?",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=pULG1bsXADI",
+      "published": "2024-07-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "3PsoiICUFFE",
+      "title": "Can Ozempic or Wegovy Cause Blindness? Exploring the Latest Study | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=3PsoiICUFFE",
+      "published": "2024-07-22",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "W-cVQPjC7NE",
+      "title": "7.5 Mounjaro Update: Is It As Bad As People Say? My Experience Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=W-cVQPjC7NE",
+      "published": "2024-07-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "xIZDjgVwJUQ",
+      "title": "Does semaglutide cause #blindness ? #Ozempic #Wegovy | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=xIZDjgVwJUQ",
+      "published": "2024-07-23",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "SCaRZ7hkKRg",
+      "title": "Are diabetics on semaglutide in danger of #blindness ? #Ozempic #Wegovy | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=SCaRZ7hkKRg",
+      "published": "2024-07-25",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "AKV7xWUafZE",
+      "title": "Constipation FIX IT on Mounjaro Zepbound Ozempic Wegovy Semaglutide Tirzepatide",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=AKV7xWUafZE",
+      "published": "2024-07-26",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "rI2kWGsSpLs",
+      "title": "Treating Addiction with GLP1? Comparing Sucess, Is It Genetic Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=rI2kWGsSpLs",
+      "published": "2024-07-29",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "O9M5sBP5jXE",
+      "title": "Got 🤢 Sick On 7.5 What Caused It? Mounjaro Zepbound Ozempic Wegovy Tirzepatide Semaglutide",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=O9M5sBP5jXE",
+      "published": "2024-07-31",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "WNZc3aMRzuw",
+      "title": "Coming Off GLP1 What No One Is Talking About 😱 Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=WNZc3aMRzuw",
+      "published": "2024-08-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "Dx9WDMM5M9U",
+      "title": "I Overate: Here Is How To Fix It Mounjaro Zepbound Ozempic Wegovy Compound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=Dx9WDMM5M9U",
+      "published": "2024-08-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "yc9aQB5Iavk",
+      "title": "10 Reasons Why You Aren’t Losing Weight On Mounjaro Zepbound Ozempic Wegovy Compound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=yc9aQB5Iavk",
+      "published": "2024-09-19",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "K0wncrb6yWM",
+      "title": "Off Label GLP1 Prescriptions Are Going Away: Here’s Why Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=K0wncrb6yWM",
+      "published": "2024-09-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "KwQVS3OZlHU",
+      "title": "What Diet Should You Follow On GLP1? Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=KwQVS3OZlHU",
+      "published": "2024-09-25",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "GM_xab7Iw1k",
+      "title": "Part 2 Off Label GLP1 Prescriptions Are Going Away Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=GM_xab7Iw1k",
+      "published": "2024-09-27",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "5IpGBBJwrds",
+      "title": "Before and After Pics: Are They Bad For You? Compliments on GLP1 Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=5IpGBBJwrds",
+      "published": "2024-10-04",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "WSgc-o4WrBY",
+      "title": "BCBS of Chaos: Will BCBS Ban Zepbound? Watch Out For Misinformation Mounjaro Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=WSgc-o4WrBY",
+      "published": "2024-10-10",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "EAQ8JGHvuxE",
+      "title": "People Showing Who They Really Are On Weightloss Journey Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=EAQ8JGHvuxE",
+      "published": "2024-10-17",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "djOuw2E6OeE",
+      "title": "Novo Trying To Ban Compound Semaglutide: Don’t Panic Watch This Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=djOuw2E6OeE",
+      "published": "2024-10-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "kpXghHmdc4Q",
+      "title": "Ozempic and Wegovy Shortages Officially Over – The Semaglutide Crisis Begins!",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=kpXghHmdc4Q",
+      "published": "2024-10-30",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DOWNSIZED)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA"
+      }
+    },
+    {
+      "videoId": "_xeHOxu3Iy4",
+      "title": "Game-Changer? The Pills That Could Replace Ozempic and Wegovy",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=_xeHOxu3Iy4",
+      "published": "2024-11-30",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DOWNSIZED)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA"
+      }
+    },
+    {
+      "videoId": "Zmb2Ws1CGUA",
+      "title": "Intermittent Fasting: Why It’s Not A One Size Fits All Mounjaro Zepbound Ozempic Wegovy Diabetic",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=Zmb2Ws1CGUA",
+      "published": "2024-12-26",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "PssviG9uOX4",
+      "title": "My Reasons Why I Want To Lose Weight: Honest Full Transparency Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=PssviG9uOX4",
+      "published": "2025-01-27",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "VOSdumkM4Vg",
+      "title": "Running into Karma: GLP-1 Rant Runner Roasted For Being Mean Girl Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=VOSdumkM4Vg",
+      "published": "2025-01-28",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "LNyeIYmJN6E",
+      "title": "Carnivore Diet on GLP1: Have I Changed My Mind? Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=LNyeIYmJN6E",
+      "published": "2025-01-29",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "sS1UDbteYSM",
+      "title": "Do GLP-1 Cause Osteoporosis Osteopenia? Addressing Eating Disorders Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=sS1UDbteYSM",
+      "published": "2025-01-30",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "kRaBOB5OOiE",
+      "title": "GLP1 Censorship: People Speak Up About Banned Book Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=kRaBOB5OOiE",
+      "published": "2025-02-10",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "uTb63XcnGCg",
+      "title": "Intuitive Eating: Should You Do It On A GLP1? Mounjaro Zepbound Ozempic Wegovy Compound",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=uTb63XcnGCg",
+      "published": "2025-02-11",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "x_neIT1zuOk",
+      "title": "Epic Protein Snack Review Biocare: I Was SHOCKED 🫢 Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=x_neIT1zuOk",
+      "published": "2025-02-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "x1AcUd4C3gc",
+      "title": "BREAKING NEWS: FDA SUED Over Ozempic & Wegovy Shortage Decision!",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=x1AcUd4C3gc",
+      "published": "2025-02-25",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DOWNSIZED)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA"
+      }
+    },
+    {
+      "videoId": "hWNkbECHL6I",
+      "title": "Always hungry? GLP-1s can fix that 💉👀 @nicknorwitzMDPhD #glp1 #ozempic #wegovy",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=hWNkbECHL6I",
+      "published": "2025-03-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "_Z1DJOJD6iI",
+      "title": "Zealthy: Are They Threatening Patients Who Cancel? OverCharging? Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=_Z1DJOJD6iI",
+      "published": "2025-05-13",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "5M0V0IB6o8c",
+      "title": "Are you experiencing #HairLoss & #Fatigue due to your GLP-1? #WeightLoss | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=5M0V0IB6o8c",
+      "published": "2025-05-23",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "oeI9YGlTadE",
+      "title": "GLP-1 Weight Gain? Yep, We’re Up 8lbs—Here’s the Truth",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=oeI9YGlTadE",
+      "published": "2025-05-25",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DOWNSIZED)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA"
+      }
+    },
+    {
+      "videoId": "V_s48EaGSLE",
+      "title": "Real Talk: What It’s Really Like to Be on GLP-1s (Zepbound, Ozempic Wegovy + More)",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=V_s48EaGSLE",
+      "published": "2025-05-29",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DOWNSIZED)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA"
+      }
+    },
+    {
+      "videoId": "L4jN4V8Jos4",
+      "title": "Are You A Non Responder on Ozempic Wegovy Mounjaro Zepbound? Don’t Make This MISTAKE 🧐",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=L4jN4V8Jos4",
+      "published": "2025-06-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "VMuZsBza5rM",
+      "title": "Copy-cats of weight-loss drugs Ozempic and Wegovy are hurting Novo Nordisk",
+      "channel": "Bloomberg Television",
+      "url": "https://www.youtube.com/watch?v=VMuZsBza5rM",
+      "published": "2025-08-01",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bloomberg Television)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
+      }
+    },
+    {
+      "videoId": "JphyqMeDvU4",
+      "title": "GLP-1 drugs like Ozempic have 'surprising' positive effects: Doctor | Elizabeth Vargas Reports",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=JphyqMeDvU4",
+      "published": "2025-08-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NewsNation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ"
+      }
+    },
+    {
+      "videoId": "Lprg00nMOFw",
+      "title": "Refeed Week: GLP1 Reset How To Do It Why Do It Who Do it Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=Lprg00nMOFw",
+      "published": "2025-08-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "8hHeDscueqw",
+      "title": "Ozempic, Wegovy, Mounjaro: Are the Lawsuits Fact or Fear? | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=8hHeDscueqw",
+      "published": "2025-09-08",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "GciJFjFa21w",
+      "title": "Are You Losing Muscle Instead of Burning Fat?  Dr. Mandell",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=GciJFjFa21w",
+      "published": "2025-09-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "7b0uRYNlP_o",
+      "title": "Have GLP-1 Drugs Like Ozempic and Wegovy Been Around Long Enough to TRUST?",
+      "channel": "The Edge",
+      "url": "https://www.youtube.com/watch?v=7b0uRYNlP_o",
+      "published": "2025-09-27",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Edge)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1Z11kMo2uUatoaAPtGBB6g"
+      }
+    },
+    {
+      "videoId": "ro11Vl72gxg",
+      "title": "Are You Cheating? How to Answer When You’re on Mounjaro, Zepbound, Ozempic or Wegovy",
+      "channel": "DOWNSIZED",
+      "url": "https://www.youtube.com/watch?v=ro11Vl72gxg",
+      "published": "2025-10-05",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DOWNSIZED)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCloOfxcEcHVSBGuLu88kGyA"
+      }
+    },
+    {
+      "videoId": "-dj695TKNlA",
+      "title": "Stop Losing Muscle on GLP-1s (5 Tricks That Actually Work)",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=-dj695TKNlA",
+      "published": "2025-10-27",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "_Xa9_tucM9U",
+      "title": "Should you skip your GLP-1 dose for Christmas? #GLP1 #Ozempic #Wegovy",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=_Xa9_tucM9U",
+      "published": "2025-12-15",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "cvJQZKSXBzg",
+      "title": "Why Ozempic Slows Metabolism And How to Build a GLP-1 Body Without Losing Muscle",
+      "channel": "Kirsten Liebelt",
+      "url": "https://www.youtube.com/watch?v=cvJQZKSXBzg",
+      "published": "2025-12-16",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kirsten Liebelt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUvknyV1tiZIlW---pVA6UQ"
+      }
+    },
+    {
+      "videoId": "5oqh88riJ8w",
+      "title": "Why Weight Comes Back After GLP-1s? #glp1 #weightlossdrugs #ozempic  #wegovy #mounjaro #shorts",
+      "channel": "The Health Lens",
+      "url": "https://www.youtube.com/watch?v=5oqh88riJ8w",
+      "published": "2026-01-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Health Lens)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8gz3Tc2KHY-qmPD670Yv-Q"
+      }
+    },
+    {
+      "videoId": "3SjQ5b1Ss1k",
+      "title": "Did Oprah Lie? 😳 Food Noise Epiphany On GLP1 Meds Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=3SjQ5b1Ss1k",
+      "published": "2026-01-21",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "rlbTZOjAHrA",
+      "title": "Why People Bash Semaglutide Ozempic Wegovy!?! 😳",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=rlbTZOjAHrA",
+      "published": "2026-01-26",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "L_hzdBQvUhA",
+      "title": "GLP-1 Users Are Losing Muscle Mass Without Knowing It 😳",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=L_hzdBQvUhA",
+      "published": "2026-01-27",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "flBduU1eq50",
+      "title": "Why Weight Comes Back After GLP-1s #glp1 #weightlossdrugs #ozempic  #wegovy #mounjaro #shorts",
+      "channel": "The Health Lens",
+      "url": "https://www.youtube.com/watch?v=flBduU1eq50",
+      "published": "2026-01-28",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Health Lens)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8gz3Tc2KHY-qmPD670Yv-Q"
+      }
+    },
+    {
+      "videoId": "FKOtkAw0VQw",
+      "title": "Beat GLP1 Fatigue FAST: What Causes It And How To Fix It Mounjaro Zepbound Ozempic Wegovy",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=FKOtkAw0VQw",
+      "published": "2026-02-11",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "tgvPpqwZ09A",
+      "title": "The FDA issues a warning letter to Novo Nordisk over Ozempic and Wegovy concerns",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=tgvPpqwZ09A",
+      "published": "2026-03-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NBC News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCeY0bbntWzzVIaj2z3QigXg"
+      }
+    },
+    {
+      "videoId": "RSo8Tr6QMZc",
+      "title": "You're Losing Muscle Right Now — This Is What to Eat Instead",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=RSo8Tr6QMZc",
+      "published": "2026-03-20",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "5yWutlNi7Rg",
+      "title": "Will Drs Stop Prescribing Ozempic Wegovy Semaglutide Because Of This????",
+      "channel": "FitFlavorFun",
+      "url": "https://www.youtube.com/watch?v=5yWutlNi7Rg",
+      "published": "2026-04-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitFlavorFun)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsbKV1Mfl-U9qa94MtF-Q2A"
+      }
+    },
+    {
+      "videoId": "e4FTDHRDsuk",
+      "title": "Ozempic vs Wegovy vs Semaglutide — What Actually Works Best?",
+      "channel": "Zappy Health",
+      "url": "https://www.youtube.com/watch?v=e4FTDHRDsuk",
+      "published": "2026-04-22",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Zappy Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCX8rfyGYWtqYdoCMTKf6wpA"
+      }
+    },
+    {
+      "videoId": "M4IMOIVtmjw",
+      "title": "GLP-1 Weight Comes Back? Here's What's Actually Happening",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=M4IMOIVtmjw",
+      "published": "2026-05-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "hq-JZR5Tcw0",
+      "title": "Why Smoking Is More Dangerous For Women | The Heart Risk Nobody Talks About",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=hq-JZR5Tcw0",
+      "published": "2026-05-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "RhU_UvhkHWg",
+      "title": "Ozempic vs Wegovy vs Mounjaro vs Zepbound: A Doctor Explains the Difference",
+      "channel": "Dr. Diana Girnita - Rheumatologist OnCall",
+      "url": "https://www.youtube.com/watch?v=RhU_UvhkHWg",
+      "published": "2026-06-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Diana Girnita - Rheumatologist OnCal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4s5oHh_8U_xWJ7UYnTa1rQ"
+      }
+    },
+    {
+      "videoId": "yJX-Qj1iXNU",
+      "title": "Are GLP-1 drugs actually safe? Here's the truth #glp1 #weightloss #doctor",
+      "channel": "Conquer Your Weight",
+      "url": "https://www.youtube.com/watch?v=yJX-Qj1iXNU",
+      "published": "2026-06-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Conquer Your Weight)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGyDZ4ysj_qpJguoXkR0wg"
+      }
+    },
+    {
+      "videoId": "kO94VOGgc88",
+      "title": "Are you eating enough protein on GLP-1? #weightloss #health #nutrition",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=kO94VOGgc88",
+      "published": "2026-06-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "gxTnklLFFvA",
+      "title": "The GLP-1 Fiber Crisis: 70% Have This Problem (30-40g Daily Explained) — Ozempic, Wegovy, Mounjaro",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=gxTnklLFFvA",
+      "published": "2026-06-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "a6rfcMUUBv4",
+      "title": "Are You Losing Muscle and Bone Density on GLP-1s? Why Most Scales Are Lying to You",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=a6rfcMUUBv4",
+      "published": "2026-06-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "Ymds1j8L-K0",
+      "title": "The GLP-1 Dose Nobody Talks About - Why More Isn't Better (And What Actually Works)",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=Ymds1j8L-K0",
+      "published": "2026-07-02",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "M-kd3B3VXGY",
+      "title": "Which GLP-1 is Best For You? Ozempic vs Wegovy vs Mounjaro vs Zepbound",
+      "channel": "Sami Daniel",
+      "url": "https://www.youtube.com/watch?v=M-kd3B3VXGY",
+      "published": "2026-07-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sami Daniel)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCno6JZ0mWBaFNOImwF-AYSA"
+      }
+    },
+    {
+      "videoId": "C5ibfqVLvgg",
+      "title": "The Hunger Signal Truth Behind GLP-1 Drugs",
+      "channel": "DrSchammaExplains",
+      "url": "https://www.youtube.com/watch?v=C5ibfqVLvgg",
+      "published": "2026-07-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DrSchammaExplains)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCQE3099TVdsmCFDkVg-oMNQ"
+      }
+    },
+    {
+      "videoId": "Ct4nKv-XWRA",
+      "title": "Why You Are Losing Muscle Instead of Fat. The Starvation and Hormone Signal Explained",
+      "channel": "drutkalpatel",
+      "url": "https://www.youtube.com/watch?v=Ct4nKv-XWRA",
+      "published": "2026-07-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:drutkalpatel)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHWJcBeO1HYw4cU6aEE40-Q"
+      }
+    },
+    {
+      "videoId": "KwjXDhb9zWQ",
+      "title": "How to AVOID Losing Muscle on GLP-1s & Peptides (Doctor Explains the Truth)",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=KwjXDhb9zWQ",
+      "published": "2026-07-23",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "FWGmrejTmk0",
+      "title": "Losing Muscle on Mounjaro? Why a Pharmacist Says Take Creatine",
+      "channel": "PillSorted",
+      "url": "https://www.youtube.com/watch?v=FWGmrejTmk0",
+      "published": "2026-08-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:PillSorted)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOOjzE-PU3_lIbrbScBph3Q"
+      }
+    },
+    {
+      "videoId": "wVjHxgxxIHU",
+      "title": "Losing Muscle on Mounjaro? Why a Pharmacist Says Take Creatine",
+      "channel": "PillSorted",
+      "url": "https://www.youtube.com/watch?v=wVjHxgxxIHU",
+      "published": "2026-08-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:PillSorted)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOOjzE-PU3_lIbrbScBph3Q"
+      }
+    },
+    {
+      "videoId": "CQCMZTjTwtE",
+      "title": "Losing Muscle Faster Than You Should? Start Doing This at 50",
+      "channel": "Senior Health Card",
+      "url": "https://www.youtube.com/watch?v=CQCMZTjTwtE",
+      "published": "2026-08-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Senior Health Card)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqLxVKp46EkwiXBhQzQQ_Fw"
+      }
+    },
+    {
+      "videoId": "-nLtACYWqhQ",
+      "title": "Pepio GLP-1 Peptide Tracker Review Why Measurements Beat the Scale on Ozempic  Wegovy",
+      "channel": "GLP-Jenny",
+      "url": "https://www.youtube.com/watch?v=-nLtACYWqhQ",
+      "published": "2026-08-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-Jenny)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC5TUqkqz-NBo9LGcj5CJn8w"
+      }
+    },
+    {
+      "videoId": "GcSZQSNAWHQ",
+      "title": "Do GLP-1 Drugs Really Cut Cancer Risk by 50%?",
+      "channel": "MaraLabs+",
+      "url": "https://www.youtube.com/watch?v=GcSZQSNAWHQ",
+      "published": "2026-08-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MaraLabs+)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC2_GtepCpRxjrU69EnKmLjg"
+      }
+    },
+    {
+      "videoId": "DKGAmhYqnSg",
+      "title": "The Scale Is Going Down - Should You Be Worried About Losing Muscle?",
+      "channel": "Daily Brief Podcast",
+      "url": "https://www.youtube.com/watch?v=DKGAmhYqnSg",
+      "published": "2026-08-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Daily Brief Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_Lci-XBT9fDGJsir7JVXYw"
+      }
+    },
+    {
+      "videoId": "oxMSHuw9pyE",
+      "title": "Rheumatoid Arthritis Is Not Just a Joint Disease | The Heart Risk Nobody Talks About",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=oxMSHuw9pyE",
+      "published": "2026-08-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "YkNCoh-U2E0",
+      "title": "What Do GLP-1 Drugs Actually Do Inside Your Body? #fascinatinginformation #science #information01",
+      "channel": "Information01",
+      "url": "https://www.youtube.com/watch?v=YkNCoh-U2E0",
+      "published": "2026-08-23",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Information01)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAcGFPUXswZlYL-w1f_kCyg"
+      }
+    },
+    {
+      "videoId": "4_dip_dC6Zw",
+      "title": "Should GLP-1 Drugs Be Over the Counter?",
+      "channel": "Medscape",
+      "url": "https://www.youtube.com/watch?v=4_dip_dC6Zw",
+      "published": "2026-08-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Medscape)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyw9Y26bNNhQPkydxY93jyQ"
+      }
+    },
+    {
+      "videoId": "j2eMdZVaPgM",
+      "title": "Dr. Mike warns GLP-1 drugs carry serious risks and should not be a universal first-line option.",
+      "channel": "Sleep Setup Lab",
+      "url": "https://www.youtube.com/watch?v=j2eMdZVaPgM",
+      "published": "2026-08-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sleep Setup Lab)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuABO3tVZsPzY6x15Lx14Ew"
+      }
+    },
+    {
+      "videoId": "pFfZ0r4gpmc",
+      "title": "Why You're Losing Muscle Not Fat on Ozempic #ozempic #fitness #fatloss",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=pFfZ0r4gpmc",
+      "published": "2026-09-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "ZdE_X0CF81U",
+      "title": "Ozempic or Wegovy and Alzheimer's: Should You Change Anything?",
+      "channel": "Dr. DH Kim, MD",
+      "url": "https://www.youtube.com/watch?v=ZdE_X0CF81U",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. DH Kim, MD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCoMsEZfT_h6I__d8YUQPjxQ"
+      }
+    },
+    {
+      "videoId": "4dw-Gr698y8",
+      "title": "What You Should Know Before Taking the GLP-1 Pill #weightloss #wellness #glp1",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=4dw-Gr698y8",
+      "published": "2026-09-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "0xdcu4bYE-o",
+      "title": "🔥 After 60, NEVER Ignore These 5 Warning Signs! 🚨 | Your Body Is Trying to Tell You #shorts#ytshorts",
+      "channel": "Prime Age Health 79",
+      "url": "https://www.youtube.com/watch?v=0xdcu4bYE-o",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Deep Rain Sleep )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
+      }
+    },
+    {
+      "videoId": "98m8i03frcU",
+      "title": "Breastfeeding on Ozempic or Wegovy: Is It Safe?",
+      "channel": "Dr. DH Kim, MD",
+      "url": "https://www.youtube.com/watch?v=98m8i03frcU",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. DH Kim, MD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCoMsEZfT_h6I__d8YUQPjxQ"
+      }
+    },
+    {
+      "videoId": "So5JYlVMeF0",
+      "title": "Is your GLP-1 FDA approved? #Ozempic #Wegovy #SleepApnea",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=So5JYlVMeF0",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "QwKQeg1w9So",
+      "title": "The Truth About GLP-1 Weight Regain (And How to Stop It)",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=QwKQeg1w9So",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "jF7zch2qbWc",
+      "title": "Dr. Robert Lustig says cutting sugar saves $1.9T while GLP-1 drugs could add $2.1T in costs.",
+      "channel": "Nutrition Unpacked",
+      "url": "https://www.youtube.com/watch?v=jF7zch2qbWc",
+      "published": "2026-09-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nutrition Unpacked)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0GbdmxIPzJhWUsD5vS2kRg"
+      }
+    },
+    {
+      "videoId": "vTHSC5Qu_MU",
+      "title": "Robert Lustig, MD: What GLP-1 Drugs Don’t Fix—Sugar, Metabolism & Dementia - Podcast at Emery Pharma",
+      "channel": "Emery Pharma",
+      "url": "https://www.youtube.com/watch?v=vTHSC5Qu_MU",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Emery Pharma)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCRYkeJ9Iq004UUDQIHFAuQ"
+      }
+    },
+    {
+      "videoId": "4VesIdaT45M",
+      "title": "Are GLP-1 drugs actually dulling your personality and relationships?",
+      "channel": "ppfr.clipps",
+      "url": "https://www.youtube.com/watch?v=4VesIdaT45M",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ppfr.clipps)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCYCIWa7zYdhDSpH6lm3aonA"
+      }
+    },
+    {
+      "videoId": "8LUoouKOfZ0",
+      "title": "Ozempic and Wegovy Have 5 Different Prices. Can You Get It Cheaper?",
+      "channel": "Capital Subtext",
+      "url": "https://www.youtube.com/watch?v=8LUoouKOfZ0",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Capital Subtext)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC8-vEhqWw-WhCBogs13ty3A"
+      }
+    },
+    {
+      "videoId": "y6nBwtLd320",
+      "title": "Why some people lose weight faster on GLP-1 #weightlossjourney #science",
+      "channel": "Conquer Your Weight",
+      "url": "https://www.youtube.com/watch?v=y6nBwtLd320",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Conquer Your Weight)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGyDZ4ysj_qpJguoXkR0wg"
+      }
+    },
+    {
+      "videoId": "2TNfSwzWRhY",
+      "title": "Are Ozempic and Wegovy the Same GLP-1 Tracker App Review Week 7",
+      "channel": "Pepio: Peptide GLP-1 Tracker",
+      "url": "https://www.youtube.com/watch?v=2TNfSwzWRhY",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Pepio: Peptide GLP-1 Tracker)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7gGJt2e20sE-2nYz30mXOw"
+      }
+    },
+    {
+      "videoId": "YOQhXoDwYaU",
+      "title": "New lawsuits claim GLP-1 drugs can cause vision loss",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=YOQhXoDwYaU",
+      "published": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Good Morning America)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w"
+      }
+    },
+    {
+      "videoId": "FqKLW-xJ658",
+      "title": "Why Do Companies Hold Bitcoin? 🏢₿ The Risk Nobody Talks About #shortsvideo",
+      "channel": "Next dollar andes",
+      "url": "https://www.youtube.com/watch?v=FqKLW-xJ658",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Next dollar andies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC5K8locdA3Fd9Ja4GYIRNww"
+      }
+    },
+    {
+      "videoId": "CB3fpPM-smo",
+      "title": "You Are Losing Muscle After 40 | Here Is How to Reverse It Before It's Too Late",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=CB3fpPM-smo",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "rcx96sMbYnU",
+      "title": "Why Might People Choose to Use GLP-1 Drugs Without a Prescription or Medical Need?",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=rcx96sMbYnU",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Daily Q&A)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg"
+      }
+    },
+    {
+      "videoId": "7dKcAHv0dRs",
+      "title": "Why Are so Many Americans Using GLP-1 Drugs Without a Medical Reason in 2026?",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=7dKcAHv0dRs",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Daily Q&A)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg"
+      }
+    },
+    {
+      "videoId": "qRkPyIqk8xo",
+      "title": "What Are GLP-1 Drugs and How Do They Work in the Body?",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=qRkPyIqk8xo",
+      "published": "2026-09-23",
+      "first_seen": "2026-09-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Daily Q&A)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg"
+      }
+    },
+    {
+      "videoId": "HyfWK4bI8mA",
+      "title": "Why Are Many Americans Using GLP-1 Drugs Without a Medical Reason According to the Recent Study?",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=HyfWK4bI8mA",
+      "published": "2026-09-23",
+      "first_seen": "2026-09-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Daily Q&A)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg"
+      }
+    },
+    {
+      "videoId": "fECrRCZ33Go",
+      "title": "Are there affordable GLP-1 options? #Ozempic #Wegovy #WeightLoss",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=fECrRCZ33Go",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "l5VXwVfp3zk",
+      "title": "Why Might Children on GLP-1 Drugs Develop Nutritional Deficiencies?",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=l5VXwVfp3zk",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-25",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Daily Q&A)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg"
+      }
+    },
+    {
+      "videoId": "IyIG_Dr0xYE",
+      "title": "GLP-1 Drugs Face Eye Safety Concerns: Will Fresh Scrutiny Impact India's Growing Market?",
+      "channel": "Business Today",
+      "url": "https://www.youtube.com/watch?v=IyIG_Dr0xYE",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Business Today)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCaPHWiExfUWaKsUtENLCv5w"
+      }
+    },
+    {
+      "videoId": "YVl7IoJqoeI",
+      "title": "The Lizard Behind Ozempic: How GLP-1 Drugs Really Work",
+      "channel": "Kulture Kurated",
+      "url": "https://www.youtube.com/watch?v=YVl7IoJqoeI",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (candidate:glp1-ends-obesity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjN6mQoaWckqASVsbP7ii6g"
+      }
+    },
+    {
+      "videoId": "I3eFL2rIV30",
+      "title": "GLP-1 Drugs Are Being Dosed All Wrong",
+      "channel": "Well Beyond 40 Podcast with JJ Virgin",
+      "url": "https://www.youtube.com/watch?v=I3eFL2rIV30",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (candidate:glp1-ends-obesity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLTBEKbMXQxoRZlhJ8GC7sg"
+      }
+    },
+    {
+      "videoId": "BIS14t4yqmc",
+      "title": "Ozempic, Wegovy &amp; Mounjaro: Are Your Eyes at Risk? | GLP-1 Medications  | Dr Nitin Deshapande #eyes",
+      "channel": "Shree Ramkrishna Netralaya",
+      "url": "https://www.youtube.com/watch?v=BIS14t4yqmc",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (candidate:glp1-ends-obesity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCFGC9M-krFisD9UZcXl2N2w"
+      }
+    },
+    {
+      "videoId": "AMhhZ8LJxqc",
+      "title": "What GLP-1 Drugs Actually Do Inside Your Body",
+      "channel": "Long Life Health",
+      "url": "https://www.youtube.com/watch?v=AMhhZ8LJxqc",
+      "published": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (candidate:glp1-ends-obesity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTffIEYdw4wlpf-gfwxQAZA"
+      }
+    },
+    {
+      "videoId": "_88KwhiKMw0",
+      "title": "Ozempic or Wegovy and Alzheimer's: Should You Change Anything?",
+      "channel": "Dr. DH Kim, MD",
+      "url": "https://www.youtube.com/watch?v=_88KwhiKMw0",
+      "published": "2026-09-26",
+      "first_seen": "2026-09-27",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. DH Kim, MD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCoMsEZfT_h6I__d8YUQPjxQ"
       }
     }
   ]

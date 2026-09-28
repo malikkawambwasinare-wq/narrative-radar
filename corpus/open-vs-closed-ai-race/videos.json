@@ -127004,7 +127004,61 @@
         "channelViews": 1881920,
         "channelVideos": 9
       }
+    },
+    {
+      "videoId": "Bq5stWPwuyo",
+      "title": "DeepSeek processed 8 trillion tokens in a day. Now prices are going up.",
+      "channel": "AI Tokenomics",
+      "url": "https://www.youtube.com/watch?v=Bq5stWPwuyo",
+      "published": "2026-08-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Tokenomics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLPDrIt1gkzrDxnd_T6DQpQ"
+      }
+    },
+    {
+      "videoId": "vxxtjZ5FlWs",
+      "title": "Gold Is Back as Money : $4 TRILLION Milestones Changes Everything but Dealers don't know",
+      "channel": "professor Jiang",
+      "url": "https://www.youtube.com/watch?v=vxxtjZ5FlWs",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:professor Jiang)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
+      }
+    },
+    {
+      "videoId": "y_28TslQsr8",
+      "title": "Friday Night Fever is On The Road at Corona Del Sol, which hosts Boulder Creek",
+      "channel": "12 News",
+      "url": "https://www.youtube.com/watch?v=y_28TslQsr8",
+      "published": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:12 News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCu7G08TrwPx_0WH4M7OxjIQ"
+      }
     }
   ],
-  "updated": "2026-09-27"
+  "updated": "2026-09-28"
 }

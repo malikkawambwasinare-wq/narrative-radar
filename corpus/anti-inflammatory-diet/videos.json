@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-09-27"
+      "unavailable": "2026-09-28"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-09-27"
+      "unavailable": "2026-09-28"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119705,7 +119705,7 @@
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
       },
-      "unavailable": "2026-09-27"
+      "unavailable": "2026-09-28"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119899,7 +119899,7 @@
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
       },
-      "unavailable": "2026-09-27"
+      "unavailable": "2026-09-28"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -124158,15 +124158,22 @@
       "url": "https://www.youtube.com/watch?v=g-3gR-IO-mk",
       "published": "2026-09-26",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 105,
+      "length": "1:53",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCs0SPFZrJs9_75IijF2Kx0A"
+        "channelId": "UCs0SPFZrJs9_75IijF2Kx0A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 10,
+        "comments": 9,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -124176,15 +124183,22 @@
       "url": "https://www.youtube.com/watch?v=wAZre79NW-w",
       "published": "2026-09-27",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 94,
+      "length": "1:32",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCNDgblDAGpmICJ7v0sYcMsg"
+        "channelId": "UCNDgblDAGpmICJ7v0sYcMsg",
+        "category": "28",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -124194,15 +124208,22 @@
       "url": "https://www.youtube.com/watch?v=mfRIOKRqwUU",
       "published": "2026-09-27",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 256,
+      "length": "0:25",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCKbCvu-5_ZkkiTPdJtNAF6g"
+        "channelId": "UCKbCvu-5_ZkkiTPdJtNAF6g",
+        "category": "17",
+        "language": "es",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -124212,15 +124233,22 @@
       "url": "https://www.youtube.com/watch?v=kXalKB9DCHM",
       "published": "2026-09-27",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:33",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCVCJleghNwf2cT1sQMpiaNQ"
+        "channelId": "UCVCJleghNwf2cT1sQMpiaNQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -124230,15 +124258,22 @@
       "url": "https://www.youtube.com/watch?v=3mozdBwnJJ8",
       "published": "2026-09-27",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "0:18",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC0iUaZIGKEq4-FK8Klw55wA"
+        "channelId": "UC0iUaZIGKEq4-FK8Klw55wA",
+        "category": "17",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -124248,15 +124283,22 @@
       "url": "https://www.youtube.com/watch?v=t_qpCY9dsmQ",
       "published": "2026-09-27",
       "first_seen": "2026-09-27",
-      "views": null,
-      "length": null,
+      "views": 8,
+      "length": "1:47",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7CkFigqso2NdLyWVMht98A"
+        "channelId": "UC7CkFigqso2NdLyWVMht98A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
       }
     },
     {
@@ -125498,7 +125540,1303 @@
         "channelViews": 84312,
         "channelVideos": 222
       }
+    },
+    {
+      "videoId": "wn5WRh6MIWY",
+      "title": "The #1 Food You Should Stop Eating Immediately",
+      "channel": "Dr. Josh Axe",
+      "url": "https://www.youtube.com/watch?v=wn5WRh6MIWY",
+      "published": "2017-08-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Josh Axe)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgtp61tf9tYF7nG_gIQ94LQ"
+      }
+    },
+    {
+      "videoId": "hVBMmr0_WLg",
+      "title": "Dietitian Reviews All Things Adrienne What I Eat In A Day (YIKES THIS IS BAD)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=hVBMmr0_WLg",
+      "published": "2020-07-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "AmY7Zd6vZ2I",
+      "title": "Is Salt Bad for Health | Q&A 3: Foods To Avoid For Better Health",
+      "channel": "The Biblical Nutritionist",
+      "url": "https://www.youtube.com/watch?v=AmY7Zd6vZ2I",
+      "published": "2020-07-27",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Biblical Nutritionist)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w"
+      }
+    },
+    {
+      "videoId": "OUhruKRfu-A",
+      "title": "Dietitian Reacts to Jaclyn Forbes' What I Eat in a Day (This was HIGHLY Requested...)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=OUhruKRfu-A",
+      "published": "2021-01-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "AyFu8zci9mk",
+      "title": "Dietitian Reacts to Caroline Manning's What I Eat in a Day (Adolescence is Not the Time to Diet)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=AyFu8zci9mk",
+      "published": "2021-02-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "cC3zn-QDSa0",
+      "title": "Dietitian Reacts to Derek Hough's What I Eat In a Day (WAIT... is this a Wellness Culture JOKE?!)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=cC3zn-QDSa0",
+      "published": "2021-03-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "RzSoytLQAoY",
+      "title": "Dietitian Reacts to Valeria Lipovetsky What I Eat in a Day (Food Combining is BS!)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=RzSoytLQAoY",
+      "published": "2021-04-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "c6hK74JOngs",
+      "title": "Dietitian Reacts to Sami Clarke’s What I Eat in a Day (I’m Going to be BRUTALLY Honest…)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=c6hK74JOngs",
+      "published": "2021-06-24",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "5fbxZiSNwVw",
+      "title": "Dietitian Reviews Nina Dobrev's What I Eat in a Day (WHAT is a \"Guilt Free Guilty Pleasure\" ?!)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=5fbxZiSNwVw",
+      "published": "2021-07-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "7vjCRVKRU3Y",
+      "title": "Dietitian Reviews Flavcity's Bobby Parrish What I Eat in a Day (Ugh this one was ROUGH to watch!)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=7vjCRVKRU3Y",
+      "published": "2021-07-15",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "u1Ob3FBUCww",
+      "title": "Dietitian Reviews Marla Catherine What I Eat in a Day (This is just not enough...)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=u1Ob3FBUCww",
+      "published": "2021-07-20",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "x31_u9cpnZQ",
+      "title": "Top 7 Harmful Ingredients You Should Never Eat | Foods To Avoid",
+      "channel": "The Biblical Nutritionist",
+      "url": "https://www.youtube.com/watch?v=x31_u9cpnZQ",
+      "published": "2021-08-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Biblical Nutritionist)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w"
+      }
+    },
+    {
+      "videoId": "cl0QAh4owck",
+      "title": "Dietitian Reviews Zoe Unlimited What I Eat in a Day (Are These Intermittent Fasting Rules LEGIT?)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=cl0QAh4owck",
+      "published": "2021-11-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "hP282a-kyFc",
+      "title": "Dietitian Reviews Aspyn Ovard What I Eat in a Day (Is This Healthy While Pregnant?!)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=hP282a-kyFc",
+      "published": "2021-11-22",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "3B0rNez-PWc",
+      "title": "FINALLY Sharing What I ACTUALLY Eat in Day (Realistic Birthday & Vacation intuitive Eating)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=3B0rNez-PWc",
+      "published": "2022-01-31",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "_m3vcgdDD24",
+      "title": "Dietitian Reviews Molly Mae's What I Eat in a Day (Is this ENOUGH?...)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=_m3vcgdDD24",
+      "published": "2022-02-03",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "FqCea1eB-Kc",
+      "title": "Dietitian Reviews Downshiftology (This is the most complex What I Eat in a Day I’ve ever reviewed)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=FqCea1eB-Kc",
+      "published": "2022-04-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "eGQ98Vy4C1k",
+      "title": "Dietitian Reviews Alexandra Andersson’s VEGAN What I Eat in a Day (Is This REALLY Intuitive Eating?)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=eGQ98Vy4C1k",
+      "published": "2022-09-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "G1EU9wU4yLo",
+      "title": "6 Unhealthy Foods You Must Stop Eating To Prevent Diabetes, Heart Disease, Cancer & More",
+      "channel": "Healthy Hamesha",
+      "url": "https://www.youtube.com/watch?v=G1EU9wU4yLo",
+      "published": "2022-10-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Hamesha)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCys-KuZ7z2KHsPaW4U_lEBQ"
+      }
+    },
+    {
+      "videoId": "kwbSFHyzXyA",
+      "title": "2 Types of Foods For Cancer Prevention - Are You Eating These Daily?!",
+      "channel": "The Biblical Nutritionist",
+      "url": "https://www.youtube.com/watch?v=kwbSFHyzXyA",
+      "published": "2022-11-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Biblical Nutritionist)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w"
+      }
+    },
+    {
+      "videoId": "RIrwjI4-cy4",
+      "title": "Top Foods to Avoid with Sjogren's Syndrome - A rheumatologist explains",
+      "channel": "Dr. Diana Girnita - Rheumatologist OnCall",
+      "url": "https://www.youtube.com/watch?v=RIrwjI4-cy4",
+      "published": "2023-02-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Diana Girnita - Rheumatologist OnCal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4s5oHh_8U_xWJ7UYnTa1rQ"
+      }
+    },
+    {
+      "videoId": "z8aIojIV3KQ",
+      "title": "Foods That May Lower Your Testosterone - What Does The Evidence Show",
+      "channel": "Talking With Docs",
+      "url": "https://www.youtube.com/watch?v=z8aIojIV3KQ",
+      "published": "2024-04-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Talking With Docs)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqYI3lmZgTsRs202mY15QfA"
+      }
+    },
+    {
+      "videoId": "j7wlkBR-1fs",
+      "title": "URGENT! Barbara O'Neill’s MUST-HAVE FOODS to Avoid Cancer & Boost Health!",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=j7wlkBR-1fs",
+      "published": "2024-07-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "LThRFawB6CU",
+      "title": "DON'T Touch These 10 Foods If You Have DIABETES (High Blood Sugar Foods To Avoid)",
+      "channel": "Biohealthy",
+      "url": "https://www.youtube.com/watch?v=LThRFawB6CU",
+      "published": "2025-01-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Biohealthy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOhE6Cq6tT9Jh6BcCxcPM4g"
+      }
+    },
+    {
+      "videoId": "kLVKVIhU-gY",
+      "title": "GLUCOSE GODDESS' Reaction to Bread is WILD (Low Carb What I Eat in a Day Review)",
+      "channel": "Abbey Sharp",
+      "url": "https://www.youtube.com/watch?v=kLVKVIhU-gY",
+      "published": "2025-02-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Abbey Sharp)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKLz-9xkpPNjK26PqbjHn7Q"
+      }
+    },
+    {
+      "videoId": "EQgPcJpYPxw",
+      "title": "This oat milk is not the same as the grocery store oat milk 🥛⚡ Oat Milk Recipe #shorts #oatmilk",
+      "channel": "Lucky Iron Life",
+      "url": "https://www.youtube.com/watch?v=EQgPcJpYPxw",
+      "published": "2025-03-06",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Lucky Iron Life)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCzLrlvWnlvzjsi8iK8YX6vA"
+      }
+    },
+    {
+      "videoId": "6G0IzB5aAyA",
+      "title": "Turmeric’s POWERFUL Benefits | Why You Should Eat It Daily?",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=6G0IzB5aAyA",
+      "published": "2025-03-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "dHjtVftXBvE",
+      "title": "⚠️ WARNING: Stop Eating These 5 Nuts Immediately! They Are KILLING You! | Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=dHjtVftXBvE",
+      "published": "2025-04-16",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "GCZI2oDJi4o",
+      "title": "URGENT: Eating These Fruits Everyday Is DANGEROUS! || Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=GCZI2oDJi4o",
+      "published": "2025-05-12",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "0IaKSexj3Uw",
+      "title": "TRANSFORM Your Health By Eating These 8 Red Fruits Daily (You Won't Believe It!) | Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=0IaKSexj3Uw",
+      "published": "2025-05-17",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "N8KbGC6qQuE",
+      "title": "Seniors! I am BEGGING You to STOP Eating These 5 NUTS That Are Killing You! - Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=N8KbGC6qQuE",
+      "published": "2025-06-03",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "Q5buK500rUE",
+      "title": "Fatty Liver Is Reversible: The #1 Food You Must Stop Eating to Save Your Liver & Your Life",
+      "channel": "Kirsten Liebelt",
+      "url": "https://www.youtube.com/watch?v=Q5buK500rUE",
+      "published": "2025-08-27",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Kirsten Liebelt)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUvknyV1tiZIlW---pVA6UQ"
+      }
+    },
+    {
+      "videoId": "zl-vUtOEsJg",
+      "title": "This “Healthy” Ice Cream Is Actually POISON — STOP Eating It! | Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=zl-vUtOEsJg",
+      "published": "2025-09-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "wFU15TGWsuA",
+      "title": "Stop Eating This If You Have Arthritis",
+      "channel": "Dr. Berg Shorts",
+      "url": "https://www.youtube.com/watch?v=wFU15TGWsuA",
+      "published": "2025-09-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Berg Shorts)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpWhiwlOPxOmwQu5xyjtLDw"
+      }
+    },
+    {
+      "videoId": "TPez5GLc9yY",
+      "title": "This Food Is a Stroke Ready to Happen — Stop Eating It Now!  Dr. Mandell",
+      "channel": "motivationaldoc",
+      "url": "https://www.youtube.com/watch?v=TPez5GLc9yY",
+      "published": "2025-09-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:motivationaldoc)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKcWSiffY8MpZ3NKav8LeRA"
+      }
+    },
+    {
+      "videoId": "AOnIQFjalW8",
+      "title": "⚠️ WARNING: Stop Eating These 5 Seeds Immediately! They Are KILLING You! | Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=AOnIQFjalW8",
+      "published": "2025-10-13",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "HpWtP8k_tQA",
+      "title": "“Stop Eating Late! - It’s Destroying Your Sleep Science Explains Why",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=HpWtP8k_tQA",
+      "published": "2025-10-15",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "Qp6s6rZvlmk",
+      "title": "Seniors, These 4 Fish Are DEADLY, Stop Eating Them Now! | Barbara O’Neill",
+      "channel": "Eternal Health",
+      "url": "https://www.youtube.com/watch?v=Qp6s6rZvlmk",
+      "published": "2025-12-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Eternal Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDlA5KUmxutDx7YkLpzAPlQ"
+      }
+    },
+    {
+      "videoId": "t7chuPXpeEo",
+      "title": "Low Sperm Count? Start Eating THESE Foods Today 🥜🥗 | Don’t Ignore. Watch till the End. #viral",
+      "channel": "V Sparkel Wellness Center",
+      "url": "https://www.youtube.com/watch?v=t7chuPXpeEo",
+      "published": "2025-12-19",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:V Sparkel Wellness Center)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTn_xwi1w1NqUNbyUWXPUAw"
+      }
+    },
+    {
+      "videoId": "aJtaRiX0EGo",
+      "title": "Why Flour-Based Foods Taste So Good and Are Hard to Stop Eating",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=aJtaRiX0EGo",
+      "published": "2026-01-09",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "jdsnrAmGd_Q",
+      "title": "Stop Eating Plain Rice Like This | 4 Healthy Protein Rice Mixes You Must Try. ✨#viral #trending",
+      "channel": "V Sparkel Wellness Center",
+      "url": "https://www.youtube.com/watch?v=jdsnrAmGd_Q",
+      "published": "2026-02-17",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:V Sparkel Wellness Center)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTn_xwi1w1NqUNbyUWXPUAw"
+      }
+    },
+    {
+      "videoId": "woGfQoNh1mk",
+      "title": "Women Over 40 Stop Eating Carbs for Breakfast #hormones #antiaging #shorts",
+      "channel": "Food Decoded",
+      "url": "https://www.youtube.com/watch?v=woGfQoNh1mk",
+      "published": "2026-02-17",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Food Decoded)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCh8eX1zZayWWqrbYee12iDg"
+      }
+    },
+    {
+      "videoId": "zGWx07A7olU",
+      "title": "Are You Eating These Foods at the Wrong Time?",
+      "channel": "Health Library",
+      "url": "https://www.youtube.com/watch?v=zGWx07A7olU",
+      "published": "2026-04-03",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Health Library)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOnd0m7Kcv7yhSOS8AgInXw"
+      }
+    },
+    {
+      "videoId": "vtF5DRv4fxU",
+      "title": "🚨 Stop Eating the Beginner Version! Foods That Are Secretly More Powerful 🤯",
+      "channel": "FitNutriLife",
+      "url": "https://www.youtube.com/watch?v=vtF5DRv4fxU",
+      "published": "2026-06-03",
+      "first_seen": "2026-09-18",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:FitNutriLife)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w"
+      }
+    },
+    {
+      "videoId": "cqWwzbbgiyg",
+      "title": "Why You Can't Stop Eating (It's Not Willpower) #FoodScience #Health",
+      "channel": "Food Decoded",
+      "url": "https://www.youtube.com/watch?v=cqWwzbbgiyg",
+      "published": "2026-06-24",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Food Decoded)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCh8eX1zZayWWqrbYee12iDg"
+      }
+    },
+    {
+      "videoId": "fgJqzYl_RL4",
+      "title": "Seniors: STOP Eating Salt Like This…Your Legs Will Deflate in Days | Dr. Mandell",
+      "channel": "Healthy Aging America",
+      "url": "https://www.youtube.com/watch?v=fgJqzYl_RL4",
+      "published": "2026-06-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Aging America)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4kweYrwbJu-HlHvtybTnLg"
+      }
+    },
+    {
+      "videoId": "FxSFi3mAjgg",
+      "title": "here are the foods to avoid + what we know right now about the parasite going around.",
+      "channel": "Gabrielle | Dietitian",
+      "url": "https://www.youtube.com/watch?v=FxSFi3mAjgg",
+      "published": "2026-07-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Gabrielle | Dietitian)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC89lIEaRwW9dL8BftTzK2Tg"
+      }
+    },
+    {
+      "videoId": "0e8NiRxyyOg",
+      "title": "Over 60? STOP Eating This Breakfast If You Want Strong Legs! #healthyaging #wellness #seniorhealth",
+      "channel": "Dr. Mandell Health",
+      "url": "https://www.youtube.com/watch?v=0e8NiRxyyOg",
+      "published": "2026-07-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Mandell Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa4g_Xo35VNIZnZiOJMXUng"
+      }
+    },
+    {
+      "videoId": "MwoqGIHW8FM",
+      "title": "How Much Fiber Is Too Much? Dietitian Reacts to What I Eat In A Day",
+      "channel": "Gabrielle | Dietitian",
+      "url": "https://www.youtube.com/watch?v=MwoqGIHW8FM",
+      "published": "2026-07-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Gabrielle | Dietitian)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC89lIEaRwW9dL8BftTzK2Tg"
+      }
+    },
+    {
+      "videoId": "34EULQ_UxCc",
+      "title": "STOP Reheating These 4 Foods — Here's What's Really Happening to Your Body.",
+      "channel": "The Longevity Ledger",
+      "url": "https://www.youtube.com/watch?v=34EULQ_UxCc",
+      "published": "2026-07-30",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Longevity Ledger)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZ7YEr6ENp4oLo-Z_q6nhKQ"
+      }
+    },
+    {
+      "videoId": "Z91Lhlu2MXw",
+      "title": "These Foods are RUINING Your GLP-1 Results (STOP EATING THEM!)",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=Z91Lhlu2MXw",
+      "published": "2026-07-30",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "cW9iwOseud4",
+      "title": "Over 60? STOP Eating Green Smoothies! The #1 Gut-Healing Food Doctors Rarely Mention #seniorhealth",
+      "channel": "Dr. Mandell Health",
+      "url": "https://www.youtube.com/watch?v=cW9iwOseud4",
+      "published": "2026-08-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Mandell Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa4g_Xo35VNIZnZiOJMXUng"
+      }
+    },
+    {
+      "videoId": "Y-10ICTt1MA",
+      "title": "Stop Eating This at Lunch to Avoid the 3pm Crash After 50",
+      "channel": "Vital After 49",
+      "url": "https://www.youtube.com/watch?v=Y-10ICTt1MA",
+      "published": "2026-08-05",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Vital After 49)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCl4Dy7MiH5gfJud16D5yGSQ"
+      }
+    },
+    {
+      "videoId": "isemNzVK64k",
+      "title": "Why you can’t stop eating at 9 PM #stress #mums #healthtips",
+      "channel": "PillSorted",
+      "url": "https://www.youtube.com/watch?v=isemNzVK64k",
+      "published": "2026-08-07",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:PillSorted)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOOjzE-PU3_lIbrbScBph3Q"
+      }
+    },
+    {
+      "videoId": "ko4A36ULcKg",
+      "title": "10 Worst Foods for Fatty Liver You Should Limit | Foods That May Increase Liver Fat",
+      "channel": "Smart Life Health",
+      "url": "https://www.youtube.com/watch?v=ko4A36ULcKg",
+      "published": "2026-08-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Smart Life Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCcSQmvK8VL-LsK2_7klWpZA"
+      }
+    },
+    {
+      "videoId": "pgipbnqLueI",
+      "title": "Foods to AVOID If You Have Gas& Bloating|Stop These Foods for Better Digestion#GasProblem #GasRelief",
+      "channel": "Natural beauty handbook",
+      "url": "https://www.youtube.com/watch?v=pgipbnqLueI",
+      "published": "2026-08-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Natural beauty handbook)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAiqPcjJ81IVstiq31b9IYw"
+      }
+    },
+    {
+      "videoId": "yKO86QkZLA8",
+      "title": "FOODS To AVOID While BREASTFEEDING | Every New MOM Should Know @fit_withvartika",
+      "channel": "fit_withvartika",
+      "url": "https://www.youtube.com/watch?v=yKO86QkZLA8",
+      "published": "2026-08-19",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:fit_withvartika)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuzUktFUaVGb7PAOBJJ6xtA"
+      }
+    },
+    {
+      "videoId": "cHs-9TylE3I",
+      "title": "Over 60 These 8 Foods that May Control Visceral Fat In Days!",
+      "channel": "William Health Insights",
+      "url": "https://www.youtube.com/watch?v=cHs-9TylE3I",
+      "published": "2026-08-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:William Health Insights)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1CbLaomWYDv30hPjzpbnRw"
+      }
+    },
+    {
+      "videoId": "PDa57Uv4xtU",
+      "title": "Stop eating bread in order to heal! The bread that is in the stores today is not the same bread",
+      "channel": "JacobsLink.com2",
+      "url": "https://www.youtube.com/watch?v=PDa57Uv4xtU",
+      "published": "2026-08-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:JacobsLink.com2)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCODSHL7YhY6FIO4-RvYDmcw"
+      }
+    },
+    {
+      "videoId": "b8XYizOljBQ",
+      "title": "Are You Eating These 3 Fruits for Your Eyes? 🥝 #shorts #health",
+      "channel": "Dr ARK MD",
+      "url": "https://www.youtube.com/watch?v=b8XYizOljBQ",
+      "published": "2026-09-04",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr ARK MD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCmNYTFYyHmfCktLsql6kheg"
+      }
+    },
+    {
+      "videoId": "pnq38q2qMAw",
+      "title": "Scientifically Proven…THIS One Food Activates Stem Cells & STARVES CANCER",
+      "channel": "Health Science",
+      "url": "https://www.youtube.com/watch?v=pnq38q2qMAw",
+      "published": "2026-09-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Health Science)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuMuWUjudafP0w554veVOeA"
+      }
+    },
+    {
+      "videoId": "l2_VBS9nhRc",
+      "title": "Men Over 60: 5 Foods That May Support Stronger Erections | Before Intimacy",
+      "channel": "William Health Insights",
+      "url": "https://www.youtube.com/watch?v=l2_VBS9nhRc",
+      "published": "2026-09-06",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:William Health Insights)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1CbLaomWYDv30hPjzpbnRw"
+      }
+    },
+    {
+      "videoId": "dqw-qdeL6x8",
+      "title": "Scientifically Proven…THIS One Food Activates Stem Cells & Boosts Regeneration",
+      "channel": "Health Science",
+      "url": "https://www.youtube.com/watch?v=dqw-qdeL6x8",
+      "published": "2026-09-09",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Health Science)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuMuWUjudafP0w554veVOeA"
+      }
+    },
+    {
+      "videoId": "9hnxXjMJ6yo",
+      "title": "5 Foods to Avoid If You Have a Sensitive Stomach",
+      "channel": "Wellness warriors USA",
+      "url": "https://www.youtube.com/watch?v=9hnxXjMJ6yo",
+      "published": "2026-09-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness warriors USA )",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXOhNV8OM3leeIX0rkBCKIw"
+      }
+    },
+    {
+      "videoId": "W7ShO-GmG6A",
+      "title": "“Over 50 and Waking Up Stiff 7 Foods That May Help Your Joints Feel Better”",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=W7ShO-GmG6A",
+      "published": "2026-09-13",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "yj-UMyHaLv0",
+      "title": "20 Ancient Bible Superfoods That Will Calm Your Inflammation Naturally",
+      "channel": "Elder Harvest",
+      "url": "https://www.youtube.com/watch?v=yj-UMyHaLv0",
+      "published": "2026-09-16",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Elder Harvest)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC58NM37pH6Eh6s-8ObiWTbA"
+      }
+    },
+    {
+      "videoId": "TqYzD3ppb7w",
+      "title": "Should You Stop Eating Food Cooked in Palm Oil? Let’s Look at the Facts #Dimple #Podcast #PalmOil",
+      "channel": "Sehat Unfiltered",
+      "url": "https://www.youtube.com/watch?v=TqYzD3ppb7w",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sehat Unfiltered)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTh9gOAVZFTDMNk0qQUsN7A"
+      }
+    },
+    {
+      "videoId": "jQ1HWYZaLao",
+      "title": "Why Ultra-Processed Food Is Engineered to Be Impossible to Stop Eating #shorts",
+      "channel": "ThinkWithCloe",
+      "url": "https://www.youtube.com/watch?v=jQ1HWYZaLao",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ThinkWithCloe)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCFfbipLdgBGL82qNfA-zfZA"
+      }
+    },
+    {
+      "videoId": "ZKdAt0lB0FI",
+      "title": "I Was Eating These 10 &quot;Healthy&quot; Foods — They Were Killing My Heart",
+      "channel": "Health Insights",
+      "url": "https://www.youtube.com/watch?v=ZKdAt0lB0FI",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnOQ8nTFCIEobnUbc4Tl7WA"
+      }
+    },
+    {
+      "videoId": "g1ce3OlyQBE",
+      "title": "Are You Eating These 4 Brain-Boosting Foods? #brainhealth",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=g1ce3OlyQBE",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "Eru6-vQSaOA",
+      "title": "OVER 60? STOP EATING BREAKFAST LIKE THIS! 🚨 5 Protein Mistakes That May Be Costing You Muscle",
+      "channel": "Dr. Mandell Health",
+      "url": "https://www.youtube.com/watch?v=Eru6-vQSaOA",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-25",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Mandell Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa4g_Xo35VNIZnZiOJMXUng"
+      }
+    },
+    {
+      "videoId": "vEWA2hldKBA",
+      "title": "Fatty Liver Diet: Should You Stop Eating Red Meat? | Doctor Explains",
+      "channel": "Reverse Diabetes Scientifically | Redial Clinic",
+      "url": "https://www.youtube.com/watch?v=vEWA2hldKBA",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Reverse Diabetes Scientifically | Redial)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiCLyeZB_B8kWfL09MrIJDw"
+      }
     }
   ],
-  "updated": "2026-09-27"
+  "updated": "2026-09-28"
 }

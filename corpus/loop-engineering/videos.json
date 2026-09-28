@@ -87664,7 +87664,547 @@
         "channelViews": 139,
         "channelVideos": 9
       }
+    },
+    {
+      "videoId": "jvKf6zXrNO4",
+      "title": "Prompt Engineering is Dead — Nir Gazit, Traceloop",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=jvKf6zXrNO4",
+      "published": "2025-06-27",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "8SUJEqQNClw",
+      "title": "Agents vs Workflows: Why Not Both? — Sam Bhagwat, Mastra.ai",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=8SUJEqQNClw",
+      "published": "2025-08-01",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "PS2K7YHvkHo",
+      "title": "Every developer must master these 3 AI pillars: LLMs, AI Agents & AI Workflows #skillradar #aicourse",
+      "channel": "skill Radar",
+      "url": "https://www.youtube.com/watch?v=PS2K7YHvkHo",
+      "published": "2025-09-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:skill Radar)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCe3-DtIGPofHXOh-H61akIw"
+      }
+    },
+    {
+      "videoId": "-cKUW6n8hBU",
+      "title": "DSPy: The End of Prompt Engineering - Kevin Madura, AlixPartners",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=-cKUW6n8hBU",
+      "published": "2026-01-08",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "mhCGr6gJ2dM",
+      "title": "Is software engineering cooked?",
+      "channel": "Alberta Tech",
+      "url": "https://www.youtube.com/watch?v=mhCGr6gJ2dM",
+      "published": "2026-01-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Alberta Tech)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkdgAA0rfK7lG5dv4o__Paw"
+      }
+    },
+    {
+      "videoId": "CS5Cmz5FssI",
+      "title": "How AI is changing Software Engineering: A Conversation with Gergely Orosz, @pragmaticengineer",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=CS5Cmz5FssI",
+      "published": "2026-04-21",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "W76woOYHlvY",
+      "title": "Software Engineering Is Becoming Plan and Review — Louis Knight-Webb, Vibe Kanban",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=W76woOYHlvY",
+      "published": "2026-05-02",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "6ls5mP0L4KI",
+      "title": "This Role Is Becoming Bigger Than Software Engineering",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=6ls5mP0L4KI",
+      "published": "2026-05-26",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Tech Lead)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw"
+      }
+    },
+    {
+      "videoId": "jDGaEwhVdRo",
+      "title": "This AI Trick Saves Me Hours of Prompt Engineering #ai #tips #productivity",
+      "channel": "Sophia An",
+      "url": "https://www.youtube.com/watch?v=jDGaEwhVdRo",
+      "published": "2026-06-11",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sophia An)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCj4spbBI0UXvnsuwGSdJiAw"
+      }
+    },
+    {
+      "videoId": "OupYA_vANOU",
+      "title": "One Agent Is Not the Workflow",
+      "channel": "CodeGlitch",
+      "url": "https://www.youtube.com/watch?v=OupYA_vANOU",
+      "published": "2026-06-16",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CodeGlitch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuKAk8yTn0LyS72gGiYq61w"
+      }
+    },
+    {
+      "videoId": "Rnjad4p62bE",
+      "title": "What is an agent harness?",
+      "channel": "LangChain",
+      "url": "https://www.youtube.com/watch?v=Rnjad4p62bE",
+      "published": "2026-06-25",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LangChain)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCC-lyoTfSrcJzA1ab3APAgw"
+      }
+    },
+    {
+      "videoId": "TwytiD3ptSk",
+      "title": "Prompt Engineering Is Dead? Claude ceo says so #ClaudeCode #AI #PromptEngineering",
+      "channel": "Bpro Club Ai & Skills",
+      "url": "https://www.youtube.com/watch?v=TwytiD3ptSk",
+      "published": "2026-07-08",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bpro Club Ai & Skills)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkft5sNHH_KqepzymSYBKiA"
+      }
+    },
+    {
+      "videoId": "1P1hJ36rxM0",
+      "title": "\"Software engineering is not about writing code\" — Benoit Schillings, Google DeepMind VP of Research",
+      "channel": "AI Engineer",
+      "url": "https://www.youtube.com/watch?v=1P1hJ36rxM0",
+      "published": "2026-07-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Engineer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLKPca3kwwd-B59HNr-_lvA"
+      }
+    },
+    {
+      "videoId": "sw-RwTk1qO4",
+      "title": "AI Is Making Software Engineering Harder? Google Engineer Burnout",
+      "channel": "K-Transfer",
+      "url": "https://www.youtube.com/watch?v=sw-RwTk1qO4",
+      "published": "2026-07-29",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:K-Transfer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCw6BP_IUn4wI_nLYWOx8aQg"
+      }
+    },
+    {
+      "videoId": "utb7zYbK10c",
+      "title": "Ex-Uber dev explains his Multi-Agent Workflow",
+      "channel": "David Ondrej",
+      "url": "https://www.youtube.com/watch?v=utb7zYbK10c",
+      "published": "2026-08-10",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:David Ondrej)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGrgwfbkjTIgPoOh2q1BAg"
+      }
+    },
+    {
+      "videoId": "r4c7hOlZ5oU",
+      "title": "You’re Still Learning Prompt Engineering? AI Has Already Moved On #AI #PromptEngineering",
+      "channel": "Beyond Hype by Bverse",
+      "url": "https://www.youtube.com/watch?v=r4c7hOlZ5oU",
+      "published": "2026-08-14",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Beyond Hype by Bverse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCY3tyuP3jJDaXQkqvnkUTig"
+      }
+    },
+    {
+      "videoId": "p7HDiHB514c",
+      "title": "What does AI mean for software engineering today. Important things you need to know.",
+      "channel": "Siamese Cat Dev",
+      "url": "https://www.youtube.com/watch?v=p7HDiHB514c",
+      "published": "2026-08-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Siamese Cat Dev)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTX4_0ytKBXdzrMTb1Z3sgg"
+      }
+    },
+    {
+      "videoId": "w-_XMalv-Ag",
+      "title": "AI tokens got 43% cheaper and bills went up: Gartner says 5x per agent workflow by 2028",
+      "channel": "AI Tokenomics",
+      "url": "https://www.youtube.com/watch?v=w-_XMalv-Ag",
+      "published": "2026-08-18",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Tokenomics)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLPDrIt1gkzrDxnd_T6DQpQ"
+      }
+    },
+    {
+      "videoId": "SFR76EVLLzc",
+      "title": "First No Python. Soon No Prompt Engineering? Hello Ambient AI",
+      "channel": "PJ FinanceShow",
+      "url": "https://www.youtube.com/watch?v=SFR76EVLLzc",
+      "published": "2026-09-12",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:PJ FinanceShow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLWMj6EyXI2-NXSw6LHBoew"
+      }
+    },
+    {
+      "videoId": "3xTBBjwnaoo",
+      "title": "EXCLUSIVE: Is AI Changing Software Engineering Forever? GoTo India's Senior Director Explains",
+      "channel": "AIM Network",
+      "url": "https://www.youtube.com/watch?v=3xTBBjwnaoo",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AIM Network)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCAlwrsgeJavG1vw9qSFOUmA"
+      }
+    },
+    {
+      "videoId": "MKEufbApiwc",
+      "title": "Russia is racing to bring its own satellite internet to the battlefield – and beyond | DW News",
+      "channel": "DW News",
+      "url": "https://www.youtube.com/watch?v=MKEufbApiwc",
+      "published": "2026-09-17",
+      "first_seen": "2026-09-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DW News)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCknLrEdhRCp1aegoMqRaCZg"
+      }
+    },
+    {
+      "videoId": "M6MZQDRLCqw",
+      "title": "Prompt Engineering In A Nutshell + I Mean Really, What Do They Do",
+      "channel": "DeezMemez",
+      "url": "https://www.youtube.com/watch?v=M6MZQDRLCqw",
+      "published": "2026-09-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:DeezMemez)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCSYVX8UPitapA2NyQq8ZfBw"
+      }
+    },
+    {
+      "videoId": "zROvJwRm--0",
+      "title": "FAANG Engineer Explains AI Agent Harnesses in 1 Minute | Then Builds Jarvis in 7 Days",
+      "channel": "George Wang",
+      "url": "https://www.youtube.com/watch?v=zROvJwRm--0",
+      "published": "2026-09-19",
+      "first_seen": "2026-09-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:George Wang)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdEcstWVM6R0a48vt7zheSQ"
+      }
+    },
+    {
+      "videoId": "UNRqWfPxRp8",
+      "title": "Why Prompt Engineering Fails AI Agents in Production",
+      "channel": "Yousef Shaheen",
+      "url": "https://www.youtube.com/watch?v=UNRqWfPxRp8",
+      "published": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:loop-engineering)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuA0HVzdpWmyTgG_Ahu44ew"
+      }
+    },
+    {
+      "videoId": "NoJAH9_nS5I",
+      "title": "Is Software Engineering Dying",
+      "channel": "Tech With Tim",
+      "url": "https://www.youtube.com/watch?v=NoJAH9_nS5I",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tech With Tim)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4JX40jDee_tINbkjycV4Sg"
+      }
+    },
+    {
+      "videoId": "F91uY7QiZUs",
+      "title": "The Collapse of AI Software Engineering",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=F91uY7QiZUs",
+      "published": "2026-09-23",
+      "first_seen": "2026-09-24",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "5j09DNqzWIY",
+      "title": "What Is an Agent Harness? Runtime Around the Model",
+      "channel": "AISLabs AI",
+      "url": "https://www.youtube.com/watch?v=5j09DNqzWIY",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-25",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AISLabs AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpNamXjhvBqMvJqZErw2GHA"
+      }
+    },
+    {
+      "videoId": "0MydyCxyTZw",
+      "title": "What Is an Agent Harness? Runtime Around the Model",
+      "channel": "AISLabs AI",
+      "url": "https://www.youtube.com/watch?v=0MydyCxyTZw",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-25",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AISLabs AI)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpNamXjhvBqMvJqZErw2GHA"
+      }
+    },
+    {
+      "videoId": "o9UJaO-LVsg",
+      "title": "Why AI In Software Engineering Beats Voice Chatbots 💡 #lovablepartner",
+      "channel": "Lovable Pulse",
+      "url": "https://www.youtube.com/watch?v=o9UJaO-LVsg",
+      "published": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Lovable Pulse)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCMDqpCQzqAgO9SMpPnIJz4Q"
+      }
+    },
+    {
+      "videoId": "MvfwjoB0LZk",
+      "title": "Future of AI & Software Engineering - My Honest Opinion - Bubble vs Reality!",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=MvfwjoB0LZk",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Tech Lead)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw"
+      }
     }
   ],
-  "updated": "2026-09-27"
+  "updated": "2026-09-28"
 }
