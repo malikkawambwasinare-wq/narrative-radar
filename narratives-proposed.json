@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-27",
+ "generated": "2026-09-28",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1964,
+ "cost_usd": 0.1657,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -18312,6 +18312,1335 @@
    },
    "first_read": "2026-09-27",
    "last_read": "2026-09-27"
+  },
+  {
+   "phrase": "rules must",
+   "verdict": "rhetoric",
+   "why": "A listicle formula across unrelated topics with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 12,
+    "months": 10,
+    "span": "2018-03 → 2026-09",
+    "examples": [
+     "3 Rules You MUST Know Before Trading Stocks 2018",
+     "Real Estate Investing Rules You MUST Know (The 2%, 50% & 70% Rules)",
+     "3 Copywriting Rules You Must Follow Right Now!"
+    ],
+    "ids": [
+     "2GUe5Y41sbU",
+     "4tqapxuVU2s",
+     "4wu0ChLULFM",
+     "5ubq3VAuuF0",
+     "5xgmLEZjwVI",
+     "7_iKAMZ7T9o",
+     "89DB3zpP9bo",
+     "9ek_5M_n28w",
+     "FRM_q2kEL5o",
+     "Ljo8V1C5HBs",
+     "PyFd_A2VCV0",
+     "R3sdQCgjWUE",
+     "VWS7OpILfYI",
+     "fLkUk6xAplE",
+     "gpHkwGO-6yk",
+     "vYXXKdRvhK0"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "dead missing",
+   "verdict": "rhetoric",
+   "why": "News casualty-count phrasing, a format not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 35,
+    "channels": 9,
+    "months": 15,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "Spain floods: A least 2 dead, 2 missing as torrential rains sweep Madrid, central regions",
+     "Hurricane Otis: At least 27 dead, 4 missing after tropical storm crashes Mexico beach resort town",
+     "Israel-Hamas conflict: 5 Canadians dead, 3 missing following attack, officials confirm"
+    ],
+    "ids": [
+     "1CVKo6yRlQU",
+     "1d--WxTUkXE",
+     "1l8reRfGrU8",
+     "6BvFWjAiGXg",
+     "6XTW2r9QUOs",
+     "Bn4DQdoL6vc",
+     "DCpehziXl7o",
+     "F35pPtodNmg",
+     "Jw9kwRNwBN0",
+     "JykEdQeOZOg",
+     "NTij2rjpf00",
+     "PUj2dLiL6y8",
+     "Q0ibKMlIkJc",
+     "QvAe8zxohSM",
+     "TyeGOY7bPBo",
+     "WBZnzPlCTHo",
+     "WXDm3HlwPpA",
+     "Wa7IBEgw4i0",
+     "Wq_eNMcB9_s",
+     "X07xlNlaJaI"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "gunman kills",
+   "verdict": "rhetoric",
+   "why": "Headline subject matter with no shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Croatia shooting: Gunman kills 6 in nursing home, including his own mother",
+     "NYC Gunman Kills Four, Including Blackstone Executive",
+     "Trump Denies Seeking Xi Summit, Gunman Kills Four in NYC | Daybreak Europe 7/29/2025"
+    ],
+    "ids": [
+     "2uL9VJ-MJZk",
+     "31WJsUFn2Zk",
+     "4YL4FZrur_U",
+     "692VEA8Btl4",
+     "KN-leCJZUik",
+     "s94wjlIiW3I"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "must embrace",
+   "verdict": "rhetoric",
+   "why": "Exhortation template applied to wholly different subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2019-10 → 2025-08",
+    "examples": [
+     "Why we must embrace Imperfection  - Jacob Morgan",
+     "Why Presidential Hopefuls Must Embrace 3-Hour Podcast Interviews",
+     "America Must Embrace Those Who Bring Strength and Unite for a Greater Future"
+    ],
+    "ids": [
+     "7psJzPEvMOU",
+     "9S6xupTjI1c",
+     "9U3Y3aPUtMQ",
+     "N5QcT9BpNlg",
+     "eSwo6LSBqSE",
+     "rx4SRPuPyBI"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "year's end",
+   "verdict": "rhetoric",
+   "why": "A generic time marker, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2018-05 → 2026-09",
+    "examples": [
+     "Paytm Aims to Double Quarterly Transactions to 2 Billion by Year's End",
+     "Travis Kalanick to Depart Uber's Board at Year's End",
+     "Mortgage rates could fall to 5.8% by year's end: Serhant agent"
+    ],
+    "ids": [
+     "5GS5AqJWFs0",
+     "5jnGgly_s6g",
+     "9VFFR-4-m8g",
+     "L-5OIo7UMIY",
+     "_zIMaHl9TzA",
+     "k6xj1k4qBns"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "announcement coming",
+   "verdict": "rhetoric",
+   "why": "Anticipation teaser with no common substantive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2018-08 → 2026-08",
+    "examples": [
+     "ANNOUNCEMENT! COMING SOON, DAILY MESSAGES!",
+     "Social Security Update | Major Announcement Coming Soon",
+     "Trump says autism announcement coming Monday | NewsNation Prime"
+    ],
+    "ids": [
+     "3PaWTr4p2S0",
+     "B51e1z4Y1iU",
+     "VKyKp1oqmko",
+     "anK8BnPq6Fo",
+     "yVHcc0vGVbg"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "explains dangers",
+   "verdict": "rhetoric",
+   "why": "Authority-explainer format across unrelated dangers.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2020-11 → 2026-04",
+    "examples": [
+     "North Korean Defector Explains Dangers of Socialism",
+     "Bialik Breakdown: Dr. Andrew Weil explains the Dangers of Inflammation #shorts",
+     "Women explains the dangers of giving yourself to a man with money. #short #guttaandsaint"
+    ],
+    "ids": [
+     "D-B_a7WVYtw",
+     "GmRUHDZn4jo",
+     "hCMJJa8gk38",
+     "pyG-91skUbw",
+     "toP-TMKGRHs"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "infection causes",
+   "verdict": "rhetoric",
+   "why": "Generic medical symptoms/causes format, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2019-06 → 2026-07",
+    "examples": [
+     "Foot Deformity in Diabetes will Lead to Diabetic Foot Ulcer Infection in Causes Treatment Prevention",
+     "Teen Makes Comeback After Infection Causes Heart to Stop Beating",
+     "White discharge( vaginal infection)(ಬಿಳಿ ಸ್ರಾವ)  causes , symptoms treatment and prevention"
+    ],
+    "ids": [
+     "PGw2MkgFwko",
+     "cnRAZvEQB0U",
+     "cs_EB9Oz9UQ",
+     "p9a-QVtoCt8",
+     "x-CUWI7IrBs"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "light end tunnel",
+   "verdict": "rhetoric",
+   "why": "A stock optimism metaphor applied to unrelated topics, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2020-07 → 2026-09",
+    "examples": [
+     "Light at the End of the Tunnel with Alan Beaulieu",
+     "Alexandria Real Estate Chair: Light at End of Tunnel on Covid",
+     "Real estate expert reveals light at the end of the tunnel for housing market"
+    ],
+    "ids": [
+     "1AYIoqdcH98",
+     "MRZfDScgNNI",
+     "NW5ll_GzGFg",
+     "V1dpKlN9Dlw",
+     "ivtGxw-W6yY"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "socialist wins",
+   "verdict": "rhetoric",
+   "why": "Describes an election event across varied framings rather than one testable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-06 → 2026-08",
+    "examples": [
+     "Trump targeted for years by Iran; socialist wins big in NYC | Vargas Reports Full Episode 6/25",
+     "\"AOC + Jihad = Zohran Mamdani\" - Bill Ackman WARNS NYC's Future In DANGER If Socialist Wins",
+     "Democratic Socialist wins NYC mayoral race. Why AIA looks overseas for returns. AIA Update 11.8.25"
+    ],
+    "ids": [
+     "GUZPm1BnolI",
+     "UMv7nHTk0Yk",
+     "gB9nWHQNmzw",
+     "hMuzmC_L0o0",
+     "onIeiCMbHuA"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "scam targeting",
+   "verdict": "rhetoric",
+   "why": "News-subject label covering unrelated scams, no common causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "'Ghost students' scam targeting federal student loans | Morning  in America",
+     "Big Scam Targeting YouTubers 🚨",
+     "Toronto police make arrests in “SMS blaster” text scam targeting thousands of phones at once"
+    ],
+    "ids": [
+     "E5RGvsC4kMs",
+     "L-oPUQCHPNg",
+     "a5nhXEf-JF0",
+     "sEsuG6z_OkQ",
+     "va8HQrkqQfE"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "causes severe",
+   "verdict": "rhetoric",
+   "why": "Generic causal phrasing spanning weather and medicine with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-11 → 2026-09",
+    "examples": [
+     "Storm Ciaran causes severe flooding in northern France, red alerts issued",
+     "At least eight people dead after rain causes severe flooding in Thailand",
+     "Cancer Cachexia Mechanism Explained | Why Cancer Causes Severe Weight & Muscle Loss?"
+    ],
+    "ids": [
+     "-2KmuHa39QY",
+     "1JToDpNU1Ac",
+     "b2jX4AneLNA",
+     "iXUUhFE_Kbg",
+     "p2lU47pBIto"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "juice really",
+   "verdict": "rhetoric",
+   "why": "Question-format hook about different juices; no single claim asserted.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "Is packed fruit juice really healthy? #shorts",
+     "Can Cranberry Juice Really Prevent UTIs?",
+     "Can Bitter Melon Juice Really Help Blood Sugar? #facts #foodfacts"
+    ],
+    "ids": [
+     "B1zhlAN9ofg",
+     "Jif3BlQxNE4",
+     "KQ9MfpMZsBo",
+     "grvphH7BKEg",
+     "nIcDuGJqIVU"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "truth hurts",
+   "verdict": "rhetoric",
+   "why": "Catchphrase used for attention across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2021-02 → 2026-09",
+    "examples": [
+     "The REAL Issue with Lizzo's Detox Diet (Yep, TRUTH HURTS)",
+     "The truth hurts! #thetruth #coreyholcomb #guttaandsaint #fyp",
+     "“Sometimes the truth hurts”: Ford defends campaign manager critical of Poilievre"
+    ],
+    "ids": [
+     "DfCKRqR3pNE",
+     "KckxNeDStlU",
+     "KraWByoON5M",
+     "N7wqO55HCng",
+     "r3m3QKUhqZI"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "begin soon",
+   "verdict": "rhetoric",
+   "why": "Vague imminence phrasing attached to unrelated events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-06 → 2026-06",
+    "examples": [
+     "Brace Yourself! Panic Buying Could Begin VERY Soon | SHTF | Shortages",
+     "New White House ballroom construction to begin soon, Karoline Leavitt announces",
+     "Trump claims new talks with Iran to begin soon as blockade is underway"
+    ],
+    "ids": [
+     "6tw8NNdcqIc",
+     "9CLhaIoFvxc",
+     "FLw5EY9BQXA",
+     "_jvVvh3Le0Q",
+     "a_Iz08KZ5Qo"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "seeks ban",
+   "verdict": "rhetoric",
+   "why": "News headline formula about various proposed bans, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-07 → 2026-09",
+    "examples": [
+     "RBI seeks ban,but India needs global support to regulate 🔥IN TELUGU #shibainu #shibainucoin",
+     "NDP bill seeks to ban thermal coal exports",
+     "Congressman seeks to ban ‘surveillance pricing’"
+    ],
+    "ids": [
+     "39Qy7yEI9jc",
+     "NQP63_IUxWo",
+     "ZmiiKA3NJ1Y",
+     "rvnhiarlFEU",
+     "saQsduyshZ8"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "disaster coming",
+   "verdict": "rhetoric",
+   "why": "Generic alarm phrase spanning housing, Fed, prepping — no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 9,
+    "span": "2022-04 → 2026-09",
+    "examples": [
+     "HELOC Disaster coming in Canada! Home prices falling more than 20% could create a banking crisis.",
+     "Fed Warns Housing Disaster Coming! Housing Market Crash In 2022! - Stock Market Gambler",
+     "The CRISIS Just Got Worse | Disaster Coming In 2 Weeks | SHTF | Prep Now"
+    ],
+    "ids": [
+     "3lLmjxs5V4A",
+     "6cVqjptKzkc",
+     "9EoEfhBmt2Q",
+     "AwynqwAAJuk",
+     "LPe4HoXNrus",
+     "NAV8sy_QBFk",
+     "UthGnV6Olm0",
+     "UwiDlOIFlxE",
+     "hIZxykJE4rI",
+     "jhRYoMmJOdE",
+     "wCuv35udabo"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "legal win",
+   "verdict": "rhetoric",
+   "why": "Just a news subject label across unrelated court cases.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 7,
+    "span": "2024-06 → 2026-09",
+    "examples": [
+     "Trump's Legal Win Making 34 Felonies a Positive Victory",
+     "Chevron Legal Win; Netflix Lower after Beat; Talen Energy Pops | Stock Movers",
+     "Breaking down what led to Cardi B's legal win"
+    ],
+    "ids": [
+     "0PeRGk4keEk",
+     "AyGMdZNbWyc",
+     "EdySgw4C9Yg",
+     "Hld2SuiIuZM",
+     "LOv4-hhNrbQ",
+     "Lgm-keqfLEQ",
+     "lF0mjXHO7yU"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "save date",
+   "verdict": "rhetoric",
+   "why": "Event promotion boilerplate, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 7,
+    "span": "2022-10 → 2026-08",
+    "examples": [
+     "Save the Date! November 19 - Investors Growth Conference",
+     "DUBIOS SPECULATIONS #6 Darauf kommt es an bei BTCOIN und ALTCOINS!! Save the Date 18+19.12.2024!!!",
+     "Save the Date for our 2026 Cleveland Clinic Children’s Derby Day Soirée"
+    ],
+    "ids": [
+     "6-GL59bNpB0",
+     "D9OfcmJHgj8",
+     "JUZwcsEc5Tc",
+     "PZBuU-6cPUc",
+     "d7gxeSxRbxI",
+     "ivDzoelnGy8",
+     "mEr1i1yqOvE"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "pain coming",
+   "verdict": "rhetoric",
+   "why": "Mixes literal body pain with vague economic doom warnings; no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 13,
+    "months": 16,
+    "span": "2017-10 → 2026-08",
+    "examples": [
+     "Lower Back, Hip, or Sacroiliac? How to Determine Where Your Pain is Coming From - Dr Mandell",
+     "Raoul Pal Warning - PAIN IS COMING! (Please Prepare Your Family)",
+     "Jerome Powell PAIN IS COMING Housing Market Will be DESTROYED"
+    ],
+    "ids": [
+     "1sElztWkl-E",
+     "4MxsHFb4Tws",
+     "Jh6eHMXPJug",
+     "JpQkyEvvO3E",
+     "NK2PtA3cHY8",
+     "TQ37c6t1xoo",
+     "UoQtKZjPieQ",
+     "VAEwnYzFenw",
+     "XhsPMRxCzfw",
+     "_x5w-FlkdY0",
+     "a3yYLhBXhm0",
+     "awlXrKQehxw",
+     "b-7wVcr7FFM",
+     "b_Ca-XZUegk",
+     "eVw2wJAA25M",
+     "fsescnQuBpw",
+     "jWhTNFejMqM",
+     "kXBamhNxKAQ",
+     "m0Wk3Y4xU8I",
+     "q1eXtlFA3wA"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "crash near",
+   "verdict": "rhetoric",
+   "why": "Literal accident reporting, a subject with no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 8,
+    "months": 12,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "2 dead, 4 injured after helicopter crash near Prince George, BC",
+     "NWT plane crash: 4 passengers, 2 crew dead in crash near Alberta border",
+     "1 dead, dozens injured in tour bus crash near LA"
+    ],
+    "ids": [
+     "0GsvNd-ISU4",
+     "5torFeGO_D4",
+     "6IOFn6djuBk",
+     "7Qll89PMElE",
+     "Eml2IaoZfNI",
+     "Gmp7jFIILeQ",
+     "HrjMrAZ0VPs",
+     "LKYuoHUdrHI",
+     "McSiAFCLx9U",
+     "PNX485pL9D0",
+     "Qu-MKyaaeL4",
+     "YELiEmCpcls",
+     "bjPrAJ6CmJw",
+     "eqUXVMAlpoA",
+     "f2T1Hr2E-_E",
+     "fm6KSZ_tdPs",
+     "jKp2AlFhlb8",
+     "qGY9BOcQIKE",
+     "qWpeybH67ys",
+     "ucZPOR9aSJ8"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "welcome show",
+   "verdict": "rhetoric",
+   "why": "Format/greeting boilerplate.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 4,
+    "months": 6,
+    "span": "2020-03 → 2026-09",
+    "examples": [
+     "Bitcoin: It is not a 4 year cycle! (Welcome to the show)",
+     "Welcome to our live show!",
+     "Welcome to our live show!"
+    ],
+    "ids": [
+     "3K0JZT9z1bs",
+     "5-mEi-LjtHQ",
+     "71pnpfT_kp8",
+     "9ThxZHbXED8",
+     "AHuKHmeJf-I",
+     "Ck18QMth1Vw",
+     "J7R1ohpxv6Q",
+     "KxTvusi-uCQ",
+     "L33-jWxWvHQ",
+     "Ov3M79HyMq8",
+     "S2KGK3f3M0Y",
+     "Yt93ARTvMQ0",
+     "_HpO8t1rXjc",
+     "e881cDeOiwI",
+     "fbhE6jjvRX4",
+     "hypoXCb5uDc",
+     "lFJJfUI5Xuo",
+     "pJLhZ6klzgc"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "chip boom",
+   "verdict": "rhetoric",
+   "why": "Topic tag for AI semiconductor coverage; titles don't share one falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 6,
+    "span": "2024-04 → 2026-09",
+    "examples": [
+     "CPI Report, AI Chip Boom, and Starlink's Business | Bloomberg Technology",
+     "How AI’s memory chip boom is making your gadgets more expensive | Odd Lots",
+     "How AI’s Memory Chip Boom Is Making Your Gadgets More Expensive"
+    ],
+    "ids": [
+     "9yfqKJ9WU3c",
+     "CuH7SUP26Zw",
+     "K-7li-R35dc",
+     "Oy60WqJHyMM",
+     "PfNw4l7o4pA",
+     "Xu73xnH5ZUQ",
+     "Y_Y85u6ErO8",
+     "gwP2k9OI4ok",
+     "koxwTzQlNW4",
+     "oMKZS-d8MQI",
+     "s5u748UmSjA",
+     "sWY3zw9S2Qg"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "wins bronze",
+   "verdict": "rhetoric",
+   "why": "Sports result reporting, no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 3,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Olympics 2024: Eleanor Harvey wins bronze — Canada’s 1st-ever fencing medal",
+     "Norwegian Olympian wins bronze, says he cheated on girlfriend",
+     "Miriam Cherop Wins Bronze Medal in Road Running Champs in Copenhagen"
+    ],
+    "ids": [
+     "BYF99jwJuk8",
+     "OmyDAHoJLgk",
+     "TJT_Zqjl8sQ",
+     "VDSUgYpvJhs",
+     "ZjzngdM4I7A",
+     "aB7JBtkAARo",
+     "aXjhebe7kF0",
+     "bhBorslgQs0",
+     "tF0dNroIYqo",
+     "yYItbVcVjmk"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "shoot kill",
+   "verdict": "rhetoric",
+   "why": "News event descriptor with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 6,
+    "months": 4,
+    "span": "2026-01 → 2026-09",
+    "examples": [
+     "Bloomberg News Now: Federal Agents Shoot and Kill MN Man, Major Winter Storm, More",
+     "Law Enforcement Clears Scene After Federal Agents Shoot, Kill Person in Minnesota",
+     "Federal officers shoot and kill man in Minneapolis"
+    ],
+    "ids": [
+     "258lq4PBGuM",
+     "EIFEEpQXA0c",
+     "GHYUfwipMJ4",
+     "OdNpmAXR1-s",
+     "_fJsCYWM_Nw",
+     "ivFRdvIFf4w",
+     "m9yhIZwIVmQ",
+     "o9Z_Wzmysjs",
+     "qfynSUwx43g",
+     "t9NB2FV_4Os"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "forces kill",
+   "verdict": "rhetoric",
+   "why": "Generic news headline subject spanning unrelated conflicts, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 4,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Israeli forces kill Canadian man after attempted knife attack near Gaza border, authorities confirm",
+     "Israeli forces kill two Palestinians in the West Bank",
+     "Pakistan forces kill 145 Baloch rebels in a 2-day attack in Balochistan"
+    ],
+    "ids": [
+     "0kd1HRX5_bA",
+     "1I4vkJZA68k",
+     "GZI0_OshLqw",
+     "RX_fHh03GFw",
+     "Sbu2w0xuRO8",
+     "X_DuK2Zls_M",
+     "c4hM2JJAgkM",
+     "f21RofSbAf0",
+     "gdEjEsFc3QU"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "declared dead",
+   "verdict": "rhetoric",
+   "why": "Anecdotal human-interest news framing, no common causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 4,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Woman declared dead by Alberta health website demands answers — as she is very much alive",
+     "Army Soldier Tells His Story of Being Mistakenly Declared Dead in Combat",
+     "Toddler declared dead in drowning incident found alive in hospital morgue: Police"
+    ],
+    "ids": [
+     "9FeOT8c3-BY",
+     "9S9vejGBMhc",
+     "BxZ31VxaLk8",
+     "DLPs2YFqTKM",
+     "KinbV3jaKUo",
+     "LJNTcvsXMC0",
+     "Sydw9kjNBLw",
+     "YNHN3wtzsq8"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "beats talent",
+   "verdict": "rhetoric",
+   "why": "Motivational slogan format, the 'X beats talent' variable changes each time.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 4,
+    "span": "2025-10 → 2026-08",
+    "examples": [
+     "Strategy Beats Talent",
+     "This Is Why Discipline Beats Talent",
+     "How Obsession Beats Talent"
+    ],
+    "ids": [
+     "8f3Bl13mNb0",
+     "MM8MTxReCaU",
+     "TDdM1Z0l-MQ",
+     "Vbe_cOW0iDQ",
+     "e6jO21cdcFM",
+     "j_m1ObNVdAk",
+     "jgW9KAJkkI8",
+     "rvuZ55CE2mU"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "psychologist explains",
+   "verdict": "rhetoric",
+   "why": "Authority-format hook with unrelated topics attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 6,
+    "span": "2021-04 → 2026-09",
+    "examples": [
+     "Psychopath vs Sociopath - Psychologist Explains Which Does Better In Business",
+     "Evolutionary Psychologist Explains Why Slut-Shaming Exists",
+     "Psychologist Explains Why “The Male Sex Drive Is A Tragedy”"
+    ],
+    "ids": [
+     "2AudCAV2omk",
+     "412uGUD5P4s",
+     "8vNNehCn8Ac",
+     "LgwaFBd9klE",
+     "RPL_UztOXJs",
+     "j9BQQYsMqIw",
+     "yc1iM6FlsHI"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "motorcycle crash",
+   "verdict": "rhetoric",
+   "why": "Incident subject, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 4,
+    "span": "2018-12 → 2026-09",
+    "examples": [
+     "Motorcycle Crash Causing Clavicle Fracture",
+     "Motorcycle crash narrowly misses children",
+     "Fiery motorcycle crash caught on camera"
+    ],
+    "ids": [
+     "0_zTEWhIZ-c",
+     "5kTjvNxILgI",
+     "6CccBpxgnDw",
+     "7aWancgvmdU",
+     "GJhS9X-BuB4",
+     "ja_xiyFdtEM",
+     "wLRPsoEx81M"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "aircraft crashes",
+   "verdict": "rhetoric",
+   "why": "Event reporting subject with no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 6,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Malaysia plane crash: 10 dead after small aircraft crashes onto highway",
+     "US military aircraft crashes into sea near Japan, killing at least 1",
+     "UPS aircraft crashes after departing Louisville airport: Officials"
+    ],
+    "ids": [
+     "-uebuCw6-Yk",
+     "3mGdrtYOrVs",
+     "RoKE48ULJnE",
+     "WFvG5zP3YNY",
+     "nZ8iJTgd8bk",
+     "t2MP_PJeyUE",
+     "z_5irBFin84"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "grid collapse",
+   "verdict": "rhetoric",
+   "why": "Titles mix Cuban blackout reporting with US regulatory blame; no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 4,
+    "span": "2024-05 → 2026-09",
+    "examples": [
+     "EPA Causing US Power Grid To COLLAPSE",
+     "Cuba blackouts: Havana wakes up in the dark after another electric grid collapse",
+     "Cuba struggles with grid collapse amid Trump's oil blockade of the country"
+    ],
+    "ids": [
+     "1wg_WJzKjxw",
+     "2TJz33sZN4A",
+     "UyecwJ_TeCA",
+     "fuy5RSe89V0",
+     "icj01872nTE",
+     "obZLMDi9w0E",
+     "vvAeZRe_ul4"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "actually owns",
+   "verdict": "rhetoric",
+   "why": "A curiosity hook about ownership across unrelated subjects, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 4,
+    "span": "2018-05 → 2026-09",
+    "examples": [
+     "The Truth About Who Actually Owns My SuperCars...",
+     "Who Actually Owns What You Buy? #HiddenPower #GlobalEconomy",
+     "Who Actually Owns Your Food? Conspiracy Theories That Were Real | Indistinct Chatter"
+    ],
+    "ids": [
+     "-1GbylZeHeo",
+     "GYkiGQEZIk4",
+     "I-_qkk90zcQ",
+     "J1ZxoTyB66A",
+     "M0-Lul1Jpz4",
+     "n1PjAXlRC64",
+     "vUkDW427WWc"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "won't accept",
+   "verdict": "rhetoric",
+   "why": "Descriptive fragment spanning unrelated payment and school stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 6,
+    "span": "2018-01 → 2026-09",
+    "examples": [
+     "Starbucks Working on Accepting Crypto - Won't Accept Bitcoin - Will They Accept XRP Litecoin Ether?",
+     "Amazon Won't Accept Visa Credit Cards in the U.K.",
+     "BC student who saw friend die says its \"ridiculous\" school won't accept AED"
+    ],
+    "ids": [
+     "AEGeafS_QUQ",
+     "IBaC4EebQ7w",
+     "W-HjR4zdeY0",
+     "a73aQjDVOMs",
+     "fUmDAHVilnQ",
+     "kOjyhAC-se4",
+     "oFh3riw3WGE"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "photos show",
+   "verdict": "rhetoric",
+   "why": "Evidence-presentation format phrase, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 6,
+    "span": "2021-08 → 2026-08",
+    "examples": [
+     "SpaceX Starship : Blue Origin sues NASA! Why? | Satellite photos show chaos in Afghanistan exit",
+     "Diddy evidence: Photos show what investigators found in Miami search",
+     "Photos show what couple believes are Apache choppers escorting a UFO"
+    ],
+    "ids": [
+     "1P-0SF2iTi8",
+     "8e0twf_KwgM",
+     "GPJmdRaQgLA",
+     "kHaEqJDEh3U",
+     "p-bG67AH9OM",
+     "qKpwOinW7hg",
+     "vhYl2mOZjMo"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "unemployment coming",
+   "verdict": "rhetoric",
+   "why": "Refers to pending unemployment benefit payments in stimulus-update videos, a news subject rather than a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2020-07 → 2026-09",
+    "examples": [
+     "2nd Stimulus Check Update: $1200 Stimulus Checks | Unemployment COMING | Hazard Pay WARNING",
+     "2nd Stimulus Check Update: $600 Unemployment Coming | Possible Hazard Pay? | New Deal Timeline",
+     "$2,000 Second Stimulus Check Update & Stimulus News | Unemployment  Coming & Republicans DIVIDED!"
+    ],
+    "ids": [
+     "6_wGYeGbpsg",
+     "Cssep-fZbFY",
+     "DfLZPMDaPmY",
+     "KWaTe7k29rk",
+     "P6Kr5lx_woM",
+     "W1fjNKBd73w"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "replace traditional",
+   "verdict": "rhetoric",
+   "why": "Speculative 'could X replace Y' framing across unrelated technologies; no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2026-05 → 2026-09",
+    "examples": [
+     "Could crypto exchanges replace your traditional bank account?",
+     "Ink-Based Cooling Technology Could Replace Traditional Refrigerants | Zengit | STEM #fyp",
+     "Could Stablecoins Replace Traditional Banking?"
+    ],
+    "ids": [
+     "0YY2AhCxtEs",
+     "SUH9UNdUYq4",
+     "TXnkZMYu31A",
+     "XPslJPKN7Fc",
+     "ZWeGWknMA_g",
+     "xuDwFUOnVm8"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "clown show",
+   "verdict": "rhetoric",
+   "why": "Pure derision label attached to varied finance stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2022-05 → 2026-09",
+    "examples": [
+     "Biden, Yellen and Powell discuss the FUTURE of Silver and Gold PRICE 🦍 (clown show)",
+     "🚨PREPARE For Lower Prices as BlockFi Files Bankruptcy & FTX SEC Clown Show Continues",
+     "🤡The SEC FTX Sam Bankman Fried Crypto Clown Show!"
+    ],
+    "ids": [
+     "QtI3B15PD-A",
+     "Yx2HEM1jRuk",
+     "jpQZe1dG72s",
+     "oooDExLL7qY",
+     "ubnc7zgwaz8",
+     "xHnw0AOFmVk"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "win oscar",
+   "verdict": "rhetoric",
+   "why": "Awards subject with no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2026-03 → 2026-09",
+    "examples": [
+     "Did Marty Supreme deserve to win an Oscar? #shorts",
+     "Brenda Fricker, first Irish actress to win an Oscar for 'My Left Foot,' dies at 81",
+     "Movie industry is going to change forever: this is high time for you to win an Oscar"
+    ],
+    "ids": [
+     "A8-qRYnQnJw",
+     "GfdppsMjGN4",
+     "MLIcxdzXRqQ",
+     "XRFT6Cng8s4",
+     "cNmhs9cJ2pQ",
+     "qtdh9X2BEkg"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "greatest lie",
+   "verdict": "rhetoric",
+   "why": "Superlative deception hook covering unrelated topics from documentaries to fiat currency.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2022-10 → 2026-09",
+    "examples": [
+     "Candance owens the greatest lie ever told ￼documentary (Reaction).",
+     "The Government’s Greatest Lie - Eric Weinstein",
+     "The Greatest Lie Ever Told: Fiat Currency - Stack Silver and Gold"
+    ],
+    "ids": [
+     "5Y1-MjyVtL0",
+     "HWR4W6eoCLU",
+     "UbYI2Nmz65U",
+     "f03cqlVljng",
+     "iUjsOcs4AFU",
+     "ufrqdRO7Lj4",
+     "vBJA_bghW-w"
+    ]
+   },
+   "first_read": "2026-09-28",
+   "last_read": "2026-09-28"
   }
  ]
 }
