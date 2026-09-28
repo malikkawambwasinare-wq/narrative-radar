@@ -57997,6 +57997,81 @@
         "channelViews": 498,
         "channelVideos": 6
       }
+    },
+    {
+      "videoId": "rRzio1oRBgk",
+      "title": "Remote Viewing Session 033 | Reference 68608 | Describe It Before You See It",
+      "channel": "Orbit Reads",
+      "url": "https://www.youtube.com/watch?v=rRzio1oRBgk",
+      "published": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "views": 1,
+      "length": "2:35",
+      "age_days": 0,
+      "query": "channel sweep: Orbit Reads",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCU97NsGQDI9ztDHusZvFpTw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
+      }
+    },
+    {
+      "videoId": "dU-6x4jdGmM",
+      "title": "Halo Covenant Edition - Remote Viewing Live in Action - Bloodgulch",
+      "channel": "Kasper ZERO",
+      "url": "https://www.youtube.com/watch?v=dU-6x4jdGmM",
+      "published": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "views": 0,
+      "length": "0:00",
+      "age_days": 0,
+      "query": "channel sweep: Kasper ZERO",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "20",
+        "channelId": "UC7NK5LCkQBHAP_aVkEI9kFQ",
+        "language": "en",
+        "captions": false,
+        "live": true,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-28"
+      }
+    },
+    {
+      "videoId": "RoxJrsE5yyI",
+      "title": "Secret CIA Files: How the US Agency Tried to Find Out Who Inhabited Mars a Million Years Ago!",
+      "channel": "The Real MLordandGod",
+      "url": "https://www.youtube.com/watch?v=RoxJrsE5yyI",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-28",
+      "views": 137,
+      "length": "2:45",
+      "age_days": 1,
+      "query": "channel sweep: The Real MLordandGod",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCHg2P9g-tt8d2xc1eMf-JuA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 3,
+        "enrichedOn": "2026-09-28"
+      }
     }
   ],
   "updated": "2026-09-28"
