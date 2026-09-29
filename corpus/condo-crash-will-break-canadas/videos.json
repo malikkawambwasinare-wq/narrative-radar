@@ -5732,6 +5732,31 @@
         "channelViews": 139874,
         "channelVideos": 22
       }
+    },
+    {
+      "videoId": "KKBptR7k4KY",
+      "title": "The Bank Of Canada Might RAISE Rates In October",
+      "channel": "Canadian Mortgages with Nathan",
+      "url": "https://www.youtube.com/watch?v=KKBptR7k4KY",
+      "published": "2026-09-28",
+      "first_seen": "2026-09-29",
+      "views": 105,
+      "length": "11:56",
+      "age_days": 1,
+      "query": "channel sweep: Canadian Mortgages with Nathan",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCdgdLLynsRsfHG-0rTAxLIw",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
+      }
     }
   ]
 }
