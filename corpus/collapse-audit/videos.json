@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-09-28"
+      "unavailable": "2026-09-29"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-09-28"
+      "unavailable": "2026-09-29"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -235045,15 +235045,22 @@
       "url": "https://www.youtube.com/watch?v=iherfRImzds",
       "published": "2026-09-22",
       "first_seen": "2026-09-28",
-      "views": null,
-      "length": null,
+      "views": 15368,
+      "length": "2:59",
       "age_days": null,
       "query": "refiled from the pool (candidate:ww3-imminent)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCr8uEbKAxiX0dVDejI0nufw"
+        "channelId": "UCr8uEbKAxiX0dVDejI0nufw",
+        "category": "22",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 494,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
       }
     },
     {
@@ -235063,15 +235070,22 @@
       "url": "https://www.youtube.com/watch?v=uD6JmVPuxd4",
       "published": "2026-09-24",
       "first_seen": "2026-09-28",
-      "views": null,
-      "length": null,
+      "views": 64,
+      "length": "20:11",
       "age_days": null,
       "query": "refiled from the pool (candidate:ww3-imminent)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCm88G78lqY3henXizcvh1Bg"
+        "channelId": "UCm88G78lqY3henXizcvh1Bg",
+        "category": "27",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
       }
     },
     {
@@ -235081,17 +235095,124 @@
       "url": "https://www.youtube.com/watch?v=CxSuZGdnwE4",
       "published": "2026-09-26",
       "first_seen": "2026-09-28",
-      "views": null,
-      "length": null,
+      "views": 10,
+      "length": "12:01",
       "age_days": null,
       "query": "refiled from the pool (candidate:ww3-imminent)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCBvpnGJLuNzXa5bE2TbYkPQ"
+        "channelId": "UCBvpnGJLuNzXa5bE2TbYkPQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 3,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "y-5inVif8es",
+      "title": "When you eat may matter more than you think.",
+      "channel": "drutkalpatel",
+      "url": "https://www.youtube.com/watch?v=y-5inVif8es",
+      "published": "2026-08-31",
+      "first_seen": "2026-09-29",
+      "views": 266,
+      "length": "0:55",
+      "age_days": 29,
+      "query": "channel sweep: drutkalpatel",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCHWJcBeO1HYw4cU6aEE40-Q",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 1,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "kIZpE8wqHgc",
+      "title": "Your Skin Reacts Faster Than You Think #acnerootcause #podcast #skincare #shorts",
+      "channel": "Pinnacle Integrative Health",
+      "url": "https://www.youtube.com/watch?v=kIZpE8wqHgc",
+      "published": "2025-12-05",
+      "first_seen": "2026-09-29",
+      "views": 487,
+      "length": "0:21",
+      "age_days": 298,
+      "query": "channel sweep: Pinnacle Integrative Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC1KLP4qi3SdOFAQevVOhPSQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "j9cv7hF9dBg",
+      "title": "Elon Musk’s Starship Won’t Save Astronomy from Satellites Cluttering the Sky! #spacejunk #elonmusk",
+      "channel": "Information01",
+      "url": "https://www.youtube.com/watch?v=j9cv7hF9dBg",
+      "published": "2023-05-27",
+      "first_seen": "2026-09-29",
+      "views": 41,
+      "length": "11:01",
+      "age_days": 1221,
+      "query": "channel sweep: Information01",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCAcGFPUXswZlYL-w1f_kCyg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "hKsIRvkRvbc",
+      "title": "Elon Musk and The BIGGEST Acquisition in Tech History!",
+      "channel": "HubSpot Marketing",
+      "url": "https://www.youtube.com/watch?v=hKsIRvkRvbc",
+      "published": "2022-06-10",
+      "first_seen": "2026-09-29",
+      "views": 1743,
+      "length": "0:49",
+      "age_days": 1572,
+      "query": "channel sweep: HubSpot Marketing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCVeuau7DLrg7zlAjxxDbdww",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 41,
+        "comments": 4,
+        "enrichedOn": "2026-09-29"
       }
     }
   ],
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }

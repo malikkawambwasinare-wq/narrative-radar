@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-09-28"
+      "unavailable": "2026-09-29"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -128273,7 +128273,57 @@
         "comments": 1,
         "enrichedOn": "2026-09-28"
       }
+    },
+    {
+      "videoId": "gHCVOjqtXJk",
+      "title": "Our Voice-First AI Assistant changes everything. #shorts",
+      "channel": "Automation Agency",
+      "url": "https://www.youtube.com/watch?v=gHCVOjqtXJk",
+      "published": "2026-03-28",
+      "first_seen": "2026-09-29",
+      "views": 104,
+      "length": "0:35",
+      "age_days": 185,
+      "query": "channel sweep: Automation Agency",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCHC1VIIVeJEj2L6cTSnVvAg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "N6CsbwBypUM",
+      "title": "Understanding the Mechanisms Behind Chatbot GPT! #chatgpt #chat openai #chatgtp #chatgptapp#chatgpt3",
+      "channel": "Information01",
+      "url": "https://www.youtube.com/watch?v=N6CsbwBypUM",
+      "published": "2023-07-02",
+      "first_seen": "2026-09-29",
+      "views": 127,
+      "length": "5:57",
+      "age_days": 1185,
+      "query": "channel sweep: Information01",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCAcGFPUXswZlYL-w1f_kCyg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
+      }
     }
   ],
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }

@@ -89589,7 +89589,132 @@
         "comments": null,
         "enrichedOn": "2026-09-28"
       }
+    },
+    {
+      "videoId": "CJpGHxwB2Yk",
+      "title": "When your website starts booking appointments on its own. #AI #Automation #Growth #Profit #F #shorts",
+      "channel": "Automation Agency",
+      "url": "https://www.youtube.com/watch?v=CJpGHxwB2Yk",
+      "published": "2026-07-01",
+      "first_seen": "2026-09-29",
+      "views": 116,
+      "length": "0:11",
+      "age_days": 90,
+      "query": "channel sweep: Automation Agency",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCHC1VIIVeJEj2L6cTSnVvAg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "qZKgPqd4ESM",
+      "title": "I Built an AI Marketing Team With 5 Claude Skills (Complete Tutorial)",
+      "channel": "HubSpot Marketing",
+      "url": "https://www.youtube.com/watch?v=qZKgPqd4ESM",
+      "published": "2026-09-14",
+      "first_seen": "2026-09-29",
+      "views": 9079,
+      "length": "13:43",
+      "age_days": 15,
+      "query": "channel sweep: HubSpot Marketing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCVeuau7DLrg7zlAjxxDbdww",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 130,
+        "comments": 10,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "zGCVaDX9y3U",
+      "title": "Vibe Coding Explained (It's Not Scary)",
+      "channel": "HubSpot Marketing",
+      "url": "https://www.youtube.com/watch?v=zGCVaDX9y3U",
+      "published": "2026-08-17",
+      "first_seen": "2026-09-29",
+      "views": 1433,
+      "length": "1:18",
+      "age_days": 43,
+      "query": "channel sweep: HubSpot Marketing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCVeuau7DLrg7zlAjxxDbdww",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 53,
+        "comments": 6,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "UA8QQv5sepU",
+      "title": "I Built a Complete AI Email Marketing System in 16 Minutes (Prompts Included)",
+      "channel": "HubSpot Marketing",
+      "url": "https://www.youtube.com/watch?v=UA8QQv5sepU",
+      "published": "2026-07-21",
+      "first_seen": "2026-09-29",
+      "views": 4275,
+      "length": "9:43",
+      "age_days": 70,
+      "query": "channel sweep: HubSpot Marketing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCVeuau7DLrg7zlAjxxDbdww",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 148,
+        "comments": 9,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "byGijxwBSho",
+      "title": "I Built an AI Agent in 6 Minutes (No Code, No Developer)",
+      "channel": "HubSpot Marketing",
+      "url": "https://www.youtube.com/watch?v=byGijxwBSho",
+      "published": "2026-06-29",
+      "first_seen": "2026-09-29",
+      "views": 1454,
+      "length": "0:29",
+      "age_days": 92,
+      "query": "channel sweep: HubSpot Marketing",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCVeuau7DLrg7zlAjxxDbdww",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 37,
+        "comments": 4,
+        "enrichedOn": "2026-09-29"
+      }
     }
   ],
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }

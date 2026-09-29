@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-09-28"
+      "unavailable": "2026-09-29"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -58072,7 +58072,107 @@
         "comments": 3,
         "enrichedOn": "2026-09-28"
       }
+    },
+    {
+      "videoId": "TeFQ2g-QHE4",
+      "title": "UFOS/ALIENS CONFIRMED! HANGIN' IN THE ASTRAL! HUMANITY'S NEED FOR REMOTE VIEWING! SPACE WARS!!",
+      "channel": "THE SOULFAM PODCAST with Diana",
+      "url": "https://www.youtube.com/watch?v=TeFQ2g-QHE4",
+      "published": "2024-12-08",
+      "first_seen": "2026-09-29",
+      "views": 77,
+      "length": "0:57",
+      "age_days": 660,
+      "query": "channel sweep: THE SOULFAM PODCAST with Diana",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCrN0trL9oU92wJcoDYhvW2Q",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "L5Nn8sncn9w",
+      "title": "UFOS CONFIRMED! SPACE WARS AT THE READY! HANGIN' IN THE ASTRAL! HUMANITY'S NEED FOR REMOTE VIEWING!",
+      "channel": "THE SOULFAM PODCAST with Diana",
+      "url": "https://www.youtube.com/watch?v=L5Nn8sncn9w",
+      "published": "2024-12-08",
+      "first_seen": "2026-09-29",
+      "views": 69,
+      "length": "0:24",
+      "age_days": 660,
+      "query": "channel sweep: THE SOULFAM PODCAST with Diana",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCrN0trL9oU92wJcoDYhvW2Q",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "J7iwfVA8QfM",
+      "title": "REMOTE VIEWING CAN SHIFT HUMANITY? EX-Military Officer Reveals",
+      "channel": "THE SOULFAM PODCAST with Diana",
+      "url": "https://www.youtube.com/watch?v=J7iwfVA8QfM",
+      "published": "2024-12-07",
+      "first_seen": "2026-09-29",
+      "views": 81,
+      "length": "1:55:15",
+      "age_days": 661,
+      "query": "channel sweep: THE SOULFAM PODCAST with Diana",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCrN0trL9oU92wJcoDYhvW2Q",
+        "language": "tlh",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": 1,
+        "enrichedOn": "2026-09-29"
+      }
+    },
+    {
+      "videoId": "CR10jkAWFUk",
+      "title": "Your Purpose is Peace! -- From Special Operations and Combat Arms Officer to Remote Viewing Exper...",
+      "channel": "THE SOULFAM PODCAST with Diana",
+      "url": "https://www.youtube.com/watch?v=CR10jkAWFUk",
+      "published": "2024-02-09",
+      "first_seen": "2026-09-29",
+      "views": 18,
+      "length": "2:23:02",
+      "age_days": 963,
+      "query": "channel sweep: THE SOULFAM PODCAST with Diana",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCrN0trL9oU92wJcoDYhvW2Q",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-09-29"
+      }
     }
   ],
-  "updated": "2026-09-28"
+  "updated": "2026-09-29"
 }
