@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-28",
+ "generated": "2026-09-29",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1657,
+ "cost_usd": 0.2238,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -19641,6 +19641,1564 @@
    },
    "first_read": "2026-09-28",
    "last_read": "2026-09-28"
+  },
+  {
+   "phrase": "leading cause",
+   "verdict": "rhetoric",
+   "why": "Titles attach the phrase to unrelated subjects with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 9,
+    "months": 9,
+    "span": "2020-01 → 2026-09",
+    "examples": [
+     "Few Americans Know Heart Disease Is Leading Cause of Death in Women | Cleveland Clinic",
+     "The OTHER Leading Cause of Insulin Resistance That is NOT Sugar",
+     "Affordable Housing CRISIS (Leading Cause of Death U.S. Housing Market)"
+    ],
+    "ids": [
+     "9uh23_yeVto",
+     "AZjWrW9tZCk",
+     "CFMXgjjPv0Q",
+     "JxsnHQNGj1A",
+     "NmOzi73au00",
+     "WHaPFZRESQk",
+     "YNYcKjEfdFM",
+     "ZpyC3gSB6I8",
+     "mzKV2BoSPvs"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "prices crash",
+   "verdict": "rhetoric",
+   "why": "A generic price-crash headline label spanning silver, lumber and housing with no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 69,
+    "channels": 39,
+    "months": 38,
+    "span": "2019-12 → 2026-09",
+    "examples": [
+     "Silver Prices CRASH! Should you BUY or SELL?",
+     "What Causes Silver Prices to CRASH?",
+     "Lumber Prices Crash, BOC Brushes Off Inflation Worries, Housing Market Stalls"
+    ],
+    "ids": [
+     "-FzAq8vddXo",
+     "-gFAL3_SITI",
+     "-uJffPdLgIQ",
+     "09EgV2K-6Qo",
+     "0O2QC-Zo9C0",
+     "1IF-2t3lBBo",
+     "2xes3k97bno",
+     "3S8oSWqPumI",
+     "4zqGOmopK0U",
+     "5OZFs6fIsmk",
+     "5xsyGDwjdBE",
+     "6SPSEfcfW9I",
+     "7N2yXYaaw0I",
+     "7POApn9nJ-o",
+     "7f5s2XJBhxk",
+     "84ej7v71fG8",
+     "8yWSQ7SwmNc",
+     "93mHD3DNebo",
+     "ARNLxqjg2pM",
+     "CF4N1J5a5B8"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "dead multiple",
+   "verdict": "rhetoric",
+   "why": "Breaking-news casualty formula, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 6,
+    "months": 9,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "Atlanta shooting: 1 dead, multiple hospitalized in Georgia, police say",
+     "1 dead, multiple people rescued after boat capsizes during Lockport, NY cave tour",
+     "Maine shootings: Police hunt for suspect after at least 18 dead at multiple venues | FULL"
+    ],
+    "ids": [
+     "2sb2ETCjYKg",
+     "3FPzlUKmIgs",
+     "4S3Yxgdm_Og",
+     "DwXPr0f0acQ",
+     "LpLL8qToooM",
+     "bHF3W5LV86U",
+     "dWvwieJnuKw",
+     "eqgXHSBA-Iw",
+     "er6xqlIhczE",
+     "hzp6L4QTvHQ",
+     "qUEoVFOz3e8",
+     "sHRQqSnpqmU",
+     "sLH4L8LAodQ",
+     "tRubeqJOZzE"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "strike kills",
+   "verdict": "rhetoric",
+   "why": "News event phrasing covering separate conflicts; no shared thesis.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 7,
+    "months": 12,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "Russian strike kills 4 in Ukraine, including 10-year-old girl, UN security council urges withdrawal",
+     "\"Swimming in a pool of blood\": Gaza medic pleads for aid after Israeli strike kills at least 37",
+     "Israel orders evacuations in Gaza after school strike kills 100, Palestinians unsure where to go"
+    ],
+    "ids": [
+     "14gZzPF8-q0",
+     "2-ZeNuzZoBY",
+     "2BqhGcFQc_w",
+     "39QthyuHggQ",
+     "3P9q8rP3n1w",
+     "8QtlRCkAcP8",
+     "FWMqfRznwZQ",
+     "R8ZFyKiuoYw",
+     "Tw3lG_trZ1c",
+     "VNWXpcmcr_g",
+     "W3MwroA8kHY",
+     "W_8r0XQsnq8",
+     "iARGcrLiR74",
+     "iATogN-zpqQ",
+     "iFmV9x3SqJw",
+     "m04AluTe8mA",
+     "nKDyqVvU62I",
+     "oNlCmuaLRA4",
+     "rQkDtnVrm4g",
+     "si2FWqB1tmk"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "stackers must",
+   "verdict": "rhetoric",
+   "why": "Urgency hook aimed at precious-metals buyers rather than a specific falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 4,
+    "months": 10,
+    "span": "2022-11 → 2026-06",
+    "examples": [
+     "Silver & Gold Stackers MUST WATCH! 🦍🦍 (It's Coming)",
+     "**WARNING** 6 Mistakes Silver Stackers Must AVOID 💰💰 (Gold bullion too!)",
+     "🚨Warning🚨 Silver STACKERS Must See! -- (BRICS, Bidenomics, Banks, Bonds)"
+    ],
+    "ids": [
+     "-1ACXaI6Hh0",
+     "6DFEXTG9UaI",
+     "9Di0DPAc28w",
+     "DOd72NmBFOA",
+     "Hsk_VVTF1MQ",
+     "IfdaIuWt0Jg",
+     "Ihf8ezRLpcU",
+     "YIn-jfBhYys",
+     "j_H5r_W8wJo",
+     "ucOLmh8ujK4",
+     "vVejcsPqVWE",
+     "yIeoUXv6Xw0"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "floods kill",
+   "verdict": "rhetoric",
+   "why": "Disaster-report headline format with no causal claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 6,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "Turkey floods kill at least 5, injure more than 30 people",
+     "\"Like a bomb\": Kenya flash floods kill at least 45 in central region",
+     "Spain floods kill more than 150 people with bodies still likely trapped in cars"
+    ],
+    "ids": [
+     "068K1MfoW9U",
+     "CY093SzH-_M",
+     "ExSZV_WeRCQ",
+     "NfuDW15EaEs",
+     "Tp347B1XuMI",
+     "Y5vMnfeUkAg",
+     "hvHo0t-zuaI",
+     "jp8Lq5NgX2c",
+     "lKGIXsKxSr8"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "engineers actually",
+   "verdict": "rhetoric",
+   "why": "Curiosity-gap phrasing about engineering jobs; titles share no one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2024-06 → 2026-09",
+    "examples": [
+     "How much top paid software engineers ACTUALLY make",
+     "What Prompt Engineers *actually* do #ai #softwareengineer",
+     "Coding Roles Are Dying… Here’s What Future Engineers Will Actually Do"
+    ],
+    "ids": [
+     "-pHrSPTHJw0",
+     "-rnkEejMOnQ",
+     "3ERbYtUwHE8",
+     "PbsocBPkoUc",
+     "p_TwhSXrjpc",
+     "u2QqWkMv3Lg"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "000 year-end",
+   "verdict": "narrative",
+   "why": "Titles consistently assert dated bitcoin price targets by year-end, a checkable forecast.",
+   "claim_name": "The \"bitcoin hits its price target by year-end\" story",
+   "claim": "Commentators and crypto executives claim bitcoin will reach a specific high price level ($50k, $100k, $200k) before the end of the current year.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Investors want to know how high bitcoin can go and when",
+    "cause": "Institutional adoption, halving cycles and macro liquidity are said to drive rapid appreciation",
+    "outcome": "Buy now before the year-end target is hit",
+    "clock": "By the end of the calendar year, repeated annually"
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2018-05 → 2026-09",
+    "examples": [
+     "Bitcoin To Hit $50,000 By Year-End: BitMEX CEO Arthur Hayes | CNBC",
+     "Crypto firm co-founder sticks with bitcoin forecast of $100,000 by year-end",
+     "Bitcoin can 'easily' get to $200,000 before year-end, says Fundstrat's Tom Lee"
+    ],
+    "ids": [
+     "2BRsq9hlBOQ",
+     "4eY_uL9yqxw",
+     "RF6IHT3TE3U",
+     "RSaL2qSUOmU",
+     "XcyFJ6KYoL0",
+     "_TTBAYKkdM8"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "must remain",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated topics (Fed independence, a camp closure, weather data) with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "The Federal Reserve Must Remain Independent or Risk Even Higher Inflation",
+     "Judge rules parts of Camp Mystic must remain closed until investigation complete ",
+     "The Right to Information is the Right to Life: Why Weather Data Must Remain Free"
+    ],
+    "ids": [
+     "4YSxrg3CHZU",
+     "9eLGIBmOjRI",
+     "JByUL04tzZ8",
+     "TXzUMXCsFkM",
+     "jT3rDyRDh9o",
+     "ltFMH_e1m5Y"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "ww3 coming",
+   "verdict": "narrative",
+   "why": "Shared checkable claim that a third world war is imminent, with implied hedging remedies.",
+   "claim_name": "The \"World War 3 is coming\" story",
+   "claim": "A global war involving major powers is imminent, and viewers should prepare by buying hard assets like silver or repositioning out of risk markets.",
+   "industry": "Politics & geopolitics",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Escalating great-power conflicts are pushing the world toward a third world war",
+    "cause": "Superpower rivalry, alliance entanglements and reckless leadership",
+    "outcome": "Global war, market crashes, and safety in precious metals and preparation",
+    "clock": "Imminent, unspecified near term"
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2022-05 → 2026-09",
+    "examples": [
+     "WW3 IS COMING.. YOU NEED SILVER.",
+     "IS WW3 Coming?...World War 3 Is Closer Than You Think!",
+     "WW3 is COMING per BILLIONAIRE RAY DALIO, Trump ATTACK & Stock Crash | Meet Kevin Show [E.8]"
+    ],
+    "ids": [
+     "4DUJgRJxlSE",
+     "_bcRuewyJ8o",
+     "dHg1wsRvpuo",
+     "dmIznemwXuw",
+     "x__A_5PZ-D0",
+     "yYn2mL1Y7tM"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "save tokens",
+   "verdict": "rhetoric",
+   "why": "A how-to format tip about LLM token usage, not a contestable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 4,
+    "span": "2026-04 → 2026-09",
+    "examples": [
+     "Stop Wasting Your Claude Plan... 3 Tips to Save Tokens",
+     "How to Save Tokens in Claude? #claudecode #claude #ai #aipm",
+     "Save Tokens in Claude, Gemini & GPT with Graphify (Full Setup)"
+    ],
+    "ids": [
+     "1RIh4OR8-Ng",
+     "77vrVksEbi4",
+     "BfUVRkGFn9M",
+     "IR_E2y-PUXQ",
+     "NyyCh1VSlJY",
+     "mFBe8QD701A",
+     "yqIbxKZ4VeM"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "truth salt",
+   "verdict": "rhetoric",
+   "why": "Phrase mixes unrelated subjects (media hoax talk, dietary salt) and carries no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 7,
+    "span": "2020-09 → 2026-09",
+    "examples": [
+     "Brian Stelter: “Hoax: Donald Trump, Fox News & the Dangerous Distortion of Truth” | SALT Talks #53",
+     "The Truth About Salt and Mineral Deficiencies with Dr. James DiNicolantonio",
+     "The truth about salt"
+    ],
+    "ids": [
+     "IITpdfe0pUc",
+     "_SVJ83QaiWg",
+     "aDSkyNy4cC0",
+     "bR9TnkHX_XM",
+     "lNtnNHT-eag",
+     "xX8GnOwRbbM",
+     "zojFovzGhxs"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "crash 2021",
+   "verdict": "duplicate",
+   "why": "Restates the dated market/housing crash prediction cycle already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 38,
+    "channels": 21,
+    "months": 13,
+    "span": "2020-10 → 2021-11",
+    "examples": [
+     "The Stock Market is Currently Broken  |  Stock Market Crash in 2021?",
+     "Housing Market Crash 2021 (Meet Kevin is Wrong)",
+     "REAL ESTATE CRASH OF 2021 - My Thoughts"
+    ],
+    "ids": [
+     "0-23mqUNm_I",
+     "0837cbmG0mM",
+     "4G7VR0koO30",
+     "6IAaR4nQr1s",
+     "6zHaA4nbZKg",
+     "9V7wNNgfnlI",
+     "9XBO5hv5PEY",
+     "Bz_xKOUnrlo",
+     "CnmuQSSExyU",
+     "CvMbbpycWZs",
+     "FSGwqIoUAAI",
+     "JAPKk4q_bsU",
+     "JJmh2KnO_dM",
+     "MQg8wuFPous",
+     "NYco2KmbhQ0",
+     "OtV5oR9cwjo",
+     "SEGyyLHiBuI",
+     "T6IWP7V3fnA",
+     "TDLr0Mgvjfk",
+     "U4Qabte8z5Y"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "crash history",
+   "verdict": "duplicate",
+   "why": "Same 'biggest crash ever is coming' prediction already covered by the crash/collapse trackers.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 19,
+    "months": 15,
+    "span": "2020-02 → 2026-09",
+    "examples": [
+     "Fastest Stock Market Crash In History: Is This The End Game?",
+     "Biggest Market Crash in History - Warning!",
+     "Key Indicator Hints America Is Headed For Its Worst Real Estate Crash In History"
+    ],
+    "ids": [
+     "0d75CGofe0E",
+     "7f68DiN6HJU",
+     "7hTbToohHkI",
+     "99zVOGkRkjo",
+     "A46oOOIHAgY",
+     "BEsA7AiqGEc",
+     "GnJpG3iiDxY",
+     "GozUME0BuLM",
+     "HSJlmOteZ94",
+     "HrRffxk1PUQ",
+     "LS7eGIv7sgY",
+     "T3VWrQ3kuBQ",
+     "UJjarbu4y1Q",
+     "X_Ny3pTSdhQ",
+     "Y9XhrkvKGSg",
+     "YhOm3kdjh88",
+     "Yw3nC_dwpsw",
+     "bsjgwipVCY0",
+     "gjEf42R1i-I",
+     "ikVsWsdkayc"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "must hold",
+   "verdict": "rhetoric",
+   "why": "Chart-level urgency formula in crypto TA titles, not one shared falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 8,
+    "months": 16,
+    "span": "2018-07 → 2026-09",
+    "examples": [
+     "Bitcoin Price Analysis - Important BTC Support MUST Hold",
+     "EMERGENCY!!! BITCOIN MUST HOLD THIS LEVEL!! ETHEREUM PRICE TARGET!! (Exact Bitcoin Price Prediction)",
+     "BITCOIN MUST HOLD THIS IMPORTANT LEVEL!!! BITCOIN PRICE PREDICTION & ONCHAIN DATA EXPLAINED!"
+    ],
+    "ids": [
+     "-EMjDUGvhQM",
+     "EENGT-OReqw",
+     "Kc4jIrMhVv8",
+     "LCeRvu7k0Dk",
+     "QKaB0FeR0EY",
+     "QUHSRO_C1Xs",
+     "RBOB6AOoqC4",
+     "SuxzSuPvRlI",
+     "U9-K2j1juYM",
+     "UenjYsXTUUI",
+     "WctVbIGnJDs",
+     "XjHNwN8qQkI",
+     "XqzPdqm38vQ",
+     "YdNPRSt9lDA",
+     "ZidalrQwWFo",
+     "cpZdkjnY8RA",
+     "gqWBNoOsNhs",
+     "mS2vpsTqvp0",
+     "ofTxggpU5LE",
+     "vndHjrfHLlM"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "infrastructure boom",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that AI infrastructure spending is a durable boom driving markets.",
+   "claim_name": "The \"AI infrastructure boom\" story",
+   "claim": "Massive capital spending on data centers, chips and power for AI is a sustained boom that will keep driving equity markets and related sectors higher.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Where growth and returns come from in the current market",
+    "cause": "Surging demand for AI compute, data centers and power",
+    "outcome": "Continued gains for infrastructure, chip and energy names; investors should be positioned in them",
+    "clock": "Ongoing through the coming years"
+   },
+   "evidence": {
+    "videos": 11,
+    "channels": 8,
+    "months": 4,
+    "span": "2026-01 → 2026-09",
+    "examples": [
+     "The AI Infrastructure Boom",
+     "The Ai Infrastructure Boom Isn't Slowing | Feat. Steven Fiorillo",
+     "AI Infrastructure Boom Drives Market Movers | Closing Bell"
+    ],
+    "ids": [
+     "DP9_Y-0CWO0",
+     "KhLxzMuI4js",
+     "PgL5sVq9PcQ",
+     "X6olWDri8Vw",
+     "Zi3JRkKjZNA",
+     "bFtAiuBtFNs",
+     "cLkOWdBUB40",
+     "gmrAingXINs",
+     "hZbpical9BA",
+     "ngecCtW2v_g",
+     "oEd2VLVSXyg"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "debt bubble",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that an unsustainable debt bubble will burst and trigger crisis.",
+   "claim_name": "The \"debt bubble is about to pop\" story",
+   "claim": "Global and national debt levels have inflated an unsustainable bubble that is about to burst, triggering a major recession or financial collapse.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Record levels of public and private debt",
+    "cause": "Cheap money, deficit spending and credit expansion",
+    "outcome": "Debt bubble bursts into recession or systemic collapse",
+    "clock": "Imminent / recurring near-term predictions"
+   },
+   "evidence": {
+    "videos": 17,
+    "channels": 12,
+    "months": 15,
+    "span": "2019-05 → 2026-09",
+    "examples": [
+     "31 May 2019 - The CEC Report - Debt Bubble Explosion Inevitable / Alexander Downer and the Five Eyes",
+     "Why the Debt Bubble Is About to Pop",
+     "$63 Trillion DEBT BUBBLE just Burst (Prepare for BIG Recession in 2022)"
+    ],
+    "ids": [
+     "3b8IeSDgjDA",
+     "6VDROwUUTgY",
+     "6p43j2VGfxs",
+     "ASLcELYjR7g",
+     "Al0SLSS4vmw",
+     "BKSb5mLAP60",
+     "HHdvrGLBuRY",
+     "HWq8M9s0kBU",
+     "UWT_zFTPYkw",
+     "VldLd0n_-jY",
+     "_iLvbGtnUMY",
+     "dcoYulR34rQ",
+     "mnDi38CLnlk",
+     "nlPnVIXEahU",
+     "oOEAXXuMzkw",
+     "reK6LteMLh4",
+     "vTswHVnY7yc"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "actually burn",
+   "verdict": "rhetoric",
+   "why": "A listicle hook about fat-burning foods, no single checkable claim beyond the format.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-09 → 2026-09",
+    "examples": [
+     "“5 Foods That ACTUALLY Burn Fat - Backed by Science, Not Hype!”",
+     "“4 Fruits That Actually Burn Fat Backed by - Real Science!”",
+     "“4 Fruits That Actually Burn Fat Scientifically Proven!”"
+    ],
+    "ids": [
+     "-JNRzSUXJD0",
+     "2NGjlqsYfZI",
+     "517yZqJUlmk",
+     "Ah7E2eovaOw",
+     "GN5697EPFn0",
+     "WHM-VokbYg0",
+     "YsLPLFObQG4",
+     "aAhlyUjyA3k",
+     "epyExKVDB3c",
+     "kiI18v7nw7A",
+     "nT4XA8azJ6g",
+     "z9qaFIaqs7w"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "market crash sensex",
+   "verdict": "rhetoric",
+   "why": "Daily Indian market prediction format; no shared claim, just recurring commentary.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 9,
+    "months": 4,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "Nifty prediction for tomorrow | Markets getting ready for Rally or Crash? | Sensex Expiry | Options",
+     "Stock Market Crash! अब क्या? Sensex 1600+ गिरा, Nifty टूटा, Oil Shock, War Tension आगे क्या होगा?",
+     "🚨 Nifty Prediction for tomorrow | Stock market crash | Sensex prediction"
+    ],
+    "ids": [
+     "1Xyq1V-_NNk",
+     "2KGepNpvA74",
+     "G2yXuRy7vb4",
+     "HjurmikqZrc",
+     "JCYkecP7Bnw",
+     "LQxV7UaWfn0",
+     "NNEl5oZqk1w",
+     "OE0Pqep9clo",
+     "dp-RDKyNMqU",
+     "heJVCzcugrw",
+     "rkjGiSITygA",
+     "xzazWpIx1w4"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "dump coming",
+   "verdict": "duplicate",
+   "why": "Crypto price-drop calls restate the tracked crypto deadline narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 9,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "*HUGE DUMP COMING*",
+     "Crypto PUMP OR DUMP Coming Next?!! Bitcoin News Today & Ethereum Price Prediction (BTC & ETH)",
+     "Price DUMP Coming Soon (Bearish Pattern)!! Bitcoin News Today & Ethereum Price Prediction (BTC, ETH)"
+    ],
+    "ids": [
+     "6oh7ZwptNnc",
+     "75ACmWWSEkg",
+     "7W3dsh-yNfU",
+     "CXh9FSxouOY",
+     "DVOwzUAKAU8",
+     "PPnwA1LviUc",
+     "Rn0pX49EAxw",
+     "Zseh8PXd9LA",
+     "eVSirIpKoKo",
+     "gXaFMeDHFBU",
+     "tL60itVC_eE"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "cause high blood pressure",
+   "verdict": "rhetoric",
+   "why": "Titles cover different conditions and causes with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 10,
+    "span": "2019-10 → 2026-09",
+    "examples": [
+     "Mistakes by Most Diabetes Patient in Breakfast  Diet Cause of  High PP Blood Sugar नाश्ते में  खायें",
+     "Avoid the ROOT CAUSE of High Blood Sugar and INSULIN RESISTANCE",
+     "Does Too Much Salt Cause High Blood Pressure?"
+    ],
+    "ids": [
+     "1-axmzZPoIg",
+     "AZjWrW9tZCk",
+     "G5C9-QDwm-A",
+     "K4jN2XlNjVU",
+     "MYuAnFajPPQ",
+     "MdO338i34PY",
+     "OZTXKoLSl1k",
+     "aQxi93feHTk",
+     "fLXhou58NSQ",
+     "sRMjFmTrJWU"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "parents must",
+   "verdict": "rhetoric",
+   "why": "Unrelated parenting and politics topics sharing only an imperative phrase.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "“Parents must be fully involved” if student changes pronouns: Ontario education minister #LGBTQ",
+     "All Parents ✅ must watch",
+     "Parents Must Say 'No' More to Prevent Entitlement Mentality"
+    ],
+    "ids": [
+     "0o8-kWG9IpM",
+     "6o8NOydLMTY",
+     "9U3Y3aPUtMQ",
+     "SMKvdUtvuk8",
+     "a7kEgr9PjWo",
+     "dKu_iZervjI"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "dead shooting",
+   "verdict": "rhetoric",
+   "why": "News event subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 35,
+    "channels": 7,
+    "months": 16,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "India protests: 2 dead after shooting in Manipur state",
+     "Israel-Hamas: 3 Israelis dead after shooting at West Bank-Jordan border",
+     "Suspect dead after shooting in Midtown Manhattan in NYC"
+    ],
+    "ids": [
+     "-77_nti44KM",
+     "6imEx02DPh0",
+     "6rpT5fgdB0I",
+     "74Q8cdWUbKc",
+     "AY-EVyDbWVE",
+     "CACLskP4iRI",
+     "CCOUliH1tgs",
+     "CClBuVohxaE",
+     "D8WdPr4jxhI",
+     "DZHUDtyGyy4",
+     "H8BYsWc57ss",
+     "J9BRD_c8Sy4",
+     "JAyP-boxAi8",
+     "KjvzQ4tMELA",
+     "LGNE9TBfOdw",
+     "T_9R8TQPR6A",
+     "V4k22nJJi7Y",
+     "VkjVGz-MPXo",
+     "YEly9D-x458",
+     "YZkXHtAB7eU"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "truth glp-1",
+   "verdict": "duplicate",
+   "why": "Same hidden-truth framing of GLP-1 weight-loss drugs already tracked for Ozempic.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "truth-about-ozempic-they-arent",
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 15,
+    "months": 14,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "The Truth About GLP-1 Weight Loss Drugs",
+     "Live: Discover the Truth About GLP-1 Weight Loss - Your Questions Answered!\"",
+     "The Truth about GLP-1 Muscle Loss"
+    ],
+    "ids": [
+     "-zERemx0weU",
+     "1n104FxPmOM",
+     "39vJ2H4_tOk",
+     "6HPEdiNIc-w",
+     "CaR7HpU_cc0",
+     "G1tnrDM4VDs",
+     "HBkto2dCfZM",
+     "IuoGj9Vi0d0",
+     "KjoO1OgXVuY",
+     "Pu4lbdMwRoE",
+     "QwKQeg1w9So",
+     "RD3Kx8evf7I",
+     "UKP1-xWyIzg",
+     "UiJN2UrqYCk",
+     "ewHehghk2TY",
+     "fgSB5azAiVU",
+     "lCxSKE1pDW0",
+     "pD8B3zlDFAU",
+     "q4nzWyWV-yc",
+     "qyDggFe5qQI"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "end ukraine war",
+   "verdict": "rhetoric",
+   "why": "Titles pose questions about peace efforts without a shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 12,
+    "months": 10,
+    "span": "2023-05 → 2026-09",
+    "examples": [
+     "\"Putin Is Afraid of Him!\" - Will Trump End The Ukraine/Russia War Within 24 Hours?",
+     "Question of how to end Ukraine war discussed at peace summit — without Russia",
+     "Could Trump’s Deal with Putin End the Ukraine War?"
+    ],
+    "ids": [
+     "1ssKodTpPCU",
+     "2fT2zC0gMDM",
+     "3wqufbQ0yuY",
+     "5wuNVmr-NkA",
+     "9zIukK59e3s",
+     "G6GbuZMqYqc",
+     "KMFz39U0ZPo",
+     "Mb1RdSUeL88",
+     "agfoM_3TbO8",
+     "bnKouY3SUlE",
+     "fNnyuV9uknQ",
+     "gCdlBowxFkU",
+     "gfvn0zRirZk",
+     "iUOTnCWCxqc",
+     "kyw3hnIqzfM",
+     "n5U-xvTQqIw",
+     "og2gZk-9prc",
+     "pcKj1s1tfU0",
+     "yup53WtvQMc"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "book shows",
+   "verdict": "rhetoric",
+   "why": "A recurring report-coverage format, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 4,
+    "months": 10,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Fed Beige Book Shows Economic Activity Rose 'Slightly'",
+     "Fed Beige Book Shows Economic Activity Little Changed",
+     "Fed Beige Book Shows Economic Activity Has Declined Slightly"
+    ],
+    "ids": [
+     "1xjOyJZMVJw",
+     "5_e4KA6007o",
+     "ENKllBK44N0",
+     "GAxKR7RNq2E",
+     "Jp2EDiuYPcg",
+     "MsyIVDC9xj0",
+     "RvY_mhZZy4Y",
+     "SQdBGAi5kvI",
+     "X2o1jMyBxBs",
+     "_gWVXijtNLE",
+     "avaGhOplYhs",
+     "nUey312E23g",
+     "qUXHP08SQyY",
+     "sHr6kq_fcwA",
+     "sQ_TTuooGhY",
+     "uImu7K6s1VI",
+     "zCsp-8uSRqg"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "historic win",
+   "verdict": "rhetoric",
+   "why": "Election-result labeling with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 5,
+    "span": "2025-11 → 2026-09",
+    "examples": [
+     "What Mamdani’s Historic Win Means for Trump",
+     "Miami mayor-elect Eileen Higgins on historic win",
+     "Eileen Higgins reflects on her historic win in Miami mayoral election"
+    ],
+    "ids": [
+     "-vFHJmyGWlk",
+     "1G5u_kjVfys",
+     "BD_kt0EOVVQ",
+     "IpdZwg7XMKI",
+     "VPOrD35QiCs",
+     "W0m6ar7rrp4",
+     "_fPXNPQ14TM",
+     "rXqObQSVgNA",
+     "sA01ygImSwg",
+     "tux4fdw83Hw"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "test drive",
+   "verdict": "rhetoric",
+   "why": "Format/subject phrase spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 12,
+    "months": 11,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "#Tesla analyst goes on a scary test drive",
+     "Alibaba Earnings and Tesla FSD Test Drive | Bloomberg Technology",
+     "Truckers weigh having to pass English test to drive in US"
+    ],
+    "ids": [
+     "APsnWhcJwos",
+     "JyvJxvN-_9o",
+     "KKEnJrnJ4ac",
+     "KqFfYI01GP8",
+     "PYfaUvF5iWI",
+     "SPRJp98fNig",
+     "WGGeyl9UOKw",
+     "Yg221jUQsxI",
+     "ZEiDBr6tpks",
+     "ZOrF_uRZ9Es",
+     "djHt_QpNElE",
+     "fl73zXMwW5k",
+     "fsPC5jhVb8E",
+     "iHy3edOAM4s",
+     "iOeUjpEIzyg",
+     "mV2N6EJYzXk",
+     "qXZwQ9vxnLY",
+     "t81uSghnm9A",
+     "xXMT72Z7rd0"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "scam fraud",
+   "verdict": "rhetoric",
+   "why": "Generic warning label across unrelated scams, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 8,
+    "span": "2018-01 → 2026-09",
+    "examples": [
+     "How to Spot a Shitcoin - 8 Tips for Spotting ICO Scam/Fraud - Crypto Investing Tips",
+     "Scam or Fraud! #WealthSaGa #scam1992 #shorts",
+     "Instagram Add Scam And Fraud #instagram  #instagramscam  #scam"
+    ],
+    "ids": [
+     "B1fyKXfi5OQ",
+     "Rc6qdQ1X_sk",
+     "S_TIsjqkgf4",
+     "V1pe7SbPJbo",
+     "VhYxbF2hyQY",
+     "glAQypxxQsY",
+     "laiY4dEkbZo",
+     "sq4rgRr0TI4"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "red dead",
+   "verdict": "rhetoric",
+   "why": "Game title subject, no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 33,
+    "channels": 15,
+    "months": 6,
+    "span": "2018-10 → 2026-09",
+    "examples": [
+     "EA Shares Sink as Red Dead Boosts Take-Two",
+     "cavalo lindo no red DEAD redemption 2",
+     "Red Dead Redemption Brazil Edition #shorts #shortsfeed #fy #chatgpt #aivideo #rockstargames"
+    ],
+    "ids": [
+     "-DC4axE5Yk0",
+     "-tRbB0mbYHc",
+     "024Pd3YxjsY",
+     "DL6j42vcGuM",
+     "FpJAtmV1NVQ",
+     "GT0IfZ8AEOY",
+     "GtoC36fA8po",
+     "KS6dl94hmr4",
+     "NY9Uw4RZc3c",
+     "POYWDZZDzjc",
+     "Q33m274mUfM",
+     "QQoGY7RtSR8",
+     "RwKaQQP8zh0",
+     "Sr3lHcpZLvs",
+     "SteAqnH-jh4",
+     "Yn2xrre3yVE",
+     "a12-9bpysA8",
+     "c9v295gGPOA",
+     "d-XzCZvzxaI",
+     "dpcsLtRpzgQ"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "means nothing",
+   "verdict": "rhetoric",
+   "why": "Motivational catchphrase, not a checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 10,
+    "months": 6,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "Family Sales Means Nothing #shorts",
+     "Success Means Nothing Without Loyalty",
+     "Comparison means nothing when it comes to weight loss. #glp1 #weightlossjourney"
+    ],
+    "ids": [
+     "HUs5so6QUho",
+     "ITxFflb4nIM",
+     "UnAgBnE_etE",
+     "XoFfMb3EeTg",
+     "ZyultwV3gcw",
+     "fmsDS-BbjjE",
+     "hHbU_4A5VEk",
+     "k2rC92OKlNo",
+     "neUJ8eMDar0",
+     "qThVN_wZ1wc"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "market crash 2022",
+   "verdict": "duplicate",
+   "why": "Another dated crash-call cohort already covered by the passed-deadline collapse tracking.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 146,
+    "channels": 20,
+    "months": 14,
+    "span": "2021-11 → 2022-12",
+    "examples": [
+     "THE STOCK MARKET IS GOING TO CRASH - STOCK MARKET CRASH 2022",
+     "California Exodus Gets WORSE!  Prepare for HOUSING CRASH (2022?)",
+     "Inflation Crisis┃Market Crash 2022?"
+    ],
+    "ids": [
+     "-v5I1lyZ81I",
+     "0OiNK2PBXgU",
+     "0Rw4bE5YqeE",
+     "0kIK9tONkOc",
+     "15CigVA9nGE",
+     "1MWzxePWEYI",
+     "1lEWMC_4g30",
+     "2HH0pR9RPD4",
+     "2J7WCPK-fAA",
+     "2qHisvmT22c",
+     "3RegiaBiFTo",
+     "3SdvcOw22rA",
+     "3fqWeRBWYO8",
+     "4Axe8JIFzlE",
+     "4SlpOOAEbb0",
+     "4_chOOESd5w",
+     "5CsFOqNgLa0",
+     "5DpW2dPdIXw",
+     "5OpLNuzmYFc",
+     "5ZhqI_qFpNk"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "leaders must",
+   "verdict": "rhetoric",
+   "why": "Generic leadership-advice framing with no shared checkable claim across the titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 6,
+    "months": 12,
+    "span": "2019-07 → 2026-09",
+    "examples": [
+     "Why All Leaders Must be Coaches And Mentors",
+     "Leaders Must Be the Lighthouses Inside of Their Organizations - Jacob Morgan",
+     "CEO Of Qlik On Why Leaders Must Get Out Of Their Comfort Zones | Mike Capone"
+    ],
+    "ids": [
+     "0m8MO7eFhCA",
+     "6zT17Jzdyg4",
+     "9kUZKzQt-pg",
+     "JOIKtDzwJOU",
+     "S7OY0dKlgHQ",
+     "VJfEuGmhFdE",
+     "X8QPu8ylayE",
+     "gsqq52L4jBk",
+     "inD9UFh87hg",
+     "lKuAHiCCN8U",
+     "meIk9DGZvPM",
+     "oUGz8F2BuQA",
+     "pCujrwrtDi8",
+     "qKBnfofOlE8",
+     "rMeiln7mcFA",
+     "teSM6YWENuc",
+     "w0-t4DMeidc"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "really pays",
+   "verdict": "rhetoric",
+   "why": "A curiosity hook attached to unrelated subjects (dividends, clothing costs), not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 3,
+    "span": "2025-09 → 2026-09",
+    "examples": [
+     "What $1,000,000 Really Pays in Dividends",
+     "What $100K Invested Really Pays in Dividends (Realistically)",
+     "Who Really Pays for Your $5 Shirt?"
+    ],
+    "ids": [
+     "AUPnS0CYKjc",
+     "F2dNcQY23R4",
+     "HhTVYgHGC-c",
+     "LJM5qILr3SE",
+     "U6PgToOrGeY",
+     "bySNJp0imtE",
+     "tSEsrTJlpzs",
+     "zppYzhlGiOc"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "pullback coming",
+   "verdict": "rhetoric",
+   "why": "Thin, generic price-dip teasers spanning different assets with no single falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-08 → 2025-11",
+    "examples": [
+     "MARKET PULLBACK COMING SOON...",
+     "BITCOIN PULLBACK COMING SOON? (New Target)!! Bitcoin News Today & Ethereum Price Prediction!",
+     "“A Pullback Is Coming! But What’s Next Is Absolutely Mind-Blowing\" - Lyn Alden"
+    ],
+    "ids": [
+     "3jTZqFMSE5g",
+     "KTEjmDhoNwA",
+     "Yvc10XkqtOs",
+     "_2IkL5L5yM4",
+     "fEnUpVTjRW4"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "people idea coming",
+   "verdict": "rhetoric",
+   "why": "Pure suspense formula ('no idea what is coming') applied to any topic.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 9,
+    "span": "2022-05 → 2026-08",
+    "examples": [
+     "Most People Have No Idea What Is Coming - Elon Musk",
+     "HOUSING CRASH: PEOPLE HAVE NO IDEA WHAT IS COMING! Housing Market Crash! - Stock Market Gambler",
+     "The Crypto Expert: \"Most People Have No Idea What is Coming in 2024\" | BEST Ethereum Prediction"
+    ],
+    "ids": [
+     "6MfmqQDTptc",
+     "F_CI_tV0Npw",
+     "JbQBuFAPnSk",
+     "Lubn9aTsIB4",
+     "Mity3H379d4",
+     "NNtPITeSrd0",
+     "R4UuGrHIWm4",
+     "Zjy2izwb608",
+     "mSjaMyP5QjY"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "left dead",
+   "verdict": "rhetoric",
+   "why": "Incident-description wording, no shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 10,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "They Were Left for Dead 😳",
+     "Caledon OPP investigate school bus, SUV crash that left 2 dead, 3 hospitalized",
+     "The CRAZIEST Prison Revolt that Left 43 Dead | Danny Sheehan"
+    ],
+    "ids": [
+     "5AiD0uW_u5I",
+     "G1KgerZEf0U",
+     "H49voPA-WH8",
+     "Po7QA54JPvQ",
+     "RwpesNMMvGk",
+     "VVYvs7M59jI",
+     "ijhLkL5i2G4",
+     "lG21Typosp8",
+     "nwkI6Ap19Ik",
+     "qPjYrgl_Bzc",
+     "t6SWuMbgnE8",
+     "u4KuClzDu4w",
+     "wZyBC7NJquw",
+     "wiuNg1ig1rg"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "change coming",
+   "verdict": "rhetoric",
+   "why": "Tarot/self-help boilerplate promising unspecified change, unfalsifiable.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 26,
+    "channels": 12,
+    "months": 18,
+    "span": "2018-10 → 2026-09",
+    "examples": [
+     "SAGITTARIUS WEEKLY TAROT 29 OCTOBER TO 4 NOVEMBER 2018 - GOOD CHANGE IS COMING!",
+     "CANCER *DON'T FIGHT IT  CHANGE IS COMING, FOR THE BETTER!* MONEY AND CAREER",
+     "SCORPIO *CHANGE IS COMING, AND IT'S CHANGE FOR THE BETTER!"
+    ],
+    "ids": [
+     "1rJBHIVTQso",
+     "1rokrjixhwc",
+     "36uxoDW6DPg",
+     "6w1mcfnmGrQ",
+     "87k8qtGIEmM",
+     "9BAufcBuUBg",
+     "9dc7jhAdbyI",
+     "G3l07ZKieUM",
+     "HjrzPhWPBfQ",
+     "KyVEHRLHeg8",
+     "MGHylfR6GBg",
+     "NOXl9J3TS8k",
+     "NpAKcGqnT0Q",
+     "NvpQuwB3m4I",
+     "QGntwWuUTzc",
+     "VjyJ-73BC04",
+     "X_x0JVDFx-g",
+     "aqKQPMclLeo",
+     "e8tqVv__ibM",
+     "gzuE47j2qfg"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "dead daylight",
+   "verdict": "rhetoric",
+   "why": "Just a game title used as a subject tag, no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 25,
+    "channels": 5,
+    "months": 4,
+    "span": "2026-06 → 2026-09",
+    "examples": [
+     "Как играется в Dead by Daylight на Steam Deck в 2026 году? #steam #deadbydaylight #steamdeck",
+     "Krasue Mori In The Black Banquet Unique Tile - (Dead by Daylight) #dbd #deadbydaylight #krasue",
+     "P100 Ghoul - (Dead by Daylight) #dbd #deadbydaylight #gaming #tokyoghoul #ghoul #P100"
+    ],
+    "ids": [
+     "-bRkpDzoMHU",
+     "3W5p1VHzZeI",
+     "4Y1Hae4mIxI",
+     "6TL0usOtUI8",
+     "B2K_yuhIKYg",
+     "B4MLd1b9Yow",
+     "CZPo80bd7AY",
+     "JRCYUqMGvAk",
+     "LAC8EJ2MrJU",
+     "LLTp24M_AK8",
+     "LmSWaEwrqyc",
+     "LoZ6CcBydTY",
+     "MUunC0HReD4",
+     "OHfPcc2Aioc",
+     "OeIrQecOwTQ",
+     "QXduUiIIeDE",
+     "TRb11izNEPw",
+     "ZaNE9z6_VQs",
+     "_nYSI1l4MQM",
+     "e8-zeCzxOtA"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
+  },
+  {
+   "phrase": "states collapse first",
+   "verdict": "narrative",
+   "why": "Titles share one checkable claim: a coming US recession will break specific states' real estate markets first.",
+   "claim_name": "The \"these states will collapse first\" story",
+   "claim": "As the United States enters recession, a specific set of states will see their housing and local economies collapse before the rest of the country, driven by overbuilt or overvalued real estate markets.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Overheated regional housing markets and weakening local economies",
+    "cause": "Speculative real estate prices, migration reversals and an oncoming national recession",
+    "outcome": "Named states suffer the first and deepest price and job collapses; viewers should avoid or exit those markets",
+    "clock": "As the recession hits, framed around 2025-2026"
+   },
+   "evidence": {
+    "videos": 16,
+    "channels": 10,
+    "months": 6,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+     "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+     "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
+    ],
+    "ids": [
+     "0J4pymVCEU4",
+     "2cySisz4L7w",
+     "2rwaCLtUMUY",
+     "6qGtzQdoW78",
+     "Dz4mPUE14_I",
+     "FU3VkP11Fx0",
+     "HgIB8ounbIs",
+     "R8hTK8oDQE0",
+     "jp5hHUupNcU",
+     "nhFtUBzUP18",
+     "o3Kn8dIJmIo",
+     "oWogTWbnGd0",
+     "qX7T7tmOCqI",
+     "tH_dfhIvpkM",
+     "ugXVPKb_V_w",
+     "y2GCQE98jak"
+    ]
+   },
+   "first_read": "2026-09-29",
+   "last_read": "2026-09-29"
   }
  ]
 }
