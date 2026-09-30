@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-09-29"
+      "unavailable": "2026-09-30"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-09-29"
+      "unavailable": "2026-09-30"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -236545,17 +236545,24 @@
       "url": "https://www.youtube.com/watch?v=cM7ISRNskBI",
       "published": "2026-09-22",
       "first_seen": "2026-09-29",
-      "views": null,
-      "length": null,
+      "views": 314,
+      "length": "39:48",
       "age_days": null,
       "query": "refiled from the pool (candidate:us-civil-war)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC-3b5E3YZOgWvzxXe4yNwWQ"
+        "channelId": "UC-3b5E3YZOgWvzxXe4yNwWQ",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-09-30"
       }
     }
   ],
-  "updated": "2026-09-29"
+  "updated": "2026-09-30"
 }
