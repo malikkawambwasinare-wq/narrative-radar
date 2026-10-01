@@ -150,13 +150,21 @@ def details(ids, quota):
                 "live": sn.get("liveBroadcastContent") not in (None, "none"),
                 "embeddable": st.get("embeddable", True),
                 "short": secs <= SHORT_SECONDS or "#shorts" in title.lower(),
+                "lang": (sn.get("defaultAudioLanguage") or sn.get("defaultLanguage") or "").lower(),
             }
     return out
 
 
 def usable(v):
     """Hard rules that no conversation can talk the Director out of."""
-    return v and not v["live"] and not v["short"] and v["embeddable"] and v["seconds"] > 0
+    if not v or v["live"] or v["short"] or not v["embeddable"] or v["seconds"] <= 0:
+        return False
+    # English only at launch (spec, DECIDE 5). Search's language setting is a
+    # hint, not a filter: the first real build let a German video into a set.
+    lang = v.get("lang") or ""
+    if lang and not lang.startswith("en"):
+        return False
+    return not re.search(r"[äöüß]|\b(nicht|und|der|das|ist|pour|para|los)\b", v["title"].lower())
 
 
 # ------------------------------------------------------------------ Claude
@@ -303,7 +311,7 @@ def gather(f, quota):
     return good
 
 
-def decide(request, f, cands):
+def decide(request, f, cands, budget=60):
     p = playbook(f["category"])
     ordered = sorted(cands.values(), key=lambda v: v["published"])
     # One card per channel would hide a channel's own turn, so keep up to 3.
@@ -321,7 +329,11 @@ def decide(request, f, cands):
                   "Make the decisions: the origin; the turns (3-6, each with a video from its own period); "
                   "the latest (3-4, newest first); the sides (2-3, each with its strongest video and backups); "
                   "the open question; and the gaps. Judge from titles, descriptions and dates; if the material "
-                  "cannot support a decision, say so in gaps rather than guess.",
+                  "cannot support a decision, say so in gaps rather than guess.\n\n"
+                  f"The whole set must fit about {budget} minutes. Everything you pick will not fit, so for each "
+                  "turn and side choose the strongest video that is short enough, put the direct counter to the "
+                  "claim as the second side, and list backups so a shorter alternative exists. Avoid anything over "
+                  "an hour unless nothing else makes the point.",
                   DECIDE_SCHEMA, effort="high", max_tokens=12000)
 
 
@@ -347,59 +359,72 @@ def mins(v):
 
 
 def assemble(d, cands, budget):
-    """Code, not judgment: per-channel rule, budget, ending."""
-    used_ch, used_id = set(), set()
-    per_ep = budget / 3
+    """Code, not judgment: the per-channel rule, the budget, the ending.
 
-    def take(vid, role, why, extra=None):
+    One budget across the whole set, filled in order of what a set cannot do
+    without: the origin, then both main sides, then the latest, then the turns,
+    then a third side and more of the latest. The first real build cut episodes
+    one at a time and always kept each one's first video, so a 64-minute podcast
+    took "Where it stands" alone, the main counter-side was dropped, and a
+    60-minute request came back at 111. Within each slot, the first candidate
+    that fits wins, so a backup stands in for a video that is too long."""
+    used_ch, used_id, total = set(), set(), [0.0]
+    cap = budget * 1.1
+
+    def fits(vid, long_ok=False):
         v = cands.get(vid)
         if not v or vid in used_id or v["channelId"] in used_ch:
             return None
-        used_id.add(vid); used_ch.add(v["channelId"])
-        return {"videoId": vid, "title": v["title"], "channel": v["channel"], "length": v["length"],
-                "published": v["published"], "role": role, "why": why, **(extra or {})}
+        m = mins(v)
+        if m > MAX_VIDEO_MIN and not long_ok:
+            return None
+        if total[0] + m > cap:
+            return None
+        return v
 
-    def fit(items, cap):
-        out, total = [], 0
-        for it in items:
-            if not it:
-                continue
-            m = mins(cands[it["videoId"]])
-            if out and total + m > cap * 1.25:
-                used_id.discard(it["videoId"]); used_ch.discard(cands[it["videoId"]]["channelId"])
-                continue
-            out.append(it); total += m
-        return out
+    def take(ids, role, why, extra=None):
+        for long_ok in (False, True):
+            for vid in ids:
+                v = fits(vid, long_ok)
+                if v:
+                    used_id.add(vid); used_ch.add(v["channelId"]); total[0] += mins(v)
+                    return {"videoId": vid, "title": v["title"], "channel": v["channel"], "length": v["length"],
+                            "published": v["published"], "role": role, "why": why, **(extra or {})}
+        return None
 
-    origin_items = []
-    if d.get("origin"):
-        origin_items.append(take(d["origin"]["videoId"], "Where it began", d["origin"]["why"]))
-    for t in sorted(d.get("turns", []), key=lambda t: t["date"]):
-        origin_items.append(take(t["videoId"], f"{t['date']}. {t['change']}", t["why"]))
-    ep1 = fit(origin_items, per_ep)
-
-    sides = []
+    sides = d.get("sides", [])[:3]
     roles = ["The claim, at its strongest", "The strongest answer to it", "A third reading"]
-    for i, s in enumerate(d.get("sides", [])[:3]):
-        it = None
-        for vid in [s["videoId"]] + s.get("backups", []):
-            it = take(vid, roles[i] if i < 3 else "Another side", s["why"],
-                      {"side": s["position"], "watch_for": s["watch_for"]})
-            if it:
-                break
-        sides.append(it)
-    ep3 = fit(sides, per_ep)
+    side_item = lambda i: take([sides[i]["videoId"]] + sides[i].get("backups", []), roles[i], sides[i]["why"],
+                               {"side": sides[i]["position"], "watch_for": sides[i]["watch_for"]})
+    latest = d.get("latest", [])
+    picked = {"origin": [], "turns": [], "now": [], "sides": [None, None, None]}
 
-    latest = [take(x["videoId"], "Where it stands", x["why"]) for x in d.get("latest", [])]
-    ep2 = fit(latest, per_ep)
+    if d.get("origin"):
+        picked["origin"].append(take([d["origin"]["videoId"]], "Where it began", d["origin"]["why"]))
+    for i in range(min(2, len(sides))):
+        picked["sides"][i] = side_item(i)
+    if latest:
+        picked["now"].append(take([x["videoId"] for x in latest], "Where it stands", latest[0]["why"]))
+    for t in sorted(d.get("turns", []), key=lambda t: t["date"]):
+        picked["turns"].append(take([t["videoId"]], f"{t['date']}. {t['change']}", t["why"]))
+    if len(sides) > 2:
+        picked["sides"][2] = side_item(2)
+    for x in latest[1:]:
+        picked["now"].append(take([x["videoId"]], "Also new", x["why"]))
 
     eps = [
-        {"key": "origin", "title": "Origin", "about": "How the story got here, oldest first.", "videos": ep1},
-        {"key": "now", "title": "Where it stands", "about": "The newest material, one per channel.", "videos": ep2},
-        {"key": "sides", "title": "The sides", "about": "Each position at its strongest, with what to watch for.", "videos": ep3},
+        {"key": "origin", "title": "Origin", "about": "How the story got here, oldest first.",
+         "videos": [x for x in picked["origin"] + sorted([t for t in picked["turns"] if t], key=lambda t: t["published"]) if x]},
+        {"key": "now", "title": "Where it stands", "about": "The newest material, one per channel.",
+         "videos": [x for x in picked["now"] if x]},
+        {"key": "sides", "title": "The sides", "about": "Each position at its strongest, with what to watch for.",
+         "videos": [x for x in picked["sides"] if x]},
     ]
     for e in eps:
         e["minutes"] = round(sum(mins(cands[v["videoId"]]) for v in e["videos"]))
+    dropped = [s_["position"] for i, s_ in enumerate(sides) if not picked["sides"][i]]
+    if dropped:
+        say(f"budget could not fit the side(s): {'; '.join(dropped)}")
     return eps
 
 
@@ -446,7 +471,7 @@ def build(request, budget=60, category=None):
     cands = gather(f, quota)
     if len(cands) < 6:
         sys.exit("Too little usable material to build a set. Try rewording the request.")
-    d = clean(decide(request, f, cands), cands)
+    d = clean(decide(request, f, cands, budget), cands)
     eps = assemble(d, cands, budget)
     pb = playbook(f["category"])
     story = {
@@ -459,7 +484,7 @@ def build(request, budget=60, category=None):
         "quota_units": quota.units, "searches": MAX_SEARCHES - quota.searches_left,
         "research_log": LOG[:],
         # The pool it chose from: edits draw on this before spending a search.
-        "candidates": {i: {k: v[k] for k in ("id", "title", "channel", "channelId", "published", "seconds", "length", "description")}
+        "candidates": {i: {k: v[k] for k in ("id", "title", "channel", "channelId", "published", "seconds", "length", "description", "lang")}
                        for i, v in cands.items()},
     }
     say(f"spent {story['searches']} searches, {quota.units} quota units")
@@ -566,7 +591,7 @@ def edit(story, instruction):
             ids += search(o["query"], quota, why="looking for something the pool lacked")
         new = {i: v for i, v in details(ids, quota).items() if usable(v)}
         for i, v in new.items():
-            cands[i] = {k: v[k] for k in ("id", "title", "channel", "channelId", "published", "seconds", "length", "description")}
+            cands[i] = {k: v[k] for k in ("id", "title", "channel", "channelId", "published", "seconds", "length", "description", "lang")}
         pool = "\n".join(card(v) for v in sorted(new.values(), key=lambda v: v["published"]))
         r = claude(sys_p, msg + f"\n\nYou searched and found:\n{pool}\n\nNow make the edit with these.", EDIT_SCHEMA,
                    effort="medium", max_tokens=4000)
