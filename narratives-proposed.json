@@ -1,8 +1,8 @@
 {
- "generated": "2026-09-30",
+ "generated": "2026-10-01",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1873,
+ "cost_usd": 0.2353,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -22523,6 +22523,1392 @@
    },
    "first_read": "2026-09-30",
    "last_read": "2026-09-30"
+  },
+  {
+   "phrase": "truth reconciliation",
+   "verdict": "rhetoric",
+   "why": "Titles are event coverage of a commemorative day, not a contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 23,
+    "channels": 5,
+    "months": 7,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "National Day of Truth & Reconciliation: Remembering the Children ceremony in Ottawa | FULL",
+     "Truth & Reconciliation: Return of Nisga'a memorial totem pole celebrated with ceremony | FULL",
+     "National Day of Truth & Reconciliation \"Remembering the Children\" ceremony to be held in Ottawa"
+    ],
+    "ids": [
+     "-HZYkMAmbKk",
+     "-KUWsbvabgU",
+     "0lux2uwrQu4",
+     "1l9U8ELR1ug",
+     "3FByYAPquDg",
+     "3lNmT3_aa7Q",
+     "7uZjFkkl-mc",
+     "8y-t9-gNYOk",
+     "HLHlFmSztsY",
+     "KkSIysk8l60",
+     "NFRJ_6uAI6o",
+     "Qw51wDq_dqU",
+     "SEFljootwPg",
+     "Ta5uNDQf5BY",
+     "WuGF-TpOrPs",
+     "aeoZARjR8iE",
+     "ljQl9C8EwAU",
+     "nnMsCzbUg8U",
+     "riORVn66U10",
+     "t1RIe7ow2es"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "bomber crashes",
+   "verdict": "rhetoric",
+   "why": "A single news event with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 3,
+    "span": "2026-06 → 2026-09",
+    "examples": [
+     "8 dead after Air Force B-52 bomber crashes shortly after takeoff in California",
+     "8 Dead After B-52 Bomber Crashes; World Cup Goalkeeper Goes Viral. What You Need To Know - June 16",
+     "Eight dead after B-52 bomber crashes at California military base"
+    ],
+    "ids": [
+     "1PIxU2PfTYE",
+     "2F0QmYb-DtU",
+     "PtbPl7f_6JI",
+     "Rdqv306_Gls",
+     "Tu_25vYBLl8",
+     "X6lf7m39MIU",
+     "jLue4FpOCow",
+     "rzh0ER96_nU",
+     "s2JvIsmgbv0",
+     "uKbBrGIelkQ",
+     "xYBKo2RlufY"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "mistakes kill",
+   "verdict": "rhetoric",
+   "why": "Listicle hook spanning unrelated topics with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 10,
+    "months": 8,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "Avoid the Top Trading Mistakes That Kill Your Portfolio",
+     "“Only 30% of Family Businesses Survive” — 10 Succession Mistakes That Kill Legacies",
+     "3 Mistakes That Kill Black Seed Oil Results"
+    ],
+    "ids": [
+     "4swDsq05-_o",
+     "6iYLwVZXnGQ",
+     "6y6lUKQjfos",
+     "EqRu7Gxg86E",
+     "OMKYYQNLXRQ",
+     "XssF2oC6V5I",
+     "cVmhezmBd5Q",
+     "puVRYNE-yyQ",
+     "rTYQAHWMufU",
+     "s2Fqek-Ho0c"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "win elections",
+   "verdict": "rhetoric",
+   "why": "Generic political subject across unrelated contexts, no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Should Politicians Shift Their Focus In Order To Win Elections? | Andrew Schulz",
+     "Stephen A. Smith: Democrats need to resonate better or they won’t win elections",
+     "Ethiopia's Incumbent Leader Expected to Win Elections"
+    ],
+    "ids": [
+     "21PF7FF_vU4",
+     "6-HUJQVlJEY",
+     "DIJQx1jh_i0",
+     "Gpg53h4mNLs",
+     "OTkXli-tAMs",
+     "VKKAAYZOUFU"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "end date",
+   "verdict": "duplicate",
+   "why": "Crypto bull-run end-date predictions restate the tracked crypto deadline narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 6,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "BITCOIN BULL RUN END DATE!!! Must See BTC Prediction",
+     "Act Now! The 2024 Crypto Bullrun Could End On THIS Date!",
+     "The Crypto Bull Run Will End On This Date"
+    ],
+    "ids": [
+     "0IpPOyEJlzc",
+     "9WQ5bA0eOPA",
+     "EPuseoGD3I8",
+     "K-BjskdBrYA",
+     "MtwqNU9ISnQ",
+     "UHki8ZWHNGQ",
+     "xcRNR3c2EI0",
+     "yzFjL0JvsAg"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "truth coffee",
+   "verdict": "rhetoric",
+   "why": "'Truth about coffee' is a curiosity hook; titles don't share one directional claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 10,
+    "span": "2022-04 → 2026-09",
+    "examples": [
+     "The Bitter Truth About COFFEE (Should You QUIT?!)",
+     "The UGLY TRUTH About Coffee’s Effects On Your Body (Must Watch) #shorts",
+     "The Surprising and Complete Truth About Coffee"
+    ],
+    "ids": [
+     "9tFpoBtEsMA",
+     "E4XADJ36vbY",
+     "EejAg14fCGs",
+     "Lqmy5Db0NrE",
+     "ObhVPxWX2hI",
+     "SPzG_o1QYOw",
+     "aB2B89HRCX8",
+     "c4gBttCD-z8",
+     "fRTzOcnd2Tw",
+     "sSZ2_tNumEM"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "must stand",
+   "verdict": "rhetoric",
+   "why": "Common phrasing across unrelated subjects, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2022-03 → 2026-09",
+    "examples": [
+     "You Must Stand Up and Fight!  Dr. Mandell",
+     "Biden tells UN world must stand up to Russia's “naked aggression” in Ukraine",
+     "Federalized Guard troops can stay in Illinois, but must stand down, for now, judge rules | NewsNatio"
+    ],
+    "ids": [
+     "-Z5rpD9EfXA",
+     "3lpHnkKF0OE",
+     "MR8T-qtjQSo",
+     "QdH60lqSlSc",
+     "_tOMyFkpYB0",
+     "f2A0-lAu2Is"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "lawyer explains",
+   "verdict": "rhetoric",
+   "why": "Authority-format label, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "What Happens When You Miss a Mortgage Payment? | Real Estate Lawyer Explains Mortgage Default",
+     "UFO Lawyer Explains SHOCKING Challenges of UFO Disclosure | Danny Sheehan",
+     "Birthright citizenship in Supreme Court: Immigration lawyer explains | NewsNation Live"
+    ],
+    "ids": [
+     "BxYlI2B0EZ0",
+     "EkL753rN0fA",
+     "TQnKYfw9sXM",
+     "in0Jx5bK3ZA",
+     "oqV-3MyW0Jg"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "isn't willpower",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that overeating/weight gain is driven by physiology, not willpower.",
+   "claim_name": "The \"it's not willpower, it's your biology\" story",
+   "claim": "Cravings, overeating and weight gain are driven by metabolic and hormonal biology rather than personal willpower, so the remedy is fixing physiology rather than trying harder.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "People fail at weight loss and blame themselves",
+    "cause": "Metabolic/hormonal dysfunction, not weak willpower",
+    "outcome": "Address the underlying biology to stop cravings and lose weight",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-11 → 2026-08",
+    "examples": [
+     "Recovery Isn't About Willpower, It's About This",
+     "The loop of constantly eating & snacking isn't Willpower or Boredom. What causes it. #foodcravings",
+     "Weight Loss Isn't Willpower. #metabolichealth #glp1"
+    ],
+    "ids": [
+     "3soHRsHXlik",
+     "ORTlEv8g2Os",
+     "j05_lHNNXQU",
+     "tdAdCGMOHtg",
+     "u41AAOOLF6o"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "win super bowl",
+   "verdict": "rhetoric",
+   "why": "Unrelated titles about predictions, promotions and news; no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "“Coming For the Throne” - PBD Predicts Who Will Win Super Bowl LVIII",
+     "Red Cross blood donors could win Super Bowl tickets",
+     "Seahawks Win Super Bowl; China to Curb US Treasury Exposure | Bloomberg Daybreak: US Edition"
+    ],
+    "ids": [
+     "-9X4mM_l79A",
+     "1oYSEEiq7cU",
+     "FL-mPN9GibU",
+     "LmAn9jwwyHQ",
+     "nGvPCiffo50"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "year-end rally",
+   "verdict": "narrative",
+   "why": "Recurring forecast that markets will rally into year-end — a dated, falsifiable claim.",
+   "claim_name": "The \"year-end rally is coming\" story",
+   "claim": "Markets (equities and crypto) will bottom and stage a rally into the end of the year, making the autumn dip a buying opportunity.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Investors fear further downside after an autumn selloff",
+    "cause": "Seasonal flows, positive catalysts and positioning",
+    "outcome": "Buy ahead of a rally into December",
+    "clock": "End of calendar year"
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2024-09 → 2026-09",
+    "examples": [
+     "The crypto market has several positive risk catalysts in place for a year-end rally, says analyst",
+     "Yardeni: Market May See October Bottom Setting Up Year-End Rally",
+     "Hopes for Year-End Rally Grow, Moore Threads Chips Unveiled | Bloomberg Daybreak: Asia Edition"
+    ],
+    "ids": [
+     "-Q6TvpiGIYg",
+     "BV0y2S9Pt8o",
+     "OX3qj1FEfEw",
+     "sSsW_GW_o5E",
+     "wGCSx9Pu8to"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "end filibuster",
+   "verdict": "rhetoric",
+   "why": "A recurring political subject across unrelated news items, with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2021-05 → 2026-03",
+    "examples": [
+     "Stimulus Check Update | End To Filibuster | Cancel Student Debt | Rental Assistance - May 8",
+     "Speaker Johnson dodges question about Trump's request to end filibuster",
+     "Trump Tells GOP Senators It's a Mistake Not to End Filibuster"
+    ],
+    "ids": [
+     "0-1rc5sw5HU",
+     "KvCw2b9gs48",
+     "MkPBRzP8C8c",
+     "UqPaVXMUFyY",
+     "pLgvNVXyP_Y"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "apple cider vinegar really",
+   "verdict": "narrative",
+   "why": "Titles converge on whether/how ACV delivers health effects such as lowering blood sugar.",
+   "claim_name": "The \"apple cider vinegar does something real to your body\" story",
+   "claim": "Apple cider vinegar has genuine measurable effects on the body, notably blunting blood sugar spikes, and its popular benefits need to be separated from hype.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "ACV is a hyped home remedy of unclear value",
+    "cause": "Its acetic acid affects glucose and digestion",
+    "outcome": "Use vinegar correctly for blood sugar control",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2024-04 → 2026-09",
+    "examples": [
+     "Let's break down where the benefits of apple cider vinegar really come from. You may be surprised! 🍎",
+     "“Apple Cider Vinegar: What It Really Does to Your Body 🍎⚠️”",
+     "Can Vinegar Really Lower Blood Sugar? #BloodSugarControl #VinegarHack #GlycemicControl #Diabetes"
+    ],
+    "ids": [
+     "8MbwQho9yWw",
+     "RLTlnXC63Xc",
+     "f3eDhop-L0Q",
+     "npBpaweJB-U",
+     "vgDzujV__f0"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "swaps actually",
+   "verdict": "rhetoric",
+   "why": "A listicle format ('swaps that actually work') spanning unrelated topics, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2026-04 → 2026-09",
+    "examples": [
+     "These Small Kitchen Swaps Actually Stick #sustainableliving #healthyhabits",
+     "The Whole Foods swaps I actually buy on my anti-inflammatory diet 🌿",
+     "8 Diabetes Smart Swaps That ACTUALLY Control Blood Sugar | Tested & Proven 2026"
+    ],
+    "ids": [
+     "IRfpV-RvDBI",
+     "PrrYe-40hck",
+     "WP3X3w7I2sc",
+     "d4E2yB176Vg",
+     "dl5znqopcJc"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "proven methods",
+   "verdict": "rhetoric",
+   "why": "Generic listicle packaging across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2017-09 → 2024-08",
+    "examples": [
+     "How To Make Passive Income (9 Proven Methods)",
+     "Get More Agent-to-Agent Referrals with These Proven Methods",
+     "Reduce Alzheimer's Risk | Top 5 Proven Methods | E Healthy Info"
+    ],
+    "ids": [
+     "GkvXLu9Cpmk",
+     "SqhIZdH27Xo",
+     "d_ng120CBeU",
+     "ssubXZe5xsE",
+     "wSRxpX62GfE"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "truth cortisol",
+   "verdict": "narrative",
+   "why": "Titles share the claim that cortisol dysregulation drives belly fat and other symptoms and can be fixed.",
+   "claim_name": "The \"cortisol is behind your belly fat and symptoms\" story",
+   "claim": "Chronically elevated cortisol causes stubborn belly fat, facial puffiness and hormonal problems, and lowering it with specific steps or supplements reverses them.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Stubborn belly fat, puffiness and fatigue that diet doesn't fix",
+    "cause": "Chronically elevated stress hormone cortisol",
+    "outcome": "Lower cortisol via lifestyle changes or supplements to reverse symptoms",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-01 → 2026-08",
+    "examples": [
+     "(LIVE) Why You're Struggling to Lose Belly Fat: The Truth About Cortisol vs. Insulin Bellies",
+     "Ashwagandha | The Truth About Cortisol & Testosterone",
+     "The Truth About Cortisol Face and The Exact Steps To Fix It"
+    ],
+    "ids": [
+     "0Txm368XgFU",
+     "1fA68NQb2FI",
+     "7xJRhK-04k8",
+     "dOWkW9apwBs",
+     "oSi8h8XKyzw"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "truth collagen",
+   "verdict": "rhetoric",
+   "why": "The titles are myth-busting question formats pointing in no single direction about collagen's effects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2021-06 → 2026-09",
+    "examples": [
+     "THE TRUTH ABOUT COLLAGEN | What does the research say?",
+     "Myth vs Truth: Does Collagen Really Help Your Skin?#natural #skincare #healthtips",
+     "Does Collagen Really Make You Look Younger? 🤔 | The Truth About Collagen"
+    ],
+    "ids": [
+     "3YLKnLHzn3c",
+     "V-X1DZ353UI",
+     "aeaucVZjMHY",
+     "dEJimM8cdOY",
+     "zwnBRfDRsGs"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "uncover truth",
+   "verdict": "rhetoric",
+   "why": "A reveal hook attached to unrelated subjects, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Trump's Potential Presidency: Will He Uncover the Truth About Past Assassinations?",
+     "Can You Get Pregnant Right After Your Period? Uncover the Truth!",
+     "A Little Digging Will Uncover the Truth Behind Trump's Words"
+    ],
+    "ids": [
+     "JEu-bHDLrzk",
+     "W50ZMa9Ctzo",
+     "o7YoTSeR1j4",
+     "s5pDEUS_PS4",
+     "tFVPMv1pFgs"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "proven method",
+   "verdict": "rhetoric",
+   "why": "Pure sales language spanning affiliate marketing, hair growth and weight loss.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2018-11 → 2026-09",
+    "examples": [
+     "Affiliate Marketing For Beginners - Master This Proven Method",
+     "5 Times Your Hair Growth with Castor  Oil😊Proven method that works",
+     "Unveiling the Ultimate Weight Loss Secret: A Proven Method to Lose Weight And Keep It Off Forever"
+    ],
+    "ids": [
+     "IS8X8A3uxeU",
+     "PNoUABcdmVE",
+     "XQj7P-0rht8",
+     "tNIrbebIRKg",
+     "ybXsBygfwys"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "events coming",
+   "verdict": "rhetoric",
+   "why": "Generic teaser phrasing across tarot, crypto and event promos, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2022-09 → 2026-09",
+    "examples": [
+     "ARIES:  Big Turn of Events, and it’s Coming Fast!  Oct. 2022  ♈️",
+     "CRYPTO NEWS: Bitcoin at $87,000, all the events coming. XRP new ATH in 2026, Injective",
+     "Will you be at any of these events coming up?! Let us know! Comment where you'll be seeing Dr. Judy!"
+    ],
+    "ids": [
+     "AduMRwlazH8",
+     "DnEqWnepMQU",
+     "Z3FcsaHYI-0",
+     "cfRDmw10FCU",
+     "yEByQTYWASM"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "really blame",
+   "verdict": "rhetoric",
+   "why": "A question framing applied to wholly unrelated culprits and topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "The Alarming Truth About Missing Kids and Who’s Really to Blame",
+     "Toronto Real Estate Sales Plummet: Trumps Tariffs Really to Blame?",
+     "Is Fructose Really To Blame?  What You Should Know"
+    ],
+    "ids": [
+     "19UbfaXENrE",
+     "OP-rdlEzI2I",
+     "ZADL8ffLZk4",
+     "mv1xja7dZvg",
+     "uOD_y8goXyE"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "milk really",
+   "verdict": "rhetoric",
+   "why": "Assorted milk myth questions (height, spice, health) with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2023-08 → 2026-09",
+    "examples": [
+     "Does Milk Really Do a Body Good? | Julia Zumpano, RD",
+     "🥛Does milk really help with spicy food?",
+     "Does Milk Really Make You Taller? | Myth vs Science"
+    ],
+    "ids": [
+     "G75WrMAMXbM",
+     "HYaPNWYOY-w",
+     "RyBL_Wech2I",
+     "WXLnl4Qj4rM",
+     "sxlKaGn5fP8"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "sent kill",
+   "verdict": "rhetoric",
+   "why": "A dramatic story subject, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "He Was Sent to Kill Him But God's Word Changed Everything",
+     "North Korean Defector Confronts Assassins Sent to Kill Him | Hyun-Seung Lee",
+     "“I Was Sent Here to Kill You” — Tim Tebow Tells His Father’s Machete Story"
+    ],
+    "ids": [
+     "5Tzqd8rRSXg",
+     "9_86fUIa4hs",
+     "nuApZ9HYuzg",
+     "rC1Mp2TzgrY",
+     "y9U71v1Ubm4"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "season coming",
+   "verdict": "narrative",
+   "why": "The titles converge on a dated, falsifiable prediction that altcoins are about to enter an outperformance phase.",
+   "claim_name": "The \"altcoin season is coming\" story",
+   "claim": "Altcoins are on the verge of a rotation in which they sharply outperform Bitcoin, so buying alts now ahead of the signal captures the move.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Altcoin holders are waiting through a long stretch of Bitcoin dominance and flat alt prices",
+    "cause": "Capital rotation cycles: liquidity moves from Bitcoin into Ethereum and then into smaller alts",
+    "outcome": "An imminent altseason rally; viewers should position in altcoins before the signal confirms",
+    "clock": "\"coming soon\" — repeatedly set for the next weeks or the current cycle year"
+   },
+   "evidence": {
+    "videos": 13,
+    "channels": 7,
+    "months": 10,
+    "span": "2021-11 → 2026-09",
+    "examples": [
+     "ALTCOIN SEASON COMING & ETHEREUM ANALYSIS!!! ETHEREUM PRICE PREDICTION 2021 & ETHEREUM NEWS TODAY",
+     "ALTCOIN SEASON COMING SOON? (New Signal)!! Ethereum Price Prediction 2022, Ethereum News Today (ETH)",
+     "ALTCOIN SEASON Coming Soon (Watch THIS)!! Bitcoin News Today & Ethereum Price Prediction (BTC & ETH)"
+    ],
+    "ids": [
+     "6hHYIHmhFBY",
+     "893cikwwjdw",
+     "AUQvWMxn1cI",
+     "IPQFEmc-1vs",
+     "KfNT5o_lABM",
+     "MPWPlIWgCdU",
+     "QfQxKXwov04",
+     "R1reXwc7XuQ",
+     "ecVXe8Nv1m4",
+     "es5mZa7qqY0",
+     "g7rme76xWHo",
+     "gW2Hx3eBn1A",
+     "nYtPzRtjzw8"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "crash panic",
+   "verdict": "duplicate",
+   "why": "Titles are panic-selling crash calls for housing and metals, already covered by existing crash trackers.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 7,
+    "months": 10,
+    "span": "2019-03 → 2026-09",
+    "examples": [
+     "Gold & Silver CRASH! Panic Sell?",
+     "HOUSING CRASH: THERE WILL BE PANIC SELLING! Housing Market Crash OF 2023! - Stock Market Gambler",
+     "HOUSING CRASH: PANIC SELLING! 50% PRICE DROP! Housing Market Crash 2023- Stock Market Gambler"
+    ],
+    "ids": [
+     "0zoKx3QA4JY",
+     "2KgflegSJFM",
+     "2Mh2oxokpzI",
+     "2uSl2aDsXgA",
+     "4GQ7Oti8PuY",
+     "FEKaDZW2LTM",
+     "N5VAuYgx3X8",
+     "PiDHWL4elgc",
+     "Qt0lKcZvAQQ",
+     "VuCXKjxYkKw",
+     "eXmbJAOLGMA",
+     "empuP22n2hA",
+     "tONYihhJwro"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "comedy show",
+   "verdict": "rhetoric",
+   "why": "A format/subject label with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 6,
+    "span": "2025-09 → 2026-09",
+    "examples": [
+     "Comedian and audience come together to save one man’s life during comedy show",
+     "When Ice Cream Turns Into a Comedy Show! 🍦😂 | Funny Moments #shorts #ytshorts #shortsfeed",
+     "Will Forte talks sketch comedy show he’s making with his mom and her best friend"
+    ],
+    "ids": [
+     "0Q3pgBhZERk",
+     "1ME7CvWxGdM",
+     "7xtauCeNnKg",
+     "B9e7BclZ3I4",
+     "KMy4X7LG3ck",
+     "WE2l0lJyd-w",
+     "WoHYP-G3g20",
+     "X4OWzZPod5E",
+     "ZFSxzN-o0cc",
+     "dwXS5jNjKwM",
+     "qMdubM1EahM",
+     "tJ3S8pFaSVU",
+     "wO9G7ZMQOLY",
+     "xa-jmBp_XW4"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "truth cholesterol",
+   "verdict": "narrative",
+   "why": "Titles share the contrarian claim that conventional cholesterol advice is wrong.",
+   "claim_name": "The \"truth about cholesterol\" story",
+   "claim": "Mainstream guidance on cholesterol and heart disease is misleading; dietary cholesterol and LDL are not the real drivers of heart disease.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "People fear cholesterol and take statins based on bad advice",
+    "cause": "Outdated or industry-shaped dietary and medical guidelines",
+    "outcome": "Reject the cholesterol myth and focus on other markers of heart risk",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 7,
+    "span": "2024-10 → 2026-07",
+    "examples": [
+     "The Truth About Cholesterol",
+     "This is the Truth about Cholesterol",
+     "Are you falling for these common cholesterol myths? | Truth about cholesterol explained"
+    ],
+    "ids": [
+     "I-o2YmkkWn0",
+     "P-DNJj2bRQk",
+     "gEgeSux-HE8",
+     "lTx-_TzfCTo",
+     "oo2bwchqGTo",
+     "vSR8tyV_xv8",
+     "vpHwKkyjSQE"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "must protect",
+   "verdict": "rhetoric",
+   "why": "Generic exhortation spanning unrelated subjects with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2020-10 → 2026-09",
+    "examples": [
+     "Gad Saad - You Must Protect Yourself From Infection By Bad Ideas",
+     "Liver Function Explained: And why you MUST Protect this Organ",
+     "Leaders Must Protect Their Teams Now Before the 2030s Downturn"
+    ],
+    "ids": [
+     "Cv8NJhTpI7U",
+     "IZV_Y-rumYQ",
+     "JOIKtDzwJOU",
+     "WiJOW_8KCH8",
+     "lQNJVAhmM-s",
+     "rRkqwxovSF0",
+     "tkklnSD1LPU"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "highs coming",
+   "verdict": "rhetoric",
+   "why": "Speculative price-hype phrasing across assets and years without one shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2019-01 → 2026-08",
+    "examples": [
+     "Bitcoin & Crypto Price Predictions 2019 - New All Time Highs Coming Soon ?",
+     "(MARKET NEWS) NEW ALL TIME HIGHS COMING SOON?!?",
+     "Bitcoin Bears WRECKED! (New 2023 Highs Coming?)"
+    ],
+    "ids": [
+     "-EFvS1egszo",
+     "JQFHyviunHQ",
+     "Odus3NvxFtQ",
+     "d4bEcBx_0So",
+     "lMCqX-U4sNg",
+     "rXf7pJW_U1Q",
+     "s2y5Jk_QacY"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "deal end",
+   "verdict": "rhetoric",
+   "why": "News-subject phrasing about assorted negotiations, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 56,
+    "channels": 14,
+    "months": 15,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "Hollywood writers, studios reach tentative deal to end strike",
+     "Trump threatens 'severe tariffs' on Russia if no deal to end war within 50 days",
+     "Trump threatens 100% tariffs on Russia if no deal to end Ukraine war in 50 days"
+    ],
+    "ids": [
+     "-4cGrJk2hy0",
+     "31EJU7drxbA",
+     "350BytgLT-k",
+     "3m1_-Xk3kdw",
+     "5CYDqBnHq24",
+     "6hibTd_cDTg",
+     "6l1nBEL6-20",
+     "7bd8JI1VnrI",
+     "7uPU7dlEUjo",
+     "8VgUi4bApNA",
+     "BW7fTvu6m70",
+     "CVNwtf7awoU",
+     "ClyYQO_5sVA",
+     "FJFKgYQvAxI",
+     "GIHE_dO5yOE",
+     "HK8d0tz_gbA",
+     "Ic6iblrktmo",
+     "JJQLoUnw8AE",
+     "KD0aiihPAn0",
+     "KMFz39U0ZPo"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "wins democratic",
+   "verdict": "rhetoric",
+   "why": "Election-result reporting format, not a contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 23,
+    "channels": 5,
+    "months": 6,
+    "span": "2026-03 → 2026-09",
+    "examples": [
+     "Juliana Stratton wins Democratic Senate primary in Illinois, NBC News projects",
+     "Roy Cooper wins Democratic North Carolina Senate primary",
+     "Keisha Lance Bottoms wins Democratic primary for Georgia governor, NBC News projects"
+    ],
+    "ids": [
+     "-MkNxxlgVmw",
+     "-baG9UvPvLQ",
+     "2U21IWHEWFk",
+     "6FHDbITC74Q",
+     "6Rgwf9vhGIM",
+     "96-ghmzMElg",
+     "AIrTk5ETKS4",
+     "Aro0e7cn1_s",
+     "E4K-i5ie0ss",
+     "GYBZdeEfyFs",
+     "GcKWjCJQNTg",
+     "HOO9EkEvGyk",
+     "HnKDKEj6CBE",
+     "Om1T9yq9EdM",
+     "PvyHNAXpy24",
+     "WiSFPNHrf3A",
+     "YihyU21NGHY",
+     "aMcVltmCfNQ",
+     "bCyuFwZLZAI",
+     "jQryrEok6FM"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "revenue beat",
+   "verdict": "rhetoric",
+   "why": "Earnings-report subject label with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 6,
+    "span": "2020-02 → 2026-09",
+    "examples": [
+     "Why Lyft's Revenue Beat Isn't Enough to Wow Investors",
+     "Meta Q1 earnings & revenue beat Wall Street expectations",
+     "Meta Says Revenue to Beat Estimates, Supporting AI Spending"
+    ],
+    "ids": [
+     "0mzd1XVSovg",
+     "8OzXYpxUocY",
+     "BsiiAWklBKk",
+     "GyhxS7DQ084",
+     "_JGAMDVRIQs",
+     "juZaD80HJZQ",
+     "qMiuqTXoWEs",
+     "rHc0UYh056M",
+     "yfTMqtpB48Y"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "knew coming",
+   "verdict": "rhetoric",
+   "why": "Hindsight-framing hook spanning unrelated subjects with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 5,
+    "span": "2022-11 → 2026-09",
+    "examples": [
+     "We Knew This Was Coming | Prep Now | Thanksgiving WARNING",
+     "MASSIVE Social Security Changes…We Knew It Was Coming!",
+     "\"We Knew 9/11 Was Coming\" – Whistleblower REVEALS Al-Qaeda Intel IGNORED By Bush Administration"
+    ],
+    "ids": [
+     "BRgjXaLlXtY",
+     "FuLm-YAr7yg",
+     "MZkhh53KQ1s",
+     "RtWxO6tdOFI",
+     "YsCnHEPai8E",
+     "c3zqcd-bDmE",
+     "h6KChEHHO1g"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "coming due",
+   "verdict": "rhetoric",
+   "why": "Generic phrase across stocks, Fed policy and IPO rules with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2021-08 → 2026-09",
+    "examples": [
+     "AMC: THIS IS COMING DUE",
+     "Fed Holds Rates, Signals Higher Prices are Coming Due to Tariffs | Bloomberg Daybreak: Asia Edition",
+     "Massive Crack coming due to SEBI IPO Lockin Rules"
+    ],
+    "ids": [
+     "84o-y-C48FA",
+     "F2tRlBVX0lY",
+     "Kw6NnbqRNX8",
+     "aqC8xUUevmA",
+     "d-aeO_Xx_rw",
+     "zV_E2X5SXMs"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "world cup win",
+   "verdict": "rhetoric",
+   "why": "Sports event coverage subject, no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 6,
+    "months": 8,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Las Vegas strip packed with fans as Golden Knights celebrate Stanley Cup win",
+     "\"Systemic chauvinism\": Spain's deputy PM denounces Rubiales as kiss scandal taints World Cup win",
+     "Saskatchewan Roughriders erupt in celebration as fans flood the field after Grey Cup win"
+    ],
+    "ids": [
+     "0gsjI4_vTxo",
+     "3wPUQ-IGMM0",
+     "6sdQ-sQHIXs",
+     "Cl-I0gbcUNI",
+     "I5gxeNJo53o",
+     "LbjRC2IW7pI",
+     "Oh-OAAMYcvo",
+     "SHwi8slhMHk",
+     "UtRXp4Xsds8",
+     "X_tp6O-B8Rc",
+     "Z7RfU9O0qJ4",
+     "iSZv8PBTDT8",
+     "lax65BMTDIE",
+     "mcCyfK-sAG8",
+     "naKt0jAujyU",
+     "o5zdPH05Hr4",
+     "q1QrHx15Q0A",
+     "y6Sq49kjZsQ"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "actually safe",
+   "verdict": "rhetoric",
+   "why": "A question format applied to unrelated products; no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 16,
+    "months": 6,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Only 2% Know This! 7 Canned Sardine Brands to AVOID at All Costs — and 2 That Are Actually Safe",
+     "Charcoal toothpaste is trending everywhere… but is it actually safe for your teeth?",
+     "Are GLP-1s actually safe for Type 1 Diabetics? #t1d #diabetes #doctor"
+    ],
+    "ids": [
+     "3yGHQT1cBiE",
+     "8PI0Fhr0T7w",
+     "9uTE17mj8Xo",
+     "EUMNb89fIvo",
+     "KqxbYUrcUw8",
+     "L7LhrXVis7Q",
+     "RmS5s6Wbin4",
+     "SNCMmuArE5k",
+     "T7jA0IBkzrY",
+     "XCBCNkALhsQ",
+     "d4C6o6JrHvM",
+     "mEIuqnW4CXo",
+     "opUxLFVoUfA",
+     "qMui4rcZ0cw",
+     "tK05s2G5ZWU",
+     "tbQ7ESYyQkM",
+     "yJX-Qj1iXNU"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "quietly replacing",
+   "verdict": "rhetoric",
+   "why": "Stock headline construction spanning food additives and programming languages; no one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 11,
+    "months": 4,
+    "span": "2026-06 → 2026-09",
+    "examples": [
+     "The Hidden Ingredients Quietly Replacing Real Food",
+     "Rust + Mojo Are Quietly Replacing Python in AI",
+     "Mojo is Quietly Replacing Python in AI"
+    ],
+    "ids": [
+     "3ZFXzpY_6NA",
+     "6EM4FB85slI",
+     "G6dRdO1I9WA",
+     "G81zHDOUyDI",
+     "GgdqMU-VKvE",
+     "KvyltxmhEOY",
+     "NJpP5Z26g0w",
+     "SMED9X6QALw",
+     "VATnNHPjVcc",
+     "fOj8TgAdDGE",
+     "i376dDYAwN0",
+     "lMbKSLq-kpw",
+     "zuDmoLI1dZc"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "really cost",
+   "verdict": "rhetoric",
+   "why": "Cost-reveal title format across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 11,
+    "months": 8,
+    "span": "2018-10 → 2026-09",
+    "examples": [
+     "Amazon FBA Private Label - How Much Does It Really Cost?",
+     "The question on everyone's mind: How much does it REALLY cost to buy a home? #shortsfeed #shorts",
+     "How much did the Ambani wedding REALLY cost? 🤵👰💸"
+    ],
+    "ids": [
+     "0xtgzbuZhTg",
+     "1QeMWT9iW6k",
+     "2Kr9Ru421NA",
+     "5yJJVwywzlg",
+     "GJXQFwkvPsg",
+     "IuBkz2nUKDI",
+     "OIzXAFEhafs",
+     "TLu0TlQs0Q0",
+     "_ok5W04AQRw",
+     "eNJ__tswTSY",
+     "yKfnl-ujLXY"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "ban burqa",
+   "verdict": "narrative",
+   "why": "Titles share a claim that Western governments are moving to prohibit face coverings.",
+   "claim_name": "The \"Western governments are banning the burqa\" story",
+   "claim": "Political leaders in Europe and Australia are enacting or pushing bans on burqas and face coverings in schools and public spaces, marking a broader turn against Islamic veiling in the West.",
+   "industry": "Politics & geopolitics",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Face coverings in public institutions are seen as incompatible with national norms and security",
+    "cause": "Immigration and religious accommodation policies that permitted veiling",
+    "outcome": "Legal bans on burqas and face coverings spreading across Western countries",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 2,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "2 MINS AGO: Pauline Hanson To BAN Burqa And All Face Coverings",
+     "LIVE: Meloni's Big Ban On Burqa; Italy's Unprecedented Plan For Schools Shocks Muslims | Vantage",
+     "Breaking: Ban on Burqa and Hijab in Schools | Italian PM Meloni Announces Major Decision"
+    ],
+    "ids": [
+     "8fYz9mH_Grg",
+     "ELo0Q89TxoA",
+     "HfJZn0OuS0w",
+     "Kv1A6Nhnql4",
+     "STFlSx9Gh-U",
+     "TnfUIVllhgk",
+     "_tJas89a9d0",
+     "igJk9kMZDZc",
+     "r5uyiM1rjrg",
+     "tChK1htJmK0"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
+  },
+  {
+   "phrase": "ratio collapsing",
+   "verdict": "duplicate",
+   "why": "Gold-silver ratio collapse is the same precious-metals repricing claim already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "the-gold-and-silver-crash",
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 3,
+    "span": "2025-12 → 2026-09",
+    "examples": [
+     "The Gold to Silver Ratio is COLLAPSING...",
+     "The Gold-Silver Ratio Is Collapsing — Andy Schectman Warns This Is Serious",
+     "TRUMP JUST CHANGED THE GAME: GOLD-TO-SILVER RATIO COLLAPSING TOWARD 9-TO-1? | KEVIN WASH"
+    ],
+    "ids": [
+     "-3QbF9Dlktk",
+     "FU9QlsH3eeE",
+     "G8wTWRDHyoY",
+     "IYgrMDlGuoM",
+     "Rufqz-9M_GU",
+     "UM5qUS3_lb8",
+     "VFokadqKUYY",
+     "nw7hnrFh8wk"
+    ]
+   },
+   "first_read": "2026-10-01",
+   "last_read": "2026-10-01"
   }
  ]
 }
