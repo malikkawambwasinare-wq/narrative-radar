@@ -1,0 +1,132 @@
+{
+ "note": "How the Director builds a set in each category. The Director classifies the request first, then follows that category's method. Edit these in plain words: they are passed to the model as written. Spec: briefs/director/SPEC.md.",
+ "updated": "2026-09-30",
+ "playbooks": [
+  {
+   "id": "health",
+   "name": "Health",
+   "industries": ["health-biotech"],
+   "method": [
+    "Start from the claim, not the topic: what is said to cause or cure what.",
+    "Name the mechanism the claim relies on (inflammation, insulin, the gut, a hormone).",
+    "Trace back: who first made this claim on YouTube, and what they cited.",
+    "Mark the turns: a new villain or a new cure, a study that changed the conversation, a backlash.",
+    "Find the sides by evidence level: the strong claim, the moderate reading, the skeptic."
+   ],
+   "origin": "The earliest video that states the cause-and-cure claim itself, ideally from the clinician, researcher or author who popularised it.",
+   "turns": "A new villain or remedy, a study or trial that shifted the conversation, a public backlash or reversal.",
+   "sides": "Usually: the claim at full strength; a moderate 'it matters, but less than claimed'; the skeptic who points to human trials.",
+   "prefer": ["clinicians and researchers speaking first-hand", "videos that name and show the study", "trial results in humans over mechanism in mice"],
+   "red_flags": ["one cause for every illness", "a supplement, programme or book sold at the end", "blood markers presented as if they prove you'll feel better", "'doctors don't want you to know'"],
+   "search_hints": ["the claim in plain words", "the mechanism word", "'study' or 'evidence' for the skeptic side"]
+  },
+  {
+   "id": "money",
+   "name": "Money & markets",
+   "industries": ["economy-markets"],
+   "method": [
+    "Start from the prediction: what is said to happen, to which price or market, and by when.",
+    "Trace back to the first call of this kind and what it rested on.",
+    "Mark the turns: each time the deadline moved, the trigger changed, or the event the claim predicted happened or didn't.",
+    "Find the sides by forecast: the bull and the bear, with their stated deadlines.",
+    "Note every deadline that has already passed, and whether it landed."
+   ],
+   "origin": "The earliest video that makes the prediction in recognisable form, with its original deadline if one was given.",
+   "turns": "A new trigger for the same conclusion, a deadline pushed back, the predicted event arriving or failing to.",
+   "sides": "Usually opposite forecasts on the same clock: crash vs correction, cycle intact vs broken, buy vs wait.",
+   "prefer": ["analysts and fund managers on the record", "videos that state a number and a date", "first-hand interviews over reaction channels"],
+   "red_flags": ["no date on the prediction", "a course, signal group or fund pitched at the end", "a chart with the inconvenient years left off", "'this time is different' with nothing to check it against"],
+   "search_hints": ["the prediction with a year", "'crash' or 'bottom' or 'cycle' wording", "the named analyst"]
+  },
+  {
+   "id": "tech",
+   "name": "Tech & AI",
+   "industries": ["ai-technology", "internet-creator-economy", "gaming"],
+   "method": [
+    "Start from the promise: what a technology is said to do, to whom, and how soon.",
+    "Trace back to the announcement, paper or demo the promise came from.",
+    "Mark the turns: each release, benchmark or failure that changed what people claimed.",
+    "Find the sides: the builders, the skeptics, and the people affected.",
+    "Separate what was shown working from what was only promised."
+   ],
+   "origin": "The announcement, paper, demo or keynote the claim traces back to, or the first creator to state it.",
+   "turns": "A release, a benchmark, a public failure, a price or policy change.",
+   "sides": "Usually: the builders' claim; the skeptic's 'not yet, not like that'; the view of the workers or users it affects.",
+   "prefer": ["the original demo or keynote", "builders explaining their own work", "independent tests over press releases"],
+   "red_flags": ["a demo with no independent test", "'replaces X entirely' with no date", "an affiliate link or course behind the hype"],
+   "search_hints": ["the product or model name", "'demo' or 'announcement'", "'review' or 'tested' for the skeptic side"]
+  },
+  {
+   "id": "world",
+   "name": "Politics & world",
+   "industries": ["politics-geopolitics"],
+   "method": [
+    "Start from the event, then the claim about what it means.",
+    "Trace back to the first reporting of the event, from a source on the ground where possible.",
+    "Mark the turns: new facts, official statements, escalations, reversals.",
+    "Find the sides by interpretation, not by party label: what each side says the event means and what it wants done.",
+    "Keep facts and framings apart; say which is which."
+   ],
+   "origin": "The first reporting of the event, preferring primary footage, official statements and reporters on the ground.",
+   "turns": "A new fact, an official statement, an escalation or a de-escalation, a court or vote result.",
+   "sides": "The main competing interpretations, each represented by its most careful voice rather than its loudest.",
+   "prefer": ["primary footage and official statements", "reporters on the ground", "analysts who state their sources"],
+   "red_flags": ["unverified footage presented as fact", "a headline that the video itself doesn't support", "only one side's officials quoted"],
+   "search_hints": ["the event name and place", "'explained' for context", "named officials or analysts"]
+  },
+  {
+   "id": "climate",
+   "name": "Climate & energy",
+   "industries": ["energy-climate"],
+   "method": [
+    "Start from the claim about energy or climate: what will happen, cost or work.",
+    "Trace back to the report, study or policy the claim came from.",
+    "Mark the turns: new data, new policy, new technology prices.",
+    "Find the sides by what they say should be done, not only by whether they accept the science.",
+    "Prefer videos that show the numbers they rely on."
+   ],
+   "origin": "The report, study or policy announcement behind the claim, or the first creator to make it widely.",
+   "turns": "New data or reports, policy changes, price shifts, a major event.",
+   "sides": "Usually: urgent action; a cost-focused or pragmatic view; the skeptic of a particular technology or policy.",
+   "prefer": ["researchers and engineers first-hand", "videos that show their data source"],
+   "red_flags": ["a cherry-picked year or region", "cost figures with no source", "a product sold as the answer"],
+   "search_hints": ["the technology or policy name", "'report' or 'data'", "'cost' or 'problem' for the skeptic side"]
+  },
+  {
+   "id": "society",
+   "name": "Culture & society",
+   "industries": ["culture-society", "entertainment-media", "sports"],
+   "method": [
+    "Start from the claim about how people live or what is changing.",
+    "Trace back to the moment, study, book or viral video that started the conversation.",
+    "Mark the turns: when the idea went mainstream, the backlash, the counter-evidence.",
+    "Find the sides by experience as well as argument: people living it, people studying it, critics.",
+    "Keep anecdote and evidence apart."
+   ],
+   "origin": "The book, study, interview or viral video that started the conversation.",
+   "turns": "Mainstream adoption, backlash, a study that confirmed or undercut it.",
+   "sides": "Usually: advocates; critics; and the people the claim is about, in their own words.",
+   "prefer": ["people speaking about their own experience", "researchers who cite their data", "the original source over commentary on it"],
+   "red_flags": ["one viral anecdote as proof", "generational blame with no data", "outrage framing in the title the video doesn't support"],
+   "search_hints": ["the claim in plain words", "the book or study name", "'study' for evidence"]
+  },
+  {
+   "id": "general",
+   "name": "General",
+   "industries": ["fringe-unexplained"],
+   "method": [
+    "Find the one claim the request is really about.",
+    "Trace it back to the earliest video that states it.",
+    "Mark the real turns, dated.",
+    "Find the distinct sides, each at its strongest.",
+    "Cut the set and end it."
+   ],
+   "origin": "The earliest video that states the claim.",
+   "turns": "Real changes in the claim, not more videos repeating it.",
+   "sides": "The distinct positions held by more than one channel.",
+   "prefer": ["first-hand sources over commentary"],
+   "red_flags": ["claims that can't be checked", "a product sold at the end"],
+   "search_hints": ["the claim in plain words"]
+  }
+ ]
+}
