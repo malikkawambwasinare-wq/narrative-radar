@@ -48,7 +48,7 @@ NOW = datetime.now(timezone.utc)
 MAX_SEARCHES = 12
 MAX_EDIT_SEARCHES = 2
 MAX_VIDEO_MIN = 60          # soft cap; longer must be chosen on purpose
-SHORT_SECONDS = 70          # Shorts are out of sets (spec, DECIDE 4)
+SHORT_SECONDS = 180         # Shorts (now up to 3 min) are out of sets (spec, DECIDE 4); budget pressure reached for 78s clips
 
 
 def flag(name, default=None):
