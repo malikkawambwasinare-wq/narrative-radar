@@ -579,7 +579,9 @@ def edit(story, instruction):
     sys_p = SPEC_RULES + "\n\n" + pb_text(playbook(story["category"])) + (
         "\n\nYou are editing a set with the person who asked for it. Do what they ask within the rules. "
         "Use candidates from the pool; only use op 'search' if nothing in the pool fits. If a request "
-        "would break a rule (Shorts, a second video from the same channel, ranking by views), say so and offer the nearest thing.")
+        "would break a rule (Shorts, a second video from the same channel, ranking by views), say so and offer the nearest thing. "
+        "Never change the time budget unless the person asks; if their request will not fit, make the closest edit that "
+        "fits, by swapping or trimming, and offer the longer version in your reply.")
     msg = (f"Set: {story['title']} — claim: {story['central_claim']} — budget {story['budget']} min\n\nCurrent set:\n{current}\n\n"
            f"Unused candidates:\n{pool}\n\nThe person says: “{instruction}”")
     r = claude(sys_p, msg, EDIT_SCHEMA, effort="medium", max_tokens=4000)
@@ -595,7 +597,18 @@ def edit(story, instruction):
         pool = "\n".join(card(v) for v in sorted(new.values(), key=lambda v: v["published"]))
         r = claude(sys_p, msg + f"\n\nYou searched and found:\n{pool}\n\nNow make the edit with these.", EDIT_SCHEMA,
                    effort="medium", max_tokens=4000)
-    done = apply_ops(story, [o for o in r["ops"] if o.get("op") != "search"])
+    ops = [o for o in r["ops"] if o.get("op") != "search"]
+    # The time limit is the person's, never the Director's. In the first edit
+    # test it raised a 60-minute set to 95 on its own to fit a new side. A
+    # budget change now stands only when the person's message is about time.
+    asked_time = re.search(r"\d+\s*(m\b|min|minute|hour|hr)|longer|shorter|more time|less time|quick|budget", instruction.lower())
+    if not asked_time and any(o.get("op") == "budget" for o in ops):
+        ops = [o for o in ops if o.get("op") != "budget"]
+        say("kept your time limit; the Director may only change it when you ask")
+    done = apply_ops(story, ops)
+    over = sum(e["minutes"] for e in story["episodes"]) - story["budget"] * 1.1
+    if over > 0:
+        r["reply"] += f" This runs about {round(over)} minutes over your {story['budget']}; say 'make it fit' and I'll trim, or give me a longer time."
     story["version"] = story.get("version", 1) + 1
     story["updated"] = NOW.strftime("%Y-%m-%d")
     story["last_change"] = instruction
