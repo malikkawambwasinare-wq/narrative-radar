@@ -1,6 +1,6 @@
 {
  "id": "the-four-year-cycle-debate",
- "version": 1,
+ "version": 2,
  "title": "The Four-Year Cycle Debate",
  "request": "why people say bitcoin's four-year cycle is dead",
  "category": "money",
@@ -8,7 +8,7 @@
  "story": "After the 2024 halving and the arrival of spot ETFs, a growing number of analysts and YouTubers argue bitcoin no longer follows its old four-year boom-and-bust rhythm, and that the familiar halving-driven top-and-crash map no longer predicts price.",
  "central_claim": "Bitcoin's four-year halving cycle no longer governs its price; the pattern is broken.",
  "not_about": "Not about whether bitcoin is a good investment, not about price targets in general, not about the mechanics of halvings or mining economics, and not about other crypto assets.",
- "budget": 60,
+ "budget": 95,
  "episodes": [
   {
    "key": "origin",
@@ -78,16 +78,16 @@
    "about": "The newest material, one per channel.",
    "videos": [
     {
-     "videoId": "iOXbBrv0ccw",
-     "title": "The Bitcoin 4 Year Cycle is a Massive Lie...",
-     "channel": "CoinForge",
-     "length": "1:42",
-     "published": "2026-09-20",
+     "videoId": "PmNvYrHnFgE",
+     "title": "The Bitcoin 4-Year Cycle Just Died",
+     "channel": "Joe Consorti",
+     "length": "17:51",
+     "published": "2026-09-22",
      "role": "Where it stands",
-     "why": "23 September 2026: the dead-cycle case argued from the bitcoiner side after a year of ambiguity, with the question still posed rather than settled."
+     "why": "Joe Consorti, 2026-09-22, 17:51: first-hand analyst making the claim with his own evidence, not a short reaction clip."
     }
    ],
-   "minutes": 2
+   "minutes": 18
   },
   {
    "key": "sides",
@@ -115,9 +115,18 @@
      "why": "It commits to a specific low date, 12 October 2026, and openly flags that price is not cooperating yet, which makes it the most checkable version of the cycle-intact case.",
      "side": "The cycle is intact; this is a normal bear on schedule",
      "watch_for": "A named bottom date and price you can check later, and old cycle dates lined up as fractals"
+    },
+    {
+     "videoId": "6dq5TGTM5-Q",
+     "title": "Bitcoin's 4-Year Cycle Is Breaking",
+     "channel": "Market Disruptors Podcast",
+     "length": "12:27",
+     "published": "2026-08-01",
+     "role": "The middle forecast: stretched, not broken",
+     "why": "Swan CEO Cory Klippsten on the record: each bear is shallower and the cycle is lengthening rather than ending — a third dated position several channels hold."
     }
    ],
-   "minutes": 21
+   "minutes": 33
   }
  ],
  "sides": [
@@ -3115,6 +3124,134 @@
     }
    ],
    "note": "built"
+  },
+  {
+   "version": 1,
+   "at": "2026-10-01",
+   "episodes": [
+    {
+     "key": "origin",
+     "title": "Origin",
+     "about": "How the story got here, oldest first.",
+     "videos": [
+      {
+       "videoId": "AHuKHmeJf-I",
+       "title": "Bitcoin: It is not a 4 year cycle! (Welcome to the show)",
+       "channel": "Benjamin Cowen",
+       "length": "12:10",
+       "published": "2020-03-28",
+       "role": "Where it began",
+       "why": "Benjamin Cowen, 28 March 2020, is the earliest video here that states the claim itself rather than the topic: \"It is not a 4 year cycle.\" His version rests on lengthening cycles and diminishing returns, not on ETFs, and carries no hard deadline. Earlier videos in the set (Bob Loukas 2019, Nugget's News 2019, 99Bitcoins 2018) assert the halving cycle rather than dispute it."
+      },
+      {
+       "videoId": "-Iwydcirm58",
+       "title": "So, Is This a Bitcoin Supercycle or What?",
+       "channel": "The Breakdown ",
+       "length": "9:42",
+       "published": "2021-04-10",
+       "role": "2021-04. New trigger: institutions, not halving; supercycle means no 80% bear",
+       "why": "The Breakdown lays out the supercycle thesis in its clearest short form: are new institutional participants breaking bitcoin out of the four-year, halving-driven boom-bust pattern? The claim now has a testable consequence attached, no deep bear market. The long first-hand Dan Held interviews from the same weeks run 38 and 58 minutes."
+      },
+      {
+       "videoId": "7GCboXUObi4",
+       "title": "4 Year Cycle: Bitcoin Will Bottom At 24k In November 2022 (According To These Macro Trends)",
+       "channel": "Wolves of Crypto",
+       "length": "6:19",
+       "published": "2022-03-10",
+       "role": "2022-03. Predicted event failed: deep bear arrived, cycle-intact camp set a dated bottom",
+       "why": "Six minutes, states a number and a date: bitcoin bottoms near 24k in November 2022 on four-year cycle timing. It marks the point where the no-more-bear-market version of the claim was contradicted and the old map was being used again."
+      },
+      {
+       "videoId": "aMk4XTX7A3I",
+       "title": "WHAT BROKE THE 4 YEAR CYCLE? | Raoul Pal ft Julien Bittel | The Everything Code",
+       "channel": "Raoul Pal The Journey Man",
+       "length": "1:18",
+       "published": "2025-10-06",
+       "role": "2025-10. Trigger changes again: global liquidity and ISM, not the halving",
+       "why": "Raoul Pal and Julien Bittel state plainly that the classic four-year sine wave has broken and point to debt maturity and liquidity as the replacement clock. Short, on the record, and it is the version most of the later 2026 videos repeat."
+      },
+      {
+       "videoId": "oOu6fEOC4zo",
+       "title": "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!",
+       "channel": "Coin Bureau",
+       "length": "9:31",
+       "published": "2026-01-02",
+       "role": "2026-01. The expected 2025 blow-off top did not arrive; peak pushed to 2026",
+       "why": "Coin Bureau names the missed event directly: no blow-off top, a December downturn instead, and draws the conclusion that the pattern has shifted. This is the deadline-passed moment for the standard 18-months-after-halving top."
+      },
+      {
+       "videoId": "oRP6ZP3t0-I",
+       "title": "Bitcoin's Halving Cycle Is Weakening — Here's What Replaced It (2026)",
+       "channel": "Chain Sense",
+       "length": "4:09",
+       "published": "2026-05-12",
+       "role": "2026-05. Mechanism restated: ETF flows said to outweigh the halving supply cut",
+       "why": "Four minutes on the specific claim that 2025 was the first negative post-halving year and that spot ETF demand, not block reward, now sets the rhythm. It converts the broad liquidity argument into a checkable mechanical claim."
+      }
+     ],
+     "minutes": 43
+    },
+    {
+     "key": "now",
+     "title": "Where it stands",
+     "about": "The newest material, one per channel.",
+     "videos": [
+      {
+       "videoId": "iOXbBrv0ccw",
+       "title": "The Bitcoin 4 Year Cycle is a Massive Lie...",
+       "channel": "CoinForge",
+       "length": "1:42",
+       "published": "2026-09-20",
+       "role": "Where it stands",
+       "why": "23 September 2026: the dead-cycle case argued from the bitcoiner side after a year of ambiguity, with the question still posed rather than settled."
+      }
+     ],
+     "minutes": 2
+    },
+    {
+     "key": "sides",
+     "title": "The sides",
+     "about": "Each position at its strongest, with what to watch for.",
+     "videos": [
+      {
+       "videoId": "v_HzRDgydCA",
+       "title": "🚨 BITCOIN'S 4 YEAR CYCLE IS DEAD..?!?!?!?!?!?",
+       "channel": "BRITISH HODL",
+       "length": "9:05",
+       "published": "2026-09-23",
+       "role": "The claim, at its strongest",
+       "why": "Argued first-hand rather than as a reaction, and it is the September 2026 statement of the position that the 2025-2026 price action is supposed to prove.",
+       "side": "The cycle is dead; ETFs and liquidity now set the clock",
+       "watch_for": "The halving is dismissed as too small next to ETF or liquidity flows, and the peak keeps sliding to the next year without the old test being marked wrong"
+      },
+      {
+       "videoId": "-tb1s3ZCwP8",
+       "title": "Bitcoin's Four-Year Cycle Says The Low Is Due October 12",
+       "channel": "Verified Investing",
+       "length": "11:29",
+       "published": "2026-09-17",
+       "role": "The strongest answer to it",
+       "why": "It commits to a specific low date, 12 October 2026, and openly flags that price is not cooperating yet, which makes it the most checkable version of the cycle-intact case.",
+       "side": "The cycle is intact; this is a normal bear on schedule",
+       "watch_for": "A named bottom date and price you can check later, and old cycle dates lined up as fractals"
+      }
+     ],
+     "minutes": 21
+    }
+   ],
+   "note": "built"
+  }
+ ],
+ "last_change": "The 'where it stands' video is a short clickbait clip. Replace it with something longer and first-hand, and if there's room add the third side, the one that says the cycle is stretched, not broken.",
+ "conversation": [
+  {
+   "you": "The 'where it stands' video is a short clickbait clip. Replace it with something longer and first-hand, and if there's room add the third side, the one that says the cycle is stretched, not broken.",
+   "director": "Swapped the 1:42 clip for Joe Consorti's 17:51 piece from 22 Sep 2026 — first-hand analysis with a dated call, not a reaction. For the third side I've added Cory Klippsten (Swan) arguing the cycle is damping and stretching rather than breaking, which is also where the 2027-top crowd sits; it's a distinct forecast on the same clock, so it earns a slot. That takes the set to about 94 minutes, so I've raised the budget — say the word if you'd rather I cut two origin steps to stay near 60.",
+   "changes": [
+    "replaced iOXbBrv0ccw with PmNvYrHnFgE",
+    "added 6dq5TGTM5-Q to The sides",
+    "budget → 95 min"
+   ]
   }
  ]
 }
