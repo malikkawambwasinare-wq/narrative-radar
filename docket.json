@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30",
+  "generated": "2026-10-01",
   "standard": "1.0",
   "grace_days": 30,
   "totals": {
@@ -37,7 +37,7 @@
           "end": "2028-09-30",
           "precision": "month"
         },
-        "days_to_due": 731,
+        "days_to_due": 730,
         "resolution_class": "review",
         "capture": "live",
         "status": "PENDING",
@@ -72,7 +72,7 @@
           "end": "2026-09-01",
           "precision": "day"
         },
-        "days_to_due": -29,
+        "days_to_due": -30,
         "resolution_class": "auto",
         "capture": "live",
         "status": "PENDING",
@@ -95,7 +95,7 @@
         "end": "2026-08-07",
         "precision": "month"
       },
-      "days_to_due": -54,
+      "days_to_due": -55,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "PENDING",
@@ -114,7 +114,7 @@
         "end": "2026-09-01",
         "precision": "day"
       },
-      "days_to_due": -29,
+      "days_to_due": -30,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -133,12 +133,50 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": 31,
+      "days_to_due": 30,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
       "state": "in_window",
       "source": "https://www.youtube.com/watch?v=XNuL97I8bvc"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "soloway-2026-35k",
+      "claimant": "Gareth Soloway",
+      "claim": "Short-term bullish to $71-72K, then a flush toward ~$35,000 bottom right before the midterm elections.",
+      "horizon": "by October-November 2026",
+      "due": {
+        "start": "2026-10-01",
+        "end": "2026-11-30",
+        "precision": "range"
+      },
+      "days_to_due": 60,
+      "resolution_class": "auto",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "in_window",
+      "source": "https://www.youtube.com/watch?v=xJyNgxAozQw"
+    },
+    {
+      "topic": "crypto-winter-watch",
+      "narrative": "Crypto Winter Watch",
+      "id": "ivan-2026-bottom",
+      "claimant": "Ivan on Tech",
+      "claim": "Bottom lands October-November 2026 near the 200-week MA; 'Valhalla' blow-off (esp. altcoins) Jan-Feb 2027; weekly close above ~$82K confirms bull to $200K.",
+      "horizon": "Oct-Nov 2026 bottom; Jan-Feb 2027 blow-off",
+      "due": {
+        "start": "2026-10-01",
+        "end": "2027-02-28",
+        "precision": "range"
+      },
+      "days_to_due": 150,
+      "resolution_class": "review",
+      "capture": "live",
+      "status": "PENDING",
+      "state": "in_window",
+      "source": "https://www.youtube.com/watch?v=SpxCqrzGDiA"
     },
     {
       "topic": "collapse-audit",
@@ -152,7 +190,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 823,
+      "days_to_due": 822,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -171,31 +209,12 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": 31,
+      "days_to_due": 30,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
       "state": "open",
       "source": "https://www.youtube.com/watch?v=wJBYU7xND00"
-    },
-    {
-      "topic": "crypto-winter-watch",
-      "narrative": "Crypto Winter Watch",
-      "id": "soloway-2026-35k",
-      "claimant": "Gareth Soloway",
-      "claim": "Short-term bullish to $71-72K, then a flush toward ~$35,000 bottom right before the midterm elections.",
-      "horizon": "by October-November 2026",
-      "due": {
-        "start": "2026-10-01",
-        "end": "2026-11-30",
-        "precision": "range"
-      },
-      "days_to_due": 61,
-      "resolution_class": "auto",
-      "capture": "live",
-      "status": "PENDING",
-      "state": "open",
-      "source": "https://www.youtube.com/watch?v=xJyNgxAozQw"
     },
     {
       "topic": "crypto-winter-watch",
@@ -209,31 +228,12 @@
         "end": "2026-12-31",
         "precision": "day"
       },
-      "days_to_due": 92,
+      "days_to_due": 91,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
       "state": "open",
       "source": "https://www.youtube.com/watch?v=Lu-sOTkVWDM"
-    },
-    {
-      "topic": "crypto-winter-watch",
-      "narrative": "Crypto Winter Watch",
-      "id": "ivan-2026-bottom",
-      "claimant": "Ivan on Tech",
-      "claim": "Bottom lands October-November 2026 near the 200-week MA; 'Valhalla' blow-off (esp. altcoins) Jan-Feb 2027; weekly close above ~$82K confirms bull to $200K.",
-      "horizon": "Oct-Nov 2026 bottom; Jan-Feb 2027 blow-off",
-      "due": {
-        "start": "2026-10-01",
-        "end": "2027-02-28",
-        "precision": "range"
-      },
-      "days_to_due": 151,
-      "resolution_class": "review",
-      "capture": "live",
-      "status": "PENDING",
-      "state": "open",
-      "source": "https://www.youtube.com/watch?v=SpxCqrzGDiA"
     },
     {
       "topic": "crypto-winter-watch",
@@ -247,7 +247,7 @@
         "end": "2027-08-31",
         "precision": "month"
       },
-      "days_to_due": 335,
+      "days_to_due": 334,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -266,7 +266,7 @@
         "end": "2027-12-31",
         "precision": "year"
       },
-      "days_to_due": 457,
+      "days_to_due": 456,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -285,7 +285,7 @@
         "end": "2028-09-30",
         "precision": "month"
       },
-      "days_to_due": 731,
+      "days_to_due": 730,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -304,7 +304,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 823,
+      "days_to_due": 822,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -323,7 +323,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1553,
+      "days_to_due": 1552,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -342,7 +342,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1553,
+      "days_to_due": 1552,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -436,7 +436,7 @@
         "end": "2017-03-31",
         "precision": "range"
       },
-      "days_to_due": -3470,
+      "days_to_due": -3471,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
@@ -455,7 +455,7 @@
         "end": "2020-12-31",
         "precision": "year"
       },
-      "days_to_due": -2099,
+      "days_to_due": -2100,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -474,7 +474,7 @@
         "end": "2021-01-31",
         "precision": "range"
       },
-      "days_to_due": -2068,
+      "days_to_due": -2069,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -493,7 +493,7 @@
         "end": "2024-10-31",
         "precision": "range"
       },
-      "days_to_due": -699,
+      "days_to_due": -700,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
