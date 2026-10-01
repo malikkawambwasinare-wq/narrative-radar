@@ -1,0 +1,79 @@
+name: Director
+
+# Build a story set from a request, or edit one by instruction. The keys live
+# here as secrets, so this is where the Director runs until it has a server of
+# its own. Each build spends at most 12 searches (1,200 of the 10,000 daily
+# quota units); an edit at most 2.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "build or edit"
+        default: "build"
+      request:
+        description: "build: the story in your own words · edit: the change you want"
+        required: true
+      story:
+        description: "edit only: the set's id in library/"
+        default: ""
+      budget:
+        description: "minutes (30, 60, 90)"
+        default: "60"
+      category:
+        description: "optional: health, money, tech, world, climate, society, general"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: director
+  cancel-in-progress: false
+
+jobs:
+  direct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Direct
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODE: ${{ inputs.mode }}
+          REQUEST: ${{ inputs.request }}
+          STORY: ${{ inputs.story }}
+          BUDGET: ${{ inputs.budget }}
+          CATEGORY: ${{ inputs.category }}
+        run: |
+          set -o pipefail
+          if [ "$MODE" = "edit" ]; then
+            python3 scripts/director.py edit "$STORY" "$REQUEST" --write | tee director.log
+          else
+            python3 scripts/director.py build "$REQUEST" --budget "$BUDGET" ${CATEGORY:+--category "$CATEGORY"} --write | tee director.log
+          fi
+      - name: Keep the run's output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: director-${{ github.run_id }}
+          path: |
+            director.log
+            library/*.json
+          if-no-files-found: warn
+      - name: Save the set
+        run: |
+          git config user.name "narrative-radar-bot"
+          git config user.email "actions@github.com"
+          git add library
+          git diff --cached --quiet && { echo "nothing to save"; exit 0; }
+          git commit -m "Director ($MODE): $(head -c 70 <<< "$REQUEST") [skip netlify]"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done
+          exit 1
+        env:
+          MODE: ${{ inputs.mode }}
+          REQUEST: ${{ inputs.request }}
