@@ -160,7 +160,24 @@ def usable(v):
 
 
 # ------------------------------------------------------------------ Claude
+def strict(schema):
+    """Structured outputs want every object closed and every field required.
+    Done here once, so the schemas below stay readable. Fields that only some
+    answers need come back empty, which the code already treats as absent."""
+    if isinstance(schema, dict):
+        if schema.get("type") == "object" and "properties" in schema:
+            schema["additionalProperties"] = False
+            schema["required"] = list(schema["properties"])
+        for v in schema.values():
+            strict(v)
+    elif isinstance(schema, list):
+        for v in schema:
+            strict(v)
+    return schema
+
+
 def claude(system, prompt, schema, effort="medium", max_tokens=8000):
+    schema = strict(json.loads(json.dumps(schema)))
     key = secret("ANTHROPIC_API_KEY", "anthropic-api-key")
     if not key:
         sys.exit("No Anthropic key. Set ANTHROPIC_API_KEY or put it in .secrets/anthropic-api-key.")
