@@ -6132,6 +6132,56 @@
         "comments": 2,
         "enrichedOn": "2026-10-02"
       }
+    },
+    {
+      "videoId": "wclXwaQPwHk",
+      "title": "Royal Bank of Canada (RY.TO) Deep Dive: Bond Yields, Rate Hikes & The $6 Billion Profit Story",
+      "channel": "Global News Daily",
+      "url": "https://www.youtube.com/watch?v=wclXwaQPwHk",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "views": 0,
+      "length": "6:40",
+      "age_days": 0,
+      "query": "channel sweep: Global News Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCgHlLE31bFoyTh_wNOQxEpw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-02"
+      }
+    },
+    {
+      "videoId": "KoxHbgFmvZM",
+      "title": "Another Bank of Canada Rate Hike?",
+      "channel": "The Ottawa Real Estate Podcast",
+      "url": "https://www.youtube.com/watch?v=KoxHbgFmvZM",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "views": 4,
+      "length": "0:20",
+      "age_days": 0,
+      "query": "channel sweep: The Ottawa Real Estate Podcast",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCY9WN2nEaziu2DPETrtgbXA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-02"
+      }
     }
   ]
 }

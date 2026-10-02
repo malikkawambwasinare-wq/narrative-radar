@@ -22765,6 +22765,81 @@
         "comments": 97,
         "enrichedOn": "2026-10-02"
       }
+    },
+    {
+      "videoId": "ct2kBLJTsmc",
+      "title": "HORMUZ CHANGES EVERYTHING — Iran, Iraq & Yemen Enter a New Phase | Prof. Jiang Xueqin",
+      "channel": "Educational Mindset",
+      "url": "https://www.youtube.com/watch?v=ct2kBLJTsmc",
+      "published": "2026-10-01",
+      "first_seen": "2026-10-02",
+      "views": 1,
+      "length": "19:55",
+      "age_days": 1,
+      "query": "channel sweep: Educational Mindset",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCB4utQ1yz7vlrgemQimi_Dw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-02"
+      }
+    },
+    {
+      "videoId": "rsknJUvePro",
+      "title": "SILVER COULD EXPLODE LIKE NEVER BEFORE IN OCTOBER — WHAT COULD TRIGGER THE NEXT BIG MOVE?",
+      "channel": "POWER DECODED",
+      "url": "https://www.youtube.com/watch?v=rsknJUvePro",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "views": 35,
+      "length": "27:00",
+      "age_days": 0,
+      "query": "channel sweep: POWER DECODED",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCT6pEWQtQEBFBaGzJhZME5g",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-02"
+      }
+    },
+    {
+      "videoId": "gcJ17QH12Ko",
+      "title": "It's Not a Recession, It's a DEPRESSION — And It's Already Here | Prof. Jiang Xueqin",
+      "channel": "Inspired by Jiang",
+      "url": "https://www.youtube.com/watch?v=gcJ17QH12Ko",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "views": 348,
+      "length": "39:05",
+      "age_days": 0,
+      "query": "channel sweep: Inspired by Jiang",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwQ3a_H4jL9RByzmjfcZNwQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 39,
+        "comments": 3,
+        "enrichedOn": "2026-10-02"
+      }
     }
   ]
 }
