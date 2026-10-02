@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -29255,6 +29255,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-01"
+      }
+    },
+    {
+      "videoId": "6YjmH7hcC60",
+      "title": "How long does a water molecule spend in the atmosphere before falling | Weather Or Not Trivia",
+      "channel": "CTV News",
+      "url": "https://www.youtube.com/watch?v=6YjmH7hcC60",
+      "published": "2026-08-24",
+      "first_seen": "2026-10-02",
+      "views": 47,
+      "length": "0:53",
+      "age_days": 39,
+      "query": "channel sweep: CTV News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCi7Zk9baY1tvdlgxIML8MXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-02"
       }
     }
   ]
