@@ -6332,6 +6332,31 @@
         "comments": null,
         "enrichedOn": "2026-10-03"
       }
+    },
+    {
+      "videoId": "H9WAXC56vBI",
+      "title": "You Won’t Believe What The Toronto Condo Market Is Doing",
+      "channel": "Tom Storey",
+      "url": "https://www.youtube.com/watch?v=H9WAXC56vBI",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-03",
+      "views": 13548,
+      "length": "6:26",
+      "age_days": 1,
+      "query": "channel sweep: Tom Storey",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCCtAWwBphu0Wh5I4ErLJVKg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 93,
+        "comments": 17,
+        "enrichedOn": "2026-10-03"
+      }
     }
   ]
 }
