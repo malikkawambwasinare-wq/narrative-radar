@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-02",
+ "generated": "2026-10-03",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1975,
+ "cost_usd": 0.199,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -25328,6 +25328,1560 @@
    },
    "first_read": "2026-10-02",
    "last_read": "2026-10-02"
+  },
+  {
+   "phrase": "urges end",
+   "verdict": "rhetoric",
+   "why": "A news-reporting formula covering different conflicts and actors, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 7,
+    "months": 12,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "West Bank conflict having “terrible impact” on Palestinians, Israelis, UN urges “end to violence”",
+     "\"This madness cannot continue\": Palestinian president Abbas urges UN to end war in Gaza",
+     "Trump Declares “Liberation Day,” Urges End To Russia-Ukraine War"
+    ],
+    "ids": [
+     "8FUref-t0Pk",
+     "FcSMzpYT1C4",
+     "OUTkQF9u1Xk",
+     "_4xaZ6aRydk",
+     "brwFYlaQY-8",
+     "erpXO4DJNoA",
+     "jEd54lWggHA",
+     "k4GW6wkJQs0",
+     "lmZd1CeY1vY",
+     "mxjnLxhZXwE",
+     "r9JqNj8oEZk",
+     "x2sa1y87tEk"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "vows end",
+   "verdict": "rhetoric",
+   "why": "Headline template for politicians' promises on unrelated topics, not one claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 10,
+    "months": 10,
+    "span": "2024-11 → 2026-09",
+    "examples": [
+     "Harris vows to end Gaza war if elected US president",
+     "US Election: Harris vows to end war in Gaza as election enters final hours",
+     "Trump says he'd put National Guard troops in red cities and states, vows to end cashless bail"
+    ],
+    "ids": [
+     "36Rin40wszg",
+     "3ZlwFqlZxjI",
+     "7YtNNTrqQg8",
+     "BIbFjRdNOso",
+     "Dq-KnHAEi5M",
+     "HnYu7G6vtLI",
+     "JmyCDSLRZZg",
+     "Wxg9n7-PVao",
+     "YubztiLkrLI",
+     "h8YHdqFimts",
+     "iAAttgyagdQ",
+     "kL2rL9sa3mA",
+     "p0p6DVqsVmc",
+     "rxvfKwYe8W0",
+     "x7pFGUMgKVI",
+     "yIH1CvY_ayU"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "crash victims",
+   "verdict": "rhetoric",
+   "why": "Subject matter of disaster coverage with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 9,
+    "span": "2025-01 → 2026-09",
+    "examples": [
+     "“Never want to see this again”: NTSB says DC plane crash victims’ families are priority | FULL",
+     "Family members perform last rites for Air India crash victims",
+     "Families of Air India crash victims call for action against those responsible | ABC NEWS"
+    ],
+    "ids": [
+     "-schTRg8_70",
+     "1J1Bdcmdomo",
+     "63eiIzcJSIo",
+     "ACS5dyaVgBQ",
+     "Eo641RwNBqU",
+     "II9i48ydZiU",
+     "Qurpz0hMosE",
+     "XeW6E2nbkT0",
+     "dHLpwE9t8YI",
+     "islghyjU1FU",
+     "mJSA-55peiI",
+     "qDTZBqRtkIk",
+     "qdsVXkgz77M",
+     "vmv3jGS2pLY"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "head-on crash",
+   "verdict": "rhetoric",
+   "why": "Local incident reporting; no shared argument or implied remedy.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 8,
+    "months": 9,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "Nova Scotia woman lucky to be alive after \"terrifying\" head-on crash sends Jeep flying on highway",
+     "A head-on crash leaves one woman dead and another fighting for life in hospital | ABC NEWS",
+     "\"Holy smokes\": Man survives near-miss head-on crash with suspected drunk driver"
+    ],
+    "ids": [
+     "3Sp0efujGOA",
+     "4Cv7veY7Ha0",
+     "6lJNNqffC7U",
+     "8uriqHCZICU",
+     "AW_GgFT-_Pk",
+     "Ata-M1Jnr1Y",
+     "FBYTprlf3jE",
+     "Ive1ulQlTEo",
+     "M2Gx2AKRLiE",
+     "MzNxjmQ5-Ps",
+     "OFm3LGjNNUo",
+     "PTiDSNUtgIs",
+     "XCpgo-IP6yU",
+     "XpvXklKvLus",
+     "alprhHZsZLQ",
+     "bhHcyFgsFr4",
+     "f2VSI5aVd5I",
+     "kxz3xMRTneI",
+     "ld3xkedvJ60",
+     "oFtWu2XBSmI"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "truck crash",
+   "verdict": "rhetoric",
+   "why": "Recurring news event type, not a claim that could be wrong.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 9,
+    "months": 10,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Truck crash on Texas highway kills four family members",
+     "Potentially diseased lab monkey on the loose after truck crash in Mississippi #guttaandsaint",
+     "Dashcam video shows truck crash at notoriously dangerous rest stop in BC"
+    ],
+    "ids": [
+     "5stQQWdjbVU",
+     "JKJDrJOBsLg",
+     "PLWODf6KIqA",
+     "PgVgMAGMbRk",
+     "Qpx9Cm5O2y4",
+     "XuchY-R-M8M",
+     "YXXjgS3iMDU",
+     "_d6ct-6vIm8",
+     "aAVZEE4bdhE",
+     "e-7uuxwTFpE",
+     "fBZTB4fdew4",
+     "gmZXlP5ufd8",
+     "hPNjy7Xoe70",
+     "lxhpBgaarD8",
+     "rjc4aXJZ-NA",
+     "rxBt0BxAF2o",
+     "xGNvbver60c"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "floods landslides kill",
+   "verdict": "rhetoric",
+   "why": "Disaster wire-headline format reporting casualty counts, no causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 7,
+    "span": "2024-03 → 2026-09",
+    "examples": [
+     "Indonesia floods, landslides kill at least 19, over 70k forced to evacuate",
+     "Floods, landslides kill at least 31 in Indonesia",
+     "Floods, landslides kill at least 31 in Indonesia's North Sumatra; rescue efforts underway"
+    ],
+    "ids": [
+     "2_tOJ1eQ0SQ",
+     "4o-J9SQ1wWU",
+     "E9u-5QuTuh8",
+     "NrFhlYpsEm8",
+     "V2cgm8eA8RQ",
+     "Xabs-cyOlhA",
+     "_YSog7HI_D4",
+     "bj315EjfsmQ",
+     "iHajQY3fLFE",
+     "q79jpjCGq_k",
+     "rHjQl5GX3nQ"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "really think",
+   "verdict": "rhetoric",
+   "why": "Rhetorical questioning hook spanning unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 43,
+    "channels": 29,
+    "months": 23,
+    "span": "2019-10 → 2026-09",
+    "examples": [
+     "Cancer:  Oct. 3rd-9th  \"DO THEY REALLY THINK THEY CAN PULL THE WOOL OVER YOUR EYES?\"",
+     "Tarot Emotional Free Will Bull-Crap! Do You Really Think You Have A Choice? My Truth About It All",
+     "Does Elon Musk Really Think Dogecoin Is 'A Hustle?'"
+    ],
+    "ids": [
+     "16_VhagHNzA",
+     "24oNQY_HO9Q",
+     "2v1fQYm9sf0",
+     "40Yz_21iILI",
+     "5QB2pBa7Dgs",
+     "8-ReCPhfRQA",
+     "A7UKMU4gWgM",
+     "AAQizyqTsI8",
+     "AVlt-h8T1HE",
+     "Am0Hbz3uz1k",
+     "B8V3h7ADVMw",
+     "DVn_MfiPNxE",
+     "Fdb_cCL5UVU",
+     "H2wRAfF1Kks",
+     "IkOfPWgQy64",
+     "MUqjVFmeX5Y",
+     "OE_m79cgQ7c",
+     "PhLs5m3FmZU",
+     "RRNiPHIqr3s",
+     "S_rRGv3LwB0"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "crash bros",
+   "verdict": "duplicate",
+   "why": "These videos argue against predictions of a housing market crash, the same tracked dispute.",
+   "claim_name": null,
+   "claim": null,
+   "industry": "Economy & markets",
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 4,
+    "months": 14,
+    "span": "2020-10 → 2026-03",
+    "examples": [
+     "Forbearance Crash Bros, Unemployment, Talladega, Alabama & Ocala, Florida",
+     "Housing Market Crash CANCELLED (Crash Bros PANIC)",
+     "Breaking News:  THIS is Why the “Crash Bros” are Just WRONG"
+    ],
+    "ids": [
+     "-nT-ZfKBPoQ",
+     "89rW-QgWN6I",
+     "9sTBV_27Rn8",
+     "BeIauZzWEnc",
+     "CAaa0eaiP0Q",
+     "IWxwacMDvFE",
+     "JpKpU29NEl0",
+     "R_RhGOQCiDc",
+     "Sie6JYV5mpA",
+     "VQhv6GZBPV0",
+     "brvk7-e8BIQ",
+     "cLHD7cR34Eo",
+     "jiQTXEnBWNM",
+     "rPQOEIEL-0Q",
+     "tNrosdgSAUo",
+     "xEct36OaNf0"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "manager explains",
+   "verdict": "rhetoric",
+   "why": "Authority-format phrasing across unrelated topics, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 6,
+    "months": 11,
+    "span": "2021-03 → 2026-10",
+    "examples": [
+     "The Market Crash Getting Worse | Hedge Fund Manager Explains",
+     "Why do Product Managers exist ? Product Manager explains why Product managers are vital ( Part-1)",
+     "How to solve Product design questions in Product Management Interviews I Product Manager explains"
+    ],
+    "ids": [
+     "6TMeWwbMHc8",
+     "Gpfg5-BPKno",
+     "K-yeg28QSTg",
+     "Nr5HQurHi4o",
+     "Su0O92wh2KQ",
+     "cEe0qiyzT6s",
+     "dOF2jLzZIRo",
+     "hfAEDq45VoM",
+     "hrO8CA5Le7U",
+     "iY7aXNI-vTE",
+     "nmm19Qjd5J4",
+     "pJggknIvaZA",
+     "syEzGMaW1lQ",
+     "w3IPkyrMusQ",
+     "wRV9kLLQpC8",
+     "y1Bn8VDZMdU"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "drive-by shooting",
+   "verdict": "rhetoric",
+   "why": "A news subject with no shared checkable claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 31,
+    "channels": 5,
+    "months": 10,
+    "span": "2023-06 → 2026-09",
+    "examples": [
+     "Toronto shooting: 3 drive-by shooting incidents all connected to same vehicle, police say | FULL",
+     "Sydney police hunting 3 men over fatal drive-by shooting | ABC News",
+     "Targeted drive-by shooting leaves 65-year-old woman dead in Sydney's south-west | ABC News"
+    ],
+    "ids": [
+     "2yBKyZnFctE",
+     "2zD85h0YDO0",
+     "3doPbvH5oqQ",
+     "51JWEKJSoqQ",
+     "77IxvtMnRxM",
+     "APb0Hpoqqs0",
+     "DCL39aK4eyA",
+     "FFilpqIPveM",
+     "FykzBme1LTM",
+     "KfaN_9_v9Nc",
+     "OEuZkNFB7rE",
+     "OtP53ObxtBw",
+     "Pc4pQTzh4iU",
+     "TWsndOaXAuI",
+     "TbIIzuHbkRU",
+     "UNupPG3X3jg",
+     "_RzCuhJlGq8",
+     "ahy7Lz9-krM",
+     "aphPzFurzm0",
+     "cv2ka0C9RaI"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "really runs",
+   "verdict": "rhetoric",
+   "why": "A teasing question format; no consistent named cause or outcome across titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 7,
+    "span": "2023-11 → 2026-08",
+    "examples": [
+     "Who Do You Think Really Runs The World? |  Patrick Bet David",
+     "Who Really Runs The World? - Patrick Bet-David",
+     "Who really runs the world?"
+    ],
+    "ids": [
+     "0lt7nQtJBz8",
+     "18jCRhOtlp0",
+     "3ZHbH99PlrI",
+     "DRCAuZTy6Rc",
+     "Gx4HTtJj6Rg",
+     "NCCc2xc_Teg",
+     "Q3o9WjKnok0",
+     "Y-woWZWT228",
+     "jggxq_xs3HM",
+     "mvs9jQ7uCY4"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "bubble tea",
+   "verdict": "rhetoric",
+   "why": "Topic keyword spanning unrelated stories, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 8,
+    "span": "2024-03 → 2026-08",
+    "examples": [
+     "DoorDasher caught stealing tip jar from BC bubble tea shop #DoorDash",
+     "Nippon bid for US Steel in Biden’s hands; bubble tea in China | East Asia Tonight (Dec 24)",
+     "China bubble tea chain Mixue surges 47% on debut, fuelling optimism in Hong Kong's IPO market"
+    ],
+    "ids": [
+     "3zxUVzMzxsk",
+     "5giNkfO4crw",
+     "AT8Pq8YXQyU",
+     "ISjLFQCZOsE",
+     "J9bU-PhK5E0",
+     "PZkJHDR-b_w",
+     "hP-7-K0FP5M",
+     "sohOBSr56Os",
+     "yThLqdqZ7Ik"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "must stay",
+   "verdict": "rhetoric",
+   "why": "Generic exhortation phrase across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 13,
+    "months": 15,
+    "span": "2019-07 → 2026-09",
+    "examples": [
+     "THE ONE SLEEPING POSITION YOU MUST STAY AWAY FROM - Dr Alan Mandell, DC",
+     "Commercial rents in Woodlands must stay competitive or lose out to Johor: Analysts",
+     "Singapore must stay united to deal with impact of US tariffs: PM Lawrence Wong"
+    ],
+    "ids": [
+     "128yiu_JoyM",
+     "2bhowniMqqI",
+     "5QstFd-AYYg",
+     "5q-l7OkLu_w",
+     "7k_uW59zYyc",
+     "7klH8kC5vQU",
+     "DGkTjBne5b4",
+     "DtQCFroMNHg",
+     "I9b-dxmzYZM",
+     "KXpD_lfpz5M",
+     "MUm3jNUMFVI",
+     "PeIpTQ5o5Z8",
+     "RXaBLdL8iCg",
+     "SMBsckP9sDU",
+     "T4CDrU_2iFE",
+     "aXbXnua0zv8",
+     "bcBSETLw7lI",
+     "cWBEkIP-QIQ",
+     "eee7aM2HZu8",
+     "emf-LggY9JU"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "polling shows",
+   "verdict": "rhetoric",
+   "why": "News-sourcing formula, not a single claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 5,
+    "months": 9,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "Trudeau government in trouble, internal polling shows",
+     "Americans, Democrats beginning to sour on Biden, new polling shows",
+     "Trump's job ratings stay negative; Americans express strong support for vaccines, polling shows"
+    ],
+    "ids": [
+     "4paQQk_9yrI",
+     "C7fj0UGVbsY",
+     "ECxrY3mUkO4",
+     "EuNbU7JSTdk",
+     "IIRRF0dSl34",
+     "KhZ14d_xYK8",
+     "Q8W5hkNjzbI",
+     "Tf5_fxwIgfI",
+     "_0Gq9eXzFzY",
+     "iulVKH3Rhfg",
+     "kG5epJjWZm4",
+     "lTsiYnXl9hw",
+     "oWsstRAMwyQ",
+     "pBB8gUVqMfY",
+     "qODMRVYC-uw",
+     "yw6oT5p9Z5I"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "kills four",
+   "verdict": "rhetoric",
+   "why": "Casualty-count headline format across unrelated events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 11,
+    "months": 8,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Mideast tensions soar as fresh Israeli strike on Lebanon kills four Hezbollah fighters",
+     "‘Flesh-eating’ bacteria kills four people in Florida",
+     "Truck crash on Texas highway kills four family members"
+    ],
+    "ids": [
+     "5TrjG7ukDdI",
+     "HGZ5xUFqXFI",
+     "KDd_GShG-5M",
+     "PPJzfGLXtEY",
+     "XuchY-R-M8M",
+     "_DUs0h7gcGo",
+     "bSGazsdsP7w",
+     "fGnHdlfzqRk",
+     "fQatdUeUBUM",
+     "fmPdF4FPj1M",
+     "gDmkI83ksDU",
+     "khtxFqAjQTM",
+     "tZLVlsIaKt4",
+     "vcBYfKM51c0",
+     "z6obr5218WQ"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "killed crash",
+   "verdict": "rhetoric",
+   "why": "Incident-reporting phrasing, no shared claim or remedy.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 53,
+    "channels": 14,
+    "months": 15,
+    "span": "2024-06 → 2026-10",
+    "examples": [
+     "Iran election: Reformist candidate runs in snap election to replace president killed in crash",
+     "Motorcyclist, pillion rider killed in crash with 2 lorries along BKE",
+     "Canberra mother of teen killed in crash 'numb and struggling to live' | ABC NEWS"
+    ],
+    "ids": [
+     "1Agf3srqVKc",
+     "2qCA55noXgo",
+     "2qDMgf3OcQQ",
+     "7myeBdDff50",
+     "8ulCtiKw2bo",
+     "B6_gSmeaKkg",
+     "DukfEjOJ7rI",
+     "GO6NIsEU_2c",
+     "HWfglpXkZPs",
+     "HxRP1SFiwlI",
+     "IR4FEGRbnPM",
+     "JBpxTobiieA",
+     "JLdhJuTm4DI",
+     "KQDQQ-Bs3Gk",
+     "LJwYB0Cke_Q",
+     "MNLC3JkG7gI",
+     "MoJUGMNf0tU",
+     "N10m8Bx30_A",
+     "NoRl_yXIfDA",
+     "O-iUWIbOUXc"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "landslide win",
+   "verdict": "rhetoric",
+   "why": "An election-result descriptor spanning different countries and years, with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 6,
+    "months": 7,
+    "span": "2017-03 → 2026-07",
+    "examples": [
+     "Nifty Closes Above 9,000 For First Time After BJP's Landslide Win In Uttar Pradesh",
+     "Trump swept every key swing state of US election in landslide win, results show",
+     "Democrats left wondering where campaign went wrong after Trump’s landslide win"
+    ],
+    "ids": [
+     "2hLJWjZCFyg",
+     "3bBCHqgg9i0",
+     "6TsEOjnyKFI",
+     "9g2E82z7kis",
+     "D8TDd_HY6Gg",
+     "Dw9vhHknXzA",
+     "JlHv4T9UJ0A",
+     "JsMYDh8da7Y",
+     "KbBWDx_QahM",
+     "MYxd4zIk1fU",
+     "Qf1_JNDSxUc",
+     "YfYtsZBzRQw",
+     "aRxskoSniqY",
+     "cw6WeNX3aF4",
+     "efAD8w-P9I8",
+     "kQIhRM6a9xE",
+     "yEt-fdy9owU",
+     "zjtiUHpCDdc"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "buildings collapse",
+   "verdict": "rhetoric",
+   "why": "Disaster event reporting, a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 6,
+    "months": 7,
+    "span": "2024-01 → 2026-08",
+    "examples": [
+     "Nigeria blast kills at least 3, injures dozens as buildings collapse",
+     "Twin Earthquakes Devastate Myanmar & Thailand, Buildings Collapse, Panic Ensues",
+     "Massive Twin Earthquakes Rock Myanmar & Thailand, Buildings Collapse Amid 7.7 & 7.2 Magnitude Jolts"
+    ],
+    "ids": [
+     "-fvlONQrC9Q",
+     "23cCN_7RPu8",
+     "3LYwTw1ua0k",
+     "AmLHRBVDQTU",
+     "GImklD3HFv0",
+     "Lh3QL5Jck2U",
+     "WLBMiP-uYXw",
+     "_DUVkq83u78",
+     "_o7HDcXVx2s",
+     "bNuBVKGGBsM",
+     "bgeUeTTHiPI",
+     "gMwv0RKNSfU",
+     "ooVp5dsEC5Y",
+     "raPk1LwCQ7o",
+     "so8JMQODOig",
+     "uDXVHXapVqw",
+     "wFVe6soUJSc"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "tragic crash",
+   "verdict": "rhetoric",
+   "why": "News event descriptor across unrelated accidents, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 6,
+    "months": 7,
+    "span": "2025-01 → 2026-10",
+    "examples": [
+     "Father and 3-year-old daughter dead after tragic crash in Pickering, Ont.",
+     "South Korea Jeju Air Crash: Boeing 737-800 Crash | Wrong Engine Shutdown Led to Tragic Crash",
+     "At The Baramati Plane Crash Site: Ajit Pawar & Four Others Dead In Tragic Crash"
+    ],
+    "ids": [
+     "09P8K4u_zY8",
+     "40pdksQJKrA",
+     "4C2AqCcINpA",
+     "4lebCmXqfgQ",
+     "4yUXAsmLvf8",
+     "CSeAzq4JV9g",
+     "EZ2PFpWSKGk",
+     "EpxaJPBGj0k",
+     "EqsasS8RiaA",
+     "LiihgP2CpCg",
+     "Nc5EojVmx4w",
+     "OyhhSdZ2wKM",
+     "S5HYpTAZqeM",
+     "_tlBg4gaXD8",
+     "vKGo1Esb_W4"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "dead hundreds",
+   "verdict": "rhetoric",
+   "why": "Casualty-count headline formula across unrelated disasters.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 6,
+    "months": 7,
+    "span": "2024-09 → 2026-08",
+    "examples": [
+     "Second day of blasts in Lebanon leave 14 dead, hundreds injured",
+     "At least five dead as hundreds flee ferry fire in Indonesia | ABC NEWS",
+     "2 dead, hundreds injured as Typhoon Danas lashes southern Taiwan"
+    ],
+    "ids": [
+     "1I0VQbBvxa0",
+     "8Vt2-XkYhvI",
+     "HwI_LDtnsQI",
+     "KL8UcdLSQVg",
+     "Mw8fYSHoxwY",
+     "OSPb65C-wKQ",
+     "QR1rn9TbIDU",
+     "Swh7Y_LQAqo",
+     "_fmkWxXDhjQ",
+     "iEfai67734M",
+     "tZlEG45VREM",
+     "wWSm9Eod6BM",
+     "zYRGk6mx9Rk"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "means wallet",
+   "verdict": "rhetoric",
+   "why": "A stock explainer hook ('what it means for your wallet'), not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 6,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "What a national shortage means for your wallet? #tirzepatide #semaglutideweightloss #mounjaroupdate",
+     "Understanding Core Inflation: What It Means for Your Wallet",
+     "Exploring Negative Producer Prices: What It Means for Your Wallet"
+    ],
+    "ids": [
+     "5LczUI-m8lk",
+     "5XGU0DATXK0",
+     "96dgbsXwhKg",
+     "9t9MUc-K4tg",
+     "HZXdqe532Go",
+     "L8svvphu9_Y",
+     "a91KJc4mIW0",
+     "g7hKOb5Xbk4",
+     "lT_M6gtoij0",
+     "rG9tpu3tjV4"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "professor explains",
+   "verdict": "rhetoric",
+   "why": "Authority-framing format label with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 7,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "David Collum: Danger Signs of Economic Crash | Cornell Professor Explains Economic Trouble Ahead",
+     "Finance Professor Explains: S&P 500 Price Prediction by 2030",
+     "Finance Professor Explains: SCHD Price Prediction by 2030 (MAJOR Dividend Growth)"
+    ],
+    "ids": [
+     "PS33Hl68vEw",
+     "PTy3LmczYEs",
+     "adATfiwGyfk",
+     "hzem_6_glGU",
+     "lfk_wKUh2jk",
+     "oPhuISzzT9c",
+     "qIUi_n5LqjI",
+     "u0meWngBDEI"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "numbers show",
+   "verdict": "rhetoric",
+   "why": "Generic data-appeal phrasing across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 9,
+    "months": 12,
+    "span": "2022-08 → 2026-09",
+    "examples": [
+     "Pinterest Jumps; Sales, User Numbers Show Resilience",
+     "Canada’s August inflation numbers show prices were even higher than economists expected",
+     "Introducing By the Numbers – A New Show Coming Soon From ITR Economics"
+    ],
+    "ids": [
+     "BQW-s2Mgasw",
+     "H9NbnN6p42M",
+     "JkGPd1n0wjM",
+     "Ln4VYiMxw_c",
+     "UKTCaPfRwwg",
+     "Y8nRC4eGclQ",
+     "haBwqq2AA0Y",
+     "jEd6VXPa3m0",
+     "jNOOno_VLEQ",
+     "lodWJxGijwM",
+     "nSsaTNi-IRE",
+     "rZYuXSie8Ug",
+     "sjVdfSk4UdA",
+     "xZsAVK3C7xQ",
+     "y8J40tsjT_E",
+     "z_UemHwW2J8",
+     "zv6W7BUf8uA"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "burqa ban",
+   "verdict": "rhetoric",
+   "why": "A news topic covered by many channels; the titles report proposals and debates rather than sharing one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 25,
+    "channels": 20,
+    "months": 2,
+    "span": "2025-11 → 2026-09",
+    "examples": [
+     "'Racist Stunt: Pauline Hanson Sparks Senate Chaos by Wearing Burqa After Ban Bill Fails",
+     "Italy School Burqa Ban: PM Giorgia Meloni Proposes Strict Integration Rules | Argus News",
+     "Trump Hints Meet With Iran President | Pak Strikes Kill 3 In Afg | Meloni Proposes Burqa Ban"
+    ],
+    "ids": [
+     "0c6fmiCDRto",
+     "1qniqLQ9A90",
+     "25Hd6fFzoI4",
+     "3_40kLCPRO0",
+     "7nC15q0XSB4",
+     "CiERT4OTp5M",
+     "D9nDvzye2-s",
+     "ELo0Q89TxoA",
+     "ESnvisfkxPc",
+     "KWb2gyLGkCk",
+     "Rc7Th4VQurY",
+     "SAQ6QahvXyE",
+     "Vy38IBmtIaE",
+     "XwQv6s_WdVY",
+     "ZbeNoiuIheo",
+     "ZcBQv9nUCeg",
+     "b32PM7pKrno",
+     "e6JAMyu8Jw4",
+     "gNSSCs9ol4Q",
+     "hB5axALioco"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "earthquake kills",
+   "verdict": "rhetoric",
+   "why": "News event reporting with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 5,
+    "months": 8,
+    "span": "2023-11 → 2026-08",
+    "examples": [
+     "Nepal earthquake kills over 150 in remote western region",
+     "China earthquake kills over 100 people, triggers landslide",
+     "Global National: Jan. 1, 2024 | Powerful Japan earthquake kills at least 6, displaces thousands"
+    ],
+    "ids": [
+     "0MJAQHpaCaU",
+     "3-mvwDWiwwQ",
+     "D-GYrJi4KEA",
+     "WLBMiP-uYXw",
+     "mELBfhmNJNA",
+     "me7fUv0mCAs",
+     "nRk5AdTS9sY",
+     "oXz3Rbjmbp0",
+     "qPEuewh64tA",
+     "xDB95630ytM",
+     "yUALVwWPaNg"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "beats cursor",
+   "verdict": "rhetoric",
+   "why": "Promotional tool-comparison format, no unified falsifiable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 5,
+    "months": 9,
+    "span": "2024-10 → 2026-07",
+    "examples": [
+     "Bolt.new : This NEW & FULLY FREE Coding Agent BEATS v0 & Cursor! (w/ Opensource & Local Option)",
+     "Windsurf AI: BEATS Cursor & Bolt.New? (FREE!) 🤯",
+     "FREE Github Copilot Vscode: BEATS Cursor, Bolt.new & Windsurf?"
+    ],
+    "ids": [
+     "-9I8SQfBRTU",
+     "23doILcJAes",
+     "DdgTf3Cy7es",
+     "PDV1C6fCCmw",
+     "PVsuOhJUtOo",
+     "e1V_BGigC20",
+     "e3qGXcZ4k3U",
+     "eu8wHaX-3Ac",
+     "fEONuVvbPR4",
+     "fYZarUw9iMg",
+     "hFhkz8mtY30",
+     "pw-XCRa-FOI",
+     "v4kX411-dgE",
+     "wQ0hsv68Diw"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "banned book",
+   "verdict": "narrative",
+   "why": "Repeated claim that suppressed biblical texts contain hidden truths about humanity.",
+   "claim_name": "The \"banned books of the Bible reveal suppressed truth\" story",
+   "claim": "Ancient texts excluded from the biblical canon were deliberately banned because they reveal shocking truths about human origins, the past and the future.",
+   "industry": "Fringe & unexplained",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Key scriptures were removed from the Bible",
+    "cause": "Religious authorities suppressed texts that exposed uncomfortable truths",
+    "outcome": "Reading the banned texts restores hidden knowledge about humanity's past and future",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 53,
+    "channels": 4,
+    "months": 18,
+    "span": "2024-02 → 2026-09",
+    "examples": [
+     "This 2000 Year Old BANNED Book Of Judith Revealed THE Horrifying Truth About Our Spieces!",
+     "2000 Year Old BANNED Book Of Sirach Reveals Horrifying Details About Human Excistence!",
+     "BANNED Book From The Bible Revealed SHOCKING Secrets About Our Past, Present & Future"
+    ],
+    "ids": [
+     "-rrM2M6haaY",
+     "1jTPWWJOMf4",
+     "20Ckh2cZue4",
+     "4FlgRCq_-AA",
+     "5cCspDC3sSg",
+     "6TdnOP1ZrCw",
+     "6XBaMkSDMG0",
+     "7gClTMyciYU",
+     "AFDkCF4elho",
+     "CVndUI8ECtI",
+     "CzAZermzWos",
+     "DNpgsADftpk",
+     "DhLuzVzr7oM",
+     "ECPYyVOLPBQ",
+     "FVXQTPyAG9M",
+     "HNpoBwu3J3M",
+     "HrodAnz7uRM",
+     "InzE8U7QS90",
+     "Iuhadm4Bofw",
+     "JNq9LKKLH8o"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "crashes below",
+   "verdict": "duplicate",
+   "why": "Bitcoin price-crash calls restate the tracked crypto deadline narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 8,
+    "months": 9,
+    "span": "2022-06 → 2026-09",
+    "examples": [
+     "BITCOIN CRASHES BELOW $20K & RIPPLE XRP METAVERSE [CRYPTO NEWS]",
+     "Bitcoin Crashes Below $100,000 Per Coin Livestream",
+     "BITCOIN CRASHES BELOW $114K (DON'T FALL FOR THE TRAP)"
+    ],
+    "ids": [
+     "0XDcE2Rm_oc",
+     "5hdZ8-HzYdY",
+     "BkqDEtyj-qk",
+     "G34B5Ktwd8c",
+     "H4nMBPDyCyM",
+     "HQlNOX9bwf4",
+     "IsUXoGrmM5Q",
+     "LOkHCv27Jzg",
+     "R7Kx7HknBQs",
+     "SZQPMgncml0",
+     "XzNyY8g02xE",
+     "fAh3qnjoGU4",
+     "i2IB3UIyp-4"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "demolition drive",
+   "verdict": "rhetoric",
+   "why": "News subject matter about Indian demolitions, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-12 → 2026-10",
+    "examples": [
+     "Bengaluru Demolition Drive Sparks Kerala-Karnataka Political Firestorm | 4K",
+     "Rumours Spark Violence As Court-Ordered Demolition Drive Descends Into Chaos In Old Delhi",
+     "Delhi Demolition Drive Clash: Who Is The Mastermind Of Capital Chaos?"
+    ],
+    "ids": [
+     "4VrsRSP9K8Q",
+     "KTr2ONaNF7g",
+     "Q6R3uv80sbw",
+     "SXES58GH_ss",
+     "W8cZ2xN1xFU",
+     "bYoolSB7WGU",
+     "jcSbBzbP-xU",
+     "mQ8WvaMbhH0",
+     "u2V4Ertb-CA",
+     "vAMtvgbSPIg",
+     "vCXu4lG25Ik",
+     "yBzy9ZYM-Og"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "end fiat",
+   "verdict": "narrative",
+   "why": "Shared claim that the fiat currency system is ending and Bitcoin/hard money replaces it.",
+   "claim_name": "The \"end of the fiat experiment\" story",
+   "claim": "The fiat money system is approaching collapse, and Bitcoin or hard money will replace it as the monetary standard.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Currency debasement and wealth disparity",
+    "cause": "Central banks printing unbacked fiat money",
+    "outcome": "Fiat system fails and a Bitcoin/hard-money standard emerges",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 10,
+    "channels": 4,
+    "months": 9,
+    "span": "2021-11 → 2026-08",
+    "examples": [
+     "Are We Close to the END of the Fiat Dollar?!",
+     "James Lavish | The End of the Fiat Experiment | Simply Bitcoin IRL",
+     "LAWRENCE LEPARD: End Fiat Wars & Wealth Disparity With Bitcoin"
+    ],
+    "ids": [
+     "7ATlZJmpsWE",
+     "Cb5k8WdD6Ys",
+     "Jzs3YyFnIpI",
+     "L2aKH2nm_yg",
+     "Nd-FTXTT8Wo",
+     "SUorC2hahYQ",
+     "TBARXWOnRYA",
+     "c0TZNGu5l5o",
+     "jJZSHwNykxI",
+     "ux7DQzeyqP8"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "shows resilience",
+   "verdict": "rhetoric",
+   "why": "Generic commentary wording across unrelated subjects, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Tuchman: Market Filled with \"Buyers of Intent,\" Shows Resilience in Uncertainty",
+     "Sri Lanka’s Tourism Sector Shows Resilience Despite Deadly Cyclone Damage and Nationwide Disruptions",
+     "India’s Economy Shows Resilience Amid Global Uncertainty, Says RBI Governor"
+    ],
+    "ids": [
+     "LqFM5y3NmLQ",
+     "O0xNP2NPfmw",
+     "T3IlISNP1BU",
+     "gZ3D7oazZUE",
+     "jLX1_pRU9FQ",
+     "s86O3eIxFHI",
+     "tcpQ9VebQJE"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "collapse triggers",
+   "verdict": "rhetoric",
+   "why": "Headline connector spanning floods, politics and bonds with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2024-04 → 2026-09",
+    "examples": [
+     "Russia flooding: Orenburg region swamped as dam collapse triggers once-in-a-century floods",
+     "Justin Trudeau Poised to Resign: Economic Collapse Triggers Political Chaos in Canada!",
+     "Japan's Bond Market Collapse Triggers Global Financial Shockwave"
+    ],
+    "ids": [
+     "038AVxMVyPU",
+     "1oqcH_PcVnk",
+     "22bBJv1fsfM",
+     "EeLOr65uX1g",
+     "UJCAHSTffP8",
+     "amvZ3YrVBZ4"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "means consumers",
+   "verdict": "rhetoric",
+   "why": "A generic explainer framing across unrelated policy topics, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-09 → 2026-09",
+    "examples": [
+     "Big GST Reforms: Govt Reduces Rates | What It Means For Consumers, Auto Sector & Economy?",
+     "Zillow Sued by FTC | How does it affect real estate industry (What it means to consumers)",
+     "Marijuana Reclassified: What Trump's Order Means For Consumers"
+    ],
+    "ids": [
+     "KwILFGX5Ur0",
+     "RK25CFrgLp0",
+     "TYfpco5kZuA",
+     "X1IfCSObcQc",
+     "eLUIUQL2-Jc",
+     "yJzId1nDUM8"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "dotcom bubble",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that today's AI/tech rally is a dotcom-style bubble that will burst.",
+   "claim_name": "The \"AI rally is the dotcom bubble all over again\" story",
+   "claim": "Today's AI and tech stock boom mirrors the 1999-2000 dotcom bubble and will end in a comparable crash.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "AI stock valuations have run far ahead of earnings",
+    "cause": "Speculative mania and hype-driven capital flows, as in 1999",
+    "outcome": "A severe market crash and prolonged drawdown in tech shares",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2022-10 → 2026-08",
+    "examples": [
+     "Michael Burry WARNING: \"The 2023 Crash Looks WORSE Than The Dotcom Bubble\"",
+     "NB486: Chrome Ditches Entrust Certs; Do AI Stocks Mirror the DotCom Bubble?",
+     "Dotcom Bubble vs Present-Day A.I. Rally #shorts"
+    ],
+    "ids": [
+     "9rjlahHvm2E",
+     "MhsLE1ukNEY",
+     "RGrlrTmVb0A",
+     "UpiPJcXub8I",
+     "tfqOUQkMMss",
+     "v7BD028_Ixs"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "must defend",
+   "verdict": "rhetoric",
+   "why": "A chart/urgency formula applied to unrelated subjects, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2020-03 → 2026-09",
+    "examples": [
+     "Bitcoin MUST Defend This Price - HUGE BREAKING AUSTRALIAN CRYPTO MOVE - Chainlink Domination",
+     "Bulls Must Defend 200-Day SMA Amid \"Aggressive\" Put Flows",
+     "Michael: Congress must defend its power or surrender it to an imperial president"
+    ],
+    "ids": [
+     "57LwKpMHieI",
+     "8IuND7oUHdw",
+     "Av-6KM_3LjU",
+     "WVzCaOZRUn0",
+     "k788owgkdSw",
+     "kANt267mECU"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "data centre boom",
+   "verdict": "narrative",
+   "why": "Titles share the claim that AI-driven data centre buildout is a durable boom lifting commodities, jobs and supplier earnings.",
+   "claim_name": "The \"data centre boom lifts the real economy\" story",
+   "claim": "Surging AI and cloud demand is driving a data centre construction boom that boosts demand for metals, power, infrastructure and workers.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Capacity cannot keep up with cloud and AI compute demand",
+    "cause": "Explosive growth in AI workloads requiring new data centres",
+    "outcome": "Sustained gains for copper, steel, power and equipment suppliers and local workforces",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 16,
+    "channels": 10,
+    "months": 5,
+    "span": "2026-03 → 2026-09",
+    "examples": [
+     "Indonesia data centre boom to boost workforce as cloud demand surges",
+     "Cummins India Q4FY26 Earnings: Bets Big On Railways, Mining & Data Centre Boom | FY27 Outlook",
+     "Copper, steel, aluminium key to data centre boom, says Rio Tinto boss | The Business | ABC NEWS"
+    ],
+    "ids": [
+     "1-tqZ_AgjzU",
+     "8riaMurrB3k",
+     "BM5xYwMxr1U",
+     "E3ty0U7A6K0",
+     "Fe8SSnpM5XI",
+     "IiZzA-U64v8",
+     "Ye44eKU4QJY",
+     "bYy2BIj6LN8",
+     "ewhEwWarG_M",
+     "hzfi31PGOBI",
+     "jTEGRe9vvsU",
+     "lnr7otFOcVY",
+     "nFJzs46vYC8",
+     "sjARzKJXZQg",
+     "txAjUXl12l8",
+     "xcu83w9SfPg"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "horror crash",
+   "verdict": "rhetoric",
+   "why": "Sensational tag on unrelated road-accident news reports.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 6,
+    "span": "2025-03 → 2026-10",
+    "examples": [
+     "One dead after horror crash south of Darwin, as road toll continues to rise | ABC News",
+     "Nationwide search for missing German backpacker + Horror crash in Melbourne's east | ABC NEWS",
+     "Mexico Horror Crash: Freight Train Splits Double-Decker Bus in Half | 10 Dead, 55 Injured"
+    ],
+    "ids": [
+     "7FNbbQSpUz0",
+     "8TFL-FgF3Xo",
+     "9pPapM_5TyQ",
+     "EN0svJtJyd4",
+     "L9hYARtZvMM",
+     "RPXHoAfrNiE",
+     "UsxNnOMGAZc",
+     "_CHyJpEbXXI",
+     "cvGcn_tDxRc",
+     "dS-Exqbax_s"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "dies crash",
+   "verdict": "rhetoric",
+   "why": "News-event subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 7,
+    "span": "2025-10 → 2026-10",
+    "examples": [
+     "🚨 TRAGIC LOSS: Toddler Dies After Crash at Queensland Police Station 🚨",
+     "Pregnant mother dies in crash, 19yo charged | ABC NEWS",
+     "Georgia teacher dies in crash casued by man fleeing ICE"
+    ],
+    "ids": [
+     "2Zj3moNEKX0",
+     "CwO2zSObV7E",
+     "DxxAQMQLmh4",
+     "NJKV-18XYaQ",
+     "PDvWCvLny4A",
+     "YNHluvzceyw",
+     "jeyByaeePgE",
+     "sxpwsC2NJt0",
+     "xs9sQMte344",
+     "xuoCIZSPJjg"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "you'll actually",
+   "verdict": "rhetoric",
+   "why": "Listicle headline formula promising usefulness, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 7,
+    "span": "2019-05 → 2026-09",
+    "examples": [
+     "How To Set Goals You'll Actually Achieve!",
+     "(LIVE) Take Control of Holiday Eating: 10 Keto Snacks and Appetizers You'll Actually Love!",
+     "#122 Max: 4 Game-Changing n8n Google Automations You'll Actually Use Every Day"
+    ],
+    "ids": [
+     "3UE1atOnOYo",
+     "Grxwo6w5DeU",
+     "gBFDQsPz44U",
+     "iQiGwZvbl1k",
+     "k1J27PqwV4U",
+     "ko37KLV7944",
+     "oROcU3Hq3fA",
+     "qhaHbohjzlI",
+     "wNFK8aXThuk"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "crash sends",
+   "verdict": "rhetoric",
+   "why": "News-headline verb pattern spanning car wrecks and metals prices; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 7,
+    "span": "2023-10 → 2026-09",
+    "examples": [
+     "Nova Scotia woman lucky to be alive after \"terrifying\" head-on crash sends Jeep flying on highway",
+     "COMEX Crash Sends Silver to $550",
+     "High-speed crash sends two to hospital in Grant Park"
+    ],
+    "ids": [
+     "2OU2ng-Cgg0",
+     "45pbfrbG3Ak",
+     "OFm3LGjNNUo",
+     "TTJ5cqR4130",
+     "UYZSX5AuEQw",
+     "a1-llylzHz4",
+     "ig0cIvCNsyw",
+     "xUi9V4y30_M"
+    ]
+   },
+   "first_read": "2026-10-03",
+   "last_read": "2026-10-03"
   }
  ]
 }
