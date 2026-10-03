@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -6181,6 +6181,156 @@
         "likes": null,
         "comments": 1,
         "enrichedOn": "2026-10-02"
+      }
+    },
+    {
+      "videoId": "wYxj68hcWz8",
+      "title": "Are Canadian Banks in a Bubble? Full Episode",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=wYxj68hcWz8",
+      "published": "2026-07-27",
+      "first_seen": "2026-10-03",
+      "views": 1651,
+      "length": "45:54",
+      "age_days": 68,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 39,
+        "comments": 21,
+        "enrichedOn": "2026-10-03"
+      }
+    },
+    {
+      "videoId": "2CkQHpkFzwg",
+      "title": "What Recession? Canadian Banks Just Crushed Earnings",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=2CkQHpkFzwg",
+      "published": "2026-06-05",
+      "first_seen": "2026-10-03",
+      "views": 253,
+      "length": "7:11",
+      "age_days": 120,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": 3,
+        "enrichedOn": "2026-10-03"
+      }
+    },
+    {
+      "videoId": "j1oIm66JQmA",
+      "title": "The Bank of Canada Just Issued a Financial Stability Warning",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=j1oIm66JQmA",
+      "published": "2026-03-17",
+      "first_seen": "2026-10-03",
+      "views": 542,
+      "length": "2:34",
+      "age_days": 200,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": null,
+        "enrichedOn": "2026-10-03"
+      }
+    },
+    {
+      "videoId": "JSydxyOMY8A",
+      "title": "The Bank of Canada cuts Rates despite Sticky Inflation",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=JSydxyOMY8A",
+      "published": "2025-09-18",
+      "first_seen": "2026-10-03",
+      "views": 77,
+      "length": "15:16",
+      "age_days": 380,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-10-03"
+      }
+    },
+    {
+      "videoId": "5eqN-8i1nVI",
+      "title": "Toronto Condo Developer Charges Rose by 20.7% in May 2024",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=5eqN-8i1nVI",
+      "published": "2024-07-15",
+      "first_seen": "2026-10-03",
+      "views": 24,
+      "length": "0:24",
+      "age_days": 810,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-03"
+      }
+    },
+    {
+      "videoId": "micT0lVMfII",
+      "title": "Toronto Condo Developer Charges Rose by 20.7% in May 2024",
+      "channel": "The Canadian Investor Podcast Network",
+      "url": "https://www.youtube.com/watch?v=micT0lVMfII",
+      "published": "2024-07-15",
+      "first_seen": "2026-10-03",
+      "views": 456,
+      "length": "0:24",
+      "age_days": 810,
+      "query": "channel sweep: The Canadian Investor Podcast Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCjqZR7tSMaCc6ScXjD4bJEQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-03"
       }
     }
   ]
