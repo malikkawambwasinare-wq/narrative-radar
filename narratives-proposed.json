@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-03",
+ "generated": "2026-10-04",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.199,
+ "cost_usd": 0.2039,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -26882,6 +26882,1499 @@
    },
    "first_read": "2026-10-03",
    "last_read": "2026-10-03"
+  },
+  {
+   "phrase": "phishing scam",
+   "verdict": "rhetoric",
+   "why": "A crime topic across unrelated contexts, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 9,
+    "span": "2022-01 → 2026-09",
+    "examples": [
+     "Phishing Scam Emails | How to Hack | Ethical | Hack Instagram | Phishing Email Example | 2023",
+     "My $40k/Day Cybercrime Empire Crumbled After 1 Phishing Scam | Brett Johnson",
+     "Coinbase Phishing Scam: $400M Lost! Protect Your Bitcoin NOW!"
+    ],
+    "ids": [
+     "Cu6uROHvTmc",
+     "MgY_KwkGQHw",
+     "S0fo4zdRzOc",
+     "X0tcyCjDvwo",
+     "a6B8gl_vdko",
+     "leV8XtcG8a4",
+     "mQpvxKJrH1A",
+     "wlCoUP6wW1Y",
+     "znFXrLS31Hc"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "visuals show",
+   "verdict": "rhetoric",
+   "why": "News-footage framing device, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 7,
+    "months": 7,
+    "span": "2025-12 → 2026-10",
+    "examples": [
+     "Shocking visuals show people approaching active lava fountains at Hawaii’s Kilauea volcano",
+     "EXACT MOMENT: Was Maduro CAPTURED & Taken Away in US Forces Chinook? Visuals Show | Times Now World",
+     "LIVE: Stunning Satellite Visuals Show Iran Strikes Damage U.S. Military Assets in Gulf  | World News"
+    ],
+    "ids": [
+     "84l9dO9jqFQ",
+     "9mNWMvoZPbU",
+     "KlBO_Bgm1ko",
+     "UT4-_Jk46Vc",
+     "Xr8E82fKUkU",
+     "hcFKO51-DhU",
+     "lbq3IG5lDaA",
+     "mk6acFCWTmg",
+     "oPzUgs6IWXI",
+     "qsetgXxjWkU",
+     "wV6lI7daaNo",
+     "zBAoBtna-Lg"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "tragedy dead",
+   "verdict": "rhetoric",
+   "why": "Disaster headline format with casualty counts, no shared thesis.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 5,
+    "months": 9,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "Jagannath Puri Rath Yatra Tragedy: 3 Dead, Several Injured In Stampede | Families Mourn Losses",
+     "Texas Flash Flood Tragedy: 80 Dead, Many Missing, Rescue Operations Ongoing | Texas Flood",
+     "Texas Flood Tragedy: 24 Dead, 23 Girls Missing as River Surges"
+    ],
+    "ids": [
+     "7ECMgyILE3A",
+     "8Vt2-XkYhvI",
+     "CADgafvduyI",
+     "ER1zU3Ns9C0",
+     "Sc7c7-h9gn4",
+     "WA9BECnJaQI",
+     "bNkHjC4vcIg",
+     "cSIpuNJpqYc",
+     "gU-R3pQO4GY",
+     "jPMySdkeOmo",
+     "mH4TTD2X08s",
+     "oG2Q4ZBMGao",
+     "ppv420mdDnA",
+     "tJh6ctmJ2M0"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "eps beat",
+   "verdict": "rhetoric",
+   "why": "Earnings-report genre label, subject without a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 29,
+    "channels": 4,
+    "months": 11,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "Ross Stores Shakes Off Tariff Headwinds with Strong Q2 2025 EPS Beat!",
+     "Emerson's Q3 2025 Results: EPS Beat, Revenue Miss, and a Glimpse into the Future of Automation!",
+     "Petco (WOOF) Q2 2025 Earnings: 400% EPS Beat Sends Stock Up! Full Analysis & Future Outlook"
+    ],
+    "ids": [
+     "3zd8PT77to4",
+     "6nnE3XkFsi4",
+     "7dDQoD22ZCE",
+     "850YG2W7WTA",
+     "Ci9kyjPReUY",
+     "EHUGnjwNZrA",
+     "ErT16YQf2qo",
+     "HV2ahDVGkUI",
+     "H_sxS64vxdo",
+     "KWTUE2U_cKc",
+     "Lsbgmo87LBo",
+     "VBqRklQw228",
+     "WLzWgNjzpnY",
+     "YrOwO7KOe7U",
+     "ZV3pbR7rC7s",
+     "aqaHIQq9Qsc",
+     "awLLWtrCV-g",
+     "cWDEFojAo6M",
+     "eW6m0MrcTV0",
+     "j_G38VLfT8M"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "banking collapse",
+   "verdict": "narrative",
+   "why": "Titles share a claim that the banking system is failing and that this drives money into bitcoin/crypto.",
+   "claim_name": "The \"banking collapse drives people to bitcoin\" story",
+   "claim": "The fractional-reserve banking system is structurally fragile and heading for collapse, and each bank failure pushes savers toward bitcoin and hard assets as the alternative.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Banks are failing and deposits are not safe",
+    "cause": "Fragile fractional-reserve banking, rate shocks and central bank policy",
+    "outcome": "Flight from banks into bitcoin, gold and self-custody assets",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 17,
+    "channels": 10,
+    "months": 7,
+    "span": "2023-03 → 2026-09",
+    "examples": [
+     "How they Plan to Use Banking Collapse to Attack Bitcoin | EP 694",
+     "Banking Collapse, Silicon Valley Bank with Alfonso Peccatiello",
+     "BITCOIN'S NEXT BIG TARGET! | What A Banking COLLAPSE Means For Crypto!"
+    ],
+    "ids": [
+     "0COLEYTpOv8",
+     "2GBjT-Db3O4",
+     "JoF1bE6TRcw",
+     "QXoq3Qew0z0",
+     "TSCeFraPx64",
+     "V-_QZR9o8vo",
+     "VfjLOKKkf8s",
+     "_LyYvnsOgq0",
+     "aLqVs2dcSvI",
+     "f-o3Q2Qkzkc",
+     "fDz7uJHzfMo",
+     "hJQBOM6mZZE",
+     "jvVjWe7ZWLc",
+     "kI-GQw9mIQ0",
+     "r0TKB-80inU",
+     "s6oKShI-bo4",
+     "zjwO2COKPU8"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "drone show",
+   "verdict": "rhetoric",
+   "why": "Event spectacle footage, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 12,
+    "months": 12,
+    "span": "2021-12 → 2026-10",
+    "examples": [
+     "Dubai Drone Show #shorts",
+     "World’s first Doraemon drone show in Hong Kong’s Victoria Harbour",
+     "🐉 Dragon Boat Festival drone show lights up sky in Hong Kong"
+    ],
+    "ids": [
+     "-_RgJJ1UbzQ",
+     "1wOD5F-ZvDM",
+     "3AkzlcsEqXs",
+     "5PLKRxieQfQ",
+     "5bpPsZpRNGc",
+     "ByBd56w62qY",
+     "Gz0mQVUfopE",
+     "I8uI6Z080mM",
+     "IRakAgEkzDg",
+     "KRET4936X3Q",
+     "WDPCm9ebwxU",
+     "WKLOfQZ5vW4",
+     "Y9egEu5qs-o",
+     "axptCz4d9KE",
+     "cdY9CMJ7iXA",
+     "iTG59qwPHDs",
+     "ljde1ePTse0",
+     "pebfsU7OVZU",
+     "vxaypoiOckk",
+     "yfIWtCE5_ZQ"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "power grid collapses",
+   "verdict": "rhetoric",
+   "why": "Breaking-news reports of separate blackouts; no common cause or prediction.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 6,
+    "span": "2026-02 → 2026-09",
+    "examples": [
+     "RUSSIA-UKRAINE WAR: Kyiv & Moldova Power Grid Collapses After Massive Technical Failure",
+     "Nationwide Blackout In Cuba | Power Grid Collapses Again",
+     "WATCH: Cuba Plunged Into Darkness as National Power Grid Collapses"
+    ],
+    "ids": [
+     "16E1K0ykSvg",
+     "CC4Gwy3tLa8",
+     "HUAsu5bxiG4",
+     "SChk7TPOBMY",
+     "U3UodrNPiMo",
+     "aml-E2M-ZoA",
+     "h8JWRq47lyo",
+     "q1Sfkx-rFTk",
+     "vdrG56_GkRw",
+     "zWuzu5OI-E4"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "won't admit",
+   "verdict": "rhetoric",
+   "why": "Concealment teaser applied to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 7,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "Pritzker won't admit problems in Chicago: Trump",
+     "Former Dalton School Student Reveals the Epstein Secret that Faculty Won't Admit | Jason Jorjani",
+     "Why won't the US admit to a UAP retrieval program?"
+    ],
+    "ids": [
+     "-d0zyyjajI0",
+     "FdZUntvhUow",
+     "NQbk1EIENFs",
+     "Whx7Fc_8jQk",
+     "cnDsH1csw2E",
+     "eMOaus3pjEw",
+     "qzgg9lAC9_Y",
+     "uycQ9I5VZZQ"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "must resign",
+   "verdict": "rhetoric",
+   "why": "Titles share no common claim; mixes crypto regulator demands with office party chatter.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 7,
+    "span": "2022-08 → 2026-09",
+    "examples": [
+     "🚨 BAKKT LAUNCHES CRYPTO BANK SERVICES & SEC GARY GENSLER MUST RESIGN! (BITCOIN & ETHEREUM)",
+     "Ask Work It: Are goodbye parties a must when we resign?",
+     "Are goodbye parties a must when we resign? #askworkit #workoutmotivation"
+    ],
+    "ids": [
+     "AejE24IfrEs",
+     "BQDfKscrmU4",
+     "Hdw6QSKFUAU",
+     "RH5Lol48r8Q",
+     "b87Mfdw1Kzw",
+     "f8Lxt42g9x0",
+     "mlCW920L4jQ",
+     "oQwE1nQsMsY"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "reckoning coming",
+   "verdict": "rhetoric",
+   "why": "Generic doom phrasing applied to unrelated assets with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2024-01 → 2026-09",
+    "examples": [
+     "A “Day of Reckoning” is Coming for Multifamily Real Estate in 2024",
+     "Bitcoin's Resilience: Fiat's Reckoning & The Coming Crisis",
+     "A Reckoning Is Coming The Market Is Going To Price This In And It Will Cause Havoc For Investors"
+    ],
+    "ids": [
+     "TdipZ5V3aEU",
+     "VWF8Pmh6vJk",
+     "Z0cFtY4Zfy0",
+     "ZTe6J4_aikk",
+     "jT4Fw4ysmcs",
+     "rZV_oc7h9kw",
+     "wqujokHxx-o"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "coming prepared",
+   "verdict": "rhetoric",
+   "why": "A call-to-action hook, not a shared claim, though mostly crypto-flavored.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 6,
+    "months": 11,
+    "span": "2023-01 → 2026-09",
+    "examples": [
+     "The Crypto Bull Market is Coming 🔥 Are You Prepared?",
+     "A $10 MILLION Bitcoin Is Coming - Are You Prepared?",
+     "BREAKING NEWS! MORE CRYPTO VOLATILITY COMING! BE PREPARED!"
+    ],
+    "ids": [
+     "44Pvjf8Q7QA",
+     "DzZ8fML8Ekw",
+     "F_DscyCTN5U",
+     "FsADzLW0Re8",
+     "G_ArXXX0Tzc",
+     "KsOXYnXdFp0",
+     "UjGhEpocBZM",
+     "VvQqYRcBb7k",
+     "YPHhC4OHLOc",
+     "j0aHPBctDCc",
+     "j5UwIar05tQ",
+     "lpzrRJij3lE",
+     "u1ZHM38VhZA",
+     "zrT9EsQmhyU"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "cause headaches",
+   "verdict": "rhetoric",
+   "why": "Subject phrase spanning diet, root-cause medicine and visa news with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 5,
+    "months": 8,
+    "span": "2018-11 → 2026-09",
+    "examples": [
+     "Can Gluten Cause Headaches?",
+     "Get to the Root Cause of your Headaches | Podcast #246",
+     "Donald Trump's new visa fees cause more headaches for migrants | The World | ABC NEWS"
+    ],
+    "ids": [
+     "4GbmqT4VQHM",
+     "5_xNQkdWlSY",
+     "9N-iK7eB3nM",
+     "V_xP-qAnTEs",
+     "ayY3IolLGis",
+     "dSw74_oMjTA",
+     "eAlyOc5rcq8",
+     "iQljVOU3j6Q",
+     "msjQLne2SsY",
+     "nHC4-ej5KaE",
+     "oqgt-ELd9no",
+     "qIhNg3LFxSQ",
+     "udc8KAa-K9Q"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "cause fatigue",
+   "verdict": "duplicate",
+   "why": "Same single-root-cause-for-tiredness/brain-fog framing already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "brain-fog-has-a-single",
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 8,
+    "months": 8,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "Understanding Energy Blockers, Root Cause of Fatigue, Exhaustion, Brain Fog & More | Dr. Josh Axe",
+     "Can overexercise cause fatigue? Are afternoon cat naps okay?  And more answered!",
+     "The Top 3 Mitochondrial Toxins that Can Cause Fatigue"
+    ],
+    "ids": [
+     "1__ZYTV6VpY",
+     "4M8dQ2FSPtk",
+     "BSXnGJ3xwKY",
+     "E0LI-yLew1I",
+     "RYJBoafpQuY",
+     "RmrLH1AF2H4",
+     "VmLt_R_hryc",
+     "Y32gNT85W-I",
+     "_RGzcNY0lkc",
+     "n4_nq2OaOfc",
+     "xfddllzMVgo"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "cause acne",
+   "verdict": "rhetoric",
+   "why": "Titles propose contradictory causes (insulin, masturbation, diet); no one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 8,
+    "span": "2020-09 → 2026-09",
+    "examples": [
+     "How Can Insulin Resistance Cause Acne",
+     "CAN MASTURBATION CAUSE ACNE/PIMPLES | Masturbation Myths Part 4 | HINDI",
+     "The BIG CAUSE Of Acne & How To Get Rid of It QUICKLY | Dr. Mark Hyman"
+    ],
+    "ids": [
+     "1CktSnQbOFc",
+     "4L6Y4z-bISY",
+     "5XlAVn1Z5cU",
+     "5jz7cmAn9MI",
+     "L0n0hCKUUZo",
+     "MMC7B6Ykcis",
+     "SvkSC4ONC8o",
+     "aQO2l0RxOuM",
+     "z9Z-HLlOxb0"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "every trader must",
+   "verdict": "rhetoric",
+   "why": "Listicle/authority format for trading content, not a falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 9,
+    "span": "2024-04 → 2026-08",
+    "examples": [
+     "How news impacts the market? | Every Trader Must Know",
+     "The 10 Profitability Rules Every Trader Must Follow",
+     "Key Dates Every Trader Must Know – March 2025!"
+    ],
+    "ids": [
+     "-wjCNCKvn5A",
+     "2TTnCDqQ55I",
+     "D6o7ajIVewM",
+     "XpVj6sx_8VE",
+     "Yey60-73ucA",
+     "ad3ITMSCBm0",
+     "kduwwq2fLg0",
+     "mFwjl0eUGrk",
+     "nCA9GlX589c",
+     "qrtpFUj3ci8",
+     "uTWKBo44phI"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "f-16 crashes",
+   "verdict": "rhetoric",
+   "why": "Recurring news event subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 12,
+    "months": 3,
+    "span": "2024-05 → 2026-09",
+    "examples": [
+     "RSAF F-16 crashes at Tengah Air Base during take-off, pilot hospitalised with no major injuries",
+     "WATCH : Greek F-16 crashes on tourist airport runway after engine catches fire in mid-air!",
+     "F-16 crashes during training exercises in Michigan"
+    ],
+    "ids": [
+     "AKb-Ezsmb5U",
+     "Da_efigZ154",
+     "E-1gKTijFHU",
+     "FpUgRtNynNg",
+     "GwlRsciRhEw",
+     "LWBPIMVqSXI",
+     "NiGrStVCjJo",
+     "RWiUvYMZHxo",
+     "UUPDLJIrnGM",
+     "YKGczo_90ak",
+     "dbkzaDKh2Fs",
+     "eg3OhHVHD_0",
+     "r5PwA19u_3Q",
+     "tGd_enrxkqQ",
+     "vUL1lWPEKgs"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "recruitment scam",
+   "verdict": "rhetoric",
+   "why": "News subject label for separate corruption cases, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 4,
+    "span": "2026-05 → 2026-10",
+    "examples": [
+     "Former TMC Minister Sujit Bose Arrested In Municipality Recruitment Scam",
+     "ED Arrests Former Bengal Minister Sujit Bose In Municipality Recruitment Scam",
+     "Fake Teachers In Government Schools? India Today Investigation Exposes Recruitment Scam"
+    ],
+    "ids": [
+     "87N22qEbh1U",
+     "I7D3sUaXs4M",
+     "V2a4u_dAf_s",
+     "YTB6qgY9jm8",
+     "ZElpODWQs-I",
+     "a0mll_hZ9ik",
+     "ePIrbKFsJuw",
+     "flAqLNSfkUo",
+     "jfV21bAn0L4",
+     "qbc3HV_6bg8",
+     "rgbkVjRdv-U",
+     "sliZCnN3JDg",
+     "vhWOCsdnmpw",
+     "xzeKlc5dMTQ"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "roswell crash",
+   "verdict": "narrative",
+   "why": "Titles share a claim that the 1947 Roswell crash was extraterrestrial and covered up.",
+   "claim_name": "The \"Roswell was a covered-up alien crash\" story",
+   "claim": "The 1947 Roswell incident involved a genuine extraterrestrial craft and bodies, and the US government has concealed the evidence ever since.",
+   "industry": "Fringe & unexplained",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "The public is denied the truth about an extraterrestrial crash",
+    "cause": "Government and military secrecy since 1947",
+    "outcome": "Disclosure, with material analysis proving non-human origin",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 6,
+    "span": "2024-09 → 2026-09",
+    "examples": [
+     "Military Generals Confirm Alien Corpses Were Found in Roswell Crash | Whitley Strieber",
+     "New Roswell Crash Material Study Will Prove it's Extraterrestrial | Matthew Szydagis",
+     "They Found Alien Wreckage in 1947 & The Government Hid It! | UFO Secret Roswell Crash"
+    ],
+    "ids": [
+     "8HWi0qUv62I",
+     "8l-jDQQEaUg",
+     "9XWYlwEMlcw",
+     "C5-D2UV3jYc",
+     "_CH6wgKHlV8",
+     "bwKLAdUyxKo",
+     "eOitzGoy50w",
+     "jFGny2rhEV0"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "bubble pops",
+   "verdict": "rhetoric",
+   "why": "Different bubbles (AI, quantum, private credit) with no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Before the AI bubble pops ... 🤪 #ai",
+     "Stock Market This Week: Jobs Report Selling, Quantum Bubble Pops, NVDA at CES 2025",
+     "DISGUSTING Private Credit MELTDOWN 2026: Wall Street's $1.8T Bubble Pops – Shorts Are Loading Up NOW"
+    ],
+    "ids": [
+     "3e1RrRABA8E",
+     "BxTsWYSdV58",
+     "GSsMyAe2XKQ",
+     "gfPYR5Qb5iY",
+     "il9UbDmPuJ8",
+     "jh3d8xO9NHg"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "bid end",
+   "verdict": "rhetoric",
+   "why": "Generic news phrasing across unrelated topics, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 7,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "US close to signing critical minerals deal with Ukraine in a bid to end war | ABC NEWS",
+     "'An aberration': New York Rep. Espaillat on Trump admin bid to end birthright citizenship",
+     "RFK Jr. to release new guidelines in bid to end 'war on saturated fats' | Morning in America"
+    ],
+    "ids": [
+     "2J9AnbJNNi4",
+     "5UOW3MiwJuE",
+     "7SYFxXeObJw",
+     "Yap57NQm4PE",
+     "erhWO3iYTBw",
+     "gksh5g88fQ8",
+     "mgvbxcsV8C8",
+     "pr6e9oN5RP0",
+     "tmSfuFrQi0c"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "crore scam",
+   "verdict": "rhetoric",
+   "why": "Subject label for unrelated Indian fraud stories, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 6,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Jane Street Alleged Fraud Explained–SEBI Ban & ₹4,843 Crore Scam #banknifty #jamastrretfraud #stocks",
+     "TTD Rs 100 Crore Scam: Alleged Theft Of Temple Donations Sparks Political Storm",
+     "RS 160 Crore FD Scam In Haryana: Kotak Mahindra Bank Officials Accused In Panchkula Fraud"
+    ],
+    "ids": [
+     "3_-ib3JODnE",
+     "3ioWY98OQ-M",
+     "KGR3wI8Zn74",
+     "QjGELJH9GkM",
+     "WLVYwt0k8B4",
+     "gvZtEz_tdus",
+     "mv15W27KVsY",
+     "uULYEq3xEbs"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "helping save",
+   "verdict": "rhetoric",
+   "why": "Common phrasing in unrelated human-interest news, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 8,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "River Valley fire: 18 people recognised for helping save lives",
+     "Cryopreservation helping to save critically endangered Queensland tree | ABC NEWS",
+     "Australian Bali flood survivor credits her dogs with helping to save her | The World | ABC NEWS"
+    ],
+    "ids": [
+     "8dqhfcGHLJI",
+     "A5OtiH1Zoz4",
+     "H75i7TWetzw",
+     "TCkUNqJfRi8",
+     "XPYIb9p45bs",
+     "_ZkAuaemobo",
+     "_ryNndTOk5A",
+     "xkJn2G_RI-0"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "mystery really",
+   "verdict": "rhetoric",
+   "why": "Curiosity hook format spanning unrelated mysteries.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 14,
+    "months": 6,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Oak Island’s $200 Million Mystery: What’s Really Hiding in the Money Pit?",
+     "Mojtaba Khamenei Missing After Succession Sparks Mystery Over Who Really Controls Iran Amid War",
+     "The Dyatlov Pass Mystery - What Really Happened? #Unexplained #DyatlovPass #TrueStory"
+    ],
+    "ids": [
+     "0zFeO-Vsfro",
+     "1Fb2m1CH9UI",
+     "9es8M6ibnQM",
+     "AAAXpfp0evQ",
+     "AopSfcOF-wI",
+     "FvPtPlxjB3I",
+     "N6Y7A29amso",
+     "S1gmbKMqrP8",
+     "Sv2alE6X78M",
+     "Vdxv_3b4ark",
+     "VisEIbZnk8U",
+     "Wqgl7z7G37I",
+     "iIqeVyAUmOU",
+     "tYouPhpcV3U",
+     "vR0w5p__Nr8"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "five dead",
+   "verdict": "rhetoric",
+   "why": "Casualty headline formula, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 7,
+    "months": 10,
+    "span": "2024-07 → 2026-10",
+    "examples": [
+     "At least five dead as record torrential rains pound South Korea",
+     "At least five dead as hundreds flee ferry fire in Indonesia | ABC NEWS",
+     "Ladakh under curfew after statehood protests leave at least five dead"
+    ],
+    "ids": [
+     "4FJ7c--dpes",
+     "8jG9vxPFkxg",
+     "CNR9lLVWcFg",
+     "TBYNzZM2z4k",
+     "UN__fKSeuBc",
+     "VaeRFT858x0",
+     "g3H5Fy12-SY",
+     "iUCZ8FbD4jg",
+     "iietm2Kw6n8",
+     "r8E1RT0jFtw",
+     "y_QZUC0-6Ds",
+     "zYRGk6mx9Rk"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "really built",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that the pyramids' true builders/purpose differ from the mainstream account.",
+   "claim_name": "The \"who really built the pyramids\" story",
+   "claim": "Believers hold that the Great Pyramid and other Egyptian monuments were not built by dynastic Egyptians with simple tools for tombs, but by a lost advanced civilization, extraterrestrials, or for an undisclosed technological purpose that mainstream archaeology conceals.",
+   "industry": "Fringe & unexplained",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "The accepted account of pyramid construction doesn't explain the precision and engineering",
+    "cause": "Mainstream archaeology ignores or suppresses evidence of advanced or non-human builders",
+    "outcome": "History should be rewritten to acknowledge a lost advanced civilization or alien involvement",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 18,
+    "channels": 15,
+    "months": 9,
+    "span": "2023-11 → 2026-10",
+    "examples": [
+     "Aliens vs. Advanced Ancient Egyptians: Who REALLY Built the Pyramids? | Chris Dunn",
+     "How a Remote Viewing Team Can Discover Who REALLY Built the Pyramids | David Morehouse",
+     "Nuclear Engineer Reveals What the Great Pyramid of Giza was REALLY Built for | Max Zamilov"
+    ],
+    "ids": [
+     "0Aa7Jb3N2AA",
+     "2h59npeXUS8",
+     "3N12LbjUk2U",
+     "89NJ2QNBpF0",
+     "9eA0hK7gxVg",
+     "9toKiUNd2Wo",
+     "BwnB6xpLzTA",
+     "IuOrw6chQi8",
+     "NTasffkKvrg",
+     "VsUk7pnC3Xw",
+     "VvFWE6z-Lj4",
+     "Yg_Szgr3-U4",
+     "akkE_xvUvTk",
+     "b9tozlOCfb4",
+     "hGOMDGpSP4o",
+     "ha8z0KBqxZ0",
+     "p--zPoMePnU",
+     "ybYdvLY8W0M"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "announces end",
+   "verdict": "rhetoric",
+   "why": "A news-announcement format covering unrelated events, with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 7,
+    "months": 7,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "Syrians \"dancing in the street\" as Trump announces end of sanctions | The World | ABC NEWS",
+     "Israeli Hostage Release: Trump Announces End of Gaza War, to Meet Netanyahu, Hostage Families",
+     "TRUMP UKRAINE PEACE LIVE | President Trump Announces End to Ukraine War Aboard Air Force One"
+    ],
+    "ids": [
+     "24jAOV66RPo",
+     "3YVzTbt8UOU",
+     "6vk0EdxK6a4",
+     "CPlRxTB1w1E",
+     "DSb_Rn7FBbU",
+     "QxhOUmO4W-U",
+     "RdQfJf3-U2E",
+     "SyDmu4URZ5o",
+     "TE09DTPW_N4",
+     "aUgehUwmZ80",
+     "hzZMo_b6_yU",
+     "i1g2oOdi-nM",
+     "qOJIBY6bzss",
+     "vEUpLqKHRso",
+     "xUUlK0QgZAU"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "yes really",
+   "verdict": "rhetoric",
+   "why": "Pure emphasis tag attached to wholly unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 7,
+    "span": "2020-07 → 2026-08",
+    "examples": [
+     "FREE Things To Make You Money.... Yes, They Really Are Free",
+     "AQUARIUS:  YES!  YOU REALLY WANT THIS, AND IT’S FINALLY ABOUT TO HAPPEN.  April 21-27",
+     "🎙️ EP 80: The AI Browser That Buys Stuff for Scammers (Yes, Really)"
+    ],
+    "ids": [
+     "1x_OIPEINww",
+     "63BlNsYVhRk",
+     "ADvOMach4EE",
+     "CKXU4zrPCu4",
+     "CunKg25fwaI",
+     "Ptka208tvtk",
+     "ojqEkwPCNQo",
+     "z3OocPcx4MY"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "ipo boom",
+   "verdict": "rhetoric",
+   "why": "A market-topic label; titles disagree on whether the boom is good, risky, or ending, so no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 27,
+    "channels": 11,
+    "months": 11,
+    "span": "2025-08 → 2026-10",
+    "examples": [
+     "Tech IPO Boom: Mega Caps Eye Innovation as Pace Picks Up",
+     "Octoberfest! Record ₹46,000 Cr IPO Boom In October led by Tata Capital, LG, Lenskart",
+     "CEA Warns IPO Boom Becoming Exit Route, Calls For Stronger Bond Market"
+    ],
+    "ids": [
+     "44PRESXTPcE",
+     "4OwniRjw3sY",
+     "9N3kbdJMxcY",
+     "EVGxP3kJV1Y",
+     "H8CinpxoVCk",
+     "LxSBHtnpUhA",
+     "ShDK2SCeDrM",
+     "U2VLDzkE4U0",
+     "UQrhrQvGXd4",
+     "Vydcue40r_M",
+     "W3Mj5NzAWEQ",
+     "YcblOqLfVpk",
+     "ZFzV_yzkuKY",
+     "eBm2NklsPUc",
+     "ipQkKNzmXNw",
+     "iqOccf-AdIs",
+     "j8LnmuM9wGU",
+     "k8hx9jjjHqc",
+     "nOKS7B737sA",
+     "pUpgIWcWMvY"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "ban cnn",
+   "verdict": "rhetoric",
+   "why": "Coverage of a single news event rather than a contestable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 39,
+    "channels": 24,
+    "months": 2,
+    "span": "2026-09 → 2026-10",
+    "examples": [
+     "Trump moves to ban CNN, MS NOW and Politico from the White House",
+     "Trump To Ban CNN, MS NOW, & Politico",
+     "BREAKING: Trump claims to ban MS NOW, CNN & Politico from WH"
+    ],
+    "ids": [
+     "0rX67w4g9wg",
+     "2w9pCZq5yAo",
+     "5Mm_ROTMvWw",
+     "8VZ5CDo4xdE",
+     "B6cc_m-5gIY",
+     "DDo4vuRSOyw",
+     "EFlIfaF93U0",
+     "F6Yaq6nWybk",
+     "FZwz3vKWfxU",
+     "HXslFENko48",
+     "JPUkJwpri4c",
+     "KkN4nA7oewY",
+     "O5v4cuTNmVs",
+     "P8kjbYkxIzI",
+     "QcFwVCjN5AI",
+     "RUdo62ihXHg",
+     "RgS_tBl_GCc",
+     "U0xAG2BhvuE",
+     "UCc3C5LHZ54",
+     "UpJvuT1Moqw"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "beat raise",
+   "verdict": "rhetoric",
+   "why": "Earnings-report format wording with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 23,
+    "channels": 4,
+    "months": 15,
+    "span": "2024-11 → 2026-10",
+    "examples": [
+     "WMT Beat and Raise, LOW Falls After Earnings",
+     "Earnings Movers: ACN A.I. Wins, DRI Beat & Raise, LEN Struggles",
+     "China, U.S. Relationship Creates NVDA Uncertainty, CRM Beat and Raise"
+    ],
+    "ids": [
+     "-6Pmq4CnM3w",
+     "8yRrnUN2b8w",
+     "DCW0IAQgDcU",
+     "H8PwR4zLJ6g",
+     "IoDs7bHdTzE",
+     "KeuIiv1TkU0",
+     "L-s_tkdnM4M",
+     "N6Z3UJmqAMY",
+     "X-UvDOixYFU",
+     "YfR4AvsGqLo",
+     "Z6zxcGFzv_M",
+     "_-AD1g99APM",
+     "_IGNw5yXebM",
+     "_L0ystwWCn0",
+     "_nZccpii3T8",
+     "dai8FOtAzFo",
+     "fX60-OBKzsY",
+     "qQfILCz8xpw",
+     "qmM1fnPtGQg",
+     "r7QWIjd0erM"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "coming it'll",
+   "verdict": "narrative",
+   "why": "Titles share the claim that an imminent bitcoin explosion will transform finance.",
+   "claim_name": "The \"massive Bitcoin explosion is coming\" story",
+   "claim": "Advocates claim an imminent, record-shattering surge in Bitcoin's price is about to occur and will permanently transform the financial system.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Investors are underexposed to Bitcoin before a historic move",
+    "cause": "Institutional adoption and fixed supply converging",
+    "outcome": "Buy Bitcoin now; price records shatter and finance is remade",
+    "clock": "Imminent, within months"
+   },
+   "evidence": {
+    "videos": 17,
+    "channels": 3,
+    "months": 10,
+    "span": "2024-10 → 2026-05",
+    "examples": [
+     "\"Something Massive Is Coming... It'll SHATTER ALL RECORDS\" - Matt Hougan",
+     "\"Something Massive Is Coming... It'll SHATTER ALL RECORDS\" - Michael Saylor",
+     "Michael Saylor - A BTC Explosion Is Coming! It'll Revolutionize Finance Forever!"
+    ],
+    "ids": [
+     "-BVYAu6-Bs8",
+     "02Xrdqa0R6k",
+     "1paSGwjK1Bo",
+     "3SJEUEhuaWo",
+     "7oY0mH9lQLo",
+     "CYD1KGu8yNw",
+     "FZ4hVQCR27M",
+     "Fug0JRmkgpA",
+     "GhUMB6hg8KM",
+     "M3l5liM34lU",
+     "R66f7hW3Tng",
+     "Y5YJPj3PFAo",
+     "hiNxFKQORO4",
+     "jAgxh2SO-xs",
+     "jhwjyQ-EWFk",
+     "qH_pLhXIaDU",
+     "xu5pnfUwj4o"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "dead rescue",
+   "verdict": "rhetoric",
+   "why": "Disaster-coverage boilerplate across unrelated incidents; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 8,
+    "span": "2025-04 → 2026-09",
+    "examples": [
+     "Myanmar Earthquake Tragedy: Over 2,000 Dead, Rescue Efforts Continue",
+     "South Korea plant collapse: Three killed, others feared dead as rescue operation continues",
+     "LIVE: MASSIVE FIRE In Jakarta Leaves At Least 20 Dead | Rescue Ops At Terra Drone Indonesia Building"
+    ],
+    "ids": [
+     "8uRc8dRAbRQ",
+     "B18-I0_y0UM",
+     "KYXrQkqtwJ8",
+     "LLb2YFJLP40",
+     "OIFIPhDP9Jg",
+     "R7Cz8TukqQA",
+     "U_9axZYiRoU",
+     "W2OnEcnmm_A",
+     "Y55QfiKW73k",
+     "ZkTk4mMyOS8",
+     "gfyweb2RRM4"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "crashes takeoff",
+   "verdict": "rhetoric",
+   "why": "A news-event subject with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-06 → 2026-06",
+    "examples": [
+     "Air India plane crashes after takeoff in Ahmedabad, 'many' killed",
+     "Royal Malaysian Air Force F/A-18 Hornet crashes on takeoff in Kuantan",
+     "Tragedy In Louisville: UPS Cargo Plane Crashes After Takeoff | Several Crew Members & Civilians Dead"
+    ],
+    "ids": [
+     "0_WvQ-MiYXQ",
+     "GgmK7HdE7qc",
+     "J4drcwthUIo",
+     "JNiocrwajTU",
+     "M24GI8WzA8I",
+     "QK2ex-yrB_8",
+     "V_rJHYt6H0g",
+     "hC1sgrOhzmQ",
+     "sRH84mFVCU4"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "chopper crash",
+   "verdict": "rhetoric",
+   "why": "Incident reporting, no common claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-05 → 2026-10",
+    "examples": [
+     "Malaysia chopper crash: Findings show one helicopter was not flying at right altitude and direction",
+     "Faulty radio antenna among issues in fatal chopper crash | ABC News",
+     "'Outback Wrangler' Matt Wright expected to plead not guilty in chopper crash trial | ABC NEWS"
+    ],
+    "ids": [
+     "-F0jPUexP0U",
+     "AkZPquBMfpU",
+     "BaVhNcr5suw",
+     "DaJGAca0XW0",
+     "HjoFqsPFXGU",
+     "d2pUP9Ctqq0",
+     "lzgcXYqPp_c",
+     "r8hfmXSgOMM",
+     "sQcyoIqVH00"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "really saying",
+   "verdict": "rhetoric",
+   "why": "Teaser formula applied to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 6,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "Retail Sales & Downturn: What the Economic Data is REALLY Saying!",
+     "Justin & Hailey: Marriage Trouble?! What Bieber's REALLY Saying",
+     "Unemployment Rate: What the Data Is REALLY Saying! #shorts"
+    ],
+    "ids": [
+     "1O_DqhrtZ9k",
+     "GHjNLDnVdzM",
+     "LIoN6G19Jcw",
+     "P681UhvXTgw",
+     "Z66c8mlpq6U",
+     "ZWztd7S3XJA",
+     "aP73uuYYzhY",
+     "m38ozIjkdmM",
+     "xozHCo9CNZE"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "airspace ban",
+   "verdict": "rhetoric",
+   "why": "Topic label spanning unrelated geopolitical events, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "Why Is Air India Losing $600 Million? The Hidden Cost of Pakistan's Airspace Ban | India Pak Tension",
+     "Venezuela Opens Oil Sector After Reform, Trump To Lift Airspace Ban",
+     "US-Spain Tensions Explode After Airspace Ban"
+    ],
+    "ids": [
+     "1M1r83I_1-k",
+     "3Jk3sU9Upzw",
+     "Hep7t6zyLOs",
+     "t-smM3x1WUg",
+     "uDzNVcPT814",
+     "xlu_7ed1JGs",
+     "zLMmj2besJo"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "must accept",
+   "verdict": "rhetoric",
+   "why": "Generic quoted-ultimatum phrasing across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "Trump: Ukraine Must Accept U.S. Plan to End War; Recalls May Truce Between Pakistan & India",
+     "'Kyiv Must Accept Peace or Face Military Action': Putin | Russia Ukraine War | Zelenskyy Vs Putin",
+     "Silver Stackers Must ACCEPT THIS..."
+    ],
+    "ids": [
+     "0oF60YkVPN0",
+     "79CfQv4d-4M",
+     "IfdaIuWt0Jg",
+     "Nx_3j7VA4Ks",
+     "ko3RylTaPfg",
+     "q0UCoDevYfU",
+     "q1__Kyf1h6g"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "boom fuels",
+   "verdict": "narrative",
+   "why": "Titles share the claim that the AI buildout is driving record revenues and market gains.",
+   "claim_name": "The \"AI boom is fueling record earnings and markets\" story",
+   "claim": "Channels claim surging AI demand is driving record revenues at chipmakers and lifting equity markets, making the AI buildout the dominant engine of market growth.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Where growth and market gains are coming from amid global uncertainty",
+    "cause": "Explosive corporate spending on AI chips and infrastructure",
+    "outcome": "Record revenues for AI suppliers and continued market optimism; buy the AI trade",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "🚀 NVIDIA STRIKES GOLD AGAIN! 💰📈 AI BOOM FUELS RECORD REVENUE – STOCK SOARS ⚡",
+     "AI Boom Fuels Market Optimism Despite Global Chaos! #shorts",
+     "US AI Boom Fuels TSMC's Record Quarter & Future Growth! #shorts"
+    ],
+    "ids": [
+     "-6Sfiv-hh4A",
+     "7fmnHthvkoY",
+     "BYpnVj1jmDU",
+     "JdnTyzh14as",
+     "ZrNYujt8oXo",
+     "oc8Yk1hZ6KA",
+     "qg2iSMGJMD8"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "end war'",
+   "verdict": "rhetoric",
+   "why": "Quote fragment about various conflicts; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "Israel's Netanyahu says plan to take over entire Gaza is 'best way to end the war'",
+     "'Not only the end of a war': Trump hails Gaza ceasefire, return of Israeli hostages",
+     "Iran Responds To Trump's Warning, Says 'We Will Determine The End Of War'"
+    ],
+    "ids": [
+     "9dwNCMqoHEA",
+     "QthHHMLndR8",
+     "SHAK6mIkQCQ",
+     "VtvgAMF7TOE",
+     "iy5LTaD3ARc",
+     "o2F2zTLzR78",
+     "sSF8U6o8BzI"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "payments coming",
+   "verdict": "rhetoric",
+   "why": "Phrase spans stimulus, crypto and Twitter payments with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2022-02 → 2024-12",
+    "examples": [
+     "$1,400 & $1,000 Stimulus Checks! More Stimulus Payments COMING SOON!",
+     "XRP 80% CRASH CONFIRMED!!! XLM & XRP CBDC CROSS-BORDER PAYMENTS ARE COMING!!!",
+     "Twitter Payments Coming Soon - Web3 Morning Motivation Ep 180"
+    ],
+    "ids": [
+     "T7jCYKoH1Ew",
+     "WF6cTpTd4OA",
+     "cYSP20DxSIQ",
+     "hfE2qbrYaiw",
+     "p48X5eteHE4",
+     "tzT_Iybsqns"
+    ]
+   },
+   "first_read": "2026-10-04",
+   "last_read": "2026-10-04"
   }
  ]
 }
