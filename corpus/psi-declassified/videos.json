@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-03"
+      "unavailable": "2026-10-04"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -63397,7 +63397,32 @@
         "comments": null,
         "enrichedOn": "2026-10-03"
       }
+    },
+    {
+      "videoId": "a2t3lahVR9Q",
+      "title": "Trump Sued for selling Insider Information and Government Secrets! Is the USA a serious country?",
+      "channel": "Crypto Angler",
+      "url": "https://www.youtube.com/watch?v=a2t3lahVR9Q",
+      "published": "2026-08-13",
+      "first_seen": "2026-10-04",
+      "views": 356,
+      "length": "11:06",
+      "age_days": 52,
+      "query": "channel sweep: Crypto Angler",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCMW2-dnYi6R4eSlsowsBq8g",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 37,
+        "comments": 21,
+        "enrichedOn": "2026-10-04"
+      }
     }
   ],
-  "updated": "2026-10-03"
+  "updated": "2026-10-04"
 }
