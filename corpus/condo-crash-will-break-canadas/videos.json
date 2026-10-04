@@ -8107,6 +8107,56 @@
         "comments": 17,
         "enrichedOn": "2026-10-04"
       }
+    },
+    {
+      "videoId": "8dvaPv9SIFQ",
+      "title": "Canada’s Housing Crisis Has Become a Trap | Bank of Canada Says Rates Can’t Fix It Alone",
+      "channel": "The Financial Express",
+      "url": "https://www.youtube.com/watch?v=8dvaPv9SIFQ",
+      "published": "2026-10-03",
+      "first_seen": "2026-10-04",
+      "views": 3551,
+      "length": "9:54",
+      "age_days": 1,
+      "query": "channel sweep: The Financial Express",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCmk6ZFMy1CT80orXca4tKew",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 10,
+        "comments": 10,
+        "enrichedOn": "2026-10-04"
+      }
+    },
+    {
+      "videoId": "m5jHgjHc87Y",
+      "title": "Toronto Condo Buyers Are Walking Away From Their Deposits",
+      "channel": "Canadian Mortgages with Nathan",
+      "url": "https://www.youtube.com/watch?v=m5jHgjHc87Y",
+      "published": "2026-10-03",
+      "first_seen": "2026-10-04",
+      "views": 5679,
+      "length": "13:11",
+      "age_days": 1,
+      "query": "channel sweep: Canadian Mortgages with Nathan",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCdgdLLynsRsfHG-0rTAxLIw",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 49,
+        "comments": 32,
+        "enrichedOn": "2026-10-04"
+      }
     }
   ]
 }
