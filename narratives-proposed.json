@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-04",
+ "generated": "2026-10-05",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2039,
+ "cost_usd": 0.2209,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -28375,6 +28375,1502 @@
    },
    "first_read": "2026-10-04",
    "last_read": "2026-10-04"
+  },
+  {
+   "phrase": "dollar collapse",
+   "verdict": "narrative",
+   "why": "Many channels over years assert the US dollar will lose value/reserve status — a checkable, falsifiable claim with a remedy implied.",
+   "claim_name": "The \"dollar collapse\" story",
+   "claim": "The US dollar is heading for collapse — losing its purchasing power and reserve-currency status — because of Federal Reserve money printing and debt, so savers should move into gold, hard assets or alternatives.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "The dollar is losing value and global acceptance",
+    "cause": "Fed money printing, deficits, de-dollarization by rival blocs",
+    "outcome": "Collapse of the dollar; flight into gold and hard assets",
+    "clock": "Imminent, repeatedly forecast since 2019"
+   },
+   "evidence": {
+    "videos": 79,
+    "channels": 43,
+    "months": 39,
+    "span": "2019-11 → 2026-09",
+    "examples": [
+     "Dollar Collapse: Can It Happen Overnight? (ANSWERED!)",
+     "Dollar Collapse Explained: Will It Happen In The US?",
+     "Federal Reserve: Did They Just Trigger The Dollar Collapse?"
+    ],
+    "ids": [
+     "0KLuZfCuIsk",
+     "0xVozihYRYs",
+     "35_cNosmYSs",
+     "3KTvphTqJzw",
+     "4EThv4Jv1_4",
+     "4LOdU151RJE",
+     "56ZpiGlHCvE",
+     "5nMTnhgqpcc",
+     "5oI2wLPYPhY",
+     "9nY5SolVAYk",
+     "Az-bidYaIZs",
+     "B3yLsv9qyIQ",
+     "BACKinXnr0M",
+     "BFWE-jkzbg4",
+     "B_DBHoRNnnc",
+     "CFw9Z0-6j2s",
+     "DM6YIkdhiEs",
+     "Dod336zi9us",
+     "Dz1Bq4rac4U",
+     "EcV0K33vY3Y"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "end badly",
+   "verdict": "rhetoric",
+   "why": "A vague doom phrase attached to unrelated subjects, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 6,
+    "months": 12,
+    "span": "2024-03 → 2026-09",
+    "examples": [
+     "\"This Will END Very BADLY...\" - Jim Rogers",
+     "\"This Will END VERY BADLY...\" | Michael Pento",
+     "Varney predicts Elon Musk hatred will end badly"
+    ],
+    "ids": [
+     "-LrPKcJ_xjo",
+     "4ut5uivEEwM",
+     "9JEGOiU7hmM",
+     "HxxZBKcNI6E",
+     "Mgjz3To0w4A",
+     "VKYh4wfgr6c",
+     "cbcJkpR7Ih0",
+     "eJQtPHS1FI0",
+     "gSitWmKeQEY",
+     "l1FZ6kVrFwg",
+     "lJfaQhZ3YFM",
+     "l_xhdA5vcdE",
+     "n22Fj0rYzO4",
+     "nEj0IQJEm58",
+     "olqmVWaDUvM",
+     "pBnqONGCLRI",
+     "z4UsE-QIqGA"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "negotiations end",
+   "verdict": "rhetoric",
+   "why": "News-coverage subject matter about peace talks, not a shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 8,
+    "span": "2024-09 → 2026-10",
+    "examples": [
+     "Pope Francis deplores lack of progress in negotiations to end war in Gaza",
+     "Trump and Putin agree to start negotiations to end war in Ukraine | ABC NEWS",
+     "Volodymyr Zelenskyy arrives in Saudi Arabia for negotiations to end war in Ukraine | ABC NEWS"
+    ],
+    "ids": [
+     "5auSYMvssjg",
+     "EW_IPbZPGEk",
+     "QdhzPIDzThk",
+     "YOkYtrPW47o",
+     "gLGDPMigi-s",
+     "kKfNilvpqog",
+     "l4twA_pfKig",
+     "mhMsvEGmWDc",
+     "rDjmZvnmGEo",
+     "vpvVsyEuYGo"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "eyewitness shows",
+   "verdict": "rhetoric",
+   "why": "A footage format label with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 4,
+    "months": 13,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Eyewitness Video Shows Tsunami Slamming Severo-Kurilsk After Massive 8.8 Earthquake Near Kamchatka",
+     "Wauwatosa Flooding: Eyewitness Video Shows Streets, Parks, and Construction Sites Under Water",
+     "Tornado Rips Through Inner Mongolia Geopark | Eyewitness Video Shows Debris Flying"
+    ],
+    "ids": [
+     "-3lXt9cTk1Y",
+     "-vu0sfQb3jM",
+     "0yVADbTL9Nw",
+     "Bi-SqICZzEs",
+     "DQJr_GzdGDM",
+     "LaAuIiKmzBc",
+     "QZ72DeR6lWQ",
+     "QdeHhzGhwKU",
+     "XmLAdMbBxy4",
+     "owaAJul4R6E",
+     "rFyrR8Biy3g",
+     "sBgHr1R09lo",
+     "uCx3hfHV9PU",
+     "vog8Lns4eQ0",
+     "wBTktb1Bv_M",
+     "x-4jn92KN34"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "buyer ban",
+   "verdict": "rhetoric",
+   "why": "A specific policy topic covered from varying angles; titles share no single predictive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 6,
+    "months": 8,
+    "span": "2022-04 → 2026-09",
+    "examples": [
+     "Foreign Buyer Ban to COOL Canada's Real Estate Market? Experts say Maybe..",
+     "Canada's Foreign Buyer Ban on Real Estate",
+     "Canada Changes Foreign Buyer Ban Policy....Already"
+    ],
+    "ids": [
+     "6Kgd4MTVAms",
+     "OWcUpwQ9bsQ",
+     "SkjPkKmsHRI",
+     "T7_3LAogzsM",
+     "YSrCz5jIbsU",
+     "bOrlFWF2Gbg",
+     "nbygn6rkXNA",
+     "sgbEo8WssS0",
+     "umJOUkqWiME",
+     "wb2x8ug9sh0"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "explode soon",
+   "verdict": "rhetoric",
+   "why": "Generic price-hype wording spread over unrelated assets, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 12,
+    "months": 18,
+    "span": "2020-05 → 2026-09",
+    "examples": [
+     "Why Platinum Prices Could Explode Soon",
+     "Swipe(SXP) and Binance(BNB) to explode soon as Binance Card expands to the USA?",
+     "Theta to explode soon? DOGE listed on Gemini."
+    ],
+    "ids": [
+     "5xU78mesky8",
+     "7ym8FUJnKV0",
+     "BQc0YDHXeTI",
+     "FGBqVJCOPRY",
+     "LhhFg66cP0o",
+     "QO0YKSiGPxE",
+     "SrwrvTVy3_M",
+     "WIhLL48GPi8",
+     "WSFwzE6dXFk",
+     "XLHeIeoQoUA",
+     "a8eI2Bbk4dY",
+     "bBjXrLzllgA",
+     "ccbEGiQodHc",
+     "cdmmhZdgekg",
+     "ePcg2evAi6c",
+     "iKhbX9CgLNY",
+     "kAyi8W7-Swg",
+     "rcKbbXCLCio",
+     "sYEOE7TrC6E",
+     "saNe5iM27iM"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "i'll show",
+   "verdict": "rhetoric",
+   "why": "Pure title hook promising a demonstration.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-01 → 2026-06",
+    "examples": [
+     "How to Make a Website with AI in 30 Seconds (I'll Show You)",
+     "Building AI Agents is Easier Than You Think (I'll Show You)",
+     "A Massive CRYPTO BULL MARKET Is Loading (I'll Show You The Data)"
+    ],
+    "ids": [
+     "1bW8CXw0Njg",
+     "3qXvJD_2Zes",
+     "NaBzZT5cyFg",
+     "V6sowFK_b3s",
+     "g8xUkIDFzw4",
+     "kTJQJnRH9B0",
+     "t9aBhd4PNUE"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "cause fatty liver",
+   "verdict": "narrative",
+   "why": "Shared checkable claim that specific common foods/deficiencies cause fatty liver and avoiding them reverses it.",
+   "claim_name": "The \"certain foods cause fatty liver\" story",
+   "claim": "Fatty liver disease is driven by specific dietary culprits (sugars, fructose, seed oils, certain nutrient deficiencies), and cutting them out can reverse the condition.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread fatty liver disease",
+    "cause": "Specific foods and nutrient deficiencies in the modern diet",
+    "outcome": "Avoiding the culprit foods reverses the condition",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2021-09 → 2026-10",
+    "examples": [
+     "Does B6 deficiency cause fatty liver? What about the impact of fruit on the liver? And more answers!",
+     "AVOID THIS! Barbara O'Neill EXPOSES The REAL Cause of Fatty Liver!",
+     "3 Worst Foods that Cause Fatty Liver |  Strictly Avoid #shorts #fattyliver"
+    ],
+    "ids": [
+     "G7qtDqJGwes",
+     "SkBoqHVTXlE",
+     "WJU-YFuFwBE",
+     "XGmv_DdN5Po",
+     "fbziTEAKrdA",
+     "mCzQkZLlmEI"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "gonna crash",
+   "verdict": "rhetoric",
+   "why": "Generic crash hype across unrelated assets with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2019-04 → 2026-09",
+    "examples": [
+     "Silver's Gonna Crash THEN Disappear!",
+     "SILVERS GONNA CRASH HARD.. you ready?",
+     "Crypto Bros, the markets are gonna crash HARD this weekend. Here's why I think so."
+    ],
+    "ids": [
+     "1pB0KtUW8Ck",
+     "COxuPdq6H3Q",
+     "I2dgJOf5ZqE",
+     "VL0Uasow5F8",
+     "WYL1pdRdl3M",
+     "tTpg-msGCDE"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "crash fears",
+   "verdict": "rhetoric",
+   "why": "A sentiment label spanning gold, bitcoin and housing, not one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 10,
+    "months": 8,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "Market Crash Fears Intensify! Interest In Gold SURGES! Here's Proof!",
+     "Market Crash Fears & Tariff Shock — Don’t Panic Sell | The Bitcoin Hedge",
+     "Fed Cuts Won’t Save Housing: Crash Fears Rising"
+    ],
+    "ids": [
+     "-SlsVgfJn5U",
+     "0FD39mrAbTU",
+     "791fLtUdDCc",
+     "8LKRyUdfb3A",
+     "PkKNzH7kzVg",
+     "QzGjv20z71g",
+     "V8CpZGPo9ZA",
+     "ZmD3N0NfNs4",
+     "axNaZgcwkCU",
+     "otdFl-1MeQM",
+     "zGp---860TQ"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "isn dead",
+   "verdict": "rhetoric",
+   "why": "Denial formula applied to inflation, cartoon characters and growth alike.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 10,
+    "months": 8,
+    "span": "2023-11 → 2026-09",
+    "examples": [
+     "Inflation Isn’t Dead, But It’s Lower Thank We Think",
+     "🚨 MARGE ISN’T DEAD! 🚨The Simpsons Producer SHUTS DOWN Death Rumors 👏",
+     "Growth Isn’t Dead...You’re Just Being Shaken Out"
+    ],
+    "ids": [
+     "-DWcMdlI6T0",
+     "MgZ_YGzanjA",
+     "O5zVo6-nOHg",
+     "UT3lZ09il70",
+     "Xha6nGbvxOA",
+     "ZnOeteJer9Y",
+     "_iFDV42AbNQ",
+     "aOZAgojc2tk",
+     "paqwQSFD57s",
+     "qs1i9g-mcho",
+     "wyKsw-qPMEs"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "winter coming",
+   "verdict": "duplicate",
+   "why": "Crypto winter timing claims are already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 10,
+    "months": 8,
+    "span": "2021-09 → 2026-10",
+    "examples": [
+     "Is a Crypto Winter coming? Bitcoin & Ethereum Technical Analysis 2021 | Bitcoin Price Prediction",
+     "The Crypto Winter Is Coming",
+     "Crypto Winter Is Coming To An End, Expect $100k At This Date - Tone Vays"
+    ],
+    "ids": [
+     "1l9bxXnbaq0",
+     "9nSAMzrBHbA",
+     "BXDatzHlQrg",
+     "Goe5quSX_pc",
+     "Just9uACxps",
+     "Q9Pl_lkCgD4",
+     "afoMMqcLpwU",
+     "g25b5GvGAWM",
+     "i5pSbC0CWDs",
+     "o80CgC3PA4c"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "moves coming",
+   "verdict": "rhetoric",
+   "why": "Pure anticipation hype with no specified direction or outcome.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 10,
+    "months": 10,
+    "span": "2021-05 → 2026-08",
+    "examples": [
+     "MASSIVE MOVES ARE COMING FOR CARDANO AND LITECOIN! BITCOIN IS ABOUT TO BREAK!!!",
+     "CRYPTO NEWS: Ethereum, Binance, Big Moves Coming!!!",
+     "**Silver Manipulation** -- BIG Gold & Silver Moves Coming on CPI Inflation Data"
+    ],
+    "ids": [
+     "-Gm_EzyfIEU",
+     "3WSzOoDSnvM",
+     "H19nD-GNN-A",
+     "Tqd0_P5WJL8",
+     "WQICfO4Nu5Y",
+     "dr4uG2iU7-o",
+     "jJkjfkPlaog",
+     "p3u5GLDstxc",
+     "xjQMX6OaH-k",
+     "xv6bqK-ivCM"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "must pay",
+   "verdict": "rhetoric",
+   "why": "Attention-grabbing imperative, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 13,
+    "months": 13,
+    "span": "2020-08 → 2026-09",
+    "examples": [
+     "ALERT: Scotiabank Caught Manipulating Precious Metal Prices! Must Pay Over $127 Million!",
+     "TODAY IS A CRUCIAL DAY FOR BITCOIN | YOU MUST PAY ATTENTION TO THIS BTC CHART!",
+     "\"Every Small Bitcoin Investor MUST Pay Attention to This!\"- Raoul Pal"
+    ],
+    "ids": [
+     "1fgQVOQSHzo",
+     "7eBSTiLggGw",
+     "D6SUJ2TFPlU",
+     "DFkvIrcQCHY",
+     "KqXh1bo6NiQ",
+     "M9OwOIO3P78",
+     "S5Ay6gGvsJY",
+     "ULoX_f2WVzU",
+     "Y-svJhEbeK0",
+     "_kZbsdLUlcY",
+     "axsggWGM-3c",
+     "bHWEsjc2a-E",
+     "cDqXa4brf2I",
+     "e0b9lSWntf8",
+     "eaFKzyGA5gA",
+     "fS4cSWKAKJs",
+     "hRc3R18ZlHo",
+     "lQHCA5TII0c",
+     "nk-Y5X20PZc",
+     "rjs2NFTemmo"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "train crash",
+   "verdict": "rhetoric",
+   "why": "News subject matter with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 40,
+    "channels": 5,
+    "months": 9,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Clashes erupt in Greece as hundreds of thousands protest deadly train crash | ABC NEWS",
+     "Train crash near Peru's Machu Picchu kills one, injures dozens",
+     "Five Australian passengers safe after deadly train crash in Peru | ABC NEWS"
+    ],
+    "ids": [
+     "-ytwelY7eSM",
+     "4uTD6QldeH8",
+     "6nBLA4MgBk0",
+     "6ouRVmjv68U",
+     "8VcHxvhWekE",
+     "CAXi6pP1lf8",
+     "EQxpM2I-5Fg",
+     "Eo641RwNBqU",
+     "I_ZalT13hng",
+     "KCg_jopAL00",
+     "KFa697H7TIc",
+     "KGWeDdGKefA",
+     "KwkxMF3VpXU",
+     "LOLNbS3TN0s",
+     "LuP2jMqYyjc",
+     "Na99dUlMq8I",
+     "PVEYjQK-pm4",
+     "PubU0W-9rDE",
+     "Pz-Lq81GlBs",
+     "QdSEjYyIR8Q"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "etfs coming",
+   "verdict": "narrative",
+   "why": "Shared checkable claim that upcoming crypto ETF approvals will drive prices up.",
+   "claim_name": "The \"crypto ETFs are coming and will send prices up\" story",
+   "claim": "Channels claim that regulatory approval of spot ETFs for Bitcoin, Ethereum and altcoins such as XRP, ADA and XLM is imminent, and that these approvals will unleash institutional inflows that pump prices.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Crypto lacks mainstream institutional access and price upside is stalled",
+    "cause": "Regulators have withheld spot ETF approval",
+    "outcome": "Approvals arrive and institutional money pumps coin prices",
+    "clock": "Approval dates cited from 2023 through 2025"
+   },
+   "evidence": {
+    "videos": 14,
+    "channels": 7,
+    "months": 11,
+    "span": "2023-10 → 2025-10",
+    "examples": [
+     "XLM, ADA, Other ETFs coming to pump alts? Grayscale thrashing SEC! One big Bearish factor looms ..",
+     "🚨FAKE BITCOIN ETF APPROVAL NEWS FROM SEC GARY GENSLER & ETHEREUM & XRP SPOT ETFS COMING IN 2024?",
+     "Cardano partners with Huawei, Vechain tokenizing Merchandise. BTC and ETH ETFs coming in Hong Kong!"
+    ],
+    "ids": [
+     "AnDY9mOWcHY",
+     "EIaEHg5qL2Y",
+     "G2Q-ANbwcRw",
+     "GVNzdyCYuN0",
+     "LANppvMkY2g",
+     "NU31X20o7as",
+     "O7RUN5rzFvY",
+     "S6fJENbWh2E",
+     "TP_82G932XU",
+     "U-72YyWUWVo",
+     "_0mLoU8FbqI",
+     "nFGFO7ikZzM",
+     "rf2q0JxYrOY",
+     "vz8pFswlNhk"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "expected soon",
+   "verdict": "rhetoric",
+   "why": "Generic anticipation filler spanning unrelated subjects with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 10,
+    "span": "2025-06 → 2026-10",
+    "examples": [
+     "Shubhanshu Shukla's Axiom-4 Launch Delayed Again, Safety Checks Ongoing, New Date Expected Soon",
+     "Donald Trump-Putin Meeting on Ukraine War Confirmed by Kremlin, Talks Expected Soon",
+     "Monday Market Alert#Silver&Gold ETF forecast#NIFTY & Bank Nifty prediction#Big Boom Expected soon#BN"
+    ],
+    "ids": [
+     "0DsFTdIkuiY",
+     "30QP-Vicmtc",
+     "5LsHScjc1co",
+     "5hObXtHLcIM",
+     "I5Uni9Z-_uA",
+     "LKELZKU5Qik",
+     "PGm1Q9p9Diw",
+     "acXHSR_sKF4",
+     "igffitQZ5Go",
+     "k9W1Um7Ww6o",
+     "wDpinnTZYoU",
+     "wnRT2KQO72I"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "drop coming",
+   "verdict": "rhetoric",
+   "why": "Mixes NFT drops, market crashes and price falls; no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 28,
+    "channels": 10,
+    "months": 21,
+    "span": "2021-06 → 2026-09",
+    "examples": [
+     "Bitcoin Death Cross 50% Drop Coming? [Crypto News 2021]",
+     "RICH RABBIT CLUB NFT DROP COMING! RRC NFT WHITELIST! NFT UTILITY OF RRC REVEALED!",
+     "DROP COMING! Market Over-Reacted! (LIVE CRASH UPDATE)"
+    ],
+    "ids": [
+     "-GfufmUAh3g",
+     "1lqgZo9CICg",
+     "5QGrH1WV9Lo",
+     "6JRSwUZnJPU",
+     "A6zlfBrc7Lk",
+     "C8ZTPv0cYQw",
+     "D8jLP68WatI",
+     "E1OkcPS7erk",
+     "G_D0R0fTf2c",
+     "HJyuK9YNgFk",
+     "Jm0rxclF1MM",
+     "JvPJ4aJu4BQ",
+     "Miqh9kl5IwU",
+     "Nf-SHWoIrOA",
+     "Ob3rGGtP0CM",
+     "UAg61vju-Os",
+     "_X2_S29sROk",
+     "b02_ohSpwSM",
+     "dp7kFrcGG6s",
+     "e9WagFXFaAQ"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "whats coming",
+   "verdict": "rhetoric",
+   "why": "Pure teaser phrasing across unrelated assets.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2024-05 → 2026-09",
+    "examples": [
+     "SHIBA INU HOLDERS GET READY FOR WHATS COMING SOON! #shiba #shibarmy #shortsvideo",
+     "PI Network Price, Whats coming next? #pinetwork #pinetworknewupdate #crypto",
+     "SERIOUS ALERT! Most People Have No Idea Whats Coming for GOLD & SILVER - Mario Innecco"
+    ],
+    "ids": [
+     "14uc_zn75m4",
+     "1hQKtBZCf2A",
+     "6tZeGS2ujeg",
+     "cN6yDbwIK8s",
+     "gNVKfwp0JUs",
+     "mROWeJt4Phs"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "beats timing",
+   "verdict": "narrative",
+   "why": "Titles share one checkable investing claim: staying invested outperforms market timing.",
+   "claim_name": "The \"time in the market beats timing the market\" story",
+   "claim": "Investors who stay continuously invested outperform those who try to time entries and exits; attempts at timing reduce long-run returns.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Investors try to time market tops and bottoms and lose money",
+    "cause": "Unpredictable short-term price moves and behavioral error",
+    "outcome": "Buy and hold long-term rather than trade around swings",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "Time in the Stock Market BEATS Timing the Market",
+     "Time in the Market Beats Timing the Market: Your Home Equity Advantage",
+     "Bitcoin HODL: 0% Risk Over 10 Years? Time in Market Beats Timing!"
+    ],
+    "ids": [
+     "3IE9kxE4zeY",
+     "Ll4vamb-XyA",
+     "Z39VwWI84-M",
+     "_ZTMefwjlG4",
+     "nQ1UooxVNiY",
+     "zCdHx8PGEMc"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "cbdc coming",
+   "verdict": "narrative",
+   "why": "Shared claim that central bank digital currencies are imminent, with implied hedge in gold/crypto.",
+   "claim_name": "The \"CBDCs are coming\" story",
+   "claim": "Governments and central banks are about to launch digital currencies that will replace or control cash, making hard assets like gold, silver and bitcoin necessary protection.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Cash and financial privacy are about to be displaced by state digital money",
+    "cause": "Central banks and governments rolling out CBDCs",
+    "outcome": "Hold gold, silver or crypto outside the system",
+    "clock": "soon / imminent rollout"
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2020-01 → 2026-07",
+    "examples": [
+     "Vechain(VET) CBDC coming soon, Binance Android app launches, Bitcoin 50% layoff, livestream recap",
+     "Bitcoin Retrace, where is the Bottom? Japan's CBDC is coming. Livestream recap",
+     "CBDC Is Coming To The US! Gold & Silver Matter Now More Than Ever!"
+    ],
+    "ids": [
+     "03nq7zFqvNA",
+     "Idf8SuxhcEA",
+     "L1x0c27uerI",
+     "O1QD6Jzrxn0",
+     "SHZ_R9EKntk",
+     "uxDob0AGXUU"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "end quickly",
+   "verdict": "rhetoric",
+   "why": "Quote fragment about various conflicts ending; no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "UN chief Guterres appeals for restraint while Trump hopes India-Pakistan clashes end ‘very quickly’",
+     "“BRICS Will End Quickly” – Trump Issues Strong Warning",
+     "TRUMP WAR WARNING: “Putin Could End It Quickly… But He Won’t” | Tomahawk Deal"
+    ],
+    "ids": [
+     "FVXrCXeSeSE",
+     "TjBN-P3gEFw",
+     "Urp-sOGOmEU",
+     "aqPdbVvPFUs",
+     "p3IRuvdRaY8",
+     "zXl3x4Y6OmI"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "towards end",
+   "verdict": "rhetoric",
+   "why": "Time-frame filler across unrelated forecasts including weather.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-09 → 2026-09",
+    "examples": [
+     "Goldman Sachs says China's stock market performance will improve towards the end of 2023",
+     "Galaxy CEO Mike Novogratz: Bitcoin could see another big surge towards the end of the year",
+     "Warming up and sunny conditions towards end of week"
+    ],
+    "ids": [
+     "3cb4PkdN5ps",
+     "6EV5MBeGjwY",
+     "BJ71XAHy9E4",
+     "BTdeAqz08dE",
+     "Tqh_Iwhoap8",
+     "lL6Nkda4xHU"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "dropping soon",
+   "verdict": "rhetoric",
+   "why": "Generic price-fall teaser spanning silver, groceries and unspecified subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 9,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "SILVER PRICE DROPPING SOON",
+     "Good News | Prices Dropping Soon | Walmart Update",
+     "(WARNING) We Might Be Dropping Soon.."
+    ],
+    "ids": [
+     "1EYxiI19qbQ",
+     "8ctQQylHK7o",
+     "Cazi6Yyr64k",
+     "ErZ4TbwkA98",
+     "O0O5VIALYyI",
+     "PTQq1Kfadjw",
+     "RPoTmQXbQEE",
+     "S7Ouk1IWrIo",
+     "Z5C0ftieXe8",
+     "hcykVHxM7IQ",
+     "mo686DwOfag"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "evidence shows",
+   "verdict": "rhetoric",
+   "why": "Generic credibility phrase attached to wholly unrelated subjects; no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 5,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "President was BRIBED as evidence shows in GIANT CRYPTO SCAM",
+     "Geological Evidence Shows Why the Carolina Bays are OLDER Than We Thought | Chris Cottrell",
+     "FBI: Early evidence shows rounds near suspect contained anti-ICE messages"
+    ],
+    "ids": [
+     "7hmXO5-4yI8",
+     "A7-ATqJ-Wxo",
+     "K5BKWwKzSf8",
+     "RWrqPasHugk",
+     "Uov1jeLBMo8",
+     "Uxqa8DQzGbk",
+     "ddnaja5072A",
+     "eA5SPlbvmOY",
+     "kFsjlW_nRwo",
+     "lEVXQbBFBgs",
+     "sF8Dtf1cXbQ"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "crash continue",
+   "verdict": "rhetoric",
+   "why": "A recurring speculative question format across different assets, not one stated claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 10,
+    "span": "2021-03 → 2026-02",
+    "examples": [
+     "Futures Market - Will the Crash Continue this Week?",
+     "🚨😱ETHEREUM: LE CRASH CONTINUE ?? 👀😱 SURVEILLEZ ABSOLUMENT CECI  - ANALYSE CRYPTO !!",
+     "Critical Crypto Price Levels For April 2022! | Will The Bitcoin Crash Continue?"
+    ],
+    "ids": [
+     "2a9nsQf6IPw",
+     "44ptzO0UuKs",
+     "7NZUT8WYvY4",
+     "JYBvdVum7bk",
+     "TxH9H56xMhA",
+     "ZqkPwWfHkNQ",
+     "i4Zv-cCq4co",
+     "sV3cZwces2s",
+     "yOfmWXh5kZ8",
+     "zCcMvvkVQFA"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "press ban",
+   "verdict": "rhetoric",
+   "why": "A news subject/event with varied takes rather than a single contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 72,
+    "channels": 28,
+    "months": 2,
+    "span": "2026-09 → 2026-10",
+    "examples": [
+     "‘The facts have been PILING UP’ against Trump: Peter Alexander on Trump’s White House press ban",
+     "Trump’s press ban HURTS the American people: Eugene Daniels",
+     "A Press Ban for Viewpoints Isn't Lawful, Only Capacity Issues Allow for Selectivity: Attorney"
+    ],
+    "ids": [
+     "0K0jL7C1-wU",
+     "14gGyQIJwxg",
+     "3T5vJfowNy4",
+     "3XH-KUYe_Wo",
+     "3ns7o1teoeQ",
+     "5LE7VO_SBsc",
+     "77s3oMM0Yzk",
+     "7hsH2UOxLJ0",
+     "8vipBAx2lNM",
+     "9hPD6vAFajc",
+     "ACRGhyEChQ8",
+     "CwHW-wDTvL8",
+     "E6aONf2wMy0",
+     "GkjzgIsEis0",
+     "HL6WyMLzt90",
+     "HtBjlryi_ho",
+     "IUlzJQIIb_I",
+     "IVtxS4-5gmw",
+     "IrPCi_k-a4Y",
+     "K5DUcXAv2FU"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "robots replace",
+   "verdict": "narrative",
+   "why": "Titles share the claim that robots/automation will take over human roles in the near future.",
+   "claim_name": "The \"robots are coming for the jobs\" story",
+   "claim": "Advances in robotics and AI mean machines will soon replace humans across work and even social roles, from delivery drivers and soldiers to companionship.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Human roles and jobs are being displaced by machines",
+    "cause": "Rapid progress in robotics and embodied AI plus cost pressure to automate",
+    "outcome": "Widespread substitution of humans by robots; people must adapt or resist",
+    "clock": "Within the next several years, often by 2030"
+   },
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 7,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "The \"Scary\" Future of AI Love | Will Robots Replace Human Connection by 2030?",
+     "Why Smart Glasses Are About to Kill Your Phone (And Train Robots to Replace Delivery Drivers)",
+     "ROBOTS REPLACE SOLDIERS: Russia Uses Unmanned Ground Vehicles to Supply Frontlines in Ukraine War"
+    ],
+    "ids": [
+     "5hw411k0Dms",
+     "7xMgWyzhjNs",
+     "LTvDcdlsu2w",
+     "Ns1ii96chRQ",
+     "Qkn27q_uVAo",
+     "VSD_i57ETqE",
+     "Wns6r4Wd9K8",
+     "Z-lQ3hT8Z1s",
+     "e53Qed16F4E",
+     "hDOoMAGaiNg",
+     "hhL49fEv-JY",
+     "pUWasmfO6ak"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "jaishankar explains",
+   "verdict": "rhetoric",
+   "why": "Speaker-plus-format tag for Indian foreign policy clips, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 4,
+    "months": 7,
+    "span": "2025-06 → 2026-10",
+    "examples": [
+     "Why Did Rajnath Singh Refuse To Sign SCO Joint Statement? S Jaishankar Explains",
+     "“Balancing The World Isn’t Easy”: Jaishankar Explains India’s Foreign Policy Choices",
+     "BRICS 2026 Logo Revealed: EAM Jaishankar Explains Symbolism Of Unity, Growth And Innovation"
+    ],
+    "ids": [
+     "JXBOafJOYZU",
+     "SaLvD5mKsdc",
+     "UN7XEpN68H4",
+     "bxeEJ5ZhHQw",
+     "eV7BovN1-Bg",
+     "fDbUNQw8ziM",
+     "fZmZh07usHA",
+     "mQftAM9Vtw0",
+     "ntQC2eanz9w",
+     "xTmRpsIbPbY"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "infections cause",
+   "verdict": "narrative",
+   "why": "Shared claim that hidden chronic infections underlie autoimmune and other unexplained symptoms.",
+   "claim_name": "The \"hidden infections cause chronic illness\" story",
+   "claim": "Chronic or stealth infections — parasites, H. pylori, bacteria — are an unrecognized root cause of autoimmune disease, joint pain and mood problems, and treating them resolves the illness.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Chronic autoimmune, joint and mood conditions go unexplained by mainstream medicine",
+    "cause": "Undiagnosed underlying infections",
+    "outcome": "Identify and clear the infection to reverse the condition",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 4,
+    "months": 7,
+    "span": "2017-05 → 2026-09",
+    "examples": [
+     "Parasites and other infections as a cause of Autoimmune Problems",
+     "H. Pylori Infections Can Cause Mood Issues | Dr. J Q & A",
+     "These Bacterial Infections Can Cause Joint Pain"
+    ],
+    "ids": [
+     "19mBjERdF_g",
+     "EmfveIV_Mhk",
+     "NxAqijsxIJQ",
+     "U2AYxUJdK9s",
+     "ZgouyHydx_g",
+     "bmTmcr-7ekA",
+     "mYPbt-uUTxo",
+     "pqNkawuZnU0"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "means indians",
+   "verdict": "rhetoric",
+   "why": "An audience-targeting explainer format about assorted visa and policy news, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 4,
+    "months": 7,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "Canada Cancels Study & Work Visas-What It Means for Indians! Canada’s New Visa Rule-Who’s Affected?",
+     "Trump's NEW Immigration Order Post DC Shooting: What It Means For Indians",
+     "H-1B, H-4 Visas ‘Prudentially Revoked’: What It Means For Indians In The U.S."
+    ],
+    "ids": [
+     "7oT9KqZ78Aw",
+     "9KyL7qI5WmE",
+     "CQ1NYAtlPYY",
+     "Dkkrf1vHwAM",
+     "HvUiTnJc3Hk",
+     "KqvB-HfsOL4",
+     "uQtdseei_UY",
+     "vO3WpspOiA4"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "truth fasting",
+   "verdict": "rhetoric",
+   "why": "\"Truth about fasting\" titles argue opposing positions; the phrase sells revelation rather than asserting a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 8,
+    "span": "2022-12 → 2026-09",
+    "examples": [
+     "The Truth About Fasting - Dr David Jockers",
+     "Myths of Fasting & GLP-1s: Truth about Fasting vs Calorie Restriction vs Starvation | Dr. Jones, DC",
+     "The Truth About Fasting | Dr Mike Israetel"
+    ],
+    "ids": [
+     "7ZkMMom5-XU",
+     "Bagk4Q5hYMI",
+     "Eb1Je-hOm2E",
+     "NX5WvmzfDck",
+     "O0OuJyVBG3I",
+     "RUdSNhiaqiA",
+     "rILvlKdbh2Q",
+     "u0y0gPKMBio",
+     "uiZs4lO0JuE",
+     "zM_YaDdq-cA"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "soon possible",
+   "verdict": "rhetoric",
+   "why": "Generic filler phrase spanning unrelated topics with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 10,
+    "span": "2022-10 → 2026-09",
+    "examples": [
+     "ETHEREUM GO TO $3,000 SOON? VERY POSSIBLE FOR ETH, AND NOT FOR THE REASONS THAT YOU THINK!",
+     "Tether delisted at Crypto.com soon! Possible new black swan event?",
+     "Hiking Woman Filmed It And Send It in Her Group Chat As Soon As Possible..."
+    ],
+    "ids": [
+     "0F3FVQ_zwrA",
+     "2C0B_sHq8U4",
+     "5-Hdvo9RP6o",
+     "AD6yjnBWBVA",
+     "CO93318G4cY",
+     "E34OzNG_AKU",
+     "GEnqWMAqaV8",
+     "NAT1T79Tac4",
+     "kOd_O0dMHdg",
+     "oTUaiXbA9vI"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "won't make rich",
+   "verdict": "rhetoric",
+   "why": "A hook format negating various wealth paths; titles share no single claim about cause and outcome.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 12,
+    "months": 11,
+    "span": "2021-06 → 2026-09",
+    "examples": [
+     "Going To School WON'T Make You Rich (The Truth) | Bryon Aponte",
+     "Why Multiple Streams Of Income Won't Make You Rich",
+     "Why Timing the Toronto Real Estate Market WON'T Make You Rich"
+    ],
+    "ids": [
+     "2qIDJRHnRzE",
+     "9f6QdzACxjg",
+     "BcPDz4Tbsho",
+     "KkklhCKWJfA",
+     "RvsuIbZ9Plc",
+     "TqrEwBwH4K8",
+     "b156BaDr_sM",
+     "dIKUdQzCI7c",
+     "fFdPZzjYzTQ",
+     "ihoV-g9jR3s",
+     "lfgIpwYwb1k",
+     "n58Oi3h8zHA",
+     "rFoK-k0At5A",
+     "tKNlzMA0p7k",
+     "z5ZgvQebFW4"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "defi dead",
+   "verdict": "rhetoric",
+   "why": "Titles argue both that DeFi is dead and that it isn't; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 6,
+    "span": "2020-04 → 2026-08",
+    "examples": [
+     "Defi Dead after $25 million hack? Oil goes Negative. Central banks more trusted than Crypto",
+     "Ethereum DEFI audit demand through the roof. DEFI is not dead.",
+     "Uniswap Hits $1 Trillion in Volume: Why Crypto and DeFi Are Not “Dead”"
+    ],
+    "ids": [
+     "6Wh1OOID_xA",
+     "7CQLgfbz7B4",
+     "9_PCwNxC2f4",
+     "GIYvKhNyQGc",
+     "K2HK2MREen4",
+     "er-8iMCUpAw",
+     "xbwPCmaGUU8",
+     "zzafpT9f_ig"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "crash probe",
+   "verdict": "rhetoric",
+   "why": "A news subject (air crash investigation) with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 5,
+    "months": 8,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "Air India Under Fire: Multiple Mid-Air Scares, Crash Probe Deepens | Passenger Anger Grows",
+     "Aviation Minister: AI-171 Crash Probe Transparent, Western Media Promote Its Own Viewpoint",
+     "Air India Crash Probe: Union Civil Aviation Minister Naidu Warns Media, Says ‘Wait For Final Report’"
+    ],
+    "ids": [
+     "4YFOXpyMvR0",
+     "5HBqLXzVPqg",
+     "5cyps_2jHFE",
+     "8v-I0eCJa0I",
+     "HlTvygHkE3Q",
+     "OiJb9C7bFoY",
+     "PGlSQgigL7I",
+     "T_HP0J75zwU",
+     "UU492CmU1uo",
+     "_Ssdput3KjI",
+     "dushkLzSFMU",
+     "mvMrn_Ff-t4",
+     "py5vMj4G2Fo",
+     "szJSX5tXavE",
+     "xXzVrMifhLM"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "regulation coming",
+   "verdict": "narrative",
+   "why": "Recurring dated prediction that crypto regulation is imminent, repeatedly deferred.",
+   "claim_name": "The \"crypto regulation is coming\" story",
+   "claim": "Channels claim sweeping government regulation of crypto is imminent, and that investors must prepare now for rules that will reshape the market.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Crypto operates in an unsettled legal space",
+    "cause": "Governments and regulators moving to impose rules on digital assets",
+    "outcome": "Imminent regulatory crackdown that reprices or restricts crypto; prepare now",
+    "clock": "Repeated near-term dates from 2022 onward"
+   },
+   "evidence": {
+    "videos": 13,
+    "channels": 5,
+    "months": 9,
+    "span": "2022-01 → 2024-10",
+    "examples": [
+     "WOW?! Crypto regulation coming as soon February!",
+     "CRYPTO REGULATION IS COMING - WHAT YOU NEED TO KNOW RIGHT NOW!",
+     "CRYPTO REGULATION NOT COMING UNTIL 2023?! LATEST CRYPTO REGULATION NEWS!"
+    ],
+    "ids": [
+     "9TvJyt6-SJM",
+     "Atd9JGsSd2s",
+     "DbUxYOeK5B0",
+     "Jd4OMvXJiZI",
+     "LzY3NqCsFIU",
+     "QVgQE99u1VM",
+     "RICL8lcwrAw",
+     "m3gOeH0t39s",
+     "owRBiSteAJw",
+     "p11y-1-aq1M",
+     "qQ7ZQBQmmFE",
+     "vteBpsViX7k",
+     "wNjI9uSrYP4"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "end fighting",
+   "verdict": "rhetoric",
+   "why": "News subject phrase about ceasefire diplomacy with no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 5,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "Trump pressures Cambodia, Thailand to end fighting | ABC NEWS",
+     "European leaders laud Trump's efforts to end fighting between Ukraine and Russia",
+     "US and Iran inch towards short-term deal to end fighting | The World | ABC NEWS"
+    ],
+    "ids": [
+     "5ICX1TJEnJ0",
+     "Gik6xQrHBeY",
+     "M5pf2uq51UA",
+     "SnwPDiqd_38",
+     "cz0tQj1PlbI",
+     "d158GQWLvvk",
+     "haXVgbW0S-I",
+     "qaU53o7_oGo",
+     "tm-dvxoR2so",
+     "wzpcCNNCcO8"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "kill switches",
+   "verdict": "rhetoric",
+   "why": "Topic label across mixed privacy/tech commentary without one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-06 → 2026-09",
+    "examples": [
+     "520: Are car kill switches a step too far?",
+     "CES 2026 Smartphones: Trifolds, Kill Switches And Offline Phones Redefine Privacy",
+     "598: Kill switches in cars, cousin marriage, trans madness and more"
+    ],
+    "ids": [
+     "30-YzhvkLzA",
+     "7Wkbc0mDE48",
+     "R-3kRHBfbc8",
+     "RPSPClaPDuE",
+     "f0VYXHmy9-k",
+     "ifwaC9qEbJY",
+     "kTD7u3RVkro",
+     "sNk0cWBymI8"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
+  },
+  {
+   "phrase": "efforts end",
+   "verdict": "rhetoric",
+   "why": "Generic news-wording fragment across unrelated events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-08 → 2026-10",
+    "examples": [
+     "European leaders laud Trump's efforts to end fighting between Ukraine and Russia",
+     "Hong Kong fire: Residents desperately waiting for rescue efforts to end",
+     "Death of Ali Larijani may complicate US efforts to end the war with Iran: expert | ABC NEWS"
+    ],
+    "ids": [
+     "-U5m2Ww8JH0",
+     "SceAjv6a-Rs",
+     "Vf7vMBY6d8M",
+     "fnUvrK3VaH8",
+     "ogIBgrF-w4k",
+     "tstAMhqhffo",
+     "wzpcCNNCcO8"
+    ]
+   },
+   "first_read": "2026-10-05",
+   "last_read": "2026-10-05"
   }
  ]
 }
