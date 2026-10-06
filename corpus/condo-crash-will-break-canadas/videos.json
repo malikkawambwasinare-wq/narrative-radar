@@ -9188,6 +9188,31 @@
         "comments": 5,
         "enrichedOn": "2026-10-05"
       }
+    },
+    {
+      "videoId": "dwPgwNZut6Q",
+      "title": "Toronto condo prices hit six-year low",
+      "channel": "BNN Bloomberg",
+      "url": "https://www.youtube.com/watch?v=dwPgwNZut6Q",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "views": 334,
+      "length": "6:19",
+      "age_days": 0,
+      "query": "channel sweep: BNN Bloomberg",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UC5aNPmKYwbudeNngDMTY3lw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 1,
+        "enrichedOn": "2026-10-06"
+      }
     }
   ]
 }
