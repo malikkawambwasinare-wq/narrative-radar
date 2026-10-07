@@ -9213,6 +9213,81 @@
         "comments": 1,
         "enrichedOn": "2026-10-06"
       }
+    },
+    {
+      "videoId": "qQ8DeJ1S9HM",
+      "title": "Why Are Cancer Rates Rising More Quickly Among Younger People According to Recent International Rese",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=qQ8DeJ1S9HM",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-07",
+      "views": 1,
+      "length": "2:25",
+      "age_days": 1,
+      "query": "channel sweep: Daily Q&A",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "RMVjZf80jQg",
+      "title": "The Toronto Condo Crash: How Canada’s Biggest Real Estate Bubble Finally Burst",
+      "channel": "One Minute Finance",
+      "url": "https://www.youtube.com/watch?v=RMVjZf80jQg",
+      "published": "2026-10-07",
+      "first_seen": "2026-10-07",
+      "views": 1,
+      "length": "7:52",
+      "age_days": 0,
+      "query": "channel sweep: One Minute Finance",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCpK-JpGbtN_n24MAAdbDwRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "ytjhJclLBdg",
+      "title": "Cancer Rates Rising Among Under 50s",
+      "channel": "Times Radio",
+      "url": "https://www.youtube.com/watch?v=ytjhJclLBdg",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-07",
+      "views": 738,
+      "length": "1:00",
+      "age_days": 1,
+      "query": "channel sweep: Times Radio",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCF-VP3b3oH0XASqsLI5rnLw",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 18,
+        "enrichedOn": "2026-10-07"
+      }
     }
   ]
 }
