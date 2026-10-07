@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119705,7 +119705,7 @@
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119899,7 +119899,7 @@
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -127133,7 +127133,7 @@
       "yt": {
         "channelId": "UCXOhNV8OM3leeIX0rkBCKIw"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "W7ShO-GmG6A",
@@ -158367,7 +158367,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "IN3596xnZks",
@@ -159936,7 +159936,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "eKWEXkBQoNI",
@@ -160230,7 +160230,7 @@
       "yt": {
         "channelId": "UC88SGENAQK_h1w7h1a-0RGw"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "J0xHU4UrXDA",
@@ -160249,7 +160249,7 @@
       "yt": {
         "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "2sRgf-T3N9U",
@@ -165950,7 +165950,957 @@
         "comments": 1,
         "enrichedOn": "2026-10-06"
       }
+    },
+    {
+      "videoId": "n_Ah2KbGMD4",
+      "title": "GMA Health Alert: Sleep quality may help prevent disease",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=n_Ah2KbGMD4",
+      "published": "2026-09-20",
+      "first_seen": "2026-10-07",
+      "views": 4643,
+      "length": "2:20",
+      "age_days": 17,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": 1,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "8yrAjvx3tm8",
+      "title": "Study finds whole grains and cereal may reduce cardiovascular risk factors",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=8yrAjvx3tm8",
+      "published": "2026-09-16",
+      "first_seen": "2026-10-07",
+      "views": 15198,
+      "length": "1:27",
+      "age_days": 21,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 77,
+        "comments": 12,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "1L-4i1kpFXE",
+      "title": "Mom shares grocery store tips to save money",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=1L-4i1kpFXE",
+      "published": "2026-09-04",
+      "first_seen": "2026-10-07",
+      "views": 27847,
+      "length": "2:21",
+      "age_days": 33,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 287,
+        "comments": 35,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "8NC9zaug4tw",
+      "title": "Up to 5 cups of coffee per day may potentially lower heart disease risk",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=8NC9zaug4tw",
+      "published": "2026-07-20",
+      "first_seen": "2026-10-07",
+      "views": 6653,
+      "length": "1:56",
+      "age_days": 79,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 66,
+        "comments": 15,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "W27sEiOjsHk",
+      "title": "Foods to help fight childhood disease trends",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=W27sEiOjsHk",
+      "published": "2026-04-18",
+      "first_seen": "2026-10-07",
+      "views": 5136,
+      "length": "4:08",
+      "age_days": 172,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 24,
+        "comments": 3,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "6PuZH3FhVH0",
+      "title": "The Ozempic effect at your grocery store",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=6PuZH3FhVH0",
+      "published": "2026-03-19",
+      "first_seen": "2026-10-07",
+      "views": 33996,
+      "length": "2:59",
+      "age_days": 202,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 546,
+        "comments": 75,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "eYVLbE8wHmc",
+      "title": "Grocery store chain Stew Leonard’s in full winter storm mode",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=eYVLbE8wHmc",
+      "published": "2026-01-25",
+      "first_seen": "2026-10-07",
+      "views": 1253,
+      "length": "3:00",
+      "age_days": 255,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "U5Rt7aPBDUE",
+      "title": "Instacart responds to new report on grocery store price experiments",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=U5Rt7aPBDUE",
+      "published": "2025-12-11",
+      "first_seen": "2026-10-07",
+      "views": 33801,
+      "length": "2:32",
+      "age_days": 300,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 546,
+        "comments": 258,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "xS0Hxt40rac",
+      "title": "Colton Underwood and Kaitlyn Bristowe learn new things every day! | GMA",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=xS0Hxt40rac",
+      "published": "2025-08-21",
+      "first_seen": "2026-10-07",
+      "views": 8130,
+      "length": "0:41",
+      "age_days": 412,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 66,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "O2-pQHgaJ-I",
+      "title": "5 supermoms who are crushing it every day | GMA",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=O2-pQHgaJ-I",
+      "published": "2025-05-09",
+      "first_seen": "2026-10-07",
+      "views": 1456,
+      "length": "11:41",
+      "age_days": 516,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 28,
+        "comments": 2,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "kc6yT5Di6sc",
+      "title": "What foods should I avoid to help control diverticulitis flare-ups?",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=kc6yT5Di6sc",
+      "published": "2025-03-25",
+      "first_seen": "2026-10-07",
+      "views": 2469,
+      "length": "1:59",
+      "age_days": 561,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 34,
+        "comments": 3,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "NRz0Z5dBgcU",
+      "title": "Healthy diet, slimmer waist could lead to better brain health, study finds",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=NRz0Z5dBgcU",
+      "published": "2025-03-13",
+      "first_seen": "2026-10-07",
+      "views": 847,
+      "length": "1:43",
+      "age_days": 573,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "syDNyQJQ6iE",
+      "title": "Whole Foods employees unionize at 1st store",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=syDNyQJQ6iE",
+      "published": "2025-01-28",
+      "first_seen": "2026-10-07",
+      "views": 3257,
+      "length": "1:26",
+      "age_days": 617,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 26,
+        "comments": 8,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "O0VBSct5yCc",
+      "title": "Family sends mom off to work every day with funny dance routine",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=O0VBSct5yCc",
+      "published": "2024-11-01",
+      "first_seen": "2026-10-07",
+      "views": 1733,
+      "length": "0:15",
+      "age_days": 705,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 41,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "g_EpUaPeiA0",
+      "title": "Foods that fight sugar cravings",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=g_EpUaPeiA0",
+      "published": "2024-10-17",
+      "first_seen": "2026-10-07",
+      "views": 19488,
+      "length": "1:44",
+      "age_days": 720,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 152,
+        "comments": 2,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "pgiMeMTDDhM",
+      "title": "Your preference for spicy foods may be all in your head, study shows",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=pgiMeMTDDhM",
+      "published": "2024-10-16",
+      "first_seen": "2026-10-07",
+      "views": 895,
+      "length": "1:44",
+      "age_days": 721,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "1lyRlwpcF3U",
+      "title": "Watch heartwarming way these daughters excitedly greet their dad after work every day",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=1lyRlwpcF3U",
+      "published": "2024-10-02",
+      "first_seen": "2026-10-07",
+      "views": 8213,
+      "length": "0:28",
+      "age_days": 735,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 483,
+        "comments": 7,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "K601oFvzeYI",
+      "title": "Diet tips that may help reduce cancer risk",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=K601oFvzeYI",
+      "published": "2024-10-01",
+      "first_seen": "2026-10-07",
+      "views": 5158,
+      "length": "4:06",
+      "age_days": 736,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 71,
+        "comments": 2,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "umoxD77oyc4",
+      "title": "Tips to revamp meal planning with delicious and healthy options",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=umoxD77oyc4",
+      "published": "2024-01-17",
+      "first_seen": "2026-10-07",
+      "views": 6222,
+      "length": "6:24",
+      "age_days": 994,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 102,
+        "comments": 8,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "pn_isvJXg1E",
+      "title": "Foods that may provide added nutrition to boost immunity",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=pn_isvJXg1E",
+      "published": "2024-01-13",
+      "first_seen": "2026-10-07",
+      "views": 41149,
+      "length": "3:45",
+      "age_days": 998,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 148,
+        "comments": 4,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "t8KQSu_v87A",
+      "title": "What are the risks and benefits of seed oils?",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=t8KQSu_v87A",
+      "published": "2024-01-04",
+      "first_seen": "2026-10-07",
+      "views": 1447,
+      "length": "2:16",
+      "age_days": 1007,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": 5,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "IsTiQpsPh9w",
+      "title": "Are there healthy food staples to add to my diet without breaking the bank?",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=IsTiQpsPh9w",
+      "published": "2024-01-03",
+      "first_seen": "2026-10-07",
+      "views": 12642,
+      "length": "2:18",
+      "age_days": 1008,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 26,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "wY_fvf8wz9Y",
+      "title": "Bus full of kindergartners cheers every day when 'fastest kid alive' runs home",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=wY_fvf8wz9Y",
+      "published": "2023-12-15",
+      "first_seen": "2026-10-07",
+      "views": 18477,
+      "length": "1:28",
+      "age_days": 1027,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 301,
+        "comments": 33,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "TracdPwQph4",
+      "title": "Brad Paisley and wife Kimberly's free grocery store hosts toy drive",
+      "channel": "Good Morning America",
+      "url": "https://www.youtube.com/watch?v=TracdPwQph4",
+      "published": "2023-12-12",
+      "first_seen": "2026-10-07",
+      "views": 1864,
+      "length": "0:45",
+      "age_days": 1030,
+      "query": "channel sweep: Good Morning America",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCH1oRy1dINbMVp3UFWrKP0w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 50,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "R4lVj0V5OyY",
+      "title": "Crypto Market to Go UP Every Day!? | Token Metrics",
+      "channel": "Token Metrics",
+      "url": "https://www.youtube.com/watch?v=R4lVj0V5OyY",
+      "published": "2019-11-08",
+      "first_seen": "2026-10-07",
+      "views": 115,
+      "length": "9:37",
+      "age_days": 2525,
+      "query": "channel sweep: Token Metrics",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCH9MOLQ_KUpZ_cw8uLGUisA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": 2,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "IS_Yo3z8HOk",
+      "title": "Post-meal fatigue strikes as your body spends immense energy churning and filtering food.",
+      "channel": "Sleep Setup Lab",
+      "url": "https://www.youtube.com/watch?v=IS_Yo3z8HOk",
+      "published": "2026-09-20",
+      "first_seen": "2026-10-07",
+      "views": 957,
+      "length": "0:53",
+      "age_days": 17,
+      "query": "channel sweep: Sleep Setup Lab",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCuABO3tVZsPzY6x15Lx14Ew",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "Fpck_ZbXtpE",
+      "title": "Eat Protein First in Every Meal",
+      "channel": "Shivohaam & Vrindda- Body, Mind & Beyond",
+      "url": "https://www.youtube.com/watch?v=Fpck_ZbXtpE",
+      "published": "2026-07-06",
+      "first_seen": "2026-10-07",
+      "views": 175856,
+      "length": "0:41",
+      "age_days": 93,
+      "query": "channel sweep: Shivohaam & Vrindda- Body, Mind & Beyond",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC21L3He54vHxUwWJhQxVCCQ",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 4647,
+        "comments": 27,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "R3zRfDaX4Bk",
+      "title": "The Real Reason You Can't Stop Eating (It's Not Willpower or Calories)",
+      "channel": "Shivohaam & Vrindda- Body, Mind & Beyond",
+      "url": "https://www.youtube.com/watch?v=R3zRfDaX4Bk",
+      "published": "2026-03-18",
+      "first_seen": "2026-10-07",
+      "views": 5192,
+      "length": "36:18",
+      "age_days": 203,
+      "query": "channel sweep: Shivohaam & Vrindda- Body, Mind & Beyond",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC21L3He54vHxUwWJhQxVCCQ",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 191,
+        "comments": 8,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "qSdWjNeZ43U",
+      "title": "Are You Making These Energy Food Mistakes Every Day?",
+      "channel": "Shivohaam & Vrindda- Body, Mind & Beyond",
+      "url": "https://www.youtube.com/watch?v=qSdWjNeZ43U",
+      "published": "2025-10-30",
+      "first_seen": "2026-10-07",
+      "views": 3201,
+      "length": "0:53",
+      "age_days": 342,
+      "query": "channel sweep: Shivohaam & Vrindda- Body, Mind & Beyond",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC21L3He54vHxUwWJhQxVCCQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 74,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "Im4uLK7ocRI",
+      "title": "Stop Training Hard Every Day (What Olympic Lifters Do Instead) #ytshorts #shortsfeed",
+      "channel": "Shivohaam & Vrindda- Body, Mind & Beyond",
+      "url": "https://www.youtube.com/watch?v=Im4uLK7ocRI",
+      "published": "2025-01-18",
+      "first_seen": "2026-10-07",
+      "views": 113311,
+      "length": "0:50",
+      "age_days": 627,
+      "query": "channel sweep: Shivohaam & Vrindda- Body, Mind & Beyond",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC21L3He54vHxUwWJhQxVCCQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5291,
+        "comments": 15,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "8CzAdvg9QDI",
+      "title": "How Much Should You Eat? Know How Your Body Gives You Signals #shorts",
+      "channel": "Shivohaam & Vrindda- Body, Mind & Beyond",
+      "url": "https://www.youtube.com/watch?v=8CzAdvg9QDI",
+      "published": "2024-07-01",
+      "first_seen": "2026-10-07",
+      "views": 1491,
+      "length": "0:38",
+      "age_days": 828,
+      "query": "channel sweep: Shivohaam & Vrindda- Body, Mind & Beyond",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC21L3He54vHxUwWJhQxVCCQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 28,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "VymUg-ot4ug",
+      "title": "What If You Ate Pizza Every Day for 30 Days? 🍕",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=VymUg-ot4ug",
+      "published": "2026-09-18",
+      "first_seen": "2026-10-07",
+      "views": 69,
+      "length": "0:36",
+      "age_days": 19,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "7kXZ5lR55Q8",
+      "title": "These foods look basic, but their nutrition might surprise you.",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=7kXZ5lR55Q8",
+      "published": "2026-08-12",
+      "first_seen": "2026-10-07",
+      "views": 929,
+      "length": "0:31",
+      "age_days": 56,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 2,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "fyjJhoTd7VU",
+      "title": "Professional chefs use these simple kitchen tricks every day👨‍🍳",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=fyjJhoTd7VU",
+      "published": "2026-07-27",
+      "first_seen": "2026-10-07",
+      "views": 672,
+      "length": "0:32",
+      "age_days": 72,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "zqvftJb1xt0",
+      "title": "These foods are perfect for your evening routine🌙😴",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=zqvftJb1xt0",
+      "published": "2026-07-25",
+      "first_seen": "2026-10-07",
+      "views": 33,
+      "length": "0:33",
+      "age_days": 74,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "wkeiqnYflFk",
+      "title": "Your brain needs the right fuel... these foods can help🧠✨",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=wkeiqnYflFk",
+      "published": "2026-07-24",
+      "first_seen": "2026-10-07",
+      "views": 34,
+      "length": "0:32",
+      "age_days": 75,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "RORdgXaPTkE",
+      "title": "Professional chefs use these simple tricks every day👨‍🍳",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=RORdgXaPTkE",
+      "published": "2026-07-17",
+      "first_seen": "2026-10-07",
+      "views": 803,
+      "length": "0:37",
+      "age_days": 82,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": 3,
+        "enrichedOn": "2026-10-07"
+      }
+    },
+    {
+      "videoId": "slSt2YYzYdU",
+      "title": "Do you spend hours sitting at a desk every day?🪑",
+      "channel": "HealthVerse",
+      "url": "https://www.youtube.com/watch?v=slSt2YYzYdU",
+      "published": "2026-06-28",
+      "first_seen": "2026-10-07",
+      "views": 18,
+      "length": "0:43",
+      "age_days": 101,
+      "query": "channel sweep: HealthVerse",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4OrtyYcAvZQW0av0ulCAXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-07"
+      }
     }
   ],
-  "updated": "2026-10-06"
+  "updated": "2026-10-07"
 }

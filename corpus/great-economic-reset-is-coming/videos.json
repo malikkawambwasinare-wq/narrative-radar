@@ -1,6 +1,6 @@
 {
   "topic": "great-economic-reset-is-coming",
-  "updated": "2026-10-06",
+  "updated": "2026-10-07",
   "videos": [
     {
       "videoId": "YXFvwJQBzJc",
@@ -7384,7 +7384,7 @@
       "yt": {
         "channelId": "UCyVmrYcCWgq-rdVczNNyfxA"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "pbeUEuEdVnU",
@@ -7428,7 +7428,7 @@
       "yt": {
         "channelId": "UCyVmrYcCWgq-rdVczNNyfxA"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "COdM90Fdl24",
@@ -15672,7 +15672,7 @@
       "yt": {
         "channelId": "UCEDTcoau0fFT01G0J0lCu-w"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "MNSEd-cmS2s",
@@ -17863,7 +17863,7 @@
       "yt": {
         "channelId": "UCv1Fx0fYgYI-HTVs-ZenqBQ"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "MZ7chfHM_1Q",
@@ -17957,7 +17957,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "-HxiYlC-sRw",
@@ -18026,7 +18026,7 @@
       "yt": {
         "channelId": "UCyVmrYcCWgq-rdVczNNyfxA"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "-9Ixwbiihds",
@@ -18220,7 +18220,7 @@
       "yt": {
         "channelId": "UCgX6ttzPIHKjW6IVxVAcT4w"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "ZvWmThbrYl8",
@@ -18239,7 +18239,7 @@
       "yt": {
         "channelId": "UCzpVslqQiTjbHBHCvusNwKQ"
       },
-      "unavailable": "2026-10-06"
+      "unavailable": "2026-10-07"
     },
     {
       "videoId": "eHHJ3EtUxm8",
@@ -31424,6 +31424,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-06"
+      }
+    },
+    {
+      "videoId": "Tb_Ty4fb4js",
+      "title": "Great Economic Reset to Affect Crypto? Can Anything Stop Crypto at this Point? Token Metrics AMA",
+      "channel": "Token Metrics",
+      "url": "https://www.youtube.com/watch?v=Tb_Ty4fb4js",
+      "published": "2020-12-16",
+      "first_seen": "2026-10-07",
+      "views": 1133,
+      "length": "10:20",
+      "age_days": 2121,
+      "query": "channel sweep: Token Metrics",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCH9MOLQ_KUpZ_cw8uLGUisA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 62,
+        "comments": 16,
+        "enrichedOn": "2026-10-07"
       }
     }
   ]
