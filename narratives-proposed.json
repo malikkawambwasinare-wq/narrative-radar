@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-06",
+ "generated": "2026-10-07",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1845,
+ "cost_usd": 0.1835,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -31323,6 +31323,1430 @@
    },
    "first_read": "2026-10-06",
    "last_read": "2026-10-06"
+  },
+  {
+   "phrase": "opportunity coming",
+   "verdict": "rhetoric",
+   "why": "Mostly tarot reading hype with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 31,
+    "channels": 16,
+    "months": 24,
+    "span": "2019-03 → 2026-09",
+    "examples": [
+     "Aries March 18-24 | Watch carefully for the SILVER LINING opportunity coming in!",
+     "TAURUS~BIG OPPORTUNITY COMING IN THINK AND FAST(SEPTEMBER 16/30)",
+     "VIRGO Nov 9-15 | GET READY! A GOLDEN OPPORTUNITY IS COMING YOUR WAY ~ Tarot Reading"
+    ],
+    "ids": [
+     "-d5wa4DllhU",
+     "0Oo-JDbSavw",
+     "3Rrofi2rrFA",
+     "3xqP-JJx3uM",
+     "8Gbzjd37Pyk",
+     "9DAAEYEuEwY",
+     "ABfdKM3vGoo",
+     "CMF9L1fqg-k",
+     "GA777j8vHck",
+     "HRHTP5w_2TA",
+     "Heo03M1bdzk",
+     "IZM_Qds2ssU",
+     "Kws0IFpA7ao",
+     "Mn9A8AWEMaQ",
+     "SiDHI-dRR2Y",
+     "VZ05sNCKZ1s",
+     "WD34GG4qGqw",
+     "X7pmG-Gj_hk",
+     "_-rexFXax0M",
+     "b8fywCalNnM"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "tired fix",
+   "verdict": "duplicate",
+   "why": "Fatigue-has-a-root-cause (often gut) framing restates existing gut narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "fix-your-gut-fix-your",
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 7,
+    "span": "2022-08 → 2026-03",
+    "examples": [
+     "Beat Ozempic Fatigue Fast – Why You’re Tired and How to Fix It",
+     "Always Tired? Fix Your Gut: It's Slowly Dying! | Barbara O'Neill's Warning",
+     "Why You’re Always Stressed, Bloated & Tired (And How to Fix It)"
+    ],
+    "ids": [
+     "0J2_znUQ0DE",
+     "33_EkuZ6qVc",
+     "5G_IZbdzZlA",
+     "5daONhy5vY4",
+     "7QPTyAIo_Ww",
+     "DNrn2aU1p20",
+     "Y2LoAFbzeps",
+     "xMe0E55sQZk"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "must choose",
+   "verdict": "rhetoric",
+   "why": "An exhortation spanning tarot, geopolitics and detox with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 9,
+    "months": 6,
+    "span": "2021-10 → 2026-10",
+    "examples": [
+     "TAURUS WEEKLY TAROT | A WAKE UP CALL! FINAL JUDGEMENT, YOU MUST CHOOSE NOW TAURUS! ~ Nov 1-7",
+     "NATO/West or Global Majority? Unipolar destruction or multipolar development? The world must choose",
+     "Detoxing can hurt…but getting demons/parasites out of your body/temple is a must Choose to detox"
+    ],
+    "ids": [
+     "1pMDF4aOxBc",
+     "H5iDZcCllGc",
+     "H9_1Pc3Sy4s",
+     "Io0H1i7Xf8s",
+     "MXFtnw1581w",
+     "OaluV5bUois",
+     "P0JklXuJBYY",
+     "UXXnhlS_f2I",
+     "cr59uhQaPIM",
+     "fhc3svdCBWk",
+     "iIIF1KqWqZQ",
+     "pdJy5YBQMis"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "ban cnn politico",
+   "verdict": "rhetoric",
+   "why": "A news event being reported, not a contestable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 31,
+    "channels": 19,
+    "months": 2,
+    "span": "2026-09 → 2026-10",
+    "examples": [
+     "Major Garrett argues \"Trump is signaling he's weak\" with ban on CNN, MS NOW and Politico",
+     "Trump Announces Ban on CNN, MS NOW and Politico Access",
+     "Trump’s Big Media Ban: CNN, MS NOW & Politico Shut Out Of White House | Latest News | N18G"
+    ],
+    "ids": [
+     "2w9pCZq5yAo",
+     "5Mm_ROTMvWw",
+     "B6cc_m-5gIY",
+     "DDo4vuRSOyw",
+     "EFlIfaF93U0",
+     "F6Yaq6nWybk",
+     "HXslFENko48",
+     "JPUkJwpri4c",
+     "KkN4nA7oewY",
+     "O5v4cuTNmVs",
+     "QcFwVCjN5AI",
+     "RUdo62ihXHg",
+     "RgS_tBl_GCc",
+     "U0xAG2BhvuE",
+     "UCc3C5LHZ54",
+     "UpJvuT1Moqw",
+     "VMRwdNsZnDY",
+     "X9mE-rKlnFY",
+     "_vkSHSSRnX8",
+     "ca6YywRKoZQ"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "dead suspected",
+   "verdict": "rhetoric",
+   "why": "Generic news-incident phrasing with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 6,
+    "months": 6,
+    "span": "2024-11 → 2026-10",
+    "examples": [
+     "At least 5 tourists dead from suspected methanol poisoning in Laos",
+     "Two teenage boys, parents dead in suspected murder-suicide | ABC NEWS",
+     "Man, woman and two teenagers dead in suspected murder-suicide in Perth's west | ABC NEWS"
+    ],
+    "ids": [
+     "0gWTl-Rq6Fc",
+     "64hZUQWAHbE",
+     "6DoDfXhNaXc",
+     "73vi-31vbjE",
+     "7nYSYmTRypw",
+     "BbdQxvU0fgk",
+     "HV7qZBVeXJc",
+     "Wb6FCqfaLJQ",
+     "fOrZaFqKIRc",
+     "lXioIbTPPqc"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "truth milk",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that milk/dairy is harmful and this is hidden from consumers.",
+   "claim_name": "The \"truth about milk\" story",
+   "claim": "Milk and dairy are claimed to be harmful to health rather than nourishing, and the public is said not to be told the real evidence.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread dairy consumption is said to cause disease and inflammation",
+    "cause": "Milk itself plus industry promotion of it as healthy",
+    "outcome": "Cut out dairy to improve health and longevity",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 7,
+    "span": "2024-04 → 2026-09",
+    "examples": [
+     "The TRUTH About Milk... | The Longevity Expert Dr Mark Hyman",
+     "The Shocking truth....... why milk is not good........",
+     "सेहत के दुश्मन: दूध, अंडा और चिकन का काला सच .....The Dark Truth About Milk, Eggs, and Chicken"
+    ],
+    "ids": [
+     "-MqMmu7LEsk",
+     "4j4H11g4Y-g",
+     "LetAkVEfsu8",
+     "VLEFSqi9D24",
+     "ZuwWJyaB2-g",
+     "f8H6Y59XDQg",
+     "uEroftCMyxk",
+     "urufKkXNMGc"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "'it really",
+   "verdict": "rhetoric",
+   "why": "A quote fragment used in news headlines, carrying no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 7,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "'It was a really dark time': Aussie athletic legend Erin Phillips opens up on body image | ABC NEWS",
+     "'It really starts at the top': Judge Salas on toning down the 'inflammatory rhetoric' about judges",
+     "'It really was a surreal feeling': Bill de Blasio reacts to impersonator criticizing Mamdani"
+    ],
+    "ids": [
+     "1qKKRZEWlaU",
+     "7OxqJfGuGFs",
+     "Sb6r0M6cwmI",
+     "TrT8RUuqqYg",
+     "Y5JKfK4WP54",
+     "o4scsEwzvRs",
+     "wcHZ-kp13tw"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "coming hot",
+   "verdict": "rhetoric",
+   "why": "Stock excitement phrasing across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 31,
+    "channels": 5,
+    "months": 18,
+    "span": "2022-08 → 2026-04",
+    "examples": [
+     "AQUARIUS TAROT READING | TWO QUEENS, ONE KNIGHT! SOMEONE IS COMING IN HOT & FAST! UNEXPECTED CHANGES",
+     "Quantum Computing News: Innovations are Coming In Hot!",
+     "TAURUS TAROT READING | NEW ARRIVAL COMING IN HOT! JUST IN TIME LOVE!"
+    ],
+    "ids": [
+     "2Wl3iXB6UT4",
+     "36-2oLrMcw4",
+     "3PdRcp2VK_E",
+     "60aUrbqkWQg",
+     "6r4zMMi3fAY",
+     "78yNJLi8V9w",
+     "7qotHrD7QuY",
+     "9DAAEYEuEwY",
+     "CiuMB6fUkGw",
+     "D865EaPh_b0",
+     "FbsNMOEPNMQ",
+     "GHux704ccxc",
+     "GJEcMXt5JmI",
+     "GO2Bu-RMDmg",
+     "IAZvM1SSiCk",
+     "I_nK-IxT2yY",
+     "JkazpLil0Ik",
+     "Mayt8pvCfcQ",
+     "O_fAE-vJSpE",
+     "OghHgBHc3YY"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "donation scam",
+   "verdict": "rhetoric",
+   "why": "Titles cover unrelated scandals with no shared checkable claim beyond a news subject.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 8,
+    "months": 4,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "Organ Donation scam Exposed | Scam | Telugu Facts | VR Raja Facts",
+     "\"System Must Go\": Nripendra Misra Slams Ram Mandir Management After Major Donation Scam Probe!",
+     "Champat Rai, Anil Mishra Quit Ram Mandir Trust After Donation Scam Arrests"
+    ],
+    "ids": [
+     "9SmpYBSPfXU",
+     "AhrH29_OrD8",
+     "BqOmWG8LEic",
+     "G4HJ-mJT9GU",
+     "GvV1UU9S2_0",
+     "Oa9we6sWLhg",
+     "Yk6bm4OBTq4",
+     "d_jbyXfO1mg",
+     "fbdFKWihGIU",
+     "nILogsLhClg",
+     "qGX5zmeGoA4",
+     "qo7iOpoAiE8",
+     "spNpg8gs_4c",
+     "tQN1SEFh19A"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "end road",
+   "verdict": "rhetoric",
+   "why": "Tarot-reading stock phrase, no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 10,
+    "span": "2020-08 → 2026-10",
+    "examples": [
+     "SCORPIO Work + Money August | IT'S THE END OF THIS ROAD ~ YOUR HIGHER PURPOSE IS CALLING!",
+     "LEO Oct 12-18 | EMPIRE BUILDING! A DIVINE GIFT AT THE END OF THE ROAD ~ Tarot Reading",
+     "SCORPIO TAROT READING | GET READY TO BE SHAKEN TO YOUR CORE!! YOU ARE AT THE END OF THIS ROAD!"
+    ],
+    "ids": [
+     "8zBD3yF2Hbs",
+     "CpeOHmQeelw",
+     "DqGFfXjkooE",
+     "GLArCvYOyi0",
+     "MVnDBPZHm7c",
+     "W0PplLq9zSs",
+     "XISt_Epj-Bo",
+     "kY7MUaIuWgQ",
+     "oR2p1MDBRtM",
+     "rcHY0DEhl14"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "'take over'",
+   "verdict": "rhetoric",
+   "why": "A quoted news subject (Trump's Gaza remark) reported from multiple angles, not a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "Trump says US will 'take over' Gaza strip",
+     "Netanyahu meets US VP Vance, Waltz; NSA's presence fuels Trump's Gaza 'take over' plan",
+     "Hamas rejects Trump's 'take over' Gaza remark, Saudi reaffirms support for 'independent' Palestine"
+    ],
+    "ids": [
+     "5LBt9KBzsY8",
+     "FOi6-mquxyo",
+     "HMBwV8kL5NY",
+     "KqXMfcow30o",
+     "NFa9JAa1lO4",
+     "QzG98YklawA",
+     "cOisTx-83_I",
+     "eccSZHyPYLc",
+     "m2VlSY4pUX8"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "charts show",
+   "verdict": "rhetoric",
+   "why": "Format phrase attached to varied and contradictory market calls.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2017-10 → 2026-09",
+    "examples": [
+     "Three Key Charts Show This Bull Market Has More Juice Left In It | Trading Nation | CNBC",
+     "5 Charts To Show Why You Should Own Gold!",
+     "TURBO: Price Charts Show 100X Potential in 2025"
+    ],
+    "ids": [
+     "2s7nkg7QrZU",
+     "Dlm-x2a3GTI",
+     "GxdUjQR4wmc",
+     "MOwYFdVePN4",
+     "MgcXV94pB-I",
+     "UmtE9YaP03o",
+     "pXbGmrXTAEo",
+     "v-1oXKb1aE0"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "end traditional",
+   "verdict": "rhetoric",
+   "why": "Headline template applied to unrelated domains; no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "Is This the End of Traditional Leadership?",
+     "The End of Traditional SEO (And What Replaces It in 2026)",
+     "The End of Traditional Software Interfaces?"
+    ],
+    "ids": [
+     "3r54spoB5-0",
+     "9v3rZAnFPl0",
+     "IUiX_TxVGDA",
+     "SvJHocAYLRs",
+     "k_9AsANFY9A",
+     "lmOlwZBZWAA",
+     "oHRH7rj3ivM"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "actually makes sense",
+   "verdict": "rhetoric",
+   "why": "Pure sales hook spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-11 → 2026-09",
+    "examples": [
+     "Finally, an AI Database That Actually Makes Sense",
+     "CRAZY XRPL RUMOR (THIS ACTUALLY MAKES SENSE!) #crypto #cryptocurrency #xrp #bitcoin",
+     "When Refinancing Actually Makes Sense #shorts #HomeTips #MoneySaving"
+    ],
+    "ids": [
+     "5-Bppcraz58",
+     "8cf_bveteOE",
+     "AuxIE4xXyK8",
+     "HZmHrzjW5L4",
+     "T2ywlXMuGRg",
+     "XmFz1m4bXJA"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "must aware",
+   "verdict": "rhetoric",
+   "why": "Urgency phrasing with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2017-02 → 2026-09",
+    "examples": [
+     "5 Lesser-Known Tax Deductions You Must Be Aware Of",
+     "Bitcoin Investors Must Be Aware Of September 15",
+     "Bitcoin December Price Targets & Probabilities. Crypto Investors Must Be Aware"
+    ],
+    "ids": [
+     "0uyJZOq77JU",
+     "K96FP9VNw80",
+     "OinAn0dY33E",
+     "TNgfYwSaFQo",
+     "tS43vPE-fH4",
+     "vOTvGj0R3Q0"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "fix mistakes",
+   "verdict": "rhetoric",
+   "why": "Generic listicle format across cooking, sleep and fitness.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 11,
+    "months": 7,
+    "span": "2022-09 → 2026-10",
+    "examples": [
+     "5 AMAZING Kitchen Hacks! How To Fix Mistakes In Your Recipes",
+     "Stop Waking Up to Pee: Fix These 3 Mistakes Ruining Your Brain's Deep Sleep",
+     "Not Feeling Planks in Your Core? Fix These Mistakes NOW"
+    ],
+    "ids": [
+     "00CSl6p9QA4",
+     "Jrhhd47oNHQ",
+     "LFwCdJbWnXg",
+     "YusWV4eTke4",
+     "Z21_V6eftcU",
+     "a52VDj1z2iE",
+     "f24qtTr6I2s",
+     "lvJDKR9J0bc",
+     "marqR5zwWRw",
+     "vzWpZzdMPEY",
+     "yK9vzCkk0f0"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "opportunities coming",
+   "verdict": "rhetoric",
+   "why": "Vague promotional teaser spanning tarot, pandemic and real estate with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 10,
+    "span": "2020-04 → 2026-03",
+    "examples": [
+     "George Gammon: The Opportunities Coming From The Current Pandemic",
+     "AQUARIUS 🌟 | HAVE FAITH, UNEXPECTED OPPORTUNITIES ARE COMING ~ Abundance Update Tarot",
+     "More listings/buying opportunities are coming soon, real estate seasonality."
+    ],
+    "ids": [
+     "0bewu4n8T1c",
+     "5u2orfcBm6g",
+     "7opTV1D2xSM",
+     "A4MYu_stky0",
+     "EbVVS6PxD4Q",
+     "NbQtUprtVLk",
+     "RWNZTTTHM8Y",
+     "_-1dNSF20lk",
+     "aMI4jLu5t4k",
+     "crXwoEBLb_E",
+     "sieFRWF4CoE"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "happiness coming",
+   "verdict": "rhetoric",
+   "why": "Tarot reading formula, not a claim about the world that could be checked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 7,
+    "span": "2019-03 → 2026-09",
+    "examples": [
+     "ARIES MARCH LAST HALF/THE AWAKENING OF A LIFE TIME OF PURE HAPPINESS IS COMING",
+     "Taurus:  Nov. 21st-27th  \"YOU GUYS ARE IGNORING EACH OTHER, BUT HAPPINESS IS COMING.\"",
+     "Taurus:  Feb. 10th-16th  \"THIS IS A DIVINE CONNECTION. A LOT OF HAPPINESS IS COMING.\""
+    ],
+    "ids": [
+     "--2f4C4gBtA",
+     "3Qf1GbRF5ME",
+     "EIFc6XsXM-c",
+     "EKIC2oFs8K8",
+     "FjWHHmsbZog",
+     "S-4ouCKRIsU",
+     "ef4AlRRJLi8",
+     "lWJqNXNs82c",
+     "odMHhlP6csQ"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "actually read",
+   "verdict": "rhetoric",
+   "why": "Generic hook phrase used across unrelated topics with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 4,
+    "span": "2026-02 → 2026-09",
+    "examples": [
+     "I used to give my cat Temptations EVERY day… until I actually read the ingredients list 🫠 #cattreat",
+     "This AI Turned a 2-Hour Podcast Into Notes I’d Actually Read",
+     "AI doesn’t actually read words the way we do. It sees tokens—small pieces of text."
+    ],
+    "ids": [
+     "0T3XVfOFxEY",
+     "E3Erj9TD6EI",
+     "IrLKTctMUXA",
+     "TJ9ZLXMe5RQ",
+     "TaPhF_hxu4U",
+     "b7GEsIAgaXg",
+     "gPh8HLY8lPY"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "hiring boom",
+   "verdict": "rhetoric",
+   "why": "A subject label applied to different sectors; no single contested claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 4,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "🚀 Tech Hiring Boom 2025: Top Companies Hiring Thousands NOW!",
+     "US Immigration Crackdown | Historic hiring boom! Trump adds 50,000 feds to control illegal aliens!",
+     "Quantum Tech: From Lab to Real World & Hiring Boom! #shorts"
+    ],
+    "ids": [
+     "28HU8DcJn50",
+     "9CtdMls9AmQ",
+     "LA4jwCeaITc",
+     "SjjWJDAbMaI",
+     "XPH5re7PoHo",
+     "f2ygd6QwO48",
+     "wfLqAqkGgVo"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "crash economy",
+   "verdict": "duplicate",
+   "why": "Generic imminent-economic-collapse prediction already covered by the collapse deadline audit.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 20,
+    "months": 16,
+    "span": "2017-10 → 2026-10",
+    "examples": [
+     "27 October 2017 - The CEC Report - Glass-Steagall vs Bail-In / 3 weak points that can crash economy",
+     "Will Empty Office Space CRASH the Economy?  Real Estate Crisis Coming?",
+     "\"Everything Bubble Will Crash The Economy...\" - Peter Schiff"
+    ],
+    "ids": [
+     "2CMofhbtw7A",
+     "8P8bN3KflEg",
+     "9lbVLMCReis",
+     "C6Us6GPAo4g",
+     "Gd2juJsXoA8",
+     "HFhJZsQVbn8",
+     "Hu1x4labTYY",
+     "Mn_7eEzWYqI",
+     "S-pSjPDexzw",
+     "UPd80x70CFQ",
+     "UiVksaKZrjk",
+     "ae48UjWE_dY",
+     "byt7kZ0oG48",
+     "gg3ZWtnerCU",
+     "hVCVuGiIhiU",
+     "j5HCaXrNLZk",
+     "kMmuwdrWO7U",
+     "kUn56qBFpi4",
+     "mknehubaz4I",
+     "nVDwGH4TonU"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "pattern shows",
+   "verdict": "rhetoric",
+   "why": "Chart-reading format for crypto price videos; the 'pattern' points to different targets each time.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 6,
+    "months": 11,
+    "span": "2021-06 → 2026-07",
+    "examples": [
+     "THIS ETHEREUM PATTERN SHOWS THE NEXT TARGET!! ETHEREUM & BITCOIN PRICE PREDICTION!",
+     "NEW BITCOIN PATTERN SHOWS NEXT MOVE (must watch)!!! Bitcoin Price Prediction & Bitcoin News Today!!",
+     "THIS BITCOIN PATTERN SHOWS NEW PRICE TARGET!! BITCOIN NEWS TODAY, BITCOIN PRICE PREDICTION (trading)"
+    ],
+    "ids": [
+     "2GaFdLcIzuM",
+     "4_YRPlRpPUA",
+     "4_djMzjSk3s",
+     "DUL7_8WVMIw",
+     "E0rDBBGsMjg",
+     "fNw8tRnmjSA",
+     "hXMdzM15eJw",
+     "lldhWszqmxs",
+     "mjTfGyP8lYg",
+     "nWzPNVpOK_g",
+     "wQBym5gj-pk",
+     "wiky2N1_Bss"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "'kill switch'",
+   "verdict": "rhetoric",
+   "why": "Shared buzzword across buses, AI safety and security stories with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 3,
+    "span": "2026-01 → 2026-09",
+    "examples": [
+     "ACT probes Chinese-made buses after 'kill switch' warning | ABC NEWS",
+     "Anthropic Breach Inspires Killer 'Kill Switch' Feature! #shorts",
+     "Why an AI 'Kill Switch' Won't Save Humanity"
+    ],
+    "ids": [
+     "Bb1kynLxXs8",
+     "BinWMUNMtf0",
+     "M0x68fw4kB8",
+     "OeeVkRrFxbA",
+     "UWAkEXFXwXw",
+     "hDc751lMvk4",
+     "hnE2Lbica0U",
+     "n4bSQLWDMdc",
+     "oDgEdJcg55Q",
+     "qkMFA78I48Q"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "party wins",
+   "verdict": "rhetoric",
+   "why": "Election results reporting format, a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 33,
+    "channels": 14,
+    "months": 7,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "Canada's ruling party wins but unclear if majority or minority | ABC NEWS",
+     "GE2025 results: Workers' Party wins Sengkang GRC",
+     "GE2025 results: People's Action Party wins West Coast-Jurong West GRC"
+    ],
+    "ids": [
+     "4Enbg635sJQ",
+     "54cqxz8pN_Q",
+     "61K6mFYQxLM",
+     "BO0GmFYpe0Q",
+     "C6ptM8BOdbY",
+     "ChhJMPCfCIg",
+     "Dy331HKRG9Q",
+     "HClsv8hQzCA",
+     "HDi9mz_wWXs",
+     "HXD1UEHL0GM",
+     "M6SFsj2B6sQ",
+     "MclQT8NXrio",
+     "PRCnec4Hoco",
+     "RZ3hR6oEO2c",
+     "Trv4ZVy1xDs",
+     "U6WJHcBoyJM",
+     "WdugasL6m_k",
+     "XRwj04-jAN0",
+     "XcFIA5X0BAQ",
+     "ZZzKAaPKn8k"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "shah explains",
+   "verdict": "rhetoric",
+   "why": "An expert-explainer format tied to a surname, with no shared checkable claim across topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 4,
+    "months": 9,
+    "span": "2024-07 → 2026-10",
+    "examples": [
+     "New Criminal Laws: HM Amit Shah explains how the three new acts will help common people",
+     "Crime Scene To Courtroom: Amit Shah Explains India’s New Forensic Laws",
+     "India Budget 2026: Fiscal Prudence, CapEx & Why FPIs Are Selling | Nilesh Shah Explains"
+    ],
+    "ids": [
+     "7KxCalOLx8c",
+     "I4o5nAOHgJs",
+     "L2KGRFmagMM",
+     "NOPbMsmFfOw",
+     "UQQ2AAabyGc",
+     "bxIL4-_Q_oM",
+     "byne9lzWp80",
+     "eIxLjaPvf2I",
+     "fE6DFfovL24",
+     "o1p4w_pW1Fg",
+     "t5lmRjzaiWA",
+     "wBJG5m8Aew0",
+     "wgKeCVbzGg0",
+     "yVGRZgEgyzk"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "headed crash",
+   "verdict": "duplicate",
+   "why": "Asset-crash-is-coming framing already covered by existing crash watch narratives.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2021-06 → 2026-10",
+    "examples": [
+     "BITCOIN HEADED FOR A CRASH?! CRYPTO MARKET UPDATE! SHIBA UPDATE! DOGECOIN UPDATE!",
+     "Warning Signs: Is the Housing Market Headed for a Crash? @ScottWaltersUSA",
+     "Is Denver's Real Estate Market Headed for a CRASH in 2025?"
+    ],
+    "ids": [
+     "0hsmQI2eA7Q",
+     "JXt3evXFA-A",
+     "K8hjha3J9E4",
+     "MJ4iyn-o9uU",
+     "Uv1kccYDhro",
+     "qPUHH3BNcGE"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "fully explain",
+   "verdict": "rhetoric",
+   "why": "A mystery-teaser formula across unrelated subjects, not one falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 14,
+    "months": 5,
+    "span": "2026-06 → 2026-10",
+    "examples": [
+     "The Ajanta Caves Contain a Secret Historians Still Can't Fully Explain",
+     "6 Mysterious Signals Nobody Can Fully Explain 😱 | Strange Sounds & Messages From Earth And Space",
+     "The Mystery of Sleep - We Spend One Third of Our Lives in a State Science Cannot Fully Explain"
+    ],
+    "ids": [
+     "5CkqvJDWobY",
+     "5WNWIkfq09I",
+     "70GRJaw29F8",
+     "BEG0KavlkQs",
+     "Bo7BqTl9pZc",
+     "CWB4X2jP8X4",
+     "OGeZhqu0Ctk",
+     "UuABGOo2dZ0",
+     "aw0oKti-gzg",
+     "cvJ1zNvEQzg",
+     "d8rdOCGWjLw",
+     "lsA1e_y8xYk",
+     "qHUnF_qIa6o",
+     "r-o6rhLZM1I",
+     "sBtK4k2GTYY",
+     "uBoCei8Q8wk",
+     "vAKNzUYBZ5A",
+     "vmrHnbe6hJo"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "liquor scam",
+   "verdict": "rhetoric",
+   "why": "A named news subject (Indian excise policy cases) reported from varied angles, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-06 → 2026-10",
+    "examples": [
+     "Delhi liquor scam: CM Arvind Kejriwal sent to 14-day judicial custody in CBI case",
+     "'BJP took Rs 60 Crore bribe in Liquor Scam via Electoral Bonds': AAP's Sanjay Singh",
+     "Demonetised Notes In AP Liquor Scam | ₹35 Crore Cash Linked To YSRCP Aide"
+    ],
+    "ids": [
+     "2upY0NsI8_Q",
+     "4kJ8c4erc5o",
+     "Hb-HjcXN3_k",
+     "IVcmKs17n2E",
+     "IX2vxKIhW3I",
+     "KXPHUOt0NJE",
+     "OC5EUFuY514",
+     "PypVD7mKG5w",
+     "Wo_8q2yuGHM",
+     "abInCaQV6A0",
+     "bReaziFEjw4",
+     "cjZ-J7hZ_wE",
+     "cwtzgUUvfKE",
+     "hXHQRNk-uEA",
+     "mIx91jnb3cY",
+     "qAbNWlVUNHU",
+     "uLW9I60HE3w",
+     "vBsUEeF0PcE"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "truth bombs",
+   "verdict": "rhetoric",
+   "why": "Pure promotional framing attached to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-05 → 2026-09",
+    "examples": [
+     "Operation Sindoor | Truth Bombs: How India Shattered Pakistan’s Propaganda",
+     "Op Sindoor | DGMOs' Press Conference Mashup | Truth Bombs That Will Give Pakistan",
+     "Tom Homan, ICE Director Lyons drop truth bombs on masked agents, Biden housing immigrants in hotels"
+    ],
+    "ids": [
+     "4EFuxJDEoYQ",
+     "ByASJjLkoE4",
+     "GbUNKAEi4rQ",
+     "IaAG6NkiBqs",
+     "KU-F1i-e5Cs",
+     "NjaGQCf5CQ8",
+     "O_4uQ_5Rj3k",
+     "b8p76yz2v-g",
+     "bImmAkKSZxs",
+     "ebz5PUAA6eo",
+     "mefERKnJ_A0",
+     "xHmCB1eFE8k"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "volatility coming",
+   "verdict": "rhetoric",
+   "why": "A vague undated warning used as market-update packaging; no specific checkable claim shared.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 10,
+    "span": "2022-11 → 2026-07",
+    "examples": [
+     "This Predicted the 1929 Stock Market Crash. | SP500 Volatility Is Coming, It's a Question of When.",
+     "BREAKING NEWS! MORE CRYPTO VOLATILITY COMING! BE PREPARED!",
+     "BREAKING NEWS! MORE CRYPTO UNCERTAINTY AND VOLATILITY IS COMING! IMPORTANT!"
+    ],
+    "ids": [
+     "0HMV4oZMPDk",
+     "3lVvWUL1rnQ",
+     "8adNJoObVwE",
+     "BOI9rFJxOUE",
+     "DzZ8fML8Ekw",
+     "GYlPE47poiw",
+     "OskqW0NsZ4c",
+     "V3s1h8hBEN4",
+     "WI2fxi4goGo",
+     "f_p-abXLVno",
+     "kN678_Krv7o"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "crash victim",
+   "verdict": "rhetoric",
+   "why": "Incident news subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 5,
+    "span": "2026-01 → 2026-10",
+    "examples": [
+     "'I'm really sorry for what happened': Edmund Chen to crash victim",
+     "Passersby trying to rescue crash victim in Klang accidentally flip car into drain",
+     "Saskatchewan Roughriders to honour crash victim"
+    ],
+    "ids": [
+     "0C3gxVjlmoY",
+     "0DPxE3mowNU",
+     "2R_fZf7xaUI",
+     "B03NidgoFWw",
+     "PPx0BQwivcE",
+     "_IjK-F0zrVI",
+     "cPzbWrboJvw",
+     "or3BJ_VukyU",
+     "sk_1F9qVUgA",
+     "vzq5Rax4bzQ"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "rail crash",
+   "verdict": "rhetoric",
+   "why": "Event coverage of train accidents, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "LIVE | Greece: Violence mars protests in Athens marking anniversary of rail crash",
+     "Spain Train Crash LIVE: Train Collides With Crane in Spain’s Fourth Rail Crash This Week",
+     "#watch | Train Collides With Crane in Spain’s Fourth Rail Crash This Week | #shorts #spaintraincrash"
+    ],
+    "ids": [
+     "3_jU_99pUP4",
+     "6amkqe9fQmw",
+     "8GOZmVjqREA",
+     "EGDzpFimf_A",
+     "K6Zn-AujAEY",
+     "KFa697H7TIc",
+     "Qr18MzhQ0bw",
+     "Sh23nfVEfU0",
+     "j0S5W0Aobx4"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "deficiency causes",
+   "verdict": "rhetoric",
+   "why": "A medical topic label across unrelated nutrients, no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2018-01 → 2026-10",
+    "examples": [
+     "Causes Symptoms Treatment of Low Vitamin D Deficiency Causes Delhi 999180390 25 -OH",
+     "Low Hemoglobin in Diabetes Causes Treatment Iron Deficiency or Other Causes Tests Treatment",
+     "Top 5 Zinc Deficiency Causes and Symptoms"
+    ],
+    "ids": [
+     "EofJoEYtBGY",
+     "H7dHzla2cZw",
+     "Ig_c5LCt3dY",
+     "j1YhRhy1Xv4",
+     "qGr_2e8dBBo",
+     "spZqJxWe6do",
+     "xUJ0y3mLa6w"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "airstrike kills",
+   "verdict": "rhetoric",
+   "why": "News event headline format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-10 → 2026-08",
+    "examples": [
+     "IDF airstrike kills 8 in Lebanon as Hezbollah declares Qassem as new leader | Israel-Hezbollah war",
+     "Israeli airstrike kills Hamas' political bureau member 'Ismail Barhoum' in Gaza's Nasser hospital",
+     "Ukraine Under Fire Again: Russia’s Deadly Airstrike Kills 15,| 116 Injured | Russia- Ukraine War"
+    ],
+    "ids": [
+     "4I_kZunkNPM",
+     "JPE6PifpI0Y",
+     "XPiKvcymz84",
+     "ZBiYjMe-0BM",
+     "edboVucVFvk",
+     "faUPD6HPY2o",
+     "xTeRAuOSGKw"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "dead fish",
+   "verdict": "rhetoric",
+   "why": "A subject with no shared claim; titles span business anecdotes and unrelated fish die-offs.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "Elephants, Dead Fish, & Vomit - AirBnb’s Meeting Strategy #LeadingWithVulnerability #shorts",
+     "Anti-salmon protests held at site of first dead fish wash up in Tasmania | ABC  News",
+     "Dead fish wash ashore in PNG - locals want answers | The Pacific | ABC NEWS"
+    ],
+    "ids": [
+     "IHyFR8n1x7E",
+     "eH5mh8atmiQ",
+     "g-XQsV4mm-0",
+     "mVmv-GfRQkE",
+     "vMiK8QKf2pM",
+     "wrIA8VZG-p8",
+     "yAGL9ABQw8w"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "revaluation coming",
+   "verdict": "duplicate",
+   "why": "Restates the tracked gold/silver repricing narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "the-gold-and-silver-crash",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-08 → 2026-02",
+    "examples": [
+     "The MOST Important Reason To Own Gold! Revaluation Is Coming!",
+     "😃MASSIVE Revaluation Coming for SILVER AND GOLD... (CPI Inflation)",
+     "⚠️Is a Gold and Silver Price Revaluation Coming? BRICS Countries Signal Shift"
+    ],
+    "ids": [
+     "4Kq1pZyhNH8",
+     "COw9MdZWRzo",
+     "TA_VzEzgsas",
+     "fL1A7VLdf1M",
+     "i4uFYmE8T8w",
+     "u8JLMWlik5s"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "records show",
+   "verdict": "rhetoric",
+   "why": "Journalistic sourcing phrase attached to unrelated stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-09 → 2026-10",
+    "examples": [
+     "Maintenance records show doors were not closing at Robb Elementary before shooting",
+     "Sydney prayer hall linked to Wissam Haddad operated illegally, council records show | ABC NEWS",
+     "New records show ICE investigators gaining access to voter files in two counties"
+    ],
+    "ids": [
+     "1icy7dDxgVc",
+     "O45v7nqIFrg",
+     "UYLo7_FmtjI",
+     "e8VpowHPzQ4",
+     "jpKAib13q1E",
+     "uOEXs8cb4bs"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "coder beats",
+   "verdict": "rhetoric",
+   "why": "Promotional benchmark-claim format for AI coding tools, each about a different product rather than one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-11 → 2025-07",
+    "examples": [
+     "Townie: This FULLY FREE AI Coder BEATS V0 & Bolt! (w/ Free Claude 3.5 Sonnet)",
+     "Lovable: FREE AI Coder BEATS V0 & Bolt?",
+     "DeepSite: This FREE DeepSeek V3.1 AI Coder Beats Gemini 2.5!"
+    ],
+    "ids": [
+     "5FeVwo85aB4",
+     "9VxTJaUon6s",
+     "AAxpwP52SuU",
+     "jCUCdtT6llc",
+     "l9NyuajxjrI",
+     "qozh53lBlw4"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "couldn't explain",
+   "verdict": "rhetoric",
+   "why": "Mystery-teaser phrasing rather than a stated claim, though consistently UFO-themed.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2026-04 → 2026-10",
+    "examples": [
+     "The Night Belgium Couldn't Explain What 13,000 People Saw",
+     "The object Houston couldn't explain #spacemystery #NASA #shorts  #noeticnomad",
+     "The Black Triangle Two Army Veterans Couldn't Explain"
+    ],
+    "ids": [
+     "bTwyufMcuY0",
+     "et5d6R6kWdQ",
+     "kJo19g6mFx8",
+     "sXhjMZZYNTg",
+     "v8yQYLoRkvA"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
+  },
+  {
+   "phrase": "nightmare coming",
+   "verdict": "rhetoric",
+   "why": "Generic doom teaser spanning housing, migration and politics with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-03 → 2026-03",
+    "examples": [
+     "A Nightmare is Coming on the Housing Market.",
+     "5 MIN AGO: The Entitled Greek Refugee NIGHTMARE Coming to Australia",
+     "'National nightmare coming to end': Johnson tells House members to begin returning to DC immediately"
+    ],
+    "ids": [
+     "GAivo_3wYas",
+     "IuuuzJX1yk4",
+     "LFxGC_T9z4w",
+     "uHWHSKFgwBg",
+     "vl5I17i3o-A"
+    ]
+   },
+   "first_read": "2026-10-07",
+   "last_read": "2026-10-07"
   }
  ]
 }
