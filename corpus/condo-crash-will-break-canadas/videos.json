@@ -10813,6 +10813,31 @@
         "comments": null,
         "enrichedOn": "2026-10-08"
       }
+    },
+    {
+      "videoId": "L2JPjII52Fc",
+      "title": "The Bank of Canada Just Sent A Message To Home Hamilton Buyers",
+      "channel": "Morgan Little | Hamilton Real Estate",
+      "url": "https://www.youtube.com/watch?v=L2JPjII52Fc",
+      "published": "2026-10-07",
+      "first_seen": "2026-10-08",
+      "views": 91,
+      "length": "9:24",
+      "age_days": 1,
+      "query": "channel sweep: Morgan Little | Hamilton Real Estate",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCQTcppfkGIkAih1srtXOVvw",
+        "language": "en-CA",
+        "captions": true,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-08"
+      }
     }
   ]
 }
