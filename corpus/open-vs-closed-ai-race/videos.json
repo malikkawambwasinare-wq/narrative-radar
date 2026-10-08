@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -173427,7 +173427,132 @@
         "comments": null,
         "enrichedOn": "2026-10-07"
       }
+    },
+    {
+      "videoId": "iSqL4zu2XUY",
+      "title": "Claude vs ChatGPT vs Gemini Compared | Which AI Coding Tool Is Best for Developers",
+      "channel": "College Wallah",
+      "url": "https://www.youtube.com/watch?v=iSqL4zu2XUY",
+      "published": "2026-04-14",
+      "first_seen": "2026-10-08",
+      "views": 4913,
+      "length": "16:00",
+      "age_days": 177,
+      "query": "channel sweep: College Wallah",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCDrf0V4fcBr5FlCtKwvpfwA",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 178,
+        "comments": 18,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "Nx41FL5M2RI",
+      "title": "Backend Developer Vs Frontend Developer 🤔 Which is Better ? #physicswallah #coding #webdevelopment",
+      "channel": "College Wallah",
+      "url": "https://www.youtube.com/watch?v=Nx41FL5M2RI",
+      "published": "2023-07-27",
+      "first_seen": "2026-10-08",
+      "views": 17567,
+      "length": "1:00",
+      "age_days": 1169,
+      "query": "channel sweep: College Wallah",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCDrf0V4fcBr5FlCtKwvpfwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1190,
+        "comments": 12,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "_qghIlH_76M",
+      "title": "Open Source Code Kya Hota Hai ? What is Open Source Code? #Short #PhysicsWallah",
+      "channel": "College Wallah",
+      "url": "https://www.youtube.com/watch?v=_qghIlH_76M",
+      "published": "2023-02-13",
+      "first_seen": "2026-10-08",
+      "views": 28889,
+      "length": "0:49",
+      "age_days": 1333,
+      "query": "channel sweep: College Wallah",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCDrf0V4fcBr5FlCtKwvpfwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1579,
+        "comments": 20,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "k0Ow-xiN0gM",
+      "title": "Claude Fable 5: Realtors don't realize what's about to hit them",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=k0Ow-xiN0gM",
+      "published": "2026-06-16",
+      "first_seen": "2026-10-08",
+      "views": 2611,
+      "length": "24:45",
+      "age_days": 114,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 56,
+        "comments": 46,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "pl2D_6BMo4g",
+      "title": "Google Stitched just open sourced design.md - realtors jobs just got a lot easier",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=pl2D_6BMo4g",
+      "published": "2026-04-23",
+      "first_seen": "2026-10-08",
+      "views": 2335,
+      "length": "2:26",
+      "age_days": 168,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": null,
+        "enrichedOn": "2026-10-08"
+      }
     }
   ],
-  "updated": "2026-10-07"
+  "updated": "2026-10-08"
 }

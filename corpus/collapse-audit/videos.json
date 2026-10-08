@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -321720,7 +321720,7 @@
       "yt": {
         "channelId": "UC9hq53GSh7_OVYGvcX64KPA"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "0hx50AA5_TQ",
@@ -321814,7 +321814,7 @@
       "yt": {
         "channelId": "UCuSkeS5oU-B2tRIBDYntmaw"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "0c6ESsN5Kl0",
@@ -321983,7 +321983,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "IRAJEHD7wAo",
@@ -322002,7 +322002,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "M9hZ4obs36A",
@@ -322221,7 +322221,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "oy2NqyCLUbk",
@@ -322265,7 +322265,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "egwR682CLB8",
@@ -322284,7 +322284,7 @@
       "yt": {
         "channelId": "UCuRwxf3jHbqGqXowwhyVBTQ"
       },
-      "unavailable": "2026-10-07"
+      "unavailable": "2026-10-08"
     },
     {
       "videoId": "o8qSH7A7u_w",
@@ -329318,17 +329318,274 @@
       "url": "https://www.youtube.com/watch?v=FSQjjMji71k",
       "published": "2026-10-06",
       "first_seen": "2026-10-07",
-      "views": null,
-      "length": null,
+      "views": 78,
+      "length": "8:12",
       "age_days": null,
       "query": "refiled from the pool (candidate:dead-internet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCeIzH0CxTtB8-8xM7hKXd9g"
+        "channelId": "UCeIzH0CxTtB8-8xM7hKXd9g",
+        "category": "25",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "lD5ruc4OBGc",
+      "title": "Why Elon Musk bought Twitter | 1 Minute Business Dose | Business Series : PWSkills #Shorts",
+      "channel": "College Wallah",
+      "url": "https://www.youtube.com/watch?v=lD5ruc4OBGc",
+      "published": "2022-11-11",
+      "first_seen": "2026-10-08",
+      "views": 17998,
+      "length": "0:58",
+      "age_days": 1427,
+      "query": "channel sweep: College Wallah",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCDrf0V4fcBr5FlCtKwvpfwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 979,
+        "comments": 7,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "ClsNS82sb5M",
+      "title": "Why Elon Musk bought Twitter | 1 Minute Business Dose | Business Series : PWSkills #Shorts",
+      "channel": "College Wallah",
+      "url": "https://www.youtube.com/watch?v=ClsNS82sb5M",
+      "published": "2022-11-08",
+      "first_seen": "2026-10-08",
+      "views": 20294,
+      "length": "1:07",
+      "age_days": 1430,
+      "query": "channel sweep: College Wallah",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCDrf0V4fcBr5FlCtKwvpfwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1077,
+        "comments": 49,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "JbuHreHLFHQ",
+      "title": "Canada's Housing Debt Crisis: Mortgage Stress Explained #shorts",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=JbuHreHLFHQ",
+      "published": "2025-12-17",
+      "first_seen": "2026-10-08",
+      "views": 1367,
+      "length": "2:55",
+      "age_days": 295,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 39,
+        "comments": 3,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "skZFiU6NeUA",
+      "title": "Bank of Canada LOST CONTROL! Bond Yields WARN of Crisis! #shorts",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=skZFiU6NeUA",
+      "published": "2025-12-02",
+      "first_seen": "2026-10-08",
+      "views": 832,
+      "length": "1:00",
+      "age_days": 310,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 27,
+        "comments": 2,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "fIhaPy86CYU",
+      "title": "Canadian Debt Crisis: Middle Class in Trouble #shorts",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=fIhaPy86CYU",
+      "published": "2025-09-22",
+      "first_seen": "2026-10-08",
+      "views": 835,
+      "length": "1:27",
+      "age_days": 381,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 24,
+        "comments": 4,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "osK_UbhnfzM",
+      "title": "Canada's Debt Crisis: Credit Cards and Loans are Exploding! #shorts",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=osK_UbhnfzM",
+      "published": "2025-09-20",
+      "first_seen": "2026-10-08",
+      "views": 717,
+      "length": "0:37",
+      "age_days": 383,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": 1,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "l8Egd-xEM8Y",
+      "title": "Canada's Debt Crisis: Young Canadians Crushed by High Bills! #shorts",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=l8Egd-xEM8Y",
+      "published": "2025-09-19",
+      "first_seen": "2026-10-08",
+      "views": 707,
+      "length": "2:56",
+      "age_days": 384,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 19,
+        "comments": 1,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "sj7datUHXxU",
+      "title": "Canada's Debt Crisis: Mortgage vs. Non-Mortgage Holders, Explained! #shorts",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=sj7datUHXxU",
+      "published": "2025-09-19",
+      "first_seen": "2026-10-08",
+      "views": 719,
+      "length": "1:27",
+      "age_days": 384,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 14,
+        "comments": 2,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "6b-IKSpx2lY",
+      "title": "Ontario's Debt Crisis",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=6b-IKSpx2lY",
+      "published": "2024-09-16",
+      "first_seen": "2026-10-08",
+      "views": 623,
+      "length": "0:38",
+      "age_days": 752,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 11,
+        "comments": null,
+        "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "x06tBQzMOEs",
+      "title": "Fuck around & find out economic cycle #canadianrealestate",
+      "channel": "Daniel Foch",
+      "url": "https://www.youtube.com/watch?v=x06tBQzMOEs",
+      "published": "2022-12-15",
+      "first_seen": "2026-10-08",
+      "views": 458,
+      "length": "1:00",
+      "age_days": 1393,
+      "query": "channel sweep: Daniel Foch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeULGvCIbLn4eMpg-uGYkzQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": 1,
+        "enrichedOn": "2026-10-08"
       }
     }
   ],
-  "updated": "2026-10-07"
+  "updated": "2026-10-08"
 }
