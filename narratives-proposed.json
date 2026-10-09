@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-08",
+ "generated": "2026-10-09",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1884,
+ "cost_usd": 0.1887,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -34166,6 +34166,1480 @@
    },
    "first_read": "2026-10-08",
    "last_read": "2026-10-08"
+  },
+  {
+   "phrase": "show unity",
+   "verdict": "rhetoric",
+   "why": "A news descriptor applied to unrelated political events with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 5,
+    "span": "2024-07 → 2026-10",
+    "examples": [
+     "Republican Convention Day 2: From 'Baby Dog' to Haley and DeSantis endorsing Trump in show of unity",
+     "Kim meets Xi a day after show of unity",
+     "INDIA Bloc Show Of Unity? Rahul Gandhi, Akhilesh Yadav Attend Vaiko's Delhi Event | Breaking News"
+    ],
+    "ids": [
+     "2fKDp312Ru4",
+     "9-MtzA6O6GI",
+     "HnFicNN6fwg",
+     "TjyxfeVJmSw",
+     "Uw5-WQv6pwI",
+     "_oogd_PuyCE",
+     "dHPHCoR9lak",
+     "f3shxsZQH7M",
+     "s7qFmfCd-No"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "condo market crash",
+   "verdict": "duplicate",
+   "why": "Restates the tracked condo/housing crash narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "condo-crash-will-break-canadas",
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 8,
+    "span": "2024-10 → 2026-03",
+    "examples": [
+     "Is the TORONTO CONDO MARKET About to Crash? (Pre-Con Assignment Crisis)",
+     "Mississauga Real Estate WARNING: Is the Condo Market About to Crash? (GTA Housing 2025)",
+     "Florida Condo Market Crash? Invest in Houses!"
+    ],
+    "ids": [
+     "1M8LjB2o1Gk",
+     "25Fa0duD5mA",
+     "F-awbdSpKLI",
+     "MZsGyiEb90Q",
+     "PHNEFKlnHVw",
+     "PsVc0lxWUBg",
+     "_vIJqF-FKso",
+     "f5Ojw74t9yw",
+     "x_n5DX7AIqo"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "beat competition",
+   "verdict": "rhetoric",
+   "why": "Generic business-coaching hook, no falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 4,
+    "months": 7,
+    "span": "2019-09 → 2026-09",
+    "examples": [
+     "I Want to Help you Beat your Competition!",
+     "How to Deal (AND BEAT) with Your Competition in Wholesaling Real Estate",
+     "How to Beat your Competition!! #shorts #youtubeshorts"
+    ],
+    "ids": [
+     "4hcvnybO5G4",
+     "DVwygLF74ng",
+     "OvKq_PQk7fA",
+     "WnEEkdYNYr8",
+     "fgq43DOLFqM",
+     "l4TdpI5ACuM",
+     "nhXZ_bgfHPw",
+     "zupS90RaKsM"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "collapse rescue",
+   "verdict": "rhetoric",
+   "why": "Breaking-news subject matter about disaster rescues, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 7,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Congo Mine Collapse: Rescue Teams Work Amid Heavy Rains in Luhihi Region",
+     "Jammu On High Alert: Cloudburst, Flash Floods, Bridge Collapse & Rescue Ops",
+     "Kota Building Collapse: Rescue Operations Underway, Many Feared Trapped Under Debris | 4K"
+    ],
+    "ids": [
+     "O2GDq9WKr-I",
+     "TCoURtU-qmE",
+     "TJGH7Iq1AQs",
+     "ZDWiwdH1HUk",
+     "_GaEtAbWqqQ",
+     "_sARhbpqVRg",
+     "bgeUeTTHiPI",
+     "d5miNfBtxeU",
+     "pV9-dkmdgKc",
+     "sA-0fKzMzXQ",
+     "yBb4GeoJ3HI"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "controversial truth",
+   "verdict": "rhetoric",
+   "why": "Pure curiosity-bait phrasing spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-08 → 2026-08",
+    "examples": [
+     "The controversial truth about Christians and cussing",
+     "The Controversial Truth Behind Tenant Evictions",
+     "US News LIVE | Jeffries ERUPTS Over Trump’s Controversial Truth Social Post | Times Now World"
+    ],
+    "ids": [
+     "2YqU4Lt0OyE",
+     "3ClHCT-7IMY",
+     "GHf2vXwciuo",
+     "YgkMWSzkuTI",
+     "gAS6kNnqtqE",
+     "iSW3fs3p3P0"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "movie coming",
+   "verdict": "rhetoric",
+   "why": "Release-announcement format, no shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2019-07 → 2026-09",
+    "examples": [
+     "Every Marvel Movie Coming Out In Phase 4",
+     "Top 10 | Every Confirmed Movie Coming to the Disney+ Streaming Service",
+     "FTX Scandal Movie Coming to Hollywood"
+    ],
+    "ids": [
+     "IwbbYj4oryw",
+     "LWXfufp9mEI",
+     "O-WtOBaUrjk",
+     "d_TShZ0Gyi0",
+     "gsCV17iaNCM",
+     "v8VVtvFL9n8"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "begin end",
+   "verdict": "rhetoric",
+   "why": "Coincidental word pairing across unrelated news items.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "Russia-Ukraine Peace Talks Begin:  End of War in Sight? Zelenskyy Proposes Ceasefire",
+     "The لڑائی of Samugarh || why is it Called the لڑائی to begin the End of mughal era?",
+     "Breaking | Trump Announces 5-Day Pause On Iran Strikes As Talks Begin To End 24-Day War"
+    ],
+    "ids": [
+     "3gK3NeCaTGc",
+     "8yy6ou7Shwo",
+     "C27Kq3aMPeI",
+     "I5hzg7SXRcs",
+     "KCTx39vs77s",
+     "pAVuhWlRyrU"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "actually fun",
+   "verdict": "rhetoric",
+   "why": "Promotional framing device, no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-10 → 2026-10",
+    "examples": [
+     "Studying for the LSAT Can Actually be FUN",
+     "COBOL & Commodore 64  Tech Retrofits That Are Actually Fun!",
+     "Claude Code + Clay Makes Lead Generation Actually Fun"
+    ],
+    "ids": [
+     "8KWgcDMeBJ0",
+     "O2oCdOpyR4c",
+     "cCPmXHtq938",
+     "uo1uRgmOVyU",
+     "zyvdl__Ywfk"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "immediate end",
+   "verdict": "rhetoric",
+   "why": "News coverage of calls for a Gaza ceasefire; a reported event, not a contestable claim told across months.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 4,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Australia joins call for immediate end to war in Gaza | ABC NEWS",
+     "Australia and other nations call for immediate end to war in Gaza + Parliament returns | ABC NEWS",
+     "Australia joins coalition demanding immediate end to Israel-Gaza war | ABC NEWS"
+    ],
+    "ids": [
+     "2xcY69K8djk",
+     "5OPxNTTJCfg",
+     "DTdQ69bsnL4",
+     "SyDVUwXPeB8",
+     "W53pw-pdQKs",
+     "_cZyHfEXjb8",
+     "dA_LqIwclKY",
+     "mx37Xb6Dohk",
+     "vnlQEhkdKzc"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "must held",
+   "verdict": "rhetoric",
+   "why": "Titles span bitcoin, politics and transport rules with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 6,
+    "span": "2023-08 → 2026-07",
+    "examples": [
+     "Bitcoin MUST be held until 2025 because of THIS EARTH-SHAKING event. Vitalik sells ETH stash.",
+     "Swati Maliwal on Rau's IAS Study Centre tragedy: AAP leaders must be held accountable for failures",
+     "New or converted chauffeured private-hire cars must be held for at least 3 years: LTA"
+    ],
+    "ids": [
+     "5VrLgeSIlPk",
+     "90E_juIBUq8",
+     "KK3URaDhDts",
+     "Rti0Gw9VoM4",
+     "ZXC6_rrsc_k",
+     "iSbA36u7XE0",
+     "lv3L4pgpp_0"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "deficiencies cause",
+   "verdict": "narrative",
+   "why": "Shared checkable claim that nutrient deficiencies are the root cause of common chronic conditions.",
+   "claim_name": "The \"nutrient deficiencies are behind your chronic symptoms\" story",
+   "claim": "Common chronic conditions — insulin resistance, hair loss, neuropathy — are caused by specific vitamin and mineral deficiencies, and correcting those deficiencies resolves them.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Widespread chronic symptoms that conventional treatment fails to resolve",
+    "cause": "Undiagnosed nutrient deficiencies in modern diets",
+    "outcome": "Supplementing or changing diet to restore nutrients reverses the condition",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2019-07 → 2026-10",
+    "examples": [
+     "Nutrient deficiencies that cause blood sugar problems,  insulin resistance, and diabetes",
+     "Can the wrong diet cause hair loss? Two Nutrient Deficiencies That Cause Hair Loss",
+     "Nutritional Deficiencies That Cause Neuropathy?"
+    ],
+    "ids": [
+     "0M-Uy05e070",
+     "FOLLRWI2svs",
+     "FwbuXMBlY0U",
+     "_QEiBrN-8J4",
+     "bDInCqEix-U",
+     "rxc4pXy0T-s"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "fomo coming",
+   "verdict": "rhetoric",
+   "why": "Hype phrasing about an imminent buying frenzy with no single checkable claim; closest substance is already covered by crypto cycle tracking.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2021-09 → 2026-10",
+    "examples": [
+     "Dapper Labs(FLOW) partners with GOOGLE --- Well sort of. Big FOMO coming?",
+     "MASSIVE FOMO Coming If THIS Happens In 2023 - Good News For EVERYONE",
+     "The Institutional Crypto FOMO Is Coming - Lawrence Lepard"
+    ],
+    "ids": [
+     "-dF5iMaMjaM",
+     "2RrX6k4IzWA",
+     "Ba89M-_eync",
+     "GD68cEDKAng",
+     "YVmlTYK2yxQ",
+     "zNpEZlSNSAg"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "'i'm coming",
+   "verdict": "rhetoric",
+   "why": "A quoted soundbite reused across unrelated stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2025-02 → 2026-10",
+    "examples": [
+     "'I'm coming to Boston, I'm bringing hell with me': Border Czar Tom Homan warns illegal immigrants",
+     "Tom Homan's chilling warning to illegal migrants: 'I'm coming to Boston, bringing hell with me'",
+     "'I'm coming to the cottage:' Inside the 'Heated Rivalry' phenomenon"
+    ],
+    "ids": [
+     "04W-K9swnUY",
+     "MVOLbKxfK-0",
+     "eDRf5HhQ_tU",
+     "hPwvDkxvVnE",
+     "i9lz1sdSpm0",
+     "sseWyKJYzZo"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "wins 2nd",
+   "verdict": "rhetoric",
+   "why": "Result-reporting format across unrelated events, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Adrien Brody wins 2nd Oscar for 'The Brutalist' | GMA",
+     "Rory McIlroy wins 2nd Masters",
+     "Canada wins 2nd game at Hlinka Gretzky Cup"
+    ],
+    "ids": [
+     "C4oeM12xYJ8",
+     "CNIrJa85joc",
+     "XYiP_pDis0E",
+     "dXPbDOXTAwY",
+     "g2YDYmZ0qHs",
+     "v1y6C8HuUa0"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "demand end",
+   "verdict": "rhetoric",
+   "why": "Protest and negotiation coverage; describes events rather than asserting a falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 8,
+    "months": 13,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "Netanyahu says Hamas dumped truce deal: ‘Won’t capitulate to demand to end war’",
+     "LIVE: Pro-Palestinian Protesters in Madrid Demand End to Gaza Bombing |Middle East | Gaza Crisis",
+     "Thousands march in Tel Aviv to demand end to Israel-Gaza war | ABC NEWS"
+    ],
+    "ids": [
+     "0AlHLO55IkA",
+     "54s0dEFJZRc",
+     "9GvwXBgUF4E",
+     "9KIWKmGuwRA",
+     "G_ICgu5Tmv0",
+     "KxCxQBGJmZ8",
+     "Ovd1Uz5y8II",
+     "TsicanGg9s4",
+     "VABWprU184U",
+     "X1sEkGuNYBY",
+     "_EBgTDcvs_8",
+     "_z1M2n6tjSs",
+     "b0b-Pt9rz9M",
+     "drIMaIjpwLQ",
+     "f8KndZCyHmY",
+     "pbhTxgZCXFg",
+     "pnH2LOr1T3o",
+     "r-c5cGgIdG4",
+     "sLPBx7eOln0",
+     "yN-SIqGf5n8"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "tonight show",
+   "verdict": "rhetoric",
+   "why": "Program name and format label, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 7,
+    "months": 6,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "Real Scott Kelly meets Jonas Brothers on Tonight Show",
+     "BTS takes over The Tonight Show Starring Jimmy Fallon",
+     "‘Palm Beach Pete’: The Man Who Looks Like Jeffrey Epstein | Katie Pavlich Tonight Full Show 4/24"
+    ],
+    "ids": [
+     "DpV4R3obRsA",
+     "J35wNeiiDH8",
+     "Jn_8kkZYx9I",
+     "LxvyHV0Vies",
+     "WO1mtzZXHLM",
+     "dUI9GlJYoXI",
+     "iSMX4y7lRoM",
+     "i_1Crragw4o",
+     "kv9mpljVPrU",
+     "ocXS707NKA8",
+     "sPBHyKyDFA4",
+     "u1uCNJOpUn0",
+     "u82IyqceKhA",
+     "vAg08srbJe4",
+     "ziWSQxSvDQk"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "really improve",
+   "verdict": "rhetoric",
+   "why": "Generic question hook spanning unrelated topics with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2019-01 → 2026-09",
+    "examples": [
+     "Can you really improve your LSAT score?",
+     "Fasting can be a tool to really improve your OVERALL health! #fastingforhealth #fasting #health",
+     "Does Spinach Really Improve Your Sprint Performance Before Exercise? #foodshorts"
+    ],
+    "ids": [
+     "JOjmbanuHbI",
+     "O4aD9E9TcpU",
+     "fF5iJn8PhV8",
+     "jfZ1EvJE2qY",
+     "ljg08EEyJGw",
+     "vheScmvJnTw",
+     "wi70HTPm3Pc"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "talks collapse",
+   "verdict": "rhetoric",
+   "why": "A news event format applied to many unrelated negotiations, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 69,
+    "channels": 20,
+    "months": 14,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "💥🚪 NATIONALS WALK OUT! ❌🤝🔥 Coalition Talks Collapse in Shock Political Break-Up! 🧨🏛️",
+     "Gaza Truce Talks Collapse as US Slams Hamas for ‘Selfish Obstruction’ | Israel Gaza Conflict",
+     "Trump Warns Russia of “Very Big Consequences” if Ukraine Peace Talks Collapse  Ukraine Peace Talk"
+    ],
+    "ids": [
+     "0CuaobdNPOw",
+     "0hr1LHcMAQc",
+     "1L73AP_GScU",
+     "20K7fSmGV0k",
+     "2HmzY9AV4zM",
+     "3FcAoKO8oO4",
+     "3aUQ9gGhpSI",
+     "5Piwkzf6h5w",
+     "6_6xLgR21_4",
+     "7MgqeET2-3g",
+     "7V6nIALOZq8",
+     "7x3uxgoLKGA",
+     "88C0LNSnGHc",
+     "8ScumBxJ81A",
+     "BXu7qN4rQFk",
+     "CoLrF3pliTU",
+     "DhNKPjJB3No",
+     "E_d0jqi2-O4",
+     "HXB3dzCxHRM",
+     "I77FE2WmKKg"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "dog show",
+   "verdict": "rhetoric",
+   "why": "Subject/event coverage with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 4,
+    "months": 8,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "International dog show allows rescue dogs to compete",
+     "Check out canine contestants at the Great American Dog Show",
+     "Monty the Giant Schnauzer wins Best in Show at Westminster Dog Show"
+    ],
+    "ids": [
+     "7vu75eRySIk",
+     "BbGko-ZGFbo",
+     "GQ1RfmwezXw",
+     "Ki1av4J7PW8",
+     "N4QBkwJT1Fw",
+     "c-pWDZLDhpY",
+     "cL7hIPHPLb0",
+     "cR8zpZ0Vtws",
+     "e-mXd4xyUpA",
+     "fEahoWjfCLk",
+     "gsx25QJ0IRY",
+     "h-s4-8txo7M",
+     "pa23LNWqmXg",
+     "qxCS6qmhb2U"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "europe must",
+   "verdict": "rhetoric",
+   "why": "Quote-style prescription template covering divergent and contradictory demands.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 25,
+    "channels": 10,
+    "months": 10,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "Germany’s likely next chancellor: Europe must seek to 'achieve independence' from US",
+     "INTERVIEW: ORBÁN says Europe must talk to Russia directly to end Ukraine war",
+     "URSULA ACCUSES CHINA OF WEAPONIZING TRADE, Says Europe Must Strengthen Defense | World News"
+    ],
+    "ids": [
+     "-5gdDpe1QFs",
+     "0hBm2uSrvoY",
+     "3Z4hpGK6Rzw",
+     "5vdMcD4NS9U",
+     "5zdSMX1cGfM",
+     "6rAu5fzOGXQ",
+     "BmzT8EEvcCc",
+     "Evt32tGmO4Q",
+     "SWq5oRPocMQ",
+     "U3TVXx97u8k",
+     "XgJBa6u1lI8",
+     "d2fnkh0g9j0",
+     "d4sQ39y3ciQ",
+     "dqlhtuRF2sw",
+     "drEaz_-DWBY",
+     "jBfLbj3nPr0",
+     "kn8eLV2EZtw",
+     "mPMPEyDiMw8",
+     "o8-kO4KQRik",
+     "py-Crmlir3U"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "fix naturally",
+   "verdict": "rhetoric",
+   "why": "Remedy-sell formula across unrelated ailments, no single falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 12,
+    "span": "2024-05 → 2026-06",
+    "examples": [
+     "Stop Period Pain: Why You Get Cramps & How to FIX Them Naturally",
+     "(LIVE) Did you know your belly fat could be hiding a silent danger? Here's how to fix it naturally!",
+     "Struggling with belly fat and low energy? Your liver may be the key! Let's fix it naturally!"
+    ],
+    "ids": [
+     "1wyVK6a1Wrs",
+     "CdyJtMEZecM",
+     "EcwdRKXHHt4",
+     "FjZS05WNUGY",
+     "GerH8VwmlW8",
+     "K6JWEjl5w50",
+     "KU0nRWWUjEQ",
+     "LNpWLWRr-v8",
+     "cdPIGWaqtgI",
+     "hH3YsybCtWQ",
+     "kuQ1_FH7Hh0",
+     "lFsqF7eGzAk",
+     "rxc4pXy0T-s",
+     "tU1m4oJY22c"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "robot beats",
+   "verdict": "rhetoric",
+   "why": "Reporting of a specific news event rather than a contestable claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 3,
+    "span": "2026-04 → 2026-09",
+    "examples": [
+     "A Humanoid Robot Beats Human Half-Marathon World Record & Ukraine Replaces Soldiers w/ Ground Robots",
+     "Robot beats human half-marathon record in Beijing | ABC NEWS",
+     "Chinese humanoid robot beats world record for fastest human half-marathon | ABC NEWS"
+    ],
+    "ids": [
+     "1ND8yTuCOes",
+     "2zuXkQCj4vY",
+     "3nO8pVSGHHg",
+     "C4fInGuWEpU",
+     "XczlbWLXRLg",
+     "ZrNxxnMNgJM",
+     "gYmqHgiNtKM",
+     "lftmpTyzSF4",
+     "nGim8h7LqUA",
+     "oMJ-eZuTH-Y",
+     "phirAWXGbu4",
+     "tcfAm3hNQbk",
+     "xX55FBFC6V4",
+     "z98mA6F4AZg"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "failing fix",
+   "verdict": "rhetoric",
+   "why": "Title formula ('why X is failing and how to fix it') with no shared substantive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-02 → 2026-10",
+    "examples": [
+     "Why Employee Engagement Is Failing And How HR Can Fix It",
+     "Why Your Financial Workflows Are Failing (And How to Fix It)",
+     "Why your AI content is failing (and how to fix it) 🤖"
+    ],
+    "ids": [
+     "6503Dk1PN-0",
+     "9PV-h9GfWKI",
+     "A1Gv3OogPKE",
+     "GXDn9WTQ9bY",
+     "U1TfQUnslk8",
+     "XOD91R5620s",
+     "XUVxqcN-A1k",
+     "rhq3fed0yr8",
+     "ygJxTkKpjnk"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "must leave",
+   "verdict": "rhetoric",
+   "why": "Quoted demand fragment across unrelated political stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 7,
+    "span": "2023-04 → 2026-10",
+    "examples": [
+     "German lawmaker says US soldiers and nukes must leave her country",
+     "UN chief says developing countries must not leave COP29 'empty-handed'",
+     "'Hamas must leave Gaza, Oct 7 attack on Israel reprehensible': Palestinian Authority Prez Abbas"
+    ],
+    "ids": [
+     "MYUuDh_ToJ8",
+     "PYGiTj_0hcA",
+     "VucONOrtyRg",
+     "cfmnfe650kY",
+     "d_YwfB8-E2A",
+     "dp8uqb2PORw",
+     "ftDbzJcT75c",
+     "sUSjDXyPnPg",
+     "u1tkgB5PNRY",
+     "w5Qc0be81L8"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "save trapped",
+   "verdict": "rhetoric",
+   "why": "News-event subject matter with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "First responders save trapped firefighter",
+     "Indonesia school collapse: Rescuers race to save trapped victims",
+     "Life-or-death moment: Rescuers plunge into Virginia pond to save trapped driver from sinking vehicle"
+    ],
+    "ids": [
+     "9R01hD23K6Q",
+     "SA1eew6vKVE",
+     "ViqEQRc3Cdw",
+     "XB0E8t46c1o",
+     "Xw02Y6V0MUE",
+     "lu3z7VHdaiY",
+     "uuPVSDfETp4",
+     "xPCBTaOaS-g"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "coming matt hougan",
+   "verdict": "rhetoric",
+   "why": "A named-guest teaser format ('what's coming') with no single stated claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 4,
+    "months": 14,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "MARK MY WORDS! You’re Not Prepared for What’s Coming...\" Matt Hougan & Jan van Eck",
+     "\"You Will Be Rich Forever If You Can Emotionally Handle What's Coming\" - Matt Hougan",
+     "MARK MY WORDS! You’re Not Prepared for What’s Coming...\" - Matt Hougan"
+    ],
+    "ids": [
+     "1YfvstKPGaA",
+     "288XXVnFxqA",
+     "3SzYcAQVXcE",
+     "DrmoHm0X3Xs",
+     "IOZp8oLA15I",
+     "J1XCLMW79zA",
+     "MOudOOGaezk",
+     "ZXzPmJDVUm8",
+     "c2R2_C3JjlI",
+     "cPr2UqjviJo",
+     "hp54OtXMM3Y",
+     "lHgs7NiV7t0",
+     "oouDEOy36X8",
+     "p2cvQ0A6nDA",
+     "pRnMmFj9oOE",
+     "qYdQ7SpuvAs",
+     "vrTQjReaBgY",
+     "y0YVi34EsyE",
+     "yQBTggs8fCw"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "all-time high coming",
+   "verdict": "duplicate",
+   "why": "Crypto price-target prediction already tracked under the crypto deadline narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2023-09 → 2026-06",
+    "examples": [
+     "American HODL: Next All-Time High is Coming Soon #bitcoin #shorts #money",
+     "MASSIVE SOLANA CRYPTO PRICE PREDICTION! NEW ALL-TIME HIGH COMING WITH THIS SOLANA PRICE PREDICTION!",
+     "BITCOIN ALL-TIME HIGH COMING (My Next Trade)!! Bitcoin News Today & Ethereum Price Prediction!"
+    ],
+    "ids": [
+     "8mCcbCgNvsQ",
+     "clc0e10E3RA",
+     "exdlIkPjadQ",
+     "hjwEcExNnWM",
+     "wACqSC_BIpo",
+     "zqQGRX7MFDA"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "heading crash",
+   "verdict": "duplicate",
+   "why": "Housing/market crash prediction already covered by the housing crash watch.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-06 → 2026-10",
+    "examples": [
+     "Prediction Of A Real Estate Expert: Is The Housing Market Heading For A Crash?",
+     "Home Prices Forecast: Are We Heading for a Crash?",
+     "Nifty prediction for tomorrow | Market heading for crash? | Banknifty all time high | Options Data"
+    ],
+    "ids": [
+     "HMPoErMoQq4",
+     "PY2yTtQ8PVU",
+     "fxBI3vSrKK8",
+     "jR2hTIyE_hU",
+     "rsnlJdpDrJU",
+     "vF4XrqeZHDY"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "crash fed",
+   "verdict": "duplicate",
+   "why": "Imminent market crash tied to Fed policy restates the tracked collapse-prediction narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "collapse-audit",
+   "frame": null,
+   "evidence": {
+    "videos": 48,
+    "channels": 25,
+    "months": 19,
+    "span": "2021-01 → 2026-09",
+    "examples": [
+     "Cathie Wood warned of New Market Crash | Fed Responds.",
+     "Stocks Will Crash! - Can The Fed Cancel The Crash? - Stock Market Gambler",
+     "How Far Can the Market Crash? | Fed FOMC and China | Daily Uncut News"
+    ],
+    "ids": [
+     "-SphSzBTSZg",
+     "-T_r6lsMUdI",
+     "0xMFs5TdhS8",
+     "3CSVzI5Y46g",
+     "5u9futUMrJo",
+     "7a94-3cTkmk",
+     "8eVE1fOKg24",
+     "9q1lsuGVrrw",
+     "AINAfyq2J8c",
+     "ANr2pOBs1Us",
+     "Bj7t0nstMRM",
+     "DIJ9fNkOz2U",
+     "ElZFPMV6E4Y",
+     "HdlR-g85CFs",
+     "I_AkvgsNU6U",
+     "L9WI_nwpw48",
+     "NlPYBh-thkY",
+     "OLA0spk5DjE",
+     "QSNFXFjWltI",
+     "Rdk4eoJ49wY"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "people dead",
+   "verdict": "rhetoric",
+   "why": "Generic news casualty phrasing, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 49,
+    "channels": 18,
+    "months": 18,
+    "span": "2024-07 → 2026-10",
+    "examples": [
+     "At least 6 people dead after Beryl passes through Texas",
+     "Siwan Hooch Tragedy: 20 people dead after consuming spurious liquor in Bihar; RJD blames NDA govt",
+     "At least 10 people dead in New Orleans | GMA"
+    ],
+    "ids": [
+     "0JhlmQdnxeA",
+     "1f9SqLfLZrk",
+     "22mTPxiJ-HI",
+     "5X8zf8uJ5Ug",
+     "5euOT01p0lI",
+     "5us6fuHKC0g",
+     "6A1_ozKnzIQ",
+     "6DoDfXhNaXc",
+     "6e948DgM_ro",
+     "6hk3OdeUrks",
+     "8CANDZuyXS4",
+     "8XgQXh0ewqc",
+     "A9p_J8jE26Q",
+     "C9i2-Zz8Pe4",
+     "CACLskP4iRI",
+     "ETGayeoz9F4",
+     "JNR8zRwab98",
+     "JctRWthB79g",
+     "LHybSwOfs4I",
+     "Lxpw787P8aY"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "coming david",
+   "verdict": "rhetoric",
+   "why": "Pundit-name teaser format about unspecified 'what's coming'.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 6,
+    "months": 14,
+    "span": "2022-10 → 2026-10",
+    "examples": [
+     "Canada's Real Estate Bubble has BURST: Recession Coming  - David Rosenberg",
+     "\"Be Prepared For What's Coming...\" - David Hunter",
+     "Post-Election Market Crash? Stimulus Won't Help What's Coming | David Bahnsen"
+    ],
+    "ids": [
+     "-y1GquRc8vw",
+     "8JbwATDBf04",
+     "D-0LQ2JO994",
+     "DBOc6XPqoJg",
+     "FGeOdefQ3Ls",
+     "HAN-5KOfgDc",
+     "L_EsjFYq2a8",
+     "N7HATG5o10U",
+     "O1Ha0ApH0i0",
+     "Wep4QNqEgjU",
+     "ZDI8LE8asWQ",
+     "gkQvZdGy4TM",
+     "kDIwk8ZwaoU",
+     "mO6z4zAuchs",
+     "uqyWdMd-9Zs",
+     "xMpZYEU9-28"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "moves end",
+   "verdict": "rhetoric",
+   "why": "News headline formula about policy moves; titles share no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 9,
+    "months": 7,
+    "span": "2025-09 → 2026-09",
+    "examples": [
+     "Florida moves to end vaccine mandates, including for schoolchildren",
+     "Florida moves to end all school vaccine mandates",
+     "Florida moves to end all school vaccine mandates"
+    ],
+    "ids": [
+     "0VjNVJCzJqo",
+     "4zMLswV5Crs",
+     "7jOUanGU_sY",
+     "AGqHTY2MF6Y",
+     "Br6YcdwmZ1s",
+     "D7-IFslBxIY",
+     "GNNO3CsE5Ds",
+     "Rp26O5Nnvjo",
+     "VnpV7wFzHQY",
+     "WXccVWwJoNQ",
+     "kINOWR-GFNY",
+     "z6wMAKyEZ3o",
+     "zNOfDFOt0-w"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "sale won't",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated topics (homes, bitcoin, TikTok) with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 6,
+    "span": "2020-11 → 2026-09",
+    "examples": [
+     "Florida Homes For Sale That WON'T Break The Bank",
+     "Bitcoin BREACHES $20,000! (Clearance Sale WON'T LAST...)",
+     "Why TikTok Sale Won't Be Done By September, Data Sovereignty is Key"
+    ],
+    "ids": [
+     "8D2rYYjpTcE",
+     "8TL58UKT7mk",
+     "G7KU0OfZ3dI",
+     "fcbb7g8yyNQ",
+     "nIIEHfsJEYs",
+     "pYLYFbyzo_I",
+     "z29vQxbdpdo"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "etf coming",
+   "verdict": "narrative",
+   "why": "Repeated claim that a spot crypto ETF approval is imminent and will drive prices up.",
+   "claim_name": "The \"Bitcoin ETF is coming and it sends price to new highs\" story",
+   "claim": "Regulatory approval of a Bitcoin ETF is imminent and will unleash institutional money, driving BTC to dramatically higher prices.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Crypto lacks mainstream institutional access and price is held back",
+    "cause": "SEC delay or refusal to approve a spot Bitcoin ETF",
+    "outcome": "Approval triggers an institutional inflow and a major price surge",
+    "clock": "'soon'/'imminent' — repeatedly reset since 2021"
+   },
+   "evidence": {
+    "videos": 23,
+    "channels": 11,
+    "months": 16,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "BITCOIN PRICE $100,000 IN 2021! ETF Coming to USA Soon! BTC Ethereum & Litecoin News Today",
+     "SEC PWNED by Grayscale in Bitcoin ETF Lawsuit!! ETF is COMING!! Bitcoin pumps over $1000!!",
+     "BITCOIN ETF COMING SOON (Massive News)!! Bitcoin News Today & Ethereum Price Prediction (BTC & ETH)"
+    ],
+    "ids": [
+     "5-o1X-1dwZA",
+     "6OHjXDE-3d8",
+     "9rILgJy0zHE",
+     "B2wrxm5BCPY",
+     "E8Kc-FBgx_Q",
+     "HBRHzIiKXUY",
+     "Hl48Pph8o5U",
+     "IS0Nt2LUKh8",
+     "KBbQLQ84ZSE",
+     "NntZKFNgIcE",
+     "OBFg_ol5T3o",
+     "RBcPqSvOK-A",
+     "VNCHvDa7tOE",
+     "XmpuZZlMHyw",
+     "_7GjyUOPOBY",
+     "_8o0l2_O93E",
+     "a7poVBDjsc8",
+     "b0qowkiPcY8",
+     "dVaKudHZ4NU",
+     "eMkBcFIPAmo"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "crash comeback",
+   "verdict": "rhetoric",
+   "why": "A framing hook posing a question, not a shared claim about direction.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "From Crash to Comeback: Why Global Markets Just Rebounded",
+     "Bill Flemming: Real Estate Crash Comeback",
+     "Housing Market Mystery: Crash or Comeback? #shorts"
+    ],
+    "ids": [
+     "L8h8xxXP5YY",
+     "_PSte0C4gNY",
+     "cA3Xy_OFewc",
+     "sZcNuS0H8U8",
+     "wLuvDms1Gto"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "causes natural",
+   "verdict": "rhetoric",
+   "why": "A content format label (condition, causes, natural remedy) covering many different conditions, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 6,
+    "months": 15,
+    "span": "2017-06 → 2026-10",
+    "examples": [
+     "Hypothyroidism:  Symptoms, Causes and Natural Support Strategies",
+     "Hypoglycemia:  Causes and Natural Solutions",
+     "Keto Rash:  Causes and Natural Treatments"
+    ],
+    "ids": [
+     "062eJRXWCMM",
+     "5oYiMinNRmo",
+     "7Ycdkv9zjlU",
+     "9BCJy9gzGNw",
+     "9W_lcS9por0",
+     "HETw7-oHWCw",
+     "Hlv3pHqXoX8",
+     "IaRF80SFZZs",
+     "L8s-mI6D_Ys",
+     "RLOH20KboWk",
+     "Wr5lwm1OJl4",
+     "_8oE9H9I5kI",
+     "ltnOmZfNTqY",
+     "tOfL9403jiU",
+     "xpM53ILeoY8"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "really winning",
+   "verdict": "rhetoric",
+   "why": "A rhetorical question template applied to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 9,
+    "months": 5,
+    "span": "2024-01 → 2026-09",
+    "examples": [
+     "Are The BoC Losers Really Winning!?",
+     "Mamdani, Trump, Socialists, and the $21 Billion Housing Gambit: Who’s Really Winning?",
+     "Iran War Refuses To End: Who’s Really Winning? US, Israel Achieving Their Objectives?"
+    ],
+    "ids": [
+     "-Jov8FV0VfY",
+     "8PoEtCnCOfg",
+     "a8JPB3BQ_FM",
+     "bJRGijdk9uc",
+     "fCRd5dvuhVI",
+     "o5NQ3-xwRBQ",
+     "pXzxTLIfO50",
+     "qXMs4x_t05k",
+     "xpuB0QfoR5U"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "cooking show",
+   "verdict": "rhetoric",
+   "why": "A subject/news topic with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 69,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "Pati Jinich shares recipes from new cooking show",
+     "RFK Jr. launches cooking show based on 'upside down' food pyramid",
+     "Ruhle: RFK Jr.'s new cooking show 'doesn't exactly add up'"
+    ],
+    "ids": [
+     "0OQq3qUsdQ4",
+     "0moTl-FJs6o",
+     "13iNULuStvY",
+     "1MzRHyUdEhI",
+     "1gup_NxKUFA",
+     "3HnYYpt13nI",
+     "3bm4k11bwKA",
+     "4uBWMeKsto8",
+     "4wvoT_0VzRo",
+     "53P5jLi6Els",
+     "5L1tuJMTKtw",
+     "5eAlmAvEN4M",
+     "6g0gU0CJTuc",
+     "8ShifT1h74s",
+     "9nxTR-Mx_A4",
+     "9tZIltqpQik",
+     "Ab9f9X99y_Y",
+     "Dm5eR72Gwd0",
+     "E4QHuNxpgvw",
+     "EyCLwVp6jQ0"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "000 soon",
+   "verdict": "rhetoric",
+   "why": "Generic price-target headline formula across different assets and numbers, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 36,
+    "channels": 20,
+    "months": 24,
+    "span": "2017-07 → 2026-09",
+    "examples": [
+     "Bitcoin Could Nearly Double And Reach $5,000 Soon, Says Standpoint Research | CNBC",
+     "This Metal May Hit $10,000 Soon!",
+     "Bitcoin to $20,000 Soon? Feels like 2017 Again"
+    ],
+    "ids": [
+     "35x8N7Va8zg",
+     "3Y3BYyWCbHs",
+     "4TCnIaeR6Ek",
+     "5-Hdvo9RP6o",
+     "5Vr-v5_yXZ4",
+     "5vLpjZc7yNY",
+     "6TChDtn8txs",
+     "8S5MMq4_uLc",
+     "8r-6l4iIZ_c",
+     "9sN71TeilV4",
+     "AOUCI22GEW8",
+     "APtNdaF9z1w",
+     "BMGZ03n5JZA",
+     "BQrYCs8y0eE",
+     "Ce4x0M7yEUU",
+     "D6cZyjLYXsQ",
+     "HWOQ3jDDgLs",
+     "IAF-_vBER4g",
+     "IoXqmlr0RqU",
+     "JOLvljU8Kbc"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "3-0 win",
+   "verdict": "rhetoric",
+   "why": "Sports result reporting, no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 4,
+    "months": 5,
+    "span": "2026-06 → 2026-10",
+    "examples": [
+     "World Cup 2026: Mexico stay perfect and bounce Czech Republic out with 3-0 win",
+     "World Cup 2026: Mexico stay perfect and bounce Czech Republic out with 3-0 win",
+     "World Cup 2026: Vinicius fires Brazil into knockouts with 3-0 win over Scotland"
+    ],
+    "ids": [
+     "-MrPvMe5rqc",
+     "2ICuSIVbfU0",
+     "31vmfUOzo-Y",
+     "6QKBY09Vtd8",
+     "BEzE3GvPThk",
+     "FzWItFwJkuE",
+     "IM9EfFkzWBU",
+     "K54spv-IyK8",
+     "Oj27bI2XVhA",
+     "czSvFTSSuCM",
+     "gyCSVyjerYo",
+     "ikALrcMhC_8",
+     "oRDjGH-dEzs",
+     "rINSbJ_hRZs",
+     "tegYYcsNPHk",
+     "x6_VpZJKQSA",
+     "yk2U8oci1dY"
+    ]
+   },
+   "first_read": "2026-10-09",
+   "last_read": "2026-10-09"
   }
  ]
 }
