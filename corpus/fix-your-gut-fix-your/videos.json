@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -49045,6 +49045,56 @@
         "likes": null,
         "comments": 1,
         "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "2bAdCaVTlHw",
+      "title": "The Tech That Will Prevent and Reverse Chronic Disease w/ Naveen Jain & Guru Banavar | EP #71",
+      "channel": "Peter H. Diamandis",
+      "url": "https://www.youtube.com/watch?v=2bAdCaVTlHw",
+      "published": "2023-11-02",
+      "first_seen": "2026-10-09",
+      "views": 12869,
+      "length": "1:34:36",
+      "age_days": 1072,
+      "query": "channel sweep: Peter H. Diamandis",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCvxm0qTrGN_1LMYgUaftWyQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 466,
+        "comments": 41,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "Fgmz2fp3Q48",
+      "title": "The Vaccine That Will Cure Chronic Diseases With Lou Reese | EP #21 Moonshots and Mindsets",
+      "channel": "Peter H. Diamandis",
+      "url": "https://www.youtube.com/watch?v=Fgmz2fp3Q48",
+      "published": "2023-01-12",
+      "first_seen": "2026-10-09",
+      "views": 5494,
+      "length": "1:57:46",
+      "age_days": 1366,
+      "query": "channel sweep: Peter H. Diamandis",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCvxm0qTrGN_1LMYgUaftWyQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 142,
+        "comments": 28,
+        "enrichedOn": "2026-10-09"
       }
     }
   ]

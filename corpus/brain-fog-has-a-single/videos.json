@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-08"
+      "unavailable": "2026-10-09"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -102614,6 +102614,106 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-08"
+      }
+    },
+    {
+      "videoId": "hxckCIYDvP0",
+      "title": "Pfizer CEO on the real reason why U.S. drug prices are so high #Pfizer #healthcare",
+      "channel": "Fortune Magazine",
+      "url": "https://www.youtube.com/watch?v=hxckCIYDvP0",
+      "published": "2026-02-03",
+      "first_seen": "2026-10-09",
+      "views": 1597,
+      "length": "1:45",
+      "age_days": 248,
+      "query": "channel sweep: Fortune Magazine",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCP2gdh7HfjgCoi8lO50dA5w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": 1,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "9H8T-7gwx5w",
+      "title": "Usher Opens Up About His Family's Struggle With Type 1 Diabetes",
+      "channel": "Fortune Magazine",
+      "url": "https://www.youtube.com/watch?v=9H8T-7gwx5w",
+      "published": "2024-06-20",
+      "first_seen": "2026-10-09",
+      "views": 3736,
+      "length": "8:30",
+      "age_days": 841,
+      "query": "channel sweep: Fortune Magazine",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCP2gdh7HfjgCoi8lO50dA5w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 71,
+        "comments": 5,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "bR7Q7t18JrM",
+      "title": "Fight Brain Fog Through Yogic Sleep",
+      "channel": "Simple Smart Science",
+      "url": "https://www.youtube.com/watch?v=bR7Q7t18JrM",
+      "published": "2025-04-11",
+      "first_seen": "2026-10-09",
+      "views": 579,
+      "length": "46:00",
+      "age_days": 546,
+      "query": "channel sweep: Simple Smart Science",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCpW9jUkM-IQ76GO3Tly8lIg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": 2,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "7aM3YdLjlbo",
+      "title": "The Truth About How Hearing Can Affect your Memory Loss",
+      "channel": "Simple Smart Science",
+      "url": "https://www.youtube.com/watch?v=7aM3YdLjlbo",
+      "published": "2019-08-06",
+      "first_seen": "2026-10-09",
+      "views": 761,
+      "length": "5:04",
+      "age_days": 2621,
+      "query": "channel sweep: Simple Smart Science",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCpW9jUkM-IQ76GO3Tly8lIg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 22,
+        "comments": null,
+        "enrichedOn": "2026-10-09"
       }
     }
   ]

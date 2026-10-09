@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-08"
+      "unavailable": "2026-10-09"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -66695,7 +66695,157 @@
         "comments": null,
         "enrichedOn": "2026-10-08"
       }
+    },
+    {
+      "videoId": "6QoMzZ8FdTA",
+      "title": "Life Near OpenAI's Stargate Project",
+      "channel": "OpenAI",
+      "url": "https://www.youtube.com/watch?v=6QoMzZ8FdTA",
+      "published": "2026-06-11",
+      "first_seen": "2026-10-09",
+      "views": 5353,
+      "length": "3:07",
+      "age_days": 120,
+      "query": "channel sweep: OpenAI",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 140,
+        "comments": null,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "dnzxcYl4xYI",
+      "title": "The Texas Town at the forefront of OpenAI's Stargate Project",
+      "channel": "OpenAI",
+      "url": "https://www.youtube.com/watch?v=dnzxcYl4xYI",
+      "published": "2026-06-01",
+      "first_seen": "2026-10-09",
+      "views": 15089,
+      "length": "2:39",
+      "age_days": 130,
+      "query": "channel sweep: OpenAI",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCXZCJLdBC09xxGZ6gcdrc6A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 354,
+        "comments": 82,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "KNN7X6yu0ig",
+      "title": "National Guard shooting and the CIA's secret Afghan army | Front Burner",
+      "channel": "CBC News",
+      "url": "https://www.youtube.com/watch?v=KNN7X6yu0ig",
+      "published": "2025-12-03",
+      "first_seen": "2026-10-09",
+      "views": 16326,
+      "length": "23:18",
+      "age_days": 310,
+      "query": "channel sweep: CBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 58,
+        "comments": null,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "8OgrirhFoPQ",
+      "title": "Federal government sets aside additional $81.8B over 5 years to build up military | Power & Politics",
+      "channel": "CBC News",
+      "url": "https://www.youtube.com/watch?v=8OgrirhFoPQ",
+      "published": "2025-11-07",
+      "first_seen": "2026-10-09",
+      "views": 18311,
+      "length": "12:11",
+      "age_days": 336,
+      "query": "channel sweep: CBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 183,
+        "comments": null,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "nV_lyWrkBs8",
+      "title": "Jared Isaacman: NASA's Moon Base by 2028, Optimus Robots on the Moon, and 15 Years to Mars | Ep #274",
+      "channel": "Peter H. Diamandis",
+      "url": "https://www.youtube.com/watch?v=nV_lyWrkBs8",
+      "published": "2026-07-27",
+      "first_seen": "2026-10-09",
+      "views": 176281,
+      "length": "1:27:17",
+      "age_days": 74,
+      "query": "channel sweep: Peter H. Diamandis",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCvxm0qTrGN_1LMYgUaftWyQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4625,
+        "comments": 555,
+        "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "DZmzqdHjOgs",
+      "title": "The US Military Really Studied Psychic Spying #CursedChronicles #Mystery",
+      "channel": "Cursed Chronicles: The Archivist Files",
+      "url": "https://www.youtube.com/watch?v=DZmzqdHjOgs",
+      "published": "2026-05-29",
+      "first_seen": "2026-10-09",
+      "views": 4,
+      "length": "10:24",
+      "age_days": 133,
+      "query": "channel sweep: Cursed Chronicles: The Archivist Files",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCAixqB-_udg0MmONnl9WIYA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-09"
+      }
     }
   ],
-  "updated": "2026-10-08"
+  "updated": "2026-10-09"
 }
