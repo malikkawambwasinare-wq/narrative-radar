@@ -12388,6 +12388,106 @@
         "comments": 220,
         "enrichedOn": "2026-10-09"
       }
+    },
+    {
+      "videoId": "8E8e67JbUFM",
+      "title": "Toronto Condos: Winners and Losers (Some May Never Sell)",
+      "channel": "Tom Storey",
+      "url": "https://www.youtube.com/watch?v=8E8e67JbUFM",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-10",
+      "views": 6657,
+      "length": "9:51",
+      "age_days": 1,
+      "query": "channel sweep: Tom Storey",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCCtAWwBphu0Wh5I4ErLJVKg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 82,
+        "comments": 19,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "K89LjSxhSmI",
+      "title": "Canada’s Housing Recovery Has a Financing Problem | REIN IT IN Ep 100",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=K89LjSxhSmI",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "views": 172,
+      "length": "55:25",
+      "age_days": 0,
+      "query": "channel sweep: (REIN) The Real Estate Investment Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 3,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "yiEeog4utZM",
+      "title": "10 Canadian Towns Growing So Fast It’s Spiraling Out of Control (2026)",
+      "channel": "Mr Vista",
+      "url": "https://www.youtube.com/watch?v=yiEeog4utZM",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-10",
+      "views": 3781,
+      "length": "21:58",
+      "age_days": 1,
+      "query": "channel sweep: Mr Vista",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXIz7ldmgWV7M3XdkEm5Vqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 16,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "DEBjbLfSipc",
+      "title": "Do NOT Buy These Toronto Condos!",
+      "channel": "Karl Nielsen | Toronto Property Finders",
+      "url": "https://www.youtube.com/watch?v=DEBjbLfSipc",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "views": 36,
+      "length": "12:35",
+      "age_days": 0,
+      "query": "channel sweep: Karl Nielsen | Toronto Property Finders",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCkcFmvz1zraB2auYyVUJdrA",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
     }
   ]
 }
