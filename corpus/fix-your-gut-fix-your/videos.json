@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -49445,6 +49445,106 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "nNqcFTzv8jg",
+      "title": "Unlock Gut Health: 30g Fiber DAILY for Peak Performance! #shorts",
+      "channel": "downtohealthvault",
+      "url": "https://www.youtube.com/watch?v=nNqcFTzv8jg",
+      "published": "2026-09-16",
+      "first_seen": "2026-10-10",
+      "views": 37,
+      "length": "0:36",
+      "age_days": 24,
+      "query": "channel sweep: downtohealthvault",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwql4SP5PMcPWZcqdsCH6dw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "1nNvZ3SewBE",
+      "title": "Unlock Gut Health: Master Your Digestion with This Diet #shorts",
+      "channel": "downtohealthvault",
+      "url": "https://www.youtube.com/watch?v=1nNvZ3SewBE",
+      "published": "2026-09-11",
+      "first_seen": "2026-10-10",
+      "views": 69,
+      "length": "0:59",
+      "age_days": 29,
+      "query": "channel sweep: downtohealthvault",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwql4SP5PMcPWZcqdsCH6dw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "grIb1qNMVW8",
+      "title": "Gut Health Pitfalls: Patience and Understanding Symptoms #shorts",
+      "channel": "downtohealthvault",
+      "url": "https://www.youtube.com/watch?v=grIb1qNMVW8",
+      "published": "2026-09-11",
+      "first_seen": "2026-10-10",
+      "views": 79,
+      "length": "0:46",
+      "age_days": 29,
+      "query": "channel sweep: downtohealthvault",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwql4SP5PMcPWZcqdsCH6dw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "32yAc3jfZpo",
+      "title": "Natural Immune Support: Flavonoids & Gut Health Explained #shorts",
+      "channel": "downtohealthvault",
+      "url": "https://www.youtube.com/watch?v=32yAc3jfZpo",
+      "published": "2026-07-16",
+      "first_seen": "2026-10-10",
+      "views": 15,
+      "length": "1:04",
+      "age_days": 86,
+      "query": "channel sweep: downtohealthvault",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwql4SP5PMcPWZcqdsCH6dw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
       }
     }
   ]

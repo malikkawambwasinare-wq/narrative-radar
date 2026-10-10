@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "98m8i03frcU",
@@ -113856,6 +113856,31 @@
         "likes": 1,
         "comments": null,
         "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "CE9hPScXZ2U",
+      "title": "🍓 7 Fruit-Based Nighttime Foods to Choose Instead of Junk Food for Weight Loss",
+      "channel": "Moralix",
+      "url": "https://www.youtube.com/watch?v=CE9hPScXZ2U",
+      "published": "2026-09-11",
+      "first_seen": "2026-10-10",
+      "views": 1329,
+      "length": "1:35",
+      "age_days": 29,
+      "query": "channel sweep: Moralix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC_niVHGWG1G8-4m5jTWivwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 44,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
       }
     }
   ]

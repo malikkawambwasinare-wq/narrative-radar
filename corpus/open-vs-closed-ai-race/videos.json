@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -176002,7 +176002,32 @@
         "comments": null,
         "enrichedOn": "2026-10-09"
       }
+    },
+    {
+      "videoId": "3LSMInghIgw",
+      "title": "5 new open source repos for an AI operator stack",
+      "channel": "Chris Alarcon |  AI for Non-Coders",
+      "url": "https://www.youtube.com/watch?v=3LSMInghIgw",
+      "published": "2026-05-18",
+      "first_seen": "2026-10-10",
+      "views": 1171,
+      "length": "0:51",
+      "age_days": 145,
+      "query": "channel sweep: Chris Alarcon |  AI for Non-Coders",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCTt0JyqPZpwu51CrZCazjIQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 48,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
     }
   ],
-  "updated": "2026-10-09"
+  "updated": "2026-10-10"
 }

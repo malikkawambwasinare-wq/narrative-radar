@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -67328,15 +67328,22 @@
       "url": "https://www.youtube.com/watch?v=af0_kyqC1zQ",
       "published": "2026-10-08",
       "first_seen": "2026-10-09",
-      "views": null,
-      "length": null,
+      "views": 291,
+      "length": "1:54:10",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCZ2ybCBizItMQPIhwaLBzMQ"
+        "channelId": "UCZ2ybCBizItMQPIhwaLBzMQ",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 24,
+        "comments": 8,
+        "enrichedOn": "2026-10-10"
       }
     },
     {
@@ -67346,15 +67353,22 @@
       "url": "https://www.youtube.com/watch?v=kDlCIrzliAw",
       "published": "2026-10-09",
       "first_seen": "2026-10-09",
-      "views": null,
-      "length": null,
+      "views": 15915,
+      "length": "31:50",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC4Z-BWaQuzm5VCDftGdatcA"
+        "channelId": "UC4Z-BWaQuzm5VCDftGdatcA",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 330,
+        "comments": 20,
+        "enrichedOn": "2026-10-10"
       }
     },
     {
@@ -67364,17 +67378,199 @@
       "url": "https://www.youtube.com/watch?v=c7IMlVYzWwQ",
       "published": "2026-10-09",
       "first_seen": "2026-10-09",
-      "views": null,
-      "length": null,
+      "views": 56,
+      "length": "10:58",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UChsyBFKTWZ2Tn066JgdORuw"
+        "channelId": "UChsyBFKTWZ2Tn066JgdORuw",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": 5,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "JjAy1v75D9Q",
+      "title": "\"The Strange Things\" CIA Program is Real & Here's the Proof | Julia Mossbridge",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=JjAy1v75D9Q",
+      "published": "2026-08-28",
+      "first_seen": "2026-10-10",
+      "views": 46104,
+      "length": "1:00:21",
+      "age_days": 43,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 778,
+        "comments": 151,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "Ln5OJH-ck5M",
+      "title": "Shawn Ryan's 2023 China PREDICTION has Gotten Worse...",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=Ln5OJH-ck5M",
+      "published": "2026-06-07",
+      "first_seen": "2026-10-10",
+      "views": 63475,
+      "length": "59:44",
+      "age_days": 125,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1376,
+        "comments": 261,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "XUoRMdcV_b4",
+      "title": "North Korean Military Defector on Bible Ban & Spy Program | Hyunseung Lee",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=XUoRMdcV_b4",
+      "published": "2025-07-27",
+      "first_seen": "2026-10-10",
+      "views": 29559,
+      "length": "1:02:20",
+      "age_days": 440,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 362,
+        "comments": 42,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "fkc-mroi3U4",
+      "title": "Shawn Ryan EXPLODES on Child Predators & Snake Oil Politicians (Navy SEAL)",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=fkc-mroi3U4",
+      "published": "2025-01-26",
+      "first_seen": "2026-10-10",
+      "views": 118667,
+      "length": "51:09",
+      "age_days": 622,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3416,
+        "comments": 770,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "UmiamK7gXMo",
+      "title": "UFO Lawyer REVEALS Shocking Evidence of Alien Bases Below Mexican Island! | Danny Sheehan",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=UmiamK7gXMo",
+      "published": "2024-11-11",
+      "first_seen": "2026-10-10",
+      "views": 453490,
+      "length": "1:05:56",
+      "age_days": 698,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 8786,
+        "comments": 1800,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "r9krharzKfA",
+      "title": "Shawn Ryan Reveals his Darkest Moment",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=r9krharzKfA",
+      "published": "2024-09-30",
+      "first_seen": "2026-10-10",
+      "views": 383155,
+      "length": "1:09:55",
+      "age_days": 740,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 6193,
+        "comments": 728,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "BMidLVJ9JX0",
+      "title": "Inside the CIA's Most Elite Paramilitary Branch | Shawn Ryan",
+      "channel": "Julian Dorey Daily",
+      "url": "https://www.youtube.com/watch?v=BMidLVJ9JX0",
+      "published": "2024-09-27",
+      "first_seen": "2026-10-10",
+      "views": 1660327,
+      "length": "1:02:08",
+      "age_days": 743,
+      "query": "channel sweep: Julian Dorey Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCnhkK3mHzGUTu-yXfmerRmw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 16911,
+        "comments": 1018,
+        "enrichedOn": "2026-10-10"
       }
     }
   ],
-  "updated": "2026-10-09"
+  "updated": "2026-10-10"
 }

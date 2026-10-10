@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -103564,6 +103564,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-09"
+      }
+    },
+    {
+      "videoId": "GJ3IXYeNxiU",
+      "title": "Walk After Eating = Metformin For Blood Sugar?! Mind BLOWN! #shorts",
+      "channel": "downtohealthvault",
+      "url": "https://www.youtube.com/watch?v=GJ3IXYeNxiU",
+      "published": "2026-07-02",
+      "first_seen": "2026-10-10",
+      "views": 3,
+      "length": "0:37",
+      "age_days": 100,
+      "query": "channel sweep: downtohealthvault",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwql4SP5PMcPWZcqdsCH6dw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
       }
     }
   ]

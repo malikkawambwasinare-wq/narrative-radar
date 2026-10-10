@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119705,7 +119705,7 @@
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119899,7 +119899,7 @@
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -127133,7 +127133,7 @@
       "yt": {
         "channelId": "UCXOhNV8OM3leeIX0rkBCKIw"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "W7ShO-GmG6A",
@@ -158367,7 +158367,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "IN3596xnZks",
@@ -159936,7 +159936,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "eKWEXkBQoNI",
@@ -160230,7 +160230,7 @@
       "yt": {
         "channelId": "UC88SGENAQK_h1w7h1a-0RGw"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "J0xHU4UrXDA",
@@ -160249,7 +160249,7 @@
       "yt": {
         "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
       },
-      "unavailable": "2026-10-09"
+      "unavailable": "2026-10-10"
     },
     {
       "videoId": "2sRgf-T3N9U",
@@ -171375,7 +171375,132 @@
         "comments": null,
         "enrichedOn": "2026-10-09"
       }
+    },
+    {
+      "videoId": "1UQry8S3LrM",
+      "title": "7 Foods That Fight Wrinkles From the Inside 🥝",
+      "channel": "Moralix",
+      "url": "https://www.youtube.com/watch?v=1UQry8S3LrM",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-10",
+      "views": 181,
+      "length": "1:06",
+      "age_days": 1,
+      "query": "channel sweep: Moralix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC_niVHGWG1G8-4m5jTWivwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "ouYUv0CFK3s",
+      "title": "🔥 7 Nighttime Foods That May Support Weight Loss & Help Control Belly Fat",
+      "channel": "Moralix",
+      "url": "https://www.youtube.com/watch?v=ouYUv0CFK3s",
+      "published": "2026-09-12",
+      "first_seen": "2026-10-10",
+      "views": 1607,
+      "length": "1:13",
+      "age_days": 28,
+      "query": "channel sweep: Moralix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC_niVHGWG1G8-4m5jTWivwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 32,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "u3juhz0k6CE",
+      "title": "“What Happens to Your Eyes When You Eat These 5 Foods? 👀”",
+      "channel": "Moralix",
+      "url": "https://www.youtube.com/watch?v=u3juhz0k6CE",
+      "published": "2026-08-23",
+      "first_seen": "2026-10-10",
+      "views": 152,
+      "length": "0:55",
+      "age_days": 48,
+      "query": "channel sweep: Moralix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC_niVHGWG1G8-4m5jTWivwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "0IGrMr7wQlk",
+      "title": "🚨 8 Foods Your Heart Wishes You'd Stop Eating!I",
+      "channel": "Moralix",
+      "url": "https://www.youtube.com/watch?v=0IGrMr7wQlk",
+      "published": "2026-08-21",
+      "first_seen": "2026-10-10",
+      "views": 185,
+      "length": "2:02",
+      "age_days": 50,
+      "query": "channel sweep: Moralix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC_niVHGWG1G8-4m5jTWivwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "nuauGcDgeuk",
+      "title": "0 to 400 Subscribers by Posting Every Day (No Strategy)",
+      "channel": "Chris Alarcon |  AI for Non-Coders",
+      "url": "https://www.youtube.com/watch?v=nuauGcDgeuk",
+      "published": "2026-02-02",
+      "first_seen": "2026-10-10",
+      "views": 27,
+      "length": "0:39",
+      "age_days": 250,
+      "query": "channel sweep: Chris Alarcon |  AI for Non-Coders",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCTt0JyqPZpwu51CrZCazjIQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-10"
+      }
     }
   ],
-  "updated": "2026-10-09"
+  "updated": "2026-10-10"
 }
