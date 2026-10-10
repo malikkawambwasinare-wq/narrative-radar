@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-09",
+ "generated": "2026-10-10",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1887,
+ "cost_usd": 0.1673,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -35640,6 +35640,1417 @@
    },
    "first_read": "2026-10-09",
    "last_read": "2026-10-09"
+  },
+  {
+   "phrase": "save humanity",
+   "verdict": "rhetoric",
+   "why": "Titles span crypto, floods and AI with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 9,
+    "months": 8,
+    "span": "2021-08 → 2026-10",
+    "examples": [
+     "Can Rollups Save Humanity? Optimism Says Yes.",
+     "don't forget flood affected | politicians must come for their help | save lives save humanity",
+     "How AI Could Save Humanity"
+    ],
+    "ids": [
+     "0IZvJsc5dc8",
+     "3W0dIzmSz0U",
+     "Oteq8_AlwZc",
+     "VEUBTWm0cek",
+     "W8p5SIpBoeo",
+     "Zrwvz3k5-NE",
+     "fv3sPvivT38",
+     "fxmXYfHTCwU",
+     "h6gxqQwnXbE",
+     "ibNbeUSxBMI",
+     "lvWfebUst-k",
+     "t38WwWuFGjg"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "cup win",
+   "verdict": "rhetoric",
+   "why": "A sports subject label, no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 34,
+    "channels": 16,
+    "months": 13,
+    "span": "2022-11 → 2026-10",
+    "examples": [
+     "Here’s how much money the winners of the FIFA World Cup win.",
+     "Edmonton’s last Stanley Cup win in 1990 | Flashback",
+     "Toronto Argonauts fans rally with their team to celebrate Grey Cup win"
+    ],
+    "ids": [
+     "-DMuXX5KKys",
+     "0HeOdXUYyyc",
+     "0exYxIyLKr4",
+     "1VNi4Y_AfRw",
+     "2_8cKJeoIao",
+     "3xUhyYnemXs",
+     "76P3O2ilIdM",
+     "9usYWmSN6YE",
+     "CaKlfSayZn0",
+     "D2TPn2H9DmM",
+     "EWwT2PeGRcM",
+     "JPYnzDIttZA",
+     "LbjRC2IW7pI",
+     "LfTOwTLcjFo",
+     "MGU29jLpOmY",
+     "OVPVyX72TKw",
+     "PLo87B7T_Qo",
+     "T_cOc7QixZM",
+     "UtRXp4Xsds8",
+     "W1ycnBEeZck"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "save children",
+   "verdict": "rhetoric",
+   "why": "Unrelated stories share only the word, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 8,
+    "months": 12,
+    "span": "2023-12 → 2026-09",
+    "examples": [
+     "Exclusive: Mother speaks out after teens lift car to save her and her children",
+     "How Printing Organs Can Save Children All Over the World | MOONSHOTS",
+     "Polio adds another layer to devastation in Gaza, says Save the Children team leader"
+    ],
+    "ids": [
+     "4L1XPIdcyVk",
+     "4QlCRAxC9V0",
+     "AECzdJeBjLI",
+     "AweNMdvlIAA",
+     "Bdp185Si5QY",
+     "CgEQSJFGCDo",
+     "Cmtwmk5Vp98",
+     "DfygwDTbXv0",
+     "J-nfDQId_28",
+     "NCOi3L4vqrI",
+     "QmbAmPTNwYA",
+     "RiF4vn-OxMY",
+     "VUjYIDhg9_o",
+     "c_z9grJsBHI",
+     "pW7AejKkGrI",
+     "sd6y-cB0Ics"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "really feel",
+   "verdict": "rhetoric",
+   "why": "Curiosity hook phrasing across tarot, street interviews and career content.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 12,
+    "months": 8,
+    "span": "2022-06 → 2026-10",
+    "examples": [
+     "TAURUS:  This Message Will Open Your Eyes to How They Really Feel.  June 27-July 4 🦋",
+     "How do people really feel about Valentine’s Day? We went to NYC to find out.",
+     "How Does It REALLY Feel to Be in the C Suite? #LeadershipLessons #LeadingWithVulnerability #shorts"
+    ],
+    "ids": [
+     "7kIJorzSJyo",
+     "AkpsOuLyWCM",
+     "BJWOW6QPrMs",
+     "KOUElaG3UpA",
+     "PMjYOHpTLKs",
+     "RWkgqSJIsms",
+     "UPBFe_YsRSg",
+     "XkrfhDOuOpc",
+     "b5_JMi76ROo",
+     "eaD_mWlR_58",
+     "iRvK04tRe-E",
+     "kmfMA_868qU",
+     "pGXUcjA4wDI",
+     "qgL7WTH53-s",
+     "t2zNzpBvlF8",
+     "uTQzhOTVHRA",
+     "w3e4io9aGhQ"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "abortion ban",
+   "verdict": "rhetoric",
+   "why": "News topic tag covering court rulings; no single contestable claim is advanced.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 4,
+    "months": 8,
+    "span": "2024-04 → 2026-10",
+    "examples": [
+     "Arizona Supreme Court decision imposing a near-total abortion ban",
+     "Republican lawmakers in Arizona block repeal of 1864 abortion ban",
+     "Arizona Supreme Court allows 160-year-old near-total abortion ban"
+    ],
+    "ids": [
+     "-5yq6fnMgx8",
+     "1d-_HmhAAoc",
+     "87xuY7HQjpA",
+     "B_Hdg2DLVsk",
+     "GzeLWpSZoes",
+     "YEjKBi0AZ4s",
+     "_xO5wqf0j8A",
+     "b7OR2JApagw",
+     "nc8HxLTlP7M",
+     "pvJrDWrnWc0",
+     "q1QvvJJ0SKg",
+     "rU0oeY9Ji3Y",
+     "xBVKof6W4-Q",
+     "zqt3KR1pLAI"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "'why don't",
+   "verdict": "rhetoric",
+   "why": "A quoted question format, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 4,
+    "months": 8,
+    "span": "2024-04 → 2026-05",
+    "examples": [
+     "Asking Trudeau: 'Why don't people like you?'",
+     "'Why don't we ask Mrs Willie Brown if Harris…': Georgia activist steals the show at Trump rally",
+     "'Why don't we call it Mexican America…': PM Sheinbaum vs Trump over ‘Gulf of America’"
+    ],
+    "ids": [
+     "2CVoTe8EmVk",
+     "35R7NO_6Wkg",
+     "5bkJQZpaEQE",
+     "9tr__Sym0JY",
+     "FNX23w5ERec",
+     "L9cw5rypCV0",
+     "PXB84wFXAkg",
+     "X8WvVvDoNhQ",
+     "f1O3Kp6crgw",
+     "z9g-oS-IYEM"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "fix problems",
+   "verdict": "rhetoric",
+   "why": "Generic phrasing across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 9,
+    "span": "2020-07 → 2026-08",
+    "examples": [
+     "Richard Wolff: Marxism Explained, How to Fix Problems with Capitalism",
+     "Nike Brought a Senior Executive Out of Retirement to Fix Problems",
+     "Montreal street check policy a good step but 'won't fix all the problems,' police say"
+    ],
+    "ids": [
+     "H82DjPAULy0",
+     "OLurli-GEqc",
+     "Ofbq4vLWGjg",
+     "RU2HUA6YdNU",
+     "UEU29kvGKE4",
+     "UqrvBX-Zy0U",
+     "Y51FchEKT-Q",
+     "oWcX0hjBaMY",
+     "xBRNGTh76SU"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "discuss ending",
+   "verdict": "rhetoric",
+   "why": "Diplomatic-meeting news format about Ukraine talks, no predictive claim shared.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "European leaders hold meeting to discuss ending war in Ukraine | ABC NEWS",
+     "Trump, Putin discuss ending Ukraine war and Moscow visit in rare call | ABC News",
+     "US and Russian representatives meet to discuss ending Ukraine war"
+    ],
+    "ids": [
+     "8PS39Q3ZzHQ",
+     "FFO2s1eTOoE",
+     "JLvdrhJIE98",
+     "LITrhfFv-Fc",
+     "aI3D_NAyfXA",
+     "cGKSJV0hQTI",
+     "i7zjT2O4m8A",
+     "orfcIfLCpCU",
+     "sEKT2Al03nU"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "shows violent",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated crime footage and conflicting crime-stat claims with no shared checkable proposition.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-10 → 2026-07",
+    "examples": [
+     "Video shows violent theft of suitcase with money in Thornhill, Ont.",
+     "Trump claims DC crime is out of control. Data shows violent crime is at a 30 year low",
+     "Police data shows violent crime increasing, property crime decreasing in the NT | ABC NEWS"
+    ],
+    "ids": [
+     "-8GAgz7_lJk",
+     "B3bDajp8LCE",
+     "FwuE7GkmNRc",
+     "Knkm3ZbEmNw",
+     "knt2huq4nKI",
+     "nURQ-GduP0o",
+     "vJt6GXVAw-w",
+     "zuFyYHvP5dA"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "shoots kills",
+   "verdict": "rhetoric",
+   "why": "A news event descriptor, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-09 → 2026-10",
+    "examples": [
+     "ICE shoots and kills man amid ramped up raids in Illinois",
+     "‘Get the f–k out’: Mayor reacts after ICE shoots and kills woman",
+     "Secret Service Shoots And Kills Armed Man After Security Breach At Mar-a-Lago"
+    ],
+    "ids": [
+     "FH6W1W_dhFo",
+     "ITN14XdpX1A",
+     "LORipXnUOR4",
+     "WWBuvmAIaCc",
+     "iQCxlqe0r3E",
+     "t2naJC4tSdA",
+     "t5jyv8A0bqQ"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "end wars",
+   "verdict": "rhetoric",
+   "why": "Titles cover AI, papal appeals and strategy pitches with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 7,
+    "span": "2025-04 → 2026-05",
+    "examples": [
+     "Does AI mean the end of wars? | MOONSHOTS",
+     "Pope Leo XIV calls for an end to all wars in his first Sunday message",
+     "End Wars: A Low Cost, Bold, Creative Strategy!"
+    ],
+    "ids": [
+     "2biLQcU17xc",
+     "8FUref-t0Pk",
+     "BSU4hUo5NV4",
+     "NCtkSjnhSWs",
+     "NuBpg-32sZc",
+     "ZwjmV6z-3E0",
+     "drIMaIjpwLQ"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "'should never",
+   "verdict": "rhetoric",
+   "why": "A quoted sentiment fragment attached to unrelated geopolitical stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-04 → 2026-10",
+    "examples": [
+     "Nuclear facilities 'should never be a military target,' says UN watchdog chief",
+     "Lavrov Live | 'Should’ve Never Trusted the West' | Russia’s Sergey Lavrov SLAMS Western Leaders",
+     "China's top diplomat Wang Yi says Iran war 'should never have happened'"
+    ],
+    "ids": [
+     "1A248KYhAl8",
+     "AKQNq9iUHt8",
+     "PztlQI_qsA0",
+     "Ra-PQeNF_pU",
+     "iGGeMQ5WNnc",
+     "jlE-s1lEH30"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "netflix show",
+   "verdict": "rhetoric",
+   "why": "Subject label for assorted streaming content, no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 5,
+    "span": "2018-01 → 2026-10",
+    "examples": [
+     "Obama and Letterman Reunite on New Netflix Show I Fortune",
+     "Parenting takeaways from Netflix show 'Adolescence'",
+     "Netflix show reveals Jane Goodall's 'Famous Last Words'"
+    ],
+    "ids": [
+     "-hFS3V3SnGU",
+     "6MlW6tsGbtU",
+     "F69X5dS95WQ",
+     "Ph05Hu6J4CE",
+     "V_Jr1XPAg0o",
+     "WIucXHFIv6o",
+     "g8D-sVNUBPI",
+     "w6lMkAcFQk4"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "managers must",
+   "verdict": "rhetoric",
+   "why": "Imperative career-advice framing from few channels, no single falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 4,
+    "months": 7,
+    "span": "2021-01 → 2026-09",
+    "examples": [
+     "Managers Must Prep Their Teams For Kubernetes",
+     "Why Product Managers must learn AI #productmanagement #productmanager #shorts",
+     "Aspiring Product Managers must understand this #productmanagement #productmanager #shorts"
+    ],
+    "ids": [
+     "0uNL-FVwXDA",
+     "10Jpyw3_0xY",
+     "Bn2fwMguzo8",
+     "FkbUtPlvtz8",
+     "IKuYq9piy5Q",
+     "NJWSe1mx7mY",
+     "PdJHaswOiKQ",
+     "_ksYQFysgCs",
+     "iVmfj5Wunhs",
+     "vnF9GZpY9IA"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "really expensive",
+   "verdict": "rhetoric",
+   "why": "Generic cost phrasing across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 8,
+    "span": "2017-09 → 2026-09",
+    "examples": [
+     "Flu Season Is Really Expensive I Fortune",
+     "Is Singapore really an expensive and stressful city?",
+     "Are solutions to the housing crisis really too expensive?"
+    ],
+    "ids": [
+     "1igekyN1ap0",
+     "2XnTL2PnXgQ",
+     "4fcST8eAXZA",
+     "BB3lAnlm22c",
+     "HA6N2SdTu78",
+     "TohTE9fUe1M",
+     "a1Jnat3fM90",
+     "fDxeHVFe_Aw",
+     "h4AxSiNBb_s"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "vehicle drives",
+   "verdict": "rhetoric",
+   "why": "Recurring event description of car-ramming incidents, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 4,
+    "span": "2025-03 → 2026-10",
+    "examples": [
+     "Two people killed after car drives into crowd in Mannheim, Germany | ABC NEWS",
+     "Vehicle drives into crowd at Berlin pride, killing at least one",
+     "Vehicle drives into crowd during LGBTQ+ parade in Germany"
+    ],
+    "ids": [
+     "7f03jt36N7s",
+     "ElqMiCNSQWk",
+     "NpG8LgJ616I",
+     "Qj-Fg6EbsBE",
+     "V3jVWP_SdJU",
+     "Y1HhIVoZ5GQ",
+     "c3KeG9MRftM",
+     "lWXug826QFM"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "blessings coming",
+   "verdict": "rhetoric",
+   "why": "Generic tarot hype language with no checkable shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 7,
+    "span": "2022-01 → 2026-10",
+    "examples": [
+     "LEO TAROT READING | A HAPPY NEW PATH OPENS FOR YOU! 2x SUN CARDS! BIG BLESSINGS COMING IN LEO!",
+     "TAURUS TAROT READING | A VERY FINAL ENDING! THE UNIVERSE IS SHIFTING YOU! HUGE BLESSINGS ARE COMING!",
+     "GEMINI TAROT READING | YOUR ENTIRE LIFE IS ABOUT TO CHANGE! HUGE ABUNDANCE BLESSINGS ARE COMING!"
+    ],
+    "ids": [
+     "3jtNj6Qt0js",
+     "670Ljf3FF1E",
+     "6IfvDrfPAlc",
+     "9GhZ9ZQoMq0",
+     "9pM_yAostPA",
+     "CM5eTiyXZoU",
+     "utqOXN_dXh0"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "laguardia crash",
+   "verdict": "rhetoric",
+   "why": "A news subject/event, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 21,
+    "channels": 9,
+    "months": 3,
+    "span": "2026-03 → 2026-08",
+    "examples": [
+     "Air Canada CEO Michael Rousseau Confirms Pilot, Co-Pilot Killed In Deadly LaGuardia Crash",
+     "Fatal LaGuardia Crash Linked To System Failure: NTSB",
+     "LaGuardia Crash Kills Pilots, Officials Reveal New Details | Aviation News | Press Briefing"
+    ],
+    "ids": [
+     "02NuT2XUxmA",
+     "5R0V8uNVBps",
+     "6_q9veNqd6Y",
+     "CAJXFLY6cFs",
+     "JLAn4TOOhXM",
+     "NK8alj_gWFk",
+     "PueVn6_G3CA",
+     "T_HP0J75zwU",
+     "Vdm9IeXOHIY",
+     "VrcEjH4fUTM",
+     "X2B7rHBD5Ss",
+     "c2ISHSefFsY",
+     "d0h107truiM",
+     "eIafKwYNULk",
+     "jBNfEpgeSvE",
+     "lgP7FKCJf_g",
+     "mQ0RZRLS9DI",
+     "mqJ6f9Cn-FI",
+     "mvMrn_Ff-t4",
+     "xXzVrMifhLM"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "replace humans",
+   "verdict": "rhetoric",
+   "why": "Titles argue both sides of AI replacing humans; no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 9,
+    "months": 6,
+    "span": "2024-05 → 2026-10",
+    "examples": [
+     "AI & Technology Will Not Replace Humans #LeadingWithVulnerability #leadership #shorts",
+     "Can AI Fashion Models Replace Humans? We Tested Google's Nano Banana Model",
+     "AI won't replace humans. Humans using AI will replace humans who don't. Choose your side."
+    ],
+    "ids": [
+     "1elHq3wFg_Q",
+     "D-LaBD3vc9E",
+     "IGUiTJMhwyQ",
+     "cmHWJyEGXiU",
+     "gEGsTZ5cizI",
+     "klYI8zW-glw",
+     "pWGqbeT3vk4",
+     "rDXGZOfg52I",
+     "wIC0WRXaB0s"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "call end",
+   "verdict": "rhetoric",
+   "why": "Keyword coincidence spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 13,
+    "months": 10,
+    "span": "2018-06 → 2026-10",
+    "examples": [
+     "Warren Buffett And Jamie Dimon Call For End To Quarterly Profit Forecasts",
+     "UN rejects U.S. resolution to call for end of Ukraine war without noting Russian aggression",
+     "Trump dials Zelenskyy after Putin call, end of war in sight?"
+    ],
+    "ids": [
+     "3TYVkdY3fyQ",
+     "7aG5s3gos7o",
+     "HLBgmCxWSCY",
+     "Or5bapkSi5Y",
+     "RsG5s7367rU",
+     "U1Px6eRm8yQ",
+     "f4l7TJT6tK8",
+     "gBj_-qdwckM",
+     "gN9iiG52qjU",
+     "hWcAXmHMq5c",
+     "kJuVd9YnnzA",
+     "kbycgwrgCYI",
+     "oL4Zco-wNoM",
+     "vg5MmzBm5OU",
+     "yX9uBTc96eM"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "must include",
+   "verdict": "rhetoric",
+   "why": "Common phrase across unrelated subjects, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-06 → 2026-09",
+    "examples": [
+     "Israel's Supreme Court rules military draft must include ultra-Orthodox men",
+     "Ukraine-Russia war negotiations must include both countries 'to be just': former U.S. ambassador",
+     "5 Fat Burning Foods You Must Include in Your Diet for Weight Loss | Fat Melting Diet Food"
+    ],
+    "ids": [
+     "H_tqXDiizeQ",
+     "MfC-Z2UiLbA",
+     "N-h6SaemKvo",
+     "h5mwM2iJvZ0",
+     "mjgezbJ8nd0",
+     "toURWTUvwzM"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "causes consequences",
+   "verdict": "rhetoric",
+   "why": "An explainer format label, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2020-09 → 2025-10",
+    "examples": [
+     "20060429 - Lance Endersbee - The Global Water Crisis Causes and Consequences",
+     "Top 10 Causes + Consequences of Leaky Gut | The Food Code | Ep. 432",
+     "2024 Housing Market Crash Explained: Causes and Consequences"
+    ],
+    "ids": [
+     "3JpMe9Ne0D8",
+     "FrkkvLnNXGA",
+     "haLR96J9qKs",
+     "nDe4-9NE5rU",
+     "o63lVUsJM8I"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "won't listen",
+   "verdict": "rhetoric",
+   "why": "Idiomatic phrase across unrelated stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2019-07 → 2026-04",
+    "examples": [
+     "Credit Card Scammer Won't Listen To Silver Options",
+     "Gould says Trump won't listen to journalists, central bankers in swipe at Liberal leadership rivals",
+     "When the police crack down on skating but you won't listen | ABC NEWS"
+    ],
+    "ids": [
+     "-ERGOJk-dmI",
+     "N2m9uz2qSMs",
+     "bThz0jiDBmo",
+     "uLaZJAvv8g0",
+     "wmHWNDJDtIU"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "reached end",
+   "verdict": "rhetoric",
+   "why": "Generic wording, no common checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Trump threatens Putin if ceasefire agreement isn’t reached by end of summer",
+     "Trump threatens to obliterate Kharg Island if deal is not reached to end war on Iran",
+     "Has this heritage railway reached the end of the line? | ABC News"
+    ],
+    "ids": [
+     "3gykT8EqJEw",
+     "IYdSMvO96UA",
+     "WKo90Yox3sE",
+     "YNknlL3rhGk",
+     "nkVRonm2UV8"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "'this isn't",
+   "verdict": "rhetoric",
+   "why": "A quote fragment spanning unrelated news topics with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 9,
+    "span": "2025-02 → 2026-07",
+    "examples": [
+     "'This isn't over,' union president says following U.S. tariff delay | Canada Tonight",
+     "'This isn't the end': Former ambassador to Russia on Putin agreeing to 'energy ceasefire' | ABC NEWS",
+     "'This isn't about politics, it's about kids': Minneapolis mayor on gun violence"
+    ],
+    "ids": [
+     "5lyuPykxzvs",
+     "GlE7Dgmxhcs",
+     "HZHsRzWMhY0",
+     "JTBxTJ8bQ10",
+     "KDavWY716sM",
+     "KO8_D0pSLH0",
+     "QnMBOrZxI1I",
+     "aXA8mL0szS0",
+     "k7WfEh6Otyo",
+     "ke9EIHN16pk",
+     "qngWRS_zNFs"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "1-0 win",
+   "verdict": "rhetoric",
+   "why": "Sports scoreline reporting, a format not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 6,
+    "months": 4,
+    "span": "2026-03 → 2026-09",
+    "examples": [
+     "ASIAN CUP 2027 QUALIFIERS: Singapore conclude campaign with 1-0 win against Bangladesh",
+     "Canada Fans Celebrate Historic Qualification After 1-0 Win Over South Africa",
+     "World Cup 2026: Ten-man Paraguay secure crucial 1-0 win over Turkey"
+    ],
+    "ids": [
+     "1LLrJm7I_tw",
+     "7QtxiUirXtw",
+     "D8QOisiV6xo",
+     "GdS3DWWwJrk",
+     "MmYXQ04CZUc",
+     "RLkS4mSup6g",
+     "ZMb3ADPbKus",
+     "Zfhr7dEY_Y0",
+     "cIEhhziEpVo",
+     "oDLB-1P-qW0",
+     "qpKn324onoo",
+     "uHUKF_pJmwM",
+     "vgkzAfc6_Lw",
+     "voo_oCXQ-VA",
+     "wlKh7dxdLaU",
+     "yBCRtind3Eo"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "calling end",
+   "verdict": "rhetoric",
+   "why": "Shared wording across crypto, tariffs and Gaza stories with no common checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 8,
+    "months": 6,
+    "span": "2023-09 → 2026-10",
+    "examples": [
+     "WARNING 🚨: Experts Are Calling For The End Of Crypto! (They're Wrong)",
+     "Delegation of Canadian mayors in D.C. calling for the end to tariffs | Hanomansing Tonight",
+     "Israeli PM condemns Canada-France-U.K. statement calling for end of Gaza military operations"
+    ],
+    "ids": [
+     "45AWcwhFIG0",
+     "LrQ8OUd9prs",
+     "NiqWkuuOXw4",
+     "RejC5dvxHhQ",
+     "Z32ZTLeK8CU",
+     "Zj_gnr-Olus",
+     "feZ3Zw8ETiQ",
+     "fifHcOTzJyM",
+     "uWv-nXZVzXI",
+     "xC1pOrvNDMQ",
+     "xGZJk3UL30Y"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "marks end",
+   "verdict": "rhetoric",
+   "why": "Generic 'end of an era' framing across unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 6,
+    "months": 4,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "Taylor Swift reporter marks end of an era as 2-year tour wraps up in Vancouver",
+     "Military parade marks 50 years on from the end of Vietnam War | The World | ABC NEWS",
+     "Citi’s ‘Results Over Effort’ Message Marks the End of Comfortable Work—Amazon Isn’t Far Behind"
+    ],
+    "ids": [
+     "3_sugoiMH9g",
+     "68jIGwZo9mU",
+     "Bsz01oPuBP8",
+     "HbP2oNfXAaQ",
+     "PmJtUsoiWho",
+     "RbUPytsfALU",
+     "Syk7fTbVELE",
+     "WQbZGmYVUCo",
+     "inM4nS3rWZQ",
+     "xeCZaZMCQLQ"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "manufacturing boom",
+   "verdict": "rhetoric",
+   "why": "Subject label applied to different countries and disputed contexts, no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 6,
+    "span": "2026-02 → 2026-10",
+    "examples": [
+     "Tamil Nadu’s Manufacturing Boom: Two Tata Factories Open In Six Months Under MK Stalin’s Leadership",
+     "Raphael Warnock Grills Scott Bessent Over Trump’s “Manufacturing Boom” Claims",
+     "India Eyes Aircraft Manufacturing Boom: Govt Push With Embraer, HAL To Boost Aviation Power"
+    ],
+    "ids": [
+     "01JyUs4wJ_I",
+     "2R0tX-QOhlo",
+     "BG194SkHGe0",
+     "Pp4Axm9x6-c",
+     "QTMJfdQLR0s",
+     "Rap706v42Zk",
+     "ZE_0HjAY3GM",
+     "jVI2SyXaROQ",
+     "tgUMpvaCiGo"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "leaves dozens dead",
+   "verdict": "rhetoric",
+   "why": "Breaking-news casualty headline formula, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 6,
+    "span": "2025-07 → 2026-08",
+    "examples": [
+     "Ha Long Bay tourist boat capsize leaves dozens dead in Vietnam| ABC NEWS",
+     "Philippines Flood Crisis Update: Typhoon Co-May Leaves Dozens Dead, Thousands Displaced",
+     "Deadliest Russian Attack on Kyiv Leaves Dozens Dead, Trump Issues Warning | Russia Ukraine Conflict"
+    ],
+    "ids": [
+     "3CD3Weu9zkM",
+     "9bMH-k_kOcU",
+     "AvO0DrlkEtc",
+     "HwI_LDtnsQI",
+     "JNfG8iagVvw",
+     "OTgZMl2aG3M",
+     "_ElPVgW7X1o",
+     "cq0ftzlvtiI",
+     "dYn0jo73WbI"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "supreme court upholds ban",
+   "verdict": "rhetoric",
+   "why": "Event reporting on distinct court rulings; no unifying predictive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2024-09 → 2026-07",
+    "examples": [
+     "Brazil's Supreme Court upholds ban of Elon Musk's X",
+     "Brazil's Supreme Court Upholds the ban on Elon Musk's X",
+     "Court upholds US ban on TikTok"
+    ],
+    "ids": [
+     "-osqcghZTsU",
+     "12mJdxZ4x48",
+     "9FLT_z5gAgo",
+     "Eisc7S8mytw",
+     "KaDU_Qg_1-k",
+     "vkFVSq6DaX8"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "wins majority",
+   "verdict": "rhetoric",
+   "why": "Election-result reporting format across unrelated jurisdictions.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2024-10 → 2026-10",
+    "examples": [
+     "Liberal Party led by Susan Holt wins majority in N.B provincial election",
+     "Sri Lanka election: President Dissanayake’s coalition wins majority in parliamentary polls",
+     "Yukon Party wins majority in territorial election"
+    ],
+    "ids": [
+     "116Syf5SdpA",
+     "AAEvHhqhWvY",
+     "B8PUJTwlYgw",
+     "HPzhN8rqzPI",
+     "MclQT8NXrio",
+     "v-mu7DuyIQE"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "fight save",
+   "verdict": "rhetoric",
+   "why": "Titles span bees, Australia, and spirituality with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 12,
+    "months": 9,
+    "span": "2019-09 → 2026-10",
+    "examples": [
+     "30 August 2019 – The CEC Report – Stopping Cash Ban is fight to save Australia / Iran regime change",
+     "Teens fight to save bees",
+     "2030 WARNING: Humanity Must Fight to Save Our Divinity! | Gregg Braden"
+    ],
+    "ids": [
+     "4M6D7O227NQ",
+     "JKF57J43X1U",
+     "L5_2kWiqx5o",
+     "LhyXs1JfYhE",
+     "M6kSpvmLyNY",
+     "SJxqkpXEbS0",
+     "U_F9vBtGfKw",
+     "cSXnYRdAARk",
+     "gkxbQ-NQFKE",
+     "h7k2ZGeVyoQ",
+     "uZeGceteoUk",
+     "yAR9riw2uEY",
+     "zEFL2ELWniA"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "series win",
+   "verdict": "rhetoric",
+   "why": "Sports event coverage, a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 7,
+    "span": "2024-10 → 2026-10",
+    "examples": [
+     "City bus goes up in flames after Dodgers World Series win",
+     "LA Dodgers celebrate 8th World Series win",
+     "‘Let’s go Canada’: Blue Jays celebrate series win over Yankees"
+    ],
+    "ids": [
+     "2rNc50Xg6_c",
+     "B6rd859OmOY",
+     "Dp2i5nn-A6M",
+     "JQyfEVf6HAI",
+     "KhuALLFwjSQ",
+     "Kw8D2IJTukU",
+     "WXWqA74RksY",
+     "YsWwJKWKUVM",
+     "ej2TbJY-8sY",
+     "lkirICFqW64",
+     "lyrZsjm46EU"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "save millions",
+   "verdict": "rhetoric",
+   "why": "Promotional superlative applied to unrelated crypto and medtech topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 6,
+    "span": "2021-09 → 2026-10",
+    "examples": [
+     "AVOIDING THIS BIG MISTAKE CAN SAVE YOU MILLIONS IN CRYPTO!",
+     "This Life Support Device Will Save Millions of Lives | MOONSHOTS",
+     "She Left Google to Build Tech That Could Save Millions | MOONSHOTS"
+    ],
+    "ids": [
+     "JftGkgikeEI",
+     "LETaMbq4GtE",
+     "QwFdTFB5UDI",
+     "XPWTD_RhuPs",
+     "dduvZ__ld7k",
+     "gjJyyt0oddM",
+     "iH7kO6uThF0",
+     "jpL1GX_NJYc",
+     "lh_PfHvKDUA",
+     "nkcNYg7E8PM",
+     "oKEBtUAb9xM"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "cars coming",
+   "verdict": "rhetoric",
+   "why": "Mixes robotaxi expansion and Chinese EV exports; no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-03 → 2026-10",
+    "examples": [
+     "Waymo’s Driverless Cars Are Coming To Atlanta On Uber | Exclusive",
+     "China’s Cars Are Coming… and the West is Worried",
+     "Waymo's NYC Testing: Self-Driving Cars Are Coming to Your City!"
+    ],
+    "ids": [
+     "8IGdqhBFeUc",
+     "W8Pp6PU4bAQ",
+     "_h5a6-uMx6M",
+     "e1YEtuqbwR8",
+     "hgL8n1eOkoc",
+     "nOsWTH1dbnc",
+     "vC2NXGH8l_g"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "truth sleep",
+   "verdict": "rhetoric",
+   "why": "Sleep-topic hook across apnea, drugs, and gut health with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 8,
+    "months": 7,
+    "span": "2024-09 → 2026-10",
+    "examples": [
+     "Discover the Shocking Truth About Sleep Apnea",
+     "The Truth About Sleep Drugs | MOONSHOTS",
+     "The Truth About Sleep, Stress, and Healing Your Gut"
+    ],
+    "ids": [
+     "1g3usEyHSo0",
+     "4Pa2-COBRys",
+     "9LFkQLYCO8Y",
+     "Gf9UweKQMaw",
+     "SJdnjNWtPsk",
+     "TxNYjzZDnl8",
+     "fAPUxmnpB0Q",
+     "gDV_zdUurHM",
+     "hQYMISi-IZI"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "attack kyiv kills",
+   "verdict": "rhetoric",
+   "why": "News event reporting format, not a contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-04 → 2026-09",
+    "examples": [
+     "Major attack on Kyiv kills eight, injures dozens | The World | ABC NEWS",
+     "Russian drone, missile attack on Kyiv kills at least 15",
+     "Russian Drone Attack on Kyiv Kills Four, Injures Dozens and Triggers Fires"
+    ],
+    "ids": [
+     "KxhUh01ZYpQ",
+     "P1M3Fnix8eM",
+     "TxRCxefp4Yk",
+     "UFVsUg4TvRg",
+     "fGnHdlfzqRk",
+     "rPG7XST3f7I",
+     "t3nRjQ73BzY",
+     "zJ2Z4Paq6HI"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "moon soon",
+   "verdict": "rhetoric",
+   "why": "Generic crypto price-pump hook across unrelated coins, no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 5,
+    "months": 11,
+    "span": "2020-09 → 2025-07",
+    "examples": [
+     "TRON could MOON very soon, here's why",
+     "TOMOCHAIN gains national partnership with Vietnam. Will it moon soon?",
+     "ETHEREUM PRICE TO MOON, SOON! DEFI BOOM!! OUR TOP COINS FOR THE DEFY BOOM!"
+    ],
+    "ids": [
+     "-y0fJqWgBpg",
+     "NC4hiW4jbOc",
+     "Q9ri0FbIhSo",
+     "Rjw4aKVyqaU",
+     "UH6RNacqekY",
+     "UK27ChMDRek",
+     "Ux0U5VLanWA",
+     "WgMk33UTDhM",
+     "ZMIZNL5tk9g",
+     "pOAjv4Ym0Sc",
+     "sqOAzB5nhoo",
+     "xLFv4KfvwH0"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "attack kills",
+   "verdict": "rhetoric",
+   "why": "Standard breaking-news headline formula covering unrelated incidents.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 13,
+    "months": 12,
+    "span": "2024-10 → 2026-10",
+    "examples": [
+     "Iran says it has right to self-defence after Israel attack kills 4 soldiers",
+     "Germany pledges full investigation after Christmas market car attack kills 5",
+     "Pakistan: Fresh separatist suicide attack kills at least 5; Baloch Army claims responsibility"
+    ],
+    "ids": [
+     "0QeM8ApOLsU",
+     "1Mw42EWhcnM",
+     "331LVUCUvuU",
+     "34o7YFGwv6s",
+     "3ffTe7g3mJE",
+     "8WCcY_IcnyY",
+     "BzpIzQ3TElc",
+     "O7EIqynLmdk",
+     "PQLgKWxl9u8",
+     "Q78aVqyw-Q4",
+     "Yc0OBqL1ySg",
+     "Z_7EtUcjZDc",
+     "ZkzQxoC3Qeo",
+     "c0dVDkZNRIQ",
+     "dDnwIOn9-qU",
+     "gljllTkQCHw",
+     "h_VZLujXk1c",
+     "i7Bo4P2EnUc",
+     "igcPUC9oIYY",
+     "j0h1FysK_Bk"
+    ]
+   },
+   "first_read": "2026-10-10",
+   "last_read": "2026-10-10"
   }
  ]
 }
