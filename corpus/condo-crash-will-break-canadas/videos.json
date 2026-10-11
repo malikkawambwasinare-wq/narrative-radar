@@ -12538,6 +12538,31 @@
         "comments": 164,
         "enrichedOn": "2026-10-11"
       }
+    },
+    {
+      "videoId": "isPsjGxvxyk",
+      "title": "Bank Of Canada Could RAISE Rates Oct 28 — What It Does To Your Mortgage",
+      "channel": "Canadian Mortgages with Nathan",
+      "url": "https://www.youtube.com/watch?v=isPsjGxvxyk",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-11",
+      "views": 2809,
+      "length": "12:28",
+      "age_days": 1,
+      "query": "channel sweep: Canadian Mortgages with Nathan",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCdgdLLynsRsfHG-0rTAxLIw",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 80,
+        "comments": 5,
+        "enrichedOn": "2026-10-11"
+      }
     }
   ]
 }
