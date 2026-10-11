@@ -131679,7 +131679,57 @@
         "comments": 1,
         "enrichedOn": "2026-10-10"
       }
+    },
+    {
+      "videoId": "b-o9RprNKQw",
+      "title": "Why Software Engineering Jobs are Skyrocketing Despite AI",
+      "channel": "Heresy Financial",
+      "url": "https://www.youtube.com/watch?v=b-o9RprNKQw",
+      "published": "2026-06-13",
+      "first_seen": "2026-10-11",
+      "views": 4514,
+      "length": "0:43",
+      "age_days": 120,
+      "query": "channel sweep: Heresy Financial",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC4fg8o6oUkkZDLaC6eAZKwQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 127,
+        "comments": 3,
+        "enrichedOn": "2026-10-11"
+      }
+    },
+    {
+      "videoId": "Iqe3yG03kIU",
+      "title": "World War II Explained in 8 Minutes | Complete History",
+      "channel": "F1 docs",
+      "url": "https://www.youtube.com/watch?v=Iqe3yG03kIU",
+      "published": "2026-06-28",
+      "first_seen": "2026-10-11",
+      "views": 20,
+      "length": "5:43",
+      "age_days": 105,
+      "query": "channel sweep: F1 docs",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeryQzEDi_frHm7TezJIQBQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-11"
+      }
     }
   ],
-  "updated": "2026-10-10"
+  "updated": "2026-10-11"
 }

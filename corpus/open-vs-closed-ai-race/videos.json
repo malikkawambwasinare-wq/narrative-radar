@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-10"
+      "unavailable": "2026-10-11"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -176852,7 +176852,82 @@
         "comments": null,
         "enrichedOn": "2026-10-10"
       }
+    },
+    {
+      "videoId": "-Fvsn-Hddxo",
+      "title": "What Scientists Just Found Under the Maya Jungle Changes Everything",
+      "channel": "F1 docs",
+      "url": "https://www.youtube.com/watch?v=-Fvsn-Hddxo",
+      "published": "2026-08-02",
+      "first_seen": "2026-10-11",
+      "views": 0,
+      "length": "10:31",
+      "age_days": 70,
+      "query": "channel sweep: F1 docs",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeryQzEDi_frHm7TezJIQBQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-11"
+      }
+    },
+    {
+      "videoId": "3Nb1wf_fzc8",
+      "title": "The 444 Frequency That Changes Everything: A Financial & Spiritual Shift",
+      "channel": "Good Vibes - Binaural Beats",
+      "url": "https://www.youtube.com/watch?v=3Nb1wf_fzc8",
+      "published": "2026-04-03",
+      "first_seen": "2026-10-11",
+      "views": 2205,
+      "length": "3:59:30",
+      "age_days": 191,
+      "query": "channel sweep: Good Vibes - Binaural Beats",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "10",
+        "channelId": "UCIauBb6cmot_0cYlYeEb8Mw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 141,
+        "comments": 23,
+        "enrichedOn": "2026-10-11"
+      }
+    },
+    {
+      "videoId": "OyiW1GRyKM8",
+      "title": "Let's talk about storing open source code in the Arctic....",
+      "channel": "Belle of the Ranch",
+      "url": "https://www.youtube.com/watch?v=OyiW1GRyKM8",
+      "published": "2019-11-16",
+      "first_seen": "2026-10-11",
+      "views": 29183,
+      "length": "3:54",
+      "age_days": 2521,
+      "query": "channel sweep: Belle of the Ranch",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UC0YvoAYGgdOfySQSLcxtu1w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2415,
+        "comments": 442,
+        "enrichedOn": "2026-10-11"
+      }
     }
   ],
-  "updated": "2026-10-10"
+  "updated": "2026-10-11"
 }

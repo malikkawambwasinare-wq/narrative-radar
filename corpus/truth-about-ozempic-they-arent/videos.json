@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-10"
+      "unavailable": "2026-10-11"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-10"
+      "unavailable": "2026-10-11"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-10"
+      "unavailable": "2026-10-11"
     },
     {
       "videoId": "98m8i03frcU",
@@ -114156,6 +114156,31 @@
         "likes": 1,
         "comments": 1,
         "enrichedOn": "2026-10-10"
+      }
+    },
+    {
+      "videoId": "HIQcLA6O2WE",
+      "title": "Wheat Belly | Dr. William Davis | Lose the Wheat, Lose the Weight | Full Audiobook",
+      "channel": "BookishDreams",
+      "url": "https://www.youtube.com/watch?v=HIQcLA6O2WE",
+      "published": "2026-04-13",
+      "first_seen": "2026-10-11",
+      "views": 1073,
+      "length": "7:28:16",
+      "age_days": 181,
+      "query": "channel sweep: BookishDreams",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCiBx1RNdZ3VgwADbrTkUXOA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 19,
+        "comments": 4,
+        "enrichedOn": "2026-10-11"
       }
     }
   ]
