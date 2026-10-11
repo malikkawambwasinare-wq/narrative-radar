@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-10",
+ "generated": "2026-10-11",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.1673,
+ "cost_usd": 0.2084,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -37051,6 +37051,1323 @@
    },
    "first_read": "2026-10-10",
    "last_read": "2026-10-10"
+  },
+  {
+   "phrase": "cause weight gain",
+   "verdict": "rhetoric",
+   "why": "Titles blame different causes (insulin, cortisol, gluten) with no single shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 9,
+    "months": 8,
+    "span": "2017-02 → 2026-10",
+    "examples": [
+     "Why Does Insulin Resistance Cause Weight Gain? – Dr. Berg",
+     "High Cortisol Hormone as Cause of Weight Gain Obesity Muscle Pain Weakness & Stretch Mark",
+     "Does Gluten Cause Weight Gain"
+    ],
+    "ids": [
+     "8MfZPGpj4Sg",
+     "B72kPJij92w",
+     "HmA-oWff6OY",
+     "JVEkhn9owR8",
+     "Kz-OvFpr-p0",
+     "RA5hKe0-raU",
+     "jGAGnyDbnYA",
+     "n5kOwNCp_Sc",
+     "tHZVyTJl6pA",
+     "wdqe_to3gJY",
+     "wducoxnU5YE"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "crashes onto",
+   "verdict": "rhetoric",
+   "why": "Pure news-event phrasing with no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-02 → 2026-10",
+    "examples": [
+     "Small plane crashes onto busy street in Brazil, colliding with bus",
+     "Plane crashes onto a car on I-95 in central Florida",
+     "Crane crashes onto passenger train in Thailand, killing dozens | The World | ABC News"
+    ],
+    "ids": [
+     "45hgwK1FxJc",
+     "BNR1NVMwTkA",
+     "HBLxsvwQTrM",
+     "Ow-2ustZoxM",
+     "SBnqjsQZ0-I",
+     "_XSHzm-AuOw",
+     "hy7fCZX3b_c"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "scientists explain",
+   "verdict": "rhetoric",
+   "why": "A mystery-hook format phrase, not a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 4,
+    "span": "2025-08 → 2026-10",
+    "examples": [
+     "The South Pole Mystery Scientists Can’t Explain | Brian Keating",
+     "Schrödinger’s Cat Just Got Real (Scientists Can’t Explain It)",
+     "James Webb and Vera Rubin Just Found the Same Object — Scientists Can&#39;t Explain It"
+    ],
+    "ids": [
+     "0myXW4Oc1R0",
+     "NkWEHWzngoU",
+     "S6fW1--6AmY",
+     "SyMOPhmcJeY",
+     "Ug_d4nm6hcc",
+     "kpXBQZ-JUHU",
+     "vlahV4NoVzo",
+     "xBkvHC34j7o"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "robots coming",
+   "verdict": "narrative",
+   "why": "Titles share a checkable forecast that humanoid robots arrive imminently and take over work.",
+   "claim_name": "The \"humanoid robots are coming soon\" story",
+   "claim": "Humanoid robots are arriving within a few years, entering homes and workplaces and replacing large amounts of human labor.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Human labor and daily tasks are about to be displaced by machines",
+    "cause": "Rapid advances in robotics and AI backed by major firms",
+    "outcome": "Robots in homes and factories replacing workers; society must prepare",
+    "clock": "this decade / within a few years"
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 6,
+    "span": "2020-11 → 2026-10",
+    "examples": [
+     "Why Robots are coming very soon & they will take over the World!",
+     "Elon Musk Predicts AGI, Self-driving, Unlimited Energy, Robots Coming SOON",
+     "Robotics CEO: Humanoid Robots Are Coming to Your Home This Decade w/ Bernt Bornich & Dave Blundin"
+    ],
+    "ids": [
+     "9DA5cfCbVK0",
+     "DfZ8N27ijPA",
+     "MhdU6Uo0pGM",
+     "Mm08gKXgZ4g",
+     "j3CcRwlSY4A",
+     "parvNJKMOjM"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "'end times'",
+   "verdict": "rhetoric",
+   "why": "Titles use the phrase in unrelated ways (aliens, church tactics, a crime story) with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-12 → 2026-10",
+    "examples": [
+     "Biblical 'End of Times' Warns of Aliens on Earth | Bek Lover",
+     "How Satan's 'End Times' Tactic is Shaking Christians Worldwide | Wes Huff",
+     "Utah mom who believed in 'end of times' is arrested over taking kids to Croatia"
+    ],
+    "ids": [
+     "5jldBIlPo0w",
+     "5jt2loc-2A8",
+     "G4WArjv9B18",
+     "dsvpEr6ZhsU",
+     "h2C7vjzlXns",
+     "qaja88xxirY"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "truth aliens",
+   "verdict": "rhetoric",
+   "why": "A revelation hook over varied alien topics rather than one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-02 → 2026-10",
+    "examples": [
+     "Man Who’s Been Abducted Reveals The Truth About Aliens #shorts #aliens",
+     "Neil deGrasse Tyson - Are We Alone On Earth? The Truth About Aliens, UFOs, and Life on Mars | #118",
+     "James Fox: \"The Director of AARO Told Me the Harsh Truth about Aliens\""
+    ],
+    "ids": [
+     "6kQRIBX-i3M",
+     "K8v0bY_4gbs",
+     "MWYAJFKOvhs",
+     "VGi5hNPrbFI",
+     "ZzfwPFrw2Ww"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "must evolve",
+   "verdict": "rhetoric",
+   "why": "Generic exhortation applied to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-09 → 2026-10",
+    "examples": [
+     "'UN must evolve—can't be a prisoner of the past': EAM Jaishankar at G20 foreign ministers' meeting",
+     "Mike Novogratz: Crypto Must Evolve Beyond Casinos",
+     "Why Governance Must Evolve"
+    ],
+    "ids": [
+     "BBaOkHKxVBM",
+     "GABDXprrhws",
+     "oy8_xdfeZVk",
+     "srZSYMdBsDg",
+     "tyuUUcHyvo0"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "banned books",
+   "verdict": "rhetoric",
+   "why": "Subject label spanning biblical apocrypha and school/government bans, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2024-03 → 2026-10",
+    "examples": [
+     "ALL BANNED Books From The Bible Combined Just Created Something Terrifying...",
+     "Ancient Language Expert DISSECTS Banned Books of the Bible | Wes Huff",
+     "JK Govt Withdraws Over 4700 Books Containing Objectionable Content | Banned Books & Assembly |News18"
+    ],
+    "ids": [
+     "4PZwJgN1K4M",
+     "56FP3Hvg23U",
+     "FITUChyh_Bs",
+     "TVs0Z17QSnQ",
+     "Y8SFs_awbPs",
+     "kYL1dzGT1KU"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "truth modern",
+   "verdict": "rhetoric",
+   "why": "\"The truth about modern X\" is a clickbait formula spanning unrelated subjects with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 7,
+    "months": 4,
+    "span": "2025-06 → 2026-10",
+    "examples": [
+     "“Stop Making Christ Your Mascot: The Hard Truth About Modern Christianity”",
+     "Is SEO actually dead? The shocking truth about modern search strategies.",
+     "The TRUTH About Modern Relationships & Loyalty"
+    ],
+    "ids": [
+     "OajleUL2xJg",
+     "U6nrG3KptI0",
+     "X1FVsiM06ts",
+     "XOQ2B7it9EU",
+     "_mLSBzvH4Ts",
+     "dKSx0JRGJS8",
+     "hYA1m7-LoGs",
+     "vflKa6VlZtY"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "end gaza war",
+   "verdict": "rhetoric",
+   "why": "A news topic label about ceasefire diplomacy, not a single checkable claim shared by the titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 24,
+    "channels": 8,
+    "months": 12,
+    "span": "2024-07 → 2026-10",
+    "examples": [
+     "What does Netanyahu's Congress speech say about a potential deal to end the Gaza war?",
+     "'Get your victory quickly, the killing has to stop': Trump urges Netanyahu to end Gaza war",
+     "Yahya Sinwar killed: Kamala Harris reacts to death of Hamas leader, 'opportunity to end Gaza war…'"
+    ],
+    "ids": [
+     "36Rin40wszg",
+     "9iLAiR9N8kw",
+     "CPlRxTB1w1E",
+     "HLBgmCxWSCY",
+     "HMgto2o7Tb4",
+     "HN2BLgRILIc",
+     "NgLWU90TvPg",
+     "VABWprU184U",
+     "X1sEkGuNYBY",
+     "ZXB084mUOW8",
+     "dA_LqIwclKY",
+     "eCrCd67xZ9I",
+     "eNRVbgLh7WU",
+     "hQliOg98mL4",
+     "iui8GkT6TO8",
+     "jnlPmxn-9XU",
+     "lHA1Em44UiM",
+     "n-5kWvPvO1k",
+     "n5HblnEchsY",
+     "r-9tLHKOVRE"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "hell coming",
+   "verdict": "rhetoric",
+   "why": "Pure doom-phrasing attached to different subjects (banks, debt ceiling, housing) with no one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-09 → 2026-10",
+    "examples": [
+     "BANKERS: “HELL IS COMING”",
+     "The Hell of the Coming Debt-Ceiling Crisis | Great Reset & Mega Crash.",
+     "HELL IS COMING For the Housing Market"
+    ],
+    "ids": [
+     "WpHdwjJOYFw",
+     "gZ4I-5A7kDA",
+     "rE5H7rcoAQQ",
+     "tKVsT2sWB5g",
+     "uwgxNJoSh34"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "chance win",
+   "verdict": "rhetoric",
+   "why": "Generic wording spanning lawsuits, crypto and giveaways; no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 9,
+    "span": "2021-06 → 2026-09",
+    "examples": [
+     "XRP has a fighting chance to win (Time to buy?)",
+     "Ripple(XRP) has good chance to win lawsuit ... but not THIS YEAR says former SEC official.",
+     "CHANCE TO WIN A TATA BRAND NEW CAR ✨ #bansalandsonsjewellers ☎️ 8585995522 / 8585997722 #funnyvideo"
+    ],
+    "ids": [
+     "6IRDOg16STE",
+     "6WB_NSCykew",
+     "6khc02Ke_nE",
+     "A-VflR5bYRc",
+     "F0AFWZgS4ZI",
+     "Mdiq5TiRyv0",
+     "_m6dyAkHM3c",
+     "vGXXNmpmAnI",
+     "z3YdIXpHuyk"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "show support",
+   "verdict": "rhetoric",
+   "why": "News phrasing about unrelated political events, carries no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 13,
+    "months": 12,
+    "span": "2025-01 → 2026-10",
+    "examples": [
+     "New ratings show support growing for impeached S Korean president as approval wanes for opposition",
+     "European allies show support for Ukraine, while US sides with Russia in UN resolution | ABC NEWS",
+     "Delhi Election Results: 'Baby Muffler Man' reaches Kejriwal's residence to show support for AAP"
+    ],
+    "ids": [
+     "4XwoZbvfc-M",
+     "8bL2d6EknGs",
+     "8darPM4YD5k",
+     "A5Io_WbkeZQ",
+     "CBsBdK18T7s",
+     "CdIbYvH4_q4",
+     "G2dSENMD4mo",
+     "IJJV-q0IQHY",
+     "KqxdNFGT5Mc",
+     "OiIt1xUAWC0",
+     "PaOX1-RmV2k",
+     "Qbot_UAUfBY",
+     "Z9Luqzlpyco",
+     "b_nP4YMr1Bw",
+     "elfJ0czQ9vc",
+     "j1CGY4Tyyx8",
+     "kn1vTwe2la4",
+     "nSsaTNi-IRE",
+     "nrpD7ql1uR4",
+     "zHWO76mdZcM"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "man dead",
+   "verdict": "rhetoric",
+   "why": "Local crime-news headline format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 45,
+    "channels": 14,
+    "months": 14,
+    "span": "2024-09 → 2026-10",
+    "examples": [
+     "25-year-old man dead, one other injured after early-morning fight",
+     "Man dead after fall from Toronto building during 'interaction' with police",
+     "Newcastle car park shooting leaves one man dead | ABC NEWS"
+    ],
+    "ids": [
+     "-lcElwCvLUY",
+     "6UiPiBmqnOg",
+     "6syWdWmc7Ag",
+     "7uPmxFB1SMI",
+     "CZN2voDss-w",
+     "Dzlo2xJDGbk",
+     "Gb68QBt--IY",
+     "Hr5LGxhfWU4",
+     "I1BxcFKXau4",
+     "INHhgvnDSdI",
+     "M18Ozh1MHdk",
+     "OBEOLJ3GoWk",
+     "RsaJHx4O31o",
+     "Sch0xP-kLyU",
+     "Tb1bjYQ3Ilo",
+     "TnTHRvVj7Nc",
+     "YsehztGOWN4",
+     "_nOqsi04pEA",
+     "d-SERSOcALo",
+     "eOKyvsJOWGM"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "actually possible",
+   "verdict": "rhetoric",
+   "why": "A question hook applied to wholly different topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 8,
+    "months": 8,
+    "span": "2025-02 → 2026-10",
+    "examples": [
+     "Is Canada becoming an American state actually possible?",
+     "IS THIS ACTUALLY POSSIBLE FOR SILVER?",
+     "Is it actually possible to control kids’ screen time? | Terms of Service"
+    ],
+    "ids": [
+     "24vyfq6PAH8",
+     "8Rh48lsx8E8",
+     "A8zI_LzFRBw",
+     "CqIr8pX3vR4",
+     "KL30tfMd2OM",
+     "KuZ0wlTYQ3A",
+     "Z0YhLnyFr-E",
+     "ckfkGH4pfUI",
+     "jYmpK_ChJdg",
+     "w7T9mrhZ-4k"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "rate hikes won't",
+   "verdict": "narrative",
+   "why": "Titles share the checkable claim that central-bank rate hikes will fail to tame inflation/prices.",
+   "claim_name": "The \"rate hikes won't fix it\" story",
+   "claim": "Central bank interest rate hikes will fail to bring down inflation, mortgage rates or asset prices, because the underlying drivers are structural rather than monetary.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Persistent inflation and high borrowing costs",
+    "cause": "Central banks relying on rate hikes against supply-side and structural drivers",
+    "outcome": "Inflation and high mortgage/asset prices persist despite tightening; different policy needed",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 9,
+    "channels": 8,
+    "months": 5,
+    "span": "2022-10 → 2026-10",
+    "examples": [
+     "Here's Why Higher Interest Rate Hikes Won't Fix Canada's Rising Inflation",
+     "Fed Rate Hikes Won't Stop 5.99% Mortgages (Here's Why) #shorts #FederalReserve #MoneyTips",
+     "Rate Hikes \"Won't Derail\" Stock Market & Crypto's Midterm Elections Catalyst"
+    ],
+    "ids": [
+     "1gKA_y59dlQ",
+     "FY6nj98TBLg",
+     "G-ZU0jZC8is",
+     "RwAkg4PyfkU",
+     "T39aPNcIh2Y",
+     "TOwMkzmHW3A",
+     "XhOGU7DMa2w",
+     "xAurZv9zeDs",
+     "z7lL1pKaZkY"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "officer explains",
+   "verdict": "rhetoric",
+   "why": "An authority-format phrase covering unrelated subjects with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 7,
+    "span": "2022-07 → 2026-05",
+    "examples": [
+     "CIA Officer Explains Why Bin Laden Got a Sea Burial ⚰️",
+     "From Nur Khan to Sargodha, How India attacked Pakistan Air bases, IAF officer explains | Op Sindoor",
+     "Mortgage Loan Officer Explains 2026 Economic Numbers #shorts"
+    ],
+    "ids": [
+     "7WlNst0Gkfs",
+     "EaUYOZn9-so",
+     "QD_vx3IZvyQ",
+     "RMZSMBDvTtk",
+     "Ul-4AmDkOZo",
+     "dyXBmrfBdLY",
+     "ihQXtQzj2Nw",
+     "k4ink0q_-i0",
+     "wblCkq0Y2Ng"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "crash fear",
+   "verdict": "rhetoric",
+   "why": "Emotional framing spanning crypto and housing with no single checkable claim; crash predictions already tracked elsewhere.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 7,
+    "span": "2018-09 → 2026-07",
+    "examples": [
+     "Ethereum Crash & Fear, Bullish Predictions & Censorship Increases - Bitcoin & Cryptocurrency News",
+     "Get READY For Housing Market Crash FEAR In 2025! With @jonflynn",
+     "Housing Crash Fear Roaring Back - 19% Spike in FORECLOSURE"
+    ],
+    "ids": [
+     "3pzmTvUqg-s",
+     "5OiWxHu_xMQ",
+     "6pc9sQCDz5k",
+     "BSo--IH6QBI",
+     "dRqu6GlTJyU",
+     "m5ahNTP-jC4",
+     "oEt07L438X4",
+     "ueD7io95f94"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "cause delays",
+   "verdict": "rhetoric",
+   "why": "Generic news subject about unrelated travel disruptions, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Staffing issues cause delays at US airports as shutdown persists | The World | ABC NEWS",
+     "Delta airlines warns of airspace restrictions for July 4 could cause delays",
+     "Road rehabilitation to cause delays in Jasper"
+    ],
+    "ids": [
+     "1y7NeyLwho8",
+     "Fnr89RG99ok",
+     "QRCgWvTt9Xs",
+     "TrhIR_Q__3I",
+     "UoWhvkdWagA",
+     "Yv0SsPvZBDU",
+     "s-V5eTmq_DM"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "exam scam",
+   "verdict": "rhetoric",
+   "why": "A recurring news subject label for separate incidents, not one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 4,
+    "span": "2024-06 → 2026-10",
+    "examples": [
+     "Neet Exam Scam 2024 | Bihar Marriage Scam | Interesting Facts | Telugu Facts | VR Raja Facts",
+     "Jharkhand Protest: Jharkhand Job Aspirants Protest Over Exam Scam Allegations, 11 Arrested",
+     "KPSC Veterinary Officer Exam Scam: ₹92 Lakh Trail, 80 Questions Leaked? CID Probe Deepens | News18"
+    ],
+    "ids": [
+     "1SHuolCxaEU",
+     "PZJ4DklMyDw",
+     "Q1buAhZwog4",
+     "QBU6JDWIesk",
+     "RJr58T_GbuA",
+     "_xq7UT8RsrU",
+     "pYwQBAkZYoI"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "afternoon energy crashes",
+   "verdict": "narrative",
+   "why": "Titles share the claim that the afternoon slump has an identifiable metabolic cause that can be fixed.",
+   "claim_name": "The \"your afternoon crash has a fixable root cause\" story",
+   "claim": "Mid-afternoon fatigue is not normal but a symptom of blood sugar/insulin dysregulation or cellular energy problems, and can be eliminated with dietary or supplement fixes.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Daily afternoon energy crashes and fatigue",
+    "cause": "Insulin resistance, blood sugar swings, poor cellular health",
+    "outcome": "Fix diet or take supplements and the crashes disappear",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2026-03 → 2026-10",
+    "examples": [
+     "How to Stop Afternoon Energy Crashes Caused by Insulin Resistance",
+     "Say goodbye to afternoon energy crashes! #c60 #carbon60 #energycrash #cellhealth",
+     "3 Simple Fixes For Afternoon Energy Crashes"
+    ],
+    "ids": [
+     "7bwQRqOVysw",
+     "Ep1YaJHnAfQ",
+     "JKF4oxH92lc",
+     "SGZMXgwPGH4",
+     "fs_Y8ftl5Cw",
+     "k2YkbKgR9b8"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "upgrades coming",
+   "verdict": "rhetoric",
+   "why": "Announcement-format phrase across crypto, airlines and airports with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "CRYPTONEWS:Cardano and Bitcoin new developments, Ethereum biggest upgrades coming, Algorand",
+     "Delta unveils new upgrades coming 2027",
+     "New upgrades coming to Fulton County executive airport"
+    ],
+    "ids": [
+     "1RTCXbNRyH4",
+     "87kZkPqs0mc",
+     "IZdAwWcBacw",
+     "J53a1hyNEhs",
+     "af0_kyqC1zQ",
+     "siei1esXLqY"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "chilling truth",
+   "verdict": "rhetoric",
+   "why": "Pure curiosity-bait wording attached to unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-01 → 2026-10",
+    "examples": [
+     "CHILLING Truth Behind Rendlesham UFO Encounter | Nick Pope",
+     "The Chilling Truth Behind MH370’s Disappearance | Jeff Wise",
+     "‘Let me tell you the most chilling truth…’: Ted Cruz ‘exposes’ Biden-era Afghan Parole Program"
+    ],
+    "ids": [
+     "6xSNuwDNF_o",
+     "IRTXEdLbKQs",
+     "JAFDfyNWh9o",
+     "RX18RxT1tms",
+     "fSoQMPUrWwg",
+     "hX49-EGDxwc"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "guard saves",
+   "verdict": "rhetoric",
+   "why": "Incident-report subject with no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-06 → 2026-10",
+    "examples": [
+     "Boyfriend Guard Saves the Day in the Food Court! #veo3",
+     "Dramatic Sea Rescue! Indian Coast Guard Saves 6 Lives From Sinking Boat In Rough Mangaluru Seas",
+     "Coast guard saves jet skier"
+    ],
+    "ids": [
+     "DTmGFXUu9qo",
+     "I6ISkk7z3DE",
+     "MkHuSxgCqHw",
+     "g9Exusf93oE",
+     "h8ZFgepA9UQ",
+     "oBl60irpu8s"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "must pass",
+   "verdict": "rhetoric",
+   "why": "Urgency framing across unrelated subjects (ice swimming, crypto bills) with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2022-07 → 2026-08",
+    "examples": [
+     "The Dangerous Initiation Test Ice Swimmers MUST Pass | Ryan Stramrood",
+     "Critical Crypto Bill up for Vote. THIS MUST PASS!!",
+     "BREAKING: JP Morgan Sends A HUGE Bitcoin WARNING! (THIS BILL MUST PASS) | EP 1559"
+    ],
+    "ids": [
+     "O70-SqJGJTw",
+     "RSY72TjcDts",
+     "T2yAR9jdCtM",
+     "mtTHNgoYgzQ",
+     "qltza0cYyRE",
+     "zYnbC20RSD4"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "dead calf",
+   "verdict": "rhetoric",
+   "why": "A recurring news subject about grieving cetaceans, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-01 → 2026-10",
+    "examples": [
+     "Orca that carried dead calf for weeks in 2018 does so again",
+     "Mother orca carries dead calf",
+     "Dolphin mum carries dead calf for 11 days | ABC NEWS"
+    ],
+    "ids": [
+     "1cMV9Y21gQI",
+     "6Fwh-hfXIC4",
+     "Gv7C8hoibpI",
+     "IXhkqSyBcmE",
+     "pHGquYuucMw",
+     "xncQhy6Au38"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "military helicopter crashes",
+   "verdict": "rhetoric",
+   "why": "Incident-report subject matter with no shared cause or implied outcome.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2026-01 → 2026-08",
+    "examples": [
+     "UNBELIEVABLE! Israeli Military Helicopter Crashes Near Jerusalem",
+     "Military Helicopter CRASHES Into Iran Market, Four Dead",
+     "Iran Military Helicopter Crashes, Killing Four in Market"
+    ],
+    "ids": [
+     "-gLhhaYO09E",
+     "E8jOtnd9Cn4",
+     "GXRwe9Ecriw",
+     "NGrgKNUtY_c",
+     "zznM6SJeaiM"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "coming gareth soloway",
+   "verdict": "rhetoric",
+   "why": "A named-pundit guest tag; the attached predictions contradict each other rather than forming one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2022-07 → 2026-09",
+    "examples": [
+     "Top Crypto TA Expert Predicts 12k Bitcoin THIS YEAR... Stock Market “Flush” Coming | Gareth Soloway",
+     "\"$97k Is Just the Beginning! Many Bitcoiners Don't Know What's Coming\" - Gareth Soloway",
+     "URGENT MESSAGE for GOLD Stackers! Something INCREDIBLE Is Coming - Gareth Soloway & Michael Oliver"
+    ],
+    "ids": [
+     "3s9EG0IzosM",
+     "PTplbY0Hc2E",
+     "qvmhbrASoYU",
+     "rZV_oc7h9kw",
+     "tprGX_U67sI"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "fighter jet crash",
+   "verdict": "rhetoric",
+   "why": "Event subject across unrelated militaries; no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "F-16 fighter jet crash: Pentagon clarifies, 'no assistance requested by Ukraine'",
+     "Pilot safe after navy fighter jet crash",
+     "South China Sea tensions explode! US Navy helicopter and fighter jet crash ahead of Trump-Xi meet"
+    ],
+    "ids": [
+     "8e3D3h6ENdM",
+     "ND_JXbQdKbI",
+     "UJHUs23mtzM",
+     "yUYT0w7u48s",
+     "yoIgqeBv1_k"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "catalysts coming",
+   "verdict": "rhetoric",
+   "why": "Generic hype teaser for imminent price moves on whichever coin is being promoted.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2021-06 → 2026-10",
+    "examples": [
+     "SHIBA INU MAJOR CATALYSTS COMING! BIG CHANGES IN STORE FOR SHIBA INU! SHIBA HOLDERS WATCH THIS!",
+     "BUY THIS AT $0.83? [Huge Catalysts Coming]",
+     "SHIBA INU - HOLD STRONG! MASSIVE SHIBA INU CATALYSTS COMING!"
+    ],
+    "ids": [
+     "4HqktG_di-Y",
+     "4ItfrWbkTTg",
+     "M7US9aRLdz0",
+     "YXiePYuFPBk",
+     "aIGJdbOxL3w"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "insider explains",
+   "verdict": "rhetoric",
+   "why": "Authority-credential packaging, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2023-04 → 2026-09",
+    "examples": [
+     "CIA Insider Explains DARPA Directed Energy Weapons | John Kiriakou",
+     "BUY This Altcoin CHEAP NOW! [Insider Explains]",
+     "TON: The Sleeping Crypto Giant of 2025!? [Insider Explains]"
+    ],
+    "ids": [
+     "JGs6vZR4xY4",
+     "JbuSx5YDdG0",
+     "Wo-TYBVmYHs",
+     "mjNDSeL1IpI",
+     "syo2e2VlXs8"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "catalyst coming",
+   "verdict": "rhetoric",
+   "why": "Same generic pump teaser formula, no shared verifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2021-06 → 2026-08",
+    "examples": [
+     "DOGECOIN ABOUT TO PUMP AND GO UP? NEW DOGECOIN CATALYST COMING! DOGE HODLERS - YOU NEED TO SEE THIS!",
+     "🔥 TERRA LUNA - MAJOR EVENT ON SEPTEMBER 29! HUGE LUNA CRYPTO CATALYST COMING! 🔥",
+     "BUY THIS NOW @ $0.72? [CATALYST COMING]"
+    ],
+    "ids": [
+     "4lEev9VMrX8",
+     "Z646pRl1rQc",
+     "aJxmexhcpFo",
+     "gms4tIVJ0mk",
+     "hYABJilKh1g"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "indicators show",
+   "verdict": "rhetoric",
+   "why": "Generic technical-analysis framing with no shared checkable claim across titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2018-12 → 2026-03",
+    "examples": [
+     "John Person: Indicators Show  Health of Market",
+     "3 POWERFUL INDICATORS SHOW WHY THE BIGGEST CRYPTO BULLRUN WILL HAPPEN IN OCTOBER!",
+     "99% WILL MISS THE BITCOIN BOTTOM! | 4 Flashing Indicators Show Us This."
+    ],
+    "ids": [
+     "313fvAs0KZk",
+     "FTbCDH9c89Q",
+     "Hg3qzNY40ak",
+     "OlohiIa-v88",
+     "e33dwOu9dqI"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "actually fits",
+   "verdict": "rhetoric",
+   "why": "Common phrasing across unrelated topics, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2026-02 → 2026-10",
+    "examples": [
+     "Lincoln vs Omaha: Which City Actually Fits You Better?",
+     "#421 Neil: Claude vs Gemini Which One Actually Fits Your Workflow",
+     "A coat that actually fits my top AND bottom? Yes, please"
+    ],
+    "ids": [
+     "4ehDQL-0f6g",
+     "Gvbf3Ho_1A8",
+     "iyN6lcSPGOw",
+     "lYSS7Sl4xug",
+     "th6fGI9FB2A"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "won't recover",
+   "verdict": "rhetoric",
+   "why": "Spans housing and altcoins with no single shared claim beyond a generic bearish hook.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2020-05 → 2026-06",
+    "examples": [
+     "Canadian home prices won't recover for at least 2 years? : CMHC | The Storey Report",
+     "Why Your Altcoins Won't Recover (Until This Happens)",
+     "Your XRP Won't Recover And Go Up Until THIS HAPPENS!"
+    ],
+    "ids": [
+     "5HvsP8KmnYU",
+     "BSbw-1ZwtN4",
+     "KQWZC1gGbyg",
+     "Ob6oHRmJ20c",
+     "ZPmLTmASeqk"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "really charge",
+   "verdict": "rhetoric",
+   "why": "Phrase fragment covering unrelated subjects, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-01 → 2026-09",
+    "examples": [
+     "'Who’s really in charge at border?': Trump’s DHS pick Kristi Noem grilled on working with Tom Homan",
+     "Government Insider Reveals the Frightening Entity That's REALLY in Charge | Catherine Fitts",
+     "WATCH: 'The Guy Really In Charge!' NATO Chief Mark Rutte Greets Larry The Cat!"
+    ],
+    "ids": [
+     "AyJeU7NA3W0",
+     "CDgG_sHZou4",
+     "LaeIGZS5EE8",
+     "LeNVDp3mEkY",
+     "qGPgVJeWp14"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "won't commit",
+   "verdict": "rhetoric",
+   "why": "News/tarot phrasing with no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2020-04 → 2026-09",
+    "examples": [
+     "GEMINI:  THIS IS WHY THEY WON'T COMMIT...",
+     "Poilievre won't commit to NATO 2% target, says he's 'inheriting a dumpster fire' budget balance",
+     "Jeffries won't commit to abolishing ICE"
+    ],
+    "ids": [
+     "4udUHH7EDtA",
+     "7ug32g6_pOw",
+     "9ByH6e-16Ww",
+     "AQ5ScucbnSw",
+     "tbwGF-d_FX8"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "salt really",
+   "verdict": "narrative",
+   "why": "Titles share a contrarian claim that salt has been wrongly blamed for hypertension.",
+   "claim_name": "The \"salt isn't the villain\" story",
+   "claim": "Dietary salt has been wrongly blamed for high blood pressure and heart disease; the real driver is insulin resistance and processed food, and most people need more salt than guidelines allow.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Mainstream advice tells people to cut salt, yet chronic disease keeps rising",
+    "cause": "Flawed nutrition science scapegoating sodium instead of insulin resistance/refined carbs",
+    "outcome": "Stop fearing salt and target insulin/metabolic health instead",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-05 → 2026-10",
+    "examples": [
+     "Is Salt Really the Villain? The Connection to Insulin",
+     "How much salt do we really need? New study has some tips",
+     "Is Salt Really Causing Your High Blood Pressure?"
+    ],
+    "ids": [
+     "PDnMaSaxwNo",
+     "QAy4RB6FL7M",
+     "_Os4CAgzWrE",
+     "lC84s80Mwgw",
+     "nflYCRhAgI8"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "isn't yours",
+   "verdict": "narrative",
+   "why": "Most titles carry the checkable claim that bank deposits are legally not the depositor's property.",
+   "claim_name": "The \"your money in the bank isn't yours\" story",
+   "claim": "Deposits are legally the bank's liability, not your property, so account holders are unsecured creditors who can be bailed in or locked out.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "People believe their savings are safe in the bank",
+    "cause": "Banking law and fractional reserve practice make depositors unsecured creditors",
+    "outcome": "Hold assets outside the banking system, like gold or self-custodied assets",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2024-02 → 2026-10",
+    "examples": [
+     "Nick Giambruno: The Illusion of Ownership - Why the Money in the Bank Isn't Yours",
+     "Your Bank Money Isn't Yours! The Truth Revealed",
+     "Your Tech Stack isn't Yours"
+    ],
+    "ids": [
+     "UZNuV2Z7OqQ",
+     "XXNi_UMogFA",
+     "lUHoL1EZs2Y",
+     "nNIHoXPfXoc",
+     "oMSDsrlVInE"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "capex boom",
+   "verdict": "rhetoric",
+   "why": "A subject label covering both AI and oil spending; titles debate rather than share one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "Is the AI CapEx Boom a Bubble? A Historical Warning from the Crash of '29",
+     "CapEx Boom Drags Down Mag 7: Explaining AI Spending's Overhang on Tech",
+     "Oil & Gas Capex Boom: Anshul Saigal Names Energy Stock He Owns | Saigal Capital Advisors"
+    ],
+    "ids": [
+     "GNisw1kN7lA",
+     "PuNZ1rzyXdg",
+     "UklqMGFjCt4",
+     "m3X3oN80lx0",
+     "yjFVqz4ePEY"
+    ]
+   },
+   "first_read": "2026-10-11",
+   "last_read": "2026-10-11"
   }
  ]
 }
