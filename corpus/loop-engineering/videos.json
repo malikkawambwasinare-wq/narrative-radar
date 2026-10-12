@@ -133819,7 +133819,312 @@
         "channelViews": 0,
         "channelVideos": 1
       }
+    },
+    {
+      "videoId": "SEJSHak-gGk",
+      "title": "Can Coding Agents Migrate Whole Repositories? And More #Shorts",
+      "channel": "Saaket Varma",
+      "url": "https://www.youtube.com/watch?v=SEJSHak-gGk",
+      "published": "2026-08-26",
+      "first_seen": "2026-10-12",
+      "views": 11,
+      "length": "1:37",
+      "age_days": 47,
+      "query": "channel sweep: Saaket Varma",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCwZi6808mMBkv3cj08UzDrw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "t9AMsbHYom0",
+      "title": "DeepSeek open-sources its agent harness — plus Kiro voice, Copilot + Ollama, and more #Shorts",
+      "channel": "Saaket Varma",
+      "url": "https://www.youtube.com/watch?v=t9AMsbHYom0",
+      "published": "2026-08-14",
+      "first_seen": "2026-10-12",
+      "views": 37,
+      "length": "1:14",
+      "age_days": 59,
+      "query": "channel sweep: Saaket Varma",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCwZi6808mMBkv3cj08UzDrw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "F7mhmNsjgKE",
+      "title": "Anthropic cuts biology fallbacks 85% — plus Meta's persistent coding agents #Shorts",
+      "channel": "Saaket Varma",
+      "url": "https://www.youtube.com/watch?v=F7mhmNsjgKE",
+      "published": "2026-08-07",
+      "first_seen": "2026-10-12",
+      "views": 3,
+      "length": "1:30",
+      "age_days": 66,
+      "query": "channel sweep: Saaket Varma",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCwZi6808mMBkv3cj08UzDrw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "UHfchp5kG-U",
+      "title": "Copilot code review now runs your team's skills — and 3 more agent-tooling shifts",
+      "channel": "Saaket Varma",
+      "url": "https://www.youtube.com/watch?v=UHfchp5kG-U",
+      "published": "2026-07-31",
+      "first_seen": "2026-10-12",
+      "views": 13,
+      "length": "1:30",
+      "age_days": 73,
+      "query": "channel sweep: Saaket Varma",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCwZi6808mMBkv3cj08UzDrw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "voBaD5Zt1nY",
+      "title": "OpenClaw ships its first stable release — plus Cursor 3.11, Claude Code hardening, and more",
+      "channel": "Saaket Varma",
+      "url": "https://www.youtube.com/watch?v=voBaD5Zt1nY",
+      "published": "2026-07-17",
+      "first_seen": "2026-10-12",
+      "views": 84,
+      "length": "1:35",
+      "age_days": 87,
+      "query": "channel sweep: Saaket Varma",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCwZi6808mMBkv3cj08UzDrw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "mY-4Ls_2TS0",
+      "title": "GLM-4.7 Flash In OpenCode Is an Agentic Coding BEAST!",
+      "channel": "Bijan Bowen",
+      "url": "https://www.youtube.com/watch?v=mY-4Ls_2TS0",
+      "published": "2026-01-22",
+      "first_seen": "2026-10-03",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bijan Bowen)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOCahKBCEUuzDJawM7yN1dg"
+      }
+    },
+    {
+      "videoId": "wQ-VPuOkxhk",
+      "title": "Anthropic's Internal Prompt for Claude 4.5 Just Leaked (It Has a Hidden Memory System)",
+      "channel": "Chris Alarcon |  AI for Non-Coders",
+      "url": "https://www.youtube.com/watch?v=wQ-VPuOkxhk",
+      "published": "2026-02-16",
+      "first_seen": "2026-10-10",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chris Alarcon |  AI for Non-Coders)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCTt0JyqPZpwu51CrZCazjIQ"
+      }
+    },
+    {
+      "videoId": "QjV-gqoidPs",
+      "title": "#28 Robin: The End of the Prompt - How Claude Co-work Transforms from \"Chatbot\" to...",
+      "channel": "AI Fire",
+      "url": "https://www.youtube.com/watch?v=QjV-gqoidPs",
+      "published": "2026-04-01",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Fire)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUsaiN-tyiN1bsWoO46P7dA"
+      }
+    },
+    {
+      "videoId": "LEE5ZD-t7FM",
+      "title": "#61 Robin: OpenAI Codex vs. Claude Cowork - Which Desktop AI Agent Actually Deserves Your $20?",
+      "channel": "AI Fire",
+      "url": "https://www.youtube.com/watch?v=LEE5ZD-t7FM",
+      "published": "2026-07-07",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Fire)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUsaiN-tyiN1bsWoO46P7dA"
+      }
+    },
+    {
+      "videoId": "wQxiXjPk6KM",
+      "title": "#61 Robin: OpenAI Codex vs. Claude Cowork - Which Desktop AI Agent Actually Deserves Your $20?",
+      "channel": "AI Fire",
+      "url": "https://www.youtube.com/watch?v=wQxiXjPk6KM",
+      "published": "2026-07-07",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Fire)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCUsaiN-tyiN1bsWoO46P7dA"
+      }
+    },
+    {
+      "videoId": "8wZ_3OpBaRM",
+      "title": "Agentic coding is becoming a commodity, and the models are racing to zero",
+      "channel": "A Global Tech Podcast",
+      "url": "https://www.youtube.com/watch?v=8wZ_3OpBaRM",
+      "published": "2026-08-05",
+      "first_seen": "2026-10-06",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Global Tech Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCy77Z7l_oZvCnLMdGgEOTyw"
+      }
+    },
+    {
+      "videoId": "1ei9kTxSzcU",
+      "title": "The real innovation in agentic coding is the system around the model",
+      "channel": "A Global Tech Podcast",
+      "url": "https://www.youtube.com/watch?v=1ei9kTxSzcU",
+      "published": "2026-08-09",
+      "first_seen": "2026-10-06",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:A Global Tech Podcast)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCy77Z7l_oZvCnLMdGgEOTyw"
+      }
+    },
+    {
+      "videoId": "eIGGJV6NJRQ",
+      "title": "Autoprompt is a coding-agent skill that cuts failures by 45% on agentic coding tasks — autoprompt-sk",
+      "channel": "Amplify Imagination",
+      "url": "https://www.youtube.com/watch?v=eIGGJV6NJRQ",
+      "published": "2026-08-19",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Amplify Imagination)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC1hvd57dAmZeXShhJ-ngoFg"
+      }
+    },
+    {
+      "videoId": "ptJc0amXO0I",
+      "title": "The Self-Hosted AI Agent Playbook — The best first agent solves one boring workflow end to end.",
+      "channel": "The Summary Series",
+      "url": "https://www.youtube.com/watch?v=ptJc0amXO0I",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-07",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Summary Series)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCNXBWVrqvgKRzE3IODjoyKw"
+      }
+    },
+    {
+      "videoId": "s6hXLx4ROYY",
+      "title": "AI Agents & Automation — Your first AI agent should not run your whole business.",
+      "channel": "The Summary Series",
+      "url": "https://www.youtube.com/watch?v=s6hXLx4ROYY",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-11",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Summary Series)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCNXBWVrqvgKRzE3IODjoyKw"
+      }
     }
   ],
-  "updated": "2026-10-11"
+  "updated": "2026-10-12"
 }

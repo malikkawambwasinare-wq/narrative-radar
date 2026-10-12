@@ -43912,7 +43912,7 @@
       "yt": {
         "channelId": "UCQahgHmzH2NSCq1PfZNzJ8g"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "HbfuqZsZ3mk",
@@ -47156,7 +47156,7 @@
       "yt": {
         "channelId": "UCoAVanZwamroDz6MjWWWKcA"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "5ONa9th1uSs",
@@ -321720,7 +321720,7 @@
       "yt": {
         "channelId": "UC9hq53GSh7_OVYGvcX64KPA"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "0hx50AA5_TQ",
@@ -321814,7 +321814,7 @@
       "yt": {
         "channelId": "UCuSkeS5oU-B2tRIBDYntmaw"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "0c6ESsN5Kl0",
@@ -321983,7 +321983,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "IRAJEHD7wAo",
@@ -322002,7 +322002,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "M9hZ4obs36A",
@@ -322221,7 +322221,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "oy2NqyCLUbk",
@@ -322265,7 +322265,7 @@
       "yt": {
         "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "egwR682CLB8",
@@ -322284,7 +322284,7 @@
       "yt": {
         "channelId": "UCuRwxf3jHbqGqXowwhyVBTQ"
       },
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "o8qSH7A7u_w",
@@ -345418,15 +345418,22 @@
       "url": "https://www.youtube.com/watch?v=Z4fRRs8UL2Y",
       "published": "2026-10-05",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 2,
+      "length": "15:15",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCC4FHK_5nl5r29PxOMMRADw"
+        "channelId": "UCC4FHK_5nl5r29PxOMMRADw",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345436,15 +345443,22 @@
       "url": "https://www.youtube.com/watch?v=WsAuctKFAeE",
       "published": "2026-10-05",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 1656,
+      "length": "1:32",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCWWLmf2x7kEIDg5lM1W0Pcg"
+        "channelId": "UCWWLmf2x7kEIDg5lM1W0Pcg",
+        "category": "24",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 51,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345454,15 +345468,22 @@
       "url": "https://www.youtube.com/watch?v=a7pSK9VEqHM",
       "published": "2026-10-06",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 380,
+      "length": "0:08",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCkGC9NsPJCIPxlshu19V_cw"
+        "channelId": "UCkGC9NsPJCIPxlshu19V_cw",
+        "category": "17",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345472,15 +345493,22 @@
       "url": "https://www.youtube.com/watch?v=jLtY8pjRVl4",
       "published": "2026-10-06",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 960,
+      "length": "13:29",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCGkt2qk26IuqVKyerP6-3sA"
+        "channelId": "UCGkt2qk26IuqVKyerP6-3sA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 38,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345490,15 +345518,22 @@
       "url": "https://www.youtube.com/watch?v=DV7yPeRPc7s",
       "published": "2026-10-06",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 126,
+      "length": "0:51",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC8rHsfIHtjnCCnqT4L5jtKg"
+        "channelId": "UC8rHsfIHtjnCCnqT4L5jtKg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345508,15 +345543,22 @@
       "url": "https://www.youtube.com/watch?v=1Dtqr_jhcKU",
       "published": "2026-10-07",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 182,
+      "length": "8:25",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCzMtTG4jKdLhleBL6Z8mGQw"
+        "channelId": "UCzMtTG4jKdLhleBL6Z8mGQw",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": 2,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345526,15 +345568,22 @@
       "url": "https://www.youtube.com/watch?v=SnJ3Txq-ZpM",
       "published": "2026-10-08",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 5984,
+      "length": "32:19",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCsYlzbxDAC8Pn864eYUhjFQ"
+        "channelId": "UCsYlzbxDAC8Pn864eYUhjFQ",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 47,
+        "comments": 15,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345544,15 +345593,22 @@
       "url": "https://www.youtube.com/watch?v=811H4ALrQ_s",
       "published": "2026-10-08",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 15,
+      "length": "0:58",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCDqF1W7KVkn29C5Ec716E3w"
+        "channelId": "UCDqF1W7KVkn29C5Ec716E3w",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345562,15 +345618,22 @@
       "url": "https://www.youtube.com/watch?v=R3bUTOeA-oc",
       "published": "2026-10-08",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 44,
+      "length": "0:59",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCzN1GVqE-UQqhouPXski-JA"
+        "channelId": "UCzN1GVqE-UQqhouPXski-JA",
+        "category": "25",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345580,15 +345643,22 @@
       "url": "https://www.youtube.com/watch?v=0S8UtoEkxqo",
       "published": "2026-10-10",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 12007,
+      "length": "0:13",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCwmdiGI4gFWe0sGoqCphKCA"
+        "channelId": "UCwmdiGI4gFWe0sGoqCphKCA",
+        "category": "28",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 75,
+        "comments": 5,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345598,15 +345668,22 @@
       "url": "https://www.youtube.com/watch?v=8ekcniFv6zE",
       "published": "2026-10-10",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 215,
+      "length": "28:16",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCeVbBx6ozjQ9Sedj-m2L_ng"
+        "channelId": "UCeVbBx6ozjQ9Sedj-m2L_ng",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345616,15 +345693,22 @@
       "url": "https://www.youtube.com/watch?v=mSDniR2w9cw",
       "published": "2026-10-10",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 63,
+      "length": "19:36",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC0RS6ECX_ijqSaDjgUzxNEw"
+        "channelId": "UC0RS6ECX_ijqSaDjgUzxNEw",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -345634,15 +345718,22 @@
       "url": "https://www.youtube.com/watch?v=QrHmbZBlg00",
       "published": "2026-10-10",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 457,
+      "length": "0:35",
       "age_days": null,
       "query": "refiled from the pool (narrative:collapse-audit)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCxX-4FGREzvscy5A_ebYueQ"
+        "channelId": "UCxX-4FGREzvscy5A_ebYueQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -346884,7 +346975,1490 @@
         "channelViews": 4614,
         "channelVideos": 20
       }
+    },
+    {
+      "videoId": "lPPFPNMZKWA",
+      "title": "AQUARIUS ♒︎ - \"History Repeats\" APRIL 14TH - 20TH | Tarot Card Reading",
+      "channel": "ALI's Zen Den",
+      "url": "https://www.youtube.com/watch?v=lPPFPNMZKWA",
+      "published": "2025-04-09",
+      "first_seen": "2026-10-12",
+      "views": 25154,
+      "length": "14:50",
+      "age_days": 551,
+      "query": "channel sweep: ALI's Zen Den",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGS9evApv_T-ZZbSmHi4oBA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1105,
+        "comments": 118,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "iKXM8vwag9M",
+      "title": "SILVERS PRICE WHEN DOLLAR CRASHES?",
+      "channel": "Silver Slayer",
+      "url": "https://www.youtube.com/watch?v=iKXM8vwag9M",
+      "published": "2020-09-05",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Silver Slayer)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCHSk08tGQasDxb-PpYPowVg"
+      }
+    },
+    {
+      "videoId": "kzm_JmsJa3M",
+      "title": "Jim Rickards Warns: The New Great Depression is Coming (What He Recommends You Do)",
+      "channel": "Jason Hartman",
+      "url": "https://www.youtube.com/watch?v=kzm_JmsJa3M",
+      "published": "2021-02-03",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jason Hartman)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpGNsrLsGR1viGHoEbSCabA"
+      }
+    },
+    {
+      "videoId": "b8pgxI7uH40",
+      "title": "Franklin Templeton CEO on the Economy: \"This is NOT the 2008 crisis.\" | SALT iConnections New York",
+      "channel": "SALT",
+      "url": "https://www.youtube.com/watch?v=b8pgxI7uH40",
+      "published": "2023-05-30",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:SALT)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCnhrPnlIOHxr9kviPgqq-g"
+      }
+    },
+    {
+      "videoId": "JAD2b4e4IiE",
+      "title": "\"Most People Have No Idea What They Are Planning Against America\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=JAD2b4e4IiE",
+      "published": "2023-08-28",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "6UBAf4cGg6w",
+      "title": "\"The Recession Is INEVITABLE...\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=6UBAf4cGg6w",
+      "published": "2024-03-17",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "koLaspiKd7c",
+      "title": "EXPLOSION du #DOLLAR & CRASH BOURSIER !? #bourse #finance #trading #investissement #etf #dxy #sp500",
+      "channel": "Crypto Le Trone",
+      "url": "https://www.youtube.com/watch?v=koLaspiKd7c",
+      "published": "2024-03-25",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Crypto Le Trone)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC5kh_CumIL_usjg3pW5J9Qw"
+      }
+    },
+    {
+      "videoId": "DAajTDPwDfA",
+      "title": "\"This Is What's REALLY HAPPENING...\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=DAajTDPwDfA",
+      "published": "2024-04-01",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "-zA1CII9qdM",
+      "title": "Historic Fed Week Begins With U.S. Dollar Crash",
+      "channel": "Schwab Network",
+      "url": "https://www.youtube.com/watch?v=-zA1CII9qdM",
+      "published": "2024-09-16",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Schwab Network)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqoSrYgusd8ZddtMoWhjHYA"
+      }
+    },
+    {
+      "videoId": "nMR38OC6Wz8",
+      "title": "\"This NEWS Will Spread GLOBALLY...\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=nMR38OC6Wz8",
+      "published": "2024-10-22",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "JQH6JZCillI",
+      "title": "\"This Is COMING...\" | Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=JQH6JZCillI",
+      "published": "2025-01-13",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "uEdhThN3JQ8",
+      "title": "\"We Have NEVER SEEN This BEFORE...\" | Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=uEdhThN3JQ8",
+      "published": "2025-01-18",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "6aWbRRZHlpU",
+      "title": "Analyzing the 2008 Crisis Are We Ready 📉",
+      "channel": "The Rate Update with Dan Frio",
+      "url": "https://www.youtube.com/watch?v=6aWbRRZHlpU",
+      "published": "2025-06-02",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Rate Update with Dan Frio)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCBvmi_CSit1T4W-BW3ATojA"
+      }
+    },
+    {
+      "videoId": "lITOlefz8XY",
+      "title": "\"Financial System COLLAPSES If This Happens\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=lITOlefz8XY",
+      "published": "2025-06-26",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "4kXJtYl4wPw",
+      "title": "\"Financial System COLLAPSES If This Happens\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=4kXJtYl4wPw",
+      "published": "2025-07-04",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "Awmb0m7C8AU",
+      "title": "Next Big Tech Bets for the Next 5 Years - Quantum, Nuclear & Beyond | Future Tech You MUST Watch",
+      "channel": "Richa Singh",
+      "url": "https://www.youtube.com/watch?v=Awmb0m7C8AU",
+      "published": "2026-01-13",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Richa Singh)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC6O1sHL9ncaeHO6Fbd4VS_w"
+      }
+    },
+    {
+      "videoId": "35UC7C2b-X0",
+      "title": "Dollar CRASH Incoming?! Is Bitcoin About to Erupt?",
+      "channel": "Simply Bitcoin",
+      "url": "https://www.youtube.com/watch?v=35UC7C2b-X0",
+      "published": "2026-01-27",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Simply Bitcoin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCB6Q0S1gUHXMe5-Jjx0_laQ"
+      }
+    },
+    {
+      "videoId": "y43QYfsUZkc",
+      "title": "If You Own Gold, You Have A Few Days Left For This Price Shock - Jim Rickards",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=y43QYfsUZkc",
+      "published": "2026-01-28",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "_HRrqaz3gyI",
+      "title": "If You Own Gold, You Have A Few Days Left For This Price Shock -- Jim Rickards",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=_HRrqaz3gyI",
+      "published": "2026-01-31",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "sj17GuHqNNQ",
+      "title": "Dollar Crashing? What Happened When Kevin Warsh Was Appointed #shorts",
+      "channel": "Living Your Greatness",
+      "url": "https://www.youtube.com/watch?v=sj17GuHqNNQ",
+      "published": "2026-02-09",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Living Your Greatness)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxdqah-Qn-xUqpsKY_R-mgw"
+      }
+    },
+    {
+      "videoId": "lefxiMGOos4",
+      "title": "British Finance Giant Aviva Partners With Ripple… This Is Bigger Than You Think #xrp #xrpripple",
+      "channel": "Milkshake Matty",
+      "url": "https://www.youtube.com/watch?v=lefxiMGOos4",
+      "published": "2026-02-12",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Milkshake Matty)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwZK7V9EnvMCFsL-mwape7Q"
+      }
+    },
+    {
+      "videoId": "J_DsfyNnhoY",
+      "title": "GOLD ‘$10,000 Is Possible’ - Global Crisis Risk Is Rising | Rob Bruggeman",
+      "channel": "Living Your Greatness",
+      "url": "https://www.youtube.com/watch?v=J_DsfyNnhoY",
+      "published": "2026-03-28",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Living Your Greatness)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxdqah-Qn-xUqpsKY_R-mgw"
+      }
+    },
+    {
+      "videoId": "RZlmWhmJ5Is",
+      "title": "Why the Recent Two Trillion Dollar Crash is Different 📉",
+      "channel": "Roddy Lawson",
+      "url": "https://www.youtube.com/watch?v=RZlmWhmJ5Is",
+      "published": "2026-04-18",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Roddy Lawson)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJV08mrHrluU2TtAZOCR2hg"
+      }
+    },
+    {
+      "videoId": "79bISvpoTZA",
+      "title": "Gold JUST Gave the FINAL SIGNAL! Something Is About to EXPLODE VIOLENTELY - Jim Rickards",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=79bISvpoTZA",
+      "published": "2026-04-25",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "b3oGG5jPLfs",
+      "title": "Banks Were 40:1 Leveraged BEFORE the 2008 Crisis?! shocking! #shorts",
+      "channel": "financewizard",
+      "url": "https://www.youtube.com/watch?v=b3oGG5jPLfs",
+      "published": "2026-05-16",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:financewizard)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCMs8v8YbUqB2rJ8r6UyMzjw"
+      }
+    },
+    {
+      "videoId": "BxOYAlqKIAg",
+      "title": "If You Own Gold, You Have A Few Days Left For This Price Shock - Jim Rickards",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=BxOYAlqKIAg",
+      "published": "2026-05-21",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "nseIzZ79dmg",
+      "title": "Why inflation is harder to beat than you think #Inflation #Finance",
+      "channel": "The Rate Update with Dan Frio",
+      "url": "https://www.youtube.com/watch?v=nseIzZ79dmg",
+      "published": "2026-06-02",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Rate Update with Dan Frio)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCBvmi_CSit1T4W-BW3ATojA"
+      }
+    },
+    {
+      "videoId": "019Qch8oDbM",
+      "title": "If You Own Gold, STOP Scrolling—This Is Happening FASTER THAN EXPECTED - Luke Gromen & Jim Rickards",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=019Qch8oDbM",
+      "published": "2026-07-29",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "QDAvYMH-kII",
+      "title": "HUGE GOLD Surprise from China! This Will CHANGE EVERYTHING - Jim Rickards & Alasdair Macleod",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=QDAvYMH-kII",
+      "published": "2026-08-08",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "UDrXo5tvXHA",
+      "title": "Something Really Bad is Happening, It's Time to Go All in on GOLD - Martin Armstrong & Jim Rickards",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=UDrXo5tvXHA",
+      "published": "2026-08-11",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "ykdk3SdjnP0",
+      "title": "If You Own Gold, STOP Scrolling—This Is Happening FASTER THAN EXPECTED - Jim Rickards & Luke Gromen",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=ykdk3SdjnP0",
+      "published": "2026-08-27",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "sur5IbgONJs",
+      "title": "\"The Biggest Bubble Is About To Break...\" - Jim Rickards",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=sur5IbgONJs",
+      "published": "2026-09-12",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:LifeWorthLiving)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw"
+      }
+    },
+    {
+      "videoId": "igi-aMZmYhA",
+      "title": "If You Own Gold, STOP Scrolling—This Is Happening FASTER THAN EXPECTED - Jim Rickards & Luke Gromen",
+      "channel": "Metal Sense",
+      "url": "https://www.youtube.com/watch?v=igi-aMZmYhA",
+      "published": "2026-09-14",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Metal Sense)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyStE-dY_vXRFXvKWiYS1ig"
+      }
+    },
+    {
+      "videoId": "XzaJbNLuZpM",
+      "title": "1 MIN AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow Night – Here’s Why!\" | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=XzaJbNLuZpM",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "eMcfpdSpR3o",
+      "title": "5 MINS AGO! \"EVERY Bank In The United States Is BANKRUPT!\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=eMcfpdSpR3o",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "4xEh796w1CA",
+      "title": "2000% Silver Revaluation! This Is What Every Silver Stacker Should Do | Jim Rickards",
+      "channel": "The Silver Market",
+      "url": "https://www.youtube.com/watch?v=4xEh796w1CA",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Silver Market)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCa-8pNkcLFyUTLzOfLKJlqg"
+      }
+    },
+    {
+      "videoId": "ycUX4MKhm64",
+      "title": "This Shocking News Will Be Going GLOBAL – Don’t Say We Didn’t Warn You! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=ycUX4MKhm64",
+      "published": "2026-09-21",
+      "first_seen": "2026-09-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "BEsA7AiqGEc",
+      "title": "5 MINS AGO! \"The Largest Crash In HISTORY...\" - Jim Rickards Shared Terrifying Predictions",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=BEsA7AiqGEc",
+      "published": "2026-09-22",
+      "first_seen": "2026-09-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "Af58rySt4_0",
+      "title": "AUD tumbles, surging oil prices drive bond market sell-off | Finance Report | ABC NEWS",
+      "channel": "ABC News (Australia)",
+      "url": "https://www.youtube.com/watch?v=Af58rySt4_0",
+      "published": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ABC News (Australia))",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCVgO39Bk5sMo66-6o6Spn6Q"
+      }
+    },
+    {
+      "videoId": "je4_9De-hmw",
+      "title": "\"Germany Has FALLEN and It's Spreading GLOBALLY!\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=je4_9De-hmw",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "3ePeEaipo-s",
+      "title": "7 MINS AGO! \"My Gold Prediction Before The END of THIS YEAR....\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=3ePeEaipo-s",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "PboARcois_8",
+      "title": "Diesel Prices About to Explode as Global Gas Crisis Hits - $20,000 Gold Ahead? | Josef Schacter",
+      "channel": "Wall Street Bullion",
+      "url": "https://www.youtube.com/watch?v=PboARcois_8",
+      "published": "2026-09-25",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wall Street Bullion)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCXWoMTRWJTIZwUblljo5aDQ"
+      }
+    },
+    {
+      "videoId": "t7aHmLEUx6c",
+      "title": "6 MINS AGO! \"My Gold Prediction Before The END of THIS YEAR....\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=t7aHmLEUx6c",
+      "published": "2026-09-26",
+      "first_seen": "2026-09-26",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "Ld61ibb8EjE",
+      "title": "1 MIN AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow\" – Here’s Why! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=Ld61ibb8EjE",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "OnSneR3x52E",
+      "title": "4 MINS AGO! Jim Rickards: \"Central Banks Are About To COLLAPSE The Economy and Here's How\"",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=OnSneR3x52E",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "zD6FEdFLZFI",
+      "title": "1 MIN AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow Night – Here’s Why!\" | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=zD6FEdFLZFI",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-27",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "PWCxLdlA7dY",
+      "title": "3 MINS AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow Night – Here’s Why!\" | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=PWCxLdlA7dY",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-28",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "rKZtwmnCGqw",
+      "title": "Jim Rickards: Silver & Gold BOOM! Do This Before It’s Too Late (2026 Warning)",
+      "channel": "The Bullion Brief",
+      "url": "https://www.youtube.com/watch?v=rKZtwmnCGqw",
+      "published": "2026-09-27",
+      "first_seen": "2026-09-28",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Bullion Brief)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCNGmBbeEBvszFsW5Z-2HVIw"
+      }
+    },
+    {
+      "videoId": "d_kqlLt2eTc",
+      "title": "BREAKING: \"All Hell Breaks Loose in U.S. Banks Tomorrow\" – Here’s Why! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=d_kqlLt2eTc",
+      "published": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "nxOqfarkt7A",
+      "title": "PERPARE NOW: \"EVERY Bank In The United States Is BANKRUPT!\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=nxOqfarkt7A",
+      "published": "2026-09-28",
+      "first_seen": "2026-09-28",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "eGqSzZ9eOe8",
+      "title": "Gold to $10,000 Jim Rickards Explains Why It Could Happen Sooner Than Expected",
+      "channel": "Capital News TV",
+      "url": "https://www.youtube.com/watch?v=eGqSzZ9eOe8",
+      "published": "2026-09-28",
+      "first_seen": "2026-09-29",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Capital News TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCm6axlPnMHyd8iPTenVIYFg"
+      }
+    },
+    {
+      "videoId": "Zosm1SModBY",
+      "title": "6 MINS AGO! \"The Largest Crash In HISTORY...\" - Jim Rickards Shared Terrifying Predictions",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=Zosm1SModBY",
+      "published": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "Ywt3RJVq5BM",
+      "title": "1 MIN AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow\" – Here’s Why! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=Ywt3RJVq5BM",
+      "published": "2026-09-29",
+      "first_seen": "2026-09-29",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "AMjfdCE4D24",
+      "title": "\"Gold Is Headed To $10,000...\" - Jim Rickards",
+      "channel": "OreAndEmpire",
+      "url": "https://www.youtube.com/watch?v=AMjfdCE4D24",
+      "published": "2026-09-29",
+      "first_seen": "2026-09-30",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:OreAndEmpire)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuRwxf3jHbqGqXowwhyVBTQ"
+      }
+    },
+    {
+      "videoId": "Uy4NIe9RxwM",
+      "title": "This Shocking News Will Be Going GLOBAL – Don’t Say We Didn’t Warn You! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=Uy4NIe9RxwM",
+      "published": "2026-09-30",
+      "first_seen": "2026-09-30",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "mgjoSlJkzew",
+      "title": "\"This Is My Gold Prediction Before The END of THIS YEAR....\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=mgjoSlJkzew",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "rS0YVkslCMg",
+      "title": "1 MIN AGO! \"My Gold Prediction Before The END of THIS YEAR....\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=rS0YVkslCMg",
+      "published": "2026-10-02",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "yQ5fkl2_WTo",
+      "title": "1 MIN AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow\" – Here’s Why! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=yQ5fkl2_WTo",
+      "published": "2026-10-03",
+      "first_seen": "2026-10-03",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "QDLsP_kz_zc",
+      "title": "1 MIN AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow Night – Here’s Why!\" | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=QDLsP_kz_zc",
+      "published": "2026-10-03",
+      "first_seen": "2026-10-03",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "PUPQEYb900Q",
+      "title": "4 MINS AGO! Jim Rickards: \"Central Banks Are About To COLLAPSE The Economy and Here's How\"",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=PUPQEYb900Q",
+      "published": "2026-10-03",
+      "first_seen": "2026-10-03",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "rK3M9bRIyEs",
+      "title": "5 MINS AGO! \"The Largest Crash In HISTORY...\" - Jim Rickards Shared Terrifying Predictions",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=rK3M9bRIyEs",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "NFjZHb60aRA",
+      "title": "\"EVERY Bank In The United States Is BANKRUPT!\" - Jim Rickards on Banking Crisis 2026",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=NFjZHb60aRA",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "Y8bWNkU6eIw",
+      "title": "\"China's Economic Crisis Is Getting WORSE...\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=Y8bWNkU6eIw",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "ho9Xqe5k5ao",
+      "title": "BE READY! \"This SHOCKING News Will Be Going GLOBAL\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=ho9Xqe5k5ao",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "lOM62XzCXCQ",
+      "title": "THE DEBT CYCLE IS COLLAPSING — SILVER COULD EXPLODE NEXT | JIM RICKARDS WARNING",
+      "channel": "GOLD & SILVER SHARK ⚡",
+      "url": "https://www.youtube.com/watch?v=lOM62XzCXCQ",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-04",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GOLD & SILVER SHARK ⚡)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiA69bo94KeaDGkoydD29Xw"
+      }
+    },
+    {
+      "videoId": "2qk52-HcnQY",
+      "title": "This Shocking News Will Be Going GLOBAL – Don’t Say We Didn’t Warn You! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=2qk52-HcnQY",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-05",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "4x647BpbloQ",
+      "title": "Jim Rickards: $10,000 Gold Before Year-End? Trump Just Changed the Game",
+      "channel": "Capital News TV",
+      "url": "https://www.youtube.com/watch?v=4x647BpbloQ",
+      "published": "2026-10-04",
+      "first_seen": "2026-10-05",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Capital News TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCm6axlPnMHyd8iPTenVIYFg"
+      }
+    },
+    {
+      "videoId": "iDIH0ytZgbA",
+      "title": "Jim Rickards Warns: Gold Rally Is Just Getting Started — What Comes Next?",
+      "channel": "Capital News TV",
+      "url": "https://www.youtube.com/watch?v=iDIH0ytZgbA",
+      "published": "2026-10-05",
+      "first_seen": "2026-10-06",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Capital News TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCm6axlPnMHyd8iPTenVIYFg"
+      }
+    },
+    {
+      "videoId": "4Se555KOO7c",
+      "title": "7 MINS AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow Night – Here’s Why\" | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=4Se555KOO7c",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-06",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "hFkRYvAuRVU",
+      "title": "\"Here's My Gold Prediction Before The END of THIS YEAR....\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=hFkRYvAuRVU",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-07",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "cJOkoHsE7R8",
+      "title": "Your Money Is Already Gone\" | Jim Rickards’ 90-Day Warning to All Americans",
+      "channel": "Inspired by Jiang",
+      "url": "https://www.youtube.com/watch?v=cJOkoHsE7R8",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-07",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Inspired by Jiang)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCwQ3a_H4jL9RByzmjfcZNwQ"
+      }
+    },
+    {
+      "videoId": "ONdClZgA6sU",
+      "title": "THEY ARE EMPTYING THE VAULTS\" | Jim Rickards' $10,000 Gold Shock",
+      "channel": "Husan Toy",
+      "url": "https://www.youtube.com/watch?v=ONdClZgA6sU",
+      "published": "2026-10-07",
+      "first_seen": "2026-10-07",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Husan Toy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgdsv5I2Gy9itvXJGiA6aSQ"
+      }
+    },
+    {
+      "videoId": "tpEb-23d_qI",
+      "title": "Your Money Is Already Gone&quot; | Jim Rickards’ 90-Day Warning to All Americans",
+      "channel": "World Finance Decoded",
+      "url": "https://www.youtube.com/watch?v=tpEb-23d_qI",
+      "published": "2026-10-07",
+      "first_seen": "2026-10-11",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:collapse-audit)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCmm12P_ls-p17b8FDCIL9A"
+      }
+    },
+    {
+      "videoId": "OMPaMuoyHQ0",
+      "title": "PREPARE: \"A Global Banking Bailout is COMING...\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=OMPaMuoyHQ0",
+      "published": "2026-10-08",
+      "first_seen": "2026-10-08",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "qYckoUu6p-Q",
+      "title": "Jim Rickards: Gold Is About to Get BIGGER — The Market Pain Has Just Begun",
+      "channel": "Capital News TV",
+      "url": "https://www.youtube.com/watch?v=qYckoUu6p-Q",
+      "published": "2026-10-08",
+      "first_seen": "2026-10-09",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Capital News TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCm6axlPnMHyd8iPTenVIYFg"
+      }
+    },
+    {
+      "videoId": "_D3x_bCEdnQ",
+      "title": "💰 Your Money Is Already Gone&quot; | Jim Rickards’ 90-Day Warning to All Americans",
+      "channel": "Global Wealth & Economics",
+      "url": "https://www.youtube.com/watch?v=_D3x_bCEdnQ",
+      "published": "2026-10-08",
+      "first_seen": "2026-10-11",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:collapse-audit)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgFQh1Hy5Q9XkhecFbLL_aQ"
+      }
+    },
+    {
+      "videoId": "iypm6Kjyb50",
+      "title": "PREPARE! \"This SHOCKING News Will Be Going GLOBAL\" - Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=iypm6Kjyb50",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "ibwV8sHbDmc",
+      "title": "\"EVERY Bank In The United States Is BANKRUPT!\" - Jim Rickards on 2026 Banking Crisis",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=ibwV8sHbDmc",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "c4jQDr5zAuk",
+      "title": "THEY ARE EMPTYING COMEX (THE $10,000 GOLD SHOCK) | Jim Rickards' Final Warning",
+      "channel": "Husan Toy",
+      "url": "https://www.youtube.com/watch?v=c4jQDr5zAuk",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-09",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Husan Toy)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCgdsv5I2Gy9itvXJGiA6aSQ"
+      }
+    },
+    {
+      "videoId": "H74rcg7tgRY",
+      "title": "This Shocking News Will Be Going GLOBAL – Don’t Say We Didn’t Warn You! | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=H74rcg7tgRY",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-10",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "sKaIzCqw3_s",
+      "title": "5 MINS AGO! \"The Largest Crash In HISTORY...\" - Jim Rickards Shared Terrifying Predictions",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=sKaIzCqw3_s",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-10",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
+    },
+    {
+      "videoId": "4WqdlxvooOU",
+      "title": "2 MINS AGO! \"All Hell Breaks Loose in U.S. Banks Tomorrow Night – Here’s Why!\" | Jim Rickards",
+      "channel": "Plain Finance Reborn",
+      "url": "https://www.youtube.com/watch?v=4WqdlxvooOU",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-11",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Plain Finance Reborn)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC84rXnmdTb8znU5mGdJYj-w"
+      }
     }
   ],
-  "updated": "2026-10-11"
+  "updated": "2026-10-12"
 }

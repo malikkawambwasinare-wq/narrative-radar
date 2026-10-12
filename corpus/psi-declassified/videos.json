@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-11"
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -69735,7 +69735,61 @@
         "channelViews": 342,
         "channelVideos": 47
       }
+    },
+    {
+      "videoId": "FQ0nH42tViE",
+      "title": "‘Occupy Mars’ mission fails: SpaceX Starship explodes mid-flight over Indian Ocean",
+      "channel": "The Economic Times",
+      "url": "https://www.youtube.com/watch?v=FQ0nH42tViE",
+      "published": "2025-05-28",
+      "first_seen": "2026-10-05",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Economic Times)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCJFOER35ggIWwsXh2ZDnqyg"
+      }
+    },
+    {
+      "videoId": "wsUuZLulgUA",
+      "title": "'They Have to Go Nuclear': Donald Trump on NASA's Nuclear Spacecraft Mars Mission",
+      "channel": "moneycontrol",
+      "url": "https://www.youtube.com/watch?v=wsUuZLulgUA",
+      "published": "2026-08-28",
+      "first_seen": "2026-10-02",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:moneycontrol)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChftTVI0QJmyXkajQYt2tiQ"
+      }
+    },
+    {
+      "videoId": "cLlP7MK7cWM",
+      "title": "Why Artemis II Is Secretly a Mars Mission",
+      "channel": "Global Unmasked",
+      "url": "https://www.youtube.com/watch?v=cLlP7MK7cWM",
+      "published": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Global Unmasked)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UClbZI9Y7syWX70NKzWrXruQ"
+      }
     }
   ],
-  "updated": "2026-10-11"
+  "updated": "2026-10-12"
 }
