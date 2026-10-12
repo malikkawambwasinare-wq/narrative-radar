@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-11",
+ "generated": "2026-10-12",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2084,
+ "cost_usd": 0.2014,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -38368,6 +38368,1442 @@
    },
    "first_read": "2026-10-11",
    "last_read": "2026-10-11"
+  },
+  {
+   "phrase": "fiat collapse",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that fiat currency collapses and gold/bitcoin benefit.",
+   "claim_name": "The \"fiat collapse\" story",
+   "claim": "Fiat currency systems are headed for collapse, and hard assets like gold and bitcoin will gain as the paper money regime fails.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Fiat money is losing value and credibility",
+    "cause": "Unlimited money printing and debt-based central banking",
+    "outcome": "Currency collapse; gold and bitcoin surge as refuge",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 11,
+    "channels": 5,
+    "months": 8,
+    "span": "2020-05 → 2026-04",
+    "examples": [
+     "Is History Repeating Itself with a Fiat Collapse? | John Law and the Mississippi Bubble",
+     "Why Gold and Bitcoin BOTH Win in a Fiat Collapse",
+     "Bitcoin to gain BIG due to recession and FIAT COLLAPSE?"
+    ],
+    "ids": [
+     "7mOyRxgplx4",
+     "86KaZlRY1vo",
+     "Aifu0qi4kuE",
+     "G-jALjkHBx8",
+     "Iwz5QpBbPTk",
+     "KosOEEEjo0Q",
+     "Qem3Y4deakU",
+     "R1L7NMe8d5E",
+     "XxXsvP8-C7k",
+     "olCuX5xNqyo",
+     "ygptWAWS6cw"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "nine dead",
+   "verdict": "rhetoric",
+   "why": "A news-casualty count, not a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "At least nine dead after car ploughs through street festival in Vancouver, Canada | ABC NEWS",
+     "At least nine dead, over 200 injured as cost-of-living protests in Kashmir turn violent",
+     "Johannesburg Mass Shooting Leaves Nine Dead, Authorities Investigate | South Africa News"
+    ],
+    "ids": [
+     "DJ2maNDKW1M",
+     "KJ2LCgfwqKo",
+     "Rc7XLyuQxRk",
+     "dWXuZ7sZv1Y",
+     "kYOtM_TMDzg",
+     "ywclLi8RVU4"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "aerial shows",
+   "verdict": "rhetoric",
+   "why": "Footage-format phrase with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-06 → 2026-10",
+    "examples": [
+     "Aerial video shows Los Angeles protest",
+     "Niscemi Landslide LIVE: Aerial Video Shows Massive Landslide Threatening Sicilian Town of Niscemi",
+     "Aerial Video Shows Landslide Threatening Sicilian Town Of Niscemi"
+    ],
+    "ids": [
+     "20uRdaZes58",
+     "BprIoDIPefw",
+     "U0Cv50oMPYA",
+     "_uKyObWdsLU",
+     "eJzRyBek6i0",
+     "gxMJ9TZF_Fs",
+     "h7iff6e4PoY",
+     "mPKIPjXmuS4"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "ath imminent",
+   "verdict": "narrative",
+   "why": "Repeated dated prediction that bitcoin will imminently hit a new all-time high.",
+   "claim_name": "The \"new all-time high is imminent\" story",
+   "claim": "Bitcoin and other major crypto assets are about to break out to a new all-time high within days or weeks.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Traders unsure whether the crypto cycle has topped",
+    "cause": "Chart patterns and bounce signals pointing to breakout",
+    "outcome": "New all-time high imminent; buy before it hits",
+    "clock": "imminent, days to weeks"
+   },
+   "evidence": {
+    "videos": 11,
+    "channels": 3,
+    "months": 8,
+    "span": "2021-03 → 2025-10",
+    "examples": [
+     "IMPORTANT BITCOIN BOUNCE! NEW ATH IMMINENT!!!",
+     "BITCOIN & ETHEREUM NEW ATH IMMINENT! MARKET UPDATE!!!",
+     "IMPORTANT BITCOIN CHART SHOWS THE NEW ATH IS IMMINENT!!! LIVE BTC ATH PARTY"
+    ],
+    "ids": [
+     "2f4GNGQPRvA",
+     "4bm_M5W3IPE",
+     "E4CEqECobco",
+     "RWZGL0kl1UM",
+     "VmUtwO97fFk",
+     "VuEmCuBL03k",
+     "fCIchr7tOEU",
+     "fNv1nUOxA1k",
+     "oJ5Y90LTfz0",
+     "oPbnG6OSAmI",
+     "vFcfwO5wIxI"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "really paying",
+   "verdict": "rhetoric",
+   "why": "A rhetorical 'who really pays' hook spanning unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 6,
+    "span": "2023-03 → 2026-10",
+    "examples": [
+     "Who is REALLY Paying For the Bank Bailouts?",
+     "Corporate Profits Surge Amidst Inflation: Who's Really Paying the Price? #inflation",
+     "Who's really paying for Trump's White House ballroom?"
+    ],
+    "ids": [
+     "0LoQROlzEeM",
+     "5fc9JZVZ9NQ",
+     "ILw86RlWWes",
+     "VQkcVIvFZ4Y",
+     "cBpVKy2Qquk",
+     "hUxOuPzQruM",
+     "qRlCh_8j4Yk",
+     "qYxoce5lXDY"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "end american",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that American empire/dominance is ending.",
+   "claim_name": "The \"end of the American empire\" story",
+   "claim": "US global dominance is ending, with tariffs, economic decline and lost soft power marking the close of the American age.",
+   "industry": "Politics & geopolitics",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "America's global leadership is unraveling",
+    "cause": "Imperial overreach, tariffs, debt and political turmoil",
+    "outcome": "A post-American multipolar order",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 10,
+    "span": "2024-10 → 2026-09",
+    "examples": [
+     "\"THE END Of The American EMPIRE...\" - Richard Wolff",
+     "'We find it unrealistic…': Cubans lament end of American dream as Trump overhauls migration policy",
+     "Do Trump's tariffs herald the end of the American age? | ABC NEWS"
+    ],
+    "ids": [
+     "0vG1K_fEbmM",
+     "CCZTJIOWYdE",
+     "Gp9oUpIHhpQ",
+     "MYDFXACCYjE",
+     "OlsG7TUmZqw",
+     "PYNt0OH8lCY",
+     "S1B0MYCZAk0",
+     "TmhQC3lAQRc",
+     "YJl5DnAzIss",
+     "_m_tBD1Gxto",
+     "aAbXoiL4ehw",
+     "aPl-JMCUG3U",
+     "k7KKE4bVEyc",
+     "rINx87LUdm0"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "coming within",
+   "verdict": "rhetoric",
+   "why": "Generic timing phrase across unrelated topics, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 5,
+    "months": 6,
+    "span": "2018-10 → 2026-10",
+    "examples": [
+     "George Glasier: Uranium Series Part 5: Changes Coming within the US Uranium Market",
+     "Vechain(VET) 2.0 coming within a month! Veswap 2.0 and DEFI? Can VET see a BNB-like rise?",
+     "Vechain(VET) 2.0 coming within 2 weeks? Is this why Vechain is pumping? What is 2.0?"
+    ],
+    "ids": [
+     "26kg6dFZT9M",
+     "AwoJ1hykO7g",
+     "GHg04kh2Y3k",
+     "NYInBNPob0I",
+     "OxLha_GP6fo",
+     "UdUY0ol6HVk",
+     "ZX6wzZE-hc0",
+     "wiOFu1TlkgE"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "coming home",
+   "verdict": "rhetoric",
+   "why": "Phrase spans tarot, politics and housing with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 35,
+    "channels": 26,
+    "months": 18,
+    "span": "2020-04 → 2026-10",
+    "examples": [
+     "ARIES Apr 6-12 | COMING HOME ~ A POWERFUL BREAKTHROUGH ~ Tarot Reading",
+     "Let's talk about Biden, Iran, and 5 coming home....",
+     "10 PERCENT MORTGAGE RATES COMING! HOME PRICES WILL CRASH! Housing Market Crash 2024 -Tall Mike Talks"
+    ],
+    "ids": [
+     "-yxwp5NSmyE",
+     "09EgV2K-6Qo",
+     "0G0e3PCj6Gs",
+     "1nSmHkCuYG0",
+     "1x_uPXdvEQc",
+     "2I-qmqBgbuY",
+     "3RaAUMCjtF0",
+     "9_GuPY6ICes",
+     "BPXsXimA_sA",
+     "BPpKqYdtFM8",
+     "F5c-GnCBByo",
+     "I6uVe6oEKm8",
+     "JLSrlfDZGTk",
+     "JR5NUpQ09c8",
+     "NUIqRJ8LuTE",
+     "OsxWsq0TzD8",
+     "QeFv0gbuDPo",
+     "RodeOnpH_cc",
+     "TJxNketjc30",
+     "XqDOC20w-IY"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "end january",
+   "verdict": "duplicate",
+   "why": "Bitcoin price-target-by-date videos restate the crypto deadline tracking narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "crypto-winter-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 8,
+    "months": 11,
+    "span": "2018-12 → 2026-02",
+    "examples": [
+     "Bitcoin End of The YEAR - January 2019 Price Prediction & Trade Analysis",
+     "“I'm Very Confident Bitcoin Will Hit $10k Before End Of January.” 🚀",
+     "Bitcoin Hits $34K, $50K By End of January & Ethereum May Hit $1,000 Today!!"
+    ],
+    "ids": [
+     "85TpJbaMG0s",
+     "8JqQMLhgnn4",
+     "MCM4y6K-P64",
+     "MLiiUN5AI3g",
+     "U09-2X3Eqn0",
+     "UUIf4O8zjws",
+     "Ww4ptd_8akg",
+     "ZFNZaYGxxe4",
+     "Zdlclkt3EY4",
+     "a7PCsp0DTbg",
+     "dQSe36sMD3I",
+     "mlqGVsG1P9k",
+     "oPLK4W6nj_U",
+     "tr-1Ke6OVkQ"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "dirty truth",
+   "verdict": "rhetoric",
+   "why": "Pure clickbait framing applied to unrelated subjects with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2022-08 → 2026-07",
+    "examples": [
+     "The Dirty Truth about Wholesaling Software…",
+     "The Dirty Truth About “Clean” Energy",
+     "The Dirty Truth About Drinks You Thought Were Healthy!"
+    ],
+    "ids": [
+     "WGjKiyo8SNo",
+     "aBa2a3IlrkM",
+     "j9xHaxftka4",
+     "tWjJL9eZGBo",
+     "xz8Y974TiRw",
+     "yR087R5ChGE"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "fixes bugs",
+   "verdict": "duplicate",
+   "why": "AI agents autonomously writing and fixing code is the tracked loop-engineering narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "loop-engineering",
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "Microsoft Launches GitHub AI Agent That Codes & Fixes Bugs, Satya Nadella Demos Live Bug Fixes",
+     "#251 Neil: Automate Your Code With This AI Team That Fixes Bugs While You Sleep",
+     "What Is Loop Engineering? How Claude Code Fixes Its Own Bugs"
+    ],
+    "ids": [
+     "-8fkvPuHgM4",
+     "588jrXmGSpA",
+     "5RXrX29-eTY",
+     "QhlgIMjtgwA",
+     "bE-U6RFtyBg",
+     "fYxapQ2nCRo"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "replace teachers",
+   "verdict": "narrative",
+   "why": "Shared checkable claim that AI tutors will substitute for human teachers.",
+   "claim_name": "The \"AI will replace teachers\" story",
+   "claim": "AI tutors and agents can teach students faster and more cheaply than human teachers, so schooling will shift away from human instruction.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Human teaching is slow, expensive and unevenly distributed",
+    "cause": "Rapidly improving AI tutoring systems",
+    "outcome": "AI tutors take over much of classroom instruction",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2026-02 → 2026-10",
+    "examples": [
+     "Can AI Replace Teachers? Inside the $40M Company Using AI Tutors to Teach 200% Faster | MOONSHOTS",
+     "Can AI Replace Teachers? 🤖📚",
+     "Will AI Replace Teachers? | Adeel Khan - World Governments Summit"
+    ],
+    "ids": [
+     "2vSHmltAFVk",
+     "BINUUNKwaPA",
+     "PSG1Qxwdnak",
+     "V-ZT0ErF1AQ",
+     "a6zVvcqj5jI"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "seven dead",
+   "verdict": "rhetoric",
+   "why": "News casualty count, a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-04 → 2026-09",
+    "examples": [
+     "Seven dead in 'worst Easter drowning toll' on record | ABC NEWS",
+     "At least seven dead after UPS plane crashes on takeoff in Kentucky | The World | ABC NEWS",
+     "North Carolina plane crash: Ex-NASCAR driver Greg Biffle and family among seven dead"
+    ],
+    "ids": [
+     "1AEfT6eYSzQ",
+     "Q0o8m4RZcHM",
+     "hC1sgrOhzmQ",
+     "ofw8uRGrkGk",
+     "y7oDq5wJnv0"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "title win",
+   "verdict": "rhetoric",
+   "why": "Sports results coverage, no shared contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "2025 NBA playoffs guarantee historic title win",
+     "Shai Gilgeous-Alexander on OKC Thunder title win | GMA",
+     "NYC Mayor Zohran Mamdani Celebrates Knicks’ NBA Title Win"
+    ],
+    "ids": [
+     "EmjfjQgpMIs",
+     "NYIMQGQtTDQ",
+     "OvUUawVRjCY",
+     "TAPzI2KUmKI",
+     "itRfHiTJFnU"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "lift ban",
+   "verdict": "rhetoric",
+   "why": "Unrelated policy bans share only a phrase, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2022-03 → 2026-09",
+    "examples": [
+     "It's time to lift the ban on nuclear power in Australia!",
+     "Poilievre vows to lift ban on single-use plastic packaging",
+     "Calls to lift ban on drones over Coogee following shark attack | ABC NEWS"
+    ],
+    "ids": [
+     "5nxx0UF73zI",
+     "GJkKDsjVs6c",
+     "ODofBn26a44",
+     "bB8ToVvFA54",
+     "qXXjFQ2oMW4"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "would mean",
+   "verdict": "rhetoric",
+   "why": "Generic speculative-explainer construction spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 10,
+    "months": 9,
+    "span": "2023-09 → 2026-10",
+    "examples": [
+     "What Partial Legalization Of Marijuana Would Mean For The Cannabis Industry",
+     "Apophis 2029: What an Earth Strike Would Mean?",
+     "What U.S. tariffs would mean for Ontario’s massive vegetable export industry"
+    ],
+    "ids": [
+     "0uoaj3l4kOA",
+     "2qVvLJ051Zw",
+     "9hLU1y0m9M8",
+     "CO2Yxl_Jlvw",
+     "Er2YLyIW_oc",
+     "TpEj4qsPYXI",
+     "bEzrhItHyIs",
+     "bWj-q4dSrEw",
+     "kkq33-RR2LA",
+     "mAHYhx73TBI",
+     "oC7wpAp_Mb0",
+     "tmBh1tC-6i8"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "hurt crash",
+   "verdict": "rhetoric",
+   "why": "Local accident reports with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 5,
+    "months": 7,
+    "span": "2026-03 → 2026-10",
+    "examples": [
+     "Students, school bus driver hurt in crash in DeKalb County",
+     "1 dead, 1 hurt in crash by fleeing driver: police",
+     "Family says Coweta high schoolers seriously hurt in crash were skipping school"
+    ],
+    "ids": [
+     "0SaevYK8X7g",
+     "1RGXgtlSayc",
+     "8Ns4S4DOB3c",
+     "9XaZzoi6AzI",
+     "FbacFM4bmwU",
+     "KDy0UufS3Ig",
+     "LS6ekT7RrdY",
+     "MJy_7J_AuyA",
+     "NGEuFOJFOSs",
+     "NxwmkiJbULY",
+     "bANdRUUSAb0",
+     "lC3Xl7L3WFM",
+     "sH80-loptG0",
+     "ttQQVLleQxI"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "crash pilot",
+   "verdict": "rhetoric",
+   "why": "Aviation incident news topic, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "AI171 Crash: Pilot Cut Fuel? Report On Black Box Details Shake Up Air India Probe",
+     "Watch: F-35 jet drops from sky in fiery crash; pilot’s last-second ejection caught on cam",
+     "Watch: US Navy’s $100M F-35 jet explodes in mid-air crash, pilot escapes in dramatic ejection"
+    ],
+    "ids": [
+     "0sAr7h4eS6o",
+     "76HNM4YRLXM",
+     "7H2oRo-sFQM",
+     "9-z5r8gNzgc",
+     "DIkM9apprEg",
+     "DdJ4E9GUZRs",
+     "N3TmocPerPA",
+     "OGCSbiqCNVo",
+     "T9dV4CKfewA",
+     "it0PHkVbbuk",
+     "jDsIpMKro2M"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "palantir stock crashing",
+   "verdict": "rhetoric",
+   "why": "Single-ticker price commentary format; no consistent claim beyond 'stock is down, here's why'.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 7,
+    "span": "2023-12 → 2026-06",
+    "examples": [
+     "Palantir Stock is CRASHING | This is Why…",
+     "🚨 This Is Why Palantir Stock Is Crashing!!!",
+     "Why Palantir Stock is Crashing | PLTR Analysis."
+    ],
+    "ids": [
+     "EHahB__3nw4",
+     "GRJHaqPLGRc",
+     "LUWL_TaI0eA",
+     "PPYAqzfNwKw",
+     "Qm4GLSb1XSQ",
+     "eKy1nTfWC5A",
+     "fbbEqZdAxNQ",
+     "jgVGnilHDqQ",
+     "jha99seS-CU"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "saylor explains",
+   "verdict": "narrative",
+   "why": "Titles share one checkable claim: Bitcoin is the superior long-term investment/store of value.",
+   "claim_name": "The \"Bitcoin is the best investment\" story",
+   "claim": "Bitcoin is the single best store of value and long-term investment, superior to fiat and traditional assets, and investors should buy and hold it now.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Fiat currency and conventional assets lose purchasing power over time",
+    "cause": "Monetary debasement and inflation of the fiat system",
+    "outcome": "Buy and hold bitcoin as monetary escape hatch",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 19,
+    "channels": 9,
+    "months": 15,
+    "span": "2022-07 → 2026-08",
+    "examples": [
+     "BUY BITCOIN NOW!!! Why Bitcoin is the #1 BEST Investment - Michael Saylor Explains",
+     "Michael Saylor explains to Tucker Carlson that Bitcoin is an oxygen mask #bitcoin #crypto #shorts",
+     "Saylor Explains Why Bitcoin Is The Best Investment #bitcoin #bitcoinnews #shorts"
+    ],
+    "ids": [
+     "-X7d3qru8y0",
+     "4Vd268EqYrs",
+     "4cB8O5U8QSY",
+     "6BtsnvTthFQ",
+     "7U6xuHSm5XA",
+     "8e5vNrI35vs",
+     "9QYtAje_4lo",
+     "EfNviw8gT_E",
+     "GZu8WwbL_ww",
+     "IVviEoNpCT8",
+     "LCvpWEMQVwo",
+     "LL_7x8FNHXM",
+     "RnkmxEyDObU",
+     "SV_omTfI0T4",
+     "WxPa8swmAaE",
+     "X-gsp2Gn_ms",
+     "_F0EAUxzy7s",
+     "dlvWqhMssow",
+     "qZxquN_LTco"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "must become",
+   "verdict": "rhetoric",
+   "why": "Generic exhortation fragment spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 9,
+    "months": 9,
+    "span": "2021-09 → 2026-10",
+    "examples": [
+     "XRP Millionaire 💰 How Much XRP Must You Own To Become An XRP Millionaire?",
+     "‘Britain Must Not Become Island of Strangers’: UK PM Reveals Major Immigration Curbs | LIVE",
+     "Why India Must Become An R&D Economy, Says Prashant Ruia At Davos"
+    ],
+    "ids": [
+     "1BJsqjpYMcY",
+     "26jqoyu6CuQ",
+     "7PRb0iyQIf8",
+     "BSeTAZmTJ7M",
+     "JK1pnW03fJM",
+     "KQ57NEQKzhU",
+     "KlIs-cO4YI0",
+     "XJE__2QWLRE",
+     "mPMPEyDiMw8",
+     "nl4OgFKwyD8",
+     "ps5cdrPz0qc",
+     "rbG994TBXss",
+     "syPu9BbKcXw",
+     "vSf3Sl6tjV0"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "california bans",
+   "verdict": "rhetoric",
+   "why": "News-event phrasing about assorted bans, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 9,
+    "months": 6,
+    "span": "2025-09 → 2026-10",
+    "examples": [
+     "US Immigration Crackdown | California bans ICE masks; DHS fumes: 'More dangerous for ICE officers…'",
+     "California bans most ICE agents from wearing masks on duty",
+     "CBC pulls Kars4Kidsads after California bans ‘deceptive’ jingle"
+    ],
+    "ids": [
+     "2DPGA7Ya8CE",
+     "HvMzwsLeh_E",
+     "OgZPnPSb8mI",
+     "jJ9Loyph1QQ",
+     "mnnp0zIZQ3g",
+     "rWsvQ0pw8RE",
+     "stuRGaSBNkQ",
+     "vpK3ol1GltI",
+     "ydJ7sKBixHo"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "shows police",
+   "verdict": "rhetoric",
+   "why": "Footage-release format label, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 18,
+    "channels": 10,
+    "months": 13,
+    "span": "2024-08 → 2026-10",
+    "examples": [
+     "UK riots: Bodycam footage shows police pelted with fireworks; rioters burn down library",
+     "Video shows police take down suspect in shootings that killed 2 in Orlando",
+     "Newly released video shows police responding to home of Hackman and wife"
+    ],
+    "ids": [
+     "3Z2G9BTu7as",
+     "3x87JPma8WY",
+     "7AYEPXHSYQE",
+     "7WHjuk6RunI",
+     "AxrrSRhtebc",
+     "L5uZrpARGwg",
+     "LV57TKzxc48",
+     "ME0Msv0BUOg",
+     "PBCRSvRV_KU",
+     "f-RIGntunUM",
+     "gslXSli1h0M",
+     "iPgdZ_j12lI",
+     "nMjsomFxP3I",
+     "o2s7zTOA-MI",
+     "oFnN2DwGszA",
+     "sHG2-zmvdv4",
+     "veMtJnVWzzU",
+     "z23c4e0uoKs"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "cause thyroid",
+   "verdict": "rhetoric",
+   "why": "Open questions about varied suspected causes; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 6,
+    "months": 7,
+    "span": "2019-04 → 2026-10",
+    "examples": [
+     "Do Artificial Sweeteners Cause Thyroid Disease",
+     "Can Parasites Cause Thyroid Problems? | Podcast #316",
+     "A study reveals if #GLP1 can cause thyroid cancer #Obesity #WeightLoss | Dr. Dan | Obesity Expert"
+    ],
+    "ids": [
+     "3twDuSwfMms",
+     "4YbggugBchw",
+     "9w5R_lNcrAY",
+     "IcH_R2qQ7GA",
+     "NnmYGnATbBM",
+     "WaKDlB1t9sE",
+     "aADNjkmWf_Q",
+     "bJIiI6A0piw",
+     "sKKSxs0gjBc",
+     "x-_yGTTBHrA",
+     "xlINrgM2Q8Y"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "explains india's",
+   "verdict": "rhetoric",
+   "why": "Format phrase; titles share no single checkable claim beyond an explainer framing.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 6,
+    "months": 7,
+    "span": "2023-07 → 2026-09",
+    "examples": [
+     "When will India become a RICH country like Singapore? (Economist Explains) | India's Economy",
+     "Ashwini Vaishnaw explains India's approach in regulation of Artificial Intelligence",
+     "\"Stronger Growth Despite Gulf War\": Chief Economic Adviser Explains India's Post-Crisis Strategy"
+    ],
+    "ids": [
+     "7PuAlmK0Uco",
+     "7dE9lu9Ev18",
+     "R5lyVv4T-0c",
+     "asGnIba0shs",
+     "g1LJvYABjYk",
+     "jkSLUn0h_Ew",
+     "l091b42wopM",
+     "tLY3gNs7BMg",
+     "uGbzSlQgEI0",
+     "wEYD4fSp2zQ"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "crashes through",
+   "verdict": "rhetoric",
+   "why": "Literal crash-footage news subject with no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 21,
+    "channels": 8,
+    "months": 10,
+    "span": "2024-12 → 2026-10",
+    "examples": [
+     "SUV crashes through mall in dramatic heist",
+     "Chunk of ice crashes through trucker's windshield on highway",
+     "Worker hurt after car crashes through wall, plunges 3 floors"
+    ],
+    "ids": [
+     "-QWt7qH7e8k",
+     "1cO-F15845c",
+     "3aQQk85JOn4",
+     "4qIniuWNtUQ",
+     "5IMBSAH4TV0",
+     "6gKXEc_uYCU",
+     "Dx5k8PqUG4Q",
+     "Lsj-M5Rq5Xo",
+     "NJtYZvB7nzQ",
+     "Q3bwVbXnGPA",
+     "QxDbA_8CII4",
+     "VMyqe5RoYb8",
+     "VSa8T1BNWnY",
+     "ZPOSEwOTLEs",
+     "bqTOre7s0YA",
+     "buw3_ENazk8",
+     "c3_E7v08f2w",
+     "mu77ul_cYxU",
+     "x2vNSIs07KE",
+     "yNX2Ga9v2Sk"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "isn't problem",
+   "verdict": "rhetoric",
+   "why": "A reframing cliché applied to unrelated topics, not one shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 11,
+    "months": 9,
+    "span": "2020-04 → 2026-10",
+    "examples": [
+     "Technology Isn't an IT Problem, It's a Human Problem",
+     "AI Isn't the Problem; Humans Are",
+     "Bitcoin isn't the problem, Fiat is #bitcoin #crypto #shorts"
+    ],
+    "ids": [
+     "5PjMT3QHYcY",
+     "7hg7H2rJB8M",
+     "AKDzS8cZrzI",
+     "M_aWIXGghTw",
+     "SbW47yhjlSg",
+     "SeWFm5pYyu8",
+     "cwWiTw3Ks1Q",
+     "iUDQFaOU-uY",
+     "jU9DYo9eHrs",
+     "nL_nngOirYw",
+     "siG_hBU7qWU",
+     "wcwUY2xK7Bs"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "order means",
+   "verdict": "rhetoric",
+   "why": "News-reaction format about executive orders; no consistent falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 10,
+    "months": 8,
+    "span": "2022-01 → 2026-10",
+    "examples": [
+     "Bitcoin Biden's Executive Order & What It Means For Price In February",
+     "🛑LIVE🛑 Bitcoin Biden's Executive Order & What It Means For Price Today.",
+     "What Biden’s Executive Order Means for Bitcoin | EP 445"
+    ],
+    "ids": [
+     "CByHBybD-Q0",
+     "HBMxkIjgCVs",
+     "JB0npvRCirw",
+     "KwILFGX5Ur0",
+     "PX76m91OA8Y",
+     "RcO9EKmt_b0",
+     "Re2OAt2pTWo",
+     "Tk-3dTN6cJc",
+     "dkXBZlkLwD8",
+     "gIj5-hubbZc",
+     "j0oAmdpdjcw",
+     "pBpuLdHTqdY"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "homes coming",
+   "verdict": "duplicate",
+   "why": "Half-price-homes framing is the housing crash prediction already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 10,
+    "span": "2018-10 → 2026-10",
+    "examples": [
+     "Video Tour: All Homes Coming Soon/Sellers, ,",
+     "Half Price Homes Coming Summer 2023 Housing Market Update",
+     "HOUSING CRASH: HALF PRICE HOMES COMING SOON! Housing Market Crash 2023! - Stock Market Gambler"
+    ],
+    "ids": [
+     "24xjlyjpdxw",
+     "DEzhgwzhvDk",
+     "EpE5cIHAeos",
+     "QNM--ChLLlk",
+     "YKz_-TVqksk",
+     "bhXRrs1Blb4",
+     "eh25VkGzdak",
+     "jvmStsIWYjo",
+     "nXBrWT4c10k",
+     "vh6bYPK_8bo"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "dems win",
+   "verdict": "rhetoric",
+   "why": "Election speculation coverage; titles vary in claim and are conditional punditry.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 16,
+    "channels": 4,
+    "months": 9,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "‘Dems are about to win again’: Inside the party’s plan to defeat Trump's GOP in key races",
+     "'Radical left Marxist Dems': Mike Johnson warns Trump may face impeachment if Dems win 2026 midterms",
+     "The ‘real restraint’ on Trump’s presidency ‘is coming’ if Dems win the midterms: Vanity Fair writer"
+    ],
+    "ids": [
+     "2BH9xSghA0g",
+     "DqkVQBU4DIc",
+     "EO6zMERMBwc",
+     "FP3MBeYu4rk",
+     "QDNm_r_5B54",
+     "VWWpQC4SInc",
+     "Wq7JSBXNKSg",
+     "bGybl-DfZWY",
+     "c46I2HqoBtE",
+     "eHsN1XDBGag",
+     "i6k3KIhaFjc",
+     "jirVdw-RA_A",
+     "sCQ4L67yPLc",
+     "w8WG75kTobM",
+     "y6S_pxLfXDI",
+     "y_JtHHa0nFw"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "khamenei dead",
+   "verdict": "rhetoric",
+   "why": "Breaking-news subject about a single event, not a sustained causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 6,
+    "months": 3,
+    "span": "2026-02 → 2026-04",
+    "examples": [
+     "BREAKING: Trump says Iran’s Supreme Leader Khamenei is dead",
+     "Khamenei Dead? Netanyahu Claims Iran’s Supreme Leader ‘Is No More’ After Strike",
+     "‘Evil Khamenei is dead, but strikes will continue’: Trump drops major update | US-Israel vs Iran War"
+    ],
+    "ids": [
+     "3T1VqN9p-Pw",
+     "67SpdYDcKrc",
+     "6hY_nkvhnUc",
+     "9pARQ8c5N6Y",
+     "Dd2gZJ-lsB4",
+     "HIUAo-sTtSw",
+     "Q4IxBQY-iBg",
+     "SmZxd19DuJA",
+     "Yd-KHArku9g",
+     "l7ifDOXEQXU",
+     "oy-hox70_YM",
+     "qn-PKxZD8HQ",
+     "tEjs7UesUfs"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "wins actor",
+   "verdict": "rhetoric",
+   "why": "Award-result announcements, a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 6,
+    "months": 3,
+    "span": "2024-08 → 2026-09",
+    "examples": [
+     "70th National Film Awards: Rishabh Shetty wins Best Actor, Aattam is best feature film",
+     "Desmond Tan wins Best Actor at Star Awards 2026",
+     "Mammootty Wins Best Actor National Award for ‘Bramayugam’ at 72nd National Film Awards | N18S"
+    ],
+    "ids": [
+     "6gDzo048flU",
+     "Bc0hzdpn-sg",
+     "LZ4eDwrVkfs",
+     "hkMLYT_YL2I",
+     "mrxOBBSH7HY",
+     "o9wYkOLF3E0",
+     "rZe5cq0cIks",
+     "sMn5orfFhEI",
+     "u7zNfiwHCW4"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "attempt crash",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated subjects (housing policy, pilot incidents) with no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 3,
+    "span": "2023-09 → 2026-10",
+    "examples": [
+     "The Feds Attempt TO Crash The Housing Market Oct 2023 Edition",
+     "Flydubai pilot under investigation after suspected attempt to crash passenger plane | #Shorts",
+     "Passengers stop co-pilot’s attempt to crash plane headed for Israel"
+    ],
+    "ids": [
+     "-u7x3-6JHV8",
+     "7Tqv7qJkXTo",
+     "F7yGdS6wRJA",
+     "WtDU5p87RuY",
+     "YWY5-sYvw_g",
+     "Z_rFrMg5S3Y",
+     "dmaHI1liLE4",
+     "mC3-ZAzVIMk"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "pilots dead",
+   "verdict": "rhetoric",
+   "why": "News event subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 3,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "2 student pilots dead following mid-air collision in Manitoba",
+     "Officials speak after plane collision leaves 2 student pilots dead in Manitoba",
+     "Mamdani Reacts After Air Canada Jet Hits Fire Truck—Pilots Dead, Dozens Injured!"
+    ],
+    "ids": [
+     "J07_wGH239k",
+     "JtcZXrxcjrA",
+     "K4dN-urSjlM",
+     "YWkh1CLfFM0",
+     "a5qzSCaHuvs",
+     "o6B0unVD6lo",
+     "pp-JXIj5HmE",
+     "s8mbgtZBTe8"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "semiconductor boom",
+   "verdict": "rhetoric",
+   "why": "A topic label covering varied stories rather than one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 3,
+    "span": "2026-07 → 2026-10",
+    "examples": [
+     "Tech Corner: AMAT Riding the AI Semiconductor Boom",
+     "India’s Chip Dream Is Getting Real. But Is The Semiconductor Boom Creating A New Security Threat?",
+     "GV Satyanarayana :Semiconductor Boom in India!How Semicon 2.0 Could Impact Indian Companies |SumanTV"
+    ],
+    "ids": [
+     "1sCq_frqOTM",
+     "V7vUX3GfdhM",
+     "aAakhtppQTQ",
+     "d6RBWvKrxEs",
+     "q5sLfK5l7Y0",
+     "qojZF7ieAxg",
+     "xT66s7WLQi0"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "ban takes effect",
+   "verdict": "rhetoric",
+   "why": "News format phrase across unrelated bans; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-01 → 2026-09",
+    "examples": [
+     "TikTok Ban Takes Effect Sunday #shorts",
+     "Trump's sweeping new travel ban takes effect",
+     "Ontario’s speed camera ban takes effect today"
+    ],
+    "ids": [
+     "Eqo0JyD9FZ4",
+     "Mvl2tBPhrfE",
+     "WqQkB8BBHeE",
+     "kmFl-gMm7YA",
+     "p5EgPkjCGA8",
+     "wJdNA7sCrbw",
+     "y04VkahuoY0"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "revolution coming",
+   "verdict": "rhetoric",
+   "why": "Promotional hype applied to unrelated domains, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 5,
+    "span": "2023-06 → 2026-08",
+    "examples": [
+     "The FinTech Revolution is Coming | SALT iConnections New York",
+     "Prioritize Your Health: A Movement Revolution is Coming",
+     "Bitcoin's Future: Digital Asset Revolution Is Coming!"
+    ],
+    "ids": [
+     "24Os20J-arY",
+     "9tAXiphKdbc",
+     "FP42-sASNz4",
+     "LSk-UpaMEq4",
+     "_PHje4ftpsg",
+     "ivnQpDJ-GlA"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "solution end",
+   "verdict": "rhetoric",
+   "why": "Fragment from diplomacy coverage of different conflicts, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "There Is No Military Solution To End  Russia-Ukraine War: Rubio || Donald Trump || Cabinet Meeting",
+     "Iran and Israel rule out any swift diplomatic solution to end conflict | ABC NEWS",
+     "'Only realistic solution…': UN chief calls for implementation of two-state solution to end Gaza war"
+    ],
+    "ids": [
+     "M5sUqIBgjIk",
+     "dzDf3dhPA98",
+     "n-5kWvPvO1k",
+     "nSJaKTf5yKk",
+     "uqmc70T-RJw"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "bounce soon",
+   "verdict": "rhetoric",
+   "why": "Generic crypto trading hype with no dated, falsifiable shared claim beyond 'price goes up'; also heavily overlaps existing crypto tracking.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 4,
+    "months": 8,
+    "span": "2023-08 → 2026-06",
+    "examples": [
+     "CRYPTO LIVE TRADING 🚨 THESE Altcoins Will BOUNCE Soon!",
+     "🚨CRYPTO MARKET WILL BOUNCE SOON! BLACKROCK DOMINATES RWA TOKENIZATION!",
+     "No One Knows About THIS BULLISH BITCOIN SIGNAL! [ALTCOIN BOUNCE SOON]"
+    ],
+    "ids": [
+     "2WzSSI1tBqs",
+     "Bc4UcmnHPd0",
+     "KObErbrk1NE",
+     "QHhWRmRBz-A",
+     "XCNi86NlmmA",
+     "Xo4QDBBJpKk",
+     "_Usdk3y63T0",
+     "f1W80LgH_W0",
+     "gaRJyjzkO00",
+     "prp5ozKZS0U",
+     "y9JPV8AX17k"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "isn't done",
+   "verdict": "rhetoric",
+   "why": "Stock title construction applied to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 8,
+    "months": 8,
+    "span": "2022-09 → 2026-10",
+    "examples": [
+     "Let's talk about how Biden isn't done with loan forgiveness....",
+     "Lobo Tiggre: The Fed Isn't Done Breaking Things",
+     "Nubank Stock (NU) Growth Isn't Done Yet! | Fintech Frenzy"
+    ],
+    "ids": [
+     "2WTOUcKx2qo",
+     "5P0u7vlN6mU",
+     "79NWEnEpy08",
+     "9kvr3t8jE6I",
+     "Eo-Aw0RN3BU",
+     "YJrfdE8zNik",
+     "_hcuQaxPsug",
+     "bauMnxbV_6o"
+    ]
+   },
+   "first_read": "2026-10-12",
+   "last_read": "2026-10-12"
   }
  ]
 }
