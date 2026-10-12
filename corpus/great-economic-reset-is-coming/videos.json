@@ -35033,15 +35033,22 @@
       "url": "https://www.youtube.com/watch?v=1CsZFdnJjXo",
       "published": "2019-08-02",
       "first_seen": "2026-10-09",
-      "views": null,
-      "length": null,
+      "views": 2577,
+      "length": "3:39",
       "age_days": null,
       "query": "refiled from the pool (channel:Fortune Magazine)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCP2gdh7HfjgCoi8lO50dA5w"
+        "channelId": "UCP2gdh7HfjgCoi8lO50dA5w",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 27,
+        "comments": 5,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -35051,15 +35058,22 @@
       "url": "https://www.youtube.com/watch?v=hzLdv8fwmiI",
       "published": "2021-06-12",
       "first_seen": "2026-10-04",
-      "views": null,
-      "length": null,
+      "views": 12652,
+      "length": "13:38",
       "age_days": null,
       "query": "refiled from the pool (channel:SalivateMetal)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCIzYEzXT34388IscvgVADDA"
+        "channelId": "UCIzYEzXT34388IscvgVADDA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 689,
+        "comments": 287,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -35069,15 +35083,22 @@
       "url": "https://www.youtube.com/watch?v=jtRZI4CIYzk",
       "published": "2022-07-08",
       "first_seen": "2026-10-02",
-      "views": null,
-      "length": null,
+      "views": 4966,
+      "length": "20:04",
       "age_days": null,
       "query": "refiled from the pool (channel:Jason Hartman)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCpGNsrLsGR1viGHoEbSCabA"
+        "channelId": "UCpGNsrLsGR1viGHoEbSCabA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 229,
+        "comments": 11,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -35087,15 +35108,22 @@
       "url": "https://www.youtube.com/watch?v=TeDTCSf1oSs",
       "published": "2025-08-15",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 20093,
+      "length": "13:03",
       "age_days": null,
       "query": "refiled from the pool (channel:Money Rules - Investing Tips)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCH9HlTrjyLmLRS0iE1P4rrg"
+        "channelId": "UCH9HlTrjyLmLRS0iE1P4rrg",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1882,
+        "comments": 232,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -35114,7 +35142,8 @@
       "verdict_basis": "metadata",
       "yt": {
         "channelId": "UC7y4qfRqC35jQKSBCwn-ACQ"
-      }
+      },
+      "unavailable": "2026-10-12"
     },
     {
       "videoId": "THN13oBny14",
@@ -35123,15 +35152,247 @@
       "url": "https://www.youtube.com/watch?v=THN13oBny14",
       "published": "2026-10-06",
       "first_seen": "2026-10-07",
-      "views": null,
-      "length": null,
+      "views": 371,
+      "length": "1:48",
       "age_days": null,
       "query": "refiled from the pool (channel:Nick Bencino Highlights)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCZFIcEKHb0e9MW7-8hLOLAA"
+        "channelId": "UCZFIcEKHb0e9MW7-8hLOLAA",
+        "category": "22",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 10,
+        "comments": 2,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "JmZGVbziTu8",
+      "title": "Ivy Leaguer Breaks Down Why The Global Monetary Reset Has Begun",
+      "channel": "SelfAdvisers",
+      "url": "https://www.youtube.com/watch?v=JmZGVbziTu8",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 49,
+      "length": "12:09",
+      "age_days": 1,
+      "query": "channel sweep: SelfAdvisers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 2,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "vuNUAhoZXP0",
+      "title": "Moneycontrol Startup Conclave 2026 | The Big Reset | Full Event Highlights",
+      "channel": "moneycontrol",
+      "url": "https://www.youtube.com/watch?v=vuNUAhoZXP0",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 308,
+      "length": "23:44",
+      "age_days": 0,
+      "query": "channel sweep: moneycontrol",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChftTVI0QJmyXkajQYt2tiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "4aDxBEoKjG4",
+      "title": "Best LIC Plan for Lifetime Income || LIC Jeevan Shanti plan 758 | Best Pension Plan  #lic #money",
+      "channel": "SumanTV Finance",
+      "url": "https://www.youtube.com/watch?v=4aDxBEoKjG4",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 9551,
+      "length": "22:43",
+      "age_days": 1,
+      "query": "channel sweep: SumanTV Finance",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCQ2A6LCgzkgS0rxO3q_2FQQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": 23,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "GBFqd3WIaRE",
+      "title": "Everyone Is Watching Gold… But Copper Could Be the Next Big Story!",
+      "channel": "Dr. Gold & Silver",
+      "url": "https://www.youtube.com/watch?v=GBFqd3WIaRE",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 1151,
+      "length": "2:55",
+      "age_days": 0,
+      "query": "channel sweep: Dr. Gold & Silver",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCX8vVW9oQw2FX5Ny_uIebmw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 22,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "JfQ9r6DfmTo",
+      "title": "Why the Global Monetary Reset Has Just Begun (Saudi, Yemen & Gold)",
+      "channel": "Felix Nikolas Prehn",
+      "url": "https://www.youtube.com/watch?v=JfQ9r6DfmTo",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 148862,
+      "length": "20:26",
+      "age_days": 0,
+      "query": "channel sweep: Felix Nikolas Prehn",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCJtfma0mE_XrBAD9uakcjfA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3612,
+        "comments": 167,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "P2ner4U2bik",
+      "title": "James Rickards | Banks Are Quietly Preparing For This — Are You?",
+      "channel": "Global Wealth & Economics",
+      "url": "https://www.youtube.com/watch?v=P2ner4U2bik",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 2,
+      "length": "32:50",
+      "age_days": 0,
+      "query": "channel sweep: Global Wealth & Economics",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCgFQh1Hy5Q9XkhecFbLL_aQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "2P0TnM4TyT8",
+      "title": "Could the next global conflict spark a chain reaction? Discover the geopolitical domino effect.",
+      "channel": "ppfr.clipps",
+      "url": "https://www.youtube.com/watch?v=2P0TnM4TyT8",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 1185,
+      "length": "2:53",
+      "age_days": 1,
+      "query": "channel sweep: ppfr.clipps",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "23",
+        "channelId": "UCYCIWa7zYdhDSpH6lm3aonA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 22,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "AAFErQmL-tc",
+      "title": "Physical Gold vs. Paper Gold: The Risk Most People Ignore | James Rickards",
+      "channel": "Global Money Signals",
+      "url": "https://www.youtube.com/watch?v=AAFErQmL-tc",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 254,
+      "length": "26:22",
+      "age_days": 0,
+      "query": "channel sweep: Global Money Signals",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCR_zntv4TkJ4GQGvW_wXXzg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 32,
+        "comments": 6,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "u791XRfXLVI",
+      "title": "Physical Gold vs. Paper Gold: The Risk Most People Ignore | James Rickards",
+      "channel": "World Finance Decoded",
+      "url": "https://www.youtube.com/watch?v=u791XRfXLVI",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 4,
+      "length": "20:16",
+      "age_days": 0,
+      "query": "channel sweep: World Finance Decoded",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCCmm12P_ls-p17b8FDCIL9A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     }
   ]

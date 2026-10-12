@@ -176323,15 +176323,22 @@
       "url": "https://www.youtube.com/watch?v=-6rcUrxd8w4",
       "published": "2016-11-02",
       "first_seen": "2026-10-09",
-      "views": null,
-      "length": null,
+      "views": 70,
+      "length": "3:50",
       "age_days": null,
       "query": "refiled from the pool (channel:Fortune Magazine)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCP2gdh7HfjgCoi8lO50dA5w"
+        "channelId": "UCP2gdh7HfjgCoi8lO50dA5w",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176341,15 +176348,22 @@
       "url": "https://www.youtube.com/watch?v=-9U_1WUdUZE",
       "published": "2018-01-31",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 2575,
+      "length": "7:22",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 92,
+        "comments": 14,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176359,15 +176373,22 @@
       "url": "https://www.youtube.com/watch?v=l_GiQj5U_Ro",
       "published": "2020-12-29",
       "first_seen": "2026-10-11",
-      "views": null,
-      "length": null,
+      "views": 12689,
+      "length": "9:42:14",
       "age_days": null,
       "query": "refiled from the pool (channel:Good Vibes - Binaural Beats)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCIauBb6cmot_0cYlYeEb8Mw"
+        "channelId": "UCIauBb6cmot_0cYlYeEb8Mw",
+        "category": "10",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 610,
+        "comments": 9,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176377,15 +176398,22 @@
       "url": "https://www.youtube.com/watch?v=GjxvgYHW608",
       "published": "2021-08-25",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 592,
+      "length": "3:08",
       "age_days": null,
       "query": "refiled from the pool (channel:Just In Health)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg"
+        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 59,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176395,15 +176423,22 @@
       "url": "https://www.youtube.com/watch?v=RvZvmB7nxWA",
       "published": "2022-07-13",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 3556,
+      "length": "6:22",
       "age_days": null,
       "query": "refiled from the pool (channel:The Biblical Nutritionist)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w"
+        "channelId": "UCahaGQ4PQVpYm-u_du4ww5w",
+        "category": "26",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 304,
+        "comments": 39,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176413,15 +176448,22 @@
       "url": "https://www.youtube.com/watch?v=LB6BmAePecU",
       "published": "2025-02-10",
       "first_seen": "2026-10-09",
-      "views": null,
-      "length": null,
+      "views": 7487,
+      "length": "1:44",
       "age_days": null,
       "query": "refiled from the pool (channel:CBC News)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA"
+        "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA",
+        "category": "25",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176431,15 +176473,22 @@
       "url": "https://www.youtube.com/watch?v=iiSBlBGYgLY",
       "published": "2025-07-06",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 334,
+      "length": "7:20",
       "age_days": null,
       "query": "refiled from the pool (channel:Just In Health)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg"
+        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 30,
+        "comments": 4,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176449,15 +176498,22 @@
       "url": "https://www.youtube.com/watch?v=e9K1V6mzBWw",
       "published": "2025-07-17",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 8800,
+      "length": "1:00",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 444,
+        "comments": 9,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176467,15 +176523,22 @@
       "url": "https://www.youtube.com/watch?v=e9YO6g6VIzw",
       "published": "2025-07-18",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 7657,
+      "length": "0:55",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 246,
+        "comments": 4,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176485,15 +176548,22 @@
       "url": "https://www.youtube.com/watch?v=2_HRoST5ldM",
       "published": "2025-07-18",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 6631,
+      "length": "1:01",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 337,
+        "comments": 6,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176503,15 +176573,22 @@
       "url": "https://www.youtube.com/watch?v=IxYMN4ab2uA",
       "published": "2025-07-21",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 13681,
+      "length": "0:35",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 463,
+        "comments": 12,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176521,15 +176598,22 @@
       "url": "https://www.youtube.com/watch?v=T9dQVgLRaIU",
       "published": "2025-07-21",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 8658,
+      "length": "0:45",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 391,
+        "comments": 6,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176539,15 +176623,22 @@
       "url": "https://www.youtube.com/watch?v=0iJ2ylKLKyE",
       "published": "2025-07-23",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 5114,
+      "length": "0:58",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 282,
+        "comments": 4,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176557,15 +176648,22 @@
       "url": "https://www.youtube.com/watch?v=krUn7bRI5dE",
       "published": "2025-07-23",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 6689,
+      "length": "0:38",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 303,
+        "comments": 2,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176575,15 +176673,22 @@
       "url": "https://www.youtube.com/watch?v=2cEh9gsywKY",
       "published": "2025-07-24",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 14693,
+      "length": "0:48",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 756,
+        "comments": 8,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176593,15 +176698,22 @@
       "url": "https://www.youtube.com/watch?v=SlybmyL4Hu8",
       "published": "2025-07-26",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 9103,
+      "length": "0:37",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 344,
+        "comments": 9,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176611,15 +176723,22 @@
       "url": "https://www.youtube.com/watch?v=osJBgGRFJEE",
       "published": "2025-08-01",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 5774,
+      "length": "0:30",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 261,
+        "comments": 3,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176629,15 +176748,22 @@
       "url": "https://www.youtube.com/watch?v=lYa5isvlrNM",
       "published": "2025-08-02",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 20819,
+      "length": "0:45",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 700,
+        "comments": 11,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176647,15 +176773,22 @@
       "url": "https://www.youtube.com/watch?v=jocRWZ2ohUU",
       "published": "2025-08-04",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 4467,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 230,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176665,15 +176798,22 @@
       "url": "https://www.youtube.com/watch?v=0LZDiZhMuvg",
       "published": "2025-08-08",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 9604,
+      "length": "0:31",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 341,
+        "comments": 4,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176683,15 +176823,22 @@
       "url": "https://www.youtube.com/watch?v=h_W389WRck0",
       "published": "2025-08-11",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 5154,
+      "length": "1:09",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 279,
+        "comments": 3,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176701,15 +176848,22 @@
       "url": "https://www.youtube.com/watch?v=f4OrJitaxdY",
       "published": "2025-08-14",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 10517,
+      "length": "0:40",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 494,
+        "comments": 7,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176719,15 +176873,22 @@
       "url": "https://www.youtube.com/watch?v=r6te2jMGDiQ",
       "published": "2025-08-14",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 9590,
+      "length": "0:45",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 537,
+        "comments": 10,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176737,15 +176898,22 @@
       "url": "https://www.youtube.com/watch?v=qEvf16gOZ5I",
       "published": "2025-08-15",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 7519,
+      "length": "0:45",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 392,
+        "comments": 8,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176755,15 +176923,22 @@
       "url": "https://www.youtube.com/watch?v=yc9geoyXGF8",
       "published": "2025-08-16",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 6363,
+      "length": "0:40",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 439,
+        "comments": 3,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176773,15 +176948,22 @@
       "url": "https://www.youtube.com/watch?v=lhm1LKsOu4I",
       "published": "2025-08-19",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 20313,
+      "length": "0:34",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1052,
+        "comments": 27,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176791,15 +176973,22 @@
       "url": "https://www.youtube.com/watch?v=ntbagHe_ZdI",
       "published": "2025-08-21",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 11415,
+      "length": "0:46",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 651,
+        "comments": 4,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176809,15 +176998,22 @@
       "url": "https://www.youtube.com/watch?v=tn6DQG1JbYU",
       "published": "2025-08-30",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 1801,
+      "length": "0:04",
       "age_days": null,
       "query": "refiled from the pool (channel:Food Decoded)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCh8eX1zZayWWqrbYee12iDg"
+        "channelId": "UCh8eX1zZayWWqrbYee12iDg",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176827,15 +177023,22 @@
       "url": "https://www.youtube.com/watch?v=Z9_7h27VR3s",
       "published": "2025-09-01",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 25455,
+      "length": "0:32",
       "age_days": null,
       "query": "refiled from the pool (channel:The Longevity Experts)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCr916X0FYsVrO6e15VJSQNw"
+        "channelId": "UCr916X0FYsVrO6e15VJSQNw",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 594,
+        "comments": 8,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176845,15 +177048,22 @@
       "url": "https://www.youtube.com/watch?v=vmCSKb0mCgc",
       "published": "2025-09-19",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 205,
+      "length": "0:57",
       "age_days": null,
       "query": "refiled from the pool (channel:GLP-1 Hub)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UChKuewv_LGcU79grXky3J4w"
+        "channelId": "UChKuewv_LGcU79grXky3J4w",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176863,15 +177073,22 @@
       "url": "https://www.youtube.com/watch?v=LstdtVRWJhc",
       "published": "2025-09-23",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 6946,
+      "length": "0:35",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 244,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176881,15 +177098,22 @@
       "url": "https://www.youtube.com/watch?v=F5LUfkX8tTc",
       "published": "2025-09-27",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 14481,
+      "length": "0:37",
       "age_days": null,
       "query": "refiled from the pool (channel:MochiMuscles)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCqUyND9C4_lbR67V03kPIVw"
+        "channelId": "UCqUyND9C4_lbR67V03kPIVw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 449,
+        "comments": 23,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176899,15 +177123,22 @@
       "url": "https://www.youtube.com/watch?v=zvmWeY906Zw",
       "published": "2025-11-04",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 4965,
+      "length": "22:50",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 383,
+        "comments": 177,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176917,15 +177148,22 @@
       "url": "https://www.youtube.com/watch?v=vwmovAEYQRs",
       "published": "2025-12-15",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 7123,
+      "length": "18:31",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 464,
+        "comments": 149,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176935,15 +177173,22 @@
       "url": "https://www.youtube.com/watch?v=6fhzhIkD4UM",
       "published": "2025-12-19",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 109,
+      "length": "1:09",
       "age_days": null,
       "query": "refiled from the pool (channel:Food Decoded)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCh8eX1zZayWWqrbYee12iDg"
+        "channelId": "UCh8eX1zZayWWqrbYee12iDg",
+        "category": "24",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176953,15 +177198,22 @@
       "url": "https://www.youtube.com/watch?v=YLiLbmqAPnM",
       "published": "2026-01-05",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 8020,
+      "length": "24:14",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 472,
+        "comments": 148,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176971,15 +177223,22 @@
       "url": "https://www.youtube.com/watch?v=TVjClCsY7SY",
       "published": "2026-01-20",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 9993,
+      "length": "25:45",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 493,
+        "comments": 117,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -176989,15 +177248,22 @@
       "url": "https://www.youtube.com/watch?v=KbBna80i2Gs",
       "published": "2026-02-05",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 2591,
+      "length": "41:42",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 155,
+        "comments": 66,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177007,15 +177273,22 @@
       "url": "https://www.youtube.com/watch?v=X9nOe9Yu2mw",
       "published": "2026-04-10",
       "first_seen": "2026-09-20",
-      "views": null,
-      "length": null,
+      "views": 5005,
+      "length": "3:14",
       "age_days": null,
       "query": "refiled from the pool (channel:V Sparkel Wellness Center)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCTn_xwi1w1NqUNbyUWXPUAw"
+        "channelId": "UCTn_xwi1w1NqUNbyUWXPUAw",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 109,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177025,15 +177298,22 @@
       "url": "https://www.youtube.com/watch?v=h9fcZmAqp44",
       "published": "2026-05-22",
       "first_seen": "2026-10-03",
-      "views": null,
-      "length": null,
+      "views": 66342,
+      "length": "36:22",
       "age_days": null,
       "query": "refiled from the pool (channel:Countess of Shopping)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA"
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2483,
+        "comments": 262,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177043,15 +177323,22 @@
       "url": "https://www.youtube.com/watch?v=DrNSFOqqcMM",
       "published": "2026-08-14",
       "first_seen": "2026-10-02",
-      "views": null,
-      "length": null,
+      "views": 226,
+      "length": "2:09",
       "age_days": null,
       "query": "refiled from the pool (channel:CTV News)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCi7Zk9baY1tvdlgxIML8MXg"
+        "channelId": "UCi7Zk9baY1tvdlgxIML8MXg",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 5,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177061,15 +177348,22 @@
       "url": "https://www.youtube.com/watch?v=3pPqVWZgnf4",
       "published": "2026-08-14",
       "first_seen": "2026-10-08",
-      "views": null,
-      "length": null,
+      "views": 1203,
+      "length": "0:50",
       "age_days": null,
       "query": "refiled from the pool (channel:Ravi K Gupta, M.D.)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCYD-JdZYRwY6sxXgZD6kERw"
+        "channelId": "UCYD-JdZYRwY6sxXgZD6kERw",
+        "category": "28",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 23,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177079,15 +177373,22 @@
       "url": "https://www.youtube.com/watch?v=3BTQbkK3mFQ",
       "published": "2026-09-17",
       "first_seen": "2026-09-22",
-      "views": null,
-      "length": null,
+      "views": 83,
+      "length": "19:27",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCpiQBrb3Hu-k3NQmDRT34Ng"
+        "channelId": "UCpiQBrb3Hu-k3NQmDRT34Ng",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177097,15 +177398,22 @@
       "url": "https://www.youtube.com/watch?v=s535sZG12aU",
       "published": "2026-09-19",
       "first_seen": "2026-09-21",
-      "views": null,
-      "length": null,
+      "views": 278,
+      "length": "4:59",
       "age_days": null,
       "query": "refiled from the pool (channel:Deliish Nutrition by Eva)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuocEwp40Pz5VrcxlymeYpQ"
+        "channelId": "UCuocEwp40Pz5VrcxlymeYpQ",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": 4,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177115,15 +177423,22 @@
       "url": "https://www.youtube.com/watch?v=Ctd8f8v__c8",
       "published": "2026-09-23",
       "first_seen": "2026-10-02",
-      "views": null,
-      "length": null,
+      "views": 940,
+      "length": "1:52",
       "age_days": null,
       "query": "refiled from the pool (channel:CTV News)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCi7Zk9baY1tvdlgxIML8MXg"
+        "channelId": "UCi7Zk9baY1tvdlgxIML8MXg",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177133,15 +177448,22 @@
       "url": "https://www.youtube.com/watch?v=erRPIPvGiMI",
       "published": "2026-09-29",
       "first_seen": "2026-09-30",
-      "views": null,
-      "length": null,
+      "views": 69,
+      "length": "7:03",
       "age_days": null,
       "query": "refiled from the pool (channel:ehealthyinfo)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177151,15 +177473,22 @@
       "url": "https://www.youtube.com/watch?v=ZLLe-L0yivk",
       "published": "2026-09-29",
       "first_seen": "2026-09-30",
-      "views": null,
-      "length": null,
+      "views": 2,
+      "length": "0:44",
       "age_days": null,
       "query": "refiled from the pool (channel:Natal Sphere)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC8JFjJHvOFSgtXihyuUNBoQ"
+        "channelId": "UC8JFjJHvOFSgtXihyuUNBoQ",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177169,15 +177498,22 @@
       "url": "https://www.youtube.com/watch?v=44rR-CC-vBM",
       "published": "2026-10-01",
       "first_seen": "2026-10-02",
-      "views": null,
-      "length": null,
+      "views": 82,
+      "length": "1:17",
       "age_days": null,
       "query": "refiled from the pool (channel:Jenna Werner, RD)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCjfhILhH0T0WP6E4k0q6Ndg"
+        "channelId": "UCjfhILhH0T0WP6E4k0q6Ndg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177187,15 +177523,22 @@
       "url": "https://www.youtube.com/watch?v=UpBBrv5wJ4c",
       "published": "2026-10-04",
       "first_seen": "2026-10-04",
-      "views": null,
-      "length": null,
+      "views": 64738,
+      "length": "0:29",
       "age_days": null,
       "query": "refiled from the pool (channel:Vanitha TV)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCTcH-GOkexQHWKBWSfOjhPQ"
+        "channelId": "UCTcH-GOkexQHWKBWSfOjhPQ",
+        "category": "24",
+        "language": "te",
+        "captions": false,
+        "live": false,
+        "likes": 308,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177205,15 +177548,22 @@
       "url": "https://www.youtube.com/watch?v=jmJ_M2AK3SQ",
       "published": "2026-10-05",
       "first_seen": "2026-10-05",
-      "views": null,
-      "length": null,
+      "views": 907,
+      "length": "0:07",
       "age_days": null,
       "query": "refiled from the pool (channel:FitNutriLife)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w"
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     },
     {
@@ -177223,15 +177573,872 @@
       "url": "https://www.youtube.com/watch?v=eewtf6P5FLo",
       "published": "2026-10-06",
       "first_seen": "2026-10-07",
-      "views": null,
-      "length": null,
+      "views": 483,
+      "length": "0:24",
       "age_days": null,
       "query": "refiled from the pool (channel:Medisphere)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC6H9OPLbNsGZ14VSeRFWptQ"
+        "channelId": "UC6H9OPLbNsGZ14VSeRFWptQ",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "8PH0tSlVZdc",
+      "title": "46 calorie GLP-1 Meal Prep: Easy Kabocha Squash Hack! #glp1 #zepbound",
+      "channel": "Countess of Shopping",
+      "url": "https://www.youtube.com/watch?v=8PH0tSlVZdc",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 1312,
+      "length": "0:25",
+      "age_days": 0,
+      "query": "channel sweep: Countess of Shopping",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 52,
+        "comments": 2,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "BHMP8s2zHQA",
+      "title": "Never Consume These Foods Like This",
+      "channel": "Dr. Berg Shorts",
+      "url": "https://www.youtube.com/watch?v=BHMP8s2zHQA",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 22218,
+      "length": "0:05",
+      "age_days": 1,
+      "query": "channel sweep: Dr. Berg Shorts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCpWhiwlOPxOmwQu5xyjtLDw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 455,
+        "comments": 12,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "4jOycHuRKx0",
+      "title": "How to Debloat in 7 Days Naturally 🌿 | Foods to Avoid & Add",
+      "channel": "FitNutriLife",
+      "url": "https://www.youtube.com/watch?v=4jOycHuRKx0",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 16,
+      "length": "0:07",
+      "age_days": 0,
+      "query": "channel sweep: FitNutriLife",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCw-9jcZjyRg14_OgSuMQD-w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "3mTEudaZook",
+      "title": "8 Everyday Kitchen Foods For Healthy Ageing. #healthtips #stayhealthy",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=3mTEudaZook",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 13,
+      "length": "0:09",
+      "age_days": 0,
+      "query": "channel sweep: Healthy Tips By  H.S",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "6sICO-U2-bA",
+      "title": "8 Foods To Support Stronger Muscle And Bones. #healthtips #stayhealthy",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=6sICO-U2-bA",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 78,
+      "length": "0:08",
+      "age_days": 1,
+      "query": "channel sweep: Healthy Tips By  H.S",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "qAdaPpDwX38",
+      "title": "Over 60? 9 Foods You May Want To Limit. #healthtips #stayhealthy",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=qAdaPpDwX38",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 110,
+      "length": "0:09",
+      "age_days": 1,
+      "query": "channel sweep: Healthy Tips By  H.S",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "x8YOj3O5EZw",
+      "title": "12 simple fitness tests after 60 💪 Check your strength, balance & mobility to support healthy aging!",
+      "channel": "HOME REMEDIES BY DOC NAINA",
+      "url": "https://www.youtube.com/watch?v=x8YOj3O5EZw",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 1,
+      "length": "0:03",
+      "age_days": 0,
+      "query": "channel sweep: HOME REMEDIES BY DOC NAINA",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCaxSWHGwsm48N4WePJe8IjA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "18kfxHV2mSk",
+      "title": "9 Foods to Support Healthy Aging After 60! 🌿 Eat smart, nourish your organs, and age healthily! 💚",
+      "channel": "HOME REMEDIES BY DOC NAINA",
+      "url": "https://www.youtube.com/watch?v=18kfxHV2mSk",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 79,
+      "length": "0:04",
+      "age_days": 1,
+      "query": "channel sweep: HOME REMEDIES BY DOC NAINA",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCaxSWHGwsm48N4WePJe8IjA",
+        "language": "ta",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "yfGVurMpKO0",
+      "title": "Seniors: Eat THESE 3 Dry Fruits Daily to ELIMINATE Arthritis Pain Naturally",
+      "channel": "Arthritis HealthCare",
+      "url": "https://www.youtube.com/watch?v=yfGVurMpKO0",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 2892,
+      "length": "11:21:04",
+      "age_days": 0,
+      "query": "channel sweep: Arthritis HealthCare",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9uHUmG37SuzCyWLxxlwTnA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 42,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "otNPWY4n07U",
+      "title": "12 Plants Seniors Should Eat for Strong Bones and Healthy Joints",
+      "channel": "Industry Leak",
+      "url": "https://www.youtube.com/watch?v=otNPWY4n07U",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 18,
+      "length": "40:16",
+      "age_days": 0,
+      "query": "channel sweep: Industry Leak",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCSSEDMn_-Z5B9_6J05IT0ow",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "f1cfTj9nvYE",
+      "title": "my chronic fatigue lifted once i caught which clean food triggered it",
+      "channel": "NutriAI",
+      "url": "https://www.youtube.com/watch?v=f1cfTj9nvYE",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 2,
+      "length": "0:14",
+      "age_days": 0,
+      "query": "channel sweep: NutriAI",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCmsVhRRQpmHSwln8pcA_Rrg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "3N12bw3m4to",
+      "title": "Day 12 of 30 — Sizzling Turmeric-Garlic Shrimp with Lemon-Herb Rice | Anti-Inflammatory Dinners",
+      "channel": "HealingKitchenCo",
+      "url": "https://www.youtube.com/watch?v=3N12bw3m4to",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 192,
+      "length": "0:15",
+      "age_days": 1,
+      "query": "channel sweep: HealingKitchenCo",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC8-na5-r-7Tovx8zhPwD-dQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "2JNOiwD-u34",
+      "title": "One-Pan Lemon-Turmeric Baked Cod 🐟 Anti-Inflammatory Dinner (Day 12 of 30)",
+      "channel": "HealingKitchenCo",
+      "url": "https://www.youtube.com/watch?v=2JNOiwD-u34",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 1037,
+      "length": "0:14",
+      "age_days": 1,
+      "query": "channel sweep: HealingKitchenCo",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC8-na5-r-7Tovx8zhPwD-dQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "9VZF6RoUQXE",
+      "title": "Charred Turmeric Broccoli with Creamy Tahini 🥦 — Day 11 of 30 Anti-Inflammatory Dinners",
+      "channel": "HealingKitchenCo",
+      "url": "https://www.youtube.com/watch?v=9VZF6RoUQXE",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-12",
+      "views": 875,
+      "length": "0:15",
+      "age_days": 2,
+      "query": "channel sweep: HealingKitchenCo",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC8-na5-r-7Tovx8zhPwD-dQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "wsBrD3cGcYU",
+      "title": "Jeff Nippard flags his own 2010 contest diet plan as too rigid",
+      "channel": "Nutrition Unpacked",
+      "url": "https://www.youtube.com/watch?v=wsBrD3cGcYU",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 794,
+      "length": "0:19",
+      "age_days": 0,
+      "query": "channel sweep: Nutrition Unpacked",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC0GbdmxIPzJhWUsD5vS2kRg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "ysS5AGbFsCo",
+      "title": "Amlodipine & Diet: Lowering LDL, ApoB, and Triglycerides #shorts",
+      "channel": "Health Group Coaching with Dr Rawat MD",
+      "url": "https://www.youtube.com/watch?v=ysS5AGbFsCo",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 0,
+      "length": "2:46",
+      "age_days": 1,
+      "query": "channel sweep: Health Group Coaching with Dr Rawat MD",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCue_YgxyfAt9SsvAFyk0mQw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "M9rvuS8HqP0",
+      "title": "sabias esto #recetas #salud #alimentossanos #alimentosantiinflamatorios #frutas",
+      "channel": "comamos bien",
+      "url": "https://www.youtube.com/watch?v=M9rvuS8HqP0",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 1,
+      "length": "0:18",
+      "age_days": 0,
+      "query": "channel sweep: comamos bien",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCXwWaGUsjm_CMc6k6hZOEpw",
+        "language": "es-419",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "P_WWUevrnRU",
+      "title": "sabias esto #recetas #alimentossanos #salud #alimentosantiinflamatorios #frutas",
+      "channel": "comamos bien",
+      "url": "https://www.youtube.com/watch?v=P_WWUevrnRU",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 2973,
+      "length": "0:20",
+      "age_days": 0,
+      "query": "channel sweep: comamos bien",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCXwWaGUsjm_CMc6k6hZOEpw",
+        "language": "es-419",
+        "captions": false,
+        "live": false,
+        "likes": 81,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "lKqLc0YtFuY",
+      "title": "#recetas #alimentossanos #alimentosantiinflamatorios #recetasfaciles #comerbien #comidasaludable",
+      "channel": "Recetas para la vida",
+      "url": "https://www.youtube.com/watch?v=lKqLc0YtFuY",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 1062,
+      "length": "0:52",
+      "age_days": 1,
+      "query": "channel sweep: Recetas para la vida",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC4AioV_gSq35bM-3JpC4siA",
+        "language": "es",
+        "captions": false,
+        "live": false,
+        "likes": 21,
+        "comments": 1,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "PfkxN_N57-M",
+      "title": "#recetas #alimentossanos #alimentosantiinflamatorios #recetasfaciles #comerbien #comidasaludable",
+      "channel": "Recetas para la vida",
+      "url": "https://www.youtube.com/watch?v=PfkxN_N57-M",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 1106,
+      "length": "0:43",
+      "age_days": 1,
+      "query": "channel sweep: Recetas para la vida",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC4AioV_gSq35bM-3JpC4siA",
+        "language": "es",
+        "captions": false,
+        "live": false,
+        "likes": 20,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "ilwX8f__j18",
+      "title": "#recetas #alimentossanos #alimentosantiinflamatorios #recetasfaciles #comerbien #comidasaludable",
+      "channel": "Recetas para la vida",
+      "url": "https://www.youtube.com/watch?v=ilwX8f__j18",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 21,
+      "length": "0:30",
+      "age_days": 1,
+      "query": "channel sweep: Recetas para la vida",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC4AioV_gSq35bM-3JpC4siA",
+        "language": "es",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "fwGu0f5D140",
+      "title": "Eat These 5 Foods to Lower Your Morning Blood Sugar",
+      "channel": "Mastering Diabetes",
+      "url": "https://www.youtube.com/watch?v=fwGu0f5D140",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 3055,
+      "length": "17:15",
+      "age_days": 0,
+      "query": "channel sweep: Mastering Diabetes",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCqCsh71eOXZrwqj3oYGfqlg",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 126,
+        "comments": 136,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "vo9FVFQP1Cw",
+      "title": "Where Does Your Body Store Fat when You Stop Eating?",
+      "channel": "Daily Q&A",
+      "url": "https://www.youtube.com/watch?v=vo9FVFQP1Cw",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 2,
+      "length": "1:32",
+      "age_days": 1,
+      "query": "channel sweep: Daily Q&A",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfAmSKzwvVrlQEohPOAHzCg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "oib9Gg9Nr1w",
+      "title": "Why Does Your Body Get Sick? The Hidden Causes of Joint Pain",
+      "channel": "News One",
+      "url": "https://www.youtube.com/watch?v=oib9Gg9Nr1w",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 476,
+      "length": "46:04",
+      "age_days": 1,
+      "query": "channel sweep: News One",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCjHWKUbljF4hp3s5PbgK9uA",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "w_JdI90SfT0",
+      "title": "Joint Pain से परेशान युवा! क्या गठिया दे रहा है दस्तक? | Aapki Khabar Aapka Fayda",
+      "channel": "Zee Business",
+      "url": "https://www.youtube.com/watch?v=w_JdI90SfT0",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 1722,
+      "length": "30:30",
+      "age_days": 0,
+      "query": "channel sweep: Zee Business",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCkXopQ3ubd-rnXnStZqCl2w",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "LFsJyx76_v4",
+      "title": "🤣🌿💥 This Lego Tapir Is Something You Don’t See Every Day!#funny #comedy #viral #trending #shorts",
+      "channel": "THE TAROT LIFE COACH",
+      "url": "https://www.youtube.com/watch?v=LFsJyx76_v4",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 885,
+      "length": "0:11",
+      "age_days": 0,
+      "query": "channel sweep: THE TAROT LIFE COACH",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC4LpaVdTRT_S15X_rXmcEOA",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "UdMNcYYUzSs",
+      "title": "Russian strikes hit Ukrainian grocery store in Kharkiv",
+      "channel": "SBS News",
+      "url": "https://www.youtube.com/watch?v=UdMNcYYUzSs",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 2130,
+      "length": "0:19",
+      "age_days": 0,
+      "query": "channel sweep: SBS News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCuuTCooIMbBFHNbPcSS70uw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 32,
+        "comments": 3,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "6Mhjqd37swM",
+      "title": "Still dragging even though you take your thyroid medication every day?",
+      "channel": "Med Matrix",
+      "url": "https://www.youtube.com/watch?v=6Mhjqd37swM",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 197,
+      "length": "0:25",
+      "age_days": 1,
+      "query": "channel sweep: Med Matrix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCBtScd3KQQ2u1eQCJIr1Tig",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "L5U_NlZdJjc",
+      "title": "ANTI INFLAMMATORY DRINK | REDUCE INFLAMMATION #ANTIINFLAMMATORYRECIPE #detoxwater #detoxdiet #tea",
+      "channel": "Health And Fitness Tips",
+      "url": "https://www.youtube.com/watch?v=L5U_NlZdJjc",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 307,
+      "length": "0:32",
+      "age_days": 0,
+      "query": "channel sweep: Health And Fitness Tips",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCnlgiPLpnXdXr7opagJv3fA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "JqIVnOQ6bFU",
+      "title": "INTERMITTENT FASTING DIET PLAN FOR FAT LOSS #INTERMITTENTFASTING  #weightlossjourney",
+      "channel": "Health And Fitness Tips",
+      "url": "https://www.youtube.com/watch?v=JqIVnOQ6bFU",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 1214,
+      "length": "0:08",
+      "age_days": 1,
+      "query": "channel sweep: Health And Fitness Tips",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCnlgiPLpnXdXr7opagJv3fA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "m7SR-E_SveM",
+      "title": "POV: When you  Meal Prep for the Week… and Regret It by Tuesday 😂",
+      "channel": "Healthy & Fit After 60",
+      "url": "https://www.youtube.com/watch?v=m7SR-E_SveM",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 75,
+      "length": "0:10",
+      "age_days": 0,
+      "query": "channel sweep: Healthy & Fit After 60",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCA58Rk_eevqA0I6B1Rwjoeg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "m1jABBJ3OKM",
+      "title": "healthy snacking in navratri fasting | High protein laddoo | Home made protein snacks | #protein",
+      "channel": "Anhat Wellness",
+      "url": "https://www.youtube.com/watch?v=m1jABBJ3OKM",
+      "published": "2026-10-12",
+      "first_seen": "2026-10-12",
+      "views": 1,
+      "length": "0:51",
+      "age_days": 0,
+      "query": "channel sweep: Anhat Wellness",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCCJ4Cjq_kKXMAbo6KQUwTyw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "njxB__wU1bw",
+      "title": "Taquitos de Pollo en Tortilla de Zanahoria • Dia 35/375 • Dieta Antiinflamatoria",
+      "channel": "Everyday Cookbook",
+      "url": "https://www.youtube.com/watch?v=njxB__wU1bw",
+      "published": "2026-10-10",
+      "first_seen": "2026-10-12",
+      "views": 212,
+      "length": "1:16",
+      "age_days": 2,
+      "query": "channel sweep: Everyday Cookbook",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCZa7nxhrYWD1mwgsuE-n57g",
+        "language": "es-419",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
+    },
+    {
+      "videoId": "D9_pReFs9CU",
+      "title": "These recipes look SO GOOD #recipeideas #antiinflammatoryeating  #ingredients #fig",
+      "channel": "Nutritionally Michele",
+      "url": "https://www.youtube.com/watch?v=D9_pReFs9CU",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 16,
+      "length": "0:12",
+      "age_days": 1,
+      "query": "channel sweep: Nutritionally Michele",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeWRfUOzw3gKjprvmxqCoVQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
       }
     }
   ],

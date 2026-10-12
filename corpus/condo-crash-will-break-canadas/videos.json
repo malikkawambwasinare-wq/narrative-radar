@@ -13462,6 +13462,31 @@
         "channelViews": 22720207,
         "channelVideos": 4638
       }
+    },
+    {
+      "videoId": "gCY8AlfbT0Q",
+      "title": "Global Cancer Rates Are Rising Fast",
+      "channel": "MyersMedical",
+      "url": "https://www.youtube.com/watch?v=gCY8AlfbT0Q",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-12",
+      "views": 2,
+      "length": "5:29",
+      "age_days": 1,
+      "query": "channel sweep: MyersMedical",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCS9QSiZx-s3MJzRDa4pXpqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-12"
+      }
     }
   ]
 }
