@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-12"
+      "unavailable": "2026-10-13"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -69985,7 +69985,82 @@
         "comments": 33,
         "enrichedOn": "2026-10-12"
       }
+    },
+    {
+      "videoId": "RY93fPc--m4",
+      "title": "OpenAI Announce The Most IMPORTANT AI Project EVER (Project Stargate)",
+      "channel": "TheAIGRID",
+      "url": "https://www.youtube.com/watch?v=RY93fPc--m4",
+      "published": "2025-01-22",
+      "first_seen": "2026-10-13",
+      "views": 43223,
+      "length": "14:20",
+      "age_days": 629,
+      "query": "channel sweep: TheAIGRID",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCbY9xX3_jW5c2fjlZVBI4cg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1069,
+        "comments": 304,
+        "enrichedOn": "2026-10-13"
+      }
+    },
+    {
+      "videoId": "UgmWp_Jn-2U",
+      "title": "Microsoft & OpenAI's Project Stargate: A $100 Billion Leap Towards AGI?",
+      "channel": "TheAIGRID",
+      "url": "https://www.youtube.com/watch?v=UgmWp_Jn-2U",
+      "published": "2024-05-23",
+      "first_seen": "2026-10-13",
+      "views": 18924,
+      "length": "14:49",
+      "age_days": 873,
+      "query": "channel sweep: TheAIGRID",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCbY9xX3_jW5c2fjlZVBI4cg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 503,
+        "comments": 226,
+        "enrichedOn": "2026-10-13"
+      }
+    },
+    {
+      "videoId": "O1vJwq5b_wk",
+      "title": "China Found Something We’ve Never Seen Before on the Far Side of the Moon.",
+      "channel": "Galaxy Unsealed",
+      "url": "https://www.youtube.com/watch?v=O1vJwq5b_wk",
+      "published": "2026-08-28",
+      "first_seen": "2026-10-13",
+      "views": 688,
+      "length": "18:52",
+      "age_days": 46,
+      "query": "channel sweep: Galaxy Unsealed",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCqr9Eapb1Rwz32t72FAsq9Q",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 2,
+        "enrichedOn": "2026-10-13"
+      }
     }
   ],
-  "updated": "2026-10-12"
+  "updated": "2026-10-13"
 }
