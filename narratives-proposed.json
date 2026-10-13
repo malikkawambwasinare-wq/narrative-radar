@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-12",
+ "generated": "2026-10-13",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2014,
+ "cost_usd": 0.2082,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -39804,6 +39804,1488 @@
    },
    "first_read": "2026-10-12",
    "last_read": "2026-10-12"
+  },
+  {
+   "phrase": "end rainbow",
+   "verdict": "rhetoric",
+   "why": "A metaphor used in tarot and misc titles with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 7,
+    "span": "2021-02 → 2025-07",
+    "examples": [
+     "CANCER - \"At the End of the Rainbow\" FEBRUARY 22ND - 28TH",
+     "TAURUS *THE POT OF GOLD AT THE END OF THE RAINBOW IS NOW IN REACH! MONEY & CAREER",
+     "Tesla's A.I. \"Pot of Gold at the end of a rainbow\" #shorts"
+    ],
+    "ids": [
+     "3rXyD6VAB4w",
+     "5ihuzv1sDD8",
+     "94mKUozgC-4",
+     "DAu9qOd6JOE",
+     "SE05AsdW1Vc",
+     "W9EwIxHArzs",
+     "kYb-RHCvQlU"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "end quantitative tightening",
+   "verdict": "narrative",
+   "why": "Titles share a checkable prediction that the Fed/central banks will end QT, with market consequences.",
+   "claim_name": "The \"the Fed will end quantitative tightening\" story",
+   "claim": "Central banks, especially the Fed, are about to stop quantitative tightening and return to easier money, which will drive a liquidity-fueled rally in risk assets like crypto and stocks.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Tight monetary policy is draining liquidity and suppressing asset prices",
+    "cause": "Central bank balance sheet runoff and rate policy",
+    "outcome": "QT ends, liquidity returns and risk assets rally",
+    "clock": "within the current or coming year"
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2021-10 → 2026-10",
+    "examples": [
+     "New BOC Rate Hike Timeline - End Of Quantitative Easing",
+     "The Fed Will End Quantitative Tightening This Year",
+     "CRAZY FED TO END QUANTITATIVE TIGHTENING CRYPTO IS FXCKED?!"
+    ],
+    "ids": [
+     "EG55H2APpQU",
+     "bqukrHuNHvE",
+     "dbWrbdAMRQQ",
+     "gOQVpzY-q5I",
+     "lL__NeP4wR8"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "whole truth",
+   "verdict": "rhetoric",
+   "why": "Stock phrase in tarot/clickbait titles; no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 9,
+    "months": 6,
+    "span": "2018-07 → 2026-10",
+    "examples": [
+     "CANCER AUGUST 2018 - TRUTH, THE WHOLE TRUTH AND NOTHING BUT THE TRUTH!",
+     "ARIES AUGUST 2019 - \"You Just Want the Whole Truth and Nothing but the Truth!\"",
+     "LEO DECEMBER 2020 - \"The Whole Truth and Nothing But the Truth\""
+    ],
+    "ids": [
+     "3XYkI8xt5rU",
+     "3jBh1MX3Z_c",
+     "6iTtCxy3Ixo",
+     "8_JliAqHCh0",
+     "L3-4KSHpRYs",
+     "Nl5_0YfiE9g",
+     "Pnok9rKH8C0",
+     "WvOWauEJ7O4",
+     "aw7UfrVoAOY",
+     "hMcg9ngwB-w"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "loose ends",
+   "verdict": "rhetoric",
+   "why": "Tarot reading idiom with no checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 6,
+    "span": "2020-01 → 2025-11",
+    "examples": [
+     "Gemini:  Jan. 2nd-8th  \"THEY'RE COMING BACK...THEY JUST NEED TO TIE UP LOOSE ENDS.\"",
+     "SCORPIO Dec 21-27 | END OF AN ERA! TYING UP THE LOOSE ENDS OF 2020 ~ Tarot Reading",
+     "SCORPIO MID MARCH 2023 - \"Still Some Loose Ends to This\""
+    ],
+    "ids": [
+     "N1H0jg27beQ",
+     "PUUjK9_hhJk",
+     "b7gTM5xaMVs",
+     "oJWNJ_9URl8",
+     "oZ5KI0bxa2Q",
+     "tPoR3zjlm7Q"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "white house ban",
+   "verdict": "rhetoric",
+   "why": "A news subject label covering unrelated bans, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 52,
+    "channels": 37,
+    "months": 4,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "Judge temporarily blocks White House ban on Harvard international student enrolment",
+     "Inside OpenAI’s $3.7B Cash Burn, White House Ban on Anthropic, & Salesforce Enterprise Talent War",
+     "Trump News: White House Ban Sparks New Fallout"
+    ],
+    "ids": [
+     "-rf_pnE4gXc",
+     "0EQGQ7WDUHU",
+     "11ObIA6rH3s",
+     "1xMypd4jNec",
+     "4x8McoX39Is",
+     "53B3GAPTGTU",
+     "5Mm_ROTMvWw",
+     "5O6FuPxOzZM",
+     "5jFiPJ8iQW8",
+     "7ru6_9O1GK4",
+     "BoKBM1PT99s",
+     "ES1XFesXzvo",
+     "FAi-J7w9Ltk",
+     "H28AkUBxtws",
+     "IrXQBkSx4Ek",
+     "Iu-N1zhdNR0",
+     "IwS3YgDqBXg",
+     "JPUkJwpri4c",
+     "N1VHrLK1Qo8",
+     "NBkj3MZ_ZCQ"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "truth glp-1s",
+   "verdict": "duplicate",
+   "why": "Same 'what you aren't told about GLP-1 drugs' framing as the tracked Ozempic narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "truth-about-ozempic-they-arent",
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "The Truth About GLP-1s: Real Results, Real Talk – DOWNSIZED LIVE!",
+     "The Truth About GLP-1s: Life-Changing, Not Magic with Dr Francavilla",
+     "340 lbs Down with Zepbound! Jamie Tells the Truth About GLP-1s"
+    ],
+    "ids": [
+     "1SQn0l6-KzE",
+     "DEaVnhzwMRM",
+     "RwI69MpMq5s",
+     "bzYkOzT1UzE",
+     "kGrsZ49IVk8",
+     "lxhiOA7FdmI",
+     "vXjLcC60bhA"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "motor show",
+   "verdict": "rhetoric",
+   "why": "Event coverage genre, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 7,
+    "months": 3,
+    "span": "2025-01 → 2026-10",
+    "examples": [
+     "Electric vehicles take spotlight at India's largest motor show",
+     "@hyundaiindia Creta EV Launched at ₹17.99 lacs I Price, Range, Features I Auto Expo Motor Show 2025",
+     "Carmakers showcase latest tech at Japan's largest motor show against backdrop of US tariffs"
+    ],
+    "ids": [
+     "-rTri6OjJ-o",
+     "5qCcILN8EGQ",
+     "6wSKgpEVeYg",
+     "AltiDVZCxRE",
+     "KT_cm5vwH7c",
+     "PLKZV7Jyo7s",
+     "_pGr_h4Kri8",
+     "j5DzTmPLUzA",
+     "ok4e89_Fub4"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "trader explains",
+   "verdict": "rhetoric",
+   "why": "Authority-format packaging phrase, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 38,
+    "channels": 5,
+    "months": 6,
+    "span": "2017-03 → 2025-08",
+    "examples": [
+     "John Netto, The Protean Trader, explains the Netto Number",
+     "BE READY: Expert Trader Explains How One Bitcoin Could Equal $200,000 in 2021 | The Moon Interview",
+     "🛑LIVE🛑 Bitcoin Is Trapping You Right Now [trader explains] June 2021 Price Prediction & News"
+    ],
+    "ids": [
+     "-OVd_lyZ5ZI",
+     "-mJRXPLqN2w",
+     "0SwYF5FdbIw",
+     "0mRKjjJv50o",
+     "5YD2Tqm55WE",
+     "6sS0480wRoo",
+     "8U4tWpFNEtA",
+     "8di-b3oowi0",
+     "AR2Scn9G4gU",
+     "AkPigfNRMqc",
+     "Cth11eeqvyg",
+     "DzIJNTk-Z5g",
+     "H-1wROzfg-w",
+     "HbkPPrP8f6o",
+     "J8RVtlYMc1U",
+     "JEkONUCqn4A",
+     "L7Iqp2ydJSo",
+     "PZhJrQwqpt4",
+     "R8xgtweLbbA",
+     "TdeKnbeIyig"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "traders must",
+   "verdict": "rhetoric",
+   "why": "Pure clickbait urgency framing with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 5,
+    "months": 6,
+    "span": "2021-10 → 2026-08",
+    "examples": [
+     "EXTREME BIG WARNING FOR ALL BITCOIN TRADERS!!! MUST WATCH ASAP!!",
+     "MAJOR WARNING FOR ALL BITCOIN HOLDERS AND TRADERS!!! [must see]",
+     "BITCOIN TRADERS MUST WATCH THIS PRICE!! Bitcoin News Today, Bitcoin Price Prediction, Bitcoin Crash"
+    ],
+    "ids": [
+     "5FOk7A_mNUc",
+     "6bSGSaM-X-I",
+     "9_8lpTvswjA",
+     "AVzQmbSBzV0",
+     "HVsB-BDnCJk",
+     "Iir9BEcBm3o",
+     "TLOl-tbAYmQ",
+     "VNSoWpdAhMs",
+     "XCiS1GJKpHs",
+     "um9R-eI8-3s"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "save family",
+   "verdict": "rhetoric",
+   "why": "Titles span unrelated rescue and political stories with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 17,
+    "channels": 9,
+    "months": 9,
+    "span": "2022-04 → 2026-10",
+    "examples": [
+     "Chris Lahy – Citizens Party VIC Mallee Candidate – Save Family Farms",
+     "UGA students save a family from a car accident",
+     "Listen to the remarkable Triple Zero call of 13yo boy who swam 4km to save his family | ABC NEWS"
+    ],
+    "ids": [
+     "0vzLr7adaXU",
+     "3vxEc4zc92c",
+     "BY8Nq8VtZXw",
+     "CzMjgBK-RDI",
+     "JN4I7O0exWA",
+     "JSotwO5iJEs",
+     "KgRhS9G3KMc",
+     "Nl3d2js99EI",
+     "ObKT6ABTrGU",
+     "aLRLuoWAbik",
+     "eeVMoeUz044",
+     "p8QPmWvIlVU",
+     "rONmoHeT5Yk",
+     "rm5rqb3Stf8",
+     "v0uQFJTGAGA",
+     "wprxSFPildU",
+     "yJNA3X63O70"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "ceasefire ends",
+   "verdict": "rhetoric",
+   "why": "News-event coverage of a ceasefire's expiry, not a shared predictive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 15,
+    "channels": 8,
+    "months": 7,
+    "span": "2025-02 → 2026-07",
+    "examples": [
+     "Israel-Hamas ceasefire ends this week: Will peace be extended, or war begin again?",
+     "Last returned hostages buried as ceasefire ends | ABC NEWS",
+     "Palestinians mark Ramadan with uncertainty as 1st phase of ceasefire ends"
+    ],
+    "ids": [
+     "-glRcaywF_g",
+     "0JxhdfghRsQ",
+     "0QBHddouA9k",
+     "3Mo_iSLF_jE",
+     "E3aWpAxj0aA",
+     "MajLg13AhMo",
+     "U8nUHsHv_9U",
+     "ajGwu9_xjnM",
+     "ffDnM8oxLVM",
+     "jDVbBCPHvPk",
+     "m57ZfwphznQ",
+     "nK59wQ8zce8",
+     "sF3a5JhktR4",
+     "sn8W-GlH7Mc",
+     "v6gtTYbPisM"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "ends meet",
+   "verdict": "rhetoric",
+   "why": "Cost-of-living reporting phrase; no single falsifiable claim shared across titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 14,
+    "channels": 7,
+    "months": 8,
+    "span": "2024-10 → 2026-10",
+    "examples": [
+     "Creative ways young Canadians are making ends meet",
+     "Many renters in Canada rely on credit cards to make ends meet | The Current",
+     "How a family of 5 makes ends meet amid rising costs"
+    ],
+    "ids": [
+     "4OHTJs3Ok9o",
+     "ERDVVA1Lk-4",
+     "N9QNEhRGGt0",
+     "OZ0rCaGeG5w",
+     "T3_ve1Hz-I8",
+     "UD2ORU7DqbQ",
+     "WuGglg_7NDs",
+     "XQOV3aX-oSM",
+     "XWzCKIdbHvc",
+     "bRuymAvfFfE",
+     "gc85DB9xkfI",
+     "o-harDED-iI",
+     "u2kAfjoul0U",
+     "v_Q3CsPbuek"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "person dead",
+   "verdict": "rhetoric",
+   "why": "Generic local-news casualty headline format with no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 8,
+    "months": 7,
+    "span": "2024-01 → 2026-10",
+    "examples": [
+     "At least 1 person dead in Iowa school shooting",
+     "1 person dead, 3 injured in shooting inside Woodbridge home: police",
+     "1 person dead after crash with MARTA bus in Atlanta"
+    ],
+    "ids": [
+     "4qb4PcUVo9U",
+     "BA54KpOntsk",
+     "EcMKRGmBuag",
+     "Hunde7gc5eQ",
+     "K-VSAqEjTHI",
+     "SCctdJODEPw",
+     "_5owkvc303s",
+     "bPILT-rD3OM",
+     "hMRyQ1rUhpE",
+     "hrIW5J-hELg",
+     "iPucyPgNkpo",
+     "oIywdiMiv5A",
+     "pTDCGs2PqI8"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "credit collapse",
+   "verdict": "narrative",
+   "why": "Titles share a checkable prediction that a credit/private-credit bubble will burst.",
+   "claim_name": "The \"credit collapse is coming\" story",
+   "claim": "A debt bubble in commercial real estate and private credit is unwinding, and a broad credit collapse will follow, hitting lenders and investors.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Overextended private credit and commercial real estate lending",
+    "cause": "Years of cheap money and loose underwriting now meeting higher rates",
+    "outcome": "A credit collapse that wipes out investors and forces a wider financial crisis",
+    "clock": "Imminent / already started"
+   },
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 7,
+    "span": "2023-08 → 2026-10",
+    "examples": [
+     "Commercial Real Estate Crisis Is Here, Is A Credit Collapse Next? | Adam Kobeissi",
+     "\"Credit COLLAPSE Coming...\" - Michael Pento",
+     "Private Credit COLLAPSE Has Started… And INVESTORS Are RUNNING!!!"
+    ],
+    "ids": [
+     "1_GGrQyesfc",
+     "2SWPst6TPe8",
+     "8xB_abmJ5Pw",
+     "8yziUa-xSLE",
+     "CyQnVqAkT0Y",
+     "Kba9hILSU8s",
+     "_qhXfXkY0CQ",
+     "poroe2L524Q",
+     "q1FSdi7Wm3g",
+     "rk8nIqdWD-A",
+     "vAK1s_HwWc8",
+     "vgPe4a41cu8"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "causes hair loss",
+   "verdict": "rhetoric",
+   "why": "Explainer-format subject matter; titles do not converge on one cause or claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 7,
+    "span": "2022-05 → 2026-09",
+    "examples": [
+     "What Causes Hair Loss?",
+     "What Are The Root Causes of Hair Loss and What You Can Do About It?",
+     "The Top Reasons Why Stress Causes Hair Loss | What To Do About It!"
+    ],
+    "ids": [
+     "Ig_c5LCt3dY",
+     "LzeRYkuPnlI",
+     "SQJmJXVkTr0",
+     "VqZZCjAc5Ss",
+     "ZdJyBsTZllE",
+     "auP-GPS-0dA",
+     "duX3FX7IImY"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "mega show",
+   "verdict": "rhetoric",
+   "why": "Descriptive label for spectacles and parades, no claim at all.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 7,
+    "months": 5,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "Air Force's mega show of strength: IAF Fighter Jets Land on Meerut-Prayagraj Ganga Expressway",
+     "Russia’s Victory Day Parade LIVE:Putin's Mega Show Of Military Might | Russia Victory Parade |Moscow",
+     "NEW YORK FIREWORKS LIVE | JUST IN: Macy's 50th July 4th Mega Show Begins! | Times Now World"
+    ],
+    "ids": [
+     "28tEfIHipG4",
+     "C8MOs1eSvX4",
+     "Oe30Vlc1ekM",
+     "PKoYwhEQDOA",
+     "felxO8hqzMA",
+     "uXV1dGbuR94",
+     "zmeJlGASPAI"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "save act",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that the SAVE Act's documentary proof-of-citizenship requirement will block eligible voters, especially women.",
+   "claim_name": "The \"SAVE Act will strip eligible Americans of their vote\" story",
+   "claim": "The SAVE Act's documentary proof-of-citizenship requirement for voter registration will disenfranchise millions of eligible Americans, particularly married women whose names don't match their birth certificates.",
+   "industry": "Politics & geopolitics",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "New federal voter registration rules demand documents many citizens lack",
+    "cause": "Republican-backed proof-of-citizenship legislation",
+    "outcome": "Millions of eligible voters, especially women, turned away at the polls",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 58,
+    "channels": 12,
+    "months": 11,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "Millions of US women could lose voting rights under SAVE Act | ABC NEWS",
+     "SAVE Act Explained: Americans will need these documents to vote — Or be turned away",
+     "Senate GOP Moves SAVE Act Toward Vote With Photo ID Requirement"
+    ],
+    "ids": [
+     "-lcX-YIX6tU",
+     "-x7-JWatauM",
+     "06F2T4euTGc",
+     "0QmZiByaFKI",
+     "15KZaylC7qo",
+     "6JUR5WfZf-Q",
+     "6u74XCAAJys",
+     "7J6nPqUi0HQ",
+     "7lhlb_GBrNc",
+     "8GX5_zbQ4DI",
+     "8LBfMbfZLfw",
+     "AdbWor5km6Q",
+     "AtyYhW5SCBI",
+     "Axg5O-y9rgs",
+     "BRDmm-X_ZAE",
+     "BYjZIZbDNyc",
+     "BiyGDVa_wlI",
+     "Bz54gzgpuuU",
+     "E3kawbxKY18",
+     "GZavPIvbhu8"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "fire kills",
+   "verdict": "rhetoric",
+   "why": "A news-event headline format about unrelated fatal fires, carrying no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 26,
+    "channels": 9,
+    "months": 12,
+    "span": "2024-05 → 2026-09",
+    "examples": [
+     "Marapi: \"Mountain of Fire\"kills at least 57 | 22 still missing #volcano #marapi #coldlava #indonasia",
+     "2 men arrested after Old Montreal hostel fire kills mother, daughter",
+     "Nightclub fire kills at least 59 in North Macedonia | ABC NEWS"
+    ],
+    "ids": [
+     "1y8kvViCPgk",
+     "3hr3w6BDpCQ",
+     "6fZAsIrvlCw",
+     "7N1LNKT9qec",
+     "7Rc0-GBMSd4",
+     "BHoqRA6Sjuc",
+     "FeJggZRxFXE",
+     "G5e487HdnTU",
+     "HKHkE0kPkNs",
+     "HZmvN3n2kpM",
+     "KxHTT7vdJBc",
+     "Li3rQWb2OI8",
+     "Lx6ihlI-ZhA",
+     "M1uGjZgvr80",
+     "MkFHz98Q7RE",
+     "U1KqoFF9qNU",
+     "XFLpL1HeJ8w",
+     "c7_mOQUYG94",
+     "cUXt24Uou9A",
+     "cjy3dZUpr9I"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "crashes during",
+   "verdict": "rhetoric",
+   "why": "Breaking-news phrasing for separate accidents, no common testable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 20,
+    "channels": 12,
+    "months": 11,
+    "span": "2024-07 → 2026-09",
+    "examples": [
+     "Nepal: Saurya Airlines plane carrying at least 19 people crashes during takeoff at Kathmandu airport",
+     "BREAKING | Air India Ahmedabad–London Flight Crashes During Takeoff | Flight AI171",
+     "BREAKING | Air India Plane Crashes During Takeoff In Ahmedabad, 242 People Onboard"
+    ],
+    "ids": [
+     "30-3_XCRn80",
+     "DI8etJC2mD8",
+     "GgoQ-hcGNb0",
+     "GwlRsciRhEw",
+     "JgY3KEtivPQ",
+     "PkYmjv93d44",
+     "So0J7_rUgwE",
+     "UIdMckRkp3Q",
+     "XBAhc8Y_Mhk",
+     "ke_rmNgyKZY",
+     "mqnMq6vrAbY",
+     "nfJR38DhHIE",
+     "o0ezETMu-S4",
+     "pm8NgXSTUZs",
+     "uBgrLrVcSBE",
+     "xIdAjqtRwbw",
+     "xYBKo2RlufY",
+     "xttFy29gFck",
+     "ydTlEL1PrkY",
+     "yn327Fme-UY"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "air india crash",
+   "verdict": "rhetoric",
+   "why": "A subject label for coverage of one event, not a claim about cause or outcome.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 69,
+    "channels": 12,
+    "months": 7,
+    "span": "2025-06 → 2026-07",
+    "examples": [
+     "💔Air India Crash Claims Over 240 Lives in Ahmedabad 🕊️🇮🇳",
+     "DJ Party After India’s Deadliest Air India Crash? DJ Party Sparks Backlash",
+     "Air India Crash Fallout: 66 Flights Cancelled, Sector Under DGCA Scanner"
+    ],
+    "ids": [
+     "0GJOQIYwxVA",
+     "1DbHEXJkJqg",
+     "1PHWSiRyPLo",
+     "3mk1vuxqPYQ",
+     "4YFOXpyMvR0",
+     "5ZqRGjFiQdI",
+     "5cyps_2jHFE",
+     "6KJjAGKgjwg",
+     "7fUp2Uv2hPk",
+     "8FElnf_p5Uo",
+     "8G-CY7g97NM",
+     "8xA1YuGKR_Y",
+     "95cQSphVf_8",
+     "9TTz4Elc40s",
+     "9kuti_C-kK8",
+     "B3yaWYBzixo",
+     "BF8FFobaG4s",
+     "Bkdw4gBnT2U",
+     "C9eINOY0YQM",
+     "EEE1rWwyehk"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "china bans",
+   "verdict": "narrative",
+   "why": "Titles converge on the claim that China's repeated bans threaten or control Bitcoin.",
+   "claim_name": "The \"China's crypto ban is a blow to Bitcoin\" story",
+   "claim": "China's repeated bans on Bitcoin mining and trading are a major threat to crypto markets and part of a push toward state control of money.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Bitcoin's price and network depend on Chinese participation",
+    "cause": "Beijing outlawing mining and trading to assert monetary control",
+    "outcome": "Crypto selloff and migration of mining abroad",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 25,
+    "channels": 18,
+    "months": 16,
+    "span": "2021-05 → 2026-09",
+    "examples": [
+     "China Bans Bitcoin… AGAIN!!! WTF?!?! [Crypto News 2021]",
+     "China Bans Bitcoin!!! We’re Screwed! Crypto News 2021",
+     "China Bans Bitcoin to Create Total Control"
+    ],
+    "ids": [
+     "3XIkN1oUgIc",
+     "55Rdsbk2Ho8",
+     "7leR0WiBPrk",
+     "D2qgLR8L2-4",
+     "J_82dskUSrw",
+     "Kbjq1xYTx4Q",
+     "N2srSrgTg68",
+     "OdJQOfAR1w4",
+     "PKfDznus_p4",
+     "QnP5YNdOzZM",
+     "VLulrc235nY",
+     "WEt2lRIm6Gw",
+     "W_rgvfWZt_A",
+     "esVSYw62KjY",
+     "ftg1rHOLVjc",
+     "g3OpnrHN7Q0",
+     "hjzKktXGM-Y",
+     "kmLfLjplIog",
+     "lkMaxkx7vhs",
+     "nVLhwJvtvWE"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "crash 2020",
+   "verdict": "duplicate",
+   "why": "Another dated market/housing crash call of the same family already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 19,
+    "channels": 13,
+    "months": 9,
+    "span": "2020-01 → 2020-09",
+    "examples": [
+     "Will the Market Crash in 2020? | Phil Town",
+     "Stock Market Crash of 2020 - My Recession Plan",
+     "The Real Estate Market Will Crash On.... (2020) |Wholesaling and Investing in Real Estate"
+    ],
+    "ids": [
+     "5nghrhwaRI0",
+     "61LoG5_Bk3k",
+     "Bzi2Zl2xBgw",
+     "Ct3XnshHTcc",
+     "PGypoP6gleQ",
+     "PICJmbW0vzE",
+     "VDd-ohNyFJI",
+     "Z2K83SPTjY4",
+     "ZA6f-izEYxQ",
+     "b6F9CUmJBY4",
+     "duYETnPYrlU",
+     "gYARJbNEVE0",
+     "i4UxSV0ezXA",
+     "iIi0Dk2rZvs",
+     "rjsOnJF_538",
+     "s6QsL7gckiE",
+     "vmHi_j9OUso",
+     "xoBi8JUHvRo",
+     "y6t4KcMMfW4"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "confidence crashes",
+   "verdict": "rhetoric",
+   "why": "Alarm-toned data headline; titles share no single claim beyond reporting a sentiment reading.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-09 → 2026-04",
+    "examples": [
+     "Consumer Confidence Crashes to 3-Year Low: Can the Fed Save Us?",
+     "Consumer Confidence CRASHES: Economic Alarm Bells RINGING!",
+     "🚨Home Prices SURGE While Confidence CRASHES! Is NOW the BEST Time to Buy?"
+    ],
+    "ids": [
+     "1ixxbuculI8",
+     "2_ZIxdyhsGQ",
+     "8P5GhXsMsuQ",
+     "H4uyKqalnns",
+     "LhdmYupxcDM",
+     "Rl5seuAHS3s"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "spring coming",
+   "verdict": "rhetoric",
+   "why": "Too few videos and a vague slogan about crypto recovery rather than a dated claim; closest to the tracked crypto cycle narrative.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2019-03 → 2026-05",
+    "examples": [
+     "BITCOIN Over $4K - Crypto Spring is COMING & Stablecoins Securities? says SEC's Valerie Szczepanik",
+     "BITCOIN SPRING COMING SOON? & ELON MUSK TWEETS AGAIN!",
+     "Akbar Thobhani: Crypto Spring is Coming | SALT Crypto 294"
+    ],
+    "ids": [
+     "6-8C6rPfMBs",
+     "AQ9QjSYVcRk",
+     "AUKXfUSiIQA",
+     "YC82WT1bhNU",
+     "qtTexDGt5xc",
+     "ze7CP_8r3LU"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "end violence",
+   "verdict": "rhetoric",
+   "why": "News coverage of advocacy events, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-03 → 2026-10",
+    "examples": [
+     "Rallies call for more government funding to end violence against women | ABC NEWS",
+     "Pope Leo calls for an end to violence in West Bank, urges for progress on two-state solution N18G",
+     "Activists march in Montreal to demand action to end violence against women"
+    ],
+    "ids": [
+     "BBfa70uhs5c",
+     "JfaDOZyhuhs",
+     "MR5AgfXjv1U",
+     "e98DyHFugOw",
+     "gN9iiG52qjU",
+     "jQmFyge0Xeo"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "flood coming",
+   "verdict": "rhetoric",
+   "why": "Hype phrasing about incoming capital, no single consistent claim across titles.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 6,
+    "span": "2024-05 → 2026-10",
+    "examples": [
+     "Blackrock Reveals $1Trillion Flood Coming To Bitcoin!",
+     "BlackRock CEO Drops Bitcoin BOMBSHELL | $14 TRILLION FLOOD COMING!",
+     "Cardano Is About to Make It Rain — Remote Viewers Saw the Flood Coming"
+    ],
+    "ids": [
+     "Ci50jfKapGU",
+     "DqCSz4m_d2w",
+     "Z50E_BTZWAM",
+     "fJigqGTE458",
+     "fg_0HLxExH4",
+     "qmHQv3j64lo"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "won't spike blood sugar",
+   "verdict": "narrative",
+   "why": "Shared dietary claim that specific foods avoid glucose spikes and that this is the key to health.",
+   "claim_name": "The \"eat foods that won't spike your blood sugar\" story",
+   "claim": "Certain foods and substitutes can be eaten without raising blood glucose, and choosing them is the key to avoiding metabolic disease and weight gain.",
+   "industry": "Health & biotech",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Blood sugar spikes damage health and drive weight gain",
+    "cause": "Common high-glycemic foods and sugars",
+    "outcome": "Switch to listed low-glycemic foods and substitutes",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2024-06 → 2026-10",
+    "examples": [
+     "WON'T SPIKE BLOOD SUGAR! | The BEST Natural Sugar Substitute",
+     "Here Are 10 Fruits That Won't Spike YourvBlood Sugar and #10 will Surprise You",
+     "Breakfasts That Won't Spike Your Blood Sugar #bloodsugar #breakfast #glycemicindex"
+    ],
+    "ids": [
+     "4V_hNfVk1ss",
+     "65GFI1pJKRY",
+     "ROqhcaa69i8",
+     "g1RTBDJmwos",
+     "h-nWOdSLaxc",
+     "ygXFB5AiY9w"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "dead others",
+   "verdict": "rhetoric",
+   "why": "Generic casualty-count headline wording.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-12 → 2026-09",
+    "examples": [
+     "Plane crashes in Kazakhstan with dozens dead and others surviving",
+     "Hong Kong highrise fire leaves 13 dead, others trapped",
+     "2 dead, 4 others, including child, injured in Seattle shooting, police say"
+    ],
+    "ids": [
+     "ARxfHem6V78",
+     "FkMSQZOFLe8",
+     "XLnEhhphfBE",
+     "gewutFfqrkQ",
+     "msAv2_UjKH8",
+     "tnL34p8ZICY"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "acid cause",
+   "verdict": "rhetoric",
+   "why": "Disparate questions about different acids; no single shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2021-12 → 2026-09",
+    "examples": [
+     "low uric acid cause and treatment in hindi #Shorts",
+     "Can low stomach acid cause malabsorption? And more questions answered!",
+     "Can Low Stomach Acid Cause Gut Imbalances"
+    ],
+    "ids": [
+     "EPNhhZlCicU",
+     "Xjhyl9o1wfg",
+     "gDJj5wcU1qI",
+     "iiU--8guOV8",
+     "k6Ijkd75u4A",
+     "yd0BvE2YkcY"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "kills wife",
+   "verdict": "rhetoric",
+   "why": "Crime-news subject matter, no claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 5,
+    "months": 4,
+    "span": "2026-04 → 2026-10",
+    "examples": [
+     "Former Virginia Lt. Gov. kills wife, then himself",
+     "Former Virginia Lt. Gov. Justin Fairfax kills his wife, then himself",
+     "Neighbors say man shoots, kills wife before shooting son in domestic incident at Cobb County home"
+    ],
+    "ids": [
+     "0903uaziOm4",
+     "C6ooDu8jFzs",
+     "bdfeRB0sFhE",
+     "fEsDVqEubXc",
+     "i3W9CklCqKM",
+     "t2naJC4tSdA"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "drives innovation",
+   "verdict": "rhetoric",
+   "why": "Generic business platitude applied to varied causes, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2018-06 → 2026-09",
+    "examples": [
+     "How Corporate Culture Drives Innovation I CEO Initiative 2018",
+     "Constraint Drives Innovation with John Capobianco",
+     "Competition is GOOD! Why It Drives Innovation & Markets  #investing #stockmarket #business#foryou"
+    ],
+    "ids": [
+     "-JMLdVE4ec4",
+     "MooFdajSAFA",
+     "Qg6ICJgs7nI",
+     "_aNrrKQV_IA",
+     "cdRzRuRh70w"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "coming wednesday",
+   "verdict": "rhetoric",
+   "why": "Scheduling/teaser phrase about upcoming events.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-03 → 2026-09",
+    "examples": [
+     "Trump signals 25% tariffs on steel, aluminum still coming Wednesday",
+     "Mortgage Minute: Bank of Canada rate announcement coming Wednesday",
+     "FOMC Minutes Coming Wednesday! 🚨 Gold Traders Need to Be Careful"
+    ],
+    "ids": [
+     "4puW0Yjj-cE",
+     "GU7zZeqtRx8",
+     "HV6cJaDrI8g",
+     "IkEf7ylJmW8",
+     "pi3j9qzsku4"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "causes traffic",
+   "verdict": "rhetoric",
+   "why": "Local incident reports with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-08 → 2026-08",
+    "examples": [
+     "Delhi rains: Heavy rainfall leaves several areas waterlogged, causes traffic snarls",
+     "Wild seal causes traffic delays along Victorian road | ABC NEWS",
+     "Gas leak in Roswell causes traffic closures on Holcomb Bridge Road"
+    ],
+    "ids": [
+     "EL-ocgssVdg",
+     "HAVrhNqkT9s",
+     "Wp2pHr7oAjg",
+     "gzpyADFoIOI",
+     "vYDRbDemBvo"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "return soon",
+   "verdict": "rhetoric",
+   "why": "Generic phrase spanning unrelated news subjects, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 10,
+    "channels": 7,
+    "months": 7,
+    "span": "2022-09 → 2026-10",
+    "examples": [
+     "Acquittal of Mariam Nawaz and the narratives of Imran khan || will Nawaz return very soon?",
+     "'The war is over,' Trump proclaims peace as he heads to Israel; hostages to return Soon",
+     "‘Hostages will return soon’: Israel and Hamas agree to first phase of Trump’s Gaza ceasefire deal"
+    ],
+    "ids": [
+     "4Shibvuw-dM",
+     "FrThXJjHH1Q",
+     "GxLBrAKA8V0",
+     "L4kl2FM4Gkc",
+     "Q2nbFBxSCac",
+     "XelOCullnzQ",
+     "YaOgFRbauYc",
+     "dL8BevxA58g",
+     "jGA-57VybNI",
+     "qSZUBUJuXzY"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "arrested crash",
+   "verdict": "rhetoric",
+   "why": "Crime-blotter subject matter, no shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 6,
+    "span": "2025-10 → 2026-10",
+    "examples": [
+     "California semi-truck crash: Illegal immigrant trucker arrested after crash leaves three dead",
+     "Tiger Woods Arrested After Crash",
+     "Tiger Woods Arrested After Crash, Dramatic Bodycam Footage Shows DUI Test And Handcuffing"
+    ],
+    "ids": [
+     "-bOyZijfBOY",
+     "5wsjjGYRn9c",
+     "cGkg9Fph4lo",
+     "dIQ7AP4pgWY",
+     "pKa8bZQk9Es",
+     "rItgZ-PvmLY",
+     "sAOkm33joAQ",
+     "xjFtoMQQaEM"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "love coming",
+   "verdict": "rhetoric",
+   "why": "Tarot/astrology reading format hook, not a checkable shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 34,
+    "channels": 7,
+    "months": 19,
+    "span": "2018-10 → 2026-10",
+    "examples": [
+     "Aquarius Love:  Oct. 15th-31st  “New love coming!\"",
+     "Leo March 25-31 | LOVE is coming! DESTINY steps in...",
+     "Taurus JUNE 17th to 23rd - LOVE IS COMING...at the speed of the chariot!"
+    ],
+    "ids": [
+     "-BVJBb7fztI",
+     "1Vz6Ad8GhSI",
+     "5AOCS3VCAwM",
+     "5PiMDHowtL0",
+     "6p0aPAmdTOc",
+     "8UkRlljSwqU",
+     "BIAIjrvdJ6Y",
+     "Im6AnTamgwY",
+     "OsahnEk-HCg",
+     "RUsVHRLm-Oc",
+     "Wpuevz1pBVE",
+     "Z07-B6t_HZo",
+     "a615O0prgSA",
+     "aBBvRqrPiT4",
+     "dt8mDhSTtkE",
+     "evjp4etDmSE",
+     "g4Fw16QQUEI",
+     "gAhIfLN6PpQ",
+     "gSSeVFdUSz8",
+     "gbO4ROqYjZQ"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "surcharge ban",
+   "verdict": "narrative",
+   "why": "Titles share a claim that Australia's card surcharge ban will push costs onto consumers.",
+   "claim_name": "The \"surcharge ban will just raise prices\" story",
+   "claim": "Australia's ban on card payment surcharges will not save consumers money; merchants and banks will recoup costs through higher prices, higher fees, or reduced rewards.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Consumers pay card surcharges, and regulators are banning them",
+    "cause": "Payment costs don't disappear; they are passed on by merchants and banks",
+    "outcome": "Higher retail prices, higher bank fees, fewer card rewards",
+    "clock": "After the ban takes effect (2026)"
+   },
+   "evidence": {
+    "videos": 19,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-08 → 2026-10",
+    "examples": [
+     "Card surcharge ban could lead to higher bank fees or lower rewards | The Business | ABC NEWS",
+     "Why a card surcharge ban might lead to higher prices | ABC NEWS",
+     "Australia’s Card Surcharge Ban Is Coming"
+    ],
+    "ids": [
+     "6bDGR1k0EkE",
+     "7lWPZ-9Zon8",
+     "FwHysctj91A",
+     "HwVK4sIuWtM",
+     "I6j2bbyiqqQ",
+     "O9Qft8caItg",
+     "VJGlbeIPLI4",
+     "W_XP5_FbQ2o",
+     "WbMjQZCovME",
+     "XmNmq2IvVN4",
+     "dV5XKlkRL6s",
+     "f9wkXK2O6Ok",
+     "hBHZbn5L5tw",
+     "jeqTEO6Ovqk",
+     "mlRKCgDApCY",
+     "nYaO8wJM6_4",
+     "vfbD8BuHL70",
+     "zBkx_wyDvD0",
+     "zZywJOHkldM"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "afd wins",
+   "verdict": "rhetoric",
+   "why": "Election result reporting; the phrase names an event, not a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 8,
+    "months": 2,
+    "span": "2024-09 → 2026-09",
+    "examples": [
+     "German far-right party AfD wins first state election since WW2; 'final wake-up call' for Scholz?",
+     "AfD Wins 38.2% in Mecklenburg-Vorpommern as Merz Calls CDU Losses a 'Disaster'",
+     "'Bitter Pill to Swallow': Migrants React as AfD Wins German State Election | APT"
+    ],
+    "ids": [
+     "8Iq1T3PK50w",
+     "AglWGNzysMw",
+     "C8gdzJXAJg4",
+     "L0RZMFlMcnY",
+     "MQHz9y-PcNE",
+     "Mv4ciLUFmqA",
+     "NDZCD1qqHVA",
+     "O9rhHGtTC3U",
+     "koJpM6WYG0E",
+     "krAx8U_Pxi0",
+     "o3rlAHvmgZE",
+     "pAx_WHo0o04"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "crash florida",
+   "verdict": "duplicate",
+   "why": "Restates the tracked housing-crash prediction narrative, localized to Florida.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 8,
+    "months": 6,
+    "span": "2023-01 → 2026-10",
+    "examples": [
+     "Wall Street Landlords are SELLING. Crash in Florida.",
+     "Major condo crash in Florida. Owners selling at 20% loss.",
+     "Are Canadians Causing a Housing Crash in Florida?"
+    ],
+    "ids": [
+     "4neroNqgjvU",
+     "B6_gSmeaKkg",
+     "TnPa1SdIMUA",
+     "W-NqAfJpdKw",
+     "Y7B7S3VG6_A",
+     "cwH2Z5XmT_4",
+     "pU4POGUdksw",
+     "rvDMD3to_zA",
+     "xEttVBL7EJ8",
+     "xGYxDum1NO0",
+     "y5QiSbnJGZQ"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "romance scam",
+   "verdict": "rhetoric",
+   "why": "A recurring true-crime series subject, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-09 → 2026-09",
+    "examples": [
+     "Romance Scam: Donna's path home | The Case Of...",
+     "Romance Scam: Donna's appeal result | The Case Of...",
+     "Romance Scam: Last chance for Donna Nelson | The Case Of..."
+    ],
+    "ids": [
+     "68PbcL3PGec",
+     "9vSwYOv_zIc",
+     "Amf82vSqokA",
+     "BJPSa2XbZ6I",
+     "DwvtaJzgnks",
+     "Gbsr-xVUqIs",
+     "JYyOFBeikFo",
+     "MOvPc1KJBYQ",
+     "mRWeEDDFFxo",
+     "pxDDpUyZftA",
+     "zfn9VO57lAg"
+    ]
+   },
+   "first_read": "2026-10-13",
+   "last_read": "2026-10-13"
   }
  ]
 }
