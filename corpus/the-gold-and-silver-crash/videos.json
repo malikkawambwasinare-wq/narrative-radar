@@ -1,6 +1,6 @@
 {
   "topic": "the-gold-and-silver-crash",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "videos": [
     {
       "videoId": "0YukEH5UcPY",
@@ -685639,7 +685639,7 @@
       "yt": {
         "channelId": "UCXv9pMth5DBC5SELtVRqpmw"
       },
-      "unavailable": "2026-10-13"
+      "unavailable": "2026-10-14"
     },
     {
       "videoId": "n8Kc7_rOBP8",
@@ -685658,7 +685658,7 @@
       "yt": {
         "channelId": "UCyDWSIo0-8ZoZfgfWp-Yqjw"
       },
-      "unavailable": "2026-10-13"
+      "unavailable": "2026-10-14"
     },
     {
       "videoId": "xDFLGr9PRZQ",
@@ -685677,7 +685677,7 @@
       "yt": {
         "channelId": "UC2I8ux7Zw4zBRhZBuoF6Mpw"
       },
-      "unavailable": "2026-10-13"
+      "unavailable": "2026-10-14"
     },
     {
       "videoId": "npCD6LKfEjI",
@@ -789626,15 +789626,22 @@
       "url": "https://www.youtube.com/watch?v=KrhySDBCyus",
       "published": "2026-10-09",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 174,
+      "length": "2:46",
       "age_days": null,
       "query": "refiled from the pool (narrative:the-2026-setup)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCS-mnyBQ1NVyTKll2S11qHQ"
+        "channelId": "UCS-mnyBQ1NVyTKll2S11qHQ",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 1,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -789644,15 +789651,272 @@
       "url": "https://www.youtube.com/watch?v=qvUFbvBT6Vo",
       "published": "2026-10-10",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 21846,
+      "length": "12:04",
       "age_days": null,
       "query": "refiled from the pool (narrative:the-2026-setup)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCewU19K7eOVzQAdGUnlKaEA"
+        "channelId": "UCewU19K7eOVzQAdGUnlKaEA",
+        "category": "27",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 693,
+        "comments": 40,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "euCJPjSVOvE",
+      "title": "Dr. Kirk Elliott | Hidden $1,000 Silver Blueprint: What Whistleblowers Just Exposed to the Public",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=euCJPjSVOvE",
+      "published": "2026-10-05",
+      "first_seen": "2026-10-14",
+      "views": 45,
+      "length": "26:59",
+      "age_days": 9,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "mX6ad4guMsA",
+      "title": "Dr. Kirk Elliott | The Secret Algorithm That Pushed Silver to All-Time Highs After Rate Hikes",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=mX6ad4guMsA",
+      "published": "2026-09-25",
+      "first_seen": "2026-10-14",
+      "views": 37,
+      "length": "20:11",
+      "age_days": 19,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "DJHp5Q05kCw",
+      "title": "Dr. Kirk Elliott | Why Central Banks Are Secretly Buying Silver Before It Hits $300!",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=DJHp5Q05kCw",
+      "published": "2026-09-23",
+      "first_seen": "2026-10-14",
+      "views": 35,
+      "length": "19:06",
+      "age_days": 21,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "G-43X2PNEJw",
+      "title": "Dr. Kirk Elliott | Hidden Mechanism Triggering a Massive Silver Price Spike",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=G-43X2PNEJw",
+      "published": "2026-09-14",
+      "first_seen": "2026-10-14",
+      "views": 43,
+      "length": "21:11",
+      "age_days": 30,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "YIcObIckfxI",
+      "title": "Dr. Kirk Elliott | Silver’s Next Move Could Catch Everyone Off Guard",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=YIcObIckfxI",
+      "published": "2026-09-11",
+      "first_seen": "2026-10-14",
+      "views": 57,
+      "length": "33:03",
+      "age_days": 33,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "NxUj1ifwXxU",
+      "title": "GOLD AT A NEW PRICE? America’s Revaluation Could Rewrite the Monetary System",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=NxUj1ifwXxU",
+      "published": "2026-09-08",
+      "first_seen": "2026-10-14",
+      "views": 35,
+      "length": "39:23",
+      "age_days": 36,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "nfYvfK3J_J0",
+      "title": "Dr. Kirk Elliott | Silver’s Next Move May Already Be Building",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=nfYvfK3J_J0",
+      "published": "2026-08-16",
+      "first_seen": "2026-10-14",
+      "views": 12,
+      "length": "26:05",
+      "age_days": 59,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "9Us9J88vqPI",
+      "title": "Dr. Kirk Elliott | Silver Prices Are Sending a Signal the Market Can’t Ignore",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=9Us9J88vqPI",
+      "published": "2026-08-13",
+      "first_seen": "2026-10-14",
+      "views": 73,
+      "length": "49:49",
+      "age_days": 62,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "BrV3HkOgg_c",
+      "title": "Dr. Kirk Elliott | Silver Just Shocked the Market — Look at the Price Today",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=BrV3HkOgg_c",
+      "published": "2026-08-11",
+      "first_seen": "2026-10-14",
+      "views": 20,
+      "length": "27:35",
+      "age_days": 64,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "km8wCnGseFQ",
+      "title": "Dr. Kirk Elliott | Iran's Next Move Could Rock Oil Markets Worldwide",
+      "channel": "Voice of Heaven",
+      "url": "https://www.youtube.com/watch?v=km8wCnGseFQ",
+      "published": "2026-08-07",
+      "first_seen": "2026-10-14",
+      "views": 4,
+      "length": "20:11",
+      "age_days": 68,
+      "query": "channel sweep: Voice of Heaven",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC5E009DOnpYtIDLdEo59fiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     }
   ]

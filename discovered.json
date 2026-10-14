@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13",
+ "generated": "2026-10-14",
  "method": "titles only; 4+ videos, 3+ independent channels, 2+ distinct months, claim wording in the phrase",
  "candidates": [
   {
@@ -3783,52 +3783,6 @@
    "rank": 560.0
   },
   {
-   "phrase": "must follow",
-   "videos": 26,
-   "channels": 22,
-   "months": 20,
-   "span": "2019-05 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.88,
-   "kind": "new candidate",
-   "examples": [
-    "Top 10 Weird Rules Every Marvel Actor Must Follow",
-    "3 Copywriting Rules You Must Follow Right Now!",
-    "6 SAFETY TIPS YOU MUST FOLLOW|Gyms Opening in India from 5th August|5 August se gym khulenge ya nahi"
-   ],
-   "ids": [
-    "-xXyFn4s4CI",
-    "5xgmLEZjwVI",
-    "64j5e5lQ35s",
-    "BOl8v-DJDaM",
-    "BmPJAD1pljk",
-    "GJBgMTx5bgk",
-    "MuJliR_4fFM",
-    "PEPrpSCZkeU",
-    "PcHovhjRp3U",
-    "PvI1iWv2BVE",
-    "QJC_DmIuyVA",
-    "SNfmHoE81nw",
-    "VgMw4-ijO_s",
-    "W_kla7ZNFeE",
-    "Y5FQSCBpt-Y",
-    "Yey60-73ucA",
-    "ZJ32pxJ3-jc",
-    "aCfHBiN7o3k",
-    "ats1TRP0OuI",
-    "cRu51qlO-kA",
-    "dF5T2mjASEY",
-    "db0bUe-rQjQ",
-    "jnWrYS-8Vuw",
-    "kaPc4tC52UY",
-    "vPgAvhsfJUA",
-    "yAxEONxzYvc"
-   ],
-   "specificity": 0.0008,
-   "rank": 550.0
-  },
-  {
    "phrase": "steals show",
    "videos": 37,
    "channels": 17,
@@ -4372,6 +4326,51 @@
    "rank": 500.0
   },
   {
+   "phrase": "must follow",
+   "videos": 25,
+   "channels": 21,
+   "months": 19,
+   "span": "2019-05 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.88,
+   "kind": "new candidate",
+   "examples": [
+    "Top 10 Weird Rules Every Marvel Actor Must Follow",
+    "6 SAFETY TIPS YOU MUST FOLLOW|Gyms Opening in India from 5th August|5 August se gym khulenge ya nahi",
+    "4 Tips That All Real Estate Investors Must Follow!"
+   ],
+   "ids": [
+    "-xXyFn4s4CI",
+    "64j5e5lQ35s",
+    "BOl8v-DJDaM",
+    "BmPJAD1pljk",
+    "GJBgMTx5bgk",
+    "MuJliR_4fFM",
+    "PEPrpSCZkeU",
+    "PcHovhjRp3U",
+    "PvI1iWv2BVE",
+    "QJC_DmIuyVA",
+    "SNfmHoE81nw",
+    "VgMw4-ijO_s",
+    "W_kla7ZNFeE",
+    "Y5FQSCBpt-Y",
+    "Yey60-73ucA",
+    "ZJ32pxJ3-jc",
+    "aCfHBiN7o3k",
+    "ats1TRP0OuI",
+    "cRu51qlO-kA",
+    "dF5T2mjASEY",
+    "db0bUe-rQjQ",
+    "jnWrYS-8Vuw",
+    "kaPc4tC52UY",
+    "vPgAvhsfJUA",
+    "yAxEONxzYvc"
+   ],
+   "specificity": 0.0008,
+   "rank": 498.8
+  },
+  {
    "phrase": "dead dozens",
    "videos": 38,
    "channels": 13,
@@ -4644,6 +4643,80 @@
    ],
    "specificity": 0.0002,
    "rank": 456.0
+  },
+  {
+   "phrase": "2008 crash",
+   "videos": 42,
+   "channels": 33,
+   "months": 22,
+   "span": "2021-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "collapse-audit",
+   "home_share": 0.69,
+   "kind": "new candidate",
+   "examples": [
+    "FUD ALERT: CRYPTO COULD CAUSE 2008 CRASH",
+    "Why The Housing Market in 2022 and 2023 Will be Nothing Like the 2008 Crash",
+    "America Is In A SUPER BUBBLE | Legendary Investor Who Called The 2008 Crash WARNS"
+   ],
+   "ids": [
+    "0kRwpDxAmaQ",
+    "1wcyZbhZyvw",
+    "2MkwwjnMBUw",
+    "2fKBW8hrqa0",
+    "30z-fva8CuM",
+    "3SFZfMvVrZk",
+    "3TyW-fkUkyo",
+    "6qZHY-J8WA0",
+    "7b2cf3L95xk",
+    "87GASoKl0P8",
+    "8MHNBzmNiPo",
+    "AQkAVfinmxM",
+    "ArVOcNbA2wc",
+    "Bu0xNDLNORU",
+    "COXEU8wytx8",
+    "CTd0CQfawU4",
+    "DGRvV4_wnTg",
+    "NYa_dwIcN_E",
+    "OJBdWUBqd_I",
+    "Sve7A4yQp5A",
+    "T0nSXsqxccU",
+    "UMBc6d0x-q8",
+    "Ul40k0vet9Q",
+    "VCCvJj6n5XE",
+    "VIn3haGKDVw",
+    "XVSlruJerBM",
+    "YHNy3Sku41o",
+    "YypxoqHyT4I",
+    "ZqSLlngools",
+    "_UsvYI5ZHjc",
+    "c07q2pRFcqM",
+    "fygiYNLNQaw",
+    "gEoyKdyugs8",
+    "i0f6bzBX69A",
+    "iAYII7LMgZg",
+    "ikPdWq_DEaQ",
+    "iv6AutJMalM",
+    "kpFRSdiXhUs",
+    "mhuYlt_V0X4",
+    "nANwMwfVsvA",
+    "qfLerOi7Vn4",
+    "yP7tDcCQ6DQ"
+   ],
+   "also": [
+    "crash worse 2008",
+    "crash 2008",
+    "2008 collapse",
+    "predicted 2008 crash",
+    "coming worse 2008",
+    "collapse 2008",
+    "collapse worse 2008",
+    "worse 2008 crash",
+    "called 2008 crash",
+    "bubble 2008"
+   ],
+   "specificity": 0.0016,
+   "rank": 453.8
   },
   {
    "phrase": "media ban",
@@ -5274,76 +5347,49 @@
    "rank": 448.0
   },
   {
-   "phrase": "2008 crash",
-   "videos": 41,
-   "channels": 32,
-   "months": 22,
-   "span": "2021-10 \u2192 2026-10",
+   "phrase": "kill switch",
+   "videos": 26,
+   "channels": 22,
+   "months": 10,
+   "span": "2021-03 \u2192 2026-10",
    "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 0.71,
+   "home": "(pool)",
+   "home_share": 0.96,
    "kind": "new candidate",
    "examples": [
-    "FUD ALERT: CRYPTO COULD CAUSE 2008 CRASH",
-    "Why The Housing Market in 2022 and 2023 Will be Nothing Like the 2008 Crash",
-    "America Is In A SUPER BUBBLE | Legendary Investor Who Called The 2008 Crash WARNS"
+    "Adam Jentleson: \u201cKill Switch: The Rise of the Modern Senate\" | SALT Talks #180",
+    "TERRA LUNA HAS A \"KILL SWITCH!\"",
+    "The Power of Timing in AI: \u2018When to Turn on the Kill Switch is Important\u2019"
    ],
    "ids": [
-    "0kRwpDxAmaQ",
-    "1wcyZbhZyvw",
-    "2MkwwjnMBUw",
-    "30z-fva8CuM",
-    "3SFZfMvVrZk",
-    "3TyW-fkUkyo",
-    "6qZHY-J8WA0",
-    "7b2cf3L95xk",
-    "87GASoKl0P8",
-    "8MHNBzmNiPo",
-    "AQkAVfinmxM",
-    "ArVOcNbA2wc",
-    "Bu0xNDLNORU",
-    "COXEU8wytx8",
-    "CTd0CQfawU4",
-    "DGRvV4_wnTg",
-    "NYa_dwIcN_E",
-    "OJBdWUBqd_I",
-    "Sve7A4yQp5A",
-    "T0nSXsqxccU",
-    "UMBc6d0x-q8",
-    "Ul40k0vet9Q",
-    "VCCvJj6n5XE",
-    "VIn3haGKDVw",
-    "XVSlruJerBM",
-    "YHNy3Sku41o",
-    "YypxoqHyT4I",
-    "ZqSLlngools",
-    "_UsvYI5ZHjc",
-    "c07q2pRFcqM",
-    "fygiYNLNQaw",
-    "gEoyKdyugs8",
-    "i0f6bzBX69A",
-    "iAYII7LMgZg",
-    "ikPdWq_DEaQ",
-    "iv6AutJMalM",
-    "kpFRSdiXhUs",
-    "mhuYlt_V0X4",
-    "nANwMwfVsvA",
-    "qfLerOi7Vn4",
-    "yP7tDcCQ6DQ"
+    "-yPinmXYckE",
+    "0IeqN9GAQjE",
+    "3QxNpqQBHAA",
+    "6pOu604HbiM",
+    "9MFAkGvXzz4",
+    "AbMxbgIahtE",
+    "AzZQplEyiKU",
+    "B6g7QIbR19I",
+    "DyyFJXRxT74",
+    "OqygiUvHCEM",
+    "QTpOis-s2G0",
+    "YEckmeeN4Yc",
+    "ZI2Pvt4ydmc",
+    "ZNtlXwSemCQ",
+    "_wy3MhpO8Ks",
+    "crLXZQo9gG4",
+    "m5yrQMnc_jQ",
+    "mqOAWnKKMDk",
+    "oHW7KAFJ77c",
+    "pdaw1k-DQvU",
+    "pnOl1naUHEo",
+    "rFgY8hM_uOs",
+    "rRMa_Lx2HP8",
+    "rg5v8AtYUTs",
+    "std2CQCnQh8",
+    "yuODG1p1uXs"
    ],
-   "also": [
-    "crash worse 2008",
-    "crash 2008",
-    "2008 collapse",
-    "predicted 2008 crash",
-    "coming worse 2008",
-    "collapse 2008",
-    "collapse worse 2008",
-    "worse 2008 crash",
-    "called 2008 crash",
-    "bubble 2008"
-   ],
-   "specificity": 0.0016,
+   "specificity": 0.0004,
    "rank": 440.0
   },
   {
@@ -6504,51 +6550,6 @@
    "rank": 384.0
   },
   {
-   "phrase": "kill switch",
-   "videos": 25,
-   "channels": 21,
-   "months": 9,
-   "span": "2021-03 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.96,
-   "kind": "new candidate",
-   "examples": [
-    "Adam Jentleson: \u201cKill Switch: The Rise of the Modern Senate\" | SALT Talks #180",
-    "TERRA LUNA HAS A \"KILL SWITCH!\"",
-    "The Power of Timing in AI: \u2018When to Turn on the Kill Switch is Important\u2019"
-   ],
-   "ids": [
-    "-yPinmXYckE",
-    "0IeqN9GAQjE",
-    "3QxNpqQBHAA",
-    "6pOu604HbiM",
-    "9MFAkGvXzz4",
-    "AbMxbgIahtE",
-    "AzZQplEyiKU",
-    "B6g7QIbR19I",
-    "DyyFJXRxT74",
-    "OqygiUvHCEM",
-    "YEckmeeN4Yc",
-    "ZI2Pvt4ydmc",
-    "ZNtlXwSemCQ",
-    "_wy3MhpO8Ks",
-    "crLXZQo9gG4",
-    "m5yrQMnc_jQ",
-    "mqOAWnKKMDk",
-    "oHW7KAFJ77c",
-    "pdaw1k-DQvU",
-    "pnOl1naUHEo",
-    "rFgY8hM_uOs",
-    "rRMa_Lx2HP8",
-    "rg5v8AtYUTs",
-    "std2CQCnQh8",
-    "yuODG1p1uXs"
-   ],
-   "specificity": 0.0004,
-   "rank": 378.0
-  },
-  {
    "phrase": "coming true",
    "videos": 56,
    "channels": 13,
@@ -7295,126 +7296,6 @@
    "rank": 330.0
   },
   {
-   "phrase": "car crash",
-   "videos": 90,
-   "channels": 36,
-   "months": 19,
-   "span": "2024-01 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.98,
-   "kind": "new candidate",
-   "examples": [
-    "Joint terrorism task force investigating deadly New York car crash",
-    "Sheriff's deputy named infant's 'uncle' after saving her life in car crash",
-    "Mom survives car crash after near-fatal stroke following childbirth"
-   ],
-   "ids": [
-    "-4_J8qHKNNQ",
-    "-aH8SkTePwI",
-    "-mIqlTgqjoA",
-    "08MwZUxRPIc",
-    "09zu_uf752g",
-    "0YD9ecat8Ac",
-    "1W7j6ui3Suc",
-    "1m3_LkoI0SY",
-    "1uNPpjqqVHY",
-    "2_YXsC83cf4",
-    "2dtmFKpQ_f0",
-    "2i9_pbho3Ag",
-    "2pgXMESyOi0",
-    "3GEyzZaemoE",
-    "3MdCbWlYTTc",
-    "4MkkT6RdZhE",
-    "4OuQIptUFpc",
-    "4TRZR-Mb2PY",
-    "4zAgVfdK2QM",
-    "5M2sRUT-Adw",
-    "6Se6Hh3xT88",
-    "6mWlmG9PZU8",
-    "6whqd5NzByI",
-    "6zEiMVi2lYo",
-    "7foddOyKx-8",
-    "7t-8KsSlVDM",
-    "8dJ-4STFIxE",
-    "8e383-WERC0",
-    "9jejc13ymQM",
-    "9zC1IiSY9m0",
-    "ASntjhteaOI",
-    "B6yCPfUH4Ns",
-    "D3vZcniAotU",
-    "DlzjXcob8lc",
-    "Dz-KW2hBFxU",
-    "FCcQ5bch2Uw",
-    "GJ2fEApPR_s",
-    "HwhLgQa7GXA",
-    "JGjNH0zuiTA",
-    "JTlvz8pAABE",
-    "L6XEYBX8lw0",
-    "M5Ffonf9TWI",
-    "NA4A7LX6Keg",
-    "NJJQBiFNY40",
-    "NZACtmkUkPg",
-    "PCygW6LUtbU",
-    "QJcEYSkxYl0",
-    "QULMp8pifRE",
-    "R_nDHbfzUpk",
-    "SXnWHgMPC2U",
-    "SjDfk0KDkQc",
-    "SmeYDz51pBM",
-    "TS2m19vr06U",
-    "U-zPwSY1Pn4",
-    "Upm-LExc3IU",
-    "VFYDUChyKh0",
-    "XZjwn4g0HR0",
-    "YS_7ySepnpc",
-    "aOBDFE1VunI",
-    "aqoQVIUY5ws",
-    "bG0s8mH6PPw",
-    "byBpSaGAmsk",
-    "d8s1oNJGMpo",
-    "dRTt1XHexew",
-    "dqf3q_TWLhM",
-    "e3ECstidtOg",
-    "eE5VVNGH0OI",
-    "fcS2jlv09wc",
-    "gVeS-zXQUDs",
-    "h_TRfxoFUjY",
-    "hmwOPYwoH5U",
-    "iSL-lqBQHmk",
-    "i_1mklOn3PI",
-    "ig0cIvCNsyw",
-    "iooVb1qLxgE",
-    "kDv-fzevdzI",
-    "kMfVXy6__xI",
-    "kYUCV7A-jsc",
-    "mfMAjv3kdvs",
-    "pY8CG16D4cM",
-    "pqwszrEJoGI",
-    "rgAXW5WgEYk",
-    "riAwoip2n0w",
-    "sN_NjO5AB5g",
-    "sgh2-uNKgrk",
-    "tmIsfJPcjpU",
-    "vofjqV5gPSY",
-    "vzJedCXbg7Q",
-    "wjql2xd_G6k",
-    "ylWmxZvsHck"
-   ],
-   "also": [
-    "car crashes",
-    "car drives",
-    "dead car",
-    "car show",
-    "killed car crash",
-    "crash car",
-    "crashes car",
-    "fatal car crash"
-   ],
-   "specificity": 0.0021,
-   "rank": 325.7
-  },
-  {
    "phrase": "population collapse",
    "videos": 20,
    "channels": 18,
@@ -7769,6 +7650,126 @@
    ],
    "specificity": 0.0003,
    "rank": 312.0
+  },
+  {
+   "phrase": "car crash",
+   "videos": 90,
+   "channels": 36,
+   "months": 19,
+   "span": "2024-01 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.98,
+   "kind": "new candidate",
+   "examples": [
+    "Joint terrorism task force investigating deadly New York car crash",
+    "Sheriff's deputy named infant's 'uncle' after saving her life in car crash",
+    "Mom survives car crash after near-fatal stroke following childbirth"
+   ],
+   "ids": [
+    "-4_J8qHKNNQ",
+    "-aH8SkTePwI",
+    "-mIqlTgqjoA",
+    "08MwZUxRPIc",
+    "09zu_uf752g",
+    "0YD9ecat8Ac",
+    "1W7j6ui3Suc",
+    "1m3_LkoI0SY",
+    "1uNPpjqqVHY",
+    "2_YXsC83cf4",
+    "2dtmFKpQ_f0",
+    "2i9_pbho3Ag",
+    "2pgXMESyOi0",
+    "3GEyzZaemoE",
+    "3MdCbWlYTTc",
+    "4MkkT6RdZhE",
+    "4OuQIptUFpc",
+    "4TRZR-Mb2PY",
+    "4zAgVfdK2QM",
+    "5M2sRUT-Adw",
+    "6Se6Hh3xT88",
+    "6mWlmG9PZU8",
+    "6whqd5NzByI",
+    "6zEiMVi2lYo",
+    "7foddOyKx-8",
+    "7t-8KsSlVDM",
+    "8dJ-4STFIxE",
+    "8e383-WERC0",
+    "9jejc13ymQM",
+    "9zC1IiSY9m0",
+    "ASntjhteaOI",
+    "B6yCPfUH4Ns",
+    "D3vZcniAotU",
+    "DlzjXcob8lc",
+    "Dz-KW2hBFxU",
+    "FCcQ5bch2Uw",
+    "GJ2fEApPR_s",
+    "HwhLgQa7GXA",
+    "JGjNH0zuiTA",
+    "JTlvz8pAABE",
+    "L6XEYBX8lw0",
+    "M5Ffonf9TWI",
+    "NA4A7LX6Keg",
+    "NJJQBiFNY40",
+    "NZACtmkUkPg",
+    "PCygW6LUtbU",
+    "QJcEYSkxYl0",
+    "QULMp8pifRE",
+    "R_nDHbfzUpk",
+    "SXnWHgMPC2U",
+    "SjDfk0KDkQc",
+    "SmeYDz51pBM",
+    "TS2m19vr06U",
+    "U-zPwSY1Pn4",
+    "Upm-LExc3IU",
+    "VFYDUChyKh0",
+    "XZjwn4g0HR0",
+    "YS_7ySepnpc",
+    "aOBDFE1VunI",
+    "aqoQVIUY5ws",
+    "bG0s8mH6PPw",
+    "byBpSaGAmsk",
+    "d8s1oNJGMpo",
+    "dRTt1XHexew",
+    "dqf3q_TWLhM",
+    "e3ECstidtOg",
+    "eE5VVNGH0OI",
+    "fcS2jlv09wc",
+    "gVeS-zXQUDs",
+    "h_TRfxoFUjY",
+    "hmwOPYwoH5U",
+    "iSL-lqBQHmk",
+    "i_1mklOn3PI",
+    "ig0cIvCNsyw",
+    "iooVb1qLxgE",
+    "kDv-fzevdzI",
+    "kMfVXy6__xI",
+    "kYUCV7A-jsc",
+    "mfMAjv3kdvs",
+    "pY8CG16D4cM",
+    "pqwszrEJoGI",
+    "rgAXW5WgEYk",
+    "riAwoip2n0w",
+    "sN_NjO5AB5g",
+    "sgh2-uNKgrk",
+    "tmIsfJPcjpU",
+    "vofjqV5gPSY",
+    "vzJedCXbg7Q",
+    "wjql2xd_G6k",
+    "ylWmxZvsHck"
+   ],
+   "also": [
+    "car crashes",
+    "car drives",
+    "dead car",
+    "car show",
+    "killed car crash",
+    "crash car",
+    "crashes car",
+    "fatal car crash"
+   ],
+   "specificity": 0.0022,
+   "rank": 310.9
   },
   {
    "phrase": "exposes truth",
@@ -8185,111 +8186,6 @@
    "rank": 297.1
   },
   {
-   "phrase": "recession coming",
-   "videos": 75,
-   "channels": 40,
-   "months": 23,
-   "span": "2020-03 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "collapse-audit",
-   "home_share": 0.48,
-   "kind": "cross-narrative",
-   "examples": [
-    "If A Recession is Coming Should Everyone Sell Altcoins? | Token Metrics AMA",
-    "Market Update: Short Term Recession Coming!",
-    "Elon Musk JUST said a RECESSION is Coming *SOON*"
-   ],
-   "ids": [
-    "-MD0I6j2uSc",
-    "0lagLcrCu6A",
-    "0sfL98W2EfY",
-    "1umehs9tVns",
-    "2NT0oT7VM8E",
-    "3_4tNeEwX0E",
-    "5DjuFy1-ft8",
-    "6FFB0lxAM4w",
-    "6jSq2SsMVMQ",
-    "7gS8nl4lejs",
-    "7yZ1Coz96XY",
-    "8JbwATDBf04",
-    "BnJcZ9N7HsA",
-    "CFtZH6wqStc",
-    "CRMVDW2flmI",
-    "DnOInqrr030",
-    "E8tOYa7C2TM",
-    "FGeOdefQ3Ls",
-    "FKOzmTUZrxs",
-    "G12ORzq_kTs",
-    "GXKzrQy2Tl0",
-    "H6SoDxvTlFk",
-    "HB0BhKZpPQE",
-    "HZ7Xvgrpj5w",
-    "JD-O3sAOQBc",
-    "KeztMUADfEg",
-    "M5roVg7WZo4",
-    "Ot_IQNb8x90",
-    "Q97XETAbrqU",
-    "QMfUk3ernsY",
-    "QPFJoHVSO2g",
-    "S3KQhYVh-wo",
-    "SH-zhfvflNM",
-    "TAOlvw9RC5U",
-    "TEZJgl720qE",
-    "V_aelzjY2hw",
-    "WQRoZ32qnGY",
-    "Wet80O75bak",
-    "Wh9OpffZ5WQ",
-    "XqZ1WqUmMYw",
-    "Ys_haNfnZPQ",
-    "ZXrokbHGsCU",
-    "bYjLZlnK6Wo",
-    "cZQ3w2BRWFE",
-    "d2HQ47d4518",
-    "dUg0CMpO62E",
-    "dXZ2nL72JZQ",
-    "e6pAHfbDk30",
-    "e8ltV32qO1c",
-    "eefpaW5AuIw",
-    "eyDznz2BaeA",
-    "fnzy-ZOsKSs",
-    "gJyxXAzV5H4",
-    "hbxtJ2ZTP-U",
-    "iIYKb9OE7po",
-    "iaP99E-RK10",
-    "imbD9xW4x7s",
-    "jTE8Hqffgz0",
-    "jgMjEfBYwyk",
-    "k8TOjqVG6DY",
-    "kKrQhx6_QLE",
-    "khDJ2Qt5cF4",
-    "mRLdUK993ks",
-    "nk3dDB44UBA",
-    "o5_DvirJE7A",
-    "p47vrph2CBk",
-    "sCTfaNhPne0",
-    "sNSDIAuN0TQ",
-    "sowjtGnYDuY",
-    "tivt4iuiG9o",
-    "vDVrOwWl3wk",
-    "xHdZ9kk8y4w",
-    "yB36jByIev4",
-    "yEbpSDsDmF4",
-    "zOHADfRAlQw"
-   ],
-   "also": [
-    "coming worse recession",
-    "what's coming worse recession",
-    "worse recession coming",
-    "much worse recession coming",
-    "crash recession",
-    "coming recession",
-    "recession crash",
-    "coming quot"
-   ],
-   "specificity": 0.0031,
-   "rank": 296.8
-  },
-  {
    "phrase": "terrifying truth",
    "videos": 24,
    "channels": 23,
@@ -8423,70 +8319,6 @@
    "rank": 290.9
   },
   {
-   "phrase": "idea what's coming",
-   "videos": 39,
-   "channels": 18,
-   "months": 16,
-   "span": "2021-09 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "the-gold-and-silver-crash",
-   "home_share": 0.49,
-   "kind": "cross-narrative",
-   "examples": [
-    "Life Changing Money: \"You Have No Idea What's Coming With Bitcoin & Crypto In 2025\" | Raoul Pal",
-    "Most People have NO IDEA what's coming in the Stock Market",
-    "OH BOY, If You Hold Bitcoin YOU ARE The 1% Of The 1% - You Have NO IDEA What's Coming"
-   ],
-   "ids": [
-    "035USfeJtgw",
-    "0_jPFXOgqJU",
-    "0eiIY2jezS4",
-    "17I5hzaiWck",
-    "1GTs2TlxbKo",
-    "3_Zv8k1hxos",
-    "7CsMpx2m1gQ",
-    "9EAwLjNY6wg",
-    "9MUP8Tz10iw",
-    "A8UOVSMRg9A",
-    "AjK6LOCDhPU",
-    "CApMSivxlmo",
-    "EHBUKPjreVE",
-    "ETBju15gjo8",
-    "JrWRqMaptDA",
-    "N3cbA7kH4q0",
-    "OdjFDyG-Y_w",
-    "QjrhfJSahos",
-    "RennZ2vwY74",
-    "VCdLVfELuY0",
-    "VyFPZzMCzD8",
-    "X21J9R4SrRE",
-    "_I-Ciiwike0",
-    "acrx1r7tvGY",
-    "c6qcDS9N2Nc",
-    "d1R8vrFo7oQ",
-    "he8-ktmXyi8",
-    "k6BNeHooNIs",
-    "kAPBlZdfyxE",
-    "kJyZcZqlL6E",
-    "mGF7rBDg7NM",
-    "ss7zSM8IORY",
-    "tiIGkG_54rs",
-    "tufD-YuA9HY",
-    "wcb7v81MC5o",
-    "xVcPCw-PQN0",
-    "z9ibdR4RVso",
-    "zcoVkNb0IVU",
-    "zleUpcaz5pM"
-   ],
-   "also": [
-    "people idea what's coming",
-    "idea coming",
-    "idea what's coming gold"
-   ],
-   "specificity": 0.001,
-   "rank": 288.0
-  },
-  {
    "phrase": "roof collapse",
    "videos": 19,
    "channels": 12,
@@ -8526,46 +8358,6 @@
     "roof collapses"
    ],
    "specificity": 0.0002,
-   "rank": 288.0
-  },
-  {
-   "phrase": "didn see coming",
-   "videos": 17,
-   "channels": 12,
-   "months": 12,
-   "span": "2018-09 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.71,
-   "kind": "new candidate",
-   "examples": [
-    "Virgo Love:  Oct. 1st-15th  \u201cWell, I didn\u2019t see that coming.\"",
-    "AQUARIUS December | YOU DIDN\u2019T SEE THEM COMING, BUT JUST GO FOR IT! ~ Tarot Reading",
-    "Date to Earn is here!! I didn\u2019t see this coming!!!"
-   ],
-   "ids": [
-    "6u6X5CnUOF0",
-    "9UMcHTuxKLM",
-    "9l3pxFn7Tlo",
-    "BKjg3izQyp4",
-    "ICDA0q1J4zA",
-    "JCzss4bYXSw",
-    "LfXu2yYiCYs",
-    "OxE678N_Lq0",
-    "SY5Cr0n8LEQ",
-    "Uc9xo2qleaU",
-    "bMF4Egbgqbc",
-    "d7UUY-xKSjQ",
-    "l72ogfRDSxo",
-    "pgRFTxDdssI",
-    "qsChNOI05dg",
-    "raHZ8W4Dju0",
-    "vPD2xaGf3xI"
-   ],
-   "also": [
-    "didn crash"
-   ],
-   "specificity": 0.0005,
    "rank": 288.0
   },
   {
@@ -8785,202 +8577,108 @@
    "rank": 280.0
   },
   {
-   "phrase": "save money",
-   "videos": 149,
-   "channels": 67,
-   "months": 47,
-   "span": "2017-03 \u2192 2026-10",
+   "phrase": "recession coming",
+   "videos": 74,
+   "channels": 39,
+   "months": 22,
+   "span": "2020-03 \u2192 2026-10",
    "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.77,
-   "kind": "new candidate",
+   "home": "collapse-audit",
+   "home_share": 0.49,
+   "kind": "cross-narrative",
    "examples": [
-    "5 Best Tax-Saving Solutions Which Can Help You Save Money",
-    "Keto Diet On A Budget | Cheap Keto Food Shopping List | Save Money On Meals Meal Prep Ketogenic",
-    "10 Ways For Entrepreneurs To Save Money on Taxes  Feat. Tom Wheelwright"
+    "If A Recession is Coming Should Everyone Sell Altcoins? | Token Metrics AMA",
+    "Market Update: Short Term Recession Coming!",
+    "Elon Musk JUST said a RECESSION is Coming *SOON*"
    ],
    "ids": [
-    "-9U_1WUdUZE",
-    "-jA5AszmNSI",
-    "002ZQkZDxFA",
-    "1L-4i1kpFXE",
-    "1RIh4OR8-Ng",
-    "1RiwoRkmJ38",
-    "1UIRfTxKBbk",
-    "1qDs3N1HRpo",
-    "1r6BvlMDAUQ",
-    "1tCaeVKixWA",
-    "2yLSFc5qorU",
-    "33kjP9wsB_k",
-    "39UzL6lXpZg",
-    "3xg3KKXXjvo",
-    "42zopFkN-4A",
-    "4cCLEWkKyR4",
-    "5J-RNtvcVrg",
-    "5QNQCRNMBsY",
-    "5jTxjMSOwc4",
-    "5pQQ-O7pPnw",
-    "6zD68kyN44M",
-    "6zxSgnVSQHQ",
-    "7PkI6ZYYyg8",
-    "7UTSB1H_Fys",
-    "9GnZETDRmQ4",
-    "9WUTSvahLJ0",
-    "ABwjLZ5a4tI",
-    "AEfcIvujGwM",
-    "AMwImja_460",
-    "AuHuAyk9lwM",
-    "AyV2syJC_LQ",
-    "BY4mCQPdB5A",
-    "Bc78p8OrhRk",
-    "CICDPHQF7Pc",
-    "E1mYYWbB6Qk",
-    "EvREIMpOtUU",
-    "FPt6Rfe6h-8",
-    "GRW8_3h4hoA",
-    "Gm0UWjTILgU",
-    "HM7HlVCCLIA",
-    "Hnypgd-CNTc",
-    "Hq_fXG9KZds",
-    "IllcoAcFU88",
-    "IyzsOEFfAXc",
-    "J6eNIAa69W0",
-    "JkiVwHjMddY",
-    "Ju41vkNwJ58",
-    "Jwe98mzIbCk",
-    "LcOFWD5pb6Y",
-    "M4uEsZVhSII",
-    "MsrWISbEYCk",
-    "N8O8pnOFLM0",
-    "NVNk93pIKsE",
-    "NaDeAbCSHHM",
-    "NmnsjtTQYLE",
-    "OBOxos5VrgU",
-    "OhZK0OpFKYk",
-    "OyhEo4A4LUU",
-    "PPoCkR13gcM",
-    "PVK_-gRWkh8",
-    "PeRKueuXoTg",
-    "Q7cb9s08D8c",
-    "QR6WY9xJq8g",
-    "QUbqAeRiT3Y",
-    "QcEom42bUhg",
-    "RMMSiS_ltZc",
-    "ROWYaFBSeFY",
-    "SH1IfITveFg",
-    "SV92VP_GEqI",
-    "TCXnnqEgZ5w",
-    "TRX0izB-raA",
-    "Tg9j2VXu9FA",
-    "TzhtKHifPJE",
-    "U7OG8mPgzGg",
-    "UHSM9wNC7Qo",
-    "VCsQOsL0OZw",
-    "VR7MvI1IPn4",
-    "VqyrJEvu-9c",
-    "VxCcFMjc0yI",
-    "XMZzIBhGIjk",
-    "XU-bX8YMIGI",
-    "Xo6j9nQT38I",
-    "Y87_g4mk448",
-    "ZA6rvfSQqvQ",
-    "ZC5Vz-2l2WY",
-    "ZDfMnpxZ8pE",
-    "ZskHlAReY4I",
-    "_7ULNUqnWC0",
-    "_C3L0gsTHno",
-    "_Hichy2rSOs",
-    "_JLe1bJG3KI",
-    "a_A9V5cJUq4",
-    "avfFf-xxeEE",
-    "bEuP7QmbQfg",
-    "bqu6Dsnw220",
-    "c1jgIELStjk",
-    "d0V1z9D9Bls",
-    "dBwLtUPCRQ0",
-    "e4ydXfeBffo",
-    "eWO1SYC46Uk",
-    "f6V1qEn45Uk",
-    "fJAcjExnjZ8",
-    "fYGjZh-e6dA",
-    "fbzlqxkJrCU",
-    "gQ_VEd2hHA4",
-    "h1a0pxld-v4",
-    "hLdKNPbM814",
-    "hO3OGlSpNi8",
-    "hjQdRGgyDh4",
-    "hjetloNJRRs",
-    "ijfyXUt3OXE",
-    "j44QJHz_tFU",
-    "j7U7Z_z8-k4",
-    "jAFkO_1yV-0",
-    "jdgRZWnMi6M",
-    "jrZ7VWxu7YQ",
-    "jxVghIf9c0E",
-    "jyOMWCefoL4",
-    "k6mVKQZho2I",
-    "kmkL5mWqh4c",
-    "kpr5gLWD9Kw",
-    "my9KFhRS6GI",
-    "n3D3NTXAzZc",
-    "nHql_WXdq9U",
-    "oH4iUBMTunU",
-    "pAbvdckU5tQ",
-    "r1cSyvKC3zU",
-    "r3Y_JOs6UeI",
-    "rEFd1rvUeLE",
-    "s8HyU_8UK0U",
-    "sSgVkEcLPJ0",
-    "tXH94BP6MZQ",
-    "td_iA3X7HIQ",
-    "tkFl6_DzJmU",
-    "tylIS_XNMU4",
-    "vA2R9tY6rZY",
-    "vEiHJHUvK70",
-    "vMIME86nGEo",
-    "vRRfDfyTa5M",
-    "vhrhvGvkesU",
-    "wOuaFrwg5vA",
-    "wZ9y4vWlFUU",
-    "xslUJCcnRSk",
-    "y7oLgiALIRU",
-    "y8Xj_qVaNP4",
-    "y97VEU2RS10",
-    "ya6YT3mIgy4",
-    "yhVWVbYmew8",
-    "ywSFqumIx_4"
+    "-MD0I6j2uSc",
+    "0lagLcrCu6A",
+    "0sfL98W2EfY",
+    "1umehs9tVns",
+    "2NT0oT7VM8E",
+    "3_4tNeEwX0E",
+    "5DjuFy1-ft8",
+    "6FFB0lxAM4w",
+    "6jSq2SsMVMQ",
+    "7gS8nl4lejs",
+    "7yZ1Coz96XY",
+    "8JbwATDBf04",
+    "BnJcZ9N7HsA",
+    "CFtZH6wqStc",
+    "CRMVDW2flmI",
+    "DnOInqrr030",
+    "E8tOYa7C2TM",
+    "FGeOdefQ3Ls",
+    "FKOzmTUZrxs",
+    "G12ORzq_kTs",
+    "GXKzrQy2Tl0",
+    "H6SoDxvTlFk",
+    "HB0BhKZpPQE",
+    "HZ7Xvgrpj5w",
+    "JD-O3sAOQBc",
+    "KeztMUADfEg",
+    "M5roVg7WZo4",
+    "Ot_IQNb8x90",
+    "Q97XETAbrqU",
+    "QMfUk3ernsY",
+    "QPFJoHVSO2g",
+    "S3KQhYVh-wo",
+    "SH-zhfvflNM",
+    "TAOlvw9RC5U",
+    "TEZJgl720qE",
+    "V_aelzjY2hw",
+    "WQRoZ32qnGY",
+    "Wet80O75bak",
+    "Wh9OpffZ5WQ",
+    "XqZ1WqUmMYw",
+    "Ys_haNfnZPQ",
+    "ZXrokbHGsCU",
+    "bYjLZlnK6Wo",
+    "cZQ3w2BRWFE",
+    "d2HQ47d4518",
+    "dUg0CMpO62E",
+    "dXZ2nL72JZQ",
+    "e6pAHfbDk30",
+    "e8ltV32qO1c",
+    "eefpaW5AuIw",
+    "eyDznz2BaeA",
+    "fnzy-ZOsKSs",
+    "gJyxXAzV5H4",
+    "hbxtJ2ZTP-U",
+    "iIYKb9OE7po",
+    "iaP99E-RK10",
+    "imbD9xW4x7s",
+    "jgMjEfBYwyk",
+    "k8TOjqVG6DY",
+    "kKrQhx6_QLE",
+    "khDJ2Qt5cF4",
+    "mRLdUK993ks",
+    "nk3dDB44UBA",
+    "o5_DvirJE7A",
+    "p47vrph2CBk",
+    "sCTfaNhPne0",
+    "sNSDIAuN0TQ",
+    "sowjtGnYDuY",
+    "tivt4iuiG9o",
+    "vDVrOwWl3wk",
+    "xHdZ9kk8y4w",
+    "yB36jByIev4",
+    "yEbpSDsDmF4",
+    "zOHADfRAlQw"
    ],
    "also": [
-    "money save",
-    "means money",
-    "money coming",
-    "money actually",
-    "truth money",
-    "money really",
-    "actually make money",
-    "coming money",
-    "saves money",
-    "help save money",
-    "isn't money",
-    "money truth",
-    "money fix",
-    "show money",
-    "mean money",
-    "actually makes money",
-    "big money coming",
-    "tips save money",
-    "explains money",
-    "money isn't",
-    "money scam",
-    "boom money",
-    "collapse money",
-    "really money",
-    "money kill",
-    "much money really",
-    "really make money"
+    "coming worse recession",
+    "what's coming worse recession",
+    "worse recession coming",
+    "much worse recession coming",
+    "crash recession",
+    "coming recession",
+    "recession crash",
+    "coming quot"
    ],
-   "specificity": 0.0113,
-   "rank": 278.7
+   "specificity": 0.0031,
+   "rank": 276.8
   },
   {
    "phrase": "data shows",
@@ -9234,6 +8932,69 @@
    "rank": 275.0
   },
   {
+   "phrase": "idea what's coming",
+   "videos": 38,
+   "channels": 17,
+   "months": 16,
+   "span": "2021-09 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "the-gold-and-silver-crash",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
+   "examples": [
+    "Life Changing Money: \"You Have No Idea What's Coming With Bitcoin & Crypto In 2025\" | Raoul Pal",
+    "Most People have NO IDEA what's coming in the Stock Market",
+    "OH BOY, If You Hold Bitcoin YOU ARE The 1% Of The 1% - You Have NO IDEA What's Coming"
+   ],
+   "ids": [
+    "035USfeJtgw",
+    "0_jPFXOgqJU",
+    "0eiIY2jezS4",
+    "17I5hzaiWck",
+    "1GTs2TlxbKo",
+    "3_Zv8k1hxos",
+    "7CsMpx2m1gQ",
+    "9EAwLjNY6wg",
+    "9MUP8Tz10iw",
+    "A8UOVSMRg9A",
+    "AjK6LOCDhPU",
+    "CApMSivxlmo",
+    "EHBUKPjreVE",
+    "ETBju15gjo8",
+    "JrWRqMaptDA",
+    "N3cbA7kH4q0",
+    "OdjFDyG-Y_w",
+    "QjrhfJSahos",
+    "RennZ2vwY74",
+    "VCdLVfELuY0",
+    "VyFPZzMCzD8",
+    "X21J9R4SrRE",
+    "_I-Ciiwike0",
+    "acrx1r7tvGY",
+    "c6qcDS9N2Nc",
+    "d1R8vrFo7oQ",
+    "he8-ktmXyi8",
+    "k6BNeHooNIs",
+    "kAPBlZdfyxE",
+    "kJyZcZqlL6E",
+    "mGF7rBDg7NM",
+    "ss7zSM8IORY",
+    "tiIGkG_54rs",
+    "tufD-YuA9HY",
+    "xVcPCw-PQN0",
+    "z9ibdR4RVso",
+    "zcoVkNb0IVU",
+    "zleUpcaz5pM"
+   ],
+   "also": [
+    "people idea what's coming",
+    "idea coming",
+    "idea what's coming gold"
+   ],
+   "specificity": 0.001,
+   "rank": 272.0
+  },
+  {
    "phrase": "move coming",
    "videos": 167,
    "channels": 39,
@@ -9437,6 +9198,203 @@
    "rank": 270.4
   },
   {
+   "phrase": "save money",
+   "videos": 148,
+   "channels": 66,
+   "months": 46,
+   "span": "2017-03 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.77,
+   "kind": "new candidate",
+   "examples": [
+    "5 Best Tax-Saving Solutions Which Can Help You Save Money",
+    "Keto Diet On A Budget | Cheap Keto Food Shopping List | Save Money On Meals Meal Prep Ketogenic",
+    "Is Generic Medicine Equally Effective or Not | Buy Generic Medicine & Save Money | Modi Store Drugs"
+   ],
+   "ids": [
+    "-9U_1WUdUZE",
+    "-jA5AszmNSI",
+    "002ZQkZDxFA",
+    "1L-4i1kpFXE",
+    "1RIh4OR8-Ng",
+    "1RiwoRkmJ38",
+    "1UIRfTxKBbk",
+    "1qDs3N1HRpo",
+    "1r6BvlMDAUQ",
+    "1tCaeVKixWA",
+    "33kjP9wsB_k",
+    "39UzL6lXpZg",
+    "3xg3KKXXjvo",
+    "42zopFkN-4A",
+    "4cCLEWkKyR4",
+    "5J-RNtvcVrg",
+    "5QNQCRNMBsY",
+    "5jTxjMSOwc4",
+    "5pQQ-O7pPnw",
+    "6zD68kyN44M",
+    "6zxSgnVSQHQ",
+    "7PkI6ZYYyg8",
+    "7UTSB1H_Fys",
+    "9GnZETDRmQ4",
+    "9WUTSvahLJ0",
+    "ABwjLZ5a4tI",
+    "AEfcIvujGwM",
+    "AMwImja_460",
+    "AuHuAyk9lwM",
+    "AyV2syJC_LQ",
+    "BY4mCQPdB5A",
+    "Bc78p8OrhRk",
+    "CICDPHQF7Pc",
+    "E1mYYWbB6Qk",
+    "EvREIMpOtUU",
+    "FPt6Rfe6h-8",
+    "GRW8_3h4hoA",
+    "Gm0UWjTILgU",
+    "HM7HlVCCLIA",
+    "Hnypgd-CNTc",
+    "Hq_fXG9KZds",
+    "IllcoAcFU88",
+    "IyzsOEFfAXc",
+    "J6eNIAa69W0",
+    "JkiVwHjMddY",
+    "Ju41vkNwJ58",
+    "Jwe98mzIbCk",
+    "LcOFWD5pb6Y",
+    "M4uEsZVhSII",
+    "MsrWISbEYCk",
+    "N8O8pnOFLM0",
+    "NVNk93pIKsE",
+    "NaDeAbCSHHM",
+    "NmnsjtTQYLE",
+    "OBOxos5VrgU",
+    "OhZK0OpFKYk",
+    "OyhEo4A4LUU",
+    "PPoCkR13gcM",
+    "PVK_-gRWkh8",
+    "PeRKueuXoTg",
+    "Q7cb9s08D8c",
+    "QR6WY9xJq8g",
+    "QUbqAeRiT3Y",
+    "QcEom42bUhg",
+    "RMMSiS_ltZc",
+    "ROWYaFBSeFY",
+    "SH1IfITveFg",
+    "SV92VP_GEqI",
+    "TCXnnqEgZ5w",
+    "TRX0izB-raA",
+    "Tg9j2VXu9FA",
+    "TzhtKHifPJE",
+    "U7OG8mPgzGg",
+    "UHSM9wNC7Qo",
+    "VCsQOsL0OZw",
+    "VR7MvI1IPn4",
+    "VqyrJEvu-9c",
+    "VxCcFMjc0yI",
+    "XMZzIBhGIjk",
+    "XU-bX8YMIGI",
+    "Xo6j9nQT38I",
+    "Y87_g4mk448",
+    "ZA6rvfSQqvQ",
+    "ZC5Vz-2l2WY",
+    "ZDfMnpxZ8pE",
+    "ZskHlAReY4I",
+    "_7ULNUqnWC0",
+    "_C3L0gsTHno",
+    "_Hichy2rSOs",
+    "_JLe1bJG3KI",
+    "a_A9V5cJUq4",
+    "avfFf-xxeEE",
+    "bEuP7QmbQfg",
+    "bqu6Dsnw220",
+    "c1jgIELStjk",
+    "d0V1z9D9Bls",
+    "dBwLtUPCRQ0",
+    "e4ydXfeBffo",
+    "eWO1SYC46Uk",
+    "f6V1qEn45Uk",
+    "fJAcjExnjZ8",
+    "fYGjZh-e6dA",
+    "fbzlqxkJrCU",
+    "gQ_VEd2hHA4",
+    "h1a0pxld-v4",
+    "hLdKNPbM814",
+    "hO3OGlSpNi8",
+    "hjQdRGgyDh4",
+    "hjetloNJRRs",
+    "ijfyXUt3OXE",
+    "j44QJHz_tFU",
+    "j7U7Z_z8-k4",
+    "jAFkO_1yV-0",
+    "jdgRZWnMi6M",
+    "jrZ7VWxu7YQ",
+    "jxVghIf9c0E",
+    "jyOMWCefoL4",
+    "k6mVKQZho2I",
+    "kmkL5mWqh4c",
+    "kpr5gLWD9Kw",
+    "my9KFhRS6GI",
+    "n3D3NTXAzZc",
+    "nHql_WXdq9U",
+    "oH4iUBMTunU",
+    "pAbvdckU5tQ",
+    "r1cSyvKC3zU",
+    "r3Y_JOs6UeI",
+    "rEFd1rvUeLE",
+    "s8HyU_8UK0U",
+    "sSgVkEcLPJ0",
+    "tXH94BP6MZQ",
+    "td_iA3X7HIQ",
+    "tkFl6_DzJmU",
+    "tylIS_XNMU4",
+    "vA2R9tY6rZY",
+    "vEiHJHUvK70",
+    "vMIME86nGEo",
+    "vRRfDfyTa5M",
+    "vhrhvGvkesU",
+    "wOuaFrwg5vA",
+    "wZ9y4vWlFUU",
+    "xslUJCcnRSk",
+    "y7oLgiALIRU",
+    "y8Xj_qVaNP4",
+    "y97VEU2RS10",
+    "ya6YT3mIgy4",
+    "yhVWVbYmew8",
+    "ywSFqumIx_4"
+   ],
+   "also": [
+    "money save",
+    "means money",
+    "money coming",
+    "money actually",
+    "truth money",
+    "money really",
+    "actually make money",
+    "coming money",
+    "saves money",
+    "help save money",
+    "isn't money",
+    "money truth",
+    "money fix",
+    "show money",
+    "mean money",
+    "actually makes money",
+    "big money coming",
+    "tips save money",
+    "explains money",
+    "money isn't",
+    "money scam",
+    "boom money",
+    "collapse money",
+    "really money",
+    "money kill",
+    "much money really",
+    "really make money"
+   ],
+   "specificity": 0.0113,
+   "rank": 268.7
+  },
+  {
    "phrase": "coming months",
    "videos": 28,
    "channels": 21,
@@ -9485,6 +9443,45 @@
    "rank": 268.3
   },
   {
+   "phrase": "didn see coming",
+   "videos": 16,
+   "channels": 12,
+   "months": 11,
+   "span": "2018-09 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.69,
+   "kind": "new candidate",
+   "examples": [
+    "Virgo Love:  Oct. 1st-15th  \u201cWell, I didn\u2019t see that coming.\"",
+    "AQUARIUS December | YOU DIDN\u2019T SEE THEM COMING, BUT JUST GO FOR IT! ~ Tarot Reading",
+    "Date to Earn is here!! I didn\u2019t see this coming!!!"
+   ],
+   "ids": [
+    "6u6X5CnUOF0",
+    "9UMcHTuxKLM",
+    "9l3pxFn7Tlo",
+    "BKjg3izQyp4",
+    "ICDA0q1J4zA",
+    "JCzss4bYXSw",
+    "LfXu2yYiCYs",
+    "OxE678N_Lq0",
+    "SY5Cr0n8LEQ",
+    "bMF4Egbgqbc",
+    "d7UUY-xKSjQ",
+    "l72ogfRDSxo",
+    "pgRFTxDdssI",
+    "qsChNOI05dg",
+    "raHZ8W4Dju0",
+    "vPD2xaGf3xI"
+   ],
+   "also": [
+    "didn crash"
+   ],
+   "specificity": 0.0005,
+   "rank": 264.0
+  },
+  {
    "phrase": "really owns",
    "videos": 16,
    "channels": 13,
@@ -9518,39 +9515,6 @@
     "yOXfz20OqsQ"
    ],
    "specificity": 0.0003,
-   "rank": 260.0
-  },
-  {
-   "phrase": "untold truth",
-   "videos": 13,
-   "channels": 13,
-   "months": 10,
-   "span": "2019-11 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "The Untold Truth About SEO",
-    "The Untold Truth: LSAT Prep Isn\u2019t Just About Hard Work",
-    "Beyonc\u00e9 & Jay-Z's Age Gap: The Untold Truth"
-   ],
-   "ids": [
-    "1Hg4Lw9dOqU",
-    "4Gybw0TV5m0",
-    "7MD9u0bjH-Q",
-    "JPqM18hT4WQ",
-    "M2VKeTR9JzM",
-    "MpOt2N9Yv6M",
-    "Nmbv94FHF64",
-    "Qt1rBc-PZPE",
-    "_wW9WTEzQjU",
-    "em11BnOVxSw",
-    "lsYA7d7kWBE",
-    "nZxRwyJxvtQ",
-    "oRifalUuFa8"
-   ],
-   "specificity": 0.0002,
    "rank": 260.0
   },
   {
@@ -10755,6 +10719,38 @@
    "rank": 216.0
   },
   {
+   "phrase": "untold truth",
+   "videos": 12,
+   "channels": 12,
+   "months": 9,
+   "span": "2024-04 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "The Untold Truth: LSAT Prep Isn\u2019t Just About Hard Work",
+    "Beyonc\u00e9 & Jay-Z's Age Gap: The Untold Truth",
+    "Kelley Mack Final Words To her Mom got everyone Talking- The Untold Truth"
+   ],
+   "ids": [
+    "1Hg4Lw9dOqU",
+    "4Gybw0TV5m0",
+    "JPqM18hT4WQ",
+    "M2VKeTR9JzM",
+    "MpOt2N9Yv6M",
+    "Nmbv94FHF64",
+    "Qt1rBc-PZPE",
+    "_wW9WTEzQjU",
+    "em11BnOVxSw",
+    "lsYA7d7kWBE",
+    "nZxRwyJxvtQ",
+    "oRifalUuFa8"
+   ],
+   "specificity": 0.0002,
+   "rank": 216.0
+  },
+  {
    "phrase": "myth fact",
    "videos": 12,
    "channels": 12,
@@ -10956,6 +10952,51 @@
    ],
    "specificity": 0.0007,
    "rank": 214.3
+  },
+  {
+   "phrase": "really matter",
+   "videos": 20,
+   "channels": 18,
+   "months": 13,
+   "span": "2017-05 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.9,
+   "kind": "new candidate",
+   "examples": [
+    "Why Replacing Obamacare Won\u2019t Really Matter I Brainstorm Health | Fortune",
+    "World's Central Bank: GOLD IS MONEY! Does It Really Matter??",
+    "Does Organic Really Matter And How to Rank Nutritional Priorities?"
+   ],
+   "ids": [
+    "-KMwNObZtV4",
+    "-nQWE3cPaOE",
+    "5EdhmJdeEDM",
+    "6o8l416v-CM",
+    "8T9WXX2E0e0",
+    "AIr7CdivyIA",
+    "B10Fi16jc2c",
+    "DB7dSnmpLPw",
+    "Ds0eqBaB6Y0",
+    "VYM41B0aPIg",
+    "WrZbFXyD_Ac",
+    "ZApI0AQbdIk",
+    "bW4y0txxjHU",
+    "c43DHQ3rMMo",
+    "dZ16-yKGIvM",
+    "gYBQ6NQgDMk",
+    "l2Uq883Wdfc",
+    "mpfXPCZQIwg",
+    "q9b9Q9I25b4",
+    "xWWj7Izp_Sg"
+   ],
+   "also": [
+    "actually matter",
+    "won't matter",
+    "matter wins"
+   ],
+   "specificity": 0.0011,
+   "rank": 212.7
   },
   {
    "phrase": "eyewitness shows",
@@ -11354,48 +11395,55 @@
    "rank": 201.7
   },
   {
-   "phrase": "really matter",
-   "videos": 19,
-   "channels": 17,
-   "months": 13,
-   "span": "2017-05 \u2192 2026-10",
+   "phrase": "shift coming",
+   "videos": 27,
+   "channels": 20,
+   "months": 19,
+   "span": "2022-01 \u2192 2026-10",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.89,
+   "home_share": 0.52,
    "kind": "new candidate",
    "examples": [
-    "Why Replacing Obamacare Won\u2019t Really Matter I Brainstorm Health | Fortune",
-    "World's Central Bank: GOLD IS MONEY! Does It Really Matter??",
-    "Does Organic Really Matter And How to Rank Nutritional Priorities?"
+    "GEMINI TAROT READING | A SHAKY TOWER IS READY TO FALL! AN UNEXPECTED SHIFT IS COMING GEMINI!",
+    "LEO TAROT READING | GET READY TO LET GO... YOU CAN TURN THIS AROUND LEO! A BLESSED SHIFT IS COMING!",
+    "HUGE MARKET SHIFT COMING FOR BITCOIN!! Bitcoin News Today & BTC Price Prediction after Bitcoin Crash"
    ],
    "ids": [
-    "-KMwNObZtV4",
-    "-nQWE3cPaOE",
-    "5EdhmJdeEDM",
-    "6o8l416v-CM",
-    "8T9WXX2E0e0",
-    "AIr7CdivyIA",
-    "B10Fi16jc2c",
-    "DB7dSnmpLPw",
-    "Ds0eqBaB6Y0",
-    "VYM41B0aPIg",
-    "WrZbFXyD_Ac",
-    "ZApI0AQbdIk",
-    "bW4y0txxjHU",
-    "c43DHQ3rMMo",
-    "dZ16-yKGIvM",
-    "gYBQ6NQgDMk",
-    "mpfXPCZQIwg",
-    "q9b9Q9I25b4",
-    "xWWj7Izp_Sg"
+    "0Sgv-NQIv3Y",
+    "4CSTE083Ebg",
+    "4ordfR4N2E8",
+    "6WhZmXvCSLA",
+    "DKe-yBVyy3w",
+    "EmV11rjJKHI",
+    "Jq9Ghk5bPxk",
+    "MhGSB2ZbkDY",
+    "OKfKnr7Me54",
+    "SviMjLainGU",
+    "UmtE9YaP03o",
+    "Y4zYJy0ZPtE",
+    "YBPtKo8Cb6o",
+    "YPHhC4OHLOc",
+    "fT4EsB_U29I",
+    "flFf1-uSNeo",
+    "k52KRCLzsWs",
+    "m704mhAEx1c",
+    "mKwg548gR9g",
+    "oHE_qcW4Mdc",
+    "ogux4VZ2J7s",
+    "p8XlXVrlOhw",
+    "wS69lV1dz80",
+    "xyAyzCFeynw",
+    "yN0hf4gAYCA",
+    "yuwCHDGutjU",
+    "yw_XdOZj6_0"
    ],
    "also": [
-    "actually matter",
-    "won't matter",
-    "matter wins"
+    "shift means",
+    "massive shift coming"
    ],
-   "specificity": 0.0011,
-   "rank": 200.9
+   "specificity": 0.0019,
+   "rank": 200.0
   },
   {
    "phrase": "nearing end",
@@ -11863,56 +11911,6 @@
    "rank": 182.0
   },
   {
-   "phrase": "shift coming",
-   "videos": 26,
-   "channels": 19,
-   "months": 18,
-   "span": "2022-01 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.5,
-   "kind": "new candidate",
-   "examples": [
-    "GEMINI TAROT READING | A SHAKY TOWER IS READY TO FALL! AN UNEXPECTED SHIFT IS COMING GEMINI!",
-    "LEO TAROT READING | GET READY TO LET GO... YOU CAN TURN THIS AROUND LEO! A BLESSED SHIFT IS COMING!",
-    "HUGE MARKET SHIFT COMING FOR BITCOIN!! Bitcoin News Today & BTC Price Prediction after Bitcoin Crash"
-   ],
-   "ids": [
-    "0Sgv-NQIv3Y",
-    "4CSTE083Ebg",
-    "4ordfR4N2E8",
-    "6WhZmXvCSLA",
-    "DKe-yBVyy3w",
-    "EmV11rjJKHI",
-    "Jq9Ghk5bPxk",
-    "MhGSB2ZbkDY",
-    "OKfKnr7Me54",
-    "SviMjLainGU",
-    "UmtE9YaP03o",
-    "Y4zYJy0ZPtE",
-    "YPHhC4OHLOc",
-    "fT4EsB_U29I",
-    "flFf1-uSNeo",
-    "k52KRCLzsWs",
-    "m704mhAEx1c",
-    "mKwg548gR9g",
-    "oHE_qcW4Mdc",
-    "ogux4VZ2J7s",
-    "p8XlXVrlOhw",
-    "wS69lV1dz80",
-    "xyAyzCFeynw",
-    "yN0hf4gAYCA",
-    "yuwCHDGutjU",
-    "yw_XdOZj6_0"
-   ],
-   "also": [
-    "shift means",
-    "massive shift coming"
-   ],
-   "specificity": 0.0019,
-   "rank": 180.0
-  },
-  {
    "phrase": "dead hundreds",
    "videos": 18,
    "channels": 10,
@@ -12306,43 +12304,6 @@
    "rank": 176.0
   },
   {
-   "phrase": "save yourself",
-   "videos": 17,
-   "channels": 11,
-   "months": 16,
-   "span": "2020-10 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.65,
-   "kind": "new candidate",
-   "examples": [
-    "Bear Market for Short Term or Long Term? How to Save Yourself from Losing Money? Token Metrics AMA",
-    "HyperInflation Incoming - Save Yourself - Buy Bitcoin",
-    "Bitcoin is the Only Way to Save Yourself from the 'Great Reset'"
-   ],
-   "ids": [
-    "-6OK1YaIMNw",
-    "4jDctwt5c0I",
-    "7eA_kRm_k28",
-    "GibiSqySFlI",
-    "Of3LfMD_0Qo",
-    "OqtrfWhOb1c",
-    "ShPVWBRWCZ0",
-    "UcFnI-hvkuE",
-    "ZYAr3J1UWzA",
-    "dYRF3kvg2Nk",
-    "dto5SM3mg88",
-    "gWmByvt3138",
-    "imQHIhd0q1I",
-    "kjtkqJU9IuQ",
-    "pZrtfF0ghwc",
-    "x24IWK3xxUo",
-    "ybZEKDvEG-8"
-   ],
-   "specificity": 0.001,
-   "rank": 176.0
-  },
-  {
    "phrase": "ray-ban meta",
    "videos": 16,
    "channels": 11,
@@ -12472,30 +12433,30 @@
     "mPR4teRTeCQ",
     "nSiTmyd2utI"
    ],
-   "specificity": 0.0004,
+   "specificity": 0.0003,
    "rank": 176.0
   },
   {
    "phrase": "actually looks",
-   "videos": 21,
+   "videos": 22,
    "channels": 19,
    "months": 11,
-   "span": "2022-10 \u2192 2026-10",
+   "span": "2025-07 \u2192 2026-10",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.71,
+   "home_share": 0.73,
    "kind": "new candidate",
    "examples": [
-    "What The Everyday Life Of A Multimillionaire Actually Looks Like (Not What You Think)",
     "\u2728 Want skin that actually looks as good as it feels?",
-    "What Real Weight Loss Support Actually Looks Like"
+    "What Real Weight Loss Support Actually Looks Like",
+    "What the Fed Actually Looks at for Rates #shorts #finance #federalreserve"
    ],
    "ids": [
     "1OvXm9z0oM0",
     "2NwJgd3mpv8",
     "5KTCV5WyJUE",
     "5q13vNBGcCY",
-    "F1lmpMxvX9U",
+    "8QXuTtLO1fQ",
     "F2QUhdpH_wE",
     "GSPwlRnXaV0",
     "LSo5_baHyQM",
@@ -12503,6 +12464,7 @@
     "MZWk2vfg_T0",
     "P_bnEH1m3CI",
     "Ts_QVLQJKyA",
+    "UpxXvJAQhaU",
     "WuWvCef5Gnk",
     "Xu49IMW3hjo",
     "Ztlc2M2gOXs",
@@ -13429,59 +13391,6 @@
    "rank": 165.0
   },
   {
-   "phrase": "replace human",
-   "videos": 24,
-   "channels": 22,
-   "months": 11,
-   "span": "2016-11 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.96,
-   "kind": "new candidate",
-   "examples": [
-    "AI and Automation Can't Replace Being Human  - Jacob Morgan",
-    "Chat GPT AI Replace Human Investors?",
-    "Will AI replace human musicians? Recording Academy CEO weighs in"
-   ],
-   "ids": [
-    "-Vt-RFkC3Hs",
-    "2D9NnfFWPCg",
-    "5VzICHlovfc",
-    "6dR83-nNMus",
-    "9T-T1gP-Ti0",
-    "ArZMFaKgrtU",
-    "LomvPhnA8sw",
-    "M2ZQj0UilEc",
-    "MoGgVkDfxO8",
-    "P1id5tYD1WU",
-    "Pdq4U9xQQrY",
-    "RUC26we3Q_M",
-    "VFf2hMfRs-g",
-    "VJEBIU3CfhU",
-    "a_bYwXHfqms",
-    "abnOvjrd7D0",
-    "ef_oIhPsL8o",
-    "hGm_noTizx0",
-    "hIJcH8f2gLg",
-    "huwxUdEgLBI",
-    "nkknxciLPDI",
-    "pai73pFNjDI",
-    "xm26Lyh8A8k",
-    "xrAI66Bc6c8"
-   ],
-   "also": [
-    "end human",
-    "can't replace human",
-    "truth human",
-    "beats human",
-    "beat human",
-    "replace human jobs",
-    "means human"
-   ],
-   "specificity": 0.0015,
-   "rank": 161.3
-  },
-  {
    "phrase": "crash involving",
    "videos": 47,
    "channels": 8,
@@ -14358,6 +14267,59 @@
    "rank": 152.0
   },
   {
+   "phrase": "replace human",
+   "videos": 24,
+   "channels": 22,
+   "months": 11,
+   "span": "2016-11 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.96,
+   "kind": "new candidate",
+   "examples": [
+    "AI and Automation Can't Replace Being Human  - Jacob Morgan",
+    "Chat GPT AI Replace Human Investors?",
+    "Will AI replace human musicians? Recording Academy CEO weighs in"
+   ],
+   "ids": [
+    "-Vt-RFkC3Hs",
+    "2D9NnfFWPCg",
+    "5VzICHlovfc",
+    "6dR83-nNMus",
+    "9T-T1gP-Ti0",
+    "ArZMFaKgrtU",
+    "LomvPhnA8sw",
+    "M2ZQj0UilEc",
+    "MoGgVkDfxO8",
+    "P1id5tYD1WU",
+    "Pdq4U9xQQrY",
+    "RUC26we3Q_M",
+    "VFf2hMfRs-g",
+    "VJEBIU3CfhU",
+    "a_bYwXHfqms",
+    "abnOvjrd7D0",
+    "ef_oIhPsL8o",
+    "hGm_noTizx0",
+    "hIJcH8f2gLg",
+    "huwxUdEgLBI",
+    "nkknxciLPDI",
+    "pai73pFNjDI",
+    "xm26Lyh8A8k",
+    "xrAI66Bc6c8"
+   ],
+   "also": [
+    "end human",
+    "can't replace human",
+    "truth human",
+    "beats human",
+    "beat human",
+    "replace human jobs",
+    "means human"
+   ],
+   "specificity": 0.0016,
+   "rank": 151.2
+  },
+  {
    "phrase": "award show",
    "videos": 19,
    "channels": 5,
@@ -14394,6 +14356,42 @@
     "xs93NtaGxjw"
    ],
    "specificity": 0.0003,
+   "rank": 150.0
+  },
+  {
+   "phrase": "save yourself",
+   "videos": 16,
+   "channels": 10,
+   "months": 15,
+   "span": "2020-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.62,
+   "kind": "new candidate",
+   "examples": [
+    "Bear Market for Short Term or Long Term? How to Save Yourself from Losing Money? Token Metrics AMA",
+    "HyperInflation Incoming - Save Yourself - Buy Bitcoin",
+    "Bitcoin is the Only Way to Save Yourself from the 'Great Reset'"
+   ],
+   "ids": [
+    "-6OK1YaIMNw",
+    "4jDctwt5c0I",
+    "7eA_kRm_k28",
+    "GibiSqySFlI",
+    "Of3LfMD_0Qo",
+    "OqtrfWhOb1c",
+    "ShPVWBRWCZ0",
+    "UcFnI-hvkuE",
+    "ZYAr3J1UWzA",
+    "dYRF3kvg2Nk",
+    "dto5SM3mg88",
+    "gWmByvt3138",
+    "imQHIhd0q1I",
+    "kjtkqJU9IuQ",
+    "pZrtfF0ghwc",
+    "x24IWK3xxUo"
+   ],
+   "specificity": 0.001,
    "rank": 150.0
   },
   {
@@ -14651,8 +14649,8 @@
     "warning lifetime event coming",
     "lifetime event coming 2026",
     "event coming 2026",
-    "coming 2026 get ready",
-    "event coming 2026 get"
+    "event coming 2026 get",
+    "coming 2026 get ready"
    ],
    "specificity": 0.0013,
    "rank": 147.7
@@ -15637,6 +15635,93 @@
    "rank": 141.2
   },
   {
+   "phrase": "save life",
+   "videos": 56,
+   "channels": 31,
+   "months": 25,
+   "span": "2016-11 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.93,
+   "kind": "new candidate",
+   "examples": [
+    "This Wearable Patch Could Save Your Life",
+    "How Adventure Can Save Your Life I Brainstorm Health I Fortune",
+    "Learn CPR: How to Save a Life in an Emergency"
+   ],
+   "ids": [
+    "-_WzF7CrC7U",
+    "0JBA_LXSEOg",
+    "0Jj_xDZdkCw",
+    "0sg0FYJRKa8",
+    "3JRSoAQSEzk",
+    "3Vn2usj4lRs",
+    "4pK8CdlJ4sc",
+    "5PItU3cDGec",
+    "65e6Er1kcAc",
+    "6DywKmqpEy4",
+    "9PIWKunR8g0",
+    "AktaZkZUMW4",
+    "AriKtPKJjHg",
+    "CuoRcpw9WGE",
+    "DJsJXHxTqEs",
+    "DLOUHgVVTkw",
+    "DSM3aQku1dY",
+    "EH06V4hVNK8",
+    "EztAE3DMoAw",
+    "Hmom58Kb9xA",
+    "MEWVRY2C3Kg",
+    "NA4A7LX6Keg",
+    "NZLhfeMo52Q",
+    "Prh7nqZhvD8",
+    "QL67aFM-N4E",
+    "QdCYC1Cyrb0",
+    "QvJV6RfLnKk",
+    "RQZE1_8daMs",
+    "SGub9H9TiYQ",
+    "YXjy3F0ZsN0",
+    "YxtBpemdbYs",
+    "Z_P3kvKoxo4",
+    "ZtFrselizkQ",
+    "_XLEhKQiyec",
+    "_mEdIPGgT8A",
+    "f7OW5YlpbBE",
+    "fUIGbb7LzIw",
+    "hmn6DOR_HeY",
+    "imUyninYTjs",
+    "k__MjzS4zjE",
+    "kayrit_2Cxk",
+    "koZLSFvQLYY",
+    "lzS_ibZon30",
+    "maHjCFiXDXE",
+    "o0CEz8GeILQ",
+    "oO9rzCwn1qk",
+    "oo463-aX6RQ",
+    "ou8giaUa91k",
+    "p2fxeH-o68U",
+    "qP0wqFN_uoc",
+    "qUKl3HcV5Cw",
+    "r9-cue4fl2Q",
+    "rDLydVb-8CM",
+    "sU8q7wkjv9E",
+    "x9sLnLOzoIM",
+    "xeI5DHeY6gM"
+   ],
+   "also": [
+    "could save life",
+    "coming life",
+    "end life",
+    "life really",
+    "truth life",
+    "saves life",
+    "ends life",
+    "life coming",
+    "life isn't"
+   ],
+   "specificity": 0.0055,
+   "rank": 140.9
+  },
+  {
    "phrase": "pump coming",
    "videos": 54,
    "channels": 15,
@@ -15973,6 +16058,45 @@
    "rank": 140.0
   },
   {
+   "phrase": "alone won't",
+   "videos": 15,
+   "channels": 14,
+   "months": 7,
+   "span": "2024-06 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.87,
+   "kind": "new candidate",
+   "examples": [
+    "Why Hard Work Alone Won't Get You A 170+ LSAT Score",
+    "Why Comps Alone Won't Convince Sellers",
+    "Chia Seeds Alone Won't Work\u2014But THIS Ingredient Changes Everything!"
+   ],
+   "ids": [
+    "4kCDmOTGoss",
+    "CeNBuBOxTkQ",
+    "KHLz51uJOeA",
+    "MSTNrxORynE",
+    "N9Y4QAe1y3I",
+    "NDsYN9a4DOk",
+    "NF7fGZxAyek",
+    "cPgsKYgsvjk",
+    "dOkyB6vYmEw",
+    "ibmKxHYqCY0",
+    "kamICZ39ma0",
+    "lh-cEbbdWLc",
+    "macIYZ1Khzw",
+    "ufkFuO0v7Kg",
+    "wpjydMgz9ik"
+   ],
+   "also": [
+    "alone isn't enough",
+    "alone isn't"
+   ],
+   "specificity": 0.0007,
+   "rank": 140.0
+  },
+  {
    "phrase": "ban lifted",
    "videos": 13,
    "channels": 10,
@@ -16047,123 +16171,6 @@
    ],
    "specificity": 0.0007,
    "rank": 137.1
-  },
-  {
-   "phrase": "must master",
-   "videos": 11,
-   "channels": 9,
-   "months": 9,
-   "span": "2019-05 \u2192 2026-10",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 0.82,
-   "kind": "new candidate",
-   "examples": [
-    "Dominate Facebook Ads: 3 Essential Principles You Must Master",
-    "Every software engineer MUST master THIS!!",
-    "Every developer must master these 3 AI pillars: LLMs, AI Agents & AI Workflows #skillradar #aicourse"
-   ],
-   "ids": [
-    "-LOXPj65_NA",
-    "0mtk0GuWTTo",
-    "3k1zWdAT99E",
-    "AGgv8egtfZs",
-    "BMQh6zA3HUY",
-    "Fb0e1Fbr5a4",
-    "PS2K7YHvkHo",
-    "TEHU95gehDY",
-    "XjkhZwbBng8",
-    "s74OZyWhOeA",
-    "uG8P7TCy-m8"
-   ],
-   "specificity": 0.0006,
-   "rank": 135.0
-  },
-  {
-   "phrase": "save life",
-   "videos": 55,
-   "channels": 30,
-   "months": 25,
-   "span": "2016-11 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.93,
-   "kind": "new candidate",
-   "examples": [
-    "This Wearable Patch Could Save Your Life",
-    "How Adventure Can Save Your Life I Brainstorm Health I Fortune",
-    "Learn CPR: How to Save a Life in an Emergency"
-   ],
-   "ids": [
-    "-_WzF7CrC7U",
-    "0JBA_LXSEOg",
-    "0Jj_xDZdkCw",
-    "0sg0FYJRKa8",
-    "3JRSoAQSEzk",
-    "3Vn2usj4lRs",
-    "4pK8CdlJ4sc",
-    "5PItU3cDGec",
-    "65e6Er1kcAc",
-    "6DywKmqpEy4",
-    "9PIWKunR8g0",
-    "AktaZkZUMW4",
-    "AriKtPKJjHg",
-    "CuoRcpw9WGE",
-    "DJsJXHxTqEs",
-    "DLOUHgVVTkw",
-    "DSM3aQku1dY",
-    "EH06V4hVNK8",
-    "EztAE3DMoAw",
-    "Hmom58Kb9xA",
-    "MEWVRY2C3Kg",
-    "NA4A7LX6Keg",
-    "NZLhfeMo52Q",
-    "Prh7nqZhvD8",
-    "QL67aFM-N4E",
-    "QdCYC1Cyrb0",
-    "QvJV6RfLnKk",
-    "RQZE1_8daMs",
-    "SGub9H9TiYQ",
-    "YXjy3F0ZsN0",
-    "YxtBpemdbYs",
-    "Z_P3kvKoxo4",
-    "ZtFrselizkQ",
-    "_XLEhKQiyec",
-    "_mEdIPGgT8A",
-    "f7OW5YlpbBE",
-    "fUIGbb7LzIw",
-    "hmn6DOR_HeY",
-    "imUyninYTjs",
-    "k__MjzS4zjE",
-    "koZLSFvQLYY",
-    "lzS_ibZon30",
-    "maHjCFiXDXE",
-    "o0CEz8GeILQ",
-    "oO9rzCwn1qk",
-    "oo463-aX6RQ",
-    "ou8giaUa91k",
-    "p2fxeH-o68U",
-    "qP0wqFN_uoc",
-    "qUKl3HcV5Cw",
-    "r9-cue4fl2Q",
-    "rDLydVb-8CM",
-    "sU8q7wkjv9E",
-    "x9sLnLOzoIM",
-    "xeI5DHeY6gM"
-   ],
-   "also": [
-    "could save life",
-    "coming life",
-    "end life",
-    "life really",
-    "truth life",
-    "saves life",
-    "ends life",
-    "life coming",
-    "life isn't"
-   ],
-   "specificity": 0.0056,
-   "rank": 133.9
   },
   {
    "phrase": "causes brain fog",
@@ -16387,6 +16394,40 @@
    "rank": 132.0
   },
   {
+   "phrase": "won't solve",
+   "videos": 11,
+   "channels": 11,
+   "months": 6,
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.73,
+   "kind": "new candidate",
+   "examples": [
+    "Lowering interest rates won't solve problems in the labor market, says Ed Yardeni",
+    "Quantum Computing Won't Solve Climate Change ALONE! #shorts",
+    "Quantum Computing Won't Solve Climate Change ALONE! #shorts"
+   ],
+   "ids": [
+    "A5oqcY9VftU",
+    "Iob4tHzFH3Y",
+    "O5QQECFhST0",
+    "Rc-xGByhrEM",
+    "Rdag3IM932g",
+    "UBhHhVfa354",
+    "dHZBrDL5PF0",
+    "oaX6Yt4McNE",
+    "xAurZv9zeDs",
+    "xNNiMhK0KKg",
+    "y8sWYKuliAc"
+   ],
+   "also": [
+    "really solve"
+   ],
+   "specificity": 0.0004,
+   "rank": 132.0
+  },
+  {
    "phrase": "supplements actually",
    "videos": 19,
    "channels": 12,
@@ -16512,44 +16553,6 @@
    "rank": 130.0
   },
   {
-   "phrase": "alone won't",
-   "videos": 14,
-   "channels": 13,
-   "months": 7,
-   "span": "2024-06 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.86,
-   "kind": "new candidate",
-   "examples": [
-    "Why Hard Work Alone Won't Get You A 170+ LSAT Score",
-    "Why Comps Alone Won't Convince Sellers",
-    "Chia Seeds Alone Won't Work\u2014But THIS Ingredient Changes Everything!"
-   ],
-   "ids": [
-    "4kCDmOTGoss",
-    "CeNBuBOxTkQ",
-    "KHLz51uJOeA",
-    "MSTNrxORynE",
-    "N9Y4QAe1y3I",
-    "NDsYN9a4DOk",
-    "NF7fGZxAyek",
-    "cPgsKYgsvjk",
-    "dOkyB6vYmEw",
-    "ibmKxHYqCY0",
-    "kamICZ39ma0",
-    "lh-cEbbdWLc",
-    "macIYZ1Khzw",
-    "ufkFuO0v7Kg"
-   ],
-   "also": [
-    "alone isn't enough",
-    "alone isn't"
-   ],
-   "specificity": 0.0007,
-   "rank": 130.0
-  },
-  {
    "phrase": "breakout imminent",
    "videos": 50,
    "channels": 10,
@@ -16626,6 +16629,52 @@
     "ethereum breakout imminent"
    ],
    "specificity": 0.0024,
+   "rank": 129.2
+  },
+  {
+   "phrase": "collapse begun",
+   "videos": 23,
+   "channels": 12,
+   "months": 14,
+   "span": "2022-08 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.65,
+   "kind": "new candidate",
+   "examples": [
+    "Raoul Pal - Prepare, The Collapse Has Begun!",
+    "The Collapse Has BEGUN | WORSE THAN 2008 Financial Crisis",
+    "China's Economic Collapse has Begun"
+   ],
+   "ids": [
+    "-ONkyYojzfM",
+    "0SVVe20tnbs",
+    "7yzqY33ksyw",
+    "8MaoR3IjuTs",
+    "AQYXYrkF95M",
+    "HIFpXyuqRNE",
+    "KPsrLk571y4",
+    "PphwVGiO30k",
+    "QAm0egLnFbg",
+    "aV7WbHTrpU4",
+    "atL4CpCIqfM",
+    "bIeVytDnask",
+    "crtdqnSzo6A",
+    "eYRzbiSASVg",
+    "gqjMTGqgboI",
+    "kg0bPWPdd_8",
+    "nWW8DlmxrN8",
+    "pulctWdKK-M",
+    "qrnjZlh61Tc",
+    "tPPpoJayFAQ",
+    "vAK1s_HwWc8",
+    "wyLVbkWzDSA",
+    "zLAKGXelmPE"
+   ],
+   "also": [
+    "crash begun"
+   ],
+   "specificity": 0.0013,
    "rank": 129.2
   },
   {
@@ -17784,39 +17833,6 @@
    "rank": 120.0
   },
   {
-   "phrase": "won't solve",
-   "videos": 10,
-   "channels": 10,
-   "months": 6,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.7,
-   "kind": "new candidate",
-   "examples": [
-    "Lowering interest rates won't solve problems in the labor market, says Ed Yardeni",
-    "Quantum Computing Won't Solve Climate Change ALONE! #shorts",
-    "Quantum Computing Won't Solve Climate Change ALONE! #shorts"
-   ],
-   "ids": [
-    "Iob4tHzFH3Y",
-    "O5QQECFhST0",
-    "Rc-xGByhrEM",
-    "Rdag3IM932g",
-    "UBhHhVfa354",
-    "dHZBrDL5PF0",
-    "oaX6Yt4McNE",
-    "xAurZv9zeDs",
-    "xNNiMhK0KKg",
-    "y8sWYKuliAc"
-   ],
-   "also": [
-    "really solve"
-   ],
-   "specificity": 0.0004,
-   "rank": 120.0
-  },
-  {
    "phrase": "team wins",
    "videos": 25,
    "channels": 19,
@@ -17869,49 +17885,44 @@
    "rank": 118.8
   },
   {
-   "phrase": "collapse begun",
-   "videos": 22,
-   "channels": 11,
-   "months": 14,
-   "span": "2022-08 \u2192 2026-09",
+   "phrase": "won't survive",
+   "videos": 13,
+   "channels": 10,
+   "months": 13,
+   "span": "2022-01 \u2192 2026-10",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.64,
+   "home_share": 0.54,
    "kind": "new candidate",
    "examples": [
-    "Raoul Pal - Prepare, The Collapse Has Begun!",
-    "The Collapse Has BEGUN | WORSE THAN 2008 Financial Crisis",
-    "China's Economic Collapse has Begun"
+    "SILVER WON'T SURVIVE MUCH LONGER..",
+    "Why Your Altcoins WON'T SURVIVE! (Buy These Alts Instead)",
+    "\"Most Americans Won't Survive What's Still Coming...\" - Peter Schiff"
    ],
    "ids": [
-    "-ONkyYojzfM",
-    "0SVVe20tnbs",
-    "7yzqY33ksyw",
-    "8MaoR3IjuTs",
-    "AQYXYrkF95M",
-    "HIFpXyuqRNE",
-    "KPsrLk571y4",
-    "PphwVGiO30k",
-    "QAm0egLnFbg",
-    "aV7WbHTrpU4",
-    "atL4CpCIqfM",
-    "bIeVytDnask",
-    "crtdqnSzo6A",
-    "eYRzbiSASVg",
-    "gqjMTGqgboI",
-    "kg0bPWPdd_8",
-    "nWW8DlmxrN8",
-    "pulctWdKK-M",
-    "qrnjZlh61Tc",
-    "tPPpoJayFAQ",
-    "vAK1s_HwWc8",
-    "zLAKGXelmPE"
+    "0nQzfb4Yzbw",
+    "4ErU_iVeOfo",
+    "CTnFfCx9sbo",
+    "DpPruY4TNAc",
+    "HPR53i7yrkg",
+    "JNdD9DFYgJg",
+    "K7upytmvkQY",
+    "L9uOpNnsOqo",
+    "Wh1GrG5rnn8",
+    "c6bsuwg4mMA",
+    "oL2G3ygRero",
+    "qzI5vVQXUi4",
+    "y5FT1YzPwdc"
    ],
    "also": [
-    "crash begun"
+    "actually survive",
+    "survive what's coming",
+    "survive coming",
+    "must survive",
+    "survive end"
    ],
-   "specificity": 0.0013,
-   "rank": 118.5
+   "specificity": 0.0011,
+   "rank": 118.2
   },
   {
    "phrase": "foods cause",
@@ -18967,7 +18978,7 @@
     "mlCW920L4jQ",
     "oQwE1nQsMsY"
    ],
-   "specificity": 0.0003,
+   "specificity": 0.0004,
    "rank": 112.0
   },
   {
@@ -19060,6 +19071,70 @@
    ],
    "specificity": 0.0005,
    "rank": 112.0
+  },
+  {
+   "phrase": "coming days",
+   "videos": 39,
+   "channels": 19,
+   "months": 24,
+   "span": "2022-05 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.79,
+   "kind": "new candidate",
+   "examples": [
+    "BITCOIN VOLATILITY WILL PICK UP IN THE COMING DAYS... AND HERE IS WHY...",
+    "ALERT! The END Of Money As We Know It Is Coming In DAYS! FedNow Service!",
+    "Cardano(ADA) Selloff coming in the new few days? Or is it just FUD?"
+   ],
+   "ids": [
+    "2YsrRgJbMXc",
+    "7-zpndUmRlg",
+    "7CQEGy64jRQ",
+    "8MbdPvVHhEI",
+    "8NXHwsU3zm8",
+    "8lQVBJtPpMU",
+    "8xvUZxSI0hY",
+    "BC8C_yVfYvk",
+    "CHOCOE8Hmv8",
+    "DbiaNiBCScE",
+    "F5FWbtjFFQs",
+    "FER1ZFWMcpk",
+    "JdGUANHdmHI",
+    "NDcR7GXGqMk",
+    "Os6XmxdOWF4",
+    "PBiJqsU_nCs",
+    "PMY0Xw63DLM",
+    "QWG0jxdPwbw",
+    "TZwaJUUMdB0",
+    "TfpDTT6rKgE",
+    "UKHfCuPhx68",
+    "Vg6o3v_ZHdg",
+    "VmUlr10eOEg",
+    "Zr3b898veb4",
+    "aN8iTyFXl18",
+    "b98qJDUgU3c",
+    "dThTS1zprkc",
+    "gnsPEwEQNRQ",
+    "iWE-hKb1DWQ",
+    "k3yB5ucKk1c",
+    "kzk85WE5y_M",
+    "nrSrGB-wOW0",
+    "r2xQYKnLQxc",
+    "rH6BkIBP8WI",
+    "rX8DXzjOyDg",
+    "tKVsT2sWB5g",
+    "u1C7Ihur-jk",
+    "vijMuvMnrWU"
+   ],
+   "also": [
+    "collapse days",
+    "days coming",
+    "days save",
+    "dead days"
+   ],
+   "specificity": 0.0041,
+   "rank": 111.2
   },
   {
    "phrase": "announces end",
@@ -19511,6 +19586,36 @@
    "rank": 107.0
   },
   {
+   "phrase": "must master",
+   "videos": 10,
+   "channels": 8,
+   "months": 8,
+   "span": "2025-07 \u2192 2026-10",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "Every software engineer MUST master THIS!!",
+    "Every developer must master these 3 AI pillars: LLMs, AI Agents & AI Workflows #skillradar #aicourse",
+    "STOP Relying on Family! 5 Things Seniors Must Master for Peace"
+   ],
+   "ids": [
+    "-LOXPj65_NA",
+    "0mtk0GuWTTo",
+    "3k1zWdAT99E",
+    "AGgv8egtfZs",
+    "Fb0e1Fbr5a4",
+    "PS2K7YHvkHo",
+    "TEHU95gehDY",
+    "XjkhZwbBng8",
+    "s74OZyWhOeA",
+    "uG8P7TCy-m8"
+   ],
+   "specificity": 0.0006,
+   "rank": 106.7
+  },
+  {
    "phrase": "wins loses",
    "videos": 9,
    "channels": 8,
@@ -19701,6 +19806,50 @@
    "rank": 105.0
   },
   {
+   "phrase": "leaders must",
+   "videos": 24,
+   "channels": 11,
+   "months": 17,
+   "span": "2019-07 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Why All Leaders Must be Coaches And Mentors",
+    "Leaders Must Be the Lighthouses Inside of Their Organizations - Jacob Morgan",
+    "CEO Of Qlik On Why Leaders Must Get Out Of Their Comfort Zones | Mike Capone"
+   ],
+   "ids": [
+    "0m8MO7eFhCA",
+    "6zT17Jzdyg4",
+    "9kUZKzQt-pg",
+    "AX2Nf6OaU14",
+    "FSmFtXAvYHo",
+    "JOIKtDzwJOU",
+    "LOVkrE1o5CA",
+    "NSKP8mhhfd0",
+    "S7OY0dKlgHQ",
+    "VJfEuGmhFdE",
+    "X8QPu8ylayE",
+    "ZXC6_rrsc_k",
+    "a3Waajh7Dkg",
+    "b5YZkYpPJvs",
+    "fJKB993RZDo",
+    "gsqq52L4jBk",
+    "inD9UFh87hg",
+    "lKuAHiCCN8U",
+    "meIk9DGZvPM",
+    "nL5UEUUhJJk",
+    "oUGz8F2BuQA",
+    "qKBnfofOlE8",
+    "teSM6YWENuc",
+    "w0-t4DMeidc"
+   ],
+   "specificity": 0.0018,
+   "rank": 103.9
+  },
+  {
    "phrase": "coming down",
    "videos": 51,
    "channels": 31,
@@ -19881,69 +20030,6 @@
    ],
    "specificity": 0.0037,
    "rank": 101.1
-  },
-  {
-   "phrase": "coming days",
-   "videos": 38,
-   "channels": 18,
-   "months": 23,
-   "span": "2022-05 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.79,
-   "kind": "new candidate",
-   "examples": [
-    "BITCOIN VOLATILITY WILL PICK UP IN THE COMING DAYS... AND HERE IS WHY...",
-    "ALERT! The END Of Money As We Know It Is Coming In DAYS! FedNow Service!",
-    "Cardano(ADA) Selloff coming in the new few days? Or is it just FUD?"
-   ],
-   "ids": [
-    "2YsrRgJbMXc",
-    "7-zpndUmRlg",
-    "7CQEGy64jRQ",
-    "8MbdPvVHhEI",
-    "8NXHwsU3zm8",
-    "8lQVBJtPpMU",
-    "8xvUZxSI0hY",
-    "BC8C_yVfYvk",
-    "CHOCOE8Hmv8",
-    "DbiaNiBCScE",
-    "F5FWbtjFFQs",
-    "JdGUANHdmHI",
-    "NDcR7GXGqMk",
-    "Os6XmxdOWF4",
-    "PBiJqsU_nCs",
-    "PMY0Xw63DLM",
-    "QWG0jxdPwbw",
-    "TZwaJUUMdB0",
-    "TfpDTT6rKgE",
-    "UKHfCuPhx68",
-    "Vg6o3v_ZHdg",
-    "VmUlr10eOEg",
-    "Zr3b898veb4",
-    "aN8iTyFXl18",
-    "b98qJDUgU3c",
-    "dThTS1zprkc",
-    "gnsPEwEQNRQ",
-    "iWE-hKb1DWQ",
-    "k3yB5ucKk1c",
-    "kzk85WE5y_M",
-    "nrSrGB-wOW0",
-    "r2xQYKnLQxc",
-    "rH6BkIBP8WI",
-    "rX8DXzjOyDg",
-    "tKVsT2sWB5g",
-    "u1C7Ihur-jk",
-    "vijMuvMnrWU"
-   ],
-   "also": [
-    "collapse days",
-    "days coming",
-    "days save",
-    "dead days"
-   ],
-   "specificity": 0.0041,
-   "rank": 101.0
   },
   {
    "phrase": "four dead",
@@ -20306,45 +20392,6 @@
    ],
    "specificity": 0.0021,
    "rank": 99.0
-  },
-  {
-   "phrase": "won't survive",
-   "videos": 12,
-   "channels": 9,
-   "months": 12,
-   "span": "2022-01 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.5,
-   "kind": "new candidate",
-   "examples": [
-    "SILVER WON'T SURVIVE MUCH LONGER..",
-    "Why Your Altcoins WON'T SURVIVE! (Buy These Alts Instead)",
-    "\"Most Americans Won't Survive What's Still Coming...\" - Peter Schiff"
-   ],
-   "ids": [
-    "0nQzfb4Yzbw",
-    "4ErU_iVeOfo",
-    "CTnFfCx9sbo",
-    "DpPruY4TNAc",
-    "JNdD9DFYgJg",
-    "K7upytmvkQY",
-    "L9uOpNnsOqo",
-    "Wh1GrG5rnn8",
-    "c6bsuwg4mMA",
-    "oL2G3ygRero",
-    "qzI5vVQXUi4",
-    "y5FT1YzPwdc"
-   ],
-   "also": [
-    "actually survive",
-    "survive what's coming",
-    "survive coming",
-    "must survive",
-    "survive end"
-   ],
-   "specificity": 0.0011,
-   "rank": 98.2
   },
   {
    "phrase": "stacker must",
@@ -20808,6 +20855,7 @@
     "must hold level",
     "coming hold",
     "bitcoin must hold level",
+    "actually hold",
     "won't hold"
    ],
    "specificity": 0.0032,
@@ -22038,49 +22086,6 @@
    "rank": 89.4
   },
   {
-   "phrase": "leaders must",
-   "videos": 23,
-   "channels": 10,
-   "months": 16,
-   "span": "2019-07 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Why All Leaders Must be Coaches And Mentors",
-    "Leaders Must Be the Lighthouses Inside of Their Organizations - Jacob Morgan",
-    "CEO Of Qlik On Why Leaders Must Get Out Of Their Comfort Zones | Mike Capone"
-   ],
-   "ids": [
-    "0m8MO7eFhCA",
-    "6zT17Jzdyg4",
-    "9kUZKzQt-pg",
-    "AX2Nf6OaU14",
-    "FSmFtXAvYHo",
-    "JOIKtDzwJOU",
-    "LOVkrE1o5CA",
-    "NSKP8mhhfd0",
-    "S7OY0dKlgHQ",
-    "VJfEuGmhFdE",
-    "X8QPu8ylayE",
-    "ZXC6_rrsc_k",
-    "a3Waajh7Dkg",
-    "fJKB993RZDo",
-    "gsqq52L4jBk",
-    "inD9UFh87hg",
-    "lKuAHiCCN8U",
-    "meIk9DGZvPM",
-    "nL5UEUUhJJk",
-    "oUGz8F2BuQA",
-    "qKBnfofOlE8",
-    "teSM6YWENuc",
-    "w0-t4DMeidc"
-   ],
-   "specificity": 0.0018,
-   "rank": 88.9
-  },
-  {
    "phrase": "banking collapse",
    "videos": 18,
    "channels": 10,
@@ -22376,8 +22381,8 @@
    ],
    "also": [
     "debt collapse",
-    "crash debt",
     "debt really",
+    "crash debt",
     "debt crash",
     "save debt",
     "coming debt",
@@ -22731,6 +22736,49 @@
    ],
    "specificity": 0.0045,
    "rank": 85.3
+  },
+  {
+   "phrase": "actually matters",
+   "videos": 20,
+   "channels": 17,
+   "months": 9,
+   "span": "2022-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.9,
+   "kind": "new candidate",
+   "examples": [
+    "Your Cholesterol Numbers Are Lying to You \u2014 Here's What Actually Matters | Dr. Mark Hyman",
+    "What Actually Matters Before Buying a House?",
+    "How To Read a Nutrition Label (What Actually Matters) #nutritionlabels"
+   ],
+   "ids": [
+    "0z4Gu4AAsT0",
+    "79UL3OD7MoA",
+    "9Cq7XZdwQVM",
+    "BF3iS0vInJE",
+    "BO83rL1uucA",
+    "Gh63WKZ0GsQ",
+    "JwLgm2xXogU",
+    "LR18LzCEUq8",
+    "QpFj5HTB1hA",
+    "_FV4_F7hsUU",
+    "a234ZjVTcE0",
+    "cd2ydNPCgGA",
+    "eC8PB11oLLk",
+    "i0C4p9f-xdY",
+    "iKwpw8dAvEE",
+    "jdzs0JX9TGU",
+    "pvivLEUnCYY",
+    "pyDUGdK6DG0",
+    "toqd8c2zvWg",
+    "x_oRibv18fE"
+   ],
+   "also": [
+    "really matters"
+   ],
+   "specificity": 0.0018,
+   "rank": 85.0
   },
   {
    "phrase": "tragic crash",
@@ -23317,77 +23365,6 @@
    "rank": 82.5
   },
   {
-   "phrase": "agents actually",
-   "videos": 40,
-   "channels": 28,
-   "months": 12,
-   "span": "2025-02 \u2192 2026-10",
-   "industry": "AI & technology",
-   "home": "loop-engineering",
-   "home_share": 0.75,
-   "kind": "new candidate",
-   "examples": [
-    "How to Build AI Agents That Actually Work (Just Code with examples)",
-    "Patrick Dougherty: How to Build AI Agents that Actually Work",
-    "Amazons NEW AI Agents Are Actually Impressive... \"Amazon Nova ACT\""
-   ],
-   "ids": [
-    "-uCFHws9ep8",
-    "0WlPleZ2xqQ",
-    "1-FJvR9jI7s",
-    "2Gf9nWCR-gQ",
-    "53EAf10PgIM",
-    "53NEbShxft4",
-    "7MiFIhlkBoE",
-    "8CmkY4kdSLM",
-    "8HeFtpdWYp8",
-    "A1STgX1dEOo",
-    "B8fGa0CznL4",
-    "GQ4DOnbx1Yo",
-    "GmAQKINjv1E",
-    "HzGOWq5UyjY",
-    "JPlNeH8jS5I",
-    "Lh6P3nKWQec",
-    "PEssdKXOobU",
-    "RVgb5Kb9lis",
-    "Rp9FW21QpAM",
-    "U_LByU3KGY8",
-    "Ulyuw0PoQ64",
-    "VXEIZ14MgVE",
-    "VhTtnolEiSw",
-    "VkHMeaM3igQ",
-    "WK0VqGHNJMk",
-    "WeMVRltbPlQ",
-    "_DTV6jke3eQ",
-    "axobJD90r8E",
-    "c1FbNK5PFIs",
-    "deYP_hhv800",
-    "eA9Zf2-qYYM",
-    "hKSHu8J4Xus",
-    "jVGCulhBRZI",
-    "psszX04xeGU",
-    "qcqBSQTEoyI",
-    "uLK-XVUgMT8",
-    "u_v7nryP_nU",
-    "xABVX1kqtTU",
-    "yPakqAbjzB4",
-    "yQg2JGR1aOE"
-   ],
-   "also": [
-    "agents actually work",
-    "agents aren't",
-    "truth agents",
-    "agents replace",
-    "agents coming",
-    "agents kill",
-    "agents lie",
-    "agents really",
-    "agents won't"
-   ],
-   "specificity": 0.0041,
-   "rank": 82.0
-  },
-  {
    "phrase": "really expensive",
    "videos": 11,
    "channels": 9,
@@ -23447,6 +23424,77 @@
    ],
    "specificity": 0.0006,
    "rank": 81.7
+  },
+  {
+   "phrase": "agents actually",
+   "videos": 40,
+   "channels": 28,
+   "months": 12,
+   "span": "2025-02 \u2192 2026-10",
+   "industry": "AI & technology",
+   "home": "loop-engineering",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "How to Build AI Agents That Actually Work (Just Code with examples)",
+    "Patrick Dougherty: How to Build AI Agents that Actually Work",
+    "Amazons NEW AI Agents Are Actually Impressive... \"Amazon Nova ACT\""
+   ],
+   "ids": [
+    "-uCFHws9ep8",
+    "0WlPleZ2xqQ",
+    "1-FJvR9jI7s",
+    "2Gf9nWCR-gQ",
+    "53EAf10PgIM",
+    "53NEbShxft4",
+    "7MiFIhlkBoE",
+    "8CmkY4kdSLM",
+    "8HeFtpdWYp8",
+    "A1STgX1dEOo",
+    "B8fGa0CznL4",
+    "GQ4DOnbx1Yo",
+    "GmAQKINjv1E",
+    "HzGOWq5UyjY",
+    "JPlNeH8jS5I",
+    "Lh6P3nKWQec",
+    "PEssdKXOobU",
+    "RVgb5Kb9lis",
+    "Rp9FW21QpAM",
+    "U_LByU3KGY8",
+    "Ulyuw0PoQ64",
+    "VXEIZ14MgVE",
+    "VhTtnolEiSw",
+    "VkHMeaM3igQ",
+    "WK0VqGHNJMk",
+    "WeMVRltbPlQ",
+    "_DTV6jke3eQ",
+    "axobJD90r8E",
+    "c1FbNK5PFIs",
+    "deYP_hhv800",
+    "eA9Zf2-qYYM",
+    "hKSHu8J4Xus",
+    "jVGCulhBRZI",
+    "psszX04xeGU",
+    "qcqBSQTEoyI",
+    "uLK-XVUgMT8",
+    "u_v7nryP_nU",
+    "xABVX1kqtTU",
+    "yPakqAbjzB4",
+    "yQg2JGR1aOE"
+   ],
+   "also": [
+    "agents actually work",
+    "agents aren't",
+    "agents replace",
+    "agents coming",
+    "truth agents",
+    "agents kill",
+    "agents really",
+    "agents lie",
+    "agents won't"
+   ],
+   "specificity": 0.0042,
+   "rank": 80.0
   },
   {
    "phrase": "welcome show",
@@ -23543,48 +23591,6 @@
     "ban burqa"
    ],
    "specificity": 0.0001,
-   "rank": 80.0
-  },
-  {
-   "phrase": "actually matters",
-   "videos": 19,
-   "channels": 16,
-   "months": 9,
-   "span": "2022-10 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.89,
-   "kind": "new candidate",
-   "examples": [
-    "Your Cholesterol Numbers Are Lying to You \u2014 Here's What Actually Matters | Dr. Mark Hyman",
-    "What Actually Matters Before Buying a House?",
-    "How To Read a Nutrition Label (What Actually Matters) #nutritionlabels"
-   ],
-   "ids": [
-    "0z4Gu4AAsT0",
-    "79UL3OD7MoA",
-    "9Cq7XZdwQVM",
-    "BF3iS0vInJE",
-    "Gh63WKZ0GsQ",
-    "JwLgm2xXogU",
-    "LR18LzCEUq8",
-    "QpFj5HTB1hA",
-    "_FV4_F7hsUU",
-    "a234ZjVTcE0",
-    "cd2ydNPCgGA",
-    "eC8PB11oLLk",
-    "i0C4p9f-xdY",
-    "iKwpw8dAvEE",
-    "jdzs0JX9TGU",
-    "pvivLEUnCYY",
-    "pyDUGdK6DG0",
-    "toqd8c2zvWg",
-    "x_oRibv18fE"
-   ],
-   "also": [
-    "really matters"
-   ],
-   "specificity": 0.0018,
    "rank": 80.0
   },
   {
@@ -24334,10 +24340,10 @@
     "crash america",
     "america won't",
     "fix america",
+    "america collapse",
     "america must",
     "america collapsing",
     "america actually",
-    "america collapse",
     "america really",
     "mean america",
     "america isn't",
@@ -24561,70 +24567,6 @@
    ],
    "specificity": 0.0014,
    "rank": 74.3
-  },
-  {
-   "phrase": "change coming",
-   "videos": 34,
-   "channels": 18,
-   "months": 23,
-   "span": "2018-10 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.82,
-   "kind": "new candidate",
-   "examples": [
-    "SAGITTARIUS WEEKLY TAROT 29 OCTOBER TO 4 NOVEMBER 2018 - GOOD CHANGE IS COMING!",
-    "GEMINI Aug 31-Sept 6 | DESTINED POSITIVE CHANGE IS COMING ~ Tarot Reading",
-    "ARIES - \"Change is Coming\" SEPTEMBER 28TH - OCTOBER 4TH"
-   ],
-   "ids": [
-    "-6WTavRoolw",
-    "01zjtyuZ01Q",
-    "16WurL-l534",
-    "1KnStqcH7Uw",
-    "36uxoDW6DPg",
-    "6w1mcfnmGrQ",
-    "85hBzIc9FPY",
-    "CX5pW6d7f4g",
-    "DJhTBN0Hf4Y",
-    "DcAf2guEK48",
-    "G3l07ZKieUM",
-    "GIkxgoHVKfE",
-    "MGc6ORdDA2A",
-    "MoKzGiqpISs",
-    "NpAKcGqnT0Q",
-    "NvpQuwB3m4I",
-    "O6ri1mXN0cw",
-    "OhmByMgedu0",
-    "PRZ-joyp8qo",
-    "QGntwWuUTzc",
-    "R1U5XycP_jE",
-    "V-G11Ik70bk",
-    "VjyJ-73BC04",
-    "X_x0JVDFx-g",
-    "b5dX4POG0p8",
-    "e8tqVv__ibM",
-    "ekAO0Xhxmqw",
-    "fFUFQ7C0ZJk",
-    "ga3sUQuzagY",
-    "h0pvdiVFndo",
-    "hvSYDxFTmS4",
-    "kSrmk3qxst0",
-    "tCBl4PR0440",
-    "y_gWeZ1mkqI"
-   ],
-   "also": [
-    "must change",
-    "won't change",
-    "really change",
-    "crash change",
-    "coming change",
-    "collapse change",
-    "change mean",
-    "change soon"
-   ],
-   "specificity": 0.0056,
-   "rank": 73.9
   },
   {
    "phrase": "hike coming",
@@ -29344,36 +29286,6 @@
    "rank": 70.0
   },
   {
-   "phrase": "save taxes",
-   "videos": 7,
-   "channels": 7,
-   "months": 7,
-   "span": "2017-03 \u2192 2026-05",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.71,
-   "kind": "new candidate",
-   "examples": [
-    "Here Are 5 Smart Ways To Save On Your Taxes Before March 31",
-    "10 Ways Real Estate Investors Partner with the IRS to Save on Taxes (Big Time!)",
-    "Make money while you travel (and save taxes!)"
-   ],
-   "ids": [
-    "9GaS9oAiigA",
-    "9_y4sznfZtI",
-    "MzMV-xsvbqQ",
-    "ZxuMfOGC6oY",
-    "brEejuRxWnw",
-    "gG6zBNgaaV0",
-    "gbz0PBolgwI"
-   ],
-   "also": [
-    "taxes coming"
-   ],
-   "specificity": 0.0007,
-   "rank": 70.0
-  },
-  {
    "phrase": "begin soon",
    "videos": 7,
    "channels": 6,
@@ -29402,6 +29314,69 @@
    ],
    "specificity": 0.0006,
    "rank": 70.0
+  },
+  {
+   "phrase": "change coming",
+   "videos": 33,
+   "channels": 17,
+   "months": 23,
+   "span": "2018-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.82,
+   "kind": "new candidate",
+   "examples": [
+    "SAGITTARIUS WEEKLY TAROT 29 OCTOBER TO 4 NOVEMBER 2018 - GOOD CHANGE IS COMING!",
+    "GEMINI Aug 31-Sept 6 | DESTINED POSITIVE CHANGE IS COMING ~ Tarot Reading",
+    "ARIES - \"Change is Coming\" SEPTEMBER 28TH - OCTOBER 4TH"
+   ],
+   "ids": [
+    "-6WTavRoolw",
+    "01zjtyuZ01Q",
+    "16WurL-l534",
+    "1KnStqcH7Uw",
+    "36uxoDW6DPg",
+    "6w1mcfnmGrQ",
+    "85hBzIc9FPY",
+    "CX5pW6d7f4g",
+    "DJhTBN0Hf4Y",
+    "DcAf2guEK48",
+    "G3l07ZKieUM",
+    "GIkxgoHVKfE",
+    "MGc6ORdDA2A",
+    "MoKzGiqpISs",
+    "NpAKcGqnT0Q",
+    "NvpQuwB3m4I",
+    "O6ri1mXN0cw",
+    "OhmByMgedu0",
+    "PRZ-joyp8qo",
+    "QGntwWuUTzc",
+    "R1U5XycP_jE",
+    "V-G11Ik70bk",
+    "X_x0JVDFx-g",
+    "b5dX4POG0p8",
+    "e8tqVv__ibM",
+    "ekAO0Xhxmqw",
+    "fFUFQ7C0ZJk",
+    "ga3sUQuzagY",
+    "h0pvdiVFndo",
+    "hvSYDxFTmS4",
+    "kSrmk3qxst0",
+    "tCBl4PR0440",
+    "y_gWeZ1mkqI"
+   ],
+   "also": [
+    "must change",
+    "won't change",
+    "really change",
+    "crash change",
+    "coming change",
+    "collapse change",
+    "change mean",
+    "change soon"
+   ],
+   "specificity": 0.0056,
+   "rank": 69.8
   },
   {
    "phrase": "investors must",
@@ -30325,9 +30300,6 @@
     "oWcX0hjBaMY",
     "xBRNGTh76SU"
    ],
-   "also": [
-    "cause problems"
-   ],
    "specificity": 0.001,
    "rank": 63.0
   },
@@ -30872,6 +30844,34 @@
    "rank": 60.0
   },
   {
+   "phrase": "win oscar",
+   "videos": 8,
+   "channels": 6,
+   "months": 5,
+   "span": "2024-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Interviews of this year\u2019s biggest favorites to win an Oscar",
+    "Paul Tazewell makes history as 1st Black man to win the Oscar for best costume design | GMA",
+    "Interviews of this year's favorite celebrities looking to win an Oscar"
+   ],
+   "ids": [
+    "GfdppsMjGN4",
+    "MLIcxdzXRqQ",
+    "XhDHr7ISKAM",
+    "cNmhs9cJ2pQ",
+    "e-6uaq0kixw",
+    "g4E-EgEcBqI",
+    "gmcdNM9Jnqo",
+    "psnGsdX9oLk"
+   ],
+   "specificity": 0.0002,
+   "rank": 60.0
+  },
+  {
    "phrase": "controversial truth",
    "videos": 7,
    "channels": 5,
@@ -31223,32 +31223,6 @@
     "rtpsaER5kQk"
    ],
    "specificity": 0.0,
-   "rank": 60.0
-  },
-  {
-   "phrase": "speaking truth",
-   "videos": 6,
-   "channels": 6,
-   "months": 5,
-   "span": "2022-07 \u2192 2026-05",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.83,
-   "kind": "new candidate",
-   "examples": [
-    "#investor #warrenbuffett speaking truth about #investing during #stockmarket crashes",
-    "Speaking Your Truth: The \"No Filter\" Zone in Your 50s #nofilter",
-    "\u2018He lived and died speaking the truth\u2019: Defense Secy Hegseth pays emotional tribute to Charlie Kirk"
-   ],
-   "ids": [
-    "1-I177WYNRk",
-    "SB08WC8jf0k",
-    "WUZCcbck9vE",
-    "X8CbphX_308",
-    "_j6gENQ_P6Y",
-    "hLK9euEk0us"
-   ],
-   "specificity": 0.0002,
    "rank": 60.0
   },
   {
@@ -32391,8 +32365,8 @@
     "coming ready",
     "ready coming",
     "soon get ready",
-    "ready burst",
     "aren't ready",
+    "ready burst",
     "ready what's coming",
     "bubble ready",
     "ready end",
@@ -34180,6 +34154,35 @@
    "rank": 51.4
   },
   {
+   "phrase": "save taxes",
+   "videos": 6,
+   "channels": 6,
+   "months": 6,
+   "span": "2017-03 \u2192 2026-05",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.67,
+   "kind": "new candidate",
+   "examples": [
+    "Here Are 5 Smart Ways To Save On Your Taxes Before March 31",
+    "10 Ways Real Estate Investors Partner with the IRS to Save on Taxes (Big Time!)",
+    "Sticking Gold Up Your Butt Won't Save You From Taxes!"
+   ],
+   "ids": [
+    "9GaS9oAiigA",
+    "9_y4sznfZtI",
+    "MzMV-xsvbqQ",
+    "ZxuMfOGC6oY",
+    "brEejuRxWnw",
+    "gbz0PBolgwI"
+   ],
+   "also": [
+    "taxes coming"
+   ],
+   "specificity": 0.0007,
+   "rank": 51.4
+  },
+  {
    "phrase": "crash economy",
    "videos": 22,
    "channels": 18,
@@ -34519,34 +34522,6 @@
    "rank": 50.0
   },
   {
-   "phrase": "anyone actually",
-   "videos": 8,
-   "channels": 6,
-   "months": 5,
-   "span": "2026-02 \u2192 2026-10",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 0.88,
-   "kind": "new candidate",
-   "examples": [
-    "Does Anyone Actually Want a Folding iPhone?",
-    "Is Anyone Actually Catching Up to SpaceX?",
-    "Does anyone actually need a trillion parameter model"
-   ],
-   "ids": [
-    "5fmOkZPMGuE",
-    "IILSP80owvY",
-    "JwWQ5c-E-Ws",
-    "P_-PGtYa21Y",
-    "RjvVPQiKDAo",
-    "Rx71xk5cwU8",
-    "W3PiPy3lzUo",
-    "elbPbFdLuxc"
-   ],
-   "specificity": 0.0006,
-   "rank": 50.0
-  },
-  {
    "phrase": "kill switches",
    "videos": 8,
    "channels": 5,
@@ -34849,6 +34824,35 @@
     "_cTjj55J2YM"
    ],
    "specificity": 0.0005,
+   "rank": 50.0
+  },
+  {
+   "phrase": "habits save",
+   "videos": 6,
+   "channels": 6,
+   "months": 5,
+   "span": "2025-09 \u2192 2026-10",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "5 Urgent Foods and Habits to Save Your Heart Now #hearthealth",
+    "These Habits Will Save Your Organs #longevity #organhealth",
+    "10 Habits That Save Me Serious Money ($1,000s Every Single Month)"
+   ],
+   "ids": [
+    "5PFSEYnb0a4",
+    "Bg_02TWZkpg",
+    "QX0K3XhuKr0",
+    "Uam3f2VKVec",
+    "ieyAXpE9X_I",
+    "jT6VNTm5NlA"
+   ],
+   "also": [
+    "habits actually"
+   ],
+   "specificity": 0.0006,
    "rank": 50.0
   },
   {
@@ -37228,6 +37232,34 @@
    "rank": 42.9
   },
   {
+   "phrase": "anyone actually",
+   "videos": 8,
+   "channels": 6,
+   "months": 5,
+   "span": "2026-02 \u2192 2026-10",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.88,
+   "kind": "new candidate",
+   "examples": [
+    "Does Anyone Actually Want a Folding iPhone?",
+    "Is Anyone Actually Catching Up to SpaceX?",
+    "Does anyone actually need a trillion parameter model"
+   ],
+   "ids": [
+    "5fmOkZPMGuE",
+    "IILSP80owvY",
+    "JwWQ5c-E-Ws",
+    "P_-PGtYa21Y",
+    "RjvVPQiKDAo",
+    "Rx71xk5cwU8",
+    "W3PiPy3lzUo",
+    "elbPbFdLuxc"
+   ],
+   "specificity": 0.0007,
+   "rank": 42.9
+  },
+  {
    "phrase": "attack kyiv kills",
    "videos": 8,
    "channels": 5,
@@ -37392,35 +37424,6 @@
     "jR2hTIyE_hU",
     "rsnlJdpDrJU",
     "vF4XrqeZHDY"
-   ],
-   "specificity": 0.0007,
-   "rank": 42.9
-  },
-  {
-   "phrase": "habits save",
-   "videos": 6,
-   "channels": 6,
-   "months": 5,
-   "span": "2025-09 \u2192 2026-10",
-   "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "5 Urgent Foods and Habits to Save Your Heart Now #hearthealth",
-    "These Habits Will Save Your Organs #longevity #organhealth",
-    "10 Habits That Save Me Serious Money ($1,000s Every Single Month)"
-   ],
-   "ids": [
-    "5PFSEYnb0a4",
-    "Bg_02TWZkpg",
-    "QX0K3XhuKr0",
-    "Uam3f2VKVec",
-    "ieyAXpE9X_I",
-    "jT6VNTm5NlA"
-   ],
-   "also": [
-    "habits actually"
    ],
    "specificity": 0.0007,
    "rank": 42.9
@@ -38054,8 +38057,52 @@
     "000 crash",
     "000 coming soon"
    ],
-   "specificity": 0.0118,
-   "rank": 40.7
+   "specificity": 0.0117,
+   "rank": 41.0
+  },
+  {
+   "phrase": "would mean",
+   "videos": 12,
+   "channels": 10,
+   "months": 9,
+   "span": "2023-09 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "What Partial Legalization Of Marijuana Would Mean For The Cannabis Industry",
+    "Apophis 2029: What an Earth Strike Would Mean?",
+    "What U.S. tariffs would mean for Ontario\u2019s massive vegetable export industry"
+   ],
+   "ids": [
+    "0uoaj3l4kOA",
+    "2qVvLJ051Zw",
+    "9hLU1y0m9M8",
+    "CO2Yxl_Jlvw",
+    "Er2YLyIW_oc",
+    "TpEj4qsPYXI",
+    "bEzrhItHyIs",
+    "bWj-q4dSrEw",
+    "kkq33-RR2LA",
+    "mAHYhx73TBI",
+    "oC7wpAp_Mb0",
+    "tmBh1tC-6i8"
+   ],
+   "also": [
+    "would actually",
+    "would win",
+    "ban would",
+    "would end",
+    "would ban",
+    "would drive",
+    "would crash",
+    "would collapse",
+    "crash would",
+    "would kill"
+   ],
+   "specificity": 0.0022,
+   "rank": 40.9
   },
   {
    "phrase": "cooking show",
@@ -38386,41 +38433,6 @@
    "rank": 40.0
   },
   {
-   "phrase": "collapse first usa enters",
-   "videos": 9,
-   "channels": 5,
-   "months": 4,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.56,
-   "kind": "new candidate",
-   "examples": [
-    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
-   ],
-   "ids": [
-    "2cySisz4L7w",
-    "2rwaCLtUMUY",
-    "R8hTK8oDQE0",
-    "jp5hHUupNcU",
-    "nhFtUBzUP18",
-    "o3Kn8dIJmIo",
-    "oWogTWbnGd0",
-    "qX7T7tmOCqI",
-    "y2GCQE98jak"
-   ],
-   "also": [
-    "states collapse",
-    "collapse first usa enters",
-    "states collapse first usa",
-    "collapse first usa"
-   ],
-   "specificity": 0.0004,
-   "rank": 40.0
-  },
-  {
    "phrase": "officer explains",
    "videos": 9,
    "channels": 4,
@@ -38615,33 +38627,6 @@
     "tnL34p8ZICY"
    ],
    "specificity": 0.0006,
-   "rank": 40.0
-  },
-  {
-   "phrase": "win oscar",
-   "videos": 7,
-   "channels": 5,
-   "months": 4,
-   "span": "2024-03 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Interviews of this year\u2019s biggest favorites to win an Oscar",
-    "Paul Tazewell makes history as 1st Black man to win the Oscar for best costume design | GMA",
-    "Interviews of this year's favorite celebrities looking to win an Oscar"
-   ],
-   "ids": [
-    "GfdppsMjGN4",
-    "XhDHr7ISKAM",
-    "cNmhs9cJ2pQ",
-    "e-6uaq0kixw",
-    "g4E-EgEcBqI",
-    "gmcdNM9Jnqo",
-    "psnGsdX9oLk"
-   ],
-   "specificity": 0.0002,
    "rank": 40.0
   },
   {
@@ -39199,6 +39184,31 @@
    "rank": 40.0
   },
   {
+   "phrase": "speaking truth",
+   "videos": 5,
+   "channels": 5,
+   "months": 4,
+   "span": "2022-07 \u2192 2025-10",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "#investor #warrenbuffett speaking truth about #investing during #stockmarket crashes",
+    "Speaking Your Truth: The \"No Filter\" Zone in Your 50s #nofilter",
+    "\u2018He lived and died speaking the truth\u2019: Defense Secy Hegseth pays emotional tribute to Charlie Kirk"
+   ],
+   "ids": [
+    "1-I177WYNRk",
+    "SB08WC8jf0k",
+    "WUZCcbck9vE",
+    "_j6gENQ_P6Y",
+    "hLK9euEk0us"
+   ],
+   "specificity": 0.0002,
+   "rank": 40.0
+  },
+  {
    "phrase": "won't recover",
    "videos": 5,
    "channels": 4,
@@ -39647,50 +39657,6 @@
    ],
    "specificity": 0.0014,
    "rank": 39.3
-  },
-  {
-   "phrase": "would mean",
-   "videos": 12,
-   "channels": 10,
-   "months": 9,
-   "span": "2023-09 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "What Partial Legalization Of Marijuana Would Mean For The Cannabis Industry",
-    "Apophis 2029: What an Earth Strike Would Mean?",
-    "What U.S. tariffs would mean for Ontario\u2019s massive vegetable export industry"
-   ],
-   "ids": [
-    "0uoaj3l4kOA",
-    "2qVvLJ051Zw",
-    "9hLU1y0m9M8",
-    "CO2Yxl_Jlvw",
-    "Er2YLyIW_oc",
-    "TpEj4qsPYXI",
-    "bEzrhItHyIs",
-    "bWj-q4dSrEw",
-    "kkq33-RR2LA",
-    "mAHYhx73TBI",
-    "oC7wpAp_Mb0",
-    "tmBh1tC-6i8"
-   ],
-   "also": [
-    "would actually",
-    "would win",
-    "ban would",
-    "would end",
-    "would ban",
-    "would drive",
-    "would crash",
-    "would collapse",
-    "crash would",
-    "would kill"
-   ],
-   "specificity": 0.0023,
-   "rank": 39.1
   },
   {
    "phrase": "crash pilot",
@@ -42326,66 +42292,6 @@
    "rank": 33.3
   },
   {
-   "phrase": "love coming",
-   "videos": 34,
-   "channels": 7,
-   "months": 19,
-   "span": "2018-10 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.94,
-   "kind": "new candidate",
-   "examples": [
-    "Aquarius Love:  Oct. 15th-31st  \u201cNew love coming!\"",
-    "Leo March 25-31 | LOVE is coming! DESTINY steps in...",
-    "Taurus JUNE 17th to 23rd - LOVE IS COMING...at the speed of the chariot!"
-   ],
-   "ids": [
-    "-BVJBb7fztI",
-    "1Vz6Ad8GhSI",
-    "5AOCS3VCAwM",
-    "5PiMDHowtL0",
-    "6p0aPAmdTOc",
-    "8UkRlljSwqU",
-    "BIAIjrvdJ6Y",
-    "Im6AnTamgwY",
-    "OsahnEk-HCg",
-    "RUsVHRLm-Oc",
-    "Wpuevz1pBVE",
-    "Z07-B6t_HZo",
-    "a615O0prgSA",
-    "aBBvRqrPiT4",
-    "dt8mDhSTtkE",
-    "evjp4etDmSE",
-    "g4Fw16QQUEI",
-    "gAhIfLN6PpQ",
-    "gSSeVFdUSz8",
-    "gbO4ROqYjZQ",
-    "h1WPt_9zMBY",
-    "jJRkYfMHfoA",
-    "kslfZim869k",
-    "lMNwjP0dbFo",
-    "n0e20YEd4qk",
-    "ojfyv3ymXpQ",
-    "rA-sYgQmvt0",
-    "rBmUmcQN3LA",
-    "rFj68SFasUA",
-    "smWsrwcqMiY",
-    "uFK4qEiDkIo",
-    "uoKpvfd0d-8",
-    "wGfNkUZQ3XQ",
-    "xJdaSH3q8gE"
-   ],
-   "also": [
-    "love truth",
-    "show love",
-    "actually love",
-    "truth love"
-   ],
-   "specificity": 0.004,
-   "rank": 33.2
-  },
-  {
    "phrase": "deal end",
    "videos": 47,
    "channels": 13,
@@ -43397,7 +43303,7 @@
     "pBf2skdqK1w",
     "uPyuTjtPcx0"
    ],
-   "specificity": 0.0005,
+   "specificity": 0.0004,
    "rank": 32.0
   },
   {
@@ -43871,6 +43777,33 @@
    "rank": 32.0
   },
   {
+   "phrase": "actually secure",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2022-10 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Is Your Bitcoin ACTUALLY Secure Without Multisig? | EP 599",
+    "Can You Actually Secure an AI Agent? The Honest Answer",
+    "Is Facial Recognition Actually Secure? | 1X Neo Robot & Ultraviolette X-47 Review | Tech Today"
+   ],
+   "ids": [
+    "8uw2vNrMqfg",
+    "DatSglvIeT0",
+    "EZorf1HP4kU",
+    "yPakqAbjzB4"
+   ],
+   "also": [
+    "isn't secure"
+   ],
+   "specificity": 0.0004,
+   "rank": 32.0
+  },
+  {
    "phrase": "governance must",
    "videos": 4,
    "channels": 4,
@@ -44204,30 +44137,6 @@
     "pukMtmcgRIA"
    ],
    "specificity": 0.0001,
-   "rank": 32.0
-  },
-  {
-   "phrase": "isn't secure",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2018-11 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Hackers Say SD-WAN Isn't Secure. Now What?!?",
-    "Future of Whyalla steelworks isn't secure, says Paul Barry | The Business | ABC News",
-    "Your AI App Isn't As Secure As You Think (2026 Reality)"
-   ],
-   "ids": [
-    "9f3YUz-4V1U",
-    "D93tk7H5zZE",
-    "XYGUUfcpfK4",
-    "dePdvvaNBAA"
-   ],
-   "specificity": 0.0004,
    "rank": 32.0
   },
   {
@@ -45040,41 +44949,6 @@
     "Rme7GTcCzYQ",
     "oSbGgz_T5GI",
     "ykq6o1Qiod0"
-   ],
-   "specificity": 0.0018,
-   "rank": 31.1
-  },
-  {
-   "phrase": "rules must",
-   "videos": 9,
-   "channels": 8,
-   "months": 7,
-   "span": "2019-05 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.89,
-   "kind": "new candidate",
-   "examples": [
-    "Real Estate Investing Rules You MUST Know (The 2%, 50% & 70% Rules)",
-    "3 Copywriting Rules You Must Follow Right Now!",
-    "Ozempic & Alcohol at Christmas: The 5 New Rules You Must Know \u26a0\ufe0f"
-   ],
-   "ids": [
-    "2GUe5Y41sbU",
-    "5xgmLEZjwVI",
-    "9ek_5M_n28w",
-    "PyFd_A2VCV0",
-    "R3sdQCgjWUE",
-    "WMxLX0EDR94",
-    "aSVpwFGDb-E",
-    "mEpPmHux8V0",
-    "yPfbwkgdzpU"
-   ],
-   "also": [
-    "rules coming",
-    "rules mean",
-    "rules must know",
-    "rules beat"
    ],
    "specificity": 0.0018,
    "rank": 31.1
@@ -46181,6 +46055,82 @@
    "rank": 29.8
   },
   {
+   "phrase": "may soon",
+   "videos": 30,
+   "channels": 14,
+   "months": 18,
+   "span": "2016-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.8,
+   "kind": "new candidate",
+   "examples": [
+    "Buying A Flat In Maharashtra? You May Soon Get To Purchase A Parking Slot Too",
+    "World Reaching Gold Peak Production: Price May Soon Reach $1400",
+    "Palladium May Soon Be Worth More Than Gold!"
+   ],
+   "ids": [
+    "0FPDWjnpsjw",
+    "13Fo5H2GpyA",
+    "3LZaupbDn-o",
+    "A5pKMc-3kR0",
+    "B5PKzprkOQQ",
+    "C27T-zFMbUA",
+    "CeiXHE79BOo",
+    "DMRwV57BdvM",
+    "DieItMhlOz0",
+    "FVr2ufUgVTc",
+    "OQ56c_eSCO8",
+    "RoEpBafgJKY",
+    "Sdn0iqs2RaA",
+    "WGeI0O4fSY0",
+    "XSpagHUeuEo",
+    "XWngKuh-uG4",
+    "_taU7AtIe2o",
+    "dLL2YvmdZPw",
+    "fFoIAxYfI38",
+    "fdrnxUxqW3I",
+    "frEUb65cBeo",
+    "gp8y33molVE",
+    "hwGajuGm3nI",
+    "kQIir439P50",
+    "r1mG0_0JBGg",
+    "rfQZ2HoIDLI",
+    "t6sDihIRupo",
+    "tKrAv7dLQE0",
+    "uAv6wPjy_Vc",
+    "vku0h1YsVNU"
+   ],
+   "also": [
+    "explains may",
+    "may coming",
+    "may cause",
+    "may end",
+    "end may",
+    "may actually",
+    "coming may",
+    "crash may",
+    "may mean",
+    "may save",
+    "may win",
+    "soon unthinkable",
+    "may caused",
+    "may crash",
+    "silver may soon unthinkable",
+    "may soon unthinkable",
+    "silver may soon",
+    "may drive",
+    "may explain",
+    "may really",
+    "may ending",
+    "ending may",
+    "truth may",
+    "shows may"
+   ],
+   "specificity": 0.0085,
+   "rank": 29.6
+  },
+  {
    "phrase": "decision means",
    "videos": 8,
    "channels": 7,
@@ -46282,10 +46232,10 @@
     "crash world",
     "shows world",
     "world ends",
-    "world end",
     "world collapsing",
     "world ending",
-    "world isn't"
+    "world isn't",
+    "world end"
    ],
    "specificity": 0.0163,
    "rank": 29.4
@@ -46366,79 +46316,56 @@
    "rank": 29.4
   },
   {
-   "phrase": "may soon",
-   "videos": 30,
-   "channels": 14,
-   "months": 18,
-   "span": "2016-10 \u2192 2026-10",
+   "phrase": "won't cut",
+   "videos": 26,
+   "channels": 8,
+   "months": 11,
+   "span": "2023-02 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.8,
+   "home_share": 0.81,
    "kind": "new candidate",
    "examples": [
-    "Buying A Flat In Maharashtra? You May Soon Get To Purchase A Parking Slot Too",
-    "World Reaching Gold Peak Production: Price May Soon Reach $1400",
-    "Palladium May Soon Be Worth More Than Gold!"
+    "U.S. Fed 'definitely' won't cut interest rates this year, Goldman Sachs says",
+    "Why Traditional Study Methods Won't Cut it for the LSAT",
+    "Jobless Claims and Inflation Soaring: Fed Won't Cut Rates Soon! #shorts"
    ],
    "ids": [
-    "0FPDWjnpsjw",
-    "13Fo5H2GpyA",
-    "3LZaupbDn-o",
-    "A5pKMc-3kR0",
-    "B5PKzprkOQQ",
-    "C27T-zFMbUA",
-    "CeiXHE79BOo",
-    "DMRwV57BdvM",
-    "DieItMhlOz0",
-    "FVr2ufUgVTc",
-    "OQ56c_eSCO8",
-    "RoEpBafgJKY",
-    "Sdn0iqs2RaA",
-    "WGeI0O4fSY0",
-    "XSpagHUeuEo",
-    "XWngKuh-uG4",
-    "_taU7AtIe2o",
-    "dLL2YvmdZPw",
-    "fFoIAxYfI38",
-    "fdrnxUxqW3I",
-    "frEUb65cBeo",
-    "gp8y33molVE",
-    "hwGajuGm3nI",
-    "kQIir439P50",
-    "r1mG0_0JBGg",
-    "rfQZ2HoIDLI",
-    "t6sDihIRupo",
-    "tKrAv7dLQE0",
-    "uAv6wPjy_Vc",
-    "vku0h1YsVNU"
+    "7SBr4JxBL2w",
+    "7UsXRudbcJ0",
+    "9DwMqgw3znY",
+    "BJs3iKfovLY",
+    "CeNBuBOxTkQ",
+    "GtynKydTo7o",
+    "GxQqtzfrgHQ",
+    "I_GIRx5m5UI",
+    "LfmgJkqEr4k",
+    "MEmz9qAkcYA",
+    "QFWctaAXPrY",
+    "_VhmkgMWTcI",
+    "ciW00YY5or8",
+    "f22wL8zLs3o",
+    "fpRz698vSUI",
+    "g8Pwby9ffVQ",
+    "glLupQ-UUn8",
+    "muEfg3HCg2M",
+    "pBX-qjGww5o",
+    "qEn19Xo9Iag",
+    "vyy0m9UEu-0",
+    "wNwdcEkwHvg",
+    "wpjydMgz9ik",
+    "y-j8LbWFXhc",
+    "zdNrbDNVmQc",
+    "znZfr4hIq1s"
    ],
    "also": [
-    "explains may",
-    "may end",
-    "may coming",
-    "may cause",
-    "end may",
-    "may actually",
-    "coming may",
-    "crash may",
-    "may mean",
-    "may save",
-    "may win",
-    "soon unthinkable",
-    "may caused",
-    "may crash",
-    "silver may soon unthinkable",
-    "may soon unthinkable",
-    "silver may soon",
-    "may drive",
-    "may explain",
-    "may really",
-    "may ending",
-    "ending may",
-    "truth may",
-    "shows may"
+    "cut coming",
+    "cut means",
+    "must cut",
+    "really cut",
+    "cut mean"
    ],
-   "specificity": 0.0086,
+   "specificity": 0.003,
    "rank": 29.3
   },
   {
@@ -47000,6 +46927,62 @@
    "rank": 28.1
   },
   {
+   "phrase": "love coming",
+   "videos": 30,
+   "channels": 7,
+   "months": 16,
+   "span": "2018-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.93,
+   "kind": "new candidate",
+   "examples": [
+    "Aquarius Love:  Oct. 15th-31st  \u201cNew love coming!\"",
+    "Leo March 25-31 | LOVE is coming! DESTINY steps in...",
+    "Taurus JUNE 17th to 23rd - LOVE IS COMING...at the speed of the chariot!"
+   ],
+   "ids": [
+    "-BVJBb7fztI",
+    "1Vz6Ad8GhSI",
+    "5AOCS3VCAwM",
+    "5PiMDHowtL0",
+    "6p0aPAmdTOc",
+    "8UkRlljSwqU",
+    "BIAIjrvdJ6Y",
+    "Wpuevz1pBVE",
+    "Z07-B6t_HZo",
+    "a615O0prgSA",
+    "aBBvRqrPiT4",
+    "dt8mDhSTtkE",
+    "evjp4etDmSE",
+    "g4Fw16QQUEI",
+    "gAhIfLN6PpQ",
+    "gSSeVFdUSz8",
+    "gbO4ROqYjZQ",
+    "h1WPt_9zMBY",
+    "kslfZim869k",
+    "lMNwjP0dbFo",
+    "n0e20YEd4qk",
+    "ojfyv3ymXpQ",
+    "rA-sYgQmvt0",
+    "rBmUmcQN3LA",
+    "rFj68SFasUA",
+    "smWsrwcqMiY",
+    "uFK4qEiDkIo",
+    "uoKpvfd0d-8",
+    "wGfNkUZQ3XQ",
+    "xJdaSH3q8gE"
+   ],
+   "also": [
+    "love truth",
+    "show love",
+    "actually love",
+    "truth love"
+   ],
+   "specificity": 0.004,
+   "rank": 28.0
+  },
+  {
    "phrase": "must check",
    "videos": 11,
    "channels": 7,
@@ -47449,32 +47432,6 @@
    "rank": 27.7
   },
   {
-   "phrase": "crash entire",
-   "videos": 6,
-   "channels": 6,
-   "months": 6,
-   "span": "2021-07 \u2192 2026-05",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.5,
-   "kind": "new candidate",
-   "examples": [
-    "CRYPTO MARKET GOING TO CRASH? ENTIRE CRYPT MARKET UPDATE! WHAT YOU NEED TO KNOW!",
-    "Trump Meme Coin Price Prediction - This will CRASH the ENTIRE market",
-    "This Will CRASH The Entire Stock Market (NEW RESEARCH)"
-   ],
-   "ids": [
-    "EKrDc4X-WQg",
-    "EUtQajs0exQ",
-    "RD-er9zTWSA",
-    "TixbOOldVOc",
-    "Ty8SUiK7VjA",
-    "dY1DHHkPKH0"
-   ],
-   "specificity": 0.0013,
-   "rank": 27.7
-  },
-  {
    "phrase": "home prices crashing",
    "videos": 32,
    "channels": 17,
@@ -47636,63 +47593,6 @@
    "rank": 27.5
   },
   {
-   "phrase": "inflation coming",
-   "videos": 17,
-   "channels": 12,
-   "months": 15,
-   "span": "2017-04 \u2192 2026-06",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.76,
-   "kind": "new candidate",
-   "examples": [
-    "E.B. Tucker: Mining Equities Are Under Appreciated, Inflation Is Coming",
-    "INFLATION IS COMING & It Will Benefit BITCOIN & CRYPTO - Warren Buffett Gold Inflation Hedge",
-    "Charles Goodhart Warns: Higher Interest Rates and Inflation Are Coming"
-   ],
-   "ids": [
-    "0bX93vNHibM",
-    "5VDrOMflSqA",
-    "5whk5ZoomA0",
-    "7KxBxxIcB1o",
-    "Cd8NgBhriuI",
-    "E_Kvt20dg8o",
-    "IKPYNMzL2ME",
-    "OJQR3iFhicw",
-    "OpA7jJejqjM",
-    "P30bEtmTXlA",
-    "TdKzUvPDPyc",
-    "V46YCZempII",
-    "YcIMYqspNlg",
-    "pHxr2E4jqZ8",
-    "u7WVxRwFNwA",
-    "w8PpPxxBaFk",
-    "xX0J8G-vg7A"
-   ],
-   "also": [
-    "beat inflation",
-    "inflation means",
-    "crash inflation",
-    "truth inflation",
-    "cause inflation",
-    "explains inflation",
-    "inflation really",
-    "inflation actually",
-    "causes inflation",
-    "fix inflation",
-    "coming inflation",
-    "drive inflation",
-    "collapse inflation",
-    "means inflation",
-    "inflation crash",
-    "inflation cause",
-    "inflation mean",
-    "inflation lie"
-   ],
-   "specificity": 0.0066,
-   "rank": 27.3
-  },
-  {
    "phrase": "crash signal",
    "videos": 11,
    "channels": 9,
@@ -47759,35 +47659,6 @@
    "rank": 27.3
   },
   {
-   "phrase": "spending actually",
-   "videos": 6,
-   "channels": 5,
-   "months": 6,
-   "span": "2025-05 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.83,
-   "kind": "new candidate",
-   "examples": [
-    "Government Spending Actually Shrank This Quarter",
-    "Why Cutting Government Spending Can Actually Boost the Economy",
-    "Australia's defence spending is actually closer to 3 per cent says US Senator | Insiders | ABC NEWS"
-   ],
-   "ids": [
-    "3PtFMS9tKec",
-    "F0Wf4rQi2_Y",
-    "HZvpFPWUmLQ",
-    "ILimSMVCHGQ",
-    "_EPVUoxDT1Q",
-    "kiK2B6MI47w"
-   ],
-   "also": [
-    "spending boom"
-   ],
-   "specificity": 0.0011,
-   "rank": 27.3
-  },
-  {
    "phrase": "end november",
    "videos": 13,
    "channels": 9,
@@ -47822,6 +47693,63 @@
    ],
    "specificity": 0.002,
    "rank": 27.0
+  },
+  {
+   "phrase": "inflation coming",
+   "videos": 17,
+   "channels": 12,
+   "months": 15,
+   "span": "2017-04 \u2192 2026-06",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.76,
+   "kind": "new candidate",
+   "examples": [
+    "E.B. Tucker: Mining Equities Are Under Appreciated, Inflation Is Coming",
+    "INFLATION IS COMING & It Will Benefit BITCOIN & CRYPTO - Warren Buffett Gold Inflation Hedge",
+    "Charles Goodhart Warns: Higher Interest Rates and Inflation Are Coming"
+   ],
+   "ids": [
+    "0bX93vNHibM",
+    "5VDrOMflSqA",
+    "5whk5ZoomA0",
+    "7KxBxxIcB1o",
+    "Cd8NgBhriuI",
+    "E_Kvt20dg8o",
+    "IKPYNMzL2ME",
+    "OJQR3iFhicw",
+    "OpA7jJejqjM",
+    "P30bEtmTXlA",
+    "TdKzUvPDPyc",
+    "V46YCZempII",
+    "YcIMYqspNlg",
+    "pHxr2E4jqZ8",
+    "u7WVxRwFNwA",
+    "w8PpPxxBaFk",
+    "xX0J8G-vg7A"
+   ],
+   "also": [
+    "beat inflation",
+    "inflation means",
+    "crash inflation",
+    "truth inflation",
+    "cause inflation",
+    "explains inflation",
+    "inflation really",
+    "inflation actually",
+    "causes inflation",
+    "fix inflation",
+    "coming inflation",
+    "drive inflation",
+    "collapse inflation",
+    "means inflation",
+    "inflation crash",
+    "inflation cause",
+    "inflation mean",
+    "inflation lie"
+   ],
+   "specificity": 0.0067,
+   "rank": 26.9
   },
   {
    "phrase": "fail fix",
@@ -48384,35 +48312,6 @@
    "rank": 26.2
   },
   {
-   "phrase": "really thought",
-   "videos": 9,
-   "channels": 7,
-   "months": 3,
-   "span": "2026-07 \u2192 2026-10",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 0.89,
-   "kind": "new candidate",
-   "examples": [
-    "LEO \u2764\ufe0f This Player Really Thought You\u2019d Hang Around Forever!",
-    "Armand Assante really thought he was running for office in 1995... \ud83d\uddf3\ufe0f\ud83d\udc80",
-    "I really thought I had a chaser. PinScape said regular Donald.  #disneypintrading #pinscapeapp"
-   ],
-   "ids": [
-    "-YeYvh1QYyA",
-    "5IIMhe56KjE",
-    "BrHK1htp_NY",
-    "NjcqsxbgwD0",
-    "VzeAdH-t8JU",
-    "cHmHEIpys5E",
-    "cztKn8g2mRA",
-    "ku1XFxUeGdw",
-    "rIaE8ozjcaw"
-   ],
-   "specificity": 0.0008,
-   "rank": 26.2
-  },
-  {
    "phrase": "imminent threat",
    "videos": 21,
    "channels": 10,
@@ -48631,58 +48530,6 @@
    ],
    "specificity": 0.0034,
    "rank": 25.9
-  },
-  {
-   "phrase": "won't cut",
-   "videos": 25,
-   "channels": 7,
-   "months": 11,
-   "span": "2023-02 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.8,
-   "kind": "new candidate",
-   "examples": [
-    "U.S. Fed 'definitely' won't cut interest rates this year, Goldman Sachs says",
-    "Why Traditional Study Methods Won't Cut it for the LSAT",
-    "Jobless Claims and Inflation Soaring: Fed Won't Cut Rates Soon! #shorts"
-   ],
-   "ids": [
-    "7SBr4JxBL2w",
-    "7UsXRudbcJ0",
-    "9DwMqgw3znY",
-    "BJs3iKfovLY",
-    "CeNBuBOxTkQ",
-    "GtynKydTo7o",
-    "GxQqtzfrgHQ",
-    "I_GIRx5m5UI",
-    "LfmgJkqEr4k",
-    "MEmz9qAkcYA",
-    "QFWctaAXPrY",
-    "_VhmkgMWTcI",
-    "ciW00YY5or8",
-    "f22wL8zLs3o",
-    "fpRz698vSUI",
-    "g8Pwby9ffVQ",
-    "glLupQ-UUn8",
-    "muEfg3HCg2M",
-    "pBX-qjGww5o",
-    "qEn19Xo9Iag",
-    "vyy0m9UEu-0",
-    "wNwdcEkwHvg",
-    "y-j8LbWFXhc",
-    "zdNrbDNVmQc",
-    "znZfr4hIq1s"
-   ],
-   "also": [
-    "cut coming",
-    "cut means",
-    "must cut",
-    "really cut",
-    "cut mean"
-   ],
-   "specificity": 0.003,
-   "rank": 25.7
   },
   {
    "phrase": "means indian",
@@ -49316,6 +49163,35 @@
    "rank": 25.0
   },
   {
+   "phrase": "spending actually",
+   "videos": 6,
+   "channels": 5,
+   "months": 6,
+   "span": "2025-05 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.83,
+   "kind": "new candidate",
+   "examples": [
+    "Government Spending Actually Shrank This Quarter",
+    "Why Cutting Government Spending Can Actually Boost the Economy",
+    "Australia's defence spending is actually closer to 3 per cent says US Senator | Insiders | ABC NEWS"
+   ],
+   "ids": [
+    "3PtFMS9tKec",
+    "F0Wf4rQi2_Y",
+    "HZvpFPWUmLQ",
+    "ILimSMVCHGQ",
+    "_EPVUoxDT1Q",
+    "kiK2B6MI47w"
+   ],
+   "also": [
+    "spending boom"
+   ],
+   "specificity": 0.0012,
+   "rank": 25.0
+  },
+  {
    "phrase": "vitamin cause",
    "videos": 6,
    "channels": 5,
@@ -49420,6 +49296,35 @@
     "uYR2cLCNPP8"
    ],
    "specificity": 0.001,
+   "rank": 25.0
+  },
+  {
+   "phrase": "cause mass",
+   "videos": 6,
+   "channels": 6,
+   "months": 5,
+   "span": "2022-05 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "11% Inflation is About to Cause MASS Layoffs",
+    "Tech CEO warns AI could cause mass unemployment",
+    "POLAND ACCUSES RUSSIA OF TERROR PLOT; Sikorski Says GRU Tried To Cause Mass Casualties | Watch"
+   ],
+   "ids": [
+    "2YcO6_WC4TE",
+    "4SzsQfuqyl0",
+    "66xaXACxbb0",
+    "78qpozOcM8Q",
+    "MvxqmbVmFjg",
+    "XIHcJ3QhkQ4"
+   ],
+   "also": [
+    "dead mass"
+   ],
+   "specificity": 0.0012,
    "rank": 25.0
   },
   {
@@ -49621,6 +49526,45 @@
    ],
    "specificity": 0.0026,
    "rank": 24.2
+  },
+  {
+   "phrase": "google drive",
+   "videos": 13,
+   "channels": 8,
+   "months": 9,
+   "span": "2016-11 \u2192 2026-10",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "INBOUND 2016: Rand Fishkin \"How To Keep Up With Google\" + Drive Organic Traffic from Google",
+    "Code a Google Drive Clone using Laravel and Vue.js \u2013 Complete Course",
+    "Full Stack Next.js, Typescript, Firebase Tutorial \u2013 Google Drive Clone"
+   ],
+   "ids": [
+    "289FKR3Ucjk",
+    "29Wrsa4dH7Y",
+    "6qXCwhUzipg",
+    "8bAtx3WuRZw",
+    "AcuRo0DfpEw",
+    "DIK_nXGzJj4",
+    "JVtvN23v0BA",
+    "NtCs5miYGmo",
+    "Wn3IPX_ax-0",
+    "fMeanSPeE90",
+    "gwOVynGnDZA",
+    "mHLLS6Rbg1Q",
+    "tA7Vbe_ItCo"
+   ],
+   "also": [
+    "end google",
+    "google actually",
+    "replace google",
+    "beat google"
+   ],
+   "specificity": 0.003,
+   "rank": 24.0
   },
   {
    "phrase": "beats deepseek",
@@ -49881,7 +49825,7 @@
     "plcBl_Blv3A",
     "rlaYe_ge5JE"
    ],
-   "specificity": 0.0003,
+   "specificity": 0.0004,
    "rank": 24.0
   },
   {
@@ -51951,6 +51895,41 @@
    "rank": 23.3
   },
   {
+   "phrase": "rules coming",
+   "videos": 8,
+   "channels": 7,
+   "months": 6,
+   "span": "2022-06 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.62,
+   "kind": "new candidate",
+   "examples": [
+    "OSFI \"Very Worried\" about Canadian Finances - New Mortgage Rules Coming Down",
+    "Crossing the U.S.-Canada border with a dog? New rules are coming",
+    "Trump Admin Freezes Student Visa Appointments Worldwide | US New Social Media Rules Coming"
+   ],
+   "ids": [
+    "5ue0HTTd2NU",
+    "NYInBNPob0I",
+    "T4WhOtnkbAg",
+    "_Kt6OVoVR8Y",
+    "f2mxeMufiD4",
+    "iwqds2PP8ek",
+    "trFkXE5Qofc",
+    "vRZhDV4FQdw"
+   ],
+   "also": [
+    "rules must",
+    "rules mean",
+    "rules must know",
+    "rules save",
+    "rules beat"
+   ],
+   "specificity": 0.0018,
+   "rank": 23.3
+  },
+  {
    "phrase": "shows israeli",
    "videos": 7,
    "channels": 4,
@@ -52060,45 +52039,6 @@
    ],
    "specificity": 0.0012,
    "rank": 23.3
-  },
-  {
-   "phrase": "google drive",
-   "videos": 13,
-   "channels": 8,
-   "months": 9,
-   "span": "2016-11 \u2192 2026-10",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "INBOUND 2016: Rand Fishkin \"How To Keep Up With Google\" + Drive Organic Traffic from Google",
-    "Code a Google Drive Clone using Laravel and Vue.js \u2013 Complete Course",
-    "Full Stack Next.js, Typescript, Firebase Tutorial \u2013 Google Drive Clone"
-   ],
-   "ids": [
-    "289FKR3Ucjk",
-    "29Wrsa4dH7Y",
-    "6qXCwhUzipg",
-    "8bAtx3WuRZw",
-    "AcuRo0DfpEw",
-    "DIK_nXGzJj4",
-    "JVtvN23v0BA",
-    "NtCs5miYGmo",
-    "Wn3IPX_ax-0",
-    "fMeanSPeE90",
-    "gwOVynGnDZA",
-    "mHLLS6Rbg1Q",
-    "tA7Vbe_ItCo"
-   ],
-   "also": [
-    "end google",
-    "google actually",
-    "replace google",
-    "beat google"
-   ],
-   "specificity": 0.0031,
-   "rank": 23.2
   },
   {
    "phrase": "gop wins",
@@ -52239,7 +52179,8 @@
     "x7zfBFTmSFY"
    ],
    "also": [
-    "really die"
+    "really die",
+    "won't die"
    ],
    "specificity": 0.0013,
    "rank": 23.1
@@ -53140,44 +53081,6 @@
    "rank": 22.1
   },
   {
-   "phrase": "win lose",
-   "videos": 13,
-   "channels": 10,
-   "months": 9,
-   "span": "2018-12 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.92,
-   "kind": "new candidate",
-   "examples": [
-    "The Future Of Work Is Talent: Organizations Will Win Or Lose Based On Their People - Jacob Morgan",
-    "PISCES - \"You Win Some, You Lose Some\" APRIL 1ST - 7TH",
-    "AQUARIUS \u2652\ufe0e - \"You Win Some, You Lose Some\" OCTOBER 20TH - 26TH | Tarot Card Reading"
-   ],
-   "ids": [
-    "7nv5Zicspgk",
-    "H-8Xc2xIAHg",
-    "JEfM_h_dUKc",
-    "NNKh0BFXOMA",
-    "P3D8Dsyuv34",
-    "S0YaM3LmTpQ",
-    "a43FTJmlrDc",
-    "c78rf_F9oVA",
-    "lOy9g32Bcpk",
-    "p3osBA_El5w",
-    "s6OzSfa-IeQ",
-    "wW0dkCcGuxk",
-    "yLwIOjGKhwk"
-   ],
-   "also": [
-    "actually lose",
-    "really lose",
-    "must lose"
-   ],
-   "specificity": 0.0041,
-   "rank": 22.0
-  },
-  {
    "phrase": "really control",
    "videos": 10,
    "channels": 7,
@@ -53410,8 +53313,8 @@
     "job truth",
     "replace job",
     "job boom",
-    "take job truth",
     "won't take job",
+    "take job truth",
     "replacing job"
    ],
    "specificity": 0.0026,
@@ -53443,8 +53346,8 @@
    "also": [
     "truth protein",
     "much protein really need",
-    "protein really need",
     "much protein really",
+    "protein really need",
     "protein actually",
     "much protein actually need",
     "much protein actually",
@@ -54591,6 +54494,30 @@
    "rank": 20.0
   },
   {
+   "phrase": "banned countries",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2020-12 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Top 10 Celebrities Banned From Other Countries",
+    "Why Russia Today is being banned in some countries",
+    "Why are these 10 Cars BANNED in some Countries"
+   ],
+   "ids": [
+    "-MnMlCMx3EQ",
+    "2avV_gUiH_E",
+    "9KUQPdLYdPQ",
+    "xEZvM0BnCec"
+   ],
+   "specificity": 0.0008,
+   "rank": 20.0
+  },
+  {
    "phrase": "johnson explains",
    "videos": 4,
    "channels": 4,
@@ -54930,7 +54857,8 @@
    "also": [
     "crash risk",
     "collapse risk",
-    "bubble risk"
+    "bubble risk",
+    "risk isn't"
    ],
    "specificity": 0.0033,
    "rank": 19.1
@@ -55006,6 +54934,46 @@
     "tom lee explains"
    ],
    "specificity": 0.0029,
+   "rank": 19.0
+  },
+  {
+   "phrase": "dead another",
+   "videos": 11,
+   "channels": 8,
+   "months": 5,
+   "span": "2025-05 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "A head-on crash leaves one woman dead and another fighting for life in hospital | ABC NEWS",
+    "Quantum computer field & Molecular electronics field have common problem: One dead, another waiting",
+    "Sydney pub shooting leaves one dead, another seriously injured | ABC NEWS"
+   ],
+   "ids": [
+    "D8cdlJjuOeM",
+    "Oj0gZMXAGqc",
+    "ScTa0thJDpY",
+    "dslaRqZrlmg",
+    "eOzJjHpGfe0",
+    "ld3xkedvJ60",
+    "leIbjmwcVfA",
+    "qFQNpybLVw0",
+    "udYgSkR-4NA",
+    "urbH_9cGEK0",
+    "xEF28tXGqoI"
+   ],
+   "also": [
+    "crash another",
+    "one dead another",
+    "another crash",
+    "won't another",
+    "wins another",
+    "win another",
+    "end another"
+   ],
+   "specificity": 0.0021,
    "rank": 19.0
   },
   {
@@ -55131,7 +55099,6 @@
     "collapse time",
     "bubble time",
     "time crash",
-    "dead time",
     "wins time"
    ],
    "specificity": 0.0126,
@@ -55615,6 +55582,41 @@
     "win weight"
    ],
    "specificity": 0.0198,
+   "rank": 18.2
+  },
+  {
+   "phrase": "states collapse first usa",
+   "videos": 9,
+   "channels": 5,
+   "months": 4,
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.56,
+   "kind": "new candidate",
+   "examples": [
+    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
+   ],
+   "ids": [
+    "2cySisz4L7w",
+    "2rwaCLtUMUY",
+    "R8hTK8oDQE0",
+    "jp5hHUupNcU",
+    "nhFtUBzUP18",
+    "o3Kn8dIJmIo",
+    "oWogTWbnGd0",
+    "qX7T7tmOCqI",
+    "y2GCQE98jak"
+   ],
+   "also": [
+    "states collapse",
+    "states collapse first usa",
+    "collapse first usa enters",
+    "collapse first usa"
+   ],
+   "specificity": 0.0011,
    "rank": 18.2
   },
   {
@@ -56213,53 +56215,41 @@
    "rank": 17.8
   },
   {
-   "phrase": "crash global",
-   "videos": 17,
-   "channels": 13,
-   "months": 11,
-   "span": "2022-07 \u2192 2026-10",
+   "phrase": "win lose",
+   "videos": 12,
+   "channels": 9,
+   "months": 8,
+   "span": "2018-12 \u2192 2026-10",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.53,
+   "home_share": 0.92,
    "kind": "new candidate",
    "examples": [
-    "Stock Market Crash on Global Recession",
-    "Tech Stocks to Crash on Global Recession and Strong Dollar? | Daily Uncut News",
-    "Tesla Earnings and UK Economy Crash Global Financial Markets? | Daily Uncut News"
+    "The Future Of Work Is Talent: Organizations Will Win Or Lose Based On Their People - Jacob Morgan",
+    "PISCES - \"You Win Some, You Lose Some\" APRIL 1ST - 7TH",
+    "AQUARIUS \u2652\ufe0e - \"You Win Some, You Lose Some\" OCTOBER 20TH - 26TH | Tarot Card Reading"
    ],
    "ids": [
-    "1un0-Fc1bSs",
-    "1ynInvtMxlk",
-    "87Ectmjb1mo",
-    "H-Xp8yLTGMk",
-    "JXCrHaOWPa8",
-    "Mt6iJne76oI",
-    "NTIw7pwcqyQ",
-    "OTRW6QelAXs",
-    "P0tF4V2GzdU",
-    "TXXTKghWcVU",
-    "XMRfQ2cn2Rc",
-    "YmKilGR-mEQ",
-    "dRNzKOCVlAs",
-    "gi9-QpppYnE",
-    "iFrxP06hw5M",
-    "rn6fE6F2RQI",
-    "w7vWBq6ZsNU"
+    "7nv5Zicspgk",
+    "H-8Xc2xIAHg",
+    "JEfM_h_dUKc",
+    "NNKh0BFXOMA",
+    "P3D8Dsyuv34",
+    "S0YaM3LmTpQ",
+    "a43FTJmlrDc",
+    "c78rf_F9oVA",
+    "lOy9g32Bcpk",
+    "p3osBA_El5w",
+    "wW0dkCcGuxk",
+    "yLwIOjGKhwk"
    ],
    "also": [
-    "global collapse",
-    "means global",
-    "drive global",
-    "mean global",
-    "end global",
-    "collapse global",
-    "global crash",
-    "cause global",
-    "soon global",
-    "coming global"
+    "actually lose",
+    "really lose",
+    "must lose"
    ],
-   "specificity": 0.0081,
-   "rank": 17.7
+   "specificity": 0.0041,
+   "rank": 17.6
   },
   {
    "phrase": "truth sugar",
@@ -56299,40 +56289,6 @@
     "sugar truth"
    ],
    "specificity": 0.0046,
-   "rank": 17.6
-  },
-  {
-   "phrase": "won't rule out",
-   "videos": 9,
-   "channels": 5,
-   "months": 6,
-   "span": "2025-05 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "NDP MP Heather McPherson won't rule out run for party leadership | Power & Politics",
-    "Trump won't rule out US involvement in Israel-Iran conflict | ABC NEWS",
-    "Canada won't rule out boots on the ground in Ukraine as security guarantee | ABC NEWS"
-   ],
-   "ids": [
-    "4yNy98pgl3E",
-    "Kp6_UA8Qraw",
-    "MblAMQ6CIv8",
-    "MvdIlTtiZr4",
-    "ZU8hqORQ5aQ",
-    "a_mvwh4XG_8",
-    "dNo8CvTE0zk",
-    "hnE2Lbica0U",
-    "u7Xq-fNw100"
-   ],
-   "also": [
-    "won't rule",
-    "rule means",
-    "rule actually"
-   ],
-   "specificity": 0.0017,
    "rank": 17.6
   },
   {
@@ -56454,12 +56410,61 @@
     "pZFJX1R59UA"
    ],
    "also": [
-    "actually smart",
     "crash smart investors",
+    "actually smart",
     "really smart"
    ],
    "specificity": 0.002,
    "rank": 17.5
+  },
+  {
+   "phrase": "crash global",
+   "videos": 17,
+   "channels": 13,
+   "months": 11,
+   "span": "2022-07 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.53,
+   "kind": "new candidate",
+   "examples": [
+    "Stock Market Crash on Global Recession",
+    "Tech Stocks to Crash on Global Recession and Strong Dollar? | Daily Uncut News",
+    "Tesla Earnings and UK Economy Crash Global Financial Markets? | Daily Uncut News"
+   ],
+   "ids": [
+    "1un0-Fc1bSs",
+    "1ynInvtMxlk",
+    "87Ectmjb1mo",
+    "H-Xp8yLTGMk",
+    "JXCrHaOWPa8",
+    "Mt6iJne76oI",
+    "NTIw7pwcqyQ",
+    "OTRW6QelAXs",
+    "P0tF4V2GzdU",
+    "TXXTKghWcVU",
+    "XMRfQ2cn2Rc",
+    "YmKilGR-mEQ",
+    "dRNzKOCVlAs",
+    "gi9-QpppYnE",
+    "iFrxP06hw5M",
+    "rn6fE6F2RQI",
+    "w7vWBq6ZsNU"
+   ],
+   "also": [
+    "global collapse",
+    "means global",
+    "drive global",
+    "mean global",
+    "end global",
+    "collapse global",
+    "global crash",
+    "cause global",
+    "soon global",
+    "coming global"
+   ],
+   "specificity": 0.0082,
+   "rank": 17.4
   },
   {
    "phrase": "investment boom",
@@ -56976,42 +56981,37 @@
    "rank": 16.8
   },
   {
-   "phrase": "dead another",
-   "videos": 10,
-   "channels": 7,
-   "months": 5,
-   "span": "2025-05 \u2192 2026-10",
+   "phrase": "won't rule out",
+   "videos": 9,
+   "channels": 5,
+   "months": 6,
+   "span": "2025-05 \u2192 2026-09",
    "industry": "Economy & markets",
    "home": "(pool)",
    "home_share": 1.0,
    "kind": "new candidate",
    "examples": [
-    "A head-on crash leaves one woman dead and another fighting for life in hospital | ABC NEWS",
-    "Sydney pub shooting leaves one dead, another seriously injured | ABC NEWS",
-    "Teenage girl dead and another arrested after stabbing in Newcastle | ABC NEWS"
+    "NDP MP Heather McPherson won't rule out run for party leadership | Power & Politics",
+    "Trump won't rule out US involvement in Israel-Iran conflict | ABC NEWS",
+    "Canada won't rule out boots on the ground in Ukraine as security guarantee | ABC NEWS"
    ],
    "ids": [
-    "D8cdlJjuOeM",
-    "Oj0gZMXAGqc",
-    "ScTa0thJDpY",
-    "dslaRqZrlmg",
-    "eOzJjHpGfe0",
-    "ld3xkedvJ60",
-    "leIbjmwcVfA",
-    "qFQNpybLVw0",
-    "urbH_9cGEK0",
-    "xEF28tXGqoI"
+    "4yNy98pgl3E",
+    "Kp6_UA8Qraw",
+    "MblAMQ6CIv8",
+    "MvdIlTtiZr4",
+    "ZU8hqORQ5aQ",
+    "a_mvwh4XG_8",
+    "dNo8CvTE0zk",
+    "hnE2Lbica0U",
+    "u7Xq-fNw100"
    ],
    "also": [
-    "crash another",
-    "another crash",
-    "one dead another",
-    "won't another",
-    "wins another",
-    "win another",
-    "end another"
+    "won't rule",
+    "rule means",
+    "rule actually"
    ],
-   "specificity": 0.0021,
+   "specificity": 0.0018,
    "rank": 16.7
   },
   {
@@ -57298,34 +57298,6 @@
    "rank": 16.7
   },
   {
-   "phrase": "cause mass",
-   "videos": 5,
-   "channels": 5,
-   "months": 4,
-   "span": "2022-05 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "11% Inflation is About to Cause MASS Layoffs",
-    "Tech CEO warns AI could cause mass unemployment",
-    "POLAND ACCUSES RUSSIA OF TERROR PLOT; Sikorski Says GRU Tried To Cause Mass Casualties | Watch"
-   ],
-   "ids": [
-    "2YcO6_WC4TE",
-    "66xaXACxbb0",
-    "78qpozOcM8Q",
-    "MvxqmbVmFjg",
-    "XIHcJ3QhkQ4"
-   ],
-   "also": [
-    "dead mass"
-   ],
-   "specificity": 0.0012,
-   "rank": 16.7
-  },
-  {
    "phrase": "soon govt",
    "videos": 5,
    "channels": 5,
@@ -57383,39 +57355,6 @@
    ],
    "specificity": 0.0034,
    "rank": 16.5
-  },
-  {
-   "phrase": "end coding",
-   "videos": 9,
-   "channels": 8,
-   "months": 9,
-   "span": "2023-03 \u2192 2026-09",
-   "industry": "AI & technology",
-   "home": "(pool)",
-   "home_share": 0.78,
-   "kind": "new candidate",
-   "examples": [
-    "The END of Coding Interviews? #ChatGPT",
-    "Is This the End of Coding? AI Writes 3 Million Lines Overnight | MOONSHOTS",
-    "OpenAI Codex Agent... The End of Coding?"
-   ],
-   "ids": [
-    "5wdj3bYIShg",
-    "7ewztE7uHtA",
-    "Br-_7OsJ8XA",
-    "FugCsHsOYJA",
-    "Omb4iFv_9-w",
-    "R2HVlXweJbw",
-    "e7wr2EYCbvc",
-    "sYhtWOzAmtk",
-    "ytOJsmKOCq4"
-   ],
-   "also": [
-    "coding beats",
-    "coding dead"
-   ],
-   "specificity": 0.0044,
-   "rank": 16.4
   },
   {
    "phrase": "tools actually",
@@ -57703,6 +57642,39 @@
     "w0j8v6q58Ec"
    ],
    "specificity": 0.0005,
+   "rank": 16.0
+  },
+  {
+   "phrase": "end coding",
+   "videos": 9,
+   "channels": 8,
+   "months": 9,
+   "span": "2023-03 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.78,
+   "kind": "new candidate",
+   "examples": [
+    "The END of Coding Interviews? #ChatGPT",
+    "Is This the End of Coding? AI Writes 3 Million Lines Overnight | MOONSHOTS",
+    "OpenAI Codex Agent... The End of Coding?"
+   ],
+   "ids": [
+    "5wdj3bYIShg",
+    "7ewztE7uHtA",
+    "Br-_7OsJ8XA",
+    "FugCsHsOYJA",
+    "Omb4iFv_9-w",
+    "R2HVlXweJbw",
+    "e7wr2EYCbvc",
+    "sYhtWOzAmtk",
+    "ytOJsmKOCq4"
+   ],
+   "also": [
+    "coding beats",
+    "coding dead"
+   ],
+   "specificity": 0.0045,
    "rank": 16.0
   },
   {
@@ -58748,6 +58720,30 @@
    "rank": 16.0
   },
   {
+   "phrase": "3pm crash",
+   "videos": 4,
+   "channels": 4,
+   "months": 2,
+   "span": "2026-07 \u2192 2026-08",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 0.5,
+   "kind": "new candidate",
+   "examples": [
+    "Tesamorelin Dosage Cycle Pepio GLP-1  Peptide Tracker Review  No More 3PM Crash",
+    "Your 3PM Crash Is Written in Your Blood \ud83e\ude78",
+    "keeping weight off after wegovy Pepio GLP-1 tracker stopped my 3pm crash and saved my weight loss"
+   ],
+   "ids": [
+    "3EoY2JkBrBo",
+    "JOC5jSzhcWg",
+    "Y-10ICTt1MA",
+    "mF_YN1-n-BY"
+   ],
+   "specificity": 0.0002,
+   "rank": 16.0
+  },
+  {
    "phrase": "arms ban",
    "videos": 4,
    "channels": 4,
@@ -59168,6 +59164,35 @@
    "rank": 15.4
   },
   {
+   "phrase": "replace entire",
+   "videos": 6,
+   "channels": 4,
+   "months": 5,
+   "span": "2025-10 \u2192 2026-10",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 0.67,
+   "kind": "new candidate",
+   "examples": [
+    "HeyGen\u2019s Video Agent: The AI Tool That\u2019s About to Replace Your Entire Editing Team",
+    "The AI Agent That Will Replace Your Entire Workflow by 2026",
+    "6 AI Tools That Will Replace Your Entire Content Team"
+   ],
+   "ids": [
+    "5g48JkQBpbs",
+    "JSvWywgwMpY",
+    "RjQa-74eNVo",
+    "qNpqDfyQBL4",
+    "upR1D3ZElDs",
+    "zbjaqAsK4Ks"
+   ],
+   "also": [
+    "crash entire"
+   ],
+   "specificity": 0.0013,
+   "rank": 15.4
+  },
+  {
    "phrase": "housing crash begun",
    "videos": 5,
    "channels": 4,
@@ -59424,6 +59449,34 @@
     "truth toronto"
    ],
    "specificity": 0.0032,
+   "rank": 15.0
+  },
+  {
+   "phrase": "really thought",
+   "videos": 8,
+   "channels": 6,
+   "months": 2,
+   "span": "2026-09 \u2192 2026-10",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 0.88,
+   "kind": "new candidate",
+   "examples": [
+    "Armand Assante really thought he was running for office in 1995... \ud83d\uddf3\ufe0f\ud83d\udc80",
+    "I really thought I had a chaser. PinScape said regular Donald.  #disneypintrading #pinscapeapp",
+    "Bro really thought that was gonna work \ud83d\udc80\ud83d\ude02 #shorts"
+   ],
+   "ids": [
+    "-YeYvh1QYyA",
+    "5IIMhe56KjE",
+    "BrHK1htp_NY",
+    "NjcqsxbgwD0",
+    "VzeAdH-t8JU",
+    "cHmHEIpys5E",
+    "cztKn8g2mRA",
+    "ku1XFxUeGdw"
+   ],
+   "specificity": 0.0008,
    "rank": 15.0
   },
   {
@@ -60761,35 +60814,30 @@
    "rank": 13.3
   },
   {
-   "phrase": "companies win",
+   "phrase": "online scam",
    "videos": 7,
-   "channels": 6,
-   "months": 4,
-   "span": "2025-05 \u2192 2026-09",
+   "channels": 4,
+   "months": 5,
+   "span": "2025-01 \u2192 2026-01",
    "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 0.57,
+   "home_share": 1.0,
    "kind": "new candidate",
    "examples": [
-    "Tariff Cheat Codes: How Video Game Companies Win in Uncertainty",
-    "Open Source Benefits: How IP Companies Can Win & Innovate! #shorts",
-    "Open Source Benefits: How IP Companies Can Win & Innovate! #shorts"
+    "Ex-Indonesian official alleges he is being held captive by online scam syndicate",
+    "Billie Eilish fans have concert tickets cancelled in online scam | ABC NEWS",
+    "China, Thailand vow crackdown on online scam operations | East Asia Tonight (Feb 6)"
    ],
    "ids": [
-    "Fw2pAEIP34I",
-    "QMXvr6X0yek",
-    "X6Ywh9WdPUw",
-    "ZZAnoBQv9-A",
-    "_peXkEB7CH4",
-    "quLd9F76Ok4",
-    "vTMdUMVKKy0"
+    "3UD2PJ_W6vA",
+    "NbLB5kwsjVA",
+    "ZKLewN9VNtQ",
+    "bO_mqfwGIow",
+    "biBrKAH32xM",
+    "dJ79YzKIVVE",
+    "txuu6gIQ4XY"
    ],
-   "also": [
-    "companies actually",
-    "companies really",
-    "companies must"
-   ],
-   "specificity": 0.0018,
+   "specificity": 0.0015,
    "rank": 13.3
   },
   {
@@ -61423,6 +61471,38 @@
    "rank": 12.7
   },
   {
+   "phrase": "companies win",
+   "videos": 7,
+   "channels": 6,
+   "months": 4,
+   "span": "2025-05 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.57,
+   "kind": "new candidate",
+   "examples": [
+    "Tariff Cheat Codes: How Video Game Companies Win in Uncertainty",
+    "Open Source Benefits: How IP Companies Can Win & Innovate! #shorts",
+    "Open Source Benefits: How IP Companies Can Win & Innovate! #shorts"
+   ],
+   "ids": [
+    "Fw2pAEIP34I",
+    "QMXvr6X0yek",
+    "X6Ywh9WdPUw",
+    "ZZAnoBQv9-A",
+    "_peXkEB7CH4",
+    "quLd9F76Ok4",
+    "vTMdUMVKKy0"
+   ],
+   "also": [
+    "companies actually",
+    "companies really",
+    "companies must"
+   ],
+   "specificity": 0.0019,
+   "rank": 12.6
+  },
+  {
    "phrase": "price drops coming",
    "videos": 6,
    "channels": 4,
@@ -61532,33 +61612,6 @@
     "_l6Ye1F5104",
     "nIPGonQnh74",
     "rknAeVJmCJ8"
-   ],
-   "specificity": 0.0016,
-   "rank": 12.5
-  },
-  {
-   "phrase": "online scam",
-   "videos": 7,
-   "channels": 4,
-   "months": 5,
-   "span": "2025-01 \u2192 2026-01",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Ex-Indonesian official alleges he is being held captive by online scam syndicate",
-    "Billie Eilish fans have concert tickets cancelled in online scam | ABC NEWS",
-    "China, Thailand vow crackdown on online scam operations | East Asia Tonight (Feb 6)"
-   ],
-   "ids": [
-    "3UD2PJ_W6vA",
-    "NbLB5kwsjVA",
-    "ZKLewN9VNtQ",
-    "bO_mqfwGIow",
-    "biBrKAH32xM",
-    "dJ79YzKIVVE",
-    "txuu6gIQ4XY"
    ],
    "specificity": 0.0016,
    "rank": 12.5
@@ -63183,6 +63236,33 @@
    "rank": 10.9
   },
   {
+   "phrase": "banned usa",
+   "videos": 7,
+   "channels": 5,
+   "months": 5,
+   "span": "2023-02 \u2192 2025-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "\ud83d\udd34USDC BANNED IN THE USA EXPLAINED",
+    "Crypto staking to be BANNED in the USA? Dark Gensler is coming for your crypto rewards?",
+    "\ud83d\udea8SHOCKING PREPARE NOW\ud83d\udea8XRP BANNED IN USA?"
+   ],
+   "ids": [
+    "K8oW_xIL9BI",
+    "MH2lPihBBAI",
+    "OjhdWQOnTqM",
+    "q8fiUiNMgeo",
+    "qBw8LolGOyg",
+    "wnt0tDqW_14",
+    "wpM7KwwjmO8"
+   ],
+   "specificity": 0.0023,
+   "rank": 10.9
+  },
+  {
    "phrase": "actually losing",
    "videos": 5,
    "channels": 5,
@@ -63312,30 +63392,6 @@
    "rank": 10.9
   },
   {
-   "phrase": "mean zero",
-   "videos": 4,
-   "channels": 4,
-   "months": 3,
-   "span": "2026-08 \u2192 2026-10",
-   "industry": "Unsorted",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "Trump Says Canada Deal Will Mean Zero Tariffs For US Farmers #shorts",
-    "Zero Water Does Not Mean Zero Impact",
-    "Ford Had Almost Every Part for the F-150. \u201cAlmost\u201d Can Mean Zero Trucks"
-   ],
-   "ids": [
-    "QZ12NLzF6YE",
-    "lkd7Nwr_XD4",
-    "phgODd2P_OI",
-    "qiIluB6gLaA"
-   ],
-   "specificity": 0.0011,
-   "rank": 10.9
-  },
-  {
    "phrase": "house collapses",
    "videos": 16,
    "channels": 10,
@@ -63454,33 +63510,6 @@
    ],
    "also": [
     "end term"
-   ],
-   "specificity": 0.0015,
-   "rank": 10.7
-  },
-  {
-   "phrase": "coming faster think",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2024-11 \u2192 2026-04",
-   "industry": "Economy & markets",
-   "home": "crypto-winter-watch",
-   "home_share": 0.5,
-   "kind": "cross-narrative",
-   "examples": [
-    "BITCOIN $90,000 Coming FASTER Than You Think + Pullback Targets",
-    "Michael Saylor EXPOSES WHY $13M Bitcoin is Coming FASTER Than You Think",
-    "The Crypto Winter is OVER: Why Spring is Coming Faster Than You Think - Matt Hougan"
-   ],
-   "ids": [
-    "AQ9QjSYVcRk",
-    "Nqio202NJJE",
-    "OBTfU8yMQ6Y",
-    "Y8Y34L_wMN0"
-   ],
-   "also": [
-    "coming faster"
    ],
    "specificity": 0.0015,
    "rank": 10.7
@@ -64271,6 +64300,33 @@
    "rank": 10.0
   },
   {
+   "phrase": "coming faster think",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2024-11 \u2192 2026-04",
+   "industry": "Economy & markets",
+   "home": "crypto-winter-watch",
+   "home_share": 0.5,
+   "kind": "cross-narrative",
+   "examples": [
+    "BITCOIN $90,000 Coming FASTER Than You Think + Pullback Targets",
+    "Michael Saylor EXPOSES WHY $13M Bitcoin is Coming FASTER Than You Think",
+    "The Crypto Winter is OVER: Why Spring is Coming Faster Than You Think - Matt Hougan"
+   ],
+   "ids": [
+    "AQ9QjSYVcRk",
+    "Nqio202NJJE",
+    "OBTfU8yMQ6Y",
+    "Y8Y34L_wMN0"
+   ],
+   "also": [
+    "coming faster"
+   ],
+   "specificity": 0.0016,
+   "rank": 10.0
+  },
+  {
    "phrase": "universe actually",
    "videos": 4,
    "channels": 4,
@@ -64415,6 +64471,30 @@
    "rank": 10.0
   },
   {
+   "phrase": "mean zero",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2026-08 \u2192 2026-10",
+   "industry": "Unsorted",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Trump Says Canada Deal Will Mean Zero Tariffs For US Farmers #shorts",
+    "Zero Water Does Not Mean Zero Impact",
+    "Ford Had Almost Every Part for the F-150. \u201cAlmost\u201d Can Mean Zero Trucks"
+   ],
+   "ids": [
+    "QZ12NLzF6YE",
+    "lkd7Nwr_XD4",
+    "phgODd2P_OI",
+    "qiIluB6gLaA"
+   ],
+   "specificity": 0.0012,
+   "rank": 10.0
+  },
+  {
    "phrase": "fund beat",
    "videos": 4,
    "channels": 4,
@@ -64477,31 +64557,31 @@
    "rank": 9.8
   },
   {
-   "phrase": "don really",
+   "phrase": "coming don",
    "videos": 7,
    "channels": 6,
    "months": 5,
-   "span": "2025-02 \u2192 2026-10",
-   "industry": "Health & biotech",
+   "span": "2019-06 \u2192 2026-10",
+   "industry": "Economy & markets",
    "home": "(pool)",
-   "home_share": 1.0,
+   "home_share": 0.71,
    "kind": "new candidate",
    "examples": [
-    "'I don\u2019t really care...': Nancy Mace clashes with Gerry Connolly for her anti-transgender slur",
-    "why people eat kiwi skin, u don\u2019t really need to if u save my other video, but go for it #fiber",
-    "Wait, You Don\u2019t Really Get Vitamin D from the Sun ? #healthyhabits #healthtips #youtube"
+    "CAPRICORN SINGLES:  JUNE 2019 \u201cSTRONG COMMITMENT COMING,  AND YOU DON\u2019T EVEN SEE IT.\u201d  \ud83d\ude02",
+    "The BIGGEST Bull Run In History Is Coming! (DON\u2019T Fall For It!)",
+    "Dr. Kirk Elliott | A Massive Financial Shift Is Coming \u2014 Don\u2019t Be Caught Unprepared"
    ],
    "ids": [
-    "8GMa5YL5hV0",
-    "9oH0Zc6vkn4",
-    "Foq-r6s-shI",
-    "Pz38Yn3Duv0",
-    "gnma4pYdeF8",
-    "oq83vL4E-lM",
-    "zPlxJXvR0I0"
+    "65vjUr9Xy6Q",
+    "D-p3u3yRCoc",
+    "OPjxZn61aDo",
+    "YBPtKo8Cb6o",
+    "b7g8NCwEDSI",
+    "ijVBzVHaQXo",
+    "zzeN9H6-JtE"
    ],
    "also": [
-    "coming don",
+    "don really",
     "soon don",
     "truth don",
     "crash don",
@@ -64834,6 +64914,30 @@
     "OwrDte8NLHg",
     "j_g0J9WJnnM",
     "wncg3IE-n0Q"
+   ],
+   "specificity": 0.0017,
+   "rank": 9.4
+  },
+  {
+   "phrase": "actually breaks",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2026-02 \u2192 2026-09",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "What Actually Breaks a Weight Plateau #weightloss #glp1 #diet",
+    "What Actually Breaks First in IBD (It's Not Your Gut)",
+    "The Big Four-Oh: Why $40 Trillion Was Never a Surprise And What Actually Breaks a Government"
+   ],
+   "ids": [
+    "0DZ4cc-ePvI",
+    "1PAqtYcQfXM",
+    "KmJEWvlJciE",
+    "_X-bMYq5mQM"
    ],
    "specificity": 0.0017,
    "rank": 9.4
@@ -65223,6 +65327,31 @@
    "rank": 9.1
   },
   {
+   "phrase": "bill would ban",
+   "videos": 5,
+   "channels": 4,
+   "months": 5,
+   "span": "2024-03 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "House passes bill that would ban TikTok if Chinese owners don't sell app",
+    "House Dem introduces bill that would ban elected officials from owning, creating crypto",
+    "Bill that would ban boots in parking lots big-foots its way into the state Senate"
+   ],
+   "ids": [
+    "9QhZZO5wLY8",
+    "EZW0rBBkLs0",
+    "hmXoQBo7B3g",
+    "uH7C9xYyMOo",
+    "vFXM84HmZDc"
+   ],
+   "specificity": 0.0022,
+   "rank": 9.1
+  },
+  {
    "phrase": "save 500",
    "videos": 20,
    "channels": 4,
@@ -65390,35 +65519,6 @@
     "loss fix"
    ],
    "specificity": 0.0124,
-   "rank": 8.9
-  },
-  {
-   "phrase": "global market crash",
-   "videos": 9,
-   "channels": 9,
-   "months": 8,
-   "span": "2019-08 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "the-2026-setup",
-   "home_share": 0.56,
-   "kind": "cross-narrative",
-   "examples": [
-    "Brexit- Global Market Crash Pending",
-    "The Global Market is About to Crash HARD (Bitcoin & Crypto in Trouble?) | Crypto Jebb",
-    "Prepare for the next 50% CRASH | Global Market Crash."
-   ],
-   "ids": [
-    "FsHnQOQVPRI",
-    "PH_TOfPCm7g",
-    "QftSkJHrE8M",
-    "R6VoG5R5JGc",
-    "S_tgPjOQBeI",
-    "XMificAOt0k",
-    "_9ZyfGr7xzs",
-    "gi9-QpppYnE",
-    "iVY3lNscNNo"
-   ],
-   "specificity": 0.0081,
    "rank": 8.9
   },
   {
@@ -65638,6 +65738,35 @@
    "rank": 8.8
   },
   {
+   "phrase": "global market crash",
+   "videos": 9,
+   "channels": 9,
+   "months": 8,
+   "span": "2019-08 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.56,
+   "kind": "cross-narrative",
+   "examples": [
+    "Brexit- Global Market Crash Pending",
+    "The Global Market is About to Crash HARD (Bitcoin & Crypto in Trouble?) | Crypto Jebb",
+    "Prepare for the next 50% CRASH | Global Market Crash."
+   ],
+   "ids": [
+    "FsHnQOQVPRI",
+    "PH_TOfPCm7g",
+    "QftSkJHrE8M",
+    "R6VoG5R5JGc",
+    "S_tgPjOQBeI",
+    "XMificAOt0k",
+    "_9ZyfGr7xzs",
+    "gi9-QpppYnE",
+    "iVY3lNscNNo"
+   ],
+   "specificity": 0.0082,
+   "rank": 8.8
+  },
+  {
    "phrase": "property bubble",
    "videos": 7,
    "channels": 5,
@@ -65668,31 +65797,6 @@
    ],
    "specificity": 0.0017,
    "rank": 8.8
-  },
-  {
-   "phrase": "bill would ban",
-   "videos": 5,
-   "channels": 4,
-   "months": 5,
-   "span": "2024-03 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "House passes bill that would ban TikTok if Chinese owners don't sell app",
-    "House Dem introduces bill that would ban elected officials from owning, creating crypto",
-    "Bill that would ban boots in parking lots big-foots its way into the state Senate"
-   ],
-   "ids": [
-    "9QhZZO5wLY8",
-    "EZW0rBBkLs0",
-    "hmXoQBo7B3g",
-    "uH7C9xYyMOo",
-    "vFXM84HmZDc"
-   ],
-   "specificity": 0.0023,
-   "rank": 8.7
   },
   {
    "phrase": "2021 housing crash",
@@ -67174,32 +67278,6 @@
    "rank": 7.0
   },
   {
-   "phrase": "banned usa",
-   "videos": 6,
-   "channels": 4,
-   "months": 4,
-   "span": "2023-02 \u2192 2025-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "\ud83d\udd34USDC BANNED IN THE USA EXPLAINED",
-    "Crypto staking to be BANNED in the USA? Dark Gensler is coming for your crypto rewards?",
-    "\ud83d\udea8SHOCKING PREPARE NOW\ud83d\udea8XRP BANNED IN USA?"
-   ],
-   "ids": [
-    "K8oW_xIL9BI",
-    "MH2lPihBBAI",
-    "OjhdWQOnTqM",
-    "qBw8LolGOyg",
-    "wnt0tDqW_14",
-    "wpM7KwwjmO8"
-   ],
-   "specificity": 0.0023,
-   "rank": 7.0
-  },
-  {
    "phrase": "2022 stock market crash",
    "videos": 11,
    "channels": 6,
@@ -67498,36 +67576,6 @@
    "rank": 6.4
   },
   {
-   "phrase": "market crash inflation",
-   "videos": 7,
-   "channels": 6,
-   "months": 7,
-   "span": "2019-12 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "housing-crash-watch",
-   "home_share": 0.71,
-   "kind": "new candidate",
-   "examples": [
-    "Stanley Druckenmiller: Reveals Secrets About Timing Market Crash, Inflation, The Fed!",
-    "Stock Market Crash | Inflation Risk, Rising Treasury Yield | How to Prepare",
-    "Billionaire Frank Giustra: Market Crash, Inflation, & Bitcoin"
-   ],
-   "ids": [
-    "9TwSeqx8RqA",
-    "GgZXWlYVJco",
-    "P0OZLgHLwHQ",
-    "SpWdp5EaUgI",
-    "YVtnAnglpEU",
-    "_mAJKSWwOeI",
-    "u2LzLmFBZuE"
-   ],
-   "also": [
-    "inflation market crash"
-   ],
-   "specificity": 0.0066,
-   "rank": 6.4
-  },
-  {
    "phrase": "bull run history coming",
    "videos": 6,
    "channels": 6,
@@ -67659,6 +67707,36 @@
    ],
    "specificity": 0.0025,
    "rank": 6.4
+  },
+  {
+   "phrase": "market crash inflation",
+   "videos": 7,
+   "channels": 6,
+   "months": 7,
+   "span": "2019-12 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "housing-crash-watch",
+   "home_share": 0.71,
+   "kind": "new candidate",
+   "examples": [
+    "Stanley Druckenmiller: Reveals Secrets About Timing Market Crash, Inflation, The Fed!",
+    "Stock Market Crash | Inflation Risk, Rising Treasury Yield | How to Prepare",
+    "Billionaire Frank Giustra: Market Crash, Inflation, & Bitcoin"
+   ],
+   "ids": [
+    "9TwSeqx8RqA",
+    "GgZXWlYVJco",
+    "P0OZLgHLwHQ",
+    "SpWdp5EaUgI",
+    "YVtnAnglpEU",
+    "_mAJKSWwOeI",
+    "u2LzLmFBZuE"
+   ],
+   "also": [
+    "inflation market crash"
+   ],
+   "specificity": 0.0067,
+   "rank": 6.3
   },
   {
    "phrase": "games coming",
@@ -68715,6 +68793,49 @@
    "rank": 5.5
   },
   {
+   "phrase": "end long march",
+   "videos": 14,
+   "channels": 8,
+   "months": 3,
+   "span": "2021-11 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.86,
+   "kind": "new candidate",
+   "examples": [
+    "latest from TLP long march.End of long march?#tlpprotest #saadrizvi #pakistan #dharna #imrankhan",
+    "Pakistan Business Forum Calls on PTI to End Its Long March | Geo News",
+    "Pakistan Business Forum Calls on PTI to End Long March | Breaking News"
+   ],
+   "ids": [
+    "1T2j01kXSr8",
+    "2lwj1wKHPfg",
+    "AYadqhkcj8I",
+    "AmbaKg2pvfo",
+    "IEcdZ-4z-As",
+    "Qj5G_iv7XFU",
+    "TQhVYyMKPmA",
+    "aaeo2hGntQc",
+    "c0ty9DSw9Hs",
+    "dWg6KKVPs48",
+    "nbyLTFWsliE",
+    "v1TBZrs61cM",
+    "xzb4URvITDs",
+    "yIDGIlO12hw"
+   ],
+   "also": [
+    "march end",
+    "long march end",
+    "pti end",
+    "coming march",
+    "pti end long",
+    "march ends",
+    "end march"
+   ],
+   "specificity": 0.0044,
+   "rank": 5.5
+  },
+  {
    "phrase": "reasons behind market crash",
    "videos": 6,
    "channels": 3,
@@ -68790,49 +68911,6 @@
    ],
    "specificity": 0.0022,
    "rank": 5.5
-  },
-  {
-   "phrase": "end long march",
-   "videos": 14,
-   "channels": 8,
-   "months": 3,
-   "span": "2021-11 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.86,
-   "kind": "new candidate",
-   "examples": [
-    "latest from TLP long march.End of long march?#tlpprotest #saadrizvi #pakistan #dharna #imrankhan",
-    "Pakistan Business Forum Calls on PTI to End Its Long March | Geo News",
-    "Pakistan Business Forum Calls on PTI to End Long March | Breaking News"
-   ],
-   "ids": [
-    "1T2j01kXSr8",
-    "2lwj1wKHPfg",
-    "AYadqhkcj8I",
-    "AmbaKg2pvfo",
-    "IEcdZ-4z-As",
-    "Qj5G_iv7XFU",
-    "TQhVYyMKPmA",
-    "aaeo2hGntQc",
-    "c0ty9DSw9Hs",
-    "dWg6KKVPs48",
-    "nbyLTFWsliE",
-    "v1TBZrs61cM",
-    "xzb4URvITDs",
-    "yIDGIlO12hw"
-   ],
-   "also": [
-    "march end",
-    "long march end",
-    "pti end",
-    "coming march",
-    "pti end long",
-    "march ends",
-    "end march"
-   ],
-   "specificity": 0.0045,
-   "rank": 5.3
   },
   {
    "phrase": "bull run imminent",
@@ -69200,6 +69278,43 @@
    "rank": 4.8
   },
   {
+   "phrase": "end july",
+   "videos": 13,
+   "channels": 6,
+   "months": 4,
+   "span": "2021-06 \u2192 2026-07",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.85,
+   "kind": "new candidate",
+   "examples": [
+    "Vechain(VET) to 50 cents by end of July? When $1?",
+    "Taurus Major Victory! But There is Something You Should Know! Money & Career. End June to End July",
+    "Aries It's Time For ACTION! So Exciting! Money & Career End June to End July #tarot"
+   ],
+   "ids": [
+    "-f3cqquXRlk",
+    "10nqN9JYQ6o",
+    "3nImmXR3_g8",
+    "4-2DO4AUREA",
+    "5h4TfTz6Ue0",
+    "6eXx_--2JlI",
+    "9lk87fkOCCM",
+    "JK9LN2VdnMc",
+    "JqwY0V7b_CM",
+    "UE1plCbwjRE",
+    "bRaUcrX-kzY",
+    "lXYhTTot6hs",
+    "xci3sO8viVw"
+   ],
+   "also": [
+    "coming july",
+    "crash july"
+   ],
+   "specificity": 0.0051,
+   "rank": 4.7
+  },
+  {
    "phrase": "canadian real estate crash",
    "videos": 6,
    "channels": 3,
@@ -69253,43 +69368,6 @@
    ],
    "specificity": 0.0043,
    "rank": 4.7
-  },
-  {
-   "phrase": "end july",
-   "videos": 13,
-   "channels": 6,
-   "months": 4,
-   "span": "2021-06 \u2192 2026-07",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.85,
-   "kind": "new candidate",
-   "examples": [
-    "Vechain(VET) to 50 cents by end of July? When $1?",
-    "Taurus Major Victory! But There is Something You Should Know! Money & Career. End June to End July",
-    "Aries It's Time For ACTION! So Exciting! Money & Career End June to End July #tarot"
-   ],
-   "ids": [
-    "-f3cqquXRlk",
-    "10nqN9JYQ6o",
-    "3nImmXR3_g8",
-    "4-2DO4AUREA",
-    "5h4TfTz6Ue0",
-    "6eXx_--2JlI",
-    "9lk87fkOCCM",
-    "JK9LN2VdnMc",
-    "JqwY0V7b_CM",
-    "UE1plCbwjRE",
-    "bRaUcrX-kzY",
-    "lXYhTTot6hs",
-    "xci3sO8viVw"
-   ],
-   "also": [
-    "coming july",
-    "crash july"
-   ],
-   "specificity": 0.0052,
-   "rank": 4.6
   },
   {
    "phrase": "could drop soon",
@@ -69462,30 +69540,30 @@
    "rank": 4.3
   },
   {
-   "phrase": "truth security",
+   "phrase": "open source beats",
    "videos": 4,
    "channels": 4,
-   "months": 3,
-   "span": "2025-09 \u2192 2026-09",
+   "months": 4,
+   "span": "2025-01 \u2192 2026-09",
    "industry": "AI & technology",
-   "home": "(pool)",
+   "home": "open-vs-closed-ai-race",
    "home_share": 1.0,
-   "kind": "new candidate",
+   "kind": "sub-claim",
    "examples": [
-    "Faddom:  Providing a Unified Source of Truth for Security and IT Operations (Sponsored)",
-    "Bitcoin Self Custody: The Hard Truth About Security & Inheritance",
-    "OpenCLAW on VPS vs Local - The Truth About Security"
+    "DeepSeek R1 REVOLUTIONIZES Open Source AI (Beats O1!)",
+    "KORTIX AI AGENT: Open Source AI That Beats ChatGPT?",
+    "Kimi K2.6: Open Source BEATS GPT-5.4 & Opus? "
    ],
    "ids": [
-    "CkMaSCaxijU",
-    "Ff7ffChDQsw",
-    "NmQn1sK3fdQ",
-    "QJnn6EcdHY8"
+    "0tcLBFtpeaE",
+    "0x40gMVxgxQ",
+    "hFYI2CnQkl4",
+    "m_y33HNXOe0"
    ],
    "also": [
-    "security must"
+    "source beats"
    ],
-   "specificity": 0.0028,
+   "specificity": 0.0037,
    "rank": 4.3
   },
   {
@@ -69569,33 +69647,6 @@
     "up96CuWsvyU"
    ],
    "specificity": 0.0019,
-   "rank": 4.2
-  },
-  {
-   "phrase": "open source beats",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2025-01 \u2192 2026-09",
-   "industry": "AI & technology",
-   "home": "open-vs-closed-ai-race",
-   "home_share": 1.0,
-   "kind": "sub-claim",
-   "examples": [
-    "DeepSeek R1 REVOLUTIONIZES Open Source AI (Beats O1!)",
-    "KORTIX AI AGENT: Open Source AI That Beats ChatGPT?",
-    "Kimi K2.6: Open Source BEATS GPT-5.4 & Opus? "
-   ],
-   "ids": [
-    "0tcLBFtpeaE",
-    "0x40gMVxgxQ",
-    "hFYI2CnQkl4",
-    "m_y33HNXOe0"
-   ],
-   "also": [
-    "source beats"
-   ],
-   "specificity": 0.0038,
    "rank": 4.2
   },
   {
@@ -69704,6 +69755,34 @@
     "YqzTVx_7LaU",
     "Zha58_No_ag",
     "iKDfAjxPW6I"
+   ],
+   "specificity": 0.0029,
+   "rank": 4.1
+  },
+  {
+   "phrase": "truth security",
+   "videos": 4,
+   "channels": 4,
+   "months": 3,
+   "span": "2025-09 \u2192 2026-09",
+   "industry": "AI & technology",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "Faddom:  Providing a Unified Source of Truth for Security and IT Operations (Sponsored)",
+    "Bitcoin Self Custody: The Hard Truth About Security & Inheritance",
+    "OpenCLAW on VPS vs Local - The Truth About Security"
+   ],
+   "ids": [
+    "CkMaSCaxijU",
+    "Ff7ffChDQsw",
+    "NmQn1sK3fdQ",
+    "QJnn6EcdHY8"
+   ],
+   "also": [
+    "security must",
+    "win security"
    ],
    "specificity": 0.0029,
    "rank": 4.1
@@ -71377,7 +71456,7 @@
    "also": [
     "bitcoin 000 soon"
    ],
-   "specificity": 0.0118,
+   "specificity": 0.0117,
    "rank": 2.1
   },
   {
@@ -71808,8 +71887,8 @@
     "hyderabad drop truth explained",
     "estate crash hyderabad drop",
     "crash hyderabad drop truth",
-    "crash hyderabad drop",
     "hyderabad drop truth",
+    "crash hyderabad drop",
     "drop truth explained sumantv",
     "truth explained sumantv"
    ],

@@ -457858,7 +457858,7 @@
       "yt": {
         "channelId": "UCAtm9QcSyGTij7NX8o_FnaQ"
       },
-      "unavailable": "2026-10-13"
+      "unavailable": "2026-10-14"
     },
     {
       "videoId": "-_bwTfSdQAE",
@@ -741112,15 +741112,22 @@
       "url": "https://www.youtube.com/watch?v=BTXYdMcKcgY",
       "published": "2026-10-09",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 1063,
+      "length": "10:05",
       "age_days": null,
       "query": "refiled from the pool (narrative:the-2026-setup)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCcREeFIkWMkIiRKwDE4JYpQ"
+        "channelId": "UCcREeFIkWMkIiRKwDE4JYpQ",
+        "category": "22",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 36,
+        "comments": 15,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741130,15 +741137,22 @@
       "url": "https://www.youtube.com/watch?v=S-Ct5xyJTUE",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 9,
+      "length": "10:03",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyvYta1eYGDax6QILBAM_5w"
+        "channelId": "UCyvYta1eYGDax6QILBAM_5w",
+        "category": "26",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741148,15 +741162,22 @@
       "url": "https://www.youtube.com/watch?v=3AgBR-w5DA4",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 8,
+      "length": "0:31",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCrbiz47ox4eFW_2Q2b5NC5A"
+        "channelId": "UCrbiz47ox4eFW_2Q2b5NC5A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741166,15 +741187,22 @@
       "url": "https://www.youtube.com/watch?v=WAixTqwLHfo",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 118,
+      "length": "22:37",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCv3HY7617-CD3etUcyZPDvw"
+        "channelId": "UCv3HY7617-CD3etUcyZPDvw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741184,15 +741212,22 @@
       "url": "https://www.youtube.com/watch?v=d1-LyTP0sLg",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 18,
+      "length": "0:31",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCxX4e8ryqHrt1d7_ep0SM-g"
+        "channelId": "UCxX4e8ryqHrt1d7_ep0SM-g",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741202,15 +741237,22 @@
       "url": "https://www.youtube.com/watch?v=Oxvof9FACKU",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 382,
+      "length": "19:37",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC5vTzkAnMBSjx18Z-PX73kw"
+        "channelId": "UC5vTzkAnMBSjx18Z-PX73kw",
+        "category": "25",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741220,15 +741262,22 @@
       "url": "https://www.youtube.com/watch?v=ZiH_kTzN3QI",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 6,
+      "length": "0:41",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCQa5_XZVhmBy-OZKIKdHBIA"
+        "channelId": "UCQa5_XZVhmBy-OZKIKdHBIA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741238,15 +741287,22 @@
       "url": "https://www.youtube.com/watch?v=-UZQMaSoFQk",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 104,
+      "length": "0:35",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCrl7RBoJB_ROWG4JTEwTMhA"
+        "channelId": "UCrl7RBoJB_ROWG4JTEwTMhA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741256,15 +741312,22 @@
       "url": "https://www.youtube.com/watch?v=HvUAW9y23HU",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 174,
+      "length": "20:17",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC8ary_HIqJKP8JUvEb9sU7w"
+        "channelId": "UC8ary_HIqJKP8JUvEb9sU7w",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741274,15 +741337,22 @@
       "url": "https://www.youtube.com/watch?v=XUryUDH28mI",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 82,
+      "length": "0:06",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCV7SrzzMckihuv1I5aaLLVQ"
+        "channelId": "UCV7SrzzMckihuv1I5aaLLVQ",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741292,15 +741362,22 @@
       "url": "https://www.youtube.com/watch?v=3gEpbjxpkx8",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 15,
+      "length": "0:50",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC9OFsTFAGim8KbFZs9cOxeA"
+        "channelId": "UC9OFsTFAGim8KbFZs9cOxeA",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741310,15 +741387,22 @@
       "url": "https://www.youtube.com/watch?v=McrZfOcNjJY",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 55,
+      "length": "17:36",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCgtWxYdXKVQSsuGK-e05-kg"
+        "channelId": "UCgtWxYdXKVQSsuGK-e05-kg",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741328,15 +741412,22 @@
       "url": "https://www.youtube.com/watch?v=BbkzY3qvelE",
       "published": "2026-10-12",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 110,
+      "length": "19:05",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCSyNdtcxhjhqL7zJjBl2kCA"
+        "channelId": "UCSyNdtcxhjhqL7zJjBl2kCA",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741346,15 +741437,22 @@
       "url": "https://www.youtube.com/watch?v=u-XdijXXhQ8",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "9:44",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCFvmNO-kW4S1-e_UlGjFJRQ"
+        "channelId": "UCFvmNO-kW4S1-e_UlGjFJRQ",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741364,15 +741462,22 @@
       "url": "https://www.youtube.com/watch?v=-F75ryAxzKE",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 8,
+      "length": "7:44",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCe_OkEQ-91gJe1lAqNWJ-Qg"
+        "channelId": "UCe_OkEQ-91gJe1lAqNWJ-Qg",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741382,15 +741487,22 @@
       "url": "https://www.youtube.com/watch?v=RtFIMTiymx0",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 5360,
+      "length": "16:19",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCdFz7Fh68a2uA-WlM1Y-F9g"
+        "channelId": "UCdFz7Fh68a2uA-WlM1Y-F9g",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 62,
+        "comments": 13,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741400,15 +741512,22 @@
       "url": "https://www.youtube.com/watch?v=F4f859BZeh0",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 28,
+      "length": "0:37",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC_cmTbet1OV-A1J5N7AcsJQ"
+        "channelId": "UC_cmTbet1OV-A1J5N7AcsJQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741418,15 +741537,22 @@
       "url": "https://www.youtube.com/watch?v=W5g_qxcxHgw",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "8:40",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCk5rPrS83sWOhCMQxCLxwXA"
+        "channelId": "UCk5rPrS83sWOhCMQxCLxwXA",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741436,15 +741562,22 @@
       "url": "https://www.youtube.com/watch?v=_BMU3yKTraE",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 7,
+      "length": "7:43",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCnuyIPhW4_JJINWtqTm5Y8g"
+        "channelId": "UCnuyIPhW4_JJINWtqTm5Y8g",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741454,15 +741587,22 @@
       "url": "https://www.youtube.com/watch?v=CYHyol_g3vA",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 90,
+      "length": "1:15",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCHikYOtAVQnpwm8l1T88ghA"
+        "channelId": "UCHikYOtAVQnpwm8l1T88ghA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741472,15 +741612,22 @@
       "url": "https://www.youtube.com/watch?v=gPouzxNvdeE",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 69,
+      "length": "5:14",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC4RK4rX6bDg-_8RuVlfLyzw"
+        "channelId": "UC4RK4rX6bDg-_8RuVlfLyzw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741490,15 +741637,22 @@
       "url": "https://www.youtube.com/watch?v=T243RrX1bIk",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 965,
+      "length": "0:47",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCEzl16Boop7pD-RNS8AkpdA"
+        "channelId": "UCEzl16Boop7pD-RNS8AkpdA",
+        "category": "25",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 2,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741508,15 +741662,22 @@
       "url": "https://www.youtube.com/watch?v=b-Yb1e0Ifuo",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "8:56",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCG_Dj2k5jqGLbiQTWoTv-Ig"
+        "channelId": "UCG_Dj2k5jqGLbiQTWoTv-Ig",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     },
     {
@@ -741526,17 +741687,74 @@
       "url": "https://www.youtube.com/watch?v=xSuImMb9wCM",
       "published": "2026-10-13",
       "first_seen": "2026-10-13",
-      "views": null,
-      "length": null,
+      "views": 849,
+      "length": "2:03",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCt8Uyq9VZFK5trmvE8z8mtg"
+        "channelId": "UCt8Uyq9VZFK5trmvE8z8mtg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": 7,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "OORGIu4cFfw",
+      "title": "Top 10 Electric Cars to Buy in 2025 (With Real World Range)",
+      "channel": "LuxuryMYK",
+      "url": "https://www.youtube.com/watch?v=OORGIu4cFfw",
+      "published": "2025-06-23",
+      "first_seen": "2026-10-14",
+      "views": 795,
+      "length": "6:48",
+      "age_days": 478,
+      "query": "channel sweep: LuxuryMYK",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "2",
+        "channelId": "UCuCy_j51xNnyA1xiDGZEMCA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "VZSKL13JNW8",
+      "title": "Ep # 6 - AI Identity Security Predictions 2026",
+      "channel": "NHI Mgmt Group",
+      "url": "https://www.youtube.com/watch?v=VZSKL13JNW8",
+      "published": "2026-03-01",
+      "first_seen": "2026-10-14",
+      "views": 150,
+      "length": "47:51",
+      "age_days": 227,
+      "query": "channel sweep: NHI Mgmt Group",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCnUtVe_iBC5zkIfJ_HpeFQA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     }
   ],
-  "updated": "2026-10-13"
+  "updated": "2026-10-14"
 }

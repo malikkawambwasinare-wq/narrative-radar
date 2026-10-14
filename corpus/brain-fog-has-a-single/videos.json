@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-13"
+      "unavailable": "2026-10-14"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -112129,6 +112129,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-13"
+      }
+    },
+    {
+      "videoId": "LJwwLuC2VVo",
+      "title": "The Same Banana Spiked Two People's Blood Sugar Differently 🍌",
+      "channel": "PLASMAKAST TECHNOLOGIES",
+      "url": "https://www.youtube.com/watch?v=LJwwLuC2VVo",
+      "published": "2026-09-10",
+      "first_seen": "2026-10-14",
+      "views": 1,
+      "length": "0:40",
+      "age_days": 34,
+      "query": "channel sweep: PLASMAKAST TECHNOLOGIES",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCmNeQA3BW5tLy2eDd2m96KA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
       }
     }
   ]
