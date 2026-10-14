@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-13",
+ "generated": "2026-10-14",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.2082,
+ "cost_usd": 0.186,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -41286,6 +41286,1293 @@
    },
    "first_read": "2026-10-13",
    "last_read": "2026-10-13"
+  },
+  {
+   "phrase": "horror dead",
+   "verdict": "rhetoric",
+   "why": "Disaster-headline sensationalism across unrelated events, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 6,
+    "months": 8,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "New Jersey Flood Horror: 2 Dead, Roads Destroyed, Subways Flooded",
+     "China Flood Horror 30 Dead, 80,000 Evacuated as Rains Ravage Beijing & Hebei News",
+     "Bengaluru Rain Horror: 8 Dead In Wall Collapse And Electrocution; CM Orders Probe Into BESCOM, GBA"
+    ],
+    "ids": [
+     "9DrJ6vd6alU",
+     "A62fQmJKKjM",
+     "ATPJ1j7fXBY",
+     "Lvx2LFI-fI4",
+     "QcLwDv0d2yM",
+     "Sd6Lx947LRE",
+     "Tk1PHS4_EpI",
+     "X9dmpLIXB3U",
+     "YlMuzwr5wDg",
+     "cDMy4jEY8Ak",
+     "eySWI1VENqE",
+     "ijee4x6VFxw",
+     "kFJixfr_kYM"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "fish kill",
+   "verdict": "rhetoric",
+   "why": "A recurring news subject (mass fish deaths) without a shared causal claim or implied remedy.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 22,
+    "channels": 4,
+    "months": 7,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "Farmed barramundi dumped at tip after fish kill in WA | ABC News",
+     "Mass fish kill at Tassal barramundi farm in WA's Cone Bay | ABC NEWS",
+     "100,000 bony bream dead at Lake Menindee fish kill | ABC NEWS"
+    ],
+    "ids": [
+     "-3mb1pBAcAo",
+     "0eKIAFlv2aM",
+     "BhnkiijX7PU",
+     "Fl7eyqb7vnU",
+     "HC8oRMN3krY",
+     "IatQf35bfJc",
+     "IyyVAHdIy3M",
+     "KB_YJhk9B3w",
+     "OvhFSbWjLmo",
+     "TbyF-2QK4i8",
+     "Udhs6gtdN1I",
+     "W07xEhPswd4",
+     "X_flml--D64",
+     "Y3Q7ohGS1IM",
+     "_mv_i79kElo",
+     "cw5l0Y7WUIA",
+     "iBW5Q7Z5ajE",
+     "kMC7B0FXJEI",
+     "oAa_fUyRMiA",
+     "rHugAbsSlsk"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "movement coming",
+   "verdict": "rhetoric",
+   "why": "Generic crypto hype teaser language rather than one specific claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2022-03 → 2026-10",
+    "examples": [
+     "BITCOIN IS MOVING BIG TODAY!! INSANE CHART REVEALS A MAJOR MOVEMENT COMING UP!",
+     "Is Dogecoin About To Takeoff?! Indicators Showing MAJOR Upward Movement Coming Soon!",
+     "HISTORIC PARABOLIC Movement Coming For Ripple AND XRP In 60 Days Prices ARE ABOUT TO PUMP"
+    ],
+    "ids": [
+     "-xfcslb2Wmk",
+     "1Oh6i8Y6lUw",
+     "RBZ4apyNinU",
+     "YQfqjxVy90c",
+     "piaXiw9TCVE"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "isn't slowing down",
+   "verdict": "rhetoric",
+   "why": "Phrase applied to wildly different subjects; no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Smart Investors' Agree On One Thing - AI Isn't Slowing Down - These 3 AI Stocks To Watch Now",
+     "Dr. Ian K. Smith just dropped his 29th book, \"Beyond Midnight,\" and isn't slowing down | GMA",
+     "The Ai Infrastructure Boom Isn't Slowing | Feat. Steven Fiorillo"
+    ],
+    "ids": [
+     "KP_liBOORVA",
+     "TdeDFPFlwcQ",
+     "mzWbzMoKeJI",
+     "ngecCtW2v_g",
+     "ttCA7GPafVE"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "win majority",
+   "verdict": "rhetoric",
+   "why": "Election reporting format covering different countries and races, not one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 4,
+    "months": 6,
+    "span": "2024-11 → 2026-10",
+    "examples": [
+     "Progressive Conservatives win majority in N.S. election",
+     "Japan PM vows to resign if ruling bloc fails to win majority on 8 Feb | East Asia Tonight Jan 26",
+     "Japan's PM says she will resign if ruling bloc fails to win majority in Lower House election"
+    ],
+    "ids": [
+     "9T9HUNoI0Ns",
+     "F85bbUwKKcM",
+     "GdZsr5XjG9M",
+     "WvEdA_80XPE",
+     "a4x8pfQIf1g",
+     "ib2AjuY32xk",
+     "kGbaIzIGu9c",
+     "lgFlnD9gC_c",
+     "r_R5J0i4p2o"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "solar boom",
+   "verdict": "rhetoric",
+   "why": "Topical label for solar growth coverage; titles share no single contestable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2017-07 → 2026-09",
+    "examples": [
+     "The Wind and Solar Boom: Goldman Sachs' Alberto Gandolfi",
+     "Pakistan's solar boom cushions energy crisis amid supply disruptions and price hikes",
+     "Pakistan’s solar boom blunts energy crisis"
+    ],
+    "ids": [
+     "8U1cQcllJSc",
+     "SuIkvU4r6FM",
+     "Zf_nSpbfSII",
+     "gYe31PkqbXo",
+     "oEaoPz9hIWE",
+     "uoeVhxWiFK0"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "director explains",
+   "verdict": "rhetoric",
+   "why": "Authority-figure format tag with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-03 → 2026-10",
+    "examples": [
+     "How NASA astronauts Sunita Williams and Butch Wilmore will return to Earth, SAC Director explains",
+     "Ex-FBI deputy director explains why interviewing 6 Democrats is unusual",
+     "What evidence can break the Nancy Guthrie case open? Fmr. Hostage Recovery director explains"
+    ],
+    "ids": [
+     "3xTBBjwnaoo",
+     "J_A9AJI9RNU",
+     "Ls2WBMocZAU",
+     "aH-6ueHFgn4",
+     "cYHpOiw1ff8",
+     "m68ckIBgNOQ",
+     "oTihhT5kt0Y"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "habits save",
+   "verdict": "rhetoric",
+   "why": "Listicle formula spanning health and money topics, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 5,
+    "span": "2025-09 → 2026-10",
+    "examples": [
+     "5 Urgent Foods and Habits to Save Your Heart Now #hearthealth",
+     "These Habits Will Save Your Organs #longevity #organhealth",
+     "10 Habits That Save Me Serious Money ($1,000s Every Single Month)"
+    ],
+    "ids": [
+     "5PFSEYnb0a4",
+     "Bg_02TWZkpg",
+     "QX0K3XhuKr0",
+     "Uam3f2VKVec",
+     "ieyAXpE9X_I",
+     "jT6VNTm5NlA"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "card surcharge ban",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that banning card surcharges will push costs elsewhere — higher prices, fees, or fewer rewards.",
+   "claim_name": "The \"surcharge ban just moves the cost\" story",
+   "claim": "Banning card payment surcharges will not save consumers money; banks and merchants will recoup it through higher prices, higher account fees, or reduced rewards.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Consumers pay card surcharges at checkout",
+    "cause": "Regulators banning surcharges without addressing underlying interchange costs",
+    "outcome": "Costs reappear as higher prices, bank fees or weaker rewards",
+    "clock": "When Australia's ban takes effect"
+   },
+   "evidence": {
+    "videos": 20,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-08 → 2026-10",
+    "examples": [
+     "Card surcharge ban could lead to higher bank fees or lower rewards | The Business | ABC NEWS",
+     "Why a card surcharge ban might lead to higher prices | ABC NEWS",
+     "Australia’s Card Surcharge Ban Is Coming"
+    ],
+    "ids": [
+     "6bDGR1k0EkE",
+     "7lWPZ-9Zon8",
+     "FwHysctj91A",
+     "HwVK4sIuWtM",
+     "I6j2bbyiqqQ",
+     "O9Qft8caItg",
+     "VJGlbeIPLI4",
+     "W_XP5_FbQ2o",
+     "WbMjQZCovME",
+     "XmNmq2IvVN4",
+     "dV5XKlkRL6s",
+     "f9wkXK2O6Ok",
+     "hBHZbn5L5tw",
+     "hOy4C6dqsS8",
+     "jeqTEO6Ovqk",
+     "mlRKCgDApCY",
+     "nYaO8wJM6_4",
+     "vfbD8BuHL70",
+     "zBkx_wyDvD0",
+     "zZywJOHkldM"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "scam victim",
+   "verdict": "rhetoric",
+   "why": "A subject label across unrelated scam stories, with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 11,
+    "channels": 5,
+    "months": 4,
+    "span": "2025-09 → 2026-10",
+    "examples": [
+     "Romance scam victim confronts suspect after arrest",
+     "UNBELIEVABLE! Scam Victim Reveals She Lost $675,000 — Then Was Told to Pay in a Specific Crypto Coin",
+     "Nandu's World UK VISA Scam Victim Laxman Emotional Interview | Nandana & Madhukar | Anchor Roshan"
+    ],
+    "ids": [
+     "0HyllNw5qRQ",
+     "3jgBO5785lE",
+     "5xkE24QxIBs",
+     "6Xj1yIB1590",
+     "Gbsr-xVUqIs",
+     "GkKA1nsWbQE",
+     "MyfgRdCciu0",
+     "n4u5_jIW2RM",
+     "rAe3Fd1xspk",
+     "varSf60g-uM",
+     "wFq7IWxrv8Y"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "accident dead",
+   "verdict": "rhetoric",
+   "why": "Breaking-news casualty format, not a claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-07 → 2026-10",
+    "examples": [
+     "Germany Train Accident: 3 Dead, Several Injured As Train Carrying 100 Passengers Derails In Germany",
+     "New York Bus Accident: 5 Dead After Tourist Bus With Indians Overturns Near New York",
+     "Vizag Steel Plant Accident: 8 Dead, Several Injured After Molten Steel Leak"
+    ],
+    "ids": [
+     "KBioLk5f2I4",
+     "QzXQObRm8z4",
+     "Vn5z_RwAMd0",
+     "XhwV6iXFwQA",
+     "aZDcNw7J-Lw",
+     "lzA_Ga3vpt8",
+     "m4Ol_GrUjP8"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "cause blindness",
+   "verdict": "rhetoric",
+   "why": "Only a loose topical overlap; one title is generic eye health, too thin for a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-07 → 2026-10",
+    "examples": [
+     "Can Ozempic or Wegovy Cause Blindness? Exploring the Latest Study | Dr. Dan | Obesity Expert",
+     "Does semaglutide cause #blindness ? #Ozempic #Wegovy | Dr. Dan | Obesity Expert",
+     "This is the Leading Cause of Blindness"
+    ],
+    "ids": [
+     "3PsoiICUFFE",
+     "CFMXgjjPv0Q",
+     "HeEONKOCNlI",
+     "ifc3w4S1ifg",
+     "jbrijFmEBIo",
+     "xIZDjgVwJUQ"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "features coming",
+   "verdict": "rhetoric",
+   "why": "Product-announcement phrasing spanning unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2019-08 → 2026-09",
+    "examples": [
+     "NEW Security Features Coming To American Eagle Gold, Silver & Platinum Coins!",
+     "XRP privacy features coming and lawsuit update, Japan strict regs, Maker raises 5.6 million",
+     "Could This Be What Security Features Are Coming To Gold & Silver Eagles?"
+    ],
+    "ids": [
+     "6Wwny-Zd6z0",
+     "7hgCt5NTM14",
+     "J6J3zaXm3wM",
+     "NR2hG0liir4",
+     "Rv4VEo1VG6E"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "pivot means",
+   "verdict": "rhetoric",
+   "why": "A commentary format about Fed policy with no single shared claim or direction.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 4,
+    "span": "2022-02 → 2025-04",
+    "examples": [
+     "What the Fed’s Hawkish Pivot Means for Economic Growth and Markets",
+     "Anthony Scaramucci On What Fed Pivot Means For Crypto",
+     "What the Fed Pivot Means For Crypto"
+    ],
+    "ids": [
+     "GmkaZTryg9Q",
+     "NBt0dcCOYto",
+     "VgnDNf4TzVw",
+     "oXrt7QHcy1Y",
+     "p9iyLzFYNU8"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "period ends",
+   "verdict": "rhetoric",
+   "why": "Deadline announcement phrasing across unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-04 → 2026-10",
+    "examples": [
+     "Bitcoin Sale Period Ends Soon For Crypto In April 2024",
+     "MARTA Breeze card grace period ends Saturday",
+     "Grace period ends for MARTA; riders will need to pay for fares"
+    ],
+    "ids": [
+     "3Hdzid5F2Aw",
+     "QBuPvrZBugM",
+     "Y7HwaJRTL7s",
+     "qVOf9fayJVk",
+     "uIjh5To6RZE"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "cause damage",
+   "verdict": "rhetoric",
+   "why": "Generic phrase spanning health lists and political commentary with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 5,
+    "span": "2026-01 → 2026-10",
+    "examples": [
+     "The #1 Cause of DAMAGE to Your Blood Vessels",
+     "Katty Kay: The way Trump spoke to European leaders at Davos could cause damage long term",
+     "Save Your Kidneys! Best Foods to Eat vs. Foods That Cause Damage #KidneyHealth #HealthyEating #Detox"
+    ],
+    "ids": [
+     "0otQggRCIPs",
+     "S8__mxCqa1I",
+     "SnUIc1lhhB4",
+     "gOSiViXlpYY",
+     "mEPtAQ78BI0",
+     "makh_S5njLY",
+     "qzcIoH9AGVw",
+     "uLDSJb7fPaA"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "shows exactly",
+   "verdict": "rhetoric",
+   "why": "Promotional phrasing across unrelated topics with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 6,
+    "months": 4,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "\"My Latest Analysis Shows EXACTLY When BTC Goes Completely Parabolic!\" - Michael Saylor",
+     "I Built a Free Crypto Course That Shows EXACTLY How I Make Money #crypto #trading #freecourse",
+     "This Free Tool Shows Exactly What You'll Pay #shorts #moneytips"
+    ],
+    "ids": [
+     "4OpFQzKQ34w",
+     "L3CyVpErFJ0",
+     "UnU3y8t6t8s",
+     "ZTt9885922I",
+     "bMnsczE8Ke4",
+     "t4liSdn891U"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "market going crash",
+   "verdict": "duplicate",
+   "why": "Restates the ongoing market/housing crash prediction narrative already tracked.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": "housing-crash-watch",
+   "frame": null,
+   "evidence": {
+    "videos": 23,
+    "channels": 17,
+    "months": 21,
+    "span": "2017-08 → 2026-10",
+    "examples": [
+     "Is The Stock Market Going To Crash - Gold Prices Up | Penny Stock Investor",
+     "Is the Real Estate Market going to Crash?",
+     "Is The Real Estate Market Going to Crash in 2019? No!"
+    ],
+    "ids": [
+     "-PJ7QhXKJxw",
+     "1LNV3HRSbAo",
+     "3cJtxPYktpQ",
+     "8apfOFkrcfc",
+     "DH6Cw6GD4oE",
+     "FBFXNW5V4zY",
+     "ItQJW6YIH5o",
+     "KAZqT-wXK-U",
+     "LgJOHSKzGOY",
+     "M0aYmOBalJs",
+     "MyxmxKYX-F4",
+     "OK6G7x24Gnc",
+     "PICJmbW0vzE",
+     "SrSDYDn-O60",
+     "ZiH_kTzN3QI",
+     "bLvzcwyc4qc",
+     "dY1DHHkPKH0",
+     "gkbw0FAoDqQ",
+     "jQTYTEB9cng",
+     "kV0ZDNegGjY"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "explains he's",
+   "verdict": "rhetoric",
+   "why": "Generic interview framing, no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 5,
+    "span": "2024-11 → 2026-10",
+    "examples": [
+     "Attorney explains why he's advising some Trump critics to leave the country",
+     "Pope Francis’ biographer explains what he's like as a person",
+     "Goldman Sachs' Jan Hatzius explains why he's relatively optimistic on global growth for 2026"
+    ],
+    "ids": [
+     "2PYSe6yKMmU",
+     "7NBhZ3cedKY",
+     "ecLg_LGvDHI",
+     "l92oBMoXU4g",
+     "ocA6m63yMk8"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "end globalization",
+   "verdict": "narrative",
+   "why": "Titles share a checkable claim that globalization is ending with economic consequences.",
+   "claim_name": "The \"end of globalization\" story",
+   "claim": "The era of global free trade and integrated supply chains is ending, with countries turning to protectionism and reshoring, which will push inflation and costs structurally higher.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Global trade integration is unwinding",
+    "cause": "Protectionism, geopolitical rivalry and supply-chain fragmentation",
+    "outcome": "Persistently higher inflation and costs; regionalized production",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 4,
+    "span": "2017-03 → 2023-02",
+    "examples": [
+     "WGS17 Sessions: Is It the End of Globalization?",
+     "Session Highlights: Is It the End of Globalization?",
+     "Shaun Usmar: The End of Globalization Will Drive More Inflation"
+    ],
+    "ids": [
+     "1NZ6ZD7kDI8",
+     "2EV5hK_3hv8",
+     "9J7JTWBInA4",
+     "RiTctRXSGKQ",
+     "_D4SQkGwWno",
+     "zeyPbPSU7sw"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "actually teach",
+   "verdict": "rhetoric",
+   "why": "A question format about ChatGPT tutoring, not a stated claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-03 → 2026-09",
+    "examples": [
+     "Can ChatGPT Actually Teach You How To Code?",
+     "Can chat gpt actually teach you how to code?🤔",
+     "Can Chat GPT actually teach you how to code?🤔"
+    ],
+    "ids": [
+     "JMgw57WlfWs",
+     "NSLxU4UpSYU",
+     "_RLccyX_GfE",
+     "lSyGTNttrME",
+     "rFRI7yApzn4",
+     "xwm2dVJ4Dxg"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "temporary ban",
+   "verdict": "rhetoric",
+   "why": "News subject label covering unrelated bans with no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-06 → 2026-10",
+    "examples": [
+     "Delhi HC Upholds Centre's Temporary Ban On Telegram Until NEET Re-Test",
+     "Marietta City Council considers temporary ban on new data centers",
+     "Ano nga ba ang nangyari sa temporary ban sa Discord? | GMA News Feed"
+    ],
+    "ids": [
+     "K2stCw6lXVs",
+     "VCRotsFTp1M",
+     "XY5nQQQxZCs",
+     "co3p1rwNyRg",
+     "os4rXxk0zvk",
+     "vi88NhWA6fo"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "satellite imagery shows",
+   "verdict": "rhetoric",
+   "why": "Reporting format for varied conflict footage, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-06 → 2026-08",
+    "examples": [
+     "Satellite imagery shows strikes on Iranian nuclear and military facilities | ABC NEWS",
+     "Animated Satellite Imagery Shows Iranian Nuclear Sites Hit by US Strikes at Fordow, Natanz & Isfahan",
+     "Satellite imagery shows destruction in Gaza City"
+    ],
+    "ids": [
+     "-oQfZ5T1Tx4",
+     "0u9cIMeck0Q",
+     "VEUXZVbLk8o",
+     "c8XVrR-8Azc",
+     "zlbOlkLVRlc"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "jeffrey sachs explains",
+   "verdict": "rhetoric",
+   "why": "Pundit-name format; the titles make different claims.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-12 → 2026-10",
+    "examples": [
+     "‘DELUSIONAL & CHILDISH’, Prof Jeffrey Sachs EXPLAINS How Trump’s Presidency Is FALLING APART",
+     "What SC Scrapping Donald Trump Tariffs Means for India — Economist Jeffrey D Sachs Explains",
+     "LECTURE: Professor Jeffrey Sachs Explains Why The American Century Has Ended"
+    ],
+    "ids": [
+     "0KBA14cIqng",
+     "0WYlokBjviI",
+     "Xd_z-uYFz-Y",
+     "k7RuxV3Gug0",
+     "p3Ictf0jKvs"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "crash accelerating",
+   "verdict": "rhetoric",
+   "why": "Generic crash hype spanning stocks and housing with no single checkable claim; crash calls are already tracked elsewhere.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2021-03 → 2026-10",
+    "examples": [
+     "The Market Crash is Accelerating... Again...",
+     "Dow Drops 500 | Market Crash Accelerating | Im Doing This Now",
+     "Credit Lines Cut, Jobs Lost—Is Canada’s Housing Crash Accelerating?"
+    ],
+    "ids": [
+     "6LFOhdCz-Uk",
+     "BG_D1Z527Mw",
+     "OHkz83-zOlM",
+     "WYfyEPsbgLc",
+     "mmmuDOlzDLE"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "helped trump win",
+   "verdict": "rhetoric",
+   "why": "Titles attribute Trump's win to wildly different causes (podcasters, economy, an organizer) — no shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-11 → 2026-10",
+    "examples": [
+     "How big podcasters helped Trump win | The Current",
+     "How Darline Graham helped Trump WIN GOP S.C. primary election",
+     "The economy helped Trump win in 2024. It could cost Republicans in 2026"
+    ],
+    "ids": [
+     "EtUGDEzXTZ4",
+     "TCMGXUcLyRc",
+     "reC0KiUwXYc",
+     "wGS6E-QF-pE",
+     "zsEgP2gvxTs"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "win presidential",
+   "verdict": "rhetoric",
+   "why": "A topical fragment about election outcomes, not one claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2020-10 → 2025-06",
+    "examples": [
+     "Jaime Carrasco: Gold Will Win the Presidential Election",
+     "Can the Stock Markets PREDICT Who Will Win the US Presidential Election?",
+     "Can Democratic nominee Kamala Harris win the presidential race at this point of the vote count?"
+    ],
+    "ids": [
+     "7SnASAKzFA4",
+     "ESAmMqLKAiI",
+     "MLh5a4UuZeI",
+     "So3KN1Qkd54",
+     "v10s3wjl9VY"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "really necessary",
+   "verdict": "rhetoric",
+   "why": "A question format applied to unrelated subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-12 → 2026-10",
+    "examples": [
+     "Is LSAT Score Really Necessary for Law School Admissions?",
+     "12-Year-Olds with Skincare Regime: Is It Really Necessary?",
+     "Are cover letters really necessary? #askworkit #cnapodcasts"
+    ],
+    "ids": [
+     "62jxMqpcfmE",
+     "AS83NpQfYPo",
+     "FXczlmRrAss",
+     "KIDxxxFOGgo",
+     "kZrEln2CCy8"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "must accelerate",
+   "verdict": "rhetoric",
+   "why": "Exhortation phrasing attached to energy, reforms, and rearmament alike — no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Shift from fossil fuels to renewables must accelerate: UN chief Guterres",
+     "Rajiv Memani Explains Why India Must Accelerate Reforms To Become A $10 Trillion Economy",
+     "RUSSIA VS NATO: Chief Warns Alliance Must Accelerate as Biggest Rearmament Drive in Decades Begins"
+    ],
+    "ids": [
+     "6miwjcvsWcI",
+     "EihlZorW0AI",
+     "LaCcZ1cjcI4",
+     "idaSLhIO0NE",
+     "sVCwc_EMhi0"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "crash passenger",
+   "verdict": "rhetoric",
+   "why": "News subject matter about unrelated crashes, no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-03 → 2026-10",
+    "examples": [
+     "Air Canada crash passenger describes what happened",
+     "POLAND RAIL CRASH: Passenger Train Slams Into Straw Trailer, Intoxicated Driver Blamed",
+     "Flydubai pilot under investigation after suspected attempt to crash passenger plane | #Shorts"
+    ],
+    "ids": [
+     "ZNOarTv3_ok",
+     "_AAlF0L7cUg",
+     "j0S5W0Aobx4",
+     "mC3-ZAzVIMk",
+     "yaJFz539FwA"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "kill civilians",
+   "verdict": "rhetoric",
+   "why": "Conflict reporting across separate wars; shared wording, not a shared claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "SVR Warns: NATO ‘Ready To Kill Civilians For Propaganda’  | Times Now World",
+     "CARACAS BLOODBATH: US Airstrikes Kill 40 Civilians, Venezuela attack Jolts Oil Markets",
+     "Russia Strikes Ukraine: Zaporizhzhia Suffers Major Attack As Drones Kill Civilians, Injures Children"
+    ],
+    "ids": [
+     "8CQOSxLyKTE",
+     "Rf3iWG9tmgg",
+     "qvn37w4X7YI",
+     "sYx5rs1_rmE",
+     "yCOq9rr5TtY"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "festival dead",
+   "verdict": "rhetoric",
+   "why": "Incident coverage and an unrelated holiday; no checkable common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "🖤 Tragedy Strikes Vancouver Filipino Festival: 11 Dead, Dozens Injured 🖤 #breakingnews",
+     "LIVE: Bolivians Honor Ancestors With Music and Offerings | A Festival for the Dead",
+     "TORONTO SHOOTING LIVE | Active Shooter Panic At Salsa On St. Clair Festival; 2 Dead, 3 Wounded"
+    ],
+    "ids": [
+     "8NRtt7GzMqI",
+     "QPBGNvBPxUI",
+     "RFfP7X-Vk-I",
+     "kTUCqWodh3Y",
+     "xMfNNXyTETc"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "demanding end",
+   "verdict": "rhetoric",
+   "why": "Generic protest-coverage wording spanning unrelated events, no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-06 → 2026-10",
+    "examples": [
+     "WATCH: Massive Protest Rocks Madrid, Demanding an End to Public Healthcare Privatization| World News",
+     "TRUMP VS IRAN: Iran Lays Out 6 Conditions to Reopen Strait of Hormuz, Demanding End to U.S. Pressure",
+     "Dozens detained at New York protest demanding end to arms supplies to Israel | ABS-CBN News"
+    ],
+    "ids": [
+     "PEisiUfJCy4",
+     "QgEMnhcCVOM",
+     "dXhyIISOTKg",
+     "mIOrlAiswNU",
+     "xFLf7Lrleds"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "quarter shows",
+   "verdict": "rhetoric",
+   "why": "Earnings-coverage format phrase across unrelated companies.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-02 → 2026-10",
+    "examples": [
+     "COIN's \"Fantastic\" Quarter Shows Crypto Industry's Growth Potential",
+     "Swartz: NKE Faces Rough Quarter, Shows Signs of \"Getting Better\"",
+     "UnitedHealthcare's Quarter Shows Something Deeply Wrong #news #healthcare"
+    ],
+    "ids": [
+     "RKgUkplaxgk",
+     "SHpXwnl-NM0",
+     "VJQntsnHnC8",
+     "__ex9tCncno",
+     "fNmbcLINa48"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "afraid dying",
+   "verdict": "rhetoric",
+   "why": "Shared subject matter only, mixing self-help clips and outbreak news.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-04 → 2026-10",
+    "examples": [
+     "Here's why you're afraid of dying | Jordan Peterson | Motivational",
+     "Here's why most people are afraid of dying | Jordan Peterson | Motivational",
+     "“I’m Afraid Of Dying”: Panic Grows In Congo As Deadly Ebola Outbreak Spreads"
+    ],
+    "ids": [
+     "9AHSRlC5QPU",
+     "coM4zbl8rBU",
+     "dWCI2tc2HCQ",
+     "pBf2skdqK1w",
+     "uPyuTjtPcx0"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "shows masked",
+   "verdict": "rhetoric",
+   "why": "Video-footage news descriptor, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-12 → 2026-09",
+    "examples": [
+     "Video shows masked federal agent put Somali US citizen in chokehold",
+     "Video shows masked & armed man obstructing camera at Nancy Guthrie's door",
+     "Guthrie update: Video shows masked person at Nancy's home"
+    ],
+    "ids": [
+     "5-0NHBUkMBM",
+     "K1j5SQ5NrTw",
+     "Rw-Sc683kDQ",
+     "mO8fHjTTWDc",
+     "ybwhpmzBOtA"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "beat burnout",
+   "verdict": "rhetoric",
+   "why": "Self-help hook with varied remedies, not one checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-11 → 2026-07",
+    "examples": [
+     "Beat Burnout Naturally: How Adaptogens Can Transform Your Stress Management",
+     "Communication is KEY to Beat Burnout in High-Performance Jobs #shorts",
+     "Communication is KEY to Beat Burnout in High-Performance Jobs #shorts"
+    ],
+    "ids": [
+     "-LnsFmYs0nc",
+     "VHx64InjvIc",
+     "blDyat-GTjA",
+     "mLc7v7bleys",
+     "vmlw7zXHE4E"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "resume soon",
+   "verdict": "rhetoric",
+   "why": "News-update phrasing applied to unrelated stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-02 → 2026-10",
+    "examples": [
+     "Ukraine's Zelenskiy: Ukraine‑Russia Peace Talks to Resume Soon After Abu Dhabi Round #russia",
+     "HAL Clears LCA Tejas Fleet: IAF Operations To Resume Soon",
+     "KREMLIN BREAKS SILENCE: Peskov Says Trilateral Peace Talks Could Resume Soon | Times Now World"
+    ],
+    "ids": [
+     "5zXp2C7PycA",
+     "8gaaRC1uXVc",
+     "9vDfoy9S8Gs",
+     "Eq9azVSHRak",
+     "Lv0gCI2IYeg"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "coming you'",
+   "verdict": "rhetoric",
+   "why": "Threat-quote hook, no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-12 → 2026-08",
+    "examples": [
+     "BRAUN EXPLODES IN COURT: 'They’re Coming for YOU', EU Immunity Waiver Sparks Political Firestorm",
+     "Minnesota Dem's stark warning: 'What's happening in Minnesota is coming to you'",
+     "'We're f**king coming for you': Minnesota ANTIFA activist Kyle Wagner charged over ICE threats"
+    ],
+    "ids": [
+     "6q0RoZvtD6k",
+     "6zy-QnzVRJ8",
+     "9_pcZA4d-CU",
+     "pvd8S1e-ZCI",
+     "wXrh9YNbd5A"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "pact means",
+   "verdict": "rhetoric",
+   "why": "Explainer format about assorted deals, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-07 → 2026-09",
+    "examples": [
+     "India–UK Sign Landmark Free Trade Pact | What It Means For Indian Industry & UK Economy Explained",
+     "OpenAI & MSFT: What Latest Pact Means #shorts",
+     "Iran May Join Saudi-Pakistan Defence Pact: What It Means For Houthis & Gulf"
+    ],
+    "ids": [
+     "-s4Egrx1xvw",
+     "3Z183dcYgGU",
+     "CvuEGJ5WqJo",
+     "NAXJQ3GjYuw",
+     "tTRpFEroX-o"
+    ]
+   },
+   "first_read": "2026-10-14",
+   "last_read": "2026-10-14"
   }
  ]
 }
