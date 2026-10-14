@@ -13562,6 +13562,67 @@
         "comments": null,
         "enrichedOn": "2026-10-13"
       }
+    },
+    {
+      "videoId": "ok4XCgnaIXo",
+      "title": "Fixed Deposit Rates 2026 |Bank by Bank FD Comparison | SBI, HDFC, ICICI, Axis & Small Finance Banks",
+      "channel": "IWP - Investment With Prithu",
+      "url": "https://www.youtube.com/watch?v=ok4XCgnaIXo",
+      "published": "2026-10-14",
+      "first_seen": "2026-10-14",
+      "views": 636,
+      "length": "0:09",
+      "age_days": 0,
+      "query": "channel sweep: IWP - Investment With Prithu",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCMZIOqUJ03eZTPidwAvU6qA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": null,
+        "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "95U3ovUNihs",
+      "title": "Housing Crash Warning: jeremiah babe on Mortgage Risk",
+      "channel": "The inflation economist",
+      "url": "https://www.youtube.com/watch?v=95U3ovUNihs",
+      "published": "2026-10-13",
+      "first_seen": "2026-10-14",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:housing-crash-watch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCft7Ov2PCuJw5CNTnMNOCqA"
+      }
+    },
+    {
+      "videoId": "ujw2PNzpTfQ",
+      "title": "Is The Bank Of Canada About To Crash The Market?",
+      "channel": "Ilan Portnoi",
+      "url": "https://www.youtube.com/watch?v=ujw2PNzpTfQ",
+      "published": "2026-10-13",
+      "first_seen": "2026-10-14",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:housing-crash-watch)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_mQn7MKtTrwSkTquL8PWtg"
+      }
     }
   ]
 }
