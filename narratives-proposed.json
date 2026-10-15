@@ -1,8 +1,8 @@
 {
- "generated": "2026-10-14",
+ "generated": "2026-10-15",
  "model": "claude-opus-5",
  "note": "Candidate clusters read by a model: which are narratives, which are turns of phrase, which restate what we track. The record accumulates; a promoted narrative keeps its flag.",
- "cost_usd": 0.186,
+ "cost_usd": 0.2202,
  "proposals": [
   {
    "phrase": "bubble popped",
@@ -42573,6 +42573,1228 @@
    },
    "first_read": "2026-10-14",
    "last_read": "2026-10-14"
+  },
+  {
+   "phrase": "standoff ends",
+   "verdict": "rhetoric",
+   "why": "A local crime-news event label with no shared claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 12,
+    "channels": 4,
+    "months": 9,
+    "span": "2025-12 → 2026-10",
+    "examples": [
+     "Man charged after officer shot, 24-hour standoff ends",
+     "Man charged after officer shot, 24-hour standoff ends in Welland, Ont.",
+     "Hours-long standoff ends in Woodstock with 1 in custody"
+    ],
+    "ids": [
+     "J0KwUMgUxqs",
+     "M0urq6ldR4M",
+     "NyrDjx2B3bA",
+     "O7eg85C_sA8",
+     "RkLa28PSJ5g",
+     "SzBS9lRGlC4",
+     "XlZnACiVWXU",
+     "Y5D4_dMYQWs",
+     "gC3eGhMz1OM",
+     "ip3WFJ_HNok",
+     "nBqWmyGCJGg",
+     "tWeXF-lfz38"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "entry ban",
+   "verdict": "rhetoric",
+   "why": "Titles cover unrelated bans in Israel, India and the EU with no common checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 5,
+    "months": 5,
+    "span": "2025-02 → 2026-10",
+    "examples": [
+     "'By any means...': Hamas' chilling diktat over Israel's Al-Aqsa entry ban plan during Ramadan",
+     "Dev Bhoomi Uttarakhand Temple Row: Proposed Non-Hindu Entry Ban Sparks Political Storm",
+     "EU proposes entry ban for Russian soldiers in fresh round of sanctions over Ukraine war"
+    ],
+    "ids": [
+     "-_ZIi1mx_Eo",
+     "BV7tdCM61ww",
+     "JneI8RiB5Zc",
+     "j4BjZB28dU4",
+     "t1LRknejWmg"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "probable cause",
+   "verdict": "rhetoric",
+   "why": "A legal term recurring in court-ruling coverage, not a single falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 4,
+    "months": 6,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "Judge finds ‘probable cause exists’ to hold Trump administration in contempt",
+     "Federal judge orders DHS to stop immigration arrests without probable cause",
+     "Judge orders Trump admin to stop immigration arrests in LA without probable cause"
+    ],
+    "ids": [
+     "51zFPP00oeA",
+     "IjKZAzvcL1w",
+     "KuXLeY1SzlE",
+     "LZEc63lj804",
+     "fQce9gIbEpE",
+     "uWOuILRFJGI",
+     "usgYcmzDlYA"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "comeback win",
+   "verdict": "rhetoric",
+   "why": "Sports and politics results share only a dramatic framing word.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 9,
+    "channels": 5,
+    "months": 5,
+    "span": "2024-11 → 2026-10",
+    "examples": [
+     "Donald Trump’s historic comeback to win the White House",
+     "Singapore football team celebrate 2-1 comeback win against Hong Kong in locker room",
+     "Ilhan Fandi on Singapore’s comeback win against Hong Kong in Asian Cup qualifier"
+    ],
+    "ids": [
+     "EIJ51FZYtDc",
+     "EN9fYVBlEcE",
+     "GnnER1aw9Po",
+     "HEAoQHq-qSI",
+     "WSgLKUeZ2C4",
+     "ayQOnU9yzCE",
+     "iiEiQmUbGZQ",
+     "jP5p5NmHmSY",
+     "lAy7D-ypCJY"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "kills civilians",
+   "verdict": "rhetoric",
+   "why": "Incident reporting across different conflicts, no common thesis.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 6,
+    "channels": 4,
+    "months": 5,
+    "span": "2025-12 → 2026-10",
+    "examples": [
+     "ALEPPO BLEEDS AGAIN: US-Backed SDF Attack Kills Civilians in Northern Syria | Times Now World",
+     "'NO VICTORIES': Russia Accuses Ukraine of \"Terrorist War\" After Resort Strike Kills Civilians!",
+     "Ukraine’s Drone Blitz Hits Ozon Warehouse, Kills Civilians Across Russia | #shorts #viralshorts"
+    ],
+    "ids": [
+     "1Mw42EWhcnM",
+     "Fskzp1VziW0",
+     "JTgxqfwgZLQ",
+     "UDDl-2WAna4",
+     "ndK2TP9fkb4",
+     "pYiarpC_42c"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "dead boat",
+   "verdict": "rhetoric",
+   "why": "Unconnected boat accident reports, a subject not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 3,
+    "span": "2025-11 → 2026-10",
+    "examples": [
+     "At least 11 Rohingya dead after boat capsizes off Langkawi; dozens more missing",
+     "The A-Block: Businesses affected by Canyon Lake closure, 1 dead after boat crash on Colorado River",
+     "At least 139 dead after boat capsizes"
+    ],
+    "ids": [
+     "6NueZ2-BqrM",
+     "6uORBmhTp_M",
+     "EMh9aKH1kiQ",
+     "YIzYCzmaCP4",
+     "nCUGH0irNb8",
+     "ryt-Fd1Wuv4",
+     "wEaJ7xQBb7w"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "spending boom",
+   "verdict": "narrative",
+   "why": "Titles converge on the testable claim that AI capital spending keeps running despite bubble fears.",
+   "claim_name": "The \"AI spending boom isn't done yet\" story",
+   "claim": "Hyperscaler and chipmaker capital spending on AI will keep accelerating rather than peaking, so earnings and sales at suppliers like Nvidia and TSMC will continue to surge despite warnings of an AI bubble.",
+   "industry": "AI & technology",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Investors fear AI capex is a bubble about to deflate",
+    "cause": "Persistent demand for AI compute from large tech buyers",
+    "outcome": "Continued revenue growth for AI suppliers and further upside in related stocks",
+    "clock": "Ongoing through the current earnings cycles"
+   },
+   "evidence": {
+    "videos": 8,
+    "channels": 6,
+    "months": 7,
+    "span": "2025-05 → 2026-10",
+    "examples": [
+     "NVDA Risks Ahead, AMZN Shows \"A.I. Spending Boom Not Done Yet\"",
+     "TSMC Sales Surge by 39% as AI Spending Boom Persists",
+     "As fears of an AI bubble grow, Bristlemoon says Mag 7 spending boom still to run | The Business"
+    ],
+    "ids": [
+     "43jPZr61G9A",
+     "8bc22O6Q85M",
+     "8sjdl4qUwVc",
+     "QYI7VXcNPi4",
+     "hIONIDObBqk",
+     "ljWuFsrDOMc",
+     "nbmhbyOM9NI",
+     "q-nb2nljZOI"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "flood control scam",
+   "verdict": "rhetoric",
+   "why": "Coverage of Philippine Senate hearings as an unfolding event rather than one forward-looking claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 13,
+    "channels": 5,
+    "months": 6,
+    "span": "2025-10 → 2026-10",
+    "examples": [
+     "Philippines Senate Heated Exchange Live | Ping Lacson Exits Flood Control Scam Hearing |",
+     "Philippines Flood Control Scam BLOWS UP! Senate Blue Ribbon Committee Drops BIG Shocker",
+     "Escudero Confronts DPWH’s Dizon Over Philippines Senate Flood Control Scam | Escudero vs Dizon Clash"
+    ],
+    "ids": [
+     "6oi36DqVmFU",
+     "CcQ40n9r0Iw",
+     "Hy6tO5wcvF4",
+     "VIRjPyf00AQ",
+     "WbnCfllmvCs",
+     "X64Bnmi2ALM",
+     "_pD5xM1Nhw4",
+     "cgumtUJdbp0",
+     "dDGMMJl8M2I",
+     "gHwnc6bEacQ",
+     "iFLWECXuhCM",
+     "mXjGUa82aoc",
+     "pwkslQhZ9hI"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "actually amazing",
+   "verdict": "rhetoric",
+   "why": "Pure hype language applied to unrelated subjects with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 7,
+    "channels": 6,
+    "months": 5,
+    "span": "2021-03 → 2026-09",
+    "examples": [
+     "THIS IS ACTUALLY AMAZING FOR BITCOIN! Crypto News Today",
+     "Googles New Text To Video AI \"VEO\" Is Actually AMAZING! (Googles SORA KILLER!)",
+     "AWS Kiro AI IDE: This FULLY FREE AI Editor w/ Claude 4 Sonnet is ACTUALLY AMAZING!"
+    ],
+    "ids": [
+     "CilXLkiYLvk",
+     "JkcBoJuBsb0",
+     "LgjFOc-j0is",
+     "PTFCI3tq7HI",
+     "Rvi949f9tyU",
+     "Y68giShiKfQ",
+     "kYx03PmJRFY"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "myths really",
+   "verdict": "rhetoric",
+   "why": "Debunking format across unrelated health topics, no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-09 → 2026-10",
+    "examples": [
+     "Debunking Myths! What REALLY Happens When You Mix Olive Oil & Honey?",
+     "Debunking Biohacking Myths: What Really Matters for Health",
+     "Ivermectin cleanses? 🤔 Let’s bust some myths! 💥 What’s really going on? #ParasiteTalk"
+    ],
+    "ids": [
+     "L76zdUNvJNY",
+     "NFvY8-0WoYA",
+     "OrBg9fmq_uI",
+     "dqwwu4EjZnI",
+     "t31aXf6t_1A"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "usdt crash",
+   "verdict": "narrative",
+   "why": "Shared falsifiable claim that Tether is unbacked and its collapse will take down crypto.",
+   "claim_name": "The \"Tether will break and take crypto down\" story",
+   "claim": "Believers claim USDT is not fully backed and that a Tether collapse or depeg would crash the entire crypto market.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "The largest stablecoin may not hold the reserves it claims",
+    "cause": "Opaque, unaudited Tether reserves backing most crypto liquidity",
+    "outcome": "A USDT depeg triggering a market-wide crypto crash",
+    "clock": null
+   },
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2021-07 → 2025-11",
+    "examples": [
+     "IS TETHER (USDT) ABOUT TO CRASH THE CRYPTO MARKET? (THE SCARY TRUTH)",
+     "Why is Crypto Down? Is USDT Crash Coming?  Chainlink (LINK) Price Prediction | News Live",
+     "Will USDT Crash Crypto? | Crypto News: Coinbase L2, Bitcoin Price, USDT, Binance, & More!"
+    ],
+    "ids": [
+     "10th3HKAfLQ",
+     "1rq8oK496Kc",
+     "ZP5ERh_WzR4",
+     "fZw1u1V5zwQ",
+     "wSGcd6ZHnhk"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "neet scam",
+   "verdict": "rhetoric",
+   "why": "News coverage of an exam-leak investigation, a subject rather than a contested claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-06 → 2026-09",
+    "examples": [
+     "NEET SCAM 2024, Doctor ജോലിക്ക് Ai കാലത്ത് എത്ര ആയുസ്സുണ്ട്?",
+     "NEET Scam 2.0: CBI Unmasks National Exam Mafia As Paper Leak Scandal Hits Rajasthan & Maharashtra",
+     "NEET Scam Investigation: ₹10 Lakh Trail Leads Investigators To Manisha Waghmare In NEET Probe"
+    ],
+    "ids": [
+     "3lYA8O1ZkZM",
+     "6nQtutlukuY",
+     "c_oQun2wvTk",
+     "l4ZjiWaL_nU",
+     "qLHd2B6_P88"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "agree end",
+   "verdict": "rhetoric",
+   "why": "Generic news phrasing about ending strikes or wars, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 5,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-10 → 2026-10",
+    "examples": [
+     "US dockworkers agree to end strike on new deal with port operators",
+     "Trump warns of ‘severe consequences’ if Putin doesn’t agree to end war in Ukraine | ABC NEWS",
+     "Trump warns of 'severe consequences' if Putin doesn't agree to end Ukraine war"
+    ],
+    "ids": [
+     "HMgto2o7Tb4",
+     "JbQYrF_FVgY",
+     "N46JXztYnQ4",
+     "WvlD4S5G_4M",
+     "af59fThuCDg"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "beats earnings estimates",
+   "verdict": "rhetoric",
+   "why": "Routine earnings-report format with no predictive claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2018-04 → 2026-02",
+    "examples": [
+     "Twitter Beats 1Q Earnings Estimates as Sales Surge 21%",
+     "Stock Market Today: AFRM, SHOP, DPZ Strength & ZS Beats Earnings Estimates",
+     "Delta earnings beat Wall Street expectations, PepsiCo narrowly beats earnings estimates"
+    ],
+    "ids": [
+     "1_rs-tPMJgQ",
+     "ffIlqling5Y",
+     "oOZQmXuclsc",
+     "t1q8mCFaDu8"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "helicopter crashes near",
+   "verdict": "rhetoric",
+   "why": "Incident reporting; a subject with no claim attached.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-10 → 2026-09",
+    "examples": [
+     "Helicopter crashes near beach in southern California, five injured",
+     "UNBELIEVABLE! Israeli Military Helicopter Crashes Near Jerusalem",
+     "U.S. Apache Helicopter Crashes Near Strait Of Hormuz, President Trump Confirms Crew Rescued Safely"
+    ],
+    "ids": [
+     "OTJixDJUwlw",
+     "aqwTHoCENNI",
+     "c5V-edrGpb4",
+     "zznM6SJeaiM"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "harshad mehta scam",
+   "verdict": "rhetoric",
+   "why": "Historical retellings of a known case, not a contested forward-looking claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2020-10 → 2026-10",
+    "examples": [
+     "Harshad Mehta Story 10 बड़ी सीख🙏Stock Market Lessons from Harshad Mehta Scam | Harshad The Scam 1992",
+     "Harshad Mehta Scam 1992 మూవీ రియల్ లైఫ్ Characters | V R Raja | Telugu Facts",
+     "The Man Who Faked India's Biggest Bull Market | The 1992 Harshad Mehta Scam"
+    ],
+    "ids": [
+     "3PngzbvQRyM",
+     "gG4vPI3yKeA",
+     "k2lodG0WNkw",
+     "lWMDRE7VSck"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "apocalypse coming",
+   "verdict": "rhetoric",
+   "why": "Doom label applied to unrelated subjects (silver, auto loans, AI jobs) with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2020-05 → 2026-04",
+    "examples": [
+     "THE SILVER APOCALYPSE IS COMING!",
+     "Is There an Auto Loan Apocalypse Coming?",
+     "The White-Collar Apocalypse Is Coming - Why This AI CEO’s Warning Changes Everything"
+    ],
+    "ids": [
+     "4ooNQqs5Ut8",
+     "gHVais0R5aw",
+     "q2E_nfbmpGA",
+     "yAx9G7PvKgM"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "sentiment crashes",
+   "verdict": "rhetoric",
+   "why": "Headline reporting of sentiment readings across different markets, no shared causal claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-04 → 2026-10",
+    "examples": [
+     "🚨 HOMEOWNERS BEWARE: Inflation Expectations SOAR as Consumer Sentiment CRASHES!",
+     "Consumer Sentiment CRASHES: Gas Prices & Inflation Fears Roar Back!",
+     "Whales Hold 17M Bitcoin as Market Sentiment Crashes"
+    ],
+    "ids": [
+     "4uwtGBOD_Nk",
+     "9p2Y9LFqzJg",
+     "gMOWxxN0A3I",
+     "hgXbgg8Zcbg"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "actually stealing",
+   "verdict": "rhetoric",
+   "why": "Shared accusatory framing attached to wholly different subjects.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2021-11 → 2026-10",
+    "examples": [
+     "Money Printing Is Actually Stealing Your Wealth - Don't Get Left Behind!",
+     "Is AI Actually Stealing Your Job? The Truth About Tech Layoffs",
+     "Is the US Actually Stealing Venezuela's Gold?"
+    ],
+    "ids": [
+     "H6LhMq0Cbuk",
+     "IrrLm_QXYeM",
+     "RQ28o2YVG8w",
+     "qRf8tpWnjgM"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "high-speed crash",
+   "verdict": "rhetoric",
+   "why": "Local news incident reporting, no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-07 → 2026-08",
+    "examples": [
+     "Chinese national granted bail after teen girl struck in high-speed crash | ABC News",
+     "Police Footage Shows Vince McMahon’s High-Speed Crash in Connecticut",
+     "High-speed crash sends two to hospital in Grant Park"
+    ],
+    "ids": [
+     "3wvtn4gbvdc",
+     "45pbfrbG3Ak",
+     "VkEOJsCpJDg",
+     "mFDa8CuNTT0"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "should've never",
+   "verdict": "rhetoric",
+   "why": "Regret phrasing spanning unrelated topics.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-02 → 2026-10",
+    "examples": [
+     "CryptoZoo and Logan Paul Sued for Fraud!! He should've never messed with coffeezilla",
+     "The Regret Anthem: Why I Should've Never Fallen for You",
+     "Wolverine Should've Never Saved This Man...? 😳 #marvel #"
+    ],
+    "ids": [
+     "DFTBXRZo2G0",
+     "OuKrCU1oLyc",
+     "YZxaYJc6Imc",
+     "uxYWElwRhOo"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "governance must",
+   "verdict": "rhetoric",
+   "why": "Generic exhortation across unrelated governance contexts, no single falsifiable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-01 → 2026-10",
+    "examples": [
+     "Why Governance Must Evolve",
+     "“Global Governance Must Reform”: Jaishankar Pitches MANAV Vision, Future-Ready UN Peacekeeping At UN",
+     "Varun Dua On The IPO Journey, Why Governance Must Come First | Startup Conclave 2026"
+    ],
+    "ids": [
+     "AKk2YV8drx8",
+     "BBaOkHKxVBM",
+     "ongg1VAsnwI",
+     "qIW3GllD-VE"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "tillis explains",
+   "verdict": "rhetoric",
+   "why": "Named-person explainer format, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-04 → 2026-10",
+    "examples": [
+     "GOP Sen, Tillis explains why he is voting no on Trump's Fed chair pick",
+     "Tillis Explains Blanche Vote Switch | My Concerns Were Addressed #shorts",
+     "Thom Tillis Explains Why He Broke With Republicans To Vote For Iran War Powers"
+    ],
+    "ids": [
+     "0lTqn9xGsxA",
+     "Movb4U2Ud4Q",
+     "WCLaQ0n55G0",
+     "aPFyu7znfP0"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "announced soon",
+   "verdict": "rhetoric",
+   "why": "News anticipation boilerplate across unrelated stories.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "'EU was formed to screw the US’: Trump says 25% tariffs on European Union will be announced soon",
+     "Nitish Kumar Likely to Resign After Final Cabinet Meet, New CM To Be Announced Soon",
+     "MS NOW: Iranian official says deal on Strait of Hormuz will be announced SOON"
+    ],
+    "ids": [
+     "UR_DVX8JFhM",
+     "aNIEVbW-PcY",
+     "qeMxXQBK8UY",
+     "ue1DhAJWqR0"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "candidates win",
+   "verdict": "rhetoric",
+   "why": "Election-results headlines about unrelated races; no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-02 → 2026-09",
+    "examples": [
+     "Liberal leadership candidates on how to win back young voters",
+     "Trump-backed candidates win big in primaries. Is that a gift to Democrats in November?",
+     "All Mamdani-backed candidates win in New York Primary races"
+    ],
+    "ids": [
+     "J7I2puMG8xw",
+     "YbvVEv8Bw1I",
+     "lcHW0s4KPXs",
+     "rtjPfV6P8NQ"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "ends abruptly",
+   "verdict": "rhetoric",
+   "why": "A news-event descriptor applied to unrelated incidents, not a claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-08 → 2026-09",
+    "examples": [
+     "Lehrmann's appeal over failed defamation case ends abruptly after two-day hearing | ABC NEWS",
+     "Trump presser ends abruptly as drug exec collapses; Dr Mehmet Oz jumps in to rescue",
+     "Trump’s NBC interview ends abruptly"
+    ],
+    "ids": [
+     "EnZUdqkCQ7U",
+     "JIvWYWOSDJ8",
+     "PGjgQSdi8ws",
+     "byq9OASPX3g"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "must remember",
+   "verdict": "rhetoric",
+   "why": "Exhortation phrasing spanning crypto tips to civil-rights history; no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-05 → 2026-10",
+    "examples": [
+     "Crypto Meme Coin Buyers must remember this one very important rule ...",
+     "'If you care about this country, we should tell the whole story': why U.S. must remember Emmett Till",
+     "‘We Must Remember’: Al Green Delivers Powerful Message On Slavery’s Legacy | WORLD NEWS | US NEWS"
+    ],
+    "ids": [
+     "8D--idzDorc",
+     "QQFD2ztqwD8",
+     "ZWFSLcXRYwA",
+     "hoNvtNSQwGo"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "verdict means",
+   "verdict": "rhetoric",
+   "why": "Explainer format about different court cases, carrying no shared assertion.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-08 → 2026-10",
+    "examples": [
+     "Let's talk about the Jones verdict and what it means....",
+     "Breaking down what a not criminally responsible verdict means — and what it doesn’t",
+     "Yoon found guilty of insurrection: What the verdict means for South Korea"
+    ],
+    "ids": [
+     "LSr_MF2nq44",
+     "WdsmxJRz90E",
+     "YCQoXbG2jB4",
+     "lUxCgm4yWpw"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "cliff coming",
+   "verdict": "rhetoric",
+   "why": "The 'cliff' metaphor covers demand, premiums and law-school demographics — no single claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-05 → 2026-06",
+    "examples": [
+     "Is There a Demand Cliff Coming? We Expect a Soft Landing | ITR Economics",
+     "'There's a cliff coming here': Premiums double as government shutdown drags on",
+     "The Law School “Demographic Cliff” Is Coming… And It’s About to Make Admissions WAY Easier"
+    ],
+    "ids": [
+     "4IpcDRp61Hg",
+     "6lj-XiZVDQs",
+     "6vvsO7uLdQ8",
+     "eC1zGVNSO6o"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "coming back'",
+   "verdict": "rhetoric",
+   "why": "Quote fragment about unrelated subjects; no shared framed claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-07 → 2026-03",
+    "examples": [
+     "Former GA Lt. Gov. says the GOP he grew up with 'isn't coming back'",
+     "Serena Williams on rumored return to tennis: 'Omg y'all I'm not coming back'",
+     "FULL SPEECH | 'The old order is not coming back': PM says Canada must build strength at home"
+    ],
+    "ids": [
+     "AjN0f2bQ7AE",
+     "HZ1fpUHh9jM",
+     "MoDQBbbnv7o",
+     "yd2Lxc0fabU"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "beat jet lag",
+   "verdict": "rhetoric",
+   "why": "A topic with varied remedies (supplements, melatonin, athlete routines), not one testable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2024-11 → 2026-06",
+    "examples": [
+     "✈️BEAT JET LAG INSTANTLY WITH NMN powder supplement by Dr David Sinclair 2024 #davidsinclair #nmn",
+     "Can you use melatonin to beat jet lag? | ABC NEWS",
+     "Beat jet lag like a World Cup athlete"
+    ],
+    "ids": [
+     "KNhjL3YB4O8",
+     "KxUbMy6G_lU",
+     "iYMs9D3PPps",
+     "pukMtmcgRIA"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "airbnb crash",
+   "verdict": "narrative",
+   "why": "Titles share the claim that short-term rental oversupply is collapsing and will drag housing down.",
+   "claim_name": "The \"Airbnb bust takes housing down with it\" story",
+   "claim": "Short-term rental oversupply and falling Airbnb revenues are forcing hosts to sell, which will trigger a broader housing price crash.",
+   "industry": "Economy & markets",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "Short-term rental investors are losing money as Airbnb bookings and revenue fall",
+    "cause": "Oversupply of Airbnb units bought with cheap leverage during the boom",
+    "outcome": "Forced host selloffs flood the market and crash housing prices",
+    "clock": "Recurring, pitched from 2023 onward"
+   },
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2023-04 → 2026-09",
+    "examples": [
+     "Airbnb Crash? Potential Depression? Housing Market Trap with @realestatemindset",
+     "The Great AirBnB Crash of 2023 (Phase 1)",
+     "Will AirBnB CRASH the Housing Market? Robert Kiyosaki Prediction"
+    ],
+    "ids": [
+     "Y5jWCyToMdI",
+     "eoo0n-RYv-o",
+     "mmMcQWrs-cs",
+     "yTa0TNZMfXk"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "must deliver",
+   "verdict": "rhetoric",
+   "why": "Generic exhortation across unrelated topics with no shared checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-02 → 2026-10",
+    "examples": [
+     "Amitabh Kant’s Big Blueprint: 500 Cities, 9X GDP & Why States Must Deliver 10% Growth",
+     "PM Modi: AI, Quantum And Space Technologies Must Deliver Human Impact",
+     "\"Democracy Must Deliver”: Mayors Demand Action As Global Cities Face Growing Crises"
+    ],
+    "ids": [
+     "AzOClfdbTyE",
+     "bM2IpSHZsvs",
+     "in-dp0SLOGA",
+     "rI0zh8SlH-U"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "really meant",
+   "verdict": "rhetoric",
+   "why": "Clickbait framing device about clarifying statements, no common claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2022-11 → 2026-04",
+    "examples": [
+     "Are We Really Meant To Remember names?",
+     "I Told Dr. Phil ALL Jobs Will Be Gone by 2040 - Here’s What I Really Meant",
+     "Trump on Housing Prices: What He REALLY Meant #shorts"
+    ],
+    "ids": [
+     "-Qo3iJCj_CU",
+     "BiGnSdficwc",
+     "KM5ETM7n8Ms",
+     "MqJSlxbcyqk"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "truth carbs",
+   "verdict": "rhetoric",
+   "why": "Titles disagree about carbs (enemy vs not), sharing only a 'truth about' format.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-02 → 2026-07",
+    "examples": [
+     "Can You Get Obese without Insulin? The Truth About Carbs, Grains, & Legumes for Insulin Resistance",
+     "Carbs Are NOT the Enemy! The Truth About Carbs & Muscle Building",
+     "Protect Your Kidney: the Truth About Carbs and Electrolytes"
+    ],
+    "ids": [
+     "NsM_icw-izg",
+     "cylmhfdS7e0",
+     "jSL28lHSC8w",
+     "n90UVeE_C4c"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "'why silent",
+   "verdict": "rhetoric",
+   "why": "Quoted confrontation hook applied to unrelated political disputes.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-03 → 2026-10",
+    "examples": [
+     "'Why are you SILENT?': Senator Lee roasts Democrats over Arctic Frost scandal at explosive hearing",
+     "'Why Silent on Sikhs?' Sonia Gandhi Targeted Over Gaza Stand",
+     "'Why Were You Silent?': Iran Shuts French Language Centre, Calls out Double Standards|Firstpost Live"
+    ],
+    "ids": [
+     "5UAQmVv5LL4",
+     "GYPXV6CbvIo",
+     "Vx2ETtq_tGQ",
+     "ulRv2a4goiU"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "reopen soon",
+   "verdict": "narrative",
+   "why": "Titles share a datable claim that the Strait of Hormuz will reopen following US-Iran developments.",
+   "claim_name": "The \"Hormuz will reopen soon\" story",
+   "claim": "After US strikes and negotiations with Tehran, the Strait of Hormuz closure will end and shipping traffic will resume shortly.",
+   "industry": "Politics & geopolitics",
+   "duplicate_of": null,
+   "frame": {
+    "problem": "A closed Strait of Hormuz chokes global oil and shipping",
+    "cause": "Iran's confrontation with the US and its allies",
+    "outcome": "US pressure and a negotiated deal force Iran to reopen the strait",
+    "clock": "soon / near-term after the 2026 talks"
+   },
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-04 → 2026-10",
+    "examples": [
+     "Trump Claims US ‘Destroyed Iran’s Military’, Says Strait of Hormuz Will Reopen Soon",
+     "‘Deal framework largely negotiated': Trump signals Iran breakthrough, says Hormuz could reopen soon",
+     "US-Iran 3-Hour Meet On Sidelines Of UNGA! Hormuz To Reopen Soon? What Was Discussed? | Watch"
+    ],
+    "ids": [
+     "0GQ_JWufDTs",
+     "4TVi26twVE4",
+     "EzmaKIJZ_3s",
+     "KlnE7yzjCCE"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "end poverty",
+   "verdict": "rhetoric",
+   "why": "Shared aspiration attached to wildly different mechanisms; no single checkable claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2016-12 → 2026-06",
+    "examples": [
+     "Here’s How Capitalism Can Help End Poverty | Fortune",
+     "Can This Stablecoin End Poverty?",
+     "Trump Just Created a $2 Trillion Fund That Could End Poverty Forever (Sovereign Wealth Fund + UBI)"
+    ],
+    "ids": [
+     "MrGY3n86PlY",
+     "bAjvggJ-QaM",
+     "i4HROpKPmTs",
+     "iHgjP_52PS8"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "hoping win",
+   "verdict": "rhetoric",
+   "why": "Human-interest profile format, no claim about the world.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2026-02 → 2026-09",
+    "examples": [
+     "Meet the 65-year-old bodybuilder hoping to win his first international competition",
+     "Metro Atlanta 11-year-old hoping to win national young artist contest",
+     "Meet the Knicks and Spurs superfans hoping for a win"
+    ],
+    "ids": [
+     "LI6ccdqYcfc",
+     "ak_FI1DEIJM",
+     "cragFX0-QL4",
+     "eu5C4NYbHSs"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
+  },
+  {
+   "phrase": "'iran must",
+   "verdict": "rhetoric",
+   "why": "Quoted demands of varying content; a headline formula rather than one claim.",
+   "claim_name": null,
+   "claim": null,
+   "industry": null,
+   "duplicate_of": null,
+   "frame": null,
+   "evidence": {
+    "videos": 4,
+    "channels": 4,
+    "months": 4,
+    "span": "2025-04 → 2026-07",
+    "examples": [
+     "'Iran must give up...': Marco Rubio demands Tehran end nuclear enrichment as IAEA drops bombshell",
+     "FRANCE WARNS TEHRAN At UNSC On US-Iran War, Says 'Iran Must Respect Obligations’ | Watch",
+     "Sec. Rubio: 'Iran Must Reopen Strait of Hormuz or Face Consequences' | Senate Hearing | The World"
+    ],
+    "ids": [
+     "-qSM5o0VBsY",
+     "AV7W_9xbXJs",
+     "BD4YKbOS8kc",
+     "KBqxg2DLIXI"
+    ]
+   },
+   "first_read": "2026-10-15",
+   "last_read": "2026-10-15"
   }
  ]
 }
