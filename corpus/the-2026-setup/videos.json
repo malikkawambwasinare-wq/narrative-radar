@@ -1042472,17 +1042472,24 @@
       "url": "https://www.youtube.com/watch?v=54TZ-4-4D_k",
       "published": "2026-10-07",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 58,
+      "length": "7:35",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC5w790wM46vsAgsbrUxe8qw"
+        "channelId": "UC5w790wM46vsAgsbrUxe8qw",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-15"
       }
     }
   ],
-  "updated": "2026-10-14"
+  "updated": "2026-10-15"
 }

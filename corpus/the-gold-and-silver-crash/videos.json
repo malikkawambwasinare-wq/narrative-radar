@@ -1,6 +1,6 @@
 {
   "topic": "the-gold-and-silver-crash",
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "videos": [
     {
       "videoId": "0YukEH5UcPY",
@@ -685639,7 +685639,7 @@
       "yt": {
         "channelId": "UCXv9pMth5DBC5SELtVRqpmw"
       },
-      "unavailable": "2026-10-14"
+      "unavailable": "2026-10-15"
     },
     {
       "videoId": "n8Kc7_rOBP8",
@@ -685658,7 +685658,7 @@
       "yt": {
         "channelId": "UCyDWSIo0-8ZoZfgfWp-Yqjw"
       },
-      "unavailable": "2026-10-14"
+      "unavailable": "2026-10-15"
     },
     {
       "videoId": "xDFLGr9PRZQ",
@@ -685677,7 +685677,7 @@
       "yt": {
         "channelId": "UC2I8ux7Zw4zBRhZBuoF6Mpw"
       },
-      "unavailable": "2026-10-14"
+      "unavailable": "2026-10-15"
     },
     {
       "videoId": "npCD6LKfEjI",
@@ -796892,6 +796892,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-14"
+      }
+    },
+    {
+      "videoId": "08pHlsFYfBs",
+      "title": "ast: COVID-19 modeling shows 100,000 people in the U.S. could die over the next 3 months",
+      "channel": "Mayo Clinic",
+      "url": "https://www.youtube.com/watch?v=08pHlsFYfBs",
+      "published": "2021-08-31",
+      "first_seen": "2026-10-15",
+      "views": 274397,
+      "length": "32:58",
+      "age_days": 1871,
+      "query": "channel sweep: Mayo Clinic",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC8fQzKHIhSoZeSq3bwQx4mw",
+        "language": "en-US",
+        "captions": true,
+        "live": false,
+        "likes": 2037,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     }
   ]

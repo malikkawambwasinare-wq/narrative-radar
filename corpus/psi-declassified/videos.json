@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-14"
+      "unavailable": "2026-10-15"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -70393,15 +70393,22 @@
       "url": "https://www.youtube.com/watch?v=V5EiZnTODPc",
       "published": "2026-10-12",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 5,
+      "length": "1:13",
       "age_days": null,
       "query": "refiled from the pool (narrative:psi-declassified)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyKi4ubJIA6mmeCZUeUcb8A"
+        "channelId": "UCyKi4ubJIA6mmeCZUeUcb8A",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     },
     {
@@ -70411,15 +70418,22 @@
       "url": "https://www.youtube.com/watch?v=3W5mrCJx4sY",
       "published": "2026-10-12",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:16",
       "age_days": null,
       "query": "refiled from the pool (narrative:psi-declassified)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCcZxFFapirIvOeKNFwt1XiA"
+        "channelId": "UCcZxFFapirIvOeKNFwt1XiA",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     },
     {
@@ -70429,15 +70443,22 @@
       "url": "https://www.youtube.com/watch?v=J3Acecuwpm8",
       "published": "2026-10-14",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "8:21",
       "age_days": null,
       "query": "refiled from the pool (narrative:psi-declassified)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCwQxUj-t2p_s_GFYpLcP-FQ"
+        "channelId": "UCwQxUj-t2p_s_GFYpLcP-FQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     },
     {
@@ -70447,17 +70468,24 @@
       "url": "https://www.youtube.com/watch?v=7dnMEpguhLE",
       "published": "2026-10-14",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 3,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (narrative:psi-declassified)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCnS91zieh4qNpyO9VAosgvw"
+        "channelId": "UCnS91zieh4qNpyO9VAosgvw",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     }
   ],
-  "updated": "2026-10-14"
+  "updated": "2026-10-15"
 }

@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-10-14",
+  "updated": "2026-10-15",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -13595,15 +13595,22 @@
       "url": "https://www.youtube.com/watch?v=95U3ovUNihs",
       "published": "2026-10-13",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 5,
+      "length": "6:12",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCft7Ov2PCuJw5CNTnMNOCqA"
+        "channelId": "UCft7Ov2PCuJw5CNTnMNOCqA",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     },
     {
@@ -13613,15 +13620,47 @@
       "url": "https://www.youtube.com/watch?v=ujw2PNzpTfQ",
       "published": "2026-10-13",
       "first_seen": "2026-10-14",
-      "views": null,
-      "length": null,
+      "views": 4535,
+      "length": "9:01",
       "age_days": null,
       "query": "refiled from the pool (narrative:housing-crash-watch)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC_mQn7MKtTrwSkTquL8PWtg"
+        "channelId": "UC_mQn7MKtTrwSkTquL8PWtg",
+        "category": "25",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 24,
+        "comments": 8,
+        "enrichedOn": "2026-10-15"
+      }
+    },
+    {
+      "videoId": "nNasjfZ1PsQ",
+      "title": "Mayo Clinic Minute: Colorectal cancer rates rising among younger people",
+      "channel": "Mayo Clinic",
+      "url": "https://www.youtube.com/watch?v=nNasjfZ1PsQ",
+      "published": "2017-03-13",
+      "first_seen": "2026-10-15",
+      "views": 2952,
+      "length": "0:59",
+      "age_days": 3503,
+      "query": "channel sweep: Mayo Clinic",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC8fQzKHIhSoZeSq3bwQx4mw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": null,
+        "enrichedOn": "2026-10-15"
       }
     }
   ]
