@@ -54236,6 +54236,142 @@
         "comments": null,
         "enrichedOn": "2026-10-15"
       }
+    },
+    {
+      "videoId": "0wukulifTrk",
+      "title": "US gun debate fails to identify the root cause of gun violence, Malcolm Gladwell says",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=0wukulifTrk",
+      "published": "2026-10-16",
+      "first_seen": "2026-10-16",
+      "views": 2375,
+      "length": "5:13",
+      "age_days": 0,
+      "query": "channel sweep: NewsNation",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 20,
+        "comments": 15,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "bXZro-uUxcc",
+      "title": "3 Warning Signs You're Ignoring About Your Gut Health",
+      "channel": "Nadia Siddiqui",
+      "url": "https://www.youtube.com/watch?v=bXZro-uUxcc",
+      "published": "2026-10-15",
+      "first_seen": "2026-10-16",
+      "views": 8,
+      "length": "7:46",
+      "age_days": 1,
+      "query": "channel sweep: Nadia Siddiqui",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCES9ZdfBeAe7srcaIhyPVhg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "AvBIQ0IpCKw",
+      "title": "Stress, Inflammation, and Gut Health Connection Explained #shorts",
+      "channel": "Medical Intuitive Insights",
+      "url": "https://www.youtube.com/watch?v=AvBIQ0IpCKw",
+      "published": "2026-10-16",
+      "first_seen": "2026-10-16",
+      "views": 13,
+      "length": "0:40",
+      "age_days": 0,
+      "query": "channel sweep: Medical Intuitive Insights",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCrbO74tNjUf_VjfTQUmHYYA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "Xo_Kh2hSXko",
+      "title": "The Gut Bacteria Linked to Fewer Allergies in Kids #guthealth #allergies",
+      "channel": "Inna Melamed, PharmD | Digestive Reset",
+      "url": "https://www.youtube.com/watch?v=Xo_Kh2hSXko",
+      "published": "2026-10-15",
+      "first_seen": "2026-10-16",
+      "views": 18,
+      "length": "0:52",
+      "age_days": 1,
+      "query": "channel sweep: Inna Melamed, PharmD | Digestive Reset",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCGurGdV6mEw9T9ZCyfTpVuQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "VzuJfV08u1E",
+      "title": "Find the Root Cause of Chronic Inflammation! 🩺⚠️   @TRAINWITHJK",
+      "channel": "JustinKellyDaily",
+      "url": "https://www.youtube.com/watch?v=VzuJfV08u1E",
+      "published": "2026-10-09",
+      "first_seen": "2026-10-16",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UClyKPOjBMsx8FHmbaXwUG_w"
+      }
+    },
+    {
+      "videoId": "r5RvdtZafFc",
+      "title": "The Root Cause of Aging: &quot;Chronic Inflammation&quot;—True Causes and Countermeasures",
+      "channel": "Sleep, Diet, and exercise prevent Aging & Fatigue.",
+      "url": "https://www.youtube.com/watch?v=r5RvdtZafFc",
+      "published": "2026-10-11",
+      "first_seen": "2026-10-16",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkQl81KJGJRZ4Ot1NLeVogQ"
+      }
     }
   ]
 }

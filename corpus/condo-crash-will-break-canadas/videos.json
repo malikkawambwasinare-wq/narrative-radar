@@ -13762,6 +13762,31 @@
         "comments": null,
         "enrichedOn": "2026-10-15"
       }
+    },
+    {
+      "videoId": "eOs1MDzYP7w",
+      "title": "10 Canadian Towns Where Builders Abandoned Half-Built Homes (2026)",
+      "channel": "Mr Vista",
+      "url": "https://www.youtube.com/watch?v=eOs1MDzYP7w",
+      "published": "2026-10-15",
+      "first_seen": "2026-10-16",
+      "views": 3652,
+      "length": "20:32",
+      "age_days": 1,
+      "query": "channel sweep: Mr Vista",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXIz7ldmgWV7M3XdkEm5Vqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 31,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
     }
   ]
 }
