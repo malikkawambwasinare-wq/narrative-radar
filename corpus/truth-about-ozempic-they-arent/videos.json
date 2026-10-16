@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-15"
+      "unavailable": "2026-10-16"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-15"
+      "unavailable": "2026-10-16"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-15"
+      "unavailable": "2026-10-16"
     },
     {
       "videoId": "98m8i03frcU",
@@ -125791,6 +125791,106 @@
         "likes": 25,
         "comments": 1,
         "enrichedOn": "2026-10-15"
+      }
+    },
+    {
+      "videoId": "JVBrUPEDm88",
+      "title": "How to Intermittent Fast for Quick Weight Loss – Dr. Berg Reveals All  #healthylifestyle #nutrition",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=JVBrUPEDm88",
+      "published": "2026-09-05",
+      "first_seen": "2026-10-16",
+      "views": 286,
+      "length": "0:41",
+      "age_days": 41,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": 1,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "Eb1Je-hOm2E",
+      "title": "The Truth About Fasting: What Really Happens to Your Body?",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=Eb1Je-hOm2E",
+      "published": "2026-08-25",
+      "first_seen": "2026-10-16",
+      "views": 90,
+      "length": "11:34",
+      "age_days": 52,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "J396rCBUeAk",
+      "title": "How to Intermittent Fast for Quick Weight Loss – Dr. Berg Reveals All",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=J396rCBUeAk",
+      "published": "2026-08-22",
+      "first_seen": "2026-10-16",
+      "views": 304,
+      "length": "13:02",
+      "age_days": 55,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "34CvdlHE0tc",
+      "title": "What Happens to Your Body When You Quit Sugar for 14 Days",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=34CvdlHE0tc",
+      "published": "2026-08-20",
+      "first_seen": "2026-10-16",
+      "views": 52,
+      "length": "6:48",
+      "age_days": 57,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-16"
       }
     }
   ]

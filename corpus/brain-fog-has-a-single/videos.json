@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-15"
+      "unavailable": "2026-10-16"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -115529,6 +115529,81 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-15"
+      }
+    },
+    {
+      "videoId": "hNio7KIXfS8",
+      "title": "Why you can have normal blood sugar and still be sick #insulinresistance #healthtips #wellness",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=hNio7KIXfS8",
+      "published": "2026-09-29",
+      "first_seen": "2026-10-16",
+      "views": 0,
+      "length": "0:51",
+      "age_days": 17,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "G6JOCFjK804",
+      "title": "The REAL Reason You Can't Lower Your Blood Pressure",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=G6JOCFjK804",
+      "published": "2026-09-24",
+      "first_seen": "2026-10-16",
+      "views": 7,
+      "length": "1:54",
+      "age_days": 22,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
+      }
+    },
+    {
+      "videoId": "q_LBFS9gKE4",
+      "title": "Why sugar Actually Blocks Your Insulin #healthyeating #healthtips #wellness #nutrition #health",
+      "channel": "AgeWell Daily",
+      "url": "https://www.youtube.com/watch?v=q_LBFS9gKE4",
+      "published": "2026-09-06",
+      "first_seen": "2026-10-16",
+      "views": 1375,
+      "length": "0:33",
+      "age_days": 40,
+      "query": "channel sweep: AgeWell Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCilSXdHgKVFsBEt-jnPKXCw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 20,
+        "comments": null,
+        "enrichedOn": "2026-10-16"
       }
     }
   ]
