@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16",
+ "generated": "2026-10-17",
  "channels": [
   {
    "channelId": "UCinIteUWBIk-ycgg5i7q99w",
@@ -109047,6 +109047,542 @@
    "found": "2026-10-16",
    "found_by": "monetary reset coming soon",
    "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UClFMbwfVpt2vvQnSbH4Jf4Q",
+   "channel": "Money Tycoon",
+   "found": "2026-10-17",
+   "found_by": "currency reset explained",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCpsqWofP8X-LagagrYk0s6g",
+   "channel": "LiveInnerCity - Calgary Real Estate",
+   "found": "2026-10-17",
+   "found_by": "canada condo crash",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCO20pCK_hLuzylmd7_9HhIg",
+   "channel": "Gary McGowan",
+   "found": "2026-10-17",
+   "found_by": "canada condo crash",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCxSrAZ7_yNdG7gnV6UHS4eg",
+   "channel": "The Money Compute",
+   "found": "2026-10-17",
+   "found_by": "canada condo crash",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCjDnaYgcGKYonKMJScmTUwg",
+   "channel": "Canadian Nest",
+   "found": "2026-10-17",
+   "found_by": "canada condo crash",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCiKE6mqbKmGGlNAtccn04MA",
+   "channel": "CBC British Columbia",
+   "found": "2026-10-17",
+   "found_by": "canada condo crash",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UClwnGCgLg3J_E6rKWiyS4oQ",
+   "channel": "Deep Dive Only",
+   "found": "2026-10-17",
+   "found_by": "canadian banks mortgage risk",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCEauMaXoKVeC-p-CqjCjbMw",
+   "channel": "Greg Munro-Mortgage Refinance Agent",
+   "found": "2026-10-17",
+   "found_by": "canadian banks mortgage risk",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCTtdw_o8EnHsXNcDtmAf4Xw",
+   "channel": "Wealth Decoded",
+   "found": "2026-10-17",
+   "found_by": "canada housing crash 2026",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCrZPXV16KQtqgRikuwcK47w",
+   "channel": "\ubc34\ucfe0\ubc84\ub9ac\uc5bc\ud130 \ucd5c\uc7ac\ub3d9",
+   "found": "2026-10-17",
+   "found_by": "canada housing crash 2026",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC12NRT0BhihkSy8zXEBimXA",
+   "channel": "Meherr Ayessha",
+   "found": "2026-10-17",
+   "found_by": "canada housing crash 2026",
+   "industry": "Economy & markets",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC026IF-OcXrI0vIuaKb12hg",
+   "channel": "Mounika NutriCare",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC28tsPrIFv-knTcXtEBLtow",
+   "channel": "Ehab Zeineddine",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCNCdmnkAX8bwo5yQfispRaQ",
+   "channel": "The Secret Journal \ud83c\udf3a",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC48QAG0x6G1SA3G0sKVqCfw",
+   "channel": "The Qi Method",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCG_p-X4eCbaqvKzPJNYbDHg",
+   "channel": "BugSpeaks",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UClruEeExHIA2qHzlDZhWoSA",
+   "channel": "mnop square",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCqc2Tf0rQiuId_iqiKx1Sjw",
+   "channel": "Gastritis Diaries",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCEkoSEu2DBGpiuJM32hMsMw",
+   "channel": "Neuroscience Clara",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC6tI-SenqheuEOti9FLB2JA",
+   "channel": "Hang Dallas",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC2YBDEgobQFsZ0hSK2EG9FA",
+   "channel": "Daily health Fix",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCg3vDsYGx9CSvAhNAgt4Lwg",
+   "channel": "HealthWise Daily",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCASbzdBfEtpAWCvOubgvLiQ",
+   "channel": "Graceful Grow 50+",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCx9BAzlTYtwGJaCaovS0ZTw",
+   "channel": "THE GUIDE WE NEVER GOT",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC3q-ZkOhKZaWZdczs3sJnuA",
+   "channel": "Anupam wellness studio",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCa6zQIyzPGHHV5FJmoT2HAw",
+   "channel": "LATIFABAD Medical Trauma & Child Care Center",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC_Y0KXTRF6DIV22y6Q1qDEg",
+   "channel": "saniyaSehatDiary ",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCTWmT1B_IncVZz0Q-PFuhtw",
+   "channel": "Natural Health Plus",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCAVnL_p-mw3_00W93w3LZmQ",
+   "channel": "Health iQ Daily",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC_0APXyc3rW2kgVnxVgUajQ",
+   "channel": "DTHeveryday",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCzeHh4wi8FGl7nAj5c5zCDg",
+   "channel": "The Body Doctor",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCdnOwyfTES4mRXZhOtg_BPQ",
+   "channel": "Menopause Weight, Solved",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UClNd5p_RyBNhpggS8CoTWGg",
+   "channel": "The Hidden Metabolic Code",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCqysUkaEAJXXD247M204J9A",
+   "channel": "Senior Prime",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCYJ5pJZNGW1ruJKhMZe0pVg",
+   "channel": "Down to Health Clips",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCD56oKT9U2dGZw-IenmHYVQ",
+   "channel": "Azer Mahdi",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCbmhQMF6VJyKrmCxFJyKIHA",
+   "channel": "Dr. Vivian Asamoah",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCg8VRwmLJY4HgAKePzArWRQ",
+   "channel": "Ai Health Care ",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCfcQAQsG86hVHfG7-BOhNUw",
+   "channel": "ARC India",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCzgYbZtd9jCHkfYnc-j5bBw",
+   "channel": "Time To Nourish With Trish Tucker-May",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC2CJzwO_Lbkyw1xJzR4Rf-g",
+   "channel": "Rich Nutrition by Tamanna Dayal",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCD4pObbdTvyLkLUauWvLIUw",
+   "channel": "NIRVANA",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCIao4uoFQTyiHC5X8PZ-_Kw",
+   "channel": "Roosty's",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCiCkOrV9y-DPZ2IrAsD2mfw",
+   "channel": "Living Proof of Anti-Aging",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCc-UcYfw7zzBqGrLgG8NdlA",
+   "channel": "Sarah Daccarett, MD",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCKM4SlnwkAPSOf-N0zDPVIg",
+   "channel": "NewsOne Health ",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCmZ9J6JUR9OPJUVKhPIVkVA",
+   "channel": "amy migdalia",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCSnG7jNQeD6PkhQLXl4N-bw",
+   "channel": "SIBO SOS",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCochymAZZUWrwFzWwrQHNRQ",
+   "channel": "Avanti Deshpande | Gut Health & Nutrition",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCyFhzpq4syyj7BsClTgL2mw",
+   "channel": "A Gut Above",
+   "found": "2026-10-17",
+   "found_by": "fix your gut fix your health",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCSyrE0kvWRPnRihEXZRo8PQ",
+   "channel": "Dr. Yousef Mohammadi MD ",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCgMpB5XBRzw4Fu9PpYWZVYg",
+   "channel": "Eczema Kids",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCXwhvjTZFagtiMFLrwuZqyQ",
+   "channel": "IBS Treatment Center",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCKGTFg9D2c6fVcpGQL6Cprw",
+   "channel": "Dra  Esmeralda Bastidas",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCbYXMQJHV-II4gjJsv03hJA",
+   "channel": "Dina elramikh\u2013 Nutritionist ",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCga37ycv9YEORccMnNaVe8g",
+   "channel": "Wellness check ",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCSXFVkCtAKdMOtTxaxqI_zg",
+   "channel": "Getting Pregnant",
+   "found": "2026-10-17",
+   "found_by": "leaky gut inflammation root cause",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCD7LAufsDOja_q40LnnZiAw",
+   "channel": "Lauren Papanos, MS, RD, CSSD",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCKt527bUlScfRczl22DqFUA",
+   "channel": "Plant Fuelled ",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCZw1GBitFZkaR8aSfbaOxeQ",
+   "channel": "Laurie Hammer",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC0F1DODcS4pP_G3711bQu2A",
+   "channel": "Pulling Down the Moon",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCm811jGieRMdnOiD_fGk6cg",
+   "channel": "Nathan Crane",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC3wanEI-nufbvf3nADm3CBw",
+   "channel": "Science & Technology",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCxL95NgaZEzNvKgDrtBLhug",
+   "channel": "The Aging Well Podcast w/ Dr. Jeff Armstrong",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UC6_rw1o1RCE4d7mGeO-scXA",
+   "channel": "Viome",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCEx_lrqkDd2Qh55Hsdg7vgA",
+   "channel": "Beyond The Fact",
+   "found": "2026-10-17",
+   "found_by": "gut microbiome chronic disease",
+   "industry": "Health & biotech",
+   "basis": "search"
+  },
+  {
+   "channelId": "UCO4ufgHRAsQqLk6ORp71mDQ",
+   "channel": "UltraWellness Center",
+   "found": "2026-10-17",
+   "found_by": "mark hyman gut health",
+   "industry": "Health & biotech",
    "basis": "search"
   }
  ]

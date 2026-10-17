@@ -13787,6 +13787,92 @@
         "comments": null,
         "enrichedOn": "2026-10-16"
       }
+    },
+    {
+      "videoId": "Dxg5gnyb4nw",
+      "title": "Canada’s Housing Problem May Outlast Lower Rates",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=Dxg5gnyb4nw",
+      "published": "2026-10-17",
+      "first_seen": "2026-10-17",
+      "views": 189,
+      "length": "13:17",
+      "age_days": 0,
+      "query": "channel sweep: (REIN) The Real Estate Investment Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-17"
+      }
+    },
+    {
+      "videoId": "yVMv7vUIez0",
+      "title": "Why Fixed Mortgage Rates Just Jumped Even Though The Bank Of Canada Didn't Move",
+      "channel": "Canadian Mortgages with Nathan",
+      "url": "https://www.youtube.com/watch?v=yVMv7vUIez0",
+      "published": "2026-10-16",
+      "first_seen": "2026-10-17",
+      "views": 3458,
+      "length": "12:24",
+      "age_days": 1,
+      "query": "channel sweep: Canadian Mortgages with Nathan",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCdgdLLynsRsfHG-0rTAxLIw",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 104,
+        "comments": null,
+        "enrichedOn": "2026-10-17"
+      }
+    },
+    {
+      "videoId": "-wJjsW_YJco",
+      "title": "Canada’s Condo Market Is Crashing — BUYERS ARE TRAPPED",
+      "channel": "The Money Compute",
+      "url": "https://www.youtube.com/watch?v=-wJjsW_YJco",
+      "published": "2026-10-15",
+      "first_seen": "2026-10-17",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:condo-crash-will-break-canadas)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxSrAZ7_yNdG7gnV6UHS4eg"
+      }
+    },
+    {
+      "videoId": "ZQHDUmTaAkI",
+      "title": "Waiting for a Toronto Condo Crash? Bad Move. #Shorts",
+      "channel": "Gary McGowan",
+      "url": "https://www.youtube.com/watch?v=ZQHDUmTaAkI",
+      "published": "2026-10-16",
+      "first_seen": "2026-10-17",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:condo-crash-will-break-canadas)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCO20pCK_hLuzylmd7_9HhIg"
+      }
     }
   ]
 }
