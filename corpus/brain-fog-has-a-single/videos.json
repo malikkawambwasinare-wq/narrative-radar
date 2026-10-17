@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-16"
+      "unavailable": "2026-10-17"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -116313,15 +116313,22 @@
       "url": "https://www.youtube.com/watch?v=SilN3LDeIzw",
       "published": "2026-10-12",
       "first_seen": "2026-10-16",
-      "views": null,
-      "length": null,
+      "views": 2,
+      "length": "35:54",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCc-mJ5tU6xZeJ9_WlcUa3QA"
+        "channelId": "UCc-mJ5tU6xZeJ9_WlcUa3QA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-17"
       }
     },
     {
@@ -116331,15 +116338,22 @@
       "url": "https://www.youtube.com/watch?v=QQ36vdvge8k",
       "published": "2026-10-15",
       "first_seen": "2026-10-16",
-      "views": null,
-      "length": null,
+      "views": 8,
+      "length": "1:17",
       "age_days": null,
       "query": "refiled from the pool (narrative:anti-inflammatory-diet)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC712I39tCSufCspJ_7ZMDJg"
+        "channelId": "UC712I39tCSufCspJ_7ZMDJg",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-17"
       }
     }
   ]
