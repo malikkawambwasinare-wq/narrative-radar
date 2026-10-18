@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17",
+ "generated": "2026-10-18",
  "method": "titles only; 4+ videos, 3+ independent channels, 2+ distinct months, claim wording in the phrase",
  "candidates": [
   {
@@ -4176,6 +4176,52 @@
    "rank": 525.0
   },
   {
+   "phrase": "must follow",
+   "videos": 26,
+   "channels": 22,
+   "months": 19,
+   "span": "2019-05 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.88,
+   "kind": "new candidate",
+   "examples": [
+    "Top 10 Weird Rules Every Marvel Actor Must Follow",
+    "6 SAFETY TIPS YOU MUST FOLLOW|Gyms Opening in India from 5th August|5 August se gym khulenge ya nahi",
+    "4 Tips That All Real Estate Investors Must Follow!"
+   ],
+   "ids": [
+    "-0DLthRiBLA",
+    "-xXyFn4s4CI",
+    "4aC-5HoZR4g",
+    "BOl8v-DJDaM",
+    "BmPJAD1pljk",
+    "GJBgMTx5bgk",
+    "MuJliR_4fFM",
+    "PEPrpSCZkeU",
+    "PvI1iWv2BVE",
+    "QJC_DmIuyVA",
+    "SNfmHoE81nw",
+    "VgMw4-ijO_s",
+    "W_kla7ZNFeE",
+    "Y5FQSCBpt-Y",
+    "Yey60-73ucA",
+    "ZJ32pxJ3-jc",
+    "aCfHBiN7o3k",
+    "ats1TRP0OuI",
+    "cRu51qlO-kA",
+    "dF5T2mjASEY",
+    "db0bUe-rQjQ",
+    "fLkUk6xAplE",
+    "jnWrYS-8Vuw",
+    "kaPc4tC52UY",
+    "vPgAvhsfJUA",
+    "yAxEONxzYvc"
+   ],
+   "specificity": 0.0008,
+   "rank": 522.5
+  },
+  {
    "phrase": "halftime show",
    "videos": 80,
    "channels": 15,
@@ -4380,51 +4426,6 @@
    ],
    "specificity": 0.0003,
    "rank": 506.0
-  },
-  {
-   "phrase": "must follow",
-   "videos": 25,
-   "channels": 21,
-   "months": 19,
-   "span": "2019-05 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.88,
-   "kind": "new candidate",
-   "examples": [
-    "Top 10 Weird Rules Every Marvel Actor Must Follow",
-    "6 SAFETY TIPS YOU MUST FOLLOW|Gyms Opening in India from 5th August|5 August se gym khulenge ya nahi",
-    "4 Tips That All Real Estate Investors Must Follow!"
-   ],
-   "ids": [
-    "-0DLthRiBLA",
-    "-xXyFn4s4CI",
-    "BOl8v-DJDaM",
-    "BmPJAD1pljk",
-    "GJBgMTx5bgk",
-    "MuJliR_4fFM",
-    "PEPrpSCZkeU",
-    "PvI1iWv2BVE",
-    "QJC_DmIuyVA",
-    "SNfmHoE81nw",
-    "VgMw4-ijO_s",
-    "W_kla7ZNFeE",
-    "Y5FQSCBpt-Y",
-    "Yey60-73ucA",
-    "ZJ32pxJ3-jc",
-    "aCfHBiN7o3k",
-    "ats1TRP0OuI",
-    "cRu51qlO-kA",
-    "dF5T2mjASEY",
-    "db0bUe-rQjQ",
-    "fLkUk6xAplE",
-    "jnWrYS-8Vuw",
-    "kaPc4tC52UY",
-    "vPgAvhsfJUA",
-    "yAxEONxzYvc"
-   ],
-   "specificity": 0.0008,
-   "rank": 498.8
   },
   {
    "phrase": "study shows",
@@ -30254,6 +30255,39 @@
    "rank": 64.0
   },
   {
+   "phrase": "beginner must",
+   "videos": 8,
+   "channels": 8,
+   "months": 4,
+   "span": "2026-04 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.62,
+   "kind": "new candidate",
+   "examples": [
+    "How to Start UPSC Preparation? | 5 Myths Every Beginner Must Avoid | By Atul Jain",
+    "3 Rules Every Gym Beginner Must Follow",
+    "Every Claude Code Beginner Must Watch This"
+   ],
+   "ids": [
+    "-xXyFn4s4CI",
+    "4aC-5HoZR4g",
+    "RqpjGF8uKhg",
+    "SHHiFzWjWbk",
+    "U3ml6CsTFoE",
+    "YhdGbo7EHHo",
+    "pGti3g7Fcmk",
+    "w8WrTWlQT10"
+   ],
+   "also": [
+    "every beginner must",
+    "every beginner must know",
+    "beginner must know"
+   ],
+   "specificity": 0.0004,
+   "rank": 64.0
+  },
+  {
    "phrase": "ceo explains",
    "videos": 35,
    "channels": 21,
@@ -32757,38 +32791,6 @@
     "utqOXN_dXh0"
    ],
    "specificity": 0.0002,
-   "rank": 56.0
-  },
-  {
-   "phrase": "beginner must",
-   "videos": 7,
-   "channels": 7,
-   "months": 4,
-   "span": "2026-04 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.57,
-   "kind": "new candidate",
-   "examples": [
-    "How to Start UPSC Preparation? | 5 Myths Every Beginner Must Avoid | By Atul Jain",
-    "3 Rules Every Gym Beginner Must Follow",
-    "Every Claude Code Beginner Must Watch This"
-   ],
-   "ids": [
-    "-xXyFn4s4CI",
-    "RqpjGF8uKhg",
-    "SHHiFzWjWbk",
-    "U3ml6CsTFoE",
-    "YhdGbo7EHHo",
-    "pGti3g7Fcmk",
-    "w8WrTWlQT10"
-   ],
-   "also": [
-    "every beginner must",
-    "every beginner must know",
-    "beginner must know"
-   ],
-   "specificity": 0.0004,
    "rank": 56.0
   },
   {
@@ -38086,8 +38088,8 @@
     "000 end",
     "crash 000",
     "000 coming",
-    "000 truth",
     "save 000",
+    "000 truth",
     "000 dead",
     "dead 000",
     "win 000",
@@ -38435,41 +38437,6 @@
     "disclosure truth"
    ],
    "specificity": 0.0002,
-   "rank": 40.0
-  },
-  {
-   "phrase": "collapse first usa enters",
-   "videos": 9,
-   "channels": 5,
-   "months": 4,
-   "span": "2025-10 \u2192 2026-09",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.56,
-   "kind": "new candidate",
-   "examples": [
-    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
-    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
-   ],
-   "ids": [
-    "2cySisz4L7w",
-    "2rwaCLtUMUY",
-    "R8hTK8oDQE0",
-    "jp5hHUupNcU",
-    "nhFtUBzUP18",
-    "o3Kn8dIJmIo",
-    "oWogTWbnGd0",
-    "qX7T7tmOCqI",
-    "y2GCQE98jak"
-   ],
-   "also": [
-    "states collapse",
-    "collapse first usa enters",
-    "states collapse first usa",
-    "collapse first usa"
-   ],
-   "specificity": 0.0004,
    "rank": 40.0
   },
   {
@@ -53906,8 +53873,8 @@
     "protein actually",
     "truth protein",
     "much protein actually need",
-    "protein actually need",
-    "much protein actually"
+    "much protein actually",
+    "protein actually need"
    ],
    "specificity": 0.0017,
    "rank": 21.2
@@ -57420,6 +57387,41 @@
     "win 2025"
    ],
    "specificity": 0.0144,
+   "rank": 16.7
+  },
+  {
+   "phrase": "states collapse first usa",
+   "videos": 9,
+   "channels": 5,
+   "months": 4,
+   "span": "2025-10 \u2192 2026-09",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.56,
+   "kind": "new candidate",
+   "examples": [
+    "These 12 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 13 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed",
+    "These 15 States Will COLLAPSE First as USA Enters Recession | Real Estate Crisis Exposed"
+   ],
+   "ids": [
+    "2cySisz4L7w",
+    "2rwaCLtUMUY",
+    "R8hTK8oDQE0",
+    "jp5hHUupNcU",
+    "nhFtUBzUP18",
+    "o3Kn8dIJmIo",
+    "oWogTWbnGd0",
+    "qX7T7tmOCqI",
+    "y2GCQE98jak"
+   ],
+   "also": [
+    "states collapse",
+    "states collapse first usa",
+    "collapse first usa enters",
+    "collapse first usa"
+   ],
+   "specificity": 0.0012,
    "rank": 16.7
   },
   {
@@ -62692,50 +62694,6 @@
    "rank": 11.8
   },
   {
-   "phrase": "coming don",
-   "videos": 19,
-   "channels": 7,
-   "months": 5,
-   "span": "2025-07 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "'Trump, Xi meet soon...': Rubio\u2019s big reveal after meeting with Wang Yi amid US-China\u00a0trade\u00a0tensions",
-    "Trump Says He\u2019ll Meet Xi Soon, Confident Of Strong\u00a0US\u2013China\u00a0Ties",
-    "CNN reporter breaks down whether Trump and Kim may meet again soon"
-   ],
-   "ids": [
-    "0H8w1ww9u1g",
-    "2kA_d_qnWF4",
-    "7qAMSX8ks_k",
-    "8uPIN-28u0Y",
-    "Co3a-0-FZLU",
-    "D-p3u3yRCoc",
-    "JoU7IfKNGSI",
-    "KdieSpjxH4M",
-    "MaXZeJXKbI8",
-    "NjKjU8UoErI",
-    "X_dMQfjBldE",
-    "b7g8NCwEDSI",
-    "bjRdxwqBDHE",
-    "j9IINpnP7ZA",
-    "jpkRrTy1iMg",
-    "oi522YVtxdE",
-    "rAZViJ77_Gw",
-    "wIGfLXsKgjQ",
-    "zz-9nkJKXtE"
-   ],
-   "also": [
-    "coming don",
-    "ends meet",
-    "make ends meet"
-   ],
-   "specificity": 0.003,
-   "rank": 11.7
-  },
-  {
    "phrase": "coming raoul pal",
    "videos": 12,
    "channels": 3,
@@ -63265,6 +63223,50 @@
    ],
    "specificity": 0.0007,
    "rank": 11.4
+  },
+  {
+   "phrase": "coming don",
+   "videos": 19,
+   "channels": 7,
+   "months": 5,
+   "span": "2025-07 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "'Trump, Xi meet soon...': Rubio\u2019s big reveal after meeting with Wang Yi amid US-China\u00a0trade\u00a0tensions",
+    "Trump Says He\u2019ll Meet Xi Soon, Confident Of Strong\u00a0US\u2013China\u00a0Ties",
+    "CNN reporter breaks down whether Trump and Kim may meet again soon"
+   ],
+   "ids": [
+    "0H8w1ww9u1g",
+    "2kA_d_qnWF4",
+    "7qAMSX8ks_k",
+    "8uPIN-28u0Y",
+    "Co3a-0-FZLU",
+    "D-p3u3yRCoc",
+    "JoU7IfKNGSI",
+    "KdieSpjxH4M",
+    "MaXZeJXKbI8",
+    "NjKjU8UoErI",
+    "X_dMQfjBldE",
+    "b7g8NCwEDSI",
+    "bjRdxwqBDHE",
+    "j9IINpnP7ZA",
+    "jpkRrTy1iMg",
+    "oi522YVtxdE",
+    "rAZViJ77_Gw",
+    "wIGfLXsKgjQ",
+    "zz-9nkJKXtE"
+   ],
+   "also": [
+    "coming don",
+    "ends meet",
+    "make ends meet"
+   ],
+   "specificity": 0.0031,
+   "rank": 11.3
   },
   {
    "phrase": "open soon",
@@ -66733,34 +66735,6 @@
    "rank": 8.0
   },
   {
-   "phrase": "must take action",
-   "videos": 4,
-   "channels": 4,
-   "months": 4,
-   "span": "2022-03 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "(pool)",
-   "home_share": 0.75,
-   "kind": "new candidate",
-   "examples": [
-    "You MUST Take Action for Wholesaling Success!! #shorts #youtubeshorts #wholesalingrealestate",
-    "SAGITTARIUS TAROT READING | YOU MUST TAKE ACTION BEFORE JULY 14! YOU CAN CHANGE THE OUTCOME! VICTORY",
-    "Everything Is F**ked! You MUST Take Action Immediately\" - Raoul Pal"
-   ],
-   "ids": [
-    "-OFW2pt-tRg",
-    "29G4-SzqBxA",
-    "dwsNl9D_t4w",
-    "tJ_RM5y3KAE"
-   ],
-   "also": [
-    "action soon",
-    "action end"
-   ],
-   "specificity": 0.002,
-   "rank": 8.0
-  },
-  {
    "phrase": "causes emergency",
    "videos": 4,
    "channels": 4,
@@ -67225,6 +67199,34 @@
     "GlkWC_xNn1M",
     "QLw0NHqidXQ",
     "qky55Z5J8R8"
+   ],
+   "specificity": 0.0021,
+   "rank": 7.6
+  },
+  {
+   "phrase": "must take action",
+   "videos": 4,
+   "channels": 4,
+   "months": 4,
+   "span": "2022-03 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "(pool)",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "You MUST Take Action for Wholesaling Success!! #shorts #youtubeshorts #wholesalingrealestate",
+    "SAGITTARIUS TAROT READING | YOU MUST TAKE ACTION BEFORE JULY 14! YOU CAN CHANGE THE OUTCOME! VICTORY",
+    "Everything Is F**ked! You MUST Take Action Immediately\" - Raoul Pal"
+   ],
+   "ids": [
+    "-OFW2pt-tRg",
+    "29G4-SzqBxA",
+    "dwsNl9D_t4w",
+    "tJ_RM5y3KAE"
+   ],
+   "also": [
+    "action soon",
+    "action end"
    ],
    "specificity": 0.0021,
    "rank": 7.6
@@ -68165,41 +68167,6 @@
    "rank": 6.7
   },
   {
-   "phrase": "don really",
-   "videos": 6,
-   "channels": 5,
-   "months": 4,
-   "span": "2025-02 \u2192 2026-10",
-   "industry": "Health & biotech",
-   "home": "(pool)",
-   "home_share": 1.0,
-   "kind": "new candidate",
-   "examples": [
-    "'I don\u2019t really care...': Nancy Mace clashes with Gerry Connolly for her anti-transgender slur",
-    "Wait, You Don\u2019t Really Get Vitamin D from the Sun ? #healthyhabits #healthtips #youtube",
-    "Wait, You Don\u2019t Really Get Vitamin D from the Sun ? #healthyhabits #healthtips #youtube"
-   ],
-   "ids": [
-    "8GMa5YL5hV0",
-    "9oH0Zc6vkn4",
-    "Foq-r6s-shI",
-    "Pz38Yn3Duv0",
-    "oq83vL4E-lM",
-    "zPlxJXvR0I0"
-   ],
-   "also": [
-    "soon don",
-    "truth don",
-    "crash don",
-    "don actually",
-    "really don",
-    "don lie",
-    "don fix"
-   ],
-   "specificity": 0.003,
-   "rank": 6.7
-  },
-  {
    "phrase": "end nuclear",
    "videos": 5,
    "channels": 4,
@@ -68308,6 +68275,41 @@
    ],
    "specificity": 0.0064,
    "rank": 6.6
+  },
+  {
+   "phrase": "don really",
+   "videos": 6,
+   "channels": 5,
+   "months": 4,
+   "span": "2025-02 \u2192 2026-10",
+   "industry": "Health & biotech",
+   "home": "(pool)",
+   "home_share": 1.0,
+   "kind": "new candidate",
+   "examples": [
+    "'I don\u2019t really care...': Nancy Mace clashes with Gerry Connolly for her anti-transgender slur",
+    "Wait, You Don\u2019t Really Get Vitamin D from the Sun ? #healthyhabits #healthtips #youtube",
+    "Wait, You Don\u2019t Really Get Vitamin D from the Sun ? #healthyhabits #healthtips #youtube"
+   ],
+   "ids": [
+    "8GMa5YL5hV0",
+    "9oH0Zc6vkn4",
+    "Foq-r6s-shI",
+    "Pz38Yn3Duv0",
+    "oq83vL4E-lM",
+    "zPlxJXvR0I0"
+   ],
+   "also": [
+    "soon don",
+    "truth don",
+    "crash don",
+    "don actually",
+    "really don",
+    "don lie",
+    "don fix"
+   ],
+   "specificity": 0.0031,
+   "rank": 6.5
   },
   {
    "phrase": "indian market crash",
@@ -70634,30 +70636,6 @@
    "rank": 4.0
   },
   {
-   "phrase": "market crash don",
-   "videos": 4,
-   "channels": 3,
-   "months": 4,
-   "span": "2023-10 \u2192 2026-10",
-   "industry": "Economy & markets",
-   "home": "the-2026-setup",
-   "home_share": 0.75,
-   "kind": "new candidate",
-   "examples": [
-    "We are in a Stock Market Crash *You* Just Don\u2019t Realize it Yet",
-    "We are in a Stock Market Crash | You Just don\u2019t know it yet",
-    "Stock Market Crash: Don\u2019t Make This Mistake When Stocks Plummet!"
-   ],
-   "ids": [
-    "6mDhdEoDlXQ",
-    "I3vmMblH1xA",
-    "nnSRhf1tykE",
-    "rXqCTCvhq4E"
-   ],
-   "specificity": 0.003,
-   "rank": 4.0
-  },
-  {
    "phrase": "home price crash",
    "videos": 13,
    "channels": 4,
@@ -70725,6 +70703,30 @@
     "truth 2023 housing"
    ],
    "specificity": 0.0064,
+   "rank": 3.9
+  },
+  {
+   "phrase": "market crash don",
+   "videos": 4,
+   "channels": 3,
+   "months": 4,
+   "span": "2023-10 \u2192 2026-10",
+   "industry": "Economy & markets",
+   "home": "the-2026-setup",
+   "home_share": 0.75,
+   "kind": "new candidate",
+   "examples": [
+    "We are in a Stock Market Crash *You* Just Don\u2019t Realize it Yet",
+    "We are in a Stock Market Crash | You Just don\u2019t know it yet",
+    "Stock Market Crash: Don\u2019t Make This Mistake When Stocks Plummet!"
+   ],
+   "ids": [
+    "6mDhdEoDlXQ",
+    "I3vmMblH1xA",
+    "nnSRhf1tykE",
+    "rXqCTCvhq4E"
+   ],
+   "specificity": 0.0031,
    "rank": 3.9
   },
   {
@@ -72775,8 +72777,8 @@
     "hyderabad drop truth explained",
     "estate crash hyderabad drop",
     "crash hyderabad drop truth",
-    "crash hyderabad drop",
     "hyderabad drop truth",
+    "crash hyderabad drop",
     "drop truth explained sumantv",
     "truth explained sumantv"
    ],

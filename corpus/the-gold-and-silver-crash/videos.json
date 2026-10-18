@@ -1,6 +1,6 @@
 {
   "topic": "the-gold-and-silver-crash",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "videos": [
     {
       "videoId": "0YukEH5UcPY",
@@ -685639,7 +685639,7 @@
       "yt": {
         "channelId": "UCXv9pMth5DBC5SELtVRqpmw"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "n8Kc7_rOBP8",
@@ -685658,7 +685658,7 @@
       "yt": {
         "channelId": "UCyDWSIo0-8ZoZfgfWp-Yqjw"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "xDFLGr9PRZQ",
@@ -685677,7 +685677,7 @@
       "yt": {
         "channelId": "UC2I8ux7Zw4zBRhZBuoF6Mpw"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "npCD6LKfEjI",
@@ -819817,6 +819817,56 @@
         "likes": 2,
         "comments": 1,
         "enrichedOn": "2026-10-17"
+      }
+    },
+    {
+      "videoId": "toq8JUP--hE",
+      "title": "Gold Price action head and shoulders ✔️ #priceaction #headandshoulderpattern #trending",
+      "channel": "Bullish Master FX",
+      "url": "https://www.youtube.com/watch?v=toq8JUP--hE",
+      "published": "2026-07-26",
+      "first_seen": "2026-10-18",
+      "views": 1349,
+      "length": "1:00",
+      "age_days": 84,
+      "query": "channel sweep: Bullish Master FX",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCqAp2ZBo9pWZAUODe0OiJCw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 55,
+        "comments": 32,
+        "enrichedOn": "2026-10-18"
+      }
+    },
+    {
+      "videoId": "148kGABd0iE",
+      "title": "EP-2 Free Complete Candlestick Patterns Course | All Single Candlesticks | Technical Analysis 2026",
+      "channel": "Bullish Master FX",
+      "url": "https://www.youtube.com/watch?v=148kGABd0iE",
+      "published": "2026-01-15",
+      "first_seen": "2026-10-18",
+      "views": 1568,
+      "length": "24:02",
+      "age_days": 276,
+      "query": "channel sweep: Bullish Master FX",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCqAp2ZBo9pWZAUODe0OiJCw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 82,
+        "comments": 13,
+        "enrichedOn": "2026-10-18"
       }
     }
   ]

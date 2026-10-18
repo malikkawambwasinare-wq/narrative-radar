@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "98m8i03frcU",
@@ -126900,15 +126900,122 @@
       "url": "https://www.youtube.com/watch?v=_fQJQjr5M9U",
       "published": "2026-10-16",
       "first_seen": "2026-10-17",
-      "views": null,
-      "length": null,
+      "views": 13,
+      "length": "6:27",
       "age_days": null,
       "query": "refiled from the pool (narrative:fix-your-gut-fix-your)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCa6zQIyzPGHHV5FJmoT2HAw"
+        "channelId": "UCa6zQIyzPGHHV5FJmoT2HAw",
+        "category": "22",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-18"
+      }
+    },
+    {
+      "videoId": "iegfwQQ4eAY",
+      "title": "Lose the weight best decision i ever made 😊 #glp1 #zepbound #weightloss #weightlossjourney",
+      "channel": "Antoria conde",
+      "url": "https://www.youtube.com/watch?v=iegfwQQ4eAY",
+      "published": "2026-09-14",
+      "first_seen": "2026-10-18",
+      "views": 2540,
+      "length": "0:17",
+      "age_days": 34,
+      "query": "channel sweep: Antoria conde",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCmMeNVQ993ydiyXx7w58aGA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 48,
+        "comments": 1,
+        "enrichedOn": "2026-10-18"
+      }
+    },
+    {
+      "videoId": "W81WNmURYoA",
+      "title": "My glp journey subscribe for more weight loss content #glp1 #zepbound",
+      "channel": "Antoria conde",
+      "url": "https://www.youtube.com/watch?v=W81WNmURYoA",
+      "published": "2026-07-17",
+      "first_seen": "2026-10-18",
+      "views": 24,
+      "length": "3:01",
+      "age_days": 93,
+      "query": "channel sweep: Antoria conde",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCmMeNVQ993ydiyXx7w58aGA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-18"
+      }
+    },
+    {
+      "videoId": "Pqi61Srbn9g",
+      "title": "How to loose 50 Pounds Quick | weight loss",
+      "channel": "Antoria conde",
+      "url": "https://www.youtube.com/watch?v=Pqi61Srbn9g",
+      "published": "2025-04-13",
+      "first_seen": "2026-10-18",
+      "views": 599,
+      "length": "11:26",
+      "age_days": 553,
+      "query": "channel sweep: Antoria conde",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCmMeNVQ993ydiyXx7w58aGA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 11,
+        "comments": 7,
+        "enrichedOn": "2026-10-18"
+      }
+    },
+    {
+      "videoId": "Hcu7PVPYyJA",
+      "title": "How to loose weight FAST | Weight Loss Tips Guaranteed to Work and Stay Consistent ((MUST WATCH))",
+      "channel": "Antoria conde",
+      "url": "https://www.youtube.com/watch?v=Hcu7PVPYyJA",
+      "published": "2024-04-22",
+      "first_seen": "2026-10-18",
+      "views": 323,
+      "length": "15:34",
+      "age_days": 909,
+      "query": "channel sweep: Antoria conde",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCmMeNVQ993ydiyXx7w58aGA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 18,
+        "comments": 4,
+        "enrichedOn": "2026-10-18"
       }
     }
   ]

@@ -457858,7 +457858,7 @@
       "yt": {
         "channelId": "UCAtm9QcSyGTij7NX8o_FnaQ"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "-_bwTfSdQAE",
@@ -754512,15 +754512,22 @@
       "url": "https://www.youtube.com/watch?v=Ccuenqomja0",
       "published": "2026-10-12",
       "first_seen": "2026-10-17",
-      "views": null,
-      "length": null,
+      "views": 233,
+      "length": "17:00",
       "age_days": null,
       "query": "refiled from the pool (narrative:condo-crash-will-break-canadas)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC12NRT0BhihkSy8zXEBimXA"
+        "channelId": "UC12NRT0BhihkSy8zXEBimXA",
+        "category": "22",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-18"
       }
     },
     {
@@ -754530,17 +754537,24 @@
       "url": "https://www.youtube.com/watch?v=_UIT4btfMK4",
       "published": "2026-10-13",
       "first_seen": "2026-10-17",
-      "views": null,
-      "length": null,
+      "views": 2158,
+      "length": "12:47",
       "age_days": null,
       "query": "refiled from the pool (narrative:condo-crash-will-break-canadas)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCjDnaYgcGKYonKMJScmTUwg"
+        "channelId": "UCjDnaYgcGKYonKMJScmTUwg",
+        "category": "22",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 11,
+        "comments": 3,
+        "enrichedOn": "2026-10-18"
       }
     }
   ],
-  "updated": "2026-10-17"
+  "updated": "2026-10-18"
 }

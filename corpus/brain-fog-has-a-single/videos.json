@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-17"
+      "unavailable": "2026-10-18"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -116763,15 +116763,22 @@
       "url": "https://www.youtube.com/watch?v=8D89iDpmHFQ",
       "published": "2026-10-16",
       "first_seen": "2026-10-17",
-      "views": null,
-      "length": null,
+      "views": 554,
+      "length": "2:24",
       "age_days": null,
       "query": "refiled from the pool (narrative:fix-your-gut-fix-your)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCASbzdBfEtpAWCvOubgvLiQ"
+        "channelId": "UCASbzdBfEtpAWCvOubgvLiQ",
+        "category": "27",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 17,
+        "comments": 1,
+        "enrichedOn": "2026-10-18"
       }
     }
   ]
