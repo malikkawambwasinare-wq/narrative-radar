@@ -13887,6 +13887,31 @@
         "comments": 1,
         "enrichedOn": "2026-10-18"
       }
+    },
+    {
+      "videoId": "TW2SKz2tXYk",
+      "title": "10 Canadian Towns Where Thousands of New Homes Sit Empty (2026)",
+      "channel": "Mr Vista",
+      "url": "https://www.youtube.com/watch?v=TW2SKz2tXYk",
+      "published": "2026-10-17",
+      "first_seen": "2026-10-18",
+      "views": 1916,
+      "length": "22:17",
+      "age_days": 1,
+      "query": "channel sweep: Mr Vista",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXIz7ldmgWV7M3XdkEm5Vqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": null,
+        "enrichedOn": "2026-10-18"
+      }
     }
   ]
 }
