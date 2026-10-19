@@ -25306,6 +25306,31 @@
         "comments": null,
         "enrichedOn": "2026-10-19"
       }
+    },
+    {
+      "videoId": "nBus6zOSBhI",
+      "title": "Younger Adult Cancer Rates Are Rising",
+      "channel": "MyersMedical",
+      "url": "https://www.youtube.com/watch?v=nBus6zOSBhI",
+      "published": "2026-10-19",
+      "first_seen": "2026-10-19",
+      "views": 0,
+      "length": "6:11",
+      "age_days": 0,
+      "query": "channel sweep: MyersMedical",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCS9QSiZx-s3MJzRDa4pXpqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-19"
+      }
     }
   ]
 }
