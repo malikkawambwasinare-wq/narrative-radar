@@ -1,6 +1,6 @@
 {
   "topic": "great-economic-reset-is-coming",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "videos": [
     {
       "videoId": "YXFvwJQBzJc",
@@ -7384,7 +7384,7 @@
       "yt": {
         "channelId": "UCyVmrYcCWgq-rdVczNNyfxA"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "pbeUEuEdVnU",
@@ -7428,7 +7428,7 @@
       "yt": {
         "channelId": "UCyVmrYcCWgq-rdVczNNyfxA"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "COdM90Fdl24",
@@ -15672,7 +15672,7 @@
       "yt": {
         "channelId": "UCEDTcoau0fFT01G0J0lCu-w"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "MNSEd-cmS2s",
@@ -17863,7 +17863,7 @@
       "yt": {
         "channelId": "UCv1Fx0fYgYI-HTVs-ZenqBQ"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "MZ7chfHM_1Q",
@@ -17957,7 +17957,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "-HxiYlC-sRw",
@@ -18026,7 +18026,7 @@
       "yt": {
         "channelId": "UCyVmrYcCWgq-rdVczNNyfxA"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "-9Ixwbiihds",
@@ -18220,7 +18220,7 @@
       "yt": {
         "channelId": "UCgX6ttzPIHKjW6IVxVAcT4w"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "ZvWmThbrYl8",
@@ -18239,7 +18239,7 @@
       "yt": {
         "channelId": "UCzpVslqQiTjbHBHCvusNwKQ"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "eHHJ3EtUxm8",
@@ -35143,7 +35143,7 @@
       "yt": {
         "channelId": "UC7y4qfRqC35jQKSBCwn-ACQ"
       },
-      "unavailable": "2026-10-19"
+      "unavailable": "2026-10-20"
     },
     {
       "videoId": "THN13oBny14",
@@ -41023,15 +41023,22 @@
       "url": "https://www.youtube.com/watch?v=KsNGTrldESk",
       "published": "2026-10-07",
       "first_seen": "2026-10-08",
-      "views": null,
-      "length": null,
+      "views": 251,
+      "length": "12:00",
       "age_days": null,
       "query": "refiled from the pool (channel:Sam Putnam)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuhl4dUDg1uDzzL01baOYgw"
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": 1,
+        "enrichedOn": "2026-10-20"
       }
     },
     {
@@ -41041,15 +41048,22 @@
       "url": "https://www.youtube.com/watch?v=dRmOfNyoTE8",
       "published": "2026-10-11",
       "first_seen": "2026-10-12",
-      "views": null,
-      "length": null,
+      "views": 66,
+      "length": "12:26",
       "age_days": null,
       "query": "refiled from the pool (channel:Sam Putnam)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuhl4dUDg1uDzzL01baOYgw"
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-20"
       }
     },
     {
@@ -41175,6 +41189,756 @@
         "likes": 1,
         "comments": null,
         "enrichedOn": "2026-10-19"
+      }
+    },
+    {
+      "videoId": "m_Tk9Ty_A6w",
+      "title": "Why Binance could be next to Collapse",
+      "channel": "Crypto Rover",
+      "url": "https://www.youtube.com/watch?v=m_Tk9Ty_A6w",
+      "published": "2023-09-23",
+      "first_seen": "2026-10-20",
+      "views": 12142,
+      "length": "13:29",
+      "age_days": 1123,
+      "query": "channel sweep: Crypto Rover",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCoUcIy0SWXXIhzWgJNdMoFQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 541,
+        "comments": 211,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "jSthG1rPloU",
+      "title": "Bank of Canada Wants to Fight Inflation — But It Could Trigger a Recession",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=jSthG1rPloU",
+      "published": "2026-05-20",
+      "first_seen": "2026-10-20",
+      "views": 200,
+      "length": "1:03",
+      "age_days": 153,
+      "query": "channel sweep: (REIN) The Real Estate Investment Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 12,
+        "comments": 3,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "wq0HN18NvWI",
+      "title": "Trump Just Officially RESET Your Money (ACT NOW)",
+      "channel": "ZipTrader",
+      "url": "https://www.youtube.com/watch?v=wq0HN18NvWI",
+      "published": "2026-01-05",
+      "first_seen": "2026-10-20",
+      "views": 253731,
+      "length": "23:19",
+      "age_days": 288,
+      "query": "channel sweep: ZipTrader",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UC0BGhWsIbV7Dm-lsvhdlMbA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 9604,
+        "comments": 799,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "O4LOk2_Hr3Q",
+      "title": "Bitcoin Poised for Massive Move — $120K Could Be Next!",
+      "channel": "Crypto by Jess",
+      "url": "https://www.youtube.com/watch?v=O4LOk2_Hr3Q",
+      "published": "2025-05-20",
+      "first_seen": "2026-10-20",
+      "views": 551,
+      "length": "0:55",
+      "age_days": 518,
+      "query": "channel sweep: Crypto by Jess",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCiwZc1iC8BWTcQJQjYyqhAA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 17,
+        "comments": 1,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "qOnZ2gwnMXg",
+      "title": "CHINA-US TRADE DEAL COULD TRIGGER MASSIVE BITCOIN PUMP",
+      "channel": "Crypto by Jess",
+      "url": "https://www.youtube.com/watch?v=qOnZ2gwnMXg",
+      "published": "2025-05-07",
+      "first_seen": "2026-10-20",
+      "views": 212,
+      "length": "0:43",
+      "age_days": 531,
+      "query": "channel sweep: Crypto by Jess",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCiwZc1iC8BWTcQJQjYyqhAA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 16,
+        "comments": null,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "pGjENlUSbwM",
+      "title": "🚨 BIG NEWS!! Tariffs & Market Chaos Could Trigger MASSIVE Rally?? 💥",
+      "channel": "Crypto by Jess",
+      "url": "https://www.youtube.com/watch?v=pGjENlUSbwM",
+      "published": "2025-03-05",
+      "first_seen": "2026-10-20",
+      "views": 128,
+      "length": "2:01",
+      "age_days": 594,
+      "query": "channel sweep: Crypto by Jess",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCiwZc1iC8BWTcQJQjYyqhAA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": 2,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "7Z9Ca5aWcwo",
+      "title": "Tesla Stock ALERT: $300 Break Could Trigger MASSIVE Surge! #shorts",
+      "channel": "The Finance Pastor",
+      "url": "https://www.youtube.com/watch?v=7Z9Ca5aWcwo",
+      "published": "2025-07-29",
+      "first_seen": "2026-10-20",
+      "views": 226,
+      "length": "0:49",
+      "age_days": 448,
+      "query": "channel sweep: The Finance Pastor",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCRg0Gx6uMgQ88XHe4a82viQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "XwB_x7Q-fz4",
+      "title": "GOLD Could Easily Reach \"$5,000\" - \"$8,000 Probable\" as Stocks Languish: Don Durrett",
+      "channel": "Living Your Greatness",
+      "url": "https://www.youtube.com/watch?v=XwB_x7Q-fz4",
+      "published": "2025-12-26",
+      "first_seen": "2026-10-20",
+      "views": 7982,
+      "length": "1:29:09",
+      "age_days": 298,
+      "query": "channel sweep: Living Your Greatness",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCxdqah-Qn-xUqpsKY_R-mgw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 287,
+        "comments": 117,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "KURskM5s58U",
+      "title": "Yellowstone’s System Reports READY TO BLOW Volcano That Could Trigger New Ice Age",
+      "channel": "Eternity",
+      "url": "https://www.youtube.com/watch?v=KURskM5s58U",
+      "published": "2023-08-09",
+      "first_seen": "2026-10-20",
+      "views": 4662,
+      "length": "9:59",
+      "age_days": 1168,
+      "query": "channel sweep: Eternity",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCl-UCmef1we2UGaPNL2CPxA",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 66,
+        "comments": 3,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "IQLFeWQ3BdM",
+      "title": "Kristi Noem’s remarks on Corey Lewandowski could trigger perjury inquiry | Elizabeth Vargas Reports",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=IQLFeWQ3BdM",
+      "published": "2026-03-07",
+      "first_seen": "2026-10-20",
+      "views": 301792,
+      "length": "4:45",
+      "age_days": 227,
+      "query": "channel sweep: NewsNation",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 1890,
+        "comments": 386,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "V-dZ01-XRGM",
+      "title": "Shutdown could deliver $14B economic hit, budget office warns | Morning in America",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=V-dZ01-XRGM",
+      "published": "2025-10-30",
+      "first_seen": "2026-10-20",
+      "views": 1362,
+      "length": "3:18",
+      "age_days": 355,
+      "query": "channel sweep: NewsNation",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 21,
+        "comments": 4,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "TpZ82iwv_AI",
+      "title": "Despite uncertainty, farmers support Trump economic plan: Ag secretary | Morning in America",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=TpZ82iwv_AI",
+      "published": "2025-07-15",
+      "first_seen": "2026-10-20",
+      "views": 1015,
+      "length": "5:33",
+      "age_days": 462,
+      "query": "channel sweep: NewsNation",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 14,
+        "comments": 12,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "_0xyKox6Jfk",
+      "title": "Vittert: 'Nothing could be worse for Democrats' than LA protests | On Balance",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=_0xyKox6Jfk",
+      "published": "2025-06-11",
+      "first_seen": "2026-10-20",
+      "views": 28767,
+      "length": "5:10",
+      "age_days": 496,
+      "query": "channel sweep: NewsNation",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 507,
+        "comments": 132,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "JfdtRQwk3DY",
+      "title": "Pfizer Drug Price Cuts Yield Three-Year Trump Tariff Respite, Lilly Deal Could Be Next",
+      "channel": "Bloomberg Podcasts",
+      "url": "https://www.youtube.com/watch?v=JfdtRQwk3DY",
+      "published": "2025-10-01",
+      "first_seen": "2026-10-20",
+      "views": 98791,
+      "length": "10:18",
+      "age_days": 384,
+      "query": "channel sweep: Bloomberg Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChF5O40UBqAc82I7-i5ig6A",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 194,
+        "comments": 46,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "iymO3Th79FE",
+      "title": "This Tiny OTC Stock Could Trigger 2021 Mania Again…",
+      "channel": "Invest Daily",
+      "url": "https://www.youtube.com/watch?v=iymO3Th79FE",
+      "published": "2026-04-26",
+      "first_seen": "2026-10-20",
+      "views": 616,
+      "length": "7:37",
+      "age_days": 177,
+      "query": "channel sweep: Invest Daily",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC_-OADywSeK5wQv0cPkUqNA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 19,
+        "comments": 26,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "ndciEEtdOWc",
+      "title": "Trump tells CNN Cuba could be next focus after Iran",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=ndciEEtdOWc",
+      "published": "2026-03-06",
+      "first_seen": "2026-10-20",
+      "views": 36976,
+      "length": "1:38",
+      "age_days": 228,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 205,
+        "comments": 362,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "1J-_QPTVU1U",
+      "title": "Trump suggests San Francisco could be next for federal crime crackdown",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=1J-_QPTVU1U",
+      "published": "2025-10-15",
+      "first_seen": "2026-10-20",
+      "views": 6264,
+      "length": "0:24",
+      "age_days": 370,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 50,
+        "comments": 18,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "bG39_s15xLc",
+      "title": "President Trump calls Chicago a \"mess\" and says the city could be next in his crackdown on crime.",
+      "channel": "NBC News",
+      "url": "https://www.youtube.com/watch?v=bG39_s15xLc",
+      "published": "2025-08-22",
+      "first_seen": "2026-10-20",
+      "views": 57301,
+      "length": "0:36",
+      "age_days": 424,
+      "query": "channel sweep: NBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCeY0bbntWzzVIaj2z3QigXg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 389,
+        "comments": 591,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "gex3KWcJWiY",
+      "title": "The Only 3 Rules You NEED to Get RICH in The 2026 Financial Reset...",
+      "channel": "Money Strategist",
+      "url": "https://www.youtube.com/watch?v=gex3KWcJWiY",
+      "published": "2026-08-27",
+      "first_seen": "2026-10-20",
+      "views": 11445,
+      "length": "14:05",
+      "age_days": 54,
+      "query": "channel sweep: Money Strategist",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCJoUwf4OJaRvjSfsDnK-bqw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 189,
+        "comments": 7,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "L7MzGy4EUhc",
+      "title": "THIS is The EXACT Date of The Next Recession.",
+      "channel": "Money Strategist",
+      "url": "https://www.youtube.com/watch?v=L7MzGy4EUhc",
+      "published": "2026-08-02",
+      "first_seen": "2026-10-20",
+      "views": 56689,
+      "length": "22:37",
+      "age_days": 79,
+      "query": "channel sweep: Money Strategist",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCJoUwf4OJaRvjSfsDnK-bqw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1302,
+        "comments": 140,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "ZDg4DENWMuE",
+      "title": "Headaches After 50? 7 Everyday Foods That Could Be Triggering Them",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=ZDg4DENWMuE",
+      "published": "2026-09-09",
+      "first_seen": "2026-10-20",
+      "views": 14,
+      "length": "5:34",
+      "age_days": 41,
+      "query": "channel sweep: VitalBite",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 3,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "RIRj_2gJSaI",
+      "title": "🔥 The Financial Reset That Could Power Askari's Next Growth Phase",
+      "channel": "Colitco",
+      "url": "https://www.youtube.com/watch?v=RIRj_2gJSaI",
+      "published": "2026-08-04",
+      "first_seen": "2026-10-20",
+      "views": 4394,
+      "length": "2:55",
+      "age_days": 77,
+      "query": "channel sweep: Colitco",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UC-_hDMPaDsMpzLPyFSFoy_A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "Z9pqaWFyixI",
+      "title": "China's Plan to RESET The Dollar With Gold (few are ready)",
+      "channel": "Finance Bureau",
+      "url": "https://www.youtube.com/watch?v=Z9pqaWFyixI",
+      "published": "2026-09-23",
+      "first_seen": "2026-10-20",
+      "views": 46476,
+      "length": "17:02",
+      "age_days": 27,
+      "query": "channel sweep: Finance Bureau",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCnThE8FLrlN-tYvZhZL0uaA",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 993,
+        "comments": 85,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "ifWU7TmehCg",
+      "title": "Dark Oxygen | CIA Deep Sea Secret Could Trigger the Next Extinction Event",
+      "channel": "The Why Files",
+      "url": "https://www.youtube.com/watch?v=ifWU7TmehCg",
+      "published": "2025-05-23",
+      "first_seen": "2026-10-20",
+      "views": 2488239,
+      "length": "23:47",
+      "age_days": 515,
+      "query": "channel sweep: The Why Files",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCIFk2uvCNcEmZ77g0ESKLcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 99108,
+        "comments": 6111,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "tJDjlMxBJ-4",
+      "title": "Portugal fans talk ‘once in a lifetime’ World Cup match in Toronto",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=tJDjlMxBJ-4",
+      "published": "2026-07-02",
+      "first_seen": "2026-10-20",
+      "views": 14018,
+      "length": "3:27",
+      "age_days": 110,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 19,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "sL6LOJeIkGs",
+      "title": "‘A once in a lifetime experience’: 12-year-old GTA golfer on competing at Augusta National",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=sL6LOJeIkGs",
+      "published": "2026-04-10",
+      "first_seen": "2026-10-20",
+      "views": 608,
+      "length": "4:41",
+      "age_days": 193,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "P3HShx5a_Gc",
+      "title": "Carney is worse than Trudeau: Poilievre",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=P3HShx5a_Gc",
+      "published": "2025-08-20",
+      "first_seen": "2026-10-20",
+      "views": 36818,
+      "length": "1:35",
+      "age_days": 426,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1181,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "oXSO-15nIjE",
+      "title": "'The friends have been worse than the foes,' Trump on trade",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=oXSO-15nIjE",
+      "published": "2025-07-11",
+      "first_seen": "2026-10-20",
+      "views": 39785,
+      "length": "1:05",
+      "age_days": 466,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 581,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "JC6efuiCgWY",
+      "title": "How the trade war and possible recession could hurt Republicans",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=JC6efuiCgWY",
+      "published": "2025-03-11",
+      "first_seen": "2026-10-20",
+      "views": 1807,
+      "length": "4:13",
+      "age_days": 588,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 8,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "1ufC_Ocdp0A",
+      "title": "Singh warns tariff impact could be ‘worse than pandemic’ economically",
+      "channel": "CP24",
+      "url": "https://www.youtube.com/watch?v=1ufC_Ocdp0A",
+      "published": "2025-03-04",
+      "first_seen": "2026-10-20",
+      "views": 2432,
+      "length": "4:05",
+      "age_days": 595,
+      "query": "channel sweep: CP24",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCs3o4RhBiP2wcwqkZR2QVLw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 112,
+        "enrichedOn": "2026-10-20"
       }
     }
   ]
