@@ -27906,6 +27906,56 @@
         "comments": 105,
         "enrichedOn": "2026-10-20"
       }
+    },
+    {
+      "videoId": "Ze_PWJ5huEQ",
+      "title": "10 Canadian Towns Where Million-Dollar Homes Won’t Sell at Any Price (2026)",
+      "channel": "Mr Vista",
+      "url": "https://www.youtube.com/watch?v=Ze_PWJ5huEQ",
+      "published": "2026-10-19",
+      "first_seen": "2026-10-20",
+      "views": 3304,
+      "length": "21:44",
+      "age_days": 1,
+      "query": "channel sweep: Mr Vista",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXIz7ldmgWV7M3XdkEm5Vqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 16,
+        "comments": 1,
+        "enrichedOn": "2026-10-20"
+      }
+    },
+    {
+      "videoId": "nhL7D18qA5I",
+      "title": "Skin Cancer Rates Are Rising — Even With All the Sunscreen | Dr. Teo Soleymani Explains Why",
+      "channel": "Dr. Teo Soleymani Insights",
+      "url": "https://www.youtube.com/watch?v=nhL7D18qA5I",
+      "published": "2026-10-18",
+      "first_seen": "2026-10-20",
+      "views": 7,
+      "length": "3:25",
+      "age_days": 2,
+      "query": "channel sweep: Dr. Teo Soleymani Insights",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCHH-xT2d-CAexfyefjn3dnA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-20"
+      }
     }
   ]
 }
