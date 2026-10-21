@@ -29031,6 +29031,56 @@
         "comments": null,
         "enrichedOn": "2026-10-21"
       }
+    },
+    {
+      "videoId": "21nx6_aA7HI",
+      "title": "The Bank of England’s £100B Trap: How Bond Losses Created the UK Budget Hole",
+      "channel": "One Minute Finance",
+      "url": "https://www.youtube.com/watch?v=21nx6_aA7HI",
+      "published": "2026-10-20",
+      "first_seen": "2026-10-21",
+      "views": 5,
+      "length": "7:47",
+      "age_days": 1,
+      "query": "channel sweep: One Minute Finance",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCpK-JpGbtN_n24MAAdbDwRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-21"
+      }
+    },
+    {
+      "videoId": "252RMBcmtUM",
+      "title": "Bank of Canada Rate Hike Odds Just Jumped to 87%",
+      "channel": "The Ottawa Real Estate Podcast",
+      "url": "https://www.youtube.com/watch?v=252RMBcmtUM",
+      "published": "2026-10-21",
+      "first_seen": "2026-10-21",
+      "views": 4,
+      "length": "25:49",
+      "age_days": 0,
+      "query": "channel sweep: The Ottawa Real Estate Podcast",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCY9WN2nEaziu2DPETrtgbXA",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-21"
+      }
     }
   ]
 }
