@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-20"
+      "unavailable": "2026-10-21"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -75557,7 +75557,57 @@
         "comments": null,
         "enrichedOn": "2026-10-20"
       }
+    },
+    {
+      "videoId": "Rwvv8vpspTE",
+      "title": "What the SpaceX rocket explosion means for the Mars mission",
+      "channel": "CBC News: The National",
+      "url": "https://www.youtube.com/watch?v=Rwvv8vpspTE",
+      "published": "2023-04-22",
+      "first_seen": "2026-10-21",
+      "views": 3499,
+      "length": "4:26",
+      "age_days": 1278,
+      "query": "channel sweep: CBC News: The National",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCKjU3KzdbJE1EFcHVqXC3_g",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 28,
+        "comments": null,
+        "enrichedOn": "2026-10-21"
+      }
+    },
+    {
+      "videoId": "9BUPtXbh5Y8",
+      "title": "Project Stargate AMD's Secret Weapon - Ai News Today",
+      "channel": "Digital Spaceport",
+      "url": "https://www.youtube.com/watch?v=9BUPtXbh5Y8",
+      "published": "2025-10-06",
+      "first_seen": "2026-10-21",
+      "views": 5957,
+      "length": "13:09",
+      "age_days": 380,
+      "query": "channel sweep: Digital Spaceport",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCiaQzXI5528Il6r2NNkrkJA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 209,
+        "comments": 30,
+        "enrichedOn": "2026-10-21"
+      }
     }
   ],
-  "updated": "2026-10-20"
+  "updated": "2026-10-21"
 }
