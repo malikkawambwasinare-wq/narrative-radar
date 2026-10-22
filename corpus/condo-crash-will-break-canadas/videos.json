@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -29080,6 +29080,81 @@
         "likes": 1,
         "comments": 1,
         "enrichedOn": "2026-10-21"
+      }
+    },
+    {
+      "videoId": "LoNvU2C8Egw",
+      "title": "Indian Software Industry Is Rising Again! 🚀",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=LoNvU2C8Egw",
+      "published": "2026-07-10",
+      "first_seen": "2026-10-22",
+      "views": 9491,
+      "length": "11:12",
+      "age_days": 104,
+      "query": "channel sweep: A Tech Lead",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 252,
+        "comments": 65,
+        "enrichedOn": "2026-10-22"
+      }
+    },
+    {
+      "videoId": "7XlzUQ2D3_g",
+      "title": "MORTGAGE В КАНАДЕ в 2025: FIXED vs VARIABLE.  Банк Канады и ипотека. Канадские новости недвижимости",
+      "channel": "TorontoInvestorForum",
+      "url": "https://www.youtube.com/watch?v=7XlzUQ2D3_g",
+      "published": "2025-09-05",
+      "first_seen": "2026-10-22",
+      "views": 3117,
+      "length": "13:09",
+      "age_days": 412,
+      "query": "channel sweep: TorontoInvestorForum",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCykdQYFyriWqA6Pvi0Nzgeg",
+        "language": "ru",
+        "captions": false,
+        "live": false,
+        "likes": 65,
+        "comments": 6,
+        "enrichedOn": "2026-10-22"
+      }
+    },
+    {
+      "videoId": "NOMFAP1YL3E",
+      "title": "URGENT! Change all Variable Rate Debts to Fixed Rates, Hyperinflation Coming... -by Lynette Zang",
+      "channel": "ITM TRADING, INC.",
+      "url": "https://www.youtube.com/watch?v=NOMFAP1YL3E",
+      "published": "2023-09-07",
+      "first_seen": "2026-10-22",
+      "views": 66264,
+      "length": "19:01",
+      "age_days": 1141,
+      "query": "channel sweep: ITM TRADING, INC.",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCom1i7_NVeSUNyJyuR_NbMQ",
+        "language": "en-US",
+        "captions": true,
+        "live": false,
+        "likes": 3285,
+        "comments": 161,
+        "enrichedOn": "2026-10-22"
       }
     }
   ]
