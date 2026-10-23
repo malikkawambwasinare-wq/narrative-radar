@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-22"
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -76057,7 +76057,57 @@
         "comments": null,
         "enrichedOn": "2026-10-22"
       }
+    },
+    {
+      "videoId": "qBNRR7XGiUs",
+      "title": "CIA Secrets: Will the Truth Ever Surface? Unveiling Government Lies #shorts",
+      "channel": "Thetch UNFILTERED",
+      "url": "https://www.youtube.com/watch?v=qBNRR7XGiUs",
+      "published": "2025-11-21",
+      "first_seen": "2026-10-23",
+      "views": 3,
+      "length": "0:32",
+      "age_days": 336,
+      "query": "channel sweep: Thetch UNFILTERED",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCU1Bi3syPP8l63IQDs9yh1g",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
+      }
+    },
+    {
+      "videoId": "iASNiqjIO_4",
+      "title": "Body Positivity Is TOXIC | The Dark Side of Body Positivity | The Deep End Podcast",
+      "channel": "Thetch UNFILTERED",
+      "url": "https://www.youtube.com/watch?v=iASNiqjIO_4",
+      "published": "2023-06-01",
+      "first_seen": "2026-10-23",
+      "views": 265,
+      "length": "2:12",
+      "age_days": 1240,
+      "query": "channel sweep: Thetch UNFILTERED",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCU1Bi3syPP8l63IQDs9yh1g",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": 2,
+        "enrichedOn": "2026-10-23"
+      }
     }
   ],
-  "updated": "2026-10-22"
+  "updated": "2026-10-23"
 }

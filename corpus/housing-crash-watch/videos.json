@@ -457858,7 +457858,7 @@
       "yt": {
         "channelId": "UCAtm9QcSyGTij7NX8o_FnaQ"
       },
-      "unavailable": "2026-10-22"
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "-_bwTfSdQAE",
@@ -800527,15 +800527,22 @@
       "url": "https://www.youtube.com/watch?v=_eEsyMKvbTo",
       "published": "2026-10-18",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "20:44",
       "age_days": null,
       "query": "refiled from the pool (candidate:cre-bank-crisis)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCOTyh7V-y-rQlOjhVBOvxlA"
+        "channelId": "UCOTyh7V-y-rQlOjhVBOvxlA",
+        "category": "28",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800545,15 +800552,22 @@
       "url": "https://www.youtube.com/watch?v=bbsV1Z8rRwg",
       "published": "2026-10-20",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 6,
+      "length": "8:48",
       "age_days": null,
       "query": "refiled from the pool (candidate:cre-bank-crisis)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCc814EKrdY_Qwrc6lwlJJsw"
+        "channelId": "UCc814EKrdY_Qwrc6lwlJJsw",
+        "category": "27",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800563,15 +800577,22 @@
       "url": "https://www.youtube.com/watch?v=Q7Q3RxF3FUo",
       "published": "2026-10-20",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 27926,
+      "length": "10:15",
       "age_days": null,
       "query": "refiled from the pool (candidate:cre-bank-crisis)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCyg-x_kVldsdQec7QG-jTew"
+        "channelId": "UCyg-x_kVldsdQec7QG-jTew",
+        "category": "22",
+        "language": "ta",
+        "captions": false,
+        "live": false,
+        "likes": 194,
+        "comments": 12,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800581,15 +800602,22 @@
       "url": "https://www.youtube.com/watch?v=yNSZH5PJ7Uc",
       "published": "2026-10-21",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 3971,
+      "length": "0:12",
       "age_days": null,
       "query": "refiled from the pool (candidate:silver-to-100)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UChCQb-yHjmAA2vT4kE1-P_w"
+        "channelId": "UChCQb-yHjmAA2vT4kE1-P_w",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 17,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800599,15 +800627,22 @@
       "url": "https://www.youtube.com/watch?v=6LNSfttc1ME",
       "published": "2026-10-21",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 222,
+      "length": "0:41",
       "age_days": null,
       "query": "refiled from the pool (candidate:cre-bank-crisis)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC1M3a__OoETo92gV_-YXAeQ"
+        "channelId": "UC1M3a__OoETo92gV_-YXAeQ",
+        "category": "25",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800617,15 +800652,22 @@
       "url": "https://www.youtube.com/watch?v=Pem2ktWeGoE",
       "published": "2026-10-21",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 42,
+      "length": "0:32",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCbHFk7puR2M88OycPGQj1fQ"
+        "channelId": "UCbHFk7puR2M88OycPGQj1fQ",
+        "category": "22",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800644,7 +800686,8 @@
       "verdict_basis": "metadata",
       "yt": {
         "channelId": "UCv5tokH6RXXBU_rInZsPrqA"
-      }
+      },
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "jFvPxkJ8yuY",
@@ -800653,15 +800696,22 @@
       "url": "https://www.youtube.com/watch?v=jFvPxkJ8yuY",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 84,
+      "length": "1:39",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCfMdfUS3Fo_wLdN6eHFHSow"
+        "channelId": "UCfMdfUS3Fo_wLdN6eHFHSow",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800671,15 +800721,22 @@
       "url": "https://www.youtube.com/watch?v=qOyrfSfAZFw",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCQRqO9XTHfC_esKSQxLOdag"
+        "channelId": "UCQRqO9XTHfC_esKSQxLOdag",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800689,15 +800746,22 @@
       "url": "https://www.youtube.com/watch?v=cqHwynQjlbY",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCDVPOoAZDUoZm1fk5lR9MRA"
+        "channelId": "UCDVPOoAZDUoZm1fk5lR9MRA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800707,15 +800771,22 @@
       "url": "https://www.youtube.com/watch?v=wNc6WoI2xoM",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC-xSk-w1UFhnyTaYfwvSeTw"
+        "channelId": "UC-xSk-w1UFhnyTaYfwvSeTw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800725,15 +800796,22 @@
       "url": "https://www.youtube.com/watch?v=pdY_GVzYmeA",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7RRyMOIbhXmshCIC7JApcA"
+        "channelId": "UC7RRyMOIbhXmshCIC7JApcA",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800743,15 +800821,22 @@
       "url": "https://www.youtube.com/watch?v=IOCsOjvnB-c",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 17,
+      "length": "0:25",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCaIPv0xriVzBcQ7n5iU0mUA"
+        "channelId": "UCaIPv0xriVzBcQ7n5iU0mUA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800761,15 +800846,22 @@
       "url": "https://www.youtube.com/watch?v=78cpc6OvEDM",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 125,
+      "length": "0:51",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCafG-uPnEh8Sid9of2W71ug"
+        "channelId": "UCafG-uPnEh8Sid9of2W71ug",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800779,15 +800871,22 @@
       "url": "https://www.youtube.com/watch?v=jTJTPJFp3ZY",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 5892,
+      "length": "50:01",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCbArQYdfPC2Dimq0LymXPYg"
+        "channelId": "UCbArQYdfPC2Dimq0LymXPYg",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 41,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800797,15 +800896,22 @@
       "url": "https://www.youtube.com/watch?v=yleFODIzjoc",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCJqgEvb2Dah8sFh4MUOEQyQ"
+        "channelId": "UCJqgEvb2Dah8sFh4MUOEQyQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800815,15 +800921,22 @@
       "url": "https://www.youtube.com/watch?v=AdwaCgU1Nkw",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 19,
+      "length": "0:56",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7JGieO7-EDBpVWpzZOlolg"
+        "channelId": "UC7JGieO7-EDBpVWpzZOlolg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800833,15 +800946,22 @@
       "url": "https://www.youtube.com/watch?v=8MDPBJOG9Ns",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 15,
+      "length": "0:39",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC6e0eD_J6Ly9HdTiPIWElKQ"
+        "channelId": "UC6e0eD_J6Ly9HdTiPIWElKQ",
+        "category": "26",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800851,15 +800971,22 @@
       "url": "https://www.youtube.com/watch?v=9ie31KO5b0o",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 460,
+      "length": "2:50",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCz5M2KcWUSEIfohjW27lJEg"
+        "channelId": "UCz5M2KcWUSEIfohjW27lJEg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800869,15 +800996,22 @@
       "url": "https://www.youtube.com/watch?v=k9fh0puSXN0",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 71,
+      "length": "0:58",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCz4dHlW4wA9Q-QhlpZ911bQ"
+        "channelId": "UCz4dHlW4wA9Q-QhlpZ911bQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800887,15 +801021,22 @@
       "url": "https://www.youtube.com/watch?v=KAxlDkz_YDU",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 11,
+      "length": "1:45",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCTYC6sZbt1QREPg3y7Kny8A"
+        "channelId": "UCTYC6sZbt1QREPg3y7Kny8A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     },
     {
@@ -800905,17 +801046,49 @@
       "url": "https://www.youtube.com/watch?v=ekfaTEG1TAU",
       "published": "2026-10-22",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 67,
+      "length": "0:38",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCtH5Wd3oK2T3sHkQR_EwfPg"
+        "channelId": "UCtH5Wd3oK2T3sHkQR_EwfPg",
+        "category": "26",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
+      }
+    },
+    {
+      "videoId": "u0_5qgc3k0Y",
+      "title": "Every AI tool you need to be using in August 2026",
+      "channel": "Alex Finn",
+      "url": "https://www.youtube.com/watch?v=u0_5qgc3k0Y",
+      "published": "2026-08-11",
+      "first_seen": "2026-10-23",
+      "views": 24179,
+      "length": "14:04",
+      "age_days": 73,
+      "query": "channel sweep: Alex Finn",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCfQNB91qRP_5ILeu_S_bSkg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 869,
+        "comments": 80,
+        "enrichedOn": "2026-10-23"
       }
     }
   ],
-  "updated": "2026-10-22"
+  "updated": "2026-10-23"
 }

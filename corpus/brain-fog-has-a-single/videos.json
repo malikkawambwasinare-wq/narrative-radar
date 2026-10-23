@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-22"
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -162303,15 +162303,72 @@
       "url": "https://www.youtube.com/watch?v=Sh0qeuuzrzI",
       "published": "2026-10-18",
       "first_seen": "2026-10-22",
-      "views": null,
-      "length": null,
+      "views": 14,
+      "length": "25:06",
       "age_days": null,
       "query": "refiled from the pool (candidate:cre-bank-crisis)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCCkSfyYk_iP7kyKkAgRAy4A"
+        "channelId": "UCCkSfyYk_iP7kyKkAgRAy4A",
+        "category": "22",
+        "language": "en-US",
+        "captions": true,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
+      }
+    },
+    {
+      "videoId": "cEGxXdQKFco",
+      "title": "Why I'll NEVER Support Trump (The REAL Reason) #shorts",
+      "channel": "Thetch UNFILTERED",
+      "url": "https://www.youtube.com/watch?v=cEGxXdQKFco",
+      "published": "2026-03-26",
+      "first_seen": "2026-10-23",
+      "views": 3,
+      "length": "0:42",
+      "age_days": 211,
+      "query": "channel sweep: Thetch UNFILTERED",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCU1Bi3syPP8l63IQDs9yh1g",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
+      }
+    },
+    {
+      "videoId": "bl8BCgtDUzQ",
+      "title": "The Real Reason The Bitcoin Price Can’t Go Higher",
+      "channel": "Look Into Bitcoin",
+      "url": "https://www.youtube.com/watch?v=bl8BCgtDUzQ",
+      "published": "2025-09-23",
+      "first_seen": "2026-10-23",
+      "views": 7929,
+      "length": "13:39",
+      "age_days": 395,
+      "query": "channel sweep: Look Into Bitcoin",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCWdRpsNKyoFeMROPT3KXygA",
+        "language": "en-GB",
+        "captions": false,
+        "live": false,
+        "likes": 406,
+        "comments": 51,
+        "enrichedOn": "2026-10-23"
       }
     }
   ]

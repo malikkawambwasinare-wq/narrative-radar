@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-22"
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-22"
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-22"
+      "unavailable": "2026-10-23"
     },
     {
       "videoId": "98m8i03frcU",
@@ -199827,6 +199827,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-22"
+      }
+    },
+    {
+      "videoId": "_peyGnGj7pA",
+      "title": "Antibiotics Ke Common Uses Aur Side Effects 🤕 #Antibiotics #Medicine",
+      "channel": "Honest Medicine Review",
+      "url": "https://www.youtube.com/watch?v=_peyGnGj7pA",
+      "published": "2026-09-30",
+      "first_seen": "2026-10-23",
+      "views": 115,
+      "length": "0:47",
+      "age_days": 23,
+      "query": "channel sweep: Honest Medicine Review",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC8TsfwITRQbe6_gEsSwPSUg",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-23"
       }
     }
   ]
