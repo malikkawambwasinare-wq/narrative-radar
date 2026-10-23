@@ -29281,6 +29281,31 @@
         "comments": null,
         "enrichedOn": "2026-10-22"
       }
+    },
+    {
+      "videoId": "3oBtFW1jfm8",
+      "title": "Bank of Canada F*cked! Inflation EXPLODES!",
+      "channel": "Market Mania 🏴‍☠️",
+      "url": "https://www.youtube.com/watch?v=3oBtFW1jfm8",
+      "published": "2026-10-22",
+      "first_seen": "2026-10-23",
+      "views": 19145,
+      "length": "19:09",
+      "age_days": 1,
+      "query": "channel sweep: Market Mania 🏴‍☠️",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UClkNEKZ_pExnu6oCC4YpFAA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 808,
+        "comments": 212,
+        "enrichedOn": "2026-10-23"
+      }
     }
   ]
 }
