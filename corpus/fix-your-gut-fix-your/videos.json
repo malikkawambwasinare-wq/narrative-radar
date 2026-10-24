@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -69325,6 +69325,106 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-23"
+      }
+    },
+    {
+      "videoId": "-qHmv6o9sVI",
+      "title": "What’s Really Wrecking Your Gut? #viralvideo #food #guthealth #loveyourgut",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=-qHmv6o9sVI",
+      "published": "2026-09-17",
+      "first_seen": "2026-10-24",
+      "views": 948,
+      "length": "0:18",
+      "age_days": 37,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": 1,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "F9nfRpaKn8I",
+      "title": "It’s not just about calories—it’s what’s inside the food…#inflammation #guthealth #foodlabels #viral",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=F9nfRpaKn8I",
+      "published": "2026-07-11",
+      "first_seen": "2026-10-24",
+      "views": 11,
+      "length": "0:16",
+      "age_days": 105,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "aImzzWl-ipY",
+      "title": "These Chips Are Wrecking Your Gut 😳 #viralvideo #chips #loveyourgut #figapp",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=aImzzWl-ipY",
+      "published": "2026-06-29",
+      "first_seen": "2026-10-24",
+      "views": 11,
+      "length": "0:19",
+      "age_days": 117,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "xL9dYX0z9to",
+      "title": "This is what’s wrecking your gut#viralvideo #snacks #lifestyle #figapp#loveyourgut #food",
+      "channel": "Emma P",
+      "url": "https://www.youtube.com/watch?v=xL9dYX0z9to",
+      "published": "2026-04-29",
+      "first_seen": "2026-10-24",
+      "views": 1105,
+      "length": "0:12",
+      "age_days": 178,
+      "query": "channel sweep: Emma P",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCukQOz-t5Fwes_TbJzsLOcQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": 1,
+        "enrichedOn": "2026-10-24"
       }
     }
   ]

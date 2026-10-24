@@ -457858,7 +457858,7 @@
       "yt": {
         "channelId": "UCAtm9QcSyGTij7NX8o_FnaQ"
       },
-      "unavailable": "2026-10-23"
+      "unavailable": "2026-10-24"
     },
     {
       "videoId": "-_bwTfSdQAE",
@@ -800687,7 +800687,7 @@
       "yt": {
         "channelId": "UCv5tokH6RXXBU_rInZsPrqA"
       },
-      "unavailable": "2026-10-23"
+      "unavailable": "2026-10-24"
     },
     {
       "videoId": "jFvPxkJ8yuY",
@@ -802796,15 +802796,22 @@
       "url": "https://www.youtube.com/watch?v=2B9EN57jOlo",
       "published": "2026-10-22",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 514,
+      "length": "1:37",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCb6UJR_qSpg1rW4vP4sX73w"
+        "channelId": "UCb6UJR_qSpg1rW4vP4sX73w",
+        "category": "20",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 2,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802814,15 +802821,22 @@
       "url": "https://www.youtube.com/watch?v=rEj8RaWOErU",
       "published": "2026-10-22",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 5,
+      "length": "1:04",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCNYRs_iQvqcE5BD3XC8OXOA"
+        "channelId": "UCNYRs_iQvqcE5BD3XC8OXOA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802832,15 +802846,22 @@
       "url": "https://www.youtube.com/watch?v=_R3bN-QjH5w",
       "published": "2026-10-22",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:59",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCTuDSz7_5SGjUzwC22Heftg"
+        "channelId": "UCTuDSz7_5SGjUzwC22Heftg",
+        "category": "26",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802850,15 +802871,22 @@
       "url": "https://www.youtube.com/watch?v=E5XN5yHde8Y",
       "published": "2026-10-22",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 15,
+      "length": "1:39",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCYOWPi3j2rGxcDzucjzMFug"
+        "channelId": "UCYOWPi3j2rGxcDzucjzMFug",
+        "category": "22",
+        "language": "vi",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802868,15 +802896,22 @@
       "url": "https://www.youtube.com/watch?v=MnjxPAVPXGY",
       "published": "2026-10-22",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 68,
+      "length": "0:23",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC-SefLmyECFrs7BGLn-hFWg"
+        "channelId": "UC-SefLmyECFrs7BGLn-hFWg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802886,15 +802921,22 @@
       "url": "https://www.youtube.com/watch?v=BBNqajiV2mI",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 180,
+      "length": "0:47",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC77kvKt-FOdcKq5RuPqZcQg"
+        "channelId": "UC77kvKt-FOdcKq5RuPqZcQg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802904,15 +802946,22 @@
       "url": "https://www.youtube.com/watch?v=WeZ39Zbk6HI",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 5,
+      "length": "0:11",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCfQSJoGa3D2GEhMoz9NU01Q"
+        "channelId": "UCfQSJoGa3D2GEhMoz9NU01Q",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802922,15 +802971,22 @@
       "url": "https://www.youtube.com/watch?v=2FG-nZyGryA",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 61,
+      "length": "0:52",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCbpqbXNuCPUNvdI3uHHFRZw"
+        "channelId": "UCbpqbXNuCPUNvdI3uHHFRZw",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802940,15 +802996,22 @@
       "url": "https://www.youtube.com/watch?v=B9G16P0EBvA",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 4,
+      "length": "1:24",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCjK40LwGEYMmcP3do8S7Hig"
+        "channelId": "UCjK40LwGEYMmcP3do8S7Hig",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802958,15 +803021,22 @@
       "url": "https://www.youtube.com/watch?v=eCGaTC1pHzQ",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 117,
+      "length": "1:10",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCdXGLnOpJLfLZh04-PS2_9g"
+        "channelId": "UCdXGLnOpJLfLZh04-PS2_9g",
+        "category": "25",
+        "language": "pa",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802976,15 +803046,22 @@
       "url": "https://www.youtube.com/watch?v=vjoFcBEkNto",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 25,
+      "length": "0:40",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7ypTQmlkSEWTECEejx3AXg"
+        "channelId": "UC7ypTQmlkSEWTECEejx3AXg",
+        "category": "24",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -802994,15 +803071,22 @@
       "url": "https://www.youtube.com/watch?v=hXDzs3ZbDF0",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 0,
+      "length": "0:49",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCBmceQxz4yEBzwQ8LMrQjQA"
+        "channelId": "UCBmceQxz4yEBzwQ8LMrQjQA",
+        "category": "27",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -803012,15 +803096,22 @@
       "url": "https://www.youtube.com/watch?v=eG4lwwI6fZA",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 12,
+      "length": "0:53",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCmSv4Qa-Fp_N0rTs7Zhe84g"
+        "channelId": "UCmSv4Qa-Fp_N0rTs7Zhe84g",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -803030,15 +803121,22 @@
       "url": "https://www.youtube.com/watch?v=WeJyMZFfFW8",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 18,
+      "length": "0:53",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCojfHqDwmfapn9wFUk_I-Ww"
+        "channelId": "UCojfHqDwmfapn9wFUk_I-Ww",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-24"
       }
     },
     {
@@ -803048,17 +803146,249 @@
       "url": "https://www.youtube.com/watch?v=8JpVrAsdUqc",
       "published": "2026-10-23",
       "first_seen": "2026-10-23",
-      "views": null,
-      "length": null,
+      "views": 51136,
+      "length": "58:44",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC-_H0UEVejFifw3LWegGoDg"
+        "channelId": "UC-_H0UEVejFifw3LWegGoDg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 841,
+        "comments": 145,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "BsNTH_L84ZM",
+      "title": "What Housing Market Trouble Tells Us Here | More Pain To Come?",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=BsNTH_L84ZM",
+      "published": "2024-10-23",
+      "first_seen": "2026-10-24",
+      "views": 4279,
+      "length": "19:16",
+      "age_days": 731,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 349,
+        "comments": 18,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "N32GWjL0hHk",
+      "title": "The Bitcoin Halving Event | Will Prices Rise or Fall In 2024?",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=N32GWjL0hHk",
+      "published": "2024-01-24",
+      "first_seen": "2026-10-24",
+      "views": 16200,
+      "length": "29:03",
+      "age_days": 1004,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 823,
+        "comments": 16,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "c1KEDvpUJzo",
+      "title": "Bitcoin, Gold & Silver Lead | Are We On The Brink Of Negative Interest Rates?",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=c1KEDvpUJzo",
+      "published": "2020-05-18",
+      "first_seen": "2026-10-24",
+      "views": 23916,
+      "length": "17:25",
+      "age_days": 2350,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1198,
+        "comments": 127,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "7i6EWsYHXwE",
+      "title": "Bitcoin Eyes $10K Post Halving | Housing Market Sets Up For Major Pullback",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=7i6EWsYHXwE",
+      "published": "2020-05-14",
+      "first_seen": "2026-10-24",
+      "views": 27891,
+      "length": "21:07",
+      "age_days": 2354,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 1707,
+        "comments": 196,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "w_DB2IUBlrc",
+      "title": "Bitcoin Recovers $1,000 Over Five Days | ECB Implements \"Tiering\" On Negative Interest Rates",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=w_DB2IUBlrc",
+      "published": "2019-11-29",
+      "first_seen": "2026-10-24",
+      "views": 11405,
+      "length": "39:16",
+      "age_days": 2521,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 430,
+        "comments": 48,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "U0coZCvgPLU",
+      "title": "Daily Update (12/20/18) | Bitcoin hits $4000 as FED raises interest rates",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=U0coZCvgPLU",
+      "published": "2018-12-20",
+      "first_seen": "2026-10-24",
+      "views": 25654,
+      "length": "24:27",
+      "age_days": 2865,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 975,
+        "comments": 112,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "r3J4-5sX31E",
+      "title": "Market Update (10/13/17) | Bitcoin breaks to new highs, altcoins set to follow",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=r3J4-5sX31E",
+      "published": "2017-10-14",
+      "first_seen": "2026-10-24",
+      "views": 22803,
+      "length": "32:31",
+      "age_days": 3297,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 549,
+        "comments": 133,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "WrFmSnrUYh4",
+      "title": "Market Update 8/18/2017 | Bitcoin pullback, alt coins set to rise",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=WrFmSnrUYh4",
+      "published": "2017-08-18",
+      "first_seen": "2026-10-24",
+      "views": 7803,
+      "length": "9:45",
+      "age_days": 3354,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 169,
+        "comments": 38,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "CgERudmzTH4",
+      "title": "Market Update 7/24/2017 | Is Bitcoin set to skyrocket?",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=CgERudmzTH4",
+      "published": "2017-07-24",
+      "first_seen": "2026-10-24",
+      "views": 548,
+      "length": "7:45",
+      "age_days": 3379,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 5,
+        "enrichedOn": "2026-10-24"
       }
     }
   ],
-  "updated": "2026-10-23"
+  "updated": "2026-10-24"
 }

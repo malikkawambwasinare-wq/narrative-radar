@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-23"
+      "unavailable": "2026-10-24"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -210601,7 +210601,57 @@
         "comments": null,
         "enrichedOn": "2026-10-23"
       }
+    },
+    {
+      "videoId": "NXHKIVWWxGM",
+      "title": "This Changes Everything for Bitcoin Investors | CryptoIndex.com Review",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=NXHKIVWWxGM",
+      "published": "2025-06-11",
+      "first_seen": "2026-10-24",
+      "views": 1321,
+      "length": "10:11",
+      "age_days": 500,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 39,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "35FmBsIPIBc",
+      "title": "The Company that STOLE $2 Trillion Dollars #deepseek #chatgpt #ai #bitcoin",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=35FmBsIPIBc",
+      "published": "2025-02-08",
+      "first_seen": "2026-10-24",
+      "views": 1150,
+      "length": "1:27",
+      "age_days": 623,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 35,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
+      }
     }
   ],
-  "updated": "2026-10-23"
+  "updated": "2026-10-24"
 }

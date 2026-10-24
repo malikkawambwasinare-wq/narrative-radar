@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-23"
+      "unavailable": "2026-10-24"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -163044,6 +163044,31 @@
         "likes": null,
         "comments": null,
         "enrichedOn": "2026-10-23"
+      }
+    },
+    {
+      "videoId": "AA0wJ5-TJ_U",
+      "title": "The Real Reason Bitcoin Was Created (And It’s Not What You Think)",
+      "channel": "DataDash",
+      "url": "https://www.youtube.com/watch?v=AA0wJ5-TJ_U",
+      "published": "2025-09-24",
+      "first_seen": "2026-10-24",
+      "views": 10275,
+      "length": "15:03",
+      "age_days": 395,
+      "query": "channel sweep: DataDash",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCCatR7nWbYrkVXdxXb4cGXw",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 272,
+        "comments": 44,
+        "enrichedOn": "2026-10-24"
       }
     }
   ]
