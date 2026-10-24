@@ -29306,6 +29306,106 @@
         "comments": 212,
         "enrichedOn": "2026-10-23"
       }
+    },
+    {
+      "videoId": "sgrM5x5RTbE",
+      "title": "The Bank of Canada might hike interest rates soon. Why now?",
+      "channel": "CBC News",
+      "url": "https://www.youtube.com/watch?v=sgrM5x5RTbE",
+      "published": "2026-10-23",
+      "first_seen": "2026-10-24",
+      "views": 22937,
+      "length": "1:02",
+      "age_days": 1,
+      "query": "channel sweep: CBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 249,
+        "comments": null,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "FbviXMvmg_4",
+      "title": "Canada EXPLODES As Vancouver Is DROWNING In EMPTY Condos",
+      "channel": "Canada Exposed",
+      "url": "https://www.youtube.com/watch?v=FbviXMvmg_4",
+      "published": "2026-10-23",
+      "first_seen": "2026-10-24",
+      "views": 6853,
+      "length": "20:56",
+      "age_days": 1,
+      "query": "channel sweep: Canada Exposed",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCtTPHakxHQMQvPDZjU96nAQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 68,
+        "comments": 28,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "DbazZXi3VO4",
+      "title": "Why The AI Boom WON'T Save San Mateo County's Condo Market",
+      "channel": "Disen Cai Real Estate Group",
+      "url": "https://www.youtube.com/watch?v=DbazZXi3VO4",
+      "published": "2026-10-24",
+      "first_seen": "2026-10-24",
+      "views": 98,
+      "length": "11:50",
+      "age_days": 0,
+      "query": "channel sweep: Disen Cai Real Estate Group",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCv4Tz2110ek9kFUOv5FXrJQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": 1,
+        "enrichedOn": "2026-10-24"
+      }
+    },
+    {
+      "videoId": "EEfP6lY7Cpo",
+      "title": "15 Canadian Towns Where Finished Homes Are Crumbling With No Buyers (2026)",
+      "channel": "Mr Vista",
+      "url": "https://www.youtube.com/watch?v=EEfP6lY7Cpo",
+      "published": "2026-10-23",
+      "first_seen": "2026-10-24",
+      "views": 1037,
+      "length": "21:27",
+      "age_days": 1,
+      "query": "channel sweep: Mr Vista",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXIz7ldmgWV7M3XdkEm5Vqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": 1,
+        "enrichedOn": "2026-10-24"
+      }
     }
   ]
 }
