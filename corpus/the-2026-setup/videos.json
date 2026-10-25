@@ -1155545,7 +1155545,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-24"
+      "unavailable": "2026-10-25"
     },
     {
       "videoId": "0N0kRKuosWc",
@@ -1258496,7 +1258496,32 @@
         "comments": null,
         "enrichedOn": "2026-10-24"
       }
+    },
+    {
+      "videoId": "36IeaqY1H6o",
+      "title": "Anthropic wiped off $31 billion in IBM market cap in a single day",
+      "channel": "Aaron Ross",
+      "url": "https://www.youtube.com/watch?v=36IeaqY1H6o",
+      "published": "2026-04-22",
+      "first_seen": "2026-10-25",
+      "views": 2886,
+      "length": "1:21",
+      "age_days": 186,
+      "query": "channel sweep: Aaron Ross",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC0ftQJmd6-6070NdpoDN0UA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 48,
+        "comments": 4,
+        "enrichedOn": "2026-10-25"
+      }
     }
   ],
-  "updated": "2026-10-24"
+  "updated": "2026-10-25"
 }

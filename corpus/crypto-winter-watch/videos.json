@@ -1017778,7 +1017778,32 @@
         "comments": null,
         "enrichedOn": "2026-10-24"
       }
+    },
+    {
+      "videoId": "eChVngnvT4Y",
+      "title": "Iran: What’s the Exit Strategy?",
+      "channel": "Now That's Crazy",
+      "url": "https://www.youtube.com/watch?v=eChVngnvT4Y",
+      "published": "2026-10-05",
+      "first_seen": "2026-10-25",
+      "views": 5,
+      "length": "9:04",
+      "age_days": 20,
+      "query": "channel sweep: Now That's Crazy",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC3PCf5uxe6bnFghMQi8SzIQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-25"
+      }
     }
   ],
-  "updated": "2026-10-24"
+  "updated": "2026-10-25"
 }

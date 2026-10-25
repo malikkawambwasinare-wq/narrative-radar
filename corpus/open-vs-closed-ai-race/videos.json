@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-24"
+      "unavailable": "2026-10-25"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -211876,7 +211876,32 @@
         "comments": 1,
         "enrichedOn": "2026-10-24"
       }
+    },
+    {
+      "videoId": "dVuRG9QC12k",
+      "title": "OpenAI & Anthropic WIll Have TRILLION-DOLLAR IPOs!",
+      "channel": "Now That's Crazy",
+      "url": "https://www.youtube.com/watch?v=dVuRG9QC12k",
+      "published": "2026-09-22",
+      "first_seen": "2026-10-25",
+      "views": 109,
+      "length": "1:09",
+      "age_days": 33,
+      "query": "channel sweep: Now That's Crazy",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC3PCf5uxe6bnFghMQi8SzIQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-25"
+      }
     }
   ],
-  "updated": "2026-10-24"
+  "updated": "2026-10-25"
 }

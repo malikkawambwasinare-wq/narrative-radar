@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -69759,15 +69759,47 @@
       "url": "https://www.youtube.com/watch?v=2vJlhpS6LqA",
       "published": "2026-10-24",
       "first_seen": "2026-10-24",
-      "views": null,
-      "length": null,
+      "views": 33,
+      "length": "1:35",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCJ1XUSeYAyDYbQIAINJihcQ"
+        "channelId": "UCJ1XUSeYAyDYbQIAINJihcQ",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-25"
+      }
+    },
+    {
+      "videoId": "6r4S4VxPvYw",
+      "title": "Root Cause Analysis for the Entire Stack (Sponsored)",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=6r4S4VxPvYw",
+      "published": "2025-10-10",
+      "first_seen": "2026-10-25",
+      "views": 188,
+      "length": "1:11:48",
+      "age_days": 380,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-25"
       }
     }
   ]

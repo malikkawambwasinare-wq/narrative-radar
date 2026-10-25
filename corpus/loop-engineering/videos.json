@@ -190984,7 +190984,32 @@
         "comments": 3,
         "enrichedOn": "2026-10-24"
       }
+    },
+    {
+      "videoId": "0XTjp3Zjdes",
+      "title": "Datadog Unleashes Autonomous Agents; SpaceX Launches IPO",
+      "channel": "Packet Pushers",
+      "url": "https://www.youtube.com/watch?v=0XTjp3Zjdes",
+      "published": "2026-06-15",
+      "first_seen": "2026-10-25",
+      "views": 173,
+      "length": "50:54",
+      "age_days": 132,
+      "query": "channel sweep: Packet Pushers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC7vAUu1TQAwzuq8wajJw4kA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-25"
+      }
     }
   ],
-  "updated": "2026-10-24"
+  "updated": "2026-10-25"
 }
