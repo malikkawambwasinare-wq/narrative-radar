@@ -29406,6 +29406,31 @@
         "comments": 1,
         "enrichedOn": "2026-10-24"
       }
+    },
+    {
+      "videoId": "H7XxFEki0BM",
+      "title": "Cost Structure Optimization Explained: Fixed vs. Variable Costs",
+      "channel": "One Minute Finance",
+      "url": "https://www.youtube.com/watch?v=H7XxFEki0BM",
+      "published": "2026-10-25",
+      "first_seen": "2026-10-25",
+      "views": 2,
+      "length": "7:35",
+      "age_days": 0,
+      "query": "channel sweep: One Minute Finance",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCpK-JpGbtN_n24MAAdbDwRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-25"
+      }
     }
   ]
 }
