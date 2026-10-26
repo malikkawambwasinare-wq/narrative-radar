@@ -193224,7 +193224,61 @@
         "channelViews": 129,
         "channelVideos": 6
       }
+    },
+    {
+      "videoId": "ZeZozy3lsJg",
+      "title": "Is this the YEAR or DECADE of AI Agents & Agentic AI?",
+      "channel": "IBM Technology",
+      "url": "https://www.youtube.com/watch?v=ZeZozy3lsJg",
+      "published": "2025-11-24",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:IBM Technology)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKWaEZ-_VweaEx1j62do_vQ"
+      }
+    },
+    {
+      "videoId": "d7INJDOo-U0",
+      "title": "The Model Anthropic is Too Scared to Release (Project Glasswing Explained) #ai #claude #anthropic",
+      "channel": "Better Stack",
+      "url": "https://www.youtube.com/watch?v=d7INJDOo-U0",
+      "published": "2026-04-09",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Better Stack)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkVfrGwV-iG9bSsgCbrNPxQ"
+      }
+    },
+    {
+      "videoId": "wqHijlgOOsE",
+      "title": "AI Agents Work 6X Longer, Princeton PhD Job Hunt Fails After 2,300 Tries , & Why AI Means More Work",
+      "channel": "Future Ready Leadership With Jacob Morgan",
+      "url": "https://www.youtube.com/watch?v=wqHijlgOOsE",
+      "published": "2026-10-20",
+      "first_seen": "2026-10-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Future Ready Leadership With Jacob Morga)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCn-LrHNSs5UefYS1tUbmgWg"
+      }
     }
   ],
-  "updated": "2026-10-25"
+  "updated": "2026-10-26"
 }

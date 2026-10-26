@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-25"
+      "unavailable": "2026-10-26"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -78204,7 +78204,428 @@
         "channelViews": 320,
         "channelVideos": 32
       }
+    },
+    {
+      "videoId": "hpeLipZGhAQ",
+      "title": "Inside Project Agorá: The $195 Trillion Overhaul of Global Interbank Clearing",
+      "channel": "The Horizon International",
+      "url": "https://www.youtube.com/watch?v=hpeLipZGhAQ",
+      "published": "2026-09-16",
+      "first_seen": "2026-10-26",
+      "views": 2,
+      "length": "13:50",
+      "age_days": 40,
+      "query": "channel sweep: The Horizon International",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCWnA1TtI8OWm8x0PFeGjblA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-26"
+      }
+    },
+    {
+      "videoId": "BdXAoii0NkE",
+      "title": "Are Russian and NATO forces headed toward a new Cold War?",
+      "channel": "The Wall Street Journal",
+      "url": "https://www.youtube.com/watch?v=BdXAoii0NkE",
+      "published": "2017-07-13",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Wall Street Journal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCK7tptUDHh-RYDsdxO1-5QQ"
+      }
+    },
+    {
+      "videoId": "EWG6DaQpruY",
+      "title": "50 Insane Cold War Facts That Will Shock You!",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=EWG6DaQpruY",
+      "published": "2018-06-07",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "Ot6Irvxn-v4",
+      "title": "CIA vs KGB - Which Was Better During the Cold War?",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=Ot6Irvxn-v4",
+      "published": "2019-09-05",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "Z1--AljumqE",
+      "title": "Secret Weapon to Win the Cold War - SR-71",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=Z1--AljumqE",
+      "published": "2021-01-06",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "I1qhUvloZcY",
+      "title": "How Russia Could Have Won the Cold War by Using Nukes",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=I1qhUvloZcY",
+      "published": "2021-01-12",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "pNlh3JW4ikQ",
+      "title": "Mikhail Gorbachev, Soviet leader who ended Cold War, dead at age 91",
+      "channel": "CBC News: The National",
+      "url": "https://www.youtube.com/watch?v=pNlh3JW4ikQ",
+      "published": "2022-08-31",
+      "first_seen": "2026-10-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CBC News: The National)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCKjU3KzdbJE1EFcHVqXC3_g"
+      }
+    },
+    {
+      "videoId": "llxPNbJt0vc",
+      "title": "Why Russia is Using Cold War Tanks",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=llxPNbJt0vc",
+      "published": "2023-06-08",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "MpDcaXWY-Yg",
+      "title": "Dollar, Housing At Risk Of Collapse As ‘New Cold War’ Hits | Max Porterfield",
+      "channel": "David Lin",
+      "url": "https://www.youtube.com/watch?v=MpDcaXWY-Yg",
+      "published": "2023-09-11",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:David Lin)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UClBMLpP3UHXLmgEypMmXPuA"
+      }
+    },
+    {
+      "videoId": "i71eQVJpCtI",
+      "title": "@Microsoft and @Google feud ‘is a cold war that’s gone hot’ #shorts",
+      "channel": "Yahoo Finance",
+      "url": "https://www.youtube.com/watch?v=i71eQVJpCtI",
+      "published": "2024-09-25",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Yahoo Finance)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCEAZeUIeJs0IjQiqTCdVSIg"
+      }
+    },
+    {
+      "videoId": "Jc3b3M13awU",
+      "title": "US vs China: The Economic Cold War Is Heating Up in 2025",
+      "channel": "Coin Bureau",
+      "url": "https://www.youtube.com/watch?v=Jc3b3M13awU",
+      "published": "2025-03-18",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Coin Bureau)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqK_GSMbpiV8spgD3ZGloSw"
+      }
+    },
+    {
+      "videoId": "FNmQJYSf-Mg",
+      "title": "CIA’s Secret War Plan LEAKED, Mexican Cartels Are DOOMED",
+      "channel": "The Infographics Show",
+      "url": "https://www.youtube.com/watch?v=FNmQJYSf-Mg",
+      "published": "2025-04-02",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Infographics Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCfdNM3NAhaBOXCafH7krzrA"
+      }
+    },
+    {
+      "videoId": "tpB_1zwzi6w",
+      "title": "Timeline of the AI Cold War With China, Trump Takes on Iran, & Are AI Friends Coming to Instagram?",
+      "channel": "Tom Bilyeu",
+      "url": "https://www.youtube.com/watch?v=tpB_1zwzi6w",
+      "published": "2025-05-06",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tom Bilyeu)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnYMOamNKLGVlJgRUbamveA"
+      }
+    },
+    {
+      "videoId": "owD7PbNohJs",
+      "title": "GOP rep draws parallels between Cold War and US-China relations: That's where we are",
+      "channel": "Fox Business",
+      "url": "https://www.youtube.com/watch?v=owD7PbNohJs",
+      "published": "2025-06-05",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Fox Business)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCXoCcu9Rp7NPbTzIvogpZg"
+      }
+    },
+    {
+      "videoId": "nyP5xhXPREk",
+      "title": "The Economic Cold War Has Begun.",
+      "channel": "New Money",
+      "url": "https://www.youtube.com/watch?v=nyP5xhXPREk",
+      "published": "2025-06-14",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:New Money)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvSXMi2LebwJEM1s4bz5IBA"
+      }
+    },
+    {
+      "videoId": "UsL4bamc3_4",
+      "title": "Vittert: Credibility is everything in a cold war | On Balance",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=UsL4bamc3_4",
+      "published": "2025-09-24",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NewsNation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ"
+      }
+    },
+    {
+      "videoId": "s0x_uBFCanw",
+      "title": "The Area 51 Caller: The Night Art Bell Was Silenced Live on Air",
+      "channel": "Chronicles of the Unusual and Mysteries",
+      "url": "https://www.youtube.com/watch?v=s0x_uBFCanw",
+      "published": "2025-11-10",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Chronicles of the Unusual and Mysteries)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCW2NG0r7l-4kshnp_M4hesA"
+      }
+    },
+    {
+      "videoId": "Vs2A2ZIEAjk",
+      "title": "The Files Are Here, Is MAGA In Trouble? New China Factory The Size Of SF. The Cold War Heats Up!",
+      "channel": "Tom Bilyeu",
+      "url": "https://www.youtube.com/watch?v=Vs2A2ZIEAjk",
+      "published": "2025-11-14",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tom Bilyeu)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnYMOamNKLGVlJgRUbamveA"
+      }
+    },
+    {
+      "videoId": "t52jZw2X3Z0",
+      "title": "Are We Entering A Second Cold War?",
+      "channel": "Shawn Ryan Show",
+      "url": "https://www.youtube.com/watch?v=t52jZw2X3Z0",
+      "published": "2026-03-11",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Shawn Ryan Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkoujZQZatbqy4KGcgjpVxQ"
+      }
+    },
+    {
+      "videoId": "65_0D_HCgc8",
+      "title": "Is the U.S. Quietly Preparing for a NEW Cold War? | Jason Schenker",
+      "channel": "MoneyShow",
+      "url": "https://www.youtube.com/watch?v=65_0D_HCgc8",
+      "published": "2026-03-16",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:MoneyShow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLnjAUrBG0G5Z8oGae_yZKg"
+      }
+    },
+    {
+      "videoId": "reItePhNB1A",
+      "title": "Missing student in Barcelona; UFO claims from Cold War vet | Jesse Weber Live Full Show 3/18",
+      "channel": "NewsNation",
+      "url": "https://www.youtube.com/watch?v=reItePhNB1A",
+      "published": "2026-03-20",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:NewsNation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCjG8NtOig0USdrT5D1FpxQ"
+      }
+    },
+    {
+      "videoId": "fCv7TJRnFX8",
+      "title": "The Cold War Spy Plane That Convinced Millions Aliens Were Real!",
+      "channel": "Jiang Xueqin Clips",
+      "url": "https://www.youtube.com/watch?v=fCv7TJRnFX8",
+      "published": "2026-09-17",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Jiang Xueqin Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_p6YYqOir916LpFsLZ93UA"
+      }
+    },
+    {
+      "videoId": "q5ab7S18IAE",
+      "title": "Putin’s Hybrid Warfare: Why UK’s MI5 is More Concerned Than During the Cold War | FP Explains",
+      "channel": "Firstpost",
+      "url": "https://www.youtube.com/watch?v=q5ab7S18IAE",
+      "published": "2026-10-18",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Firstpost)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCz8QaiQxApLq8sLNcszYyJw"
+      }
     }
   ],
-  "updated": "2026-10-25"
+  "updated": "2026-10-26"
 }

@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-25"
+      "unavailable": "2026-10-26"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-25"
+      "unavailable": "2026-10-26"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-25"
+      "unavailable": "2026-10-26"
     },
     {
       "videoId": "98m8i03frcU",
@@ -203011,15 +203011,22 @@
       "url": "https://www.youtube.com/watch?v=lCUINNMb7uM",
       "published": "2026-10-24",
       "first_seen": "2026-10-25",
-      "views": null,
-      "length": null,
+      "views": 1,
+      "length": "1:34",
       "age_days": null,
       "query": "refiled from the pool (industry seed)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCXC1LwEzdf9b-KwJH7epGlw"
+        "channelId": "UCXC1LwEzdf9b-KwJH7epGlw",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-26"
       }
     },
     {
@@ -204260,6 +204267,1050 @@
         "subscribers": 580000,
         "channelViews": 59466160,
         "channelVideos": 278
+      }
+    },
+    {
+      "videoId": "gmeIFHWtMqs",
+      "title": "New Science Says Plant Protein is Superior | What the Fitness | Biolayne",
+      "channel": "Dr. Layne Norton",
+      "url": "https://www.youtube.com/watch?v=gmeIFHWtMqs",
+      "published": "2022-08-26",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Layne Norton)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqMBA83S0TnfTlTeE5j1mgQ"
+      }
+    },
+    {
+      "videoId": "IihEAg-bwKw",
+      "title": "Dr. Berg explains a few reasons why you might lose muscle in your butt and thighs #drberg",
+      "channel": "Dr. Berg Shorts",
+      "url": "https://www.youtube.com/watch?v=IihEAg-bwKw",
+      "published": "2022-12-08",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Berg Shorts)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCpWhiwlOPxOmwQu5xyjtLDw"
+      }
+    },
+    {
+      "videoId": "ym9raFRg29w",
+      "title": "This is how you can boost the effectiveness of your GLP-1 medications! (Full vid on TikTok) #fasting",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=ym9raFRg29w",
+      "published": "2023-05-22",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "y1hvTNkJ-RI",
+      "title": "What are the potential risks associated with GLP-1 medications? (Full video on TikTok) #shorts",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=y1hvTNkJ-RI",
+      "published": "2023-10-16",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "JK8lYMBAwsI",
+      "title": "Should You Just Stay on GLP-1 Medications Forever? #weightloss #glp1medication",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=JK8lYMBAwsI",
+      "published": "2023-11-09",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "Wl3YVmjAdn4",
+      "title": "Is it safe to take GLP-1 medications on a plane? #weightloss #glp1forweightloss #semaglutideweightlo",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=Wl3YVmjAdn4",
+      "published": "2023-11-29",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "i5VbRlcsvec",
+      "title": "Should you work out on Semaglutide or Tirzepatide? #tirzepatideweightloss #semaglutideforweightloss",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=i5VbRlcsvec",
+      "published": "2023-11-29",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "YtOfzlgEw5k",
+      "title": "Why does sugar taste bad for some people on GLP-1 medications? #weightloss #sugaraddiction #tirzepat",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=YtOfzlgEw5k",
+      "published": "2023-11-30",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "zs8LfquGfyc",
+      "title": "Tesofensine is a great alternative to GLP-1 medications if you can’t get access",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=zs8LfquGfyc",
+      "published": "2023-12-03",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "sawulXVGYig",
+      "title": "What are the best injection sites for Semaglutide/Tirzepatide? #semaglutideweightloss #health #weigh",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=sawulXVGYig",
+      "published": "2023-12-06",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "H-n42_aTIcs",
+      "title": "Peptides and GLP-1 medications really help remove those food barriers",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=H-n42_aTIcs",
+      "published": "2023-12-06",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "ECnWw-PyyK8",
+      "title": "Are you afraid to stop Semaglutide/Tirzepatide? #weightloss #health #obesity #glp1medication #tirzep",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=ECnWw-PyyK8",
+      "published": "2023-12-13",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "IZGG3YnEW_k",
+      "title": "Who should not be using Semaglutide/Tirzepatide? #health #weightloss #semaglutideweightloss #tesofen",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=IZGG3YnEW_k",
+      "published": "2023-12-30",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "jsaydLGyKAA",
+      "title": "How quickly will Semaglutide/Tirzepatide crush your sugar cravings? #sugaraddiction #sugarcravings #",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=jsaydLGyKAA",
+      "published": "2024-01-05",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "fdZqkKqbVQ4",
+      "title": "Are you worried about being a prisoner for life stuck on Semaglutide/Tirzepatide? #health #weightlos",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=fdZqkKqbVQ4",
+      "published": "2024-01-08",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "LAbOMtGK7rU",
+      "title": "Drug interactions you should be aware of on GLP-1 medications",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=LAbOMtGK7rU",
+      "published": "2024-01-17",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "MlSi91yrEAg",
+      "title": "Gain control over your food with GLP-1 medications and lifestyle changes like fasting",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=MlSi91yrEAg",
+      "published": "2024-01-24",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "PWyGl5KMNSg",
+      "title": "How long will you stay on GLP-1 medications with potential risks like gallbladder or billiary issues",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=PWyGl5KMNSg",
+      "published": "2024-02-03",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "-lodJ1lUtm8",
+      "title": "Are you a good candidate for Semaglutide or Tirzepatide? #glp1 #glp1forweightloss #semaglutide #tirz",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=-lodJ1lUtm8",
+      "published": "2024-02-18",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "eKPbCewCvV8",
+      "title": "You should be aware of the potential risks of staying on GLP-1 medications for life",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=eKPbCewCvV8",
+      "published": "2024-02-24",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "zgwu-8I9hdU",
+      "title": "GLP-1 medications could be the kickstart needed for many of our youth to beat obesity for life!",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=zgwu-8I9hdU",
+      "published": "2024-05-14",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "hJNLqZp4kZc",
+      "title": "Have you heard of #Bimagrumab? #weightloss #musclegain | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=hJNLqZp4kZc",
+      "published": "2024-06-20",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "p89AzCyRyj4",
+      "title": "Are you getting enough protein? #Wegovy #WeightLoss #MuscleMass | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=p89AzCyRyj4",
+      "published": "2024-07-19",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "ulRre_MAppU",
+      "title": "Why Your Vision Changes on GLP-1 Medications (And What It Means) | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=ulRre_MAppU",
+      "published": "2025-03-24",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "fs5c6RcdWIA",
+      "title": "What is the future of GLP-1 Medications?",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=fs5c6RcdWIA",
+      "published": "2025-05-07",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "W1SMbHoTiUA",
+      "title": "GLP-1 medications are not going away, they are only getting better @lindora",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=W1SMbHoTiUA",
+      "published": "2025-05-30",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "FFFm1405vIw",
+      "title": "“Can Turmeric Really Fight Cancer? Here’s What Science Says”",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=FFFm1405vIw",
+      "published": "2025-07-15",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "sccc_IkTp2s",
+      "title": "GLP1 should not be compounded right now, it is banned! #semaglutide #tirzepatideweightloss",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=sccc_IkTp2s",
+      "published": "2025-07-15",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "L8FrEAreOEc",
+      "title": "What are the nutrients needed for people on GLP-1 medications?  #medicalnutrition",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=L8FrEAreOEc",
+      "published": "2025-08-07",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "1vqOE2FlP7k",
+      "title": "GLP-1 Medications: Unveiling the Truth About Your Options #shorts",
+      "channel": "The Dr. Terri Show",
+      "url": "https://www.youtube.com/watch?v=1vqOE2FlP7k",
+      "published": "2025-09-11",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Dr. Terri Show)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCyezlu__YqrOUPHXqdfHn-A"
+      }
+    },
+    {
+      "videoId": "yLrmt6UJq0g",
+      "title": "Why GLP-1 Medications Make You Hate Alcohol; The truth about alcohol and GLP-1",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=yLrmt6UJq0g",
+      "published": "2025-09-12",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "MpotOlz5gnc",
+      "title": "Onion Everyday?  What really happens to your body Science Explained",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=MpotOlz5gnc",
+      "published": "2025-10-02",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "caSKIM6M-go",
+      "title": "Your body is eating itself 😦 #WeightLoss #MuscleLoss #GLP1 | Dr. Dan | Obesity Expert",
+      "channel": "Dr. Dan | Obesity Expert",
+      "url": "https://www.youtube.com/watch?v=caSKIM6M-go",
+      "published": "2025-10-29",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Dan | Obesity Expert)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnQiofnuXFcloJRoJTsc1FQ"
+      }
+    },
+    {
+      "videoId": "OMvxnn1aZSc",
+      "title": "Switching between Semaglutide and Tirzepatide? Here's What Actually Happens",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=OMvxnn1aZSc",
+      "published": "2025-12-19",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "OcirtSyGbu8",
+      "title": "Semaglutide vs Tirzepatide: Which Actually Works Better?",
+      "channel": "GLP-1 Hub",
+      "url": "https://www.youtube.com/watch?v=OcirtSyGbu8",
+      "published": "2025-12-21",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GLP-1 Hub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChKuewv_LGcU79grXky3J4w"
+      }
+    },
+    {
+      "videoId": "k7PuOuIc14E",
+      "title": "“Spinach Everyday? - What Really Happens to your Body (Science Explained)\"",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=k7PuOuIc14E",
+      "published": "2025-12-26",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "OJLHR8eQ9_s",
+      "title": "\"Tomatoes Everyday? - What Really Happens to your Body (Science Explained)\"",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=OJLHR8eQ9_s",
+      "published": "2025-12-29",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:VitalBite)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ"
+      }
+    },
+    {
+      "videoId": "HzmBQPipG9Q",
+      "title": "What Really Happens In Your Body When You Sleep | 9 PM to 7 AM Science Explained #healthylifestyle",
+      "channel": "HealthyIndiaHub",
+      "url": "https://www.youtube.com/watch?v=HzmBQPipG9Q",
+      "published": "2026-02-07",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:HealthyIndiaHub)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC6iMWY7YliOLuHxLAqhGOjw"
+      }
+    },
+    {
+      "videoId": "tcJaxP8p0uQ",
+      "title": "Can GLP-1 Medications Cause Hair Loss? | Keren Zhou, MD",
+      "channel": "Cleveland Clinic",
+      "url": "https://www.youtube.com/watch?v=tcJaxP8p0uQ",
+      "published": "2026-02-18",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Cleveland Clinic)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxyiSz4m161Z6frOsFxJpgw"
+      }
+    },
+    {
+      "videoId": "veJ9TmO3Qn4",
+      "title": "Why You Lose Your Muscle After a Bulk",
+      "channel": "Big Paul Clips",
+      "url": "https://www.youtube.com/watch?v=veJ9TmO3Qn4",
+      "published": "2026-02-18",
+      "first_seen": "2026-10-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Big Paul Clips)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjQmfhe1yyDsRjCVedA5IBA"
+      }
+    },
+    {
+      "videoId": "Ne3qxKBCptU",
+      "title": "GLP-1 Is Only Half the Battle #semaglutide #tirzepatide",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=Ne3qxKBCptU",
+      "published": "2026-03-02",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "OE5XuDQ8Jrs",
+      "title": "Your Organs Age at Different Speeds: What Happens to Your Body Over Time? #OrganAging #Longevity #He",
+      "channel": "Health Library",
+      "url": "https://www.youtube.com/watch?v=OE5XuDQ8Jrs",
+      "published": "2026-03-04",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Health Library)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCOnd0m7Kcv7yhSOS8AgInXw"
+      }
+    },
+    {
+      "videoId": "eNzdVAv91vE",
+      "title": "GLP-1 Medications Will NOT Reduce Obesity Rates",
+      "channel": "Dr. Suneel Dhand",
+      "url": "https://www.youtube.com/watch?v=eNzdVAv91vE",
+      "published": "2026-03-10",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Suneel Dhand)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCU-Jctu4JTEGFtVnsuqdd5Q"
+      }
+    },
+    {
+      "videoId": "gGww0m_GBqY",
+      "title": "GLP-1 medications are doing something nobody expected #MetabolicHealth #WeightLoss #Science",
+      "channel": "Conquer Your Weight",
+      "url": "https://www.youtube.com/watch?v=gGww0m_GBqY",
+      "published": "2026-03-18",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Conquer Your Weight)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGyDZ4ysj_qpJguoXkR0wg"
+      }
+    },
+    {
+      "videoId": "PGmFV_FRzCc",
+      "title": "Do You Need GLP-1 Medications Forever? (The Rebound Truth + How to Prevent It)",
+      "channel": "Wellness WORD TV",
+      "url": "https://www.youtube.com/watch?v=PGmFV_FRzCc",
+      "published": "2026-05-05",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Wellness WORD TV)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCZlIEZvgWVlHn6lThLCYycg"
+      }
+    },
+    {
+      "videoId": "Nf9S1t8RNS0",
+      "title": "Semaglutide vs Tirzepatide Is The Wrong Question #weightloss #metabolichealth",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=Nf9S1t8RNS0",
+      "published": "2026-06-26",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dr. Jones, DC)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg"
+      }
+    },
+    {
+      "videoId": "54LUt4hpntc",
+      "title": "Semaglutide vs Tirzepatide: Which GLP-1 Is Right for You?",
+      "channel": "Zappy Health",
+      "url": "https://www.youtube.com/watch?v=54LUt4hpntc",
+      "published": "2026-07-25",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Zappy Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCX8rfyGYWtqYdoCMTKf6wpA"
+      }
+    },
+    {
+      "videoId": "_acQm3xctdk",
+      "title": "GLP-1 Medications Won't Fix Emotional Eating—Here's What Will",
+      "channel": "Conquer Your Weight",
+      "url": "https://www.youtube.com/watch?v=_acQm3xctdk",
+      "published": "2026-08-05",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Conquer Your Weight)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGyDZ4ysj_qpJguoXkR0wg"
+      }
+    },
+    {
+      "videoId": "JkLoU9YwUlE",
+      "title": "It Is Never Too Late to Start | What Science Says About Longevity After 50",
+      "channel": "ehealthyinfo",
+      "url": "https://www.youtube.com/watch?v=JkLoU9YwUlE",
+      "published": "2026-08-10",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:ehealthyinfo)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UChSOAXPl_jKvXz_bA32TFtw"
+      }
+    },
+    {
+      "videoId": "qsXW9J9soe8",
+      "title": "Nobody Talks About Why More Fiber Can Make You Feel Worse At First #fiber #bloodsugar #diabetes",
+      "channel": "GNG Feel Great",
+      "url": "https://www.youtube.com/watch?v=qsXW9J9soe8",
+      "published": "2026-08-22",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:GNG Feel Great)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCsinOJvH7PeE50ACaAFxgnQ"
+      }
+    },
+    {
+      "videoId": "4NmT6_h-11s",
+      "title": "Beyond the Buzz: Why GLP-1 Medications Demand a Lifestyle Foundation",
+      "channel": "Matthew C Popkin MD",
+      "url": "https://www.youtube.com/watch?v=4NmT6_h-11s",
+      "published": "2026-08-28",
+      "first_seen": "2026-10-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Matthew C Popkin MD)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCqq_P_JQRdYyWLSDaMs4rZg"
+      }
+    },
+    {
+      "videoId": "3jwPyn6ti_0",
+      "title": "2. Semaglutide vs Tirzepatide: What’s Actually Different?",
+      "channel": "Zappy Health",
+      "url": "https://www.youtube.com/watch?v=3jwPyn6ti_0",
+      "published": "2026-09-08",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Zappy Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCX8rfyGYWtqYdoCMTKf6wpA"
+      }
+    },
+    {
+      "videoId": "UE3S2aA1pPY",
+      "title": "Semaglutide vs Tirzepatide: What’s Actually Different?",
+      "channel": "Zappy Health",
+      "url": "https://www.youtube.com/watch?v=UE3S2aA1pPY",
+      "published": "2026-09-25",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Zappy Health)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCX8rfyGYWtqYdoCMTKf6wpA"
+      }
+    },
+    {
+      "videoId": "7O8gHB3X4H0",
+      "title": "The scary truth about weight and brain function #science #shorts #health",
+      "channel": "The Longevity Experts",
+      "url": "https://www.youtube.com/watch?v=7O8gHB3X4H0",
+      "published": "2026-09-29",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:The Longevity Experts)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCr916X0FYsVrO6e15VJSQNw"
+      }
+    },
+    {
+      "videoId": "SmvAaxBW8KU",
+      "title": "Can You Take GLP-1 Medications While Breastfeeding? What the Data Shows",
+      "channel": "Conquer Your Weight",
+      "url": "https://www.youtube.com/watch?v=SmvAaxBW8KU",
+      "published": "2026-10-07",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Conquer Your Weight)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCPGyDZ4ysj_qpJguoXkR0wg"
+      }
+    },
+    {
+      "videoId": "Tf0oVk4c5d4",
+      "title": "Does Ozempic Actually AGE Your Face? The Truth About “Ozempic Face” | Part 2/4",
+      "channel": "Inside Medical Science",
+      "url": "https://www.youtube.com/watch?v=Tf0oVk4c5d4",
+      "published": "2026-10-18",
+      "first_seen": "2026-10-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (candidate:glp1-ends-obesity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCLG0SBgY3uSWVQZ2dH1p16Q"
+      }
+    },
+    {
+      "videoId": "uzHK3DwamW4",
+      "title": "Half the weight you lose is muscle",
+      "channel": "Sleep Setup Lab",
+      "url": "https://www.youtube.com/watch?v=uzHK3DwamW4",
+      "published": "2026-10-21",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sleep Setup Lab)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCuABO3tVZsPzY6x15Lx14Ew"
+      }
+    },
+    {
+      "videoId": "8sxgWOjt-Bg",
+      "title": "GLP-1 Medications and Vitamin B1 Deficiency: Warning Signs You Should Know",
+      "channel": "Dr Dray",
+      "url": "https://www.youtube.com/watch?v=8sxgWOjt-Bg",
+      "published": "2026-10-22",
+      "first_seen": "2026-10-23",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (candidate:glp1-ends-obesity)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnxmUrGMtpQT844Yd_l7Zyg"
       }
     }
   ]

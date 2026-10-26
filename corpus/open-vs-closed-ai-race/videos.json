@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-25"
+      "unavailable": "2026-10-26"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -213966,7 +213966,701 @@
         "channelViews": 1279,
         "channelVideos": 36
       }
+    },
+    {
+      "videoId": "XDmXDUQbYis",
+      "title": "Altman：AI好處值得承擔部分風險！OpenAI監管立場再表態 | AI不可能零風險？Sam Altman：好處遠大於壞處 | OpenAI與Anthropic路線分歧！AI到底該開放到什麼程度？",
+      "channel": "優視 • AI新時代 // AI NEW ERA UCH",
+      "url": "https://www.youtube.com/watch?v=XDmXDUQbYis",
+      "published": "2026-10-06",
+      "first_seen": "2026-10-26",
+      "views": 304,
+      "length": "1:10",
+      "age_days": 20,
+      "query": "channel sweep: 優視 • AI新時代 // AI NEW ERA UCH",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC5Mju7vF0TAlX4UA9KPNqxA",
+        "language": "zh",
+        "captions": false,
+        "live": false,
+        "likes": 12,
+        "comments": null,
+        "enrichedOn": "2026-10-26"
+      }
+    },
+    {
+      "videoId": "MjnIF2AsCjE",
+      "title": "Google突然降價！AI Agent價格戰開打 | OpenAI壓力來了？Gemini 3.7 Flash降價搶企業 | 企業AI Agent要變便宜？Google新模型來了",
+      "channel": "優視 • AI新時代 // AI NEW ERA UCH",
+      "url": "https://www.youtube.com/watch?v=MjnIF2AsCjE",
+      "published": "2026-08-14",
+      "first_seen": "2026-10-26",
+      "views": 412,
+      "length": "1:30",
+      "age_days": 73,
+      "query": "channel sweep: 優視 • AI新時代 // AI NEW ERA UCH",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC5Mju7vF0TAlX4UA9KPNqxA",
+        "language": "zh",
+        "captions": false,
+        "live": false,
+        "likes": 9,
+        "comments": null,
+        "enrichedOn": "2026-10-26"
+      }
+    },
+    {
+      "videoId": "pMlWjG6t-4I",
+      "title": "Google 崩了？48小時痛失兩大AI天才！OpenAI與Anthropic正在挖空DeepMind | AI人才大逃亡！Gemini核心大腦投奔OpenAI，諾貝爾獎得主加入Anthropic",
+      "channel": "優視 • AI新時代 // AI NEW ERA UCH",
+      "url": "https://www.youtube.com/watch?v=pMlWjG6t-4I",
+      "published": "2026-06-24",
+      "first_seen": "2026-10-26",
+      "views": 1331,
+      "length": "1:58",
+      "age_days": 124,
+      "query": "channel sweep: 優視 • AI新時代 // AI NEW ERA UCH",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC5Mju7vF0TAlX4UA9KPNqxA",
+        "language": "zh",
+        "captions": false,
+        "live": false,
+        "likes": 25,
+        "comments": 2,
+        "enrichedOn": "2026-10-26"
+      }
+    },
+    {
+      "videoId": "1ZQUPWjx5oY",
+      "title": "Anthropic 9650億估值登頂 AI 估值之王 | AI 估值之王換人！Anthropic 募650億美元，OpenAI 被超車 | Anthropic 一戰登頂！9650億美元估值震撼矽谷",
+      "channel": "優視 • AI新時代 // AI NEW ERA UCH",
+      "url": "https://www.youtube.com/watch?v=1ZQUPWjx5oY",
+      "published": "2026-06-03",
+      "first_seen": "2026-10-26",
+      "views": 714,
+      "length": "1:42",
+      "age_days": 145,
+      "query": "channel sweep: 優視 • AI新時代 // AI NEW ERA UCH",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC5Mju7vF0TAlX4UA9KPNqxA",
+        "language": "zh",
+        "captions": true,
+        "live": false,
+        "likes": 21,
+        "comments": null,
+        "enrichedOn": "2026-10-26"
+      }
+    },
+    {
+      "videoId": "W7aaL8NnCnU",
+      "title": "CNBC Stock World Cup: Toyota vs Tesla and Tencent vs Google — who wins?",
+      "channel": "CNBC International Live",
+      "url": "https://www.youtube.com/watch?v=W7aaL8NnCnU",
+      "published": "2022-11-14",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CNBC International Live)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCF8HUTbUwPKh2Q-KpGOCVGw"
+      }
+    },
+    {
+      "videoId": "CHXS2yViBWI",
+      "title": "CNBC Stock World Cup: Meta vs Nintendo and Walmart vs Home Depot — who wins?",
+      "channel": "CNBC International Live",
+      "url": "https://www.youtube.com/watch?v=CHXS2yViBWI",
+      "published": "2022-11-17",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:CNBC International Live)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCF8HUTbUwPKh2Q-KpGOCVGw"
+      }
+    },
+    {
+      "videoId": "M64XgsYo7Pc",
+      "title": "Raw Garlic Or Cooked Garlic, Which Is Better For Your Health?",
+      "channel": "Healthy Hamesha",
+      "url": "https://www.youtube.com/watch?v=M64XgsYo7Pc",
+      "published": "2024-04-24",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Hamesha)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCys-KuZ7z2KHsPaW4U_lEBQ"
+      }
+    },
+    {
+      "videoId": "lUhq0J4V-VY",
+      "title": "Should Kids Use AI? ChatGPT, Claude, Gemini | Tom Bilyeu",
+      "channel": "Tom Bilyeu",
+      "url": "https://www.youtube.com/watch?v=lUhq0J4V-VY",
+      "published": "2025-01-02",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Tom Bilyeu)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCnYMOamNKLGVlJgRUbamveA"
+      }
+    },
+    {
+      "videoId": "2eq8TXrMv2M",
+      "title": "DeepSeek-R1 VS Mistral: Who Wins?",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=2eq8TXrMv2M",
+      "published": "2025-02-07",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Julian Goldie SEO)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw"
+      }
+    },
+    {
+      "videoId": "Hzku7y6oj8o",
+      "title": "Google's Firebase Studio VS Bolt VS Lovable: Who Wins?",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=Hzku7y6oj8o",
+      "published": "2025-04-11",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Julian Goldie SEO)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw"
+      }
+    },
+    {
+      "videoId": "8c-LMb8vDMs",
+      "title": "Google's Firebase Studio VS Bolt VS Lovable: Who Wins?",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=8c-LMb8vDMs",
+      "published": "2025-04-11",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Julian Goldie SEO)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw"
+      }
+    },
+    {
+      "videoId": "E12slsovRGk",
+      "title": "This Secret AI Tool By UAE Is 10X Faster Than ChatGPT & Claude",
+      "channel": "Anik Singal",
+      "url": "https://www.youtube.com/watch?v=E12slsovRGk",
+      "published": "2026-01-03",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Anik Singal)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCinyEr-Fly9Yp1zMFx_D0cQ"
+      }
+    },
+    {
+      "videoId": "LPHOZQwRWBk",
+      "title": "RIP ChatGPT? Claude Cowork is FINALLY Here!",
+      "channel": "AInewsCode",
+      "url": "https://www.youtube.com/watch?v=LPHOZQwRWBk",
+      "published": "2026-01-16",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AInewsCode)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA07eEcbiRLAOj9L4kxZY9A"
+      }
+    },
+    {
+      "videoId": "X0aUmhLjIsw",
+      "title": "Who is the winner? - ChatGPT vs Claude for Tiktok Real Data Analysis",
+      "channel": "Sophia An",
+      "url": "https://www.youtube.com/watch?v=X0aUmhLjIsw",
+      "published": "2026-03-04",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sophia An)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCj4spbBI0UXvnsuwGSdJiAw"
+      }
+    },
+    {
+      "videoId": "g4YIcVv9ScA",
+      "title": "You left ChatGPT for Claude, aren't you sad?",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=g4YIcVv9ScA",
+      "published": "2026-03-27",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "iM69GNZxnhg",
+      "title": "Why I'm Canceling ChatGPT for Claude (And How You Can Too)",
+      "channel": "AI Master",
+      "url": "https://www.youtube.com/watch?v=iM69GNZxnhg",
+      "published": "2026-03-27",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI Master)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0yHbz4OxdQFwmVX2BBQqLg"
+      }
+    },
+    {
+      "videoId": "MMnzVfMZ-NI",
+      "title": "Why I switched from ChatGPT to Claude?",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=MMnzVfMZ-NI",
+      "published": "2026-03-29",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "sDFvgrpovRo",
+      "title": "Claude has a SECRET Pokemon Feature  #ai #artificialintelligence #chatgpt #claude #anthropic",
+      "channel": "Edwin Chen | AI Automation",
+      "url": "https://www.youtube.com/watch?v=sDFvgrpovRo",
+      "published": "2026-04-01",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Edwin Chen | AI Automation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxascJTY9ZG3YmyD7YI-FGA"
+      }
+    },
+    {
+      "videoId": "XRU-CjzYt_o",
+      "title": "Why I Switched From ChatGPT to Claude (without losing anything)",
+      "channel": "Dan Martell",
+      "url": "https://www.youtube.com/watch?v=XRU-CjzYt_o",
+      "published": "2026-04-02",
+      "first_seen": "2026-10-19",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Dan Martell)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCA-mWX9CvCTVFWRMb9bKc9w"
+      }
+    },
+    {
+      "videoId": "hdNohHa6HAY",
+      "title": "Why I Switched From ChatGPT to Claude Cowork",
+      "channel": "Brock Mesarich | AI for Non Techies",
+      "url": "https://www.youtube.com/watch?v=hdNohHa6HAY",
+      "published": "2026-04-11",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Brock Mesarich | AI for Non Techies)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCjc1vfduI7BhVMXBLJLDjmA"
+      }
+    },
+    {
+      "videoId": "BVjqJuAnyPo",
+      "title": "Why I Switched From ChatGPT to Claude For Finance (you should too)",
+      "channel": "Luke Finance",
+      "url": "https://www.youtube.com/watch?v=BVjqJuAnyPo",
+      "published": "2026-04-16",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Luke Finance)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCQ1uKUUYUXDnjYTAJUppQA"
+      }
+    },
+    {
+      "videoId": "y4j79yLktxw",
+      "title": "ChatGPT vs Claude — The Honest Truth in 60 Seconds",
+      "channel": "aiworkflow",
+      "url": "https://www.youtube.com/watch?v=y4j79yLktxw",
+      "published": "2026-06-07",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:aiworkflow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCo0U9X_Ahnci1yvh1Keptew"
+      }
+    },
+    {
+      "videoId": "ixI7DlYNZTA",
+      "title": "ChatGPT vs Claude vs Subscribr (2026) - Which One Is BEST for YouTube?",
+      "channel": "Bryan Software",
+      "url": "https://www.youtube.com/watch?v=ixI7DlYNZTA",
+      "published": "2026-06-15",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bryan Software)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC4G0FyD2ONZP2khtTeDvzEw"
+      }
+    },
+    {
+      "videoId": "oUoFtYifluM",
+      "title": "ChatGPT vs Claude vs Gemini Is the Wrong Question — Use All Three Like This",
+      "channel": "Prem Mohan | AI for Bharat",
+      "url": "https://www.youtube.com/watch?v=oUoFtYifluM",
+      "published": "2026-06-17",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Prem Mohan | AI for Bharat)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC7bhbyn3nR3_bL6LnWoG1tw"
+      }
+    },
+    {
+      "videoId": "z5FAIGUlTC4",
+      "title": "What ChatGPT 5.6 and Claude Pullbacks Mean for LOCAL AI - Ai News Today",
+      "channel": "Digital Spaceport",
+      "url": "https://www.youtube.com/watch?v=z5FAIGUlTC4",
+      "published": "2026-06-26",
+      "first_seen": "2026-10-21",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Digital Spaceport)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCiaQzXI5528Il6r2NNkrkJA"
+      }
+    },
+    {
+      "videoId": "vqruWg5Dhms",
+      "title": "Raw vs. Regular Honey: Which is Better?",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=vqruWg5Dhms",
+      "published": "2026-07-16",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Healthy Tips By  H.S)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
+      }
+    },
+    {
+      "videoId": "To0kYStFS3I",
+      "title": "I Tested Kimi K3 So You Don't Have To...",
+      "channel": "Nick Saraev",
+      "url": "https://www.youtube.com/watch?v=To0kYStFS3I",
+      "published": "2026-07-16",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Nick Saraev)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCbo-KbSjJDG6JWQ_MTZ_rNA"
+      }
+    },
+    {
+      "videoId": "9ETdrn5pZ0k",
+      "title": "I Ranked Every Popular AI Tool… You’re Going to Hate This #AI #ChatGPT #Claude",
+      "channel": "Bpro Club Ai & Skills",
+      "url": "https://www.youtube.com/watch?v=9ETdrn5pZ0k",
+      "published": "2026-07-29",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Bpro Club Ai & Skills)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCkft5sNHH_KqepzymSYBKiA"
+      }
+    },
+    {
+      "videoId": "UEGhcIl6Dh8",
+      "title": "ChatGPT vs Claude — Which AI Actually Wins in 2026?",
+      "channel": "aiworkflow",
+      "url": "https://www.youtube.com/watch?v=UEGhcIl6Dh8",
+      "published": "2026-08-20",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:aiworkflow)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCo0U9X_Ahnci1yvh1Keptew"
+      }
+    },
+    {
+      "videoId": "dvc9pTKrEWY",
+      "title": "How to actually use projects in ChatGPT or Claude #AI #AITips #worksmart",
+      "channel": "Sophia An",
+      "url": "https://www.youtube.com/watch?v=dvc9pTKrEWY",
+      "published": "2026-08-23",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Sophia An)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCj4spbBI0UXvnsuwGSdJiAw"
+      }
+    },
+    {
+      "videoId": "yx4Z697CBZo",
+      "title": "ChatGPTもClaudeもGeminiもこの1本から生まれた「Attention Is All You Need 」解説 前編 【絶対に知っておくべきAI論文解説#1】",
+      "channel": "AI時短ラボ",
+      "url": "https://www.youtube.com/watch?v=yx4Z697CBZo",
+      "published": "2026-09-01",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AI時短ラボ)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCrpJWCdK_UUTKhC1-jGOFKQ"
+      }
+    },
+    {
+      "videoId": "jZ7_ZC7MNdQ",
+      "title": "Still paying for ChatGPT, Claude AND Gemini every month? A lot of developers don't have to.",
+      "channel": "Ali | AI Automation Telugu",
+      "url": "https://www.youtube.com/watch?v=jZ7_ZC7MNdQ",
+      "published": "2026-09-03",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ali | AI Automation Telugu)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC_B5BParHXi2qD9B1KjL9uQ"
+      }
+    },
+    {
+      "videoId": "vonmrNyFsF8",
+      "title": "This FREE Github Repo Saves 90% of AI Tokens  #ai  #chatgpt #claude #claudecode",
+      "channel": "Edwin Chen | AI Automation",
+      "url": "https://www.youtube.com/watch?v=vonmrNyFsF8",
+      "published": "2026-09-06",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Edwin Chen | AI Automation)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCxascJTY9ZG3YmyD7YI-FGA"
+      }
+    },
+    {
+      "videoId": "ch1n9f6Lx2o",
+      "title": "ChatGPT is renting humans #ai #stockmarket #chatgpt #claude #ainews",
+      "channel": "mittuu",
+      "url": "https://www.youtube.com/watch?v=ch1n9f6Lx2o",
+      "published": "2026-09-07",
+      "first_seen": "2026-10-20",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:mittuu)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCCC-62mvet8okNaF5LsTXOQ"
+      }
+    },
+    {
+      "videoId": "lVAezf12ZoE",
+      "title": "The Best D&D Cleric is Clairic, Cloudflare's New AI? #cloudflare # #aicoding #chatgpt #claude #jev",
+      "channel": "Ultra (formerly Zorz) AI Tech, Tools & Experiments",
+      "url": "https://www.youtube.com/watch?v=lVAezf12ZoE",
+      "published": "2026-10-22",
+      "first_seen": "2026-10-22",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Ultra (formerly Zorz) AI Tech, Tools & E)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCc3VuwkRUkG4qXPFznt7y-A"
+      }
+    },
+    {
+      "videoId": "zteILq2P4FY",
+      "title": "Kimi K3.1 Pro is INSANE!",
+      "channel": "Julian Goldie SEO",
+      "url": "https://www.youtube.com/watch?v=zteILq2P4FY",
+      "published": "2026-10-24",
+      "first_seen": "2026-10-24",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:Julian Goldie SEO)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCGpsgNbzdF7BECCVbB1COHw"
+      }
+    },
+    {
+      "videoId": "EP-yA-1PVmw",
+      "title": "Kimi K3.1 Pro is REALLY BAD!",
+      "channel": "AICodeKing",
+      "url": "https://www.youtube.com/watch?v=EP-yA-1PVmw",
+      "published": "2026-10-24",
+      "first_seen": "2026-10-24",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (channel:AICodeKing)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UC0m81bQuthaQZmFbXEY9QSw"
+      }
     }
   ],
-  "updated": "2026-10-25"
+  "updated": "2026-10-26"
 }
