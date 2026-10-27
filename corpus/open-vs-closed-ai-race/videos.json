@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-26"
+      "unavailable": "2026-10-27"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -216391,7 +216391,57 @@
         "comments": null,
         "enrichedOn": "2026-10-26"
       }
+    },
+    {
+      "videoId": "NeCc8GKdn18",
+      "title": "ChatGPT vs Claude: Which AI Writes Better Resumes?",
+      "channel": "The Middle Class Breaker",
+      "url": "https://www.youtube.com/watch?v=NeCc8GKdn18",
+      "published": "2026-06-24",
+      "first_seen": "2026-10-27",
+      "views": 560,
+      "length": "0:42",
+      "age_days": 125,
+      "query": "channel sweep: The Middle Class Breaker",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9WyNPmuvs3EMipofjGo5Vg",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "ZJqxN42brX4",
+      "title": "ChatGPT vs Claude vs Gemini vs Perplexity",
+      "channel": "The Middle Class Breaker",
+      "url": "https://www.youtube.com/watch?v=ZJqxN42brX4",
+      "published": "2026-06-07",
+      "first_seen": "2026-10-27",
+      "views": 1151,
+      "length": "0:58",
+      "age_days": 142,
+      "query": "channel sweep: The Middle Class Breaker",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC9WyNPmuvs3EMipofjGo5Vg",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 22,
+        "comments": null,
+        "enrichedOn": "2026-10-27"
+      }
     }
   ],
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
 }

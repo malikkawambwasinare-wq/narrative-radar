@@ -195724,7 +195724,132 @@
         "comments": null,
         "enrichedOn": "2026-10-26"
       }
+    },
+    {
+      "videoId": "NPkhf-HeEi0",
+      "title": "Coding with AI: From Autocomplete to Agents #shorts",
+      "channel": "aitechtalkiez",
+      "url": "https://www.youtube.com/watch?v=NPkhf-HeEi0",
+      "published": "2026-10-15",
+      "first_seen": "2026-10-27",
+      "views": 6,
+      "length": "1:03",
+      "age_days": 12,
+      "query": "channel sweep: aitechtalkiez",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCp0WLbda3k17mbkbCSs0x3w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "wCFjRHhrW3g",
+      "title": "AI Code Generation: From Autocomplete to Agents #shorts",
+      "channel": "aitechtalkiez",
+      "url": "https://www.youtube.com/watch?v=wCFjRHhrW3g",
+      "published": "2026-10-03",
+      "first_seen": "2026-10-27",
+      "views": 4,
+      "length": "1:03",
+      "age_days": 24,
+      "query": "channel sweep: aitechtalkiez",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCp0WLbda3k17mbkbCSs0x3w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "6E2aW7nDwU4",
+      "title": "How to Build Apps with No Code: VS Code + GitHub Copilot",
+      "channel": "The Middle Class Breaker",
+      "url": "https://www.youtube.com/watch?v=6E2aW7nDwU4",
+      "published": "2026-09-01",
+      "first_seen": "2026-10-27",
+      "views": 8145,
+      "length": "4:04",
+      "age_days": 56,
+      "query": "channel sweep: The Middle Class Breaker",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UC9WyNPmuvs3EMipofjGo5Vg",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 16,
+        "comments": 2,
+        "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "8U5HG3NfO8M",
+      "title": "AI को स्मार्ट जवाब कैसे दिलवाएं? जानिए Prompt Engineering!",
+      "channel": "The Middle Class Breaker",
+      "url": "https://www.youtube.com/watch?v=8U5HG3NfO8M",
+      "published": "2025-07-16",
+      "first_seen": "2026-10-27",
+      "views": 101,
+      "length": "1:05",
+      "age_days": 468,
+      "query": "channel sweep: The Middle Class Breaker",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9WyNPmuvs3EMipofjGo5Vg",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "cNhY0_GTn9s",
+      "title": "Prompt Engineering Explained in 60 Seconds!",
+      "channel": "The Middle Class Breaker",
+      "url": "https://www.youtube.com/watch?v=cNhY0_GTn9s",
+      "published": "2025-07-16",
+      "first_seen": "2026-10-27",
+      "views": 714,
+      "length": "0:49",
+      "age_days": 468,
+      "query": "channel sweep: The Middle Class Breaker",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9WyNPmuvs3EMipofjGo5Vg",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 17,
+        "comments": null,
+        "enrichedOn": "2026-10-27"
+      }
     }
   ],
-  "updated": "2026-10-26"
+  "updated": "2026-10-27"
 }
