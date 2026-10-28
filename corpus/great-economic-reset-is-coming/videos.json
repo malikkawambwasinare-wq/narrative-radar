@@ -45977,6 +45977,56 @@
         "comments": 1,
         "enrichedOn": "2026-10-28"
       }
+    },
+    {
+      "videoId": "L428G1EknZk",
+      "title": "\"CRASH Worse Than 1929 Expected...\" - Harry Dent",
+      "channel": "LifeWorthLiving",
+      "url": "https://www.youtube.com/watch?v=L428G1EknZk",
+      "published": "2026-10-28",
+      "first_seen": "2026-10-28",
+      "views": 381,
+      "length": "11:51",
+      "age_days": 0,
+      "query": "channel sweep: LifeWorthLiving",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCjGdOsazaxARHxFhVaiBJDw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 27,
+        "comments": 16,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "xMnpUjnwKvo",
+      "title": "The AI Trade Is Breaking Down Despite Rallies — And 2027 Could Be Worse",
+      "channel": "Adam Taggart | Thoughtful Money®",
+      "url": "https://www.youtube.com/watch?v=xMnpUjnwKvo",
+      "published": "2026-10-27",
+      "first_seen": "2026-10-28",
+      "views": 2524,
+      "length": "3:00",
+      "age_days": 1,
+      "query": "channel sweep: Adam Taggart | Thoughtful Money®",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCjqe6xtZYTfvA4pHs0HgJsQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 53,
+        "comments": 1,
+        "enrichedOn": "2026-10-28"
+      }
     }
   ]
 }
