@@ -457858,7 +457858,7 @@
       "yt": {
         "channelId": "UCAtm9QcSyGTij7NX8o_FnaQ"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "-_bwTfSdQAE",
@@ -800687,7 +800687,7 @@
       "yt": {
         "channelId": "UCv5tokH6RXXBU_rInZsPrqA"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "jFvPxkJ8yuY",
@@ -812653,7 +812653,132 @@
         "comments": null,
         "enrichedOn": "2026-10-27"
       }
+    },
+    {
+      "videoId": "kBsm-0UvrCI",
+      "title": "Chinese Success in USA: American Perception Revealed #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=kBsm-0UvrCI",
+      "published": "2026-09-03",
+      "first_seen": "2026-10-28",
+      "views": 108,
+      "length": "0:24",
+      "age_days": 55,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "eEF0YzNioXQ",
+      "title": "Young Person's Guide: Buying a House Amidst Economic Shift #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=eEF0YzNioXQ",
+      "published": "2026-08-31",
+      "first_seen": "2026-10-28",
+      "views": 614,
+      "length": "0:16",
+      "age_days": 58,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "iCr5qpQW_DM",
+      "title": "Mortgage Rates Above 7%? Fed Rate Hike Outlook #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=iCr5qpQW_DM",
+      "published": "2026-08-30",
+      "first_seen": "2026-10-28",
+      "views": 169,
+      "length": "0:39",
+      "age_days": 59,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "A_hLY1wa-7g",
+      "title": "Mortgage Rates Above 7%: Your 2024 & 2025 Forecast #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=A_hLY1wa-7g",
+      "published": "2026-08-30",
+      "first_seen": "2026-10-28",
+      "views": 32,
+      "length": "1:30",
+      "age_days": 59,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "AmdczqRaYYg",
+      "title": "Inflation & Debt: Why Interest Rates Are Soaring #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=AmdczqRaYYg",
+      "published": "2026-08-17",
+      "first_seen": "2026-10-28",
+      "views": 15,
+      "length": "0:24",
+      "age_days": 72,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }

@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -173709,6 +173709,56 @@
         "likes": 2,
         "comments": null,
         "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "1pdTAWB-toQ",
+      "title": "Drink it 1Night ‼️Melt Belly Fat Completely ‼️36Inches Waistline turns to 25 ‼️ll NGWorld",
+      "channel": "NGWorld",
+      "url": "https://www.youtube.com/watch?v=1pdTAWB-toQ",
+      "published": "2025-05-06",
+      "first_seen": "2026-10-28",
+      "views": 371,
+      "length": "4:05",
+      "age_days": 540,
+      "query": "channel sweep: NGWorld",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UClgVMh-OPLha0mL2VEiquJQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 2,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "PkhzLJO-ZWg",
+      "title": "Drink Black Pepper with Cinnamon, and your belly fat will melt without dieting.",
+      "channel": "NGWorld",
+      "url": "https://www.youtube.com/watch?v=PkhzLJO-ZWg",
+      "published": "2024-01-18",
+      "first_seen": "2026-10-28",
+      "views": 866,
+      "length": "2:41",
+      "age_days": 1014,
+      "query": "channel sweep: NGWorld",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UClgVMh-OPLha0mL2VEiquJQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 41,
+        "comments": 4,
+        "enrichedOn": "2026-10-28"
       }
     }
   ]

@@ -127047,7 +127047,7 @@
       "yt": {
         "channelId": "UCLfz4sMUH1i9KWJ4Ty6Ly-g"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "y_28TslQsr8",
@@ -217341,7 +217341,57 @@
         "comments": 1,
         "enrichedOn": "2026-10-27"
       }
+    },
+    {
+      "videoId": "2-XQpXLnPLw",
+      "title": "The End of China’s Financial Strategy? How the Ukraine War Changes Everything",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=2-XQpXLnPLw",
+      "published": "2026-08-24",
+      "first_seen": "2026-10-28",
+      "views": 15,
+      "length": "8:36",
+      "age_days": 65,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "yFfFkf7y8rU",
+      "title": "ChatGPT vs Claude: Chi vince in ufficio?",
+      "channel": "Vox Digitalis",
+      "url": "https://www.youtube.com/watch?v=yFfFkf7y8rU",
+      "published": "2026-07-28",
+      "first_seen": "2026-10-28",
+      "views": 85,
+      "length": "0:35",
+      "age_days": 92,
+      "query": "channel sweep: Vox Digitalis",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCofP1ji3gQj0CugxOJHJOoA",
+        "language": "it",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }

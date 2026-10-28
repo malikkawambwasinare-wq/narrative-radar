@@ -1,6 +1,6 @@
 {
   "topic": "truth-about-ozempic-they-arent",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "videos": [
     {
       "videoId": "4a6Uj2Eec74",
@@ -32209,7 +32209,7 @@
       "yt": {
         "channelId": "UCrbWpzBA0L_N28aBbe2WQFw"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "bifUQkrmgFA",
@@ -50203,7 +50203,7 @@
       "yt": {
         "channelId": "UC8piCwsipnYqQ6ecG4ab5kA"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "2PSnry2r-W4",
@@ -54414,7 +54414,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "98m8i03frcU",
@@ -207517,6 +207517,81 @@
         "likes": 3,
         "comments": 1,
         "enrichedOn": "2026-10-27"
+      }
+    },
+    {
+      "videoId": "OvOxAOimWKU",
+      "title": "Amazing! Loss Your Weight Super Fast, 38 Waistline drops to 26 inches in just 7 days ll NGWORLD",
+      "channel": "NGWorld",
+      "url": "https://www.youtube.com/watch?v=OvOxAOimWKU",
+      "published": "2022-04-27",
+      "first_seen": "2026-10-28",
+      "views": 1181,
+      "length": "4:28",
+      "age_days": 1645,
+      "query": "channel sweep: NGWorld",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UClgVMh-OPLha0mL2VEiquJQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 75,
+        "comments": 7,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "NNuwmu_-C1M",
+      "title": "Remove Wrinkles Permanently Overnight Botox Like Effect Without Side Effects YOU MUST TRY ll NGWorld",
+      "channel": "NGWorld",
+      "url": "https://www.youtube.com/watch?v=NNuwmu_-C1M",
+      "published": "2020-11-25",
+      "first_seen": "2026-10-28",
+      "views": 2979,
+      "length": "8:41",
+      "age_days": 2163,
+      "query": "channel sweep: NGWorld",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UClgVMh-OPLha0mL2VEiquJQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 121,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "GfpQRr6Y-b0",
+      "title": "In Just 3 Days, Lose Weight Super Fast, 37 Waistline Turns to 27 Inches ll NGWorld",
+      "channel": "NGWorld",
+      "url": "https://www.youtube.com/watch?v=GfpQRr6Y-b0",
+      "published": "2018-06-02",
+      "first_seen": "2026-10-28",
+      "views": 714684,
+      "length": "2:26",
+      "age_days": 3070,
+      "query": "channel sweep: NGWorld",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UClgVMh-OPLha0mL2VEiquJQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4400,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
       }
     }
   ]

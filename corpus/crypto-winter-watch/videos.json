@@ -1027518,7 +1027518,57 @@
         "comments": null,
         "enrichedOn": "2026-10-27"
       }
+    },
+    {
+      "videoId": "-ffZhX0vHus",
+      "title": "Japan's Bull Market Collapse: US Stocks Soar! #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=-ffZhX0vHus",
+      "published": "2026-08-22",
+      "first_seen": "2026-10-28",
+      "views": 249,
+      "length": "0:12",
+      "age_days": 67,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "YQCsOmeC_iw",
+      "title": "With Vaseline, you'll look like you're 20 years old, even if you're 65!! white face taut",
+      "channel": "NGWorld",
+      "url": "https://www.youtube.com/watch?v=YQCsOmeC_iw",
+      "published": "2026-04-21",
+      "first_seen": "2026-10-28",
+      "views": 182,
+      "length": "3:06",
+      "age_days": 190,
+      "query": "channel sweep: NGWorld",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UClgVMh-OPLha0mL2VEiquJQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }

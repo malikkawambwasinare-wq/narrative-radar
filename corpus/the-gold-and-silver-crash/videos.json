@@ -1,6 +1,6 @@
 {
   "topic": "the-gold-and-silver-crash",
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "videos": [
     {
       "videoId": "0YukEH5UcPY",
@@ -685639,7 +685639,7 @@
       "yt": {
         "channelId": "UCXv9pMth5DBC5SELtVRqpmw"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "n8Kc7_rOBP8",
@@ -685658,7 +685658,7 @@
       "yt": {
         "channelId": "UCyDWSIo0-8ZoZfgfWp-Yqjw"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "xDFLGr9PRZQ",
@@ -685677,7 +685677,7 @@
       "yt": {
         "channelId": "UC2I8ux7Zw4zBRhZBuoF6Mpw"
       },
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "npCD6LKfEjI",
@@ -1147852,15 +1147852,22 @@
       "url": "https://www.youtube.com/watch?v=CGZbitTG3Sg",
       "published": "2026-10-23",
       "first_seen": "2026-10-27",
-      "views": null,
-      "length": null,
+      "views": 46536,
+      "length": "0:32",
       "age_days": null,
       "query": "refiled from the pool (candidate:fusion-close)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7F1IZ8ahjsR5sbWclnjw4A"
+        "channelId": "UC7F1IZ8ahjsR5sbWclnjw4A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 629,
+        "comments": 6,
+        "enrichedOn": "2026-10-28"
       }
     },
     {
@@ -1147870,15 +1147877,172 @@
       "url": "https://www.youtube.com/watch?v=qBEP792_hMM",
       "published": "2026-10-26",
       "first_seen": "2026-10-27",
-      "views": null,
-      "length": null,
+      "views": 4589,
+      "length": "0:29",
       "age_days": null,
       "query": "refiled from the pool (candidate:fusion-close)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC7F1IZ8ahjsR5sbWclnjw4A"
+        "channelId": "UC7F1IZ8ahjsR5sbWclnjw4A",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 62,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "Hn3JDr4fkoU",
+      "title": "Fed Rate Hike: Shocking Truth About Inflation! #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=Hn3JDr4fkoU",
+      "published": "2026-08-29",
+      "first_seen": "2026-10-28",
+      "views": 252,
+      "length": "0:43",
+      "age_days": 60,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "X912XUKd9tQ",
+      "title": "Fed's Shocking Rate Hike: Bigger Than Volcker's? #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=X912XUKd9tQ",
+      "published": "2026-08-29",
+      "first_seen": "2026-10-28",
+      "views": 41,
+      "length": "2:43",
+      "age_days": 60,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "tVIK0HecREU",
+      "title": "Powell's Fed Rate Hike: Bigger Than Volcker's Shock? #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=tVIK0HecREU",
+      "published": "2026-08-29",
+      "first_seen": "2026-10-28",
+      "views": 173,
+      "length": "0:51",
+      "age_days": 60,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "hvuWnszyPIo",
+      "title": "Great Depression: 1930 Stock Market Crash Explained #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=hvuWnszyPIo",
+      "published": "2026-08-26",
+      "first_seen": "2026-10-28",
+      "views": 814,
+      "length": "0:48",
+      "age_days": 63,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "Eqs8G9Hmw54",
+      "title": "Massive Crude Oil Disruption: Ukraine War Impact! #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=Eqs8G9Hmw54",
+      "published": "2026-08-24",
+      "first_seen": "2026-10-28",
+      "views": 1289,
+      "length": "2:25",
+      "age_days": 65,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 25,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "8H3_DOchjFc",
+      "title": "Massive Crude Oil Removal: World War II Scale Shock #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=8H3_DOchjFc",
+      "published": "2026-08-24",
+      "first_seen": "2026-10-28",
+      "views": 1120,
+      "length": "0:28",
+      "age_days": 65,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 8,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
       }
     }
   ]

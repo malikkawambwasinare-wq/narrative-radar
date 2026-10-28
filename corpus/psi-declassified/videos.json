@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-27"
+      "unavailable": "2026-10-28"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -79204,7 +79204,57 @@
         "comments": null,
         "enrichedOn": "2026-10-27"
       }
+    },
+    {
+      "videoId": "QK-xeavH4qc",
+      "title": "Post-Cold War Europe: Hope, Peace, and Unity #shorts",
+      "channel": "EU Startup News",
+      "url": "https://www.youtube.com/watch?v=QK-xeavH4qc",
+      "published": "2026-08-25",
+      "first_seen": "2026-10-28",
+      "views": 10,
+      "length": "0:26",
+      "age_days": 64,
+      "query": "channel sweep: EU Startup News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCfRGdDFMqkEXtei3jRT-mRQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
+    },
+    {
+      "videoId": "qK3dKVhwhPs",
+      "title": "CIA Funded Psychic Research Secrets",
+      "channel": "Ashlee",
+      "url": "https://www.youtube.com/watch?v=qK3dKVhwhPs",
+      "published": "2026-05-12",
+      "first_seen": "2026-10-28",
+      "views": 22,
+      "length": "1:55",
+      "age_days": 169,
+      "query": "channel sweep: Ashlee",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC5rKVqLaTanqQUUXKomtJKQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-28"
+      }
     }
   ],
-  "updated": "2026-10-27"
+  "updated": "2026-10-28"
 }
