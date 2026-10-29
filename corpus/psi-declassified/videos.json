@@ -40355,7 +40355,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-28"
+      "unavailable": "2026-10-29"
     },
     {
       "videoId": "YHrdEZZ7uHQ",
@@ -79454,7 +79454,132 @@
         "comments": 3,
         "enrichedOn": "2026-10-28"
       }
+    },
+    {
+      "videoId": "j0kUJWpObLQ",
+      "title": "Cold War Treason: The Truth About the Atomic Spy Ring #shorts #foxnews",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=j0kUJWpObLQ",
+      "published": "2026-10-07",
+      "first_seen": "2026-10-29",
+      "views": 1871,
+      "length": "2:00",
+      "age_days": 22,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 55,
+        "comments": 2,
+        "enrichedOn": "2026-10-29"
+      }
+    },
+    {
+      "videoId": "-ZAgYAKtB3A",
+      "title": "The Handshake That Changed the Cold War #shorts #foxnews",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=-ZAgYAKtB3A",
+      "published": "2026-09-20",
+      "first_seen": "2026-10-29",
+      "views": 2296,
+      "length": "1:03",
+      "age_days": 39,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 70,
+        "comments": 5,
+        "enrichedOn": "2026-10-29"
+      }
+    },
+    {
+      "videoId": "NCDU-Kd2H5M",
+      "title": "How 3 Days in Cuba Changed the Cold War Forever #shorts #foxnews",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=NCDU-Kd2H5M",
+      "published": "2026-08-01",
+      "first_seen": "2026-10-29",
+      "views": 970,
+      "length": "1:27",
+      "age_days": 89,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 31,
+        "comments": 1,
+        "enrichedOn": "2026-10-29"
+      }
+    },
+    {
+      "videoId": "j6lKCUWQw7I",
+      "title": "Nicole Parker on the Dark Side of the FBI | The Untold Story Podcast",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=j6lKCUWQw7I",
+      "published": "2025-11-22",
+      "first_seen": "2026-10-29",
+      "views": 70049,
+      "length": "27:02",
+      "age_days": 341,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2744,
+        "comments": 264,
+        "enrichedOn": "2026-10-29"
+      }
+    },
+    {
+      "videoId": "JQ2ImCv11tk",
+      "title": "Unmasking the Dark Side of OJ Simpson | FOX True Crime Podcast",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=JQ2ImCv11tk",
+      "published": "2024-06-10",
+      "first_seen": "2026-10-29",
+      "views": 1064,
+      "length": "18:20",
+      "age_days": 871,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 18,
+        "comments": 1,
+        "enrichedOn": "2026-10-29"
+      }
     }
   ],
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
 }

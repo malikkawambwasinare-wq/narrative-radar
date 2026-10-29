@@ -1028868,7 +1028868,57 @@
         "comments": null,
         "enrichedOn": "2026-10-28"
       }
+    },
+    {
+      "videoId": "uJilsUnSGeI",
+      "title": "Bitcoin = crypto ?",
+      "channel": "Surfin' Bitcoin",
+      "url": "https://www.youtube.com/watch?v=uJilsUnSGeI",
+      "published": "2025-04-15",
+      "first_seen": "2026-10-29",
+      "views": 1189,
+      "length": "0:48",
+      "age_days": 562,
+      "query": "channel sweep: Surfin' Bitcoin",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UChfepkLjWJzSW16QArGYxWg",
+        "language": "fr",
+        "captions": false,
+        "live": false,
+        "likes": 10,
+        "comments": null,
+        "enrichedOn": "2026-10-29"
+      }
+    },
+    {
+      "videoId": "LM1Dt-7abxo",
+      "title": "Future perspective on the BTC and Crypto market [Prince Philip, R.Rouphael, M.Zeller, J.Bouteloup]",
+      "channel": "Surfin' Bitcoin",
+      "url": "https://www.youtube.com/watch?v=LM1Dt-7abxo",
+      "published": "2022-12-22",
+      "first_seen": "2026-10-29",
+      "views": 775,
+      "length": "59:23",
+      "age_days": 1407,
+      "query": "channel sweep: Surfin' Bitcoin",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UChfepkLjWJzSW16QArGYxWg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 23,
+        "comments": 4,
+        "enrichedOn": "2026-10-29"
+      }
     }
   ],
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
 }

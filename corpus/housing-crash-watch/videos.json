@@ -457858,7 +457858,7 @@
       "yt": {
         "channelId": "UCAtm9QcSyGTij7NX8o_FnaQ"
       },
-      "unavailable": "2026-10-28"
+      "unavailable": "2026-10-29"
     },
     {
       "videoId": "-_bwTfSdQAE",
@@ -800687,7 +800687,7 @@
       "yt": {
         "channelId": "UCv5tokH6RXXBU_rInZsPrqA"
       },
-      "unavailable": "2026-10-28"
+      "unavailable": "2026-10-29"
     },
     {
       "videoId": "jFvPxkJ8yuY",
@@ -815053,7 +815053,57 @@
         "comments": null,
         "enrichedOn": "2026-10-28"
       }
+    },
+    {
+      "videoId": "sP7_4S6sw7E",
+      "title": "Real Estate \"Blind Spot\"? #shorts #foxnews",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=sP7_4S6sw7E",
+      "published": "2026-02-17",
+      "first_seen": "2026-10-29",
+      "views": 1930,
+      "length": "1:14",
+      "age_days": 254,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 108,
+        "comments": 4,
+        "enrichedOn": "2026-10-29"
+      }
+    },
+    {
+      "videoId": "fmZX0GC4AmI",
+      "title": "President Trump's Pressure On Interest Rates",
+      "channel": "FOX News Podcasts",
+      "url": "https://www.youtube.com/watch?v=fmZX0GC4AmI",
+      "published": "2025-08-05",
+      "first_seen": "2026-10-29",
+      "views": 2808,
+      "length": "0:29",
+      "age_days": 450,
+      "query": "channel sweep: FOX News Podcasts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh13rzqPKn5c24RU9tLz_TQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 88,
+        "comments": 9,
+        "enrichedOn": "2026-10-29"
+      }
     }
   ],
-  "updated": "2026-10-28"
+  "updated": "2026-10-29"
 }
