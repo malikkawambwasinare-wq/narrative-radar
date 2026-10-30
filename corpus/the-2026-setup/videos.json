@@ -1155545,7 +1155545,7 @@
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {},
-      "unavailable": "2026-10-29"
+      "unavailable": "2026-10-30"
     },
     {
       "videoId": "0N0kRKuosWc",
@@ -1355311,7 +1355311,32 @@
         "comments": 3,
         "enrichedOn": "2026-10-29"
       }
+    },
+    {
+      "videoId": "5Tdsl-cYBXo",
+      "title": "231.500$ Profit mit Bitcoin Trading - So trade ich JETZT!",
+      "channel": "Bitbull",
+      "url": "https://www.youtube.com/watch?v=5Tdsl-cYBXo",
+      "published": "2024-02-27",
+      "first_seen": "2026-10-30",
+      "views": 17000,
+      "length": "24:59",
+      "age_days": 976,
+      "query": "channel sweep: Bitbull",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCh8EqZyAUunyl1ryHeZAaSw",
+        "language": "de",
+        "captions": false,
+        "live": false,
+        "likes": 1555,
+        "comments": 91,
+        "enrichedOn": "2026-10-30"
+      }
     }
   ],
-  "updated": "2026-10-29"
+  "updated": "2026-10-30"
 }
