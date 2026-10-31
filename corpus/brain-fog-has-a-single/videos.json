@@ -1,6 +1,6 @@
 {
   "topic": "brain-fog-has-a-single",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "videos": [
     {
       "videoId": "VtzKXsvSUts",
@@ -54774,7 +54774,7 @@
       "yt": {
         "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA"
       },
-      "unavailable": "2026-10-30"
+      "unavailable": "2026-10-31"
     },
     {
       "videoId": "IAYMg8OVv5o",
@@ -177543,15 +177543,72 @@
       "url": "https://www.youtube.com/watch?v=LPGgAGEBIr4",
       "published": "2026-10-30",
       "first_seen": "2026-10-30",
-      "views": null,
-      "length": null,
+      "views": 29,
+      "length": "0:14",
       "age_days": null,
       "query": "refiled from the pool (candidate:gta6-delay)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCwQKkT-NSgt5RXwkNaOL3Ww"
+        "channelId": "UCwQKkT-NSgt5RXwkNaOL3Ww",
+        "category": "20",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-31"
+      }
+    },
+    {
+      "videoId": "hBvlaEinWSs",
+      "title": "Eating White Carbs Spikes Blood Sugar, Creating AGEs \"Glass\" That Scratches Vessels",
+      "channel": "Debocare Health Naturel Living",
+      "url": "https://www.youtube.com/watch?v=hBvlaEinWSs",
+      "published": "2026-09-07",
+      "first_seen": "2026-10-31",
+      "views": 0,
+      "length": "3:00",
+      "age_days": 54,
+      "query": "channel sweep: Debocare Health Naturel Living",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeAFPIuXnDLMMoEZjFojJ6w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-31"
+      }
+    },
+    {
+      "videoId": "Ptd1PjZzJvE",
+      "title": "Why Do Belly Fat Cells Get \"Suffocated\" Leading to Inflammation?",
+      "channel": "Debocare Health Naturel Living",
+      "url": "https://www.youtube.com/watch?v=Ptd1PjZzJvE",
+      "published": "2026-08-09",
+      "first_seen": "2026-10-31",
+      "views": 13,
+      "length": "3:00",
+      "age_days": 83,
+      "query": "channel sweep: Debocare Health Naturel Living",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeAFPIuXnDLMMoEZjFojJ6w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-31"
       }
     }
   ]

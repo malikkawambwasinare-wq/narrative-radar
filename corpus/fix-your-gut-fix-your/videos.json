@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -73715,6 +73715,56 @@
         "likes": 33,
         "comments": null,
         "enrichedOn": "2026-10-30"
+      }
+    },
+    {
+      "videoId": "Y5z9JAKkED0",
+      "title": "The Truth About Cellular Leakage & Chronic Disease Risks",
+      "channel": "Debocare Health Naturel Living",
+      "url": "https://www.youtube.com/watch?v=Y5z9JAKkED0",
+      "published": "2026-09-03",
+      "first_seen": "2026-10-31",
+      "views": 3,
+      "length": "3:00",
+      "age_days": 58,
+      "query": "channel sweep: Debocare Health Naturel Living",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeAFPIuXnDLMMoEZjFojJ6w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-31"
+      }
+    },
+    {
+      "videoId": "QrtRjzo8czI",
+      "title": "The Truth About Chronic Disease: Repair Pipes to Clear Puddles",
+      "channel": "Debocare Health Naturel Living",
+      "url": "https://www.youtube.com/watch?v=QrtRjzo8czI",
+      "published": "2026-08-24",
+      "first_seen": "2026-10-31",
+      "views": 1,
+      "length": "2:59",
+      "age_days": 68,
+      "query": "channel sweep: Debocare Health Naturel Living",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeAFPIuXnDLMMoEZjFojJ6w",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-10-31"
       }
     }
   ]
