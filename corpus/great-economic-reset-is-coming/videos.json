@@ -46302,6 +46302,106 @@
         "comments": null,
         "enrichedOn": "2026-10-30"
       }
+    },
+    {
+      "videoId": "jkvMqs9amWI",
+      "title": "A Once in a Lifetime Financial Event Is Here",
+      "channel": "SelfAdvisers",
+      "url": "https://www.youtube.com/watch?v=jkvMqs9amWI",
+      "published": "2026-10-31",
+      "first_seen": "2026-10-31",
+      "views": 15,
+      "length": "12:20",
+      "age_days": 0,
+      "query": "channel sweep: SelfAdvisers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-31"
+      }
+    },
+    {
+      "videoId": "2rEmdOQSfmY",
+      "title": "A Once in a Lifetime Economic Reset is Coming.",
+      "channel": "SelfAdvisers",
+      "url": "https://www.youtube.com/watch?v=2rEmdOQSfmY",
+      "published": "2026-10-30",
+      "first_seen": "2026-10-31",
+      "views": 62,
+      "length": "11:57",
+      "age_days": 1,
+      "query": "channel sweep: SelfAdvisers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-10-31"
+      }
+    },
+    {
+      "videoId": "4s5_zLZa_9Y",
+      "title": "The Global Monetary Reset Has Begun (Japan Is Just the Start)",
+      "channel": "SelfAdvisers",
+      "url": "https://www.youtube.com/watch?v=4s5_zLZa_9Y",
+      "published": "2026-10-30",
+      "first_seen": "2026-10-31",
+      "views": 75,
+      "length": "12:28",
+      "age_days": 1,
+      "query": "channel sweep: SelfAdvisers",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCuhl4dUDg1uDzzL01baOYgw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": 1,
+        "enrichedOn": "2026-10-31"
+      }
+    },
+    {
+      "videoId": "R0h68VKsucc",
+      "title": "5 Catalysts That Could Trigger a DOT Coin Reversal #Polkadot",
+      "channel": "Crypto Radar",
+      "url": "https://www.youtube.com/watch?v=R0h68VKsucc",
+      "published": "2026-10-31",
+      "first_seen": "2026-10-31",
+      "views": 1,
+      "length": "2:47",
+      "age_days": 0,
+      "query": "channel sweep: Crypto Radar",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCeW29EnrGvtN738VKzgkIEA",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-10-31"
+      }
     }
   ]
 }
