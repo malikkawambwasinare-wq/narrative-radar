@@ -33298,6 +33298,56 @@
         "comments": 50,
         "enrichedOn": "2026-11-01"
       }
+    },
+    {
+      "videoId": "-ka6Y9cn8cc",
+      "title": "12 Canadian Towns People Moved To and INSTANTLY Regretted",
+      "channel": "Mr Vista",
+      "url": "https://www.youtube.com/watch?v=-ka6Y9cn8cc",
+      "published": "2026-10-31",
+      "first_seen": "2026-11-01",
+      "views": 536,
+      "length": "28:31",
+      "age_days": 1,
+      "query": "channel sweep: Mr Vista",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXIz7ldmgWV7M3XdkEm5Vqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-11-01"
+      }
+    },
+    {
+      "videoId": "BElnXEC4T10",
+      "title": "Canadian Stock Market Update: The Bank of Canada Just Signaled This",
+      "channel": "MoneyMindset",
+      "url": "https://www.youtube.com/watch?v=BElnXEC4T10",
+      "published": "2026-11-01",
+      "first_seen": "2026-11-01",
+      "views": 92,
+      "length": "10:06",
+      "age_days": 0,
+      "query": "channel sweep: MoneyMindset",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCMV_w56TCDR1J12nwV0_HUA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-01"
+      }
     }
   ]
 }
