@@ -83071,6 +83071,56 @@
       "yt": {
         "channelId": "UC3L1LZJrgbH9A4kapAtbnWg"
       }
+    },
+    {
+      "videoId": "TwoYGyBtvpI",
+      "title": "Heal Your Gut With This (Underrated)",
+      "channel": "Nadia Siddiqui",
+      "url": "https://www.youtube.com/watch?v=TwoYGyBtvpI",
+      "published": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "views": 14,
+      "length": "5:01",
+      "age_days": 0,
+      "query": "channel sweep: Nadia Siddiqui",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCES9ZdfBeAe7srcaIhyPVhg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-02"
+      }
+    },
+    {
+      "videoId": "RPnxhUvX41Y",
+      "title": "What Happened To My Gut After 8 Years Plant Based?",
+      "channel": "Nadia Siddiqui",
+      "url": "https://www.youtube.com/watch?v=RPnxhUvX41Y",
+      "published": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "views": 31,
+      "length": "6:50",
+      "age_days": 0,
+      "query": "channel sweep: Nadia Siddiqui",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCES9ZdfBeAe7srcaIhyPVhg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-11-02"
+      }
     }
   ]
 }

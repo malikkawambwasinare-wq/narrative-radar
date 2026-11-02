@@ -36413,6 +36413,31 @@
       "yt": {
         "channelId": "UC5aNPmKYwbudeNngDMTY3lw"
       }
+    },
+    {
+      "videoId": "6Tik7n1SDgc",
+      "title": "Is the AI Bubble Finally BURSTING?",
+      "channel": "A Tech Lead",
+      "url": "https://www.youtube.com/watch?v=6Tik7n1SDgc",
+      "published": "2026-11-02",
+      "first_seen": "2026-11-02",
+      "views": 2168,
+      "length": "12:51",
+      "age_days": 0,
+      "query": "channel sweep: A Tech Lead",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCZZA2N5fsH2jT9O4ZOw2iDw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 83,
+        "comments": 17,
+        "enrichedOn": "2026-11-02"
+      }
     }
   ]
 }
