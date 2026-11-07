@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -50351,6 +50351,174 @@
         "likes": 46,
         "comments": 1,
         "enrichedOn": "2026-11-06"
+      }
+    },
+    {
+      "videoId": "w3JQciiKpwI",
+      "title": "San Diego condo market is taking huge losses (down $170,000)",
+      "channel": "Reventure Consulting",
+      "url": "https://www.youtube.com/watch?v=w3JQciiKpwI",
+      "published": "2026-11-06",
+      "first_seen": "2026-11-07",
+      "views": 14281,
+      "length": "1:13",
+      "age_days": 1,
+      "query": "channel sweep: Reventure Consulting",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCVTQunGrE3p7Oq8Owao5y_Q",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 323,
+        "comments": 56,
+        "enrichedOn": "2026-11-07"
+      }
+    },
+    {
+      "videoId": "mW0e3CO_vp4",
+      "title": "Canada’s Rate Hike Could Make Housing Worse | REIN It In Ep. 102",
+      "channel": "(REIN) The Real Estate Investment Network",
+      "url": "https://www.youtube.com/watch?v=mW0e3CO_vp4",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-07",
+      "views": 211,
+      "length": "59:43",
+      "age_days": 0,
+      "query": "channel sweep: (REIN) The Real Estate Investment Network",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCGI3h2vmylYEsqxM35t4gxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 12,
+        "comments": 4,
+        "enrichedOn": "2026-11-07"
+      }
+    },
+    {
+      "videoId": "OlUy7bqYZvE",
+      "title": "Fed's Mary Daly says further rate hikes needed to lower inflation",
+      "channel": "CNBC Television",
+      "url": "https://www.youtube.com/watch?v=OlUy7bqYZvE",
+      "published": "2026-11-06",
+      "first_seen": "2026-11-07",
+      "views": 856,
+      "length": "0:43",
+      "age_days": 1,
+      "query": "channel sweep: CNBC Television",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 10,
+        "comments": 2,
+        "enrichedOn": "2026-11-07"
+      }
+    },
+    {
+      "videoId": "sFpgQwK2eO4",
+      "title": "Richmond Fed president sees interest rate hikes ahead, but at a gradual pace",
+      "channel": "CNBC Television",
+      "url": "https://www.youtube.com/watch?v=sFpgQwK2eO4",
+      "published": "2026-11-05",
+      "first_seen": "2026-11-07",
+      "views": 1682,
+      "length": "1:06",
+      "age_days": 2,
+      "query": "channel sweep: CNBC Television",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCrp_UI8XtuYfpiqluWLD7Lw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 34,
+        "enrichedOn": "2026-11-07"
+      }
+    },
+    {
+      "videoId": "x_A8ZMstfHc",
+      "title": "BOE Rate Hike a ‘Big One and Done,' Says BNY’s Yu",
+      "channel": "Bloomberg Television",
+      "url": "https://www.youtube.com/watch?v=x_A8ZMstfHc",
+      "published": "2026-11-05",
+      "first_seen": "2026-11-07",
+      "views": 4370,
+      "length": "1:37",
+      "age_days": 2,
+      "query": "channel sweep: Bloomberg Television",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 9,
+        "comments": 21,
+        "enrichedOn": "2026-11-07"
+      }
+    },
+    {
+      "videoId": "pLDtmll4Irc",
+      "title": "UK INFLATION CRISIS DEEPENS, Why Bank Of England Is Raising UK Interest Rates? | Full Presser | N18G",
+      "channel": "moneycontrol",
+      "url": "https://www.youtube.com/watch?v=pLDtmll4Irc",
+      "published": "2026-11-05",
+      "first_seen": "2026-11-07",
+      "views": 1225,
+      "length": "59:53",
+      "age_days": 2,
+      "query": "channel sweep: moneycontrol",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UChftTVI0QJmyXkajQYt2tiQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-07"
+      }
+    },
+    {
+      "videoId": "5OPH8aMSCJU",
+      "title": "Nasdaq Crashed 5.5% - Is the AI Bubble Finally Bursting?",
+      "channel": "TechPress",
+      "url": "https://www.youtube.com/watch?v=5OPH8aMSCJU",
+      "published": "2026-11-06",
+      "first_seen": "2026-11-07",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:collapse-audit)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCdfkCaiWX72VrvyWhjDCGlA"
       }
     }
   ]
