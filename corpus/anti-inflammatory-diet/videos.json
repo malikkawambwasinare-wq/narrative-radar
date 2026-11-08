@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119705,7 +119705,7 @@
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119899,7 +119899,7 @@
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -127133,7 +127133,7 @@
       "yt": {
         "channelId": "UCXOhNV8OM3leeIX0rkBCKIw"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "W7ShO-GmG6A",
@@ -158367,7 +158367,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "IN3596xnZks",
@@ -159936,7 +159936,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "eKWEXkBQoNI",
@@ -160230,7 +160230,7 @@
       "yt": {
         "channelId": "UC88SGENAQK_h1w7h1a-0RGw"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "J0xHU4UrXDA",
@@ -160249,7 +160249,7 @@
       "yt": {
         "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "2sRgf-T3N9U",
@@ -329228,7 +329228,7 @@
       "yt": {
         "channelId": "UCh8eX1zZayWWqrbYee12iDg"
       },
-      "unavailable": "2026-11-06"
+      "unavailable": "2026-11-08"
     },
     {
       "videoId": "Ps9D7yWd-OE",
@@ -356279,7 +356279,707 @@
         "comments": null,
         "enrichedOn": "2026-11-07"
       }
+    },
+    {
+      "videoId": "2qpWaQ9f2kk",
+      "title": "Think You're Eating Healthy? These Diet Mistakes May Surprise You",
+      "channel": "Just In Health",
+      "url": "https://www.youtube.com/watch?v=2qpWaQ9f2kk",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 76,
+      "length": "0:42",
+      "age_days": 1,
+      "query": "channel sweep: Just In Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "x1fwqvOS_yE",
+      "title": "Eating Healthy but Still Sick? Why Diet Alone May Not Be Enough",
+      "channel": "Just In Health",
+      "url": "https://www.youtube.com/watch?v=x1fwqvOS_yE",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 64,
+      "length": "0:40",
+      "age_days": 1,
+      "query": "channel sweep: Just In Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "F3y1KcY8YAU",
+      "title": "Worst Foods to Eat After Your GLP-1 Shot #glp1 #guthealth",
+      "channel": "Dr. Jones, DC",
+      "url": "https://www.youtube.com/watch?v=F3y1KcY8YAU",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 10050,
+      "length": "1:08",
+      "age_days": 0,
+      "query": "channel sweep: Dr. Jones, DC",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC_WNOY86Z1szXh91b2YxhGg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 17,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "Mpl2FPx5p4U",
+      "title": "DOCTOR: Take METFORMIN every day",
+      "channel": "Type 2 Diabetes Revolution",
+      "url": "https://www.youtube.com/watch?v=Mpl2FPx5p4U",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 2396,
+      "length": "1:45",
+      "age_days": 1,
+      "query": "channel sweep: Type 2 Diabetes Revolution",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCBbhJhM4PNy4KP5_bsiDXeA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 165,
+        "comments": 119,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "j2u9RY2XaB8",
+      "title": "Deli meat alternatives. Plz see recent videos on foods to avoid & include to lower colon cancer risk",
+      "channel": "Gabrielle | Dietitian",
+      "url": "https://www.youtube.com/watch?v=j2u9RY2XaB8",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 1107,
+      "length": "0:38",
+      "age_days": 1,
+      "query": "channel sweep: Gabrielle | Dietitian",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC89lIEaRwW9dL8BftTzK2Tg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 25,
+        "comments": 5,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "tZGSCtAgCTo",
+      "title": "7 Foods That Support Brain Health as You Grow Older. #healthytips #stayhealthy",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=tZGSCtAgCTo",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 171,
+      "length": "0:08",
+      "age_days": 0,
+      "query": "channel sweep: Healthy Tips By  H.S",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "y87tvq5kWlM",
+      "title": "Creamy Stuffed Sweet Potatoes 🍠 Easy Vegetarian Dinner! #food #recipe #shorts",
+      "channel": "Purely healthy food",
+      "url": "https://www.youtube.com/watch?v=y87tvq5kWlM",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 894,
+      "length": "0:27",
+      "age_days": 1,
+      "query": "channel sweep: Purely healthy food",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCxs-lSPjwSGlqjju_UnWH1w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 25,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "87IlhPJnIS8",
+      "title": "Stop Eating These Foods If You’re Dieting (They’re Carb Bombs!)",
+      "channel": "VitalBite",
+      "url": "https://www.youtube.com/watch?v=87IlhPJnIS8",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 0,
+      "length": "4:27",
+      "age_days": 0,
+      "query": "channel sweep: VitalBite",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9u5kTQo_OjYAMNPikCfvbQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "UD-fOwDcJPc",
+      "title": "குழந்தைகளுக்கு இந்த 3 காய்கறிகளை கொடுங்க! | Kids Health Tips | Milk Pocket",
+      "channel": "Milk Pocket",
+      "url": "https://www.youtube.com/watch?v=UD-fOwDcJPc",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 95,
+      "length": "5:14",
+      "age_days": 1,
+      "query": "channel sweep: Milk Pocket",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCrpqcEynTyp1vFNoSX2x9-A",
+        "language": "ta",
+        "captions": false,
+        "live": false,
+        "likes": 11,
+        "comments": 2,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "rin4ntx1tSY",
+      "title": "Have you tried any of these? #figpartner #antiinflammatorydiet #antiinflammatory #antiinflammatoryfo",
+      "channel": "Madi",
+      "url": "https://www.youtube.com/watch?v=rin4ntx1tSY",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 893,
+      "length": "0:27",
+      "age_days": 1,
+      "query": "channel sweep: Madi",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "egRrJTdrmfM",
+      "title": "Here are 3 healthier creamer swaps #figpartner #antiinflammatorydiet #antiinflammatory #antiinflamma",
+      "channel": "Madi",
+      "url": "https://www.youtube.com/watch?v=egRrJTdrmfM",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 178,
+      "length": "0:32",
+      "age_days": 1,
+      "query": "channel sweep: Madi",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "6jk_mH9Bp9c",
+      "title": "Have you tried any of these snacks? #figpartner #antiinflammatorydiet #antiinflammatory #antiinflamm",
+      "channel": "Madi",
+      "url": "https://www.youtube.com/watch?v=6jk_mH9Bp9c",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 940,
+      "length": "0:31",
+      "age_days": 1,
+      "query": "channel sweep: Madi",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 19,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "VaEEtFoigr0",
+      "title": "Over 60? Eat These 2 SPICY Foods That Naturally Reduce Joint Pain Fast!",
+      "channel": "Arthritis HealthCare",
+      "url": "https://www.youtube.com/watch?v=VaEEtFoigr0",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 82,
+      "length": "25:23",
+      "age_days": 0,
+      "query": "channel sweep: Arthritis HealthCare",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9uHUmG37SuzCyWLxxlwTnA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "D8wGxukgsvY",
+      "title": "Seniors: Eat These 2 Cereals That Work Like Ibuprofen for Joint Pain & Arthritis Relief!",
+      "channel": "Arthritis HealthCare",
+      "url": "https://www.youtube.com/watch?v=D8wGxukgsvY",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 3332,
+      "length": "24:38",
+      "age_days": 1,
+      "query": "channel sweep: Arthritis HealthCare",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9uHUmG37SuzCyWLxxlwTnA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 59,
+        "comments": 1,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "jeldVpPTGPg",
+      "title": "3 anti inflammatory friendly snacks at Sprouts! 😋🙌🏼 @Sprouts Farmers Market @Anti Inflammatory App |",
+      "channel": "Anti Inflammatory eating",
+      "url": "https://www.youtube.com/watch?v=jeldVpPTGPg",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 457,
+      "length": "0:40",
+      "age_days": 1,
+      "query": "channel sweep: Anti Inflammatory eating",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCDYIMX5xaQoEKiYib8ni9Tg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 7,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "i3lddaa28Rk",
+      "title": "Salt and Digestion: Season Whole Foods for Better Meals #shorts",
+      "channel": "What Did Adam Say?",
+      "url": "https://www.youtube.com/watch?v=i3lddaa28Rk",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 8,
+      "length": "1:35",
+      "age_days": 1,
+      "query": "channel sweep: What Did Adam Say?",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UC0tZV6LuMKg_99WCD7ef0sA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "pFvqcGVAQjU",
+      "title": "Which Food Is Best for Which Body Part? 😱 | 40 Healthy Food Benefits | Nutrition Facts #Shorts",
+      "channel": "Natural beauty handbook",
+      "url": "https://www.youtube.com/watch?v=pFvqcGVAQjU",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 487,
+      "length": "0:12",
+      "age_days": 0,
+      "query": "channel sweep: Natural beauty handbook",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCAiqPcjJ81IVstiq31b9IYw",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 14,
+        "comments": 1,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "wGSq2lwmn1w",
+      "title": "8 SHOCKING Food Facts You Didn't Know! 😱 | Amazing Health Benefits of Everyday Foods #Shorts",
+      "channel": "Natural beauty handbook",
+      "url": "https://www.youtube.com/watch?v=wGSq2lwmn1w",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 5077,
+      "length": "0:12",
+      "age_days": 1,
+      "query": "channel sweep: Natural beauty handbook",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCAiqPcjJ81IVstiq31b9IYw",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 40,
+        "comments": 2,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "_n_vy4-LNyQ",
+      "title": "Day 4 Weight Gain Diet Plan🥑|Healthy Vegetarian Diet for Weight Gain|Natural Weight Gain Tips#Shorts",
+      "channel": "Natural beauty handbook",
+      "url": "https://www.youtube.com/watch?v=_n_vy4-LNyQ",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 824,
+      "length": "0:12",
+      "age_days": 1,
+      "query": "channel sweep: Natural beauty handbook",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCAiqPcjJ81IVstiq31b9IYw",
+        "language": "en-IN",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": 2,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "OwMf9RUknhQ",
+      "title": "Dr. Eric Berg DC: The #1 health change most people ignore",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=OwMf9RUknhQ",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 2,
+      "length": "0:45",
+      "age_days": 0,
+      "query": "channel sweep: The Protocol Page",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "WIARwMtPuEw",
+      "title": "Dr. Eric Berg DC: Why Magnesium Timing Advice Is Wrong",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=WIARwMtPuEw",
+      "published": "2026-11-08",
+      "first_seen": "2026-11-08",
+      "views": 0,
+      "length": "1:04",
+      "age_days": 0,
+      "query": "channel sweep: The Protocol Page",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "mpl8YWlLy6w",
+      "title": "Dr. Eric Berg DC: Can 30 minutes of exercise cancel a day of sitting?",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=mpl8YWlLy6w",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 4,
+      "length": "0:49",
+      "age_days": 1,
+      "query": "channel sweep: The Protocol Page",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "IgV1yQNyQFc",
+      "title": "Dr. Eric Berg DC: Why You Really Wake Up To Pee At Night",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=IgV1yQNyQFc",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 6,
+      "length": "0:51",
+      "age_days": 1,
+      "query": "channel sweep: The Protocol Page",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "0lKMvH3Dnmw",
+      "title": "#recetas #alimentossanos #recetasfaciles #comerbien #alimentosantiinflamatorios #plandealimentacion",
+      "channel": "Recetas para la vida",
+      "url": "https://www.youtube.com/watch?v=0lKMvH3Dnmw",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 0,
+      "length": "0:40",
+      "age_days": 1,
+      "query": "channel sweep: Recetas para la vida",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC4AioV_gSq35bM-3JpC4siA",
+        "language": "es",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "veJ9CYd6e5E",
+      "title": "Seed oils aren't the villain you think",
+      "channel": "Nutrition Unpacked",
+      "url": "https://www.youtube.com/watch?v=veJ9CYd6e5E",
+      "published": "2026-11-06",
+      "first_seen": "2026-11-08",
+      "views": 7,
+      "length": "0:39",
+      "age_days": 2,
+      "query": "channel sweep: Nutrition Unpacked",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC0GbdmxIPzJhWUsD5vS2kRg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "EOl4H7F0eNE",
+      "title": "The happiness molecule you eat every Thanksgiving",
+      "channel": "Sleep Setup Lab",
+      "url": "https://www.youtube.com/watch?v=EOl4H7F0eNE",
+      "published": "2026-11-06",
+      "first_seen": "2026-11-08",
+      "views": 124,
+      "length": "0:32",
+      "age_days": 2,
+      "query": "channel sweep: Sleep Setup Lab",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCuABO3tVZsPzY6x15Lx14Ew",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "DfeUJ8o7cJE",
+      "title": "6 Everyday Foods Hiding More Sugar Than You Realize!",
+      "channel": "Moralix",
+      "url": "https://www.youtube.com/watch?v=DfeUJ8o7cJE",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 1196,
+      "length": "1:05",
+      "age_days": 1,
+      "query": "channel sweep: Moralix",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC_niVHGWG1G8-4m5jTWivwA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 16,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
+    },
+    {
+      "videoId": "obZOUb3uMEQ",
+      "title": "How Can Women Take Better Care of Their Health? Essential Tips Every Woman Should Know | Health Tips",
+      "channel": "News18 Urdu",
+      "url": "https://www.youtube.com/watch?v=obZOUb3uMEQ",
+      "published": "2026-11-07",
+      "first_seen": "2026-11-08",
+      "views": 501,
+      "length": "7:23",
+      "age_days": 1,
+      "query": "channel sweep: News18 Urdu",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UC9IQhNgS43lmUdU-KdGyb0A",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-08"
+      }
     }
   ],
-  "updated": "2026-11-07"
+  "updated": "2026-11-08"
 }
