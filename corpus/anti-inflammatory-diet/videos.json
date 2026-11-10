@@ -116117,7 +116117,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "XCBdnpO1wio",
@@ -116136,7 +116136,7 @@
       "yt": {
         "channelId": "UCQFBqEG_z0m9TvFtj2IVw5g"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "tanm9OvWGZ0",
@@ -119705,7 +119705,7 @@
       "yt": {
         "channelId": "UCBuSv80-RXeDsuLEfuxT6Tg"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "8oatfiNU8S4",
@@ -119899,7 +119899,7 @@
       "yt": {
         "channelId": "UCtednv9w3FqZb4W4SLupRsw"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "qa9YQsYg3ms",
@@ -127133,7 +127133,7 @@
       "yt": {
         "channelId": "UCXOhNV8OM3leeIX0rkBCKIw"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "W7ShO-GmG6A",
@@ -158367,7 +158367,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "IN3596xnZks",
@@ -159936,7 +159936,7 @@
       "yt": {
         "channelId": "UCvke2C00BPmf_g6qwkVYafQ"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "eKWEXkBQoNI",
@@ -160230,7 +160230,7 @@
       "yt": {
         "channelId": "UC88SGENAQK_h1w7h1a-0RGw"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "J0xHU4UrXDA",
@@ -160249,7 +160249,7 @@
       "yt": {
         "channelId": "UCIALMKvObZNtJ6AmdCLP7Lg"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "2sRgf-T3N9U",
@@ -329228,7 +329228,7 @@
       "yt": {
         "channelId": "UCh8eX1zZayWWqrbYee12iDg"
       },
-      "unavailable": "2026-11-08"
+      "unavailable": "2026-11-10"
     },
     {
       "videoId": "Ps9D7yWd-OE",
@@ -359127,15 +359127,22 @@
       "url": "https://www.youtube.com/watch?v=1CRm0b3l2k0",
       "published": "2026-09-16",
       "first_seen": "2026-11-06",
-      "views": null,
-      "length": null,
+      "views": 61,
+      "length": "0:39",
       "age_days": null,
       "query": "refiled from the pool (channel:Sleep Setup Lab)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCuABO3tVZsPzY6x15Lx14Ew"
+        "channelId": "UCuABO3tVZsPzY6x15Lx14Ew",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
       }
     },
     {
@@ -359145,15 +359152,22 @@
       "url": "https://www.youtube.com/watch?v=bBsPd6y3nzM",
       "published": "2026-09-20",
       "first_seen": "2026-11-06",
-      "views": null,
-      "length": null,
+      "views": 1027,
+      "length": "0:39",
       "age_days": null,
       "query": "refiled from the pool (channel:Nutrition Unpacked)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UC0GbdmxIPzJhWUsD5vS2kRg"
+        "channelId": "UC0GbdmxIPzJhWUsD5vS2kRg",
+        "category": "22",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
       }
     },
     {
@@ -359163,15 +359177,22 @@
       "url": "https://www.youtube.com/watch?v=w40khO2-mZo",
       "published": "2026-10-18",
       "first_seen": "2026-11-05",
-      "views": null,
-      "length": null,
+      "views": 35,
+      "length": "7:18",
       "age_days": null,
       "query": "refiled from the pool (channel:Nadia Siddiqui)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCES9ZdfBeAe7srcaIhyPVhg"
+        "channelId": "UCES9ZdfBeAe7srcaIhyPVhg",
+        "category": "22",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
       }
     },
     {
@@ -359181,17 +359202,699 @@
       "url": "https://www.youtube.com/watch?v=RR3Rj5DO7NA",
       "published": "2026-11-06",
       "first_seen": "2026-11-06",
-      "views": null,
-      "length": null,
+      "views": 332,
+      "length": "23:30",
       "age_days": null,
       "query": "refiled from the pool (channel:The Health Reset)",
       "transcript": null,
       "verdict": "UNREVIEWED",
       "verdict_basis": "metadata",
       "yt": {
-        "channelId": "UCOzOBzdRca6232MJN_Q6k8g"
+        "channelId": "UCOzOBzdRca6232MJN_Q6k8g",
+        "category": "27",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 14,
+        "comments": 2,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "trTuDrwYDws",
+      "title": "What I Eat In A Day After Losing -113lbs GLP-1 Results At Epcot #glp1 #whatieatinaday #epcot",
+      "channel": "Countess of Shopping",
+      "url": "https://www.youtube.com/watch?v=trTuDrwYDws",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 212,
+      "length": "0:59",
+      "age_days": 0,
+      "query": "channel sweep: Countess of Shopping",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCG6e1K6VOUR8T9y0nl0uDMA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 27,
+        "comments": 6,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "hrOnDUUh8Uk",
+      "title": "Scared of Carbs? These 5 Foods Can Lower Your A1C",
+      "channel": "Mastering Diabetes",
+      "url": "https://www.youtube.com/watch?v=hrOnDUUh8Uk",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 1018,
+      "length": "14:40",
+      "age_days": 0,
+      "query": "channel sweep: Mastering Diabetes",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCqCsh71eOXZrwqj3oYGfqlg",
+        "language": "en",
+        "captions": true,
+        "live": false,
+        "likes": 73,
+        "comments": 27,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "N20X_TSQet4",
+      "title": "Add 1 Clove to Your Coffee Every Morning (Here's What Happens)",
+      "channel": "Dr. Berg Shorts",
+      "url": "https://www.youtube.com/watch?v=N20X_TSQet4",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 4329,
+      "length": "0:57",
+      "age_days": 0,
+      "query": "channel sweep: Dr. Berg Shorts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCpWhiwlOPxOmwQu5xyjtLDw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 467,
+        "comments": 35,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "T0whKPaqSnM",
+      "title": "GLP-1 Friendly Breakfast | Sweet Potato, Chickpea & Avocado Protein Bowl | Healthy Breakfast Recipe",
+      "channel": "V Sparkel Wellness Center",
+      "url": "https://www.youtube.com/watch?v=T0whKPaqSnM",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 5174,
+      "length": "1:42",
+      "age_days": 0,
+      "query": "channel sweep: V Sparkel Wellness Center",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCTn_xwi1w1NqUNbyUWXPUAw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 203,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "UqMCpOP3cf8",
+      "title": "Zero Oil Chicken Paneer Biryani | High Protein Biryani with 60g Protein | Healthy Biryani Recipe",
+      "channel": "V Sparkel Wellness Center",
+      "url": "https://www.youtube.com/watch?v=UqMCpOP3cf8",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 6191,
+      "length": "2:39",
+      "age_days": 0,
+      "query": "channel sweep: V Sparkel Wellness Center",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCTn_xwi1w1NqUNbyUWXPUAw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 82,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "wKWQIPQTvhY",
+      "title": "Joint pain? Never eat these foods | Dr. Rajalakshmi - #Shorts #Shortvideo #Mudakkuvatham",
+      "channel": "Cosmo Health",
+      "url": "https://www.youtube.com/watch?v=wKWQIPQTvhY",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 222,
+      "length": "0:50",
+      "age_days": 0,
+      "query": "channel sweep: Cosmo Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCh45Tc0arWplMHTKGUA3k5A",
+        "language": "ta",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "bJ_jppaNnYc",
+      "title": "Please don’t eat these poisonous berries. Do this instead.",
+      "channel": "Genny Mack",
+      "url": "https://www.youtube.com/watch?v=bJ_jppaNnYc",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 141,
+      "length": "1:12",
+      "age_days": 0,
+      "query": "channel sweep: Genny Mack",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCChdSwTTmHO3j650PkHA39A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 33,
+        "comments": 5,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "4RFjKApXgQ4",
+      "title": "Fat Burning Workout : Celebrity Diet Plans : Six Pack Calorie Deficit Workout | Sakshi Family",
+      "channel": "Sakshi Family",
+      "url": "https://www.youtube.com/watch?v=4RFjKApXgQ4",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 104,
+      "length": "6:42",
+      "age_days": 0,
+      "query": "channel sweep: Sakshi Family",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UC7lZ1BJD6v9IOuYBgWithFg",
+        "language": "te",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "aVLdaTOyJjw",
+      "title": "GYM Trainer Shiva Goud Shares About Celebrity Diet Plan : Six Pack Body | Sakshi Family",
+      "channel": "Sakshi Family",
+      "url": "https://www.youtube.com/watch?v=aVLdaTOyJjw",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 820,
+      "length": "8:03",
+      "age_days": 0,
+      "query": "channel sweep: Sakshi Family",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UC7lZ1BJD6v9IOuYBgWithFg",
+        "language": "te",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "HOCJ6CYNPgs",
+      "title": "8 Foods That May Add More Sodium to Your Diet Than You Realise. #AgeingWell #Longevity #After60",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=HOCJ6CYNPgs",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 12,
+      "length": "0:09",
+      "age_days": 0,
+      "query": "channel sweep: Healthy Tips By  H.S",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "euRP-BFrMWU",
+      "title": "10 Grocery Store Foods Seniors Should Check Before Buying. #SeniorHealth #HealthTipsForSeniors",
+      "channel": "Healthy Tips By  H.S",
+      "url": "https://www.youtube.com/watch?v=euRP-BFrMWU",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 7,
+      "length": "0:07",
+      "age_days": 0,
+      "query": "channel sweep: Healthy Tips By  H.S",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCvke2C00BPmf_g6qwkVYafQ",
+        "language": "zxx",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "7F0Lob457mk",
+      "title": "Creamy Pesto Chicken Gnocchi 🍃 Easy One-Pan Dinner! #food #recipe #shorts",
+      "channel": "Purely healthy food",
+      "url": "https://www.youtube.com/watch?v=7F0Lob457mk",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 6,
+      "length": "0:33",
+      "age_days": 0,
+      "query": "channel sweep: Purely healthy food",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCxs-lSPjwSGlqjju_UnWH1w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "e-O453zfwSs",
+      "title": "GLP-1 Microdosing: How Tiffany Lost Weight and Her Joint Pain on a Low Dose",
+      "channel": "The Better Living PA",
+      "url": "https://www.youtube.com/watch?v=e-O453zfwSs",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 947,
+      "length": "26:39",
+      "age_days": 1,
+      "query": "channel sweep: The Better Living PA",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UC918R-DfuIJD85QqHzSit_A",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 52,
+        "comments": 10,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "T3V51ts8CX4",
+      "title": "Holiday products to avoid #figpartner #antiinflammatorydiet #antiinflammatory #antiinflammatoryfood",
+      "channel": "Madi",
+      "url": "https://www.youtube.com/watch?v=T3V51ts8CX4",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 593,
+      "length": "0:24",
+      "age_days": 1,
+      "query": "channel sweep: Madi",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "16Bq-F2ed3A",
+      "title": "Avoid these creamers this season #figpartner #antiinflammatorydiet #antiinflammatory #antiinflammato",
+      "channel": "Madi",
+      "url": "https://www.youtube.com/watch?v=16Bq-F2ed3A",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 455,
+      "length": "0:24",
+      "age_days": 1,
+      "query": "channel sweep: Madi",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "f9Bz7XeO4yw",
+      "title": "Healthy snack finds from Whole Foods #figpartner #antiinflammatorydiet #antiinflammatory #antiinflam",
+      "channel": "Madi",
+      "url": "https://www.youtube.com/watch?v=f9Bz7XeO4yw",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 603,
+      "length": "0:31",
+      "age_days": 1,
+      "query": "channel sweep: Madi",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCyNaQ1yU1zrippfWKfFIfeA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 13,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "FRkPeHFm9Uw",
+      "title": "Top 3 Best Teas for Arthritis Pain Relief & Inflammation",
+      "channel": "Arthritis HealthCare",
+      "url": "https://www.youtube.com/watch?v=FRkPeHFm9Uw",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 849,
+      "length": "21:51",
+      "age_days": 0,
+      "query": "channel sweep: Arthritis HealthCare",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC9uHUmG37SuzCyWLxxlwTnA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 41,
+        "comments": 1,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "BY5mYAqWZzU",
+      "title": "Netanyahu Calls Trump Every Day! Begs To Restart Iran War 2.0 After Midterms? Reports Say...",
+      "channel": "MIRROR NOW",
+      "url": "https://www.youtube.com/watch?v=BY5mYAqWZzU",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 1850,
+      "length": "8:21",
+      "age_days": 0,
+      "query": "channel sweep: MIRROR NOW",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCWCEYVwSqr7Epo6sSCfUgiw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 1,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "Dy2-cLISSiU",
+      "title": "Roasted Sweet Potato and Black Bean Tacos That Fight Inflammation",
+      "channel": "HealingKitchenCo",
+      "url": "https://www.youtube.com/watch?v=Dy2-cLISSiU",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 361,
+      "length": "0:22",
+      "age_days": 0,
+      "query": "channel sweep: HealingKitchenCo",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UC8-na5-r-7Tovx8zhPwD-dQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "Q89ssg_sc-s",
+      "title": "What Happens to Your Body When You Eat 1 Banana Every Day? 8 Benefits",
+      "channel": "Smart Life Health",
+      "url": "https://www.youtube.com/watch?v=Q89ssg_sc-s",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 218,
+      "length": "2:49",
+      "age_days": 1,
+      "query": "channel sweep: Smart Life Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UCcSQmvK8VL-LsK2_7klWpZA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "LkzBWGMRlcI",
+      "title": "12 Best Breakfasts for Arthritis Relief — Naturally Reduce Pain & Inflammation After 60",
+      "channel": "Industry Leak",
+      "url": "https://www.youtube.com/watch?v=LkzBWGMRlcI",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 21,
+      "length": "0:00",
+      "age_days": 0,
+      "query": "channel sweep: Industry Leak",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCSSEDMn_-Z5B9_6J05IT0ow",
+        "language": "en",
+        "captions": false,
+        "live": true,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "5CJYhKscRCI",
+      "title": "12 Foods SENIORS Should Eat for Strong Legs After 65",
+      "channel": "Industry Leak",
+      "url": "https://www.youtube.com/watch?v=5CJYhKscRCI",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 9,
+      "length": "37:33",
+      "age_days": 0,
+      "query": "channel sweep: Industry Leak",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCSSEDMn_-Z5B9_6J05IT0ow",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 1,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "Gn82HoRr6uk",
+      "title": "Dr. Eric Berg DC: Why fasting starves cancer cells",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=Gn82HoRr6uk",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 2,
+      "length": "1:05",
+      "age_days": 0,
+      "query": "channel sweep: The Protocol Page",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "AXi4mxrEF0Y",
+      "title": "Dr. Eric Berg DC: The TUDCA myth almost everyone believes",
+      "channel": "The Protocol Page",
+      "url": "https://www.youtube.com/watch?v=AXi4mxrEF0Y",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 29,
+      "length": "0:54",
+      "age_days": 1,
+      "query": "channel sweep: The Protocol Page",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCPg2fmAsgpbGbWSCdIe3zPA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 1,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "0kyhVU-4dxU",
+      "title": "15 Morning Foods You Should Eat Every Day | Best Healthy Breakfast Foods for Energy & Health",
+      "channel": "Daily Fit Facts",
+      "url": "https://www.youtube.com/watch?v=0kyhVU-4dxU",
+      "published": "2026-11-09",
+      "first_seen": "2026-11-10",
+      "views": 18,
+      "length": "8:10",
+      "age_days": 1,
+      "query": "channel sweep: Daily Fit Facts",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCoh6DhnrT9ONBRyogFMUixw",
+        "language": "hi",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "aGqRt1zhb_w",
+      "title": "Dr. Mark Hyman on cell membranes, dietary fats and omega-3s",
+      "channel": "ChillBrief Video",
+      "url": "https://www.youtube.com/watch?v=aGqRt1zhb_w",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 1,
+      "length": "0:57",
+      "age_days": 0,
+      "query": "channel sweep: ChillBrief Video",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCD8FLwTmJPTG4B23IlcEdqA",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
+      }
+    },
+    {
+      "videoId": "pUsTLA7sew0",
+      "title": "Anti-Inflammatory Diet: Best Foods for Arthritis and Gout #shorts",
+      "channel": "Hip & Knee Cebu",
+      "url": "https://www.youtube.com/watch?v=pUsTLA7sew0",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-10",
+      "views": 0,
+      "length": "1:23",
+      "age_days": 0,
+      "query": "channel sweep: Hip & Knee Cebu",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCM_qvu23bg4sD5Fb6XY7gKw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-10"
       }
     }
   ],
-  "updated": "2026-11-09"
+  "updated": "2026-11-10"
 }
