@@ -224,6 +224,21 @@ reaction to a reaction. Stay neutral: never say which side is right, except to s
 deadline has passed. Never choose by popularity. Only name video ids that appear in the material you are given.
 Write in plain words, no hype."""
 
+# How a story is named. From reading how people name narratives themselves
+# (Malik's X feed, 2026-11-12): they use one distinctive noun ("the demographic
+# narrative"), or the believers' own slogan in quotes ("Big Print"), anchored on
+# a person or an asset, and they say which way it leans. Nobody uses a mood
+# ("The Coming Collapse") or a sentence. A name has to be enough to recognise
+# the story weeks later, so it comes in three parts.
+NAMING = """Name the story in three parts.
+handle: 2-4 words. The anchor (a person, an asset or ticker, or the mechanism) plus the story's own slogan if its
+believers have one, in double quotes. Examples: Dalio's "Big Cycle"; Seed Oils; BTC's 4-Year Cycle. Never a mood
+(The Coming Collapse), never a question, never a full sentence, no numbers that will go stale.
+stance: one word for where the claim stands in this material: Bullish, Bearish, Contested, Disputed, Fading,
+Rising, or Settled.
+status: one short line a returning viewer needs: what changed last and the next thing to watch, with its date if
+one was said. Under 16 words. Only facts present in the material."""
+
 
 # ------------------------------------------------------------------ build
 FRAME_SCHEMA = {"type": "object", "properties": {
@@ -258,6 +273,9 @@ DECIDE_SCHEMA = {"type": "object", "properties": {
         "backups": {"type": "array", "items": {"type": "string"}, "description": "Other ids for this side, strongest first"},
         "why": {"type": "string"}},
         "required": ["position", "watch_for", "videoId", "backups", "why"]}},
+    "handle": {"type": "string", "description": "2-4 words: the anchor plus the story's own slogan in quotes if it has one"},
+    "stance": {"type": "string", "enum": ["Bullish", "Bearish", "Contested", "Disputed", "Fading", "Rising", "Settled"]},
+    "status": {"type": "string", "description": "What changed last and what to watch next, under 16 words"},
     "open_question": {"type": "string", "description": "What stays unresolved, in one sentence"},
     "gaps": {"type": "string", "description": "What the material could not establish, if anything"},
 }, "required": ["origin", "turns", "latest", "sides", "open_question", "gaps"]}
@@ -328,7 +346,7 @@ def decide(request, f, cands, budget=60):
                   f"Candidate videos, oldest first:\n{material}\n\n"
                   "Make the decisions: the origin; the turns (3-6, each with a video from its own period); "
                   "the latest (3-4, newest first); the sides (2-3, each with its strongest video and backups); "
-                  "the open question; and the gaps. Judge from titles, descriptions and dates; if the material "
+                  "the open question; and the gaps. " + NAMING + " Judge from titles, descriptions and dates; if the material "
                   "cannot support a decision, say so in gaps rather than guess.\n\n"
                   f"The whole set must fit about {budget} minutes. Everything you pick will not fit, so for each "
                   "turn and side choose the strongest video that is short enough, put the direct counter to the "
@@ -435,6 +453,8 @@ def slug(s):
 def show(story):
     print(f"\n{story['title']}  ·  {story['category_name']}  ·  {sum(e['minutes'] for e in story['episodes'])} min")
     print(f"Claim: {story['central_claim']}")
+    if story.get("stance") or story.get("status"):
+        print(f"{story.get('stance', '')} · {story.get('status', '')}")
     for k, e in enumerate(story["episodes"], 1):
         print(f"\n  Episode {k} · {e['title']} · {e['minutes']} min")
         for v in e["videos"]:
@@ -474,8 +494,14 @@ def build(request, budget=60, category=None):
     d = clean(decide(request, f, cands, budget), cands)
     eps = assemble(d, cands, budget)
     pb = playbook(f["category"])
+    # The handle is chosen after the research, when the people and the slogan
+    # are known; the framing title is only a fallback.
+    handle = (d.get("handle") or "").strip() or f["title"]
+    if len(handle.split()) > 6 or handle.endswith("?"):
+        handle = f["title"]
     story = {
-        "id": slug(f["title"]), "version": 1, "title": f["title"], "request": request,
+        "id": slug(handle), "version": 1, "title": handle, "handle": handle,
+        "stance": d.get("stance", ""), "status": d.get("status", ""), "request": request,
         "category": pb["id"], "category_name": pb["name"], "story": f["story"],
         "central_claim": f["central_claim"], "not_about": f["not_about"], "budget": budget,
         "episodes": eps, "sides": d["sides"], "turns": d["turns"], "open_question": d["open_question"],
