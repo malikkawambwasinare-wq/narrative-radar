@@ -97701,7 +97701,132 @@
         "comments": null,
         "enrichedOn": "2026-11-11"
       }
+    },
+    {
+      "videoId": "HpnGXd1jzto",
+      "title": "Shawn Ryan's Face Became a Search Engine 😳",
+      "channel": "Shawn Ryan Show",
+      "url": "https://www.youtube.com/watch?v=HpnGXd1jzto",
+      "published": "2026-11-11",
+      "first_seen": "2026-11-12",
+      "views": 100014,
+      "length": "0:38",
+      "age_days": 1,
+      "query": "channel sweep: Shawn Ryan Show",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCkoujZQZatbqy4KGcgjpVxQ",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 2538,
+        "comments": 39,
+        "enrichedOn": "2026-11-12"
+      }
+    },
+    {
+      "videoId": "Uw1g4mZvl4Y",
+      "title": "Is This Noah's Ark? We Sent Remote Viewers In To Find out",
+      "channel": "Future Forecasters",
+      "url": "https://www.youtube.com/watch?v=Uw1g4mZvl4Y",
+      "published": "2026-11-11",
+      "first_seen": "2026-11-12",
+      "views": 15170,
+      "length": "6:44",
+      "age_days": 1,
+      "query": "channel sweep: Future Forecasters",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCKSW19p8dMre9UxLWwCYK5w",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 534,
+        "comments": 96,
+        "enrichedOn": "2026-11-12"
+      }
+    },
+    {
+      "videoId": "2EB_MlJtSOE",
+      "title": "Spaniards shut down country over high housing prices",
+      "channel": "CBC News",
+      "url": "https://www.youtube.com/watch?v=2EB_MlJtSOE",
+      "published": "2026-11-11",
+      "first_seen": "2026-11-12",
+      "views": 25789,
+      "length": "1:35",
+      "age_days": 1,
+      "query": "channel sweep: CBC News",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA",
+        "language": "en-CA",
+        "captions": false,
+        "live": false,
+        "likes": 487,
+        "comments": null,
+        "enrichedOn": "2026-11-12"
+      }
+    },
+    {
+      "videoId": "p6m4r5KnNxg",
+      "title": "Remote Viewing Exercise",
+      "channel": "The Intuitive SAGE Podcast with Isabeau Maxwell",
+      "url": "https://www.youtube.com/watch?v=p6m4r5KnNxg",
+      "published": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "views": 226,
+      "length": "1:33",
+      "age_days": 0,
+      "query": "channel sweep: The Intuitive SAGE Podcast with Isabeau Maxwell",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "26",
+        "channelId": "UC3e072VqtpugOe8cPIk0pQw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 18,
+        "comments": 12,
+        "enrichedOn": "2026-11-12"
+      }
+    },
+    {
+      "videoId": "YnlbaBhRTPI",
+      "title": "Remote Viewing Session 078 | Reference 91242 | Describe It Before You See It",
+      "channel": "Orbit Reads",
+      "url": "https://www.youtube.com/watch?v=YnlbaBhRTPI",
+      "published": "2026-11-12",
+      "first_seen": "2026-11-12",
+      "views": 0,
+      "length": "2:35",
+      "age_days": 0,
+      "query": "channel sweep: Orbit Reads",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCU97NsGQDI9ztDHusZvFpTw",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": null,
+        "enrichedOn": "2026-11-12"
+      }
     }
   ],
-  "updated": "2026-11-11"
+  "updated": "2026-11-12"
 }
