@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Story Evenings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* One dark world, chosen on purpose: an AI curator's console, not a document.
+     Every color is declared here and used everywhere, so the page paints itself
+     the same on any host background. */
+  :root {
+    color-scheme: dark;
+    --ground: #06080f; --deep: #0b0f1a; --glass: rgba(255,255,255,.045); --glass-2: rgba(255,255,255,.08);
+    --edge: rgba(255,255,255,.10); --edge-2: rgba(255,255,255,.18);
+    --ink: #eef1f7; --ink-2: #aab3c5; --muted: #6c7690;
+    --accent: #8ad0ff; --accent-ink: #06080f; --signal: #ffc27a;
+    --p1a: #1d3b7a; --p1b: #0a1330; --p2a: #7a2f2a; --p2b: #2a0f0d; --p3a: #1b6b5a; --p3b: #08241e;
+    --p4a: #5e3b8a; --p4b: #1b1030; --p5a: #8a6a22; --p5b: #2a1f0a;
+    --display: "Sora", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.5 var(--body);
+    background-image: radial-gradient(900px 500px at 15% -10%, rgba(138,208,255,.10), transparent 60%),
+                      radial-gradient(700px 420px at 95% 10%, rgba(255,194,122,.06), transparent 60%); }
+  .wrap { max-width: 960px; margin: 0 auto; padding-inline: 20px; padding-block: 18px 64px; }
+  h1, h2, h3 { margin: 0; text-wrap: balance; font-family: var(--display); }
+  a { color: var(--accent); }
+  button { font: inherit; cursor: pointer; color: inherit; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
+  .brand .orb { width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 45%, #1d3b7a 100%); box-shadow: 0 0 18px rgba(138,208,255,.55); }
+  .ghost { background: var(--glass); border: 1px solid var(--edge); border-radius: 999px; padding: 8px 15px; font-size: 13px; color: var(--ink); backdrop-filter: blur(8px); }
+  .ghost:hover { border-color: var(--edge-2); background: var(--glass-2); }
+  .ghost:disabled { opacity: .4; cursor: default; }
+  .primary { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 12px 22px; font-size: 14.5px; font-weight: 600; font-family: var(--display); box-shadow: 0 8px 30px rgba(138,208,255,.28); }
+  .primary:hover { box-shadow: 0 10px 36px rgba(138,208,255,.4); }
+  .chip { background: var(--glass); border: 1px solid var(--edge); color: var(--ink-2); border-radius: 999px; padding: 7px 14px; font-size: 13px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .pill { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--edge); color: var(--ink-2); }
+  .pill.ok { border-color: rgba(138,208,255,.5); color: var(--accent); }
+
+  /* ---- door ---- */
+  .door h1 { font-size: clamp(34px, 6.4vw, 60px); font-weight: 500; line-height: 1.02; letter-spacing: -.03em; }
+  .door h1 em { font-style: normal; color: var(--accent); }
+  .door .lede { font-size: 16.5px; color: var(--ink-2); max-width: 56ch; margin-top: 14px; }
+  .budget { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 24px; }
+  .section { margin-top: 44px; }
+  .kick { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .kick h2 { font-size: 15px; font-weight: 600; }
+  .kick .sub { font-size: 12.5px; color: var(--muted); }
+
+  /* the shelf: tonight's evenings standing in space */
+  .shelf { display: flex; gap: 16px; overflow-x: auto; padding: 14px 6px 26px; perspective: 1100px; scrollbar-width: thin; }
+  .card3 { flex: 0 0 auto; width: 176px; height: 236px; border-radius: 14px; padding: 14px; border: 0; text-align: left; position: relative;
+    color: #f4f6fb; display: flex; flex-direction: column; justify-content: flex-end; gap: 5px; transform-style: preserve-3d;
+    transform: rotateY(var(--ry, 0deg)) rotateX(var(--rx, 0deg)); transition: transform .35s ease, box-shadow .35s ease;
+    box-shadow: 0 30px 50px -22px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.14); }
+  .card3::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(115deg, rgba(255,255,255,.16), transparent 40%, transparent 65%, rgba(255,255,255,.06)); pointer-events: none; }
+  .card3:hover { box-shadow: 0 40px 60px -22px rgba(0,0,0,.9), 0 0 0 1px var(--edge-2), inset 0 1px 0 rgba(255,255,255,.2); }
+  .card3 .rank { position: absolute; top: 10px; left: 12px; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; opacity: .75; }
+  .card3 .play { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.92); color: #06080f; display: grid; place-items: center; font-size: 12px; transform: translateZ(24px); box-shadow: 0 6px 16px rgba(0,0,0,.4); }
+  .card3 .pk { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+  .card3 .pn { font-family: var(--display); font-size: 19px; font-weight: 600; line-height: 1.12; letter-spacing: -.01em; transform: translateZ(14px); }
+  .card3 .pf { font-size: 11.5px; opacity: .75; font-variant-numeric: tabular-nums; }
+  .g1 { background: linear-gradient(160deg, var(--p1a), var(--p1b)); } .g2 { background: linear-gradient(160deg, var(--p2a), var(--p2b)); }
+  .g3 { background: linear-gradient(160deg, var(--p3a), var(--p3b)); } .g4 { background: linear-gradient(160deg, var(--p4a), var(--p4b)); } .g5 { background: linear-gradient(160deg, var(--p5a), var(--p5b)); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; perspective: 1400px; }
+  .tile { background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; text-align: left; display: flex; flex-direction: column; gap: 9px; min-height: 190px;
+    transform: rotateY(var(--ry, 0deg)) rotateX(var(--rx, 0deg)); transition: transform .3s ease, border-color .3s, background .3s; backdrop-filter: blur(10px); transform-style: preserve-3d; }
+  .tile:hover { border-color: var(--edge-2); background: var(--glass-2); }
+  .tile .name { font-family: var(--display); font-size: 20px; font-weight: 600; line-height: 1.15; letter-spacing: -.015em; transform: translateZ(10px); }
+  .tile .claim { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+  .tile .meta { margin-top: auto; font-size: 12px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-variant-numeric: tabular-nums; }
+  .tile.sorting { border-style: dashed; }
+  .rules { margin-top: 40px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--edge); padding-top: 16px; max-width: 66ch; }
+  @media (prefers-reduced-motion: reduce) { .card3, .tile { transition: none; transform: none !important; } }
+
+  /* ---- series ---- */
+  .titlecard { margin-top: 10px; display: grid; gap: 10px; }
+  .titlecard h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 500; line-height: 1.05; letter-spacing: -.025em; }
+  .titlecard .claim { font-size: 15.5px; color: var(--ink-2); max-width: 64ch; }
+  .cta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .cta .note { font-size: 12.5px; color: var(--muted); }
+  .curator { display: flex; gap: 10px; align-items: flex-start; background: var(--glass); border: 1px solid var(--edge); border-radius: 12px; padding: 12px 14px; font-size: 13px; color: var(--ink-2); max-width: 70ch; }
+  .curator .orb { flex: 0 0 auto; width: 10px; height: 10px; margin-top: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px rgba(138,208,255,.6); }
+  .seen-toggle { display: inline-flex; gap: 8px; align-items: center; font-size: 12.5px; color: var(--ink-2); }
+
+  .rail { position: relative; margin-top: 30px; display: grid; gap: 18px; padding-left: 26px; }
+  .rail::before { content: ""; position: absolute; left: 7px; top: 12px; bottom: 12px; width: 2px; background: linear-gradient(var(--edge-2), var(--edge)); }
+  .ep { position: relative; background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; display: grid; gap: 10px; backdrop-filter: blur(10px); }
+  .ep::before { content: ""; position: absolute; left: -26px; top: 22px; width: 16px; height: 16px; border-radius: 50%; background: var(--deep); border: 2px solid var(--edge-2); box-shadow: 0 0 0 4px var(--ground); }
+  .ep.now { border-color: rgba(138,208,255,.55); box-shadow: 0 0 0 1px rgba(138,208,255,.25), 0 20px 50px -30px rgba(138,208,255,.5); }
+  .ep.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--ground), 0 0 16px rgba(138,208,255,.8); }
+  .ep.done { opacity: .6; } .ep.done::before { background: var(--ink-2); }
+  .ep header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .ep h3 { font-size: 22px; font-weight: 600; letter-spacing: -.015em; }
+  .ep .why { font-size: 13px; color: var(--ink-2); max-width: 66ch; }
+  .ep .mins { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; display: flex; gap: 10px; align-items: center; }
+  .vlist { display: grid; }
+  .v { display: grid; grid-template-columns: 24px 1fr; gap: 10px; padding: 11px 6px; border-top: 1px solid var(--edge); border-radius: 8px; }
+  .v .n { font-family: var(--mono); font-size: 11px; color: var(--muted); padding-top: 4px; }
+  .v .t { font-size: 15px; font-weight: 600; line-height: 1.3; margin: 2px 0; font-family: var(--display); font-weight: 500; }
+  .v .m { font-size: 12.5px; color: var(--ink-2); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .v .look { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; border-left: 2px solid var(--signal); padding-left: 9px; line-height: 1.45; }
+  .v .look b { color: var(--ink); }
+  .v.seen .t { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .v.playing { background: linear-gradient(90deg, rgba(138,208,255,.10), transparent); }
+  .v .tiny { padding: 3px 10px; font-size: 11.5px; }
+
+  /* ---- player ---- */
+  .player { display: grid; gap: 14px; margin-top: 8px; }
+  .bezel { position: relative; border-radius: 18px; padding: 8px; background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.03)); border: 1px solid var(--edge); box-shadow: 0 40px 80px -30px var(--glow, rgba(138,208,255,.35)); }
+  .frame { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; color: #f4f6fb; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), inset 0 -60px 80px -40px rgba(0,0,0,.6); }
+  .frame .ft { font-family: var(--display); font-size: clamp(20px, 3.4vw, 30px); font-weight: 600; line-height: 1.15; max-width: 28ch; letter-spacing: -.015em; }
+  .frame .fc { font-size: 13px; opacity: .8; }
+  .frame .yt { position: absolute; top: 14px; right: 14px; font-size: 12px; color: #f4f6fb; background: rgba(0,0,0,.4); padding: 6px 11px; border-radius: 999px; text-decoration: none; backdrop-filter: blur(6px); }
+  .frame .demo { position: absolute; top: 16px; left: 16px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; opacity: .75; }
+  .frame .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255,255,255,.15); }
+  .frame .bar i { display: block; height: 100%; width: 0; background: var(--accent); box-shadow: 0 0 10px var(--accent); transition: width .25s linear; }
+  @media (prefers-reduced-motion: reduce) { .frame .bar i { transition: none; } }
+  .now { display: grid; gap: 4px; padding: 0 4px; }
+  .now .line { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .now .spn { color: var(--accent); }
+  .now .t { font-family: var(--display); font-size: 18px; font-weight: 500; line-height: 1.3; }
+  .now .m { font-size: 12.5px; color: var(--ink-2); }
+  .now .look { font-size: 13px; color: var(--ink-2); border-left: 2px solid var(--signal); padding-left: 10px; margin-top: 4px; line-height: 1.5; }
+  .now .look b { color: var(--ink); }
+  .acts { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .acts .next { font-size: 12.5px; color: var(--muted); }
+  .interstitial, .end { background: var(--glass); border: 1px solid var(--edge); border-radius: 18px; padding: 26px; display: grid; gap: 8px; backdrop-filter: blur(10px); }
+  .interstitial h3 { font-size: 30px; font-weight: 500; letter-spacing: -.02em; }
+  .end h3 { font-size: 34px; font-weight: 500; letter-spacing: -.025em; }
+  .end p { margin: 0; color: var(--ink-2); max-width: 60ch; }
+  .stat { display: flex; gap: 22px; flex-wrap: wrap; font-variant-numeric: tabular-nums; margin: 6px 0; }
+  .stat b { font-family: var(--display); font-size: 26px; font-weight: 500; display: block; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .fine { font-size: 12.5px; color: var(--muted); }
+
+  /* the viewer: small and docked by default, large on request */
+  #dock { position: fixed; z-index: 50; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(400px, calc(100vw - 32px));
+    padding: 8px; border-radius: 16px; background: rgba(14,18,30,.92); border: 1px solid var(--edge-2); backdrop-filter: blur(14px);
+    box-shadow: 0 30px 70px -20px rgba(0,0,0,.9), 0 0 0 1px rgba(138,208,255,.12); transition: opacity .25s, transform .25s; }
+  #dock.off { opacity: 0; pointer-events: none; transform: translateY(140%); }
+  #dock.big { right: auto; bottom: auto; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(960px, calc(100vw - 32px)); }
+  #dock.big.off { transform: translate(-50%, 140%); }
+  #dock .screen { aspect-ratio: 16 / 9; max-width: 100%; background: #000; border-radius: 10px; overflow: hidden; }
+  #dock .screen iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .dockbar { display: flex; gap: 6px; align-items: center; padding: 8px 2px 0; }
+  .dockbar .dtext { flex: 1; min-width: 0; }
+  #dock-title { font-family: var(--display); font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #dock-sub { font-size: 9.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  body.playing .wrap { padding-bottom: 320px; }
+  @media (prefers-reduced-motion: reduce) { #dock { transition: none; } }
+
+  .sorting-view .list { display: grid; gap: 8px; margin-top: 16px; }
+  .sorting-view .story { background: var(--glass); border: 1px dashed var(--edge-2); border-radius: 12px; padding: 12px 14px; display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .sorting-view .story b { font-family: var(--display); font-weight: 500; font-size: 16px; }
+</style>
+
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<div id="dock" class="off" aria-label="Video player">
+  <div class="screen"><div id="yt"></div></div>
+  <div class="dockbar">
+    <div class="dtext"><div id="dock-title"></div><div id="dock-sub" class="mono"></div></div>
+    <button class="ghost tiny" data-prev="1" aria-label="Previous video">‹</button>
+    <button class="ghost tiny" data-next="1" aria-label="Next video">›</button>
+    <button class="ghost tiny" data-size="1" aria-label="Make the player larger or smaller">⤢</button>
+    <button class="ghost tiny" data-stop="1" aria-label="Stop and close the player">✕</button>
+  </div>
+</div>
+
+<script>
+/* Every video is a real one from the corpus, with its real id, channel and
+   runtime. Episodes are drawn from the corpus as it stands; filed-by-title
+   videos still leak into two stories, and the story layer is what removes that. */
+const DATA = {
+  series: [
+    {"id": "btc-4-year-cycle", "g": "g1", "glow": "rgba(90,140,255,.45)", "name": "BTC's 4-Year Cycle", "stance": "Disputed", "status": "The 2025 peak came in October. Both sides now point to a late-2026 low as the test.", "claim": "Bitcoin's four-year halving cycle no longer governs its price; the pattern is broken.", "born": 2020, "watched": 19, "eps": [{"n": "Episode 1", "title": "What the halving is", "why": "Three minutes on the mechanism everyone else assumes you know.", "videos": [{"id": "Ye9ckbN_lqc", "title": "What is a Bitcoin Halving? Explained by CoinGecko", "channel": "CoinGecko", "length": "3:06", "published": "2022-08-01", "role": "The basics", "why": "Explains the halving plainly: miner rewards cut in half roughly every four years. Sells nothing.", "start": 0, "sells": "", "note": ""}]}, {"n": "Episode 2", "title": "Origin", "why": "The first challenge to the cycle, and the cycle's best early defence.", "videos": [{"id": "AHuKHmeJf-I", "title": "Bitcoin: It is not a 4 year cycle! (Welcome to the show)", "channel": "Benjamin Cowen", "length": "12:10", "published": "2020-03-28", "role": "Where it began", "why": "March 2020: Benjamin Cowen argues the cycle is not four years but lengthening, with moving-average charts.", "start": 0, "sells": "Telegram channel membership and a paid subscription report titled 'Bitcoin Letters'.", "note": "His end-of-2021 date has passed.", "camp": {"position": "Stretched, not fixed", "watch_for": "He predicts no six figures by the end of 2021."}}, {"id": "7GCboXUObi4", "title": "4 Year Cycle: Bitcoin Will Bottom At 24k In November 2022 (According To These Macro Trends)", "channel": "Wolves of Crypto", "length": "6:19", "published": "2022-03-10", "role": "2022. The cycle camp answers with a date", "why": "Measures 1,400 days between past tops and between past bottoms, and calls a bottom for late November 2022.", "start": 0, "sells": "", "note": "The late November 2022 date has passed. How it landed is not covered in this set.", "camp": {"position": "Intact", "watch_for": "Exact day-counts between peaks; a price and a date you can check."}}]}, {"n": "Episode 3", "title": "What happened in 2025", "why": "The year the pattern was supposed to peak.", "videos": [{"id": "oOu6fEOC4zo", "title": "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!", "channel": "Coin Bureau", "length": "9:31", "published": "2026-01-02", "role": "Where it stands", "why": "January 2026: the peak came in October 2025 instead of December, and the year closed down. Shows Fed and liquidity data.", "start": 61, "sells": "", "note": ""}]}, {"n": "Episode 4", "title": "The sides", "why": "The best-evidenced case each way, back to back.", "videos": [{"id": "PmNvYrHnFgE", "title": "The Bitcoin 4-Year Cycle Just Died", "channel": "Joe Consorti", "length": "17:51", "published": "2026-09-22", "role": "The claim, at its strongest", "why": "September 2026: ETF buyers have put a floor under the price, making this the shallowest bear market on record. Charts and flow data throughout.", "start": 0, "sells": "The Hard Money Room community, Strong Wealth financial management, and Salt lending services.", "note": "", "camp": {"position": "Dead: institutions broke it", "watch_for": "The comparison with gold after its first ETF, and no date for when this would be proven wrong."}}, {"id": "8-LqLawozvU", "title": "Is The Bitcoin Four Year Cycle Over? - Definitive Analysis", "channel": "Rekt Capital", "length": "12:57", "published": "2026-05-11", "role": "The strongest answer to it", "why": "May 2026: a chart-by-chart defence that the peak, the pullbacks and the timing still match earlier cycles.", "start": 0, "sells": "Rekt Capital newsletter", "note": "", "camp": {"position": "Intact", "watch_for": "Which past cycles are laid over this one, and which are left off."}}]}], "debate": {"statement": "Was the October 2025 peak the old cycle arriving on time, or a different market that happened to look similar?", "camps": [1, 2]}},
+    { id: "crypto-winter-watch", g: "g1", glow: "rgba(90,140,255,.45)",
+      name: "The Four-Year Cycle",
+      claim: "Crypto is either heading into another prolonged winter or has outgrown the cycle thanks to institutions, ETFs and regulatory clarity. Insiders say this time the downturn won't repeat.",
+      born: 2018, videos: 21215,
+      origin: [
+        { year: 2018, mechanism: "ICO bust, the first crypto winter (BTC -84%)", id: "WCO5clyLCXA", title: "Ripple XRP hits $3.00! Michael Arrington confirms Arrington XRP Capital has started trading XRP", channel: "Thinking Crypto", length: "4:16", published: "2018-01-03" },
+        { year: 2020, mechanism: "halving supercycle, the 4-year cycle becomes orthodoxy", id: "Ecy3B3eoWfs", title: "SHOCKING BITCOIN PRICE DATA FOR 2020! | BTC PREDICTION", channel: "Crypto Capital Venture", length: "7:57", published: "2020-01-01" },
+        { year: 2022, mechanism: "Luna/FTX contagion, winter returns via leverage and fraud", id: "agxbUcNXk6E", title: "My Biggest MISTAKES of 2021 [I'm Sorry]. My Bitcoin, Ethereum & Crypto Blunders", channel: "Altcoin Daily", length: "10:05", published: "2022-01-01" },
+        { year: 2024, mechanism: "ETF era, 'institutions change everything'", id: "EDvKuG1ATLQ", title: "Crypto News: Ethereum, Tether FUD, BTC, ICP, SEI & MORE!!", channel: "Coin Bureau", length: "20:14", published: "2024-01-01" },
+        { year: 2025, mechanism: "corporate treasuries as the permanent bid", id: "HeFwIsrtgVQ", title: "Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter", channel: "New York Times Events", length: "34:35", published: "2025-12-03", verdict: "ORIGINAL" },
+        { year: 2026, mechanism: "'the cycle is dead' vs 'new winter', the sell-off referendum", id: "Lu-sOTkVWDM", title: "What Cryptos Could 10X in the Next Bitcoin Bull Market?", channel: "Cointelegraph", length: "23:18", published: "2026-07-30", verdict: "ORIGINAL" },
+      ],
+      newest: [
+        { id: "g6LHrgyaTig", title: "No One is Ready for What the Tokenization of Assets Will do For Markets | Sandy Kaul", channel: "Thinking Crypto", length: "40:59", published: "2026-09-22" },
+        { id: "01UKnU2DQ2w", title: "BITCOIN HIT $87K: Everyone is WRONG About This Breakout", channel: "Crypto World", length: "28:02", published: "2026-09-22" },
+        { id: "HdRHaz4X0wE", title: "Bitcoin & Ethereum, Meine Meinung hat sich 0 geändert! Warte auf deine Möglichkeit!", channel: "Krypto Trading & Investing", length: "14:35", published: "2026-09-22" },
+        { id: "4SpbCD5WLrM", title: "Dogecoin Is Waking Up. DOGE Crypto Analysis", channel: "Gerhard, Bitcoin Strategy", length: "10:58", published: "2026-09-22" },
+      ],
+      debate: { statement: "Is the 4-year halving cycle dead?", note: "Both camps' calls resolve on the same late-2026 clock. The ledger will settle this.",
+        camps: [
+          { position: "Dead. Institutions broke the cycle.", n: 4, watch_for: "'This time is different' resting on who is buying, with no date for when the buying stops.",
+            v: { id: "XNuL97I8bvc", title: "He Called the 2025 Cycle. Now He Says Bitcoin's 4-Year Cycle Is Dead.", channel: "Krown", length: "57:01", published: "2026-08-02", verdict: "ORIGINAL" } },
+          { position: "Intact. This is a normal cycle bear.", n: 9, watch_for: "A chart of the last three cycles laid over this one, with the years that didn't fit left off.",
+            v: { id: "0QyKqoWaF_U", title: "The Hard TRUTH about Crypto in 2026 (You May Not Want to Hear This)", channel: "No Bs Crypto", length: "14:47", published: "2026-07-19", verdict: "DERIVATIVE" } },
+        ] } },
+    { id: "anti-inflammatory-diet", g: "g3", glow: "rgba(60,200,160,.4)",
+      name: "Inflammation as the Root",
+      claim: "Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease, and eating specific foods can reverse it.",
+      born: 2004, videos: 4710,
+      origin: [
+        { year: 2021, mechanism: "inflammation as the shared root of disease; food lists and turmeric as the cure", id: "kQPGTkkmgbI", title: "Is the Carnivore Diet Healthy? | The Dr. Axe Show, episode 56", channel: "Dr. Josh Axe", length: "46:11", published: "2021-01-05" },
+        { year: 2022, mechanism: "seed oils named as the main villain", id: "xYo9J8RijQY", title: "Foods That Cause Inflammation", channel: "NutritionFacts.org", length: "3:55", published: "2022-01-24", verdict: "ORIGINAL" },
+        { year: 2024, mechanism: "the gut microbiome as the route; fibre and fermented food as the lever", id: "5zP6eIgKVK8", title: "What Are Anti-Inflammatory Foods & Why Are They Crucial for Health? | Dr. Rob Lustig", channel: "Levels", length: "9:16", published: "2024-06-04", verdict: "ORIGINAL" },
+        { year: 2025, mechanism: "the seed-oil backlash; sugar, insulin and ultra-processed food take the blame", id: "Ixf0DFExhq0", title: "Best Remedies for INFLAMMATION (Autoimmune, Gut, and Arthritis) That You Never Considered", channel: "Dr. Eric Berg DC", length: "10:53", published: "2025-01-04", verdict: "ORIGINAL" },
+      ],
+      newest: [
+        { id: "Oxiqb4cxDl0", title: "Gut Dietitian Recommends You Start Eating These High-Fiber Foods", channel: "Gabrielle, Dietitian", length: "9:40", published: "2026-09-22" },
+        { id: "p-DlhDNDLZA", title: "12 Anti-Inflammatory Foods I Buy Every Single Week for Gut Health", channel: "Doctor Alex", length: "43:45", published: "2026-09-02", verdict: "DERIVATIVE" },
+        { id: "A2GphlX-4VM", title: "I'm a Gut Doctor. Here's How I Eat Anti-Inflammatory Without Spending a Fortune", channel: "Dr. Will Bulsiewicz", length: "16:24", published: "2026-08-10", verdict: "ORIGINAL" },
+        { id: "zcqSYsHA0Jw", title: "Are Seed Oils Inflammatory?! (The EVIDENCE No One Shows) | Dr. William Li", channel: "Dr. William Li", length: "12:19", published: "2026-08-08", verdict: "DERIVATIVE" },
+      ],
+      debate: { statement: "Is chronic inflammation the root of most disease, and is food the cure?", note: "Skeptics are rare (7 of 77 videos read) and almost all argue about seed oils, not the framing. The maximalist side carries most of the product pitches.",
+        camps: [
+          { position: "Yes. Inflammation is the common root, and the right diet reverses it.", n: 33, watch_for: "One cause for every illness; group results with no comparison group; a book, supplement or programme at the end.",
+            v: { id: "t_vc0_WU8MI", title: "BEWARE: 8 Foods Cause FAST INFLAMMATION", channel: "Dr. Suneel Dhand", length: "35:18", published: "2026-07-16", verdict: "DERIVATIVE" } },
+          { position: "It matters. A better diet lowers inflammation modestly; one factor among many.", n: 32, watch_for: "Drops in blood markers (CRP, IL-6) presented as if they prove you will feel better or live longer.",
+            v: { id: "A2GphlX-4VM", title: "I'm a Gut Doctor. Here's How I Eat Anti-Inflammatory Without Spending a Fortune", channel: "Dr. Will Bulsiewicz", length: "16:24", published: "2026-08-10", verdict: "ORIGINAL" } },
+          { position: "Overhyped. Food-level inflammation scares don't hold up in human trials.", n: 7, watch_for: "'No proven harm' stretched into 'diet doesn't matter'; real individual food sensitivities waved away.",
+            v: { id: "sJoCpRAwxnM", title: "I Was WRONG About Seed Oils...", channel: "Dr. Eric Westman", length: "24:15", published: "2026-05-15", verdict: "DERIVATIVE" } },
+        ] } },
+    { id: "collapse-audit", g: "g2", glow: "rgba(255,120,90,.4)",
+      name: "The Coming Collapse",
+      claim: "A debt-driven collapse of the US economy is imminent; the 80-year big cycle is ending. The predicted trigger rotates with the news cycle. Since mid-2026 it runs through the AI boom.",
+      born: 2015, videos: 8846,
+      origin: [
+        { year: 2021, mechanism: "internal conflict and empire decline", id: "vcsWtervmVQ", title: "SILVER EXPLODES WHEN DOLLAR COLLAPSES!", channel: "Silver Slayer", length: "20:19", published: "2021-01-03" },
+        { year: 2026, mechanism: "AI capex as the crisis vector", id: "JrASb2EeBiY", title: "\"Don't Let Billionaires Decide!\" Bernie Sanders' Fiery AI Speech Goes Viral", channel: "Times Now World", length: "19:42", published: "2026-07-30", verdict: "ORIGINAL" },
+      ],
+      newest: [
+        { id: "5RpLv-g3omQ", title: "Dollar, Yen, Gold & Debt: Why the Global Fiat System Is Collapsing | Jamie Dimon", channel: "Gold & Silver Insights", length: "25:45", published: "2026-09-22" },
+        { id: "s8omwT8FkSE", title: "The Fed *JUST* Warned: We're about to Pop the AI Bubble.", channel: "Meet Kevin", length: "25:33", published: "2026-08-06", verdict: "DERIVATIVE" },
+      ],
+      debate: { statement: "What triggers the crisis?", note: "The mechanism rotates with the news cycle. Same conclusion, competing engines.",
+        camps: [
+          { position: "AI capex debt (the 2026 mutation)", n: 3, watch_for: "Capex totals quoted without the revenue beside them.",
+            v: { id: "s8omwT8FkSE", title: "The Fed *JUST* Warned: We're about to Pop the AI Bubble.", channel: "Meet Kevin", length: "25:33", published: "2026-08-06", verdict: "DERIVATIVE" } },
+          { position: "Japan repatriation, the yen-carry unwind", n: 2, watch_for: "A 2024 chart doing 2026's work.",
+            v: { id: "faiJCn20gv0", title: "Japan's AI Bubble Just Collapsed: A Warning For America...", channel: "Meerkat Explains", length: "16:58", published: "2026-08-01", verdict: "DERIVATIVE" } },
+        ] } },
+  ],
+  sorting: [
+    { id: "housing-crash-watch", g: "g4", name: "Housing", videos: 17785, reads: 8,
+      stories: ["US housing market downturn predictions", "Real estate investment and deal sourcing tactics", "Evergrande debt crisis and international real estate"] },
+    { id: "the-2026-setup", g: "g5", name: "The 2026 Setup", videos: 25666, reads: 15,
+      stories: ["Individual stock valuation and company earnings", "Macro market timing and volatility forecasts", "Precious metals price predictions", "Personal finance habits and long-term wealth", "Cryptocurrency technical analysis and commentary"] },
+  ],
+};
+
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem("se." + k)) ?? d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem("se." + k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem("se." + k); } catch (e) {} },
+};
+const state = { view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const mins = s => { const p = String(s || "").split(":").map(Number); return p.length === 2 ? p[0] + p[1] / 60 : p[0] * 60 + p[1] + p[2] / 60; };
+const fmtMin = m => m >= 60 ? `${Math.floor(m / 60)}h ${String(Math.round(m % 60)).padStart(2, "0")}m` : `${Math.round(m)} min`;
+const perEp = () => ({ 30: 2, 60: 3, 90: 4 }[state.budget] || 3);
+const findS = id => DATA.series.find(s => s.id === id);
+
+function evening(s) {
+  if (s.eps) {   // cut by the Director after watching: used as it is
+    const skip = v => state.skipSeen && state.seen.has(v.id);
+    const eps = s.eps.map(e => ({ ...e, videos: e.videos.filter(v => !skip(v)) }))
+      .map(e => ({ ...e, mins: e.videos.reduce((t, v) => t + mins(v.length) - (v.start || 0) / 60, 0) }));
+    return { s, eps, mins: eps.reduce((t, e) => t + e.mins, 0), count: eps.reduce((t, e) => t + e.videos.length, 0) };
+  }
+  const n = perEp(), skip = v => state.skipSeen && state.seen.has(v.id);
+  const origin = s.origin.map(o => ({ ...o, role: `${o.year}. ${o.mechanism}` })).filter(v => !skip(v));
+  const pickOrigin = origin.length <= n ? origin : [origin[0], ...origin.slice(1, -1).filter((_, i, a) => i % Math.ceil(a.length / Math.max(n - 2, 1)) === 0).slice(0, Math.max(n - 2, 0)), origin[origin.length - 1]];
+  const newest = s.newest.filter(v => !skip(v)).slice(0, n).map((v, i) => ({ ...v, role: i ? "Also new" : "The newest in this story" }));
+  const roles = ["The claim, at its strongest", "The strongest answer to it", "A third reading"];
+  const spins = s.debate.camps.map((c, i) => ({ ...c.v, role: roles[i] || "Another side", camp: c })).filter(v => !skip(v)).slice(0, n);
+  const eps = [
+    { n: "Episode 1", title: "Origin", why: `How the story got here. One video for each turn it took, oldest first, starting in ${s.born}.`, videos: pickOrigin, kept: s.origin.length },
+    { n: "Episode 2", title: "Where it stands", why: "The newest material in this story, one video per channel, nothing recycled.", videos: newest, kept: s.newest.length },
+    { n: "Episode 3", title: "The spins", why: s.debate.statement, note: s.debate.note, videos: spins, kept: s.debate.camps.length },
+  ].map(e => ({ ...e, mins: e.videos.reduce((t, v) => t + mins(v.length), 0) }));
+  return { s, eps, mins: eps.reduce((t, e) => t + e.mins, 0), count: eps.reduce((t, e) => t + e.videos.length, 0) };
+}
+
+function render() {
+  const app = $("#app");
+  const same = render.last === state.view + state.story; render.last = state.view + state.story;
+  const keep = same && state.play && !state.play.ended ? window.scrollY : 0;   // don't jump the page while something plays
+  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : series(state.story);
+  window.scrollTo({ top: keep });
+  dockSync();
+}
+const topBar = back => `<div class="top">
+  <div class="brand"><span class="orb" aria-hidden="true"></span>Story Evenings</div>
+  ${back ? `<button class="ghost" data-go="door">← All stories</button>` : `<span class="mono">AI curator · YouTube</span>`}
+</div>`;
+
+function door() {
+  const ready = DATA.series.map(evening);
+  const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+  return topBar(false) + `
+  <section class="door">
+    <div class="mono">An evening with a spine</div>
+    <h1 style="margin-top:10px">Pick a story.<br>Get an <em>evening</em>.</h1>
+    <p class="lede">Three episodes, in order: where the story began, where it stands, and the ways it gets told. Press play once. It plays through, and it ends.</p>
+    <div class="budget"><span class="mono">Tonight I have</span>
+      ${[30, 60, 90].map(b => `<button class="chip" data-budget="${b}" aria-pressed="${state.budget === b}">${b} min</button>`).join("")}
+    </div>
+  </section>
+  <section class="section">
+    <div class="kick"><h2>Ready tonight · ${esc(stamp)}</h2><span class="sub">Tap one and it plays</span></div>
+    <div class="shelf">${ready.map((e, i) => `
+      <button class="card3 ${e.s.g}" data-tilt data-play-story="${e.s.id}" aria-label="Play ${esc(e.s.name)}">
+        <span class="rank">0${i + 1}</span><span class="play" aria-hidden="true">▶</span>
+        <span class="pk">Series · ${e.eps.length} episodes</span>
+        <span class="pn">${esc(e.s.name)}</span>
+        <span class="pf">${e.count} videos · ${fmtMin(e.mins)}</span>
+      </button>`).join("")}
+    </div>
+  </section>
+  <section class="section">
+    <div class="kick"><h2>Stories</h2><span class="sub">${DATA.series.length} ready · ${DATA.sorting.length} still being sorted</span></div>
+    <div class="grid">
+      ${ready.map(e => `<button class="tile" data-tilt data-open="${e.s.id}">
+        <span class="name">${esc(e.s.name)}</span>
+        <span class="claim">${esc(e.s.claim)}</span>
+        <span class="meta"><span class="pill ok">${e.eps.length} episodes</span><span>${e.s.born}→2026</span><span>${e.s.watched ? e.s.watched + " videos watched" : e.s.videos.toLocaleString() + " videos"}</span></span>
+      </button>`).join("")}
+      ${DATA.sorting.map(x => `<button class="tile sorting" data-tilt data-sort="${x.id}">
+        <span class="name">${esc(x.name)}</span>
+        <span class="claim">${x.stories.length} stories are filed under one name here. The curator is separating them before offering an evening.</span>
+        <span class="meta"><span class="pill">being sorted</span><span>${x.videos.toLocaleString()} videos</span><span>${x.reads} read so far</span></span>
+      </button>`).join("")}
+    </div>
+  </section>
+  <p class="rules">Every evening ends on purpose. One video per channel, no video repeating another's claim, nothing ranked by views, and nothing queued after the last one. ${state.seen.size ? `You've marked ${state.seen.size} video${state.seen.size === 1 ? "" : "s"} as seen; evenings leave them out.` : "Mark a video as seen and future evenings leave it out."}</p>`;
+}
+
+function sorting(id) {
+  const x = DATA.sorting.find(s => s.id === id);
+  return topBar(true) + `<section class="sorting-view">
+    <div class="titlecard">
+      <div class="mono">Still being sorted · ${x.videos.toLocaleString()} videos</div>
+      <h1>${esc(x.name)}</h1>
+      <p class="claim">${x.reads} videos read so far say this is not one story. It is ${x.stories.length}. Each becomes its own series once the curator has enough of it to name a claim, the turns it took, and the sides.</p>
+    </div>
+    <div class="list">${x.stories.map(s => `<div class="story"><b>${esc(s)}</b><span class="mono">reading · no evening yet</span></div>`).join("")}</div>
+    <p class="rules">This is the story layer. A name that turns out to hold several stories gets split before anyone is offered an evening from it, so an evening never mixes tellings of different things.</p>
+  </section>`;
+}
+
+function series(id) {
+  const p = state.play, e = (p && p.e) || evening(findS(id)), resume = store.get("resume." + id, null);
+  const done = k => p ? k < p.ep : false;
+  let head;
+  if (p && p.ended) head = endCard(e);
+  else if (p && p.interstitial) head = `<div class="interstitial"><div class="mono" style="color:var(--accent)">${esc(e.eps[p.ep].n)} of ${e.eps.length}</div><h3>${esc(e.eps[p.ep].title)}</h3><div class="fine">${esc(e.eps[p.ep].why)}</div></div>`;
+  else if (p) head = player(e);
+  else head = `<div class="titlecard">
+      <div class="mono">Series · ${e.s.born}→2026${e.s.stance ? " · " + esc(e.s.stance) : ""}</div>
+      <h1>${esc(e.s.name)}</h1>
+      <p class="claim">${esc(e.s.claim)}</p>${e.s.status ? `<p class="claim" style="color:var(--signal)">${esc(e.s.status)}</p>` : ""}
+      <div class="curator"><span class="orb" aria-hidden="true"></span><span>${e.s.watched ? `The Director watched ${e.s.watched} videos and kept ${e.count}` : `Curated from ${e.s.videos.toLocaleString()} videos: ${e.count} kept for tonight`}, ${fmtMin(e.mins)}. One per channel, nothing repeated, nothing ranked by views.</span></div>
+      <div class="cta">
+        <button class="primary" data-start="0">▶ Play the evening</button>
+        ${resume && !(resume.ep === 0 && resume.i === 0) ? `<button class="ghost" data-resume="1">Resume at episode ${resume.ep + 1}, video ${resume.i + 1}</button>` : ""}
+        <span class="note">Plays through, hands free, then it ends.</span>
+      </div>
+      <label class="seen-toggle"><input type="checkbox" id="skipseen" ${state.skipSeen ? "checked" : ""}> Leave out what I've already seen</label>
+    </div>`;
+  return topBar(true) + head + `<div class="rail">${e.eps.map((ep, k) => `
+    <section class="ep ${p && !p.ended && !p.interstitial && p.ep === k ? "now" : ""} ${done(k) ? "done" : ""}">
+      <header><div><div class="mono" style="color:var(--accent)">${esc(ep.n)}</div><h3>${esc(ep.title)}</h3></div>
+        <div class="mins">${ep.videos.length} video${ep.videos.length === 1 ? "" : "s"} · ${fmtMin(ep.mins)} <button class="ghost" data-start="${k}">Play from here</button></div></header>
+      <div class="why">${esc(ep.why)}${ep.note ? ` <span style="color:var(--muted)">${esc(ep.note)}</span>` : ""}</div>
+      <div class="vlist">${ep.videos.map((v, i) => `
+        <div class="v ${state.seen.has(v.id) ? "seen" : ""} ${p && !p.ended && p.ep === k && p.i === i ? "playing" : ""}">
+          <div class="n">${String(i + 1).padStart(2, "0")}</div>
+          <div>
+            <div class="mono">${esc(v.role)}</div>
+            <div class="t">${esc(v.title)}</div>
+            <div class="m"><span>${esc(v.channel)} · ${esc(v.length)} · ${esc(v.published)}</span>
+              ${v.verdict ? `<span class="pill">${esc(v.verdict.toLowerCase())}</span>` : ""}
+              ${v.camp && v.camp.n ? `<span class="pill">${v.camp.n} argue this side</span>` : ""}
+              ${v.sells ? `<span class="pill" title="${esc(v.sells)}">sells something</span>` : ""}
+              <button class="ghost tiny" data-play-at="${k}:${i}">▶ Play</button>
+              <button class="ghost tiny" data-seen="${esc(v.id)}">${state.seen.has(v.id) ? "Unmark seen" : "Mark seen"}</button>
+            </div>
+            ${v.why ? `<div class="m" style="margin-top:4px">${esc(v.why)}</div>` : ""}
+            ${v.camp ? `<div class="look"><b>${esc(v.camp.position)}.</b> Look out for: ${esc(v.camp.watch_for)}</div>` : ""}
+            ${v.note ? `<div class="look" style="border-color:var(--muted)">${esc(v.note)}</div>` : ""}
+          </div>
+        </div>`).join("") || `<div class="why" style="color:var(--muted)">Everything here is something you've seen. Untick the box above to include it.</div>`}
+      </div>
+    </section>`).join("")}</div>`;
+}
+
+function player(e) {
+  const p = state.play, ep = e.eps[p.ep], v = ep.videos[p.i], nextV = ep.videos[p.i + 1], nextEp = e.eps[p.ep + 1];
+  const upNext = nextV ? `Up next: ${nextV.title}` : nextEp ? `Up next: ${nextEp.n}, ${nextEp.title}` : "This is the last one. The evening ends after it.";
+  return `<div class="player"><div class="now">
+      <div class="line"><span class="mono spn">Now playing · ${esc(ep.n)} · ${p.i + 1} of ${ep.videos.length}</span><span class="mono">${esc(v.role)}</span></div>
+      <div class="t">${esc(v.title)}</div>
+      <div class="m">${esc(v.channel)} · ${esc(v.length)} · published ${esc(v.published)}</div>
+      ${v.camp ? `<div class="look"><b>Look out for:</b> ${esc(v.camp.watch_for)}</div>` : ""}
+      <div class="acts">
+        <button class="ghost" data-prev="1" ${p.ep === 0 && p.i === 0 ? "disabled" : ""}>‹ Previous</button>
+        <button class="ghost" data-next="1">${nextV || nextEp ? "Next ›" : "Finish ■"}</button>
+        <button class="ghost" data-stop="1">Stop</button>
+        <span class="next">${esc(upNext)}</span>
+      </div>
+    </div></div>`;
+}
+
+function endCard(e) {
+  return `<div class="end">
+    <div class="mono">■ The end</div>
+    <h3>That's the evening.</h3>
+    <div class="stat"><div><b>${e.count}</b><span>videos</span></div><div><b>${fmtMin(e.mins)}</b><span>watched</span></div><div><b>${e.eps.length}</b><span>episodes</span></div><div><b>${e.s.debate.camps.length}</b><span>sides heard</span></div></div>
+    <p>The question stays open: ${esc(e.s.debate.statement)} Each side's tell is on its card below. Nothing here was ranked by how popular it is, and nothing follows this.</p>
+    <div class="cta"><button class="ghost" data-start="0">Play it again</button><button class="ghost" data-go="door">Pick another story</button></div>
+    <div class="fine">Nothing queues after this. That's the point.</div>
+  </div>`;
+}
+
+/* Playback. The video plays in a small viewer docked to the corner, so it
+   stays in view while you read the set, and can be made large. One YouTube
+   player is created once and kept outside the part of the page that re-renders. */
+let yt = null, ytReady = null;
+function loadYT() {
+  if (ytReady) return ytReady;
+  ytReady = new Promise(res => {
+    window.onYouTubeIframeAPIReady = () => {
+      yt = new YT.Player("yt", { width: "100%", height: "100%", host: "https://www.youtube-nocookie.com",
+        playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
+        events: { onReady: () => res(),
+          onStateChange: e => { if (e.data === YT.PlayerState.ENDED) onEnded(); },
+          onError: () => onError() } });
+    };
+    const sc = document.createElement("script"); sc.src = "https://www.youtube.com/iframe_api"; document.head.appendChild(sc);
+  });
+  return ytReady;
+}
+const dock = () => document.getElementById("dock");
+function dockSync(msg) {
+  const p = state.play, d = dock();
+  const on = !!(p && !p.ended);
+  d.classList.toggle("off", !on);
+  document.body.classList.toggle("playing", on && !d.classList.contains("big"));
+  if (!on) return;
+  const ep = p.e.eps[p.ep], v = ep.videos[p.i];
+  document.getElementById("dock-title").textContent = msg || (p.interstitial ? `${ep.n} · ${ep.title}` : v.title);
+  document.getElementById("dock-sub").textContent = p.interstitial ? "Starting…" : `${ep.n} · ${p.i + 1} of ${ep.videos.length} · ${v.channel}`;
+}
+function startAt(ep, i) {
+  clearTimeout(state.play?.timer);
+  // The evening is fixed the moment it starts. Marking a video seen must not
+  // pull it out from under the player mid-way; it only shapes the next evening.
+  const e = state.play?.e || evening(findS(state.story));
+  const cur = state.play = { ep, i, timer: null, ended: false, interstitial: false, e };
+  if (!e.eps[ep] || !e.eps[ep].videos.length) return advance(e);
+  if (i >= e.eps[ep].videos.length) { cur.i = e.eps[ep].videos.length - 1; return advance(e); }
+  store.set("resume." + state.story, { ep, i });
+  render();
+  const v = e.eps[ep].videos[i];
+  loadYT().then(() => { if (state.play === cur) yt.loadVideoById({ videoId: v.id, startSeconds: v.start || 0 }); });
+}
+function onEnded() { const p = state.play; if (!p || p.ended || p.interstitial) return; markSeen(p.e.eps[p.ep].videos[p.i]); advance(p.e); }
+function onError() {
+  const p = state.play; if (!p || p.ended) return;
+  dockSync("This video can't be played here. Skipping to the next one…");
+  p.timer = setTimeout(() => advance(p.e), 2500);
+}
+function advance(e) {
+  const p = state.play; clearTimeout(p.timer);
+  const ep = e.eps[p.ep];
+  if (ep && p.i + 1 < ep.videos.length) return startAt(p.ep, p.i + 1);
+  let next = p.ep + 1;
+  while (next < e.eps.length && !e.eps[next].videos.length) next++;
+  if (next < e.eps.length) {
+    try { yt && yt.stopVideo(); } catch (x) {}
+    state.play = { ep: next, i: 0, timer: null, ended: false, interstitial: true, e: p.e };
+    render(); state.play.timer = setTimeout(() => startAt(next, 0), 2200); return;
+  }
+  try { yt && yt.stopVideo(); } catch (x) {}
+  state.play = { ...p, ended: true }; store.del("resume." + state.story); render();
+}
+const markSeen = v => { if (v) { state.seen.add(v.id); store.set("seen", [...state.seen]); } };
+const stop = () => { clearTimeout(state.play?.timer); state.play = null; try { yt && yt.stopVideo(); } catch (x) {} dock().classList.remove("big"); dockSync(); };
+
+/* depth: cards lean toward the pointer, and settle when it leaves */
+const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.addEventListener("pointermove", ev => {
+  if (!motionOK) return;
+  const el = ev.target.closest("[data-tilt]"); if (!el) return;
+  const r = el.getBoundingClientRect(), x = (ev.clientX - r.left) / r.width - .5, y = (ev.clientY - r.top) / r.height - .5;
+  el.style.setProperty("--ry", `${x * 10}deg`); el.style.setProperty("--rx", `${-y * 8}deg`);
+});
+document.addEventListener("pointerout", ev => { const el = ev.target.closest("[data-tilt]"); if (el) { el.style.setProperty("--ry", "0deg"); el.style.setProperty("--rx", "0deg"); } });
+
+document.addEventListener("click", ev => {
+  const t = ev.target;
+  const go = t.closest("[data-go]"); if (go) { stop(); state.view = go.dataset.go; state.story = null; return render(); }
+  const b = t.closest("[data-budget]"); if (b) { state.budget = +b.dataset.budget; store.set("budget", state.budget); return render(); }
+  const open = t.closest("[data-open]"); if (open) { stop(); state.view = "series"; state.story = open.dataset.open; return render(); }
+  const srt = t.closest("[data-sort]"); if (srt) { stop(); state.view = "sorting"; state.story = srt.dataset.sort; return render(); }
+  const ps = t.closest("[data-play-story]"); if (ps) { stop(); state.view = "series"; state.story = ps.dataset.playStory; return startAt(0, 0); }
+  const pa = t.closest("[data-play-at]"); if (pa) { const [a_, b_] = pa.dataset.playAt.split(":").map(Number); stop(); return startAt(a_, b_); }
+  if (t.closest("[data-size]")) { dock().classList.toggle("big"); return dockSync(); }
+  const st = t.closest("[data-start]"); if (st) { stop(); return startAt(+st.dataset.start, 0); }
+  const rs = t.closest("[data-resume]"); if (rs) { const r = store.get("resume." + state.story, { ep: 0, i: 0 }); stop(); return startAt(r.ep, r.i); }
+  if (t.closest("[data-next]")) { const p = state.play; if (!p || p.ended) return; if (p.interstitial) return startAt(p.ep, 0); markSeen(p.e.eps[p.ep].videos[p.i]); return advance(p.e); }
+  if (t.closest("[data-prev]")) { const p = state.play; if (!p || p.ended) return; if (p.i > 0) return startAt(p.ep, p.i - 1); if (p.ep > 0) return startAt(p.ep - 1, Math.max(0, p.e.eps[p.ep - 1].videos.length - 1)); return; }
+  if (t.closest("[data-stop]")) { stop(); return render(); }
+  const sn = t.closest("[data-seen]"); if (sn) { const id = sn.dataset.seen; state.seen.has(id) ? state.seen.delete(id) : state.seen.add(id); store.set("seen", [...state.seen]); return render(); }
+});
+document.addEventListener("change", ev => { if (ev.target.id === "skipseen") { state.skipSeen = ev.target.checked; store.set("skipSeen", state.skipSeen); render(); } });
+render();
+loadYT();   // ready before the first tap, so that tap is the one that plays
+</script>
+
+</body>
+</html>
