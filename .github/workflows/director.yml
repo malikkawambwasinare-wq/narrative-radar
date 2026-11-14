@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "build or edit"
+        description: "build, edit, or gather (search only; request is a frame as JSON)"
         default: "build"
       request:
         description: "build: the story in your own words · edit: the change you want"
@@ -55,7 +55,9 @@ jobs:
           ADD: ${{ inputs.add }}
         run: |
           set -o pipefail
-          if [ "$MODE" = "edit" ]; then
+          if [ "$MODE" = "gather" ]; then
+            python3 scripts/director.py gather "$REQUEST" | tee director.log
+          elif [ "$MODE" = "edit" ]; then
             python3 scripts/director.py edit "$STORY" "$REQUEST" --write | tee director.log
           else
             python3 scripts/director.py build "$REQUEST" --budget "$BUDGET" ${CATEGORY:+--category "$CATEGORY"} ${ADD:+--add "$ADD"} --write | tee director.log
@@ -68,6 +70,7 @@ jobs:
           path: |
             director.log
             library/*.json
+            library/candidates/*.json
           if-no-files-found: warn
       - name: Save the set
         run: |
