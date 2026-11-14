@@ -617,6 +617,29 @@ def build(request, budget=60, category=None):
     return story
 
 
+# ------------------------------------------------------------------ gather only
+def gather_only(frame_json):
+    """Search and read details for a frame someone else wrote; no model call.
+
+    The shelf is built with the judging done by hand (Claude in a working
+    session) and the watching done on Gemini's free tier, so the only thing
+    that has to run where the YouTube key lives is the search. The frame is the
+    same object frame() returns; the result is the candidate pool, saved to
+    library/candidates/<id>.json for whoever judges it."""
+    LOG.clear()
+    f = json.loads(frame_json)
+    quota = Quota(MAX_SEARCHES)
+    cands = gather(f, quota)
+    out = {"id": slug(f["title"]), "frame": f, "gathered": NOW.strftime("%Y-%m-%d"), "quota_units": quota.units,
+           "research_log": LOG[:],
+           "candidates": {i: {k: v.get(k) for k in ("id", "title", "channel", "channelId", "published", "seconds", "length", "description", "lang")}
+                          for i, v in cands.items()}}
+    d = LIB / "candidates"
+    d.mkdir(parents=True, exist_ok=True)
+    (d / f"{out['id']}.json").write_text(json.dumps(out, indent=1, ensure_ascii=False) + "\n")
+    print(f"saved library/candidates/{out['id']}.json · {len(cands)} candidates · {quota.units} quota units")
+
+
 # ------------------------------------------------------------------ edit
 EDIT_SCHEMA = {"type": "object", "properties": {
     "reply": {"type": "string", "description": "What you say back to the person, plainly, in 1-3 sentences"},
@@ -776,6 +799,8 @@ def main():
         build(a[1], int(flag("--budget", 60)), flag("--category"))
     elif mode == "edit" and len(a) > 2:
         edit(load(a[1]), a[2])
+    elif mode == "gather" and len(a) > 1:
+        gather_only(a[1])
     elif mode == "chat":
         chat(a[1] if len(a) > 1 else None)
     else:
