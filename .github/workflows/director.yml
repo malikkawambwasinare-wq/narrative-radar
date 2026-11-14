@@ -23,6 +23,9 @@ on:
       category:
         description: "optional: health, money, tech, world, climate, society, general"
         default: ""
+      add:
+        description: "optional extra episodes, comma-separated: basics, evidence, receipts, people, human"
+        default: ""
 
 permissions:
   contents: write
@@ -49,12 +52,13 @@ jobs:
           STORY: ${{ inputs.story }}
           BUDGET: ${{ inputs.budget }}
           CATEGORY: ${{ inputs.category }}
+          ADD: ${{ inputs.add }}
         run: |
           set -o pipefail
           if [ "$MODE" = "edit" ]; then
             python3 scripts/director.py edit "$STORY" "$REQUEST" --write | tee director.log
           else
-            python3 scripts/director.py build "$REQUEST" --budget "$BUDGET" ${CATEGORY:+--category "$CATEGORY"} --write | tee director.log
+            python3 scripts/director.py build "$REQUEST" --budget "$BUDGET" ${CATEGORY:+--category "$CATEGORY"} ${ADD:+--add "$ADD"} --write | tee director.log
           fi
       - name: Keep the run's output
         if: always()
