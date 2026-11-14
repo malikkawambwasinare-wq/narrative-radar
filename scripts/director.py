@@ -3,6 +3,8 @@
 
     python3 scripts/director.py build "why everyone says bitcoin's 4-year cycle is dead" --budget 60 --write
     python3 scripts/director.py edit four-year-cycle "swap the second spin for something less hyped" --write
+    python3 scripts/director.py build "how does a mortgage work"            # it picks the explainer shape itself
+    python3 scripts/director.py build "seed oils" --add evidence,receipts   # extra episodes: basics, evidence, receipts, people, human
     python3 scripts/director.py chat                      # talk to it: first message builds, the rest edit
     python3 scripts/director.py chat four-year-cycle      # talk about a set that already exists
 
@@ -240,6 +242,27 @@ status: one short line a returning viewer needs: what changed last and the next 
 one was said. Under 16 words. Only facts present in the material."""
 
 
+# ------------------------------------------------------------------ shapes and extra episodes
+# Two shapes. A STORY follows an argument: origin, where it stands, the sides.
+# An EXPLAINER is for someone who wants to understand a thing with no argument
+# attached ("how does a mortgage work"): the basics, how it works, why it matters.
+#
+# The core stays three episodes so the promise stays simple. Everything else is
+# an extra, added only when the person asks or when the set cannot be followed
+# without it (the basics: in the first real test all ten videos assumed the
+# viewer already knew what a halving was).
+EXTRAS = {
+    "basics":   ("The basics", "What this is, in plain terms.", "a short, neutral explainer a newcomer could follow; no argument, no pitch"),
+    "evidence": ("The evidence", "What the data or the studies actually show.", "researchers, data and trial results shown on screen; not opinion about the evidence"),
+    "receipts": ("The receipts", "What was predicted, and when. Check each against what happened.", "videos that made a dated, checkable prediction whose date has now passed"),
+    "people":   ("The people", "Who started this, and who benefits.", "interviews with or profiles of the central figures; who is selling what"),
+    "human":    ("The human side", "What it is like to live through this.", "first-hand accounts from people affected, in their own words"),
+}
+EXPLAIN = [("basics", "The basics", "What it is, in plain terms."),
+           ("how", "How it works", "The mechanism, step by step."),
+           ("why", "Why it matters", "What it changes for a person, and where it goes wrong.")]
+
+
 # ------------------------------------------------------------------ build
 FRAME_SCHEMA = {"type": "object", "properties": {
     "category": {"type": "string", "enum": [p["id"] for p in PLAYBOOKS]},
@@ -252,6 +275,13 @@ FRAME_SCHEMA = {"type": "object", "properties": {
     "queries_sides": {"type": "array", "items": {"type": "string"}, "description": "2-3 searches aimed at each side, including the skeptic"},
     "start_year": {"type": "integer", "description": "Best guess of the year the claim first appeared on YouTube"},
     "clarify": {"type": "string", "description": "One question, only if the request is really two stories; otherwise empty"},
+    "shape": {"type": "string", "enum": ["story", "explain"],
+              "description": "story: a claim people argue about. explain: the person wants to understand a thing, with no argument attached"},
+    "extras": {"type": "array", "items": {"type": "string", "enum": ["basics", "evidence", "receipts", "people", "human"]},
+               "description": "Extra episodes. Include basics when a newcomer could not follow the story without it. Include the others only if the person asked for them"},
+    "queries_extra": {"type": "array", "items": {"type": "string"}, "description": "One search per extra episode, in the same order as extras"},
+    "queries_explain": {"type": "array", "items": {"type": "string"},
+                        "description": "explain shape only: 5-6 searches covering the basics, how it works, and why it matters. Else empty"},
 }, "required": ["category", "story", "central_claim", "not_about", "title", "queries_now", "queries_origin", "queries_sides", "start_year", "clarify"]}
 
 DECIDE_SCHEMA = {"type": "object", "properties": {
@@ -278,6 +308,14 @@ DECIDE_SCHEMA = {"type": "object", "properties": {
     "status": {"type": "string", "description": "What changed last and what to watch next, under 16 words"},
     "open_question": {"type": "string", "description": "What stays unresolved, in one sentence"},
     "gaps": {"type": "string", "description": "What the material could not establish, if anything"},
+    "extra_episodes": {"type": "array", "description": "Only the extra or explainer episodes asked for below; else empty",
+        "items": {"type": "object", "properties": {
+            "kind": {"type": "string", "enum": ["basics", "evidence", "receipts", "people", "human", "how", "why"]},
+            "videos": {"type": "array", "items": {"type": "object", "properties": {
+                "videoId": {"type": "string"}, "role": {"type": "string", "description": "Its job, under 10 words"},
+                "why": {"type": "string"}}, "required": ["videoId", "role", "why"]}}},
+            "required": ["kind", "videos"]}},
+    "whats_next": {"type": "string", "description": "The next date or event that will test the claim, if the material names one; else empty"},
 }, "required": ["origin", "turns", "latest", "sides", "open_question", "gaps"]}
 
 
@@ -299,6 +337,9 @@ def card(v):
 def frame(request):
     cats = "\n".join(f"- {p['id']}: {p['name']}" for p in PLAYBOOKS)
     f = claude(SPEC_RULES, f"A person asked for a story: “{request}”\n\nCategories:\n{cats}\n\n"
+               "First decide the shape: story if this is a claim people argue about, explain if the person only wants to "
+               "understand a thing. For explain, central_claim is a one-sentence plain description of the thing, and "
+               "queries_explain carries the searches. "
                "Pick the category, frame the story and its one central claim, say what it is not about, "
                "and write the searches you will run. Origin searches should use the words people used "
                "when the claim first appeared.", FRAME_SCHEMA, effort="medium", max_tokens=3000)
@@ -309,7 +350,16 @@ def gather(f, quota):
     """Search backwards for the origin, across for the sides, forwards for the latest."""
     start = max(2006, min(int(f.get("start_year") or 2018), NOW.year))
     pool = []
-    say(f"category: {playbook(f['category'])['name']} · claim: {f['central_claim']}")
+    say(f"category: {playbook(f['category'])['name']} · {f.get('shape', 'story')} · {f['central_claim']}")
+    if f.get("shape") == "explain":
+        for q in (f.get("queries_explain") or f["queries_now"])[:6]:
+            pool += search(q, quota, why="explainers")
+        meta = details(pool, quota)
+        good = {i: v for i, v in meta.items() if usable(v)}
+        say(f"read details of {len(meta)} videos; {len(good)} usable")
+        return good
+    for q, kind in zip(f.get("queries_extra") or [], f.get("extras") or []):
+        pool += search(q, quota, why=f"for the extra episode: {EXTRAS[kind][0]}")
     for q in f["queries_now"][:2]:
         pool += search(q, quota, after=NOW - timedelta(days=200), why="latest")
     for q in f["queries_origin"][:3]:
@@ -327,6 +377,19 @@ def gather(f, quota):
     good = {i: v for i, v in meta.items() if usable(v)}
     say(f"read details of {len(meta)} videos; {len(good)} usable after removing Shorts, live and unembeddable ones")
     return good
+
+
+def extra_ask(f):
+    if f.get("shape") == "explain":
+        return ("\n\nThis is an EXPLAINER, not an argument. Leave origin, turns, latest and sides empty (use any id for origin; it "
+                "is ignored). Fill extra_episodes with three kinds: basics (1 video: what it is, plainly), how (1-2: the mechanism, "
+                "step by step), why (1-2: what it changes for a person, and where it goes wrong). Prefer clear teachers over "
+                "personalities, and videos that sell nothing. stance is Settled unless the material shows a live dispute.")
+    ex = [k for k in (f.get("extras") or []) if k in EXTRAS]
+    if not ex:
+        return "\n\nLeave extra_episodes empty."
+    return ("\n\nAlso fill extra_episodes for: " + "; ".join(f"{k} ({EXTRAS[k][2]})" for k in ex)
+            + ". One or two videos each. If the material has nothing fit for one, leave it out rather than force it.")
 
 
 def decide(request, f, cands, budget=60):
@@ -351,7 +414,7 @@ def decide(request, f, cands, budget=60):
                   f"The whole set must fit about {budget} minutes. Everything you pick will not fit, so for each "
                   "turn and side choose the strongest video that is short enough, put the direct counter to the "
                   "claim as the second side, and list backups so a shorter alternative exists. Avoid anything over "
-                  "an hour unless nothing else makes the point.",
+                  "an hour unless nothing else makes the point." + extra_ask(f),
                   DECIDE_SCHEMA, effort="high", max_tokens=12000)
 
 
@@ -369,6 +432,9 @@ def clean(d, cands):
             s["videoId"], s["backups"] = ids[0], ids[1:]
             sides.append(s)
     d["sides"] = sides
+    for e in d.get("extra_episodes") or []:
+        e["videos"] = [v for v in e.get("videos", []) if ok(v.get("videoId"))]
+    d["extra_episodes"] = [e for e in d.get("extra_episodes") or [] if e["videos"]]
     return d
 
 
@@ -376,7 +442,7 @@ def mins(v):
     return v["seconds"] / 60
 
 
-def assemble(d, cands, budget):
+def assemble(d, cands, budget, shape="story"):
     """Code, not judgment: the per-channel rule, the budget, the ending.
 
     One budget across the whole set, filled in order of what a set cannot do
@@ -410,6 +476,17 @@ def assemble(d, cands, budget):
                             "published": v["published"], "role": role, "why": why, **(extra or {})}
         return None
 
+    extra = {e["kind"]: e["videos"] for e in d.get("extra_episodes") or []}
+    take_all = lambda kind: [x for x in (take([v["videoId"]], v["role"], v["why"]) for v in extra.get(kind, [])[:2]) if x]
+    if shape == "explain":
+        eps = [{"key": k, "title": t, "about": a, "videos": take_all(k)} for k, t, a in EXPLAIN]
+        eps = [e for e in eps if e["videos"]]
+        for e in eps:
+            e["minutes"] = round(sum(mins(cands[v["videoId"]]) for v in e["videos"]))
+        return eps
+    # The basics come out of the budget first: without them the rest cannot be followed.
+    basics = take_all("basics")[:1]
+
     sides = d.get("sides", [])[:3]
     roles = ["The claim, at its strongest", "The strongest answer to it", "A third reading"]
     side_item = lambda i: take([sides[i]["videoId"]] + sides[i].get("backups", []), roles[i], sides[i]["why"],
@@ -438,6 +515,15 @@ def assemble(d, cands, budget):
         {"key": "sides", "title": "The sides", "about": "Each position at its strongest, with what to watch for.",
          "videos": [x for x in picked["sides"] if x]},
     ]
+    if basics:
+        eps.insert(0, {"key": "basics", "title": EXTRAS["basics"][0], "about": EXTRAS["basics"][1], "videos": basics})
+    for kind in ("evidence", "receipts", "people", "human"):
+        vids = take_all(kind)
+        if vids:
+            eps.append({"key": kind, "title": EXTRAS[kind][0], "about": EXTRAS[kind][1], "videos": vids})
+        elif kind in extra:
+            say(f"budget could not fit the extra episode: {EXTRAS[kind][0]}")
+    eps = [e for e in eps if e["videos"]]
     for e in eps:
         e["minutes"] = round(sum(mins(cands[v["videoId"]]) for v in e["videos"]))
     dropped = [s_["position"] for i, s_ in enumerate(sides) if not picked["sides"][i]]
@@ -462,6 +548,8 @@ def show(story):
             print(f"        {v['role']} — {v['why'][:110]}")
             if v.get("watch_for"):
                 print(f"        look out for: {v['watch_for'][:110]}")
+    if story.get("whats_next"):
+        print(f"\n  What's next: {story['whats_next']}")
     print(f"\n  Stays open: {story['open_question']}")
     if story.get("gaps"):
         print(f"  Couldn't establish: {story['gaps']}")
@@ -486,13 +574,21 @@ def build(request, budget=60, category=None):
     f = frame(request)
     if category:
         f["category"] = category
+    asked = [k for k in (flag("--add", "") or "").split(",") if k in EXTRAS]
+    f["extras"] = list(dict.fromkeys((f.get("extras") or []) + asked))
+    if len(f.get("queries_extra") or []) < len(f["extras"]):
+        f["queries_extra"] = (f.get("queries_extra") or []) + [f"{f['story']} {EXTRAS[k][0].lower()}" for k in f["extras"][len(f.get("queries_extra") or []):]]
+    if flag("--shape"):
+        f["shape"] = flag("--shape")
     if f.get("clarify"):
         say(f"would ask: {f['clarify']} (building the most likely reading meanwhile)")
     cands = gather(f, quota)
     if len(cands) < 6:
         sys.exit("Too little usable material to build a set. Try rewording the request.")
     d = clean(decide(request, f, cands, budget), cands)
-    eps = assemble(d, cands, budget)
+    eps = assemble(d, cands, budget, f.get("shape", "story"))
+    if not eps:
+        sys.exit("Nothing usable to build a set from. Try rewording the request.")
     pb = playbook(f["category"])
     # The handle is chosen after the research, when the people and the slogan
     # are known; the framing title is only a fallback.
@@ -506,6 +602,7 @@ def build(request, budget=60, category=None):
         "central_claim": f["central_claim"], "not_about": f["not_about"], "budget": budget,
         "episodes": eps, "sides": d["sides"], "turns": d["turns"], "open_question": d["open_question"],
         "gaps": d.get("gaps", ""), "clarify": f.get("clarify", ""),
+        "shape": f.get("shape", "story"), "whats_next": d.get("whats_next", ""),
         "built": NOW.strftime("%Y-%m-%d"), "updated": NOW.strftime("%Y-%m-%d"), "model": MODEL,
         "quota_units": quota.units, "searches": MAX_SEARCHES - quota.searches_left,
         "research_log": LOG[:],
@@ -671,7 +768,7 @@ def chat(sid=None):
 
 
 def main():
-    a = [x for x in sys.argv[1:] if not x.startswith("--") and x not in (flag("--budget"), flag("--category"))]
+    a = [x for x in sys.argv[1:] if not x.startswith("--") and x not in (flag("--budget"), flag("--category"), flag("--add"), flag("--shape"))]
     if not a:
         sys.exit(__doc__)
     mode = a[0]
