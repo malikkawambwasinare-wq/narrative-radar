@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -95750,6 +95750,156 @@
       "verdict_basis": "metadata",
       "yt": {
         "channelId": "UC7PZUlM9C6i6eVa3wKPEIgQ"
+      }
+    },
+    {
+      "videoId": "KnqPGmxKwYw",
+      "title": "Healthy Foods Causing Bloating? Hidden Gut Triggers Explained #shorts",
+      "channel": "Just In Health",
+      "url": "https://www.youtube.com/watch?v=KnqPGmxKwYw",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-14",
+      "views": 355,
+      "length": "2:52",
+      "age_days": 0,
+      "query": "channel sweep: Just In Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UC2xHlsxGlm63R3i8ZIRvfXg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 15,
+        "comments": 8,
+        "enrichedOn": "2026-11-14"
+      }
+    },
+    {
+      "videoId": "7mO7GlTc7CU",
+      "title": "Functional Medicine in Greenville SC | Root Cause Care with Amanda Dyar Moss, APRN, FNP-C",
+      "channel": "Forum Health",
+      "url": "https://www.youtube.com/watch?v=7mO7GlTc7CU",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-14",
+      "views": 14,
+      "length": "1:36",
+      "age_days": 1,
+      "query": "channel sweep: Forum Health",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCXU1-QaY3nhu37KIv17cnRQ",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": null,
+        "comments": 2,
+        "enrichedOn": "2026-11-14"
+      }
+    },
+    {
+      "videoId": "SlfSWVoO8dI",
+      "title": "5 Must-Eat Foods After Age 40 | Healthy Aging, Heart Health & Strong Bones | Dr Hasan Nasir Cheema",
+      "channel": "Health with Dr. Hasan Nasir",
+      "url": "https://www.youtube.com/watch?v=SlfSWVoO8dI",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-14",
+      "views": 6234,
+      "length": "1:27",
+      "age_days": 0,
+      "query": "channel sweep: Health with Dr. Hasan Nasir",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCbNE4_ddZomr2CpuJ0fZlBQ",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 584,
+        "comments": 13,
+        "enrichedOn": "2026-11-14"
+      }
+    },
+    {
+      "videoId": "KV9dy1lclwo",
+      "title": "Benefits of Eating Corn | 7 Amazing Health Benefits of Sweet Corn | Gut Health & Digestion",
+      "channel": "Health with Dr. Hasan Nasir",
+      "url": "https://www.youtube.com/watch?v=KV9dy1lclwo",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-14",
+      "views": 14059,
+      "length": "1:32",
+      "age_days": 1,
+      "query": "channel sweep: Health with Dr. Hasan Nasir",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCbNE4_ddZomr2CpuJ0fZlBQ",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 820,
+        "comments": 29,
+        "enrichedOn": "2026-11-14"
+      }
+    },
+    {
+      "videoId": "bbrlydZOgyg",
+      "title": "Severe IBS, Stomach Pain, Depression & Anxiety | Remarkable Improvement in Just 15 Days",
+      "channel": "Health with Dr. Hasan Nasir",
+      "url": "https://www.youtube.com/watch?v=bbrlydZOgyg",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-14",
+      "views": 5585,
+      "length": "2:42",
+      "age_days": 1,
+      "query": "channel sweep: Health with Dr. Hasan Nasir",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCbNE4_ddZomr2CpuJ0fZlBQ",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 261,
+        "comments": 11,
+        "enrichedOn": "2026-11-14"
+      }
+    },
+    {
+      "videoId": "B2v9PoVGZr4",
+      "title": "Severe Gut Problems, 15 Bowel Movements Daily & 7 Years of Depression | Inspiring Recovery Story",
+      "channel": "Health with Dr. Hasan Nasir",
+      "url": "https://www.youtube.com/watch?v=B2v9PoVGZr4",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-14",
+      "views": 1912,
+      "length": "2:58",
+      "age_days": 1,
+      "query": "channel sweep: Health with Dr. Hasan Nasir",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCbNE4_ddZomr2CpuJ0fZlBQ",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 111,
+        "comments": 7,
+        "enrichedOn": "2026-11-14"
       }
     }
   ]
