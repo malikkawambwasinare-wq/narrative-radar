@@ -471,7 +471,10 @@ function startAt(ep, i) {
   clearTimeout(state.play?.timer);
   // The evening is fixed the moment it starts. Marking a video seen must not
   // pull it out from under the player mid-way; it only shapes the next evening.
-  const e = state.play?.e || evening(findS(state.story));
+  let e = state.play?.e || evening(findS(state.story));
+  // If everything in this story is marked seen, playing it means watching it
+  // again. An empty evening that "ends" at once with 0 videos helps nobody.
+  if (!e.count) { const was = state.skipSeen; state.skipSeen = false; e = evening(findS(state.story)); state.skipSeen = was; }
   const cur = state.play = { ep, i, timer: null, ended: false, interstitial: false, e };
   if (!e.eps[ep] || !e.eps[ep].videos.length) return advance(e);
   if (i >= e.eps[ep].videos.length) { cur.i = e.eps[ep].videos.length - 1; return advance(e); }
