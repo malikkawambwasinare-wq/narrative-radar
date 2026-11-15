@@ -302,7 +302,7 @@ const store = {
   set(k, v) { try { localStorage.setItem("se." + k, JSON.stringify(v)); } catch (e) {} },
   del(k) { try { localStorage.removeItem("se." + k); } catch (e) {} },
 };
-const state = { cat: "all", tell: store.get("tell", "auto"), swap: store.get("swap", {}), side: store.get("side", "video"), thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
+const state = { sound: false, cat: "all", tell: store.get("tell", "auto"), swap: store.get("swap", {}), side: store.get("side", "video"), thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const mins = s => { const p = String(s || "").split(":").map(Number); return p.length === 2 ? p[0] + p[1] / 60 : p[0] * 60 + p[1] + p[2] / 60; };
@@ -346,11 +346,14 @@ function render() {
   const keep = same && ((state.play && !state.play.ended) || (state.thread && !state.thread.ended)) ? window.scrollY : 0;   // don't jump the page while something plays
   app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : series(state.story);
   window.scrollTo({ top: keep });
-  dockSync();
+  dockSync(); musicLevel();
 }
 const topBar = back => `<div class="top">
   <div class="brand"><span class="orb" aria-hidden="true"></span>Story Evenings</div>
-  ${back ? `<button class="ghost" data-go="door">← All stories</button>` : `<span class="mono">AI curator · YouTube</span>`}
+  <div style="display:flex;gap:8px;align-items:center">
+    <button class="ghost" data-sound="1" aria-pressed="${state.sound}" title="A quiet instrumental. Best with headphones.">${state.sound ? "♪ Sound on" : "♪ Sound off"}</button>
+    ${back ? `<button class="ghost" data-go="door">← All stories</button>` : ""}
+  </div>
 </div>`;
 
 /* Broad on purpose: seven parts of a life, one word each. A series belongs to
@@ -723,6 +726,52 @@ function threadView(id) {
       </div>`).join("")}</div></section></div>`;
 }
 
+/* Background sound, made in the browser so there is no file to load and nothing
+   to license. A slow open chord (D, A, E) with one upper note that drifts
+   between two pitches, which is what keeps it from sounding finished, and
+   under it two low tones 10 Hz apart, one in each ear. Through headphones the
+   brain hears that gap as a soft 10 Hz pulse, the range of relaxed, alert
+   attention. Whether such tones change how anyone feels is not settled, so the
+   page promises a calm sound and nothing more.
+
+   It is off until asked for (browsers do not allow sound before a tap), and it
+   fades out whenever a video plays. */
+let music = null;
+function musicStart() {
+  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
+  const ctx = new AC(), master = ctx.createGain(); master.gain.value = 0;
+  const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 900;
+  const delay = ctx.createDelay(1), fb = ctx.createGain(); delay.delayTime.value = 0.37; fb.gain.value = 0.35;
+  lp.connect(master); lp.connect(delay); delay.connect(fb); fb.connect(delay); delay.connect(master); master.connect(ctx.destination);
+  const voice = (freq, level, rate) => {
+    const g = ctx.createGain(); g.gain.value = level; g.connect(lp);
+    for (const det of [-4, 4]) { const o = ctx.createOscillator(); o.type = "sine"; o.frequency.value = freq; o.detune.value = det; o.connect(g); o.start(); }
+    const lfo = ctx.createOscillator(), lg = ctx.createGain(); lfo.frequency.value = rate; lg.gain.value = level * 0.6; lfo.connect(lg); lg.connect(g.gain); lfo.start();
+    return g;
+  };
+  voice(146.83, 0.20, 0.05); voice(220.00, 0.14, 0.07); voice(329.63, 0.09, 0.06);
+  // the drifting note: F sharp, then G, then back, every sixteen seconds or so
+  const top = ctx.createOscillator(), tg = ctx.createGain(); top.type = "triangle"; top.frequency.value = 369.99; tg.gain.value = 0.045; top.connect(tg); tg.connect(lp); top.start();
+  const drift = setInterval(() => { const t = ctx.currentTime; top.frequency.setTargetAtTime(top.frequency.value < 380 ? 392.0 : 369.99, t, 2.5); }, 16000);
+  // the 10 Hz gap between the ears
+  [[110, -1], [120, 1]].forEach(([f, pan]) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = f; g.gain.value = 0.05;
+    const pn = ctx.createStereoPanner ? ctx.createStereoPanner() : null; o.connect(g); if (pn) { pn.pan.value = pan; g.connect(pn); pn.connect(master); } else g.connect(master); o.start(); });
+  music = { ctx, master, drift, level: 0.5 };
+  musicLevel();
+}
+function musicLevel() {
+  if (!music) return;
+  const playing = (state.play && !state.play.ended) || (state.thread && !state.thread.ended);
+  const target = state.sound && !playing ? music.level : 0;
+  if (target > 0 && music.ctx.state === "suspended") music.ctx.resume();
+  music.master.gain.setTargetAtTime(target, music.ctx.currentTime, 1.2);   // a slow fade, never a cut
+}
+function soundToggle() {
+  state.sound = !state.sound;
+  if (state.sound && !music) musicStart(); else musicLevel();
+  render();
+}
+
 /* depth: cards lean toward the pointer, and settle when it leaves */
 const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 document.addEventListener("pointermove", ev => {
@@ -736,6 +785,7 @@ document.addEventListener("pointerout", ev => { const el = ev.target.closest("[d
 document.addEventListener("click", ev => {
   const t = ev.target;
   if (t.closest("[data-nojump]")) return;
+  if (t.closest("[data-sound]")) return soundToggle();
   const ct = t.closest("[data-cat]"); if (ct) { state.cat = ct.dataset.cat; return render(); }
   const tl = t.closest("[data-tell]"); if (tl) { state.tell = tl.dataset.tell; state.swap = {}; store.set("tell", state.tell); store.set("swap", {}); return render(); }
   const sw = t.closest("[data-swap]"); if (sw) { const id = sw.dataset.swap, n = +sw.dataset.n; const cur = evening(findS(state.story)).eps.flatMap(e => e.videos).find(v => v.slot === id);
