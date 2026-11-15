@@ -738,26 +738,68 @@ function threadView(id) {
    It is off until asked for (browsers do not allow sound before a tap), and it
    fades out whenever a video plays. */
 let music = null;
+/* The first version was a low drone: three sine tones around 150 to 330 Hz at a
+   low level. Laptop and phone speakers barely reproduce that, and an iPhone
+   with its silent switch on plays nothing at all from a page, so it could not
+   be heard. This version is a small piece of music, written in code:
+
+   - the Lydian mode on D (D E F# G# A B C#). Its raised fourth, G sharp, is
+     the note that sounds like a question, which is where the curiosity is;
+   - a short melody of eight bell notes at a resting-heart tempo, played twice
+     and then changed by one note, so there is something to recognise and
+     something new each time round;
+   - a warm chord underneath, and two tones 10 Hz apart, one per ear. */
 function musicStart() {
   const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
-  const ctx = new AC(), master = ctx.createGain(); master.gain.value = 0;
-  const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 900;
-  const delay = ctx.createDelay(1), fb = ctx.createGain(); delay.delayTime.value = 0.37; fb.gain.value = 0.35;
-  lp.connect(master); lp.connect(delay); delay.connect(fb); fb.connect(delay); delay.connect(master); master.connect(ctx.destination);
-  const voice = (freq, level, rate) => {
-    const g = ctx.createGain(); g.gain.value = level; g.connect(lp);
-    for (const det of [-4, 4]) { const o = ctx.createOscillator(); o.type = "sine"; o.frequency.value = freq; o.detune.value = det; o.connect(g); o.start(); }
-    const lfo = ctx.createOscillator(), lg = ctx.createGain(); lfo.frequency.value = rate; lg.gain.value = level * 0.6; lfo.connect(lg); lg.connect(g.gain); lfo.start();
-    return g;
+  const ctx = new AC();
+  // iPhones mute page audio when the silent switch is on, unless a media element is playing.
+  try { const a = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA="); a.loop = true; a.play().catch(() => {}); } catch (x) {}
+  ctx.resume();
+  const master = ctx.createGain(); master.gain.value = 0;
+  const comp = ctx.createDynamicsCompressor(); master.connect(comp); comp.connect(ctx.destination);
+  const meter = ctx.createAnalyser(); meter.fftSize = 1024; master.connect(meter);
+  // a simple hall: two delays feeding each other
+  const wet = ctx.createGain(); wet.gain.value = 0.5; wet.connect(master);
+  const d1 = ctx.createDelay(2), d2 = ctx.createDelay(2), f1 = ctx.createGain(), f2 = ctx.createGain();
+  d1.delayTime.value = 0.41; d2.delayTime.value = 0.63; f1.gain.value = 0.42; f2.gain.value = 0.38;
+  d1.connect(f1); f1.connect(d2); d2.connect(f2); f2.connect(d1); d1.connect(wet); d2.connect(wet);
+  const bus = ctx.createGain(); bus.connect(master); bus.connect(d1);
+
+  // the chord: D, A, E and F sharp, soft and slowly breathing
+  const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 1400; lp.connect(bus);
+  [[146.83, 0.10], [220.0, 0.10], [293.66, 0.09], [329.63, 0.07], [369.99, 0.06]].forEach(([f, lv], k) => {
+    const g = ctx.createGain(); g.gain.value = lv; g.connect(lp);
+    for (const det of [-5, 5]) { const o = ctx.createOscillator(); o.type = "triangle"; o.frequency.value = f; o.detune.value = det; o.connect(g); o.start(); }
+    const lfo = ctx.createOscillator(), lg = ctx.createGain(); lfo.frequency.value = 0.04 + k * 0.013; lg.gain.value = lv * 0.5; lfo.connect(lg); lg.connect(g.gain); lfo.start();
+  });
+  // 10 Hz between the ears, high enough for small speakers to carry
+  [[200, -1], [210, 1]].forEach(([f, pan]) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = f; g.gain.value = 0.035;
+    if (ctx.createStereoPanner) { const pn = ctx.createStereoPanner(); pn.pan.value = pan; o.connect(g); g.connect(pn); pn.connect(master); } else { o.connect(g); g.connect(master); } o.start(); });
+
+  // the melody
+  const scale = [293.66, 329.63, 369.99, 415.30, 440.0, 493.88, 554.37, 587.33, 659.25];   // D lydian, D4 to E5
+  const bell = (f, when, lv) => {
+    const g = ctx.createGain(); g.gain.setValueAtTime(0, when); g.gain.linearRampToValueAtTime(lv, when + 0.015); g.gain.exponentialRampToValueAtTime(0.0005, when + 2.6); g.connect(bus);
+    const o = ctx.createOscillator(); o.type = "sine"; o.frequency.value = f; o.connect(g); o.start(when); o.stop(when + 2.7);
+    const o2 = ctx.createOscillator(), g2 = ctx.createGain(); o2.type = "sine"; o2.frequency.value = f * 2.01; g2.gain.value = 0.25; o2.connect(g2); g2.connect(g); o2.start(when); o2.stop(when + 2.7);
   };
-  voice(146.83, 0.20, 0.05); voice(220.00, 0.14, 0.07); voice(329.63, 0.09, 0.06);
-  // the drifting note: F sharp, then G, then back, every sixteen seconds or so
-  const top = ctx.createOscillator(), tg = ctx.createGain(); top.type = "triangle"; top.frequency.value = 369.99; tg.gain.value = 0.045; top.connect(tg); tg.connect(lp); top.start();
-  const drift = setInterval(() => { const t = ctx.currentTime; top.frequency.setTargetAtTime(top.frequency.value < 380 ? 392.0 : 369.99, t, 2.5); }, 16000);
-  // the 10 Hz gap between the ears
-  [[110, -1], [120, 1]].forEach(([f, pan]) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = f; g.gain.value = 0.05;
-    const pn = ctx.createStereoPanner ? ctx.createStereoPanner() : null; o.connect(g); if (pn) { pn.pan.value = pan; g.connect(pn); pn.connect(master); } else g.connect(master); o.start(); });
-  music = { ctx, master, drift, level: 0.5 };
+  let motif = [0, 2, 4, 3, 4, 6, 4, 2], round = 0, step = 0, next = ctx.currentTime + 0.4;
+  const beat = 0.91;                                   // about 66 beats a minute
+  const tick = setInterval(() => {
+    while (next < ctx.currentTime + 0.6) {
+      const n = motif[step];
+      if (n != null) bell(scale[n], next, step % 4 === 0 ? 0.16 : 0.11);
+      if (step === 7) {                                 // a long breath at the end of the phrase
+        next += beat * 2; step = 0; round++;
+        if (round % 2 === 0) {                          // every second time, change one note by a step: the same tune, slightly new
+          const k = 1 + Math.floor(Math.random() * 6);
+          motif = motif.slice(); motif[k] = Math.max(0, Math.min(8, motif[k] + (Math.random() < 0.5 ? -1 : 1)));
+          if (round % 8 === 0) motif = [0, 2, 4, 3, 4, 6, 4, 2];   // and come home now and then
+        }
+      } else { next += beat; step++; }
+    }
+  }, 200);
+  music = { ctx, master, tick, meter, level: 0.8 };
   musicLevel();
 }
 function musicLevel() {
