@@ -45,6 +45,16 @@
   .pill { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--edge); color: var(--ink-2); }
   .pill.ok { border-color: rgba(138,208,255,.5); color: var(--accent); }
 
+  /* ---- the two sides of the product ---- */
+  .sides { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--glass); border: 1px solid var(--edge); margin-bottom: 26px; }
+  .sides button { border: 0; background: none; color: var(--ink-2); border-radius: 999px; padding: 8px 18px; font-family: var(--display); font-size: 13.5px; font-weight: 500; }
+  .sides button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
+  .sides button small { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; margin-left: 6px; opacity: .7; }
+  .soon { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 30px; }
+  .soon div { background: var(--glass); border: 1px dashed var(--edge-2); border-radius: 16px; padding: 18px; display: grid; gap: 6px; }
+  .soon b { font-family: var(--display); font-size: 17px; font-weight: 600; }
+  .soon span { font-size: 13px; color: var(--ink-2); }
+
   /* ---- door ---- */
   .door h1 { font-size: clamp(34px, 6.4vw, 60px); font-weight: 500; line-height: 1.02; letter-spacing: -.03em; }
   .door h1 em { font-style: normal; color: var(--accent); }
@@ -274,7 +284,7 @@ const store = {
   set(k, v) { try { localStorage.setItem("se." + k, JSON.stringify(v)); } catch (e) {} },
   del(k) { try { localStorage.removeItem("se." + k); } catch (e) {} },
 };
-const state = { thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
+const state = { side: store.get("side", "video"), thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const mins = s => { const p = String(s || "").split(":").map(Number); return p.length === 2 ? p[0] + p[1] / 60 : p[0] * 60 + p[1] + p[2] / 60; };
@@ -316,10 +326,32 @@ const topBar = back => `<div class="top">
   ${back ? `<button class="ghost" data-go="door">← All stories</button>` : `<span class="mono">AI curator · YouTube</span>`}
 </div>`;
 
+const sideSwitch = () => `<div class="sides" role="group" aria-label="What to explore">
+    <button data-side="video" aria-pressed="${state.side === "video"}">Video<small>YouTube</small></button>
+    <button data-side="literature" aria-pressed="${state.side === "literature"}">Literature<small>soon</small></button>
+  </div>`;
+
+/* The literature side is a shell for now: the door is here, the room is not built. */
+function literature() {
+  return topBar(false) + sideSwitch() + `
+  <section class="door">
+    <div class="mono">For people who learn by seeing</div>
+    <h1 style="margin-top:10px">Pick a book.<br>Get the <em>lesson</em>.</h1>
+    <p class="lede">Books and research papers, turned into short visual lessons you can watch in order. The same idea as the video side: well chosen, well ordered, and it ends.</p>
+  </section>
+  <div class="soon">
+    <div><span class="mono">Coming</span><b>Books</b><span>A book as a short series of visual lessons, chapter by chapter.</span></div>
+    <div><span class="mono">Coming</span><b>Research papers</b><span>What a paper asked, what it found, and how sure it is, shown, not just summarised.</span></div>
+    <div><span class="mono">Coming</span><b>Paired with video</b><span>The paper behind a claim, next to the videos that talk about it.</span></div>
+  </div>
+  <p class="rules">This side isn't open yet. The video side is: switch back to watch a curated evening or a thread.</p>`;
+}
+
 function door() {
+  if (state.side === "literature") return literature();
   const ready = DATA.series.map(evening);
   const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
-  return topBar(false) + `
+  return topBar(false) + sideSwitch() + `
   <section class="door">
     <div class="mono">An evening with a spine</div>
     <h1 style="margin-top:10px">Pick a story.<br>Get an <em>evening</em>.</h1>
@@ -627,6 +659,7 @@ document.addEventListener("pointerout", ev => { const el = ev.target.closest("[d
 document.addEventListener("click", ev => {
   const t = ev.target;
   if (t.closest("[data-nojump]")) return;
+  const sd = t.closest("[data-side]"); if (sd) { state.side = sd.dataset.side; store.set("side", state.side); return render(); }
   const thr = t.closest("[data-thread]"); if (thr) { stop(); threadStop(); state.view = "thread"; state.story = thr.dataset.thread; return render(); }
   const sgc = t.closest("[data-seg]"); if (sgc) return threadStart(+sgc.dataset.seg);
   if (state.thread && !state.thread.ended) {
