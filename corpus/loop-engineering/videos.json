@@ -291539,7 +291539,157 @@
         "comments": null,
         "enrichedOn": "2026-11-14"
       }
+    },
+    {
+      "videoId": "vJQM60oc5f8",
+      "title": "Vibe Coding vs Traditional Coding in 2027 | AI Coders vs Real Programmers | Simplilearn",
+      "channel": "Simplilearn",
+      "url": "https://www.youtube.com/watch?v=vJQM60oc5f8",
+      "published": "2026-11-15",
+      "first_seen": "2026-11-15",
+      "views": 80,
+      "length": "1:30",
+      "age_days": 0,
+      "query": "channel sweep: Simplilearn",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCsvqVGtbbyHaMoevxPAq9Fg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 6,
+        "comments": 1,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "nYrTfnhcq08",
+      "title": "Claude Code Masterclass",
+      "channel": "Jonathan Acuña - Doctor AI",
+      "url": "https://www.youtube.com/watch?v=nYrTfnhcq08",
+      "published": "2026-11-15",
+      "first_seen": "2026-11-15",
+      "views": 164,
+      "length": "35:41",
+      "age_days": 0,
+      "query": "channel sweep: Jonathan Acuña - Doctor AI",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "24",
+        "channelId": "UCOJp1lsu9vCF-TllwMzcCLg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 5,
+        "comments": null,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "n8eSndKA6Ks",
+      "title": "New to Claude Code? Watch These Videos First",
+      "channel": "Jonathan Acuña - Doctor AI",
+      "url": "https://www.youtube.com/watch?v=n8eSndKA6Ks",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-15",
+      "views": 160,
+      "length": "14:09",
+      "age_days": 1,
+      "query": "channel sweep: Jonathan Acuña - Doctor AI",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCOJp1lsu9vCF-TllwMzcCLg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 4,
+        "comments": 2,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "8FbZeWUxDDc",
+      "title": "Claude Code + Obsidian: Build a Second Brain (Step by Step)",
+      "channel": "Luke Byrne (AI Luke)",
+      "url": "https://www.youtube.com/watch?v=8FbZeWUxDDc",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-15",
+      "views": 98,
+      "length": "8:06",
+      "age_days": 1,
+      "query": "channel sweep: Luke Byrne (AI Luke)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCoaAe6ighxrzJuHeFPAlCeA",
+        "language": "en-GB",
+        "captions": true,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "jdtZmuGJl1k",
+      "title": "You Can Learn Super Agent vs Personal Agent In 19 Min | DeepSeek, Claude, Hermes",
+      "channel": "Sean‘s AI Stories",
+      "url": "https://www.youtube.com/watch?v=jdtZmuGJl1k",
+      "published": "2026-11-15",
+      "first_seen": "2026-11-15",
+      "views": 1458,
+      "length": "18:51",
+      "age_days": 0,
+      "query": "channel sweep: Sean‘s AI Stories",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "28",
+        "channelId": "UCx-OfB7xsTN_GnoplitHfXg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 24,
+        "comments": 5,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "Rd7_lrrb7SQ",
+      "title": "Tapang says the Philippines must build its own industries instead of relying on foreign investors",
+      "channel": "Bilyonaryo News Channel",
+      "url": "https://www.youtube.com/watch?v=Rd7_lrrb7SQ",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-15",
+      "views": 25471,
+      "length": "1:12",
+      "age_days": 1,
+      "query": "channel sweep: Bilyonaryo News Channel",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UCiXhD6IScRs5r-tDvVvKjSA",
+        "language": "fil",
+        "captions": false,
+        "live": false,
+        "likes": 31,
+        "comments": 5,
+        "enrichedOn": "2026-11-15"
+      }
     }
   ],
-  "updated": "2026-11-14"
+  "updated": "2026-11-15"
 }

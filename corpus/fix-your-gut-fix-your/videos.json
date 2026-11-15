@@ -1,6 +1,6 @@
 {
   "topic": "fix-your-gut-fix-your",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "videos": [
     {
       "videoId": "0KtphM0jQvQ",
@@ -95900,6 +95900,142 @@
         "likes": 111,
         "comments": 7,
         "enrichedOn": "2026-11-14"
+      }
+    },
+    {
+      "videoId": "7nRbmuv845k",
+      "title": "3 MOVEMENTS BEFORE BED To Relieve Constipation & Bloating",
+      "channel": "Anshul Gupta MD",
+      "url": "https://www.youtube.com/watch?v=7nRbmuv845k",
+      "published": "2026-11-15",
+      "first_seen": "2026-11-15",
+      "views": 262,
+      "length": "8:51",
+      "age_days": 0,
+      "query": "channel sweep: Anshul Gupta MD",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCxmSA11SbI_3yBcHu6pKi_Q",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 22,
+        "comments": 2,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "RMWUL9XeaGo",
+      "title": "Castor Oil for Constipation | Arandi Oil Belly Massage for Gut Health | Dr Hasan Nasir Cheema",
+      "channel": "Health with Dr. Hasan Nasir",
+      "url": "https://www.youtube.com/watch?v=RMWUL9XeaGo",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-15",
+      "views": 33695,
+      "length": "2:31",
+      "age_days": 1,
+      "query": "channel sweep: Health with Dr. Hasan Nasir",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "27",
+        "channelId": "UCbNE4_ddZomr2CpuJ0fZlBQ",
+        "language": "ur",
+        "captions": false,
+        "live": false,
+        "likes": 1944,
+        "comments": 69,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "XiyJSGe-6OM",
+      "title": "Why Your Gut Problems Might Not Be Caused by Food Alone",
+      "channel": "Nadia Siddiqui",
+      "url": "https://www.youtube.com/watch?v=XiyJSGe-6OM",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-15",
+      "views": 28,
+      "length": "8:44",
+      "age_days": 2,
+      "query": "channel sweep: Nadia Siddiqui",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCES9ZdfBeAe7srcaIhyPVhg",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 2,
+        "comments": null,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "PerAcxr3QvA",
+      "title": "Gut bacteria and fiber: why microbes eat mucus",
+      "channel": "MyersMedical",
+      "url": "https://www.youtube.com/watch?v=PerAcxr3QvA",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-15",
+      "views": 19,
+      "length": "6:09",
+      "age_days": 2,
+      "query": "channel sweep: MyersMedical",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "22",
+        "channelId": "UCS9QSiZx-s3MJzRDa4pXpqg",
+        "language": "en",
+        "captions": false,
+        "live": false,
+        "likes": 3,
+        "comments": null,
+        "enrichedOn": "2026-11-15"
+      }
+    },
+    {
+      "videoId": "19v5pfhdEl4",
+      "title": "5 symptoms. 1 root cause. Here&#39;s the connection.",
+      "channel": "Jamie Rotman | Online Health & Fitness Coach",
+      "url": "https://www.youtube.com/watch?v=19v5pfhdEl4",
+      "published": "2026-11-10",
+      "first_seen": "2026-11-15",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:brain-fog-has-a-single)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCe67j0M__Cdp-JkNChHMYpA"
+      }
+    },
+    {
+      "videoId": "tHKx2YTKLj4",
+      "title": "9Common Health Issues -And How to Fix Them",
+      "channel": "Health Walla",
+      "url": "https://www.youtube.com/watch?v=tHKx2YTKLj4",
+      "published": "2026-11-14",
+      "first_seen": "2026-11-15",
+      "views": null,
+      "length": null,
+      "age_days": null,
+      "query": "refiled from the pool (narrative:brain-fog-has-a-single)",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "channelId": "UCDiyZgWcjN5WcNru3LyO8yQ"
       }
     }
   ]

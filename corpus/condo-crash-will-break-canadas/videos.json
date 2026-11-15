@@ -1,6 +1,6 @@
 {
   "topic": "condo-crash-will-break-canadas",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "videos": [
     {
       "videoId": "9kFn4IEZEqM",
@@ -52851,6 +52851,31 @@
       "verdict_basis": "metadata",
       "yt": {
         "channelId": "UC8PmMGQg8HQmTmU6Llrw4tQ"
+      }
+    },
+    {
+      "videoId": "Az9wFHcp8_g",
+      "title": "Bond Yields Spike Again: Where Will Stocks, Interest Rates Go? | Peter Boockvar",
+      "channel": "David Lin",
+      "url": "https://www.youtube.com/watch?v=Az9wFHcp8_g",
+      "published": "2026-11-13",
+      "first_seen": "2026-11-15",
+      "views": 48707,
+      "length": "27:51",
+      "age_days": 2,
+      "query": "channel sweep: David Lin",
+      "transcript": null,
+      "verdict": "UNREVIEWED",
+      "verdict_basis": "metadata",
+      "yt": {
+        "category": "25",
+        "channelId": "UClBMLpP3UHXLmgEypMmXPuA",
+        "language": "en-US",
+        "captions": false,
+        "live": false,
+        "likes": 507,
+        "comments": 75,
+        "enrichedOn": "2026-11-15"
       }
     }
   ]
