@@ -482,7 +482,8 @@ function dockSync(msg) {
     const th = findT(state.story), sg = th.segs[t.i];
     d.classList.remove("off"); document.body.classList.toggle("playing", !d.classList.contains("big"));
     document.getElementById("dock-title").textContent = msg || sg.label;
-    document.getElementById("dock-sub").textContent = `Piece ${t.i + 1} of ${th.segs.length} · ${sg.channel} · ${sg.published}`;
+    const nx = th.segs[t.i + 1];
+    document.getElementById("dock-sub").textContent = `Piece ${t.i + 1} of ${th.segs.length} · ${sg.channel} · ${sg.published}` + (nx ? ` · next: ${nx.channel}` : " · last one");
     return;
   }
   const on = !!(p && !p.ended);
@@ -543,14 +544,14 @@ const back = () => (state.thread && state.thread.b ? yt : yt2);
 function threadStart(i) {
   const th = findT(state.story); if (!th) return;
   clearInterval(state.thread?.tick);
-  state.thread = { i, b: state.thread ? state.thread.b : false, tick: null, ready: false };
+  state.thread = { i, b: false, tick: null, ready: false };
   render();
   loadYT().then(() => {
     const t = state.thread; if (!t || t.i !== i) return;
     const sg = th.segs[i];
     try { back().stopVideo(); } catch (x) {}
-    front().unMute(); front().loadVideoById({ videoId: sg.id, startSeconds: sg.start });
-    showFront(); preload(th, i + 1);
+    front().loadVideoById({ videoId: sg.id, startSeconds: sg.start });
+    showFront();
     t.tick = setInterval(() => {
       const cur = state.thread; if (!cur) return;
       const s2 = th.segs[cur.i]; let now = 0;
@@ -560,9 +561,12 @@ function threadStart(i) {
   });
 }
 function preload(th, j) {
-  const t = state.thread; if (!t) return; t.ready = false;
-  const sg = th.segs[j]; if (!sg) return;
-  try { back().mute(); back().loadVideoById({ videoId: sg.id, startSeconds: sg.start }); } catch (x) {}
+  // Deliberately does nothing. An earlier version loaded the next piece in a
+  // hidden, muted player so the change was instant. But a video that starts
+  // playing can start an advert, and an advert playing where nobody can see it
+  // is exactly what YouTube's rules forbid. One visible player, and the next
+  // piece loads when its turn comes.
+  const t = state.thread; if (t) t.ready = false;
 }
 function threadState(pl, e) {
   const t = state.thread; if (!t) return;
