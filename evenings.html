@@ -151,6 +151,11 @@
   #dock.big { right: auto; bottom: auto; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(960px, calc(100vw - 32px)); }
   #dock.big.off { transform: translate(-50%, 140%); }
   #dock .screen { aspect-ratio: 16 / 9; max-width: 100%; background: #000; border-radius: 10px; overflow: hidden; }
+  #dock .screen { position: relative; }
+  #dock .pl { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+  #dock .pl.front { opacity: 1; pointer-events: auto; }
+  .seg { cursor: pointer; }
+  .seg:hover .t { color: var(--accent); }
   #dock .screen iframe { width: 100%; height: 100%; border: 0; display: block; }
   .dockbar { display: flex; gap: 6px; align-items: center; padding: 8px 2px 0; }
   .dockbar .dtext { flex: 1; min-width: 0; }
@@ -168,7 +173,7 @@
 <body>
 <div class="wrap" id="app"></div>
 <div id="dock" class="off" aria-label="Video player">
-  <div class="screen"><div id="yt"></div></div>
+  <div class="screen"><div class="pl front" id="plA"><div id="yt"></div></div><div class="pl" id="plB"><div id="yt2"></div></div></div>
   <div class="dockbar">
     <div class="dtext"><div id="dock-title"></div><div id="dock-sub" class="mono"></div></div>
     <button class="ghost tiny" data-prev="1" aria-label="Previous video">‹</button>
@@ -183,6 +188,7 @@
    runtime. Episodes are drawn from the corpus as it stands; filed-by-title
    videos still leak into two stories, and the story layer is what removes that. */
 const DATA = {
+  threads: [{"id": "btc-thread", "g": "g1", "name": "BTC's 4-Year Cycle", "about": "Eleven voices on one question, each starting at the moment they make their point.", "segs": [{"id": "Ye9ckbN_lqc", "start": 31, "end": 105, "channel": "CoinGecko", "published": "2022-08-01", "title": "What is a Bitcoin Halving? Explained by CoinGecko", "label": "What the halving is", "side": ""}, {"id": "AHuKHmeJf-I", "start": 20, "end": 130, "channel": "Benjamin Cowen", "published": "2020-03-28", "title": "Bitcoin: It is not a 4 year cycle! (Welcome to the show)", "label": "2020. \"It is not a four-year cycle\"", "side": "Stretched"}, {"id": "7GCboXUObi4", "start": 70, "end": 160, "channel": "Wolves of Crypto", "published": "2022-03-10", "title": "4 Year Cycle: Bitcoin Will Bottom At 24k In November 2022 (According To These Macro Trends)", "label": "2022. The cycle camp counts the days", "side": "Intact"}, {"id": "oOu6fEOC4zo", "start": 120, "end": 215, "channel": "Coin Bureau", "published": "2026-01-02", "title": "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!", "label": "What happened in 2025: the peak came early", "side": ""}, {"id": "aMk4XTX7A3I", "start": 11, "end": 54, "channel": "Raoul Pal The Journey Man", "published": "2025-10-06", "title": "WHAT BROKE THE 4 YEAR CYCLE? | Raoul Pal ft Julien Bittel | The Everything Code", "label": "A longer cycle, not no cycle", "side": "Stretched"}, {"id": "nOD0bG4DsdU", "start": 54, "end": 130, "channel": "CNBC Television", "published": "2025-12-26", "title": "We asked two CIOs if the bitcoin four-year price cycle is dead: CNBC Crypto World", "label": "An investment chief: a ten-year grind instead", "side": "Dead"}, {"id": "PmNvYrHnFgE", "start": 265, "end": 394, "channel": "Joe Consorti", "published": "2026-09-22", "title": "The Bitcoin 4-Year Cycle Just Died", "label": "ETF buyers have put a floor under the price", "side": "Dead"}, {"id": "8-LqLawozvU", "start": 65, "end": 180, "channel": "Rekt Capital", "published": "2026-05-11", "title": "Is The Bitcoin Four Year Cycle Over? - Definitive Analysis", "label": "The defence: the milestones still line up", "side": "Intact"}, {"id": "ctJSV8aTDSk", "start": 1015, "end": 1120, "channel": "Bob Loukas", "published": "2026-06-04", "title": "ThE fOur YeAr cyCle iS dEAd", "label": "The low is still due in October or November", "side": "Intact"}, {"id": "v_HzRDgydCA", "start": 0, "end": 72, "channel": "BRITISH HODL", "published": "2026-09-23", "title": "🚨 BITCOIN'S 4 YEAR CYCLE IS DEAD..?!?!?!?!?!?", "label": "\"It's dead, and Cowen has admitted it\"", "side": "Dead"}, {"id": "7byCfkDQxq8", "start": 73, "end": 180, "channel": "Benjamin Cowen", "published": "2026-05-26", "title": "Bitcoin: The Four Year Cycle Is Not Dead", "label": "Cowen, six years on: the cycle is not dead", "side": "Intact"}]}],
   series: [
     {"id": "btc-4-year-cycle", "g": "g1", "glow": "rgba(90,140,255,.45)", "name": "BTC's 4-Year Cycle", "stance": "Disputed", "status": "The 2025 peak came in October. Both sides now point to a late-2026 low as the test.", "claim": "Bitcoin's four-year halving cycle no longer governs its price; the pattern is broken.", "born": 2020, "watched": 19, "eps": [{"n": "Episode 1", "title": "What the halving is", "why": "Three minutes on the mechanism everyone else assumes you know.", "videos": [{"id": "Ye9ckbN_lqc", "title": "What is a Bitcoin Halving? Explained by CoinGecko", "channel": "CoinGecko", "length": "3:06", "published": "2022-08-01", "role": "The basics", "why": "Explains the halving plainly: miner rewards cut in half roughly every four years. Sells nothing.", "start": 0, "sells": "", "note": ""}]}, {"n": "Episode 2", "title": "Origin", "why": "The first challenge to the cycle, and the cycle's best early defence.", "videos": [{"id": "AHuKHmeJf-I", "title": "Bitcoin: It is not a 4 year cycle! (Welcome to the show)", "channel": "Benjamin Cowen", "length": "12:10", "published": "2020-03-28", "role": "Where it began", "why": "March 2020: Benjamin Cowen argues the cycle is not four years but lengthening, with moving-average charts.", "start": 0, "sells": "Telegram channel membership and a paid subscription report titled 'Bitcoin Letters'.", "note": "His end-of-2021 date has passed.", "camp": {"position": "Stretched, not fixed", "watch_for": "He predicts no six figures by the end of 2021."}}, {"id": "7GCboXUObi4", "title": "4 Year Cycle: Bitcoin Will Bottom At 24k In November 2022 (According To These Macro Trends)", "channel": "Wolves of Crypto", "length": "6:19", "published": "2022-03-10", "role": "2022. The cycle camp answers with a date", "why": "Measures 1,400 days between past tops and between past bottoms, and calls a bottom for late November 2022.", "start": 0, "sells": "", "note": "The late November 2022 date has passed. How it landed is not covered in this set.", "camp": {"position": "Intact", "watch_for": "Exact day-counts between peaks; a price and a date you can check."}}]}, {"n": "Episode 3", "title": "What happened in 2025", "why": "The year the pattern was supposed to peak.", "videos": [{"id": "oOu6fEOC4zo", "title": "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!", "channel": "Coin Bureau", "length": "9:31", "published": "2026-01-02", "role": "Where it stands", "why": "January 2026: the peak came in October 2025 instead of December, and the year closed down. Shows Fed and liquidity data.", "start": 61, "sells": "", "note": ""}]}, {"n": "Episode 4", "title": "The sides", "why": "The best-evidenced case each way, back to back.", "videos": [{"id": "PmNvYrHnFgE", "title": "The Bitcoin 4-Year Cycle Just Died", "channel": "Joe Consorti", "length": "17:51", "published": "2026-09-22", "role": "The claim, at its strongest", "why": "September 2026: ETF buyers have put a floor under the price, making this the shallowest bear market on record. Charts and flow data throughout.", "start": 0, "sells": "The Hard Money Room community, Strong Wealth financial management, and Salt lending services.", "note": "", "camp": {"position": "Dead: institutions broke it", "watch_for": "The comparison with gold after its first ETF, and no date for when this would be proven wrong."}}, {"id": "8-LqLawozvU", "title": "Is The Bitcoin Four Year Cycle Over? - Definitive Analysis", "channel": "Rekt Capital", "length": "12:57", "published": "2026-05-11", "role": "The strongest answer to it", "why": "May 2026: a chart-by-chart defence that the peak, the pullbacks and the timing still match earlier cycles.", "start": 0, "sells": "Rekt Capital newsletter", "note": "", "camp": {"position": "Intact", "watch_for": "Which past cycles are laid over this one, and which are left off."}}]}], "debate": {"statement": "Was the October 2025 peak the old cycle arriving on time, or a different market that happened to look similar?", "camps": [1, 2]}},
     { id: "crypto-winter-watch", g: "g1", glow: "rgba(90,140,255,.45)",
@@ -268,7 +274,7 @@ const store = {
   set(k, v) { try { localStorage.setItem("se." + k, JSON.stringify(v)); } catch (e) {} },
   del(k) { try { localStorage.removeItem("se." + k); } catch (e) {} },
 };
-const state = { view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
+const state = { thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const mins = s => { const p = String(s || "").split(":").map(Number); return p.length === 2 ? p[0] + p[1] / 60 : p[0] * 60 + p[1] + p[2] / 60; };
@@ -300,8 +306,8 @@ function evening(s) {
 function render() {
   const app = $("#app");
   const same = render.last === state.view + state.story; render.last = state.view + state.story;
-  const keep = same && state.play && !state.play.ended ? window.scrollY : 0;   // don't jump the page while something plays
-  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : series(state.story);
+  const keep = same && ((state.play && !state.play.ended) || (state.thread && !state.thread.ended)) ? window.scrollY : 0;   // don't jump the page while something plays
+  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : series(state.story);
   window.scrollTo({ top: keep });
   dockSync();
 }
@@ -332,6 +338,14 @@ function door() {
         <span class="pf">${e.count} videos · ${fmtMin(e.mins)}</span>
       </button>`).join("")}
     </div>
+  </section>
+  <section class="section">
+    <div class="kick"><h2>Threads</h2><span class="sub">Short pieces from many videos, back to back</span></div>
+    <div class="grid">${DATA.threads.map(th => `<button class="tile" data-tilt data-thread="${th.id}">
+        <span class="name">${esc(th.name)}</span>
+        <span class="claim">${esc(th.about)}</span>
+        <span class="meta"><span class="pill ok">Thread</span><span>${th.segs.length} voices</span><span>${Math.round(th.segs.reduce((a, s2) => a + s2.end - s2.start, 0) / 60)} min</span></span>
+      </button>`).join("")}</div>
   </section>
   <section class="section">
     <div class="kick"><h2>Stories</h2><span class="sub">${DATA.series.length} ready · ${DATA.sorting.length} still being sorted</span></div>
@@ -441,7 +455,7 @@ function endCard(e) {
 /* Playback. The video plays in a small viewer docked to the corner, so it
    stays in view while you read the set, and can be made large. One YouTube
    player is created once and kept outside the part of the page that re-renders. */
-let yt = null, ytReady = null;
+let yt = null, yt2 = null, ytReady = null;
 function loadYT() {
   if (ytReady) return ytReady;
   ytReady = new Promise(res => {
@@ -449,8 +463,13 @@ function loadYT() {
       yt = new YT.Player("yt", { width: "100%", height: "100%", host: "https://www.youtube-nocookie.com",
         playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
         events: { onReady: () => res(),
-          onStateChange: e => { if (e.data === YT.PlayerState.ENDED) onEnded(); },
-          onError: () => onError() } });
+          onStateChange: e => { if (state.thread) return threadState(yt, e); if (e.data === YT.PlayerState.ENDED) onEnded(); },
+          onError: () => state.thread ? threadError(yt) : onError() } });
+      // A second player, hidden behind the first. In a thread it loads the next
+      // piece silently while the current one plays, so the change is a swap.
+      yt2 = new YT.Player("yt2", { width: "100%", height: "100%", host: "https://www.youtube-nocookie.com",
+        playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
+        events: { onStateChange: e => threadState(yt2, e), onError: () => threadError(yt2) } });
     };
     const sc = document.createElement("script"); sc.src = "https://www.youtube.com/iframe_api"; document.head.appendChild(sc);
   });
@@ -458,7 +477,14 @@ function loadYT() {
 }
 const dock = () => document.getElementById("dock");
 function dockSync(msg) {
-  const p = state.play, d = dock();
+  const p = state.play, d = dock(), t = state.thread;
+  if (t && !t.ended) {
+    const th = findT(state.story), sg = th.segs[t.i];
+    d.classList.remove("off"); document.body.classList.toggle("playing", !d.classList.contains("big"));
+    document.getElementById("dock-title").textContent = msg || sg.label;
+    document.getElementById("dock-sub").textContent = `Piece ${t.i + 1} of ${th.segs.length} · ${sg.channel} · ${sg.published}`;
+    return;
+  }
   const on = !!(p && !p.ended);
   d.classList.toggle("off", !on);
   document.body.classList.toggle("playing", on && !d.classList.contains("big"));
@@ -506,6 +532,84 @@ function advance(e) {
 const markSeen = v => { if (v) { state.seen.add(v.id); store.set("seen", [...state.seen]); } };
 const stop = () => { clearTimeout(state.play?.timer); state.play = null; try { yt && yt.stopVideo(); } catch (x) {} dock().classList.remove("big"); dockSync(); };
 
+/* A thread: short pieces from many videos, each starting at the moment the
+   point is made, played back to back. Nothing is cut or stitched: each piece
+   plays in YouTube's own player from one second to another. Two players take
+   turns, the idle one loading the next piece muted and paused at its start, so
+   the change between videos is a swap and not a load. */
+const findT = id => DATA.threads.find(t => t.id === id);
+const front = () => (state.thread && state.thread.b ? yt2 : yt);
+const back = () => (state.thread && state.thread.b ? yt : yt2);
+function threadStart(i) {
+  const th = findT(state.story); if (!th) return;
+  clearInterval(state.thread?.tick);
+  state.thread = { i, b: state.thread ? state.thread.b : false, tick: null, ready: false };
+  render();
+  loadYT().then(() => {
+    const t = state.thread; if (!t || t.i !== i) return;
+    const sg = th.segs[i];
+    try { back().stopVideo(); } catch (x) {}
+    front().unMute(); front().loadVideoById({ videoId: sg.id, startSeconds: sg.start });
+    showFront(); preload(th, i + 1);
+    t.tick = setInterval(() => {
+      const cur = state.thread; if (!cur) return;
+      const s2 = th.segs[cur.i]; let now = 0;
+      try { now = front().getCurrentTime(); } catch (x) {}
+      if (now >= s2.end - 0.2) threadNext();
+    }, 200);
+  });
+}
+function preload(th, j) {
+  const t = state.thread; if (!t) return; t.ready = false;
+  const sg = th.segs[j]; if (!sg) return;
+  try { back().mute(); back().loadVideoById({ videoId: sg.id, startSeconds: sg.start }); } catch (x) {}
+}
+function threadState(pl, e) {
+  const t = state.thread; if (!t) return;
+  // The hidden player has started the next piece: hold it at its first frame.
+  if (pl === back() && e.data === YT.PlayerState.PLAYING && !t.ready) { t.ready = true; pl.pauseVideo(); }
+  if (pl === front() && e.data === YT.PlayerState.ENDED) threadNext();
+}
+function threadError(pl) { if (state.thread && pl === front()) { dockSync("This piece can't be played here. Skipping…"); setTimeout(threadNext, 1500); } }
+function showFront() {
+  const b = state.thread && state.thread.b;
+  document.getElementById("plA").classList.toggle("front", !b);
+  document.getElementById("plB").classList.toggle("front", !!b);
+}
+function threadNext() {
+  const t = state.thread, th = findT(state.story); if (!t || !th) return;
+  if (t.i + 1 >= th.segs.length) return threadEnd();
+  const j = t.i + 1, sg = th.segs[j], old = front();
+  if (!t.ready) return threadStart(j);            // the next piece never loaded: start it the plain way
+  t.i = j; t.b = !t.b;                            // swap: the hidden player comes forward, already at its start
+  try { front().seekTo(sg.start, true); front().unMute(); front().playVideo(); } catch (x) {}
+  showFront();
+  try { old.pauseVideo(); } catch (x) {}
+  render(); preload(th, j + 1);
+}
+function threadEnd() { clearInterval(state.thread?.tick); try { yt.stopVideo(); yt2.stopVideo(); } catch (x) {} state.thread = { ended: true, i: -1 }; render(); }
+function threadStop() { clearInterval(state.thread?.tick); try { yt && yt.stopVideo(); yt2 && yt2.stopVideo(); } catch (x) {} state.thread = null; document.getElementById("plA").classList.add("front"); document.getElementById("plB").classList.remove("front"); }
+const mmss = n => `${Math.floor(n / 60)}:${String(n % 60).padStart(2, "0")}`;
+
+function threadView(id) {
+  const th = findT(id), t = state.thread, total = th.segs.reduce((a, s2) => a + s2.end - s2.start, 0);
+  const head = t && t.ended ? `<div class="end"><div class="mono">■ The end</div><h3>That's the thread.</h3>
+      <p>${th.segs.length} voices, ${Math.round(total / 60)} minutes. Each piece links to its full video if you want the whole argument.</p>
+      <div class="cta"><button class="ghost" data-seg="0">Play it again</button><button class="ghost" data-go="door">Back to all stories</button></div></div>`
+    : `<div class="titlecard"><div class="mono">Thread · what people are saying</div><h1>${esc(th.name)}</h1>
+      <p class="claim">${esc(th.about)}</p>
+      <div class="curator"><span class="orb" aria-hidden="true"></span><span>${th.segs.length} pieces · ${Math.round(total / 60)} minutes. Each one plays in YouTube's own player from the moment the point is made, then hands over to the next. Nothing is cut or re-uploaded.</span></div>
+      ${t ? "" : `<div class="cta"><button class="primary" data-seg="0">▶ Play the thread</button><span class="note">Plays through, then it ends.</span></div>`}</div>`;
+  return topBar(true) + head + `<div class="rail"><section class="ep ${t && !t.ended ? "now" : ""}"><div class="vlist">${th.segs.map((sg, i) => `
+      <div class="v seg ${t && t.i === i ? "playing" : ""}" data-seg="${i}">
+        <div class="n">${String(i + 1).padStart(2, "0")}</div>
+        <div><div class="mono">${esc(sg.channel)} · ${esc(sg.published)}${sg.side ? " · " + esc(sg.side) : ""}</div>
+          <div class="t">${esc(sg.label)}</div>
+          <div class="m"><span>${mmss(sg.start)}–${mmss(sg.end)} of “${esc(sg.title.slice(0, 60))}”</span>
+            <a href="https://www.youtube.com/watch?v=${esc(sg.id)}&t=${sg.start}s" target="_blank" rel="noopener" data-nojump="1">Full video ↗</a></div></div>
+      </div>`).join("")}</div></section></div>`;
+}
+
 /* depth: cards lean toward the pointer, and settle when it leaves */
 const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 document.addEventListener("pointermove", ev => {
@@ -518,7 +622,15 @@ document.addEventListener("pointerout", ev => { const el = ev.target.closest("[d
 
 document.addEventListener("click", ev => {
   const t = ev.target;
-  const go = t.closest("[data-go]"); if (go) { stop(); state.view = go.dataset.go; state.story = null; return render(); }
+  if (t.closest("[data-nojump]")) return;
+  const thr = t.closest("[data-thread]"); if (thr) { stop(); threadStop(); state.view = "thread"; state.story = thr.dataset.thread; return render(); }
+  const sgc = t.closest("[data-seg]"); if (sgc) return threadStart(+sgc.dataset.seg);
+  if (state.thread && !state.thread.ended) {
+    if (t.closest("[data-next]")) return threadNext();
+    if (t.closest("[data-prev]")) return threadStart(Math.max(0, state.thread.i - 1));
+    if (t.closest("[data-stop]")) { threadStop(); dock().classList.remove("big"); render(); return; }
+  }
+  const go = t.closest("[data-go]"); if (go) { stop(); threadStop(); state.view = go.dataset.go; state.story = null; return render(); }
   const b = t.closest("[data-budget]"); if (b) { state.budget = +b.dataset.budget; store.set("budget", state.budget); return render(); }
   const open = t.closest("[data-open]"); if (open) { stop(); state.view = "series"; state.story = open.dataset.open; return render(); }
   const srt = t.closest("[data-sort]"); if (srt) { stop(); state.view = "sorting"; state.story = srt.dataset.sort; return render(); }
