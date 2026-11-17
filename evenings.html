@@ -390,7 +390,8 @@ function literature() {
 
 function door() {
   if (state.side === "literature") return literature();
-  const ready = DATA.series.filter(inCat).map(evening), threads = DATA.threads.filter(inCat), sorting_ = DATA.sorting.filter(inCat);
+  const wasSkip = state.skipSeen; state.skipSeen = false;   // the shelf shows a series' full size, not what's left unseen
+  const ready = DATA.series.filter(inCat).map(evening); state.skipSeen = wasSkip; const _r = 0, threads = DATA.threads.filter(inCat), sorting_ = DATA.sorting.filter(inCat);
   const cname = (CATS.find(c => c[0] === state.cat) || CATS[0]);
   const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
   return topBar(false) + sideSwitch() + `
