@@ -352,7 +352,7 @@ def gather(f, quota):
     pool = []
     say(f"category: {playbook(f['category'])['name']} · {f.get('shape', 'story')} · {f['central_claim']}")
     if f.get("shape") == "explain":
-        for q in (f.get("queries_explain") or f["queries_now"])[:6]:
+        for q in (f.get("queries_explain") or f["queries_now"])[:MAX_SEARCHES]:
             pool += search(q, quota, why="explainers")
         meta = details(pool, quota)
         good = {i: v for i, v in meta.items() if usable(v)}
