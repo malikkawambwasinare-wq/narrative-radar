@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19",
+  "generated": "2026-11-20",
   "standard": "1.0",
   "grace_days": 30,
   "totals": {
@@ -37,7 +37,7 @@
           "end": "2028-09-30",
           "precision": "month"
         },
-        "days_to_due": 681,
+        "days_to_due": 680,
         "resolution_class": "review",
         "capture": "live",
         "status": "PENDING",
@@ -72,7 +72,7 @@
           "end": "2026-10-31",
           "precision": "range"
         },
-        "days_to_due": -19,
+        "days_to_due": -20,
         "resolution_class": "review",
         "capture": "live",
         "status": "PENDING",
@@ -95,7 +95,7 @@
         "end": "2026-08-07",
         "precision": "month"
       },
-      "days_to_due": -104,
+      "days_to_due": -105,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "PENDING",
@@ -114,7 +114,7 @@
         "end": "2026-09-01",
         "precision": "day"
       },
-      "days_to_due": -79,
+      "days_to_due": -80,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -133,7 +133,7 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": -19,
+      "days_to_due": -20,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -152,7 +152,7 @@
         "end": "2026-10-31",
         "precision": "range"
       },
-      "days_to_due": -19,
+      "days_to_due": -20,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -171,7 +171,7 @@
         "end": "2026-11-30",
         "precision": "range"
       },
-      "days_to_due": 11,
+      "days_to_due": 10,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -190,7 +190,7 @@
         "end": "2027-02-28",
         "precision": "range"
       },
-      "days_to_due": 101,
+      "days_to_due": 100,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -209,7 +209,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 773,
+      "days_to_due": 772,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -228,7 +228,7 @@
         "end": "2026-12-31",
         "precision": "day"
       },
-      "days_to_due": 42,
+      "days_to_due": 41,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -247,7 +247,7 @@
         "end": "2027-08-31",
         "precision": "month"
       },
-      "days_to_due": 285,
+      "days_to_due": 284,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -266,7 +266,7 @@
         "end": "2027-12-31",
         "precision": "year"
       },
-      "days_to_due": 407,
+      "days_to_due": 406,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -285,7 +285,7 @@
         "end": "2028-09-30",
         "precision": "month"
       },
-      "days_to_due": 681,
+      "days_to_due": 680,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -304,7 +304,7 @@
         "end": "2028-12-31",
         "precision": "range"
       },
-      "days_to_due": 773,
+      "days_to_due": 772,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -323,7 +323,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1503,
+      "days_to_due": 1502,
       "resolution_class": "auto",
       "capture": "live",
       "status": "PENDING",
@@ -342,7 +342,7 @@
         "end": "2030-12-31",
         "precision": "year"
       },
-      "days_to_due": 1503,
+      "days_to_due": 1502,
       "resolution_class": "review",
       "capture": "live",
       "status": "PENDING",
@@ -436,7 +436,7 @@
         "end": "2017-03-31",
         "precision": "range"
       },
-      "days_to_due": -3520,
+      "days_to_due": -3521,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
@@ -455,7 +455,7 @@
         "end": "2020-12-31",
         "precision": "year"
       },
-      "days_to_due": -2149,
+      "days_to_due": -2150,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -474,7 +474,7 @@
         "end": "2021-01-31",
         "precision": "range"
       },
-      "days_to_due": -2118,
+      "days_to_due": -2119,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "AMBIGUOUS",
@@ -493,7 +493,7 @@
         "end": "2024-10-31",
         "precision": "range"
       },
-      "days_to_due": -749,
+      "days_to_due": -750,
       "resolution_class": "review",
       "capture": "backfill",
       "status": "REFUTED",
