@@ -5,26 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Story Evenings</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-  /* One dark world, chosen on purpose: an AI curator's console, not a document.
-     Every color is declared here and used everywhere, so the page paints itself
-     the same on any host background. */
+  /* The Company (Nov 2026): a light, quiet room where the people in the story
+     are the design. Chosen by Malik from three directions; the dark console it
+     replaces is kept at archive/evenings-v1.html. */
   :root {
-    color-scheme: dark;
-    --ground: #06080f; --deep: #0b0f1a; --glass: rgba(255,255,255,.045); --glass-2: rgba(255,255,255,.08);
-    --edge: rgba(255,255,255,.10); --edge-2: rgba(255,255,255,.18);
-    --ink: #eef1f7; --ink-2: #aab3c5; --muted: #6c7690;
-    --accent: #8ad0ff; --accent-ink: #06080f; --signal: #ffc27a;
-    --p1a: #1d3b7a; --p1b: #0a1330; --p2a: #7a2f2a; --p2b: #2a0f0d; --p3a: #1b6b5a; --p3b: #08241e;
-    --p4a: #5e3b8a; --p4b: #1b1030; --p5a: #8a6a22; --p5b: #2a1f0a;
-    --display: "Sora", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
-    --body: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color-scheme: light;
+    --ground: #eceee8; --deep: #e2e5de; --glass: #f6f7f3; --glass-2: #ffffff;
+    --edge: #d6dad3; --edge-2: #c3c8c0;
+    --ink: #1c2321; --ink-2: #4a5350; --muted: #5f6865;
+    --accent: #1f6f66; --accent-ink: #f2f6f3; --signal: #b8601b;
+    --boom: #2f5fc4; --both: #7c8580; --bubble: #b8601b;
+    --p1a: #2b4a8a; --p1b: #1a2c55; --p2a: #8a3a2a; --p2b: #4a1d14; --p3a: #1f6f66; --p3b: #10403a;
+    --p4a: #5a4a8a; --p4b: #2f2550; --p5a: #8a6a22; --p5b: #4a380f;
+    --display: "Bricolage Grotesque", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   * { box-sizing: border-box; }
-  body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.5 var(--body);
-    background-image: radial-gradient(900px 500px at 15% -10%, rgba(138,208,255,.10), transparent 60%),
-                      radial-gradient(700px 420px at 95% 10%, rgba(255,194,122,.06), transparent 60%); }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.5 var(--body); }
   .wrap { max-width: 960px; margin: 0 auto; padding-inline: 20px; padding-block: 18px 64px; }
   h1, h2, h3 { margin: 0; text-wrap: balance; font-family: var(--display); }
   a { color: var(--accent); }
@@ -34,16 +33,16 @@
 
   .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
   .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
-  .brand .orb { width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 45%, #1d3b7a 100%); box-shadow: 0 0 18px rgba(138,208,255,.55); }
+  .brand .orb { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
   .ghost { background: var(--glass); border: 1px solid var(--edge); border-radius: 999px; padding: 8px 15px; font-size: 13px; color: var(--ink); backdrop-filter: blur(8px); }
   .ghost:hover { border-color: var(--edge-2); background: var(--glass-2); }
   .ghost:disabled { opacity: .4; cursor: default; }
-  .primary { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 12px 22px; font-size: 14.5px; font-weight: 600; font-family: var(--display); box-shadow: 0 8px 30px rgba(138,208,255,.28); }
-  .primary:hover { box-shadow: 0 10px 36px rgba(138,208,255,.4); }
+  .primary { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 12px 22px; font-size: 14.5px; font-weight: 600; font-family: var(--display); }
+  .primary:hover { background: #14524b; }
   .chip { background: var(--glass); border: 1px solid var(--edge); color: var(--ink-2); border-radius: 999px; padding: 7px 14px; font-size: 13px; }
   .chip[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
   .pill { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--edge); color: var(--ink-2); }
-  .pill.ok { border-color: rgba(138,208,255,.5); color: var(--accent); }
+  .pill.ok { border-color: var(--accent); color: var(--accent); }
 
   /* ---- the two sides of the product ---- */
   .sides { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--glass); border: 1px solid var(--edge); margin-bottom: 26px; }
@@ -106,15 +105,15 @@
   .cta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
   .cta .note { font-size: 12.5px; color: var(--muted); }
   .curator { display: flex; gap: 10px; align-items: flex-start; background: var(--glass); border: 1px solid var(--edge); border-radius: 12px; padding: 12px 14px; font-size: 13px; color: var(--ink-2); max-width: 70ch; }
-  .curator .orb { flex: 0 0 auto; width: 10px; height: 10px; margin-top: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px rgba(138,208,255,.6); }
+  .curator .orb { flex: 0 0 auto; width: 10px; height: 10px; margin-top: 5px; border-radius: 50%; background: var(--accent); }
   .seen-toggle { display: inline-flex; gap: 8px; align-items: center; font-size: 12.5px; color: var(--ink-2); }
 
   .rail { position: relative; margin-top: 30px; display: grid; gap: 18px; padding-left: 26px; }
   .rail::before { content: ""; position: absolute; left: 7px; top: 12px; bottom: 12px; width: 2px; background: linear-gradient(var(--edge-2), var(--edge)); }
   .ep { position: relative; background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; display: grid; gap: 10px; backdrop-filter: blur(10px); }
   .ep::before { content: ""; position: absolute; left: -26px; top: 22px; width: 16px; height: 16px; border-radius: 50%; background: var(--deep); border: 2px solid var(--edge-2); box-shadow: 0 0 0 4px var(--ground); }
-  .ep.now { border-color: rgba(138,208,255,.55); box-shadow: 0 0 0 1px rgba(138,208,255,.25), 0 20px 50px -30px rgba(138,208,255,.5); }
-  .ep.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--ground), 0 0 16px rgba(138,208,255,.8); }
+  .ep.now { border-color: var(--accent); }
+  .ep.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--ground); }
   .ep.done { opacity: .6; } .ep.done::before { background: var(--ink-2); }
   .ep header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .ep h3 { font-size: 22px; font-weight: 600; letter-spacing: -.015em; }
@@ -128,7 +127,7 @@
   .v .look { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; border-left: 2px solid var(--signal); padding-left: 9px; line-height: 1.45; }
   .v .look b { color: var(--ink); }
   .v.seen .t { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
-  .v.playing { background: linear-gradient(90deg, rgba(138,208,255,.10), transparent); }
+  .v.playing { background: #dfe9e5; }
   .v .tiny { padding: 3px 10px; font-size: 11.5px; }
 
   /* ---- player ---- */
@@ -162,8 +161,10 @@
 
   /* the viewer: small and docked by default, large on request */
   #dock { position: fixed; z-index: 50; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(400px, calc(100vw - 32px));
-    padding: 8px; border-radius: 16px; background: rgba(14,18,30,.92); border: 1px solid var(--edge-2); backdrop-filter: blur(14px);
-    box-shadow: 0 30px 70px -20px rgba(0,0,0,.9), 0 0 0 1px rgba(138,208,255,.12); transition: opacity .25s, transform .25s; }
+    padding: 8px; border-radius: 16px; background: var(--ink); color: #eceee8; border: 0;
+    box-shadow: 0 24px 60px -24px rgba(28,35,33,.55); transition: opacity .25s, transform .25s; }
+  #dock .ghost { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); color: #eceee8; }
+  #dock .mono { color: #a9b2ae; }
   #dock.off { opacity: 0; pointer-events: none; transform: translateY(140%); }
   #dock.big { right: auto; bottom: auto; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(960px, calc(100vw - 32px)); }
   #dock.big.off { transform: translate(-50%, 140%); }
@@ -174,7 +175,7 @@
   .seg { cursor: pointer; }
   .seg:hover .t { color: var(--accent); }
   #dock .screen iframe { width: 100%; height: 100%; border: 0; display: block; }
-  .deeper-btn { border-color: rgba(255,194,122,.55) !important; color: var(--signal) !important; white-space: nowrap; }
+  .deeper-btn { border-color: #e0a36d !important; color: #f2c08f !important; white-space: nowrap; }
   #deeper-menu { display: grid; gap: 6px; padding: 10px 2px 2px; max-height: 230px; overflow-y: auto; }
   #deeper-menu .dh { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--signal); }
   #deeper-menu button { text-align: left; background: var(--glass); border: 1px solid var(--edge); border-radius: 10px; padding: 8px 10px; display: grid; gap: 2px; }
@@ -191,6 +192,68 @@
   .sorting-view .list { display: grid; gap: 8px; margin-top: 16px; }
   .sorting-view .story { background: var(--glass); border: 1px dashed var(--edge-2); border-radius: 12px; padding: 12px 14px; display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
   .sorting-view .story b { font-family: var(--display); font-weight: 500; font-size: 16px; }
+
+  /* ---- The Company: tonight's story, the people in it, and the conversation ---- */
+  .tonight { display: grid; gap: 22px; max-width: 640px; }
+  .tonight h1 { font-size: clamp(36px, 7vw, 56px); font-weight: 700; line-height: 1.0; letter-spacing: -.025em; }
+  .tonight .lede { font-size: 17px; color: var(--ink-2); margin: 8px 0 0; }
+  .label { font-size: 13px; color: var(--muted); }
+  .lens { display: flex; gap: 8px; flex-wrap: wrap; }
+  .lens button { min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid var(--edge-2); background: transparent; color: var(--ink); font: 500 14px var(--body); }
+  .lens button[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .lens button:disabled { color: var(--muted); border-style: dashed; cursor: default; }
+  .lens button small { font-size: 11px; margin-left: 6px; color: var(--muted); }
+  .lens-note { font-size: 13px; color: var(--muted); margin: 8px 0 0; }
+  .host { border-radius: 18px; background: var(--accent); color: var(--accent-ink); padding: 16px; display: flex; gap: 14px; align-items: center; text-align: left; border: 0; width: 100%; }
+  .host .av { background: var(--accent-ink); color: var(--accent); border-color: var(--accent-ink); }
+  .host .k { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+  .host b { display: block; font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.2; }
+  .host span.q { font-size: 14px; opacity: .9; }
+  .av { width: 56px; height: 56px; border-radius: 50%; background: #fff; border: 2px solid var(--both); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 700; font-size: 17px; flex: 0 0 auto; color: var(--ink); }
+  .av.sm { width: 44px; height: 44px; font-size: 14px; }
+  .room-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; font-size: 12.5px; color: var(--muted); }
+  .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; }
+  .cast { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 8px; margin-top: 12px; }
+  .person { display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; min-width: 0; }
+  .person .nm { font-size: 12.5px; font-weight: 600; line-height: 1.2; }
+  .person .rl { font-size: 11.5px; color: var(--muted); line-height: 1.25; }
+  .join { min-height: 54px; border-radius: 27px; border: 0; background: var(--ink); color: var(--ground); font: 600 16px var(--body); display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; }
+  .join:hover { background: #2c3633; }
+  .more { margin-top: 48px; display: grid; gap: 10px; max-width: 640px; }
+  .more h2 { font-size: 20px; font-weight: 700; }
+  .row { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: center; text-align: left; background: var(--glass); border: 1px solid var(--edge); border-radius: 14px; padding: 14px 16px; width: 100%; color: var(--ink); }
+  .row:hover { border-color: var(--edge-2); background: #fff; }
+  .row b { font-family: var(--display); font-weight: 700; font-size: 17px; }
+  .row span { font-size: 13px; color: var(--muted); }
+  .row .faces { display: flex; }
+  .row .faces .av { width: 30px; height: 30px; font-size: 10.5px; margin-left: -6px; border-width: 1.5px; }
+  .foot { margin-top: 40px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--edge); padding-top: 16px; max-width: 640px; }
+  .convo { max-width: 640px; display: grid; gap: 0; margin-top: 8px; }
+  .turn { display: grid; grid-template-columns: 44px 1fr; gap: 12px; padding: 12px 4px; border-bottom: 1px solid var(--edge); cursor: pointer; text-align: left; }
+  .turn:hover .ln { color: var(--accent); }
+  .turn.next { opacity: .5; }
+  .turn .who { font-size: 13px; color: var(--muted); }
+  .turn .who b { color: var(--ink); font-weight: 600; }
+  .turn .ln { font-size: 15.5px; line-height: 1.38; }
+  .turn.now .ln { font-weight: 600; }
+  .turn.now .who em { font-style: normal; color: var(--accent); font-weight: 600; }
+  .turn .src { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .convo-acts { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0 0; max-width: 640px; }
+  .convo-acts > * { flex: 1 1 200px; min-height: 48px; border-radius: 24px; font: 500 14px var(--body); display: flex; align-items: center; justify-content: center; text-decoration: none; padding: 0 16px; }
+  .convo-acts .alt { border: 1px solid var(--edge-2); background: transparent; color: var(--ink); }
+  .convo-acts .stay { border: 0; background: var(--accent); color: var(--accent-ink); }
+  .closing { max-width: 640px; display: grid; gap: 18px; background: var(--glass); border: 1px solid var(--edge); border-radius: 20px; padding: 24px; }
+  .closing h2 { font-size: 30px; font-weight: 700; line-height: 1.05; }
+  .closing blockquote { margin: 0; font-family: var(--display); font-size: 21px; line-height: 1.3; }
+  .closing .ask { font-family: var(--display); font-size: 20px; font-weight: 500; }
+  /* the video sits on top while a conversation plays, the people below it */
+  body.threadmode #dock { left: 50%; right: auto; top: 0; bottom: auto; transform: translateX(-50%); width: min(640px, 100vw); border-radius: 0 0 16px 16px; padding-top: calc(8px + env(safe-area-inset-top, 0px)); }
+  body.threadmode #dock.off { transform: translate(-50%, -120%); }
+  body.threadmode #dock [data-size] { display: none; }
+  body.threadmode .wrap { padding-top: calc(min(640px, 100vw) * 9 / 16 + 92px); }
+  body.threadmode.playing .wrap { padding-bottom: 64px; }
+  @media (max-width: 420px) { .cast { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 4px; } .av { width: 52px; height: 52px; } }
 </style>
 
 </head>
@@ -311,6 +374,53 @@ const fmtMin = m => m >= 60 ? `${Math.floor(m / 60)}h ${String(Math.round(m % 60
 const perEp = () => ({ 30: 2, 60: 3, 90: 4 }[state.budget] || 3);
 const findS = id => DATA.series.find(s => s.id === id);
 
+/* What the Company design needs on top of a thread: the question it asks, the
+   one to sleep on, who tells it (the lens), and for each piece who is speaking
+   and which side they land on. Sides are only given where the clips make them
+   plain; a story without them shows the people without colours. */
+const CAMPS = {
+  ai: { boom: ["Real boom", "var(--boom)"], both: ["Some of each", "var(--both)"], bubble: ["Bubble", "var(--bubble)"] },
+  oils: { fine: ["Fine in normal amounts", "var(--boom)"], both: ["It depends", "var(--both)"], harm: ["Harmful", "var(--bubble)"] },
+  cycle: { intact: ["Intact", "var(--boom)"], stretched: ["Stretched", "var(--both)"], dead: ["Dead", "var(--bubble)"] },
+};
+const LENSES = [["podcasters", "Podcasters"], ["newsroom", "The newsroom"], ["insiders", "The insiders"]];
+const META = {
+  "ai-bubble-voices": { q: "Is AI a bubble?", lens: "newsroom", camps: "ai", tonight: 1,
+    ask: "If the revenue doesn't arrive, who is left holding the bill?", line: 12,
+    who: [["Ray Dalio", "Bridgewater", "bubble"], ["Sundar Pichai", "Google", "both"], ["Sam Altman", "OpenAI", "boom"], ["Jensen Huang", "Nvidia", "boom"],
+      ["Jeff Bezos", "Amazon", "both"], ["John Chambers", "ex-Cisco", "boom"], ["Howard Marks", "Oaktree", "both"], ["Dave Lee", "Bloomberg", "bubble"],
+      ["Michael Burry", "The Big Short", "bubble"], ["Jamie Dimon", "JPMorgan", "both"], ["Dario Amodei", "Anthropic", "both"], ["Sam Altman", "OpenAI", "boom"], ["Dario Amodei", "Anthropic", "both"]] },
+  "btc-cycle-pros": { q: "Is Bitcoin's four-year cycle over?", lens: "podcasters", tonight: 1,
+    ask: "If the halving no longer sets the rhythm, what does?" },
+  "seed-oils-pros": { q: "Are seed oils bad for you?", lens: "podcasters", camps: "oils", tonight: 1,
+    ask: "Is the problem the oil, or the food it comes in?",
+    sides: ["fine", "harm", "harm", "fine", "fine", "harm", "harm", "both", "fine", "fine"] },
+  "ozempic-pros": { q: "Is Ozempic a drug for life?", lens: "insiders", tonight: 1,
+    ask: "Is this a treatment people take for a while, or for life?",
+    who: [["Lotte Bjerre Knudsen", "Novo Nordisk scientist"]] },
+  "btc-thread": { q: "Is the four-year cycle dead?", lens: "podcasters", camps: "cycle", fromSide: 1,
+    ask: "Was the October 2025 peak the old cycle on time, or a new market that looked similar?" },
+};
+const initials = n => n.replace(/[^A-Za-z\s-]/g, "").split(/[\s-]+/).filter(Boolean).map(w => w[0]).slice(0, 2).join("").toUpperCase();
+/* Who is speaking in piece i, and on which side. */
+function speaker(th, i) {
+  const m = META[th.id] || {}, sg = th.segs[i], w = (m.who || [])[i];
+  let name, role, camp = (m.sides || [])[i];
+  if (w) { [name, role] = w; camp = w[2] || camp; }
+  else if (m.fromSide) { name = sg.channel; role = ""; camp = (sg.side || "").toLowerCase() || undefined; }
+  else { const parts = (sg.side || sg.channel).split(","); name = parts[0].trim(); role = parts.slice(1).join(",").replace(/^\s*(with|on)\s.*$/i, "").trim(); }
+  const c = m.camps && camp && CAMPS[m.camps][camp];
+  return { name, role, camp, ring: c ? c[1] : "var(--accent)", campName: c ? c[0] : "" };
+}
+function castOf(th) {
+  const seen = new Map();
+  th.segs.forEach((_, i) => { const p = speaker(th, i); if (!seen.has(p.name)) seen.set(p.name, p); });
+  return [...seen.values()];
+}
+const qOf = th => (META[th.id] || {}).q || th.name;
+const minsOf = th => Math.max(1, Math.round(th.segs.reduce((a, s2) => a + s2.end - s2.start, 0) / 60));
+const avatar = (p, cls = "") => `<span class="av ${cls}" style="border-color:${p.ring}" aria-hidden="true">${esc(initials(p.name))}</span>`;
+
 function evening(s) {
   if (s.eps) {   // cut by the Director after watching: used as it is
     const skip = v => state.skipSeen && state.seen.has(v.id);
@@ -390,55 +500,41 @@ function literature() {
 
 function door() {
   if (state.side === "literature") return literature();
-  const wasSkip = state.skipSeen; state.skipSeen = false;   // the shelf shows a series' full size, not what's left unseen
-  const ready = DATA.series.filter(inCat).map(evening); state.skipSeen = wasSkip; const _r = 0, threads = DATA.threads.filter(inCat), sorting_ = DATA.sorting.filter(inCat);
-  const cname = (CATS.find(c => c[0] === state.cat) || CATS[0]);
-  const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
-  return topBar(false) + sideSwitch() + `
-  <section class="door">
-    <div class="mono">An evening with a spine</div>
-    <h1 style="margin-top:10px">Pick a story.<br>Get an <em>evening</em>.</h1>
-    <p class="lede">Three episodes, in order: where the story began, where it stands, and the ways it gets told. Press play once. It plays through, and it ends.</p>
-    <div class="budget"><span class="mono">Tonight I have</span>
-      ${[30, 60, 90].map(b => `<button class="chip" data-budget="${b}" aria-pressed="${state.budget === b}">${b} min</button>`).join("")}
+  const pool = DATA.threads.filter(t => (META[t.id] || {}).tonight);
+  const th = pool[0] || DATA.threads[0], m = META[th.id] || {}, cast = castOf(th), first = speaker(th, 0);
+  const lensName = (LENSES.find(l => l[0] === m.lens) || LENSES[1])[1];
+  const camps = m.camps ? Object.values(CAMPS[m.camps]) : [];
+  const others = DATA.threads.filter(t => t !== th);
+  const ready = DATA.series.map(x => { const w = state.skipSeen; state.skipSeen = false; const e = evening(x); state.skipSeen = w; return e; }).filter(e => e.s.eps);
+  return topBar(false) + `
+  <section class="tonight">
+    <div>
+      <div class="label">Tonight</div>
+      <h1>${esc(qOf(th))}</h1>
+      <p class="lede">${cast.length} people at the centre of it. Pull up a chair.</p>
     </div>
+    <div>
+      <div class="label">Told by</div>
+      <div class="lens" role="group" aria-label="Who tells the story" style="margin-top:8px">${LENSES.map(([k, n]) => k === m.lens
+        ? `<button aria-pressed="true">${n}</button>`
+        : `<button disabled title="A cut of this story told by ${n.toLowerCase()} is being made">${n}<small>soon</small></button>`).join("")}</div>
+      <p class="lens-note">Tonight's cut is told by ${lensName.toLowerCase()}. The other tellings of this story are being made.</p>
+    </div>
+    <button class="host" data-thread-play="${th.id}">
+      ${avatar(first)}
+      <span><span class="k">First voice tonight</span><b>${esc(first.name)}${first.role ? ", " + esc(first.role) : ""}</b><span class="q">${esc(th.segs[0].label)}</span></span>
+    </button>
+    <div>
+      <div class="room-head"><span class="label">In the room</span>${camps.length ? `<span class="legend">${camps.map(([n, c]) => `<span><i style="background:${c}"></i>${n}</span>`).join("")}</span>` : ""}</div>
+      <div class="cast">${cast.slice(0, 12).map(p => `<div class="person">${avatar(p)}<span class="nm">${esc(p.name)}</span><span class="rl">${esc(p.role)}</span></div>`).join("")}</div>
+    </div>
+    <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
   </section>
-  ${catRow()}
-  ${ready.length || threads.length ? `  <section class="section">
-    <div class="kick"><h2>Ready tonight · ${esc(stamp)}</h2><span class="sub">Tap one and it plays</span></div>
-    <div class="shelf">${ready.map((e, i) => `
-      <button class="card3 ${e.s.g}" data-tilt data-play-story="${e.s.id}" aria-label="Play ${esc(e.s.name)}">
-        <span class="rank">0${i + 1}</span><span class="play" aria-hidden="true">▶</span>
-        <span class="pk">Series · ${e.eps.length} episodes</span>
-        <span class="pn">${esc(e.s.name)}</span>
-        <span class="pf">${e.count} videos · ${fmtMin(e.mins)}</span>
-      </button>`).join("")}
-    </div>
-  </section>
-  ${threads.length ? `<section class="section">
-    <div class="kick"><h2>Threads</h2><span class="sub">Short pieces from many videos, back to back</span></div>
-    <div class="grid">${threads.map(th => `<button class="tile" data-tilt data-thread="${th.id}">
-        <span class="name">${esc(th.name)}</span>
-        <span class="claim">${esc(th.about)}</span>
-        <span class="meta"><span class="pill ok">Thread</span><span>${th.segs.length} voices</span><span>${Math.round(th.segs.reduce((a, s2) => a + s2.end - s2.start, 0) / 60)} min</span></span>
-      </button>`).join("")}</div>
-  </section>` : ""}
-  <section class="section">
-    <div class="kick"><h2>Stories</h2><span class="sub">${ready.length} ready${sorting_.length ? ` · ${sorting_.length} still being sorted` : ""}</span></div>
-    <div class="grid">
-      ${ready.map(e => `<button class="tile" data-tilt data-open="${e.s.id}">
-        <span class="name">${esc(e.s.name)}</span>
-        <span class="claim">${esc(e.s.claim)}</span>
-        <span class="meta"><span class="pill ok">${e.eps.length} episodes</span><span>${e.s.born}→2026</span><span>${e.s.watched ? e.s.watched + " videos watched" : e.s.videos.toLocaleString() + " videos"}</span></span>
-      </button>`).join("")}
-      ${sorting_.map(x => `<button class="tile sorting" data-tilt data-sort="${x.id}">
-        <span class="name">${esc(x.name)}</span>
-        <span class="claim">${x.stories.length} stories are filed under one name here. The curator is separating them before offering an evening.</span>
-        <span class="meta"><span class="pill">being sorted</span><span>${x.videos.toLocaleString()} videos</span><span>${x.reads} read so far</span></span>
-      </button>`).join("")}
-    </div>
-  </section>` : `<div class="nothing"><b>${cname[1]}</b> is empty for now. ${cname[2]}: series in this area are being built. The areas with a solid outline have something to watch.</div>`}
-  <p class="rules">Every evening ends on purpose. One video per channel, no video repeating another's claim, nothing ranked by views, and nothing queued after the last one. ${state.seen.size ? `You've marked ${state.seen.size} video${state.seen.size === 1 ? "" : "s"} as seen; evenings leave them out.` : "Mark a video as seen and future evenings leave it out."}</p>`;
+  ${others.length ? `<section class="more"><h2>More conversations</h2>${others.map(t => { const c = castOf(t);
+    return `<button class="row" data-thread="${t.id}"><b>${esc(qOf(t))}</b><span class="faces">${c.slice(0, 4).map(p => avatar(p)).join("")}</span><span>${c.length} people · ${minsOf(t)} min</span></button>`; }).join("")}</section>` : ""}
+  ${ready.length ? `<section class="more"><h2>Full evenings</h2><p class="label" style="margin:0">Whole videos, in episodes, for a longer night.</p>${ready.map(e =>
+    `<button class="row" data-open="${e.s.id}"><b>${esc(e.s.name)}</b><span>${fmtMin(e.mins)}</span><span>${e.eps.length} episodes · ${e.count} videos</span></button>`).join("")}</section>` : ""}
+  <p class="foot">Every conversation ends on purpose. Nothing is ranked by views and nothing plays after the last voice. <a href="archive/evenings-v1.html">The previous design</a> is kept here.</p>`;
 }
 
 function sorting(id) {
@@ -558,13 +654,14 @@ function dockSync(msg) {
   const p = state.play, d = dock(), t = state.thread;
   if (t && !t.ended) {
     const th = findT(state.story), sg = th.segs[t.i];
-    d.classList.remove("off"); document.body.classList.toggle("playing", !d.classList.contains("big"));
-    document.getElementById("dock-title").textContent = msg || sg.label;
+    d.classList.remove("off", "big"); document.body.classList.add("threadmode"); document.body.classList.toggle("playing", true);
+    document.getElementById("dock-title").textContent = msg || `${speaker(th, t.i).name}: ${sg.label}`;
     const nx = th.segs[t.i + 1];
     document.getElementById("dock-sub").textContent = `Piece ${t.i + 1} of ${th.segs.length} · ${sg.channel} · ${sg.published}` + (nx ? ` · next: ${nx.channel}` : " · last one");
     return;
   }
   const on = !!(p && !p.ended);
+  document.body.classList.remove("threadmode");
   d.classList.toggle("off", !on);
   document.body.classList.toggle("playing", on && !d.classList.contains("big"));
   if (!on) return;
@@ -710,22 +807,33 @@ function threadStop() { clearInterval(state.thread?.tick); try { yt && yt.stopVi
 const mmss = n => `${Math.floor(n / 60)}:${String(n % 60).padStart(2, "0")}`;
 
 function threadView(id) {
-  const th = findT(id), t = state.thread, total = th.segs.reduce((a, s2) => a + s2.end - s2.start, 0);
-  const head = t && t.ended ? `<div class="end"><div class="mono">■ The end</div><h3>That's the thread.</h3>
-      <p>${th.segs.length} voices, ${Math.round(total / 60)} minutes. Each piece links to its full video if you want the whole argument.</p>
-      <div class="cta"><button class="ghost" data-seg="0">Play it again</button><button class="ghost" data-go="door">Back to all stories</button></div></div>`
-    : `<div class="titlecard"><div class="mono">Thread · what people are saying</div><h1>${esc(th.name)}</h1>
-      <p class="claim">${esc(th.about)}</p>
-      <div class="curator"><span class="orb" aria-hidden="true"></span><span>${th.segs.length} pieces · ${Math.round(total / 60)} minutes. Each one plays in YouTube's own player from the moment the point is made, then hands over to the next. Nothing is cut or re-uploaded.</span></div>
-      ${t ? "" : `<div class="cta"><button class="primary" data-seg="0">▶ Play the thread</button><span class="note">Plays through, then it ends.</span></div>`}</div>`;
-  return topBar(true) + head + `<div class="rail"><section class="ep ${t && !t.ended ? "now" : ""}"><div class="vlist">${th.segs.map((sg, i) => `
-      <div class="v seg ${t && t.i === i ? "playing" : ""}" data-seg="${i}">
-        <div class="n">${String(i + 1).padStart(2, "0")}</div>
-        <div><div class="mono">${esc(sg.channel)} · ${esc(sg.published)}${sg.side ? " · " + esc(sg.side) : ""}</div>
-          <div class="t">${esc(sg.label)}</div>
-          <div class="m"><span>${mmss(sg.start)}–${mmss(sg.end)} of “${esc(sg.title.slice(0, 60))}”</span>
-            <a href="https://www.youtube.com/watch?v=${esc(sg.id)}&t=${sg.start}s" target="_blank" rel="noopener" data-nojump="1">Full video ↗</a></div></div>
-      </div>`).join("")}</div></section></div>`;
+  const th = findT(id), t = state.thread, m = META[th.id] || {}, cast = castOf(th);
+  if (t && t.ended) {
+    const k = m.line != null ? m.line : th.segs.length - 1, p = speaker(th, k);
+    return topBar(true) + `<section class="closing">
+      <div class="label">The end of tonight's conversation</div>
+      <h2>That was ${cast.length} people on one question.</h2>
+      <div><div class="label">The line of the night</div><blockquote>${esc(th.segs[k].label)}</blockquote><div class="label" style="margin-top:6px">${esc(p.name)}${p.role ? ", " + esc(p.role) : ""}</div></div>
+      ${m.ask ? `<div><div class="label">The question to sleep on</div><div class="ask">${esc(m.ask)}</div></div>` : ""}
+      <div class="convo-acts" style="margin:0"><button class="stay" data-go="door">Done for tonight</button><button class="alt" data-seg="0">Hear it again</button></div>
+    </section>`;
+  }
+  const cur = t ? t.i : -1;
+  const head = `<div class="tonight" style="gap:8px"><div class="label">${t ? `${cur + 1} of ${th.segs.length}` : `${cast.length} people · ${minsOf(th)} min`}</div><h1 style="font-size:clamp(28px,5vw,40px)">${esc(qOf(th))}</h1>
+    ${t ? "" : `<button class="join" data-seg="0" style="margin-top:10px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation</button>`}</div>`;
+  const turns = th.segs.map((sg, i) => { const p = speaker(th, i), st = i === cur ? "now" : (t && i > cur ? "next" : "");
+    const verb = i === cur ? "<em>now speaking</em>" : p.campName ? esc(p.campName.toLowerCase()) : "";
+    return `<div class="turn ${st}" data-seg="${i}" role="button" tabindex="0">${avatar(p, "sm")}
+      <div><div class="who"><b>${esc(p.name)}</b>${p.role ? " · " + esc(p.role) : ""}${verb ? " · " + verb : ""}</div>
+      <div class="ln">${esc(sg.label)}</div><div class="src">${esc(sg.channel)} · ${esc(sg.published)}</div></div></div>`; }).join("");
+  let acts = "";
+  if (t) {
+    const p = speaker(th, cur), sg = th.segs[cur];
+    const other = m.camps ? th.segs.findIndex((_, i) => i > cur && speaker(th, i).camp && speaker(th, i).camp !== p.camp) : -1;
+    acts = `<div class="convo-acts">${other > 0 ? `<button class="alt" data-seg="${other}">Hear the other side</button>` : ""}
+      <a class="stay" href="https://www.youtube.com/watch?v=${esc(sg.id)}&t=${sg.start}s" target="_blank" rel="noopener" data-nojump="1">Keep watching ${esc(p.name.split(" ")[0])} on YouTube ↗</a></div>`;
+  }
+  return topBar(true) + head + acts + `<div class="convo">${turns}</div>`;
 }
 
 /* Background sound, made in the browser so there is no file to load and nothing
@@ -839,6 +947,7 @@ document.addEventListener("click", ev => {
   if (t.closest("[data-deeper-back]")) return deeperBack();
   const dg = t.closest("[data-deeper]"); if (dg) return deeperGo(+dg.dataset.deeper);
   const sd = t.closest("[data-side]"); if (sd) { state.side = sd.dataset.side; store.set("side", state.side); return render(); }
+  const tp = t.closest("[data-thread-play]"); if (tp) { stop(); threadStop(); state.view = "thread"; state.story = tp.dataset.threadPlay; render(); return threadStart(0); }
   const thr = t.closest("[data-thread]"); if (thr) { stop(); threadStop(); state.view = "thread"; state.story = thr.dataset.thread; return render(); }
   const sgc = t.closest("[data-seg]"); if (sgc) return threadStart(+sgc.dataset.seg);
   if (state.thread && !state.thread.ended) {
@@ -861,6 +970,7 @@ document.addEventListener("click", ev => {
   if (t.closest("[data-stop]")) { stop(); return render(); }
   const sn = t.closest("[data-seen]"); if (sn) { const id = sn.dataset.seen; state.seen.has(id) ? state.seen.delete(id) : state.seen.add(id); store.set("seen", [...state.seen]); return render(); }
 });
+document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".turn[data-seg]")) { ev.preventDefault(); threadStart(+ev.target.dataset.seg); } });
 document.addEventListener("change", ev => { if (ev.target.id === "skipseen") { state.skipSeen = ev.target.checked; store.set("skipSeen", state.skipSeen); render(); } });
 render();
 loadYT();   // ready before the first tap, so that tap is the one that plays
