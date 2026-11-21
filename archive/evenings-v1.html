@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Story Evenings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* One dark world, chosen on purpose: an AI curator's console, not a document.
+     Every color is declared here and used everywhere, so the page paints itself
+     the same on any host background. */
+  :root {
+    color-scheme: dark;
+    --ground: #06080f; --deep: #0b0f1a; --glass: rgba(255,255,255,.045); --glass-2: rgba(255,255,255,.08);
+    --edge: rgba(255,255,255,.10); --edge-2: rgba(255,255,255,.18);
+    --ink: #eef1f7; --ink-2: #aab3c5; --muted: #6c7690;
+    --accent: #8ad0ff; --accent-ink: #06080f; --signal: #ffc27a;
+    --p1a: #1d3b7a; --p1b: #0a1330; --p2a: #7a2f2a; --p2b: #2a0f0d; --p3a: #1b6b5a; --p3b: #08241e;
+    --p4a: #5e3b8a; --p4b: #1b1030; --p5a: #8a6a22; --p5b: #2a1f0a;
+    --display: "Sora", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    --body: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.5 var(--body);
+    background-image: radial-gradient(900px 500px at 15% -10%, rgba(138,208,255,.10), transparent 60%),
+                      radial-gradient(700px 420px at 95% 10%, rgba(255,194,122,.06), transparent 60%); }
+  .wrap { max-width: 960px; margin: 0 auto; padding-inline: 20px; padding-block: 18px 64px; }
+  h1, h2, h3 { margin: 0; text-wrap: balance; font-family: var(--display); }
+  a { color: var(--accent); }
+  button { font: inherit; cursor: pointer; color: inherit; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .mono { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
+  .brand .orb { width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff, var(--accent) 45%, #1d3b7a 100%); box-shadow: 0 0 18px rgba(138,208,255,.55); }
+  .ghost { background: var(--glass); border: 1px solid var(--edge); border-radius: 999px; padding: 8px 15px; font-size: 13px; color: var(--ink); backdrop-filter: blur(8px); }
+  .ghost:hover { border-color: var(--edge-2); background: var(--glass-2); }
+  .ghost:disabled { opacity: .4; cursor: default; }
+  .primary { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 12px 22px; font-size: 14.5px; font-weight: 600; font-family: var(--display); box-shadow: 0 8px 30px rgba(138,208,255,.28); }
+  .primary:hover { box-shadow: 0 10px 36px rgba(138,208,255,.4); }
+  .chip { background: var(--glass); border: 1px solid var(--edge); color: var(--ink-2); border-radius: 999px; padding: 7px 14px; font-size: 13px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .pill { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--edge); color: var(--ink-2); }
+  .pill.ok { border-color: rgba(138,208,255,.5); color: var(--accent); }
+
+  /* ---- the two sides of the product ---- */
+  .sides { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--glass); border: 1px solid var(--edge); margin-bottom: 26px; }
+  .sides button { border: 0; background: none; color: var(--ink-2); border-radius: 999px; padding: 8px 18px; font-family: var(--display); font-size: 13.5px; font-weight: 500; }
+  .sides button[aria-pressed="true"] { background: var(--ink); color: var(--ground); }
+  .sides button small { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; margin-left: 6px; opacity: .7; }
+  .soon { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 30px; }
+  .soon div { background: var(--glass); border: 1px dashed var(--edge-2); border-radius: 16px; padding: 18px; display: grid; gap: 6px; }
+  .soon b { font-family: var(--display); font-size: 17px; font-weight: 600; }
+  .soon span { font-size: 13px; color: var(--ink-2); }
+
+  .cats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 34px; }
+  .cat { background: var(--glass); border: 1px solid var(--edge); color: var(--ink); border-radius: 12px; padding: 10px 18px; font-family: var(--display); font-size: 15px; font-weight: 500; }
+  .cat:hover { border-color: var(--edge-2); }
+  .cat[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .cat.empty { color: var(--muted); border-style: dashed; }
+  .nothing { color: var(--ink-2); background: var(--glass); border: 1px dashed var(--edge-2); border-radius: 16px; padding: 22px; margin-top: 24px; max-width: 60ch; }
+
+  /* ---- door ---- */
+  .door h1 { font-size: clamp(34px, 6.4vw, 60px); font-weight: 500; line-height: 1.02; letter-spacing: -.03em; }
+  .door h1 em { font-style: normal; color: var(--accent); }
+  .door .lede { font-size: 16.5px; color: var(--ink-2); max-width: 56ch; margin-top: 14px; }
+  .budget { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 24px; }
+  .section { margin-top: 44px; }
+  .kick { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+  .kick h2 { font-size: 15px; font-weight: 600; }
+  .kick .sub { font-size: 12.5px; color: var(--muted); }
+
+  /* the shelf: tonight's evenings standing in space */
+  .shelf { display: flex; gap: 16px; overflow-x: auto; padding: 14px 6px 26px; perspective: 1100px; scrollbar-width: thin; }
+  .card3 { flex: 0 0 auto; width: 176px; height: 236px; border-radius: 14px; padding: 14px; border: 0; text-align: left; position: relative;
+    color: #f4f6fb; display: flex; flex-direction: column; justify-content: flex-end; gap: 5px; transform-style: preserve-3d;
+    transform: rotateY(var(--ry, 0deg)) rotateX(var(--rx, 0deg)); transition: transform .35s ease, box-shadow .35s ease;
+    box-shadow: 0 30px 50px -22px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.14); }
+  .card3::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(115deg, rgba(255,255,255,.16), transparent 40%, transparent 65%, rgba(255,255,255,.06)); pointer-events: none; }
+  .card3:hover { box-shadow: 0 40px 60px -22px rgba(0,0,0,.9), 0 0 0 1px var(--edge-2), inset 0 1px 0 rgba(255,255,255,.2); }
+  .card3 .rank { position: absolute; top: 10px; left: 12px; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; opacity: .75; }
+  .card3 .play { position: absolute; top: 10px; right: 10px; width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.92); color: #06080f; display: grid; place-items: center; font-size: 12px; transform: translateZ(24px); box-shadow: 0 6px 16px rgba(0,0,0,.4); }
+  .card3 .pk { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+  .card3 .pn { font-family: var(--display); font-size: 19px; font-weight: 600; line-height: 1.12; letter-spacing: -.01em; transform: translateZ(14px); }
+  .card3 .pf { font-size: 11.5px; opacity: .75; font-variant-numeric: tabular-nums; }
+  .g1 { background: linear-gradient(160deg, var(--p1a), var(--p1b)); } .g2 { background: linear-gradient(160deg, var(--p2a), var(--p2b)); }
+  .g3 { background: linear-gradient(160deg, var(--p3a), var(--p3b)); } .g4 { background: linear-gradient(160deg, var(--p4a), var(--p4b)); } .g5 { background: linear-gradient(160deg, var(--p5a), var(--p5b)); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; perspective: 1400px; }
+  .tile { background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; text-align: left; display: flex; flex-direction: column; gap: 9px; min-height: 190px;
+    transform: rotateY(var(--ry, 0deg)) rotateX(var(--rx, 0deg)); transition: transform .3s ease, border-color .3s, background .3s; backdrop-filter: blur(10px); transform-style: preserve-3d; }
+  .tile:hover { border-color: var(--edge-2); background: var(--glass-2); }
+  .tile .name { font-family: var(--display); font-size: 20px; font-weight: 600; line-height: 1.15; letter-spacing: -.015em; transform: translateZ(10px); }
+  .tile .claim { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
+  .tile .meta { margin-top: auto; font-size: 12px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; font-variant-numeric: tabular-nums; }
+  .tile.sorting { border-style: dashed; }
+  .rules { margin-top: 40px; font-size: 13px; color: var(--muted); border-top: 1px solid var(--edge); padding-top: 16px; max-width: 66ch; }
+  @media (prefers-reduced-motion: reduce) { .card3, .tile { transition: none; transform: none !important; } }
+
+  /* ---- series ---- */
+  .titlecard { margin-top: 10px; display: grid; gap: 10px; }
+  .titlecard h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 500; line-height: 1.05; letter-spacing: -.025em; }
+  .titlecard .claim { font-size: 15.5px; color: var(--ink-2); max-width: 64ch; }
+  .cta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .cta .note { font-size: 12.5px; color: var(--muted); }
+  .curator { display: flex; gap: 10px; align-items: flex-start; background: var(--glass); border: 1px solid var(--edge); border-radius: 12px; padding: 12px 14px; font-size: 13px; color: var(--ink-2); max-width: 70ch; }
+  .curator .orb { flex: 0 0 auto; width: 10px; height: 10px; margin-top: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 12px rgba(138,208,255,.6); }
+  .seen-toggle { display: inline-flex; gap: 8px; align-items: center; font-size: 12.5px; color: var(--ink-2); }
+
+  .rail { position: relative; margin-top: 30px; display: grid; gap: 18px; padding-left: 26px; }
+  .rail::before { content: ""; position: absolute; left: 7px; top: 12px; bottom: 12px; width: 2px; background: linear-gradient(var(--edge-2), var(--edge)); }
+  .ep { position: relative; background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; display: grid; gap: 10px; backdrop-filter: blur(10px); }
+  .ep::before { content: ""; position: absolute; left: -26px; top: 22px; width: 16px; height: 16px; border-radius: 50%; background: var(--deep); border: 2px solid var(--edge-2); box-shadow: 0 0 0 4px var(--ground); }
+  .ep.now { border-color: rgba(138,208,255,.55); box-shadow: 0 0 0 1px rgba(138,208,255,.25), 0 20px 50px -30px rgba(138,208,255,.5); }
+  .ep.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--ground), 0 0 16px rgba(138,208,255,.8); }
+  .ep.done { opacity: .6; } .ep.done::before { background: var(--ink-2); }
+  .ep header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .ep h3 { font-size: 22px; font-weight: 600; letter-spacing: -.015em; }
+  .ep .why { font-size: 13px; color: var(--ink-2); max-width: 66ch; }
+  .ep .mins { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; display: flex; gap: 10px; align-items: center; }
+  .vlist { display: grid; }
+  .v { display: grid; grid-template-columns: 24px 1fr; gap: 10px; padding: 11px 6px; border-top: 1px solid var(--edge); border-radius: 8px; }
+  .v .n { font-family: var(--mono); font-size: 11px; color: var(--muted); padding-top: 4px; }
+  .v .t { font-size: 15px; font-weight: 600; line-height: 1.3; margin: 2px 0; font-family: var(--display); font-weight: 500; }
+  .v .m { font-size: 12.5px; color: var(--ink-2); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .v .look { font-size: 12.5px; color: var(--ink-2); margin-top: 6px; border-left: 2px solid var(--signal); padding-left: 9px; line-height: 1.45; }
+  .v .look b { color: var(--ink); }
+  .v.seen .t { color: var(--muted); text-decoration: line-through; text-decoration-thickness: 1px; }
+  .v.playing { background: linear-gradient(90deg, rgba(138,208,255,.10), transparent); }
+  .v .tiny { padding: 3px 10px; font-size: 11.5px; }
+
+  /* ---- player ---- */
+  .player { display: grid; gap: 14px; margin-top: 8px; }
+  .bezel { position: relative; border-radius: 18px; padding: 8px; background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.03)); border: 1px solid var(--edge); box-shadow: 0 40px 80px -30px var(--glow, rgba(138,208,255,.35)); }
+  .frame { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; color: #f4f6fb; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), inset 0 -60px 80px -40px rgba(0,0,0,.6); }
+  .frame .ft { font-family: var(--display); font-size: clamp(20px, 3.4vw, 30px); font-weight: 600; line-height: 1.15; max-width: 28ch; letter-spacing: -.015em; }
+  .frame .fc { font-size: 13px; opacity: .8; }
+  .frame .yt { position: absolute; top: 14px; right: 14px; font-size: 12px; color: #f4f6fb; background: rgba(0,0,0,.4); padding: 6px 11px; border-radius: 999px; text-decoration: none; backdrop-filter: blur(6px); }
+  .frame .demo { position: absolute; top: 16px; left: 16px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; opacity: .75; }
+  .frame .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255,255,255,.15); }
+  .frame .bar i { display: block; height: 100%; width: 0; background: var(--accent); box-shadow: 0 0 10px var(--accent); transition: width .25s linear; }
+  @media (prefers-reduced-motion: reduce) { .frame .bar i { transition: none; } }
+  .now { display: grid; gap: 4px; padding: 0 4px; }
+  .now .line { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+  .now .spn { color: var(--accent); }
+  .now .t { font-family: var(--display); font-size: 18px; font-weight: 500; line-height: 1.3; }
+  .now .m { font-size: 12.5px; color: var(--ink-2); }
+  .now .look { font-size: 13px; color: var(--ink-2); border-left: 2px solid var(--signal); padding-left: 10px; margin-top: 4px; line-height: 1.5; }
+  .now .look b { color: var(--ink); }
+  .acts { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+  .acts .next { font-size: 12.5px; color: var(--muted); }
+  .interstitial, .end { background: var(--glass); border: 1px solid var(--edge); border-radius: 18px; padding: 26px; display: grid; gap: 8px; backdrop-filter: blur(10px); }
+  .interstitial h3 { font-size: 30px; font-weight: 500; letter-spacing: -.02em; }
+  .end h3 { font-size: 34px; font-weight: 500; letter-spacing: -.025em; }
+  .end p { margin: 0; color: var(--ink-2); max-width: 60ch; }
+  .stat { display: flex; gap: 22px; flex-wrap: wrap; font-variant-numeric: tabular-nums; margin: 6px 0; }
+  .stat b { font-family: var(--display); font-size: 26px; font-weight: 500; display: block; line-height: 1.1; }
+  .stat span { font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .fine { font-size: 12.5px; color: var(--muted); }
+
+  /* the viewer: small and docked by default, large on request */
+  #dock { position: fixed; z-index: 50; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: min(400px, calc(100vw - 32px));
+    padding: 8px; border-radius: 16px; background: rgba(14,18,30,.92); border: 1px solid var(--edge-2); backdrop-filter: blur(14px);
+    box-shadow: 0 30px 70px -20px rgba(0,0,0,.9), 0 0 0 1px rgba(138,208,255,.12); transition: opacity .25s, transform .25s; }
+  #dock.off { opacity: 0; pointer-events: none; transform: translateY(140%); }
+  #dock.big { right: auto; bottom: auto; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(960px, calc(100vw - 32px)); }
+  #dock.big.off { transform: translate(-50%, 140%); }
+  #dock .screen { aspect-ratio: 16 / 9; max-width: 100%; background: #000; border-radius: 10px; overflow: hidden; }
+  #dock .screen { position: relative; }
+  #dock .pl { position: absolute; inset: 0; opacity: 0; pointer-events: none; }
+  #dock .pl.front { opacity: 1; pointer-events: auto; }
+  .seg { cursor: pointer; }
+  .seg:hover .t { color: var(--accent); }
+  #dock .screen iframe { width: 100%; height: 100%; border: 0; display: block; }
+  .deeper-btn { border-color: rgba(255,194,122,.55) !important; color: var(--signal) !important; white-space: nowrap; }
+  #deeper-menu { display: grid; gap: 6px; padding: 10px 2px 2px; max-height: 230px; overflow-y: auto; }
+  #deeper-menu .dh { font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--signal); }
+  #deeper-menu button { text-align: left; background: var(--glass); border: 1px solid var(--edge); border-radius: 10px; padding: 8px 10px; display: grid; gap: 2px; }
+  #deeper-menu button:hover { border-color: var(--signal); }
+  #deeper-menu b { font-family: var(--display); font-size: 13px; font-weight: 500; }
+  #deeper-menu span { font-size: 11.5px; color: var(--ink-2); }
+  .dockbar { display: flex; gap: 6px; align-items: center; padding: 8px 2px 0; }
+  .dockbar .dtext { flex: 1; min-width: 0; }
+  #dock-title { font-family: var(--display); font-size: 13px; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #dock-sub { font-size: 9.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  body.playing .wrap { padding-bottom: 320px; }
+  @media (prefers-reduced-motion: reduce) { #dock { transition: none; } }
+
+  .sorting-view .list { display: grid; gap: 8px; margin-top: 16px; }
+  .sorting-view .story { background: var(--glass); border: 1px dashed var(--edge-2); border-radius: 12px; padding: 12px 14px; display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .sorting-view .story b { font-family: var(--display); font-weight: 500; font-size: 16px; }
+</style>
+
+</head>
+<body>
+<div class="wrap" id="app"></div>
+<div id="dock" class="off" aria-label="Video player">
+  <div class="screen"><div class="pl front" id="plA"><div id="yt"></div></div><div class="pl" id="plB"><div id="yt2"></div></div></div>
+  <div id="deeper-menu" hidden></div>
+  <div class="dockbar">
+    <div class="dtext"><div id="dock-title"></div><div id="dock-sub" class="mono"></div></div>
+    <button class="ghost tiny deeper-btn" data-deeper-toggle="1" hidden>Go deeper</button>
+    <button class="ghost tiny deeper-btn" data-deeper-back="1" hidden>↩ Back</button>
+    <button class="ghost tiny" data-prev="1" aria-label="Previous video">‹</button>
+    <button class="ghost tiny" data-next="1" aria-label="Next video">›</button>
+    <button class="ghost tiny" data-size="1" aria-label="Make the player larger or smaller">⤢</button>
+    <button class="ghost tiny" data-stop="1" aria-label="Stop and close the player">✕</button>
+  </div>
+</div>
+
+<script>
+/* Every video is a real one from the corpus, with its real id, channel and
+   runtime. Episodes are drawn from the corpus as it stands; filed-by-title
+   videos still leak into two stories, and the story layer is what removes that. */
+const DATA = {
+  threads: [{"id": "ai-bubble-voices", "cat": "money", "g": "g2", "name": "Is AI a bubble? In their own words", "about": "The trailer: the CEOs building it, the investors funding it and the skeptics betting against it, each at the line that made the headlines.", "segs": [{"id": "hwkHkUpWZP4", "start": 34, "end": 46, "channel": "CNBC Television", "published": "2025-11-20", "title": "Bridgewater founder Ray Dalio: We are definitely in a bubble, but that doesn't mean you should sell", "label": "\"There's definitely a bubble in the markets\"", "side": "Ray Dalio, founder of Bridgewater"}, {"id": "f23hv1zXN8I", "start": 122, "end": 164, "channel": "BBC News", "published": "2025-11-18", "title": "Google boss says trillion-dollar AI investment boom has 'elements of irrationality' | BBC News", "label": "Rational, with \"elements of irrationality\", and no company is immune, Google included", "side": "Sundar Pichai, Google CEO, to the BBC"}, {"id": "JAYVO1_Gn6g", "start": 124, "end": 165, "channel": "DRM News", "published": "2026-11-16", "title": "OpenAI's Sam Altman on Jensen Huang's Nvidia Exit, AI Bubble Fears and OpenAI's IPO Plans | AI1N", "label": "Journalists are skeptical; investors are bullish; there will be overbuild and underbuild", "side": "Sam Altman, OpenAI CEO"}, {"id": "sH5qyeHSdVs", "start": 169, "end": 193, "channel": "Yahoo Finance", "published": "2026-10-21", "title": "Nvidia’s CEO on the AI debt scare, China, and jobs | Full interview", "label": "\"The amount of demand is just incredible\"", "side": "Jensen Huang, Nvidia CEO"}, {"id": "4Vf8pljp1FY", "start": 556, "end": 588, "channel": "DRM News", "published": "2025-10-03", "title": "BREAKING NEWS: Jeff Bezos Compares AI Boom to Internet Bubble at Italian Tech Week 2025 | AI1G", "label": "An industrial bubble, not a financial one, and society keeps the inventions", "side": "Jeff Bezos, Amazon founder"}, {"id": "8AEfG8gwBk4", "start": 122, "end": 145, "channel": "CNBC-TV18", "published": "2026-06-15", "title": "AI Is Not A Bubble - We Are Only In The 2nd Inning | John Chambers | Voices From The Valley", "label": "\"Not a bubble at all\", but most AI startups will fail", "side": "John Chambers, Cisco CEO through the dot-com crash"}, {"id": "UC6XCGsj444", "start": 130, "end": 152, "channel": "William Green | Richer, Wiser, Happier", "published": "2026-10-22", "title": "Howard Marks on the AI Boom: Why Today Rhymes With the Dot-Com Bubble", "label": "The internet did change the world. So will this. That isn't the question", "side": "Howard Marks, co-founder of Oaktree"}, {"id": "9yy_Wz0BbyU", "start": 107, "end": 162, "channel": "Bloomberg Originals", "published": "2026-01-23", "title": "How Circular Deals Are Driving the AI Boom", "label": "The money is spinning around the same few companies", "side": "Dave Lee, Bloomberg tech columnist"}, {"id": "w8fJS_YfuwA", "start": 4, "end": 29, "channel": "CNBC Television", "published": "2025-11-25", "title": "The research behind Michael Burry's next 'Big Short'", "label": "The Big Short investor bets against AI, and Palantir's CEO hits back", "side": "Michael Burry's short, and Alex Karp's reply"}, {"id": "FqiQfL9OBKY", "start": 126, "end": 150, "channel": "Bloomberg Podcasts", "published": "2026-10-06", "title": "JPMorgan's Dimon on Financing the AI Boom", "label": "Companies and governments are borrowing on a scale we haven't seen", "side": "Jamie Dimon, JPMorgan CEO"}, {"id": "FEj7wAjwQIk", "start": 244, "end": 262, "channel": "The New York Times", "published": "2025-12-03", "title": "Anthropic C.E.O.: Massive A.I. Spending Could Haunt Some Companies", "label": "Solid on the technology; on the economics, \"bad things could happen\"", "side": "Dario Amodei, Anthropic CEO"}, {"id": "JAYVO1_Gn6g", "start": 798, "end": 822, "channel": "DRM News", "published": "2026-11-16", "title": "OpenAI's Sam Altman on Jensen Huang's Nvidia Exit, AI Bubble Fears and OpenAI's IPO Plans | AI1N", "label": "\"I have never seen the actual revenue growth\" show up like this", "side": "Sam Altman, OpenAI CEO"}, {"id": "y8ZEJe2Ss9k", "start": 194, "end": 213, "channel": "Dwarkesh Clips", "published": "2026-02-14", "title": "Avoiding Bankruptcy Before AGI – Dario Amodei", "label": "Guess the revenue wrong and \"no force on earth\" stops you going bankrupt", "side": "Dario Amodei, Anthropic CEO"}]}, {"id": "btc-cycle-pros", "cat": "money", "g": "g1", "name": "BTC's 4-Year Cycle, from the professionals", "about": "Eleven moments from fund managers, analysts and a CEO, each where they say something most people don't know about the cycle.", "segs": [{"id": "INfna_F82LU", "start": 123, "end": 175, "channel": "The Wolf Of All Streets", "published": "2026-02-28", "title": "The Real Reason Bitcoin Topped Early & What Comes Next | Lyn Alden", "label": "\"There's no fundamental reason the four-year cycle should be a thing anymore\"", "side": "Lyn Alden, macro analyst"}, {"id": "N-AgLtYZ8EY", "start": 188, "end": 256, "channel": "Milk Road", "published": "2025-02-20", "title": "Is the Traditional 4-Year Cycle Over in Crypto? w/ The Bitwise Boyz", "label": "Most people give the wrong reason for the cycle: it's leverage, not the halving", "side": "Matt Hougan, CIO at Bitwise"}, {"id": "wzkU5pELBTM", "start": 298, "end": 345, "channel": "Fundstrat", "published": "2026-02-03", "title": "Bitcoin 4- Year Cycle: Tom Lee and Dan Morehead Explain", "label": "Early whales use the cycle as a life calendar, so it fulfils itself", "side": "Tom Lee, head of research at Fundstrat"}, {"id": "epGoD4Inkp0", "start": 250, "end": 360, "channel": "Swan Bitcoin", "published": "2025-11-12", "title": "Are OG Whales Selling the Bitcoin Top? with Lyn Alden", "label": "Why the oldest holders sell at the top, and it isn't lost faith", "side": "Lyn Alden, macro analyst"}, {"id": "wzkU5pELBTM", "start": 390, "end": 425, "channel": "Fundstrat", "published": "2026-02-03", "title": "Bitcoin 4- Year Cycle: Tom Lee and Dan Morehead Explain", "label": "\"No Bitcoin cycle has peaked without the ISM peaking\"", "side": "Tom Lee, head of research at Fundstrat"}, {"id": "nOD0bG4DsdU", "start": 310, "end": 372, "channel": "CNBC Television", "published": "2025-12-26", "title": "We asked two CIOs if the bitcoin four-year price cycle is dead: CNBC Crypto World", "label": "Institutions are required to buy dips and sell rallies", "side": "Sebastian Bea, CIO at ReserveOne, formerly BlackRock"}, {"id": "nOD0bG4DsdU", "start": 390, "end": 468, "channel": "CNBC Television", "published": "2025-12-26", "title": "We asked two CIOs if the bitcoin four-year price cycle is dead: CNBC Crypto World", "label": "Retail sold for fear of the cycle; the average institution buys after eight meetings", "side": "Matt Hougan, CIO at Bitwise"}, {"id": "LC0bRMDU6OY", "start": 897, "end": 982, "channel": "VirtualBacon", "published": "2026-08-26", "title": "Inside the Bitcoin ETF Money Machine | James Seyffart Interview", "label": "Once you see ETF flows, the buying has already happened, and we know under 30% of holders", "side": "James Seyffart, ETF analyst at Bloomberg Intelligence"}, {"id": "INfna_F82LU", "start": 618, "end": 658, "channel": "The Wolf Of All Streets", "published": "2026-02-28", "title": "The Real Reason Bitcoin Topped Early & What Comes Next | Lyn Alden", "label": "This cycle, retail barely showed up", "side": "Lyn Alden, macro analyst"}, {"id": "EeGB-wGkrtQ", "start": 108, "end": 135, "channel": "Yahoo Finance", "published": "2025-12-02", "title": "Strategy CEO talks bitcoin investing strategy amid volatility, buying opportunities", "label": "The one condition under which Strategy would sell its bitcoin", "side": "Phong Le, CEO of Strategy"}, {"id": "nOD0bG4DsdU", "start": 1113, "end": 1158, "channel": "CNBC Television", "published": "2025-12-26", "title": "We asked two CIOs if the bitcoin four-year price cycle is dead: CNBC Crypto World", "label": "How pensions and sovereign funds now file bitcoin", "side": "Matt Hougan, CIO at Bitwise"}]}, {"id": "seed-oils-pros", "cat": "body", "g": "g3", "name": "Seed Oils, from the professionals", "about": "Ten researchers and doctors, from both sides, each at the moment they say something most people don't know.", "segs": [{"id": "Tsqzx3L6UWs", "start": 268, "end": 378, "channel": "Peter Attia MD", "published": "2026-01-23", "title": "Is Industrial Processing the Real Problem With Seed Oils? | Layne Norton, Ph.D.", "label": "How much solvent is actually left in the bottle", "side": "Layne Norton, nutrition scientist, with Peter Attia"}, {"id": "Yg5uOGbs_c4", "start": 310, "end": 425, "channel": "Danny Jones Clips", "published": "2025-09-27", "title": "New Research Finds Seed Oils are Worse for You Than CIGARETTES | Nick Norwitz & Paul Saladino", "label": "Deep frying is a different story", "side": "Nick Norwitz, researcher"}, {"id": "CVACyQgN3ls", "start": 225, "end": 280, "channel": "Huberman Lab Clips", "published": "2025-04-29", "title": "The Truth About Seed Oils | Dr. Mark Hyman & Dr. Andrew Huberman", "label": "The buried study critics point to", "side": "Mark Hyman, physician"}, {"id": "TGcFXSEryRw", "start": 450, "end": 510, "channel": "The Diary Of A CEO Clips", "published": "2025-01-27", "title": "Seed Oils Are Not Poisoning Us! We've Been Lied To: Lead Nutritional Scientist", "label": "Why the old trials looked bad: the margarine was full of trans fat", "side": "Sarah Berry, King's College London"}, {"id": "TGcFXSEryRw", "start": 575, "end": 620, "channel": "The Diary Of A CEO Clips", "published": "2025-01-27", "title": "Seed Oils Are Not Poisoning Us! We've Been Lied To: Lead Nutritional Scientist", "label": "What 42 trials show together", "side": "Sarah Berry, King's College London"}, {"id": "JyGCfg61JT4", "start": 155, "end": 235, "channel": "Dhru Purohit Show Clips", "published": "2022-01-17", "title": "Here's What Eating VEGETABLE SEED OILS Does To You! | Dr. Pradip Jamnadas", "label": "What a cardiologist sees in patients' blood", "side": "Pradip Jamnadas, cardiologist"}, {"id": "CqCEHutyAA8", "start": 100, "end": 140, "channel": "DoctorsToTrust", "published": "2024-02-27", "title": "BEN BIKMAN mcB4 | INSULIN RESISTANCE  secondary causes:  linoleic acid & uric acid", "label": "Linoleic acid and insulin resistance, in cells", "side": "Ben Bikman, metabolic scientist"}, {"id": "8SsgWI9-DEo", "start": 15, "end": 50, "channel": "Huberman Lab Clips", "published": "2026-06-10", "title": "Impact of Seed Oils & Saturated Fats on Health | Dr. Marie-Pierre St-Onge & Dr. Andrew Huberman", "label": "Who paid for one of the corn oil studies", "side": "Marie-Pierre St-Onge, nutrition researcher"}, {"id": "FFZ8JsHMxVc", "start": 245, "end": 285, "channel": "FoundMyFitness Clips", "published": "2026-11-11", "title": "STOP Avoiding THIS Cooking Oil (Cardiologist Explains Why)", "label": "The good results came from ordinary supermarket oil", "side": "Dariush Mozaffarian, cardiologist, Food is Medicine Institute"}, {"id": "57tXhS4VzQc", "start": 180, "end": 250, "channel": "Huberman Lab Clips", "published": "2025-07-16", "title": "Should You Avoid Seed Oils? | Alan Aragon & Dr. Andrew Huberman", "label": "Canola against olive oil", "side": "Alan Aragon, nutrition researcher"}]}, {"id": "ozempic-pros", "cat": "body", "g": "g4", "name": "Ozempic, from the professionals", "about": "Ten people who work with these drugs, each at the moment they say something most people don't know.", "segs": [{"id": "oHI1Dkqdujc", "start": 375, "end": 496, "channel": "60 Minutes", "published": "2024-11-06", "title": "The Novo Nordisk scientist behind Ozempic, Wegovy weight loss research", "label": "It started in a team working on laundry enzymes", "side": "Novo Nordisk scientist, on 60 Minutes"}, {"id": "MGHNPVrABUc", "start": 165, "end": 273, "channel": "JAMA Network", "published": "2024-09-20", "title": "The Discovery of Glucagon-Like Peptide 1 (GLP-1)", "label": "How the active form of the hormone was found", "side": "Svetlana Mojsov, Rockefeller University"}, {"id": "ACi6K_LkShc", "start": 28, "end": 100, "channel": "Huberman Lab Clips", "published": "2024-09-08", "title": "Ozempic, Mounjaro & GPL-1 Agonists for Weight Loss | Dr. Zachary Knight & Dr. Andrew Huberman", "label": "The drug floods the blood at 1,000 to 10,000 times the natural level", "side": "Zachary Knight, neuroscientist"}, {"id": "ACi6K_LkShc", "start": 188, "end": 240, "channel": "Huberman Lab Clips", "published": "2024-09-08", "title": "Ozempic, Mounjaro & GPL-1 Agonists for Weight Loss | Dr. Zachary Knight & Dr. Andrew Huberman", "label": "Heart benefits showed up before the weight came off", "side": "Zachary Knight, neuroscientist"}, {"id": "YP7lFX1OdUs", "start": 283, "end": 360, "channel": "The Diary Of A CEO Clips", "published": "2024-03-15", "title": "Dr Layne Norton’s BRUTALLY Honest Opinion On OZEMPIC...", "label": "Without strength training, 30 to 40 percent of the weight lost is not fat", "side": "Layne Norton, nutrition scientist"}, {"id": "Ua1uGY45Fng", "start": 293, "end": 360, "channel": "Huberman Lab Clips", "published": "2026-10-03", "title": "Understand Risks of GLP-1s | Dr. Chris Thompson & Dr. Andrew Huberman", "label": "Going on and off it can leave you with more fat than before", "side": "Chris Thompson, weight-loss physician"}, {"id": "loq4VCtncmc", "start": 288, "end": 335, "channel": "Peter Attia MD", "published": "2025-02-26", "title": "Should children be on GLP-1 weight loss drugs? |  Dr. Ralph DeFronzo", "label": "About half of patients stop within a year", "side": "Ralph DeFronzo, diabetes researcher"}, {"id": "bNpud2SzT_c", "start": 43, "end": 95, "channel": "Dr. Spencer Nadolsky", "published": "2025-09-10", "title": "Ozempic & Tirzepatide Side Effects Explained (Doctor Reacts to the GLP-1 Data)", "label": "Why the thyroid cancer warning comes from rats, not people", "side": "Spencer Nadolsky, obesity specialist"}, {"id": "Ua1uGY45Fng", "start": 418, "end": 465, "channel": "Huberman Lab Clips", "published": "2026-10-03", "title": "Understand Risks of GLP-1s | Dr. Chris Thompson & Dr. Andrew Huberman", "label": "The blindness reports, in context", "side": "Chris Thompson, weight-loss physician"}, {"id": "0Aqz8mwtHZE", "start": 458, "end": 510, "channel": "Peter Attia MD", "published": "2024-10-20", "title": "Can GLP-1 agonists like Ozempic, Wegovy, and Mounjaro be used to treat addiction? | Anna Lembke", "label": "It may curb addiction, and the company may never seek approval for that", "side": "Anna Lembke, Stanford addiction medicine"}]}, {"id": "btc-thread", "cat": "money", "g": "g1", "name": "BTC's 4-Year Cycle", "about": "Eleven voices on one question, each starting at the moment they make their point.", "segs": [{"id": "Ye9ckbN_lqc", "start": 31, "end": 105, "channel": "CoinGecko", "published": "2022-08-01", "title": "What is a Bitcoin Halving? Explained by CoinGecko", "label": "What the halving is", "side": ""}, {"id": "AHuKHmeJf-I", "start": 20, "end": 130, "channel": "Benjamin Cowen", "published": "2020-03-28", "title": "Bitcoin: It is not a 4 year cycle! (Welcome to the show)", "label": "2020. \"It is not a four-year cycle\"", "side": "Stretched"}, {"id": "7GCboXUObi4", "start": 70, "end": 160, "channel": "Wolves of Crypto", "published": "2022-03-10", "title": "4 Year Cycle: Bitcoin Will Bottom At 24k In November 2022 (According To These Macro Trends)", "label": "2022. The cycle camp counts the days", "side": "Intact"}, {"id": "oOu6fEOC4zo", "start": 120, "end": 215, "channel": "Coin Bureau", "published": "2026-01-02", "title": "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!", "label": "What happened in 2025: the peak came early", "side": ""}, {"id": "aMk4XTX7A3I", "start": 11, "end": 54, "channel": "Raoul Pal The Journey Man", "published": "2025-10-06", "title": "WHAT BROKE THE 4 YEAR CYCLE? | Raoul Pal ft Julien Bittel | The Everything Code", "label": "A longer cycle, not no cycle", "side": "Stretched"}, {"id": "nOD0bG4DsdU", "start": 54, "end": 130, "channel": "CNBC Television", "published": "2025-12-26", "title": "We asked two CIOs if the bitcoin four-year price cycle is dead: CNBC Crypto World", "label": "An investment chief: a ten-year grind instead", "side": "Dead"}, {"id": "PmNvYrHnFgE", "start": 265, "end": 394, "channel": "Joe Consorti", "published": "2026-09-22", "title": "The Bitcoin 4-Year Cycle Just Died", "label": "ETF buyers have put a floor under the price", "side": "Dead"}, {"id": "8-LqLawozvU", "start": 65, "end": 180, "channel": "Rekt Capital", "published": "2026-05-11", "title": "Is The Bitcoin Four Year Cycle Over? - Definitive Analysis", "label": "The defence: the milestones still line up", "side": "Intact"}, {"id": "ctJSV8aTDSk", "start": 1015, "end": 1120, "channel": "Bob Loukas", "published": "2026-06-04", "title": "ThE fOur YeAr cyCle iS dEAd", "label": "The low is still due in October or November", "side": "Intact"}, {"id": "v_HzRDgydCA", "start": 0, "end": 72, "channel": "BRITISH HODL", "published": "2026-09-23", "title": "🚨 BITCOIN'S 4 YEAR CYCLE IS DEAD..?!?!?!?!?!?", "label": "\"It's dead, and Cowen has admitted it\"", "side": "Dead"}, {"id": "7byCfkDQxq8", "start": 73, "end": 180, "channel": "Benjamin Cowen", "published": "2026-05-26", "title": "Bitcoin: The Four Year Cycle Is Not Dead", "label": "Cowen, six years on: the cycle is not dead", "side": "Intact"}]}],
+  series: [
+    {"id": "btc-4-year-cycle", "cat": "money", "g": "g1", "glow": "rgba(90,140,255,.45)", "name": "BTC's 4-Year Cycle", "stance": "Disputed", "status": "The 2025 peak came in October. Both sides now point to a late-2026 low as the test.", "claim": "Bitcoin's four-year halving cycle no longer governs its price; the pattern is broken.", "born": 2020, "watched": 19, "eps": [{"n": "Episode 1", "title": "What the halving is", "why": "Three minutes on the mechanism everyone else assumes you know.", "videos": [{"id": "Ye9ckbN_lqc", "title": "What is a Bitcoin Halving? Explained by CoinGecko", "channel": "CoinGecko", "length": "3:06", "published": "2022-08-01", "role": "The basics", "why": "Explains the halving plainly: miner rewards cut in half roughly every four years. Sells nothing.", "start": 0, "sells": "", "note": "", "end": 150}]}, {"n": "Episode 2", "title": "Origin", "why": "The first challenge to the cycle, and the cycle's best early defence.", "videos": [{"id": "AHuKHmeJf-I", "title": "Bitcoin: It is not a 4 year cycle! (Welcome to the show)", "channel": "Benjamin Cowen", "length": "12:10", "published": "2020-03-28", "role": "Where it began", "why": "March 2020: Benjamin Cowen argues the cycle is not four years but lengthening, with moving-average charts.", "start": 15, "sells": "Telegram channel membership and a paid subscription report titled 'Bitcoin Letters'.", "note": "His end-of-2021 date has passed.", "camp": {"position": "Stretched, not fixed", "watch_for": "He predicts no six figures by the end of 2021."}, "end": 464}, {"id": "7GCboXUObi4", "title": "4 Year Cycle: Bitcoin Will Bottom At 24k In November 2022 (According To These Macro Trends)", "channel": "Wolves of Crypto", "length": "6:19", "published": "2022-03-10", "role": "2022. The cycle camp answers with a date", "why": "Measures 1,400 days between past tops and between past bottoms, and calls a bottom for late November 2022.", "start": 36, "end": 310, "sells": "", "note": "The late November 2022 date has passed. How it landed is not covered in this set.", "camp": {"position": "Intact", "watch_for": "Exact day-counts between peaks; a price and a date you can check."}}]}, {"n": "Episode 3", "title": "What happened in 2025", "why": "The year the pattern was supposed to peak.", "videos": [{"id": "oOu6fEOC4zo", "title": "The 4 Year Cycle Is DEAD!! What It Means For Crypto In 2026!!", "channel": "Coin Bureau", "length": "9:31", "published": "2026-01-02", "role": "Where it stands", "why": "January 2026: the peak came in October 2025 instead of December, and the year closed down. Shows Fed and liquidity data.", "start": 91, "sells": "", "note": "", "end": 539, "deeper": [0, 1, 2, 3, 4]}]}, {"n": "Episode 4", "title": "The sides", "why": "The best-evidenced case each way, back to back.", "videos": [{"id": "PmNvYrHnFgE", "title": "The Bitcoin 4-Year Cycle Just Died", "channel": "Joe Consorti", "length": "17:51", "published": "2026-09-22", "role": "The claim, at its strongest", "why": "September 2026: ETF buyers have put a floor under the price, making this the shallowest bear market on record. Charts and flow data throughout.", "start": 69, "sells": "The Hard Money Room community, Strong Wealth financial management, and Salt lending services.", "note": "", "camp": {"position": "Dead: institutions broke it", "watch_for": "The comparison with gold after its first ETF, and no date for when this would be proven wrong."}, "end": 398}, {"id": "8-LqLawozvU", "title": "Is The Bitcoin Four Year Cycle Over? - Definitive Analysis", "channel": "Rekt Capital", "length": "12:57", "published": "2026-05-11", "role": "The strongest answer to it", "why": "May 2026: a chart-by-chart defence that the peak, the pullbacks and the timing still match earlier cycles.", "start": 0, "sells": "Rekt Capital newsletter", "note": "", "camp": {"position": "Intact", "watch_for": "Which past cycles are laid over this one, and which are left off."}}]}], "debate": {"statement": "Was the October 2025 peak the old cycle arriving on time, or a different market that happened to look similar?", "camps": [1, 2]}, "deeper": [{"id": "yAlvsVcNf3I", "start": 47, "end": 281, "channel": "CoinGecko", "label": "What \"global liquidity\" is", "why": "The video leans on liquidity. This explains it, and the claim that Bitcoin tracks it"}, {"id": "jhEqlSPhmH4", "start": 112, "end": 193, "channel": "StockMaven", "label": "How ETF money moves the price", "why": "What inflows and outflows are, and why they are said to matter more than retail buying"}, {"id": "XZjxq_-8sek", "start": 214, "end": 361, "channel": "Model vs Reality", "label": "Do miners still move the price?", "why": "Opens on the question itself. Miners add pressure in a weak market; they don't set the direction"}, {"id": "2Xwc8efrnOk", "start": 237, "end": 497, "channel": "Bitcoin Daily", "label": "The business cycle: a test that says no", "why": "A counterweight. Fifteen years of data, and an argument that the link isn't there"}, {"id": "7dMZTd553u4", "start": 50, "end": 259, "channel": "Chain Compass", "label": "Reading holders' profit (MVRV)", "why": "An on-chain measure of where a cycle is, and why each peak has been smaller"}]},
+    {"id": "seed-oils", "cat": "body", "g": "g3", "glow": "rgba(60,200,160,.4)", "name": "Seed Oils", "stance": "Contested", "status": "In 2026 several doctors who warned against seed oils said they were wrong. The dispute is now about the human trials.", "claim": "Seed oils, the industrial vegetable oils high in linoleic acid, drive inflammation and chronic disease, and people should stop eating them.", "born": 2012, "watched": 15, "eps": [{"n": "Episode 1", "title": "The basics", "why": "What seed oils are, and why people argue about them.", "videos": [{"id": "tss1fzrPvPQ", "title": "What's the deal with seed oils?", "channel": "STAT", "length": "5:10", "published": "2025-02-12", "role": "What seed oils are", "why": "A five-minute explainer from a health news outlet. Names the eight oils and where the worry comes from. Sells nothing.", "start": 0, "sells": "", "format": "explainer"}]}, {"n": "Episode 2", "title": "Origin", "why": "How seed oils got into the food supply, and how the worry began. Every telling has a teller; this one says whose it is.", "videos": [{"id": "h2YKBp4JUQo", "title": "Are Seed Oils Bad For You? | Ultra-Processed Life | Business Insider", "channel": "Business Insider", "length": "22:17", "published": "2025-06-10", "role": "How it started, told by a journalist", "why": "Traces the oils from early pressing to industrial refining, and where today's argument came from. Measured, and sells nothing.", "start": 0, "sells": "", "format": "explainer", "alts": [{"id": "rQmqVVmMB3k", "title": "The $100 Billion Dollar Ingredient making your Food Toxic", "channel": "Joseph Everett - WIL", "length": "28:21", "published": "2021-09-19", "role": "How it started, told by a critic", "why": "A documentary-style history of the companies and adverts that put seed oils on the table. Argues they are harmful.", "start": 0, "sells": "Brilliant.org", "format": "documentary"}, {"id": "vcbDmKfY5qE", "title": "The Truth About Seed Oils | FED A LIE | Full Documentary", "channel": "Heart & Soil ", "length": "38:47", "published": "2024-11-23", "role": "How it started, told by the critics' side", "why": "A full documentary. Blames the theory that saturated fat causes heart disease, and the people who promoted it.", "start": 7, "sells": "", "format": "documentary"}]}]}, {"n": "Episode 3", "title": "Where it stands", "why": "What changed recently.", "videos": [{"id": "q0NnMZdmCGI", "title": "I Was WRONG About SEED OILS [3 Reasons Why]", "channel": "Dr. Suneel Dhand ", "length": "7:45", "published": "2026-05-04", "role": "A critic changes his mind (2026)", "why": "A doctor who warned against seed oils says he was wrong, and names what he now thinks matters more.", "start": 0, "sells": "Med Thrive M5 health program and natural health/well-being store", "format": "explainer", "deeper": [0, 1, 2, 3, 4]}]}, {"n": "Episode 4", "title": "The views", "why": "The case against seed oils and the direct answer to it, back to back.", "videos": [{"id": "IWCck4-_FhQ", "title": "What Does The Science Actually Say About Seed Oils?", "channel": "Paul Saladino MD", "length": "23:35", "published": "2025-10-23", "role": "The claim, at its strongest", "why": "Paul Saladino argues the trials used to defend seed oils are old and badly built.", "start": 90, "sells": "", "format": "podcast", "camp": {"position": "Seed oils are harmful", "watch_for": "Which trials he rejects, and whether the reasons would also apply to the ones he accepts."}}, {"id": "8ETN1lmMve4", "title": "Seed Oils LOWER Inflammation? | Educational Video | Layne Norton Phd", "channel": "Dr. Layne Norton", "length": "7:54", "published": "2025-04-16", "role": "The direct answer", "why": "Layne Norton answers Saladino by name with a human trial in which linoleic acid lowered inflammation markers.", "start": 0, "sells": "REPS research review", "format": "explainer", "camp": {"position": "The trials don't show harm", "watch_for": "Blood markers going down is not the same as people living longer. Notice which one is being shown."}}]}], "deeper": [{"id": "852N8Qek3Ck", "start": 355, "end": 435, "channel": "Neurology Bites", "label": "The study both sides argue over", "why": "A walk through the long-running trials on swapping animal fat for seed oils"}, {"id": "-xTaAHSFHUU", "start": 1089, "end": 1290, "channel": "Nutrition Made Simple!", "label": "What the human trials on inflammation found", "why": "A physician reads the trial results on screen"}, {"id": "k6ts0e41pq8", "start": 1082, "end": 1344, "channel": "Physionic", "label": "Why older studies disagreed", "why": "How trans fats and calories may have muddied the early results"}, {"id": "OwMoD3apAQ0", "start": 168, "end": 225, "channel": "Mark Hyman, MD", "label": "The funding claim", "why": "The charge that industry money shaped the official advice"}, {"id": "l-UnDcrqRH0", "start": 72, "end": 220, "channel": "Jimmy Moore", "label": "An early version of the claim (2012)", "why": "A lecture blaming seed oils well before it was a trend"}], "debate": {"statement": "Do seed oils harm people who eat them in normal amounts, or is the real problem the processed food they come in?", "camps": [1, 2]}},
+    {"id": "ozempic", "cat": "body", "g": "g4", "glow": "rgba(160,110,230,.4)", "name": "Ozempic", "stance": "Contested", "status": "A 2026 trial found the weight comes back when the drug stops. The open question is whether this is a drug for life.", "claim": "GLP-1 drugs such as Ozempic and Wegovy are a safe, lasting answer to obesity.", "born": 2021, "watched": 12, "eps": [{"n": "Episode 1", "title": "The basics", "why": "What the drug is and how it works in the body.", "videos": [{"id": "laPaezEsteI", "title": "Ozempic is a game-changer. Here’s how it works.", "channel": "Vox", "length": "7:12", "published": "2023-03-14", "role": "How it works", "why": "A clear, drawn explanation of the hormone the drug copies. Sells nothing. Ends on the line \"And it works.\"", "start": 0, "end": 271, "sells": ""}]}, {"n": "Episode 2", "title": "Origin", "why": "How a diabetes drug became the weight-loss story of the decade. One telling; another is a tap away.", "videos": [{"id": "TYhNHX372ek", "title": "The Uncomfortable Truth About Ozempic (Updated Version)", "channel": "Kurzgesagt – In a Nutshell", "length": "15:53", "published": "2026-05-19", "role": "How it got here, told by a science channel", "why": "Opens on \"For the first time ever, we have a medication that reliably, quickly and seemingly safely…\" and stops at \"No drug can fix that for you.\" Carries a sponsor.", "start": 25, "end": 761, "sells": "Ground News subscription and Kurzgesagt merchandise", "alts": [{"id": "QMOcevA1r0g", "title": "Everything you need to know about GLP-1 'skinny jabs' (and the new pill) | BBC News", "channel": "BBC News", "length": "14:38", "published": "2026-08-04", "role": "How it got here, told by a news desk", "why": "A BBC walk through what the drugs are, what they do and don't do, and what is new. Measured, sells nothing.", "start": 73, "end": 739, "sells": ""}]}]}, {"n": "Episode 3", "title": "Where it stands", "why": "The two questions people are asking in 2026.", "videos": [{"id": "6ZFB7UE-3UM", "title": "Do You Have to Take Ozempic or Zepbound Forever? New Study Has Answers", "channel": "RMZ", "length": "15:59", "published": "2026-05-18", "role": "Do you have to take it forever?", "why": "Opens on that exact question. Walks through a 2026 trial on what happens after stopping, and ends on \"That's not a personal failure, that's physiology.\" Promotes a telehealth service.", "start": 16, "end": 600, "sells": "Fridays telehealth service with discount code RMZ", "deeper": [0, 1, 2, 3]}, {"id": "oYj9vt5EgFY", "title": "The Truth About Ozempic Long-Term Safety (Don't Believe Every Headline)", "channel": "Dr Manisha Ghimire", "length": "10:09", "published": "2026-09-30", "role": "Is it safe long term?", "why": "Takes the risks one organ at a time and says which are established and which are only signals. Sells nothing.", "start": 51, "end": 563, "sells": ""}]}, {"n": "Episode 4", "title": "The views", "why": "What the drug does beyond weight, and what it costs.", "videos": [{"id": "8taNK-5zP18", "title": "GLP-1s: Proven Health Benefits Beyond Weight Loss (Heart & Liver)", "channel": "Peptide Decoded", "length": "12:56", "published": "2026-10-20", "role": "The case that it does more than weight loss", "why": "Six organs, trial by trial. Notable for saying where lab numbers improved and patients did not.", "start": 0, "end": 749, "sells": "", "camp": {"position": "The benefits go beyond weight", "watch_for": "Which benefits come from the drug and which simply from weighing less. The video keeps asking this itself."}}, {"id": "lnEH-v64aG0", "title": "Muscle Loss with Ozempic, Wegovy and Mounjaro?? | Dr. Dan | Obesity Expert", "channel": "Dr. Dan | Obesity Expert", "length": "16:02", "published": "2023-05-29", "role": "The cost: muscle", "why": "An obesity doctor answers the muscle-loss worry directly: yes, it happens, and he explains how much and why.", "start": 70, "end": 733, "sells": "healthevolved.co consultations", "camp": {"position": "The weight lost is not all fat", "watch_for": "He treats muscle loss as part of any weight loss. Ask whether the speed of loss on these drugs changes that."}}]}], "deeper": [{"id": "H7LxWXuDQto", "start": 52, "end": 221, "channel": "NutritionFacts.org", "label": "Why the weight loss stalls", "why": "Opens on the question. The body pushes back after about a year"}, {"id": "us-ylgt8YUg", "start": 23, "end": 252, "channel": "This Morning", "label": "One person's account of coming off it", "why": "A first-hand story, told on a morning show"}, {"id": "dN7LKOs88kM", "start": 93, "end": 196, "channel": "Sean Hashmi, MD", "label": "The trial that was stopped early", "why": "A kidney trial ended ahead of schedule because the results were clear"}, {"id": "NfsVY_HDp10", "start": 1, "end": 398, "channel": "PBS NewsHour", "label": "Cravings for alcohol and drugs", "why": "Early evidence that these drugs dull other cravings too, and its limits"}], "debate": {"statement": "Is this a treatment people take for a while, or for life?", "camps": [1, 2]}},
+    { id: "crypto-winter-watch", cat: "money", g: "g1", glow: "rgba(90,140,255,.45)",
+      name: "The Four-Year Cycle",
+      claim: "Crypto is either heading into another prolonged winter or has outgrown the cycle thanks to institutions, ETFs and regulatory clarity. Insiders say this time the downturn won't repeat.",
+      born: 2018, videos: 21215,
+      origin: [
+        { year: 2018, mechanism: "ICO bust, the first crypto winter (BTC -84%)", id: "WCO5clyLCXA", title: "Ripple XRP hits $3.00! Michael Arrington confirms Arrington XRP Capital has started trading XRP", channel: "Thinking Crypto", length: "4:16", published: "2018-01-03" },
+        { year: 2020, mechanism: "halving supercycle, the 4-year cycle becomes orthodoxy", id: "Ecy3B3eoWfs", title: "SHOCKING BITCOIN PRICE DATA FOR 2020! | BTC PREDICTION", channel: "Crypto Capital Venture", length: "7:57", published: "2020-01-01" },
+        { year: 2022, mechanism: "Luna/FTX contagion, winter returns via leverage and fraud", id: "agxbUcNXk6E", title: "My Biggest MISTAKES of 2021 [I'm Sorry]. My Bitcoin, Ethereum & Crypto Blunders", channel: "Altcoin Daily", length: "10:05", published: "2022-01-01" },
+        { year: 2024, mechanism: "ETF era, 'institutions change everything'", id: "EDvKuG1ATLQ", title: "Crypto News: Ethereum, Tether FUD, BTC, ICP, SEI & MORE!!", channel: "Coin Bureau", length: "20:14", published: "2024-01-01" },
+        { year: 2025, mechanism: "corporate treasuries as the permanent bid", id: "HeFwIsrtgVQ", title: "Brian Armstrong and Larry Fink Are Not Worried About Another Crypto Winter", channel: "New York Times Events", length: "34:35", published: "2025-12-03", verdict: "ORIGINAL" },
+        { year: 2026, mechanism: "'the cycle is dead' vs 'new winter', the sell-off referendum", id: "Lu-sOTkVWDM", title: "What Cryptos Could 10X in the Next Bitcoin Bull Market?", channel: "Cointelegraph", length: "23:18", published: "2026-07-30", verdict: "ORIGINAL" },
+      ],
+      newest: [
+        { id: "g6LHrgyaTig", title: "No One is Ready for What the Tokenization of Assets Will do For Markets | Sandy Kaul", channel: "Thinking Crypto", length: "40:59", published: "2026-09-22" },
+        { id: "01UKnU2DQ2w", title: "BITCOIN HIT $87K: Everyone is WRONG About This Breakout", channel: "Crypto World", length: "28:02", published: "2026-09-22" },
+        { id: "HdRHaz4X0wE", title: "Bitcoin & Ethereum, Meine Meinung hat sich 0 geändert! Warte auf deine Möglichkeit!", channel: "Krypto Trading & Investing", length: "14:35", published: "2026-09-22" },
+        { id: "4SpbCD5WLrM", title: "Dogecoin Is Waking Up. DOGE Crypto Analysis", channel: "Gerhard, Bitcoin Strategy", length: "10:58", published: "2026-09-22" },
+      ],
+      debate: { statement: "Is the 4-year halving cycle dead?", note: "Both camps' calls resolve on the same late-2026 clock. The ledger will settle this.",
+        camps: [
+          { position: "Dead. Institutions broke the cycle.", n: 4, watch_for: "'This time is different' resting on who is buying, with no date for when the buying stops.",
+            v: { id: "XNuL97I8bvc", title: "He Called the 2025 Cycle. Now He Says Bitcoin's 4-Year Cycle Is Dead.", channel: "Krown", length: "57:01", published: "2026-08-02", verdict: "ORIGINAL" } },
+          { position: "Intact. This is a normal cycle bear.", n: 9, watch_for: "A chart of the last three cycles laid over this one, with the years that didn't fit left off.",
+            v: { id: "0QyKqoWaF_U", title: "The Hard TRUTH about Crypto in 2026 (You May Not Want to Hear This)", channel: "No Bs Crypto", length: "14:47", published: "2026-07-19", verdict: "DERIVATIVE" } },
+        ] } },
+    { id: "anti-inflammatory-diet", cat: "body", g: "g3", glow: "rgba(60,200,160,.4)",
+      name: "Inflammation as the Root",
+      claim: "Chronic low-grade inflammation, driven by modern diet, is the hidden cause of fatigue, pain and most chronic disease, and eating specific foods can reverse it.",
+      born: 2004, videos: 4710,
+      origin: [
+        { year: 2021, mechanism: "inflammation as the shared root of disease; food lists and turmeric as the cure", id: "kQPGTkkmgbI", title: "Is the Carnivore Diet Healthy? | The Dr. Axe Show, episode 56", channel: "Dr. Josh Axe", length: "46:11", published: "2021-01-05" },
+        { year: 2022, mechanism: "seed oils named as the main villain", id: "xYo9J8RijQY", title: "Foods That Cause Inflammation", channel: "NutritionFacts.org", length: "3:55", published: "2022-01-24", verdict: "ORIGINAL" },
+        { year: 2024, mechanism: "the gut microbiome as the route; fibre and fermented food as the lever", id: "5zP6eIgKVK8", title: "What Are Anti-Inflammatory Foods & Why Are They Crucial for Health? | Dr. Rob Lustig", channel: "Levels", length: "9:16", published: "2024-06-04", verdict: "ORIGINAL" },
+        { year: 2025, mechanism: "the seed-oil backlash; sugar, insulin and ultra-processed food take the blame", id: "Ixf0DFExhq0", title: "Best Remedies for INFLAMMATION (Autoimmune, Gut, and Arthritis) That You Never Considered", channel: "Dr. Eric Berg DC", length: "10:53", published: "2025-01-04", verdict: "ORIGINAL" },
+      ],
+      newest: [
+        { id: "Oxiqb4cxDl0", title: "Gut Dietitian Recommends You Start Eating These High-Fiber Foods", channel: "Gabrielle, Dietitian", length: "9:40", published: "2026-09-22" },
+        { id: "p-DlhDNDLZA", title: "12 Anti-Inflammatory Foods I Buy Every Single Week for Gut Health", channel: "Doctor Alex", length: "43:45", published: "2026-09-02", verdict: "DERIVATIVE" },
+        { id: "A2GphlX-4VM", title: "I'm a Gut Doctor. Here's How I Eat Anti-Inflammatory Without Spending a Fortune", channel: "Dr. Will Bulsiewicz", length: "16:24", published: "2026-08-10", verdict: "ORIGINAL" },
+        { id: "zcqSYsHA0Jw", title: "Are Seed Oils Inflammatory?! (The EVIDENCE No One Shows) | Dr. William Li", channel: "Dr. William Li", length: "12:19", published: "2026-08-08", verdict: "DERIVATIVE" },
+      ],
+      debate: { statement: "Is chronic inflammation the root of most disease, and is food the cure?", note: "Skeptics are rare (7 of 77 videos read) and almost all argue about seed oils, not the framing. The maximalist side carries most of the product pitches.",
+        camps: [
+          { position: "Yes. Inflammation is the common root, and the right diet reverses it.", n: 33, watch_for: "One cause for every illness; group results with no comparison group; a book, supplement or programme at the end.",
+            v: { id: "t_vc0_WU8MI", title: "BEWARE: 8 Foods Cause FAST INFLAMMATION", channel: "Dr. Suneel Dhand", length: "35:18", published: "2026-07-16", verdict: "DERIVATIVE" } },
+          { position: "It matters. A better diet lowers inflammation modestly; one factor among many.", n: 32, watch_for: "Drops in blood markers (CRP, IL-6) presented as if they prove you will feel better or live longer.",
+            v: { id: "A2GphlX-4VM", title: "I'm a Gut Doctor. Here's How I Eat Anti-Inflammatory Without Spending a Fortune", channel: "Dr. Will Bulsiewicz", length: "16:24", published: "2026-08-10", verdict: "ORIGINAL" } },
+          { position: "Overhyped. Food-level inflammation scares don't hold up in human trials.", n: 7, watch_for: "'No proven harm' stretched into 'diet doesn't matter'; real individual food sensitivities waved away.",
+            v: { id: "sJoCpRAwxnM", title: "I Was WRONG About Seed Oils...", channel: "Dr. Eric Westman", length: "24:15", published: "2026-05-15", verdict: "DERIVATIVE" } },
+        ] } },
+    { id: "collapse-audit", cat: "money", g: "g2", glow: "rgba(255,120,90,.4)",
+      name: "The Coming Collapse",
+      claim: "A debt-driven collapse of the US economy is imminent; the 80-year big cycle is ending. The predicted trigger rotates with the news cycle. Since mid-2026 it runs through the AI boom.",
+      born: 2015, videos: 8846,
+      origin: [
+        { year: 2021, mechanism: "internal conflict and empire decline", id: "vcsWtervmVQ", title: "SILVER EXPLODES WHEN DOLLAR COLLAPSES!", channel: "Silver Slayer", length: "20:19", published: "2021-01-03" },
+        { year: 2026, mechanism: "AI capex as the crisis vector", id: "JrASb2EeBiY", title: "\"Don't Let Billionaires Decide!\" Bernie Sanders' Fiery AI Speech Goes Viral", channel: "Times Now World", length: "19:42", published: "2026-07-30", verdict: "ORIGINAL" },
+      ],
+      newest: [
+        { id: "5RpLv-g3omQ", title: "Dollar, Yen, Gold & Debt: Why the Global Fiat System Is Collapsing | Jamie Dimon", channel: "Gold & Silver Insights", length: "25:45", published: "2026-09-22" },
+        { id: "s8omwT8FkSE", title: "The Fed *JUST* Warned: We're about to Pop the AI Bubble.", channel: "Meet Kevin", length: "25:33", published: "2026-08-06", verdict: "DERIVATIVE" },
+      ],
+      debate: { statement: "What triggers the crisis?", note: "The mechanism rotates with the news cycle. Same conclusion, competing engines.",
+        camps: [
+          { position: "AI capex debt (the 2026 mutation)", n: 3, watch_for: "Capex totals quoted without the revenue beside them.",
+            v: { id: "s8omwT8FkSE", title: "The Fed *JUST* Warned: We're about to Pop the AI Bubble.", channel: "Meet Kevin", length: "25:33", published: "2026-08-06", verdict: "DERIVATIVE" } },
+          { position: "Japan repatriation, the yen-carry unwind", n: 2, watch_for: "A 2024 chart doing 2026's work.",
+            v: { id: "faiJCn20gv0", title: "Japan's AI Bubble Just Collapsed: A Warning For America...", channel: "Meerkat Explains", length: "16:58", published: "2026-08-01", verdict: "DERIVATIVE" } },
+        ] } },
+  ],
+  sorting: [
+    { id: "housing-crash-watch", cat: "money", g: "g4", name: "Housing", videos: 17785, reads: 8,
+      stories: ["US housing market downturn predictions", "Real estate investment and deal sourcing tactics", "Evergrande debt crisis and international real estate"] },
+    { id: "the-2026-setup", cat: "money", g: "g5", name: "The 2026 Setup", videos: 25666, reads: 15,
+      stories: ["Individual stock valuation and company earnings", "Macro market timing and volatility forecasts", "Precious metals price predictions", "Personal finance habits and long-term wealth", "Cryptocurrency technical analysis and commentary"] },
+  ],
+};
+
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem("se." + k)) ?? d; } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem("se." + k, JSON.stringify(v)); } catch (e) {} },
+  del(k) { try { localStorage.removeItem("se." + k); } catch (e) {} },
+};
+const state = { sound: false, cat: "all", tell: store.get("tell", "auto"), swap: store.get("swap", {}), side: store.get("side", "video"), thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const mins = s => { const p = String(s || "").split(":").map(Number); return p.length === 2 ? p[0] + p[1] / 60 : p[0] * 60 + p[1] + p[2] / 60; };
+const fmtMin = m => m >= 60 ? `${Math.floor(m / 60)}h ${String(Math.round(m % 60)).padStart(2, "0")}m` : `${Math.round(m)} min`;
+const perEp = () => ({ 30: 2, 60: 3, 90: 4 }[state.budget] || 3);
+const findS = id => DATA.series.find(s => s.id === id);
+
+function evening(s) {
+  if (s.eps) {   // cut by the Director after watching: used as it is
+    const skip = v => state.skipSeen && state.seen.has(v.id);
+    // The same episode can be told as a documentary, a podcast or an explainer.
+    // A tap on "Other tellings" wins; otherwise the viewer's preference; otherwise the curator's pick.
+    const tell = v => {
+      if (!v.alts) return v;
+      const all = [v, ...v.alts].map(x => ({ ...x, alts: undefined, slot: v.id, options: v.alts.length + 1 }));
+      const pickd = state.swap[v.id];
+      if (pickd != null && all[pickd]) return all[pickd];
+      return (state.tell !== "auto" && all.find(x => x.format === state.tell)) || all[0];
+    };
+    const eps = s.eps.map(e => ({ ...e, videos: e.videos.map(tell).filter(v => !skip(v)) }))
+      .map(e => ({ ...e, mins: e.videos.reduce((t, v) => t + (v.end ? v.end / 60 : mins(v.length)) - (v.start || 0) / 60, 0) }));
+    return { s, eps, mins: eps.reduce((t, e) => t + e.mins, 0), count: eps.reduce((t, e) => t + e.videos.length, 0) };
+  }
+  const n = perEp(), skip = v => state.skipSeen && state.seen.has(v.id);
+  const origin = s.origin.map(o => ({ ...o, role: `${o.year}. ${o.mechanism}` })).filter(v => !skip(v));
+  const pickOrigin = origin.length <= n ? origin : [origin[0], ...origin.slice(1, -1).filter((_, i, a) => i % Math.ceil(a.length / Math.max(n - 2, 1)) === 0).slice(0, Math.max(n - 2, 0)), origin[origin.length - 1]];
+  const newest = s.newest.filter(v => !skip(v)).slice(0, n).map((v, i) => ({ ...v, role: i ? "Also new" : "The newest in this story" }));
+  const roles = ["The claim, at its strongest", "The strongest answer to it", "A third reading"];
+  const spins = s.debate.camps.map((c, i) => ({ ...c.v, role: roles[i] || "Another side", camp: c })).filter(v => !skip(v)).slice(0, n);
+  const eps = [
+    { n: "Episode 1", title: "Origin", why: `How the story got here. One video for each turn it took, oldest first, starting in ${s.born}.`, videos: pickOrigin, kept: s.origin.length },
+    { n: "Episode 2", title: "Where it stands", why: "The newest material in this story, one video per channel, nothing recycled.", videos: newest, kept: s.newest.length },
+    { n: "Episode 3", title: "The spins", why: s.debate.statement, note: s.debate.note, videos: spins, kept: s.debate.camps.length },
+  ].map(e => ({ ...e, mins: e.videos.reduce((t, v) => t + mins(v.length), 0) }));
+  return { s, eps, mins: eps.reduce((t, e) => t + e.mins, 0), count: eps.reduce((t, e) => t + e.videos.length, 0) };
+}
+
+function render() {
+  const app = $("#app");
+  const same = render.last === state.view + state.story; render.last = state.view + state.story;
+  const keep = same && ((state.play && !state.play.ended) || (state.thread && !state.thread.ended)) ? window.scrollY : 0;   // don't jump the page while something plays
+  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : series(state.story);
+  window.scrollTo({ top: keep });
+  dockSync(); musicLevel();
+}
+const topBar = back => `<div class="top">
+  <div class="brand"><span class="orb" aria-hidden="true"></span>Story Evenings</div>
+  <div style="display:flex;gap:8px;align-items:center">
+    <button class="ghost" data-sound="1" aria-pressed="${state.sound}" title="A quiet instrumental. Best with headphones.">${state.sound ? "♪ Sound on" : "♪ Sound off"}</button>
+    ${back ? `<button class="ghost" data-go="door">← All stories</button>` : ""}
+  </div>
+</div>`;
+
+/* Broad on purpose: seven parts of a life, one word each. A series belongs to
+   the one it mostly serves; nothing here is a topic. */
+const CATS = [["all", "All", ""], ["body", "Body", "Health, food, fitness"], ["mind", "Mind", "Growth, habits, learning"],
+  ["money", "Money", "Markets, work, business"], ["world", "World", "Politics, society, history"],
+  ["future", "Future", "Technology and science"], ["spirit", "Spirit", "Faith, philosophy, meaning"], ["play", "Play", "Sport, culture, leisure"]];
+const inCat = x => state.cat === "all" || x.cat === state.cat;
+const catRow = () => `<div class="cats" role="group" aria-label="Area of life">${CATS.map(([k, n, d]) => {
+    const has = k === "all" || [...DATA.series, ...DATA.threads].some(x => x.cat === k);
+    return `<button class="cat ${has ? "" : "empty"}" data-cat="${k}" aria-pressed="${state.cat === k}" title="${d}">${n}</button>`; }).join("")}</div>`;
+
+const sideSwitch = () => `<div class="sides" role="group" aria-label="What to explore">
+    <button data-side="video" aria-pressed="${state.side === "video"}">Video<small>YouTube</small></button>
+    <button data-side="literature" aria-pressed="${state.side === "literature"}">Literature<small>soon</small></button>
+  </div>`;
+
+/* The literature side is a shell for now: the door is here, the room is not built. */
+function literature() {
+  return topBar(false) + sideSwitch() + `
+  <section class="door">
+    <div class="mono">For people who learn by seeing</div>
+    <h1 style="margin-top:10px">Pick a book.<br>Get the <em>lesson</em>.</h1>
+    <p class="lede">Books and research papers, turned into short visual lessons you can watch in order. The same idea as the video side: well chosen, well ordered, and it ends.</p>
+  </section>
+  <div class="soon">
+    <div><span class="mono">Coming</span><b>Books</b><span>A book as a short series of visual lessons, chapter by chapter.</span></div>
+    <div><span class="mono">Coming</span><b>Research papers</b><span>What a paper asked, what it found, and how sure it is, shown, not just summarised.</span></div>
+    <div><span class="mono">Coming</span><b>Paired with video</b><span>The paper behind a claim, next to the videos that talk about it.</span></div>
+  </div>
+  <p class="rules">This side isn't open yet. The video side is: switch back to watch a curated evening or a thread.</p>`;
+}
+
+function door() {
+  if (state.side === "literature") return literature();
+  const wasSkip = state.skipSeen; state.skipSeen = false;   // the shelf shows a series' full size, not what's left unseen
+  const ready = DATA.series.filter(inCat).map(evening); state.skipSeen = wasSkip; const _r = 0, threads = DATA.threads.filter(inCat), sorting_ = DATA.sorting.filter(inCat);
+  const cname = (CATS.find(c => c[0] === state.cat) || CATS[0]);
+  const stamp = new Date().toLocaleDateString(undefined, { weekday: "long", month: "short", day: "numeric" });
+  return topBar(false) + sideSwitch() + `
+  <section class="door">
+    <div class="mono">An evening with a spine</div>
+    <h1 style="margin-top:10px">Pick a story.<br>Get an <em>evening</em>.</h1>
+    <p class="lede">Three episodes, in order: where the story began, where it stands, and the ways it gets told. Press play once. It plays through, and it ends.</p>
+    <div class="budget"><span class="mono">Tonight I have</span>
+      ${[30, 60, 90].map(b => `<button class="chip" data-budget="${b}" aria-pressed="${state.budget === b}">${b} min</button>`).join("")}
+    </div>
+  </section>
+  ${catRow()}
+  ${ready.length || threads.length ? `  <section class="section">
+    <div class="kick"><h2>Ready tonight · ${esc(stamp)}</h2><span class="sub">Tap one and it plays</span></div>
+    <div class="shelf">${ready.map((e, i) => `
+      <button class="card3 ${e.s.g}" data-tilt data-play-story="${e.s.id}" aria-label="Play ${esc(e.s.name)}">
+        <span class="rank">0${i + 1}</span><span class="play" aria-hidden="true">▶</span>
+        <span class="pk">Series · ${e.eps.length} episodes</span>
+        <span class="pn">${esc(e.s.name)}</span>
+        <span class="pf">${e.count} videos · ${fmtMin(e.mins)}</span>
+      </button>`).join("")}
+    </div>
+  </section>
+  ${threads.length ? `<section class="section">
+    <div class="kick"><h2>Threads</h2><span class="sub">Short pieces from many videos, back to back</span></div>
+    <div class="grid">${threads.map(th => `<button class="tile" data-tilt data-thread="${th.id}">
+        <span class="name">${esc(th.name)}</span>
+        <span class="claim">${esc(th.about)}</span>
+        <span class="meta"><span class="pill ok">Thread</span><span>${th.segs.length} voices</span><span>${Math.round(th.segs.reduce((a, s2) => a + s2.end - s2.start, 0) / 60)} min</span></span>
+      </button>`).join("")}</div>
+  </section>` : ""}
+  <section class="section">
+    <div class="kick"><h2>Stories</h2><span class="sub">${ready.length} ready${sorting_.length ? ` · ${sorting_.length} still being sorted` : ""}</span></div>
+    <div class="grid">
+      ${ready.map(e => `<button class="tile" data-tilt data-open="${e.s.id}">
+        <span class="name">${esc(e.s.name)}</span>
+        <span class="claim">${esc(e.s.claim)}</span>
+        <span class="meta"><span class="pill ok">${e.eps.length} episodes</span><span>${e.s.born}→2026</span><span>${e.s.watched ? e.s.watched + " videos watched" : e.s.videos.toLocaleString() + " videos"}</span></span>
+      </button>`).join("")}
+      ${sorting_.map(x => `<button class="tile sorting" data-tilt data-sort="${x.id}">
+        <span class="name">${esc(x.name)}</span>
+        <span class="claim">${x.stories.length} stories are filed under one name here. The curator is separating them before offering an evening.</span>
+        <span class="meta"><span class="pill">being sorted</span><span>${x.videos.toLocaleString()} videos</span><span>${x.reads} read so far</span></span>
+      </button>`).join("")}
+    </div>
+  </section>` : `<div class="nothing"><b>${cname[1]}</b> is empty for now. ${cname[2]}: series in this area are being built. The areas with a solid outline have something to watch.</div>`}
+  <p class="rules">Every evening ends on purpose. One video per channel, no video repeating another's claim, nothing ranked by views, and nothing queued after the last one. ${state.seen.size ? `You've marked ${state.seen.size} video${state.seen.size === 1 ? "" : "s"} as seen; evenings leave them out.` : "Mark a video as seen and future evenings leave it out."}</p>`;
+}
+
+function sorting(id) {
+  const x = DATA.sorting.find(s => s.id === id);
+  return topBar(true) + `<section class="sorting-view">
+    <div class="titlecard">
+      <div class="mono">Still being sorted · ${x.videos.toLocaleString()} videos</div>
+      <h1>${esc(x.name)}</h1>
+      <p class="claim">${x.reads} videos read so far say this is not one story. It is ${x.stories.length}. Each becomes its own series once the curator has enough of it to name a claim, the turns it took, and the sides.</p>
+    </div>
+    <div class="list">${x.stories.map(s => `<div class="story"><b>${esc(s)}</b><span class="mono">reading · no evening yet</span></div>`).join("")}</div>
+    <p class="rules">This is the story layer. A name that turns out to hold several stories gets split before anyone is offered an evening from it, so an evening never mixes tellings of different things.</p>
+  </section>`;
+}
+
+function series(id) {
+  const p = state.play, e = (p && p.e) || evening(findS(id)), resume = store.get("resume." + id, null);
+  const done = k => p ? k < p.ep : false;
+  let head;
+  if (p && p.ended) head = endCard(e);
+  else if (p && p.interstitial) head = `<div class="interstitial"><div class="mono" style="color:var(--accent)">${esc(e.eps[p.ep].n)} of ${e.eps.length}</div><h3>${esc(e.eps[p.ep].title)}</h3><div class="fine">${esc(e.eps[p.ep].why)}</div></div>`;
+  else if (p) head = player(e);
+  else head = `<div class="titlecard">
+      <div class="mono">Series · ${e.s.born}→2026${e.s.stance ? " · " + esc(e.s.stance) : ""}</div>
+      <h1>${esc(e.s.name)}</h1>
+      <p class="claim">${esc(e.s.claim)}</p>${e.s.status ? `<p class="claim" style="color:var(--signal)">${esc(e.s.status)}</p>` : ""}
+      <div class="curator"><span class="orb" aria-hidden="true"></span><span>${e.s.watched ? `The Director watched ${e.s.watched} videos and kept ${e.count}` : `Curated from ${e.s.videos.toLocaleString()} videos: ${e.count} kept for tonight`}, ${fmtMin(e.mins)}. One per channel, nothing repeated, nothing ranked by views.</span></div>
+      <div class="cta">
+        <button class="primary" data-start="0">▶ Play the evening</button>
+        ${resume && !(resume.ep === 0 && resume.i === 0) ? `<button class="ghost" data-resume="1">Resume at episode ${resume.ep + 1}, video ${resume.i + 1}</button>` : ""}
+        <span class="note">Plays through, hands free, then it ends.</span>
+      </div>
+      <label class="seen-toggle"><input type="checkbox" id="skipseen" ${state.skipSeen ? "checked" : ""}> Leave out what I've already seen</label>
+    </div>`;
+  return topBar(true) + head + `<div class="rail">${e.eps.map((ep, k) => `
+    <section class="ep ${p && !p.ended && !p.interstitial && p.ep === k ? "now" : ""} ${done(k) ? "done" : ""}">
+      <header><div><div class="mono" style="color:var(--accent)">${esc(ep.n)}</div><h3>${esc(ep.title)}</h3></div>
+        <div class="mins">${ep.videos.length} video${ep.videos.length === 1 ? "" : "s"} · ${fmtMin(ep.mins)} <button class="ghost" data-start="${k}">Play from here</button></div></header>
+      <div class="why">${esc(ep.why)}${ep.note ? ` <span style="color:var(--muted)">${esc(ep.note)}</span>` : ""}</div>
+      <div class="vlist">${ep.videos.map((v, i) => `
+        <div class="v ${state.seen.has(v.id) ? "seen" : ""} ${p && !p.ended && p.ep === k && p.i === i ? "playing" : ""}">
+          <div class="n">${String(i + 1).padStart(2, "0")}</div>
+          <div>
+            <div class="mono">${esc(v.role)}</div>
+            <div class="t">${esc(v.title)}</div>
+            <div class="m"><span>${esc(v.channel)} · ${esc(v.length)} · ${esc(v.published)}</span>
+              ${v.verdict ? `<span class="pill">${esc(v.verdict.toLowerCase())}</span>` : ""}
+              ${v.camp && v.camp.n ? `<span class="pill">${v.camp.n} argue this side</span>` : ""}
+              ${v.sells ? `<span class="pill" title="${esc(v.sells)}">sells something</span>` : ""}
+              ${v.deeper && e.s.deeper ? `<span class="pill" style="color:var(--signal);border-color:rgba(255,194,122,.5)">go deeper ×${v.deeper.length}</span>` : ""}
+              ${v.options > 1 ? `<button class="ghost tiny" data-swap="${esc(v.slot)}" data-n="${v.options}">Other tellings (${v.options - 1})</button>` : ""}
+              <button class="ghost tiny" data-play-at="${k}:${i}">▶ Play</button>
+              <button class="ghost tiny" data-seen="${esc(v.id)}">${state.seen.has(v.id) ? "Unmark seen" : "Mark seen"}</button>
+            </div>
+            ${v.why ? `<div class="m" style="margin-top:4px">${esc(v.why)}</div>` : ""}
+            ${v.camp ? `<div class="look"><b>${esc(v.camp.position)}.</b> Look out for: ${esc(v.camp.watch_for)}</div>` : ""}
+            ${v.note ? `<div class="look" style="border-color:var(--muted)">${esc(v.note)}</div>` : ""}
+          </div>
+        </div>`).join("") || `<div class="why" style="color:var(--muted)">Everything here is something you've seen. Untick the box above to include it.</div>`}
+      </div>
+    </section>`).join("")}</div>`;
+}
+
+function player(e) {
+  const p = state.play, ep = e.eps[p.ep], v = ep.videos[p.i], nextV = ep.videos[p.i + 1], nextEp = e.eps[p.ep + 1];
+  const upNext = nextV ? `Up next: ${nextV.title}` : nextEp ? `Up next: ${nextEp.n}, ${nextEp.title}` : "This is the last one. The evening ends after it.";
+  return `<div class="player"><div class="now">
+      <div class="line"><span class="mono spn">Now playing · ${esc(ep.n)} · ${p.i + 1} of ${ep.videos.length}</span><span class="mono">${esc(v.role)}</span></div>
+      <div class="t">${esc(v.title)}</div>
+      <div class="m">${esc(v.channel)} · ${esc(v.length)} · published ${esc(v.published)}</div>
+      ${v.camp ? `<div class="look"><b>Look out for:</b> ${esc(v.camp.watch_for)}</div>` : ""}
+      <div class="acts">
+        <button class="ghost" data-prev="1" ${p.ep === 0 && p.i === 0 ? "disabled" : ""}>‹ Previous</button>
+        <button class="ghost" data-next="1">${nextV || nextEp ? "Next ›" : "Finish ■"}</button>
+        <button class="ghost" data-stop="1">Stop</button>
+        <span class="next">${esc(upNext)}</span>
+      </div>
+    </div></div>`;
+}
+
+function endCard(e) {
+  return `<div class="end">
+    <div class="mono">■ The end</div>
+    <h3>That's the evening.</h3>
+    <div class="stat"><div><b>${e.count}</b><span>videos</span></div><div><b>${fmtMin(e.mins)}</b><span>watched</span></div><div><b>${e.eps.length}</b><span>episodes</span></div><div><b>${e.s.debate.camps.length}</b><span>sides heard</span></div></div>
+    <p>The question stays open: ${esc(e.s.debate.statement)} Each side's tell is on its card below. Nothing here was ranked by how popular it is, and nothing follows this.</p>
+    <div class="cta"><button class="ghost" data-start="0">Play it again</button><button class="ghost" data-go="door">Pick another story</button></div>
+    <div class="fine">Nothing queues after this. That's the point.</div>
+  </div>`;
+}
+
+/* Playback. The video plays in a small viewer docked to the corner, so it
+   stays in view while you read the set, and can be made large. One YouTube
+   player is created once and kept outside the part of the page that re-renders. */
+let yt = null, yt2 = null, ytReady = null;
+function loadYT() {
+  if (ytReady) return ytReady;
+  ytReady = new Promise(res => {
+    window.onYouTubeIframeAPIReady = () => {
+      yt = new YT.Player("yt", { width: "100%", height: "100%", host: "https://www.youtube-nocookie.com",
+        playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
+        events: { onReady: () => res(),
+          onStateChange: e => { if (state.thread) return threadState(yt, e); if (e.data === YT.PlayerState.ENDED) onEnded(); },
+          onError: () => state.thread ? threadError(yt) : onError() } });
+      // A second player, hidden behind the first. In a thread it loads the next
+      // piece silently while the current one plays, so the change is a swap.
+      yt2 = new YT.Player("yt2", { width: "100%", height: "100%", host: "https://www.youtube-nocookie.com",
+        playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
+        events: { onStateChange: e => threadState(yt2, e), onError: () => threadError(yt2) } });
+    };
+    const sc = document.createElement("script"); sc.src = "https://www.youtube.com/iframe_api"; document.head.appendChild(sc);
+  });
+  return ytReady;
+}
+const dock = () => document.getElementById("dock");
+function dockSync(msg) {
+  const p = state.play, d = dock(), t = state.thread;
+  if (t && !t.ended) {
+    const th = findT(state.story), sg = th.segs[t.i];
+    d.classList.remove("off"); document.body.classList.toggle("playing", !d.classList.contains("big"));
+    document.getElementById("dock-title").textContent = msg || sg.label;
+    const nx = th.segs[t.i + 1];
+    document.getElementById("dock-sub").textContent = `Piece ${t.i + 1} of ${th.segs.length} · ${sg.channel} · ${sg.published}` + (nx ? ` · next: ${nx.channel}` : " · last one");
+    return;
+  }
+  const on = !!(p && !p.ended);
+  d.classList.toggle("off", !on);
+  document.body.classList.toggle("playing", on && !d.classList.contains("big"));
+  if (!on) return;
+  const ep = p.e.eps[p.ep], v = ep.videos[p.i];
+  const deep = deeperFor(p.e.s, v), tog = d.querySelector("[data-deeper-toggle]"), bk = d.querySelector("[data-deeper-back]"), menu = document.getElementById("deeper-menu");
+  tog.hidden = !!p.detour || p.interstitial || !deep.length; bk.hidden = !p.detour;
+  if (p.detour || !deep.length || p.interstitial) menu.hidden = true;
+  if (p.detour) {
+    document.getElementById("dock-title").textContent = msg || p.detour.d.label;
+    document.getElementById("dock-sub").textContent = `Going deeper · ${p.detour.d.channel} · then back to where you were`;
+    return;
+  }
+  document.getElementById("dock-title").textContent = msg || (p.interstitial ? `${ep.n} · ${ep.title}` : v.title);
+  document.getElementById("dock-sub").textContent = p.interstitial ? "Starting…" : `${ep.n} · ${p.i + 1} of ${ep.videos.length} · ${v.channel}`;
+}
+function startAt(ep, i) {
+  clearTimeout(state.play?.timer);
+  // The evening is fixed the moment it starts. Marking a video seen must not
+  // pull it out from under the player mid-way; it only shapes the next evening.
+  let e = state.play?.e || evening(findS(state.story));
+  // If everything in this story is marked seen, playing it means watching it
+  // again. An empty evening that "ends" at once with 0 videos helps nobody.
+  if (!e.count) { const was = state.skipSeen; state.skipSeen = false; e = evening(findS(state.story)); state.skipSeen = was; }
+  const cur = state.play = { ep, i, timer: null, ended: false, interstitial: false, e };
+  if (!e.eps[ep] || !e.eps[ep].videos.length) return advance(e);
+  if (i >= e.eps[ep].videos.length) { cur.i = e.eps[ep].videos.length - 1; return advance(e); }
+  store.set("resume." + state.story, { ep, i });
+  render();
+  const v = e.eps[ep].videos[i];
+  loadYT().then(() => { if (state.play === cur) yt.loadVideoById({ videoId: v.id, startSeconds: v.start || 0, ...(v.end ? { endSeconds: v.end } : {}) }); });
+}
+/* Go deeper. While a "where it stands" video plays, the viewer can step out to a
+   short piece that explains something the video takes for granted, and is put
+   back exactly where they left. The detour is theirs to take; nothing plays
+   that they did not ask for. */
+function deeperFor(s, v) { return (v && v.deeper && s.deeper) ? v.deeper.map(k => s.deeper[k]).filter(Boolean) : []; }
+function deeperMenu() {
+  const p = state.play, menu = document.getElementById("deeper-menu"); if (!p) return;
+  if (!menu.hidden) { menu.hidden = true; return; }
+  const v = p.e.eps[p.ep].videos[p.i], list = deeperFor(p.e.s, v);
+  menu.innerHTML = `<div class="dh">Go deeper · you'll come back to this spot</div>` + list.map((d, k) =>
+    `<button data-deeper="${k}"><b>${esc(d.label)}</b><span>${esc(d.why)} · ${Math.max(1, Math.round((d.end - d.start) / 60))} min · ${esc(d.channel)}</span></button>`).join("");
+  menu.hidden = false;
+}
+function deeperGo(k) {
+  const p = state.play; if (!p || p.detour) return;
+  const v = p.e.eps[p.ep].videos[p.i], d = deeperFor(p.e.s, v)[k]; if (!d) return;
+  let at = v.start || 0; try { at = Math.floor(yt.getCurrentTime()); } catch (x) {}
+  p.detour = { d, at };
+  yt.loadVideoById({ videoId: d.id, startSeconds: d.start, endSeconds: d.end });
+  dockSync();
+}
+function deeperBack() {
+  const p = state.play; if (!p || !p.detour) return;
+  const v = p.e.eps[p.ep].videos[p.i], at = p.detour.at; p.detour = null;
+  yt.loadVideoById({ videoId: v.id, startSeconds: Math.max(0, at - 2), ...(v.end ? { endSeconds: v.end } : {}) });
+  dockSync();
+}
+function onEnded() {
+  if (state.play && state.play.detour) return deeperBack(); const p = state.play; if (!p || p.ended || p.interstitial) return; markSeen(p.e.eps[p.ep].videos[p.i]); advance(p.e); }
+function onError() {
+  const p = state.play; if (!p || p.ended) return;
+  dockSync("This video can't be played here. Skipping to the next one…");
+  p.timer = setTimeout(() => advance(p.e), 2500);
+}
+function advance(e) {
+  const p = state.play; clearTimeout(p.timer);
+  const ep = e.eps[p.ep];
+  if (ep && p.i + 1 < ep.videos.length) return startAt(p.ep, p.i + 1);
+  let next = p.ep + 1;
+  while (next < e.eps.length && !e.eps[next].videos.length) next++;
+  if (next < e.eps.length) {
+    try { yt && yt.stopVideo(); } catch (x) {}
+    state.play = { ep: next, i: 0, timer: null, ended: false, interstitial: true, e: p.e };
+    render(); state.play.timer = setTimeout(() => startAt(next, 0), 2200); return;
+  }
+  try { yt && yt.stopVideo(); } catch (x) {}
+  state.play = { ...p, ended: true }; store.del("resume." + state.story); render();
+}
+const markSeen = v => { if (v) { state.seen.add(v.id); store.set("seen", [...state.seen]); } };
+const stop = () => { clearTimeout(state.play?.timer); state.play = null; try { yt && yt.stopVideo(); } catch (x) {} dock().classList.remove("big"); dockSync(); };
+
+/* A thread: short pieces from many videos, each starting at the moment the
+   point is made, played back to back. Nothing is cut or stitched: each piece
+   plays in YouTube's own player from one second to another. Two players take
+   turns, the idle one loading the next piece muted and paused at its start, so
+   the change between videos is a swap and not a load. */
+const findT = id => DATA.threads.find(t => t.id === id);
+const front = () => (state.thread && state.thread.b ? yt2 : yt);
+const back = () => (state.thread && state.thread.b ? yt : yt2);
+function threadStart(i) {
+  const th = findT(state.story); if (!th) return;
+  clearInterval(state.thread?.tick);
+  state.thread = { i, b: false, tick: null, ready: false };
+  render();
+  loadYT().then(() => {
+    const t = state.thread; if (!t || t.i !== i) return;
+    const sg = th.segs[i];
+    try { back().stopVideo(); } catch (x) {}
+    front().loadVideoById({ videoId: sg.id, startSeconds: sg.start });
+    showFront();
+    t.tick = setInterval(() => {
+      const cur = state.thread; if (!cur) return;
+      const s2 = th.segs[cur.i]; let now = 0;
+      try { now = front().getCurrentTime(); } catch (x) {}
+      if (now >= s2.end - 0.2) threadNext();
+    }, 200);
+  });
+}
+function preload(th, j) {
+  // Deliberately does nothing. An earlier version loaded the next piece in a
+  // hidden, muted player so the change was instant. But a video that starts
+  // playing can start an advert, and an advert playing where nobody can see it
+  // is exactly what YouTube's rules forbid. One visible player, and the next
+  // piece loads when its turn comes.
+  const t = state.thread; if (t) t.ready = false;
+}
+function threadState(pl, e) {
+  const t = state.thread; if (!t) return;
+  // The hidden player has started the next piece: hold it at its first frame.
+  if (pl === back() && e.data === YT.PlayerState.PLAYING && !t.ready) { t.ready = true; pl.pauseVideo(); }
+  if (pl === front() && e.data === YT.PlayerState.ENDED) threadNext();
+}
+function threadError(pl) { if (state.thread && pl === front()) { dockSync("This piece can't be played here. Skipping…"); setTimeout(threadNext, 1500); } }
+function showFront() {
+  const b = state.thread && state.thread.b;
+  document.getElementById("plA").classList.toggle("front", !b);
+  document.getElementById("plB").classList.toggle("front", !!b);
+}
+function threadNext() {
+  const t = state.thread, th = findT(state.story); if (!t || !th) return;
+  if (t.i + 1 >= th.segs.length) return threadEnd();
+  const j = t.i + 1, sg = th.segs[j], old = front();
+  if (!t.ready) return threadStart(j);            // the next piece never loaded: start it the plain way
+  t.i = j; t.b = !t.b;                            // swap: the hidden player comes forward, already at its start
+  try { front().seekTo(sg.start, true); front().unMute(); front().playVideo(); } catch (x) {}
+  showFront();
+  try { old.pauseVideo(); } catch (x) {}
+  render(); preload(th, j + 1);
+}
+function threadEnd() { clearInterval(state.thread?.tick); try { yt.stopVideo(); yt2.stopVideo(); } catch (x) {} state.thread = { ended: true, i: -1 }; render(); }
+function threadStop() { clearInterval(state.thread?.tick); try { yt && yt.stopVideo(); yt2 && yt2.stopVideo(); } catch (x) {} state.thread = null; document.getElementById("plA").classList.add("front"); document.getElementById("plB").classList.remove("front"); }
+const mmss = n => `${Math.floor(n / 60)}:${String(n % 60).padStart(2, "0")}`;
+
+function threadView(id) {
+  const th = findT(id), t = state.thread, total = th.segs.reduce((a, s2) => a + s2.end - s2.start, 0);
+  const head = t && t.ended ? `<div class="end"><div class="mono">■ The end</div><h3>That's the thread.</h3>
+      <p>${th.segs.length} voices, ${Math.round(total / 60)} minutes. Each piece links to its full video if you want the whole argument.</p>
+      <div class="cta"><button class="ghost" data-seg="0">Play it again</button><button class="ghost" data-go="door">Back to all stories</button></div></div>`
+    : `<div class="titlecard"><div class="mono">Thread · what people are saying</div><h1>${esc(th.name)}</h1>
+      <p class="claim">${esc(th.about)}</p>
+      <div class="curator"><span class="orb" aria-hidden="true"></span><span>${th.segs.length} pieces · ${Math.round(total / 60)} minutes. Each one plays in YouTube's own player from the moment the point is made, then hands over to the next. Nothing is cut or re-uploaded.</span></div>
+      ${t ? "" : `<div class="cta"><button class="primary" data-seg="0">▶ Play the thread</button><span class="note">Plays through, then it ends.</span></div>`}</div>`;
+  return topBar(true) + head + `<div class="rail"><section class="ep ${t && !t.ended ? "now" : ""}"><div class="vlist">${th.segs.map((sg, i) => `
+      <div class="v seg ${t && t.i === i ? "playing" : ""}" data-seg="${i}">
+        <div class="n">${String(i + 1).padStart(2, "0")}</div>
+        <div><div class="mono">${esc(sg.channel)} · ${esc(sg.published)}${sg.side ? " · " + esc(sg.side) : ""}</div>
+          <div class="t">${esc(sg.label)}</div>
+          <div class="m"><span>${mmss(sg.start)}–${mmss(sg.end)} of “${esc(sg.title.slice(0, 60))}”</span>
+            <a href="https://www.youtube.com/watch?v=${esc(sg.id)}&t=${sg.start}s" target="_blank" rel="noopener" data-nojump="1">Full video ↗</a></div></div>
+      </div>`).join("")}</div></section></div>`;
+}
+
+/* Background sound, made in the browser so there is no file to load and nothing
+   to license. A slow open chord (D, A, E) with one upper note that drifts
+   between two pitches, which is what keeps it from sounding finished, and
+   under it two low tones 10 Hz apart, one in each ear. Through headphones the
+   brain hears that gap as a soft 10 Hz pulse, the range of relaxed, alert
+   attention. Whether such tones change how anyone feels is not settled, so the
+   page promises a calm sound and nothing more.
+
+   It is off until asked for (browsers do not allow sound before a tap), and it
+   fades out whenever a video plays. */
+let music = null;
+/* The first version was a low drone: three sine tones around 150 to 330 Hz at a
+   low level. Laptop and phone speakers barely reproduce that, and an iPhone
+   with its silent switch on plays nothing at all from a page, so it could not
+   be heard. This version is a small piece of music, written in code:
+
+   - the Lydian mode on D (D E F# G# A B C#). Its raised fourth, G sharp, is
+     the note that sounds like a question, which is where the curiosity is;
+   - a short melody of eight bell notes at a resting-heart tempo, played twice
+     and then changed by one note, so there is something to recognise and
+     something new each time round;
+   - a warm chord underneath, and two tones 10 Hz apart, one per ear. */
+function musicStart() {
+  const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
+  const ctx = new AC();
+  // iPhones mute page audio when the silent switch is on, unless a media element is playing.
+  try { const a = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA="); a.loop = true; a.play().catch(() => {}); } catch (x) {}
+  ctx.resume();
+  const master = ctx.createGain(); master.gain.value = 0;
+  const comp = ctx.createDynamicsCompressor(); master.connect(comp); comp.connect(ctx.destination);
+  const meter = ctx.createAnalyser(); meter.fftSize = 1024; master.connect(meter);
+  // a simple hall: two delays feeding each other
+  const wet = ctx.createGain(); wet.gain.value = 0.5; wet.connect(master);
+  const d1 = ctx.createDelay(2), d2 = ctx.createDelay(2), f1 = ctx.createGain(), f2 = ctx.createGain();
+  d1.delayTime.value = 0.41; d2.delayTime.value = 0.63; f1.gain.value = 0.42; f2.gain.value = 0.38;
+  d1.connect(f1); f1.connect(d2); d2.connect(f2); f2.connect(d1); d1.connect(wet); d2.connect(wet);
+  const bus = ctx.createGain(); bus.connect(master); bus.connect(d1);
+
+  // the chord: D, A, E and F sharp, soft and slowly breathing
+  const lp = ctx.createBiquadFilter(); lp.type = "lowpass"; lp.frequency.value = 1400; lp.connect(bus);
+  [[146.83, 0.10], [220.0, 0.10], [293.66, 0.09], [329.63, 0.07], [369.99, 0.06]].forEach(([f, lv], k) => {
+    const g = ctx.createGain(); g.gain.value = lv; g.connect(lp);
+    for (const det of [-5, 5]) { const o = ctx.createOscillator(); o.type = "triangle"; o.frequency.value = f; o.detune.value = det; o.connect(g); o.start(); }
+    const lfo = ctx.createOscillator(), lg = ctx.createGain(); lfo.frequency.value = 0.04 + k * 0.013; lg.gain.value = lv * 0.5; lfo.connect(lg); lg.connect(g.gain); lfo.start();
+  });
+  // 10 Hz between the ears, high enough for small speakers to carry
+  [[200, -1], [210, 1]].forEach(([f, pan]) => { const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = f; g.gain.value = 0.035;
+    if (ctx.createStereoPanner) { const pn = ctx.createStereoPanner(); pn.pan.value = pan; o.connect(g); g.connect(pn); pn.connect(master); } else { o.connect(g); g.connect(master); } o.start(); });
+
+  // the melody
+  const scale = [293.66, 329.63, 369.99, 415.30, 440.0, 493.88, 554.37, 587.33, 659.25];   // D lydian, D4 to E5
+  const bell = (f, when, lv) => {
+    const g = ctx.createGain(); g.gain.setValueAtTime(0, when); g.gain.linearRampToValueAtTime(lv, when + 0.015); g.gain.exponentialRampToValueAtTime(0.0005, when + 2.6); g.connect(bus);
+    const o = ctx.createOscillator(); o.type = "sine"; o.frequency.value = f; o.connect(g); o.start(when); o.stop(when + 2.7);
+    const o2 = ctx.createOscillator(), g2 = ctx.createGain(); o2.type = "sine"; o2.frequency.value = f * 2.01; g2.gain.value = 0.25; o2.connect(g2); g2.connect(g); o2.start(when); o2.stop(when + 2.7);
+  };
+  let motif = [0, 2, 4, 3, 4, 6, 4, 2], round = 0, step = 0, next = ctx.currentTime + 0.4;
+  const beat = 0.91;                                   // about 66 beats a minute
+  const tick = setInterval(() => {
+    while (next < ctx.currentTime + 0.6) {
+      const n = motif[step];
+      if (n != null) bell(scale[n], next, step % 4 === 0 ? 0.16 : 0.11);
+      if (step === 7) {                                 // a long breath at the end of the phrase
+        next += beat * 2; step = 0; round++;
+        if (round % 2 === 0) {                          // every second time, change one note by a step: the same tune, slightly new
+          const k = 1 + Math.floor(Math.random() * 6);
+          motif = motif.slice(); motif[k] = Math.max(0, Math.min(8, motif[k] + (Math.random() < 0.5 ? -1 : 1)));
+          if (round % 8 === 0) motif = [0, 2, 4, 3, 4, 6, 4, 2];   // and come home now and then
+        }
+      } else { next += beat; step++; }
+    }
+  }, 200);
+  music = { ctx, master, tick, meter, level: 0.8 };
+  musicLevel();
+}
+function musicLevel() {
+  if (!music) return;
+  const playing = (state.play && !state.play.ended) || (state.thread && !state.thread.ended);
+  const target = state.sound && !playing ? music.level : 0;
+  if (target > 0 && music.ctx.state === "suspended") music.ctx.resume();
+  music.master.gain.setTargetAtTime(target, music.ctx.currentTime, 1.2);   // a slow fade, never a cut
+}
+function soundToggle() {
+  state.sound = !state.sound;
+  if (state.sound && !music) musicStart(); else musicLevel();
+  render();
+}
+
+/* depth: cards lean toward the pointer, and settle when it leaves */
+const motionOK = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+document.addEventListener("pointermove", ev => {
+  if (!motionOK) return;
+  const el = ev.target.closest("[data-tilt]"); if (!el) return;
+  const r = el.getBoundingClientRect(), x = (ev.clientX - r.left) / r.width - .5, y = (ev.clientY - r.top) / r.height - .5;
+  el.style.setProperty("--ry", `${x * 10}deg`); el.style.setProperty("--rx", `${-y * 8}deg`);
+});
+document.addEventListener("pointerout", ev => { const el = ev.target.closest("[data-tilt]"); if (el) { el.style.setProperty("--ry", "0deg"); el.style.setProperty("--rx", "0deg"); } });
+
+document.addEventListener("click", ev => {
+  const t = ev.target;
+  if (t.closest("[data-nojump]")) return;
+  if (t.closest("[data-sound]")) return soundToggle();
+  const ct = t.closest("[data-cat]"); if (ct) { state.cat = ct.dataset.cat; return render(); }
+  const tl = t.closest("[data-tell]"); if (tl) { state.tell = tl.dataset.tell; state.swap = {}; store.set("tell", state.tell); store.set("swap", {}); return render(); }
+  const sw = t.closest("[data-swap]"); if (sw) { const id = sw.dataset.swap, n = +sw.dataset.n; const cur = evening(findS(state.story)).eps.flatMap(e => e.videos).find(v => v.slot === id);
+    const all = [id, ...findS(state.story).eps.flatMap(e => e.videos).find(v => v.id === id).alts.map(a => a.id)];
+    state.swap[id] = (all.indexOf(cur ? cur.id : id) + 1) % n; store.set("swap", state.swap); stop(); return render(); }
+  if (t.closest("[data-deeper-toggle]")) return deeperMenu();
+  if (t.closest("[data-deeper-back]")) return deeperBack();
+  const dg = t.closest("[data-deeper]"); if (dg) return deeperGo(+dg.dataset.deeper);
+  const sd = t.closest("[data-side]"); if (sd) { state.side = sd.dataset.side; store.set("side", state.side); return render(); }
+  const thr = t.closest("[data-thread]"); if (thr) { stop(); threadStop(); state.view = "thread"; state.story = thr.dataset.thread; return render(); }
+  const sgc = t.closest("[data-seg]"); if (sgc) return threadStart(+sgc.dataset.seg);
+  if (state.thread && !state.thread.ended) {
+    if (t.closest("[data-next]")) return threadNext();
+    if (t.closest("[data-prev]")) return threadStart(Math.max(0, state.thread.i - 1));
+    if (t.closest("[data-stop]")) { threadStop(); dock().classList.remove("big"); render(); return; }
+  }
+  const go = t.closest("[data-go]"); if (go) { stop(); threadStop(); state.view = go.dataset.go; state.story = null; return render(); }
+  const b = t.closest("[data-budget]"); if (b) { state.budget = +b.dataset.budget; store.set("budget", state.budget); return render(); }
+  const open = t.closest("[data-open]"); if (open) { stop(); state.view = "series"; state.story = open.dataset.open; return render(); }
+  const srt = t.closest("[data-sort]"); if (srt) { stop(); state.view = "sorting"; state.story = srt.dataset.sort; return render(); }
+  const ps = t.closest("[data-play-story]"); if (ps) { stop(); state.view = "series"; state.story = ps.dataset.playStory; return startAt(0, 0); }
+  const pa = t.closest("[data-play-at]"); if (pa) { const [a_, b_] = pa.dataset.playAt.split(":").map(Number); stop(); return startAt(a_, b_); }
+  if (t.closest("[data-size]")) { dock().classList.toggle("big"); return dockSync(); }
+  const st = t.closest("[data-start]"); if (st) { stop(); return startAt(+st.dataset.start, 0); }
+  const rs = t.closest("[data-resume]"); if (rs) { const r = store.get("resume." + state.story, { ep: 0, i: 0 }); stop(); return startAt(r.ep, r.i); }
+  if (state.play && state.play.detour && (t.closest("[data-next]") || t.closest("[data-prev]"))) return deeperBack();
+  if (t.closest("[data-next]")) { const p = state.play; if (!p || p.ended) return; if (p.interstitial) return startAt(p.ep, 0); markSeen(p.e.eps[p.ep].videos[p.i]); return advance(p.e); }
+  if (t.closest("[data-prev]")) { const p = state.play; if (!p || p.ended) return; if (p.i > 0) return startAt(p.ep, p.i - 1); if (p.ep > 0) return startAt(p.ep - 1, Math.max(0, p.e.eps[p.ep - 1].videos.length - 1)); return; }
+  if (t.closest("[data-stop]")) { stop(); return render(); }
+  const sn = t.closest("[data-seen]"); if (sn) { const id = sn.dataset.seen; state.seen.has(id) ? state.seen.delete(id) : state.seen.add(id); store.set("seen", [...state.seen]); return render(); }
+});
+document.addEventListener("change", ev => { if (ev.target.id === "skipseen") { state.skipSeen = ev.target.checked; store.set("skipSeen", state.skipSeen); render(); } });
+render();
+loadYT();   // ready before the first tap, so that tap is the one that plays
+</script>
+
+</body>
+</html>
