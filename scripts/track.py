@@ -11,7 +11,7 @@ The page reads those files; whether a new video joins the narrative by itself
 or waits for the viewer's yes is the viewer's choice, kept on their device.
 
 Cost: one search (100 units) per query plus one details call per 50 videos.
-Eight narratives with eleven queries is about 1,150 of the 10,000 daily units.
+Eight narratives and five home-screen themes, eighteen queries, is about 1,850 of the 10,000 daily units.
 """
 import json, re, sys
 from datetime import datetime, timedelta, timezone
@@ -65,19 +65,22 @@ def run(n, backfill_days, quota):
 def main():
     cfg = json.loads((DIR / "narratives.json").read_text())
     only = sys.argv[1:]
-    quota = Quota(40)
-    index = []
+    quota = Quota(60)
+    index, themes = [], []
     for n in cfg["narratives"]:
         if only and n["id"] not in only:
             f = DIR / f"{n['id']}.json"
             out, added = (json.loads(f.read_text()), 0) if f.exists() else run(n, cfg["backfill_days"], quota)
         else:
             out, added = run(n, cfg["backfill_days"], quota)
+        if n.get("theme"):
+            themes.append({"id": n["id"], "name": n["name"], "thumbs": [v["id"] for v in out["videos"][:24]]})
+            continue
         day = (NOW - timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
         index.append({"id": n["id"], "name": n["name"], "line": n["line"], "cat": n.get("cat", ""), "count": len(out["videos"]),
                       "new_today": sum(1 for v in out["videos"] if v["found"] >= day), "latest": out["videos"][0]["published"] if out["videos"] else "",
                       "faces": list(dict.fromkeys(v["channel"] for v in out["videos"]))[:4]})
-    (DIR / "index.json").write_text(json.dumps({"updated": NOW.isoformat(), "narratives": index}, indent=1, ensure_ascii=False) + "\n")
+    (DIR / "index.json").write_text(json.dumps({"updated": NOW.isoformat(), "narratives": index, "themes": themes}, indent=1, ensure_ascii=False) + "\n")
     print(f"done · {quota.units} quota units")
 
 
