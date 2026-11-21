@@ -214,7 +214,9 @@
    "line": "",
    "theme": true,
    "queries": [
-    "artificial intelligence news"
+    "artificial intelligence news",
+    "AI news this week",
+    "OpenAI news"
    ],
    "match": [
     [
@@ -261,7 +263,9 @@
    "line": "",
    "theme": true,
    "queries": [
-    "US politics news"
+    "US politics news",
+    "Trump news today",
+    "Congress news this week"
    ],
    "match": [
     [
