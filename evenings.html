@@ -263,6 +263,7 @@
   .reel img { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; filter: saturate(.8) contrast(.95); opacity: .9; background: var(--deep); }
   @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @media (prefers-reduced-motion: reduce) { .reel .track { animation: none; } }
+  .linkish { background: none; border: 0; padding: 8px 0; color: var(--accent); font: 500 15px var(--body); }
   /* ---- tracked narratives ---- */
   .badge { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 7px; border-radius: 11px; background: var(--signal); color: #fff; font-size: 12px; font-weight: 600; }
   .row .badge { justify-self: end; color: #fff; font-size: 12px; }
@@ -466,9 +467,9 @@ function trkSplit(id, since) {
 }
 function trackSection() {
   if (!TRK.index) return "";
-  return `<section class="more"><h2>Tracking</h2><p class="label" style="margin:0">New videos arrive every morning.</p>${TRK.index.narratives.map(n => {
+  return `<section class="more"><h2>Tracking</h2>${TRK.index.narratives.map(n => {
     const sp = trkSplit(n.id), k = trkPref(n.id).mode === "ask" ? sp.waiting.length : sp.fresh;
-    return `<button class="row" data-track="${n.id}"><b>${esc(n.name)}</b>${k ? `<span class="badge" aria-label="${k} new">${k}</span>` : `<span></span>`}<span>${esc(n.line)}</span></button>`; }).join("")}</section>`;
+    return `<button class="row" data-track="${n.id}"><b>${esc(n.name)}</b>${k ? `<span class="badge" aria-label="${k} new">${k}</span>` : `<span></span>`}</button>`; }).join("")}</section>`;
 }
 function trackView(id) {
   const d = TRK.data[id], p = trkPref(id);
@@ -559,7 +560,7 @@ function render() {
   const app = $("#app");
   const same = render.last === state.view + state.story; render.last = state.view + state.story;
   const keep = same && ((state.play && !state.play.ended) || (state.thread && !state.thread.ended)) ? window.scrollY : 0;   // don't jump the page while something plays
-  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : state.view === "track" ? trackView(state.story) : series(state.story);
+  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : state.view === "track" ? trackView(state.story) : state.view === "library" ? library() : series(state.story);
   window.scrollTo({ top: keep });
   dockSync(); musicLevel();
 }
@@ -602,37 +603,16 @@ function literature() {
   <p class="rules">This side isn't open yet. The video side is: switch back to watch a curated evening or a thread.</p>`;
 }
 
+/* The home screen holds two things: tonight's conversation and what you track.
+   Who tells it, who is in the room, and every other story live one tap away. */
 function door() {
   if (state.side === "literature") return literature();
   const pool = DATA.threads.filter(t => (META[t.id] || {}).tonight);
-  const th = cutFor(pool[0] || DATA.threads[0]), m = META[th.id] || {}, cast = castOf(th), first = speaker(th, 0);
-  const have = new Set(cutsOf(th).map(t => (META[t.id] || {}).lens));
-  const lensName = (LENSES.find(l => l[0] === m.lens) || LENSES[1])[1];
-  const camps = m.camps ? Object.values(CAMPS[m.camps]) : [];
-  const others = DATA.threads.filter(t => storyOf(t) !== storyOf(th));
-  const ready = DATA.series.map(x => { const w = state.skipSeen; state.skipSeen = false; const e = evening(x); state.skipSeen = w; return e; }).filter(e => e.s.eps);
+  const th = cutFor(pool[0] || DATA.threads[0]);
   return topBar(false) + `
   <section class="tonight">
-    <div>
-      <div class="label">Tonight</div>
-      <h1>${esc(qOf(th))}</h1>
-      <p class="lede">${cast.length} people at the centre of it. Pull up a chair.</p>
-    </div>
-    <div>
-      <div class="label">Told by</div>
-      <div class="lens" role="group" aria-label="Who tells the story" style="margin-top:8px">${LENSES.map(([k, n]) => have.has(k)
-        ? `<button data-lens="${k}" aria-pressed="${k === m.lens}">${n}</button>`
-        : `<button disabled title="A cut of this story told by ${n.toLowerCase()} is being made">${n}<small>soon</small></button>`).join("")}</div>
-      <p class="lens-note">${have.size > 1 ? `Same story, different voices. Tonight's cut: ${lensName.toLowerCase()}.` : `Tonight's cut is told by ${lensName.toLowerCase()}. The other tellings of this story are being made.`}</p>
-    </div>
-    <button class="host" data-thread-play="${th.id}">
-      ${avatar(first)}
-      <span><span class="k">First voice tonight</span><b>${esc(first.name)}${first.role ? ", " + esc(first.role) : ""}</b><span class="q">${esc(th.segs[0].label)}</span></span>
-    </button>
-    <div>
-      <div class="room-head"><span class="label">In the room</span>${camps.length ? `<span class="legend">${camps.map(([n, c]) => `<span><i style="background:${c}"></i>${n}</span>`).join("")}</span>` : ""}</div>
-      <div class="cast">${cast.slice(0, 12).map(p => `<div class="person">${avatar(p)}<span class="nm">${esc(p.name)}</span><span class="rl">${esc(p.role)}</span></div>`).join("")}</div>
-    </div>
+    <div><div class="label">Tonight</div><h1>${esc(qOf(th))}</h1>
+      <p class="lede">${castOf(th).length} people at the centre of it. Pull up a chair.</p></div>
     <div class="stage">
       ${reel(th.segs.slice(0, Math.ceil(th.segs.length / 2)), false)}
       <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
@@ -640,11 +620,33 @@ function door() {
     </div>
   </section>
   ${trackSection()}
-  ${others.length ? `<section class="more"><h2>More conversations</h2>${others.map(t => { const c = castOf(t);
+  <p class="foot"><button class="linkish" data-go="library">More stories →</button></p>`;
+}
+
+/* Everything that used to sit on the home screen. */
+function library() {
+  const pool = DATA.threads.filter(t => (META[t.id] || {}).tonight), tonight = cutFor(pool[0] || DATA.threads[0]);
+  const others = DATA.threads.filter(t => storyOf(t) !== storyOf(tonight));
+  const ready = DATA.series.map(x => { const w = state.skipSeen; state.skipSeen = false; const e = evening(x); state.skipSeen = w; return e; }).filter(e => e.s.eps);
+  return topBar(true) + `<section class="tonight" style="gap:8px"><h1 style="font-size:clamp(28px,5vw,40px)">More stories</h1></section>
+  ${others.length ? `<section class="more" style="margin-top:24px"><h2>Conversations</h2>${others.map(t => { const c = castOf(t);
     return `<button class="row" data-thread="${t.id}"><b>${esc(qOf(t))}</b><span class="faces">${c.slice(0, 4).map(p => avatar(p)).join("")}</span><span>${c.length} people · ${minsOf(t)} min</span></button>`; }).join("")}</section>` : ""}
   ${ready.length ? `<section class="more"><h2>Full evenings</h2><p class="label" style="margin:0">Whole videos, in episodes, for a longer night.</p>${ready.map(e =>
     `<button class="row" data-open="${e.s.id}"><b>${esc(e.s.name)}</b><span>${fmtMin(e.mins)}</span><span>${e.eps.length} episodes · ${e.count} videos</span></button>`).join("")}</section>` : ""}
   <p class="foot">Every conversation ends on purpose. Nothing is ranked by views and nothing plays after the last voice. <a href="archive/evenings-v1.html">The previous design</a> is kept here.</p>`;
+}
+
+/* Who tells it and who is in the room: shown inside the conversation. */
+function lensBlock(th) {
+  const m = META[th.id] || {}, have = new Set(cutsOf(th).map(t => (META[t.id] || {}).lens));
+  return `<div><div class="label">Told by</div><div class="lens" role="group" aria-label="Who tells the story" style="margin-top:8px">${LENSES.map(([k, n]) => have.has(k)
+    ? `<button data-lens="${k}" aria-pressed="${k === m.lens}">${n}</button>`
+    : `<button disabled title="A cut of this story told by ${n.toLowerCase()} is being made">${n}<small>soon</small></button>`).join("")}</div></div>`;
+}
+function roomBlock(th) {
+  const m = META[th.id] || {}, cast = castOf(th), camps = m.camps ? Object.values(CAMPS[m.camps]) : [];
+  return `<div><div class="room-head"><span class="label">In the room</span>${camps.length ? `<span class="legend">${camps.map(([n, c]) => `<span><i style="background:${c}"></i>${n}</span>`).join("")}</span>` : ""}</div>
+    <div class="cast">${cast.slice(0, 12).map(p => `<div class="person">${avatar(p)}<span class="nm">${esc(p.name)}</span><span class="rl">${esc(p.role)}</span></div>`).join("")}</div></div>`;
 }
 
 function sorting(id) {
@@ -937,7 +939,9 @@ function threadView(id) {
   }
   const cur = t ? t.i : -1;
   const head = `<div class="tonight" style="gap:8px"><div class="label">${t ? `${cur + 1} of ${th.segs.length}` : `${cast.length} people · ${minsOf(th)} min`}</div><h1 style="font-size:clamp(28px,5vw,40px)">${esc(qOf(th))}</h1>
-    ${t ? "" : `<button class="join" data-seg="0" style="margin-top:10px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation</button>`}</div>`;
+    ${t ? "" : `<button class="join" data-seg="0" style="margin-top:10px"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation</button>`}
+    ${cutsOf(th).length > 1 ? `<div style="margin-top:12px">${lensBlock(th)}</div>` : ""}
+    ${t ? "" : `<div style="margin-top:16px">${roomBlock(th)}</div>`}</div>`;
   const turns = th.segs.map((sg, i) => { const p = speaker(th, i), st = i === cur ? "now" : (t && i > cur ? "next" : "");
     const verb = i === cur ? "<em>now speaking</em>" : p.campName ? esc(p.campName.toLowerCase()) : "";
     return `<div class="turn ${st}" data-seg="${i}" role="button" tabindex="0">${avatar(p, "sm")}
@@ -1074,7 +1078,9 @@ document.addEventListener("click", ev => {
     if (t.closest("[data-prev]")) return oneStep(-1);
     if (t.closest("[data-stop]")) { stop(); return render(); }
   }
-  const ln = t.closest("[data-lens]"); if (ln) { state.lens = ln.dataset.lens; store.set("lens", state.lens); return render(); }
+  const ln = t.closest("[data-lens]"); if (ln) { state.lens = ln.dataset.lens; store.set("lens", state.lens);
+    if (state.view === "thread") { const was = state.thread && !state.thread.ended; threadStop(); state.story = cutFor(findT(state.story)).id; render(); if (was) threadStart(0); return; }
+    return render(); }
   const tp = t.closest("[data-thread-play]"); if (tp) { stop(); threadStop(); state.view = "thread"; state.story = tp.dataset.threadPlay; render(); return threadStart(0); }
   const thr = t.closest("[data-thread]"); if (thr) { stop(); threadStop(); state.view = "thread"; state.story = thr.dataset.thread; return render(); }
   const sgc = t.closest("[data-seg]"); if (sgc) return threadStart(+sgc.dataset.seg);
