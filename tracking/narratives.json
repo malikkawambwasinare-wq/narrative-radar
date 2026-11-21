@@ -1,0 +1,22 @@
+{
+ "note": "Narratives being tracked. Each day the tracker searches YouTube for new videos on each one and keeps those whose title matches every group in `match` (any one word from each group). Add a narrative by adding an entry; the first run looks back `backfill_days`.",
+ "backfill_days": 30,
+ "narratives": [
+  {"id": "nvidia-after-huang", "name": "Nvidia after Jensen Huang", "line": "His exit, the China story, and what it means for the AI trade.", "cat": "money",
+   "queries": ["Jensen Huang Nvidia resigns", "Nvidia CEO China spy"], "match": [["huang", "nvidia"]]},
+  {"id": "anthropic-ipo", "name": "Anthropic goes public", "line": "The IPO, the valuation, and whether AI listings mark the top.", "cat": "money",
+   "queries": ["Anthropic IPO"], "match": [["anthropic"], ["ipo", "public", "listing", "valuation", "shares"]]},
+  {"id": "ai-debt", "name": "The AI debt scare", "line": "Data centres built on borrowed money, and the circular deals.", "cat": "money",
+   "queries": ["AI data center debt", "AI circular deals"], "match": [["ai", "data center", "data centers", "data centre", "oracle", "openai", "nvidia"], ["debt", "credit", "borrow", "borrowing", "circular", "bond", "bonds", "loans"]]},
+  {"id": "fed-ai-crash", "name": "The Fed's AI warning", "line": "Central bankers on AI concentration and crash risk.", "cat": "money",
+   "queries": ["Fed warns AI crash"], "match": [["fed", "federal reserve", "powell", "warsh", "central bank"], ["ai"]]},
+  {"id": "korea-ai-mania", "name": "South Korea's AI stock mania", "line": "A smaller market running hot on AI chips.", "cat": "money",
+   "queries": ["South Korea AI stocks KOSPI"], "match": [["korea", "korean", "kospi", "sk hynix", "samsung"], ["ai", "chip", "chips", "semiconductor", "hbm", "stocks", "mania", "bubble"]]},
+  {"id": "us-debt-crisis", "name": "A US debt crisis?", "line": "Dated warnings about US debt, bonds and the dollar.", "cat": "money",
+   "queries": ["US debt crisis warning", "Ray Dalio debt crisis"], "match": [["debt", "deficit", "treasury", "treasuries", "bond", "bonds"], ["us", "u.s.", "america", "american", "dalio", "dollar", "crisis"]]},
+  {"id": "hormuz-oil", "name": "Oil and the Strait of Hormuz", "line": "Attacks on shipping and what they do to oil.", "cat": "world",
+   "queries": ["Strait of Hormuz oil"], "match": [["hormuz"]]},
+  {"id": "btc-cycle", "name": "Bitcoin's broken cycle", "line": "It topped early. Is the four-year rhythm over?", "cat": "money",
+   "queries": ["Bitcoin four year cycle"], "match": [["bitcoin", "btc"], ["cycle", "halving"]]}
+ ]
+}
