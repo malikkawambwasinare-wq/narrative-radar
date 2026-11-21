@@ -254,6 +254,15 @@
   body.threadmode .wrap { padding-top: calc(min(640px, 100vw) * 9 / 16 + 92px); }
   body.threadmode.playing .wrap { padding-bottom: 64px; }
   @media (max-width: 420px) { .cast { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 4px; } .av { width: 52px; height: 52px; } }
+  /* ---- the stage: tonight's clips drifting around the button ---- */
+  .stage { display: grid; gap: 12px; margin-inline: -20px; }
+  .stage .join { margin-inline: 20px; width: auto; box-shadow: 0 14px 34px -14px rgba(28,35,33,.6); }
+  .reel { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+  .reel .track { display: flex; gap: 8px; width: max-content; animation: drift 90s linear infinite; }
+  .reel.rev .track { animation-direction: reverse; animation-duration: 110s; }
+  .reel img { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; filter: saturate(.8) contrast(.95); opacity: .9; background: var(--deep); }
+  @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .reel .track { animation: none; } }
   /* ---- tracked narratives ---- */
   .badge { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 7px; border-radius: 11px; background: var(--signal); color: #fff; font-size: 12px; font-weight: 600; }
   .row .badge { justify-self: end; color: #fff; font-size: 12px; }
@@ -382,7 +391,7 @@ const store = {
   set(k, v) { try { localStorage.setItem("se." + k, JSON.stringify(v)); } catch (e) {} },
   del(k) { try { localStorage.removeItem("se." + k); } catch (e) {} },
 };
-const state = { lens: store.get("lens", null), sound: false, cat: "all", tell: store.get("tell", "auto"), swap: store.get("swap", {}), side: store.get("side", "video"), thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
+const state = { lens: store.get("lens", null), sound: store.get("sound", true), cat: "all", tell: store.get("tell", "auto"), swap: store.get("swap", {}), side: store.get("side", "video"), thread: null, view: "door", story: null, budget: store.get("budget", 60), seen: new Set(store.get("seen", [])), skipSeen: store.get("skipSeen", true), play: null };
 const $ = (s, r = document) => r.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const mins = s => { const p = String(s || "").split(":").map(Number); return p.length === 2 ? p[0] + p[1] / 60 : p[0] * 60 + p[1] + p[2] / 60; };
@@ -489,6 +498,12 @@ function oneStep(dir) {
   const list = trkSplit(state.story, state.trkSince).shown, i = list.findIndex(v => v.id === state.one.id), n = list[i + dir];
   if (n) playOne(n.id);
 }
+/* The moving wall around the button: tonight's clips as still frames drifting
+   past. Thumbnails, not players: a playing YouTube video may not be covered
+   or shrunk, and a hidden one could run ads nobody sees. */
+const reel = (segs, rev) => { const ids = [...new Set(segs.map(x => x.id))]; const row = ids.concat(ids, ids).map(id =>
+  `<img src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" loading="lazy" decoding="async">`).join("");
+  return `<div class="reel ${rev ? "rev" : ""}" aria-hidden="true"><div class="track">${row}${row}</div></div>`; };
 const initials = n => n.replace(/[^A-Za-z\s-]/g, "").split(/[\s-]+/).filter(Boolean).map(w => w[0]).slice(0, 2).join("").toUpperCase();
 /* Who is speaking in piece i, and on which side. */
 function speaker(th, i) {
@@ -618,7 +633,11 @@ function door() {
       <div class="room-head"><span class="label">In the room</span>${camps.length ? `<span class="legend">${camps.map(([n, c]) => `<span><i style="background:${c}"></i>${n}</span>`).join("")}</span>` : ""}</div>
       <div class="cast">${cast.slice(0, 12).map(p => `<div class="person">${avatar(p)}<span class="nm">${esc(p.name)}</span><span class="rl">${esc(p.role)}</span></div>`).join("")}</div>
     </div>
-    <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
+    <div class="stage">
+      ${reel(th.segs.slice(0, Math.ceil(th.segs.length / 2)), false)}
+      <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
+      ${reel(th.segs.slice(Math.ceil(th.segs.length / 2)), true)}
+    </div>
   </section>
   ${trackSection()}
   ${others.length ? `<section class="more"><h2>More conversations</h2>${others.map(t => { const c = castOf(t);
@@ -1011,13 +1030,13 @@ function musicStart() {
 }
 function musicLevel() {
   if (!music) return;
-  const playing = (state.play && !state.play.ended) || (state.thread && !state.thread.ended);
+  const playing = (state.play && !state.play.ended) || (state.thread && !state.thread.ended) || !!state.one;
   const target = state.sound && !playing ? music.level : 0;
   if (target > 0 && music.ctx.state === "suspended") music.ctx.resume();
   music.master.gain.setTargetAtTime(target, music.ctx.currentTime, 1.2);   // a slow fade, never a cut
 }
 function soundToggle() {
-  state.sound = !state.sound;
+  state.sound = !state.sound; store.set("sound", state.sound);
   if (state.sound && !music) musicStart(); else musicLevel();
   render();
 }
@@ -1079,6 +1098,10 @@ document.addEventListener("click", ev => {
   if (t.closest("[data-stop]")) { stop(); return render(); }
   const sn = t.closest("[data-seen]"); if (sn) { const id = sn.dataset.seen; state.seen.has(id) ? state.seen.delete(id) : state.seen.add(id); store.set("seen", [...state.seen]); return render(); }
 });
+/* Browsers allow sound only after a tap. If the viewer hasn't turned the music
+   off before, it starts quietly on their first tap anywhere, and fades out
+   whenever a video plays. */
+document.addEventListener("pointerdown", () => { if (state.sound && !music) { musicStart(); musicLevel(); } }, { once: true, capture: true });
 document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".turn[data-seg]")) { ev.preventDefault(); threadStart(+ev.target.dataset.seg); } else if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[data-one]")) { ev.preventDefault(); playOne(ev.target.dataset.one); } });
 document.addEventListener("change", ev => { if (ev.target.id === "skipseen") { state.skipSeen = ev.target.checked; store.set("skipSeen", state.skipSeen); render(); } });
 render();
