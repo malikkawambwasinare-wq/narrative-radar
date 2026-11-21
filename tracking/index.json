@@ -1,0 +1,122 @@
+{
+ "updated": "2026-11-21T17:27:25.736830+00:00",
+ "narratives": [
+  {
+   "id": "nvidia-after-huang",
+   "name": "Nvidia after Jensen Huang",
+   "line": "His exit, the China story, and what it means for the AI trade.",
+   "cat": "money",
+   "count": 14,
+   "new_today": 14,
+   "latest": "2026-11-21",
+   "faces": [
+    "Ai with Prathmesh",
+    "Panic To Power",
+    "Triggernometry",
+    "Limitless Podcast"
+   ]
+  },
+  {
+   "id": "anthropic-ipo",
+   "name": "Anthropic goes public",
+   "line": "The IPO, the valuation, and whether AI listings mark the top.",
+   "cat": "money",
+   "count": 7,
+   "new_today": 7,
+   "latest": "2026-11-21",
+   "faces": [
+    "Big A",
+    "Markets by Zerodha",
+    "The Young Turks",
+    "Vaush"
+   ]
+  },
+  {
+   "id": "ai-debt",
+   "name": "The AI debt scare",
+   "line": "Data centres built on borrowed money, and the circular deals.",
+   "cat": "money",
+   "count": 23,
+   "new_today": 23,
+   "latest": "2026-11-21",
+   "faces": [
+    "Footnotes & Futures",
+    "Next capital ",
+    "Exit Liquidity",
+    "Masters of Deception"
+   ]
+  },
+  {
+   "id": "fed-ai-crash",
+   "name": "The Fed's AI warning",
+   "line": "Central bankers on AI concentration and crash risk.",
+   "cat": "money",
+   "count": 3,
+   "new_today": 3,
+   "latest": "2026-11-21",
+   "faces": [
+    "Veil of Aziz",
+    "The Kestrel Report | AI News with Sarah Ellis",
+    "Ball and Chain"
+   ]
+  },
+  {
+   "id": "korea-ai-mania",
+   "name": "South Korea's AI stock mania",
+   "line": "A smaller market running hot on AI chips.",
+   "cat": "money",
+   "count": 2,
+   "new_today": 2,
+   "latest": "2026-11-20",
+   "faces": [
+    "quick-K",
+    "OPLIVX"
+   ]
+  },
+  {
+   "id": "us-debt-crisis",
+   "name": "A US debt crisis?",
+   "line": "Dated warnings about US debt, bonds and the dollar.",
+   "cat": "money",
+   "count": 27,
+   "new_today": 27,
+   "latest": "2026-11-21",
+   "faces": [
+    "Fed Gold Tales",
+    "Wealth Horizon",
+    "The Financial Express",
+    "Weston Garcia"
+   ]
+  },
+  {
+   "id": "hormuz-oil",
+   "name": "Oil and the Strait of Hormuz",
+   "line": "Attacks on shipping and what they do to oil.",
+   "cat": "world",
+   "count": 7,
+   "new_today": 7,
+   "latest": "2026-11-21",
+   "faces": [
+    "Unseen Works",
+    "Conflict Atlas Brief",
+    "News Nexus",
+    "StoneX"
+   ]
+  },
+  {
+   "id": "btc-cycle",
+   "name": "Bitcoin's broken cycle",
+   "line": "It topped early. Is the four-year rhythm over?",
+   "cat": "money",
+   "count": 13,
+   "new_today": 13,
+   "latest": "2026-11-21",
+   "faces": [
+    "TreeCityWes",
+    "SKB TRADING LAB",
+    "Ask Pekic",
+    "Level99 Trading - Daily Bitcoin Analysis"
+   ]
+  }
+ ]
+}
