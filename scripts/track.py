@@ -35,6 +35,12 @@ def words(term):
     return re.compile(r"(?<![a-z0-9])" + re.escape(term.lower()) + r"(?![a-z0-9])")
 
 
+def latin(title):
+    """English only: drop titles written mostly in another script."""
+    letters = [c for c in title if c.isalpha()]
+    return not letters or sum(c.isascii() for c in letters) / len(letters) > 0.8
+
+
 def matches(n, title):
     t = title.lower()
     return all(any(words(term).search(t) for term in group) for group in n["match"])
@@ -51,7 +57,7 @@ def run(n, backfill_days, quota):
     fresh = [i for i in dict.fromkeys(ids) if i not in have]
     added = 0
     for v in details(fresh, quota).values():
-        if not usable(v) or REUPLOADS.search(v["channel"]) or not matches(n, v["title"]):
+        if not usable(v) or REUPLOADS.search(v["channel"]) or not matches(n, v["title"]) or not latin(v["title"]):
             continue
         have[v["id"]] = {k: v[k] for k in ("id", "title", "channel", "published", "length")} | {"found": NOW.strftime("%Y-%m-%dT%H:%M:%SZ")}
         added += 1
