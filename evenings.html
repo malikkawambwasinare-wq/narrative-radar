@@ -254,6 +254,22 @@
   body.threadmode .wrap { padding-top: calc(min(640px, 100vw) * 9 / 16 + 92px); }
   body.threadmode.playing .wrap { padding-bottom: 64px; }
   @media (max-width: 420px) { .cast { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 4px; } .av { width: 52px; height: 52px; } }
+  /* ---- tracked narratives ---- */
+  .badge { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 7px; border-radius: 11px; background: var(--signal); color: #fff; font-size: 12px; font-weight: 600; }
+  .row .badge { justify-self: end; color: #fff; font-size: 12px; }
+  .mode { display: flex; gap: 8px; flex-wrap: wrap; }
+  .mode button { min-height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid var(--edge-2); background: transparent; color: var(--ink); font: 500 14px var(--body); }
+  .mode button[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .vid { display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; padding: 12px 4px; border-bottom: 1px solid var(--edge); align-items: center; }
+  .vid .tt { font-size: 15px; line-height: 1.35; cursor: pointer; }
+  .vid .tt:hover { color: var(--accent); }
+  .vid .mm { font-size: 12.5px; color: var(--muted); grid-column: 1; }
+  .vid .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--signal); margin-right: 6px; vertical-align: 2px; }
+  .vid .ks { grid-column: 2; grid-row: 1 / span 2; display: flex; gap: 6px; }
+  .vid .ks button { min-height: 40px; padding: 0 14px; border-radius: 20px; border: 1px solid var(--edge-2); background: transparent; color: var(--ink); font: 500 13px var(--body); }
+  .vid .ks button.keep { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .vid.playing .tt { color: var(--accent); font-weight: 600; }
+  .inbox { background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 6px 14px 4px; }
 </style>
 
 </head>
@@ -412,6 +428,67 @@ function cutFor(th) {
   const cuts = cutsOf(th), want = state.lens;
   return cuts.find(t => (META[t.id] || {}).lens === want) || th;
 }
+
+/* Tracked narratives. A workflow adds new videos to tracking/*.json each
+   morning. Whether a new video joins the narrative by itself or waits for a
+   yes is the viewer's choice; that choice, what they kept and when they last
+   looked live only on their device. */
+const TRK = { index: null, data: {} };
+const trkPref = id => store.get("trk." + id, { mode: "auto", seen: null, said: {} });
+const trkSave = (id, p) => store.set("trk." + id, p);
+fetch("tracking/index.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(ix => {
+  if (!ix) return; TRK.index = ix;
+  return Promise.all(ix.narratives.map(n => fetch(`tracking/${n.id}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(d => { if (d) TRK.data[n.id] = d; })));
+}).then(() => { if (TRK.index && (state.view === "door" || state.view === "track")) render(); }).catch(() => {});
+function trkSplit(id, since) {
+  const d = TRK.data[id], p = trkPref(id); if (!d) return { shown: [], waiting: [], fresh: 0 };
+  const cut = since !== undefined ? since : p.seen;
+  const isNew = v => cut ? v.found > cut : (Date.now() - new Date(v.published)) < 3 * 864e5;
+  const shown = [], waiting = []; let fresh = 0;
+  for (const v of d.videos) {
+    const said = p.said[v.id];
+    if (said === "skip") continue;
+    const n = isNew(v);
+    if (p.mode === "ask" && n && !said) { waiting.push(v); continue; }
+    if (n) fresh++;
+    shown.push({ ...v, isNew: n });
+  }
+  return { shown, waiting, fresh };
+}
+function trackSection() {
+  if (!TRK.index) return "";
+  return `<section class="more"><h2>Tracking</h2><p class="label" style="margin:0">New videos arrive every morning.</p>${TRK.index.narratives.map(n => {
+    const sp = trkSplit(n.id), k = trkPref(n.id).mode === "ask" ? sp.waiting.length : sp.fresh;
+    return `<button class="row" data-track="${n.id}"><b>${esc(n.name)}</b>${k ? `<span class="badge" aria-label="${k} new">${k}</span>` : `<span></span>`}<span>${esc(n.line)}</span></button>`; }).join("")}</section>`;
+}
+function trackView(id) {
+  const d = TRK.data[id], p = trkPref(id);
+  if (!d) return topBar(true) + `<p class="label">Loading…</p>`;
+  const sp = trkSplit(id, state.trkSince);
+  const row = (v, ask) => `<div class="vid ${state.one && state.one.id === v.id ? "playing" : ""}">
+      <span class="tt" data-one="${v.id}" role="button" tabindex="0">${v.isNew ? `<span class="dot" aria-label="new"></span>` : ""}${esc(v.title)}</span>
+      <span class="mm">${esc(v.channel)} · ${esc(v.published)} · ${esc(v.length)}</span>
+      ${ask ? `<span class="ks"><button class="keep" data-said="keep:${v.id}">Keep</button><button data-said="skip:${v.id}">Skip</button></span>` : ""}
+    </div>`;
+  return topBar(true) + `<section class="tonight" style="gap:14px">
+      <div><div class="label">Tracking · ${d.videos.length} videos · checked ${esc((d.checked || "").slice(0, 10))}</div>
+      <h1 style="font-size:clamp(28px,5vw,40px)">${esc(d.name)}</h1><p class="lede">${esc(d.line)}</p></div>
+      <div><div class="label">New videos</div><div class="mode" role="group" aria-label="What happens to new videos" style="margin-top:8px">
+        <button data-mode="auto" aria-pressed="${p.mode === "auto"}">Add automatically</button>
+        <button data-mode="ask" aria-pressed="${p.mode === "ask"}">Ask me first</button></div></div>
+    </section>
+    ${sp.waiting.length ? `<section class="more" style="margin-top:28px"><h2>Waiting for you · ${sp.waiting.length}</h2><div class="inbox">${sp.waiting.map(v => row(v, true)).join("")}</div></section>` : ""}
+    <section class="more" style="margin-top:28px"><h2>The story so far</h2><div>${sp.shown.map(v => row(v, false)).join("") || `<p class="label">Nothing yet.</p>`}</div></section>`;
+}
+function playOne(id) {
+  const d = TRK.data[state.story]; const v = d && d.videos.find(x => x.id === id); if (!v) return;
+  stop(); threadStop(); state.one = { id, title: v.title, channel: v.channel }; render();
+  loadYT().then(() => { if (state.one && state.one.id === id) yt.loadVideoById({ videoId: id }); });
+}
+function oneStep(dir) {
+  const list = trkSplit(state.story, state.trkSince).shown, i = list.findIndex(v => v.id === state.one.id), n = list[i + dir];
+  if (n) playOne(n.id);
+}
 const initials = n => n.replace(/[^A-Za-z\s-]/g, "").split(/[\s-]+/).filter(Boolean).map(w => w[0]).slice(0, 2).join("").toUpperCase();
 /* Who is speaking in piece i, and on which side. */
 function speaker(th, i) {
@@ -467,7 +544,7 @@ function render() {
   const app = $("#app");
   const same = render.last === state.view + state.story; render.last = state.view + state.story;
   const keep = same && ((state.play && !state.play.ended) || (state.thread && !state.thread.ended)) ? window.scrollY : 0;   // don't jump the page while something plays
-  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : series(state.story);
+  app.innerHTML = state.view === "door" ? door() : state.view === "sorting" ? sorting(state.story) : state.view === "thread" ? threadView(state.story) : state.view === "track" ? trackView(state.story) : series(state.story);
   window.scrollTo({ top: keep });
   dockSync(); musicLevel();
 }
@@ -543,6 +620,7 @@ function door() {
     </div>
     <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
   </section>
+  ${trackSection()}
   ${others.length ? `<section class="more"><h2>More conversations</h2>${others.map(t => { const c = castOf(t);
     return `<button class="row" data-thread="${t.id}"><b>${esc(qOf(t))}</b><span class="faces">${c.slice(0, 4).map(p => avatar(p)).join("")}</span><span>${c.length} people · ${minsOf(t)} min</span></button>`; }).join("")}</section>` : ""}
   ${ready.length ? `<section class="more"><h2>Full evenings</h2><p class="label" style="margin:0">Whole videos, in episodes, for a longer night.</p>${ready.map(e =>
@@ -673,8 +751,15 @@ function dockSync(msg) {
     document.getElementById("dock-sub").textContent = `Piece ${t.i + 1} of ${th.segs.length} · ${sg.channel} · ${sg.published}` + (nx ? ` · next: ${nx.channel}` : " · last one");
     return;
   }
-  const on = !!(p && !p.ended);
   document.body.classList.remove("threadmode");
+  if (state.one) {
+    d.classList.remove("off"); document.body.classList.toggle("playing", !d.classList.contains("big"));
+    d.querySelectorAll("[data-deeper-toggle],[data-deeper-back]").forEach(b => b.hidden = true);
+    document.getElementById("dock-title").textContent = msg || state.one.title;
+    document.getElementById("dock-sub").textContent = state.one.channel + " · full video";
+    return;
+  }
+  const on = !!(p && !p.ended);
   d.classList.toggle("off", !on);
   document.body.classList.toggle("playing", on && !d.classList.contains("big"));
   if (!on) return;
@@ -755,7 +840,7 @@ function advance(e) {
   state.play = { ...p, ended: true }; store.del("resume." + state.story); render();
 }
 const markSeen = v => { if (v) { state.seen.add(v.id); store.set("seen", [...state.seen]); } };
-const stop = () => { clearTimeout(state.play?.timer); state.play = null; try { yt && yt.stopVideo(); } catch (x) {} dock().classList.remove("big"); dockSync(); };
+const stop = () => { clearTimeout(state.play?.timer); state.play = null; state.one = null; try { yt && yt.stopVideo(); } catch (x) {} dock().classList.remove("big"); dockSync(); };
 
 /* A thread: short pieces from many videos, each starting at the moment the
    point is made, played back to back. Nothing is cut or stitched: each piece
@@ -960,6 +1045,16 @@ document.addEventListener("click", ev => {
   if (t.closest("[data-deeper-back]")) return deeperBack();
   const dg = t.closest("[data-deeper]"); if (dg) return deeperGo(+dg.dataset.deeper);
   const sd = t.closest("[data-side]"); if (sd) { state.side = sd.dataset.side; store.set("side", state.side); return render(); }
+  const tk = t.closest("[data-track]"); if (tk) { stop(); threadStop(); state.view = "track"; state.story = tk.dataset.track;
+    const p = trkPref(state.story); state.trkSince = p.seen; p.seen = new Date().toISOString().replace(/\.\d+Z$/, "Z"); trkSave(state.story, p); return render(); }
+  const md = t.closest("[data-mode]"); if (md && state.view === "track") { const p = trkPref(state.story); p.mode = md.dataset.mode; trkSave(state.story, p); return render(); }
+  const sd2 = t.closest("[data-said]"); if (sd2) { const [k, id] = sd2.dataset.said.split(":"); const p = trkPref(state.story); p.said[id] = k; trkSave(state.story, p); return render(); }
+  const on1 = t.closest("[data-one]"); if (on1) return playOne(on1.dataset.one);
+  if (state.one) {
+    if (t.closest("[data-next]")) return oneStep(1);
+    if (t.closest("[data-prev]")) return oneStep(-1);
+    if (t.closest("[data-stop]")) { stop(); return render(); }
+  }
   const ln = t.closest("[data-lens]"); if (ln) { state.lens = ln.dataset.lens; store.set("lens", state.lens); return render(); }
   const tp = t.closest("[data-thread-play]"); if (tp) { stop(); threadStop(); state.view = "thread"; state.story = tp.dataset.threadPlay; render(); return threadStart(0); }
   const thr = t.closest("[data-thread]"); if (thr) { stop(); threadStop(); state.view = "thread"; state.story = thr.dataset.thread; return render(); }
@@ -984,7 +1079,7 @@ document.addEventListener("click", ev => {
   if (t.closest("[data-stop]")) { stop(); return render(); }
   const sn = t.closest("[data-seen]"); if (sn) { const id = sn.dataset.seen; state.seen.has(id) ? state.seen.delete(id) : state.seen.add(id); store.set("seen", [...state.seen]); return render(); }
 });
-document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".turn[data-seg]")) { ev.preventDefault(); threadStart(+ev.target.dataset.seg); } });
+document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".turn[data-seg]")) { ev.preventDefault(); threadStart(+ev.target.dataset.seg); } else if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[data-one]")) { ev.preventDefault(); playOne(ev.target.dataset.one); } });
 document.addEventListener("change", ev => { if (ev.target.id === "skipseen") { state.skipSeen = ev.target.checked; store.set("skipSeen", state.skipSeen); render(); } });
 render();
 loadYT();   // ready before the first tap, so that tap is the one that plays
