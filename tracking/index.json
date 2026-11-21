@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:27:25.736830+00:00",
+ "updated": "2026-11-21T18:37:23.755507+00:00",
  "narratives": [
   {
    "id": "nvidia-after-huang",
@@ -116,6 +116,79 @@
     "SKB TRADING LAB",
     "Ask Pekic",
     "Level99 Trading - Daily Bitcoin Analysis"
+   ]
+  }
+ ],
+ "themes": [
+  {
+   "id": "theme-nature",
+   "name": "Nature",
+   "thumbs": [
+    "PsCBnhWAqiE",
+    "aPWHG8n2vT0",
+    "ForXp24ry6M",
+    "wtDP5W3H73o",
+    "XiKMTcGc2Ew",
+    "T_qmM6P1KZE",
+    "HlR79gOW45g",
+    "fAZwfwU34p8",
+    "cH41fsTSdkw",
+    "fKMNw2aZQ_M",
+    "oVLunIUhWZA",
+    "Uy_Hdd7G1vM",
+    "UuhrEL1YQLU",
+    "eHR-yrq8I78",
+    "eChiDlZ-hRg",
+    "066JqNBvRVM",
+    "ReYEGEZaFmU",
+    "MdrwOToO1MM",
+    "KffrbppKg5k",
+    "H10w_eomSFo",
+    "R_SuamD0BXs",
+    "SEf5cEwNLRI",
+    "mhCSPUsSFdQ",
+    "TzkDWoFGdH8"
+   ]
+  },
+  {
+   "id": "theme-ai",
+   "name": "AI",
+   "thumbs": [
+    "Nf3P6kGBtRQ",
+    "YKS34sswxbg"
+   ]
+  },
+  {
+   "id": "theme-geopolitics",
+   "name": "Geopolitics",
+   "thumbs": [
+    "x3lZM9Qd3p4",
+    "jhp0XrzQSXE",
+    "Eo2iQeI1c4Y",
+    "wRe2-Xj8Puw",
+    "u0nVgPjUT8A",
+    "vtBqVrrYRuM",
+    "a1mI-ozLyYM"
+   ]
+  },
+  {
+   "id": "theme-us-politics",
+   "name": "US politics",
+   "thumbs": [
+    "4my3_ySobq4",
+    "zJMQNWpUWT8"
+   ]
+  },
+  {
+   "id": "theme-uk-politics",
+   "name": "UK politics",
+   "thumbs": [
+    "oIDmj98ZbVM",
+    "G_BtKM1fc-o",
+    "8TzTeoTho3s",
+    "jj5_JMYv7Z0",
+    "klEE_snZ5To",
+    "B2EdVeWqhJE"
    ]
   }
  ]
