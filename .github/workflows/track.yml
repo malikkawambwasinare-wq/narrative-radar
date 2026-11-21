@@ -1,0 +1,44 @@
+name: Track narratives
+
+# Once a day, look for new videos on every tracked narrative and save them to
+# tracking/. The page reads those files; GitHub Pages republishes on the push.
+
+on:
+  schedule:
+    - cron: "15 11 * * *"   # 07:15 New York, before the morning
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "optional: one narrative id"
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: track
+  cancel-in-progress: false
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Track
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          ONLY: ${{ inputs.only }}
+        run: python3 scripts/track.py $ONLY
+      - name: Save
+        run: |
+          git config user.name "narrative-radar-bot"
+          git config user.email "actions@github.com"
+          git add tracking
+          git diff --cached --quiet && { echo "nothing new"; exit 0; }
+          git commit -m "Track: new videos on tracked narratives [skip netlify]"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin HEAD:main && exit 0; sleep 5; done
+          exit 1
