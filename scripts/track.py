@@ -78,7 +78,12 @@ def main():
             f = DIR / f"{n['id']}.json"
             out, added = (json.loads(f.read_text()), 0) if f.exists() else run(n, cfg["backfill_days"], quota)
         else:
-            out, added = run(n, cfg["backfill_days"], quota)
+            try:
+                out, added = run(n, cfg["backfill_days"], quota)
+            except (Exception, SystemExit) as ex:   # one refusal (quota, 429) must not stop the morning for the rest
+                print(f"{n['name']}: skipped this run ({str(ex)[:80]})", flush=True)
+                f = DIR / f"{n['id']}.json"
+                out, added = (json.loads(f.read_text()), 0) if f.exists() else ({"videos": []}, 0)
         if n.get("theme"):
             themes.append({"id": n["id"], "name": n["name"], "thumbs": [v["id"] for v in out["videos"][:24]]})
             continue
