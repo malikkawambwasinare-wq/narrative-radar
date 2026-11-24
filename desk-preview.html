@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your desk · preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  /* A preview of the home screen built on tracks (briefs/MOMENTS-SPEC.md).
+     Same room as the live site. Counts and moments are examples. */
+  :root {
+    color-scheme: light;
+    --ground: #eceee8; --glass: #f6f7f3; --edge: #d6dad3; --edge-2: #c3c8c0;
+    --ink: #1c2321; --ink-2: #4a5350; --muted: #5f6865;
+    --accent: #1f6f66; --accent-ink: #f2f6f3; --signal: #b8601b; --boom: #2f5fc4; --both: #7c8580;
+    --display: "Bricolage Grotesque", system-ui, sans-serif; --body: "Inter", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--ground); color: var(--ink); font: 15px/1.5 var(--body); }
+  .wrap { max-width: 640px; margin: 0 auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); padding-block: 18px 64px; display: grid; gap: 26px; }
+  h1, h2 { margin: 0; font-family: var(--display); font-weight: 700; text-wrap: balance; }
+  button { font: inherit; color: inherit; cursor: pointer; }
+  button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .preview { background: #fff7ea; border: 1px dashed var(--signal); color: #7a4a1e; border-radius: 12px; padding: 10px 14px; font-size: 13px; }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; gap: 10px; align-items: center; font-family: var(--display); font-weight: 700; font-size: 17px; }
+  .brand i { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+  .ghost { min-height: 40px; border: 1px solid var(--edge-2); background: var(--glass); border-radius: 20px; padding: 0 14px; font-size: 13px; }
+  .label { font-size: 13px; color: var(--muted); }
+  .hello h1 { font-size: clamp(36px, 8vw, 52px); line-height: 1; letter-spacing: -.02em; }
+  .hello p { margin: 8px 0 0; color: var(--ink-2); font-size: 16px; }
+  .time { display: flex; gap: 8px; }
+  .time button { min-height: 44px; padding: 0 18px; border-radius: 22px; border: 1px solid var(--edge-2); background: transparent; font-weight: 500; }
+  .time button[aria-pressed="true"] { background: var(--ink); color: var(--ground); border-color: var(--ink); }
+  .stage { display: grid; gap: 12px; margin-inline: -20px; }
+  .reel { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
+  .reel .track { display: flex; gap: 8px; width: max-content; animation: drift 90s linear infinite; }
+  .reel.rev .track { animation-direction: reverse; animation-duration: 110s; }
+  .reel img { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; background: #e2e5de; }
+  @keyframes drift { to { transform: translateX(-50%); } }
+  @media (prefers-reduced-motion: reduce) { .reel .track { animation: none; } }
+  .play { margin-inline: 20px; min-height: 58px; border-radius: 29px; border: 0; background: var(--ink); color: var(--ground); font-weight: 600; font-size: 16px; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 14px 34px -14px rgba(28,35,33,.6); }
+  .play small { font-weight: 400; opacity: .75; }
+  .group { display: grid; gap: 10px; }
+  .group h2 { font-size: 13px; font-family: var(--body); font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .trk { background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; text-align: left; padding: 14px 16px; display: grid; grid-template-columns: 1fr auto; gap: 6px 12px; align-items: center; width: 100%; }
+  .trk:hover { background: #fff; border-color: var(--edge-2); }
+  .trk b { font-family: var(--display); font-size: 18px; line-height: 1.2; }
+  .trk .meta { grid-column: 1 / -1; display: flex; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); }
+  .faces { display: flex; }
+  .faces span { width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 1.5px solid var(--accent); margin-left: -6px; display: flex; align-items: center; justify-content: center; font: 700 10.5px var(--display); }
+  .faces span:first-child { margin-left: 0; }
+  .badge { min-width: 26px; height: 26px; padding: 0 8px; border-radius: 13px; background: var(--signal); color: #fff; font-size: 13px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+  .quiet { color: var(--muted); font-size: 13px; }
+  .moments { grid-column: 1 / -1; display: none; border-top: 1px solid var(--edge); margin-top: 6px; padding-top: 6px; }
+  .trk[aria-expanded="true"] .moments { display: grid; }
+  .mo { display: grid; grid-template-columns: 1fr auto; gap: 2px 10px; padding: 8px 0; font-size: 14.5px; line-height: 1.35; }
+  .mo span { font-size: 12.5px; color: var(--muted); }
+  .mo em { font-style: normal; font-size: 12.5px; color: var(--muted); grid-row: 1 / span 2; grid-column: 2; }
+  .follow { border: 1.5px dashed var(--edge-2); background: transparent; border-radius: 16px; min-height: 56px; font-weight: 500; color: var(--accent); }
+  .kinds { display: none; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .kinds.open { display: grid; }
+  .kinds button { min-height: 64px; border-radius: 14px; border: 1px solid var(--edge-2); background: var(--glass); text-align: left; padding: 10px 12px; display: grid; gap: 2px; }
+  .kinds b { font-size: 15px; }
+  .kinds span { font-size: 12.5px; color: var(--muted); }
+  .foot { font-size: 13px; color: var(--muted); border-top: 1px solid var(--edge); padding-top: 14px; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="preview">Preview of the home screen built on tracks. Track names are real; the counts and moments are examples.</div>
+
+  <div class="top"><div class="brand"><i aria-hidden="true"></i>Story Evenings</div><button class="ghost">♪ Sound on</button></div>
+
+  <section class="hello">
+    <div class="label">Tuesday morning</div>
+    <h1>Your desk</h1>
+    <p>Overnight we read the new videos on what you follow and kept 14 moments.</p>
+  </section>
+
+  <section style="display:grid;gap:12px">
+    <div class="label">I have</div>
+    <div class="time" role="group" aria-label="How much time you have">
+      <button data-min="15" aria-pressed="true">15 min</button>
+      <button data-min="30" aria-pressed="false">30 min</button>
+      <button data-min="60" aria-pressed="false">60 min</button>
+    </div>
+  </section>
+
+  <section class="stage">
+    <div class="reel" aria-hidden="true"><div class="track" id="r1"></div></div>
+    <button class="play" id="play"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Play this morning <small id="playmeta">· 9 moments · 15 min</small></button>
+    <div class="reel rev" aria-hidden="true"><div class="track" id="r2"></div></div>
+  </section>
+
+  <section class="group">
+    <h2>Companies</h2>
+    <button class="trk" aria-expanded="false">
+      <b>Walmart</b><span class="badge" aria-label="3 new">3</span>
+      <span class="meta"><span class="faces"><span>BB</span><span>CF</span><span>RA</span></span>3 new moments · 4 min</span>
+      <span class="moments">
+        <span class="mo">New income lets it keep prices low<span>Bloomberg Television · anchor</span><em>0:39</em></span>
+        <span class="mo">What the membership numbers say about its shoppers<span>A retail analyst · CNBC</span><em>1:10</em></span>
+        <span class="mo">Where lower-income customers are pulling back<span>Walmart CFO · earnings call</span><em>1:45</em></span>
+      </span>
+    </button>
+    <button class="trk" aria-expanded="false">
+      <b>Anthropic</b><span class="badge" aria-label="4 new">4</span>
+      <span class="meta"><span class="faces"><span>SN</span><span>TY</span><span>BZ</span></span>4 new moments · 5 min · after the IPO</span>
+      <span class="moments">
+        <span class="mo">Why the IPO didn't stop the sell-off<span>Schwab Network</span><em>1:20</em></span>
+        <span class="mo">Who bought the shares, and who sold<span>A fund manager · podcast</span><em>1:05</em></span>
+      </span>
+    </button>
+    <button class="trk" aria-expanded="false">
+      <b>Nvidia</b><span class="quiet">nothing new</span>
+      <span class="meta"><span class="faces"><span>LP</span><span>TR</span></span>Last moment 2 days ago</span>
+      <span class="moments"><span class="mo">What happens to Nvidia now<span>Limitless Podcast</span><em>2:00</em></span></span>
+    </button>
+  </section>
+
+  <section class="group">
+    <h2>Ideas</h2>
+    <button class="trk" aria-expanded="false">
+      <b>Where is the customer, and can they keep paying?</b><span class="badge" aria-label="2 new">2</span>
+      <span class="meta"><span class="faces"><span>FM</span><span>EC</span></span>2 new moments · 3 min · started from a moment you saved</span>
+      <span class="moments">
+        <span class="mo">How long can a stretched household keep five subscriptions?<span>A fund manager · podcast</span><em>1:30</em></span>
+        <span class="mo">Where lower-income shoppers cut back first<span>An economist · news</span><em>1:15</em></span>
+      </span>
+    </button>
+  </section>
+
+  <section class="group">
+    <h2>Voices</h2>
+    <button class="trk" aria-expanded="false">
+      <b>Bloomberg Television</b><span class="badge" aria-label="2 new">2</span>
+      <span class="meta">Only its moments on what you follow · 2 of 31 videos today</span>
+      <span class="moments">
+        <span class="mo">Walmart's quarter, in one minute<span>Anchor segment</span><em>0:58</em></span>
+        <span class="mo">Anthropic after the IPO<span>Markets desk</span><em>1:12</em></span>
+      </span>
+    </button>
+  </section>
+
+  <section class="group">
+    <h2>Stories</h2>
+    <button class="trk" aria-expanded="false">
+      <b>Is AI a bubble?</b><span class="badge" aria-label="1 new">1</span>
+      <span class="meta"><span class="faces"><span style="border-color:var(--signal)">SG</span><span style="border-color:var(--boom)">BG</span></span>1 new voice, from the other camp</span>
+      <span class="moments"><span class="mo">"Ordinary people will be left holding the bag"<span>Scott Galloway · Prof G</span><em>0:52</em></span></span>
+    </button>
+  </section>
+
+  <section class="group">
+    <button class="follow" id="follow">+ Follow something</button>
+    <div class="kinds" id="kinds">
+      <button><b>A company</b><span>Walmart, Anthropic, Tesla…</span></button>
+      <button><b>An idea</b><span>Save a moment, follow the thought</span></button>
+      <button><b>A voice</b><span>One show or one person</span></button>
+      <button><b>A story</b><span>A question people disagree on</span></button>
+    </div>
+  </section>
+
+  <p class="foot">Nothing plays after your minutes run out. More stories and full evenings stay one tap away.</p>
+</main>
+<script>
+  const ids1 = ["hwkHkUpWZP4", "I2XAug-Uz6M", "f23hv1zXN8I", "5Cnq_KQyvq0", "JAYVO1_Gn6g", "tTegG5Mj-CU", "sH5qyeHSdVs"];
+  const ids2 = ["4Vf8pljp1FY", "IsPMTMvjL-Y", "UC6XCGsj444", "vDUkKpz0Q_E", "AmhltjSuLJM", "MqmVh7Ex-xo", "haqG5MRkR08"];
+  const row = ids => { const h = ids.map(id => `<img src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="">`).join(""); return h + h; };
+  document.getElementById("r1").innerHTML = row(ids1);
+  document.getElementById("r2").innerHTML = row(ids2);
+  const plan = { 15: "9 moments · 15 min", 30: "14 moments · 30 min", 60: "14 moments + 2 longer explainers · 60 min" };
+  document.querySelectorAll("[data-min]").forEach(b => b.addEventListener("click", () => {
+    document.querySelectorAll("[data-min]").forEach(x => x.setAttribute("aria-pressed", x === b));
+    document.getElementById("playmeta").textContent = "· " + plan[b.dataset.min];
+  }));
+  document.querySelectorAll(".trk").forEach(t => t.addEventListener("click", () => t.setAttribute("aria-expanded", t.getAttribute("aria-expanded") !== "true")));
+  document.getElementById("follow").addEventListener("click", () => document.getElementById("kinds").classList.toggle("open"));
+</script>
+</body>
+</html>
