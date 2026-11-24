@@ -3,6 +3,54 @@
  "backfill_days": 30,
  "narratives": [
   {
+   "id": "co-walmart",
+   "kind": "company",
+   "name": "Walmart",
+   "line": "Its sales, its shoppers, and how it keeps prices low.",
+   "cat": "money",
+   "queries": [
+    "Walmart earnings",
+    "Walmart stock news"
+   ],
+   "match": [
+    [
+     "walmart",
+     "wmt"
+    ]
+   ]
+  },
+  {
+   "id": "co-anthropic",
+   "kind": "company",
+   "name": "Anthropic",
+   "line": "The company behind Claude, after its IPO.",
+   "cat": "money",
+   "queries": [
+    "Anthropic news"
+   ],
+   "match": [
+    [
+     "anthropic"
+    ]
+   ]
+  },
+  {
+   "id": "co-nvidia",
+   "kind": "company",
+   "name": "Nvidia",
+   "line": "The chipmaker at the centre of the AI trade.",
+   "cat": "money",
+   "queries": [
+    "Nvidia stock news"
+   ],
+   "match": [
+    [
+     "nvidia",
+     "nvda"
+    ]
+   ]
+  },
+  {
    "id": "nvidia-after-huang",
    "name": "Nvidia after Jensen Huang",
    "line": "His exit, the China story, and what it means for the AI trade.",
@@ -16,7 +64,8 @@
      "huang",
      "nvidia"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "anthropic-ipo",
@@ -37,7 +86,8 @@
      "valuation",
      "shares"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "ai-debt",
@@ -68,7 +118,8 @@
      "bonds",
      "loans"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "fed-ai-crash",
@@ -89,7 +140,8 @@
     [
      "ai"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "korea-ai-mania",
@@ -117,7 +169,8 @@
      "mania",
      "bubble"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "us-debt-crisis",
@@ -146,7 +199,8 @@
      "dollar",
      "crisis"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "hormuz-oil",
@@ -160,7 +214,8 @@
     [
      "hormuz"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "btc-cycle",
@@ -179,7 +234,8 @@
      "cycle",
      "halving"
     ]
-   ]
+   ],
+   "kind": "story"
   },
   {
    "id": "theme-nature",
