@@ -71,7 +71,7 @@ def run(n, backfill_days, quota):
 def main():
     cfg = json.loads((DIR / "narratives.json").read_text())
     only = sys.argv[1:]
-    quota = Quota(60)
+    quota = Quota(70)
     index, themes = [], []
     for n in cfg["narratives"]:
         if only and n["id"] not in only:
@@ -88,7 +88,7 @@ def main():
             themes.append({"id": n["id"], "name": n["name"], "thumbs": [v["id"] for v in out["videos"][:24]]})
             continue
         day = (NOW - timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
-        index.append({"id": n["id"], "name": n["name"], "line": n["line"], "cat": n.get("cat", ""), "count": len(out["videos"]),
+        index.append({"id": n["id"], "kind": n.get("kind", "story"), "name": n["name"], "line": n["line"], "cat": n.get("cat", ""), "count": len(out["videos"]),
                       "new_today": sum(1 for v in out["videos"] if v["found"] >= day), "latest": out["videos"][0]["published"] if out["videos"] else "",
                       "faces": list(dict.fromkeys(v["channel"] for v in out["videos"]))[:4]})
     (DIR / "index.json").write_text(json.dumps({"updated": NOW.isoformat(), "narratives": index, "themes": themes}, indent=1, ensure_ascii=False) + "\n")
