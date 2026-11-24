@@ -3,8 +3,224 @@
  "name": "AI",
  "line": "",
  "cat": "",
- "checked": "2026-11-24T12:59:39.923206+00:00",
+ "checked": "2026-11-24T21:18:05.225091+00:00",
  "videos": [
+  {
+   "id": "N1eNPpjpO7c",
+   "title": "The RAPID Growth of Artificial Intelligence Over the Years, and Will It Take Everyone’s Jobs?",
+   "channel": "Megyn Kelly",
+   "published": "2026-11-24",
+   "length": "17:22",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "A36dpuWmC4U",
+   "title": "Could AI make our worst military decision, really quickly?",
+   "channel": "BFBS Forces News",
+   "published": "2026-11-24",
+   "length": "9:42",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "wiaFIl9I2rU",
+   "title": "AI Shocks the World: Synthetic Humans, New Ameca, Orion, Time Machine, Jarvis… (October News)",
+   "channel": "BEYOND GRID",
+   "published": "2026-11-24",
+   "length": "12:12",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "GHSURMY-8Bw",
+   "title": "Tech Mahindra Seeks Indus LLM Monetization | AI News Today Latest 24 Nov 2026",
+   "channel": "IBI Artificial Intelligence News",
+   "published": "2026-11-24",
+   "length": "4:46",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "yPogkCwVsSM",
+   "title": "BREAKING NEWS! Jensen Huang Returns as NVIDIA CEO – Shares Surge 31.5% | 23 November 2026",
+   "channel": "MrEasy ",
+   "published": "2026-11-24",
+   "length": "10:44",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "q7AGG1cldzQ",
+   "title": "This Week in AI: Drug Discovery Revolution? 🔥 News with Shaily for Week Starting May 12",
+   "channel": "AI Guru Shailendra Kumaar",
+   "published": "2026-11-24",
+   "length": "6:25",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "_GSW764hcos",
+   "title": "[2/28 10:00 UTC] CNN declares \"The Week AI Changed Everything\"…",
+   "channel": "Koy",
+   "published": "2026-11-24",
+   "length": "3:18",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "cl_VQ_EG_Qg",
+   "title": "FAA Ground Stop, Outlook, Chase, iCloud Down in One Week: Was AI to Blame?",
+   "channel": "Simply AI",
+   "published": "2026-11-24",
+   "length": "8:19",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "AGyD6lRiE2s",
+   "title": "3 Times AI Agents Hit a Real Website in One Week. Test Gone Wrong or Safety Failure?",
+   "channel": "TechRushByte",
+   "published": "2026-11-24",
+   "length": "9:08",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "IKYfGJFGZIw",
+   "title": "Why AI stocks crashed in the Nasdaq's worst week since 2020",
+   "channel": "Red Label News",
+   "published": "2026-11-24",
+   "length": "4:17",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "VB9dINwrsWM",
+   "title": "Gemini 5 Is Coming? Google's Hot Streak vs OpenAI's Rough Week (Facts vs Hype)",
+   "channel": "The AI Index",
+   "published": "2026-11-24",
+   "length": "10:19",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "wcPlUCqOD2Q",
+   "title": "Black Friday 2026: How AI Is Transforming Cyber Week & Online Shopping",
+   "channel": "MORV_ai",
+   "published": "2026-11-24",
+   "length": "4:56",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "Fdkop6YS5Jk",
+   "title": "Startup of the Week: Tamarin AI",
+   "channel": "Art of Procurement",
+   "published": "2026-11-24",
+   "length": "28:33",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "VeWUYJwu5kU",
+   "title": "AI Income Lab: Week 1 — 48 Shorts, The First Week, Honest Numbers",
+   "channel": "AI Income Lab",
+   "published": "2026-11-24",
+   "length": "48:40",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "_0sKtxae6wE",
+   "title": "AI in Trucking: How Owner-Operators Can Reclaim 10 Hours/Week",
+   "channel": "FreightWaves",
+   "published": "2026-11-24",
+   "length": "28:32",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "3rlsi-yyxtY",
+   "title": "BSV News: AI Agents Can Now Spend BSV With PetaSats",
+   "channel": "BSV Data",
+   "published": "2026-11-24",
+   "length": "5:46",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "x_aeFagvcYw",
+   "title": "Gemini 4 Neon Beats Carbon, Real-Time Video Avatars, AI Plays Games & 3D Blender: AI NEWS",
+   "channel": "Straight AI",
+   "published": "2026-11-24",
+   "length": "7:22",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "faSMGSU8kY8",
+   "title": "AI daily news #1:  750B Loop Models, AI PR Approvals & OpenAI's 0.70 Line",
+   "channel": "Glitch & Know",
+   "published": "2026-11-24",
+   "length": "3:47",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "9RodHZJ1KHA",
+   "title": "Huang Back At Nvidia: Musk, OpenAI Boss Altman Cheer While Telegram CEO Durov Takes A Jibe| Watch",
+   "channel": "Times Now",
+   "published": "2026-11-24",
+   "length": "11:42",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "Yt7kPF_veeg",
+   "title": "AI News: OpenAI & Anthropic Insiders Fear Their Own Models",
+   "channel": "AI Shift Daily",
+   "published": "2026-11-24",
+   "length": "9:10",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "SKDOBo7rwEc",
+   "title": "OpenAI’s Chief Scientist Just Issued ANOTHER Warning…",
+   "channel": "AI Copium",
+   "published": "2026-11-24",
+   "length": "11:24",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "Pt74JEXvV14",
+   "title": "Cisco + OpenAI’s Shirudo runs defense inside the kernel",
+   "channel": "Chuck Goetschel",
+   "published": "2026-11-24",
+   "length": "7:06",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "ZiyyKBw7Hs4",
+   "title": "Apple, OpenAI, Nvidia Made the Same $90B Mistake",
+   "channel": "PlotHole ",
+   "published": "2026-11-24",
+   "length": "5:35",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "RQXaQC5C_vU",
+   "title": "Why 7 People Walked Out of OpenAI",
+   "channel": "abdur rashid",
+   "published": "2026-11-24",
+   "length": "3:16",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "o86gF4OGeH0",
+   "title": "Gemini 5 Already?! Google Is Cooking While OpenAI Struggles",
+   "channel": "Your AI Guy",
+   "published": "2026-11-24",
+   "length": "13:53",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "3IcwzjGPBhk",
+   "title": "Claude Fable 5.2 vs GPT-6.2 Astra: Why OpenAI Cut Prices",
+   "channel": "AI Model News",
+   "published": "2026-11-24",
+   "length": "3:58",
+   "found": "2026-11-24T21:18:05Z"
+  },
+  {
+   "id": "zMxLjubawHE",
+   "title": "They Quit OpenAI. Now They're Worth $1.5 Trillion.",
+   "channel": "Corporate Rise & Fall",
+   "published": "2026-11-24",
+   "length": "7:10",
+   "found": "2026-11-24T21:18:05Z"
+  },
   {
    "id": "qgL_IbP2qKg",
    "title": "OpenAI insider: An AI accident is the most likely way people will die",
