@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T01:40:21.095334+00:00",
+ "updated": "2026-11-24T12:59:39.923206+00:00",
  "narratives": [
   {
    "id": "co-walmart",
@@ -7,10 +7,15 @@
    "name": "Walmart",
    "line": "Its sales, its shoppers, and how it keeps prices low.",
    "cat": "money",
-   "count": 0,
-   "new_today": 0,
-   "latest": "",
-   "faces": []
+   "count": 37,
+   "new_today": 37,
+   "latest": "2026-11-24",
+   "faces": [
+    "FXIGOR",
+    "Global News Daily",
+    "Market Mantra",
+    "TheDriversGrind"
+   ]
   },
   {
    "id": "co-anthropic",
@@ -18,10 +23,15 @@
    "name": "Anthropic",
    "line": "The company behind Claude, after its IPO.",
    "cat": "money",
-   "count": 0,
-   "new_today": 0,
-   "latest": "",
-   "faces": []
+   "count": 4,
+   "new_today": 4,
+   "latest": "2026-11-23",
+   "faces": [
+    "Neural Nutshell",
+    "Matthew Berman",
+    "Bloomberg Television",
+    "LBC"
+   ]
   },
   {
    "id": "co-nvidia",
@@ -29,10 +39,15 @@
    "name": "Nvidia",
    "line": "The chipmaker at the centre of the AI trade.",
    "cat": "money",
-   "count": 0,
-   "new_today": 0,
-   "latest": "",
-   "faces": []
+   "count": 5,
+   "new_today": 5,
+   "latest": "2026-11-24",
+   "faces": [
+    "Martyn Lucas INVESTOR",
+    "CNBC-TV18",
+    "NDTV Profit",
+    "NDTV"
+   ]
   },
   {
    "id": "nvidia-after-huang",
@@ -40,14 +55,14 @@
    "name": "Nvidia after Jensen Huang",
    "line": "His exit, the China story, and what it means for the AI trade.",
    "cat": "money",
-   "count": 44,
-   "new_today": 0,
-   "latest": "2026-11-22",
+   "count": 58,
+   "new_today": 14,
+   "latest": "2026-11-24",
    "faces": [
-    "Billions Gone",
-    "Enter Your Era",
-    "MeXbuzz Finance",
-    "Doodle Brain AI"
+    "Clownfish TV",
+    "DocsMan",
+    "Grow with Adam ",
+    "Bloomberg Podcasts"
    ]
   },
   {
@@ -56,14 +71,14 @@
    "name": "Anthropic goes public",
    "line": "The IPO, the valuation, and whether AI listings mark the top.",
    "cat": "money",
-   "count": 12,
-   "new_today": 0,
-   "latest": "2026-11-22",
+   "count": 21,
+   "new_today": 9,
+   "latest": "2026-11-24",
    "faces": [
-    "Hobby Explorer",
-    "MAGIC MONEY WOJAK",
+    "Uncapped | Benchmark Breakfast",
     "Tech Folk Insights ",
-    "Be Rich"
+    "GeoGlobex Alpha",
+    "The Maverick of Wall Street"
    ]
   },
   {
@@ -72,14 +87,14 @@
    "name": "The AI debt scare",
    "line": "Data centres built on borrowed money, and the circular deals.",
    "cat": "money",
-   "count": 37,
-   "new_today": 0,
-   "latest": "2026-11-22",
+   "count": 52,
+   "new_today": 15,
+   "latest": "2026-11-24",
    "faces": [
-    "Rational Wealth",
-    "MindVest",
-    "Skeptical Ledger",
-    "The CorporateX."
+    "usa stock market investor ",
+    "Simple Finance ",
+    "POC",
+    "itsdatstory"
    ]
   },
   {
@@ -88,10 +103,11 @@
    "name": "The Fed's AI warning",
    "line": "Central bankers on AI concentration and crash risk.",
    "cat": "money",
-   "count": 3,
-   "new_today": 0,
-   "latest": "2026-11-21",
+   "count": 4,
+   "new_today": 1,
+   "latest": "2026-11-23",
    "faces": [
+    "Hananomics",
     "Veil of Aziz",
     "The Kestrel Report | AI News with Sarah Ellis",
     "Ball and Chain"
@@ -103,12 +119,14 @@
    "name": "South Korea's AI stock mania",
    "line": "A smaller market running hot on AI chips.",
    "cat": "money",
-   "count": 2,
-   "new_today": 0,
-   "latest": "2026-11-20",
+   "count": 5,
+   "new_today": 3,
+   "latest": "2026-11-24",
    "faces": [
-    "quick-K",
-    "OPLIVX"
+    "One Minute Finance",
+    "saidline",
+    "Wall St Macro",
+    "quick-K"
    ]
   },
   {
@@ -117,14 +135,14 @@
    "name": "A US debt crisis?",
    "line": "Dated warnings about US debt, bonds and the dollar.",
    "cat": "money",
-   "count": 29,
-   "new_today": 0,
-   "latest": "2026-11-22",
+   "count": 34,
+   "new_today": 5,
+   "latest": "2026-11-23",
    "faces": [
-    "Capital News TV",
-    "Drawn to Wealth",
-    "Fed Gold Tales",
-    "Wealth Horizon"
+    "The Financial Express",
+    "PS - PETER SCHIFF",
+    "The Macro Strategist",
+    "ECONOMIC ALERT"
    ]
   },
   {
@@ -133,14 +151,14 @@
    "name": "Oil and the Strait of Hormuz",
    "line": "Attacks on shipping and what they do to oil.",
    "cat": "world",
-   "count": 14,
-   "new_today": 0,
-   "latest": "2026-11-22",
+   "count": 18,
+   "new_today": 4,
+   "latest": "2026-11-24",
    "faces": [
-    "Now and Why Daily",
-    "Pindive",
-    "C M",
-    "MIRROR NOW"
+    "Al Jazeera English",
+    "Stick Figure Dispatch",
+    "MIRROR NOW",
+    "economic shark"
    ]
   },
   {
@@ -149,14 +167,14 @@
    "name": "Bitcoin's broken cycle",
    "line": "It topped early. Is the four-year rhythm over?",
    "cat": "money",
-   "count": 16,
-   "new_today": 0,
-   "latest": "2026-11-22",
+   "count": 20,
+   "new_today": 4,
+   "latest": "2026-11-23",
    "faces": [
-    "VisionPulsed",
-    "Chadwick Bailey",
-    "TreeCityWes",
-    "SKB TRADING LAB"
+    "CryptoSavingExpert",
+    "Ask Pekic",
+    "The reDeFined Podcast",
+    "VisionPulsed"
    ]
   }
  ],
@@ -165,66 +183,68 @@
    "id": "theme-nature",
    "name": "Nature",
    "thumbs": [
-    "HBNsJV_Sgf4",
-    "GA8q8eY5EIY",
-    "J8GYvqKXI_g",
-    "vF8tKFWlrqo",
-    "mqJf65mWg0Y",
-    "EEDUwCKs9Zs",
-    "d_1Udsi2bss",
-    "5LyGhdUSQUQ",
-    "-_0Er3e9_h0",
-    "KVGP4vJZ0Dk",
-    "tdJJsM3YgTA",
-    "la2upbWARjg",
-    "EJ3TDnPcMBg",
-    "2LSn6rX-kSE",
-    "5euIXGcFpn8",
-    "-MTl4-yWoZs",
-    "u5zKoenL7h8",
-    "1mGcOm_Hp4s",
-    "ppMOBPo22f0",
-    "tZZk-IeX3RA",
-    "uoCyXImP39I",
-    "i2G6MYy8OQg",
-    "D0nFgRNKnfo",
-    "3odiXnpH8D0"
+    "LWyFkRlHAJw",
+    "mXw5uYl_lo0",
+    "XJJnNT3M6u0",
+    "Zdz71dNRdWs",
+    "LT690Ud0qA8",
+    "YpAENFHGbQk",
+    "oCfRB9rqUBE",
+    "-Zql91HC6Ns",
+    "00YZUtnH704",
+    "Voi8QRw0MzU",
+    "rwv_gBpM0fA",
+    "KHDmpprWGbo",
+    "uHDEZ-mH-AY",
+    "atbxkhu6v5E",
+    "91_DAVy3SSQ",
+    "tGHaX52rgR0",
+    "gBfw8hYRe5k",
+    "82wx16REAGs",
+    "k7zjjfCrccQ",
+    "RckV0WgwjJ0",
+    "jKyBGhtsVVo",
+    "_d-zZjt8t6c",
+    "-YOu4wvajmI",
+    "vIzi8NFfM3A"
    ]
   },
   {
    "id": "theme-ai",
    "name": "AI",
    "thumbs": [
-    "fvN_vCRuBec",
-    "M7UBQZDe0Uo",
-    "nvaE6RQu_7E",
-    "2NqehSZE6ps",
-    "e0cDW9jhDfw",
-    "bXRf2uJ22d8",
-    "qb5gotN7gDk",
-    "_4NZedIB55o",
-    "miIb2DZgVI8",
-    "FAx9gq5n5Es",
-    "ZPDxEPWvpmk",
-    "6MWpKFIZfT0",
-    "KpbEXkUc17M",
-    "Dx_oAiLIK1E",
-    "YN2FMyRzlpU",
-    "9CZBeTop4jQ",
-    "JEIgEDOwXR4",
-    "DB8Ut7TOPEI",
-    "Nf3P6kGBtRQ",
-    "YKS34sswxbg",
-    "7AkWiMDPAio",
-    "fySQ1SkLRxY",
-    "JiTConFVdV4",
-    "iwa5QCH_guo"
+    "qgL_IbP2qKg",
+    "4ewSI08LN3w",
+    "3Fn1B6W54Xo",
+    "5TGsZ9jT3jg",
+    "TQLjJYjdIyA",
+    "KKIamENEmsQ",
+    "HbosmW-RS-U",
+    "JgnbIMy8t5s",
+    "j0z418zSghk",
+    "FX09WQ65vK4",
+    "5K45XO-hXJs",
+    "SGwHCe0LxSA",
+    "A1AN166JYOA",
+    "byxMks2a-yA",
+    "-tOKB14_pok",
+    "ryGMV82UMiM",
+    "YkbmTTTVGwU",
+    "R7D0PXOIBLk",
+    "WYM-agtwxW4",
+    "TcH_4rg7JFs",
+    "iqPPkLTz3l4",
+    "R9gxN2dFQIM",
+    "BSzDc8qncd0",
+    "f5_c0O_chy4"
    ]
   },
   {
    "id": "theme-geopolitics",
    "name": "Geopolitics",
    "thumbs": [
+    "3S-ExpUQbcA",
+    "oF3L5qbUQxo",
     "SDe8n9kEHOA",
     "jgPoWbGgPdo",
     "I0mdCRVbibg",
@@ -240,36 +260,43 @@
    "id": "theme-us-politics",
    "name": "US politics",
    "thumbs": [
-    "FpX8q2Yv2LE",
-    "FZBRkfvmZ2o",
-    "uqleIgdp6l8",
-    "dwkNDXYBE30",
-    "AdsQAidN1Vs",
-    "aBjV77p52m4",
-    "iWMcMVp9Lnk",
-    "WgJEZqqDCOQ",
-    "mlnLY_XDQ34",
-    "ugoe6C57m2g",
-    "qmvR50BSkow",
-    "_cDBDyTGqrI",
-    "3xi_yP3wsi0",
-    "dmg3JqIqN8Y",
-    "ebZn3WL5kmw",
-    "zowr7TxJdOE",
-    "DSCt_Fnvums",
-    "4my3_ySobq4",
-    "RGmCWiSmNx4",
-    "b9ojDFqX1yc",
-    "5lUBKeUD4Qw",
-    "eF-88KLwajY",
-    "12ZZXMOifx8",
-    "UgjdRFa5WVU"
+    "gh45_mYE9iY",
+    "Iq6WeoCDwsM",
+    "Qll1Uo7J49E",
+    "zzwiADEGfWk",
+    "xpAsoXPYxY0",
+    "K2H_Ole8abM",
+    "o8EOANiZT-o",
+    "QQNUlpTmHl0",
+    "nDv2EPe9QoQ",
+    "6VpcWdDiEBw",
+    "rGh7RoaTspQ",
+    "hzPAkSESzzg",
+    "tHlsYpAorf0",
+    "w1b0jcYJzcI",
+    "WE22Sj0aRtU",
+    "CEnkw_2n4Yk",
+    "yoSloh_Q6Ps",
+    "qiiWLOZgjes",
+    "k-zPgEZNIm0",
+    "fdHWI8T-PTQ",
+    "XidU4w_5xUc",
+    "kCKa8GmdDO8",
+    "qROBJAwIdzM",
+    "hqgb1vkZSbM"
    ]
   },
   {
    "id": "theme-uk-politics",
    "name": "UK politics",
    "thumbs": [
+    "V8lG36ZvL6s",
+    "9Ps8X4rCvfQ",
+    "eIlsRkj6uVs",
+    "tVaAQ307B3I",
+    "0S93zGUH2NA",
+    "WXzr7tHAf38",
+    "_0IenHTI2dE",
     "HmDdYE2UYkg",
     "7BXJv1_eKdE",
     "e9B2McJRBMQ",

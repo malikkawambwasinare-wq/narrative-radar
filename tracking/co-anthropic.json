@@ -1,0 +1,41 @@
+{
+ "id": "co-anthropic",
+ "name": "Anthropic",
+ "line": "The company behind Claude, after its IPO.",
+ "cat": "money",
+ "checked": "2026-11-24T12:59:39.923206+00:00",
+ "videos": [
+  {
+   "id": "GqYKnWFLxvI",
+   "title": "Anthropic CEO WARNS: New Wave Of AI Threat Is Coming",
+   "channel": "Neural Nutshell",
+   "published": "2026-11-23",
+   "length": "23:11",
+   "found": "2026-11-24T12:59:39Z"
+  },
+  {
+   "id": "I0Fasi1-teQ",
+   "title": "I’m Crashing Out About Anthropic",
+   "channel": "Matthew Berman",
+   "published": "2026-11-21",
+   "length": "11:00",
+   "found": "2026-11-24T12:59:39Z"
+  },
+  {
+   "id": "7AkWiMDPAio",
+   "title": "Anthropic IPO Fails to Halt AI Selloff, Ditching the Kitchen for Thanksgiving",
+   "channel": "Bloomberg Television",
+   "published": "2026-11-21",
+   "length": "2:36:51",
+   "found": "2026-11-24T12:59:39Z"
+  },
+  {
+   "id": "wyhSIOn4Dq8",
+   "title": "How is Anthropic worth a trillion dollars?",
+   "channel": "LBC",
+   "published": "2026-11-21",
+   "length": "12:31",
+   "found": "2026-11-24T12:59:39Z"
+  }
+ ]
+}
