@@ -261,6 +261,9 @@
   .reel .track { display: flex; gap: 8px; width: max-content; animation: drift 90s linear infinite; }
   .reel.rev .track { animation-direction: reverse; animation-duration: 110s; }
   .reel img { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; filter: saturate(.8) contrast(.95); opacity: .9; background: var(--deep); }
+  .stage .reel { transition: opacity .65s ease; }
+  .stage.fade .reel { opacity: 0; }
+  .theme-name { text-align: center; font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   @keyframes drift { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   @media (prefers-reduced-motion: reduce) { .reel .track { animation: none; } }
   .linkish { background: none; border: 0; padding: 8px 0; color: var(--accent); font: 500 15px var(--body); }
@@ -449,7 +452,7 @@ const trkSave = (id, p) => store.set("trk." + id, p);
 fetch("tracking/index.json", { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(ix => {
   if (!ix) return; TRK.index = ix;
   return Promise.all(ix.narratives.map(n => fetch(`tracking/${n.id}.json`, { cache: "no-cache" }).then(r => r.ok ? r.json() : null).then(d => { if (d) TRK.data[n.id] = d; })));
-}).then(() => { if (TRK.index && (state.view === "door" || state.view === "track")) render(); }).catch(() => {});
+}).then(() => { if (TRK.index && (state.view === "door" || state.view === "track")) render(); themeStart(); }).catch(() => {});
 function trkSplit(id, since) {
   const d = TRK.data[id], p = trkPref(id); if (!d) return { shown: [], waiting: [], fresh: 0 };
   const cut = since !== undefined ? since : p.seen;
@@ -502,9 +505,38 @@ function oneStep(dir) {
 /* The moving wall around the button: tonight's clips as still frames drifting
    past. Thumbnails, not players: a playing YouTube video may not be covered
    or shrunk, and a hidden one could run ads nobody sees. */
-const reel = (segs, rev) => { const ids = [...new Set(segs.map(x => x.id))]; const row = ids.concat(ids, ids).map(id =>
-  `<img src="https://i.ytimg.com/vi/${id}/mqdefault.jpg" alt="" loading="lazy" decoding="async">`).join("");
+const thumb = id => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
+/* Load a theme's pictures before it fades in, so no blank frames drift past. */
+const preloadThumbs = ids => Promise.race([Promise.all(ids.map(id => new Promise(ok => { const im = new Image(); im.onload = im.onerror = ok; im.src = thumb(id); }))), new Promise(ok => setTimeout(ok, 4000))]);
+const reel = (ids, rev) => { const row = ids.concat(ids.length < 6 ? ids : []).map(id =>
+  `<img src="${thumb(id)}" alt="" decoding="async">`).join("");
   return `<div class="reel ${rev ? "rev" : ""}" aria-hidden="true"><div class="track">${row}${row}</div></div>`; };
+/* What drifts past the button changes: tonight's clips, nature, AI, world
+   affairs, a country's politics. A new theme on every visit, and a slow
+   crossfade to the next every 30 seconds while the home screen is open. */
+const THEME = { k: null, timer: null };
+const tonightThread = () => { const pool = DATA.threads.filter(t => (META[t.id] || {}).tonight); return cutFor(pool[0] || DATA.threads[0]); };
+function themeList() {
+  const th = tonightThread();
+  return [{ name: "Tonight's voices", ids: [...new Set(th.segs.map(x => x.id))] }]
+    .concat(((TRK.index && TRK.index.themes) || []).filter(t => t.thumbs.length >= 6).map(t => ({ name: t.name, ids: t.thumbs })));
+}
+function stageHTML() {
+  const list = themeList(), cur = list[(THEME.k || 0) % list.length], h = Math.ceil(cur.ids.length / 2), th = tonightThread();
+  return `${reel(cur.ids.slice(0, h), false)}
+      <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
+      ${reel(cur.ids.slice(h), true)}
+      <div class="theme-name">${esc(cur.name)}</div>`;
+}
+function themeStart() {
+  const n = themeList().length; if (n < 2 || THEME.timer) return;
+  THEME.k = (store.get("theme", -1) + 1) % n; store.set("theme", THEME.k);   // a different one on every visit
+  const swap = () => { const list = themeList(), cur = list[THEME.k % list.length];
+    preloadThumbs(cur.ids).then(() => { const st = document.querySelector(".stage"); if (!st) return;
+      st.classList.add("fade"); setTimeout(() => { st.innerHTML = stageHTML(); st.classList.remove("fade"); }, 650); }); };
+  swap();
+  THEME.timer = setInterval(() => { if (state.view !== "door" || document.hidden) return; THEME.k = (THEME.k + 1) % themeList().length; store.set("theme", THEME.k); swap(); }, 30000);
+}
 const initials = n => n.replace(/[^A-Za-z\s-]/g, "").split(/[\s-]+/).filter(Boolean).map(w => w[0]).slice(0, 2).join("").toUpperCase();
 /* Who is speaking in piece i, and on which side. */
 function speaker(th, i) {
@@ -614,9 +646,7 @@ function door() {
     <div><div class="label">Tonight</div><h1>${esc(qOf(th))}</h1>
       <p class="lede">${castOf(th).length} people at the centre of it. Pull up a chair.</p></div>
     <div class="stage">
-      ${reel(th.segs.slice(0, Math.ceil(th.segs.length / 2)), false)}
-      <button class="join" data-thread-play="${th.id}"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Join the conversation · ${minsOf(th)} min</button>
-      ${reel(th.segs.slice(Math.ceil(th.segs.length / 2)), true)}
+      ${stageHTML()}
     </div>
   </section>
   ${trackSection()}
