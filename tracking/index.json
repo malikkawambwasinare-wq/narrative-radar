@@ -1,13 +1,47 @@
 {
- "updated": "2026-11-22T18:33:49.194447+00:00",
+ "updated": "2026-11-24T01:40:21.095334+00:00",
  "narratives": [
   {
+   "id": "co-walmart",
+   "kind": "company",
+   "name": "Walmart",
+   "line": "Its sales, its shoppers, and how it keeps prices low.",
+   "cat": "money",
+   "count": 0,
+   "new_today": 0,
+   "latest": "",
+   "faces": []
+  },
+  {
+   "id": "co-anthropic",
+   "kind": "company",
+   "name": "Anthropic",
+   "line": "The company behind Claude, after its IPO.",
+   "cat": "money",
+   "count": 0,
+   "new_today": 0,
+   "latest": "",
+   "faces": []
+  },
+  {
+   "id": "co-nvidia",
+   "kind": "company",
+   "name": "Nvidia",
+   "line": "The chipmaker at the centre of the AI trade.",
+   "cat": "money",
+   "count": 0,
+   "new_today": 0,
+   "latest": "",
+   "faces": []
+  },
+  {
    "id": "nvidia-after-huang",
+   "kind": "story",
    "name": "Nvidia after Jensen Huang",
    "line": "His exit, the China story, and what it means for the AI trade.",
    "cat": "money",
    "count": 44,
-   "new_today": 30,
+   "new_today": 0,
    "latest": "2026-11-22",
    "faces": [
     "Billions Gone",
@@ -18,11 +52,12 @@
   },
   {
    "id": "anthropic-ipo",
+   "kind": "story",
    "name": "Anthropic goes public",
    "line": "The IPO, the valuation, and whether AI listings mark the top.",
    "cat": "money",
    "count": 12,
-   "new_today": 5,
+   "new_today": 0,
    "latest": "2026-11-22",
    "faces": [
     "Hobby Explorer",
@@ -33,11 +68,12 @@
   },
   {
    "id": "ai-debt",
+   "kind": "story",
    "name": "The AI debt scare",
    "line": "Data centres built on borrowed money, and the circular deals.",
    "cat": "money",
    "count": 37,
-   "new_today": 14,
+   "new_today": 0,
    "latest": "2026-11-22",
    "faces": [
     "Rational Wealth",
@@ -48,6 +84,7 @@
   },
   {
    "id": "fed-ai-crash",
+   "kind": "story",
    "name": "The Fed's AI warning",
    "line": "Central bankers on AI concentration and crash risk.",
    "cat": "money",
@@ -62,6 +99,7 @@
   },
   {
    "id": "korea-ai-mania",
+   "kind": "story",
    "name": "South Korea's AI stock mania",
    "line": "A smaller market running hot on AI chips.",
    "cat": "money",
@@ -75,11 +113,12 @@
   },
   {
    "id": "us-debt-crisis",
+   "kind": "story",
    "name": "A US debt crisis?",
    "line": "Dated warnings about US debt, bonds and the dollar.",
    "cat": "money",
    "count": 29,
-   "new_today": 2,
+   "new_today": 0,
    "latest": "2026-11-22",
    "faces": [
     "Capital News TV",
@@ -90,11 +129,12 @@
   },
   {
    "id": "hormuz-oil",
+   "kind": "story",
    "name": "Oil and the Strait of Hormuz",
    "line": "Attacks on shipping and what they do to oil.",
    "cat": "world",
    "count": 14,
-   "new_today": 7,
+   "new_today": 0,
    "latest": "2026-11-22",
    "faces": [
     "Now and Why Daily",
@@ -105,11 +145,12 @@
   },
   {
    "id": "btc-cycle",
+   "kind": "story",
    "name": "Bitcoin's broken cycle",
    "line": "It topped early. Is the four-year rhythm over?",
    "cat": "money",
    "count": 16,
-   "new_today": 3,
+   "new_today": 0,
    "latest": "2026-11-22",
    "faces": [
     "VisionPulsed",
