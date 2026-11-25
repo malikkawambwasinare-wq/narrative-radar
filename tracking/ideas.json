@@ -1,0 +1,9 @@
+{
+ "note": "Idea tracks. An idea is a question in plain words plus the moment that started it. The watcher judges whether a moment answers or illustrates the question (yes / partly).",
+ "ideas": [
+  {"id": "idea-customer", "kind": "idea", "name": "Where is the customer, and can they keep paying?",
+   "question": "How do you judge a business by where its customers are: can they afford what it sells, can they keep paying (subscriptions, memberships, monthly bills), and for how long?",
+   "seed": "A Bloomberg TV anchor: Walmart keeps finding new ways to make money, and that is what lets it keep prices low, which is where the consumer is.",
+   "queries": ["consumer spending subscriptions can they afford", "where is the consumer retail earnings"]}
+ ]
+}
