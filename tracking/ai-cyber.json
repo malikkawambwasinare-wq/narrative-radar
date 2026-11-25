@@ -3,8 +3,176 @@
  "name": "Has AI already armed the hackers?",
  "line": "The fear that AI would give anyone, or AI itself, the power to hack, and the evidence as it arrives.",
  "cat": "world",
- "checked": "2026-11-25T15:36:50.484914+00:00",
+ "checked": "2026-11-25T20:31:10.558135+00:00",
  "videos": [
+  {
+   "id": "n3S-9gHum90",
+   "title": "Could AI Hackers Turn Off the Power? The Blackout Rumor vs the Real Threat",
+   "channel": "Penny & Pixel",
+   "published": "2026-11-25",
+   "length": "11:42",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "2kgs62n10iQ",
+   "title": "AI Just Helped Hack the EU. How Safe Are We?",
+   "channel": "ORYNDEL",
+   "published": "2026-11-25",
+   "length": "11:13",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "WCH-YBD8eQ8",
+   "title": "AI Cyberattacks, Geopolitical Power Factions, and the Future of Sovereign Control | Simon Dix",
+   "channel": "Simon Dixon",
+   "published": "2026-11-25",
+   "length": "1:07:45",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "MtOpkH0Zvlc",
+   "title": "Breach at Langley: Inside the AI Cyberattack on U.S. Spy Agencies",
+   "channel": "Trending World Now",
+   "published": "2026-11-25",
+   "length": "4:39",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "VvAblQLHBlM",
+   "title": "CIA system breached in cyberattack: What to know",
+   "channel": "FOX 11 Los Angeles",
+   "published": "2026-11-25",
+   "length": "3:25",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "8Kx-kXvsL8Q",
+   "title": "Hackers Just Broke Into the CIA — With an AI That Hacks by Itself #CyberSecurity",
+   "channel": "Clever ByteX",
+   "published": "2026-11-25",
+   "length": "10:08",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "8W0nd_9TfUw",
+   "title": "CIA INTRUSION: AI hacking tool just BREACHED a government network",
+   "channel": "Fox Business",
+   "published": "2026-11-25",
+   "length": "5:53",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "qgrCW7pcUN0",
+   "title": "#59 - AiCyber.Land - AI Attack Data & an Exposed Hacking Agent",
+   "channel": "AI in Cyber Security Land",
+   "published": "2026-11-25",
+   "length": "17:47",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "_VFEm__9yps",
+   "title": "Hackers Gave AI Agents One Order. 11 Minutes Later, They Were In",
+   "channel": "AI&Other-Tech",
+   "published": "2026-11-25",
+   "length": "8:48",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "WJ9_YR1TYTA",
+   "title": "Hex.pm Registry Hacked as AI-Driven Crew Raids Check Point Servers",
+   "channel": "Matthew Chapman",
+   "published": "2026-11-25",
+   "length": "5:27",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "ILwXCr-Tesg",
+   "title": "Rogue AI Agents Made a Group Chat, Then Hacked a Company",
+   "channel": "Menn",
+   "published": "2026-11-25",
+   "length": "7:46",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "HaQl3Ir1QlI",
+   "title": "JUST NOW: CIA, FBI And Treasury Hacked...  What Happens To Your Money Next?",
+   "channel": "Marcel Pord",
+   "published": "2026-11-25",
+   "length": "21:53",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "ceriDR9mm48",
+   "title": "The CIA Got Hacked. \"Only the Unclassified Stuff.\"",
+   "channel": "Behind the Tap",
+   "published": "2026-11-25",
+   "length": "6:10",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "B9AMgTMhzns",
+   "title": "The FBI Warned About This AI. Then the CIA Got Hacked.",
+   "channel": "Figured",
+   "published": "2026-11-25",
+   "length": "9:27",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "sNeNtSwMifg",
+   "title": "LIVE: America Under Cyber Siege! CIA Hacked, FBI Breach Raises Alarm | Gravitas",
+   "channel": "WION",
+   "published": "2026-11-25",
+   "length": "59:26",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "cuwFPYsha6s",
+   "title": "The CIA Was Hacked. Trump Is Cutting America's Cyber Defenses.",
+   "channel": "Walkabouts Now",
+   "published": "2026-11-25",
+   "length": "9:07",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "_RWJAf4M72k",
+   "title": "CIA Hacked, Crypto Bleeding, Jensen's Back: Connected or Coincidence?",
+   "channel": "Gen X Hustle",
+   "published": "2026-11-25",
+   "length": "8:47",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "KvKFOEPskK8",
+   "title": "Did Hackers Actually Breach the FBI, CIA, and Treasury?",
+   "channel": "Spirit B",
+   "published": "2026-11-25",
+   "length": "7:30",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "a3JIFRQxgow",
+   "title": "THE CIA GOT HACKED — AND NOBODY KNOWS WHO DID IT",
+   "channel": "Shadow Docket",
+   "published": "2026-11-25",
+   "length": "30:04",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "9AxBiAdQjIA",
+   "title": "Now the CIA has been hacked...",
+   "channel": "RIPDIESEL",
+   "published": "2026-11-25",
+   "length": "8:07",
+   "found": "2026-11-25T20:31:10Z"
+  },
+  {
+   "id": "ubaKblUk6oo",
+   "title": "The CIA Got Hacked — And Nobody Knows How Bad It Is #CIA #Hack",
+   "channel": "Cubbbix",
+   "published": "2026-11-25",
+   "length": "4:08",
+   "found": "2026-11-25T20:31:10Z"
+  },
   {
    "id": "nw8qOQVelTQ",
    "title": "CIA HACKED! China Behind AI Cyberattack on America? | Breaking News USA",
