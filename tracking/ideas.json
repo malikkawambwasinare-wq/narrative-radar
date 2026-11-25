@@ -1,9 +1,27 @@
 {
  "note": "Idea tracks. An idea is a question in plain words plus the moment that started it. The watcher judges whether a moment answers or illustrates the question (yes / partly).",
  "ideas": [
-  {"id": "idea-customer", "kind": "idea", "name": "Where is the customer, and can they keep paying?",
+  {
+   "id": "idea-customer",
+   "kind": "idea",
+   "name": "Where is the customer, and can they keep paying?",
    "question": "How do you judge a business by where its customers are: can they afford what it sells, can they keep paying (subscriptions, memberships, monthly bills), and for how long?",
    "seed": "A Bloomberg TV anchor: Walmart keeps finding new ways to make money, and that is what lets it keep prices low, which is where the consumer is.",
-   "queries": ["consumer spending subscriptions can they afford", "where is the consumer retail earnings"]}
+   "queries": [
+    "consumer spending subscriptions can they afford",
+    "where is the consumer retail earnings"
+   ]
+  },
+  {
+   "id": "idea-demand",
+   "kind": "idea",
+   "name": "Is the demand still there?",
+   "question": "Looking past today's price moves to the next 12 months: are the buyers still committed (orders, spending plans, backlogs), can supply meet that demand, and what could break it (export rules, financing, competition, a slowdown)?",
+   "seed": "A Bloomberg Opinion columnist on Nvidia the day after Huang's return: investors are irrational in the short term; as long as chip buyers keep buying chips, that is what matters for now.",
+   "queries": [
+    "AI chip demand 2027 orders",
+    "data center spending plans hyperscalers"
+   ]
+  }
  ]
 }
