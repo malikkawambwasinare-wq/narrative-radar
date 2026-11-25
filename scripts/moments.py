@@ -82,10 +82,14 @@ def schema(names):
             "line": {"type": "string", "description": "The key sentence, word for word, under 30 words"},
             "gist": {"type": "string", "description": "What a viewer learns, in one plain sentence"},
             "kind": {"type": "string", "enum": ["fact", "data", "explanation", "view", "question"]},
+            # Malik (2026-11-25): short term is noise ("investors are irrational"); the
+            # 12-month view is where fundamentals decide. Every moment says which it is.
+            "horizon": {"type": "string", "enum": ["today", "12 months", "years"],
+                        "description": "today = price moves and reactions; 12 months = demand, supply, competition, financing; years = long-run shifts"},
             "tracks": {"type": "array", "items": {"type": "object", "properties": {
                 "track": {"type": "string", "enum": names},
                 "fit": {"type": "string", "enum": ["yes", "partly"]}}, "required": ["track", "fit"]}}},
-            "required": ["start", "end", "speaker", "credential", "practises", "line", "gist", "kind", "tracks"]}}},
+            "required": ["start", "end", "speaker", "credential", "practises", "line", "gist", "kind", "horizon", "tracks"]}}},
         "required": ["moments"]}
 
 
@@ -148,7 +152,7 @@ def write(by_name):
                 continue
             out.append({"id": f"{v['id']}-{i}", "video": v["id"], "channel": v["channel"], "title": v["title"], "published": v["published"],
                         "start": max(0, a - 1), "end": b + 1, "speaker": m["speaker"], "credential": m["credential"],
-                        "practises": m["practises"], "line": m["line"], "gist": m["gist"], "kind": m["kind"], "tracks": tr,
+                        "practises": m["practises"], "line": m["line"], "gist": m["gist"], "kind": m["kind"], "horizon": m.get("horizon", ""), "tracks": tr,
                         "found": d["watched"][:10]})
     out.sort(key=lambda m: (m["published"], m["found"]), reverse=True)
     (TRK / "moments.json").write_text(json.dumps({"updated": datetime.now(timezone.utc).isoformat(), "moments": out}, indent=1, ensure_ascii=False) + "\n")
