@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T21:18:05.225091+00:00",
+ "updated": "2026-11-25T15:36:50.484914+00:00",
  "narratives": [
   {
    "id": "co-walmart",
@@ -8,7 +8,7 @@
    "line": "Its sales, its shoppers, and how it keeps prices low.",
    "cat": "money",
    "count": 43,
-   "new_today": 43,
+   "new_today": 6,
    "latest": "2026-11-24",
    "faces": [
     "MarketSnap",
@@ -24,7 +24,7 @@
    "line": "The company behind Claude, after its IPO.",
    "cat": "money",
    "count": 10,
-   "new_today": 10,
+   "new_today": 6,
    "latest": "2026-11-24",
    "faces": [
     "Couch Investor",
@@ -40,7 +40,7 @@
    "line": "The chipmaker at the centre of the AI trade.",
    "cat": "money",
    "count": 11,
-   "new_today": 11,
+   "new_today": 6,
    "latest": "2026-11-24",
    "faces": [
     "CryptoWendyO",
@@ -50,13 +50,29 @@
    ]
   },
   {
+   "id": "ai-cyber",
+   "kind": "story",
+   "name": "Has AI already armed the hackers?",
+   "line": "The fear that AI would give anyone, or AI itself, the power to hack, and the evidence as it arrives.",
+   "cat": "world",
+   "count": 45,
+   "new_today": 45,
+   "latest": "2026-11-25",
+   "faces": [
+    "USA Breaking Live",
+    "Xact Cybersecurity",
+    "Cryptoteacher",
+    "The Young Turks"
+   ]
+  },
+  {
    "id": "nvidia-after-huang",
    "kind": "story",
    "name": "Nvidia after Jensen Huang",
    "line": "His exit, the China story, and what it means for the AI trade.",
    "cat": "money",
    "count": 67,
-   "new_today": 23,
+   "new_today": 9,
    "latest": "2026-11-24",
    "faces": [
     "Valuetainment",
@@ -72,7 +88,7 @@
    "line": "The IPO, the valuation, and whether AI listings mark the top.",
    "cat": "money",
    "count": 26,
-   "new_today": 14,
+   "new_today": 5,
    "latest": "2026-11-24",
    "faces": [
     "STARTUP HAKK",
@@ -88,7 +104,7 @@
    "line": "Data centres built on borrowed money, and the circular deals.",
    "cat": "money",
    "count": 58,
-   "new_today": 21,
+   "new_today": 6,
    "latest": "2026-11-24",
    "faces": [
     "iConnections",
@@ -104,7 +120,7 @@
    "line": "Central bankers on AI concentration and crash risk.",
    "cat": "money",
    "count": 4,
-   "new_today": 1,
+   "new_today": 0,
    "latest": "2026-11-23",
    "faces": [
     "Hananomics",
@@ -120,7 +136,7 @@
    "line": "A smaller market running hot on AI chips.",
    "cat": "money",
    "count": 6,
-   "new_today": 4,
+   "new_today": 1,
    "latest": "2026-11-24",
    "faces": [
     "EU Insider",
@@ -136,7 +152,7 @@
    "line": "Dated warnings about US debt, bonds and the dollar.",
    "cat": "money",
    "count": 35,
-   "new_today": 6,
+   "new_today": 1,
    "latest": "2026-11-24",
    "faces": [
     "New Dollar Decoded",
@@ -152,7 +168,7 @@
    "line": "Attacks on shipping and what they do to oil.",
    "cat": "world",
    "count": 21,
-   "new_today": 7,
+   "new_today": 3,
    "latest": "2026-11-24",
    "faces": [
     "World Unpacked Daily",
@@ -168,7 +184,7 @@
    "line": "It topped early. Is the four-year rhythm over?",
    "cat": "money",
    "count": 23,
-   "new_today": 7,
+   "new_today": 3,
    "latest": "2026-11-24",
    "faces": [
     "Verified Investing",
