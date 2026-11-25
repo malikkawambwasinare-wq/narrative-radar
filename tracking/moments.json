@@ -1,0 +1,1083 @@
+{
+ "updated": "2026-11-24T13:28:06.036253+00:00",
+ "moments": [
+  {
+   "id": "nUeATVmgS7k-0",
+   "video": "nUeATVmgS7k",
+   "channel": "CBS News",
+   "title": "Experts, reporters and lawmakers dig into Nvidia reinstalling Jensen Huang as CEO",
+   "published": "2026-11-24",
+   "start": 72,
+   "end": 94,
+   "speaker": "Donald Trump",
+   "credential": "45th and 47th President of the United States",
+   "practises": false,
+   "line": "This is, you know, represents something very special, what he's done and what the company has done. And I found the board to be very, very reasonable.",
+   "gist": "Donald Trump intervened with the Nvidia board to ensure Jensen Huang's return, citing the company's critical importance to the nation.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "nUeATVmgS7k-1",
+   "video": "nUeATVmgS7k",
+   "channel": "CBS News",
+   "title": "Experts, reporters and lawmakers dig into Nvidia reinstalling Jensen Huang as CEO",
+   "published": "2026-11-24",
+   "start": 178,
+   "end": 231,
+   "speaker": "Jessica Inskip",
+   "credential": "Director of Investor Research, stockbrokers.com",
+   "practises": true,
+   "line": "He's more important to the AI narrative than he is Nvidia... Jensen Huang is leading the way with the AI narrative.",
+   "gist": "Jensen Huang's intellectual leadership is more critical to the global AI narrative than to Nvidia itself.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "nUeATVmgS7k-2",
+   "video": "nUeATVmgS7k",
+   "channel": "CBS News",
+   "title": "Experts, reporters and lawmakers dig into Nvidia reinstalling Jensen Huang as CEO",
+   "published": "2026-11-24",
+   "start": 353,
+   "end": 380,
+   "speaker": "Arden Farhi",
+   "credential": "Managing Editor, CBS News Washington Bureau",
+   "practises": false,
+   "line": "The stock market gained it just about all back to the tune of roughly a trillion dollars in market cap or total value.",
+   "gist": "Nvidia regained nearly one trillion dollars in market capitalization almost immediately after announcing Jensen Huang's reinstatement.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "nUeATVmgS7k-3",
+   "video": "nUeATVmgS7k",
+   "channel": "CBS News",
+   "title": "Experts, reporters and lawmakers dig into Nvidia reinstalling Jensen Huang as CEO",
+   "published": "2026-11-24",
+   "start": 795,
+   "end": 834,
+   "speaker": "Aaron Maclean",
+   "credential": "National Security Analyst",
+   "practises": true,
+   "line": "Nvidia has relentlessly lobbied for years to also essentially help the Chinese in their own efforts to pursue AI progress, even AI dominance.",
+   "gist": "Nvidia's lobbying efforts have historically supported China's AI ambitions, presenting a major national security concern.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "nUeATVmgS7k-4",
+   "video": "nUeATVmgS7k",
+   "channel": "CBS News",
+   "title": "Experts, reporters and lawmakers dig into Nvidia reinstalling Jensen Huang as CEO",
+   "published": "2026-11-24",
+   "start": 994,
+   "end": 1036,
+   "speaker": "Patrick McGee",
+   "credential": "CBS News Contributor",
+   "practises": false,
+   "line": "Nvidia is worth more than all banks in Canada and the US combined. How is it not subject to higher scrutiny?",
+   "gist": "Nvidia's massive size relative to systemic banks demands higher regulatory scrutiny and better board governance.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "nUeATVmgS7k-5",
+   "video": "nUeATVmgS7k",
+   "channel": "CBS News",
+   "title": "Experts, reporters and lawmakers dig into Nvidia reinstalling Jensen Huang as CEO",
+   "published": "2026-11-24",
+   "start": 1109,
+   "end": 1126,
+   "speaker": "Steve Okun",
+   "credential": "Geopolitical Analyst",
+   "practises": true,
+   "line": "The chip stays in Malaysia, Thailand or Indonesia, wherever it stays, but they get access to the chip through the cloud. That has been allowed by the United States government.",
+   "gist": "Chinese firms can legally circumvent hardware export restrictions by accessing advanced Nvidia AI chips via cloud services in other countries.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "U263Q7kynPM-0",
+   "video": "U263Q7kynPM",
+   "channel": "Global News Daily",
+   "title": "Symbotic (SYM) Q4 Earnings: First GAAP Profit & The $7 Billion Walmart Backlog Explained",
+   "published": "2026-11-24",
+   "start": 226,
+   "end": 255,
+   "speaker": "Narrator",
+   "credential": "Analyst, Gemini Notebook",
+   "practises": true,
+   "line": "Symbotic is practically operating like a Walmart subsidiary right now, generating a massive 90.5 percent of its Q3 revenue from Bentonville alone.",
+   "gist": "Symbotic's extreme revenue concentration with Walmart gives the retailer significant control over the company's future and margins.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "U263Q7kynPM-1",
+   "video": "U263Q7kynPM",
+   "channel": "Global News Daily",
+   "title": "Symbotic (SYM) Q4 Earnings: First GAAP Profit & The $7 Billion Walmart Backlog Explained",
+   "published": "2026-11-24",
+   "start": 253,
+   "end": 272,
+   "speaker": "Narrator",
+   "credential": "Analyst, Gemini Notebook",
+   "practises": true,
+   "line": "That 9.5 percent from other customers isn't going to keep the lights on at their current burn rate.",
+   "gist": "The company lacks a safety net if its single largest customer, Walmart, decides to reduce or delay its spending on warehouse upgrades.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "U263Q7kynPM-2",
+   "video": "U263Q7kynPM",
+   "channel": "Global News Daily",
+   "title": "Symbotic (SYM) Q4 Earnings: First GAAP Profit & The $7 Billion Walmart Backlog Explained",
+   "published": "2026-11-24",
+   "start": 322,
+   "end": 355,
+   "speaker": "Narrator",
+   "credential": "Analyst, Gemini Notebook",
+   "practises": true,
+   "line": "This commitment is expected to add roughly 7 billion dollars to Symbotic's backlog right away in Q1 of fiscal 2027.",
+   "gist": "A massive new order from Walmart has increased Symbotic's total order backlog to approximately $29 billion, ensuring years of work.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "U263Q7kynPM-3",
+   "video": "U263Q7kynPM",
+   "channel": "Global News Daily",
+   "title": "Symbotic (SYM) Q4 Earnings: First GAAP Profit & The $7 Billion Walmart Backlog Explained",
+   "published": "2026-11-24",
+   "start": 354,
+   "end": 377,
+   "speaker": "Narrator",
+   "credential": "Analyst, Gemini Notebook",
+   "practises": true,
+   "line": "Is Symbotic building the best automation product for the broad global logistics market, or are they just building the best custom product for Walmart?",
+   "gist": "Governance agreements allow Walmart to influence Symbotic's board, leading to concerns that the company may focus too narrowly on one customer's needs.",
+   "kind": "question",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "U263Q7kynPM-4",
+   "video": "U263Q7kynPM",
+   "channel": "Global News Daily",
+   "title": "Symbotic (SYM) Q4 Earnings: First GAAP Profit & The $7 Billion Walmart Backlog Explained",
+   "published": "2026-11-24",
+   "start": 385,
+   "end": 446,
+   "speaker": "Narrator",
+   "credential": "Analyst, Gemini Notebook",
+   "practises": true,
+   "line": "The reality is anyone buying the stock today is waiting until early 2028 for the financial impact of SymMicro to actually materialize on an income statement.",
+   "gist": "The revenue from Symbotic's retail backroom automation project is several years away, meaning current investors are buying into a very long-term timeline.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "partly"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "U263Q7kynPM-5",
+   "video": "U263Q7kynPM",
+   "channel": "Global News Daily",
+   "title": "Symbotic (SYM) Q4 Earnings: First GAAP Profit & The $7 Billion Walmart Backlog Explained",
+   "published": "2026-11-24",
+   "start": 456,
+   "end": 515,
+   "speaker": "Narrator",
+   "credential": "Analyst, Gemini Notebook",
+   "practises": true,
+   "line": "The headline numbers look great, but the piece of the pie you actually get to eat is tiny.",
+   "gist": "A large portion of Symbotic's reported net income actually belongs to major corporate owners like Walmart and SoftBank, rather than public stockholders.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "partly"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "Tr0oafeMsHQ-0",
+   "video": "Tr0oafeMsHQ",
+   "channel": "Bloomberg Podcasts",
+   "title": "Bloomberg News Now - Jensen Huang Returns as Nvidia CEO",
+   "published": "2026-11-24",
+   "start": 6,
+   "end": 22,
+   "speaker": "Nathan Hager",
+   "credential": "Anchor, Bloomberg News",
+   "practises": false,
+   "line": "He is officially back on the job as CEO less than two weeks after leaving under a cloud of scandal.",
+   "gist": "Jensen Huang has returned to lead Nvidia following a brief departure due to scandal.",
+   "kind": "fact",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "Tr0oafeMsHQ-1",
+   "video": "Tr0oafeMsHQ",
+   "channel": "Bloomberg Podcasts",
+   "title": "Bloomberg News Now - Jensen Huang Returns as Nvidia CEO",
+   "published": "2026-11-24",
+   "start": 72,
+   "end": 96,
+   "speaker": "Karen Moskow",
+   "credential": "Anchor, Bloomberg News",
+   "practises": false,
+   "line": "Shares of the chipmaker surged 31%, adding roughly one trillion dollars in market value.",
+   "gist": "Nvidia's market capitalization increased by approximately $1 trillion as its stock price rose by 31% following Jensen Huang's return.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "Tr0oafeMsHQ-2",
+   "video": "Tr0oafeMsHQ",
+   "channel": "Bloomberg Podcasts",
+   "title": "Bloomberg News Now - Jensen Huang Returns as Nvidia CEO",
+   "published": "2026-11-24",
+   "start": 95,
+   "end": 125,
+   "speaker": "John Authers",
+   "credential": "Columnist, Bloomberg Opinion",
+   "practises": true,
+   "line": "The increase in the market cap today of Nvidia is more than the entire market cap of J.P. Morgan.",
+   "gist": "The one-day growth in Nvidia's market value exceeded the total value of J.P. Morgan, highlighting significant governance concerns given one individual's impact.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "Tr0oafeMsHQ-3",
+   "video": "Tr0oafeMsHQ",
+   "channel": "Bloomberg Podcasts",
+   "title": "Bloomberg News Now - Jensen Huang Returns as Nvidia CEO",
+   "published": "2026-11-24",
+   "start": 140,
+   "end": 168,
+   "speaker": "Amy Morris",
+   "credential": "Reporter, Bloomberg News",
+   "practises": false,
+   "line": "A bipartisan group of lawmakers demanding Huang testify about his affair with an alleged Chinese spy and possible involvement in chip smuggling.",
+   "gist": "US lawmakers are calling for Jensen Huang to testify regarding security concerns involving a Chinese spy suspect and potential chip smuggling.",
+   "kind": "fact",
+   "tracks": [
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "Tr0oafeMsHQ-4",
+   "video": "Tr0oafeMsHQ",
+   "channel": "Bloomberg Podcasts",
+   "title": "Bloomberg News Now - Jensen Huang Returns as Nvidia CEO",
+   "published": "2026-11-24",
+   "start": 176,
+   "end": 221,
+   "speaker": "John Tucker",
+   "credential": "Reporter, Bloomberg News",
+   "practises": false,
+   "line": "His Commerce Department is barring Megaspeed from buying advanced artificial intelligence chips.",
+   "gist": "The US Commerce Department has banned Megaspeed, a company linked to a Chinese spy suspect, from purchasing advanced AI processors.",
+   "kind": "fact",
+   "tracks": [
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "Tr0oafeMsHQ-5",
+   "video": "Tr0oafeMsHQ",
+   "channel": "Bloomberg Podcasts",
+   "title": "Bloomberg News Now - Jensen Huang Returns as Nvidia CEO",
+   "published": "2026-11-24",
+   "start": 221,
+   "end": 247,
+   "speaker": "Nathan Hager",
+   "credential": "Anchor, Bloomberg News",
+   "practises": false,
+   "line": "China has made a new move to preserve its fragile trade truce with the U.S.",
+   "gist": "China extended its suspension of a ban on mineral exports to the US after the US restricted access to AI chips via international data centres.",
+   "kind": "fact",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "67XqMbWFAm4-0",
+   "video": "67XqMbWFAm4",
+   "channel": "Uncapped | Benchmark Breakfast",
+   "title": "Benchmark Breakfast 11/24/26: Anthropic IPO, Cybersecurity, NVIDIA, and Hero Investments",
+   "published": "2026-11-24",
+   "start": 354,
+   "end": 390,
+   "speaker": "Ev Randle",
+   "credential": "Benchmark Breakfast host",
+   "practises": true,
+   "line": "They raised 81 billion dollars. It's the largest IPO ever. 980 million shares were sold at $83 per share yesterday, first day of trading on the 19th.",
+   "gist": "Anthropic's IPO is the largest in history, raising $81 billion with shares priced at $83.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "yes"
+    },
+    {
+     "id": "anthropic-ipo",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "67XqMbWFAm4-1",
+   "video": "67XqMbWFAm4",
+   "channel": "Uncapped | Benchmark Breakfast",
+   "title": "Benchmark Breakfast 11/24/26: Anthropic IPO, Cybersecurity, NVIDIA, and Hero Investments",
+   "published": "2026-11-24",
+   "start": 388,
+   "end": 468,
+   "speaker": "Chetan Puttagunta",
+   "credential": "Partner at Benchmark",
+   "practises": true,
+   "line": "I am personally very surprised at how it's trading. You have the first true frontier model company come public. I would have expected things to be far more stable.",
+   "gist": "Anthropic's initial post-IPO trading has been unexpectedly unstable for the first pure-play frontier AI model company to go public.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "yes"
+    },
+    {
+     "id": "anthropic-ipo",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "67XqMbWFAm4-2",
+   "video": "67XqMbWFAm4",
+   "channel": "Uncapped | Benchmark Breakfast",
+   "title": "Benchmark Breakfast 11/24/26: Anthropic IPO, Cybersecurity, NVIDIA, and Hero Investments",
+   "published": "2026-11-24",
+   "start": 466,
+   "end": 510,
+   "speaker": "Jack Altman",
+   "credential": "Benchmark Breakfast host",
+   "practises": true,
+   "line": "Nvidia, unfortunately, has fallen from five and three-quarters trillion to three and one-quarter trillion... Jensen being out in that whole situation is part of it.",
+   "gist": "Nvidia's market capitalization has collapsed by $2.5 trillion, partly due to the departure of Jensen Huang.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "67XqMbWFAm4-3",
+   "video": "67XqMbWFAm4",
+   "channel": "Uncapped | Benchmark Breakfast",
+   "title": "Benchmark Breakfast 11/24/26: Anthropic IPO, Cybersecurity, NVIDIA, and Hero Investments",
+   "published": "2026-11-24",
+   "start": 508,
+   "end": 585,
+   "speaker": "Chetan Puttagunta",
+   "credential": "Partner at Benchmark",
+   "practises": true,
+   "line": "There were people, famous analysts on Twitter, saying, 'Yeah, Anthropic is going to be a trillion dollars of revenue in 18 months.'",
+   "gist": "Extreme revenue expectations for Anthropic lack context, as its projected growth would equate to the size of the entire existing IT industry.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "yes"
+    },
+    {
+     "id": "anthropic-ipo",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "67XqMbWFAm4-4",
+   "video": "67XqMbWFAm4",
+   "channel": "Uncapped | Benchmark Breakfast",
+   "title": "Benchmark Breakfast 11/24/26: Anthropic IPO, Cybersecurity, NVIDIA, and Hero Investments",
+   "published": "2026-11-24",
+   "start": 759,
+   "end": 827,
+   "speaker": "Chetan Puttagunta",
+   "credential": "Partner at Benchmark",
+   "practises": true,
+   "line": "I think there's probably like 200 billion about to come into this market. Would you be surprised if somebody came out and raised a hundred billion dollar fund?",
+   "gist": "Massive amounts of capital, potentially including $100 billion individual funds, are preparing to enter the AI market to support capital-intensive frontier projects.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "67XqMbWFAm4-5",
+   "video": "67XqMbWFAm4",
+   "channel": "Uncapped | Benchmark Breakfast",
+   "title": "Benchmark Breakfast 11/24/26: Anthropic IPO, Cybersecurity, NVIDIA, and Hero Investments",
+   "published": "2026-11-24",
+   "start": 793,
+   "end": 856,
+   "speaker": "Chetan Puttagunta",
+   "credential": "Partner at Benchmark",
+   "practises": true,
+   "line": "Actually when you look at how much of a frontier lab's compute goes towards inference, typically it's about a third of their overall compute budget.",
+   "gist": "Compute workloads for frontier AI labs are shifting towards inference, a dynamic that challenges the forward growth estimates of chipmaking companies.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "d-1ueXbfDXw-0",
+   "video": "d-1ueXbfDXw",
+   "channel": "FXIGOR",
+   "title": "Symbotic Soars 12.4% After Earnings Beat and Walmart Backlog Boost: Bullish or Bearish Now?",
+   "published": "2026-11-24",
+   "start": 34,
+   "end": 80,
+   "speaker": "Unnamed narrator",
+   "credential": "Analyst, FXIGOR",
+   "practises": true,
+   "line": "Symbotic rose 12.4% after quarterly earnings exceeded estimates, revenue grew 26% and an expanded Walmart agreement increased its backlog.",
+   "gist": "Symbotic's stock price jumped on strong earnings and a larger automation deal with its key customer, Walmart.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "d-1ueXbfDXw-1",
+   "video": "d-1ueXbfDXw",
+   "channel": "FXIGOR",
+   "title": "Symbotic Soars 12.4% After Earnings Beat and Walmart Backlog Boost: Bullish or Bearish Now?",
+   "published": "2026-11-24",
+   "start": 168,
+   "end": 200,
+   "speaker": "Unnamed narrator",
+   "credential": "Analyst, FXIGOR",
+   "practises": true,
+   "line": "the expanded agreement may improve confidence in future warehouse automation demand and backlog visibility.",
+   "gist": "An expanded deal with Walmart for warehouse tech signals growing demand from major retailers seeking efficiency.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "d-1ueXbfDXw-2",
+   "video": "d-1ueXbfDXw",
+   "channel": "FXIGOR",
+   "title": "Symbotic Soars 12.4% After Earnings Beat and Walmart Backlog Boost: Bullish or Bearish Now?",
+   "published": "2026-11-24",
+   "start": 645,
+   "end": 662,
+   "speaker": "Unnamed narrator",
+   "credential": "Analyst, FXIGOR",
+   "practises": true,
+   "line": "earnings beat estimates and Walmart backlog improved the story, but valuation and trend remain demanding.",
+   "gist": "While the Walmart automation deal is a positive sign for the business, Symbotic's stock valuation remains high.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "wdZsp1BC6Nc-1",
+   "video": "wdZsp1BC6Nc",
+   "channel": "Schwab Network",
+   "title": "Friday's Final Takeaways: Anthropic IPO Sparks a Brutal AI Sell-Off",
+   "published": "2026-11-20",
+   "start": 55,
+   "end": 67,
+   "speaker": "Marley Kayden",
+   "credential": "News Anchor, Schwab Network",
+   "practises": false,
+   "line": "Bitcoin also extending its sell-off, falling below the 60,000 level for the first time since July as pressure on the tech stocks spills into crypto and other risk assets.",
+   "gist": "Bitcoin has dropped below $60,000 as volatility in the technology sector spreads to other high-risk investments.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "btc-cycle",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "wdZsp1BC6Nc-2",
+   "video": "wdZsp1BC6Nc",
+   "channel": "Schwab Network",
+   "title": "Friday's Final Takeaways: Anthropic IPO Sparks a Brutal AI Sell-Off",
+   "published": "2026-11-20",
+   "start": 106,
+   "end": 118,
+   "speaker": "Sam Vadas",
+   "credential": "News Anchor, Schwab Network",
+   "practises": false,
+   "line": "the Singapore data center company Day One reportedly put its US IPO plans on hold. Bloomberg puts it down to questions over valuations.",
+   "gist": "Singapore's Day One has paused its US IPO plans due to growing concerns about artificial intelligence valuations.",
+   "kind": "fact",
+   "tracks": [
+    {
+     "id": "ai-debt",
+     "fit": "partly"
+    },
+    {
+     "id": "anthropic-ipo",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "wdZsp1BC6Nc-3",
+   "video": "wdZsp1BC6Nc",
+   "channel": "Schwab Network",
+   "title": "Friday's Final Takeaways: Anthropic IPO Sparks a Brutal AI Sell-Off",
+   "published": "2026-11-20",
+   "start": 156,
+   "end": 166,
+   "speaker": "Sam Vadas",
+   "credential": "News Anchor, Schwab Network",
+   "practises": false,
+   "line": "that tech investor has been bleeding losses recently over concerns about its massive funding bets on AI. The company is a big backer of ChatGPT's OpenAI.",
+   "gist": "Softbank is seeing significant stock losses as investors grow wary of its massive venture capital bets on AI startups.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "ai-debt",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "wdZsp1BC6Nc-4",
+   "video": "wdZsp1BC6Nc",
+   "channel": "Schwab Network",
+   "title": "Friday's Final Takeaways: Anthropic IPO Sparks a Brutal AI Sell-Off",
+   "published": "2026-11-20",
+   "start": 171,
+   "end": 181,
+   "speaker": "Sam Vadas",
+   "credential": "News Anchor, Schwab Network",
+   "practises": false,
+   "line": "the Taiwan market is down 17% for the week. That's the biggest weekly drop we've seen since the early 90s.",
+   "gist": "The Taiwan stock market, dominated by AI chipmakers, suffered its largest weekly percentage decline in over 30 years.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "dBR6hET0u3s-0",
+   "video": "dBR6hET0u3s",
+   "channel": "Bloomberg Podcasts",
+   "title": "Anthropic IPO Could Mark End of the AI Trade",
+   "published": "2026-11-20",
+   "start": 22,
+   "end": 73,
+   "speaker": "Anna Wong",
+   "credential": "Chief US Economist, Bloomberg Economics",
+   "practises": true,
+   "line": "Since late July, token prices that Anthropic sold has come down by 50%.",
+   "gist": "Anthropic's token prices have halved since July, indicating a highly competitive market where supply is outstripping pricing power.",
+   "kind": "data",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "yes"
+    },
+    {
+     "id": "anthropic-ipo",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "dBR6hET0u3s-1",
+   "video": "dBR6hET0u3s",
+   "channel": "Bloomberg Podcasts",
+   "title": "Anthropic IPO Could Mark End of the AI Trade",
+   "published": "2026-11-20",
+   "start": 105,
+   "end": 159,
+   "speaker": "Anna Wong",
+   "credential": "Chief US Economist, Bloomberg Economics",
+   "practises": true,
+   "line": "It looks like that this market as economist would describe it is one of a Bertrand competition in an oligopoly.",
+   "gist": "The top AI firms are locked in a price war where cutting prices fails to increase market share, an ominous sign for the AI trade.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "yes"
+    },
+    {
+     "id": "anthropic-ipo",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "dBR6hET0u3s-2",
+   "video": "dBR6hET0u3s",
+   "channel": "Bloomberg Podcasts",
+   "title": "Anthropic IPO Could Mark End of the AI Trade",
+   "published": "2026-11-20",
+   "start": 188,
+   "end": 245,
+   "speaker": "Anna Wong",
+   "credential": "Chief US Economist, Bloomberg Economics",
+   "practises": true,
+   "line": "Even as this total addressable market is exploding and token demand is rising tremendously, their market share is still down.",
+   "gist": "Despite a massive boom in general usage of AI models, Anthropic is struggling to maintain its piece of the pie.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-anthropic",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "dBR6hET0u3s-3",
+   "video": "dBR6hET0u3s",
+   "channel": "Bloomberg Podcasts",
+   "title": "Anthropic IPO Could Mark End of the AI Trade",
+   "published": "2026-11-20",
+   "start": 294,
+   "end": 322,
+   "speaker": "Anna Wong",
+   "credential": "Chief US Economist, Bloomberg Economics",
+   "practises": true,
+   "line": "The way I define AI trade is it comprises of not just the Anthropic or OpenAI, but also all the other upstream firms.",
+   "gist": "The AI trade is a broad ecosystem that includes not just model builders, but also hardware and power infrastructure suppliers.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "dBR6hET0u3s-4",
+   "video": "dBR6hET0u3s",
+   "channel": "Bloomberg Podcasts",
+   "title": "Anthropic IPO Could Mark End of the AI Trade",
+   "published": "2026-11-20",
+   "start": 324,
+   "end": 359,
+   "speaker": "Anna Wong",
+   "credential": "Chief US Economist, Bloomberg Economics",
+   "practises": true,
+   "line": "Even on these upstream picks and shovels play, there are signs of those long backlogs getting shorter.",
+   "gist": "Supply shortages for AI infrastructure, particularly in semiconductors, are finally beginning to ease as backlogs get shorter.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "dBR6hET0u3s-5",
+   "video": "dBR6hET0u3s",
+   "channel": "Bloomberg Podcasts",
+   "title": "Anthropic IPO Could Mark End of the AI Trade",
+   "published": "2026-11-20",
+   "start": 371,
+   "end": 400,
+   "speaker": "Anna Wong",
+   "credential": "Chief US Economist, Bloomberg Economics",
+   "practises": true,
+   "line": "It turns out that the demand for data center build-out has been overestimated.",
+   "gist": "Market sentiment is shifting as analysts realize that initial forecasts for data center expansion and power demand may have been too high.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "lhWIfEy89uQ-0",
+   "video": "lhWIfEy89uQ",
+   "channel": "Schwab Network",
+   "title": "The Big 3: AMD, CRWV, WMT",
+   "published": "2026-11-13",
+   "start": 87,
+   "end": 151,
+   "speaker": "Tim Bohen",
+   "credential": "Chief Technical Trainer, StocksToTrade.com",
+   "practises": true,
+   "line": "With Jensen, you've got more of that situation kind of like a Steve Jobs, where you've got a technology guy, a driver of the entire business.",
+   "gist": "Nvidia faces unique leadership risk because Jensen Huang is a visionary driver of the business, making his potential exit far more impactful than a typical CEO transition.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "yes"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "lhWIfEy89uQ-1",
+   "video": "lhWIfEy89uQ",
+   "channel": "Schwab Network",
+   "title": "The Big 3: AMD, CRWV, WMT",
+   "published": "2026-11-13",
+   "start": 207,
+   "end": 221,
+   "speaker": "Tim Bohen",
+   "credential": "Chief Technical Trainer, StocksToTrade.com",
+   "practises": true,
+   "line": "If it comes out that there's some criminality that happened in Nvidia, well, that's going to benefit AMD.",
+   "gist": "AMD is positioned to gain if regulatory or leadership troubles at Nvidia force the AI market to seek alternative chip providers.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "lhWIfEy89uQ-2",
+   "video": "lhWIfEy89uQ",
+   "channel": "Schwab Network",
+   "title": "The Big 3: AMD, CRWV, WMT",
+   "published": "2026-11-13",
+   "start": 336,
+   "end": 347,
+   "speaker": "Rick Ducat",
+   "credential": "Lead Market Technician, Schwab Network",
+   "practises": true,
+   "line": "the wheels of the world keep turning, people still need the stuff they need, you know life goes on.",
+   "gist": "Fundamental consumer needs provide a floor for the market even during periods of extreme tech sector volatility.",
+   "kind": "explanation",
+   "tracks": [
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "lhWIfEy89uQ-3",
+   "video": "lhWIfEy89uQ",
+   "channel": "Schwab Network",
+   "title": "The Big 3: AMD, CRWV, WMT",
+   "published": "2026-11-13",
+   "start": 546,
+   "end": 573,
+   "speaker": "Tim Bohen",
+   "credential": "Chief Technical Trainer, StocksToTrade.com",
+   "practises": true,
+   "line": "This stock is either going to reclaim 60 and then start going on a run back towards 100, heavily dependent on Nvidia and Jensen Huang's situation.",
+   "gist": "Coreweave's success is tied directly to Nvidia's stability and Jensen Huang's continued leadership, highlighting the concentration risk in the AI sector.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-nvidia",
+     "fit": "partly"
+    },
+    {
+     "id": "nvidia-after-huang",
+     "fit": "partly"
+    },
+    {
+     "id": "ai-debt",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "lhWIfEy89uQ-4",
+   "video": "lhWIfEy89uQ",
+   "channel": "Schwab Network",
+   "title": "The Big 3: AMD, CRWV, WMT",
+   "published": "2026-11-13",
+   "start": 796,
+   "end": 826,
+   "speaker": "Tim Bohen",
+   "credential": "Chief Technical Trainer, StocksToTrade.com",
+   "practises": true,
+   "line": "Whatever happens to the AI trade, the economy is going to continue to churn on... I kind of like to balance that out with more of a safe play.",
+   "gist": "In an uncertain market, Walmart provides a safe investment because consumer demand for basic goods persists regardless of volatility in the AI sector.",
+   "kind": "view",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "yes"
+    }
+   ],
+   "found": "2026-11-24"
+  },
+  {
+   "id": "lhWIfEy89uQ-5",
+   "video": "lhWIfEy89uQ",
+   "channel": "Schwab Network",
+   "title": "The Big 3: AMD, CRWV, WMT",
+   "published": "2026-11-13",
+   "start": 881,
+   "end": 911,
+   "speaker": "Rick Ducat",
+   "credential": "Lead Market Technician, Schwab Network",
+   "practises": true,
+   "line": "If you didn't know what chart you were looking at, you might have thought it was one of these higher flying tech stocks. Walmart had a very strong move.",
+   "gist": "Walmart's recent stock performance has mimicked high-growth tech companies, showing unexpected strength before settling into a consolidation phase.",
+   "kind": "fact",
+   "tracks": [
+    {
+     "id": "co-walmart",
+     "fit": "yes"
+    },
+    {
+     "id": "idea-customer",
+     "fit": "partly"
+    }
+   ],
+   "found": "2026-11-24"
+  }
+ ]
+}
