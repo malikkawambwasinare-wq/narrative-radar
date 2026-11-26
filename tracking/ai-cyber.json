@@ -3,8 +3,232 @@
  "name": "Has AI already armed the hackers?",
  "line": "The fear that AI would give anyone, or AI itself, the power to hack, and the evidence as it arrives.",
  "cat": "world",
- "checked": "2026-11-25T20:31:10.558135+00:00",
+ "checked": "2026-11-26T20:14:55.735994+00:00",
  "videos": [
+  {
+   "id": "9sYkkSfhmQs",
+   "title": "What To Know: AI Cyberattacks Could Take Down Portions Of America’s Power Grid",
+   "channel": "The Carl Jackson Show",
+   "published": "2026-11-26",
+   "length": "22:00",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "QEnPjq09i1o",
+   "title": "Who Is Spying on the CIA? The AI Cyberattack Nobody ExpectedDescription..",
+   "channel": "The Story Line",
+   "published": "2026-11-26",
+   "length": "3:50",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "-MvBVGCvPRk",
+   "title": "CIA Cyberattack: ARTEX AI Raises the Threat Level of Automated Cyber Attacks",
+   "channel": "Radio007",
+   "published": "2026-11-26",
+   "length": "5:21",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "Q1ZuB5z5C-c",
+   "title": "AI Cyberattack Explained: How Hackers Use AI to Cause Data Breaches",
+   "channel": "TeqTalk",
+   "published": "2026-11-26",
+   "length": "16:38",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "1Bn0Z9kfWAc",
+   "title": "How Hackers Use AI to Attack Linux Servers (And How to Defend Them)",
+   "channel": "The Lazy SysAdmin",
+   "published": "2026-11-26",
+   "length": "19:47",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "FqKAFhsi7_I",
+   "title": "CIA, FBI & US Treasury Cyberattacks – The AI Connection",
+   "channel": "Tech, Privacy, News  - Explained",
+   "published": "2026-11-26",
+   "length": "4:45",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "rdK5AaQ-ko8",
+   "title": "The CIA Got Hacked by a FREE AI Tool",
+   "channel": "Chinni Ma",
+   "published": "2026-11-26",
+   "length": "8:08",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "qdGMojFaliI",
+   "title": "AI News: State Hackers Weaponize AI Agents, ChatGPT Limits Cut",
+   "channel": "AI Shift Daily",
+   "published": "2026-11-26",
+   "length": "8:13",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "CrKYpUKR2g0",
+   "title": "Why Old Security Models Can't Stop AI Hackers",
+   "channel": "The Generalists",
+   "published": "2026-11-26",
+   "length": "50:33",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "LrpmLJoSkcI",
+   "title": "Version 999 Is How Hackers Are Fooling Your AI Agents",
+   "channel": "Monica Talks Cyber",
+   "published": "2026-11-26",
+   "length": "34:42",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "hW-cjgi6FkM",
+   "title": "Did AI Hackers Really Break the Internet?",
+   "channel": "Dropped Packet",
+   "published": "2026-11-26",
+   "length": "9:40",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "w3czRvt_GIs",
+   "title": "GDPx Benchmarks Frontier AI, Microsoft's Aion Runs On-Device, Hackers Breach US Agencies | The Shipl",
+   "channel": "The Shiplog",
+   "published": "2026-11-26",
+   "length": "5:39",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "RPjT8z0izO4",
+   "title": "Check Point Servers Hit, Artex AI Hacking Tool, FinCEN Intrusion · Signal Brief Cyber · 25 Nov 2026",
+   "channel": "Signal Brief Cyber",
+   "published": "2026-11-26",
+   "length": "7:39",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "DFMcch7a9Vc",
+   "title": "ARTEX: The AI Hacking Tool Behind a Microsoft 365 Attack Wave",
+   "channel": "DEEEP",
+   "published": "2026-11-26",
+   "length": "11:32",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "2ydanmBUdA0",
+   "title": "It Begins: An AI Hacked a Real Security Company",
+   "channel": "A Great Debate",
+   "published": "2026-11-26",
+   "length": "16:53",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "Z80gJO-Y4iE",
+   "title": "The CIA Just Got Hacked (And It's Not the Only One)",
+   "channel": "Jack Nyange",
+   "published": "2026-11-26",
+   "length": "8:57",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "MYvTbnZjgQ4",
+   "title": "How an AI Tool Breached the CIA & U.S. Treasury in 3 Hours",
+   "channel": "Insidex Science",
+   "published": "2026-11-26",
+   "length": "8:15",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "mXEfv242qbE",
+   "title": "The CIA Just Got Hacked — The AI Tool That Broke In",
+   "channel": "Global Explainer",
+   "published": "2026-11-26",
+   "length": "9:26",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "e2toO48ouTM",
+   "title": "CIA Hack: What We Know About the OSINT System Breach",
+   "channel": "Evidence Board",
+   "published": "2026-11-26",
+   "length": "4:51",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "QO-uIyXGMiU",
+   "title": "Hackers Inside a CIA System? The AI Tool Artex Explained",
+   "channel": "Headline Roots",
+   "published": "2026-11-26",
+   "length": "3:01",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "hn71Affqx70",
+   "title": "CIA breach EXPOSES unclassified info: Report",
+   "channel": "Fox News",
+   "published": "2026-11-26",
+   "length": "3:02",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "Ci81mSflbBM",
+   "title": "ShinyHunters Hacked the FBI. They Weren't the First.",
+   "channel": "CrimeEXE",
+   "published": "2026-11-26",
+   "length": "14:27",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "_CtsFa0TM2Y",
+   "title": "US Spy Agencies HACKED! CIA and DNI Offices Hit as FBI Launches Probe | ET Now World | Watch",
+   "channel": "ET Now World",
+   "published": "2026-11-25",
+   "length": "8:23",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "5BYtVDttKcA",
+   "title": "BREAKING NEWS: CIA and ODNI Hacked in Open-Source Breach — November 24, 2026",
+   "channel": "Politics_Shmolitics",
+   "published": "2026-11-25",
+   "length": "11:30",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "_OMoKAapkYM",
+   "title": "The CIA & FBI Were Hacked. How Bad Could This Get?",
+   "channel": "BRAD LEA TV",
+   "published": "2026-11-25",
+   "length": "21:38",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "niMhqUA7Do0",
+   "title": "The Real Danger of the CIA Hack",
+   "channel": "DESKHOUND",
+   "published": "2026-11-25",
+   "length": "16:40",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "RwgGXaLPGgs",
+   "title": "Was the CIA Hacked? The Spy Agency Breach Explained",
+   "channel": "Explaining everything",
+   "published": "2026-11-25",
+   "length": "8:03",
+   "found": "2026-11-26T20:14:55Z"
+  },
+  {
+   "id": "NOItijPR5pQ",
+   "title": "Midterms Data Breach, ODNI, NSA, CIA & FBI Hacked",
+   "channel": "Area 111",
+   "published": "2026-11-25",
+   "length": "1:50:47",
+   "found": "2026-11-26T20:14:55Z"
+  },
   {
    "id": "n3S-9gHum90",
    "title": "Could AI Hackers Turn Off the Power? The Blackout Rumor vs the Real Threat",
