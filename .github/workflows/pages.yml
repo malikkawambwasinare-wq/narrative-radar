@@ -8,7 +8,7 @@ on:
   # workflows finish does work, and it is why the site now updates itself.
   workflow_run:
     workflows: ["Channel sweep", "Full history crawl", "Naming pass", "Promote narratives",
-               "Weekly search sweep", "Resolver"]
+               "Weekly search sweep", "Resolver", "Track narratives", "Director"]
     types: [completed]
   workflow_dispatch:
 
