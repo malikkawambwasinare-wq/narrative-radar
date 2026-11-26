@@ -51,6 +51,101 @@
    ]
   },
   {
+   "id": "kenya-nif",
+   "kind": "story",
+   "region": "africa",
+   "name": "Kenya's National Infrastructure Fund",
+   "line": "Building without more debt, or a way round the budget?",
+   "cat": "money",
+   "queries": [
+    "Kenya National Infrastructure Fund",
+    "Kenya infrastructure fund Mworia"
+   ],
+   "match": [
+    [
+     "infrastructure fund",
+     "nif",
+     "sovereign wealth fund",
+     "safaricom stake",
+     "mworia"
+    ],
+    [
+     "kenya",
+     "kenyan",
+     "ruto",
+     "nairobi",
+     "mworia",
+     "safaricom",
+     "mbadi",
+     "nif"
+    ]
+   ]
+  },
+  {
+   "id": "dangote-kenya",
+   "kind": "story",
+   "region": "africa",
+   "name": "Dangote's refinery deal in Kenya",
+   "line": "Who owns it, who pays, and what Lamu gets.",
+   "cat": "money",
+   "queries": [
+    "Dangote Kenya refinery",
+    "Kenya Pipeline Dangote Lamu"
+   ],
+   "match": [
+    [
+     "dangote",
+     "kenya pipeline",
+     "kpc"
+    ],
+    [
+     "kenya",
+     "lamu",
+     "refinery",
+     "kpc",
+     "mombasa"
+    ]
+   ]
+  },
+  {
+   "id": "africa-infra-gap",
+   "kind": "story",
+   "region": "africa",
+   "name": "Who pays for Africa's infrastructure?",
+   "line": "Pension funds, sovereign funds, private capital and the funding gap.",
+   "cat": "money",
+   "queries": [
+    "Africa infrastructure financing gap",
+    "Africa sovereign wealth fund infrastructure"
+   ],
+   "match": [
+    [
+     "africa",
+     "african",
+     "nigeria",
+     "kenya",
+     "south africa",
+     "ghana",
+     "zambia",
+     "ethiopia"
+    ],
+    [
+     "infrastructure"
+    ],
+    [
+     "fund",
+     "funds",
+     "funding",
+     "financing",
+     "finance",
+     "gap",
+     "capital",
+     "investors",
+     "invest"
+    ]
+   ]
+  },
+  {
    "id": "ai-cyber",
    "kind": "story",
    "name": "Has AI already armed the hackers?",
