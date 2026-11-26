@@ -1,14 +1,15 @@
 {
- "updated": "2026-11-25T20:31:10.558135+00:00",
+ "updated": "2026-11-26T19:40:24.590202+00:00",
  "narratives": [
   {
    "id": "co-walmart",
    "kind": "company",
+   "region": "world",
    "name": "Walmart",
    "line": "Its sales, its shoppers, and how it keeps prices low.",
    "cat": "money",
    "count": 59,
-   "new_today": 22,
+   "new_today": 16,
    "latest": "2026-11-25",
    "faces": [
     "Torn Tag",
@@ -20,11 +21,12 @@
   {
    "id": "co-anthropic",
    "kind": "company",
+   "region": "world",
    "name": "Anthropic",
    "line": "The company behind Claude, after its IPO.",
    "cat": "money",
    "count": 14,
-   "new_today": 10,
+   "new_today": 4,
    "latest": "2026-11-25",
    "faces": [
     "Bloomberg Podcasts",
@@ -36,11 +38,12 @@
   {
    "id": "co-nvidia",
    "kind": "company",
+   "region": "world",
    "name": "Nvidia",
    "line": "The chipmaker at the centre of the AI trade.",
    "cat": "money",
    "count": 19,
-   "new_today": 14,
+   "new_today": 8,
    "latest": "2026-11-25",
    "faces": [
     "Investing Tutorial",
@@ -50,13 +53,65 @@
    ]
   },
   {
+   "id": "kenya-nif",
+   "kind": "story",
+   "region": "africa",
+   "name": "Kenya's National Infrastructure Fund",
+   "line": "Building without more debt, or a way round the budget?",
+   "cat": "money",
+   "count": 4,
+   "new_today": 4,
+   "latest": "2026-11-25",
+   "faces": [
+    "State House Kenya",
+    "Cradle Markets",
+    "Citizen TV Kenya",
+    "Next Gen Africa Media"
+   ]
+  },
+  {
+   "id": "dangote-kenya",
+   "kind": "story",
+   "region": "africa",
+   "name": "Dangote's refinery deal in Kenya",
+   "line": "Who owns it, who pays, and what Lamu gets.",
+   "cat": "money",
+   "count": 18,
+   "new_today": 18,
+   "latest": "2026-11-21",
+   "faces": [
+    "CLOCKWISE BY NETISENS",
+    "Walking Earth",
+    "Stuffworks Explained",
+    "TV47 Kenya"
+   ]
+  },
+  {
+   "id": "africa-infra-gap",
+   "kind": "story",
+   "region": "africa",
+   "name": "Who pays for Africa's infrastructure?",
+   "line": "Pension funds, sovereign funds, private capital and the funding gap.",
+   "cat": "money",
+   "count": 5,
+   "new_today": 5,
+   "latest": "2026-11-19",
+   "faces": [
+    "African Energy Week ",
+    "Financial Insight",
+    "Al Arabiya English",
+    "Resq Energy Hub"
+   ]
+  },
+  {
    "id": "ai-cyber",
    "kind": "story",
+   "region": "world",
    "name": "Has AI already armed the hackers?",
    "line": "The fear that AI would give anyone, or AI itself, the power to hack, and the evidence as it arrives.",
    "cat": "world",
    "count": 66,
-   "new_today": 66,
+   "new_today": 21,
    "latest": "2026-11-25",
    "faces": [
     "Penny & Pixel",
@@ -68,11 +123,12 @@
   {
    "id": "nvidia-after-huang",
    "kind": "story",
+   "region": "world",
    "name": "Nvidia after Jensen Huang",
    "line": "His exit, the China story, and what it means for the AI trade.",
    "cat": "money",
    "count": 88,
-   "new_today": 30,
+   "new_today": 21,
    "latest": "2026-11-25",
    "faces": [
     "Ancient Minds",
@@ -84,11 +140,12 @@
   {
    "id": "anthropic-ipo",
    "kind": "story",
+   "region": "world",
    "name": "Anthropic goes public",
    "line": "The IPO, the valuation, and whether AI listings mark the top.",
    "cat": "money",
    "count": 31,
-   "new_today": 10,
+   "new_today": 5,
    "latest": "2026-11-25",
    "faces": [
     "Good Noticings",
@@ -100,11 +157,12 @@
   {
    "id": "ai-debt",
    "kind": "story",
+   "region": "world",
    "name": "The AI debt scare",
    "line": "Data centres built on borrowed money, and the circular deals.",
    "cat": "money",
    "count": 69,
-   "new_today": 17,
+   "new_today": 11,
    "latest": "2026-11-25",
    "faces": [
     "Dr. simple finance",
@@ -116,6 +174,7 @@
   {
    "id": "fed-ai-crash",
    "kind": "story",
+   "region": "world",
    "name": "The Fed's AI warning",
    "line": "Central bankers on AI concentration and crash risk.",
    "cat": "money",
@@ -132,11 +191,12 @@
   {
    "id": "korea-ai-mania",
    "kind": "story",
+   "region": "world",
    "name": "South Korea's AI stock mania",
    "line": "A smaller market running hot on AI chips.",
    "cat": "money",
    "count": 10,
-   "new_today": 5,
+   "new_today": 4,
    "latest": "2026-11-25",
    "faces": [
     "One Minute Finance",
@@ -148,11 +208,12 @@
   {
    "id": "us-debt-crisis",
    "kind": "story",
+   "region": "world",
    "name": "A US debt crisis?",
    "line": "Dated warnings about US debt, bonds and the dollar.",
    "cat": "money",
    "count": 37,
-   "new_today": 3,
+   "new_today": 2,
    "latest": "2026-11-25",
    "faces": [
     "Andrei Jikh Clips",
@@ -164,11 +225,12 @@
   {
    "id": "hormuz-oil",
    "kind": "story",
+   "region": "world",
    "name": "Oil and the Strait of Hormuz",
    "line": "Attacks on shipping and what they do to oil.",
    "cat": "world",
    "count": 25,
-   "new_today": 7,
+   "new_today": 4,
    "latest": "2026-11-25",
    "faces": [
     "Bloomberg Podcasts",
@@ -180,11 +242,12 @@
   {
    "id": "btc-cycle",
    "kind": "story",
+   "region": "world",
    "name": "Bitcoin's broken cycle",
    "line": "It topped early. Is the four-year rhythm over?",
    "cat": "money",
    "count": 23,
-   "new_today": 3,
+   "new_today": 0,
    "latest": "2026-11-24",
    "faces": [
     "Verified Investing",
