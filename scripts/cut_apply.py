@@ -26,7 +26,7 @@ def main():
     page, sid, write = Path(sys.argv[1]), sys.argv[2], "--write" in sys.argv
     s = page.read_text(); i = s.find('{"id": "%s"' % sid)
     obj, end = json.JSONDecoder().raw_decode(s, i)
-    n = stale = 0
+    n = stale = 0; off = []
     for e in obj["eps"]:
         for v in e["videos"]:
             L = t(v["length"]); a, b = v.get("start", 0), v.get("end") or L
@@ -38,6 +38,8 @@ def main():
             d = json.loads(f.read_text()); c = d["check"]
             if d["cut"] != [a, b]:
                 print(f"  check is for an older cut   {v['channel'][:20]}"); stale += 1; continue
+            if c.get("on_subject") in ("no", "partly"):
+                off.append((c["on_subject"], v.get("name") or v["title"][:60], v["channel"]))
             na, nb = a, b
             if not c["start_clean"]:
                 x = t(c["better_start"])
@@ -55,6 +57,8 @@ def main():
                 v["start"] = na
                 if L - nb < 3: v.pop("end", None)
                 else: v["end"] = nb
+    for kind, name, ch in off:
+        print(f"  ** OFF SUBJECT ({kind}): {name} [{ch}] — remove it, or move it to the story it belongs to")
     print(f"{sid}: {n} cuts corrected, {stale} not yet checked")
     if write:
         page.write_text(s[:i] + json.dumps(obj, ensure_ascii=False) + s[end:])
