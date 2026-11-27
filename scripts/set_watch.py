@@ -97,10 +97,26 @@ SCHEMA = {"type": "object", "properties": {
             "stance": {"type": "string", "description": "What side of the story this line puts them on, in a few words"},
             "on_camera": {"type": "boolean", "description": "The speaker is seen and heard saying it (not quoted or read out by someone else)"}},
             "required": ["start", "end", "speaker", "line", "stance", "on_camera"]}},
+    # Malik's rule (2026-11-27): the unit is the PIECE, not the video. One podcast
+    # can hold several pieces on related topics; each gets its own name and goes
+    # where it belongs (origin, catch-up, the critics...). So the watcher cuts a
+    # long video into its separate pieces instead of naming one best stretch.
+    "pieces": {"type": "array", "description": "Every separate stretch worth using on its own, in order. A stretch is one topic, 20 seconds to 6 minutes, that makes sense without the rest. A short single-topic video has one piece; a long interview may have five or more",
+        "items": {"type": "object", "properties": {
+            "start": {"type": "string", "description": "MM:SS of the first word, ideally the question that sets it up"},
+            "end": {"type": "string", "description": "MM:SS just after the sentence that lands the point"},
+            "name": {"type": "string", "description": "A plain title for this piece, under 12 words, saying what is said; a striking direct quote is fine"},
+            "speaker": {"type": "string"},
+            "topic": {"type": "string", "description": "What this stretch is about, in a few words"},
+            "belongs": {"type": "string", "enum": ["origin", "catch-up", "the case for", "the critics", "experts and evidence", "ordinary people", "what is being built"],
+                        "description": "Where it sits in a story told as origin, catch-up and the other camps"},
+            "opens_on": {"type": "string", "description": "The first sentence, word for word"},
+            "closes_on": {"type": "string", "description": "The last sentence, word for word"}},
+            "required": ["start", "end", "name", "speaker", "topic", "belongs", "opens_on", "closes_on"]}},
     "evidence": {"type": "string", "description": "What evidence is shown on screen or cited: charts, data, studies, none"},
     "tone": {"type": "string", "enum": ["measured", "confident", "hyped", "alarmed"]},
 }, "required": ["argues", "does_its_job", "job_note", "format", "first_hand", "on_story_percent", "starts_at",
-                "best_stretch", "stands_alone", "assumes", "answers", "sells", "claims", "entry_points", "exit_points", "speakers", "insights", "soundbites", "evidence", "tone"]}
+                "best_stretch", "stands_alone", "assumes", "answers", "sells", "claims", "entry_points", "exit_points", "speakers", "insights", "soundbites", "pieces", "evidence", "tone"]}
 
 
 # Malik (2026-11-25), on the state-hacking timeline: "and where exactly", "which
