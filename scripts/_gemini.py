@@ -131,8 +131,32 @@ def _strip_unknown(body, detail):
     return hit[0]
 
 
+# A hard daily ceiling on video watches, shared by every script (watch, moments,
+# cut check, find mentions). Malik, 2026-11-27: "the costs are ramping up...
+# just use the free Gemini models". The free tier allows roughly 20-40 watches a
+# day; this keeps the whole toolchain inside it no matter how many jobs run.
+# Override for one run with WATCH_CAP=60, never by default.
+DAILY_WATCH_CAP = int(os.environ.get("WATCH_CAP", "30"))
+
+
+def _watch_count(add=0):
+    f = Path(__file__).resolve().parent.parent / "watch" / f".watches-{time.strftime('%Y-%m-%d')}.json"
+    try:
+        n = json.loads(f.read_text())["n"]
+    except Exception:
+        n = 0
+    if add:
+        f.parent.mkdir(parents=True, exist_ok=True)
+        f.write_text(json.dumps({"n": n + add}))
+    return n + add
+
+
 def ask(model, parts, schema, k, budget=None, est_tokens=None, retries=3):
     """One call. `parts` is a list of {"type": "text"|"video", ...}."""
+    if any(p.get("type") == "video" for p in parts):
+        if _watch_count() >= DAILY_WATCH_CAP:
+            raise DailyLimit(f"our own daily ceiling of {DAILY_WATCH_CAP} video watches is used up; it resets tomorrow")
+        _watch_count(1)
     if budget and est_tokens:
         if budget.too_big(est_tokens):
             raise ApiError(0, f"needs {est_tokens:,} tokens, over the {budget.limit:,}/min ceiling")
