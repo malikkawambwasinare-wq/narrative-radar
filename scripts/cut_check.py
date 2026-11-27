@@ -56,7 +56,17 @@ def main():
             # One source can give several pieces, so a check belongs to a piece (source + start).
             f = out / f"{v['id']}_{a}.json"
             old = out / f"{v['id']}.json"
-            if any(x.exists() and json.loads(x.read_text()).get("cut") == [a, b] for x in (f, old)):
+            # Already checked at this cut, or this cut IS a correction a check produced:
+            # either way do not watch it again. (Applying a correction used to make the
+            # piece look new, so it was re-watched and nudged again: wasted watches.)
+            done = False
+            for cand in list(out.glob(f"{v['id']}*.json")):
+                j = json.loads(cand.read_text())
+                bs, be = j["check"].get("better_start"), j["check"].get("better_end")
+                same = lambda q, sec: q and ":" in q and abs(sum(int(n) * m for n, m in zip(reversed(q.split(":")), (1, 60, 3600))) - sec) <= 3
+                if j.get("cut") == [a, b] or j.get("applied") == [a, b] or (same(bs, a) and same(be, b)) or (j.get("cut", [None])[0] == a and same(be, b)) or (same(bs, a) and j.get("cut", [None, None])[1] == b):
+                    done = True; break
+            if done:
                 continue
             prompt = (f"A curated evening uses this video from {mm(a)} to {mm(b)}"
                       + (f", as a piece named “{v['name']}”" if v.get("name") else "") + f". Its job in the evening: “{v['role']}”: {v['why']}\n"
