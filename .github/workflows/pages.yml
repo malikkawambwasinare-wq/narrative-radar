@@ -33,5 +33,9 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
+      # The bundle is ~100 MB. Deploying straight after the upload often failed
+      # with "No artifacts named github-pages": the artifact was uploaded but not
+      # yet listed. A short wait lets it register.
+      - run: sleep 25
       - id: deployment
         uses: actions/deploy-pages@v4
