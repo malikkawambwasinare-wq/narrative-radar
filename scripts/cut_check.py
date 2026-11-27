@@ -29,8 +29,14 @@ SCHEMA = {"type": "object", "properties": {
     "end_clean": {"type": "boolean", "description": "The clip ends just after a sentence that concludes the point: a conclusion, a number, a verdict. Not a lead-in to the next topic, not mid-sentence, not a sign-off or 'thank you'"},
     "better_end": {"type": "string", "description": "MM:SS just after the last word of the strongest concluding sentence for this point, within about 30 seconds either side of the given end; same as the given end if it is already clean"},
     "better_end_line": {"type": "string", "description": "That concluding sentence, word for word"},
+    # The relevance gate (Malik, 2026-11-27: "some of the Jimi Wanjigi interviews, he is
+    # not at all talking about the infrastructure fund"). A famous name is not
+    # relevance. The speaker must be talking about THIS story inside the window.
+    "on_subject": {"type": "string", "enum": ["yes", "partly", "no"],
+                   "description": "Inside this window, is the speaker talking about the evening's own subject (named below)? 'partly' = a neighbouring topic that only touches it; 'no' = a different subject, however related the speaker"},
+    "subject_quote": {"type": "string", "description": "The words in the window that name or clearly refer to the subject, word for word; empty if there are none"},
     "note": {"type": "string", "description": "One short sentence on what was wrong, or empty"}},
-    "required": ["first_words", "start_clean", "better_start", "last_words", "end_clean", "better_end", "better_end_line", "note"]}
+    "required": ["first_words", "start_clean", "better_start", "last_words", "end_clean", "better_end", "better_end_line", "on_subject", "subject_quote", "note"]}
 
 
 def secs(L):
@@ -54,7 +60,8 @@ def main():
                 continue
             prompt = (f"A curated evening uses this video from {mm(a)} to {mm(b)}"
                       + (f", as a piece named “{v['name']}”" if v.get("name") else "") + f". Its job in the evening: “{v['role']}”: {v['why']}\n"
-                      "Watch that window closely (and about 30 seconds either side). Report the exact first and last full sentence, "
+                      f"The evening's subject: “{obj['name']}”: {obj.get('claim', '')}\n"
+                      "Watch that window closely (and about 30 seconds either side). Say whether the speaker is on that subject inside the window, quoting the words. Report the exact first and last full sentence, "
                       "whether the start and the end are clean places to cut, and better times if they are not. The viewer is busy: "
                       "the clip should open on the question or the first word of the point, and close on the sentence that lands it.")
             try:
@@ -68,6 +75,7 @@ def main():
             if not d:
                 continue
             f.write_text(json.dumps({"videoId": v["id"], "channel": v["channel"], "cut": [a, b], "check": d}, indent=1, ensure_ascii=False))
+            if d.get("on_subject") != "yes": print(f"  ** {d.get('on_subject', '?').upper()} on subject: {v.get('name') or v['title'][:50]}", flush=True)
             print(f"  {v['channel'][:18]:18} {mm(a)}-{mm(b)} start {'ok' if d['start_clean'] else '-> ' + d['better_start']} · end {'ok' if d['end_clean'] else '-> ' + d['better_end']}", flush=True)
 
 
