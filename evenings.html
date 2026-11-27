@@ -34,7 +34,7 @@
   .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
   .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 600; font-size: 17px; letter-spacing: -.01em; }
   .brand .orb { width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
-  .ghost { background: var(--glass); border: 1px solid var(--edge); border-radius: 999px; padding: 8px 15px; font-size: 13px; color: var(--ink); backdrop-filter: blur(8px); }
+  .ghost { background: var(--glass); border: 1px solid var(--edge); border-radius: 999px; padding: 8px 15px; font-size: 13px; color: var(--ink); }
   .ghost:hover { border-color: var(--edge-2); background: var(--glass-2); }
   .ghost:disabled { opacity: .4; cursor: default; }
   .primary { background: var(--accent); color: var(--accent-ink); border: 0; border-radius: 999px; padding: 12px 22px; font-size: 14.5px; font-weight: 600; font-family: var(--display); }
@@ -89,7 +89,7 @@
 
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 14px; perspective: 1400px; }
   .tile { background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; text-align: left; display: flex; flex-direction: column; gap: 9px; min-height: 190px;
-    transform: rotateY(var(--ry, 0deg)) rotateX(var(--rx, 0deg)); transition: transform .3s ease, border-color .3s, background .3s; backdrop-filter: blur(10px); transform-style: preserve-3d; }
+    transform: rotateY(var(--ry, 0deg)) rotateX(var(--rx, 0deg)); transition: transform .3s ease, border-color .3s, background .3s; transform-style: preserve-3d; }
   .tile:hover { border-color: var(--edge-2); background: var(--glass-2); }
   .tile .name { font-family: var(--display); font-size: 20px; font-weight: 600; line-height: 1.15; letter-spacing: -.015em; transform: translateZ(10px); }
   .tile .claim { font-size: 13px; color: var(--ink-2); line-height: 1.5; }
@@ -110,7 +110,7 @@
 
   .rail { position: relative; margin-top: 30px; display: grid; gap: 18px; padding-left: 26px; }
   .rail::before { content: ""; position: absolute; left: 7px; top: 12px; bottom: 12px; width: 2px; background: linear-gradient(var(--edge-2), var(--edge)); }
-  .ep { position: relative; background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; display: grid; gap: 10px; backdrop-filter: blur(10px); }
+  .ep { position: relative; background: var(--glass); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; display: grid; gap: 10px; }
   .ep::before { content: ""; position: absolute; left: -26px; top: 22px; width: 16px; height: 16px; border-radius: 50%; background: var(--deep); border: 2px solid var(--edge-2); box-shadow: 0 0 0 4px var(--ground); }
   .ep.now { border-color: var(--accent); }
   .ep.now::before { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 0 4px var(--ground); }
@@ -136,7 +136,7 @@
   .frame { position: relative; width: 100%; max-width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; color: #f4f6fb; padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; gap: 6px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), inset 0 -60px 80px -40px rgba(0,0,0,.6); }
   .frame .ft { font-family: var(--display); font-size: clamp(20px, 3.4vw, 30px); font-weight: 600; line-height: 1.15; max-width: 28ch; letter-spacing: -.015em; }
   .frame .fc { font-size: 13px; opacity: .8; }
-  .frame .yt { position: absolute; top: 14px; right: 14px; font-size: 12px; color: #f4f6fb; background: rgba(0,0,0,.4); padding: 6px 11px; border-radius: 999px; text-decoration: none; backdrop-filter: blur(6px); }
+  .frame .yt { position: absolute; top: 14px; right: 14px; font-size: 12px; color: #f4f6fb; background: rgba(0,0,0,.4); padding: 6px 11px; border-radius: 999px; text-decoration: none; }
   .frame .demo { position: absolute; top: 16px; left: 16px; font-family: var(--mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; opacity: .75; }
   .frame .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255,255,255,.15); }
   .frame .bar i { display: block; height: 100%; width: 0; background: var(--accent); box-shadow: 0 0 10px var(--accent); transition: width .25s linear; }
@@ -150,7 +150,7 @@
   .now .look b { color: var(--ink); }
   .acts { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
   .acts .next { font-size: 12.5px; color: var(--muted); }
-  .interstitial, .end { background: var(--glass); border: 1px solid var(--edge); border-radius: 18px; padding: 26px; display: grid; gap: 8px; backdrop-filter: blur(10px); }
+  .interstitial, .end { background: var(--glass); border: 1px solid var(--edge); border-radius: 18px; padding: 26px; display: grid; gap: 8px; }
   .interstitial h3 { font-size: 30px; font-weight: 500; letter-spacing: -.02em; }
   .end h3 { font-size: 34px; font-weight: 500; letter-spacing: -.025em; }
   .end p { margin: 0; color: var(--ink-2); max-width: 60ch; }
@@ -257,8 +257,9 @@
   /* ---- the stage: tonight's clips drifting around the button ---- */
   .stage { display: grid; gap: 12px; margin-inline: -20px; }
   .stage .join { margin-inline: 20px; width: auto; box-shadow: 0 14px 34px -14px rgba(28,35,33,.6); }
-  .reel { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
-  .reel .track { display: flex; gap: 8px; width: max-content; animation: drift 90s linear infinite; }
+  .reel { overflow: hidden; contain: content; }
+  .reel .track { display: flex; gap: 8px; width: max-content; animation: drift 90s linear infinite; will-change: transform; }
+  body.playing .reel .track, body.threadmode .reel .track { animation-play-state: paused; }
   .reel.rev .track { animation-direction: reverse; animation-duration: 110s; }
   .reel img { width: 132px; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 10px; filter: saturate(.8) contrast(.95); opacity: .9; background: var(--deep); }
   .stage .reel { transition: opacity .65s ease; }
@@ -529,8 +530,8 @@ function oneStep(dir) {
 const thumb = id => `https://i.ytimg.com/vi/${id}/mqdefault.jpg`;
 /* Load a theme's pictures before it fades in, so no blank frames drift past. */
 const preloadThumbs = ids => Promise.race([Promise.all(ids.map(id => new Promise(ok => { const im = new Image(); im.onload = im.onerror = ok; im.src = thumb(id); }))), new Promise(ok => setTimeout(ok, 4000))]);
-const reel = (ids, rev) => { const row = ids.concat(ids.length < 6 ? ids : []).map(id =>
-  `<img src="${thumb(id)}" alt="" decoding="async">`).join("");
+const reel = (ids, rev) => { ids = ids.slice(0, 8); const row = ids.concat(ids.length < 6 ? ids : []).map(id =>
+  `<img src="${thumb(id)}" alt="" decoding="async" width="132" height="74">`).join("");
   return `<div class="reel ${rev ? "rev" : ""}" aria-hidden="true"><div class="track">${row}${row}</div></div>`; };
 /* What drifts past the button changes: tonight's clips, nature, AI, world
    affairs, a country's politics. A new theme on every visit, and a slow
@@ -559,7 +560,7 @@ function themeStart() {
     preloadThumbs(cur.ids).then(() => { const st = document.querySelector(".stage"); if (!st) return;
       st.classList.add("fade"); setTimeout(() => { st.innerHTML = stageHTML(); st.classList.remove("fade"); }, 650); }); };
   swap();
-  THEME.timer = setInterval(() => { if (state.view !== "door" || document.hidden) return; THEME.k = (THEME.k + 1) % themeList().length; store.set("theme", THEME.k); swap(); }, 30000);
+  THEME.timer = setInterval(() => { if (state.view !== "door" || document.hidden || document.body.classList.contains("playing")) return; THEME.k = (THEME.k + 1) % themeList().length; store.set("theme", THEME.k); swap(); }, 30000);
 }
 const initials = n => n.replace(/[^A-Za-z\s-]/g, "").split(/[\s-]+/).filter(Boolean).map(w => w[0]).slice(0, 2).join("").toUpperCase();
 /* Who is speaking in piece i, and on which side. */
@@ -893,11 +894,8 @@ function loadYT() {
         events: { onReady: () => res(),
           onStateChange: e => { if (state.thread) return threadState(yt, e); if (e.data === YT.PlayerState.ENDED) onEnded(); },
           onError: () => state.thread ? threadError(yt) : onError() } });
-      // A second player, hidden behind the first. In a thread it loads the next
-      // piece silently while the current one plays, so the change is a swap.
-      yt2 = new YT.Player("yt2", { width: "100%", height: "100%", host: "https://www.youtube-nocookie.com",
-        playerVars: { playsinline: 1, rel: 0, modestbranding: 1, origin: location.origin },
-        events: { onStateChange: e => threadState(yt2, e), onError: () => threadError(yt2) } });
+      // One player only. A second, hidden one used to load here as well; it cost
+      // memory on every visit and was never used once hidden preloading was dropped.
     };
     const sc = document.createElement("script"); sc.src = "https://www.youtube.com/iframe_api"; document.head.appendChild(sc);
   });
@@ -1011,8 +1009,8 @@ const stop = () => { clearTimeout(state.play?.timer); state.play = null; state.o
    turns, the idle one loading the next piece muted and paused at its start, so
    the change between videos is a swap and not a load. */
 const findT = id => DATA.threads.find(t => t.id === id);
-const front = () => (state.thread && state.thread.b ? yt2 : yt);
-const back = () => (state.thread && state.thread.b ? yt : yt2);
+const front = () => yt;
+const back = () => null;
 function threadStart(i) {
   const th = findT(state.story); if (!th) return;
   clearInterval(state.thread?.tick);
@@ -1027,9 +1025,14 @@ function threadStart(i) {
     showFront();
     t.tick = setInterval(() => {
       const cur = state.thread; if (!cur) return;
-      const s2 = th.segs[cur.i]; let now = 0;
-      try { now = front().getCurrentTime(); } catch (x) {}
-      if (now >= s2.end - 0.2) threadNext();
+      const s2 = th.segs[cur.i]; let now = 0, vid = "";
+      try { now = front().getCurrentTime(); vid = front().getVideoData().video_id; } catch (x) {}
+      // For a moment after a new piece loads, the player still reports the LAST
+      // video's clock. If that was past this piece's end, the piece was skipped
+      // without playing. So a piece can only end once it has been seen playing:
+      // the right video, inside its own window.
+      if (vid === s2.id && now >= s2.start - 2 && now < s2.end - 0.2) cur.armed = true;
+      if (cur.armed && vid === s2.id && now >= s2.end - 0.2) threadNext();
     }, 200);
   });
 }
@@ -1181,6 +1184,10 @@ function musicLevel() {
   const target = state.sound && !playing ? music.level : 0;
   if (target > 0 && music.ctx.state === "suspended") music.ctx.resume();
   music.master.gain.setTargetAtTime(target, music.ctx.currentTime, 1.2);   // a slow fade, never a cut
+  // Once it has faded out under a video, stop the audio engine altogether so it
+  // takes nothing from the video; it wakes again when the video stops.
+  clearTimeout(music.nap);
+  if (target === 0) music.nap = setTimeout(() => { try { music.ctx.suspend(); } catch (x) {} }, 5000);
 }
 function soundToggle() {
   state.sound = !state.sound; store.set("sound", state.sound);
@@ -1260,7 +1267,9 @@ document.addEventListener("pointerdown", () => { if (state.sound && !music) { mu
 document.addEventListener("keydown", ev => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".turn[data-seg]")) { ev.preventDefault(); threadStart(+ev.target.dataset.seg); } else if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[data-one]")) { ev.preventDefault(); playOne(ev.target.dataset.one); } else if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches("[data-moment]")) { ev.preventDefault(); ev.target.click(); } });
 document.addEventListener("change", ev => { if (ev.target.id === "skipseen") { state.skipSeen = ev.target.checked; store.set("skipSeen", state.skipSeen); render(); } });
 render();
-loadYT();   // ready before the first tap, so that tap is the one that plays
+// Ready before the first tap, so that tap is the one that plays; but only once
+// the page has painted, so the first screen is never held up by YouTube.
+if (window.requestIdleCallback) window.requestIdleCallback(() => loadYT(), { timeout: 2500 }); else setTimeout(loadYT, 1200);
 </script>
 
 </body>
