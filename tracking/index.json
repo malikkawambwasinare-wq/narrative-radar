@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T20:00:35.706000+00:00",
+ "updated": "2026-11-28T06:41:37.197499+00:00",
  "narratives": [
   {
    "id": "co-walmart",
@@ -9,7 +9,7 @@
    "line": "Its sales, its shoppers, and how it keeps prices low.",
    "cat": "money",
    "count": 77,
-   "new_today": 18,
+   "new_today": 7,
    "latest": "2026-11-27",
    "faces": [
     "Market Risk Brief",
@@ -26,7 +26,7 @@
    "line": "The company behind Claude, after its IPO.",
    "cat": "money",
    "count": 28,
-   "new_today": 14,
+   "new_today": 8,
    "latest": "2026-11-27",
    "faces": [
     "WALL STREET DECODED",
@@ -43,7 +43,7 @@
    "line": "The chipmaker at the centre of the AI trade.",
    "cat": "money",
    "count": 46,
-   "new_today": 27,
+   "new_today": 15,
    "latest": "2026-11-27",
    "faces": [
     "Mr Finance Talk",
@@ -110,14 +110,14 @@
    "name": "Has AI already armed the hackers?",
    "line": "The fear that AI would give anyone, or AI itself, the power to hack, and the evidence as it arrives.",
    "cat": "world",
-   "count": 116,
-   "new_today": 50,
-   "latest": "2026-11-27",
+   "count": 137,
+   "new_today": 43,
+   "latest": "2026-11-28",
    "faces": [
-    "oneeyefile ",
-    "BharathTechTrade",
-    "Patch Gap",
-    "Eventide"
+    "Sunny Kumar",
+    "Bin He Talks",
+    "The Cyber Teacher",
+    "botsleavelogs"
    ]
   },
   {
@@ -128,7 +128,7 @@
    "line": "His exit, the China story, and what it means for the AI trade.",
    "cat": "money",
    "count": 144,
-   "new_today": 56,
+   "new_today": 33,
    "latest": "2026-11-27",
    "faces": [
     "Sneaky History",
@@ -145,7 +145,7 @@
    "line": "The IPO, the valuation, and whether AI listings mark the top.",
    "cat": "money",
    "count": 46,
-   "new_today": 15,
+   "new_today": 10,
    "latest": "2026-11-27",
    "faces": [
     "Hidden Dominion",
@@ -162,7 +162,7 @@
    "line": "Data centres built on borrowed money, and the circular deals.",
    "cat": "money",
    "count": 92,
-   "new_today": 23,
+   "new_today": 13,
    "latest": "2026-11-27",
    "faces": [
     "Frontier Tech AI",
@@ -196,7 +196,7 @@
    "line": "A smaller market running hot on AI chips.",
    "cat": "money",
    "count": 13,
-   "new_today": 3,
+   "new_today": 1,
    "latest": "2026-11-27",
    "faces": [
     "Shaloom",
@@ -213,7 +213,7 @@
    "line": "Dated warnings about US debt, bonds and the dollar.",
    "cat": "money",
    "count": 44,
-   "new_today": 7,
+   "new_today": 6,
    "latest": "2026-11-27",
    "faces": [
     "Greenback Diaries",
@@ -230,7 +230,7 @@
    "line": "Attacks on shipping and what they do to oil.",
    "cat": "world",
    "count": 40,
-   "new_today": 15,
+   "new_today": 10,
    "latest": "2026-11-27",
    "faces": [
     "Hidden Information ",
@@ -247,7 +247,7 @@
    "line": "It topped early. Is the four-year rhythm over?",
    "cat": "money",
    "count": 27,
-   "new_today": 4,
+   "new_today": 2,
    "latest": "2026-11-27",
    "faces": [
     "Dana Love, PhD",
